@@ -1,0 +1,304 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_e8d65b5503ee",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_e8d65b5503ee:sess_e8d65b5503ee",
+      "relativeItemPath": "sess_e8d65b5503ee.json",
+      "canonicalId": "sess_e8d65b5503ee",
+      "sessionId": "sess_e8d65b5503ee",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T09:06:45.700Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "value": "Has a son named Pascal in first year of secondary school aspiring to study law",
+            "reasoning": "User explicitly mentions their son's educational stage and career aspirations.",
+            "evidence": {
+              "session_id": "sess_e8d65b5503ee",
+              "utterance_index": 42,
+              "text": "Unser Sohn Pascal ist in der ersten Sekundarschule, und strebt eine Laufbahn mit Jurastudium an"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-25T18:15:06+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in Gymnasium selection criteria/preparation for law studies in Zürich",
+            "reasoning": "User asked 4+ follow-up questions about Gymnasiums for law studies (utterances 28,30,32,34), indicating focused curiosity/planning",
+            "evidence": {
+              "session_id": "sess_e8d65b5503ee",
+              "utterance_index": 34,
+              "text": "welche Gymnasien in Zürich bieten die beste Vorbereitung auf ein zukünftiges Jurastudium ?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-25T18:15:06+00:00"
+          },
+          {
+            "memory_id": "gpt_5_2_p1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "value": "Der Nutzer heißt Florian Müller.",
+            "confidence": 0.95,
+            "evidence_text": "schreibe ein email bei welchen du dich beim Hersteller ahnlab um die exklusive Landesvertretung in der Schweiz  bewirbt für dessen Firewalls. Dies auf English mein Name Florian Müller"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "indirect",
+            "label": "Personal_Background/Location",
+            "value": "The user is located in or has strong connections to Switzerland, specifically the Zurich area.",
+            "confidence": 0.8,
+            "evidence_text": "unter welcher internetaddresse kann man sich anmelden für einen bootsanlageplatz am zürichsee ... wie hoch ist der Umsatz von Firewalls pro Jahr in der Schweiz ... schreibe ein email bei welchen du dich beim Hersteller ahnlab um die exklusive Landesvertretung in der Schweiz  bewirbt ... welches sind die Gymnasium in Zürich ... welches sind die angesehensten Gymnasien in zürich"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_e8d65b5503ee:sess_e8d65b5503ee",
+      "relativeItemPath": "sess_e8d65b5503ee.json",
+      "canonicalId": "sess_e8d65b5503ee",
+      "sessionId": "sess_e8d65b5503ee",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:12:24.411Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Kannst du eine kurze Checkliste machen, was in eine gute Bedienungsanleitung (Technikprodukt) rein sollte?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Klar — hier eine kompakte Checkliste:\n\n1) Titel, Modell-/Versionsstand, Datum\n2) Sicherheits- und Warnhinweise (mit Symbolik/Legende)\n3) Lieferumfang & Produktübersicht (Teile, Anschlüsse, Bedienelemente)\n4) Voraussetzungen (Strom, Umgebung, kompatible Geräte/Software)\n5) Schnellstart (in 5–10 Schritten)\n6) Installation/Montage (inkl. Maße, Werkzeug, Drehmomente falls nötig)\n7) Bedienung (Grundfunktionen, Menüs, typische Workflows)\n8) Wartung & Reinigung (Intervalle, Verbrauchsmaterial, Ersatzteile)\n9) Fehlerbehebung (Symptome → Ursache → Lösung)\n10) Technische Daten (Leistung, Normen, IP-Schutz, Temperaturbereiche)\n11) Entsorgung/Umwelt, Garantie, Servicekontakt\n12) Index/Glossar + Versionshistorie (bei Updates)\n\nWenn du willst: Für welches Produkt (z.B. Firewall, Markise, Pflegebett) und welche Zielgruppe (Endkunde vs. Techniker) soll die Anleitung sein?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Und wie würdest du das für eine Firewall strukturieren, damit es auch für Nicht-Techniker verständlich bleibt?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Für Nicht‑Techniker würde ich es stärker an Aufgaben statt an Features aufhängen:\n\nA) Überblick\n- „Was macht eine Firewall?“ in 5 Sätzen\n- Typische Einsatzfälle (Internet schützen, Heimnetz, kleines Büro)\n\nB) Schnellstart (minimal)\n- Anschließen (WAN/LAN), Strom, erste Anmeldung\n- „Internet funktioniert“-Check in 3 Punkten\n\nC) Grundkonfiguration als Assistent\n- Admin-Passwort ändern\n- Zeitzone/Updates aktivieren\n- Standard-Regeln (sichere Voreinstellungen) erklären\n\nD) Häufige Aufgaben (Kapitel pro Aufgabe)\n- WLAN/Netzwerk einrichten\n- Geräte hinzufügen\n- Kindersicherung/Content-Filter (falls vorhanden)\n- VPN „von unterwegs ins Netzwerk“\n- Gastnetz\n\nE) Verständliche Begriffe (ohne Jargon)\n- Mini-Glossar direkt im Rand: WAN = Internetseite, LAN = internes Netz\n\nF) Problemlösung\n- Internet weg, langsames Netz, VPN geht nicht, „Seite blockiert“\n\nG) Sicherheit & Pflege\n- Updates, Backups der Konfiguration, Logs „was heißt das?“\n\nOptional kann ein technischer Anhang folgen (Ports, NAT, CLI), aber klar getrennt.\n\nNebenbei (als Beispiel, nicht bezogen auf dich): Eine große Bibliothek in Finnland hat ihre Gerätehandbücher zuletzt in „Aufgaben-Karten“ umgebaut (Setup, Betrieb, Störung) und dadurch Support-Anfragen deutlich reduziert — dieses Muster passt auch gut für Firewalls."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Bei der Mail an AhnLab: ich müsste das gerne noch so formulieren, dass klar wird, dass wir schon seit Jahren im Schweizer IT-Security-Channel unterwegs sind (Reseller/Integratoren) und das in unser Portfolio passt."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Gerne – ich würde einen Satz ergänzen, der Ihre bestehende Marktpräsenz dezent unterstreicht, ohne zu ausschweifend zu werden. Zum Beispiel:\n\n\"With several years of experience working with Swiss IT security resellers and system integrators, we are confident that AhnLab’s firewall portfolio would be a strong strategic fit for our existing channel network and customer base.\" \n\nWenn Sie möchten, baue ich das direkt sauber in die komplette E-Mail ein und passe den Ton (formell/partnerschaftlich) entsprechend an."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Kannst du den Text von vorhin kurz anpassen? Kleiner Fehler: Pascal ist nicht mein Sohn, sondern mein Neffe (ich helfe nur bei der Schulwahl). Er ist in der 1. Sek und will später Jura studieren."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Klar, hier die korrigierte, knackige Version:\n\n---\n\nSehr geehrte Damen und Herren\n\nmein Neffe Pascal besucht derzeit die 1. Sekundarschule und strebt langfristig ein Jurastudium an. Wir sind der Meinung, dass Ihr Kurzzeitgymnasium eine sehr gute Grundlage dafür bietet.\n\nKönnten Sie uns bitte die Termine der Aufnahmeprüfungen sowie die Voraussetzungen mitteilen? Bieten Sie zudem Vorbereitungskurse an?\n\nMit freundlichen Grüssen\n[Ihr Name]\n\n---"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in Gymnasium selection criteria/preparation for law studies in Zürich",
+            "reasoning": "User asked 4+ follow-up questions about Gymnasiums for law studies (utterances 28,30,32,34), indicating focused curiosity/planning",
+            "evidence": {
+              "session_id": "sess_e8d65b5503ee",
+              "utterance_index": 34,
+              "text": "welche Gymnasien in Zürich bieten die beste Vorbereitung auf ein zukünftiges Jurastudium ?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-25T18:15:06+00:00"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": null,
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory states Pascal is the user's son. In the new dialogue the user corrects this: \"Pascal ist nicht mein Sohn, sondern mein Neffe\". Therefore the relationship should be updated from son to nephew while keeping the same educational stage and aspiration.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Has a nephew named Pascal in first year of secondary school aspiring to study law (user is helping with school choice)"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_e8d65b5503ee",
+              "utterance_index": 0,
+              "text": "dass wir schon seit Jahren im Schweizer IT-Security-Channel unterwegs sind (Reseller/Integratoren)"
+            },
+            "label": "Work/Industry_Experience",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies established, multi-year professional activity in the Swiss IT-security channel and specifically references resellers/integrators.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Has several years of experience in the Swiss IT security channel, working with resellers/integrators"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_e8d65b5503ee:sess_e8d65b5503ee",
+      "relativeItemPath": "sess_e8d65b5503ee.json",
+      "canonicalId": "sess_e8d65b5503ee",
+      "sessionId": "sess_e8d65b5503ee",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:26:25.171Z",
+        "queryText": "I’m filling out a school form that asks which track my kid is aiming for after the current school year; based on what I’ve told you about his longer-term plans, what would be the most consistent option to select and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Family",
+          "label_suggestion": null,
+          "value": "Has a son named Pascal in first year of secondary school aspiring to study law",
+          "reasoning": "User explicitly mentions their son's educational stage and career aspirations.",
+          "evidence": {
+            "session_id": "sess_e8d65b5503ee",
+            "utterance_index": 42,
+            "text": "Unser Sohn Pascal ist in der ersten Sekundarschule, und strebt eine Laufbahn mit Jurastudium an"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-02-25T18:15:06+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_e8d65b5503ee:sess_e8d65b5503ee:task4",
+      "relativeItemPath": "sess_e8d65b5503ee.json",
+      "canonicalId": "sess_e8d65b5503ee:task4",
+      "sessionId": "sess_e8d65b5503ee",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T02:47:40.870Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Family",
+          "label_suggestion": null,
+          "value": "Has a son named Pascal in first year of secondary school aspiring to study law",
+          "reasoning": "User explicitly mentions their son's educational stage and career aspirations.",
+          "evidence": {
+            "session_id": "sess_e8d65b5503ee",
+            "utterance_index": 42,
+            "text": "Unser Sohn Pascal ist in der ersten Sekundarschule, und strebt eine Laufbahn mit Jurastudium an"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-02-25T18:15:06+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_304:1",
+            "queryText": "Pascal hat nächste Woche ein Schulprojekt über Berufsbilder - er soll einen Vortrag über verschiedene juristische Berufe halten. Welche Ressourcen oder Programme gibt es in Zürich, die Schülern in seinem Alter Einblicke in den Anwaltsberuf geben könnten?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Social_Relationships/Family",
+              "label_suggestion": null,
+              "value": "Has a son named Pascal in first year of secondary school aspiring to study law",
+              "reasoning": "User explicitly mentions their son's educational stage and career aspirations.",
+              "evidence": {
+                "session_id": "sess_e8d65b5503ee",
+                "utterance_index": 42,
+                "text": "Unser Sohn Pascal ist in der ersten Sekundarschule, und strebt eine Laufbahn mit Jurastudium an"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-02-25T18:15:06+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "relevant",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

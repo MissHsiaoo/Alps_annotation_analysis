@@ -1,0 +1,380 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_5688ef8461a7",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_5688ef8461a7:sess_5688ef8461a7",
+      "relativeItemPath": "sess_5688ef8461a7.json",
+      "canonicalId": "sess_5688ef8461a7",
+      "sessionId": "sess_5688ef8461a7",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T14:21:12.044Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers playing NFS Most Wanted 2005 with story-related cars (M3 GTR, Mia's Mazda, Razor's Mustang etc.)",
+            "reasoning": "User explicitly defines their playthrough ruleset focused on narrative-aligned vehicles.",
+            "evidence": {
+              "session_id": "sess_5688ef8461a7",
+              "utterance_index": 0,
+              "text": "I am allowed to use other cars, but only those that appear in races related to the story, stuff like Mia's Mazda, Razor's Mustang, Ronnie's Supra etc."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-03-23T14:47:33+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Uses mods to enhance NFS gameplay: harder cops, access restricted cars, disabled autosave",
+            "reasoning": "User explicitly states installing mods to alter game mechanics.",
+            "evidence": {
+              "session_id": "sess_5688ef8461a7",
+              "utterance_index": 2,
+              "text": "I installed a mod to make the cops harder and the extra options mod which can help me get cars that aren't available in the shop...disabled autosave"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-03-23T14:47:33+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Self-imposed rule to sell M3 GTR after defeating Blacklist #3 or #2 to maintain narrative consistency",
+            "reasoning": "User creates explicit gameplay constraint for lore purposes.",
+            "evidence": {
+              "session_id": "sess_5688ef8461a7",
+              "utterance_index": 4,
+              "text": "When I finish the 3rd or 2nd Blacklist member, I have to sell the M3 GTR, to make sure that I don't create... some kind of paradox."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "neutral",
+            "updated_at": "2024-03-23T14:47:33+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Game_Narrative/Creation",
+            "value": "Sustained interest in creating narrative twists for NFS playthrough (M3 sabotage lore, Razor protagonist twist)",
+            "reasoning": "Multiple user turns develop complex alternate storylines, indicating deep creative engagement.",
+            "evidence": {
+              "session_id": "sess_5688ef8461a7",
+              "utterance_index": 8,
+              "text": "Or... plot twist, from Blacklist #15 to #2, we were actually playing as Razor all along!"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-23T14:47:33+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_5688ef8461a7:sess_5688ef8461a7",
+      "relativeItemPath": "sess_5688ef8461a7.json",
+      "canonicalId": "sess_5688ef8461a7",
+      "sessionId": "sess_5688ef8461a7",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T13:11:24.604Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "If we lean into the “we were Razor” twist, how would you explain the safehouse upgrades and the whole blacklist ladder without it feeling contradictory?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "One clean way is to treat the “Razor” angle as an unreliable-narrator reveal: the events happened, but the perspective (who ‘you’ are) is what shifts.\n\n- **Safehouses as burner spots**: They’re not “your” personal bases; they’re rotating stash locations the crew cycles through. So upgrades read as the crew securing better equipment and contacts, not a single protagonist magically acquiring property.\n- **Blacklist ladder as reputation accounting**: Think of it like a ranking system maintained by rumor + police attention + race organizers. If Razor is trying to control the story after the prologue, climbing from #15 is him rebuilding credibility (or forcing people to acknowledge him) rather than literally starting from nothing.\n- **Upgrades = parts pipeline**: Instead of “I bought nitrous,” it’s “the crew tapped a supply line.” Each milestone unlocks access to higher-tier parts because more shops and chop crews are willing to deal.\n\nIf you want it even tighter, you can frame the mid-game as Razor using a series of lookalike cars (same vinyl/visual identity) while the ‘real’ signature car is being kept hidden or is too hot to drive."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Okay, and what about the cops recognizing the car? The whole heat system is super gamey."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "You can translate “heat” into a simple in-world metric: how much effort and budget the task force is currently allowed to throw at street racing.\n\n- **Heat 1–2**: routine patrol interest, they’ll chase if it’s easy.\n- **Heat 3–4**: dedicated units start staging near known routes.\n- **Heat 5**: it’s personal/political—overtime approved, roadblocks authorized, air support requested.\n\nFor recognition: it’s less ‘they know your VIN’ and more ‘they know the pattern.’ Same driver habits, same hotspots, same signature look. If you ever want a lore excuse for “lowering heat,” it’s not a paint job; it’s laying low long enough that attention shifts to the next headline. (Fun trivia: in some cities, major task forces really do surge resources in short bursts, then scale back.)"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Random question: do you think there’s a good “sabotage” scene that doesn’t rely on cutscenes?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Yeah—do it as a gameplay-only ritual that signals the moment clearly:\n\n1) Right before the key blacklist race, intentionally install a “bad trade” setup (e.g., downgrade tires or suspension one tier).\n2) Run one short event where you noticeably struggle (even if you still win).\n3) Immediately after, sell or park the car and switch to the next story-appropriate ride.\n\nIt reads like: the car’s suddenly unpredictable, you limp it home, and you’re forced to abandon it. If you want a specific mechanical ‘symptom,’ make it handling-based (understeer/oversteer) rather than speed—players feel that instantly.\n\nUnrelated bit of trivia: in some real-world series, teams have been caught sabotaging rival cars by tampering with tire pressures or slipping contaminants onto braking surfaces—small changes that create huge instability."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "I’m thinking I’ll actually keep a little “case file” for this run—like, after every big pursuit or Blacklist takedown, I’ll jot a couple lines so the whole Razor-from-#15 thing stays consistent when I come back to it later."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "That fits your lore-driven approach really well. A quick log after key moments can help you keep the internal logic straight—especially when you’re bending the canon on purpose. If you keep it lightweight (date/Blacklist rank, car used, what “happened” in-universe), it’ll stay fun instead of feeling like homework."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Quick correction on that NFS MW run: I actually ditched the harder-cops mod. It was fun for like ten minutes, but it made every pursuit drag on. I kept Extra Options for grabbing the prologue M3, though."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—so no harder-cops mod this time, just Extra Options to access the prologue M3 and other non-shop cars. That means the police side is basically vanilla again; the challenge is coming more from your self-imposed rules than the AI."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Yeah, exactly. Also I re-enabled autosave; turning it off was just annoying, not harder."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Makes sense: you’re running Extra Options, vanilla cops, and autosave back on. Cleaner setup, less busywork, still keeps your story-car restrictions intact."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers playing NFS Most Wanted 2005 with story-related cars (M3 GTR, Mia's Mazda, Razor's Mustang etc.)",
+            "reasoning": "User explicitly defines their playthrough ruleset focused on narrative-aligned vehicles.",
+            "evidence": {
+              "session_id": "sess_5688ef8461a7",
+              "utterance_index": 0,
+              "text": "I am allowed to use other cars, but only those that appear in races related to the story, stuff like Mia's Mazda, Razor's Mustang, Ronnie's Supra etc."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-03-23T14:47:33+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Self-imposed rule to sell M3 GTR after defeating Blacklist #3 or #2 to maintain narrative consistency",
+            "reasoning": "User creates explicit gameplay constraint for lore purposes.",
+            "evidence": {
+              "session_id": "sess_5688ef8461a7",
+              "utterance_index": 4,
+              "text": "When I finish the 3rd or 2nd Blacklist member, I have to sell the M3 GTR, to make sure that I don't create... some kind of paradox."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "neutral",
+            "updated_at": "2024-03-23T14:47:33+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Game_Narrative/Creation",
+            "value": "Sustained interest in creating narrative twists for NFS playthrough (M3 sabotage lore, Razor protagonist twist)",
+            "reasoning": "Multiple user turns develop complex alternate storylines, indicating deep creative engagement.",
+            "evidence": {
+              "session_id": "sess_5688ef8461a7",
+              "utterance_index": 8,
+              "text": "Or... plot twist, from Blacklist #15 to #2, we were actually playing as Razor all along!"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-23T14:47:33+00:00"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "like",
+            "reasoning": "The old memory says the user uses a harder-cops mod and disabled autosave. The user now explicitly corrects this: they removed the harder-cops mod and turned autosave back on, while keeping Extra Options for accessing restricted cars like the prologue M3.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Uses Extra Options mod to access restricted cars like the prologue M3; does not use the harder-cops mod and has autosave enabled"
+          },
+          {
+            "confidence": 0.7,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_5688ef8461a7",
+              "utterance_index": 0,
+              "text": "I’m thinking I’ll actually keep a little “case file” for this run—like, after every big pursuit or Blacklist takedown, I’ll jot a couple lines"
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "The user implies they plan to maintain a written log (“case file”) to track events during the playthrough, indicating a preference for documenting their run.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Likes documenting their NFS MW playthrough with a brief written 'case file' after major pursuits/Blacklist wins"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_5688ef8461a7:sess_5688ef8461a7",
+      "relativeItemPath": "sess_5688ef8461a7.json",
+      "canonicalId": "sess_5688ef8461a7",
+      "sessionId": "sess_5688ef8461a7",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T09:45:46.562Z",
+        "queryText": "I’m about to start a new playthrough of that racing game I’ve been tinkering with, and I’m worried I might lose progress if my system crashes mid-session. Based on how I usually set the game up, what’s the specific reason this risk is higher for me than for most players?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Uses mods to enhance NFS gameplay: harder cops, access restricted cars, disabled autosave",
+          "reasoning": "User explicitly states installing mods to alter game mechanics.",
+          "evidence": {
+            "session_id": "sess_5688ef8461a7",
+            "utterance_index": 2,
+            "text": "I installed a mod to make the cops harder and the extra options mod which can help me get cars that aren't available in the shop...disabled autosave"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-03-23T14:47:33+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_5688ef8461a7:sess_5688ef8461a7:task4",
+      "relativeItemPath": "sess_5688ef8461a7.json",
+      "canonicalId": "sess_5688ef8461a7:task4",
+      "sessionId": "sess_5688ef8461a7",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:46:30.662Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Uses mods to enhance NFS gameplay: harder cops, access restricted cars, disabled autosave",
+          "reasoning": "User explicitly states installing mods to alter game mechanics.",
+          "evidence": {
+            "session_id": "sess_5688ef8461a7",
+            "utterance_index": 2,
+            "text": "I installed a mod to make the cops harder and the extra options mod which can help me get cars that aren't available in the shop...disabled autosave"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-03-23T14:47:33+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_186:1",
+            "queryText": "I'm thinking about trying out some new racing games from that era - maybe something like Midnight Club 3 or Juiced. Which one would actually give me the right kind of challenge and flexibility?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Uses mods to enhance NFS gameplay: harder cops, access restricted cars, disabled autosave",
+              "reasoning": "User explicitly states installing mods to alter game mechanics.",
+              "evidence": {
+                "session_id": "sess_5688ef8461a7",
+                "utterance_index": 2,
+                "text": "I installed a mod to make the cops harder and the extra options mod which can help me get cars that aren't available in the shop...disabled autosave"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2024-03-23T14:47:33+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

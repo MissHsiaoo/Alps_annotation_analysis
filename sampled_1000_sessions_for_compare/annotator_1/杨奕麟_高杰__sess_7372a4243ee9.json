@@ -1,0 +1,339 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_7372a4243ee9",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_7372a4243ee9:sess_7372a4243ee9",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7372a4243ee9.json",
+      "canonicalId": "sess_7372a4243ee9",
+      "sessionId": "sess_7372a4243ee9",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T10:44:17.106Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "value": "Prefers books with 'language that is not dull and plain, highly artistic and profound' by Chinese authors",
+            "reasoning": "User explicitly requests books with specific literary qualities in their opening query.",
+            "evidence": {
+              "session_id": "sess_7372a4243ee9",
+              "utterance_index": 0,
+              "text": "推荐十本“语言不沉闷而平淡，机具艺术性和深度”的中国作者编写的书籍"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-29T08:45:19+00:00"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "The user is curious about the similarities and plagiarism issues between the TV show 'Love Apartment' and 'Friends'.",
+            "confidence": 0.8,
+            "evidence_text": "《爱情公寓》抄袭了吗"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p2",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Negative",
+            "value": "The user has a negative opinion about the assistant's reliability due to perceived low-level errors.",
+            "confidence": 0.65,
+            "evidence_text": "你连这么低级的错误都会犯，那我怎么相信你之前的推荐"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_7372a4243ee9:sess_7372a4243ee9",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7372a4243ee9.json",
+      "canonicalId": "sess_7372a4243ee9",
+      "sessionId": "sess_7372a4243ee9",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:13:16.244Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "你刚才说会再核查回答。那如果我想快速验证一段影视信息真不真，有没有一个简单流程？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "有个很实用的“3步快速核查”流程：\n1）先把信息拆成可检验点：人物是否存在、演员对应是否准确、具体到第几季第几集。\n2）优先找一手或权威汇总来源交叉验证：官方剧集列表/片尾字幕截图、主流数据库（IMDb、维基百科条目及其引用）、发行方或电视台的节目单。\n3）看多个独立来源是否一致；如果只在论坛/短视频里出现、且细节互相矛盾，就先按“未证实”处理。\n\n补充一个小技巧：如果有人给出“精确到某季某集”的说法，最容易核查的是台词与片尾字幕（尤其是客串演员名单），准确率通常比二手总结高。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "那你自己在回答之前，怎么避免把不同作品的角色名弄混？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "我这边比较稳妥的做法是：\n- 不在不确定时“补全细节”：对角色名、演员名、季集号，只要没把握就明确说需要查证。\n- 用“最小断言”：先确认作品的主角/常驻角色清单，再谈某个桥段。\n- 触发自检信号：一旦出现陌生人名、或看起来像“拼接出来的剧情”，就应当停下来改用核查式回答（给出可验证的来源与检索关键词），而不是继续编排细节。\n\n举个与用户无关的例子：有些关于“1938年《世界大战》广播引发全国性恐慌”的说法，后来的研究认为规模被媒体夸大；这种就很适合用多来源交叉验证来拆解。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "如果你不确定，但我又想要一个直接结论，你会怎么说才算负责？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "负责的表述一般包括三部分：\n1）先给置信度：例如“我不确定/可能性较高/需要查证”。\n2）给可操作的核查路径：提供关键词、推荐查哪些权威页、要对照哪些字段（演员表、集名、首播日期等）。\n3）给临时结论但标注条件：例如“在未找到片尾字幕/官方集表前，先不把它当作确定事实”。\n\n再给一个无关的小例子：很多人以为“维京人头盔有角”是历史事实，但考古与史学界更倾向认为那是19世纪舞台与插画的流行形象；这类争议信息就适合用‘暂定结论+证据来源’来表达。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "行，那你给我一组通用的检索关键词模板，我下次直接套用。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "可以，按需求套模板就行：\n- 核对角色是否存在：\n  「作品名 角色名 cast」/「作品名 角色名 演员」/「作品名 角色名 出现集数」\n- 核对演员对应：\n  「作品名 角色名 portrayed by」/「作品名 episode credits 角色名」\n- 核对具体季集与桥段：\n  「作品名 SxxExx plot」/「作品名 第X季 第X集 剧情」/「作品名 集名 transcript」\n- 找官方/半官方列表：\n  「作品名 官方 集数列表」/「作品名 episode guide official」\n\n如果信息来自短视频或搬运帖，额外加：\n  「关键词 debunk」/「关键词 真假」/「关键词 来源」\n\n无关但有意思的小知识：NASA 1977 年发射的旅行者号带着“金唱片”（Voyager Golden Record），上面有多语言问候与音乐；相关资料用“Voyager Golden Record contents”就很容易检索到权威来源。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "你刚才那一串《爱情公寓》和《Friends》的“第几季第几集”对照我就当段子看了，我现在更倾向于只看有出处的整理：要么给我官方片尾字幕/演员表截图那种来源，要么就别写得那么肯定。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "明白。你希望信息能追溯到明确来源（如官方字幕、演员表或可核验的参考链接），而不是凭记忆或二手整理。我之后可以按“可核验来源优先”的方式来回答，并在不确定时明确标注。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "你还记得我一开始让你推荐书的标准吗？我不是要“平淡”的那种。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "你说得对，我得纠正一下：你当时的原话是要“语言不沉闷而平淡，极具艺术性和深度”的中国作者书籍——重点在“不沉闷”“有艺术性和深度”，不是追求那种寡淡的平铺直叙。"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "对，我要的是不沉闷，但也不需要刻意“平淡风”。"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "明白了：你的偏好是中文作品里语言有张力、不沉闷，同时兼具艺术性与思想深度；“平淡”在你这儿更像是“不过分堆砌、但耐读”，而不是越平越好。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/correction/fact_checking",
+            "value": "Sustained interest in verifying plagiarism details between《爱情公寓》and《Friends》 [ERROR: Unsupported by evidence]",
+            "reasoning": "Unsupported by evidence",
+            "evidence": {
+              "session_id": "sess_7372a4243ee9",
+              "utterance_index": 16,
+              "text": "我认为《爱情公寓》中没有叫吴淞的角色，你错了。"
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-29T08:45:19+00:00"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "Old memory implies the user prefers a 'dull and plain' style. In the dialogue, the user clarifies they do not want a deliberately plain style; they want language that is not dull, with artistic quality and depth.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers Chinese-authored books whose language is engaging (not dull), with strong artistic quality and depth; not specifically seeking an intentionally plain style."
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_7372a4243ee9",
+              "utterance_index": 0,
+              "text": "我现在更倾向于只看有出处的整理：要么给我官方片尾字幕/演员表截图那种来源，要么就别写得那么肯定。"
+            },
+            "label": "Preferences/Interaction",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "User indicates they treat uncertain episode-to-episode comparisons as jokes and requests only sourced/traceable information, implying a preference for verifiable citations and cautious certainty.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers answers that cite verifiable sources (e.g., official credits/subtitles) and dislikes overly certain claims without citations"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "The user is curious about the similarities and plagiarism issues between the TV show 'Love Apartment' and 'Friends'.",
+            "confidence": 0.8,
+            "evidence_text": "《爱情公寓》抄袭了吗",
+            "_task1GoldValue": "The user is curious about the similarities and plagiarism issues between the TV show 'Love Apartment' and 'Friends'."
+          },
+          {
+            "memory_id": "deepseek_reasoner_p2",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Negative",
+            "value": "The user has a negative opinion about the assistant's reliability due to perceived low-level errors.",
+            "confidence": 0.65,
+            "evidence_text": "你连这么低级的错误都会犯，那我怎么相信你之前的推荐",
+            "_task1GoldValue": "The user has a negative opinion about the assistant's reliability due to perceived low-level errors."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "deepseek_reasoner_p1",
+          "deepseek_reasoner_p2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_7372a4243ee9:sess_7372a4243ee9",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7372a4243ee9.json",
+      "canonicalId": "sess_7372a4243ee9",
+      "sessionId": "sess_7372a4243ee9",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T17:22:24.181Z",
+        "queryText": "I’m choosing between two Chinese novels as a gift: Mo Yan’s “Red Sorghum” and Yu Hua’s “To Live.” Based on what you remember about the kind of prose I tend to enjoy (as opposed to the more straightforward, no-frills style), which one should I pick for myself, and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Reading",
+          "label_suggestion": null,
+          "value": "Prefers books with 'language that is not dull and plain, highly artistic and profound' by Chinese authors",
+          "reasoning": "User explicitly requests books with specific literary qualities in their opening query.",
+          "evidence": {
+            "session_id": "sess_7372a4243ee9",
+            "utterance_index": 0,
+            "text": "推荐十本“语言不沉闷而平淡，机具艺术性和深度”的中国作者编写的书籍"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-05-29T08:45:19+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_7372a4243ee9:sess_7372a4243ee9:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7372a4243ee9.json",
+      "canonicalId": "sess_7372a4243ee9:task4",
+      "sessionId": "sess_7372a4243ee9",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T11:30:17.453Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Reading",
+          "label_suggestion": null,
+          "value": "Prefers books with 'language that is not dull and plain, highly artistic and profound' by Chinese authors",
+          "reasoning": "User explicitly requests books with specific literary qualities in their opening query.",
+          "evidence": {
+            "session_id": "sess_7372a4243ee9",
+            "utterance_index": 0,
+            "text": "推荐十本“语言不沉闷而平淡，机具艺术性和深度”的中国作者编写的书籍"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-05-29T08:45:19+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_812:1",
+            "queryText": "最近想找几本新的中文小说看看，你有什么推荐吗？",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Reading",
+              "label_suggestion": null,
+              "value": "Prefers books with 'language that is not dull and plain, highly artistic and profound' by Chinese authors",
+              "reasoning": "User explicitly requests books with specific literary qualities in their opening query.",
+              "evidence": {
+                "session_id": "sess_7372a4243ee9",
+                "utterance_index": 0,
+                "text": "推荐十本“语言不沉闷而平淡，机具艺术性和深度”的中国作者编写的书籍"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-05-29T08:45:19+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

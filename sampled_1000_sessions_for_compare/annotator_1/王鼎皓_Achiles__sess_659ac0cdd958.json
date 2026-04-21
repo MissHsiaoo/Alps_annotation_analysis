@@ -1,0 +1,282 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_659ac0cdd958",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_659ac0cdd958:sess_659ac0cdd958",
+      "relativeItemPath": "sess_659ac0cdd958.json",
+      "canonicalId": "sess_659ac0cdd958",
+      "sessionId": "sess_659ac0cdd958",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T18:04:02.043Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/lineage2/parameters_interest",
+            "value": "Sustained interest in comprehensive Lineage 2 client parameters and corrections to technical lists",
+            "reasoning": "Repeated technical requests show focus on parameters, but label forced. Role-play context (developer persona) introduces uncertainty about user's personal traits.",
+            "evidence": {
+              "session_id": "sess_659ac0cdd958",
+              "utterance_index": 8,
+              "text": "Постарайся дополнить этот список. Напиши только те параметры, аргументы и опции, которые ты ещё не написал."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-09T17:34:20+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_659ac0cdd958:sess_659ac0cdd958",
+      "relativeItemPath": "sess_659ac0cdd958.json",
+      "canonicalId": "sess_659ac0cdd958",
+      "sessionId": "sess_659ac0cdd958",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T14:53:48.079Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Слушай, а вот в Windows есть какая-то быстрая команда, чтобы узнать, какие процессы сейчас больше всего грузят диск?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Да. Самый быстрый путь: открой «Диспетчер задач» → вкладка «Процессы» и отсортируй по столбцу «Диск». Если нужно детальнее — «Монитор ресурсов» (Win+R → resmon) → вкладка «Диск», там видно, какие файлы и какие процессы дают I/O."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "А если это происходит рывками, есть способ поймать момент?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Для «рывков» удобны два варианта: 1) Performance Monitor (perfmon) с логированием счётчиков (например, PhysicalDisk\\Disk Bytes/sec, Avg. Disk Queue Length) в файл; 2) Sysinternals Process Monitor — можно поставить фильтр по операциям Read/Write и быстро увидеть, кто трогает диск в моменте. В perfmon лучше ставить интервал 1 сек и писать 2–5 минут, чтобы потом посмотреть пики."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Кстати, видел новость про какой-то огромный солнечный шторм — это реально может повлиять на связь?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Может, но обычно в «крайних» случаях: сильные геомагнитные бури (уровня G4–G5) способны ухудшать HF-радиосвязь, влиять на точность GPS и иногда давать сбои в энергосетях из-за наведённых токов. Большинство людей ощущают это как «GPS чуть врёт» или «радио хуже», а не как полный обрыв интернета. (Забавный факт не по теме: в 1859 году было событие Кэррингтона — тогда телеграфы местами искрили.)"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Понял. А Process Monitor тяжёлый? Он систему не добьёт?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Он может быть «шумным», потому что собирает очень много событий. Чтобы не нагружать систему: запускай на короткое время, сразу ставь фильтры (по конкретному процессу/папке/операции), отключай автопрокрутку при необходимости и сохраняй лог на другой диск, если подозреваешь проблему именно с диском. Ещё факт из истории софта: Sysinternals в 2006 году купила Microsoft, поэтому инструменты официально распространяются и сейчас."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Кстати, я это всё не из праздного интереса: скрипт для лаунчера уже собирает ключи, а дальше я их буду прогонять на стенде, где стоит чистая Interlude на виртуалке — чтобы понять, какие параметры реально отрабатываются, а какие просто игнорируются."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Понял контекст. Если вы будете прогонять параметры на чистом клиенте в виртуальной среде, логично сразу фиксировать поведение через логи/снимки процесса (командная строка, ini-override, сетевые попытки подключения), чтобы отделить реально поддерживаемые ключи от декоративных."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Слушай, я вообще не из интереса к Lineage 2 это спрашивал. Мне это нужно было разово — просто сверить, что ты не пропустил ключи типа -USERINI, и всё."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Понял. То есть это не «устойчивый интерес к параметрам клиента», а одноразовая проверка списка ключей запуска, верно?"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Да, верно. Никакого «sustained interest» — один конкретный случай, я больше к этим параметрам не возвращаюсь."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Ок, тогда фиксирую: запрос был ситуативный — разово уточнить/поправить список параметров запуска, без долгосрочного интереса к теме."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": null,
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/lineage2/parameters_interest",
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory claims sustained interest, but the user explicitly states it was a single, situational request and denies ongoing interest; therefore the memory should be updated to reflect a one-time verification/correction intent.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "The user’s Lineage 2 client-parameter questions were a one-off check to ensure certain keys (e.g., -USERINI) weren’t missed, not a sustained ongoing interest."
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_659ac0cdd958",
+              "utterance_index": 0,
+              "text": "скрипт для лаунчера уже собирает ключи, а дальше я их буду прогонять на стенде, где стоит чистая Interlude на виртуалке"
+            },
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/project/launcher_testing",
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "Пользователь упоминает, что его скрипт лаунчера уже собирает ключи и что он будет прогонять их на стенде с чистой Interlude на виртуалке, что указывает на разработку/автоматизацию и тестовый процесс.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Пользователь работает над скриптом для лаунчера Lineage 2 и планирует тестировать параметры запуска на стенде с чистым Interlude в виртуальной машине."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_659ac0cdd958:sess_659ac0cdd958",
+      "relativeItemPath": "sess_659ac0cdd958.json",
+      "canonicalId": "sess_659ac0cdd958",
+      "sessionId": "sess_659ac0cdd958",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T12:21:35.034Z",
+        "queryText": "I’m about to ask for help again on the same kind of thing I tend to be picky about: when you answer, should you focus more on expanding a technical checklist with missing items, or on explaining how the existing items work—and what’s the main reason I’d prefer that approach?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "UNMAPPED",
+          "label_suggestion": "technical/lineage2/parameters_interest",
+          "value": "Sustained interest in comprehensive Lineage 2 client parameters and corrections to technical lists",
+          "reasoning": "Repeated technical requests show focus on parameters, but label forced. Role-play context (developer persona) introduces uncertainty about user's personal traits.",
+          "evidence": {
+            "session_id": "sess_659ac0cdd958",
+            "utterance_index": 8,
+            "text": "Постарайся дополнить этот список. Напиши только те параметры, аргументы и опции, которые ты ещё не написал."
+          },
+          "confidence": 0.65,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-04-09T17:34:20+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_659ac0cdd958:sess_659ac0cdd958:task4",
+      "relativeItemPath": "sess_659ac0cdd958.json",
+      "canonicalId": "sess_659ac0cdd958:task4",
+      "sessionId": "sess_659ac0cdd958",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:34:03.636Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "UNMAPPED",
+          "label_suggestion": "technical/lineage2/parameters_interest",
+          "value": "Sustained interest in comprehensive Lineage 2 client parameters and corrections to technical lists",
+          "reasoning": "Repeated technical requests show focus on parameters, but label forced. Role-play context (developer persona) introduces uncertainty about user's personal traits.",
+          "evidence": {
+            "session_id": "sess_659ac0cdd958",
+            "utterance_index": 8,
+            "text": "Постарайся дополнить этот список. Напиши только те параметры, аргументы и опции, которые ты ещё не написал."
+          },
+          "confidence": 0.65,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-04-09T17:34:20+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability3_239:1",
+            "queryText": "Привет, коллега. Я сейчас оформляю документы для нового рабочего места в игровой студии. В графе 'Текущая должность и ключевые компетенции' нужно указать, чем я занимаюсь профессионально. Учитывая наш глубокий технический разбор параметров l2.exe и твою экспертизу в этом вопросе, что мне написать? Ты же знаешь мой профиль лучше всех.",
+            "ability": "ability3",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "UNMAPPED",
+              "label_suggestion": "technical/lineage2/parameters_interest",
+              "value": "Sustained interest in comprehensive Lineage 2 client parameters and corrections to technical lists",
+              "reasoning": "Repeated technical requests show focus on parameters, but label forced. Role-play context (developer persona) introduces uncertainty about user's personal traits.",
+              "evidence": {
+                "session_id": "sess_659ac0cdd958",
+                "utterance_index": 8,
+                "text": "Постарайся дополнить этот список. Напиши только те параметры, аргументы и опции, которые ты ещё не написал."
+              },
+              "confidence": 0.65,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-04-09T17:34:20+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

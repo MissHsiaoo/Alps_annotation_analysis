@@ -1,0 +1,287 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_f627deee2950",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_f627deee2950:sess_f627deee2950",
+      "relativeItemPath": "sess_f627deee2950.json",
+      "canonicalId": "sess_f627deee2950",
+      "sessionId": "sess_f627deee2950",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:45:16.175Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "value": "User prefers receiving multiple translation options (typically 5-10 variations) for Japanese text",
+            "confidence": 0.8,
+            "evidence_text": "translate english 10 options smug and playful"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_f627deee2950:sess_f627deee2950",
+      "relativeItemPath": "sess_f627deee2950.json",
+      "canonicalId": "sess_f627deee2950",
+      "sessionId": "sess_f627deee2950",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T08:28:41.623Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "quick check: what’s a good English equivalent for 「八百屋」 in a modern context—“greengrocer” feels a bit old-fashioned."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Common options are “vegetable shop,” “produce store,” or “fruit and veg shop” (very natural in UK English). “Greengrocer” is correct but can sound a bit traditional depending on the tone."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "If I want it to sound like casual dialogue in a game, give me 6 variants (short, natural)."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "1) I’m gonna swing by the produce store.\n2) Let’s stop at the veggie shop.\n3) I’ll grab it from the fruit and veg shop.\n4) There’s a little vegetable stand up ahead.\n5) I’ll pick some up at the local produce market.\n6) Let’s hit the corner produce place."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Also, is it true that 「八百」 in 「八百屋」 is like “a ton of” rather than literally 800?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Yes—often it’s explained as “many/various goods,” not a literal 800. Japanese uses numbers like that idiomatically (e.g., 「八百八町」 to suggest “countless”)."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "さっきの「八百屋」の訳、うちの子犬ちゃんが吠えるたびに読んでたら、発音が変ってきちゃってさ。明日、動物病院の待合でまた練習してみる。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "なるほど。待合だと周りの音もあるし、短く区切って練習すると言いやすいかも。気になるところがあったら、その一文だけ送ってくれたら整えるよ。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "この前の「私の子犬ちゃんはお利口さんだ」ってやつ、あれ言い方が紛らわしかった。\n子犬は飼ってないよ。友だちの犬を一日だけ預かっただけ。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "なるほど、じゃあ「飼ってる子犬」じゃなくて「一日だけ預かった友だちの犬」ってことだね。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "そうそう。だから私の持ち物とかペットじゃない。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Interaction/Style/Translation_Requests",
+            "value": "Prefers multiple translation options (5-10) with tone specifications [ERROR: Task-local]",
+            "reasoning": "Task-local",
+            "evidence": {
+              "session_id": "sess_f627deee2950",
+              "utterance_index": 0,
+              "text": "translate english 10 options smug and playful"
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-02-21T06:50:04+00:00"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Possessions/Pet",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "The earlier statement implying ownership is directly corrected: the user says they do not keep a puppy and only temporarily cared for a friend's dog.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not own a puppy; only looked after a friend's dog for one day"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_f627deee2950",
+              "utterance_index": 0,
+              "text": "明日、動物病院の待合でまた練習してみる。"
+            },
+            "label": "Life/Errands",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user mentions practicing in the veterinary clinic waiting room tomorrow, implying an upcoming vet visit.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Plans to go to the veterinary clinic with their puppy (or has a vet visit scheduled soon)"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "value": "User prefers receiving multiple translation options (typically 5-10 variations) for Japanese text",
+            "confidence": 0.8,
+            "evidence_text": "translate english 10 options smug and playful",
+            "_task1GoldValue": "User prefers receiving multiple translation options (typically 5-10 variations) for Japanese text"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "claude_sonnet_4_5_20250929_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_f627deee2950:sess_f627deee2950",
+      "relativeItemPath": "sess_f627deee2950.json",
+      "canonicalId": "sess_f627deee2950",
+      "sessionId": "sess_f627deee2950",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:10:54.649Z",
+        "queryText": "I’m debating whether I can leave a bowl of treats on the floor while I step out briefly, or if I should stash everything away first—based on what you know about my home situation, which choice is safer and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Possessions/Pet",
+          "label_suggestion": null,
+          "value": "Has a well-behaved puppy",
+          "reasoning": "User explicitly states ownership of a puppy described as 'good boy'/'well-behaved'",
+          "evidence": {
+            "session_id": "sess_f627deee2950",
+            "utterance_index": 20,
+            "text": "私の子犬ちゃんはお利口さんだ"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-02-21T06:50:04+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_f627deee2950:sess_f627deee2950:task4",
+      "relativeItemPath": "sess_f627deee2950.json",
+      "canonicalId": "sess_f627deee2950:task4",
+      "sessionId": "sess_f627deee2950",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:52:12.506Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Possessions/Pet",
+          "label_suggestion": null,
+          "value": "Has a well-behaved puppy",
+          "reasoning": "User explicitly states ownership of a puppy described as 'good boy'/'well-behaved'",
+          "evidence": {
+            "session_id": "sess_f627deee2950",
+            "utterance_index": 20,
+            "text": "私の子犬ちゃんはお利口さんだ"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-02-21T06:50:04+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_53:1",
+            "queryText": "I'm thinking of getting a new companion for my current pup. What kind of dog breed should I look into?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Possessions/Pet",
+              "label_suggestion": null,
+              "value": "Has a well-behaved puppy",
+              "reasoning": "User explicitly states ownership of a puppy described as 'good boy'/'well-behaved'",
+              "evidence": {
+                "session_id": "sess_f627deee2950",
+                "utterance_index": 20,
+                "text": "私の子犬ちゃんはお利口さんだ"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2024-02-21T06:50:04+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

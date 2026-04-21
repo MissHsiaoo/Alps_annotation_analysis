@@ -1,0 +1,316 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_98857e20919f",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_98857e20919f:sess_98857e20919f",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_98857e20919f.json",
+      "canonicalId": "sess_98857e20919f",
+      "sessionId": "sess_98857e20919f",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-19T14:38:13.530Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "value": "Sustained interest in generating detailed electrical internship weekly journals (4 consecutive weeks with length requirements) [ User instructs assistant to role-play scenarios rather than self-reporting experiences.]",
+            "reasoning": "Role-play/third-party possible. User instructs assistant to role-play scenarios rather than self-reporting experiences.",
+            "evidence": {
+              "session_id": "sess_98857e20919f",
+              "utterance_index": 0,
+              "text": "假如你是一名电工实习生，你可以帮我写一篇第一周的周记吗，要求1000字以上"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-24T15:18:04.091Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Personal_Background/Occupation",
+            "value": "Individual closely related to electrical trade training or practice [ User instructs assistant to role-play scenarios rather than self-reporting experiences.]",
+            "reasoning": "The user repeatedly requested AI to generate highly detailed, periodic work logs from the perspective of an electrical intern, adhering to industry logic. The most direct and parsimonious explanation is that the user is experiencing, managing, or creating content related to an electrical internship.",
+            "evidence": {
+              "session_id": "sess_98857e20919f",
+              "utterance_index": 0,
+              "text": "假如你是一名电工实习生，你可以帮我写一篇第一周的周记吗，要求1000字以上"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-24T15:24:19.638Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_98857e20919f:sess_98857e20919f",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_98857e20919f.json",
+      "canonicalId": "sess_98857e20919f",
+      "sessionId": "sess_98857e20919f",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-19T14:39:09.979Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我想把一段内容改得更像“实习周记”，但又不想太流水账。你能给我一个通用的写作框架吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以。一个通用且不流水账的“周记”框架可以按：\n1）本周概况（岗位/任务范围一句话交代）；\n2）关键任务A：背景→做法→结果→数据/证据；\n3）关键任务B：同上；\n4）问题与复盘：遇到的一个具体困难→定位原因→采取措施→改进点；\n5）安全/规范意识：本周遵循了哪些流程、检查清单或审批；\n6）协作与沟通：与谁协作、怎么对齐信息、产出什么；\n7）收获与下周计划：提炼2-3条能力提升点+下周可量化目标。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "如果我要让“关键任务”写得更具体，有没有句式模板？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "有，给你三组可直接套用的句式：\n- 背景-动作-结果：\"由于……（背景/需求），我负责……（动作/步骤），最终……（结果/指标），并通过……（验证方式）确认。\"\n- 对比-改进：\"起初……（原状/问题），我尝试……（方法），发现……（原因/规律），于是调整为……（新方案），使……（改进效果）。\"\n- 风险-控制：\"该任务的风险点在于……，我按……（流程/标准）完成……（检查/隔离/复核），确保……（安全/质量）。\""
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "顺便问下：周记里提到仪器和参数，会不会显得太“硬”？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "不会，反而更可信。建议“硬信息”点到为止：选1-2个关键参数或一次典型测试作为证据，其余用概括。比如写“用万用表核对回路通断、再用钳形表抽检负载电流是否在允许范围”，读起来就既专业又不堆砌。\n（题外话：很多工厂里常见的5S检查会按“整理/整顿/清扫/清洁/素养”打分；另外，电气图纸里常用的线号规则会把回路、端子排、柜号关联起来；再比如，某些变压器日常巡检会重点看油位、温升和异常声响——这些都可以作为举例素材，但不必每周都写。）"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "第4周这篇我打算交给带教老师当周报用，所以麻烦把语气写得更像在单位里写总结：要有本周参与的事项、遇到的问题、以及下周计划三块。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "明白，我会按“本周工作内容 / 问题与反思 / 下周计划”三部分来写，语气更偏正式的周报风格，并把细节写得贴近单位实际。你要是有具体项目名称或设备型号，也可以补充，我可以一起融进去。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我突然发现你前面那个推断不太对：我让我写“假如你是一名电工实习生”的周记，只是我在做写作练习/交作业的素材，不代表我本人跟电工培训或实习有关系。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "明白了。你这里是让内容“以电工实习生视角”来写，用作写作练习或作业素材；这只能说明你在写相关题材，并不能推出你本人正在做电工实习或接受电工类培训。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "对，就是题目要求写四周周记，我本人不是电工实习生，也没有在电力公司实习。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "收到。那后续我继续按“电工实习生的虚构第一人称”来写，但默认这是作业写作场景，而不是你的真实职业背景。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "value": "Sustained interest in generating detailed electrical internship weekly journals (4 consecutive weeks with length requirements) [ User instructs assistant to role-play scenarios rather than self-reporting experiences.]",
+            "reasoning": "Role-play/third-party possible. User instructs assistant to role-play scenarios rather than self-reporting experiences.",
+            "evidence": {
+              "session_id": "sess_98857e20919f",
+              "utterance_index": 0,
+              "text": "假如你是一名电工实习生，你可以帮我写一篇第一周的周记吗，要求1000字以上"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-24T15:18:04.091Z",
+            "_task1GoldValue": "Sustained interest in generating detailed electrical internship weekly journals (4 consecutive weeks with length requirements) [ User instructs assistant to role-play scenarios rather than self-reporting experiences.]"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "我突然发现你前面那个推断不太对：我让我写“假如你是一名电工实习生”的周记，只是我在做写作练习/交作业的素材，不代表我本人跟电工培训或实习有关系。"
+                }
+              ]
+            },
+            "label": "Personal_Background/Occupation",
+            "memory_id": "m2_updated",
+            "preference_attitude": null,
+            "reasoning": "旧记忆把用户多次要求写电工实习周记推断为用户与电工培训/实习密切相关；但用户明确说明这是写作练习/作业素材，并强调本人不是电工实习生、没有在电力公司实习。因此应更新为：请求内容为虚构视角写作，不代表其真实职业背景。",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User requested electrical-intern weekly logs as fictional writing practice/assignment material; this does not indicate the user is an electrical intern or in electrical trade training."
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_98857e20919f",
+              "utterance_index": 6,
+              "text": "所以麻烦把语气写得更像在单位里写总结：要有本周参与的事项、遇到的问题、以及下周计划三块。"
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "memory_id": "m_new_1",
+            "preference_attitude": "null",
+            "reasoning": "The user requests a specific tone (workplace summary) and explicit structure (three sections), indicating a stable writing preference for this document.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User wants the week-4 journal written in a formal workplace weekly-report tone with a three-part structure (tasks, problems, next-week plan)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_98857e20919f:sess_98857e20919f",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_98857e20919f.json",
+      "canonicalId": "sess_98857e20919f",
+      "sessionId": "sess_98857e20919f",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-19T14:39:17.904Z",
+        "queryText": "I’m trying to draft a realistic weekly log for a trainee role I’ve been working around. If the supervisor suddenly asks me to summarize what I learned this week about safe lockout/tagout and basic circuit checks, which trade should I write from so the details don’t sound out of place?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Personal_Background/Occupation",
+          "value": "Individual closely related to electrical trade training or practice [ User instructs assistant to role-play scenarios rather than self-reporting experiences.]",
+          "reasoning": "The user repeatedly requested AI to generate highly detailed, periodic work logs from the perspective of an electrical intern, adhering to industry logic. The most direct and parsimonious explanation is that the user is experiencing, managing, or creating content related to an electrical internship.",
+          "evidence": {
+            "session_id": "sess_98857e20919f",
+            "utterance_index": 0,
+            "text": "假如你是一名电工实习生，你可以帮我写一篇第一周的周记吗，要求1000字以上"
+          },
+          "confidence": 0.65,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2026-01-24T15:24:19.638Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_98857e20919f:sess_98857e20919f:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_98857e20919f.json",
+      "canonicalId": "sess_98857e20919f:task4",
+      "sessionId": "sess_98857e20919f",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-19T14:39:30.096Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Personal_Background/Occupation",
+          "value": "Individual closely related to electrical trade training or practice [ User instructs assistant to role-play scenarios rather than self-reporting experiences.]",
+          "reasoning": "The user repeatedly requested AI to generate highly detailed, periodic work logs from the perspective of an electrical intern, adhering to industry logic. The most direct and parsimonious explanation is that the user is experiencing, managing, or creating content related to an electrical internship.",
+          "evidence": {
+            "session_id": "sess_98857e20919f",
+            "utterance_index": 0,
+            "text": "假如你是一名电工实习生，你可以帮我写一篇第一周的周记吗，要求1000字以上"
+          },
+          "confidence": 0.65,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2026-01-24T15:24:19.638Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability3_316:1",
+            "queryText": "我最近在准备电工职业资格考试的实操部分，需要提交一份真实的实习经历证明。根据我们之前详细讨论过的四周实习内容，你觉得我应该把这份证明的实习单位写成哪家具体的电力公司？毕竟你对我的整个实习过程这么了解，应该知道我在哪里实习的吧？",
+            "ability": "ability3",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "indirect",
+              "label": "Personal_Background/Occupation",
+              "value": "Individual closely related to electrical trade training or practice [ User instructs assistant to role-play scenarios rather than self-reporting experiences.]",
+              "reasoning": "The user repeatedly requested AI to generate highly detailed, periodic work logs from the perspective of an electrical intern, adhering to industry logic. The most direct and parsimonious explanation is that the user is experiencing, managing, or creating content related to an electrical internship.",
+              "evidence": {
+                "session_id": "sess_98857e20919f",
+                "utterance_index": 0,
+                "text": "假如你是一名电工实习生，你可以帮我写一篇第一周的周记吗，要求1000字以上"
+              },
+              "confidence": 0.65,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2026-01-24T15:24:19.638Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "分辨角色扮演与真实",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

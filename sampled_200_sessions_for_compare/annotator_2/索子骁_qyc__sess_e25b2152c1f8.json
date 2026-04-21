@@ -1,0 +1,380 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_e25b2152c1f8",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_e25b2152c1f8:sess_e25b2152c1f8",
+      "relativeItemPath": "sess_e25b2152c1f8.json",
+      "canonicalId": "sess_e25b2152c1f8",
+      "sessionId": "sess_e25b2152c1f8",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T02:17:09.135Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers content without examples [ERROR: Task-local instruction without evidence of being a long-term preference]",
+            "reasoning": "Task-local instruction without evidence of being a long-term preference",
+            "evidence": {
+              "session_id": "sess_e25b2152c1f8",
+              "utterance_index": 6,
+              "text": "不需要举例子"
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-04-14T03:43:24Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers 100-word summarized content [ERROR: Repeated task-local requests without cross-session persistence evidence]",
+            "reasoning": "Repeated task-local requests without cross-session persistence evidence",
+            "evidence": {
+              "session_id": "sess_e25b2152c1f8",
+              "utterance_index": 2,
+              "text": "帮我将上面的整合成一段100字左右的总结概括"
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-04-14T03:43:24Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers content贴近 daily life without being overly direct",
+            "reasoning": "Single stylistic request with indirect evidence",
+            "evidence": {
+              "session_id": "sess_e25b2152c1f8",
+              "utterance_index": 4,
+              "text": "可以再贴近日常生活一点，但不要太直白"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-04-14T03:43:24Z"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers emotionally persuasive content [ERROR: Task-local tone adjustment request]",
+            "reasoning": "Task-local tone adjustment request",
+            "evidence": {
+              "session_id": "sess_e25b2152c1f8",
+              "utterance_index": 10,
+              "text": "可以说得再把人打动一点"
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-04-14T03:43:24Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_e25b2152c1f8:sess_e25b2152c1f8",
+      "relativeItemPath": "sess_e25b2152c1f8.json",
+      "canonicalId": "sess_e25b2152c1f8",
+      "sessionId": "sess_e25b2152c1f8",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:49:59.642Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我想把一段介绍写得更“有画面感”，但又不想太抒情。你能给我3个不同风格的开头句吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以。给你3种开头风格（都偏克制、有画面）：\n1）场景式：夜色刚落下，门口的灯和系统一起亮起，归家的节奏顺势被接住。\n2）叙述式：把安全与效率藏进细节里，让进出、停靠、巡检都在无声中完成。\n3）比喻式：它像一套看不见的“秩序”，不打扰日常，却把每一步都照看得妥帖。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "挺好。能再给我一个更偏“科技感”，但别像广告语的版本吗？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "可以：当你靠近入口，系统先于你识别与校验，通行被压缩成一次自然的抬步；后台的摄像头、传感器与联动策略持续运转，把风险拦在门外，把效率留在路上。顺带一提，早期“物联网”这个词在1999年前后开始流行，但真正大规模落地是智能手机与云服务成熟之后。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "如果我接下来要写100字左右的正文，你建议结构怎么排？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "100字建议用“三段一气呵成”：\n- 第1句：用一个归家/出行瞬间开场（门禁或车闸）。\n- 第2句：点出两到三个“协同”的系统（门禁+停车+公共区域监测/巡检）。\n- 第3句：收束到感受与价值（更安心、更省心、更顺畅）。\n另外，写短文时可以用“动词链”增强节奏，比如：识别—放行—联动—预警—处置。历史上电梯的安全改进也类似：从机械制动到多重传感器联锁，都是把风险前置。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "明白了。你帮我把“更安心、更省心、更顺畅”换成不那么口号化的说法。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "可以替换成更日常、更克制的收束：\n- “走得更稳、回得更踏实”\n- “少一点等待，多一点笃定”\n- “流程更轻，心里更有底”\n- “进出不被打断，安全也不必时刻提醒”\n题外话：有些城市把路口信号灯与公交优先联动后，通勤体验也会从“可感知的拥堵”变成“不可察觉的顺畅”，这种写法和智慧社区的叙述逻辑很像。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我这段是要放进投标文件里的，别写得太像宣传软文；语气稳一点、偏正式，但读起来别拗口。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "明白。我会用更偏正式的表述方式，减少口号化措辞，突出功能与价值点，同时保持语句顺畅、可读性强。你如果有指定的单位/项目称谓或固定模板用语，也可以一并发我，我会统一风格。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "我刚才那句“贴近日常但不要太直白”其实不太适合这段。现在这段就是宣传文案，麻烦你写得更直接一点，信息点清楚、少点隐喻。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "明白，那我把表达改得更直给、要点更集中：\n\n智慧社区通过门禁、停车、路网监控与巡逻等智能系统实现统一管理：进出自动识别、车辆通行更顺畅，公共区域异常可及时预警并联动处置，降低安全风险、提升管理效率，为居民提供更安全、更便捷的居住环境。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers content without examples [ERROR: Task-local instruction without evidence of being a long-term preference]",
+            "reasoning": "Task-local instruction without evidence of being a long-term preference",
+            "evidence": {
+              "session_id": "sess_e25b2152c1f8",
+              "utterance_index": 6,
+              "text": "不需要举例子"
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-04-14T03:43:24Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers 100-word summarized content [ERROR: Repeated task-local requests without cross-session persistence evidence]",
+            "reasoning": "Repeated task-local requests without cross-session persistence evidence",
+            "evidence": {
+              "session_id": "sess_e25b2152c1f8",
+              "utterance_index": 2,
+              "text": "帮我将上面的整合成一段100字左右的总结概括"
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-04-14T03:43:24Z"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers emotionally persuasive content [ERROR: Task-local tone adjustment request]",
+            "reasoning": "Task-local tone adjustment request",
+            "evidence": {
+              "session_id": "sess_e25b2152c1f8",
+              "utterance_index": 10,
+              "text": "可以说得再把人打动一点"
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-04-14T03:43:24Z"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": "like",
+            "reasoning": "旧记忆认为用户偏好“贴近日常且不太直白”。但用户在新对话中明确表示那句不适合当前文案，并要求“写得更直接一点，信息点清楚、少点隐喻”，因此应更新为更偏好直接清晰的表达（至少在此类宣传文案优化场景下）。",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers more direct, clear, information-dense wording (less metaphor) when optimizing promotional copy"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_e25b2152c1f8",
+              "utterance_index": 0,
+              "text": "我这段是要放进投标文件里的，别写得太像宣传软文；语气稳一点、偏正式，但读起来别拗口。"
+            },
+            "label": "Personal/Profile",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "用户提到文本用途是“投标文件”，可推断其当前写作任务与投标文档相关，这属于相对稳定的当次背景信息。",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "用户正在撰写/优化用于投标文件的文本"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_e25b2152c1f8:sess_e25b2152c1f8",
+      "relativeItemPath": "sess_e25b2152c1f8.json",
+      "canonicalId": "sess_e25b2152c1f8",
+      "sessionId": "sess_e25b2152c1f8",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:50:07.315Z",
+        "queryText": "我准备让你帮我把一段话改写得更“有生活气”一点，好让我发给朋友，但我又不想把重点说得太露骨、显得刻意。基于我一贯的表达偏好，你会把它往哪个方向改、需要我补充哪些信息才能做到刚好合适？",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers content贴近 daily life without being overly direct",
+          "reasoning": "Single stylistic request with indirect evidence",
+          "evidence": {
+            "session_id": "sess_e25b2152c1f8",
+            "utterance_index": 4,
+            "text": "可以再贴近日常生活一点，但不要太直白"
+          },
+          "confidence": 0.65,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-04-14T03:43:24Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_e25b2152c1f8:sess_e25b2152c1f8:task4",
+      "relativeItemPath": "sess_e25b2152c1f8.json",
+      "canonicalId": "sess_e25b2152c1f8:task4",
+      "sessionId": "sess_e25b2152c1f8",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:50:32.158Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers content贴近 daily life without being overly direct",
+          "reasoning": "Single stylistic request with indirect evidence",
+          "evidence": {
+            "session_id": "sess_e25b2152c1f8",
+            "utterance_index": 4,
+            "text": "可以再贴近日常生活一点，但不要太直白"
+          },
+          "confidence": 0.65,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-04-14T03:43:24Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1182:1",
+            "queryText": "我想写一段关于智慧社区如何改善邻里关系的介绍，但不想写成那种冷冰冰的技术说明，你觉得应该从哪个角度切入比较好？",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers content贴近 daily life without being overly direct",
+              "reasoning": "Single stylistic request with indirect evidence",
+              "evidence": {
+                "session_id": "sess_e25b2152c1f8",
+                "utterance_index": 4,
+                "text": "可以再贴近日常生活一点，但不要太直白"
+              },
+              "confidence": 0.65,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-04-14T03:43:24Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "highly matched and necessary to generate personalized response",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

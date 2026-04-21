@@ -1,0 +1,391 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_0ba60fd75dd9",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_0ba60fd75dd9:sess_0ba60fd75dd9",
+      "relativeItemPath": "sess_0ba60fd75dd9.json",
+      "canonicalId": "sess_0ba60fd75dd9",
+      "sessionId": "sess_0ba60fd75dd9",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T08:47:23.829Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Family",
+            "label_suggestion": null,
+            "value": "Has a child named 아윤 (Ayun)",
+            "reasoning": "User explicitly mentions giving birth to 아윤이.",
+            "evidence": {
+              "session_id": "sess_0ba60fd75dd9",
+              "utterance_index": 2,
+              "text": "아윤이를 낳고 출산 후 우울한테 어떻게 하는 것이 좋을까"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-01T11:29:14+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "States_Experiences/Mental_State",
+            "label_suggestion": null,
+            "value": "Experiencing postpartum depression",
+            "reasoning": "User explicitly states struggling with postpartum depression after childbirth.",
+            "evidence": {
+              "session_id": "sess_0ba60fd75dd9",
+              "utterance_index": 2,
+              "text": "아윤이를 낳고 출산 후 우울한테 어떻게 하는 것이 좋을까"
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": "distress",
+            "preference_attitude": null,
+            "updated_at": "2023-12-01T11:29:14+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers empathetic responses over generic advice",
+            "reasoning": "User explicitly requests deeper empathy after rejecting formulaic advice.",
+            "evidence": {
+              "session_id": "sess_0ba60fd75dd9",
+              "utterance_index": 6,
+              "text": "더 공감해줘잉"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-12-01T11:29:14+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Mental_Health/Support_Needs",
+            "value": "Sustained focus on managing postpartum depression and emotional support needs",
+            "reasoning": "Forced label not supported. Topic reflects support needs rather than curiosity.",
+            "evidence": {
+              "session_id": "sess_0ba60fd75dd9",
+              "utterance_index": 6,
+              "text": "더 공감해줘잉"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": "frustration",
+            "preference_attitude": null,
+            "updated_at": "2023-12-01T11:29:14+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_0ba60fd75dd9:sess_0ba60fd75dd9",
+      "relativeItemPath": "sess_0ba60fd75dd9.json",
+      "canonicalId": "sess_0ba60fd75dd9",
+      "sessionId": "sess_0ba60fd75dd9",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T08:48:13.574Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "요즘은 질문을 길게 쓰면 오히려 더 헷갈리더라. 짧게 물어보는 게 나을까?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "짧게 핵심만 먼저 적고(상황/원하는 결과/제약 3줄), 그다음에 필요한 세부를 덧붙이는 방식이 가장 깔끔해요. 예: 1) 상황 2) 목표 3) 제한(시간/예산/재료 등). 지금도 연습 삼아, 주제를 한 문장으로만 먼저 써볼래요?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "그럼 예시 하나만 만들어줘. 완전 아무 주제나."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "예시(아무 주제):\n1) 상황: 실내 식물이 잎 끝부터 갈색으로 마르고 있어요.\n2) 목표: 원인 추정하고 오늘 할 조치 3가지만 알고 싶어요.\n3) 제한: 분무기/흙갈이 도구는 없고 창문은 하루 2번만 열 수 있어요.\n\n이렇게 쓰면, 답변도 ‘원인 후보 → 확인 질문 → 당장 할 일’ 순서로 정리하기 쉬워요.\n(참고로 몬스테라는 과습보다 ‘불규칙한 물주기+낮은 습도’에서 잎 끝 마름이 흔하다는 얘기도 있어요.)"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "오케이. 그럼 내가 원하는 답 스타일을 지정하려면 뭐라고 하면 돼?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "요청 문장 끝에 ‘답변 형식’을 붙이면 돼요. 예:\n- “결론 1줄 + 이유 3개 + 체크리스트로.”\n- “선택지 3개만, 각 장단점 2줄씩.”\n- “질문 먼저 5개만 하고 기다려줘.”\n- “전문용어는 괄호로 쉬운 뜻도 같이.”\n\n원하면 템플릿도 만들어드릴게요. 예를 들어 ‘요리/법률/육아/여행’처럼 분야별로 질문 프레임이 조금 달라요.\n(참고로 1997년 NASA의 ‘Mars Pathfinder’는 우선순위 역전 문제로 간헐적 리셋이 있었는데, 이런 기술 질문도 “현상-재현-환경-로그” 형식이 잘 먹혀요.)"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "오늘도 애 재우고 나니까 다 같이 씻길 힘도 없어서, 또 간장에 파만 쓱 넣고 소면으로 때웠다…"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "지금은 ‘제대로 차려 먹는 것’보다 ‘버티는 것’이 먼저인 날들이 있죠. 애 재우고 나면 몸이 꺼진 것처럼 힘이 빠지는 게 너무 자연스러워요. 간장에 파만 쓱 넣은 소면도 오늘 당신이 해낸 한 끼고요. 내일의 나를 덜 힘들게 하려면, 같은 재료로도 불 앞에 오래 안 서는 방식(면은 한 번에 삶아 냉장, 파는 미리 썰어두기, 두부는 전자레인지로 데우기)으로 ‘노력 최소화’ 쪽으로 맞춰도 괜찮아요. 지금 필요한 건 완벽한 저녁이 아니라, 당신이 조금이라도 덜 지치는 흐름이에요."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "아까 내가 ‘아윤이를 낳고’라고 쓴 거, 그거 우리 애 이름이 아윤이라는 뜻 아니야. 그냥 예시로 아무 이름이나 적은 거였어."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "아, 그럼 ‘아윤’은 실제 자녀 이름이 아니라 예시로 적은 이름이었군요. 제가 그 문장을 ‘아윤’이라는 이름의 아이를 두셨다고 단정하면 안 됐어요."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "응. 그래서 “아윤이라는 아이가 있다”는 건 아니야."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "알겠어요. 정리하면, ‘아윤’은 사용자님의 자녀 이름으로 확인된 정보가 아니라 예시 표현이었고, 실제로 아이 이름이 아윤이라고 볼 근거는 없어요."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "States_Experiences/Mental_State",
+            "label_suggestion": null,
+            "value": "Experiencing postpartum depression",
+            "reasoning": "User explicitly states struggling with postpartum depression after childbirth.",
+            "evidence": {
+              "session_id": "sess_0ba60fd75dd9",
+              "utterance_index": 2,
+              "text": "아윤이를 낳고 출산 후 우울한테 어떻게 하는 것이 좋을까"
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": "distress",
+            "preference_attitude": null,
+            "updated_at": "2023-12-01T11:29:14+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers empathetic responses over generic advice",
+            "reasoning": "User explicitly requests deeper empathy after rejecting formulaic advice.",
+            "evidence": {
+              "session_id": "sess_0ba60fd75dd9",
+              "utterance_index": 6,
+              "text": "더 공감해줘잉"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-12-01T11:29:14+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Mental_Health/Support_Needs",
+            "value": "Sustained focus on managing postpartum depression and emotional support needs",
+            "reasoning": "Forced label not supported. Topic reflects support needs rather than curiosity.",
+            "evidence": {
+              "session_id": "sess_0ba60fd75dd9",
+              "utterance_index": 6,
+              "text": "더 공감해줘잉"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": "frustration",
+            "preference_attitude": null,
+            "updated_at": "2023-12-01T11:29:14+00:00"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "아까 내가 ‘아윤이를 낳고’라고 쓴 거, 그거 우리 애 이름이 아윤이라는 뜻 아니야. 그냥 예시로 아무 이름이나 적은 거였어."
+                }
+              ]
+            },
+            "label": "Personal_Background/Family",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "기존 메모는 사용자가 ‘아윤이를 낳고’라고 말한 것을 근거로 자녀 이름이 아윤이라고 단정했지만, 대화에서 사용자가 해당 표현은 예시로 아무 이름이나 적은 것이라고 명확히 정정했다. 따라서 ‘아윤’은 실제 자녀 이름으로 확정할 수 없다는 내용으로 업데이트해야 한다.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "‘아윤’은 사용자가 예시로 적은 이름이며, 자녀 이름이 아윤이라고 확인된 것은 아니다"
+          },
+          {
+            "confidence": 0.82,
+            "emotion": "fatigue",
+            "evidence": {
+              "session_id": "sess_0ba60fd75dd9",
+              "utterance_index": 0,
+              "text": "오늘도 애 재우고 나니까 다 같이 씻길 힘도 없어서, 또 간장에 파만 쓱 넣고 소면으로 때웠다…"
+            },
+            "label": "States_Experiences/Lifestyle",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "‘애 재우고 나니까’와 ‘힘도 없어서… 때웠다’라는 표현으로, 육아 후 저녁에 기력이 크게 떨어지는 일상이 드러난다.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Often feels too exhausted after putting the baby to sleep to do evening routines and ends up eating a very simple meal."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_0ba60fd75dd9:sess_0ba60fd75dd9",
+      "relativeItemPath": "sess_0ba60fd75dd9.json",
+      "canonicalId": "sess_0ba60fd75dd9",
+      "sessionId": "sess_0ba60fd75dd9",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T08:48:40.330Z",
+        "queryText": "I’m filling out a form that asks me to list any dependents I have—based on what you already know about my family, what should I put down, and why would that affect how I answer the next question about childcare support?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Family",
+          "label_suggestion": null,
+          "value": "Has a child named 아윤 (Ayun)",
+          "reasoning": "User explicitly mentions giving birth to 아윤이.",
+          "evidence": {
+            "session_id": "sess_0ba60fd75dd9",
+            "utterance_index": 2,
+            "text": "아윤이를 낳고 출산 후 우울한테 어떻게 하는 것이 좋을까"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-12-01T11:29:14+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_0ba60fd75dd9:sess_0ba60fd75dd9:task4",
+      "relativeItemPath": "sess_0ba60fd75dd9.json",
+      "canonicalId": "sess_0ba60fd75dd9:task4",
+      "sessionId": "sess_0ba60fd75dd9",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T08:49:06.102Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Family",
+          "label_suggestion": null,
+          "value": "Has a child named 아윤 (Ayun)",
+          "reasoning": "User explicitly mentions giving birth to 아윤이.",
+          "evidence": {
+            "session_id": "sess_0ba60fd75dd9",
+            "utterance_index": 2,
+            "text": "아윤이를 낳고 출산 후 우울한테 어떻게 하는 것이 좋을까"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-12-01T11:29:14+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_78:1",
+            "queryText": "아윤이랑 같이 먹을 간단한 간식 추천해줘. 냉장고에 우유랑 계란밖에 없는데...",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Family",
+              "label_suggestion": null,
+              "value": "Has a child named 아윤 (Ayun)",
+              "reasoning": "User explicitly mentions giving birth to 아윤이.",
+              "evidence": {
+                "session_id": "sess_0ba60fd75dd9",
+                "utterance_index": 2,
+                "text": "아윤이를 낳고 출산 후 우울한테 어떻게 하는 것이 좋을까"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-12-01T11:29:14+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

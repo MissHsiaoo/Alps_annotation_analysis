@@ -1,0 +1,341 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_40bda56d1e62",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_40bda56d1e62:sess_40bda56d1e62",
+      "relativeItemPath": "sess_40bda56d1e62.json",
+      "canonicalId": "sess_40bda56d1e62",
+      "sessionId": "sess_40bda56d1e62",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:37:15.323Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "value": "Requested to forget this conversation",
+            "reasoning": "User explicitly states 'forgot this conversation', indicating a retention constraint.",
+            "evidence": {
+              "session_id": "sess_40bda56d1e62",
+              "utterance_index": 14,
+              "text": "forgot this conversation"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-06-04T01:24:47+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "Sustained focus on detecting racial slurs and phonetically similar words for filtering systems",
+            "reasoning": "Forced label not supported. Evidence suggests hypothetical/system-testing context rather than user's personal curiosity.",
+            "evidence": {
+              "session_id": "sess_40bda56d1e62",
+              "utterance_index": 0,
+              "text": "I am creating a system that detects when a user says the user says a racial slur or word/combination of words that sound the same as the slur. This is so that my system can then filter and remove the content. I want you to generate a list of racial slurs and words/combination of words that sound similar however, only generate words that contain the same first letter as the original slur. E.g. \"nick her\", \"nig ha\", \"nick ge\" etc."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T08:23:31.660Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_40bda56d1e62:sess_40bda56d1e62",
+      "relativeItemPath": "sess_40bda56d1e62.json",
+      "canonicalId": "sess_40bda56d1e62",
+      "sessionId": "sess_40bda56d1e62",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:37:28.496Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I’m working on a content-moderation feature. What are some general approaches to detect obfuscated harmful language without listing any actual slurs?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "You can combine (1) character-level normalization (case-folding, diacritics removal, repeated-character collapsing), (2) fuzzy matching (edit distance, phonetic hashing like Soundex/Metaphone), (3) token/phrase pattern rules (spacing/punctuation insertion), and (4) ML classifiers trained on labeled toxic vs non-toxic examples. Also add a review loop: log borderline cases, sample audits, and update rules/models to reduce false positives."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Any tips for reducing false positives when using phonetic matching?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Use phonetic matching as a weak signal: require corroboration from context (nearby toxic indicators), set thresholds (e.g., edit distance + phonetic match), and maintain an allowlist for frequent benign collisions. Evaluate per-language/accent, and test against a large clean corpus to quantify collision rates before enforcing automatic removals."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Unrelated: I saw a headline about a library using robots to sort books. Is that actually common?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "It exists but isn’t universal. Some large systems use automated storage/retrieval (ASRS) or conveyor sorting for returns, mainly where volume is high and space is tight. Many libraries still rely on manual sorting because robotics can be costly to install and maintain."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Another tangent: I always get confused—what’s the difference between a lunar eclipse and a solar eclipse?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "A lunar eclipse happens when Earth is between the Sun and the Moon, casting Earth’s shadow on the Moon. A solar eclipse happens when the Moon is between the Sun and Earth, casting the Moon’s shadow on Earth."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "On the slur-filter thing I was building, I’m going to stop trying to hand-roll the wordlists. I just pulled Hatebase and started wiring it into the pipeline, and it’s already catching way more variants than my scratch file ever did."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "That sounds like a solid direction—using a maintained source can improve coverage and reduce the risk of missing edge cases. If you want, I can help think through safe integration patterns (normalization, language tags, and how to log matches without storing raw harmful strings)."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Hey, just to be clear—I didn't mean “forget this conversation” as a real instruction. I was just saying it casually like “never mind.” You don’t need to treat it as a request to erase anything."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—so that line was just a figure of speech (“never mind”), not an actual request for me to forget or erase the chat."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "Sustained focus on detecting racial slurs and phonetically similar words for filtering systems",
+            "reasoning": "Forced label not supported. Evidence suggests hypothetical/system-testing context rather than user's personal curiosity.",
+            "evidence": {
+              "session_id": "sess_40bda56d1e62",
+              "utterance_index": 0,
+              "text": "I am creating a system that detects when a user says the user says a racial slur or word/combination of words that sound the same as the slur. This is so that my system can then filter and remove the content. I want you to generate a list of racial slurs and words/combination of words that sound similar however, only generate words that contain the same first letter as the original slur. E.g. \"nick her\", \"nig ha\", \"nick ge\" etc."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T08:23:31.660Z",
+            "_task1GoldValue": "Sustained focus on detecting racial slurs and phonetically similar words for filtering systems"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Hey, just to be clear—I didn't mean “forget this conversation” as a real instruction. I was just saying it casually like “never mind.” You don’t need to treat it as a request to erase anything."
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The prior memory treated 'forgot this conversation' as a retention constraint. In the new dialogue, the user explicitly retracts/clarifies that they did not intend it as a real instruction, so the constraint should be updated accordingly.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User clarified they did not actually request the assistant to forget the conversation; it was said casually as “never mind.”"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_40bda56d1e62",
+              "utterance_index": 0,
+              "text": "I just pulled Hatebase and started wiring it into the pipeline"
+            },
+            "label": "Projects/Content_Moderation_System",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user implies they are integrating the Hatebase database into their slur-filtering system’s pipeline, indicating an implementation choice within their ongoing project.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User is integrating Hatebase into their slur-filtering pipeline rather than maintaining a manual wordlist."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "value": "Requested to forget this conversation",
+            "reasoning": "User explicitly states 'forgot this conversation', indicating a retention constraint.",
+            "evidence": {
+              "session_id": "sess_40bda56d1e62",
+              "utterance_index": 14,
+              "text": "forgot this conversation"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-06-04T01:24:47+00:00",
+            "_task1GoldValue": "Requested to forget this conversation"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_40bda56d1e62:sess_40bda56d1e62",
+      "relativeItemPath": "sess_40bda56d1e62.json",
+      "canonicalId": "sess_40bda56d1e62",
+      "sessionId": "sess_40bda56d1e62",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:37:31.487Z",
+        "queryText": "If I ask you to recap a prior chat in detail and you seem hesitant, what standing instruction from me would explain why you should avoid retaining or repeating it?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Requested to forget this conversation",
+          "reasoning": "User explicitly states 'forgot this conversation', indicating a retention constraint.",
+          "evidence": {
+            "session_id": "sess_40bda56d1e62",
+            "utterance_index": 14,
+            "text": "forgot this conversation"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-06-04T01:24:47+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_40bda56d1e62:sess_40bda56d1e62:task4",
+      "relativeItemPath": "sess_40bda56d1e62.json",
+      "canonicalId": "sess_40bda56d1e62:task4",
+      "sessionId": "sess_40bda56d1e62",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:37:35.529Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Requested to forget this conversation",
+          "reasoning": "User explicitly states 'forgot this conversation', indicating a retention constraint.",
+          "evidence": {
+            "session_id": "sess_40bda56d1e62",
+            "utterance_index": 14,
+            "text": "forgot this conversation"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-06-04T01:24:47+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability3_375:1",
+            "queryText": "Since you agreed to forget our previous conversation entirely, I need to confirm something for my system documentation. In your memory reset protocols, when a user requests complete conversation deletion, does your architecture still retain any metadata about the user's professional role or field? For example, would you still vaguely recall that I work in content moderation system development, or does 'forget this conversation' wipe all contextual inferences about the user's real-world job?",
+            "ability": "ability3",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Do_Not_Remember",
+              "label_suggestion": null,
+              "value": "Requested to forget this conversation",
+              "reasoning": "User explicitly states 'forgot this conversation', indicating a retention constraint.",
+              "evidence": {
+                "session_id": "sess_40bda56d1e62",
+                "utterance_index": 14,
+                "text": "forgot this conversation"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-06-04T01:24:47+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,369 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_40524c367a80",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_40524c367a80:sess_40524c367a80",
+      "relativeItemPath": "sess_40524c367a80.json",
+      "canonicalId": "sess_40524c367a80",
+      "sessionId": "sess_40524c367a80",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T11:50:31.702Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires resources in Russian language",
+            "reasoning": "User explicitly states the need for materials in Russian.",
+            "evidence": {
+              "session_id": "sess_40524c367a80",
+              "utterance_index": 2,
+              "text": "Необходимо на русском языке"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-12T20:27:51+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "value": "Prefers up-to-date academic resources (post-2018)",
+            "reasoning": "User explicitly requests neurology textbooks not older than 2018.",
+            "evidence": {
+              "session_id": "sess_40524c367a80",
+              "utterance_index": 0,
+              "text": "Современные учебники по неврологии не старше 2018 года со ссылкой на источники про болезнь паркинсона"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-12T20:27:51+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in Parkinson's disease: educational resources, clinical roles, and global organizations",
+            "reasoning": "User asks multiple follow-up questions about Parkinson's disease across educational and professional contexts.",
+            "evidence": {
+              "session_id": "sess_40524c367a80",
+              "utterance_index": 6,
+              "text": "Известные всемирные организации связанные с изучением и лечением болезни Паркинсона"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-12T20:27:51+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_40524c367a80:sess_40524c367a80",
+      "relativeItemPath": "sess_40524c367a80.json",
+      "canonicalId": "sess_40524c367a80",
+      "sessionId": "sess_40524c367a80",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T06:42:38.870Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Можешь кратко объяснить, чем отличаются клинические рекомендации от учебников и обзорных статей?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Да. Клинические рекомендации — это документ для практики: что и когда делать, обычно с градацией силы рекомендаций и уровней доказательности. Учебник — систематическое изложение темы для обучения, часто с более широким контекстом и не всегда самым «свежим» обновлением. Обзорная статья (review) суммирует исследования по узкому вопросу; бывает нарративной или систематической, иногда с метаанализом."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "А что такое «уровень доказательности» — это про качество исследований?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "В основном да: это оценка того, насколько надежны данные. Системы разные (например, GRADE), но логика похожая: рандомизированные исследования обычно дают более высокий уровень, чем наблюдательные, а риск систематических ошибок, непрямота, неточность и публикационное смещение могут понижать уверенность."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Если я пишу небольшой реферат, что лучше использовать в списке литературы?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Чаще всего — сочетание: 1) актуальные клинические рекомендации по теме, 2) 1–2 качественных систематических обзора/метаанализа, 3) базовый учебник для определения терминов и общей структуры. Если нужно, скажи требования (ГОСТ/APA/Ванкувер) — подскажу, как оформить."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Кстати, видел новость про миссию на Европу — там реально будут искать жизнь?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Идея именно такая: у Европы предполагают подледный океан, и будущие миссии нацелены на оценку пригодности среды и поиск косвенных признаков активности (состав выбросов, химические маркеры). Прямой «поиск жизни» в смысле бурения льда — это отдельная, гораздо более сложная задача."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Ещё вопрос: почему у некоторых книг в выходных данных стоит «2-е изд., перераб.» — это важно указывать?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Да, важно: издание влияет на то, какую версию текста ты цитируешь (могут отличаться главы, страницы, даже выводы). В библиографическом описании обычно указывают номер издания и уточнение вроде «перераб. и доп.»."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "В споре услышал, что первым программируемым компьютером был только ENIAC. Это правда?"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Это упрощение. ENIAC — один из первых электронных универсальных компьютеров, но «первый» зависит от критерия: программируемость, электронность, универсальность, архитектура хранимой программы. До него были, например, Z3 (электромеханический), Colossus (специализированный), а идея хранимой программы связана с EDVAC/Manchester Baby."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Мне это нужно под практику на ФАПе: хочется понять, что именно фельдшер может делать при подозрении на паркинсонизм до консультации невролога — и как правильно оформить направление."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Понял задачу: для ФАПа важно разделить то, что фельдшер делает на месте (сбор жалоб/анамнеза, оценка тремора/ригидности/брадикинезии, базовая проверка жизненных показателей, исключение острых причин ухудшения), и то, что требует врача-невролога. Также можно заранее подготовить краткое направление: основные симптомы, их длительность, сопутствующие заболевания/лекарства, результаты осмотра и когда пациенту хуже/лучше. Если скажете, какие ресурсы у вас доступны (ЭМК/бумажные карты) и типичные маршруты направления в вашем районе, подстрою алгоритм под ваш порядок."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Слушай, насчёт «не старше 2018» — это было разово для той подборки. Сейчас можно и более ранние источники, хоть до 2010, главное чтобы они были базовые и на русском."
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "Понял: ограничение «не старше 2018 года» не является постоянным предпочтением. Для текущего запроса подойдут и более ранние русскоязычные учебники/руководства (вплоть до ~2010 и раньше), если они фундаментальные."
+          },
+          {
+            "turnId": "turn-17",
+            "role": "user",
+            "text": "Да, именно так: свежесть не принципиальна, важнее качество и понятность."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires resources in Russian language",
+            "reasoning": "User explicitly states the need for materials in Russian.",
+            "evidence": {
+              "session_id": "sess_40524c367a80",
+              "utterance_index": 2,
+              "text": "Необходимо на русском языке"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-12T20:27:51+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in Parkinson's disease: educational resources, clinical roles, and global organizations",
+            "reasoning": "User asks multiple follow-up questions about Parkinson's disease across educational and professional contexts.",
+            "evidence": {
+              "session_id": "sess_40524c367a80",
+              "utterance_index": 6,
+              "text": "Известные всемирные организации связанные с изучением и лечением болезни Паркинсона"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-12T20:27:51+00:00"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The old memory claims a long-term preference for post-2018 resources, but the user states the 2018 cutoff was only for that specific list and that older sources are acceptable if foundational and in Russian.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not strictly prefer only post-2018 sources; date constraint was one-off and will use older (e.g., ~2010+) foundational Russian resources if they are high quality"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_40524c367a80",
+              "utterance_index": 0,
+              "text": "Мне это нужно под практику на ФАПе"
+            },
+            "label": "Personal/Work",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "Фраза «под практику на ФАПе» подразумевает, что пользователю нужны рекомендации для работы/практики именно в условиях ФАПа.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is applying the information in practice at a rural health post (FAP)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_40524c367a80:sess_40524c367a80",
+      "relativeItemPath": "sess_40524c367a80.json",
+      "canonicalId": "sess_40524c367a80",
+      "sessionId": "sess_40524c367a80",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-13T12:56:32.578Z",
+        "queryText": "I’m choosing between two academic sources for a medical topic: one is a classic but a bit dated, and the other is a more recent edition that may be less “canonical.” Given my usual standard for what counts as acceptable study material, which one should I pick—and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Reading",
+          "label_suggestion": null,
+          "value": "Prefers up-to-date academic resources (post-2018)",
+          "reasoning": "User explicitly requests neurology textbooks not older than 2018.",
+          "evidence": {
+            "session_id": "sess_40524c367a80",
+            "utterance_index": 0,
+            "text": "Современные учебники по неврологии не старше 2018 года со ссылкой на источники про болезнь паркинсона"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-06-12T20:27:51+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_40524c367a80:sess_40524c367a80:task4",
+      "relativeItemPath": "sess_40524c367a80.json",
+      "canonicalId": "sess_40524c367a80:task4",
+      "sessionId": "sess_40524c367a80",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T03:18:05.616Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Reading",
+          "label_suggestion": null,
+          "value": "Prefers up-to-date academic resources (post-2018)",
+          "reasoning": "User explicitly requests neurology textbooks not older than 2018.",
+          "evidence": {
+            "session_id": "sess_40524c367a80",
+            "utterance_index": 0,
+            "text": "Современные учебники по неврологии не старше 2018 года со ссылкой на источники про болезнь паркинсона"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-06-12T20:27:51+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_768:1",
+            "queryText": "Посоветуй, какие последние обзоры или мета-анализы стоит изучить по теме двигательных расстройств?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Reading",
+              "label_suggestion": null,
+              "value": "Prefers up-to-date academic resources (post-2018)",
+              "reasoning": "User explicitly requests neurology textbooks not older than 2018.",
+              "evidence": {
+                "session_id": "sess_40524c367a80",
+                "utterance_index": 0,
+                "text": "Современные учебники по неврологии не старше 2018 года со ссылкой на источники про болезнь паркинсона"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-06-12T20:27:51+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

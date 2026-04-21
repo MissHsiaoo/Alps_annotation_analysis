@@ -1,0 +1,384 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_f550e97ccabe",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_f550e97ccabe:sess_f550e97ccabe",
+      "relativeItemPath": "sess_f550e97ccabe.json",
+      "canonicalId": "sess_f550e97ccabe",
+      "sessionId": "sess_f550e97ccabe",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:36:20.093Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/game_development/AI_project",
+            "value": "Curious about game reverse-engineering/AI bot development for custom PvP MMO",
+            "reasoning": "Hypothetical scenario phrasing ('let say') introduces uncertainty about user's actual projects",
+            "evidence": {
+              "session_id": "sess_f550e97ccabe",
+              "utterance_index": 6,
+              "text": "let say i want to make an ai that will play my game i specially made just for that purpose...programme that all the data in realtime from the game clients"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-05T19:13:19+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "preferences/reading/genre_interest",
+            "value": "Sustained interest in LITRPG/superhero genre books with antihero male protagonists",
+            "reasoning": "Multiple request refinements show interest pattern but lack explicit self-identification as personal preference",
+            "evidence": {
+              "session_id": "sess_f550e97ccabe",
+              "utterance_index": 24,
+              "text": "protagonist is a MALE so no female protagonist"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-05T19:13:19+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "value": "Prefers male antihero protagonists in superhero/villain narratives",
+            "reasoning": "Explicit requirement stated through iterative clarifications",
+            "evidence": {
+              "session_id": "sess_f550e97ccabe",
+              "utterance_index": 24,
+              "text": "protagonist is a MALE so no female protagonist"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-05T19:13:19+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "preferences/content_constraints/publication_year",
+            "value": "Requests to ignore books published after 2019",
+            "reasoning": "Explicit temporal constraint but original label misclassified",
+            "evidence": {
+              "session_id": "sess_f550e97ccabe",
+              "utterance_index": 20,
+              "text": "please ignor all books after the year 2019"
+            },
+            "confidence": 0.65,
+            "time_scope": "temporary",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-05T19:13:19+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_f550e97ccabe:sess_f550e97ccabe",
+      "relativeItemPath": "sess_f550e97ccabe.json",
+      "canonicalId": "sess_f550e97ccabe",
+      "sessionId": "sess_f550e97ccabe",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T08:28:16.660Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Those last suggestions drifted a bit. Can we reset and narrow it down?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure. Let’s pin the requirements so the next list actually matches. When you say “male protagonist who hides,” do you mean he hides his *powers*, his *identity* (masked/secret persona), or he’s living under an alias?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "He hides his powers and keeps a low profile in a city with heroes and villains."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Got it. Two more quick filters: do you want modern/urban (like a contemporary city), or is a fantasy “city” still okay as long as it has a hero/villain ecosystem? And should the protagonist be actively criminal/gray-morality, or just reluctant/forced into conflict?"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Modern city. Morally gray is fine, but not a full villain."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Great—modern city, male MC, powers hidden, heroes/villains present, morally gray but not outright villain, and published pre-2019. I’ll draft a new shortlist.\n\nUnrelated trivia while I pull it together: (1) The term “LitRPG” started trending widely in English-language forums around 2014–2016 as communities tried to distinguish it from older “game-like fantasy.” (2) Goodreads ratings often skew upward compared to professional reviews because people who finish a book are more likely to rate it. (3) Audible’s category browsing has changed names a few times—what used to be surfaced as “Gaming” or “Sci-Fi & Fantasy > GameLit” isn’t always consistent across regions."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "keep it pre-2019, and if it helps narrow it down: i usually go for audiobooks with a single narrator (full-cast stuff throws me off). got anything that fits the hidden-powered male antihero thing?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Got it—pre-2019 and single-narrator audiobooks. Before I list options: do you want the “city of heroes/villains” vibe to be explicitly superhero/comics-style, or is an urban-fantasy/secret-society city setting fine as long as he’s powered and keeping it under wraps?"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Wait—small correction. I don’t *only* want male antihero protagonists. If the story fits (city of heroes/villains, hidden powers), a female lead is totally fine too."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—you’re not restricting it to male protagonists anymore. So the key filters are: an antihero vibe, superpowers that are kept hidden (at least at first), and a setting with heroes and villains in a city, regardless of the protagonist’s gender."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Yes, exactly. Gender doesn’t matter; I just want that hidden-power antihero in a hero/villain city setup."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/game_development/AI_project",
+            "value": "Curious about game reverse-engineering/AI bot development for custom PvP MMO",
+            "reasoning": "Hypothetical scenario phrasing ('let say') introduces uncertainty about user's actual projects",
+            "evidence": {
+              "session_id": "sess_f550e97ccabe",
+              "utterance_index": 6,
+              "text": "let say i want to make an ai that will play my game i specially made just for that purpose...programme that all the data in realtime from the game clients"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-05T19:13:19+00:00",
+            "_task1GoldValue": "Curious about game reverse-engineering/AI bot development for custom PvP MMO"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "preferences/reading/genre_interest",
+            "value": "Sustained interest in LITRPG/superhero genre books with antihero male protagonists",
+            "reasoning": "Multiple request refinements show interest pattern but lack explicit self-identification as personal preference",
+            "evidence": {
+              "session_id": "sess_f550e97ccabe",
+              "utterance_index": 24,
+              "text": "protagonist is a MALE so no female protagonist"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-05T19:13:19+00:00",
+            "_task1GoldValue": "Sustained interest in LITRPG/superhero genre books with antihero male protagonists"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "preferences/content_constraints/publication_year",
+            "value": "Requests to ignore books published after 2019",
+            "reasoning": "Explicit temporal constraint but original label misclassified",
+            "evidence": {
+              "session_id": "sess_f550e97ccabe",
+              "utterance_index": 20,
+              "text": "please ignor all books after the year 2019"
+            },
+            "confidence": 0.65,
+            "time_scope": "temporary",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-05T19:13:19+00:00",
+            "_task1GoldValue": "Requests to ignore books published after 2019"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The old memory claims the user prefers male antihero protagonists, but the user explicitly corrects that they are not restricting protagonist gender; they care about the hidden-power antihero in a heroes/villains city setup regardless of gender.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Protagonist gender doesn’t matter; prefers an antihero with hidden powers in a city of heroes and villains"
+          },
+          {
+            "confidence": 0.85,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_f550e97ccabe",
+              "utterance_index": 0,
+              "text": "i usually go for audiobooks with a single narrator (full-cast stuff throws me off)."
+            },
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "Saying they 'usually go for audiobooks with a single narrator' and that full-cast 'throws me off' implies a consistent preference against full-cast narration.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers audiobooks with a single narrator and dislikes full-cast productions"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_f550e97ccabe:sess_f550e97ccabe",
+      "relativeItemPath": "sess_f550e97ccabe.json",
+      "canonicalId": "sess_f550e97ccabe",
+      "sessionId": "sess_f550e97ccabe",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:10:44.872Z",
+        "queryText": "I’m picking between two comic-series pitches: one follows a morally gray caped character who sometimes breaks the rules, and the other follows a similarly gray character with the same kind of powers and tone. If I want the option that best matches my usual protagonist preference, which pitch should I choose, and what’s the deciding factor?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Preferences/Reading",
+          "label_suggestion": null,
+          "value": "Prefers male antihero protagonists in superhero/villain narratives",
+          "reasoning": "Explicit requirement stated through iterative clarifications",
+          "evidence": {
+            "session_id": "sess_f550e97ccabe",
+            "utterance_index": 24,
+            "text": "protagonist is a MALE so no female protagonist"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-05-05T19:13:19+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_f550e97ccabe:sess_f550e97ccabe:task4",
+      "relativeItemPath": "sess_f550e97ccabe.json",
+      "canonicalId": "sess_f550e97ccabe:task4",
+      "sessionId": "sess_f550e97ccabe",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:50:46.077Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Preferences/Reading",
+          "label_suggestion": null,
+          "value": "Prefers male antihero protagonists in superhero/villain narratives",
+          "reasoning": "Explicit requirement stated through iterative clarifications",
+          "evidence": {
+            "session_id": "sess_f550e97ccabe",
+            "utterance_index": 24,
+            "text": "protagonist is a MALE so no female protagonist"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-05-05T19:13:19+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_820:1",
+            "queryText": "I'm browsing through some superhero series and came across a few that look interesting - there's one about a guy who gets powers after an accident but struggles with the morality of using them, another where the main character works as a vigilante outside the law, and a third about someone who inherits abilities but has a dark past. Which one would actually keep me engaged based on what I normally go for?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Preferences/Reading",
+              "label_suggestion": null,
+              "value": "Prefers male antihero protagonists in superhero/villain narratives",
+              "reasoning": "Explicit requirement stated through iterative clarifications",
+              "evidence": {
+                "session_id": "sess_f550e97ccabe",
+                "utterance_index": 24,
+                "text": "protagonist is a MALE so no female protagonist"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-05-05T19:13:19+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,375 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_ebd333134105",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_ebd333134105:sess_ebd333134105",
+      "relativeItemPath": "sess_ebd333134105.json",
+      "canonicalId": "sess_ebd333134105",
+      "sessionId": "sess_ebd333134105",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T01:21:16.535Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Beginner learner of American English",
+            "reasoning": "User explicitly states they are a beginner learning American English.",
+            "evidence": {
+              "session_id": "sess_ebd333134105",
+              "utterance_index": 0,
+              "text": "Hola, estoy aprendiendo ingles americano y soy principiante"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-08T20:57:44+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Learning_Focus/English_Quantifiers",
+            "value": "Sustained curiosity about nuances of English quantifiers ('a lot' vs 'quite a lot' vs 'quite')",
+            "reasoning": "Forced label not supported. Repeated inquiries about phrase distinctions in a single learning session, but no evidence of long-term curiosity beyond task-local needs.",
+            "evidence": {
+              "session_id": "sess_ebd333134105",
+              "utterance_index": 40,
+              "text": "Dime la pronunciación IPA americana de: Quite a lot"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-08T20:57:44+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Learning_Style/Clarity",
+            "value": "Prefers simplified explanations with clear examples",
+            "reasoning": "Indirect hypothesis based on user's requests for concise summaries and precision adjustments. Weakly supported as a stable preference.",
+            "evidence": {
+              "session_id": "sess_ebd333134105",
+              "utterance_index": 30,
+              "text": "podriamos resumir un poco mas esta oracion, dandole sencilles y precision"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-12-08T20:57:44+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_ebd333134105:sess_ebd333134105",
+      "relativeItemPath": "sess_ebd333134105.json",
+      "canonicalId": "sess_ebd333134105",
+      "sessionId": "sess_ebd333134105",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:03:33.129Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Estoy repasando IPA. ¿Cómo se transcribe en inglés americano la frase “I can’t get a bottle of water” en habla casual?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Una opción común en habla casual (General American) sería:\n\n/aɪ kæ̃ʔ ˈɡɛɾ ə ˈbɑɾəl əv ˈwɔɾɚ/\n\nNotas rápidas: “can’t” puede llevar oclusión glotal [ʔ] antes de /t/; “get a” suele reducirse a [ˈɡɛɾə]; y /t/ entre vocales suele hacerse flap [ɾ] (bottle, water)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "¿Y si lo digo más cuidado, sin tanto “flap”?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Más cuidado (menos reducción) podría verse así:\n\n/aɪ kænt ˈɡɛt ə ˈbɑtəl əv ˈwɔtɚ/\n\nAquí mantienes /t/ más “clara” en get, bottle y water, y reduces menos las sílabas."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "¿Puedes poner solo 2 variantes para “water” en americano con IPA?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Claro, dos variantes frecuentes:\n1) Más común casual: /ˈwɔɾɚ/\n2) Más cuidadosa: /ˈwɔtɚ/"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Cambiando de tema: ¿es cierto que el primer diccionario de inglés fue de Samuel Johnson?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "El de Samuel Johnson (1755) fue muy influyente, pero no fue el primero. Hubo diccionarios anteriores (por ejemplo, el de Robert Cawdrey, *A Table Alphabeticall*, de 1604), aunque eran más limitados. El de Johnson destacó por su alcance, definiciones y citas."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Estoy armando mis apuntes en una ficha, y quiero que la IPA me quede con la sílaba tónica marcada, porque si no después no sé dónde caer en voz alta."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Perfecto: si quieres dejarlo claro en tus apuntes, puedes marcar la sílaba tónica con ˈ. Para “quite a lot” (AmE) suele anotarse como /ˌkwaɪt ə ˈlɑt/ (con el acento principal en “lot”)."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Oye, antes dije que era principiante, pero ya no: llevo meses estudiando y ya estoy en nivel intermedio (B1/B2). Sigo con inglés americano."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Perfecto, entonces no eres principiante ya: si estás en B1/B2, eso es nivel intermedio. Y genial que sigas enfocado en inglés americano; así afinamos los matices (por ejemplo, pronunciación, vocabulario y uso de intensificadores como \"quite\")."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Sí, exacto: intermedio B1/B2, no principiante."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Learning_Focus/English_Quantifiers",
+            "value": "Sustained curiosity about nuances of English quantifiers ('a lot' vs 'quite a lot' vs 'quite')",
+            "reasoning": "Forced label not supported. Repeated inquiries about phrase distinctions in a single learning session, but no evidence of long-term curiosity beyond task-local needs.",
+            "evidence": {
+              "session_id": "sess_ebd333134105",
+              "utterance_index": 40,
+              "text": "Dime la pronunciación IPA americana de: Quite a lot"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-08T20:57:44+00:00",
+            "_task1GoldValue": "Sustained curiosity about nuances of English quantifiers ('a lot' vs 'quite a lot' vs 'quite')"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Learning_Style/Clarity",
+            "value": "Prefers simplified explanations with clear examples",
+            "reasoning": "Indirect hypothesis based on user's requests for concise summaries and precision adjustments. Weakly supported as a stable preference.",
+            "evidence": {
+              "session_id": "sess_ebd333134105",
+              "utterance_index": 30,
+              "text": "podriamos resumir un poco mas esta oracion, dandole sencilles y precision"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-12-08T20:57:44+00:00",
+            "_task1GoldValue": "Prefers simplified explanations with clear examples"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": null,
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The old memory says the user is a beginner, but the user explicitly corrects this by stating they are now intermediate (B1/B2) while still studying American English.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Learner of American English at an intermediate level (B1/B2), not a beginner"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_ebd333134105",
+              "utterance_index": 0,
+              "text": "quiero que la IPA me quede con la sílaba tónica marcada"
+            },
+            "label": "Preferences/Learning_Style/Notation",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "The user implies a recurring study habit (making notes) and a specific preference for IPA transcription that includes stress marks to support reading aloud.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers IPA transcriptions with stress marks (ˈ/ˌ) when studying"
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Beginner learner of American English",
+            "reasoning": "User explicitly states they are a beginner learning American English.",
+            "evidence": {
+              "session_id": "sess_ebd333134105",
+              "utterance_index": 0,
+              "text": "Hola, estoy aprendiendo ingles americano y soy principiante"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-08T20:57:44+00:00",
+            "_task1GoldValue": "Beginner learner of American English"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_ebd333134105:sess_ebd333134105",
+      "relativeItemPath": "sess_ebd333134105.json",
+      "canonicalId": "sess_ebd333134105",
+      "sessionId": "sess_ebd333134105",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:03:37.839Z",
+        "queryText": "I want to start learning a variety of English that matches what I’ll mostly hear in movies and everyday conversations in the U.S., but I don’t want something too advanced yet—what level should I place myself in before choosing materials?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Education",
+          "label_suggestion": null,
+          "value": "Beginner learner of American English",
+          "reasoning": "User explicitly states they are a beginner learning American English.",
+          "evidence": {
+            "session_id": "sess_ebd333134105",
+            "utterance_index": 0,
+            "text": "Hola, estoy aprendiendo ingles americano y soy principiante"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-12-08T20:57:44+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_ebd333134105:sess_ebd333134105:task4",
+      "relativeItemPath": "sess_ebd333134105.json",
+      "canonicalId": "sess_ebd333134105:task4",
+      "sessionId": "sess_ebd333134105",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:03:13.961Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Education",
+          "label_suggestion": null,
+          "value": "Beginner learner of American English",
+          "reasoning": "User explicitly states they are a beginner learning American English.",
+          "evidence": {
+            "session_id": "sess_ebd333134105",
+            "utterance_index": 0,
+            "text": "Hola, estoy aprendiendo ingles americano y soy principiante"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-12-08T20:57:44+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_44:1",
+            "queryText": "Oye, estoy viendo una serie americana y el personaje dijo 'That's quite a problem'. Según lo que hablamos antes, ¿cómo interpretarías ese 'quite' aquí? ¿Sería más como 'bastante' o como 'muy' problema?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Education",
+              "label_suggestion": null,
+              "value": "Beginner learner of American English",
+              "reasoning": "User explicitly states they are a beginner learning American English.",
+              "evidence": {
+                "session_id": "sess_ebd333134105",
+                "utterance_index": 0,
+                "text": "Hola, estoy aprendiendo ingles americano y soy principiante"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-12-08T20:57:44+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "relevant",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

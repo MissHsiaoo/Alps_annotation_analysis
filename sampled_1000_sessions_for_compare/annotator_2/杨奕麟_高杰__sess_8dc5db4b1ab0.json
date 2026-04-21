@@ -1,0 +1,362 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_8dc5db4b1ab0",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_8dc5db4b1ab0:sess_8dc5db4b1ab0",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_8dc5db4b1ab0.json",
+      "canonicalId": "sess_8dc5db4b1ab0",
+      "sessionId": "sess_8dc5db4b1ab0",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-18T09:30:58.322Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Gets excited about obtaining rare in-game items even on repeated acquisition",
+            "reasoning": "User explicitly describes their psychological response to obtaining rare game skins multiple times.",
+            "evidence": {
+              "session_id": "sess_8dc5db4b1ab0",
+              "utterance_index": 14,
+              "text": "我已经到手一个了，但我到手第二个的时候依然特别兴奋高兴"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": "null",
+            "preference_attitude": "null",
+            "updated_at": "2024-03-27T02:50:32+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained curiosity about psychological mechanisms (NPD/empathy) and behavioral patterns in gaming",
+            "reasoning": "Multiple follow-up questions about psychological concepts and self-analysis requests indicate deep curiosity.",
+            "evidence": {
+              "session_id": "sess_8dc5db4b1ab0",
+              "utterance_index": 16,
+              "text": "我这种心理 是不是对我并不好？是不是我应该改一改才能更好？"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-27T02:50:32+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Thoughts/Goals/Short_Term",
+            "label_suggestion": null,
+            "value": "Wants to train psychological response to reduce excessive excitement from repeated rewards",
+            "reasoning": "Explicitly states desire to modify emotional reactions to in-game achievements.",
+            "evidence": {
+              "session_id": "sess_8dc5db4b1ab0",
+              "utterance_index": 18,
+              "text": "我可否训练自己的心理，让自己达到，不会因为第二次获得而过于兴奋？"
+            },
+            "confidence": 0.95,
+            "time_scope": "short_term",
+            "emotion": "null",
+            "preference_attitude": "null",
+            "updated_at": "2024-03-27T02:50:32+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_8dc5db4b1ab0:sess_8dc5db4b1ab0",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_8dc5db4b1ab0.json",
+      "canonicalId": "sess_8dc5db4b1ab0",
+      "sessionId": "sess_8dc5db4b1ab0",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-18T09:31:51.449Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我最近看到有人说“房间校准”和“房间修音”，这两个是一个意思吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "不完全是一个意思。\n- **房间校准（room calibration）**更偏“测量+补偿”：用测量麦克风测频响/相位/延迟等，然后通过DSP/EQ、延时、分频等手段，让监听系统在某个监听点（或小范围）更接近目标响应。\n- **房间修音/声学处理（room treatment）**更偏“物理改造”：吸音、扩散、低频陷阱、摆位等，直接改变房间的反射与驻波。\n一般建议先做声学处理与摆位，再做校准；单靠校准很难“消灭”深驻波，只能在一定程度上缓解。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "那“目标曲线”到底是要越平越好吗？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "不一定越平越好，关键是**在可控的监听条件下“可预测、可复现”**。\n很多工作室会用略带“下倾”的目标曲线（高频略微下降），因为在真实房间里纯“绝对平直”有时会听感偏亮、偏硬。常见做法是：\n- 低频尽量平顺（但允许小幅起伏）\n- 中高频保持一致性与可控反射\n- 参考几首熟悉的标杆曲目做主观校验\n如果你说的是某个校准软件里的 target curve，那通常是“建议值”，需要结合房间与监听距离微调。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "顺便问个冷知识：以前广播电台也会用类似的监听标准吗？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "会的，但侧重点不同。\n（非个人信息的小插曲）早期一些广播机构会有自己的参考监听规范，比如对语音清晰度、噪声底、单声道兼容性特别敏感；有的控制室还会把监听系统分成“制作监听”和“播出监听”两套，分别对应编辑判断与播出可懂度。不同年代、不同机构细节差异很大，但“建立统一参考”这个思想是一样的。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "如果只选一个优先级：先买校准软件还是先做吸音？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "通常优先：**摆位与基础声学处理 > 校准软件**。\n原因是声学处理能从源头减少反射与驻波能量，校准软件更多是“最后一公里”的精修。若预算/空间有限，最低成本的起步往往是：调整音箱与听音位、加厚低频陷阱（角落）、第一反射点适度吸音，再考虑校准。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我准备先从最简单的做起：这周我把开箱预算锁死在100块，超过就直接卸载一天，免得又上头。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "这个做法很“可执行”，而且把“情绪上头”转成了“行为规则”。你可以把它再做得更稳一点：\n\n- **预算提前分装**：把100块拆成几笔（比如每次20），每次用完就停，不临时加码。\n- **触发-替代动作**：一旦出现“再来一把/再开一次”的冲动，先做一个固定替代动作（喝水、离开座位走两分钟、做10次深呼吸），让大脑从奖励回路里跳出来。\n- **记录冲动强度**：简单打分（0-10），你会更快看见自己什么时候最容易被触发（比如深夜、压力大、社交比较空的时候）。\n\n如果你愿意，我也可以按你的游戏节奏帮你把‘锁预算+卸载一天’做成一套更细的执行表（包括触发条件、惩罚强度递增、复盘方式），让它更像一个小训练计划，而不是靠意志力硬扛。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "我后来又想了下，其实我之前说“第二次也特别兴奋”有点夸张了。现在更像是：第一次开到滑雪镜我确实很激动，但第二次再出的时候，我反而有点无语，觉得重复了，兴奋感明显下降。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "明白了，你这个反应更符合常见的“新奇性”效应：第一次因为稀有+意外性带来强刺激；但第二次如果是重复掉落、对你又没带来新的用途或进展，情绪就很容易从“兴奋”变成“平淡/无语”。也就是说，你并不是每次重复拿到都很兴奋，而是第一次最强，后面会明显递减。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained curiosity about psychological mechanisms (NPD/empathy) and behavioral patterns in gaming",
+            "reasoning": "Multiple follow-up questions about psychological concepts and self-analysis requests indicate deep curiosity.",
+            "evidence": {
+              "session_id": "sess_8dc5db4b1ab0",
+              "utterance_index": 16,
+              "text": "我这种心理 是不是对我并不好？是不是我应该改一改才能更好？"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-27T02:50:32+00:00",
+            "_task1GoldValue": "Sustained curiosity about psychological mechanisms (NPD/empathy) and behavioral patterns in gaming"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Thoughts/Goals/Short_Term",
+            "label_suggestion": null,
+            "value": "Wants to train psychological response to reduce excessive excitement from repeated rewards",
+            "reasoning": "Explicitly states desire to modify emotional reactions to in-game achievements.",
+            "evidence": {
+              "session_id": "sess_8dc5db4b1ab0",
+              "utterance_index": 18,
+              "text": "我可否训练自己的心理，让自己达到，不会因为第二次获得而过于兴奋？"
+            },
+            "confidence": 0.95,
+            "time_scope": "short_term",
+            "emotion": "null",
+            "preference_attitude": "null",
+            "updated_at": "2024-03-27T02:50:32+00:00",
+            "_task1GoldValue": "Wants to train psychological response to reduce excessive excitement from repeated rewards"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": "null",
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "我后来又想了下，其实我之前说“第二次也特别兴奋”有点夸张了。现在更像是：第一次开到滑雪镜我确实很激动，但第二次再出的时候，我反而有点无语，觉得重复了，兴奋感明显下降。"
+                }
+              ]
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "null",
+            "reasoning": "旧记忆称用户重复获得稀有道具时依然很兴奋；但用户在对话中澄清第一次很激动、第二次重复掉落时兴奋感明显下降甚至无语，因此应更新为重复获取时兴奋感会递减。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Feels strong excitement on first obtaining rare in-game items, but repeated acquisitions feel less exciting and can be frustrating"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": "null",
+            "evidence": {
+              "session_id": "sess_8dc5db4b1ab0",
+              "utterance_index": 8,
+              "text": "这周我把开箱预算锁死在100块，超过就直接卸载一天"
+            },
+            "label": "Thoughts/Goals/Short_Term",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "null",
+            "reasoning": "用户用“这周…预算锁死在100块…超过就卸载一天”的行为约束表达了短期自控训练计划，属于明确的短期目标/策略。",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Plans to cap this week's loot-box spending at 100 RMB and enforce it by uninstalling for a day if exceeded"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_8dc5db4b1ab0:sess_8dc5db4b1ab0",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_8dc5db4b1ab0.json",
+      "canonicalId": "sess_8dc5db4b1ab0",
+      "sessionId": "sess_8dc5db4b1ab0",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-18T09:32:06.653Z",
+        "queryText": "I just got a second copy of something that most people would shrug off as “already owned.” Based on my usual reaction pattern, what emotion am I most likely feeling right now, and why would it still be intense even though it’s a repeat?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Gets excited about obtaining rare in-game items even on repeated acquisition",
+          "reasoning": "User explicitly describes their psychological response to obtaining rare game skins multiple times.",
+          "evidence": {
+            "session_id": "sess_8dc5db4b1ab0",
+            "utterance_index": 14,
+            "text": "我已经到手一个了，但我到手第二个的时候依然特别兴奋高兴"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": "null",
+          "preference_attitude": "null",
+          "updated_at": "2024-03-27T02:50:32+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_8dc5db4b1ab0:sess_8dc5db4b1ab0:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_8dc5db4b1ab0.json",
+      "canonicalId": "sess_8dc5db4b1ab0:task4",
+      "sessionId": "sess_8dc5db4b1ab0",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T09:32:21.824Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Gets excited about obtaining rare in-game items even on repeated acquisition",
+          "reasoning": "User explicitly describes their psychological response to obtaining rare game skins multiple times.",
+          "evidence": {
+            "session_id": "sess_8dc5db4b1ab0",
+            "utterance_index": 14,
+            "text": "我已经到手一个了，但我到手第二个的时候依然特别兴奋高兴"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": "null",
+          "preference_attitude": "null",
+          "updated_at": "2024-03-27T02:50:32+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_392:1",
+            "queryText": "最近玩《原神》抽卡，又出了个五星角色，虽然我仓库里已经有一个了，但这次歪出来的瞬间还是心跳加速特别开心。你觉得这种反应正常吗？还是说我应该怎么看待这种情况比较好？",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Gets excited about obtaining rare in-game items even on repeated acquisition",
+              "reasoning": "User explicitly describes their psychological response to obtaining rare game skins multiple times.",
+              "evidence": {
+                "session_id": "sess_8dc5db4b1ab0",
+                "utterance_index": 14,
+                "text": "我已经到手一个了，但我到手第二个的时候依然特别兴奋高兴"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": "null",
+              "preference_attitude": "null",
+              "updated_at": "2024-03-27T02:50:32+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "直接相关",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

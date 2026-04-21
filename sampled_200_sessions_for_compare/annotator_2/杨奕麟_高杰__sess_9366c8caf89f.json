@@ -1,0 +1,390 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_9366c8caf89f",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_9366c8caf89f:sess_9366c8caf89f",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_9366c8caf89f.json",
+      "canonicalId": "sess_9366c8caf89f",
+      "sessionId": "sess_9366c8caf89f",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-19T07:17:01.281Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Self-studying AP Chemistry",
+            "reasoning": "User explicitly states they are self-studying AP Chemistry.",
+            "evidence": {
+              "session_id": "sess_9366c8caf89f",
+              "utterance_index": 0,
+              "text": "hey gpt im self studying ap chem..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-20T03:41:35+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Thoughts/Goals/Short_Term",
+            "label_suggestion": null,
+            "value": "AP Chemistry exam in 2 months",
+            "reasoning": "User explicitly states the exam is 2 months away, indicating a time-bound goal.",
+            "evidence": {
+              "session_id": "sess_9366c8caf89f",
+              "utterance_index": 8,
+              "text": "but how do i do all this when the ap exam is only 2 months away?"
+            },
+            "confidence": 0.8,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-20T03:41:35+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "value": "Prefers crash course review books and practice exams for AP Chemistry prep",
+            "reasoning": "User explicitly states their intended study method: 'read a crash course... take multiple practice exams'.",
+            "evidence": {
+              "session_id": "sess_9366c8caf89f",
+              "utterance_index": 10,
+              "text": "atp imma just read a crash course... take multiple practice exams learn from my mistakes"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-02-20T03:41:35+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "label_suggestion": "Study_Strategy/AP_Chemistry/Ambiguity_Concern",
+            "value": "Curious about effective strategies to handle ambiguous AP Chemistry CED content",
+            "reasoning": "User repeatedly questions ambiguous CED content ",
+            "evidence": {
+              "session_id": "sess_9366c8caf89f",
+              "utterance_index": 6,
+              "text": "the essential knowledge statements themselves are sometimes very ambigious"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-20T03:41:35+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_9366c8caf89f:sess_9366c8caf89f",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_9366c8caf89f.json",
+      "canonicalId": "sess_9366c8caf89f",
+      "sessionId": "sess_9366c8caf89f",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-19T07:17:41.407Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "i’m trying to make my practice tests feel less repetitive—any ideas for changing how i review without changing the material?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "A few ways to change the *review mode* while keeping the same test set:\n\n- **Error log by cause (not topic):** categorize misses as setup, algebra, units, concept, or misread. Then fix the *pattern*.\n- **Two-pass redo:** redo every missed question 24–48 hours later *cold*, then compare to your first correction.\n- **Rewrite prompts:** turn FRQs into smaller sub-questions (\"what is asked? what data matters? what principle links them?\") and answer those before solving.\n- **Scoring-rubric first:** read the scoring guide first for 1–2 FRQs so you internalize what earns points, then attempt a similar one normally.\n- **Time-boxed reflection:** after a section, spend 5 minutes writing a “postmortem” (3 mistakes, 2 fixes, 1 rule to remember).\n\nIf you tell me whether you’re bored during review, running out of time, or stuck on certain question types, I can tailor the workflow."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "mostly i’m losing time on the free response because i over-explain and then still miss points"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Then make your FRQ style more rubric-shaped:\n\n1) **Answer in claim → evidence → justification** (one or two sentences each). No narrative.\n2) **Lead with the point-earning phrase** (e.g., “Because K increases with temperature for an endothermic reaction…”), then add only the minimum support.\n3) **Underline the task verbs** (calculate, justify, compare) and write a 1-line “deliverable” before you start.\n4) **Use “slotting”:** leave blank lines for each subpart (a), (b), (c) and don’t merge them.\n5) **Check against common rubric hooks:** units, sign, direction (increase/decrease), and a named principle (Le Châtelier, IMFs, conservation of mass/charge).\n\nAs a calibration: pick one FRQ you already did and paste just one subpart + your response; I’ll show how to cut words while keeping points."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "side question: are super old tests still useful or do they drift too much?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "They’re still useful, but best used selectively:\n\n- **Most transferable:** stoichiometry, equilibrium, acids/bases, thermodynamics, kinetics reasoning, lab/data analysis.\n- **Most likely to drift:** wording conventions, some instrument/lab contexts, and how questions are “packaged” into the newer skill-based style.\n- **Best practice:** use older tests for *raw problem reps*, then use newer-style FRQs (when you can find them) for *format and scoring alignment*.\n\nUnrelated example of drift: the SI definition of the mole was updated in 2019 (fixed Avogadro’s constant), but typical classroom stoichiometry problems didn’t really change—so the core skills remain stable even when the official framing evolves."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "im kinda stuck on pacing tho—my school’s doing the ap chem exam at 8am, so if i’m gonna do full-length runs i guess i should start taking them at that time too."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "That’s a smart way to match test-day conditions. If you can, do at least a couple full-length practice runs starting at 8am so your brain gets used to doing calculations and reading dense prompts right away. The rest of the time, you can still drill sections (like a timed MC set or a single FRQ block) at whatever hour you’re free, then reserve the early-morning start for the most realistic simulations."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "actually i don’t really *prefer* crash course books—i’m only using it because i’m short on time. if i had the choice i’d rather use a more detailed book and just do targeted practice sets."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—so the Crash Course thing is more a time-crunch backup than your preferred style. If you’d rather use a more detailed book, you can still do that by skimming for structure, then spending most of your time on targeted problem sets and reviewing misses."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Self-studying AP Chemistry",
+            "reasoning": "User explicitly states they are self-studying AP Chemistry.",
+            "evidence": {
+              "session_id": "sess_9366c8caf89f",
+              "utterance_index": 0,
+              "text": "hey gpt im self studying ap chem..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-20T03:41:35+00:00",
+            "_task1GoldValue": "Self-studying AP Chemistry"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Thoughts/Goals/Short_Term",
+            "label_suggestion": null,
+            "value": "AP Chemistry exam in 2 months",
+            "reasoning": "User explicitly states the exam is 2 months away, indicating a time-bound goal.",
+            "evidence": {
+              "session_id": "sess_9366c8caf89f",
+              "utterance_index": 8,
+              "text": "but how do i do all this when the ap exam is only 2 months away?"
+            },
+            "confidence": 0.8,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-20T03:41:35+00:00",
+            "_task1GoldValue": "AP Chemistry exam in 2 months"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "label_suggestion": "Study_Strategy/AP_Chemistry/Ambiguity_Concern",
+            "value": "Curious about effective strategies to handle ambiguous AP Chemistry CED content",
+            "reasoning": "User repeatedly questions ambiguous CED content but label 'Thoughts/Curiosity' forced; focus is on study strategy uncertainty.",
+            "evidence": {
+              "session_id": "sess_9366c8caf89f",
+              "utterance_index": 6,
+              "text": "the essential knowledge statements themselves are sometimes very ambigious"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-20T03:41:35+00:00",
+            "_task1GoldValue": "Curious about effective strategies to handle ambiguous AP Chemistry CED content"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "actually i don’t really *prefer* crash course books—i’m only using it because i’m short on time. if i had the choice i’d rather use a more detailed book and just do targeted practice sets."
+                }
+              ]
+            },
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The old memory claims a preference for crash course review books, but the user clarifies it’s not a preference and is only due to limited time; they state they would choose a more detailed book with targeted practice instead.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not prefer Crash Course-style review books; is only using one due to time pressure and would rather use a more detailed book with targeted practice sets."
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_9366c8caf89f",
+              "utterance_index": 6,
+              "text": "my school’s doing the ap chem exam at 8am"
+            },
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "They reference their school's exam time and plan practice runs to match it, implying the official exam start time is 8am.",
+            "time_scope": "short_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User's AP Chemistry exam is scheduled at 8am by their school"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_9366c8caf89f:sess_9366c8caf89f",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_9366c8caf89f.json",
+      "canonicalId": "sess_9366c8caf89f",
+      "sessionId": "sess_9366c8caf89f",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-19T07:17:48.682Z",
+        "queryText": "I’ve got a science test coming up and only a weekend to prep—based on what you remember about how I usually like to study, what two resources should I lean on so I can review fast and then spot my weak areas?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Preferences/Reading",
+          "label_suggestion": null,
+          "value": "Prefers crash course review books and practice exams for AP Chemistry prep",
+          "reasoning": "User explicitly states their intended study method: 'read a crash course... take multiple practice exams'.",
+          "evidence": {
+            "session_id": "sess_9366c8caf89f",
+            "utterance_index": 10,
+            "text": "atp imma just read a crash course... take multiple practice exams learn from my mistakes"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-02-20T03:41:35+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_9366c8caf89f:sess_9366c8caf89f:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_9366c8caf89f.json",
+      "canonicalId": "sess_9366c8caf89f:task4",
+      "sessionId": "sess_9366c8caf89f",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-19T07:18:19.631Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Preferences/Reading",
+          "label_suggestion": null,
+          "value": "Prefers crash course review books and practice exams for AP Chemistry prep",
+          "reasoning": "User explicitly states their intended study method: 'read a crash course... take multiple practice exams'.",
+          "evidence": {
+            "session_id": "sess_9366c8caf89f",
+            "utterance_index": 10,
+            "text": "atp imma just read a crash course... take multiple practice exams learn from my mistakes"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-02-20T03:41:35+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_794:1",
+            "queryText": "I've narrowed down my study approach to two main resources for the final stretch - one is a comprehensive textbook with detailed explanations but fewer practice problems, and the other is a condensed review guide with just the essentials. Which one do you think I should actually focus my time on?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Preferences/Reading",
+              "label_suggestion": null,
+              "value": "Prefers crash course review books and practice exams for AP Chemistry prep",
+              "reasoning": "User explicitly states their intended study method: 'read a crash course... take multiple practice exams'.",
+              "evidence": {
+                "session_id": "sess_9366c8caf89f",
+                "utterance_index": 10,
+                "text": "atp imma just read a crash course... take multiple practice exams learn from my mistakes"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2024-02-20T03:41:35+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "直接相关",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

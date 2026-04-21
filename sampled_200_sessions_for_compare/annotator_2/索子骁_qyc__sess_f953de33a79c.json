@@ -1,0 +1,361 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_f953de33a79c",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_f953de33a79c:sess_f953de33a79c",
+      "relativeItemPath": "sess_f953de33a79c.json",
+      "canonicalId": "sess_f953de33a79c",
+      "sessionId": "sess_f953de33a79c",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T09:27:50.754Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "value": "Name: 李余锴, Birthdate: 2004-12-24",
+            "reasoning": "Role-play context makes identity claims uncertain despite explicit statement",
+            "evidence": {
+              "session_id": "sess_f953de33a79c",
+              "utterance_index": 6,
+              "text": "李余锴 20041224"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T12:40:13.785Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "States_Experiences/Mental_State",
+            "label_suggestion": null,
+            "value": "Currently introverted and not good at verbal communication",
+            "reasoning": "Explicit self-report of current state, but lacks evidence of being a stable long-term trait",
+            "evidence": {
+              "session_id": "sess_f953de33a79c",
+              "utterance_index": 18,
+              "text": "我目前较为内向，不善言辞，预测一下大学情况"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-11T16:26:04Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "Sustained curiosity about love life predictions (桃花运) and university transition outcomes [ERROR: Role-play/third-party possible - inquiries made within fortune-telling game context]",
+            "reasoning": "Role-play/third-party possible - inquiries made within fortune-telling game context",
+            "evidence": {
+              "session_id": "sess_f953de33a79c",
+              "utterance_index": 18,
+              "text": "我目前较为内向，不善言辞，预测一下大学情况"
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T12:40:48.077Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_f953de33a79c:sess_f953de33a79c",
+      "relativeItemPath": "sess_f953de33a79c.json",
+      "canonicalId": "sess_f953de33a79c",
+      "sessionId": "sess_f953de33a79c",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:04:27.377Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我们继续刚才的角色扮演，你还是算命先生。"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以。起卦之前，我先立个规矩：我用传统文化的说法来“解读趋势”，但不承诺具体日期与必然结果。你这次想问哪一类：学业、人际、感情，还是整体运势？"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "那就用周易的方式，随便起一卦，给个总体建议。"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "好，那我用一个“示例起卦”来讲思路：假设得《风山渐》之象。\n\n《渐》讲“循序渐进”，像雁飞有序，不宜急求速成。若问整体建议：\n1) 做事先立次序：先把最关键的一两件事做稳，再扩展到其他。\n2) 人际贵在“久而不躁”：与人相处别急着求立刻的回报，重在持续与诚信。\n3) 心态上宜“守正”：不走捷径、不图一时热闹，反而更容易积累福分。\n\n另外说个题外话（不是给人算命的）：北宋的汴梁城传说夜市极盛，很多故事都用“渐”来写一个小人物慢慢立足的过程。你如果愿意，也可以给我两个数字（1-9）当作卦数，我再按数字正式演一遍起卦流程。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "那如果是《火水未济》呢？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "《未济》是“事将成而未成”，像水在火上，力量未能合一。用它来谈总体建议，重点在“收尾”和“配合”：\n1) 临门一脚最考验细节：越接近完成，越要复盘流程、补漏洞。\n2) 别硬冲：该协调的就协调，该等待的就等待；强行推进容易反复。\n3) 先定标准再行动：把“做成”的标准写清楚，避免忙了很久却偏题。\n\n顺带一提，《未济》常被拿来解释“工程验收阶段”的心态：看似差一点，实际上差的是检查表。你要不要我用一个生活化的假设场景（比如考试备考/项目结题/关系磨合）来把《未济》的建议落到具体做法上？"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "那我就按你说的去试试吧……不过我现在更想问点现实的：下个月社团招新我打算去看看辩论队，但一想到要当众开口就有点发怵。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "明白。你这种“想去但会紧张”的状态很常见。若你真想靠社团把路走宽一点，辩论队确实能逼着你练表达，不过不一定要一上来就冲主辩：先从旁听、做记录、跟着学结构开始，会更容易坚持。你也可以给自己定个小目标，比如第一次只在小组讨论里说一句完整观点。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "上次我说“我目前较为内向，不善言辞”其实不太准确。最近我在班里做了几次分享，还当了小组汇报的主讲，跟同学聊起来也挺自然的。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "明白了，也就是说你并不是“目前内向且不善言辞”，而是之前在某些场合会紧张；从你“做了几次分享”“当了小组汇报的主讲”这些表现来看，你的表达能力和社交状态已经明显好转。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "对，现在更多是看场合，熟悉的话题我就能讲得很顺。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "value": "Name: 李余锴, Birthdate: 2004-12-24",
+            "reasoning": "Role-play context makes identity claims uncertain despite explicit statement",
+            "evidence": {
+              "session_id": "sess_f953de33a79c",
+              "utterance_index": 6,
+              "text": "李余锴 20041224"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T12:40:13.785Z",
+            "_task1GoldValue": "Name: 李余锴, Birthdate: 2004-12-24"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "Sustained curiosity about love life predictions (桃花运) and university transition outcomes [ERROR: Role-play/third-party possible - inquiries made within fortune-telling game context]",
+            "reasoning": "Role-play/third-party possible - inquiries made within fortune-telling game context",
+            "evidence": {
+              "session_id": "sess_f953de33a79c",
+              "utterance_index": 18,
+              "text": "我目前较为内向，不善言辞，预测一下大学情况"
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T12:40:48.077Z",
+            "_task1GoldValue": "Sustained curiosity about love life predictions (桃花运) and university transition outcomes [ERROR: Role-play/third-party possible - inquiries made within fortune-telling game context]"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "States_Experiences/Mental_State",
+            "memory_id": "m2_updated",
+            "preference_attitude": null,
+            "reasoning": "旧记忆称用户“目前内向且不善言辞”，但用户明确表示该说法“不太准确”，并提供近期多次公开分享与主讲汇报、交流自然的反证，说明当前状态更接近在熟悉场合表达自如、并非普遍不善言辞。",
+            "time_scope": "unknown",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Recently has become more comfortable speaking; can present and communicate naturally in familiar contexts rather than being generally not good at verbal communication"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": "anxious",
+            "evidence": {
+              "session_id": "sess_f953de33a79c",
+              "utterance_index": 0,
+              "text": "下个月社团招新我打算去看看辩论队"
+            },
+            "label": "Plans/Goals",
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User mentions intending to attend the club recruitment and specifically to look at the debate team, which implies a near-term plan.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User plans to check out the debate team during next month's club recruitment."
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "States_Experiences/Mental_State",
+            "label_suggestion": null,
+            "value": "Currently introverted and not good at verbal communication",
+            "reasoning": "Explicit self-report of current state, but lacks evidence of being a stable long-term trait",
+            "evidence": {
+              "session_id": "sess_f953de33a79c",
+              "utterance_index": 18,
+              "text": "我目前较为内向，不善言辞，预测一下大学情况"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-11T16:26:04Z",
+            "_task1GoldValue": "Currently introverted and not good at verbal communication"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_f953de33a79c:sess_f953de33a79c",
+      "relativeItemPath": "sess_f953de33a79c.json",
+      "canonicalId": "sess_f953de33a79c",
+      "sessionId": "sess_f953de33a79c",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:04:43.717Z",
+        "queryText": "下周我要参加一个需要当场自我介绍和临时问答的活动。如果我想提前做点准备来避免现场卡壳、又不想给人留下“没参与感”的印象，你觉得我最需要优先补上的短板会是什么？为什么？",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "States_Experiences/Mental_State",
+          "label_suggestion": null,
+          "value": "Currently introverted and not good at verbal communication",
+          "reasoning": "Explicit self-report of current state, but lacks evidence of being a stable long-term trait",
+          "evidence": {
+            "session_id": "sess_f953de33a79c",
+            "utterance_index": 18,
+            "text": "我目前较为内向，不善言辞，预测一下大学情况"
+          },
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-11T16:26:04Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_f953de33a79c:sess_f953de33a79c:task4",
+      "relativeItemPath": "sess_f953de33a79c.json",
+      "canonicalId": "sess_f953de33a79c:task4",
+      "sessionId": "sess_f953de33a79c",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:03:15.902Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "States_Experiences/Mental_State",
+          "label_suggestion": null,
+          "value": "Currently introverted and not good at verbal communication",
+          "reasoning": "Explicit self-report of current state, but lacks evidence of being a stable long-term trait",
+          "evidence": {
+            "session_id": "sess_f953de33a79c",
+            "utterance_index": 18,
+            "text": "我目前较为内向，不善言辞，预测一下大学情况"
+          },
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-11T16:26:04Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability3_467:1",
+            "queryText": "我最近在准备大学社团的面试，但根据我们之前的对话，你也知道我性格比较内向、不善言辞。按照你作为算命先生对我八字的分析，你觉得我这种性格在现实中的大学社交场合里，应该具体选择加入哪种类型的社团才最合适？毕竟你对我这么了解，应该能给出很准的建议吧？",
+            "ability": "ability3",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "States_Experiences/Mental_State",
+              "label_suggestion": null,
+              "value": "Currently introverted and not good at verbal communication",
+              "reasoning": "Explicit self-report of current state, but lacks evidence of being a stable long-term trait",
+              "evidence": {
+                "session_id": "sess_f953de33a79c",
+                "utterance_index": 18,
+                "text": "我目前较为内向，不善言辞，预测一下大学情况"
+              },
+              "confidence": 0.8,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-06-11T16:26:04Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "medium",
+            "abilityPurity": "medium",
+            "issueTypes": [
+              "ability_mismatch"
+            ],
+            "evidenceNote": "relevant memory but not helpful ability",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

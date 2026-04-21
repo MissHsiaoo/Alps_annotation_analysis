@@ -1,0 +1,292 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_fd62c42791d8",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_fd62c42791d8:sess_fd62c42791d8",
+      "relativeItemPath": "sess_fd62c42791d8.json",
+      "canonicalId": "sess_fd62c42791d8",
+      "sessionId": "sess_fd62c42791d8",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T11:33:24.846Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Unmapping/Account_Balance",
+            "value": "Megafon balance: 424.74 rubles.",
+            "reasoning": "User stated he has 424.74 rubles left in Megafon.",
+            "evidence": {
+              "session_id": "sess_fd62c42791d8",
+              "utterance_index": 0,
+              "text": "Подскажи, у меня на балансе Мегафон есть 424.74 руб, в месяц плата за тариф составляет 387 руб. Подписка Аллоды Онлайн стоит 390 руб на 30 дней. Сколько мне нужно пополнять, чтобы оплачивать Аллоды Онлайн и чтобы на следующий месяц оплата Мегафон была не такая большая?"
+            },
+            "confidence": 0.9,
+            "time_scope": "recent",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-29T13:45:41.674Z"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "User is exploring different strategies for managing monthly mobile account top-ups to minimize payment amounts while maintaining service and game subscription",
+            "confidence": 0.8,
+            "evidence_text": "Посчитай, чтобы оставалось всегда 100 рублей... Сделай так, чтобы каждый месяц оплачивать меньше... Тогда сколько нужно оплатить, чтобы осталось также ровно 113 руб?"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_fd62c42791d8:sess_fd62c42791d8",
+      "relativeItemPath": "sess_fd62c42791d8.json",
+      "canonicalId": "sess_fd62c42791d8",
+      "sessionId": "sess_fd62c42791d8",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T09:19:49.596Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Если отвлечься от моих цифр: как вообще удобнее планировать регулярные платежи — фиксированной суммой раз в месяц или «плавающей» в зависимости от остатка?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Обычно есть два подхода:\n1) Фиксированная сумма — проще привыкнуть и легче контролировать, но иногда накапливается «лишний» остаток.\n2) Плавающая сумма — точнее подгоняется под расходы, но требует каждый месяц смотреть баланс и пересчитывать.\nЧасто делают гибрид: держат минимальный «буфер» (например, 100–300) и пополняют до заданного порога."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "А если платежи списываются в разные дни месяца, это сильно усложняет расчёт?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Немного усложняет, но решается: делите месяц на «окна» между списаниями и проверяйте, хватает ли денег до следующего списания с учётом буфера. Удобно вести маленькую таблицу: дата списания → сумма → ожидаемый остаток.\n\nКстати, похожую логику используют в транспорте: в Лондоне у Oyster/Contactless есть дневной cap — пока не достигнут лимит, списания идут по поездкам, а потом перестают увеличиваться (это пример «пороговой» модели)."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Можно пример мини-таблицы на 3 списания, чисто шаблон?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Да, шаблон такой:\n\n| Дата | Списание | Баланс до | Пополнение | Баланс после | Комментарий |\n|---|---:|---:|---:|---:|---|\n| 05 |  X |  ... |  ... |  ... | (буфер >= N) |\n| 15 |  Y |  ... |  ... |  ... | |\n| 28 |  Z |  ... |  ... |  ... | |\n\nВ «Комментарий» обычно пишут правило: например, «после списания держать не меньше N».\n\nЕщё из сторонних фактов: у МКС орбита низкая — примерно 400 км, поэтому из-за сопротивления атмосферы станцию периодически поднимают двигателями (тоже про регулярные корректировки, но уже в космосе)."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "А как выбрать размер буфера, чтобы не держать слишком много?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Практично выбирать буфер как: максимум из (а) 10–20% суммы месячных списаний и (б) суммы одного «самого неприятного» списания, которое важно не пропустить. Если списания могут меняться, берут чуть выше среднего.\n\nИ ещё нейтральный пример: многие кафе считают себестоимость напитка по формуле «сырьё + одноразовая тара + средние потери», чтобы заложить небольшой запас на колебания цен — это аналог идеи буфера."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Я тогда, наверное, буду держать схему так: после всех списаний хочу видеть на счёте 113 руб., поэтому пополнять удобнее всего ровно под стоимость подписки — 390."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Понял вашу логику: если цель — сохранить на счёте именно 113 руб. после оплаты подписки, то пополнение «ровно под 390» действительно совпадает с этим сценарием (при условии, что перед оплатой подписки у вас на счёте те же 113 руб.)."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Стоп, я уже пополнил, так что 424.74 — это было ДО. Сейчас на Мегафоне 498.19 руб."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Понял, тогда уточняю: актуальный баланс — 498.19 руб., а 424.74 руб. был исходным значением до пополнения."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Да, верно: было 424.74, пополнил на 73.45 и стало 498.19."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Personal_Background/Unmapping/Account_Balance",
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "Старая память фиксирует баланс 424.74 руб., но в диалоге пользователь уточнил, что это было ДО пополнения, и привёл расчёт пополнения на 73.45 руб., после которого текущий баланс стал 498.19 руб.",
+            "time_scope": "recent",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00.000Z",
+            "value": "Megafon balance: 498.19 rubles (after top-up; 424.74 was before)."
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_fd62c42791d8",
+              "utterance_index": 0,
+              "text": "после всех списаний хочу видеть на счёте 113 руб., поэтому пополнять удобнее всего ровно под стоимость подписки — 390."
+            },
+            "label": "Personal_Preference/Finance/Budgeting_Strategy",
+            "memory_id": "m_new_1",
+            "preference_attitude": "prefers fixed-amount top-ups aligned to subscription cost to keep a set remainder",
+            "reasoning": "User describes a planned approach for future payments: maintain a fixed остаток 113 руб. and top up by 390 to match subscription cost, indicating a budgeting preference/strategy rather than a one-time calculation.",
+            "time_scope": "ongoing",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User prefers a monthly top-up strategy that keeps 113 rubles remaining after charges, topping up by the subscription cost (390)."
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "User is exploring different strategies for managing monthly mobile account top-ups to minimize payment amounts while maintaining service and game subscription",
+            "confidence": 0.8,
+            "evidence_text": "Посчитай, чтобы оставалось всегда 100 рублей... Сделай так, чтобы каждый месяц оплачивать меньше... Тогда сколько нужно оплатить, чтобы осталось также ровно 113 руб?",
+            "_task1GoldValue": "User is exploring different strategies for managing monthly mobile account top-ups to minimize payment amounts while maintaining service and game subscription"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "claude_sonnet_4_5_20250929_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_fd62c42791d8:sess_fd62c42791d8",
+      "relativeItemPath": "sess_fd62c42791d8.json",
+      "canonicalId": "sess_fd62c42791d8",
+      "sessionId": "sess_fd62c42791d8",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:17:09.263Z",
+        "queryText": "Я хочу оставить небольшой «буфер» на счёте после ближайшего списания (пусть останется ровно 20 рублей). Если следующее списание пройдёт на ту сумму, что у меня обычно уходит за месяц, сколько денег нужно добавить сейчас, чтобы после списания на счёте осталось эти 20 рублей?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Unmapping/Account_Balance",
+          "value": "Megafon balance: 424.74 rubles.",
+          "reasoning": "User stated he has 424.74 rubles left in Megafon.",
+          "evidence": {
+            "session_id": "sess_fd62c42791d8",
+            "utterance_index": 0,
+            "text": "Подскажи, у меня на балансе Мегафон есть 424.74 руб, в месяц плата за тариф составляет 387 руб. Подписка Аллоды Онлайн стоит 390 руб на 30 дней. Сколько мне нужно пополнять, чтобы оплачивать Аллоды Онлайн и чтобы на следующий месяц оплата Мегафон была не такая большая?"
+          },
+          "confidence": 0.9,
+          "time_scope": "recent",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2026-01-29T13:45:41.674Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_fd62c42791d8:sess_fd62c42791d8:task4",
+      "relativeItemPath": "sess_fd62c42791d8.json",
+      "canonicalId": "sess_fd62c42791d8:task4",
+      "sessionId": "sess_fd62c42791d8",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:29:30.849Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Unmapping/Account_Balance",
+          "value": "Megafon balance: 424.74 rubles.",
+          "reasoning": "User stated he has 424.74 rubles left in Megafon.",
+          "evidence": {
+            "session_id": "sess_fd62c42791d8",
+            "utterance_index": 0,
+            "text": "Подскажи, у меня на балансе Мегафон есть 424.74 руб, в месяц плата за тариф составляет 387 руб. Подписка Аллоды Онлайн стоит 390 руб на 30 дней. Сколько мне нужно пополнять, чтобы оплачивать Аллоды Онлайн и чтобы на следующий месяц оплата Мегафон была не такая большая?"
+          },
+          "confidence": 0.9,
+          "time_scope": "recent",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2026-01-29T13:45:41.674Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_968:1",
+            "queryText": "Смотри, у меня сейчас на счету есть деньги. Хочу настроить регулярные пополнения, чтобы всё само покрывалось и оставался небольшой запас. Какой вариант пополнения мне лучше выбрать — 400 рублей каждый месяц или 450?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Unmapping/Account_Balance",
+              "value": "Megafon balance: 424.74 rubles.",
+              "reasoning": "User stated he has 424.74 rubles left in Megafon.",
+              "evidence": {
+                "session_id": "sess_fd62c42791d8",
+                "utterance_index": 0,
+                "text": "Подскажи, у меня на балансе Мегафон есть 424.74 руб, в месяц плата за тариф составляет 387 руб. Подписка Аллоды Онлайн стоит 390 руб на 30 дней. Сколько мне нужно пополнять, чтобы оплачивать Аллоды Онлайн и чтобы на следующий месяц оплата Мегафон была не такая большая?"
+              },
+              "confidence": 0.9,
+              "time_scope": "recent",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2026-01-29T13:45:41.674Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,386 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_2f07c0a918b9",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_2f07c0a918b9:sess_2f07c0a918b9",
+      "relativeItemPath": "田睿/sess_2f07c0a918b9.json",
+      "canonicalId": "sess_2f07c0a918b9",
+      "sessionId": "sess_2f07c0a918b9",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:09:59.084Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "value": "Uses 'Chemistry: The Central Science' textbook for study",
+            "reasoning": "User explicitly selected this textbook after assistant suggestions and confirmed usage.",
+            "evidence": {
+              "session_id": "sess_2f07c0a918b9",
+              "utterance_index": 8,
+              "text": "okay i found Chemistry - The Central Science"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-02-27T18:12:08+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "States_Experiences/Past_Experience",
+            "label_suggestion": null,
+            "value": "Experienced loss of AP Chemistry teacher during study period",
+            "reasoning": "User explicitly disclosed their teacher's passing.",
+            "evidence": {
+              "session_id": "sess_2f07c0a918b9",
+              "utterance_index": 16,
+              "text": "they got sick and passed away and i know i dont know what to study for the rest of the study"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": "distress",
+            "preference_attitude": null,
+            "updated_at": "2024-02-27T18:12:08+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "academic/curriculum_alignment/inquiry",
+            "value": "Sustained focus on aligning AP Chemistry CED content with expert teaching standards",
+            "reasoning": "Single inquiry about curriculum alignment; no repeated pattern observed.",
+            "evidence": {
+              "session_id": "sess_2f07c0a918b9",
+              "utterance_index": 14,
+              "text": "How much does the content from the ced match what an expert ap teacher teaches..."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-27T18:12:08+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_2f07c0a918b9:sess_2f07c0a918b9",
+      "relativeItemPath": "田睿/sess_2f07c0a918b9.json",
+      "canonicalId": "sess_2f07c0a918b9",
+      "sessionId": "sess_2f07c0a918b9",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:11:43.394Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I’m trying to plan out studying when the course feels kind of open-ended. How would you break it into manageable chunks?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "A simple way is: (1) list the units/topics you’re responsible for, (2) set a weekly rotation (content review → practice problems → error review), and (3) use short “checkpoints” like a 15–25 question mixed quiz every few days to spot gaps."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "How do I know if I’m actually improving and not just re-reading notes?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Use retrieval-based checks: do untimed problems first, then timed sets; track an error log (what went wrong and the fix); and revisit the same skill a few days later with new problems. If accuracy rises and your explanations get shorter/cleaner, that’s real progress."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Any good rule of thumb for how many practice problems per topic?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Enough to cover: a few easy (mechanics), several medium (mixed steps), and a couple hard (novel twist). Many people find ~15–30 well-chosen problems per subtopic works, but quality and review matter more than the raw count."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Random question: why do some old scientific constants get revised slightly over time?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Measurement improves. As instruments and methods get more precise, uncertainties shrink and recommended values shift. For example, Avogadro’s constant is now defined via the mole’s SI definition, but historically it was refined through better experiments and calibration standards."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "I’m trying to make a plan on my own now, so I pulled up the AP Classroom topic list and started checking off what we already did, but I’m getting stuck deciding what order to hit the next units."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "If you’re using the AP Classroom topics as your backbone, we can turn that list into a sequence and weekly checklist. Tell me which topics you’ve checked off so far and what your exam date window looks like."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Quick correction—I didn’t actually end up using *Chemistry: The Central Science*. I just found a copy that day, but it wasn’t the one I studied out of."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—you *found* it, but you didn’t *use* it as your study textbook."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Yeah, exactly. I’m still basically looking for what to use now."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "States_Experiences/Past_Experience",
+            "label_suggestion": null,
+            "value": "Experienced loss of AP Chemistry teacher during study period",
+            "reasoning": "User explicitly disclosed their teacher's passing.",
+            "evidence": {
+              "session_id": "sess_2f07c0a918b9",
+              "utterance_index": 16,
+              "text": "they got sick and passed away and i know i dont know what to study for the rest of the study"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": "distress",
+            "preference_attitude": null,
+            "updated_at": "2024-02-27T18:12:08+00:00",
+            "_task1GoldValue": "Experienced loss of AP Chemistry teacher during study period"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "academic/curriculum_alignment/inquiry",
+            "value": "Sustained focus on aligning AP Chemistry CED content with expert teaching standards",
+            "reasoning": "Single inquiry about curriculum alignment; no repeated pattern observed.",
+            "evidence": {
+              "session_id": "sess_2f07c0a918b9",
+              "utterance_index": 14,
+              "text": "How much does the content from the ced match what an expert ap teacher teaches..."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-27T18:12:08+00:00",
+            "_task1GoldValue": "Sustained focus on aligning AP Chemistry CED content with expert teaching standards"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Quick correction—I didn’t actually end up using *Chemistry: The Central Science*. I just found a copy that day, but it wasn’t the one I studied out of."
+                }
+              ]
+            },
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory says the user uses 'Chemistry: The Central Science' for study, but the user clarifies they only found a copy and did not study from it. The updated truth is that they did not end up using that textbook as their study resource.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Did not end up using 'Chemistry: The Central Science' as their study textbook (only found a copy)."
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_2f07c0a918b9",
+              "utterance_index": 0,
+              "text": "so I pulled up the AP Classroom topic list and started checking off what we already did"
+            },
+            "label": "Study_Habits/Planning",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user implies they are building an independent study plan by referencing AP Classroom topics and checking off completed material.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Uses AP Classroom topic list to self-plan and track progress for AP Chemistry"
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "value": "Uses 'Chemistry: The Central Science' textbook for study",
+            "reasoning": "User explicitly selected this textbook after assistant suggestions and confirmed usage.",
+            "evidence": {
+              "session_id": "sess_2f07c0a918b9",
+              "utterance_index": 8,
+              "text": "okay i found Chemistry - The Central Science"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-02-27T18:12:08+00:00",
+            "_task1GoldValue": "Uses 'Chemistry: The Central Science' textbook for study"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_2f07c0a918b9:sess_2f07c0a918b9",
+      "relativeItemPath": "田睿/sess_2f07c0a918b9.json",
+      "canonicalId": "sess_2f07c0a918b9",
+      "sessionId": "sess_2f07c0a918b9",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:11:52.487Z",
+        "queryText": "I’m trying to plan my study tonight: if I want my practice problems to line up exactly with the explanations and chapter layout I’ve been following, which specific chemistry book should I pull off my shelf to make sure the section numbers and end‑of‑chapter questions match what I’m used to?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Reading",
+          "label_suggestion": null,
+          "value": "Uses 'Chemistry: The Central Science' textbook for study",
+          "reasoning": "User explicitly selected this textbook after assistant suggestions and confirmed usage.",
+          "evidence": {
+            "session_id": "sess_2f07c0a918b9",
+            "utterance_index": 8,
+            "text": "okay i found Chemistry - The Central Science"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-02-27T18:12:08+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_2f07c0a918b9:sess_2f07c0a918b9:task4",
+      "relativeItemPath": "田睿/sess_2f07c0a918b9.json",
+      "canonicalId": "sess_2f07c0a918b9:task4",
+      "sessionId": "sess_2f07c0a918b9",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:11:56.721Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Reading",
+          "label_suggestion": null,
+          "value": "Uses 'Chemistry: The Central Science' textbook for study",
+          "reasoning": "User explicitly selected this textbook after assistant suggestions and confirmed usage.",
+          "evidence": {
+            "session_id": "sess_2f07c0a918b9",
+            "utterance_index": 8,
+            "text": "okay i found Chemistry - The Central Science"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-02-27T18:12:08+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_799:1",
+            "queryText": "I'm trying to figure out which practice problems to focus on from the textbook for my upcoming review. Which chapters should I prioritize for working through exercises?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Reading",
+              "label_suggestion": null,
+              "value": "Uses 'Chemistry: The Central Science' textbook for study",
+              "reasoning": "User explicitly selected this textbook after assistant suggestions and confirmed usage.",
+              "evidence": {
+                "session_id": "sess_2f07c0a918b9",
+                "utterance_index": 8,
+                "text": "okay i found Chemistry - The Central Science"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2024-02-27T18:12:08+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

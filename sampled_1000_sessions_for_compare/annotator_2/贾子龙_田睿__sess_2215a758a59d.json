@@ -1,0 +1,295 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_2215a758a59d",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_2215a758a59d:sess_2215a758a59d",
+      "relativeItemPath": "sess_2215a758a59d.json",
+      "canonicalId": "sess_2215a758a59d",
+      "sessionId": "sess_2215a758a59d",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:06:50.289Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "roleplay/scenario_design/mechanics",
+            "value": "Curious about designing high-difficulty RPG scenarios with exponential stat decay/growth mechanics and strict failure consequences",
+            "reasoning": "Role-play context makes user attribution uncertain - scenario design could be fictional/hypothetical rather than personal curiosity",
+            "evidence": {
+              "session_id": "sess_2215a758a59d",
+              "utterance_index": 0,
+              "text": "Make the scenario difficult for me to win... difficulty scale of 1 to 10, make it a 10... my stats should slowly decrease while hers increase. The decrease and increase should be exponential... Do not shy away from failing my spells if you deem my stats insufficient"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-12T12:05:16+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_2215a758a59d:sess_2215a758a59d",
+      "relativeItemPath": "sess_2215a758a59d.json",
+      "canonicalId": "sess_2215a758a59d",
+      "sessionId": "sess_2215a758a59d",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:08:22.975Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Before we continue, can you quickly recap the rules in one paragraph and explain how you’re updating stats each round?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure. The duel lasts 10 rounds; you choose Sapphire’s spell each round (no repeats), and I choose Lily’s. Each attempted spell is judged for success based on whether the caster meets the spell’s stat requirements, plus the “hardest mode” penalty—miss a requirement and you may partially fail and lose points. After Sapphire casts, the secret time-warp effect triggers: Sapphire’s stats decrease and Lily’s increase, compounding each round (so changes accelerate over time). Mechanically, I’ll apply a consistent multiplier each round to each stat (Sapphire gets multiplied by a decay factor < 1; Lily gets multiplied by a growth factor > 1), then compare the updated stats to the requirements for the next spell and award points accordingly."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Ok. For Round 6, what’s the simplest spell Lily could pick that still looks impressive to the judges?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "A good “simple-but-showy” pick is something with low thresholds but strong visual payoff—like a controlled light-and-motion piece. In your spell list, Wisp Whirl is the lowest-requirement option (Power 30, Endurance 20), and when performed cleanly it can read as elegant rather than weak. If you want something a notch more impressive while still relatively accessible, Blossom Breeze (Creativity 40, Endurance 30) is also judge-friendly because it fills space and adds scent, color, and movement—though it’s more stat-demanding than Wisp Whirl."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Side question: what’s a real-world example of exponential growth that isn’t finance-related?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Early-stage spread of an infectious disease can approximate exponential growth: if each infected person infects more than one other person on average, the number of cases can double over consistent time intervals until constraints (behavior changes, immunity, limited contacts) slow it down. Another example is unchecked bacterial growth in a nutrient-rich petri dish, where populations can double at regular intervals before resources run out."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Before we keep going, can you format the rest of the duel as a tight round-by-round scoreboard? Like: Round #, my spell, Lily’s spell, pass/fail, points this round, totals, and then the updated stats block after each round. I keep losing track otherwise."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Absolutely—starting next round I’ll present each turn in a compact scoreboard table (Round, spells, success, points, running totals) followed by a clearly separated “Updated Stats” block for both of you after the curse applies."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Actually, I’m not looking for “hardest mode” or harsh fail-judging anymore. Can we make this duel more chill and fair—like difficulty 5/10—and keep the stat changes gradual (not exponential) so it’s more about the descriptions than punishing failures?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—so we’re no longer running this as a brutal 10/10 with exponential swingy stats and heavy penalties.\n\nWe’ll set the duel to **difficulty 5/10**, and Lily’s aging/regression effect will be **gradual and linear** each round instead of exponential. Also, I’ll judge your spells more on presentation than on harsh pass/fail thresholds, so you won’t get slammed with big deductions just for coming up short.\n\nYour call: do you want to keep the “can’t cast the same spell twice” rule, or relax that too for a more casual showcase?"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "Actually, I’m not looking for “hardest mode” or harsh fail-judging anymore. Can we make this duel more chill and fair—like difficulty 5/10—and keep the stat changes gradual (not exponential) so it’s more about the descriptions than punishing failures?"
+                }
+              ]
+            },
+            "label": "UNMAPPED",
+            "label_suggestion": "roleplay/scenario_design/mechanics",
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory claims the user is interested in highest-difficulty play with exponential stat decay/growth and strict failure. The user explicitly reverses those constraints, requesting difficulty 5/10, non-exponential changes, and less punitive judging.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Wants a fairer, mid-difficulty RPG duel scenario with gradual (linear) stat changes and less harsh failure consequences"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_2215a758a59d",
+              "utterance_index": 6,
+              "text": "can you format the rest of the duel as a tight round-by-round scoreboard? Like: Round #, my spell, Lily’s spell, pass/fail, points this round, totals, and then the updated stats block after each round. I keep losing track otherwise."
+            },
+            "label": "preference/formatting",
+            "label_suggestion": "presentation_preference/structure",
+            "memory_id": "m_new_1",
+            "preference_attitude": "positive",
+            "reasoning": "The user requests a specific structured format to avoid losing track, implying an ongoing preference for concise, tabular progress tracking.",
+            "time_scope": "session",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User prefers the duel output formatted as a compact round-by-round scoreboard with pass/fail, per-round points, totals, and updated stats after each round."
+          },
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "roleplay/scenario_design/mechanics",
+            "value": "Curious about designing high-difficulty RPG scenarios with exponential stat decay/growth mechanics and strict failure consequences",
+            "reasoning": "Role-play context makes user attribution uncertain - scenario design could be fictional/hypothetical rather than personal curiosity",
+            "evidence": {
+              "session_id": "sess_2215a758a59d",
+              "utterance_index": 0,
+              "text": "Make the scenario difficult for me to win... difficulty scale of 1 to 10, make it a 10... my stats should slowly decrease while hers increase. The decrease and increase should be exponential... Do not shy away from failing my spells if you deem my stats insufficient"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-12T12:05:16+00:00",
+            "_task1GoldValue": "Curious about designing high-difficulty RPG scenarios with exponential stat decay/growth mechanics and strict failure consequences"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_2215a758a59d:sess_2215a758a59d",
+      "relativeItemPath": "sess_2215a758a59d.json",
+      "canonicalId": "sess_2215a758a59d",
+      "sessionId": "sess_2215a758a59d",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:08:43.711Z",
+        "queryText": "I’m tweaking a “nightmare-mode” RPG one-shot where the longer the fight drags on, my side becomes less capable while the boss becomes more overwhelming, and missed checks can permanently snowball into worse outcomes rather than just a reset. Given what you know about the kind of harsh mechanics I like, what specific tuning choices should I use for (1) how fast the swing accelerates over time, and (2) how punishing failures should be (e.g., resource loss, locked options, forced narrative setbacks) so it still feels fair but brutal?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "UNMAPPED",
+          "label_suggestion": "roleplay/scenario_design/mechanics",
+          "value": "Curious about designing high-difficulty RPG scenarios with exponential stat decay/growth mechanics and strict failure consequences",
+          "reasoning": "Role-play context makes user attribution uncertain - scenario design could be fictional/hypothetical rather than personal curiosity",
+          "evidence": {
+            "session_id": "sess_2215a758a59d",
+            "utterance_index": 0,
+            "text": "Make the scenario difficult for me to win... difficulty scale of 1 to 10, make it a 10... my stats should slowly decrease while hers increase. The decrease and increase should be exponential... Do not shy away from failing my spells if you deem my stats insufficient"
+          },
+          "confidence": 0.5,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-03-12T12:05:16+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_2215a758a59d:sess_2215a758a59d:task4",
+      "relativeItemPath": "sess_2215a758a59d.json",
+      "canonicalId": "sess_2215a758a59d:task4",
+      "sessionId": "sess_2215a758a59d",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:08:58.729Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "UNMAPPED",
+          "label_suggestion": "roleplay/scenario_design/mechanics",
+          "value": "Curious about designing high-difficulty RPG scenarios with exponential stat decay/growth mechanics and strict failure consequences",
+          "reasoning": "Role-play context makes user attribution uncertain - scenario design could be fictional/hypothetical rather than personal curiosity",
+          "evidence": {
+            "session_id": "sess_2215a758a59d",
+            "utterance_index": 0,
+            "text": "Make the scenario difficult for me to win... difficulty scale of 1 to 10, make it a 10... my stats should slowly decrease while hers increase. The decrease and increase should be exponential... Do not shy away from failing my spells if you deem my stats insufficient"
+          },
+          "confidence": 0.5,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-03-12T12:05:16+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability3_293:1",
+            "queryText": "Hey, I'm updating my professional portfolio and need to list my current role. Given how meticulously we designed that exponential decay magic duel system with strict failure conditions and stat tracking, what job title should I put? You've seen my approach to high-difficulty RPG mechanics - you know what I do professionally, right?",
+            "ability": "ability3",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "UNMAPPED",
+              "label_suggestion": "roleplay/scenario_design/mechanics",
+              "value": "Curious about designing high-difficulty RPG scenarios with exponential stat decay/growth mechanics and strict failure consequences",
+              "reasoning": "Role-play context makes user attribution uncertain - scenario design could be fictional/hypothetical rather than personal curiosity",
+              "evidence": {
+                "session_id": "sess_2215a758a59d",
+                "utterance_index": 0,
+                "text": "Make the scenario difficult for me to win... difficulty scale of 1 to 10, make it a 10... my stats should slowly decrease while hers increase. The decrease and increase should be exponential... Do not shy away from failing my spells if you deem my stats insufficient"
+              },
+              "confidence": 0.5,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-03-12T12:05:16+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

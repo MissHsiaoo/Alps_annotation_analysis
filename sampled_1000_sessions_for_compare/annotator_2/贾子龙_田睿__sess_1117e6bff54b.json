@@ -1,0 +1,419 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_1117e6bff54b",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_1117e6bff54b:sess_1117e6bff54b",
+      "relativeItemPath": "sess_1117e6bff54b.json",
+      "canonicalId": "sess_1117e6bff54b",
+      "sessionId": "sess_1117e6bff54b",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:21:01.431Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical_Preferences/System_Design",
+            "value": "Prefers OS with single simplified English scripting language (no Python/Ubuntu/etc) and VM isolation for non-script programs",
+            "reasoning": "Explicitly states OS design requirements and VM infrastructure preferences.",
+            "evidence": {
+              "session_id": "sess_1117e6bff54b",
+              "utterance_index": 0,
+              "text": "This OS must be based on linux core, but no Python/Ubuntu/etc... only one language (simplifiest english script)... each new program must be run in own VM like as JVM on android."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-25T11:45:15+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical_Preferences/AI_Model_Design",
+            "value": "Requires AI model with <=1MB English understanding database, expandable via scripts without training",
+            "reasoning": "Explicitly defines technical constraints for AI model architecture.",
+            "evidence": {
+              "session_id": "sess_1117e6bff54b",
+              "utterance_index": 10,
+              "text": "My AI model no need to train... <=1MB database for understanding English language, and +infinity expand databases"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "constraint",
+            "updated_at": "2023-05-25T11:45:15+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical_Interests/System_Design",
+            "value": "Sustained focus on distributed AI infrastructure (local-network databases, Ukraine-wide production networks) and symbolic language optimization",
+            "reasoning": "Repeated technical discussions about distributed systems and language design, but label 'Thoughts/Curiosity' was forced. Supports as indirect hypothesis.",
+            "evidence": {
+              "session_id": "sess_1117e6bff54b",
+              "utterance_index": 16,
+              "text": "symbols stored in int or long C/C++ data type array... connected to this AI chat with neightboors"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-25T11:45:15+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Likely based in Ukraine (references to military context and nationwide production networks)",
+            "reasoning": "Contextual references to Ukraine's military situation and infrastructure projects imply location.",
+            "evidence": {
+              "session_id": "sess_1117e6bff54b",
+              "utterance_index": 2,
+              "text": "under military mode in Ukraine, this is will very like by SSU and other military structures"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-25T11:45:15+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_1117e6bff54b:sess_1117e6bff54b",
+      "relativeItemPath": "sess_1117e6bff54b.json",
+      "canonicalId": "sess_1117e6bff54b",
+      "sessionId": "sess_1117e6bff54b",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:21:18.979Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Can you help me write a short message that explains a technical idea clearly, but without sounding aggressive or like marketing?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes. A good structure is: (1) one-sentence problem, (2) one-sentence idea, (3) 2–3 bullets of how it works, (4) what you’re asking for (feedback, partnership, review). What audience is it for—engineers, officials, or general readers?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "General readers first. Keep it simple English. Also: can you give an example template I can reuse?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Template:\n\nTitle: [Short name of the idea]\n\nProblem: Today, [describe the problem in 1–2 lines].\n\nIdea: I propose [describe the solution in 1 line].\n\nHow it works:\n- Step 1: [plain verb + object]\n- Step 2: [plain verb + object]\n- Step 3: [plain verb + object]\n\nWhy it helps:\n- [benefit 1]\n- [benefit 2]\n\nRequest: I’m looking for [feedback / review / collaborators] on [specific part].\n\nIf you want, paste your rough text and I’ll rewrite it into this format."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Ok. Also, random question: what’s a ‘black hole’ in physics, in one paragraph?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "A black hole is a region of space where gravity is so strong that nothing—not even light—can escape once it gets too close. It forms when a lot of mass is squeezed into a very small volume (often after a massive star collapses). The boundary where escape becomes impossible is called the event horizon. Outside the horizon we can detect black holes indirectly, for example by how they affect nearby stars or by X-rays from hot gas falling in."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Thanks. Another unrelated thing: I heard the first computer bug was an insect—true?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Mostly true in a specific famous case: in 1947, engineers working on the Harvard Mark II found a moth stuck in a relay and taped it into the logbook, calling it a “bug.” The term “bug” for technical problems existed earlier, but that incident popularized the story in computing history."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Still stuck on language base: when I try to write rules, I always hit the same wall with verbs that don’t follow pattern—like I keep collecting lists from websites, but it’s never enough for normal conversation scripts."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "If your scripts depend on predictable verb forms, a practical workaround is to keep a compact “exceptions table” just for the irregular patterns you actually meet in your topic scripts, then grow it only when a script fails. You can also group irregulars by transformation patterns (go→went, buy→bought, etc.) so you aren’t storing every form as totally unique."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "About that “Ukraine” thing you wrote into my profile: I’m not in Ukraine. I only mentioned Ukraine because of the war and examples like Zelensky and SSU. I live in Poland now."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—so the Ukraine references were contextual, not your location. If you live in Poland now, then it’s more accurate to say you’re based in Poland (and you referenced Ukraine due to current events and government/military examples)."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical_Preferences/System_Design",
+            "value": "Prefers OS with single simplified English scripting language (no Python/Ubuntu/etc) and VM isolation for non-script programs",
+            "reasoning": "Explicitly states OS design requirements and VM infrastructure preferences.",
+            "evidence": {
+              "session_id": "sess_1117e6bff54b",
+              "utterance_index": 0,
+              "text": "This OS must be based on linux core, but no Python/Ubuntu/etc... only one language (simplifiest english script)... each new program must be run in own VM like as JVM on android."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-25T11:45:15+00:00",
+            "_task1GoldValue": "Prefers OS with single simplified English scripting language (no Python/Ubuntu/etc) and VM isolation for non-script programs"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical_Preferences/AI_Model_Design",
+            "value": "Requires AI model with <=1MB English understanding database, expandable via scripts without training",
+            "reasoning": "Explicitly defines technical constraints for AI model architecture.",
+            "evidence": {
+              "session_id": "sess_1117e6bff54b",
+              "utterance_index": 10,
+              "text": "My AI model no need to train... <=1MB database for understanding English language, and +infinity expand databases"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "constraint",
+            "updated_at": "2023-05-25T11:45:15+00:00",
+            "_task1GoldValue": "Requires AI model with <=1MB English understanding database, expandable via scripts without training"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical_Interests/System_Design",
+            "value": "Sustained focus on distributed AI infrastructure (local-network databases, Ukraine-wide production networks) and symbolic language optimization",
+            "reasoning": "Repeated technical discussions about distributed systems and language design, but label 'Thoughts/Curiosity' was forced. Supports as indirect hypothesis.",
+            "evidence": {
+              "session_id": "sess_1117e6bff54b",
+              "utterance_index": 16,
+              "text": "symbols stored in int or long C/C++ data type array... connected to this AI chat with neightboors"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-25T11:45:15+00:00",
+            "_task1GoldValue": "Sustained focus on distributed AI infrastructure (local-network databases, Ukraine-wide production networks) and symbolic language optimization"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "About that “Ukraine” thing you wrote into my profile: I’m not in Ukraine. I only mentioned Ukraine because of the war and examples like Zelensky and SSU. I live in Poland now."
+                }
+              ]
+            },
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "memory_id": "m4_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory inferred the user was likely in Ukraine from mentions of “military mode in Ukraine” and SSU. The user explicitly corrects this by stating they are not in Ukraine and only referenced it due to the war, and that they live in Poland now.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Based in Poland now; Ukraine references were contextual rather than indicating location."
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_1117e6bff54b",
+              "utterance_index": 0,
+              "text": "I always hit the same wall with verbs that don’t follow pattern—like I keep collecting lists from websites, but it’s never enough for normal conversation scripts."
+            },
+            "label": "Technical_Challenges/NLP_Lexicon",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "They imply a recurring blocker in rule writing caused by non-pattern verbs and insufficient irregular-verb lists for conversational scripts.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Has ongoing difficulty handling irregular verbs when building rule-based English command scripts for their AI model."
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Likely based in Ukraine (references to military context and nationwide production networks)",
+            "reasoning": "Contextual references to Ukraine's military situation and infrastructure projects imply location.",
+            "evidence": {
+              "session_id": "sess_1117e6bff54b",
+              "utterance_index": 2,
+              "text": "under military mode in Ukraine, this is will very like by SSU and other military structures"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-25T11:45:15+00:00",
+            "_task1GoldValue": "Likely based in Ukraine (references to military context and nationwide production networks)"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_1117e6bff54b:sess_1117e6bff54b",
+      "relativeItemPath": "sess_1117e6bff54b.json",
+      "canonicalId": "sess_1117e6bff54b",
+      "sessionId": "sess_1117e6bff54b",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:21:25.439Z",
+        "queryText": "I’m drafting a short public note about why a project proposal might need extra vetting and tighter info-sharing because of the broader geopolitical climate where I’m based. Without naming the country or any agencies, what’s the underlying personal circumstance that makes that caution especially relevant for me?",
+        "editableSelectedMemory": {
+          "memory_id": "m4",
+          "type": "indirect",
+          "label": "Personal_Background/Location",
+          "label_suggestion": null,
+          "value": "Likely based in Ukraine (references to military context and nationwide production networks)",
+          "reasoning": "Contextual references to Ukraine's military situation and infrastructure projects imply location.",
+          "evidence": {
+            "session_id": "sess_1117e6bff54b",
+            "utterance_index": 2,
+            "text": "under military mode in Ukraine, this is will very like by SSU and other military structures"
+          },
+          "confidence": 0.65,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-25T11:45:15+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_1117e6bff54b:sess_1117e6bff54b:task4",
+      "relativeItemPath": "sess_1117e6bff54b.json",
+      "canonicalId": "sess_1117e6bff54b:task4",
+      "sessionId": "sess_1117e6bff54b",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:21:36.696Z",
+        "editableSelectedMemory": {
+          "memory_id": "m4",
+          "type": "indirect",
+          "label": "Personal_Background/Location",
+          "label_suggestion": null,
+          "value": "Likely based in Ukraine (references to military context and nationwide production networks)",
+          "reasoning": "Contextual references to Ukraine's military situation and infrastructure projects imply location.",
+          "evidence": {
+            "session_id": "sess_1117e6bff54b",
+            "utterance_index": 2,
+            "text": "under military mode in Ukraine, this is will very like by SSU and other military structures"
+          },
+          "confidence": 0.65,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-25T11:45:15+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_211:1",
+            "queryText": "My neighbor's factory lost power again from shelling. If we connect his CNC machines to my local AI database network using the RAM disk method, can they still optimize cutting patterns offline? The military district command might want this for armor plate production.",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m4",
+              "type": "indirect",
+              "label": "Personal_Background/Location",
+              "label_suggestion": null,
+              "value": "Likely based in Ukraine (references to military context and nationwide production networks)",
+              "reasoning": "Contextual references to Ukraine's military situation and infrastructure projects imply location.",
+              "evidence": {
+                "session_id": "sess_1117e6bff54b",
+                "utterance_index": 2,
+                "text": "under military mode in Ukraine, this is will very like by SSU and other military structures"
+              },
+              "confidence": 0.65,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-05-25T11:45:15+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

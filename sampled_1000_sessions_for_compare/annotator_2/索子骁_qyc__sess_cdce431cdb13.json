@@ -1,0 +1,256 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_cdce431cdb13",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_cdce431cdb13:sess_cdce431cdb13",
+      "relativeItemPath": "sess_cdce431cdb13.json",
+      "canonicalId": "sess_cdce431cdb13",
+      "sessionId": "sess_cdce431cdb13",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-13T03:14:27.935Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/role_play_format",
+            "value": "Repeatedly requests translation of Japanese role-play dialogue with specific formatting (【彩香】)",
+            "reasoning": "User provided role-play formatted text repeatedly, but no explicit self-report of curiosity. Role-play context makes user attribution uncertain.",
+            "evidence": {
+              "session_id": "sess_cdce431cdb13",
+              "utterance_index": 6,
+              "text": "【彩香】「あ、危なかったぁ～～～～～～っ！！」"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-27T07:00:14+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_cdce431cdb13:sess_cdce431cdb13",
+      "relativeItemPath": "sess_cdce431cdb13.json",
+      "canonicalId": "sess_cdce431cdb13",
+      "sessionId": "sess_cdce431cdb13",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-13T03:13:59.191Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "translate"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure—please paste the text you want translated and tell me the target language (e.g., English, Spanish). If it’s from a script, sharing a bit of context (who’s speaking, what’s happening) also helps."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "【彩香】「やっと着いた……！」"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Japanese → English: 【Ayaka】“We finally made it…!” / “At last, we’re here…!”"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "【彩香】「ちょっと休憩してから行こっか」"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "【Ayaka】“Let’s take a short break before we go.” / “How about we rest a bit, then head out?”"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "What does 「行こっか」 imply?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "「行こっか」 is a casual, shortened form of 「行こうか」. It’s like “Shall we go?” or “Let’s go, okay?”—a light suggestion inviting agreement rather than a firm command."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "translate"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Sure—please paste the line(s) you want translated and tell me the target language."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "【彩香】「……ほんと、心臓に悪いってば」"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "This is Japanese. Roughly: “Saki: ‘…Seriously, that’s bad for my heart.’” (i.e., “You’re going to give me a heart attack.”)"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "translate"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Sure—paste the sentence and tell me the target language."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Actually, don’t translate those 【彩香】「…」 lines—I’m not asking about that format. I meant translate this French sentence to English: « Je suis en retard. »"
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "English: “I’m late.”"
+          },
+          {
+            "turnId": "turn-17",
+            "role": "user",
+            "text": "Yeah, sorry—those Japanese role-play brackets were from a different thing. Not what I’m doing now."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/translation_request_not_roleplay_specific",
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory claims the user repeatedly requests translation of Japanese role-play formatted dialogue. In the new dialogue, the user explicitly corrects that assumption, saying “don’t translate those 【彩香】「…」 lines… I meant translate this French sentence to English” and that the Japanese brackets were from a different thing. So the updated truth is that translation requests are general and not tied to that role-play format.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User requests translations, but clarifies they are not specifically asking to translate Japanese role-play dialogue formatted like 【彩香】「…」."
+          },
+          {
+            "confidence": 0.65,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_cdce431cdb13",
+              "utterance_index": 2,
+              "text": "【彩香】「……ほんと、心臓に悪いってば」"
+            },
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/role_play_format",
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "They request translation again and provide a new line using the same character-tagged bracket/quote style, implying this is their preferred input format for translation requests.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User continues providing Japanese dialogue lines in the 【彩香】「…」 role-play format for translation."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_cdce431cdb13:sess_cdce431cdb13",
+      "relativeItemPath": "sess_cdce431cdb13.json",
+      "canonicalId": "sess_cdce431cdb13",
+      "sessionId": "sess_cdce431cdb13",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-13T03:14:35.464Z",
+        "queryText": "I’m about to paste another short snippet from a fictional conversation, and I want it handled in the exact same way as I usually ask for—what kind of formatting/labeling should you apply to the speaker lines so it matches my typical preference?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "value": "Repeatedly requests translation of Japanese role-play dialogue with specific formatting (【彩香】)",
+          "label": "UNMAPPED"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_cdce431cdb13:sess_cdce431cdb13:task4",
+      "relativeItemPath": "sess_cdce431cdb13.json",
+      "canonicalId": "sess_cdce431cdb13:task4",
+      "sessionId": "sess_cdce431cdb13",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-13T03:15:05.765Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "value": "Repeatedly requests translation of Japanese role-play dialogue with specific formatting (【彩香】)"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability3_92:1",
+            "queryText": "【彩香】「ねえ、ちょっと聞いてよ！今履歴書を書いてるんだけど、『言語能力』の欄に何て書けばいいと思う？私たちの会話から、私の本当の仕事、わかるでしょ？」",
+            "ability": "ability3",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "value": "Repeatedly requests translation of Japanese role-play dialogue with specific formatting (【彩香】)"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "no translation for ability query"
+      }
+    }
+  }
+}

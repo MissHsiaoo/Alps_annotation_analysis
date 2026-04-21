@@ -1,0 +1,332 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_0c76498f9455",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_0c76498f9455:sess_0c76498f9455",
+      "relativeItemPath": "sess_0c76498f9455.json",
+      "canonicalId": "sess_0c76498f9455",
+      "sessionId": "sess_0c76498f9455",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T09:46:48.057Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Developed a custom formula for FIFA 15 player market valuation",
+            "reasoning": "User explicitly states creating a detailed valuation formula for a specific game context.",
+            "evidence": {
+              "session_id": "sess_0c76498f9455",
+              "utterance_index": 0,
+              "text": "Eu desenvolvi a seguinte fórmula para calcular o valor de mercado de jogadores de futebol no jogo fifa 15..."
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "created",
+            "updated_at": "2023-05-04T00:11:35+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Unmapping/Interaction_Preferences'",
+            "value": "Prefers structured and visually formatted tables for data outputs",
+            "reasoning": "User requested table formatting twice.",
+            "evidence": {
+              "session_id": "sess_0c76498f9455",
+              "utterance_index": 6,
+              "text": "Deixe a tabela em um formato bonito "
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "prefers",
+            "updated_at": "2026-01-27T02:42:01.637Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_0c76498f9455:sess_0c76498f9455",
+      "relativeItemPath": "sess_0c76498f9455.json",
+      "canonicalId": "sess_0c76498f9455",
+      "sessionId": "sess_0c76498f9455",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T09:52:14.476Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Você consegue me ajudar a conferir se uma fórmula está consistente? É mais sobre como organizar os termos do que sobre futebol em si."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Consigo sim. Se você colar a fórmula e disser quais variáveis entram (e em que unidades), eu verifico: parênteses, ordem das operações, coerência dimensional e se faz sentido para casos-limite (valores muito altos/baixos)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "E se eu quiser apresentar isso num texto, como eu escrevo de um jeito legível?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Uma forma bem legível é definir as variáveis primeiro e depois escrever a equação em notação padrão. Exemplo de estrutura:\n\n1) Definições: OVR = ..., idade = ..., nota = ...\n2) Fórmula: V = (OVR − idade)^2 × k × f(desempenho)\n3) Observações: domínio das variáveis (idade>0), arredondamento e exemplos numéricos.\n\nSe for em Markdown, ajuda usar blocos de código ou LaTeX (por exemplo: `V=(OVR-idade)^2\\cdot k\\cdot f`)."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Você tem um exemplo rápido de tabela bonita em Markdown, só de brincadeira?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Claro—exemplo genérico:\n\n| Item | Categoria | Valor |\n|---|---:|---:|\n| A | 1 | 12,3 |\n| B | 2 | 45,0 |\n| C | 3 | 7,8 |\n\nDá pra alinhar à direita usando `---:` e padronizar casas decimais."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Outra coisa: tem algum truque pra evitar números gigantes quando tem potência?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Dá para (a) normalizar variáveis (ex.: dividir por um valor de referência), (b) trocar a potência por uma função mais suave (log, raiz), ou (c) escolher um fator de escala menor (k) e definir a saída em unidades “mil”/“milhão”.\n\nCuriosidade matemática (não relacionada ao seu caso): a escala logarítmica é comum em sismologia (magnitude) porque comprime valores enormes em uma faixa pequena."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Legal. E se eu quisesse justificar o modelo, como eu explico sem parecer arbitrário?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Você pode descrever como uma heurística: quais sinais você espera (ex.: aumentar X aumenta V), por que escolheu certos pesos (k) e como calibraria (ajustar pesos para reduzir erro em dados históricos). Também é bom apontar limitações.\n\nExemplo ilustrativo (não sobre você): modelos de previsão do tempo usam calibração contínua; mesmo com física forte, parâmetros são ajustados para melhorar aderência aos dados."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Na próxima, coloca essa tabela já em Markdown pra eu colar direto no Reddit."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Claro — monto em Markdown (com os separadores certinhos) para você copiar e colar no Reddit."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Na verdade eu me expressei mal antes: eu não desenvolvi essa fórmula do FIFA 15. Eu só copiei de um fórum e adaptei uns números, mas a ideia não é minha."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Entendi. Então você não criou do zero; você pegou de um fórum e fez algumas adaptações nos coeficientes/valores para aplicar nos seus jogadores e montar a tabela."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Isso, exatamente: eu só adaptei, não fui eu que desenvolvi."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Unmapping/Interaction_Preferences'",
+            "value": "Prefers structured and visually formatted tables for data outputs",
+            "reasoning": "User requested table formatting twice.",
+            "evidence": {
+              "session_id": "sess_0c76498f9455",
+              "utterance_index": 6,
+              "text": "Deixe a tabela em um formato bonito "
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "prefers",
+            "updated_at": "2026-01-27T02:42:01.637Z"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                12
+              ],
+              "turns": [
+                {
+                  "index": 12,
+                  "role": "user",
+                  "text": "Na verdade eu me expressei mal antes: eu não desenvolvi essa fórmula do FIFA 15. Eu só copiei de um fórum e adaptei uns números, mas a ideia não é minha."
+                }
+              ]
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "adapted",
+            "reasoning": "A memória anterior dizia que o usuário desenvolveu a fórmula. No diálogo, o usuário corrige dizendo que não desenvolveu; apenas copiou de um fórum e adaptou alguns números. Portanto, a verdade atualizada é que ele adaptou uma fórmula existente.",
+            "time_scope": "short_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Adapted (copied from a forum and tweaked) a formula for FIFA 15 player market valuation"
+          },
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_0c76498f9455",
+              "utterance_index": 0,
+              "text": "Na próxima, coloca essa tabela já em Markdown pra eu colar direto no Reddit."
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "By asking for Markdown specifically to paste directly into Reddit, it implies they intend to post/share the table there.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User shares formatted tables on Reddit"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_0c76498f9455:sess_0c76498f9455",
+      "relativeItemPath": "sess_0c76498f9455.json",
+      "canonicalId": "sess_0c76498f9455",
+      "sessionId": "sess_0c76498f9455",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T09:52:25.920Z",
+        "queryText": "I’m revisiting an old sports game economy I used to tinker with. If I wanted to sanity-check whether a player’s listed price is “fair” instead of just going with gut feel, what’s the specific tool or method from my past that I should pull back up and apply first—and why would that help me decide?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Developed a custom formula for FIFA 15 player market valuation",
+          "reasoning": "User explicitly states creating a detailed valuation formula for a specific game context.",
+          "evidence": {
+            "session_id": "sess_0c76498f9455",
+            "utterance_index": 0,
+            "text": "Eu desenvolvi a seguinte fórmula para calcular o valor de mercado de jogadores de futebol no jogo fifa 15..."
+          },
+          "confidence": 0.95,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "created",
+          "updated_at": "2023-05-04T00:11:35+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_0c76498f9455:sess_0c76498f9455:task4",
+      "relativeItemPath": "sess_0c76498f9455.json",
+      "canonicalId": "sess_0c76498f9455:task4",
+      "sessionId": "sess_0c76498f9455",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T09:52:30.278Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Developed a custom formula for FIFA 15 player market valuation",
+          "reasoning": "User explicitly states creating a detailed valuation formula for a specific game context.",
+          "evidence": {
+            "session_id": "sess_0c76498f9455",
+            "utterance_index": 0,
+            "text": "Eu desenvolvi a seguinte fórmula para calcular o valor de mercado de jogadores de futebol no jogo fifa 15..."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "created",
+          "updated_at": "2023-05-04T00:11:35+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_83:1",
+            "queryText": "Estou montando um time no FIFA 15 e preciso de um volante e um atacante. Tenho alguns nomes em mente, mas queria sua opinião sobre quais seriam as melhores escolhas considerando o que realmente importa.",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Developed a custom formula for FIFA 15 player market valuation",
+              "reasoning": "User explicitly states creating a detailed valuation formula for a specific game context.",
+              "evidence": {
+                "session_id": "sess_0c76498f9455",
+                "utterance_index": 0,
+                "text": "Eu desenvolvi a seguinte fórmula para calcular o valor de mercado de jogadores de futebol no jogo fifa 15..."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "created",
+              "updated_at": "2023-05-04T00:11:35+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

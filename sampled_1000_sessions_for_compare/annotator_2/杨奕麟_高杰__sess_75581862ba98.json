@@ -1,0 +1,335 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_75581862ba98",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_75581862ba98:sess_75581862ba98",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_75581862ba98.json",
+      "canonicalId": "sess_75581862ba98",
+      "sessionId": "sess_75581862ba98",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T15:50:01.307Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "label_suggestion": "hobbies/fishing/interest",
+            "value": "Curious about catching large carp in rivers",
+            "reasoning": "Repeated inquiries about carp fishing methods, but could be task-local/hypothetical. Forced label not supported.",
+            "evidence": {
+              "session_id": "sess_75581862ba98",
+              "utterance_index": 8,
+              "text": "Поделись пошаговым систематическим подходом к решению задачи: как поймать большого карпа на реке"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-24T15:29:22Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers movies with unusual plots",
+            "reasoning": "Explicit request for films with unusual plots, but single instance may be task-local.",
+            "evidence": {
+              "session_id": "sess_75581862ba98",
+              "utterance_index": 12,
+              "text": "порекоменбуй 5 фильмой с самым необычным сюжетом"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-04-24T15:29:22Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": "interaction/style/preference",
+            "value": "Prefers systematic step-by-step instructions",
+            "reasoning": "Repeated pattern of requests, but label implies unstated preference. Forced label not supported.",
+            "evidence": {
+              "session_id": "sess_75581862ba98",
+              "utterance_index": 0,
+              "text": "Поделись пошаговым систематическим подходом к решению задачи: Сделать жаркое из кролика"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-04-24T15:29:22Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_75581862ba98:sess_75581862ba98",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_75581862ba98.json",
+      "canonicalId": "sess_75581862ba98",
+      "sessionId": "sess_75581862ba98",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T15:51:34.015Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Сделай, пожалуйста, пошаговый алгоритм: как быстро найти причину, почему принтер не печатает (без разбора корпуса)."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Вот систематический чек-лист без разборки (от простого к сложному):\n\n1) Уточните симптом\n- Печатает пустые листы / не захватывает бумагу / «в очереди висит» / ошибка на дисплее.\n- Зафиксируйте точный текст ошибки и мигающие индикаторы.\n\n2) Питание и базовые подключения\n- Перезагрузите принтер (выключить на 30 секунд, включить).\n- Проверьте розетку/удлинитель, кабель питания.\n- Если печать по USB: попробуйте другой USB‑порт/кабель.\n- Если по Wi‑Fi: убедитесь, что принтер в той же сети, что и устройство, и сигнал стабильный.\n\n3) Бумага и тракт подачи\n- Выньте стопку, распушите, выровняйте направляющие.\n- Уберите замятие (если есть), проверьте лоток и выходной слот.\n\n4) Очередь печати и выбор принтера\n- На ПК: очистите очередь печати, отмените «зависшие» задания.\n- Убедитесь, что выбран правильный принтер и он не в режиме «Офлайн».\n\n5) Драйвер/службы\n- Перезапустите службу печати (spooler) или перезагрузите ПК.\n- Обновите/переустановите драйвер с сайта производителя.\n\n6) Расходники и тестовые страницы\n- Посмотрите уровень чернил/тонера и наличие предупреждений.\n- Запустите «Пробную страницу»/«Печать теста» из меню принтера или настроек.\n\n7) Самодиагностика\n- Проверьте в меню принтера «Состояние», «Журнал ошибок», «Сеть».\n- Если есть код ошибки — по нему уже точечно ищется причина.\n\nЕсли скажете: модель принтера, способ подключения (USB/Wi‑Fi), что именно происходит (тишина/ошибка/пусто/жует), и устройство (Windows/macOS/телефон) — составлю короткий план именно под ваш случай."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "А если он печатает, но очень бледно и с полосами — что делать по шагам?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Пошагово для «бледно и полосит»:\n\n1) Исключите настройку качества\n- В настройках печати отключите «Черновик/Экономия тонера», поставьте «Стандарт/Высокое качество».\n\n2) Запустите тест печати\n- Распечатайте тестовую страницу/«проверку дюз» (для струйных) или страницу качества (для лазерных).\n\n3) Если струйный\n- Выполните «Проверка дюз» → «Прочистка печатающей головки» (1 раз) → снова тест.\n- Если не улучшилось: повторите прочистку 1–2 раза с паузой 10–30 минут (не делайте много подряд).\n- Проверьте, не подсохли ли картриджи, и правильно ли установлены.\n\n4) Если лазерный\n- Выньте картридж, аккуратно потрясите горизонтально 5–10 раз (временно помогает при низком тонере).\n- Проверьте режим «Экономия тонера».\n- Если полосы повторяются с одинаковым шагом — часто виноват фотобарабан/картридж.\n\n5) Универсально\n- Протрите ролики подачи бумаги (если есть смазывание/грязь) только по инструкции производителя.\n- Попробуйте другую пачку бумаги: пыльная бумага иногда усиливает дефекты.\n\nСкажите, пожалуйста: принтер струйный или лазерный и модель — тогда уточню точные пункты меню и какие тесты запускать."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Ладно, с принтером то же самое: он у меня лазерный, и как только доходит до середины листа — начинает полосить и сыпать тонером по краям. Дай пошагово, что проверить, только без «несите в сервис»."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Шаг 1. Уточните симптом и изолируйте причину\n- Распечатайте «тестовую страницу» из меню принтера и отдельно — тот же документ с компьютера: если дефект одинаковый, проблема в узлах печати, а не в драйвере.\n\nШаг 2. Проверьте картридж и его посадку\n- Снимите картридж, аккуратно встряхните и поставьте обратно до щелчка.\n- Осмотрите, нет ли следов просыпавшегося тонера внутри отсека.\n\nШаг 3. Осмотрите фотобарабан/ролик заряда (если доступно)\n- Если в вашей модели фотобарабан отдельный — проверьте его на царапины и равномерность покрытия.\n\nШаг 4. Проверьте узел закрепления (печку)\n- Если после печати лист горячий и есть запах «подгоревшей пыли», возможна проблема с закреплением тонера или загрязнение.\n\nШаг 5. Очистка\n- Аккуратно уберите просыпавшийся тонер сухой салфеткой/кистью (без воды), лучше в хорошо проветриваемом месте.\n\nШаг 6. Контрольный тест\n- После каждого шага печатайте 1 тестовую страницу, чтобы понять, на каком действии дефект исчезает.\n\nЕсли скажете модель принтера и картриджа (оригинал/совместимый), уточню, где именно в вашей версии находятся эти узлы."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "С фильмами я, кстати, погорячился. Не надо «самый необычный сюжет» — я такое не люблю. Дай лучше 5 простых, понятных фильмов, без твистов и сюрреализма."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Понял: значит, упор не на «необычный сюжет», а наоборот — на прямолинейные, понятные истории, без резких твистов и странностей."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "label_suggestion": "hobbies/fishing/interest",
+            "value": "Curious about catching large carp in rivers",
+            "reasoning": "Repeated inquiries about carp fishing methods, but could be task-local/hypothetical. Forced label not supported.",
+            "evidence": {
+              "session_id": "sess_75581862ba98",
+              "utterance_index": 8,
+              "text": "Поделись пошаговым систематическим подходом к решению задачи: как поймать большого карпа на реке"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-24T15:29:22Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": "interaction/style/preference",
+            "value": "Prefers systematic step-by-step instructions",
+            "reasoning": "Repeated pattern of requests, but label implies unstated preference. Forced label not supported.",
+            "evidence": {
+              "session_id": "sess_75581862ba98",
+              "utterance_index": 0,
+              "text": "Поделись пошаговым систематическим подходом к решению задачи: Сделать жаркое из кролика"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-04-24T15:29:22Z"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                6
+              ],
+              "turns": [
+                {
+                  "index": 6,
+                  "role": "user",
+                  "text": "С фильмами я, кстати, погорячился. Не надо «самый необычный сюжет» — я такое не люблю. Дай лучше 5 простых, понятных фильмов, без твистов и сюрреализма."
+                }
+              ]
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "like",
+            "reasoning": "Старая память утверждала, что пользователь предпочитает фильмы с необычным сюжетом, но в диалоге пользователь прямо это опроверг и попросил противоположное: простые и понятные фильмы без твистов.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers simple, straightforward movies without unusual сюжеты or plot twists"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_75581862ba98",
+              "utterance_index": 0,
+              "text": "он у меня лазерный, и как только доходит до середины листа — начинает полосить и сыпать тонером по краям."
+            },
+            "label": "Possessions/Important_Items",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user describes a specific type of device (laser) and a persistent printing symptom (streaks and toner spilling along the edges starting from the middle of the page), which is a fact about their device/problem.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "The user has a laser printer that produces streaks and scatters toner along the edges starting from about the middle of the page"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_75581862ba98:sess_75581862ba98",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_75581862ba98.json",
+      "canonicalId": "sess_75581862ba98",
+      "sessionId": "sess_75581862ba98",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T15:51:41.888Z",
+        "queryText": "I’m picking a movie for us tonight: one option is a very conventional, predictable story, and the other is more offbeat and less straightforward. Without rehashing any past chats, which should I choose to match what you tend to enjoy—and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers movies with unusual plots",
+          "reasoning": "Explicit request for films with unusual plots, but single instance may be task-local.",
+          "evidence": {
+            "session_id": "sess_75581862ba98",
+            "utterance_index": 12,
+            "text": "порекоменбуй 5 фильмой с самым необычным сюжетом"
+          },
+          "confidence": 0.65,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-04-24T15:29:22Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_75581862ba98:sess_75581862ba98:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_75581862ba98.json",
+      "canonicalId": "sess_75581862ba98:task4",
+      "sessionId": "sess_75581862ba98",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T15:51:52.534Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers movies with unusual plots",
+          "reasoning": "Explicit request for films with unusual plots, but single instance may be task-local.",
+          "evidence": {
+            "session_id": "sess_75581862ba98",
+            "utterance_index": 12,
+            "text": "порекоменбуй 5 фильмой с самым необычным сюжетом"
+          },
+          "confidence": 0.65,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-04-24T15:29:22Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_283:1",
+            "queryText": "Посоветуй, что посмотреть сегодня вечером. Хочется чего-то такого, чтобы не заскучать с первых минут.",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Prefers movies with unusual plots",
+              "reasoning": "Explicit request for films with unusual plots, but single instance may be task-local.",
+              "evidence": {
+                "session_id": "sess_75581862ba98",
+                "utterance_index": 12,
+                "text": "порекоменбуй 5 фильмой с самым необычным сюжетом"
+              },
+              "confidence": 0.65,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-04-24T15:29:22Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "直接相关",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

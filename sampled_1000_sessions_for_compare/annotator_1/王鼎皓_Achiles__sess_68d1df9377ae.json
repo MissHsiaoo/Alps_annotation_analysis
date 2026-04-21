@@ -1,0 +1,336 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_68d1df9377ae",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_68d1df9377ae:sess_68d1df9377ae",
+      "relativeItemPath": "sess_68d1df9377ae.json",
+      "canonicalId": "sess_68d1df9377ae",
+      "sessionId": "sess_68d1df9377ae",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T18:22:00.142Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Music",
+            "label_suggestion": null,
+            "value": "Created custom 1960s-style guitar intro track for mod",
+            "reasoning": "User explicitly states creating original music for their mod's intro, demonstrating personal creative preference.",
+            "evidence": {
+              "session_id": "sess_68d1df9377ae",
+              "utterance_index": 10,
+              "text": "I made some of my own tracks, only one for the intro... It's a loud 1960s-style guitar track that I recorded on the rooftop"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-04-28T19:25:57+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Cultural_Background/Siesta_Custom",
+            "value": "Likely resides in a country with afternoon siesta culture",
+            "reasoning": "Cultural context implied by sleep habit reference, but residence not explicitly confirmed",
+            "evidence": {
+              "session_id": "sess_68d1df9377ae",
+              "utterance_index": 10,
+              "text": "recorded on the rooftop... in my home country it's a common deal to go to sleep after lunch"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-28T19:25:57+00:00"
+          },
+          {
+            "memory_id": "new-memory-3",
+            "type": "direct",
+            "label": "Thoughts/Goals/Long_Term",
+            "label_suggestion": null,
+            "value": "User is working on a Half-Life 1 mod featuring Gordon Freeman's brother, Leo Freeman",
+            "reasoning": "",
+            "evidence": null,
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-04-11T18:21:15.120Z"
+          },
+          {
+            "memory_id": "new-memory-4",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Enjoys creating mods for Half-Life 1, incorporating elements from Counter-Strike 1.6 and Half-Life Opposing Force",
+            "reasoning": "",
+            "evidence": null,
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-04-11T18:21:44.391Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_68d1df9377ae:sess_68d1df9377ae",
+      "relativeItemPath": "sess_68d1df9377ae.json",
+      "canonicalId": "sess_68d1df9377ae",
+      "sessionId": "sess_68d1df9377ae",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T15:05:07.867Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I’m stuck on a small design question: when a mod swaps in a bunch of reused assets, how do you make it feel like one coherent world instead of a collage?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "A good rule is to pick a few “unifiers” and apply them everywhere: consistent lighting and color grading, a limited set of recurring props/decals, and a shared narrative logic for why those assets exist. Even tiny things like the same signage style, the same door frames, and the same material palette can glue maps together."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "What would you prioritize first: visuals, enemy behaviors, or sound?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Sound, then visuals, then behaviors—because sound is global and immediate. A consistent ambience bed (wind, distant sirens, HVAC hum), reverb settings per space, and a small set of UI/interaction sounds can make very different locations feel like they belong to the same game. Visual consistency can come next via lighting and texture passes; AI/behavior consistency is important, but players often forgive mixed AI faster than mixed audio tone."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Got it. Any simple checklist I can run through per map?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Per-map checklist: (1) one sentence “what happened here?” (2) 2–3 repeating visual motifs (posters, barricade style, graffiti tag, etc.), (3) a defined light temperature range (mostly cool vs warm), (4) an ambience + reverb choice, (5) one signature setpiece, (6) navigation readability pass (landmarks + sightlines), (7) difficulty/pacing pass (quiet → spike → release).\n\nUnrelated example: a museum renovation in Glasgow once kept coherence by forcing every gallery to reuse the same signage grid and sound-damping panels, even though the exhibits were wildly different."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "That’s a helpful structure. I’ll try the “what happened here” sentence first."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "If you want, share one map’s one-sentence premise and I can suggest 2–3 motifs plus an ambience pairing. Also, fun trivia: the cut “Kingpin” concept art for Half-Life-era creatures often leaned on asymmetry—big silhouette read from far away—because it helped players identify threats even in low-detail spaces."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "assistant",
+            "text": "That ending beat in the Oregon dunes is a really cool visual. When you stage the G-Man rescue, are you handling it as an in-engine cutscene, or doing it more like a scripted sequence with camera work and fades?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "user",
+            "text": "In-engine. I’m keeping it simple—just a quick camera sweep, then a hard fade while he’s talking, because I’m trying not to let the ending drag the same way some of my earlier scenes do when I get carried away."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Small correction on the music thing: I didn’t end up using that 1960s-style rooftop guitar recording in the mod. I tried it for the intro, but it didn’t fit, so I scrapped it and the intro just uses the regular Half-Life soundtrack now."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—so the rooftop 60s guitar track was more of a test, and the released intro is just the regular Half-Life soundtrack. That actually makes sense if it was clashing with the tone."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Cultural_Background/Siesta_Custom",
+            "value": "Likely resides in a country with afternoon siesta culture",
+            "reasoning": "Cultural context implied by sleep habit reference, but residence not explicitly confirmed",
+            "evidence": {
+              "session_id": "sess_68d1df9377ae",
+              "utterance_index": 10,
+              "text": "recorded on the rooftop... in my home country it's a common deal to go to sleep after lunch"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-28T19:25:57+00:00"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Music",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "The prior memory says the user created a custom 1960s-style guitar intro track for the mod, but the user clarifies it was tried and then scrapped, and the intro now uses the regular Half-Life soundtrack.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Did not use the custom 1960s-style rooftop guitar intro track; the intro uses the regular Half-Life soundtrack"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_68d1df9377ae",
+              "utterance_index": 1,
+              "text": "because I’m trying not to let the ending drag the same way some of my earlier scenes do when I get carried away."
+            },
+            "label": "Personal_Projects/Creative_Habits",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "They imply a recurring pattern of scenes dragging when they 'get carried away,' and indicate an intentional effort to keep the ending brief.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User tends to overextend/let scenes run long when editing/storyboarding, and is trying to rein that in."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_68d1df9377ae:sess_68d1df9377ae",
+      "relativeItemPath": "sess_68d1df9377ae.json",
+      "canonicalId": "sess_68d1df9377ae",
+      "sessionId": "sess_68d1df9377ae",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T12:25:43.302Z",
+        "queryText": "I’m putting together a short opening sequence for my project and want the sound to feel like it comes from a specific older rock era, with a really punchy guitar line. Based on something I’ve already made before for an intro, what kind of track should I reuse or recreate so the vibe matches?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Music",
+          "label_suggestion": null,
+          "value": "Created custom 1960s-style guitar intro track for mod",
+          "reasoning": "User explicitly states creating original music for their mod's intro, demonstrating personal creative preference.",
+          "evidence": {
+            "session_id": "sess_68d1df9377ae",
+            "utterance_index": 10,
+            "text": "I made some of my own tracks, only one for the intro... It's a loud 1960s-style guitar track that I recorded on the rooftop"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-04-28T19:25:57+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_68d1df9377ae:sess_68d1df9377ae:task4",
+      "relativeItemPath": "sess_68d1df9377ae.json",
+      "canonicalId": "sess_68d1df9377ae:task4",
+      "sessionId": "sess_68d1df9377ae",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:53:53.824Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Music",
+          "label_suggestion": null,
+          "value": "Created custom 1960s-style guitar intro track for mod",
+          "reasoning": "User explicitly states creating original music for their mod's intro, demonstrating personal creative preference.",
+          "evidence": {
+            "session_id": "sess_68d1df9377ae",
+            "utterance_index": 10,
+            "text": "I made some of my own tracks, only one for the intro... It's a loud 1960s-style guitar track that I recorded on the rooftop"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-04-28T19:25:57+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_728:1",
+            "queryText": "I'm putting together a playlist for the next few levels I'm designing - you know the vibe I'm going for. What kind of tracks should I look for to keep that energy going?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Music",
+              "label_suggestion": null,
+              "value": "Created custom 1960s-style guitar intro track for mod",
+              "reasoning": "User explicitly states creating original music for their mod's intro, demonstrating personal creative preference.",
+              "evidence": {
+                "session_id": "sess_68d1df9377ae",
+                "utterance_index": 10,
+                "text": "I made some of my own tracks, only one for the intro... It's a loud 1960s-style guitar track that I recorded on the rooftop"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2024-04-28T19:25:57+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

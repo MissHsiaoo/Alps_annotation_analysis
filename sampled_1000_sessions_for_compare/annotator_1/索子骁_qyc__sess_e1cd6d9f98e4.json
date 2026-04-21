@@ -1,0 +1,316 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_e1cd6d9f98e4",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_e1cd6d9f98e4:sess_e1cd6d9f98e4",
+      "relativeItemPath": "sess_e1cd6d9f98e4.json",
+      "canonicalId": "sess_e1cd6d9f98e4",
+      "sessionId": "sess_e1cd6d9f98e4",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T14:30:17.889Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/language_preference",
+            "value": "Prefers communication/output in English",
+            "reasoning": "Single instance of language switch request; insufficient evidence for stable preference",
+            "evidence": {
+              "session_id": "sess_e1cd6d9f98e4",
+              "utterance_index": 2,
+              "text": "in english"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-17T20:35:11+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers report-style outputs with structured details (company explanations, program specifics)",
+            "reasoning": "Repeated session-specific requests for report modifications with structural requirements",
+            "evidence": {
+              "session_id": "sess_e1cd6d9f98e4",
+              "utterance_index": 12,
+              "text": "add to the report a breif explanation about each company"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-17T20:35:11+00:00"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "Curious about cooperative training events at King Abdulaziz University for Faculty of Economics and Administration students, including details on companies and training programs.",
+            "confidence": 0.8,
+            "evidence_text": "make me a report about the coop training event that king abdul aziz did  for the students in the faculty of economics and administration. the event was held for companies to share to the students about the training program that they provide in  their company. the companies that were in the event were, alnahdi pharmacy who have two periods of applying 6months a part, uses orecale system, 6month duration training and will be in the IT department, applecation and data management for mis , redwa chicken  8 weeks duration training, microsft dynamic system, 11 departments, quality might be the most important department, mis student only will be in IT department , and Abdulatif jameel: biggest financial institution in saudi, IT department or sales and business department, digital transformation combine with business CRM Microsoft dynamic, orecale HR, core system in house system financial system, duration as much as i want that covers the entire training"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_e1cd6d9f98e4:sess_e1cd6d9f98e4",
+      "relativeItemPath": "sess_e1cd6d9f98e4.json",
+      "canonicalId": "sess_e1cd6d9f98e4",
+      "sessionId": "sess_e1cd6d9f98e4",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T04:58:06.484Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Can you shorten the report into a one-page format and keep it formal?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes. Do you want it as (1) short paragraphs only, or (2) headings with bullet points under each section (Introduction, Event Overview, Participating Companies, Key Takeaways, Conclusion)?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Headings with bullet points. Also add a short “Recommendations” section."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Understood. I’ll keep it formal, one page, with concise bullets and a brief Recommendations section.\n\nReport: Coop Training Event (Faculty of Economics & Administration)\n\nIntroduction\n- A coop training event was organized to connect students with organizations and introduce available training pathways.\n- The event emphasized practical exposure, application requirements, and workplace expectations.\n\nEvent Overview\n- The event brought together company representatives and students for structured introductions and Q&A.\n- It highlighted how coop training supports readiness for employment through real-world systems and processes.\n\nParticipating Companies\n- Alnahdi Pharmacy\n  - Overview: A major pharmacy retail chain providing healthcare and consumer wellness products.\n  - Training: Six-month program; MIS-related training in the IT department.\n  - Focus/Tools: Application and data management; use of Oracle; application periods scheduled in two rounds.\n- Redwa Chicken\n  - Overview: A poultry and food production company with operations spanning multiple business functions.\n  - Training: Eight-week program across multiple departments.\n  - Focus/Tools: Microsoft Dynamics; quality control highlighted as a key area; MIS-related participation linked to IT.\n- Abdulatif Jameel (Financial Institution)\n  - Overview: A large Saudi financial institution offering broad business and technology functions.\n  - Training: Opportunities across IT and sales/business tracks; duration can be aligned with the coop requirement.\n  - Focus/Tools: Digital transformation; CRM (Microsoft Dynamics), Oracle HR, and internal core financial systems.\n\nKey Takeaways\n- Students gained clearer understanding of training durations, department placement, and expected skill sets.\n- Exposure to commonly used enterprise systems (e.g., Oracle, Microsoft Dynamics) clarified workplace requirements.\n- Direct interaction with representatives supported networking and informed decision-making.\n\nRecommendations\n- Provide students with a pre-event guide listing required documents, timelines, and selection criteria per company.\n- Add short workshops on enterprise systems basics (Oracle/Dynamics) to improve readiness.\n- Collect post-event feedback to refine company participation and match offerings to student specializations.\n\nConclusion\n- The event effectively linked students with organizations and clarified coop training opportunities and expectations.\n- Continued collaboration with participating companies can strengthen career readiness and expand practical pathways."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "By the way, what does “CRM” stand for in business contexts?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "CRM stands for Customer Relationship Management. In business, it refers to the strategies and software used to manage interactions with customers and prospects—such as tracking leads, sales activities, service requests, and communication history (examples include Microsoft Dynamics 365 and Salesforce)."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "assistant",
+            "text": "Unrelated note (example of how reports sometimes cite context): In 2024, several industries increased focus on digital transformation initiatives, often prioritizing CRM modernization and data governance as core projects."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "user",
+            "text": "خلّ التقرير بصيغة Word لو سمحت: صفحة غلاف، بعدين جدول محتويات، وبالنهاية مراجع حتى لو كانت روابط لمواقع الشركات."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "assistant",
+            "text": "تمام—بجهّزه لك بنفس هيكلة Word: صفحة غلاف، جدول محتويات تلقائي (مع عناوين واضحة)، ثم المراجع بروابط مواقع الشركات. تبغى الغلاف يكون باسم المقرر/الشعبة واسمك وتاريخ اليوم؟"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "user",
+            "text": "ايه، وحط في الغلاف شعار جامعة الملك عبدالعزيز، وخله جاهز للرفع على البلاك بورد."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "بس للتوضيح: ما أبغى تقرير ولا صياغة مرتبة هالمرة. أبغى نقاط سريعة جدًا (bullets) ومختصرة بدون مقدمة وخاتمة، وبدون شرح لكل شركة."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "تمام—بنقاط سريعة ومختصرة فقط، بدون مقدمة أو خاتمة وبدون شرح للشركات. اذكر: اسم الشركة + مدة التدريب + النظام المستخدم + القسم المستهدف."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "ايه بالضبط. ولا تكتبها بصيغة تقرير نهائي، مجرد ملخص نقاط."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/language_preference",
+            "value": "Prefers communication/output in English",
+            "reasoning": "Single instance of language switch request; insufficient evidence for stable preference",
+            "evidence": {
+              "session_id": "sess_e1cd6d9f98e4",
+              "utterance_index": 2,
+              "text": "in english"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-17T20:35:11+00:00",
+            "_task1GoldValue": "Prefers communication/output in English"
+          },
+          {
+            "confidence": 0.66,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The old memory claims the user prefers report-style structured outputs with company explanations. In the new dialogue, the user explicitly rejects a report format and asks for very short bullet points without introductions, conclusions, or explanations, contradicting the prior preference statement for this context.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers very brief bullet-point summaries and explicitly does not want report-style structure (no intro/conclusion, no per-company explanations) in this context."
+          },
+          {
+            "confidence": 0.66,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_e1cd6d9f98e4",
+              "utterance_index": 0,
+              "text": "خلّ التقرير بصيغة Word لو سمحت: صفحة غلاف، بعدين جدول محتويات، وبالنهاية مراجع حتى لو كانت روابط لمواقع الشركات."
+            },
+            "label": "Preferences/Output_Format",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "The user requests the report to be prepared in a Word-style structure including specific components (cover, TOC, references/links), implying a stable formatting preference for deliverables.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers reports formatted like a Word document with a cover page, table of contents, and references section (including company website links)."
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "Curious about cooperative training events at King Abdulaziz University for Faculty of Economics and Administration students, including details on companies and training programs.",
+            "confidence": 0.8,
+            "evidence_text": "make me a report about the coop training event that king abdul aziz did  for the students in the faculty of economics and administration. the event was held for companies to share to the students about the training program that they provide in  their company. the companies that were in the event were, alnahdi pharmacy who have two periods of applying 6months a part, uses orecale system, 6month duration training and will be in the IT department, applecation and data management for mis , redwa chicken  8 weeks duration training, microsft dynamic system, 11 departments, quality might be the most important department, mis student only will be in IT department , and Abdulatif jameel: biggest financial institution in saudi, IT department or sales and business department, digital transformation combine with business CRM Microsoft dynamic, orecale HR, core system in house system financial system, duration as much as i want that covers the entire training",
+            "_task1GoldValue": "Curious about cooperative training events at King Abdulaziz University for Faculty of Economics and Administration students, including details on companies and training programs."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "deepseek_reasoner_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_e1cd6d9f98e4:sess_e1cd6d9f98e4",
+      "relativeItemPath": "sess_e1cd6d9f98e4.json",
+      "canonicalId": "sess_e1cd6d9f98e4",
+      "sessionId": "sess_e1cd6d9f98e4",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:55:19.466Z",
+        "queryText": "I’m putting together a side-by-side comparison of a few training programs and the organizations behind them for my team—what output format should I ask you for so it’s easiest to skim, includes the right kind of structured sections, and still gives enough context to understand who each option is coming from?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers report-style outputs with structured details (company explanations, program specifics)",
+          "reasoning": "Repeated session-specific requests for report modifications with structural requirements",
+          "evidence": {
+            "session_id": "sess_e1cd6d9f98e4",
+            "utterance_index": 12,
+            "text": "add to the report a breif explanation about each company"
+          },
+          "confidence": 0.65,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-06-17T20:35:11+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_e1cd6d9f98e4:sess_e1cd6d9f98e4:task4",
+      "relativeItemPath": "sess_e1cd6d9f98e4.json",
+      "canonicalId": "sess_e1cd6d9f98e4:task4",
+      "sessionId": "sess_e1cd6d9f98e4",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T01:28:50.414Z",
+        "editableSelectedMemory": {
+          "memory_id": "deepseek_reasoner_p1",
+          "type": "indirect",
+          "label": "Thoughts/Curiosity",
+          "value": "Curious about cooperative training events at King Abdulaziz University for Faculty of Economics and Administration students, including details on companies and training programs.",
+          "confidence": 0.8,
+          "evidence_text": "make me a report about the coop training event that king abdul aziz did  for the students in the faculty of economics and administration. the event was held for companies to share to the students about the training program that they provide in  their company. the companies that were in the event were, alnahdi pharmacy who have two periods of applying 6months a part, uses orecale system, 6month duration training and will be in the IT department, applecation and data management for mis , redwa chicken  8 weeks duration training, microsft dynamic system, 11 departments, quality might be the most important department, mis student only will be in IT department , and Abdulatif jameel: biggest financial institution in saudi, IT department or sales and business department, digital transformation combine with business CRM Microsoft dynamic, orecale HR, core system in house system financial system, duration as much as i want that covers the entire training"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1110:1",
+            "queryText": "I'm looking at these three internship programs for next semester. Can you break down which one would be the best fit for me to apply to?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "deepseek_reasoner_p1",
+              "type": "indirect",
+              "label": "Thoughts/Curiosity",
+              "value": "Curious about cooperative training events at King Abdulaziz University for Faculty of Economics and Administration students, including details on companies and training programs.",
+              "confidence": 0.8,
+              "evidence_text": "make me a report about the coop training event that king abdul aziz did  for the students in the faculty of economics and administration. the event was held for companies to share to the students about the training program that they provide in  their company. the companies that were in the event were, alnahdi pharmacy who have two periods of applying 6months a part, uses orecale system, 6month duration training and will be in the IT department, applecation and data management for mis , redwa chicken  8 weeks duration training, microsft dynamic system, 11 departments, quality might be the most important department, mis student only will be in IT department , and Abdulatif jameel: biggest financial institution in saudi, IT department or sales and business department, digital transformation combine with business CRM Microsoft dynamic, orecale HR, core system in house system financial system, duration as much as i want that covers the entire training"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

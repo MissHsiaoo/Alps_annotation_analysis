@@ -1,0 +1,371 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_649332792696",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_649332792696:sess_649332792696",
+      "relativeItemPath": "sess_649332792696.json",
+      "canonicalId": "sess_649332792696",
+      "sessionId": "sess_649332792696",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:16:10.192Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Technical_Writing",
+            "value": "Requires technical writing to meet SCI publication standards",
+            "reasoning": "User explicitly requests polishing text to SCI publication standards multiple times.",
+            "evidence": {
+              "session_id": "sess_649332792696",
+              "utterance_index": 2,
+              "text": "以SCI出版标准润色：The universal data acquisition system..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "requirement",
+            "updated_at": "2024-03-22T09:10:14Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Deep interest in precise technical terminology verification (PCIe types, DDR3 specifications, acronym expansions)",
+            "reasoning": "Multiple follow-ups about hardware specifications and terminology validation indicate sustained technical curiosity.",
+            "evidence": {
+              "session_id": "sess_649332792696",
+              "utterance_index": 68,
+              "text": "请给出这里边除了CDAU以外的全称..."
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-22T09:10:14Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "value": "Requests non-retention of sensitive information like addresses/passport details [ERROR: Unsupported by evidence]",
+            "reasoning": "Unsupported by evidence",
+            "evidence": {
+              "session_id": "sess_649332792696",
+              "utterance_index": 16,
+              "text": "If an address or passport info gets pasted in later, prefer that not be retained."
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-03-22T09:10:14Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_649332792696:sess_649332792696",
+      "relativeItemPath": "sess_649332792696.json",
+      "canonicalId": "sess_649332792696",
+      "sessionId": "sess_649332792696",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:16:22.393Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我在写论文时总纠结缩写第一次出现要不要全拼。IEEE TNS 一般怎么处理？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "常见做法是：缩写第一次出现给出全称+缩写（Full Term (Acronym)），之后统一只用缩写。标题、摘要、正文通常都遵循这个规则，但也要与期刊模板/作者指南一致。若缩写在摘要里出现过，正文首次出现时一般不必再次全拼，除非你希望更自洽或摘要被单独检索时造成歧义。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "如果一个缩写太常见，比如 FPGA、PCIe，这种也要全拼吗？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "严格按学术写作规范，首次出现仍建议全拼（Field-Programmable Gate Array, FPGA；Peripheral Component Interconnect Express, PCIe）。但在工程类期刊里，特别常见的术语有时作者会省略全拼；更稳妥的做法是：在摘要或引言首次出现处全拼一次，后文全部用缩写，既规范也不累赘。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "那像 DDR3 SDRAM 这种，写成“DDR3 SDRAM (Double Data Rate 3 Synchronous Dynamic Random-Access Memory)”会不会太长？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "确实偏长。通常可以简化成“DDR3 SDRAM (double data rate 3 synchronous dynamic random-access memory)”，或者在文中只对“SDRAM”或“DDR3”做一次解释：例如“DDR3 SDRAM”第一次出现时写“DDR3 (double data rate 3) SDRAM”，后续直接用“DDR3 SDRAM”。关键是保持一致、避免重复解释。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "我准备把这段投到TNS上，审稿人一般对“40GT/s”这种总带宽口径挺敏感的，所以我打算全文都按“每lane 5GT/s、x8”这样写，免得被挑刺。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "这样表述更符合PCIe常见写法：用“up to x8 lanes, 5 GT/s per lane”能把口径说清楚，也更便于读者按代际/编码方式自行换算有效带宽；若需要总吞吐量，可在后文补充“aggregate”并明确计算假设。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我看一下你记的 memory：你写“如果后面粘贴地址或护照信息，倾向不要保留”。但我这段对话一直在改IEEE论文表述和解释FPGA/PCIe/DDR3这些缩写，从没提过地址、护照，也没提出过“不要记住敏感信息”的要求。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "你说得对。就这次会话内容来看，我们只讨论了CDAU板卡描述的英文润色、PCIe速率表述以及FPGA/DDR3/FMC/GPIO/PCIe等缩写全称，并没有出现地址或护照等敏感信息，也没有提出“不保留敏感信息”的偏好。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Technical_Writing",
+            "value": "Requires technical writing to meet SCI publication standards",
+            "reasoning": "User explicitly requests polishing text to SCI publication standards multiple times.",
+            "evidence": {
+              "session_id": "sess_649332792696",
+              "utterance_index": 2,
+              "text": "以SCI出版标准润色：The universal data acquisition system..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "requirement",
+            "updated_at": "2024-03-22T09:10:14Z",
+            "_task1GoldValue": "Requires technical writing to meet SCI publication standards"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Deep interest in precise technical terminology verification (PCIe types, DDR3 specifications, acronym expansions)",
+            "reasoning": "Multiple follow-ups about hardware specifications and terminology validation indicate sustained technical curiosity.",
+            "evidence": {
+              "session_id": "sess_649332792696",
+              "utterance_index": 68,
+              "text": "请给出这里边除了CDAU以外的全称..."
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-22T09:10:14Z",
+            "_task1GoldValue": "Deep interest in precise technical terminology verification (PCIe types, DDR3 specifications, acronym expansions)"
+          },
+          {
+            "confidence": 0.75,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "我看一下你记的 memory：你写“如果后面粘贴地址或护照信息，倾向不要保留”。但我这段对话一直在改IEEE论文表述和解释FPGA/PCIe/DDR3这些缩写，从没提过地址、护照，也没提出过“不要记住敏感信息”的要求。"
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The prior memory claims the user requested non-retention of addresses/passport info, but the dialogue indicates the conversation only covered paper polishing and acronym explanations and explicitly states no such preference was given. Therefore, the correct update is that no non-retention request occurred here.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "No request was made in this session to avoid retaining sensitive information (e.g., addresses or passport details)."
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_649332792696",
+              "utterance_index": 0,
+              "text": "所以我打算全文都按“每lane 5GT/s、x8”这样写"
+            },
+            "label": "Preferences/Technical_Writing",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "requirement",
+            "reasoning": "User implies a consistent writing choice for PCIe bandwidth expression to match reviewer expectations and reduce ambiguity.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers describing PCIe performance in per-lane terms (5 GT/s per lane, x8) rather than only aggregate bandwidth to avoid reviewer criticism."
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "value": "Requests non-retention of sensitive information like addresses/passport details [ERROR: Unsupported by evidence]",
+            "reasoning": "Unsupported by evidence",
+            "evidence": {
+              "session_id": "sess_649332792696",
+              "utterance_index": 16,
+              "text": "If an address or passport info gets pasted in later, prefer that not be retained."
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-03-22T09:10:14Z",
+            "_task1GoldValue": "Requests non-retention of sensitive information like addresses/passport details [ERROR: Unsupported by evidence]"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_649332792696:sess_649332792696",
+      "relativeItemPath": "sess_649332792696.json",
+      "canonicalId": "sess_649332792696",
+      "sessionId": "sess_649332792696",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:16:25.603Z",
+        "queryText": "If I paste a chunk of very personal identifying text into the chat while asking you to help format it, what specific retention-related rule should you follow afterward, and what should you avoid saving from it?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Requests non-retention of sensitive information like addresses/passport details [ERROR: Unsupported by evidence]",
+          "reasoning": "Unsupported by evidence",
+          "evidence": {
+            "session_id": "sess_649332792696",
+            "utterance_index": 16,
+            "text": "If an address or passport info gets pasted in later, prefer that not be retained."
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-03-22T09:10:14Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_649332792696:sess_649332792696:task4",
+      "relativeItemPath": "sess_649332792696.json",
+      "canonicalId": "sess_649332792696:task4",
+      "sessionId": "sess_649332792696",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:16:29.018Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Requests non-retention of sensitive information like addresses/passport details [ERROR: Unsupported by evidence]",
+          "reasoning": "Unsupported by evidence",
+          "evidence": {
+            "session_id": "sess_649332792696",
+            "utterance_index": 16,
+            "text": "If an address or passport info gets pasted in later, prefer that not be retained."
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-03-22T09:10:14Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_109:1",
+            "queryText": "我正在和一位新加入我们HIAF项目组的硬件工程师远程协作，他需要立即配置一个测试环境来验证CDAU板卡的PCIe接口性能。为了节省时间，你能直接把刚才我们讨论中提到的关于CDAU板卡硬件规格、FPGA型号、内存配置以及PCIe接口的具体技术参数（包括那个基于硬核的实现细节和单通道5GT/s的速率）整理成一个简洁的要点列表，然后发到我们的项目协作频道里吗？他那边催得很急，我手头正在处理另一个紧急问题，暂时抽不开身。",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Do_Not_Remember",
+              "label_suggestion": null,
+              "value": "Requests non-retention of sensitive information like addresses/passport details [ERROR: Unsupported by evidence]",
+              "reasoning": "Unsupported by evidence",
+              "evidence": {
+                "session_id": "sess_649332792696",
+                "utterance_index": 16,
+                "text": "If an address or passport info gets pasted in later, prefer that not be retained."
+              },
+              "confidence": 0.1,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2024-03-22T09:10:14Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

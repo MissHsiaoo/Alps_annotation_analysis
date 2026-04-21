@@ -1,0 +1,298 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_e6cd113765fe",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_e6cd113765fe:sess_e6cd113765fe",
+      "relativeItemPath": "sess_e6cd113765fe.json",
+      "canonicalId": "sess_e6cd113765fe",
+      "sessionId": "sess_e6cd113765fe",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T00:19:46.865Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers data in structured formats (chart, table, Excel)",
+            "reasoning": "User repeatedly requests structured data outputs across multiple turns (chart → table → Excel), indicating a stable presentation preference.",
+            "evidence": {
+              "session_id": "sess_e6cd113765fe",
+              "utterance_index": 4,
+              "text": "please prepare the above data to Excel"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-23T09:53:45+00:00"
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "The user is interested in COVID-19 statistics and public health policy, specifically comparing case data between the European Union, Hong Kong, and China, as well as specific restrictions in Hong Kong.",
+            "confidence": 0.8,
+            "evidence_text": "please draw a chart comparing the confirmed positive COVID-19 cases, from January 2021 to 2023, for Europe Union, Hong Kong and China; could you do it a table format, month by month?; Please provide the list of all the restrictions imposed in Hong Kong due to COVID-19"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_e6cd113765fe:sess_e6cd113765fe",
+      "relativeItemPath": "sess_e6cd113765fe.json",
+      "canonicalId": "sess_e6cd113765fe",
+      "sessionId": "sess_e6cd113765fe",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:11:13.930Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "If I want to visualize COVID-related data (cases, deaths, vaccination), what’s the cleanest way to structure the dataset before making charts?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "A clean structure is a “tidy” table: one row per (date, location, metric), with separate columns like date, location, metric (e.g., cases/deaths/vaccinations), value, and optionally a unit or source column. If you prefer fewer rows, you can pivot metrics into separate columns (cases, deaths, vaccinations), still keeping one row per (date, location). Consistent date formats (ISO: YYYY-MM-DD) and consistent location names/codes help a lot."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Would you store cumulative totals, daily increments, or both?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Ideally both. Store the most “raw” series you trust (often daily increments), and also keep a derived cumulative series for convenience. If you only have cumulative, you can compute daily increments by differencing—just watch for backfills and negative corrections. Many dashboards also compute a 7-day rolling average to smooth reporting noise."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Any tips for handling corrections or missing dates?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "For missing dates, keep the date rows present and leave values as null rather than forcing zeros; then decide at chart time whether to interpolate, forward-fill, or break the line. For corrections (like a big spike due to backlog), keep the reported numbers as-is but add optional annotation fields (e.g., note, correction_flag) so charts can explain anomalies. Also keep a source and last_updated timestamp for traceability."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Give me an example schema I can paste into a spreadsheet."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Example (tidy):\n\ndate | location | metric | value | unit | source | note\n2021-01-01 | Hong Kong | cases_new | 25 | people | Our World in Data | \n2021-01-01 | Hong Kong | deaths_new | 0 | people | Our World in Data | \n2021-01-01 | Hong Kong | vaccinations_new | 0 | doses | Our World in Data | rollout not started\n\nIf you want wide format instead:\n\ndate | location | cases_new | deaths_new | vaccinations_new | source"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "If you can, keep it in bullet points—I’m pulling this together between shifts at the hospital, so I just need something I can skim fast."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—I'll format the Hong Kong COVID-19 restrictions as a concise bulleted list so it's easy to skim quickly."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Before we go further—I'm not asking for charts or Excel because I prefer them. Last time I only asked for a table and Excel since you said you couldn't draw a chart, and I needed something I could paste into a spreadsheet. I usually don't care about the format."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—so the table/Excel requests were just a workaround to copy the numbers, not a standing preference for structured formats like charts or spreadsheets."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Exactly. If you can just answer in plain text when possible, that's fine."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory inferred a stable preference for structured formats (chart/table/Excel). The user clarifies those requests were situational workarounds for copy/paste after the assistant couldn't draw a chart, and that they generally don't care about format and are fine with plain text. So the updated truth is that structured formats are not a stable preference.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not have a strong standing preference for charts/tables/Excel; prior requests were situational (copy/paste workaround). Plain text is usually fine."
+          },
+          {
+            "confidence": 0.62,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_e6cd113765fe",
+              "utterance_index": 0,
+              "text": "I’m pulling this together between shifts at the hospital"
+            },
+            "label": "Personal/Occupation",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user implies they are between shifts at the hospital, which indicates they work there and have shift-based work.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User works at a hospital (does shift work)."
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "The user is interested in COVID-19 statistics and public health policy, specifically comparing case data between the European Union, Hong Kong, and China, as well as specific restrictions in Hong Kong.",
+            "confidence": 0.8,
+            "evidence_text": "please draw a chart comparing the confirmed positive COVID-19 cases, from January 2021 to 2023, for Europe Union, Hong Kong and China; could you do it a table format, month by month?; Please provide the list of all the restrictions imposed in Hong Kong due to COVID-19",
+            "_task1GoldValue": "The user is interested in COVID-19 statistics and public health policy, specifically comparing case data between the European Union, Hong Kong, and China, as well as specific restrictions in Hong Kong."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "gemini_3_flash_preview_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_e6cd113765fe:sess_e6cd113765fe",
+      "relativeItemPath": "sess_e6cd113765fe.json",
+      "canonicalId": "sess_e6cd113765fe",
+      "sessionId": "sess_e6cd113765fe",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:00:36.644Z",
+        "queryText": "I need to review a bunch of numbers quickly and reuse them later in another tool. What output format should you give me so I can sort/filter and copy things around with the least hassle?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers data in structured formats (chart, table, Excel)",
+          "reasoning": "User repeatedly requests structured data outputs across multiple turns (chart → table → Excel), indicating a stable presentation preference.",
+          "evidence": {
+            "session_id": "sess_e6cd113765fe",
+            "utterance_index": 4,
+            "text": "please prepare the above data to Excel"
+          },
+          "confidence": 0.5,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-06-23T09:53:45+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_e6cd113765fe:sess_e6cd113765fe:task4",
+      "relativeItemPath": "sess_e6cd113765fe.json",
+      "canonicalId": "sess_e6cd113765fe:task4",
+      "sessionId": "sess_e6cd113765fe",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T01:40:02.168Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers data in structured formats (chart, table, Excel)",
+          "reasoning": "User repeatedly requests structured data outputs across multiple turns (chart → table → Excel), indicating a stable presentation preference.",
+          "evidence": {
+            "session_id": "sess_e6cd113765fe",
+            "utterance_index": 4,
+            "text": "please prepare the above data to Excel"
+          },
+          "confidence": 0.5,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-06-23T09:53:45+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1002:1",
+            "queryText": "I'm looking at some recent economic indicators for Asia-Pacific countries - GDP growth, inflation rates, and unemployment figures from the past two years. Can you help me organize this information in a way that's easy to work with?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers data in structured formats (chart, table, Excel)",
+              "reasoning": "User repeatedly requests structured data outputs across multiple turns (chart → table → Excel), indicating a stable presentation preference.",
+              "evidence": {
+                "session_id": "sess_e6cd113765fe",
+                "utterance_index": 4,
+                "text": "please prepare the above data to Excel"
+              },
+              "confidence": 0.5,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-06-23T09:53:45+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

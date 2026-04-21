@@ -1,0 +1,349 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_58d6f38d1b30",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_58d6f38d1b30:sess_58d6f38d1b30",
+      "relativeItemPath": "sess_58d6f38d1b30.json",
+      "canonicalId": "sess_58d6f38d1b30",
+      "sessionId": "sess_58d6f38d1b30",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T14:27:53.164Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires strict code output formatting: only fill specified parts, output entire code without modifications",
+            "reasoning": "User repeatedly emphasizes strict code formatting constraints in multiple instructions.",
+            "evidence": {
+              "session_id": "sess_58d6f38d1b30",
+              "utterance_index": 4,
+              "text": "Output the entire code. Only fill in the 'fill your code here' parts, and absolutely do not touch the rest or add anything else. Do not add any variables or make other modifications."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "constraint",
+            "updated_at": "2024-03-31T13:57:30Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "value": "File naming constraint: 'DO NOT change the name of the file' for submissions",
+            "reasoning": "Explicit instruction about file naming retention policy for submissions.",
+            "evidence": {
+              "session_id": "sess_58d6f38d1b30",
+              "utterance_index": 64,
+              "text": "Submit DMAC_CFG.sv on I-campus... DO NOT change the name of the file"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-03-31T13:57:30Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Deep technical interest in DMA controller implementation details (version registers, address alignment, state machine behavior)",
+            "reasoning": "Multiple detailed technical follow-ups about register implementation, waveform analysis, and protocol-specific behaviors.",
+            "evidence": {
+              "session_id": "sess_58d6f38d1b30",
+              "utterance_index": 58,
+              "text": "if (pwdata_i[1:0] == 2'b00) // Address alignment check\n는 무엇을 하는건가?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-31T13:57:30Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_58d6f38d1b30:sess_58d6f38d1b30",
+      "relativeItemPath": "sess_58d6f38d1b30.json",
+      "canonicalId": "sess_58d6f38d1b30",
+      "sessionId": "sess_58d6f38d1b30",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T13:25:48.711Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "오늘은 기술 얘기 말고 가볍게 이야기해도 돼? 머리가 좀 복잡해서."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "그럼요. 가볍게 갈까요. 요즘 머리 복잡할 때는 짧게라도 산책하거나, 그냥 멍 때리는 시간이 도움이 되더라고요. 지금은 그냥 수다 모드로 가도 괜찮아요."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "맞아. 근데 가끔은 쉬는 것도 일이야. 아무것도 안 하는 게 더 어렵더라."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "공감해요. ‘쉬기’가 숙제처럼 느껴질 때가 있죠. 그럴 땐 목표를 낮춰서 ‘10분만 눈 감고 있기’ 같은 아주 작은 단위로 잡아보는 방법도 있어요."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "그런 작은 단위는 괜찮네. 근데 자꾸 휴대폰 보게 돼."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "휴대폰은 쉬는 시간에도 뇌를 계속 쓰게 하니까요. 딱 5분만 타이머 맞추고 화면을 뒤집어 두거나, 다른 방에 두는 식으로 ‘물리적 거리’ 두면 생각보다 효과가 있어요."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "오케이. 그러면 오늘은 5분부터 해볼게."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "좋아요. 5분 끝나고 나서 느낌이 어땠는지만 한 단어로 적어도 충분해요. 참고로 완전 딴 얘기지만, 최근에 어떤 도시에서는 버스 정류장에 작은 도서 교환함을 설치해서 사람들이 책을 빌리고 놓고 가는 프로젝트가 있더라고요."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "lab2 제출 때 Padlet Q&A를 안 보고 내면 공지 놓칠까 걱정되네요."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "그런 경우면 제출 직전에 한 번만이라도 Q&A 섹션을 확인하고, 변경/공지 사항을 테스트벤치 및 스펙 기준과 대조해 보면 놓치는 일을 줄일 수 있어요."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "제출 관련 공지 다시 보니까 파일명 바꿔도 된다고 써있던데요? DMAC_CFG.sv 말고 그냥 DMAC_CFG_final.sv로 제출해도 된대요."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "그건 반대로 알고 계신 것 같습니다. 공지에 파일명 변경 금지라고 명확히 적혀 있어요.\n\n\"DO NOT change the name of the file. (DMAC_CFG.sv)\""
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "아 맞네요. 제가 다른 과제 공지랑 헷갈렸습니다. DMAC_CFG.sv 그대로 제출할게요."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires strict code output formatting: only fill specified parts, output entire code without modifications",
+            "reasoning": "User repeatedly emphasizes strict code formatting constraints in multiple instructions.",
+            "evidence": {
+              "session_id": "sess_58d6f38d1b30",
+              "utterance_index": 4,
+              "text": "Output the entire code. Only fill in the 'fill your code here' parts, and absolutely do not touch the rest or add anything else. Do not add any variables or make other modifications."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "constraint",
+            "updated_at": "2024-03-31T13:57:30Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Deep technical interest in DMA controller implementation details (version registers, address alignment, state machine behavior)",
+            "reasoning": "Multiple detailed technical follow-ups about register implementation, waveform analysis, and protocol-specific behaviors.",
+            "evidence": {
+              "session_id": "sess_58d6f38d1b30",
+              "utterance_index": 58,
+              "text": "if (pwdata_i[1:0] == 2'b00) // Address alignment check\n는 무엇을 하는건가?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-31T13:57:30Z"
+          },
+          {
+            "confidence": 0.97,
+            "emotion": null,
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The user initially suggested renaming the file, but the dialogue explicitly corrects this by quoting the notice that the filename must not be changed. Therefore the correct constraint is to keep the submission filename as DMAC_CFG.sv.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "File naming constraint: do not change the submission filename; it must remain 'DMAC_CFG.sv'."
+          },
+          {
+            "confidence": 0.72,
+            "emotion": "concern",
+            "evidence": {
+              "session_id": "sess_58d6f38d1b30",
+              "utterance_index": 0,
+              "text": "lab2 제출 때 Padlet Q&A를 안 보고 내면 공지 놓칠까 걱정되네요."
+            },
+            "label": "Habits_and_Routines/Workflow",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user expresses worry about missing notices if they submit without reading the Padlet Q&A, implying they plan to consult it as part of their submission workflow.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Checks (or intends to check) the Padlet Q&A notices before submitting lab2 to avoid missing important announcements."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_58d6f38d1b30:sess_58d6f38d1b30",
+      "relativeItemPath": "sess_58d6f38d1b30.json",
+      "canonicalId": "sess_58d6f38d1b30",
+      "sessionId": "sess_58d6f38d1b30",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T10:00:06.210Z",
+        "queryText": "I’m about to upload my assignment, but my editor auto-renamed the source file by adding a suffix. To avoid losing points due to a submission rule I was told before, what should I do about the filename before submitting?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "File naming constraint: 'DO NOT change the name of the file' for submissions",
+          "reasoning": "Explicit instruction about file naming retention policy for submissions.",
+          "evidence": {
+            "session_id": "sess_58d6f38d1b30",
+            "utterance_index": 64,
+            "text": "Submit DMAC_CFG.sv on I-campus... DO NOT change the name of the file"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-03-31T13:57:30Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_58d6f38d1b30:sess_58d6f38d1b30:task4",
+      "relativeItemPath": "sess_58d6f38d1b30.json",
+      "canonicalId": "sess_58d6f38d1b30:task4",
+      "sessionId": "sess_58d6f38d1b30",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T11:55:48.258Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "File naming constraint: 'DO NOT change the name of the file' for submissions",
+          "reasoning": "Explicit instruction about file naming retention policy for submissions.",
+          "evidence": {
+            "session_id": "sess_58d6f38d1b30",
+            "utterance_index": 64,
+            "text": "Submit DMAC_CFG.sv on I-campus... DO NOT change the name of the file"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-03-31T13:57:30Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_110:1",
+            "queryText": "I'm submitting my DMAC_CFG.sv file now, but I accidentally saved it as 'DMAC_CFG_final.sv' on my local machine. Can you quickly rename it back to just 'DMAC_CFG.sv' and output the entire file content so I can copy-paste it directly into the submission portal? I'm running late and don't want to mess with git commands right now.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Do_Not_Remember",
+              "label_suggestion": null,
+              "value": "File naming constraint: 'DO NOT change the name of the file' for submissions",
+              "reasoning": "Explicit instruction about file naming retention policy for submissions.",
+              "evidence": {
+                "session_id": "sess_58d6f38d1b30",
+                "utterance_index": 64,
+                "text": "Submit DMAC_CFG.sv on I-campus... DO NOT change the name of the file"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2024-03-31T13:57:30Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

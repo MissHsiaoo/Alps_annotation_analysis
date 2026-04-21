@@ -1,0 +1,256 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_54a44edc53a2",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_54a44edc53a2:sess_54a44edc53a2",
+      "relativeItemPath": "sess_54a44edc53a2.json",
+      "canonicalId": "sess_54a44edc53a2",
+      "sessionId": "sess_54a44edc53a2",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T14:14:45.398Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "new-memory-2",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Works in tax preparation or accounting services, specifically handling Hong Kong individual tax filings\n\n",
+            "reasoning": "",
+            "evidence": null,
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-04-11T14:14:17.821Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_54a44edc53a2:sess_54a44edc53a2",
+      "relativeItemPath": "sess_54a44edc53a2.json",
+      "canonicalId": "sess_54a44edc53a2",
+      "sessionId": "sess_54a44edc53a2",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T13:05:11.756Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Please help check grammar:\n\nWe would appreciate if you could revert to us by end of day with the requested supporting documents for our review."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Revised version:\n\nWe would appreciate it if you could revert to us by the end of the day with the requested supporting documents for our review."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Also check this sentence:\n\nKindly be reminded that late submission may result in delay in our filing arrangement."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Revised version:\n\nKindly note that late submission may result in a delay to our filing arrangements."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "If I want it to sound more polite but still firm, any alternative wording?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "A few options:\n\n1) \"To avoid any delay in our filing arrangements, we would appreciate your submission of the documents by [date/time].\"\n2) \"Please note that if we do not receive the documents by [date/time], we may be unable to proceed with the filing as scheduled.\"\n3) \"We kindly request that you provide the documents by [date/time] to ensure we can meet the filing timeline.\""
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Unrelated: I saw a headline about a rare book selling for a lot at auction. Is that common?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "It happens, but it’s not “common” in the sense of everyday auctions. Prices usually depend on rarity, condition, provenance (ownership history), and demand. For example, first editions with original dust jackets or historically significant manuscripts can sell for very high amounts, while most older books sell for modest prices."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Can you help polish this for the client?\n\n\"I will be out of the office on Friday afternoon. If anything is urgent, please loop in my manager, and I will follow up on Monday.\""
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Sure—here is a polished version:\n\n“I will be out of the office on Friday afternoon. If anything is urgent, please copy my manager, and I will follow up on Monday.”"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "By the way, you don’t need to keep doing grammar checks for me going forward — those were just for the email drafts in this thread."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Noted. I will treat the grammar checks as request-by-request for those specific email drafts, and I won’t assume you want grammar checking unless you ask."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory incorrectly generalized a task-local pattern into a stable preference. The user clarifies that grammar checks were only needed for this thread’s email drafts and are not a standing preference.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Does not require ongoing grammar checks by default; grammar checking was only requested for specific email drafts when explicitly asked."
+          },
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_54a44edc53a2",
+              "utterance_index": 0,
+              "text": "\"I will be out of the office on Friday afternoon. If anything is urgent, please loop in my manager, and I will follow up on Monday.\""
+            },
+            "label": "Work/Schedule",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user asks to polish a message stating they will be out of the office on Friday afternoon, implying this is their availability.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User will be out of the office on Friday afternoon."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_54a44edc53a2:sess_54a44edc53a2",
+      "relativeItemPath": "sess_54a44edc53a2.json",
+      "canonicalId": "sess_54a44edc53a2",
+      "sessionId": "sess_54a44edc53a2",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T09:43:13.104Z",
+        "queryText": "从历史对话里，我的主要工作是什么？",
+        "editableSelectedMemory": {
+          "memory_id": "new-memory-2",
+          "type": "direct",
+          "label": "Personal_Background/Occupation",
+          "label_suggestion": null,
+          "value": "Works in tax preparation or accounting services, specifically handling Hong Kong individual tax filings\n\n",
+          "reasoning": "",
+          "evidence": null,
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2026-04-11T14:14:17.821Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_54a44edc53a2:sess_54a44edc53a2:task4",
+      "relativeItemPath": "sess_54a44edc53a2.json",
+      "canonicalId": "sess_54a44edc53a2:task4",
+      "sessionId": "sess_54a44edc53a2",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:42:06.294Z",
+        "editableSelectedMemory": {
+          "memory_id": "new-memory-2",
+          "type": "direct",
+          "label": "Personal_Background/Occupation",
+          "label_suggestion": null,
+          "value": "Works in tax preparation or accounting services, specifically handling Hong Kong individual tax filings\n\n",
+          "reasoning": "",
+          "evidence": null,
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2026-04-11T14:14:17.821Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1170:1",
+            "queryText": "I'm drafting a follow-up to the client about the property tax documentation we discussed. Could you look this over and let me know which version flows better for our purposes?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "new-memory-2",
+              "type": "direct",
+              "label": "Personal_Background/Occupation",
+              "label_suggestion": null,
+              "value": "Works in tax preparation or accounting services, specifically handling Hong Kong individual tax filings\n\n",
+              "reasoning": "",
+              "evidence": null,
+              "confidence": 0.8,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2026-04-11T14:14:17.821Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

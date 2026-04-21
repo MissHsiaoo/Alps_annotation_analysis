@@ -1,0 +1,354 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_73da035d4ec8",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_73da035d4ec8:sess_73da035d4ec8",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_73da035d4ec8.json",
+      "canonicalId": "sess_73da035d4ec8",
+      "sessionId": "sess_73da035d4ec8",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:03:17.942Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Interest in creating content about aquarium fish care (blogging)",
+            "reasoning": "User explicitly plans a blog focused on aquarium fish care topics.",
+            "evidence": {
+              "session_id": "sess_73da035d4ec8",
+              "utterance_index": 0,
+              "text": "Давай спланируем создание блога по уходу за аквариумными рыбками. Пошагово придумай темы блогов , описание канала, названия блогов с какого начать что бы привлеч аудиторию"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-19T13:19:08+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers metric system in technical explanations",
+            "reasoning": "User explicitly demands metric system usage in aquarium-related explanations.",
+            "evidence": {
+              "session_id": "sess_73da035d4ec8",
+              "utterance_index": 4,
+              "text": "Более раскрыто, менее шаблонно и в метрической системе"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-19T13:19:08+00:00"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "value": "User communicates in Russian",
+            "confidence": 0.65,
+            "evidence_text": "Давай спланируем создание блога по уходу за аквариумными рыбками"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_73da035d4ec8:sess_73da035d4ec8",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_73da035d4ec8.json",
+      "canonicalId": "sess_73da035d4ec8",
+      "sessionId": "sess_73da035d4ec8",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:15:59.125Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Слушай, я запутался: чем отличается «гайд» от «статьи» для блога? Это одно и то же или нет?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Похожи, но обычно есть акцент. «Гайд» — это пошаговая инструкция с чётким результатом (что сделать, в каком порядке, какие ошибки избежать). «Статья» шире: может быть обзором, разбором причин, сравнением, историей, списком идей. Часто хорошая блог-статья включает внутри мини-гайд, но не обязана быть строго пошаговой."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Ок. А как лучше назвать картинку в статье, чтобы потом легче было искать и не путаться?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Самый удобный подход: единый шаблон имени файла + короткое описание. Например: YYYY-MM-DD_тема_ключевое-слово_01.jpg. Или: blog_aquarium_size_table_01.png. Главное — латиница, нижние подчёркивания/дефисы, без пробелов и «final-final-2». Если картинок много, добавляй сквозную нумерацию (01, 02, 03)."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Кстати, слышал, что в аквариумных статьях часто путают литры и галлоны. Есть простой способ не ошибиться?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Да: держать под рукой одну опорную конверсию. 1 US gallon ≈ 3,785 л. Для быстрых прикидок: галлоны × 3,8 ≈ литры. И наоборот: литры ÷ 3,8 ≈ галлоны. (Это, кстати, частая ошибка в старых англоязычных материалах: ещё встречается «imperial gallon», он ≈ 4,546 л.)"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Понял. А если в статье будет таблица, лучше вставлять её как картинку или как обычную таблицу?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Если платформа поддерживает — лучше обычная таблица: её можно копировать, она индексируется, доступнее для поиска. Картинка с таблицей годится как дополнение (например, для соцсетей или превью), но тогда добавь текстовую версию под ней. В качестве примера: в одной музейной экспозиции про телеграф рядом с инфографикой всегда висела текстовая расшифровка — посетителям было проще сверять детали."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Ок, и ещё: в статье давай без «на каждый дюйм» — я потом это на сайт несу, там аудитория из РФ, так что оставь только литры/сантиметры и, если где-то нужно, короткую шпаргалку по переводу."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Понял: убираю дюймы и галлоны, оставляю литры/см, а в конце добавлю компактный блок «перевод единиц» (дюйм→см, галлон→литры) для тех, кто всё же встречает англоязычные источники. В тексте примеры пересчитаю сразу в метрическую систему и под них подберу подписи к картинкам."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Стоп, я тебя поправлю: блог про уход за аквариумными рыбками я делать не собираюсь. Тогда это было просто упражнение для копирайтинга — мне нужно было потренироваться, как структурировать статью и вставки картинок."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Понял. То есть тема с аквариумными рыбками была лишь примером, а реального интереса запускать блог именно про уход за рыбами у тебя нет — ты отрабатывал формат текста и структуру."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Да, именно так: никаких планов вести аквариумный блог нет."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers metric system in technical explanations",
+            "reasoning": "User explicitly demands metric system usage in aquarium-related explanations.",
+            "evidence": {
+              "session_id": "sess_73da035d4ec8",
+              "utterance_index": 4,
+              "text": "Более раскрыто, менее шаблонно и в метрической системе"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-19T13:19:08+00:00",
+            "_task1GoldValue": "Prefers metric system in technical explanations"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about aquarium selection factors (size, materials, metric specifications) [ERROR: Task-local: Questions relate to blog content creation, not personal curiosity.]",
+            "reasoning": "Task-local: Questions relate to blog content creation, not personal curiosity.",
+            "evidence": {
+              "session_id": "sess_73da035d4ec8",
+              "utterance_index": 4,
+              "text": "Более раскрыто, менее шаблонно и в метрической системе"
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-19T13:19:08+00:00"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "neutral",
+            "reasoning": "Ранее было зафиксировано, что пользователь заинтересован в создании контента про уход за аквариумными рыбками. Однако пользователь прямо уточняет, что не собирается делать такой блог и использовал тему лишь как упражнение для копирайтинга. Значит, устойчивого интереса к блогингу об аквариумных рыбках нет.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "No plans/interest to create a blog specifically about aquarium fish care; the aquarium topic was used only as a copywriting exercise."
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_73da035d4ec8",
+              "utterance_index": 0,
+              "text": "я потом это на сайт несу, там аудитория из РФ"
+            },
+            "label": "Personal_Profile/Location",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user mentions that the website audience is from Russia, implying the target audience/location context is Russia.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User’s content is aimed at an audience in Russia (RF)."
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "value": "User communicates in Russian",
+            "confidence": 0.65,
+            "evidence_text": "Давай спланируем создание блога по уходу за аквариумными рыбками",
+            "_task1GoldValue": "User communicates in Russian"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "claude_sonnet_4_5_20250929_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_73da035d4ec8:sess_73da035d4ec8",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_73da035d4ec8.json",
+      "canonicalId": "sess_73da035d4ec8",
+      "sessionId": "sess_73da035d4ec8",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T17:32:06.041Z",
+        "queryText": "I’m sketching out a small content project for my free time. If I want to attract an audience quickly with practical “how-to” posts, what kind of subject matter should I build it around based on what you remember I’m into creating content about?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Interest in creating content about aquarium fish care (blogging)",
+          "reasoning": "User explicitly plans a blog focused on aquarium fish care topics.",
+          "evidence": {
+            "session_id": "sess_73da035d4ec8",
+            "utterance_index": 0,
+            "text": "Давай спланируем создание блога по уходу за аквариумными рыбками. Пошагово придумай темы блогов , описание канала, названия блогов с какого начать что бы привлеч аудиторию"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-06-19T13:19:08+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_73da035d4ec8:sess_73da035d4ec8:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_73da035d4ec8.json",
+      "canonicalId": "sess_73da035d4ec8:task4",
+      "sessionId": "sess_73da035d4ec8",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T11:34:58.490Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Interest in creating content about aquarium fish care (blogging)",
+          "reasoning": "User explicitly plans a blog focused on aquarium fish care topics.",
+          "evidence": {
+            "session_id": "sess_73da035d4ec8",
+            "utterance_index": 0,
+            "text": "Давай спланируем создание блога по уходу за аквариумными рыбками. Пошагово придумай темы блогов , описание канала, названия блогов с какого начать что бы привлеч аудиторию"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-06-19T13:19:08+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_103:1",
+            "queryText": "Хочу сделать следующий пост для блога — про выбор оборудования для аквариума. Но не хочу, чтобы это было сухое перечисление фильтров и ламп. Как бы ты его обыграл, чтобы материал вышел живым и цепляющим?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Interest in creating content about aquarium fish care (blogging)",
+              "reasoning": "User explicitly plans a blog focused on aquarium fish care topics.",
+              "evidence": {
+                "session_id": "sess_73da035d4ec8",
+                "utterance_index": 0,
+                "text": "Давай спланируем создание блога по уходу за аквариумными рыбками. Пошагово придумай темы блогов , описание канала, названия блогов с какого начать что бы привлеч аудиторию"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-06-19T13:19:08+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

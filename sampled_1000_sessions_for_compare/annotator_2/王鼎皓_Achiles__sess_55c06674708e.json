@@ -1,0 +1,381 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_55c06674708e",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_55c06674708e:sess_55c06674708e",
+      "relativeItemPath": "sess_55c06674708e.json",
+      "canonicalId": "sess_55c06674708e",
+      "sessionId": "sess_55c06674708e",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:23:42.650Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Travel_Mode",
+            "label_suggestion": null,
+            "value": "Prefers free 7-day parking near Pudong Airport",
+            "reasoning": "User explicitly asks about free parking options for a specific duration.",
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-04-18T03:03:21+00:00",
+            "evidence": {
+              "session_id": "sess_55c06674708e",
+              "utterance_index": 0,
+              "text": ""
+            }
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained curiosity about Xue Youmin's identity",
+            "reasoning": "User asked 3+ follow-ups (utterances 18/22/24) and corrected assistant's answers, indicating strong interest.",
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-18T03:03:21+00:00",
+            "evidence": {
+              "session_id": "sess_55c06674708e",
+              "utterance_index": 0,
+              "text": ""
+            }
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/tesla/inquiry",
+            "value": "Technical curiosity about Tesla hardware (HW4.0) and 4680 battery",
+            "reasoning": "Could be general inquiry rather than user-specific curiosity",
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-18T03:03:21+00:00",
+            "evidence": {
+              "session_id": "sess_55c06674708e",
+              "utterance_index": 0,
+              "text": ""
+            }
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_55c06674708e:sess_55c06674708e",
+      "relativeItemPath": "sess_55c06674708e.json",
+      "canonicalId": "sess_55c06674708e",
+      "sessionId": "sess_55c06674708e",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:23:52.659Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "你刚才把人名信息搞混了。遇到这种同名/相似拼写的情况，你一般怎么核对？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "通常会先把“检索线索”拆开核对：\n1) 中文名的常见写法与可能的异体/错别字；\n2) 英文拼写（含空格、连字符、大小写）以及是否是拼音或西文名；\n3) 关联领域与机构（例如物理学/商界/娱乐圈，大学/公司/研究所）；\n4) 可验证的公开信息点（论文题目、专利号、任职公告、出版物 ISBN 等）。\n\n你能提供你看到的 Youmin XUE 出处吗？比如一段原文、链接标题、TA 的领域或所在机构，我就能更准确地缩小范围。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "假设我只有一个名字，没有上下文，你会怎么做排查？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "只有名字时，我会先做“去歧义问询”和“候选列表”：\n- 先反问 2~3 个最关键的区分点：领域（学术/企业/文艺）、大致年代（在世/历史人物/近期新闻）、地区或语言环境（中文语境还是英文语境）。\n- 同时给出若干可能方向的候选：例如“可能是某高校研究人员/某企业高管/同名的多位作者”，并说明每个候选需要哪些证据才能确认。\n- 若你允许提供更多线索，我再把候选逐个排除。\n\n举个不涉及你的例子：NASA 在 1977 年发射的旅行者 1 号至今仍在向地球传回数据，但很多人会把它和旅行者 2 号的任务节点混在一起；这种情况就很适合用“时间线+可验证节点”来核对。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "那你给我一个最小线索清单：我只要填空就行。"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "可以，用“填空式”最小清单（越多越准）：\n1) 名字原样：__________\n2) 出处类型（网页/论文/视频/社交媒体/书籍）：__________\n3) 语言与拼写版本（中文/英文/拼音/别名）：__________\n4) 相关领域关键词（最多 3 个）：__________\n5) 关联机构/地点/平台（如大学/公司/频道）：__________\n6) 看到的时间或内容年代：__________\n7) 你最想确认的是（身份/履历/作品/观点/真假）：__________\n\n另一个无关的小知识：有些城市会在图书馆目录里用“规范名称（authority record）”来统一同名作者，这也是做去歧义的一种标准方法。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "前端那段代码我准备就用在手机端的落地页里，别太复杂，能快速打开就行。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "明白。手机端落地页建议结构尽量扁平、样式精简，图片用自适应并控制体积；字体与间距优先保证可读性。你如果告诉我页面需要的模块（比如 banner、按钮、表单、说明文案），我可以按“首屏优先、资源最少”的思路给你一个更贴近落地页的模板。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "上次那个“浦东机场附近可以免费停车七天”的问题，我其实不是要找免费停车位。我是想问机场停车七天大概要多少钱，以及有没有靠谱的接送机停车场推荐。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "明白了，你关注点不是“免费停车七天”，而是“停车七天的费用”和“靠谱的停车/接送方案”。之前把你的需求理解成偏好免费停车，确实不准确。你这类情况一般就是对比：机场官方停车场（更稳但更贵） vs 周边接送机停车场（通常便宜些但要选正规）。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "对，我不追求免费，只要正规、安全、能接送就行。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "好的，那我就按“正规、安全、含接送”和“七天总费用大概范围”来给你整理思路，不把“免费”当成你的偏好前提。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained curiosity about Xue Youmin's identity",
+            "reasoning": "User asked 3+ follow-ups (utterances 18/22/24) and corrected assistant's answers, indicating strong interest.",
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-18T03:03:21+00:00",
+            "evidence": {
+              "session_id": "sess_55c06674708e",
+              "utterance_index": 0,
+              "text": ""
+            },
+            "_task1GoldValue": "Sustained curiosity about Xue Youmin's identity"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/tesla/inquiry",
+            "value": "Technical curiosity about Tesla hardware (HW4.0) and 4680 battery",
+            "reasoning": "Could be general inquiry rather than user-specific curiosity",
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-18T03:03:21+00:00",
+            "evidence": {
+              "session_id": "sess_55c06674708e",
+              "utterance_index": 0,
+              "text": ""
+            },
+            "_task1GoldValue": "Technical curiosity about Tesla hardware (HW4.0) and 4680 battery"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "对，我不追求免费，只要正规、安全、能接送就行。"
+                }
+              ]
+            },
+            "label": "Preferences/Travel_Mode",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory inferred a long-term preference for free 7-day parking from a single question. In the new dialogue, the user explicitly corrects that they were not seeking free parking and instead prioritize safety/legitimacy, shuttle service, and understanding the 7-day price.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not specifically prefer free 7-day parking near Pudong Airport; they care about正规、安全、能接送 and the 7-day cost."
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_55c06674708e",
+              "utterance_index": 0,
+              "text": "前端那段代码我准备就用在手机端的落地页里，别太复杂，能快速打开就行。"
+            },
+            "label": "Preferences/Tech_Style",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User implies the code will be used on a mobile landing page and prioritizes simplicity and fast loading.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers simple, fast-loading frontend code suitable for a mobile landing page"
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Travel_Mode",
+            "label_suggestion": null,
+            "value": "Prefers free 7-day parking near Pudong Airport",
+            "reasoning": "User explicitly asks about free parking options for a specific duration.",
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-04-18T03:03:21+00:00",
+            "evidence": {
+              "session_id": "sess_55c06674708e",
+              "utterance_index": 0,
+              "text": ""
+            },
+            "_task1GoldValue": "Prefers free 7-day parking near Pudong Airport"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_55c06674708e:sess_55c06674708e",
+      "relativeItemPath": "sess_55c06674708e.json",
+      "canonicalId": "sess_55c06674708e",
+      "sessionId": "sess_55c06674708e",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:23:55.515Z",
+        "queryText": "I’m planning a week-long trip and will be driving myself to catch a flight. If I want to avoid any parking fees the whole time I’m away, what kind of parking arrangement should I be looking for based on my usual habits?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Travel_Mode",
+          "label_suggestion": null,
+          "value": "Prefers free 7-day parking near Pudong Airport",
+          "reasoning": "User explicitly asks about free parking options for a specific duration.",
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-04-18T03:03:21+00:00",
+          "evidence": {
+            "session_id": "sess_55c06674708e",
+            "utterance_index": 0,
+            "text": ""
+          }
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_55c06674708e:sess_55c06674708e:task4",
+      "relativeItemPath": "sess_55c06674708e.json",
+      "canonicalId": "sess_55c06674708e:task4",
+      "sessionId": "sess_55c06674708e",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:23:58.796Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Travel_Mode",
+          "label_suggestion": null,
+          "value": "Prefers free 7-day parking near Pudong Airport",
+          "reasoning": "User explicitly asks about free parking options for a specific duration.",
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-04-18T03:03:21+00:00",
+          "evidence": {
+            "session_id": "sess_55c06674708e",
+            "utterance_index": 0,
+            "text": ""
+          }
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_975:1",
+            "queryText": "我下周要出差一周，开车去浦东机场。附近有什么停车方案比较适合我这种情况？",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Travel_Mode",
+              "label_suggestion": null,
+              "value": "Prefers free 7-day parking near Pudong Airport",
+              "reasoning": "User explicitly asks about free parking options for a specific duration.",
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-04-18T03:03:21+00:00",
+              "evidence": {
+                "session_id": "sess_55c06674708e",
+                "utterance_index": 0,
+                "text": ""
+              }
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

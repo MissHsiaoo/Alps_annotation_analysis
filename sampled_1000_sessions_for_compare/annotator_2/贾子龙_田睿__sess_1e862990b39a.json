@@ -1,0 +1,377 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_1e862990b39a",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_1e862990b39a:sess_1e862990b39a",
+      "relativeItemPath": "sess_1e862990b39a.json",
+      "canonicalId": "sess_1e862990b39a",
+      "sessionId": "sess_1e862990b39a",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:06:45.140Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "schedule/constraints/work_hours",
+            "value": "Cannot leave workplace during 8-16 work hours for notary visits",
+            "reasoning": "User explicitly states work hours conflict with notary office availability",
+            "evidence": {
+              "session_id": "sess_1e862990b39a",
+              "utterance_index": 22,
+              "text": "kancelaria notarialna jest otwarta tylko w godzinach 8-16, a dokładnie takie są godziny mojej pracy i nie mogę opuścić wtedy biura"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-13T17:50:06+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about historical technology/platform shifts (online forums, WebTV, device usage trends)",
+            "reasoning": "Multiple follow-up questions about declining forum usage, Gadu-Gadu messenger, and computer vs smartphone adoption patterns",
+            "evidence": {
+              "session_id": "sess_1e862990b39a",
+              "utterance_index": 12,
+              "text": "Dlaczego tak niewielu ludzi korzysta teraz z komunikatora Gadu-Gadu w porównaniu z tym, co było w okolicach roku 2010?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-13T17:50:06+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Possessions/Car",
+            "label_suggestion": null,
+            "value": "Does not own a car",
+            "reasoning": "Explicitly states lack of car ownership when asking about equipment transport",
+            "evidence": {
+              "session_id": "sess_1e862990b39a",
+              "utterance_index": 20,
+              "text": "How can I transport... equipment... if I don't have a car?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-13T17:50:06+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_1e862990b39a:sess_1e862990b39a",
+      "relativeItemPath": "sess_1e862990b39a.json",
+      "canonicalId": "sess_1e862990b39a",
+      "sessionId": "sess_1e862990b39a",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:07:19.623Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Czy mógłbyś wytłumaczyć różnicę między „kwarantanną”, „izolacją” i „lockdownem” w prosty sposób?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Jasne. \n\n- **Izolacja**: dotyczy osoby, która jest chora lub ma potwierdzone zakażenie — chodzi o odseparowanie jej od innych, żeby nie zarażała.\n- **Kwarantanna**: dotyczy osoby, która mogła mieć kontakt z zakażeniem (np. kontakt z chorym) — na wypadek, gdyby zachorowała, ogranicza się jej kontakty z innymi przez określony czas.\n- **Lockdown**: to zbiór odgórnych ograniczeń dla całej społeczności (np. zamknięcie części miejsc, limity osób, zakazy zgromadzeń), mających zmniejszyć transmisję w populacji.\n\nChcesz definicje bardziej „urzędowe” (jak w przepisach), czy raczej praktyczne przykłady z życia?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Raczej praktyczne przykłady. I jak to się ma do pracy zdalnej?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Praktycznie:\n\n- **Izolacja**: ktoś ma pozytywny test i zostaje w domu, nie spotyka się z domownikami „normalnie” (osobny pokój, osobne ręczniki, wietrzenie), nie chodzi do sklepu.\n- **Kwarantanna**: ktoś czuje się zdrowo, ale np. miał bliski kontakt z osobą zakażoną — zostaje w domu i obserwuje objawy; zwykle może pracować zdalnie, jeśli stan zdrowia pozwala.\n- **Lockdown**: nawet osoby zdrowe mają ograniczone aktywności (np. część usług zamknięta), a firmy częściej przechodzą na **pracę zdalną** tam, gdzie to możliwe.\n\nW skrócie: izolacja/kwarantanna to „ktoś konkretny”, lockdown to „reguły dla wielu”. Praca zdalna bywa elementem polityki firmy lub zaleceń/obostrzeń w czasie lockdownu, ale sama w sobie nie jest ani kwarantanną, ani izolacją."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "A co z dawnymi komunikatorami internetowymi—dlaczego niektóre zniknęły, mimo że miały masę użytkowników?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Najczęściej to miks kilku rzeczy: efekt sieciowy przeniósł się gdzie indziej (wszyscy poszli tam, gdzie „są znajomi”), brak wersji mobilnej na czas, słabsze bezpieczeństwo/antyspam, nietrafiony model zarabiania (np. agresywne reklamy), albo przejęcia i zmiany priorytetów.\n\nCiekawostka niezwiązana z tym, kto czego używa dziś: **ICQ** wystartowało w 1996 r., a jego numerki UIN były kiedyś powodem do dumy, bo krótkie oznaczały „stary staż”. Inny przykład: **MSN Messenger** zamknięto w 2013 r. po przejęciu Skype’a przez Microsoft. \n\nJeśli podasz nazwę konkretnego komunikatora, mogę rozpisać najbardziej prawdopodobny zestaw przyczyn jego spadku."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Z tym notariuszem jeszcze jedno: najprościej byłoby, gdyby wysłali odpis kurierem, tylko że ja w ciągu dnia nikogo nie mam w mieszkaniu i już raz paczka wróciła do nadawcy."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "W takiej sytuacji możesz spróbować kilku obejść bez zmieniania godzin pracy: (1) wybierz dostawę do punktu odbioru/automatu paczkowego (jeśli kancelaria dopuszcza taką formę wysyłki), (2) umów doręczenie na konkretne okno czasowe albo na wieczór, (3) podaj adres zaufanej osoby, która może odebrać przesyłkę, (4) sprawdź, czy kancelaria może wysłać list polecony z opcją odbioru w placówce pocztowej."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "W kwestii tego przewożenia sprzętu: ja wtedy napisałem „jeśli nie mam auta”, ale to był skrót myślowy. Mam samochód, tylko akurat był w naprawie i nie mogłem go użyć."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "OK, czyli to nie jest tak, że w ogóle nie masz samochodu—po prostu w tamtym momencie nie był dostępny, bo był w naprawie. W takiej sytuacji sens mają te same opcje (kurier, taxi/van, wypożyczenie auta), ale jako rozwiązanie „na teraz”, a nie na stałe."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "schedule/constraints/work_hours",
+            "value": "Cannot leave workplace during 8-16 work hours for notary visits",
+            "reasoning": "User explicitly states work hours conflict with notary office availability",
+            "evidence": {
+              "session_id": "sess_1e862990b39a",
+              "utterance_index": 22,
+              "text": "kancelaria notarialna jest otwarta tylko w godzinach 8-16, a dokładnie takie są godziny mojej pracy i nie mogę opuścić wtedy biura"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-13T17:50:06+00:00",
+            "_task1GoldValue": "Cannot leave workplace during 8-16 work hours for notary visits"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about historical technology/platform shifts (online forums, WebTV, device usage trends)",
+            "reasoning": "Multiple follow-up questions about declining forum usage, Gadu-Gadu messenger, and computer vs smartphone adoption patterns",
+            "evidence": {
+              "session_id": "sess_1e862990b39a",
+              "utterance_index": 12,
+              "text": "Dlaczego tak niewielu ludzi korzysta teraz z komunikatora Gadu-Gadu w porównaniu z tym, co było w okolicach roku 2010?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-13T17:50:06+00:00",
+            "_task1GoldValue": "Curious about historical technology/platform shifts (online forums, WebTV, device usage trends)"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                6,
+                8
+              ],
+              "turns": [
+                {
+                  "index": 6,
+                  "role": "user",
+                  "text": "Z tym notariuszem jeszcze jedno: najprościej byłoby, gdyby wysłali odpis kurierem, tylko że ja w ciągu dnia nikogo nie mam w mieszkaniu i już raz paczka wróciła do nadawcy."
+                },
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "W kwestii tego przewożenia sprzętu: ja wtedy napisałem „jeśli nie mam auta”, ale to był skrót myślowy. Mam samochód, tylko akurat był w naprawie i nie mogłem go użyć."
+                }
+              ]
+            },
+            "label": "Possessions/Car",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": null,
+            "reasoning": "Poprzednia pamięć mówiła, że użytkownik nie posiada samochodu. W dialogu użytkownik doprecyzowuje, że samochód ma, ale w tamtym czasie był w naprawie i chwilowo niedostępny.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Owns a car, but it may sometimes be unavailable (e.g., in repair)"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_1e862990b39a",
+              "utterance_index": 0,
+              "text": "ja w ciągu dnia nikogo nie mam w mieszkaniu i już raz paczka wróciła do nadawcy."
+            },
+            "label": "UNMAPPED",
+            "label_suggestion": "availability/home_daytime",
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies daytime absence at home by noting no one is in the apartment during the day and a previous delivery was returned.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Typically no one is at the user's apartment during daytime, causing delivery issues."
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Possessions/Car",
+            "label_suggestion": null,
+            "value": "Does not own a car",
+            "reasoning": "Explicitly states lack of car ownership when asking about equipment transport",
+            "evidence": {
+              "session_id": "sess_1e862990b39a",
+              "utterance_index": 20,
+              "text": "How can I transport... equipment... if I don't have a car?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-13T17:50:06+00:00",
+            "_task1GoldValue": "Does not own a car"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_1e862990b39a:sess_1e862990b39a",
+      "relativeItemPath": "sess_1e862990b39a.json",
+      "canonicalId": "sess_1e862990b39a",
+      "sessionId": "sess_1e862990b39a",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:06:53.447Z",
+        "queryText": "I’m trying to plan a day where I need to move some bulky stuff across town, and everyone keeps suggesting the “obvious” solution that assumes I can just drive it myself. Given my situation, what’s the key reason that option won’t work for me, and what’s a practical alternative plan?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Possessions/Car",
+          "label_suggestion": null,
+          "value": "Does not own a car",
+          "reasoning": "Explicitly states lack of car ownership when asking about equipment transport",
+          "evidence": {
+            "session_id": "sess_1e862990b39a",
+            "utterance_index": 20,
+            "text": "How can I transport... equipment... if I don't have a car?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-13T17:50:06+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_1e862990b39a:sess_1e862990b39a:task4",
+      "relativeItemPath": "sess_1e862990b39a.json",
+      "canonicalId": "sess_1e862990b39a:task4",
+      "sessionId": "sess_1e862990b39a",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:07:26.574Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Possessions/Car",
+          "label_suggestion": null,
+          "value": "Does not own a car",
+          "reasoning": "Explicitly states lack of car ownership when asking about equipment transport",
+          "evidence": {
+            "session_id": "sess_1e862990b39a",
+            "utterance_index": 20,
+            "text": "How can I transport... equipment... if I don't have a car?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-13T17:50:06+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_14:1",
+            "queryText": "I'm thinking of buying a new office chair from a store across town. What's the best way for me to get it home?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Possessions/Car",
+              "label_suggestion": null,
+              "value": "Does not own a car",
+              "reasoning": "Explicitly states lack of car ownership when asking about equipment transport",
+              "evidence": {
+                "session_id": "sess_1e862990b39a",
+                "utterance_index": 20,
+                "text": "How can I transport... equipment... if I don't have a car?"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-05-13T17:50:06+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

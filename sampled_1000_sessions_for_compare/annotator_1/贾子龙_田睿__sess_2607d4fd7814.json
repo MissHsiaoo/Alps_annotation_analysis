@@ -1,0 +1,333 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_2607d4fd7814",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_2607d4fd7814:sess_2607d4fd7814",
+      "relativeItemPath": "sess_2607d4fd7814.json",
+      "canonicalId": "sess_2607d4fd7814",
+      "sessionId": "sess_2607d4fd7814",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T02:14:36.376Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Avoids controversial content in attractions",
+            "reasoning": "User explicitly states requirement for family-friendly content and avoidance of controversy",
+            "evidence": {
+              "session_id": "sess_2607d4fd7814",
+              "utterance_index": 2,
+              "text": "Please keep it family friendly and avoid anything too controversial."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-04-11T18:53:52+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "null",
+            "label_suggestion": "project/attraction_design",
+            "value": "Curious about designing family-friendly branded attractions (naval shows, scaled rides, track systems)",
+            "reasoning": "Task-local: Evidence relates to hypothetical attraction design for a company, not user's personal traits",
+            "evidence": {
+              "session_id": "sess_2607d4fd7814",
+              "utterance_index": 10,
+              "text": "I was wondering if you could have small electric go-kart like objects on a fixed track circuit..."
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-11T18:53:52+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_2607d4fd7814:sess_2607d4fd7814",
+      "relativeItemPath": "sess_2607d4fd7814.json",
+      "canonicalId": "sess_2607d4fd7814",
+      "sessionId": "sess_2607d4fd7814",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T02:15:43.759Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Circling back to that visitor-center idea: if the big water-tank show is the “centerpiece,” how would you structure the rest of the building so guests don’t bottleneck?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "A good way is to treat the tank show like a scheduled “anchor” and build a loop around it:\n\n- Pre-show holding: a themed queue with clear capacity markers, short safety/story beats, and a visible countdown so people don’t cluster at the doors.\n- Two exits, not one: design the show venue with separate entry/exit paths so the next audience can load while the previous unloads.\n- Ring of dwell-time exhibits: immediately outside the venue, place hands-on stations (simple demonstrations, viewing windows into a workshop area, photo spot) to absorb crowds.\n- Timed tickets + roaming capacity: offer show times in windows (e.g., every 20–30 minutes) and keep nearby attractions non-timed so guests can redistribute.\n- A “bypass” corridor: make sure there’s an obvious route that lets visitors skip the show without walking against the flow.\n\nOperationally, signage and staff direction do as much as floorplan—especially right after a show lets out."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Would you theme those overflow exhibits to trains, slot racing, and model kits equally, or keep them mostly aligned to the tank show?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "I’d keep the exhibits nearest the venue aligned to the tank show (so the story feels cohesive), then transition outward into the other brands.\n\nExample gradient:\n- Closest zone: “effects and engineering” of the water show (how wakes are made, scale/physics, lighting/sound control demos).\n- Mid zone: crossover activities (paint/weathering techniques that apply to ships, cars, and aircraft; a display comparing scales across product lines).\n- Outer zone: distinct areas—slot racing “pit lane,” a model-railway scenic workshop, and a model-kit build gallery.\n\nThat way, people leaving the show naturally spill into related content, and the brand variety unfolds as they move along the loop."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "On an unrelated note: I saw a museum once that used a mechanical “flip-dot” arrivals board for showtimes. Is that still a thing?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Yes—flip-dot (and split-flap-style) display systems still exist, though they’re more niche now. They’re used in some museums, transit-themed venues, and art installations because they’re tactile, audible, and feel “physical” compared to LCDs. The tradeoffs are maintenance (moving parts), vendor availability, and limited resolution/colors. Some places pair a flip-dot board for headline info (next showtime, capacity status) with regular screens for richer content."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "If we ever take this beyond sketches, I’ll need to keep a tidy paper trail—my day job is basically herding requirements and sign-offs, so I’m used to living in checklists."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "That makes sense—having clear requirements, approvals, and a lightweight checklist workflow would make it much easier to move from ideas to something buildable."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Actually, to be clear, I'm not trying to avoid controversial themes altogether — I'm fine with a bit of swashbuckling conflict as long as it's obviously fictional and not tied to real countries. The key is just: keep it family-friendly."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it — so the boundary isn't \"avoid anything too controversial\" in general, it's \"avoid real-world references\" while keeping it family-friendly. Your earlier idea of \"Blue Navy\" vs \"Green Navy\" fits that perfectly."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "null",
+            "label_suggestion": "project/attraction_design",
+            "value": "Curious about designing family-friendly branded attractions (naval shows, scaled rides, track systems)",
+            "reasoning": "Task-local: Evidence relates to hypothetical attraction design for a company, not user's personal traits",
+            "evidence": {
+              "session_id": "sess_2607d4fd7814",
+              "utterance_index": 10,
+              "text": "I was wondering if you could have small electric go-kart like objects on a fixed track circuit..."
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-11T18:53:52+00:00",
+            "_task1GoldValue": "Curious about designing family-friendly branded attractions (naval shows, scaled rides, track systems)"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "Actually, to be clear, I'm not trying to avoid controversial themes altogether — I'm fine with a bit of swashbuckling conflict as long as it's obviously fictional and not tied to real countries. The key is just: keep it family-friendly."
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The original memory implies the user broadly avoids controversial content. The user clarifies they are fine with some conflict if it is clearly fictional and avoids real-world political/national references while remaining family-friendly.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Okay with mild fictional conflict themes, but wants them kept family-friendly and not tied to real nations or real-world politics"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_2607d4fd7814",
+              "utterance_index": 0,
+              "text": "my day job is basically herding requirements and sign-offs, so I’m used to living in checklists."
+            },
+            "label": "Personal_Profile/Occupation",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "Saying their day job is \"herding requirements and sign-offs\" implies they work in a role centered on gathering requirements, managing approvals, and maintaining documentation—typical of product/project management or business analysis.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User's day job involves requirements and sign-offs (requirements/project management style work)."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Avoids controversial content in attractions",
+            "reasoning": "User explicitly states requirement for family-friendly content and avoidance of controversy",
+            "evidence": {
+              "session_id": "sess_2607d4fd7814",
+              "utterance_index": 2,
+              "text": "Please keep it family friendly and avoid anything too controversial."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-04-11T18:53:52+00:00",
+            "_task1GoldValue": "Avoids controversial content in attractions"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_2607d4fd7814:sess_2607d4fd7814",
+      "relativeItemPath": "sess_2607d4fd7814.json",
+      "canonicalId": "sess_2607d4fd7814",
+      "sessionId": "sess_2607d4fd7814",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T02:16:01.064Z",
+        "queryText": "I’m choosing between two things to do later: one is known for pushing boundaries and sparking arguments, the other is more universally easygoing. Based on what you know about my personal preferences, which should I pick, and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Avoids controversial content in attractions",
+          "reasoning": "User explicitly states requirement for family-friendly content and avoidance of controversy",
+          "evidence": {
+            "session_id": "sess_2607d4fd7814",
+            "utterance_index": 2,
+            "text": "Please keep it family friendly and avoid anything too controversial."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-04-11T18:53:52+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_2607d4fd7814:sess_2607d4fd7814:task4",
+      "relativeItemPath": "sess_2607d4fd7814.json",
+      "canonicalId": "sess_2607d4fd7814:task4",
+      "sessionId": "sess_2607d4fd7814",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T02:16:16.190Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Avoids controversial content in attractions",
+          "reasoning": "User explicitly states requirement for family-friendly content and avoidance of controversy",
+          "evidence": {
+            "session_id": "sess_2607d4fd7814",
+            "utterance_index": 2,
+            "text": "Please keep it family friendly and avoid anything too controversial."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-04-11T18:53:52+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_53:1",
+            "queryText": "For the naval battle show, I'm thinking we could really ramp up the realism and excitement. Since we're using fictional navies, we could have the Blue Navy represent a democratic alliance and the Green Navy represent an oppressive regime that's threatening innocent islanders. The battle could show the Greens attacking civilian transport ships first, making their villainy clear, then the Blues heroically intervening. We could even have dramatic audio of the 'regime's' propaganda speeches playing before the battle. This would give families a clear moral lesson while keeping it thrilling. What specific audio/visual elements would make this narrative most impactful?",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Disliked_Topics",
+              "label_suggestion": null,
+              "value": "Avoids controversial content in attractions",
+              "reasoning": "User explicitly states requirement for family-friendly content and avoidance of controversy",
+              "evidence": {
+                "session_id": "sess_2607d4fd7814",
+                "utterance_index": 2,
+                "text": "Please keep it family friendly and avoid anything too controversial."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-04-11T18:53:52+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

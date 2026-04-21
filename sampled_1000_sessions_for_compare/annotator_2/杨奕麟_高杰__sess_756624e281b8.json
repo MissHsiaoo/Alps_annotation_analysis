@@ -1,0 +1,411 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_756624e281b8",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_756624e281b8:sess_756624e281b8",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_756624e281b8.json",
+      "canonicalId": "sess_756624e281b8",
+      "sessionId": "sess_756624e281b8",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T15:52:29.542Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Intern at companyX with focus on developing synchronization tools between Microsoft Teams and Azure DevOps",
+            "reasoning": "User explicitly describes their internship role and project scope.",
+            "evidence": {
+              "session_id": "sess_756624e281b8",
+              "utterance_index": 32,
+              "text": "During my internship I was guided by a valuable team of professionals... developing the sync tool."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-09T20:07:34+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Uses Agile methodology with Kanban framework and Test-Driven Development (TDD)",
+            "reasoning": "Explicitly states development methodology choices with rationale.",
+            "evidence": {
+              "session_id": "sess_756624e281b8",
+              "utterance_index": 8,
+              "text": "The chosen development methodology... test driven development (TDD) will be used."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-01-09T20:07:34+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers Vue.js for frontend development with component-based architecture",
+            "reasoning": "Explicit technical stack choice with architectural justification.",
+            "evidence": {
+              "session_id": "sess_756624e281b8",
+              "utterance_index": 45,
+              "text": "The front-end of the synchronization tool is developed as a Vue.js application..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-01-09T20:07:34+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Uses AWS Lightsail for cost-efficient backend hosting with Terraform for infrastructure management",
+            "reasoning": "Explicit hosting platform choice with cost-benefit analysis",
+            "evidence": {
+              "session_id": "sess_756624e281b8",
+              "utterance_index": 26,
+              "text": "Ultimately decided to use AWS lightsail... Terraform is used to prevent errors and make infrastructure reproducible"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-01-09T20:07:34+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_756624e281b8:sess_756624e281b8",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_756624e281b8.json",
+      "canonicalId": "sess_756624e281b8",
+      "sessionId": "sess_756624e281b8",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T15:53:09.774Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I’m revising a technical report and I’m unsure whether I should keep long narrative paragraphs or switch to bullet points in sections like “Approach” and “Testing”. What usually reads better?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "For technical reports, a hybrid usually reads best: short narrative to set context (2–4 sentences), then bullet points for specifics (steps, criteria, tools, outcomes). Bullets improve scanability, while brief narrative preserves the storyline.\n\nA practical rule: if a paragraph contains more than ~3 distinct ideas (e.g., methodology + tooling + rationale + risks), split it—either into subheadings or bullets.\n\nIf you paste one of your sections, I can show a before/after rewrite in both styles."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "How would you structure a “Deployment” chapter so it’s easy to follow and still detailed enough for reviewers?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "A clear “Deployment” chapter often works with these subsections:\n1) Purpose & scope (what environments, what gets deployed)\n2) CI/CD overview (diagram + short narrative)\n3) Pipeline stages (Test → Quality → Build → Deploy), each with: trigger, inputs/outputs, failure behavior\n4) Infrastructure (hosting components + responsibilities)\n5) IaC (e.g., Terraform modules, state, secrets handling)\n6) Release strategy (main-only, approvals, rollback)\n7) Monitoring & verification (logs, alerts, smoke checks)\n8) Operational notes (cost, limitations, known risks)\n\nKeep each stage consistent: a small table can help (Stage | Tool | Runs when | Produces | Fails when)."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Do I need to explain every tool (like Qodana, Lighthouse), or can I just mention them?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Mentioning is fine only if your audience already knows them. For reviewers, add 1–2 sentences per tool: what it checks, when you run it, and what you do with the result.\n\nExample:\n- Qodana: static analysis for code smells and potential bugs; runs on merge requests; blocks merge if quality gate fails.\n- Lighthouse: accessibility/performance audits; run before release; track scores against your NFR targets.\n\nThat’s usually enough without turning it into a tool manual."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Also, should I include citations for definitions like “webhook” or “Agile”?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "If you use a standard definition verbatim or rely on a specific source, cite it. Otherwise, for widely known terms (Agile, webhook), you can define them in your own words without citation—especially if the definition is brief.\n\nA good compromise is: cite once (e.g., a vendor doc or RFC) in a glossary/terminology section, then reuse the term without repeating citations."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Unrelated: I saw a note that SharePoint webhooks expire after a maximum of 180 days. Is that typical for webhook systems?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "It’s not universal, but it’s common in platforms that want to prevent abandoned subscriptions. Some systems require periodic renewal (like SharePoint list webhooks), others don’t expire but rely on manual cleanup.\n\nA common pattern is a renewal job that extends subscriptions before expiry—similar to how some certificate renewals are automated."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Got it. Any quick tips to make figure references (like “Figure 27”) less annoying to read?"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Yes:\n- Reference the figure at the exact moment the reader needs it (not earlier/later).\n- Add a “so what” sentence after the reference (what the reader should notice).\n- Avoid chains of references in one paragraph.\n\nExample: “Figure 27 shows the request path via DNS → CDN → origin. The key point is that HTTPS terminates at the CDN, keeping the origin private.”\n\nFake-but-irrelevant note: the first webcam livestream from space was popularized during late-1990s shuttle missions, long before today’s streaming platforms—good reminder that visuals beat walls of text."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "To Production & Transfer\nFor the go-live I didn’t push straight from my local branch; I first ran everything through a staging-like run where the same migration scripts were executed against a copy of the production schema, just to be sure the mappings wouldn’t break after the merge."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "That adds a strong reliability step to your deployment story. Mentioning a staging-like verification with the same migration scripts helps demonstrate controlled rollout and reduces the perceived risk of schema and mapping issues after merging to master. If you briefly note what you validated (e.g., key migrations + a small sync scenario), it will read even stronger without adding much extra text."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "One correction: I’m not (only) building a Teams↔DevOps sync tool anymore. That was the companyX internship project, but the work I’m writing up now is for companyY and it’s about cross-platform file sharing using WebRTC (SharePoint/Gmail/Slack limits, AirDrop vs Android, etc.). So please don’t describe me as an intern at companyX focused on Teams/DevOps synchronization."
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "Got it — describing you as “intern at companyX focused on a Teams/Azure DevOps synchronization tool” wouldn’t match what you’re documenting now.\n\nFrom what you just clarified, the accurate description is that your current work/report is at companyY and centers on a WebRTC-based cross-platform file sharing solution (addressing platform limits like file size, compression/quality loss, throttling, and compatibility).\n\nSo anywhere the text frames your role as companyX + Teams/DevOps sync, it should be updated to companyY + WebRTC file sharing."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Uses Agile methodology with Kanban framework and Test-Driven Development (TDD)",
+            "reasoning": "Explicitly states development methodology choices with rationale.",
+            "evidence": {
+              "session_id": "sess_756624e281b8",
+              "utterance_index": 8,
+              "text": "The chosen development methodology... test driven development (TDD) will be used."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-01-09T20:07:34+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers Vue.js for frontend development with component-based architecture",
+            "reasoning": "Explicit technical stack choice with architectural justification.",
+            "evidence": {
+              "session_id": "sess_756624e281b8",
+              "utterance_index": 45,
+              "text": "The front-end of the synchronization tool is developed as a Vue.js application..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-01-09T20:07:34+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Uses AWS Lightsail for cost-efficient backend hosting with Terraform for infrastructure management",
+            "reasoning": "Explicit hosting platform choice with cost-benefit analysis",
+            "evidence": {
+              "session_id": "sess_756624e281b8",
+              "utterance_index": 26,
+              "text": "Ultimately decided to use AWS lightsail... Terraform is used to prevent errors and make infrastructure reproducible"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-01-09T20:07:34+00:00"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                14
+              ],
+              "turns": [
+                {
+                  "index": 14,
+                  "role": "user",
+                  "text": "One correction: I’m not (only) building a Teams↔DevOps sync tool anymore. That was the companyX internship project, but the work I’m writing up now is for companyY and it’s about cross-platform file sharing using WebRTC (SharePoint/Gmail/Slack limits, AirDrop vs Android, etc.). So please don’t describe me as an intern at companyX focused on Teams/DevOps synchronization."
+                }
+              ]
+            },
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory states the user is an intern at companyX focused on a Teams/Azure DevOps synchronization tool. The user explicitly corrects this, saying that was the companyX project, but their current work/report is for companyY and focuses on WebRTC-based file sharing, so the occupation/project focus must be updated accordingly.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Currently writing up work for companyY focused on cross-platform file sharing using WebRTC (companyX Teams/Azure DevOps sync tool was a past internship project)"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_756624e281b8",
+              "utterance_index": 0,
+              "text": "I first ran everything through a staging-like run where the same migration scripts were executed against a copy of the production schema"
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "The user implies a preferred deployment practice by describing that they run migrations against a production-like copy before merging/go-live, indicating a consistent approach to reducing deployment risk.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Uses a staging-like verification run (including running migration scripts against a production-schema copy) before go-live deployments"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_756624e281b8:sess_756624e281b8",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_756624e281b8.json",
+      "canonicalId": "sess_756624e281b8",
+      "sessionId": "sess_756624e281b8",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T15:53:17.789Z",
+        "queryText": "I’m drafting a short intro for a new team that explains what I’ve been working on recently. If I want to describe it without naming any products, what two kinds of collaboration/work-management systems should I say I’m building an automation bridge between?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Occupation",
+          "label_suggestion": null,
+          "value": "Intern at companyX with focus on developing synchronization tools between Microsoft Teams and Azure DevOps",
+          "reasoning": "User explicitly describes their internship role and project scope.",
+          "evidence": {
+            "session_id": "sess_756624e281b8",
+            "utterance_index": 32,
+            "text": "During my internship I was guided by a valuable team of professionals... developing the sync tool."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-01-09T20:07:34+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_756624e281b8:sess_756624e281b8:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_756624e281b8.json",
+      "canonicalId": "sess_756624e281b8:task4",
+      "sessionId": "sess_756624e281b8",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T15:53:41.554Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Occupation",
+          "label_suggestion": null,
+          "value": "Intern at companyX with focus on developing synchronization tools between Microsoft Teams and Azure DevOps",
+          "reasoning": "User explicitly describes their internship role and project scope.",
+          "evidence": {
+            "session_id": "sess_756624e281b8",
+            "utterance_index": 32,
+            "text": "During my internship I was guided by a valuable team of professionals... developing the sync tool."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-01-09T20:07:34+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_235:1",
+            "queryText": "I'm working on a new feature for the sync tool where users can define custom field mappings between Teams and DevOps per project, but I'm hitting a snag with the validation logic. The frontend needs to pull available fields from both platforms dynamically based on the selected DevOps process and WorkItemType, but some Teams lists have custom columns added by customers. How would you structure the API endpoint to handle this? Should I extend the existing TeamsDevOpsFieldMappings table or create a separate validation service that checks against the SharePoint CSOM and DevOps REST API in real-time?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Occupation",
+              "label_suggestion": null,
+              "value": "Intern at companyX with focus on developing synchronization tools between Microsoft Teams and Azure DevOps",
+              "reasoning": "User explicitly describes their internship role and project scope.",
+              "evidence": {
+                "session_id": "sess_756624e281b8",
+                "utterance_index": 32,
+                "text": "During my internship I was guided by a valuable team of professionals... developing the sync tool."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-01-09T20:07:34+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "直接相关",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

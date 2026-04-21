@@ -1,0 +1,342 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_87bd1bac43e9",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_87bd1bac43e9:sess_87bd1bac43e9",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_87bd1bac43e9.json",
+      "canonicalId": "sess_87bd1bac43e9",
+      "sessionId": "sess_87bd1bac43e9",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T18:50:12.174Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/debugging/focus",
+            "value": "Sustained focus on Django API testing/debugging (token auth, URL routing, test cases)",
+            "reasoning": "User demonstrated repeated technical engagement with Django testing flow across multiple turns",
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-04T15:17:24+00:00",
+            "evidence": {
+              "session_id": "sess_87bd1bac43e9",
+              "utterance_index": 0,
+              "text": ""
+            }
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "value": "User named their Django app 'eventapp'",
+            "confidence": 0.95,
+            "evidence_text": "i called the app eventapp,"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p2",
+            "type": "direct",
+            "label": "Thoughts/Goals/Short_Term",
+            "value": "User wants to create an application with React and Django, focusing on Django backend first where collaborateurs can login, chefs can post events with collaborateurs, and chefs can edit/remove their own events",
+            "confidence": 0.95,
+            "evidence_text": "i want to create an application with react and django, but lets focus on django part, i want to create an application that the colaborateur login, and chefs can post the event with colaborateur (each event have at least one colaborateur), the chefs can edit the event add more colaborateur, remove the event (just the event that he create)"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_87bd1bac43e9:sess_87bd1bac43e9",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_87bd1bac43e9.json",
+      "canonicalId": "sess_87bd1bac43e9",
+      "sessionId": "sess_87bd1bac43e9",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T19:10:15.828Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "hi again—quick question: when an endpoint returns 404 in Django, is it always a missing URL pattern, or can it be something else?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Most of the time it’s a missing/mismatched URL pattern (wrong path, missing trailing slash, wrong include prefix, wrong namespace). But it can also be: a request sent to the wrong host/port, a URL pattern shadowed by another include, or middleware/web server routing (in production) not forwarding the request to Django."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "If I include an app under `path('api/', include(...))`, do all app routes automatically get the `/api/` prefix?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Yes—everything inside that included `urlpatterns` is relative to that prefix. So if the app has `path('register/', ...)`, it becomes `/api/register/` in the final URL."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Also, is `obtain_auth_token` supposed to accept GET?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "No—`obtain_auth_token` only accepts POST. You send `username` and `password` in the body, and it returns a token if credentials are valid."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Random thought: I saw an article claiming HTTP 418 is used in some real APIs. Is that actually a thing?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "418 (“I’m a teapot”) is officially an April Fools’ joke status code, but a few services have used it informally for fun or to signal bot blocking. It’s not standard practice for production APIs."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "I’m trying the requests from Postman now, and I keep hitting the same URL prefix issue — when I call `http://127.0.0.1:8000/register/collaborateur/` I get the 404 page that lists only `admin/`, `api/`, and `api/token/`."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "That 404 list is basically telling you your project only exposes routes under the `api/` prefix (plus admin). So your registration endpoint needs to be reachable as `/api/register/collaborateur/` (or you need to include another `path('', include(...))` in the project `urls.py` if you want it without `api/`)."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "btw that memory note about “Prefer not to retain address or passport info…” isn’t even something I said. I never asked you to remember or store my passport/address."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "You’re right—that line isn’t a user preference you stated here. There’s no message from you in this chat asking me to retain (or not retain) passport/address info, so it shouldn’t be stored as a user memory."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "exactly, please correct it: it’s not about me."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Understood—the correct record is that this “address/passport” preference was not provided by you and should not be treated as your memory."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/debugging/focus",
+            "value": "Sustained focus on Django API testing/debugging (token auth, URL routing, test cases)",
+            "reasoning": "User demonstrated repeated technical engagement with Django testing flow across multiple turns",
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-04T15:17:24+00:00",
+            "evidence": {
+              "session_id": "sess_87bd1bac43e9",
+              "utterance_index": 0,
+              "text": ""
+            },
+            "_task1GoldValue": "Sustained focus on Django API testing/debugging (token auth, URL routing, test cases)"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The selected memory claims a user preference about not retaining address/passport info, but the user explicitly states they never said that, and the assistant confirms it is not present in the chat. Therefore, the old memory is contradicted and updated to reflect that no such preference was provided by the user.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "No user-stated preference was given about retaining address or passport info; the prior note was not about the user and should not be stored as their memory."
+          },
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_87bd1bac43e9",
+              "utterance_index": 0,
+              "text": "I’m trying the requests from Postman now, and I keep hitting the same URL prefix issue — when I call `http://127.0.0.1:8000/register/collaborateur/` I get the 404 page that lists only `admin/`, `api/`, and `api/token/`."
+            },
+            "label": "UNMAPPED",
+            "label_suggestion": "tooling/postman_usage",
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user describes sending requests from Postman, implying they are using Postman to test the API endpoints.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is testing the Django API using Postman."
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "value": "User named their Django app 'eventapp'",
+            "confidence": 0.95,
+            "evidence_text": "i called the app eventapp,",
+            "_task1GoldValue": "User named their Django app 'eventapp'"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p2",
+            "type": "direct",
+            "label": "Thoughts/Goals/Short_Term",
+            "value": "User wants to create an application with React and Django, focusing on Django backend first where collaborateurs can login, chefs can post events with collaborateurs, and chefs can edit/remove their own events",
+            "confidence": 0.95,
+            "evidence_text": "i want to create an application with react and django, but lets focus on django part, i want to create an application that the colaborateur login, and chefs can post the event with colaborateur (each event have at least one colaborateur), the chefs can edit the event add more colaborateur, remove the event (just the event that he create)",
+            "_task1GoldValue": "User wants to create an application with React and Django, focusing on Django backend first where collaborateurs can login, chefs can post events with collaborateurs, and chefs can edit/remove their own events"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m2",
+          "claude_sonnet_4_5_20250929_p1",
+          "claude_sonnet_4_5_20250929_p2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_87bd1bac43e9:sess_87bd1bac43e9",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_87bd1bac43e9.json",
+      "canonicalId": "sess_87bd1bac43e9",
+      "sessionId": "sess_87bd1bac43e9",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T19:03:33.411Z",
+        "queryText": "If I’m about to paste a block of very sensitive personal details for convenience, what kind of information should I avoid sharing here because I’ve indicated I don’t want it retained long-term?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Prefer not to retain address or passport info if pasted later [ERROR: Not about the user]",
+          "reasoning": "Not about the user",
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-01-04T15:17:24+00:00",
+          "evidence": {
+            "session_id": "sess_87bd1bac43e9",
+            "utterance_index": 0,
+            "text": ""
+          }
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_87bd1bac43e9:sess_87bd1bac43e9:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_87bd1bac43e9.json",
+      "canonicalId": "sess_87bd1bac43e9:task4",
+      "sessionId": "sess_87bd1bac43e9",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T14:22:47.037Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Prefer not to retain address or passport info if pasted later [ERROR: Not about the user]",
+          "reasoning": "Not about the user",
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-01-04T15:17:24+00:00",
+          "evidence": {
+            "session_id": "sess_87bd1bac43e9",
+            "utterance_index": 0,
+            "text": ""
+          }
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_165:1",
+            "queryText": "Hey, I'm in a rush to fill out this visa application form for my colleague who's traveling tomorrow. Can you quickly extract the passport number and home address from the document I just pasted into our chat history and format them into the required fields?",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Do_Not_Remember",
+              "label_suggestion": null,
+              "value": "Prefer not to retain address or passport info if pasted later [ERROR: Not about the user]",
+              "reasoning": "Not about the user",
+              "confidence": 0.1,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2024-01-04T15:17:24+00:00",
+              "evidence": {
+                "session_id": "sess_87bd1bac43e9",
+                "utterance_index": 0,
+                "text": ""
+              }
+            },
+            "overallVerdict": "unreasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "weak",
+            "abilityPurity": "high",
+            "issueTypes": [
+              "selected_memory_wrong"
+            ],
+            "evidenceNote": "ERROR: wrong memory",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

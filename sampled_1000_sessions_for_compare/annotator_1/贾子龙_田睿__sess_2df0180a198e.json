@@ -1,0 +1,362 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_2df0180a198e",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_2df0180a198e:sess_2df0180a198e",
+      "relativeItemPath": "sess_2df0180a198e.json",
+      "canonicalId": "sess_2df0180a198e",
+      "sessionId": "sess_2df0180a198e",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T18:34:24.754Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires original Bill of Lading for payment security in initial transactions, to be phased out after trust is established",
+            "reasoning": "User explicitly outlines payment terms tied to Bill of Lading usage, but context suggests potential task-local cash flow constraints.",
+            "evidence": {
+              "session_id": "sess_2df0180a198e",
+              "utterance_index": 0,
+              "text": ""
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-15T04:33:45+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Minimum order quantity (MOQ) of 500 sets for product customization services",
+            "reasoning": "User explicitly states MOQ requirement for private label customization.",
+            "evidence": {
+              "session_id": "sess_2df0180a198e",
+              "utterance_index": 6,
+              "text": "告诉客户可以定制标签和包装盒，但是需要最少500套的起订量"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "null",
+            "updated_at": "2023-06-15T04:33:45+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "value": "Prefers sourcing home/baby care products with high search volume and easy 1688 availability",
+            "reasoning": "User explicitly requests product recommendations matching these criteria.",
+            "evidence": {
+              "session_id": "sess_2df0180a198e",
+              "utterance_index": 10,
+              "text": "帮我推荐几个产品，要求国际站买家搜索次数高，成交比较多的，并且在1688网上好找到货源的产品。最好是家居日用品或者母婴类产品"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-15T04:33:45+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_2df0180a198e:sess_2df0180a198e",
+      "relativeItemPath": "sess_2df0180a198e.json",
+      "canonicalId": "sess_2df0180a198e",
+      "sessionId": "sess_2df0180a198e",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T18:35:07.910Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我需要一段英文邮件的语气，开头礼貌一点，然后提出几个澄清问题。"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure. To keep it professional and clear, what is the context (RFQ, order follow-up, or complaint), and who is the recipient (buyer, supplier, or freight forwarder)? Also, what 3–5 questions do you want to ask (e.g., MOQ, lead time, packaging, payment terms, shipping method)?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "就按RFQ吧。问题包括MOQ、交期、是否可定制logo和包装、以及样品政策。"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Got it. Here’s a concise RFQ-style email you can use:\n\nSubject: Inquiry – MOQ, Lead Time, Customization & Samples\n\nDear [Name],\n\nThank you for your message and for your interest in our products. To provide you with an accurate quotation and timeline, could you please confirm the following details:\n\n1) What is your target order quantity (and your expected MOQ level)?\n2) What is your required production lead time and preferred delivery date?\n3) Would you like private labeling (logo on the product) and customized packaging (box design/printing)? If yes, please share your artwork requirements or dieline format.\n4) What is your sample policy (sample cost, shipping cost, and sample lead time)?\n\nOnce we have the above information, we will send you our best pricing and available packaging options.\n\nBest regards,\n[Your Name]\n[Company]\n[Contact Info]\n\n(Extra note: In international trade, some suppliers accept 30% deposit + 70% before shipment, while others may use LC at sight—terms can vary by product category.)"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "能不能再加一句让对方发一下产品规格书或参数表？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Yes—add this line right after the questions:\n\n“Additionally, could you please share the latest product specification sheet/datasheet (materials, dimensions, weight, and any compliance certificates available)?”\n\n(Reference: Many packaging suppliers request AI/PDF artwork files and a 3mm bleed for printing, but exact requirements depend on the factory.)"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "邮件结尾再自然一点，不要太正式。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "You can replace the closing paragraph with a more natural one like this:\n\n“Thanks in advance for your help. Once we receive the details, we’ll get a quotation back to you quickly. Looking forward to your reply.”\n\nBest regards,\n[Your Name]\n\n(Unrelated example: A recent industry report noted that average ocean freight spot rates can fluctuate week to week, so confirming Incoterms and shipment windows early helps avoid surprises.)"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "另外一个小要求：回复都用“Dear + 名字”起头，结尾用“Best regards”就行，中间内容保持简洁。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Understood. I’ll format future replies with “Dear + Name” at the beginning and close with “Best regards,” while keeping the content concise."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "上次你记成我“更偏好家居/母婴类”了，但我那句只是说“最好是”，不是硬性偏好。其实我主要想找的是国际站搜索量高、成交多、并且在1688好找货源的产品，类目不限。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "明白了，你的核心筛选条件是“国际站搜索量高/成交多 + 1688货源容易”，而“家居日用品或母婴”只是加分项，并不是固定偏好或限制类目。后续我给你推荐时会以这三个核心条件为主，类目不再限定在家居/母婴。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires original Bill of Lading for payment security in initial transactions, to be phased out after trust is established",
+            "reasoning": "User explicitly outlines payment terms tied to Bill of Lading usage, but context suggests potential task-local cash flow constraints.",
+            "evidence": {
+              "session_id": "sess_2df0180a198e",
+              "utterance_index": 0,
+              "text": ""
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-15T04:33:45+00:00",
+            "_task1GoldValue": "Requires original Bill of Lading for payment security in initial transactions, to be phased out after trust is established"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Minimum order quantity (MOQ) of 500 sets for product customization services",
+            "reasoning": "User explicitly states MOQ requirement for private label customization.",
+            "evidence": {
+              "session_id": "sess_2df0180a198e",
+              "utterance_index": 6,
+              "text": "告诉客户可以定制标签和包装盒，但是需要最少500套的起订量"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "null",
+            "updated_at": "2023-06-15T04:33:45+00:00",
+            "_task1GoldValue": "Minimum order quantity (MOQ) of 500 sets for product customization services"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "上次你记成我“更偏好家居/母婴类”了，但我那句只是说“最好是”，不是硬性偏好。其实我主要想找的是国际站搜索量高、成交多、并且在1688好找货源的产品，类目不限。"
+                }
+              ]
+            },
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": "preference",
+            "reasoning": "旧记忆把用户偏好限定为家居/母婴类，但对话中用户澄清“家居/母婴”只是“最好是”而非硬性偏好；真实长期偏好是优先选择国际站搜索量高、成交多且1688易找货源的产品，类目不限。",
+            "time_scope": "unknown",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers products with high international-station search volume and strong sales that are easy to source on 1688; category is not limited (home/baby are only a plus)."
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_2df0180a198e",
+              "utterance_index": 0,
+              "text": "另外一个小要求：回复都用“Dear + 名字”起头，结尾用“Best regards”就行，中间内容保持简洁。"
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User requests a consistent email reply format (salutation and closing) and concise body for future responses.",
+            "time_scope": "unknown",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers English email replies to start with “Dear + Name”, end with “Best regards”, and keep the body concise"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_2df0180a198e:sess_2df0180a198e",
+      "relativeItemPath": "sess_2df0180a198e.json",
+      "canonicalId": "sess_2df0180a198e",
+      "sessionId": "sess_2df0180a198e",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T18:35:16.761Z",
+        "queryText": "I’m trying to decide which kind of item to shortlist for a new listing, and I want to follow my usual rule: it should be something lots of overseas shoppers actively look up and it shouldn’t be hard to find a reliable upstream supplier for. Based on what you know about how I typically pick products, what type of item category should I prioritize?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Preferences/Shopping",
+          "label_suggestion": null,
+          "value": "Prefers sourcing home/baby care products with high search volume and easy 1688 availability",
+          "reasoning": "User explicitly requests product recommendations matching these criteria.",
+          "evidence": {
+            "session_id": "sess_2df0180a198e",
+            "utterance_index": 10,
+            "text": "帮我推荐几个产品，要求国际站买家搜索次数高，成交比较多的，并且在1688网上好找到货源的产品。最好是家居日用品或者母婴类产品"
+          },
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-06-15T04:33:45+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_2df0180a198e:sess_2df0180a198e:task4",
+      "relativeItemPath": "sess_2df0180a198e.json",
+      "canonicalId": "sess_2df0180a198e:task4",
+      "sessionId": "sess_2df0180a198e",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T18:35:27.541Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Preferences/Shopping",
+          "label_suggestion": null,
+          "value": "Prefers sourcing home/baby care products with high search volume and easy 1688 availability",
+          "reasoning": "User explicitly requests product recommendations matching these criteria.",
+          "evidence": {
+            "session_id": "sess_2df0180a198e",
+            "utterance_index": 10,
+            "text": "帮我推荐几个产品，要求国际站买家搜索次数高，成交比较多的，并且在1688网上好找到货源的产品。最好是家居日用品或者母婴类产品"
+          },
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-06-15T04:33:45+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_862:1",
+            "queryText": "I'm looking at a few potential items to add to our catalog - magnetic window cleaners, silicone baking mats, and muslin swaddles. Which ones would you suggest we prioritize for our next sourcing run?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Preferences/Shopping",
+              "label_suggestion": null,
+              "value": "Prefers sourcing home/baby care products with high search volume and easy 1688 availability",
+              "reasoning": "User explicitly requests product recommendations matching these criteria.",
+              "evidence": {
+                "session_id": "sess_2df0180a198e",
+                "utterance_index": 10,
+                "text": "帮我推荐几个产品，要求国际站买家搜索次数高，成交比较多的，并且在1688网上好找到货源的产品。最好是家居日用品或者母婴类产品"
+              },
+              "confidence": 0.8,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-06-15T04:33:45+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

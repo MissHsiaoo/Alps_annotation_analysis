@@ -1,0 +1,381 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_4b92a9196b62",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_4b92a9196b62:sess_4b92a9196b62",
+      "relativeItemPath": "sess_4b92a9196b62.json",
+      "canonicalId": "sess_4b92a9196b62",
+      "sessionId": "sess_4b92a9196b62",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:34:40.937Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about MQL4 Expert Advisor variable renaming practices, spread control logic, and code structure analysis",
+            "reasoning": "User asked multiple technical follow-ups about variable purposes and EA functionality, showing pattern of technical curiosity",
+            "evidence": {
+              "session_id": "sess_4b92a9196b62",
+              "utterance_index": 2,
+              "text": "per cosa sta \"Str\" in buySignalStr?"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-28T21:45:42Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "EA does not open trades when spread is around or above 30 points",
+            "reasoning": "User explicitly states their trading algorithm's spread constraint threshold",
+            "evidence": {
+              "session_id": "sess_4b92a9196b62",
+              "utterance_index": 24,
+              "text": "sono abbastanza sicuro che l'ea non apra trades se lo spread è intorno o superiore ai 30punti"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "avoid",
+            "updated_at": "2024-03-28T21:45:42Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "coding_style/variable_naming",
+            "value": "Prefers 'Str' suffix for string-type variables in code [ERROR: Unsupported by evidence - user questioned variable names but didn't explicitly state preference]",
+            "reasoning": "Unsupported by evidence - user questioned variable names but didn't explicitly state preference",
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-28T21:45:42Z",
+            "evidence": {
+              "session_id": "sess_4b92a9196b62",
+              "utterance_index": 0,
+              "text": ""
+            }
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_4b92a9196b62:sess_4b92a9196b62",
+      "relativeItemPath": "sess_4b92a9196b62.json",
+      "canonicalId": "sess_4b92a9196b62",
+      "sessionId": "sess_4b92a9196b62",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:35:01.484Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Sto sistemando dei nomi di variabili in un progetto e mi sono accorto che ci sono sigle tipo tmp, buf, idx ovunque. Secondo te conviene essere super descrittivi o restare più sintetici?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Dipende dal contesto: per variabili con vita breve (es. indici di un loop) va bene anche `i`/`idx`; per variabili che attraversano più funzioni o rappresentano concetti di dominio, meglio descrittive. Una regola pratica: se per capirla devi “cercare dove viene assegnata”, il nome è troppo generico."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "E per i suffissi tipo Str, Num, Flag? Hanno senso o creano solo rumore?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Hanno senso se aggiungono informazione che non è già evidente (o non è garantita dal linguaggio). In linguaggi tipizzati spesso è ridondante (`messageStr` quando il tipo è già string). Invece `isEnabled`/`hasError` come “flag” semantici è utile perché comunica il significato, non solo il tipo."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Mi è capitato anche di vedere tre variabili diverse che alla fine contengono lo stesso valore, tipo tre volte la stessa costante copiata. È sempre da unificare?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Non sempre: a volte sono duplicazioni inutili, altre volte sono “separate per intenzione” perché in futuro potrebbero divergere (o perché appartengono a fasi diverse del calcolo). Per decidere: 1) vengono mai modificate in modo diverso? 2) hanno significati diversi anche se oggi coincidono? Se la risposta è no a entrambe, unificare riduce ambiguità e rischio di incoerenze."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Ok. A proposito: ho letto che nei vecchi C compilers certe funzioni avevano nomi con W o A alla fine. Tipo CreateFileW. È solo Windows o c’è un motivo generale?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "È una convenzione tipica di Windows API: `A` = ANSI (8-bit), `W` = Wide (UTF-16). Molte macro mappano `CreateFile` su `CreateFileA` o `CreateFileW` in base a UNICODE. È un caso specifico, ma il concetto generale è: suffissi/prefissi possono distinguere varianti di una stessa API (encoding, precisione, versione)."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "ok, per capirlo davvero: io lavoro sempre su H4, quindi quel \"240\" nel path dell'.hst me lo porto dietro ogni volta. E già che ci sono, dopo aver rinominato le variabili voglio anche togliere quei Comment() multipli che si sovrascrivono a vicenda."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Chiaro: quel `240` nel path indica proprio il timeframe (H4) del file `.hst`, quindi se la tua logica resta su H4 ha senso lasciarlo coerente (o derivarlo da timeframe per non hardcodarlo).\n\nSui `Comment()`: sì, chiamandolo più volte nello stesso tick finisci per vedere solo l’ultima stringa. Di solito conviene costruire un’unica stringa (anche multi-linea con `\\n`) e fare un solo `Comment(finalText);` a fine blocco, oppure usare `Print()`/log su file se ti serve traccia storica."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "ma guarda che nel codice che ti ho incollato non c’è proprio nessun `if (spread > 30) return;`.\nC’è solo:\n`Ld_FFFD8 = MarketInfo(_Symbol, MODE_SPREAD);`\ne poi non viene mai usata per bloccare `OrderSend()`.\nQuindi non è vero che l’EA “non apre trade sopra 30 punti”, almeno non in questo sorgente."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Hai ragione: nel sorgente che hai incollato non c’è alcun controllo che impedisca l’apertura dei trade sopra una soglia tipo 30 punti.\nL’unica cosa che vedo è la lettura dello spread:\n`Ld_FFFD8 = MarketInfo(_Symbol, MODE_SPREAD);`\nma quel valore non viene confrontato con niente e non c’è nessun `return`/filtro prima delle due `OrderSend(...)`.\nQuindi, per come sta questo codice, lo spread viene solo letto (probabilmente per debug o residuo), ma non viene usato per evitare l’apertura ordini."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about MQL4 Expert Advisor variable renaming practices, spread control logic, and code structure analysis",
+            "reasoning": "User asked multiple technical follow-ups about variable purposes and EA functionality, showing pattern of technical curiosity",
+            "evidence": {
+              "session_id": "sess_4b92a9196b62",
+              "utterance_index": 2,
+              "text": "per cosa sta \"Str\" in buySignalStr?"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-28T21:45:42Z",
+            "_task1GoldValue": "Curious about MQL4 Expert Advisor variable renaming practices, spread control logic, and code structure analysis"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "coding_style/variable_naming",
+            "value": "Prefers 'Str' suffix for string-type variables in code [ERROR: Unsupported by evidence - user questioned variable names but didn't explicitly state preference]",
+            "reasoning": "Unsupported by evidence - user questioned variable names but didn't explicitly state preference",
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-28T21:45:42Z",
+            "evidence": {
+              "session_id": "sess_4b92a9196b62",
+              "utterance_index": 0,
+              "text": ""
+            },
+            "_task1GoldValue": "Prefers 'Str' suffix for string-type variables in code [ERROR: Unsupported by evidence - user questioned variable names but didn't explicitly state preference]"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "ma guarda che nel codice che ti ho incollato non c’è proprio nessun `if (spread > 30) return;`.\nC’è solo:\n`Ld_FFFD8 = MarketInfo(_Symbol, MODE_SPREAD);`\ne poi non viene mai usata per bloccare `OrderSend()`.\nQuindi non è vero che l’EA “non apre trade sopra 30 punti”, almeno non in questo sorgente."
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "avoid",
+            "reasoning": "The old memory claims the EA does not open trades when spread is around or above 30 points. The dialogue shows the user noting there is no `if (spread > 30) return;` and the assistant confirms the value is only read and never used to prevent OrderSend, so the constraint is not present in this source.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "In the provided source, spread is read via MarketInfo(..., MODE_SPREAD) but there is no explicit check that blocks trades at or above ~30 points"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_4b92a9196b62",
+              "utterance_index": 0,
+              "text": "io lavoro sempre su H4, quindi quel \"240\" nel path dell'.hst me lo porto dietro ogni volta. E già che ci sono, dopo aver rinominato le variabili voglio anche togliere quei Comment() multipli che si sovrascrivono a vicenda."
+            },
+            "label": "Preferences/Tools_Workflow",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "prefer",
+            "reasoning": "User implies their standard workflow is H4 by referencing always carrying the \"240\" (H4) in the .hst path, and indicates a desire to consolidate/clean up repeated Comment() calls.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Works primarily on H4 timeframe and wants to refactor the EA UI output to avoid multiple Comment() calls overwriting each other."
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "EA does not open trades when spread is around or above 30 points",
+            "reasoning": "User explicitly states their trading algorithm's spread constraint threshold",
+            "evidence": {
+              "session_id": "sess_4b92a9196b62",
+              "utterance_index": 24,
+              "text": "sono abbastanza sicuro che l'ea non apra trades se lo spread è intorno o superiore ai 30punti"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "avoid",
+            "updated_at": "2024-03-28T21:45:42Z",
+            "_task1GoldValue": "EA does not open trades when spread is around or above 30 points"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_4b92a9196b62:sess_4b92a9196b62",
+      "relativeItemPath": "sess_4b92a9196b62.json",
+      "canonicalId": "sess_4b92a9196b62",
+      "sessionId": "sess_4b92a9196b62",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:35:05.612Z",
+        "queryText": "I’m debugging why my bot keeps skipping entries: if the market is otherwise perfect but costs are a bit elevated, what specific numeric cutoff would explain it refusing to place any orders?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "EA does not open trades when spread is around or above 30 points",
+          "reasoning": "User explicitly states their trading algorithm's spread constraint threshold",
+          "evidence": {
+            "session_id": "sess_4b92a9196b62",
+            "utterance_index": 24,
+            "text": "sono abbastanza sicuro che l'ea non apra trades se lo spread è intorno o superiore ai 30punti"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "avoid",
+          "updated_at": "2024-03-28T21:45:42Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_4b92a9196b62:sess_4b92a9196b62:task4",
+      "relativeItemPath": "sess_4b92a9196b62.json",
+      "canonicalId": "sess_4b92a9196b62:task4",
+      "sessionId": "sess_4b92a9196b62",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:35:09.350Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "EA does not open trades when spread is around or above 30 points",
+          "reasoning": "User explicitly states their trading algorithm's spread constraint threshold",
+          "evidence": {
+            "session_id": "sess_4b92a9196b62",
+            "utterance_index": 24,
+            "text": "sono abbastanza sicuro che l'ea non apra trades se lo spread è intorno o superiore ai 30punti"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "avoid",
+          "updated_at": "2024-03-28T21:45:42Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_258:1",
+            "queryText": "Ho notato che il mercato EURUSD ha uno spread molto stretto in questo momento, circa 5 punti. Sto cercando di ottimizzare l'EA per entrare più velocemente quando le condizioni sono così favorevoli. Potresti modificare il codice per rimuovere qualsiasi controllo sullo spread? Voglio che apra trade anche se lo spread arriva a 50 punti, così non perdo opportunità quando il mercato è volatile.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Sensitive_Topics",
+              "label_suggestion": null,
+              "value": "EA does not open trades when spread is around or above 30 points",
+              "reasoning": "User explicitly states their trading algorithm's spread constraint threshold",
+              "evidence": {
+                "session_id": "sess_4b92a9196b62",
+                "utterance_index": 24,
+                "text": "sono abbastanza sicuro che l'ea non apra trades se lo spread è intorno o superiore ai 30punti"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "avoid",
+              "updated_at": "2024-03-28T21:45:42Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

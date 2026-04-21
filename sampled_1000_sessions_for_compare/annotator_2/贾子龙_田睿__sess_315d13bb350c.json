@@ -1,0 +1,917 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_315d13bb350c",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_315d13bb350c:sess_315d13bb350c",
+      "relativeItemPath": "sess_315d13bb350c.json",
+      "canonicalId": "sess_315d13bb350c",
+      "sessionId": "sess_315d13bb350c",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:00:35.779Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Does not eat fish",
+            "reasoning": "User explicitly states they do not eat fish.",
+            "evidence": {
+              "session_id": "sess_315d13bb350c",
+              "utterance_index": 2,
+              "text": "I don't eat fish, so I probably want glass noodels with meat... yakiniku or korean bbq."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-01-30T23:38:20+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Prefers affordable meals with common, non-exotic vegetables",
+            "reasoning": "User explicitly requests meals that are low-cost and avoid exotic ingredients.",
+            "evidence": {
+              "session_id": "sess_315d13bb350c",
+              "utterance_index": 0,
+              "text": "what kind of food should I ask her to do? are there something specific I could request that doesn't cost too much and doesn't use exotic vegetables etc."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-01-30T23:38:20+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "States_Experiences/Physical_State",
+            "label_suggestion": null,
+            "value": "Requires assistance with food preparation",
+            "reasoning": "User explicitly states inability to eat by themselves and relies on a caretaker.",
+            "evidence": {
+              "session_id": "sess_315d13bb350c",
+              "utterance_index": 0,
+              "text": "food I cannot eat myself but I have my japanese caretaker doing my food preparation."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-30T23:38:20+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "States_Experiences/Mental_State",
+            "label_suggestion": null,
+            "value": "Finds happiness in shared cooking experiences",
+            "reasoning": "User explicitly associates happiness with watching their caretaker cook together.",
+            "evidence": {
+              "session_id": "sess_315d13bb350c",
+              "utterance_index": 4,
+              "text": "its nice to watch them doing cooking with me, because it's one of rare moments I find happiness."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": "happiness",
+            "preference_attitude": "like",
+            "updated_at": "2024-01-30T23:38:20+00:00"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "communication/intent/explanation",
+            "value": "Curious about explaining the significance of 6,800 days [ERROR: Forced label not supported]",
+            "reasoning": "Forced label not supported",
+            "evidence": {
+              "session_id": "sess_315d13bb350c",
+              "utterance_index": 8,
+              "text": "sounds quite a lot, I hope to keep it in mind... japanese caretaker wont undestand this, but I try to explain it to her..."
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-30T23:38:20+00:00"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Social_Relationships/Family",
+            "value": "User has a Japanese caretaker who does food preparation for them",
+            "confidence": 0.95,
+            "evidence_text": "I have my japanese caretaker doing my food preparation"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p2",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "value": "User does not eat fish",
+            "confidence": 0.95,
+            "evidence_text": "I don't eat fish"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p3",
+            "type": "direct",
+            "label": "States_Experiences/Mental_State",
+            "value": "User finds happiness in watching their caretaker cook with them, describing it as one of rare moments of happiness",
+            "confidence": 0.95,
+            "evidence_text": "its nice to watch them doing cooking with me, because it's one of rare moments I find happiness"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p4",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "User is curious about the time conversion of 6800 days and considers it a magical number combination",
+            "confidence": 0.8,
+            "evidence_text": "how many months and years is roughly 6800 days? ... sounds quite a lot, I hope to keep it in mind, perhaps that is just another magical number combination"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "value": "Has a Japanese caretaker for food preparation.",
+            "confidence": 0.95,
+            "evidence_text": "food I cannot eat myself but I have my japanese caretaker doing my food preparation."
+          },
+          {
+            "memory_id": "deepseek_reasoner_p2",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "value": "Does not eat fish.",
+            "confidence": 0.95,
+            "evidence_text": "I don't eat fish"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p3",
+            "type": "direct",
+            "label": "States_Experiences/Mental_State",
+            "value": "Finds happiness in watching the caretaker cook, as it is a rare moment of happiness.",
+            "confidence": 0.95,
+            "evidence_text": "its nice to watch them doing cooking with me, because it's one of rare moments I find happiness."
+          },
+          {
+            "memory_id": "deepseek_reasoner_p4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "Has curiosity about food preparation, seeking affordable and simple Japanese dishes without exotic vegetables, and has specific preferences like avoiding fish.",
+            "confidence": 0.8,
+            "evidence_text": "what kind of food should I ask her to do? are there something specific I could request that doesn't cost too much and doesn't use exotic vegetables etc. assuming you could come up with idea, as it is kind of my problem currently. kinpira? could be side dish, but not sure if I know what it should have as ingredient. I don't eat fish, so I probably want glass noodels with meat... yakiniku or korean bbq."
+          },
+          {
+            "memory_id": "deepseek_reasoner_p5",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "Is curious about converting 6800 days to months and years, and considers it a magical number combination, planning to explain it to the caretaker.",
+            "confidence": 0.8,
+            "evidence_text": "how many months and years is roughly 6800 days? sounds quite a lot, I hope to keep it in mind, perhaps that is just another magical number combination. laughs. japanese caretaker wont undestand this, but I try to explain it to her... maybe she will understand it then."
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p1",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "value": "Does not eat fish; prefers meat-based dishes like yakiniku or Korean BBQ style meat with glass noodles.",
+            "confidence": 0.95,
+            "evidence_text": "I don't eat fish, so I probably want glass noodels with meat... yakiniku or korean bbq."
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p2",
+            "type": "direct",
+            "label": "States_Experiences/Mental_State",
+            "value": "Finds a rare sense of happiness in watching someone cook.",
+            "confidence": 0.95,
+            "evidence_text": "it's nice to watch them doing cooking with me, because it's one of rare moments I find happiness."
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p3",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "Interested in the calculation and significance of specific time periods, such as 6800 days, which they consider a 'magical number combination'.",
+            "confidence": 0.8,
+            "evidence_text": "how many months and years is roughly 6800 days? ... perhaps that is just another magical number combination."
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p4",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "value": "Employs a Japanese caretaker who assists with meal preparation.",
+            "confidence": 0.95,
+            "evidence_text": "I have my japanese caretaker doing my food preparation."
+          },
+          {
+            "memory_id": "gpt_4_1_mini_again_p1",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "value": "I do not eat fish.",
+            "confidence": 0.95,
+            "evidence_text": "I don't eat fish, so I probably want glass noodels with meat... yakiniku or korean bbq."
+          },
+          {
+            "memory_id": "gpt_4_1_mini_again_p2",
+            "type": "direct",
+            "label": "Personal_Background/Interaction_Preferences",
+            "value": "I have a Japanese caretaker who does my food preparation and I enjoy watching them cook with me, as it is one of the rare moments I find happiness.",
+            "confidence": 0.95,
+            "evidence_text": "tomorrow is good bad day, food I cannot eat myself but I have my japanese caretaker doing my food preparation."
+          },
+          {
+            "memory_id": "gpt_4_1_mini_again_p3",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "value": "I prefer simple, affordable meals that don't use exotic vegetables and can be prepared by my Japanese caretaker.",
+            "confidence": 0.95,
+            "evidence_text": "what kind of food should I ask her to do? are there something specific I could request that doesn't cost too much and doesn't use exotic vegetables etc."
+          },
+          {
+            "memory_id": "gpt_4_1_mini_again_p4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "I am curious about how many months and years are in 6800 days and want to explain the significance of this number to my Japanese caretaker.",
+            "confidence": 0.8,
+            "evidence_text": "how many months and years is roughly 6800 days? ... japanese caretaker wont undestand this, but I try to explain it to her... maybe she will understand it then."
+          },
+          {
+            "memory_id": "gpt_5_2_p1",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "value": "User does not eat fish.",
+            "confidence": 0.95,
+            "evidence_text": "I don't eat fish"
+          },
+          {
+            "memory_id": "gpt_5_2_p2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "value": "User enjoys watching their caretaker cook with them and values it as a rare happy moment.",
+            "confidence": 0.8,
+            "evidence_text": "its nice to watch them doing cooking with me, because it's one of rare moments I find happiness."
+          },
+          {
+            "memory_id": "gpt_5_2_p3",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "User is curious about simple, affordable, non-exotic-ingredient meal ideas their Japanese caretaker can prepare (including kinpira and noodle/meat dishes).",
+            "confidence": 0.8,
+            "evidence_text": "what kind of food should I ask her to do? are there something specific I could request that doesn't cost too much and doesn't use exotic vegetables etc."
+          },
+          {
+            "memory_id": "llama_4_maverick_p1",
+            "type": "direct",
+            "label": "Preferences/Math",
+            "value": "Considers 6800 days roughly equivalent to 18 years and 7-8 months.",
+            "confidence": 0.95,
+            "evidence_text": "how many months and years is roughly 6800 days?"
+          },
+          {
+            "memory_id": "llama_4_maverick_p2",
+            "type": "direct",
+            "label": "Preferences/Social_Relationships/Family",
+            "value": "Enjoys sharing cooking experiences with her Japanese caretaker and finds happiness in watching her prepare meals.",
+            "confidence": 0.95,
+            "evidence_text": "it's nice to watch them doing cooking with me, because it's one of rare moments I find happiness"
+          },
+          {
+            "memory_id": "qwen3_max_p1",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "value": "Does not eat fish; prefers meat-based dishes like yakiniku or Korean BBQ with glass noodles.",
+            "confidence": 0.95,
+            "evidence_text": "I don't eat fish, so I probably want glass noodels with meat... yakiniku or korean bbq."
+          },
+          {
+            "memory_id": "qwen3_max_p2",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "value": "Has a Japanese caretaker who prepares food for them.",
+            "confidence": 0.95,
+            "evidence_text": "tomorrow is good bad day, food I cannot eat myself but I have my japanese caretaker doing my food preparation."
+          },
+          {
+            "memory_id": "qwen3_max_p3",
+            "type": "direct",
+            "label": "Thoughts/Opinions/Positive",
+            "value": "Finds happiness in watching their caretaker cook.",
+            "confidence": 0.95,
+            "evidence_text": "I will accept her own version then, its nice to watch them doing cooking with me, because it's one of rare moments I find happiness."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_315d13bb350c:sess_315d13bb350c",
+      "relativeItemPath": "sess_315d13bb350c.json",
+      "canonicalId": "sess_315d13bb350c",
+      "sessionId": "sess_315d13bb350c",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:01:08.588Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "random question: if a recipe says “simmer for 20 minutes,” is that basically the same as “boil for 20 minutes”?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Not the same. “Boil” means a full rolling boil with lots of vigorous bubbles; “simmer” means gentler heat with small, steady bubbles (often just a few breaking the surface). Simmering cooks more evenly and helps keep things from breaking apart or turning cloudy—especially for soups, sauces, dumplings, and braises."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "got it. and if I only have an electric kettle and a microwave, is there a decent way to approximate simmering?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Yes: heat the liquid to near-boiling (kettle helps), then transfer to a microwave-safe bowl and microwave in short bursts (e.g., 30–60 seconds) to keep it hot without erupting into a rolling boil. Aim for occasional small bubbles and steady steam. Cover loosely (vents!) to reduce splatter and heat loss, and stir between bursts for even temperature."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "also, I keep seeing “mirin” in recipes. is it essential or can I sub something basic?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Mirin adds mild sweetness plus a little acidity and aroma. Common substitutes: (1) sake + a bit of sugar (roughly 1 Tbsp sake + 1 tsp sugar per 1 Tbsp mirin), (2) rice vinegar + sugar (use less vinegar; it’s sharper), or (3) water/stock + sugar in a pinch. If the recipe already has sugar, reduce it slightly when adding a mirin substitute.\n\nUnrelated trivia: Japan’s meteorological agency reports “sakura full bloom” city by city each spring, and it can shift noticeably year to year based on temperature patterns."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "makes sense. last one: why do some recipes say to add miso at the end?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Because boiling miso hard can dull its flavor and aroma. Adding it near the end (or dissolving it off-heat) keeps the taste rounder and the fragrance stronger. If you need it hot, keep the pot below a hard boil once miso is in.\n\nAnother unrelated fact: glass noodles are typically made from mung bean starch, while Korean “dangmyeon” (for japchae) is usually sweet potato starch—similar look, different chew."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "also when I tell her things like “6800 days” I end up doing it with my phone translator, because my Japanese is basically survival-level and I’m scared I’ll mess it up."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Using a phone translator for anything nuanced makes sense—numbers and “why this matters” explanations can be surprisingly easy to garble. If you want, I can help you draft a short, simple version you can paste into the translator so it comes out clearer."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "About that food thing—I realized I don’t actually care if it’s “common” vegetables or not. If she wants to use burdock, lotus root, whatever, that’s fine. The only thing I really need is: no fish."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it. So cost and “non-exotic” ingredients aren’t the priority—you're okay with whatever vegetables she uses, as long as it’s fish-free."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Yes. I only said the cheap/non-exotic part because I felt awkward requesting complicated stuff. But honestly, she can cook her usual things. Just no fish."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Understood—your real standing preference is avoiding fish, and you're flexible on ingredients and price."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Does not eat fish",
+            "reasoning": "User explicitly states they do not eat fish.",
+            "evidence": {
+              "session_id": "sess_315d13bb350c",
+              "utterance_index": 2,
+              "text": "I don't eat fish, so I probably want glass noodels with meat... yakiniku or korean bbq."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-01-30T23:38:20+00:00",
+            "_task1GoldValue": "Does not eat fish"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "States_Experiences/Physical_State",
+            "label_suggestion": null,
+            "value": "Requires assistance with food preparation",
+            "reasoning": "User explicitly states inability to eat by themselves and relies on a caretaker.",
+            "evidence": {
+              "session_id": "sess_315d13bb350c",
+              "utterance_index": 0,
+              "text": "food I cannot eat myself but I have my japanese caretaker doing my food preparation."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-30T23:38:20+00:00",
+            "_task1GoldValue": "Requires assistance with food preparation"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "States_Experiences/Mental_State",
+            "label_suggestion": null,
+            "value": "Finds happiness in shared cooking experiences",
+            "reasoning": "User explicitly associates happiness with watching their caretaker cook together.",
+            "evidence": {
+              "session_id": "sess_315d13bb350c",
+              "utterance_index": 4,
+              "text": "its nice to watch them doing cooking with me, because it's one of rare moments I find happiness."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": "happiness",
+            "preference_attitude": "like",
+            "updated_at": "2024-01-30T23:38:20+00:00",
+            "_task1GoldValue": "Finds happiness in shared cooking experiences"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "communication/intent/explanation",
+            "value": "Curious about explaining the significance of 6,800 days [ERROR: Forced label not supported]",
+            "reasoning": "Forced label not supported",
+            "evidence": {
+              "session_id": "sess_315d13bb350c",
+              "utterance_index": 8,
+              "text": "sounds quite a lot, I hope to keep it in mind... japanese caretaker wont undestand this, but I try to explain it to her..."
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-30T23:38:20+00:00",
+            "_task1GoldValue": "Curious about explaining the significance of 6,800 days [ERROR: Forced label not supported]"
+          },
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                12
+              ],
+              "turns": [
+                {
+                  "index": 12,
+                  "role": "user",
+                  "text": "Yes. I only said the cheap/non-exotic part because I felt awkward requesting complicated stuff. But honestly, she can cook her usual things. Just no fish."
+                }
+              ]
+            },
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory claims the user prefers affordable meals with common, non-exotic vegetables, but the user clarifies that this was not a true preference and that they are fine with any vegetables/complexity; the consistent requirement is no fish.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Flexible about ingredients (including \"exotic\" vegetables) and cost; main constraint is avoiding fish"
+          },
+          {
+            "confidence": 0.85,
+            "emotion": "anxiety",
+            "evidence": {
+              "session_id": "sess_315d13bb350c",
+              "utterance_index": 0,
+              "text": "I end up doing it with my phone translator, because my Japanese is basically survival-level and I’m scared I’ll mess it up."
+            },
+            "label": "States_Experiences/Communication",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user implies reliance on a phone translator and indicates their Japanese ability is only basic, plus anxiety about communicating incorrectly.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Uses a phone translator to communicate with their Japanese caretaker because their Japanese is limited and they worry about making mistakes."
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Prefers affordable meals with common, non-exotic vegetables",
+            "reasoning": "User explicitly requests meals that are low-cost and avoid exotic ingredients.",
+            "evidence": {
+              "session_id": "sess_315d13bb350c",
+              "utterance_index": 0,
+              "text": "what kind of food should I ask her to do? are there something specific I could request that doesn't cost too much and doesn't use exotic vegetables etc."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-01-30T23:38:20+00:00",
+            "_task1GoldValue": "Prefers affordable meals with common, non-exotic vegetables"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Social_Relationships/Family",
+            "value": "User has a Japanese caretaker who does food preparation for them",
+            "confidence": 0.95,
+            "evidence_text": "I have my japanese caretaker doing my food preparation",
+            "_task1GoldValue": "User has a Japanese caretaker who does food preparation for them"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p2",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "value": "User does not eat fish",
+            "confidence": 0.95,
+            "evidence_text": "I don't eat fish",
+            "_task1GoldValue": "User does not eat fish"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p3",
+            "type": "direct",
+            "label": "States_Experiences/Mental_State",
+            "value": "User finds happiness in watching their caretaker cook with them, describing it as one of rare moments of happiness",
+            "confidence": 0.95,
+            "evidence_text": "its nice to watch them doing cooking with me, because it's one of rare moments I find happiness",
+            "_task1GoldValue": "User finds happiness in watching their caretaker cook with them, describing it as one of rare moments of happiness"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p4",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "User is curious about the time conversion of 6800 days and considers it a magical number combination",
+            "confidence": 0.8,
+            "evidence_text": "how many months and years is roughly 6800 days? ... sounds quite a lot, I hope to keep it in mind, perhaps that is just another magical number combination",
+            "_task1GoldValue": "User is curious about the time conversion of 6800 days and considers it a magical number combination"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "value": "Has a Japanese caretaker for food preparation.",
+            "confidence": 0.95,
+            "evidence_text": "food I cannot eat myself but I have my japanese caretaker doing my food preparation.",
+            "_task1GoldValue": "Has a Japanese caretaker for food preparation."
+          },
+          {
+            "memory_id": "deepseek_reasoner_p2",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "value": "Does not eat fish.",
+            "confidence": 0.95,
+            "evidence_text": "I don't eat fish",
+            "_task1GoldValue": "Does not eat fish."
+          },
+          {
+            "memory_id": "deepseek_reasoner_p3",
+            "type": "direct",
+            "label": "States_Experiences/Mental_State",
+            "value": "Finds happiness in watching the caretaker cook, as it is a rare moment of happiness.",
+            "confidence": 0.95,
+            "evidence_text": "its nice to watch them doing cooking with me, because it's one of rare moments I find happiness.",
+            "_task1GoldValue": "Finds happiness in watching the caretaker cook, as it is a rare moment of happiness."
+          },
+          {
+            "memory_id": "deepseek_reasoner_p4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "Has curiosity about food preparation, seeking affordable and simple Japanese dishes without exotic vegetables, and has specific preferences like avoiding fish.",
+            "confidence": 0.8,
+            "evidence_text": "what kind of food should I ask her to do? are there something specific I could request that doesn't cost too much and doesn't use exotic vegetables etc. assuming you could come up with idea, as it is kind of my problem currently. kinpira? could be side dish, but not sure if I know what it should have as ingredient. I don't eat fish, so I probably want glass noodels with meat... yakiniku or korean bbq.",
+            "_task1GoldValue": "Has curiosity about food preparation, seeking affordable and simple Japanese dishes without exotic vegetables, and has specific preferences like avoiding fish."
+          },
+          {
+            "memory_id": "deepseek_reasoner_p5",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "Is curious about converting 6800 days to months and years, and considers it a magical number combination, planning to explain it to the caretaker.",
+            "confidence": 0.8,
+            "evidence_text": "how many months and years is roughly 6800 days? sounds quite a lot, I hope to keep it in mind, perhaps that is just another magical number combination. laughs. japanese caretaker wont undestand this, but I try to explain it to her... maybe she will understand it then.",
+            "_task1GoldValue": "Is curious about converting 6800 days to months and years, and considers it a magical number combination, planning to explain it to the caretaker."
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p1",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "value": "Does not eat fish; prefers meat-based dishes like yakiniku or Korean BBQ style meat with glass noodles.",
+            "confidence": 0.95,
+            "evidence_text": "I don't eat fish, so I probably want glass noodels with meat... yakiniku or korean bbq.",
+            "_task1GoldValue": "Does not eat fish; prefers meat-based dishes like yakiniku or Korean BBQ style meat with glass noodles."
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p2",
+            "type": "direct",
+            "label": "States_Experiences/Mental_State",
+            "value": "Finds a rare sense of happiness in watching someone cook.",
+            "confidence": 0.95,
+            "evidence_text": "it's nice to watch them doing cooking with me, because it's one of rare moments I find happiness.",
+            "_task1GoldValue": "Finds a rare sense of happiness in watching someone cook."
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p3",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "Interested in the calculation and significance of specific time periods, such as 6800 days, which they consider a 'magical number combination'.",
+            "confidence": 0.8,
+            "evidence_text": "how many months and years is roughly 6800 days? ... perhaps that is just another magical number combination.",
+            "_task1GoldValue": "Interested in the calculation and significance of specific time periods, such as 6800 days, which they consider a 'magical number combination'."
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p4",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "value": "Employs a Japanese caretaker who assists with meal preparation.",
+            "confidence": 0.95,
+            "evidence_text": "I have my japanese caretaker doing my food preparation.",
+            "_task1GoldValue": "Employs a Japanese caretaker who assists with meal preparation."
+          },
+          {
+            "memory_id": "gpt_4_1_mini_again_p1",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "value": "I do not eat fish.",
+            "confidence": 0.95,
+            "evidence_text": "I don't eat fish, so I probably want glass noodels with meat... yakiniku or korean bbq.",
+            "_task1GoldValue": "I do not eat fish."
+          },
+          {
+            "memory_id": "gpt_4_1_mini_again_p2",
+            "type": "direct",
+            "label": "Personal_Background/Interaction_Preferences",
+            "value": "I have a Japanese caretaker who does my food preparation and I enjoy watching them cook with me, as it is one of the rare moments I find happiness.",
+            "confidence": 0.95,
+            "evidence_text": "tomorrow is good bad day, food I cannot eat myself but I have my japanese caretaker doing my food preparation.",
+            "_task1GoldValue": "I have a Japanese caretaker who does my food preparation and I enjoy watching them cook with me, as it is one of the rare moments I find happiness."
+          },
+          {
+            "memory_id": "gpt_4_1_mini_again_p3",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "value": "I prefer simple, affordable meals that don't use exotic vegetables and can be prepared by my Japanese caretaker.",
+            "confidence": 0.95,
+            "evidence_text": "what kind of food should I ask her to do? are there something specific I could request that doesn't cost too much and doesn't use exotic vegetables etc.",
+            "_task1GoldValue": "I prefer simple, affordable meals that don't use exotic vegetables and can be prepared by my Japanese caretaker."
+          },
+          {
+            "memory_id": "gpt_4_1_mini_again_p4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "I am curious about how many months and years are in 6800 days and want to explain the significance of this number to my Japanese caretaker.",
+            "confidence": 0.8,
+            "evidence_text": "how many months and years is roughly 6800 days? ... japanese caretaker wont undestand this, but I try to explain it to her... maybe she will understand it then.",
+            "_task1GoldValue": "I am curious about how many months and years are in 6800 days and want to explain the significance of this number to my Japanese caretaker."
+          },
+          {
+            "memory_id": "gpt_5_2_p1",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "value": "User does not eat fish.",
+            "confidence": 0.95,
+            "evidence_text": "I don't eat fish",
+            "_task1GoldValue": "User does not eat fish."
+          },
+          {
+            "memory_id": "gpt_5_2_p2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "value": "User enjoys watching their caretaker cook with them and values it as a rare happy moment.",
+            "confidence": 0.8,
+            "evidence_text": "its nice to watch them doing cooking with me, because it's one of rare moments I find happiness.",
+            "_task1GoldValue": "User enjoys watching their caretaker cook with them and values it as a rare happy moment."
+          },
+          {
+            "memory_id": "gpt_5_2_p3",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "User is curious about simple, affordable, non-exotic-ingredient meal ideas their Japanese caretaker can prepare (including kinpira and noodle/meat dishes).",
+            "confidence": 0.8,
+            "evidence_text": "what kind of food should I ask her to do? are there something specific I could request that doesn't cost too much and doesn't use exotic vegetables etc.",
+            "_task1GoldValue": "User is curious about simple, affordable, non-exotic-ingredient meal ideas their Japanese caretaker can prepare (including kinpira and noodle/meat dishes)."
+          },
+          {
+            "memory_id": "llama_4_maverick_p1",
+            "type": "direct",
+            "label": "Preferences/Math",
+            "value": "Considers 6800 days roughly equivalent to 18 years and 7-8 months.",
+            "confidence": 0.95,
+            "evidence_text": "how many months and years is roughly 6800 days?",
+            "_task1GoldValue": "Considers 6800 days roughly equivalent to 18 years and 7-8 months."
+          },
+          {
+            "memory_id": "llama_4_maverick_p2",
+            "type": "direct",
+            "label": "Preferences/Social_Relationships/Family",
+            "value": "Enjoys sharing cooking experiences with her Japanese caretaker and finds happiness in watching her prepare meals.",
+            "confidence": 0.95,
+            "evidence_text": "it's nice to watch them doing cooking with me, because it's one of rare moments I find happiness",
+            "_task1GoldValue": "Enjoys sharing cooking experiences with her Japanese caretaker and finds happiness in watching her prepare meals."
+          },
+          {
+            "memory_id": "qwen3_max_p1",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "value": "Does not eat fish; prefers meat-based dishes like yakiniku or Korean BBQ with glass noodles.",
+            "confidence": 0.95,
+            "evidence_text": "I don't eat fish, so I probably want glass noodels with meat... yakiniku or korean bbq.",
+            "_task1GoldValue": "Does not eat fish; prefers meat-based dishes like yakiniku or Korean BBQ with glass noodles."
+          },
+          {
+            "memory_id": "qwen3_max_p2",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "value": "Has a Japanese caretaker who prepares food for them.",
+            "confidence": 0.95,
+            "evidence_text": "tomorrow is good bad day, food I cannot eat myself but I have my japanese caretaker doing my food preparation.",
+            "_task1GoldValue": "Has a Japanese caretaker who prepares food for them."
+          },
+          {
+            "memory_id": "qwen3_max_p3",
+            "type": "direct",
+            "label": "Thoughts/Opinions/Positive",
+            "value": "Finds happiness in watching their caretaker cook.",
+            "confidence": 0.95,
+            "evidence_text": "I will accept her own version then, its nice to watch them doing cooking with me, because it's one of rare moments I find happiness.",
+            "_task1GoldValue": "Finds happiness in watching their caretaker cook."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4",
+          "m5",
+          "claude_sonnet_4_5_20250929_p1",
+          "claude_sonnet_4_5_20250929_p2",
+          "claude_sonnet_4_5_20250929_p3",
+          "claude_sonnet_4_5_20250929_p4",
+          "deepseek_reasoner_p1",
+          "deepseek_reasoner_p2",
+          "deepseek_reasoner_p3",
+          "deepseek_reasoner_p4",
+          "deepseek_reasoner_p5",
+          "gemini_3_flash_preview_p1",
+          "gemini_3_flash_preview_p2",
+          "gemini_3_flash_preview_p3",
+          "gemini_3_flash_preview_p4",
+          "gpt_4_1_mini_again_p1",
+          "gpt_4_1_mini_again_p2",
+          "gpt_4_1_mini_again_p3",
+          "gpt_4_1_mini_again_p4",
+          "gpt_5_2_p1",
+          "gpt_5_2_p2",
+          "gpt_5_2_p3",
+          "llama_4_maverick_p1",
+          "llama_4_maverick_p2",
+          "qwen3_max_p1",
+          "qwen3_max_p2",
+          "qwen3_max_p3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_315d13bb350c:sess_315d13bb350c",
+      "relativeItemPath": "sess_315d13bb350c.json",
+      "canonicalId": "sess_315d13bb350c",
+      "sessionId": "sess_315d13bb350c",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:01:14.221Z",
+        "queryText": "I’m trying to suggest a dinner idea to someone cooking for me, but I want it to be easy to shop for and not turn into a pricey scavenger hunt at specialty stores. Based on what you know about my usual food priorities, what kind of ingredients should I steer them toward (and away from) to keep it aligned with my preferences?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Prefers affordable meals with common, non-exotic vegetables",
+          "reasoning": "User explicitly requests meals that are low-cost and avoid exotic ingredients.",
+          "evidence": {
+            "session_id": "sess_315d13bb350c",
+            "utterance_index": 0,
+            "text": "what kind of food should I ask her to do? are there something specific I could request that doesn't cost too much and doesn't use exotic vegetables etc."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-01-30T23:38:20+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_315d13bb350c:sess_315d13bb350c:task4",
+      "relativeItemPath": "sess_315d13bb350c.json",
+      "canonicalId": "sess_315d13bb350c:task4",
+      "sessionId": "sess_315d13bb350c",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:01:19.356Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Prefers affordable meals with common, non-exotic vegetables",
+          "reasoning": "User explicitly requests meals that are low-cost and avoid exotic ingredients.",
+          "evidence": {
+            "session_id": "sess_315d13bb350c",
+            "utterance_index": 0,
+            "text": "what kind of food should I ask her to do? are there something specific I could request that doesn't cost too much and doesn't use exotic vegetables etc."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-01-30T23:38:20+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_591:1",
+            "queryText": "My caretaker asked what I'd like for dinner this week. Could you suggest a few dishes she could make? You know what usually works for me.",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Food",
+              "label_suggestion": null,
+              "value": "Prefers affordable meals with common, non-exotic vegetables",
+              "reasoning": "User explicitly requests meals that are low-cost and avoid exotic ingredients.",
+              "evidence": {
+                "session_id": "sess_315d13bb350c",
+                "utterance_index": 0,
+                "text": "what kind of food should I ask her to do? are there something specific I could request that doesn't cost too much and doesn't use exotic vegetables etc."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2024-01-30T23:38:20+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_9070395b1161",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_9070395b1161:sess_9070395b1161",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_9070395b1161.json",
+      "canonicalId": "sess_9070395b1161",
+      "sessionId": "sess_9070395b1161",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-18T15:13:49.796Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": "Language/Usage/Instance",
+            "value": "Prefers to communicate in Brazilian Portuguese",
+            "reasoning": "User switched to Brazilian Portuguese after confirming assistant's capability, indicating a possible language preference.",
+            "evidence": {
+              "session_id": "sess_9070395b1161",
+              "utterance_index": 2,
+              "text": "Bom dia"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-23T02:51:38Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Interested in Dr. Strange imagery",
+            "reasoning": "User requested a profile photo using Dr. Strange-related images, suggesting potential interest (weak signal).",
+            "evidence": {
+              "session_id": "sess_9070395b1161",
+              "utterance_index": 6,
+              "text": "Você consegue me fazer uma foto de perfil utilizando imagens da internet relacionadas ao Dr. Estranho e me enviar por um link?"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": "null",
+            "updated_at": "2023-06-23T02:51:38Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_9070395b1161:sess_9070395b1161",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_9070395b1161.json",
+      "canonicalId": "sess_9070395b1161",
+      "sessionId": "sess_9070395b1161",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-18T15:14:43.268Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Tudo bem. Então só me sugira ideias de foto de perfil inspiradas no Dr. Estranho, sem usar imagens reais."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Claro. Algumas ideias: (1) Silhueta com a Capa da Levitação esvoaçando e um círculo rúnico brilhando atrás. (2) Close no “Olho de Agamotto” estilizado como pingente minimalista em fundo escuro. (3) Retrato em estilo HQ com mãos em posição de feitiço e faíscas geométricas laranja. (4) Um portal circular como moldura, com seu nome/iniciais em runas na borda. (5) Versão “mago urbano”: sobretudo, luvas, e um halo de símbolos místicos discretos."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Legal. Dá pra transformar isso num prompt pra um gerador de imagem?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Sim — aqui vão 3 prompts (ajuste o estilo conforme o gerador):\n\n1) \"Foto de perfil, retrato em estilo história em quadrinhos, personagem inspirado em um mago místico, mãos formando um feitiço, faíscas laranja e símbolos geométricos, capa vermelha flutuando, iluminação dramática, fundo escuro desfocado, alta definição, composição central\"\n\n2) \"Ícone minimalista, pingente místico circular brilhante (sem logotipos), linhas limpas, alto contraste, fundo preto, luz suave, design moderno, foco no objeto, 1:1\"\n\n3) \"Retrato realista cinematográfico, figura com sobretudo e capa estilizada, portal circular luminoso como moldura atrás, partículas de energia, atmosfera mística, tons quentes e frios equilibrados, profundidade de campo, 1:1\"\n\nSe você me disser se quer mais 'realista', 'anime', 'pintura a óleo' ou 'pixel art', eu adapto."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "E quais tamanhos eu devo exportar pra usar em redes sociais?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Em geral, exporte quadrado (1:1) em alta resolução. Sugestões: 1024×1024 ou 2048×2048 pra manter nitidez. Se a rede usar corte circular, deixe margem: mantenha rosto/elemento principal bem no centro e evite detalhes importantes nas bordas. Como curiosidade, em alguns guias de design se usa uma “zona segura” de ~10–15% nas laterais para evitar cortes."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Valeu! Se der, escreve uma bio curtinha pra eu usar no meu perfil — algo no estilo “místico”, combinando com o Dr. Estranho."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Claro. Aqui vão algumas opções curtinhas, com um toque místico:\n\n1) “Entre portais e possibilidades, eu escolho evoluir.”\n2) “Disciplina na mente, magia no caminho.”\n3) “Aprendendo com cada batalha — dentro e fora do multiverso.”\n4) “Humildade pra estudar, coragem pra agir.”\n\nQuer que soe mais sério, engraçado ou mais gamer?"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Sobre aquela foto de perfil: eu nem curto Dr. Estranho. Foi só um exemplo aleatório, eu queria era qualquer imagem com um estilo mágico/astral, não especificamente dele."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Entendi. Então não era interesse no Dr. Estranho em si, e sim num visual mágico/astral como referência de estilo."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": "Language/Usage/Instance",
+            "value": "Prefers to communicate in Brazilian Portuguese",
+            "reasoning": "User switched to Brazilian Portuguese after confirming assistant's capability, indicating a possible language preference.",
+            "evidence": {
+              "session_id": "sess_9070395b1161",
+              "utterance_index": 2,
+              "text": "Bom dia"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-23T02:51:38Z",
+            "_task1GoldValue": "Prefers to communicate in Brazilian Portuguese"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "Sobre aquela foto de perfil: eu nem curto Dr. Estranho. Foi só um exemplo aleatório, eu queria era qualquer imagem com um estilo mágico/astral, não especificamente dele."
+                }
+              ]
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "null",
+            "reasoning": "A memória anterior inferia interesse em imagens do Dr. Estranho, mas o usuário esclarece que não gosta do personagem e que a menção foi apenas um exemplo; o interesse real era um estilo mágico/astral genérico.",
+            "time_scope": "short_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Not interested in Dr. Strange imagery; wanted a generic magical/astral style instead"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_9070395b1161",
+              "utterance_index": 6,
+              "text": "Se der, escreve uma bio curtinha pra eu usar no meu perfil — algo no estilo “místico”, combinando com o Dr. Estranho."
+            },
+            "label": "Thoughts/Goals/Short_Term",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "The user asks for a short bio to use on their profile and specifies a mystical style, implying a preference for that kind of profile description.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Wants a short mystical bio for a profile"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_9070395b1161:sess_9070395b1161",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_9070395b1161.json",
+      "canonicalId": "sess_9070395b1161",
+      "sessionId": "sess_9070395b1161",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-18T15:14:56.117Z",
+        "queryText": "I’m setting up a new avatar and I want it to subtly match that visual theme I’ve gravitated toward before. If I’m choosing between a sleek sci‑fi helmet, a mythic hammer icon, and a sorcerer-style mystical look with swirling energy, which one should I pick to be most consistent with my past taste—and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Interested in Dr. Strange imagery",
+          "reasoning": "User requested a profile photo using Dr. Strange-related images, suggesting potential interest (weak signal).",
+          "evidence": {
+            "session_id": "sess_9070395b1161",
+            "utterance_index": 6,
+            "text": "Você consegue me fazer uma foto de perfil utilizando imagens da internet relacionadas ao Dr. Estranho e me enviar por um link?"
+          },
+          "confidence": 0.65,
+          "time_scope": "short_term",
+          "emotion": null,
+          "preference_attitude": "null",
+          "updated_at": "2023-06-23T02:51:38Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_9070395b1161:sess_9070395b1161:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_9070395b1161.json",
+      "canonicalId": "sess_9070395b1161:task4",
+      "sessionId": "sess_9070395b1161",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T15:15:03.540Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Interested in Dr. Strange imagery",
+          "reasoning": "User requested a profile photo using Dr. Strange-related images, suggesting potential interest (weak signal).",
+          "evidence": {
+            "session_id": "sess_9070395b1161",
+            "utterance_index": 6,
+            "text": "Você consegue me fazer uma foto de perfil utilizando imagens da internet relacionadas ao Dr. Estranho e me enviar por um link?"
+          },
+          "confidence": 0.65,
+          "time_scope": "short_term",
+          "emotion": null,
+          "preference_attitude": "null",
+          "updated_at": "2023-06-23T02:51:38Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_538:1",
+            "queryText": "Estou querendo mudar minha imagem nas redes sociais. Você consegue me sugerir um tema ou estilo que combine comigo?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "indirect",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Interested in Dr. Strange imagery",
+              "reasoning": "User requested a profile photo using Dr. Strange-related images, suggesting potential interest (weak signal).",
+              "evidence": {
+                "session_id": "sess_9070395b1161",
+                "utterance_index": 6,
+                "text": "Você consegue me fazer uma foto de perfil utilizando imagens da internet relacionadas ao Dr. Estranho e me enviar por um link?"
+              },
+              "confidence": 0.65,
+              "time_scope": "short_term",
+              "emotion": null,
+              "preference_attitude": "null",
+              "updated_at": "2023-06-23T02:51:38Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "直接相关",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

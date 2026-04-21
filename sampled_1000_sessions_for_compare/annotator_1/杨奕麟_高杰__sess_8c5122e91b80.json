@@ -1,0 +1,370 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_8c5122e91b80",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_8c5122e91b80:sess_8c5122e91b80",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_8c5122e91b80.json",
+      "canonicalId": "sess_8c5122e91b80",
+      "sessionId": "sess_8c5122e91b80",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:21:10.303Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Family",
+            "label_suggestion": null,
+            "value": "Descendant of Dyakiv Sava Fedorovych through Petro Dyakiv Savovich lineage",
+            "reasoning": "User explicitly states being a direct descendant with detailed genealogical path",
+            "evidence": {
+              "session_id": "sess_8c5122e91b80",
+              "utterance_index": 6,
+              "text": "I can trace from my great-great-grandfather Dyakiv Sava Fedorovych to me..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-10T15:34:23Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Genealogy/Ancestral_Research/Interest",
+            "value": "Sustained interest in Dyakiv Sava Fedorovych's Y-DNA and ancestral origins",
+            "reasoning": "Forced label not supported. Repeated inquiries show user's genealogical interest, but 'Thoughts/Curiosity' taxonomy mismatch",
+            "evidence": {
+              "session_id": "sess_8c5122e91b80",
+              "utterance_index": 16,
+              "text": "I don't care if it's speculative or not, they just want to know!"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-10T15:34:23Z"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Social_Relationships/Family",
+            "value": "User is a descendant of Dyakiv Sava Fedorovych (1887-1919), a Ukrainian military and public figure. The lineage is: Dyakiv Sava Fedorovych → Petro Dyakiv Savovich (great-grandfather) → Valentina Blahikh Petrovna (grandmother) → Darina Gavryliv Dmitrivna (mother) → Nikita Gavryliv Dmytrovych (user).",
+            "confidence": 0.95,
+            "evidence_text": "Hmm Hmm but I am a descendant of Dyakiv Sava Fedorovych"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_8c5122e91b80:sess_8c5122e91b80",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_8c5122e91b80.json",
+      "canonicalId": "sess_8c5122e91b80",
+      "sessionId": "sess_8c5122e91b80",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T19:38:45.150Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I’m trying to make sense of how historians weigh sources when details conflict. What’s a good approach?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "A solid approach is to (1) separate primary sources (created at the time) from secondary accounts, (2) check proximity to the events and potential bias, (3) compare independent sources for overlap, and (4) prefer claims that are best supported by documents you can verify (records, letters, official reports). If you tell me what kind of conflict you’re seeing (dates, names, motives), I can suggest a way to organize it."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "For example, two sources give different birth years for the same person. How do you resolve that without guessing?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "You don’t “resolve” it immediately—you rank confidence. Put both dates in a timeline with citations, then look for the strongest anchors: parish registers/civil birth records, census/revision lists, military service files, school records, gravestones, or contemporaneous newspapers. Later memoirs and retellings often shift dates. You can also track whether one date is repeatedly copied across later works (a sign of a single error propagating)."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Got it. Is there a simple template for tracking contradictions?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Yes: a small table works well—Claim | Date/Detail | Source | Source type (primary/secondary) | Created when | Possible bias | Corroboration | Confidence (high/med/low). As a historical aside, even widely reported events can drift in retellings—like the “Battle of Hastings: 1066” being accurate, but casualty numbers varying wildly depending on the chronicle."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "When a memoir contradicts an official record, is the record always right?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Not always. Official records can contain clerical errors, intentional falsifications, or later amendments. Memoirs can also misremember, compress timelines, or frame events to justify choices. The best practice is triangulation: find a third, independent source. For instance, some Titanic survivor accounts conflict on exact timings, and historians rely on multiple logs, testimonies, and engineering reconstructions to narrow it down."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "That makes sense. Any quick rule for citations when I’m unsure?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Cite precisely and transparently: quote the claim, attribute it, and add a note like “date varies across sources.” If you infer anything, label it clearly as an inference. One more general example: in astronomy, Pluto’s status changed due to a definitional update in 2006—citations often note “reclassified by the IAU,” which is similar in spirit: document what changed and why."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "I’m thinking of ordering a Y-DNA kit for my dad, since the Dyakiv line goes through Petro Savovych and I want the direct male line checked first."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "That approach makes sense: testing your father targets the same paternal line you’re trying to infer for Dyakiv Sava Fedorovych. If you share which company/test level you’re considering (e.g., STR panel vs SNP), I can help you pick the option that best answers your question."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "I need to correct something from before. I’m not actually a descendant of Dyakiv Sava Fedorovych in the male line. The “Petro Dyakiv Savovych” chain I wrote was a mix-up from family stories."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Thanks for clarifying. So you can’t confirm a direct great-great-grandfather → great-grandfather Petro Dyakiv Savovych → grandmother → mother line to Sava Dyakiv, and it was based on a mistaken retelling rather than documents?"
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Yes. I don’t have documents proving that link, and I shouldn’t have stated it as my direct descent. At most, my family is from the same area, but the specific descent from Sava Dyakiv is unproven."
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "Understood—so the accurate statement is that your direct descent from Dyakiv Sava Fedorovych via Petro Dyakiv Savovych isn’t established, and the earlier lineage claim should be treated as unverified."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Genealogy/Ancestral_Research/Interest",
+            "value": "Sustained interest in Dyakiv Sava Fedorovych's Y-DNA and ancestral origins",
+            "reasoning": "Forced label not supported. Repeated inquiries show user's genealogical interest, but 'Thoughts/Curiosity' taxonomy mismatch",
+            "evidence": {
+              "session_id": "sess_8c5122e91b80",
+              "utterance_index": 16,
+              "text": "I don't care if it's speculative or not, they just want to know!"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-10T15:34:23Z",
+            "_task1GoldValue": "Sustained interest in Dyakiv Sava Fedorovych's Y-DNA and ancestral origins"
+          },
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": null,
+            "label": "Personal_Background/Family",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory asserted confirmed descent through Petro Dyakiv Savovych. The user now states that this lineage claim was a mix-up and that they lack documents proving direct descent, so the corrected truth is that the descent is unproven rather than confirmed.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User’s claimed descent from Dyakiv Sava Fedorovych via Petro Dyakiv Savovych is unverified; user lacks documents and says the earlier lineage was a mix-up"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_8c5122e91b80",
+              "utterance_index": 0,
+              "text": "I’m thinking of ordering a Y-DNA kit for my dad, since the Dyakiv line goes through Petro Savovych and I want the direct male line checked first."
+            },
+            "label": "Genealogy/Ancestral_Research/Plans",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user’s mention of ordering a kit for their dad and the justification about the Dyakiv line implies a concrete plan to test the father for Y-DNA on the direct male line.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User is considering ordering a Y-DNA test kit for their father to assess the direct paternal (Dyakiv) line."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Family",
+            "label_suggestion": null,
+            "value": "Descendant of Dyakiv Sava Fedorovych through Petro Dyakiv Savovich lineage",
+            "reasoning": "User explicitly states being a direct descendant with detailed genealogical path",
+            "evidence": {
+              "session_id": "sess_8c5122e91b80",
+              "utterance_index": 6,
+              "text": "I can trace from my great-great-grandfather Dyakiv Sava Fedorovych to me..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-10T15:34:23Z",
+            "_task1GoldValue": "Descendant of Dyakiv Sava Fedorovych through Petro Dyakiv Savovich lineage"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Social_Relationships/Family",
+            "value": "User is a descendant of Dyakiv Sava Fedorovych (1887-1919), a Ukrainian military and public figure. The lineage is: Dyakiv Sava Fedorovych → Petro Dyakiv Savovich (great-grandfather) → Valentina Blahikh Petrovna (grandmother) → Darina Gavryliv Dmitrivna (mother) → Nikita Gavryliv Dmytrovych (user).",
+            "confidence": 0.95,
+            "evidence_text": "Hmm Hmm but I am a descendant of Dyakiv Sava Fedorovych",
+            "_task1GoldValue": "User is a descendant of Dyakiv Sava Fedorovych (1887-1919), a Ukrainian military and public figure. The lineage is: Dyakiv Sava Fedorovych → Petro Dyakiv Savovich (great-grandfather) → Valentina Blahikh Petrovna (grandmother) → Darina Gavryliv Dmitrivna (mother) → Nikita Gavryliv Dmytrovych (user)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "claude_sonnet_4_5_20250929_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_8c5122e91b80:sess_8c5122e91b80",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_8c5122e91b80.json",
+      "canonicalId": "sess_8c5122e91b80",
+      "sessionId": "sess_8c5122e91b80",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T19:14:21.248Z",
+        "queryText": "I’m filling out a family-history form that asks me to list the earliest known ancestor in my direct line; based on what I’ve told you before, which person should I put there (the one furthest back that my documented chain reaches)?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Family",
+          "label_suggestion": null,
+          "value": "Descendant of Dyakiv Sava Fedorovych through Petro Dyakiv Savovich lineage",
+          "reasoning": "User explicitly states being a direct descendant with detailed genealogical path",
+          "evidence": {
+            "session_id": "sess_8c5122e91b80",
+            "utterance_index": 6,
+            "text": "I can trace from my great-great-grandfather Dyakiv Sava Fedorovych to me..."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-10T15:34:23Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_8c5122e91b80:sess_8c5122e91b80:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_8c5122e91b80.json",
+      "canonicalId": "sess_8c5122e91b80:task4",
+      "sessionId": "sess_8c5122e91b80",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T14:34:18.665Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Family",
+          "label_suggestion": null,
+          "value": "Descendant of Dyakiv Sava Fedorovych through Petro Dyakiv Savovich lineage",
+          "reasoning": "User explicitly states being a direct descendant with detailed genealogical path",
+          "evidence": {
+            "session_id": "sess_8c5122e91b80",
+            "utterance_index": 6,
+            "text": "I can trace from my great-great-grandfather Dyakiv Sava Fedorovych to me..."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-10T15:34:23Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_61:1",
+            "queryText": "My great-grandfather Petro Dyakiv Savovich's military records from the 1940s mention he was stationed near Lviv. Could that location give any clues about our family's deeper historical roots in western Ukraine, or is it just a random assignment?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Family",
+              "label_suggestion": null,
+              "value": "Descendant of Dyakiv Sava Fedorovych through Petro Dyakiv Savovich lineage",
+              "reasoning": "User explicitly states being a direct descendant with detailed genealogical path",
+              "evidence": {
+                "session_id": "sess_8c5122e91b80",
+                "utterance_index": 6,
+                "text": "I can trace from my great-great-grandfather Dyakiv Sava Fedorovych to me..."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-06-10T15:34:23Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

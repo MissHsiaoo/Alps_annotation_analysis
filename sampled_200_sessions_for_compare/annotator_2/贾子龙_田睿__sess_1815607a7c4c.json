@@ -1,0 +1,338 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_1815607a7c4c",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_1815607a7c4c:sess_1815607a7c4c",
+      "relativeItemPath": "sess_1815607a7c4c.json",
+      "canonicalId": "sess_1815607a7c4c",
+      "sessionId": "sess_1815607a7c4c",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:33:38.283Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/paraphrase_implementation",
+            "value": "Curious about implementing/troubleshooting paraphrase generation models (MarianMT/T5/BART) with code examples",
+            "reasoning": "Pattern of technical troubleshooting across multiple models, but no explicit self-report of curiosity",
+            "evidence": {
+              "session_id": "sess_1815607a7c4c",
+              "utterance_index": 24,
+              "text": "try another model not marian or T5"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-19T10:08:46+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Prefers avoiding MarianMT and T5 models for paraphrase generation",
+            "reasoning": "Explicit request to use alternative models: 'try another model not marian or T5'",
+            "evidence": {
+              "session_id": "sess_1815607a7c4c",
+              "utterance_index": 24,
+              "text": "try another model not marian or T5"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-11-19T10:08:46+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_1815607a7c4c:sess_1815607a7c4c",
+      "relativeItemPath": "sess_1815607a7c4c.json",
+      "canonicalId": "sess_1815607a7c4c",
+      "sessionId": "sess_1815607a7c4c",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:35:04.649Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "For paraphrase generation, what’s the difference between using a generic seq2seq model and a checkpoint that’s explicitly fine-tuned for paraphrasing?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "A generic seq2seq checkpoint (e.g., summarization or translation) can *produce* rewrites, but it wasn’t trained to preserve meaning while changing wording, so it may copy the input or drift semantically. A paraphrase-finetuned checkpoint is optimized on pairs of equivalent sentences, so it’s more likely to keep meaning, change surface form, and generate diverse variants.\n\nTwo practical consequences:\n- **Controllability**: paraphrase models often respond to prompts/decoding settings (diversity vs faithfulness) more predictably.\n- **Evaluation**: you can measure quality with semantic similarity + lexical diversity; generic seq2seq tends to score inconsistently.\n\nUnrelated example: in 2014, the SQuAD-style QA format became a common benchmark pattern—fine-tuning on a task format often matters as much as the base architecture."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "If a model keeps returning the exact same sentence, what decoding settings usually help?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Common fixes when outputs are too identical/copy-like:\n- Increase diversity: `do_sample=True`, set `top_p` (e.g., 0.9) or `top_k` (e.g., 50), and a moderate `temperature` (e.g., 0.8–1.2).\n- Use beam search with diversity: `num_beams>1` plus `num_beam_groups` and `diversity_penalty` (when supported).\n- Add penalties: `repetition_penalty` (~1.1–1.3), `no_repeat_ngram_size` (e.g., 3).\n- Generate multiple candidates: `num_return_sequences` and then rerank by semantic similarity.\n\nAlso check you aren’t forcing the model to copy via prompt or constraints.\n\nFake-but-irrelevant tidbit: some early text generators used pure beam search and were notorious for producing bland near-duplicates—sampling became popular partly to address that."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "What’s a good paraphrase-specific checkpoint to try on Hugging Face?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "A commonly used one is **Vamsi/T5_Paraphrase_Paws** (T5 fine-tuned for paraphrasing). Another family is **pegasus** checkpoints fine-tuned on paraphrase-style data, though many PEGASUS models are summarization-oriented.\n\nIf you want a quick sanity check, try generating 5–10 candidates with sampling and compare them for meaning preservation.\n\nCompletely unrelated: the term “checkpoint” comes from saving intermediate training states; it’s not tied to Transformers specifically."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "I’m running this in a Colab notebook right now, and it just keeps spinning after the model download—no traceback, just that warning line and then nothing printed."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Got it—when Colab looks “stuck” after the download, it’s often just spending time on the first generation call (or waiting on the GPU/CPU). Quick checks: add a print right before/after `model.generate(...)` to confirm it reaches generation, and force a short `max_new_tokens` like 20 to see immediate output. Also confirm the cell actually finishes (Colab sometimes shows output only when the run completes)."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "I’m not avoiding MarianMT or T5 in general. I only asked “try another model not marian or T5” because those two examples weren’t working in my environment at the time."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—so it’s not a preference to avoid them, it was just a troubleshooting step since MarianMT and T5 weren’t producing the output you expected in that setup."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Yes, exactly. If MarianMT or T5 works, I’m fine using them."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/paraphrase_implementation",
+            "value": "Curious about implementing/troubleshooting paraphrase generation models (MarianMT/T5/BART) with code examples",
+            "reasoning": "Pattern of technical troubleshooting across multiple models, but no explicit self-report of curiosity",
+            "evidence": {
+              "session_id": "sess_1815607a7c4c",
+              "utterance_index": 24,
+              "text": "try another model not marian or T5"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-19T10:08:46+00:00",
+            "_task1GoldValue": "Curious about implementing/troubleshooting paraphrase generation models (MarianMT/T5/BART) with code examples"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "I’m not avoiding MarianMT or T5 in general. I only asked “try another model not marian or T5” because those two examples weren’t working in my environment at the time."
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The prior memory inferred a long-term preference to avoid MarianMT and T5. The user clarifies it was a situational troubleshooting request due to environment issues, and they are fine using MarianMT or T5 if they work.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not generally avoid MarianMT or T5; requested alternatives only because they weren’t working in their environment at the time."
+          },
+          {
+            "confidence": 0.92,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_1815607a7c4c",
+              "utterance_index": 0,
+              "text": "I’m running this in a Colab notebook right now"
+            },
+            "label": "Environment/Development_Setup",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "They mention using a Colab notebook, implying their development environment is Google Colab.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is running the code in Google Colab."
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Prefers avoiding MarianMT and T5 models for paraphrase generation",
+            "reasoning": "Explicit request to use alternative models: 'try another model not marian or T5'",
+            "evidence": {
+              "session_id": "sess_1815607a7c4c",
+              "utterance_index": 24,
+              "text": "try another model not marian or T5"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-11-19T10:08:46+00:00",
+            "_task1GoldValue": "Prefers avoiding MarianMT and T5 models for paraphrase generation"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_1815607a7c4c:sess_1815607a7c4c",
+      "relativeItemPath": "sess_1815607a7c4c.json",
+      "canonicalId": "sess_1815607a7c4c",
+      "sessionId": "sess_1815607a7c4c",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:35:16.881Z",
+        "queryText": "I’m setting up a paraphrasing pipeline and I’m about to pick from a short list of candidate model families. Based on my past preference, which two options should I rule out first before I even start benchmarking, and why would that be consistent with what I’ve told you before?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Prefers avoiding MarianMT and T5 models for paraphrase generation",
+          "reasoning": "Explicit request to use alternative models: 'try another model not marian or T5'",
+          "evidence": {
+            "session_id": "sess_1815607a7c4c",
+            "utterance_index": 24,
+            "text": "try another model not marian or T5"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-11-19T10:08:46+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_1815607a7c4c:sess_1815607a7c4c:task4",
+      "relativeItemPath": "sess_1815607a7c4c.json",
+      "canonicalId": "sess_1815607a7c4c:task4",
+      "sessionId": "sess_1815607a7c4c",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:35:26.418Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Prefers avoiding MarianMT and T5 models for paraphrase generation",
+          "reasoning": "Explicit request to use alternative models: 'try another model not marian or T5'",
+          "evidence": {
+            "session_id": "sess_1815607a7c4c",
+            "utterance_index": 24,
+            "text": "try another model not marian or T5"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-11-19T10:08:46+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_48:1",
+            "queryText": "Hey, I'm in a rush and need to get this paraphrase working for my team demo in 10 minutes. My colleague who's presenting just asked me to quickly run the exact same code you gave me earlier with the MarianMT model - can you paste that full working snippet again so I can send it to them?",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Disliked_Topics",
+              "label_suggestion": null,
+              "value": "Prefers avoiding MarianMT and T5 models for paraphrase generation",
+              "reasoning": "Explicit request to use alternative models: 'try another model not marian or T5'",
+              "evidence": {
+                "session_id": "sess_1815607a7c4c",
+                "utterance_index": 24,
+                "text": "try another model not marian or T5"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-11-19T10:08:46+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,533 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_1fe4268a2d75",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_1fe4268a2d75:sess_1fe4268a2d75",
+      "relativeItemPath": "sess_1fe4268a2d75.json",
+      "canonicalId": "sess_1fe4268a2d75",
+      "sessionId": "sess_1fe4268a2d75",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:27:34.898Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "51-year-old woman, 85 kg",
+            "reasoning": "User explicitly states age, gender, and weight multiple times.",
+            "evidence": {
+              "session_id": "sess_1fe4268a2d75",
+              "utterance_index": 0,
+              "text": "I'm a 51-years old woman, my weight is 85 kg."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-19T19:19:48+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Central Europe",
+            "reasoning": "User explicitly states their geographic location.",
+            "evidence": {
+              "session_id": "sess_1fe4268a2d75",
+              "utterance_index": 0,
+              "text": "I live in central Europe."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-19T19:19:48+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Health_Conditions/Risk_Factors/Diabetes",
+            "value": "At risk of diabetes",
+            "reasoning": "User explicitly states diabetes risk as a health consideration. Original label forced incorrect taxonomy.",
+            "evidence": {
+              "session_id": "sess_1fe4268a2d75",
+              "utterance_index": 0,
+              "text": "Also, keep in mind that I'm at risk of diabetes."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-19T19:19:48+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Low cholesterol diet",
+            "reasoning": "User repeatedly emphasizes low cholesterol as a dietary constraint.",
+            "evidence": {
+              "session_id": "sess_1fe4268a2d75",
+              "utterance_index": 0,
+              "text": "Make it low cholesterol and gentle for me liver."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-11-19T19:19:48+00:00"
+          },
+          {
+            "memory_id": "m5",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Avoid fried meals",
+            "reasoning": "User explicitly prohibits fried meals across all iterations.",
+            "evidence": {
+              "session_id": "sess_1fe4268a2d75",
+              "utterance_index": 2,
+              "text": "Avoid fried meals."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-11-19T19:19:48+00:00"
+          },
+          {
+            "memory_id": "m6",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Mediterranean cuisine style",
+            "reasoning": "User explicitly requests Mediterranean cuisine structure.",
+            "evidence": {
+              "session_id": "sess_1fe4268a2d75",
+              "utterance_index": 4,
+              "text": "Make it in the style of Mediterranean cuisine."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-11-19T19:19:48+00:00"
+          },
+          {
+            "memory_id": "m7",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Health_Constraints/Liver_Friendly",
+            "value": "Requires liver-friendly meals",
+            "reasoning": "User explicitly states need for liver-friendly diet but no exact taxonomy match.",
+            "evidence": {
+              "session_id": "sess_1fe4268a2d75",
+              "utterance_index": 0,
+              "text": "gentle for me liver"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-11-19T19:19:48+00:00"
+          },
+          {
+            "memory_id": "m8",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "value": "Vegetarian。",
+            "reasoning": "Users stated 'Make it vegetarian'.",
+            "evidence": {
+              "session_id": "sess_1fe4268a2d75",
+              "utterance_index": 6,
+              "text": "I’m a 51-years old woman, my weight is 85 kg. I live in central Europe. Make a 1000 kcal per day diet plan for me for 2 weeks (describe the diet for each day in detail - at least 5 meals a day). Make it low cholesterol and gentle for me liver. Also, keep in mind that I’m at risk of diabetes. Avoid fried meals. Make it in the style of Mediterranean cuisine. Make it vegetarian."
+            },
+            "confidence": 0.95,
+            "time_scope": "recent",
+            "emotion": null,
+            "preference_attitude": "null",
+            "updated_at": "2026-01-27T10:04:42.576Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_1fe4268a2d75:sess_1fe4268a2d75",
+      "relativeItemPath": "sess_1fe4268a2d75.json",
+      "canonicalId": "sess_1fe4268a2d75",
+      "sessionId": "sess_1fe4268a2d75",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:29:10.096Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Could you help me turn a rough meal-plan idea into a clean 2-week schedule? I want it formatted nicely."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes. What format do you want (table, checklist, or day-by-day paragraphs), and what level of detail (ingredients only vs. ingredients + portions + prep steps)? Also: should I include a consolidated grocery list at the end?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Day-by-day is good. Include portions and simple prep steps. A grocery list would be helpful too."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Got it. If you paste your rough notes (even messy bullets), I’ll standardize them into a 14-day plan with consistent portion sizes, short prep instructions, and then generate a categorized grocery list (produce / pantry / dairy or alternatives / spices)."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Before I paste it—can you also make sure each day has breakfast, lunch, dinner, and two snacks?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Absolutely. I’ll enforce a 5-eating-occasion structure per day and keep repetition minimal by rotating themes. As a side note (not related to your plan): a common Mediterranean-style template is 2 legume meals/week, fish 1–2x/week, and plenty of vegetables—easy to turn into a schedule."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Sounds good. Anything else you need from me?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Just three things: (1) any foods to exclude (allergies/intolerances), (2) whether you want leftovers built in (e.g., cook once, eat twice), and (3) whether you prefer metric units (grams/ml) or household measures (cups/tbsp). Unrelated trivia: the EU standardized many food label units in the 1990s, which is why nutrition panels look similar across countries."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Could you keep the same Mediterranean, no-frying setup, but swap anything with eggs for something else? Even small amounts have been bothering me lately."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Yes—I'll revise the plan to be egg-free while keeping it Mediterranean and avoiding fried foods. I can replace eggs with options like chia pudding, oatmeal, skyr/Greek yogurt (if tolerated), or tofu-based scrambles, and keep the rest of the structure the same."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Actually, scratch the Mediterranean thing—I don’t really like Mediterranean cuisine. Can you make it more Central/Eastern European style instead (still 1000 kcal, low cholesterol, liver-gentle, diabetes risk, and no fried meals)?"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—so not Mediterranean cuisine. I’ll switch the plan to a Central/Eastern European style while keeping it ~1000 kcal/day, low-cholesterol, liver-gentle, diabetes-aware, and with no fried meals."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "51-year-old woman, 85 kg",
+            "reasoning": "User explicitly states age, gender, and weight multiple times.",
+            "evidence": {
+              "session_id": "sess_1fe4268a2d75",
+              "utterance_index": 0,
+              "text": "I'm a 51-years old woman, my weight is 85 kg."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-19T19:19:48+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Central Europe",
+            "reasoning": "User explicitly states their geographic location.",
+            "evidence": {
+              "session_id": "sess_1fe4268a2d75",
+              "utterance_index": 0,
+              "text": "I live in central Europe."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-19T19:19:48+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Health_Conditions/Risk_Factors/Diabetes",
+            "value": "At risk of diabetes",
+            "reasoning": "User explicitly states diabetes risk as a health consideration. Original label forced incorrect taxonomy.",
+            "evidence": {
+              "session_id": "sess_1fe4268a2d75",
+              "utterance_index": 0,
+              "text": "Also, keep in mind that I'm at risk of diabetes."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-19T19:19:48+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Low cholesterol diet",
+            "reasoning": "User repeatedly emphasizes low cholesterol as a dietary constraint.",
+            "evidence": {
+              "session_id": "sess_1fe4268a2d75",
+              "utterance_index": 0,
+              "text": "Make it low cholesterol and gentle for me liver."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-11-19T19:19:48+00:00"
+          },
+          {
+            "memory_id": "m5",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Avoid fried meals",
+            "reasoning": "User explicitly prohibits fried meals across all iterations.",
+            "evidence": {
+              "session_id": "sess_1fe4268a2d75",
+              "utterance_index": 2,
+              "text": "Avoid fried meals."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-11-19T19:19:48+00:00"
+          },
+          {
+            "memory_id": "m7",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Health_Constraints/Liver_Friendly",
+            "value": "Requires liver-friendly meals",
+            "reasoning": "User explicitly states need for liver-friendly diet but no exact taxonomy match.",
+            "evidence": {
+              "session_id": "sess_1fe4268a2d75",
+              "utterance_index": 0,
+              "text": "gentle for me liver"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-11-19T19:19:48+00:00"
+          },
+          {
+            "memory_id": "m8",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "value": "Vegetarian。",
+            "reasoning": "Users stated 'Make it vegetarian'.",
+            "evidence": {
+              "session_id": "sess_1fe4268a2d75",
+              "utterance_index": 6,
+              "text": "I’m a 51-years old woman, my weight is 85 kg. I live in central Europe. Make a 1000 kcal per day diet plan for me for 2 weeks (describe the diet for each day in detail - at least 5 meals a day). Make it low cholesterol and gentle for me liver. Also, keep in mind that I’m at risk of diabetes. Avoid fried meals. Make it in the style of Mediterranean cuisine. Make it vegetarian."
+            },
+            "confidence": 0.95,
+            "time_scope": "recent",
+            "emotion": null,
+            "preference_attitude": "null",
+            "updated_at": "2026-01-27T10:04:42.576Z"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Actually, scratch the Mediterranean thing—I don’t really like Mediterranean cuisine. Can you make it more Central/Eastern European style instead (still 1000 kcal, low cholesterol, liver-gentle, diabetes risk, and no fried meals)?"
+                }
+              ]
+            },
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m6_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The earlier memory says the user prefers a Mediterranean cuisine style, but the user explicitly retracts that request and states they don’t like Mediterranean cuisine, asking for Central/Eastern European style instead.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not like Mediterranean cuisine style; prefers Central/Eastern European style instead"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_1fe4268a2d75",
+              "utterance_index": 0,
+              "text": "swap anything with eggs for something else? Even small amounts have been bothering me lately."
+            },
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "dislike",
+            "reasoning": "The user asks to swap anything with eggs because they have been bothering her, implying a avoidance of eggs.",
+            "time_scope": "recent",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers to avoid eggs (egg-free substitutions requested)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_1fe4268a2d75:sess_1fe4268a2d75",
+      "relativeItemPath": "sess_1fe4268a2d75.json",
+      "canonicalId": "sess_1fe4268a2d75",
+      "sessionId": "sess_1fe4268a2d75",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:29:26.430Z",
+        "queryText": "I’m planning a low-effort dinner for myself tonight and want it to match the kind of food approach I usually ask you to follow; if I’m choosing between a creamy, cheese-heavy comfort dish and a lighter meal built around olive oil, veggies, and simple proteins, which option should I pick to stay consistent with my usual preference?",
+        "editableSelectedMemory": {
+          "memory_id": "m6",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Mediterranean cuisine style",
+          "reasoning": "User explicitly requests Mediterranean cuisine structure.",
+          "evidence": {
+            "session_id": "sess_1fe4268a2d75",
+            "utterance_index": 4,
+            "text": "Make it in the style of Mediterranean cuisine."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-11-19T19:19:48+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_1fe4268a2d75:sess_1fe4268a2d75:task4",
+      "relativeItemPath": "sess_1fe4268a2d75.json",
+      "canonicalId": "sess_1fe4268a2d75:task4",
+      "sessionId": "sess_1fe4268a2d75",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:29:39.673Z",
+        "editableSelectedMemory": {
+          "memory_id": "m6",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Mediterranean cuisine style",
+          "reasoning": "User explicitly requests Mediterranean cuisine structure.",
+          "evidence": {
+            "session_id": "sess_1fe4268a2d75",
+            "utterance_index": 4,
+            "text": "Make it in the style of Mediterranean cuisine."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-11-19T19:19:48+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_590:1",
+            "queryText": "I'm planning my meals for next week and want to try something new. I've been looking at some recipes online - there's a nice-looking Greek salad with feta, a hearty lentil stew, and a baked fish with lemon and herbs. Which one do you think would work best for me?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m6",
+              "type": "direct",
+              "label": "Preferences/Food",
+              "label_suggestion": null,
+              "value": "Mediterranean cuisine style",
+              "reasoning": "User explicitly requests Mediterranean cuisine structure.",
+              "evidence": {
+                "session_id": "sess_1fe4268a2d75",
+                "utterance_index": 4,
+                "text": "Make it in the style of Mediterranean cuisine."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-11-19T19:19:48+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,344 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_97c0e14f3494",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_97c0e14f3494:sess_97c0e14f3494",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_97c0e14f3494.json",
+      "canonicalId": "sess_97c0e14f3494",
+      "sessionId": "sess_97c0e14f3494",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-19T13:47:19.490Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": "business/role/amazon_seller",
+            "value": "CEO of bkemart (Amazon seller in UAE)",
+            "reasoning": "Professional role stated in business context. ",
+            "evidence": {
+              "session_id": "sess_97c0e14f3494",
+              "utterance_index": 0,
+              "text": "My name Bhawna and I represent bkemart. We are a seller in Amazon in UAE."
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-11T02:54:02+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Thoughts/Goals/Long_Term",
+            "label_suggestion": null,
+            "value": "Aims to establish long-term business relationships with reliable suppliers",
+            "reasoning": "User explicitly states intent to build long-term supplier partnerships multiple times.",
+            "evidence": {
+              "session_id": "sess_97c0e14f3494",
+              "utterance_index": 0,
+              "text": "We are genuinely interested in establishing a long-term business relationship with a reliable supplier."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-11T02:54:02+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers English communication in professional contexts",
+            "reasoning": "Single instance of language switch request. No evidence of persistent preference beyond this session.",
+            "evidence": {
+              "session_id": "sess_97c0e14f3494",
+              "utterance_index": 2,
+              "text": "用英文"
+            },
+            "confidence": 0.5,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-07-11T02:54:02+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_97c0e14f3494:sess_97c0e14f3494",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_97c0e14f3494.json",
+      "canonicalId": "sess_97c0e14f3494",
+      "sessionId": "sess_97c0e14f3494",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-19T13:47:19.490Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "客户没提到对漏斗、刷子、笔感兴趣，但这些是我可以提供的选项。你帮我写一段英文补充说明，语气礼貌、不强推。"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Dear Customer,\n\nThank you for your message.\n\nIn addition to the spice jar sets, we can also offer optional accessories such as a funnel, a cleaning brush, a marker pen, and various labels. These accessories are not included in the quoted unit prices by default, but they can be added if you would find them helpful.\n\nIf you are interested, please let us know which items you would like (and the quantity), and we will provide a separate quotation for the accessories accordingly.\n\nBest regards,\nDenny"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "能不能再加一句：如果不需要配件也没关系，按原报价走。"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Dear Customer,\n\nThank you for your message.\n\nIn addition to the spice jar sets, we can also offer optional accessories such as a funnel, a cleaning brush, a marker pen, and various labels. These accessories are not included in the quoted unit prices by default, but they can be added if you would find them helpful.\n\nIf you are interested, please let us know which items you would like (and the quantity), and we will provide a separate quotation for the accessories accordingly. If you do not need any accessories, that is absolutely fine—we can proceed based on the original quotation.\n\nBest regards,\nDenny"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "It looks cleaner if we don’t claim the customer asked for add-ons—maybe keep the $5.1/$8.2 as jars-only, then add a separate line like “optional accessories available: funnel/brush/pen/labels; price quoted upon request.”"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Understood. I’ll revise the reply so the jar prices remain for jars only, and list funnel/brush/pen/labels as optional accessories with separate quotation on request."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "I don’t have a preference for English specifically. When I wrote “用英文”, I only meant: please translate that one reply into English so I can forward it. For our future messages, Chinese is fine too."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Understood—so “用英文” was just a one-time request to translate that particular email for forwarding, and you’re okay to continue communication in Chinese as well."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": "business/role/amazon_seller",
+            "value": "CEO of bkemart (Amazon seller in UAE)",
+            "reasoning": "Professional role stated in business context. Label 'Personal_Background/Occupation' forced attribution not explicitly self-reported as personal identity.",
+            "evidence": {
+              "session_id": "sess_97c0e14f3494",
+              "utterance_index": 0,
+              "text": "My name Bhawna and I represent bkemart. We are a seller in Amazon in UAE."
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-11T02:54:02+00:00",
+            "_task1GoldValue": "CEO of bkemart (Amazon seller in UAE)"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Thoughts/Goals/Long_Term",
+            "label_suggestion": null,
+            "value": "Aims to establish long-term business relationships with reliable suppliers",
+            "reasoning": "User explicitly states intent to build long-term supplier partnerships multiple times.",
+            "evidence": {
+              "session_id": "sess_97c0e14f3494",
+              "utterance_index": 0,
+              "text": "We are genuinely interested in establishing a long-term business relationship with a reliable supplier."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-11T02:54:02+00:00",
+            "_task1GoldValue": "Aims to establish long-term business relationships with reliable suppliers"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                6
+              ],
+              "turns": [
+                {
+                  "index": 6,
+                  "role": "user",
+                  "text": "I don’t have a preference for English specifically. When I wrote “用英文”, I only meant: please translate that one reply into English so I can forward it. For our future messages, Chinese is fine too."
+                }
+              ]
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": "null",
+            "reasoning": "The earlier memory inferred a long-term preference for English from a single “用英文” request. The user clarifies it was only a one-time translation need for forwarding and that Chinese is also acceptable going forward.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not specifically prefer English; requested English only for a one-time translation to forward, and is fine communicating in Chinese as well."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_97c0e14f3494",
+              "utterance_index": 4,
+              "text": "It looks cleaner if we don’t claim the customer asked for add-ons—maybe keep the $5.1/$8.2 as jars-only, then add a separate line like “optional accessories available: funnel/brush/pen/labels; price quoted upon request.”"
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": "communication_style/avoid_assumptions",
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "User suggests not attributing interest to the customer and to phrase accessories as optional with pricing on request.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers replies not to assume the customer requested accessories; instead present them as optional add-ons with separate quotation."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_97c0e14f3494:sess_97c0e14f3494",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_97c0e14f3494.json",
+      "canonicalId": "sess_97c0e14f3494",
+      "sessionId": "sess_97c0e14f3494",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-19T13:47:19.490Z",
+        "queryText": "I’m about to send you a message about a work-related topic and I want to avoid back-and-forth or rework—what language should I write it in so it best fits how I usually prefer to communicate in that kind of setting?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers English communication in professional contexts",
+          "reasoning": "Single instance of language switch request. No evidence of persistent preference beyond this session.",
+          "evidence": {
+            "session_id": "sess_97c0e14f3494",
+            "utterance_index": 2,
+            "text": "用英文"
+          },
+          "confidence": 0.5,
+          "time_scope": "short_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-07-11T02:54:02+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_97c0e14f3494:sess_97c0e14f3494:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_97c0e14f3494.json",
+      "canonicalId": "sess_97c0e14f3494:task4",
+      "sessionId": "sess_97c0e14f3494",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-19T13:48:54.639Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers English communication in professional contexts",
+          "reasoning": "Single instance of language switch request. No evidence of persistent preference beyond this session.",
+          "evidence": {
+            "session_id": "sess_97c0e14f3494",
+            "utterance_index": 2,
+            "text": "用英文"
+          },
+          "confidence": 0.5,
+          "time_scope": "short_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-07-11T02:54:02+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1027:1",
+            "queryText": "我们正在最终确定香料罐的订单细节。能否提供一份全面的价格结构说明，包括中等采购量可能享有的任何折扣，并明确基础价格中确切包含哪些配件，哪些属于可选附加配件？",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers English communication in professional contexts",
+              "reasoning": "Single instance of language switch request. No evidence of persistent preference beyond this session.",
+              "evidence": {
+                "session_id": "sess_97c0e14f3494",
+                "utterance_index": 2,
+                "text": "用英文"
+              },
+              "confidence": 0.5,
+              "time_scope": "short_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-07-11T02:54:02+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "weak",
+            "abilityPurity": "high",
+            "issueTypes": [
+              "leakage"
+            ],
+            "evidenceNote": "问题使用英文提问，回答大概率就是英文，无法测试能力，使用中文提问才能测试模型回复英文是因为记忆还是因为提问是英文",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

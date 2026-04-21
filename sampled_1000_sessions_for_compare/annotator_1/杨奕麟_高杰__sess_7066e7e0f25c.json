@@ -1,0 +1,350 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_7066e7e0f25c",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_7066e7e0f25c:sess_7066e7e0f25c",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7066e7e0f25c.json",
+      "canonicalId": "sess_7066e7e0f25c",
+      "sessionId": "sess_7066e7e0f25c",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T09:32:47.316Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Mod/Game Content Porter since 2020",
+            "reasoning": "User explicitly states porting mods/game content since 2020 as primary activity",
+            "evidence": {
+              "session_id": "sess_7066e7e0f25c",
+              "utterance_index": 8,
+              "text": "напиши описание для любителя-разработчика который портирует модификации и контент с 2020 года"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-24T14:31:37+00:00"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "value": "Engages in porting game modifications and content as a hobby, spending significant time on it.",
+            "confidence": 0.95,
+            "evidence_text": "я портирую моды и трачу на это достаточно времени"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_7066e7e0f25c:sess_7066e7e0f25c",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7066e7e0f25c.json",
+      "canonicalId": "sess_7066e7e0f25c",
+      "sessionId": "sess_7066e7e0f25c",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:48:56.454Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "А «портфолио» обязательно должно быть списком ссылок, или можно в виде рассказа?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Можно и так, и так. Обычно лучше сочетание: короткий рассказ (что делалось, зачем, какой вклад) + ссылки/скриншоты/видео как подтверждение. Если ссылок нет, то «кейсы» в формате истории тоже работают: задача → ограничения → решение → результат."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "А как назвать раздел, если это не коммерция, а «для души»?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Часто используют: «Pet projects», «Личные проекты», «Эксперименты», «Хобби‑проекты», «R&D» или «Sandbox». Важно, чтобы название не обесценивало работу: «эксперименты» звучит нейтрально, а «для души» — более разговорно."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Что лучше: «портирование» или «адаптация»?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Зависит от смысла. «Портирование» — перенос почти напрямую (движок/платформа/версия). «Адаптация» — когда приходится менять контент/код/пайплайн под новые требования. Можно писать «портирование и адаптация», если делалось и то и другое."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Есть пример формулировки в одну строку для проекта?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Пример: «Перенёс и адаптировал контент на новый движок: переразвертка материалов, исправление коллизий, настройка освещения, упаковка и тестирование сборок». Если скажешь, что именно делалось (скрипты/материалы/модели/карты), можно точнее."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Кстати, видел новость, что где‑то в музее реставраторы по пикселям восстанавливали старую цифровую инсталляцию — это тоже похоже на «портинг», да?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Похоже по духу: там тоже «сохранение» и перенос на совместимые системы. В цифровой реставрации часто приходится эмулировать старое железо/ПО или пересобирать окружение. Это не портинг 1:1, но близко: цель — чтобы вещь снова работала и выглядела максимально аутентично."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "пока правлю план, хочу в начало вставить пару строк, что основную часть всего этого я вообще делаю по вечерам после основной работы — иначе непонятно, почему так растянулось."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Да, это хорошо объяснит темп и объём: можно аккуратно подчеркнуть, что работа шла в свободное время и поэтому выходила порциями, но при этом регулярно."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Слушай, я перечитал свой текст и понял, что там можно неправильно понять. Я не то чтобы «предпочитаю улучшать порты» — чаще всего это именно прямой перенос, чтобы оно просто работало."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Понял. То есть твой базовый подход — сначала чистый перенос без «улучшайзинга», а правки уже по необходимости?"
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Да. Я могу поправить баги, подогнать под движок, но это не про «добавлять качественные детали» ради красоты. В большинстве случаев я за прямой порт, без переработки текстур и геймплея."
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "Окей, тогда формулировка должна быть про аккуратную адаптацию/совместимость, а не про улучшение контента как цель."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Mod/Game Content Porter since 2020",
+            "reasoning": "User explicitly states porting mods/game content since 2020 as primary activity",
+            "evidence": {
+              "session_id": "sess_7066e7e0f25c",
+              "utterance_index": 8,
+              "text": "напиши описание для любителя-разработчика который портирует модификации и контент с 2020 года"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-24T14:31:37+00:00",
+            "_task1GoldValue": "Mod/Game Content Porter since 2020"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Thoughts/Goals/Long_Term",
+            "label_suggestion": null,
+            "value": "Wants to formalize modding experience into professional portfolio",
+            "reasoning": "User requests portfolio structure for 3-year modding history",
+            "evidence": {
+              "session_id": "sess_7066e7e0f25c",
+              "utterance_index": 8,
+              "text": "СОставь план всего текста... Глава №1 - Забава... Глава №6 - Автономность"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-24T14:31:37+00:00"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": "like",
+            "reasoning": "Старая память утверждала, что пользователь предпочитает «улучшенные порты» с добавлением качественных деталей. Однако пользователь прямо уточнил, что обычно он за прямой перенос и не стремится перерабатывать текстуры/геймплей ради улучшений. Обновлённая истина: пользователь чаще предпочитает прямой порт с минимальной адаптацией.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Usually prefers direct ports with minimal adaptation rather than enhancing textures/gameplay"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_7066e7e0f25c",
+              "utterance_index": 0,
+              "text": "основную часть всего этого я вообще делаю по вечерам после основной работы"
+            },
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies they do this work in the evenings after their main job, indicating they are employed elsewhere and modding is done in spare time.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Has a primary job; modding/porting work is done in evenings after it"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "value": "Engages in porting game modifications and content as a hobby, spending significant time on it.",
+            "confidence": 0.95,
+            "evidence_text": "я портирую моды и трачу на это достаточно времени",
+            "_task1GoldValue": "Engages in porting game modifications and content as a hobby, spending significant time on it."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "deepseek_reasoner_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_7066e7e0f25c:sess_7066e7e0f25c",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7066e7e0f25c.json",
+      "canonicalId": "sess_7066e7e0f25c",
+      "sessionId": "sess_7066e7e0f25c",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T14:56:34.546Z",
+        "queryText": "A client is pushing me to do a “strict 1:1” adaptation with zero tweaks, but I’m deciding how to respond and what approach to argue for based on how I usually like to handle this kind of work. What’s the core rationale I should give for choosing my preferred approach instead of a literal conversion?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers enhanced porting (adding quality details) over direct conversions",
+          "reasoning": "Implied through portfolio description of modifying textures/gameplay during ports",
+          "evidence": {
+            "session_id": "sess_7066e7e0f25c",
+            "utterance_index": 8,
+            "text": "стараюсь внести изменения в текстуры и сам игровой процесс, добавляя... качественные детали"
+          },
+          "confidence": 0.65,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-05-24T14:31:37+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_7066e7e0f25c:sess_7066e7e0f25c:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7066e7e0f25c.json",
+      "canonicalId": "sess_7066e7e0f25c:task4",
+      "sessionId": "sess_7066e7e0f25c",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T10:51:18.486Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers enhanced porting (adding quality details) over direct conversions",
+          "reasoning": "Implied through portfolio description of modifying textures/gameplay during ports",
+          "evidence": {
+            "session_id": "sess_7066e7e0f25c",
+            "utterance_index": 8,
+            "text": "стараюсь внести изменения в текстуры и сам игровой процесс, добавляя... качественные детали"
+          },
+          "confidence": 0.65,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-05-24T14:31:37+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1019:1",
+            "queryText": "Я хочу портировать несколько классических карт из They Hunger в Garry's Mod для своего нового проекта. Какой подход к этой работе ты бы мне посоветовал?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers enhanced porting (adding quality details) over direct conversions",
+              "reasoning": "Implied through portfolio description of modifying textures/gameplay during ports",
+              "evidence": {
+                "session_id": "sess_7066e7e0f25c",
+                "utterance_index": 8,
+                "text": "стараюсь внести изменения в текстуры и сам игровой процесс, добавляя... качественные детали"
+              },
+              "confidence": 0.65,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-05-24T14:31:37+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

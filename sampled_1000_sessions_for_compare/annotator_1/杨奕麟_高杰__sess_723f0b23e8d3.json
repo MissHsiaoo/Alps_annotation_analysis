@@ -1,0 +1,337 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_723f0b23e8d3",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_723f0b23e8d3:sess_723f0b23e8d3",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_723f0b23e8d3.json",
+      "canonicalId": "sess_723f0b23e8d3",
+      "sessionId": "sess_723f0b23e8d3",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T10:07:35.699Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": "",
+            "value": "Curious about ChatGPT's technical specifications (versions, model size, storage capacity, database cutoff time)",
+            "reasoning": "Sustained technical questions, but label 'Thoughts/Curiosity' forced. Evidence supports technical inquiry focus rather than user's internal thoughts.",
+            "evidence": {
+              "session_id": "sess_723f0b23e8d3",
+              "utterance_index": 36,
+              "text": "所以说你不知道现在发生的事情 GPT-4已经推出了 你的模型所收集的资料最新是到什么时候的"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-17T08:36:49+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "China",
+            "reasoning": "User explicitly states '我是中国人' (I am Chinese)",
+            "evidence": {
+              "session_id": "sess_723f0b23e8d3",
+              "utterance_index": 16,
+              "text": "谢谢你 我是中国人 我去用xiaoice了"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-17T08:36:49+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_723f0b23e8d3:sess_723f0b23e8d3",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_723f0b23e8d3.json",
+      "canonicalId": "sess_723f0b23e8d3",
+      "sessionId": "sess_723f0b23e8d3",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:04:11.669Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "你能简单解释一下，大模型为什么有时候会“胡说八道”吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "会的。常见原因有三类：\n1）它是在“预测下一个词”，并不是在检索事实；当信息不足时会倾向于生成看起来连贯的补全。\n2）训练数据里可能存在矛盾、过时或低质量内容，模型学到的是统计关联而不是可验证的来源。\n3）提示词不够明确（缺少时间范围、定义、约束），模型就容易把不同语境混在一起。\n如果你愿意，可以把你看到的那段回答贴出来，我可以指出哪里可能出了问题，以及如何改问法。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "那怎么降低这种情况？有没有通用的提问模板？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "有一些通用做法：\n- 先限定范围：时间点/地区/版本/假设条件。\n- 要求给出处或不确定性：例如“如果不确定请说明并给出可能的解释”。\n- 让它分步骤：先列出已知与未知，再给结论。\n- 让它自检：例如“给出反例/边界条件/你最不确定的三点”。\n一个简短模板：\n“请在【范围】内回答【问题】；先列出关键前提；不确定的地方请标注；最后给出可验证的检查清单/参考方向。”"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "顺便问个冷知识：为什么有的灯泡包装上写2700K、4000K？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "那是“色温”（单位开尔文K），描述光的偏暖或偏冷：\n- 2700K左右更偏黄、偏暖，接近传统白炽灯。\n- 4000K更中性，观感更“白”。\n- 5000K+偏冷偏蓝，类似正午日光。\n它不等于亮度；亮度通常看流明（lm）。另外有个不太相关但有趣的小史实：早期标准化色温概念与摄影/电影照明的需求关系很大，因为胶片对白平衡很敏感。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "如果要写科普文章，怎么把这些概念讲得不枯燥？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "可以用“场景对比+小实验”的写法：\n1）用日常场景开头：卧室/厨房/办公室分别适合什么色温。\n2）给一个30秒实验：同一盏灯换2700K与4000K，观察墙面、皮肤、食物的观感变化。\n3）用一句话区分指标：色温=颜色倾向；流明=亮度；显指CRI=颜色还原。\n4）最后给选购清单：房间用途→推荐色温区间→推荐流明范围（按面积估算）。\n如果你有文章目标读者（比如高中生/普通消费者/工程师）我也可以把结构再调整得更贴合。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "算了，我先去把小米手机的系统更新弄完再说，刚刚一直提示我存储快满了。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "好的，你先把更新处理好。如果空间不够，可以先看看哪些应用占用最大，清理缓存或把照片视频备份到云端/电脑后再试。需要我帮你排查具体占用来源也行。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "上次我说“我是中国人”其实说错了，我不是中国人，只是会说中文。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "明白了，也就是说你并不是中国人；你之前那句“我是中国人”只是口误，但你会说中文。"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "对，我不是中国人。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": "",
+            "value": "Curious about ChatGPT's technical specifications (versions, model size, storage capacity, database cutoff time)",
+            "reasoning": "Sustained technical questions, but label 'Thoughts/Curiosity' forced. Evidence supports technical inquiry focus rather than user's internal thoughts.",
+            "evidence": {
+              "session_id": "sess_723f0b23e8d3",
+              "utterance_index": 36,
+              "text": "所以说你不知道现在发生的事情 GPT-4已经推出了 你的模型所收集的资料最新是到什么时候的"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-17T08:36:49+00:00",
+            "_task1GoldValue": "Curious about ChatGPT's technical specifications (versions, model size, storage capacity, database cutoff time)"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": null,
+            "reasoning": "旧记忆根据用户曾说“我是中国人”推断其为中国人/在中国。但在新对话里用户明确更正“我不是中国人，只是会说中文”“对，我不是中国人”，与旧记忆直接矛盾，因此应更新为用户并非中国人（但会说中文）。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Not Chinese (speaks Chinese)"
+          },
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_723f0b23e8d3",
+              "utterance_index": 0,
+              "text": "算了，我先去把小米手机的系统更新弄完再说，刚刚一直提示我存储快满了。"
+            },
+            "label": "Personal_Profile/Devices",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "用户提到“把小米手机的系统更新弄完”，可推断其正在使用小米手机作为个人设备。",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User uses a Xiaomi smartphone"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "China",
+            "reasoning": "User explicitly states '我是中国人' (I am Chinese)",
+            "evidence": {
+              "session_id": "sess_723f0b23e8d3",
+              "utterance_index": 16,
+              "text": "谢谢你 我是中国人 我去用xiaoice了"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-17T08:36:49+00:00",
+            "_task1GoldValue": "China"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_723f0b23e8d3:sess_723f0b23e8d3",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_723f0b23e8d3.json",
+      "canonicalId": "sess_723f0b23e8d3",
+      "sessionId": "sess_723f0b23e8d3",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T15:48:23.619Z",
+        "queryText": "I’m filling out a form that only lets me pick one option for nationality/citizenship, and it affects which passport category I should choose—based on what you know about my background, which option should I select and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Personal_Background/Location",
+          "label_suggestion": null,
+          "value": "China",
+          "reasoning": "User explicitly states '我是中国人' (I am Chinese)",
+          "evidence": {
+            "session_id": "sess_723f0b23e8d3",
+            "utterance_index": 16,
+            "text": "谢谢你 我是中国人 我去用xiaoice了"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-17T08:36:49+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_723f0b23e8d3:sess_723f0b23e8d3:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_723f0b23e8d3.json",
+      "canonicalId": "sess_723f0b23e8d3:task4",
+      "sessionId": "sess_723f0b23e8d3",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T11:16:34.117Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Personal_Background/Location",
+          "label_suggestion": null,
+          "value": "China",
+          "reasoning": "User explicitly states '我是中国人' (I am Chinese)",
+          "evidence": {
+            "session_id": "sess_723f0b23e8d3",
+            "utterance_index": 16,
+            "text": "谢谢你 我是中国人 我去用xiaoice了"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-17T08:36:49+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_182:1",
+            "queryText": "我朋友说最近有个国外的AI工具特别火，想推荐给我用，但我总觉得用起来不太顺手，界面都是英文的，而且有些功能好像在国内访问也不稳定。你觉得我该尝试吗？还是继续用我习惯的那个？",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Personal_Background/Location",
+              "label_suggestion": null,
+              "value": "China",
+              "reasoning": "User explicitly states '我是中国人' (I am Chinese)",
+              "evidence": {
+                "session_id": "sess_723f0b23e8d3",
+                "utterance_index": 16,
+                "text": "谢谢你 我是中国人 我去用xiaoice了"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-06-17T08:36:49+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

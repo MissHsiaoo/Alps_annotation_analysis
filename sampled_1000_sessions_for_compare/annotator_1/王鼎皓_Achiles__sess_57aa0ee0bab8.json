@@ -1,0 +1,385 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_57aa0ee0bab8",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_57aa0ee0bab8:sess_57aa0ee0bab8",
+      "relativeItemPath": "sess_57aa0ee0bab8.json",
+      "canonicalId": "sess_57aa0ee0bab8",
+      "sessionId": "sess_57aa0ee0bab8",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T14:25:07.464Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "32 year old man",
+            "reasoning": "User explicitly states their age and gender.",
+            "evidence": {
+              "session_id": "sess_57aa0ee0bab8",
+              "utterance_index": 0,
+              "text": "I am a 32 year old man."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-05T21:45:05+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Possessions/Car",
+            "label_suggestion": null,
+            "value": "Owns a used car with 100,000 miles, drives a few miles daily to work and back",
+            "reasoning": "User explicitly states ownership of a high-mileage vehicle and driving habits.",
+            "evidence": {
+              "session_id": "sess_57aa0ee0bab8",
+              "utterance_index": 2,
+              "text": "I have a used car with 100,000 miles on it. I only drive a few miles a day to work and back."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-05T21:45:05+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Car/Maintenance/Inquiry",
+            "value": "Curious about car maintenance, essential items to keep, and service schedules for a high-mileage vehicle",
+            "reasoning": "User asks multiple car-related questions, but label 'Thoughts/Curiosity' is forced; evidence supports inquiry focus.",
+            "evidence": {
+              "session_id": "sess_57aa0ee0bab8",
+              "utterance_index": 6,
+              "text": "how do i know when to service my car"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-05T21:45:05+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Daily_Routine/Preparation_Time",
+            "value": "Takes an hour to get ready in the morning and an hour to prepare for bed",
+            "reasoning": "User explicitly states their morning and bedtime preparation routines.",
+            "evidence": {
+              "session_id": "sess_57aa0ee0bab8",
+              "utterance_index": 0,
+              "text": "it takes me an hour to get ready in the morning and at least an hour to get ready for bed."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-05T21:45:05+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_57aa0ee0bab8:sess_57aa0ee0bab8",
+      "relativeItemPath": "sess_57aa0ee0bab8.json",
+      "canonicalId": "sess_57aa0ee0bab8",
+      "sessionId": "sess_57aa0ee0bab8",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T13:14:47.076Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Can you explain the difference between APR and APY in simple terms?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "APR (Annual Percentage Rate) is the yearly cost of borrowing money, typically not counting the effect of compounding within the year. It’s commonly used for loans and credit cards.\n\nAPY (Annual Percentage Yield) is the yearly amount you earn (or effectively pay) after accounting for compounding. It’s commonly used for savings accounts and investments.\n\nQuick example: if a savings account advertises 5% APR but compounds monthly, the APY will be slightly higher than 5% because interest earns interest."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "So if two banks both say “5%”, what should I compare?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "For savings: compare APY, because it reflects compounding and is the best apples-to-apples number.\n\nFor borrowing: compare APR, plus also check fees (origination fees, annual fees) since those can change the real cost beyond the stated rate."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Unrelated: why do some gas stations have separate prices for cash vs credit?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Credit card payments often cost merchants processing fees (a few percent). Some stations offer a lower cash price to avoid or offset those fees, and to reduce fraud/chargeback risk. Rules vary by place and by card network, so some businesses post separate cash/credit pricing while others don’t."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Got it. Also, I heard a spacecraft once used a slingshot around a planet—what’s that about?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "That’s a gravity assist: a spacecraft flies close to a planet and “borrows” a tiny bit of the planet’s orbital momentum, changing the spacecraft’s speed and/or direction relative to the Sun. It saves fuel and can make otherwise-impossible missions feasible.\n\nExample (not about you): Voyager 2 used multiple gravity assists (Jupiter, Saturn, Uranus, Neptune) to reach the outer planets."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Quick update—my shift isn’t the 9-to-5 thing; I’ve got to be on the floor by 7 AM, so I’m trying to tighten up the whole sleep/wake routine around that."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it. If you need to be there by 7 AM, we can work backward from your drive time and morning routine to set a consistent wake-up time, then set bedtime based on how much sleep you’re aiming for plus your wind-down routine."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Quick correction from earlier: that “used car with 100,000 miles” isn’t mine anymore—I sold it. These days I don’t drive to work at all; I take the bus."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—so you no longer own the used 100,000-mile car, and you commute by bus rather than driving a few miles to work and back."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Yeah, exactly. No car right now."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "32 year old man",
+            "reasoning": "User explicitly states their age and gender.",
+            "evidence": {
+              "session_id": "sess_57aa0ee0bab8",
+              "utterance_index": 0,
+              "text": "I am a 32 year old man."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-05T21:45:05+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Car/Maintenance/Inquiry",
+            "value": "Curious about car maintenance, essential items to keep, and service schedules for a high-mileage vehicle",
+            "reasoning": "User asks multiple car-related questions, but label 'Thoughts/Curiosity' is forced; evidence supports inquiry focus.",
+            "evidence": {
+              "session_id": "sess_57aa0ee0bab8",
+              "utterance_index": 6,
+              "text": "how do i know when to service my car"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-05T21:45:05+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Daily_Routine/Preparation_Time",
+            "value": "Takes an hour to get ready in the morning and an hour to prepare for bed",
+            "reasoning": "User explicitly states their morning and bedtime preparation routines.",
+            "evidence": {
+              "session_id": "sess_57aa0ee0bab8",
+              "utterance_index": 0,
+              "text": "it takes me an hour to get ready in the morning and at least an hour to get ready for bed."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-05T21:45:05+00:00"
+          },
+          {
+            "confidence": 0.92,
+            "emotion": null,
+            "evidence": null,
+            "label": "Possessions/Car",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory says the user owns a used car with 100,000 miles and drives to work, but the user corrects this by stating they sold it and no longer drive. New truth: they currently have no car and take the bus.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not currently own the used 100,000-mile car; no car right now and commutes by bus"
+          },
+          {
+            "confidence": 0.93,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_57aa0ee0bab8",
+              "utterance_index": 0,
+              "text": "I’ve got to be on the floor by 7 AM"
+            },
+            "label": "Work/Schedule",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User indicates their work start time when describing their shift.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Needs to be at work by 7 AM"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_57aa0ee0bab8:sess_57aa0ee0bab8",
+      "relativeItemPath": "sess_57aa0ee0bab8.json",
+      "canonicalId": "sess_57aa0ee0bab8",
+      "sessionId": "sess_57aa0ee0bab8",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T09:59:26.862Z",
+        "queryText": "I’m trying to sanity-check whether it’s even worth budgeting for a big, immediate maintenance overhaul: based on what you know about my vehicle’s current wear level and my typical daily driving, what would you infer about how urgent major service is right now?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Possessions/Car",
+          "label_suggestion": null,
+          "value": "Owns a used car with 100,000 miles, drives a few miles daily to work and back",
+          "reasoning": "User explicitly states ownership of a high-mileage vehicle and driving habits.",
+          "evidence": {
+            "session_id": "sess_57aa0ee0bab8",
+            "utterance_index": 2,
+            "text": "I have a used car with 100,000 miles on it. I only drive a few miles a day to work and back."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-05T21:45:05+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_57aa0ee0bab8:sess_57aa0ee0bab8:task4",
+      "relativeItemPath": "sess_57aa0ee0bab8.json",
+      "canonicalId": "sess_57aa0ee0bab8:task4",
+      "sessionId": "sess_57aa0ee0bab8",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T11:52:42.692Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Possessions/Car",
+          "label_suggestion": null,
+          "value": "Owns a used car with 100,000 miles, drives a few miles daily to work and back",
+          "reasoning": "User explicitly states ownership of a high-mileage vehicle and driving habits.",
+          "evidence": {
+            "session_id": "sess_57aa0ee0bab8",
+            "utterance_index": 2,
+            "text": "I have a used car with 100,000 miles on it. I only drive a few miles a day to work and back."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-05T21:45:05+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_0:1",
+            "queryText": "I'm thinking about getting some work done on my car soon - maybe an oil change and a check-up. What should I prioritize given how I use it?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Possessions/Car",
+              "label_suggestion": null,
+              "value": "Owns a used car with 100,000 miles, drives a few miles daily to work and back",
+              "reasoning": "User explicitly states ownership of a high-mileage vehicle and driving habits.",
+              "evidence": {
+                "session_id": "sess_57aa0ee0bab8",
+                "utterance_index": 2,
+                "text": "I have a used car with 100,000 miles on it. I only drive a few miles a day to work and back."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-05-05T21:45:05+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

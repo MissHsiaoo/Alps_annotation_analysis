@@ -1,0 +1,291 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_40524e9e8065",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_40524e9e8065:sess_40524e9e8065",
+      "relativeItemPath": "sess_40524e9e8065.json",
+      "canonicalId": "sess_40524e9e8065",
+      "sessionId": "sess_40524e9e8065",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T11:53:36.233Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers extremely concise technical summaries (2-word style) for GitHub commits",
+            "reasoning": "User repeatedly requests simplified phrasing ('попроще summary сделай', 'в 2 слова', 'Cool update', 'еще 500 вариантов') showing strong output preference",
+            "evidence": {
+              "session_id": "sess_40524e9e8065",
+              "utterance_index": 2,
+              "text": "попроще summary сделай"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-04-06T17:15:55+00:00"
+          },
+          {
+            "memory_id": "new-memory-2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": null,
+            "value": "The user is a software developer who uses GitHub Desktop and works on code optimization (memory allocations and method implementation).",
+            "reasoning": "",
+            "evidence": null,
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-04-11T11:53:34.263Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_40524e9e8065:sess_40524e9e8065",
+      "relativeItemPath": "sess_40524e9e8065.json",
+      "canonicalId": "sess_40524e9e8065",
+      "sessionId": "sess_40524e9e8065",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T06:42:59.544Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "можешь придумать пару вариантов названия для коммита, чтобы звучало нейтрально?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Конечно. Варианты:\n1) Minor improvements\n2) Small refactor\n3) Cleanup\n4) Code tidy-up\n5) Maintenance update\n6) Internal tweaks"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "а если хочется чуть более «по делу», но всё равно коротко?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Тогда так:\n1) Perf tweaks\n2) Allocation fix\n3) API update\n4) Add overloads\n5) Optimize & extend\n6) Reduce allocations"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "ок, и как лучше: optimize или optimization?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Для коммита чаще берут глагол: \"Optimize ...\" (действие). \"Optimization\" — как существительное, звучит чуть более «отчётно». Если это заголовок в стиле imperative, то \"Optimize\" обычно лучше."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "кстати, видел новость про баг, где из-за одной лишней аллокации сервер падал?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Да, такие истории регулярно всплывают: одна небольшая аллокация в горячем месте может разогреть GC/память и привести к лавине задержек. Обычно спасают профилирование, метрики и простая проверка «что происходит на каждом запросе»."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "ок, тогда для следующего коммита: в Summary хочу что-то совсем короткое, но на английском — я потом в release notes это копирую."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Ок — сделаю коротко по-английски, чтобы удобно было вставлять в release notes."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "слушай, я тогда про \"в 2 слова\" просто прикалывался. для коммитов мне лучше обычный summary, 1 строка, но не сверхкоротко."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Понял. Тогда сделаю нормальный однострочный summary без «2 слов». Например: \"Improve allocations by placing `Zero` correctly and add extra Teleport overloads\"."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "да, вот так ок. не надо 2-word стиль."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory claims the user prefers extremely concise 2-word summaries, but the user clarifies that the '2 words' request was joking and explicitly asks for a normal one-line summary instead.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers a normal one-line GitHub commit summary rather than an extremely concise 2-word style"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_40524e9e8065",
+              "utterance_index": 0,
+              "text": "я потом в release notes это копирую."
+            },
+            "label": "Workflow/Tooling",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies their workflow includes reusing the commit Summary text for release notes.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Copies GitHub commit summaries into release notes"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_40524e9e8065:sess_40524e9e8065",
+      "relativeItemPath": "sess_40524e9e8065.json",
+      "canonicalId": "sess_40524e9e8065",
+      "sessionId": "sess_40524e9e8065",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-13T12:56:36.915Z",
+        "queryText": "I’m about to push a tiny change and need a commit message that fits my usual ultra-short style—what’s the shortest kind of summary I typically want for commits?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers extremely concise technical summaries (2-word style) for GitHub commits",
+          "reasoning": "User repeatedly requests simplified phrasing ('попроще summary сделай', 'в 2 слова', 'Cool update', 'еще 500 вариантов') showing strong output preference",
+          "evidence": {
+            "session_id": "sess_40524e9e8065",
+            "utterance_index": 2,
+            "text": "попроще summary сделай"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-04-06T17:15:55+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_40524e9e8065:sess_40524e9e8065:task4",
+      "relativeItemPath": "sess_40524e9e8065.json",
+      "canonicalId": "sess_40524e9e8065:task4",
+      "sessionId": "sess_40524e9e8065",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T03:18:20.476Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers extremely concise technical summaries (2-word style) for GitHub commits",
+          "reasoning": "User repeatedly requests simplified phrasing ('попроще summary сделай', 'в 2 слова', 'Cool update', 'еще 500 вариантов') showing strong output preference",
+          "evidence": {
+            "session_id": "sess_40524e9e8065",
+            "utterance_index": 2,
+            "text": "попроще summary сделай"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-04-06T17:15:55+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1060:1",
+            "queryText": "Смотрю на эти два варианта для коммита — 'Performance Tweak' и 'Flex Methods'. Какой больше подойдет?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers extremely concise technical summaries (2-word style) for GitHub commits",
+              "reasoning": "User repeatedly requests simplified phrasing ('попроще summary сделай', 'в 2 слова', 'Cool update', 'еще 500 вариантов') showing strong output preference",
+              "evidence": {
+                "session_id": "sess_40524e9e8065",
+                "utterance_index": 2,
+                "text": "попроще summary сделай"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2024-04-06T17:15:55+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

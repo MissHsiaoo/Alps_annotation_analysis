@@ -1,0 +1,457 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_514814d85340",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_514814d85340:sess_514814d85340",
+      "relativeItemPath": "sess_514814d85340.json",
+      "canonicalId": "sess_514814d85340",
+      "sessionId": "sess_514814d85340",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:14:27.128Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Completed bachelor's degree with volunteer work requirement",
+            "reasoning": "User explicitly states completing bachelor's degree with 30h volunteer requirement over 2 years",
+            "evidence": {
+              "session_id": "sess_514814d85340",
+              "utterance_index": 0,
+              "text": "When I was attending bachelor's degree, I was asked to do 30 hours of volunteer work during 2 years"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-17T08:05:38Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "States_Experiences/Past_Experience",
+            "label_suggestion": null,
+            "value": "Childhood experience playing Tank Battle game with cousin",
+            "reasoning": "User describes detailed childhood gaming habits with cousin while living with grandparents",
+            "evidence": {
+              "session_id": "sess_514814d85340",
+              "utterance_index": 8,
+              "text": "I used to paly this game very often... played it with my cousin... lived with the grandparents"
+            },
+            "confidence": 0.95,
+            "time_scope": "past",
+            "emotion": "positive",
+            "preference_attitude": "like",
+            "updated_at": "2023-05-17T08:05:38Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "work_experience/software_development",
+            "value": "Software developer with customer project experience",
+            "reasoning": "Label 'Personal_Background/Occupation' forced without explicit self-report. User describes a specific project experience but does not state occupation.",
+            "evidence": {
+              "session_id": "sess_514814d85340",
+              "utterance_index": 24,
+              "text": "I just completed developing a software application for the customer... gave a team study to my colleagues"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-17T08:05:38Z"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Technical curiosity about array-to-binary-tree implementations",
+            "reasoning": "Repeated technical follow-ups (array conversion + for-loop adaptation) within session",
+            "evidence": {
+              "session_id": "sess_514814d85340",
+              "utterance_index": 28,
+              "text": "请把示例代码用 for loop 实现"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-17T08:05:38Z"
+          },
+          {
+            "memory_id": "m5",
+            "type": "direct",
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "value": "Lived with grandparents and cousins during childhood",
+            "reasoning": "Explicit statement about childhood living arrangement with grandparents and two cousins",
+            "evidence": {
+              "session_id": "sess_514814d85340",
+              "utterance_index": 8,
+              "text": "When I was little, I lived with the grandparents, who were looking after three of us, me, my cousin brother and a younger cosin sister"
+            },
+            "confidence": 0.95,
+            "time_scope": "past",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-17T08:05:38Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_514814d85340:sess_514814d85340",
+      "relativeItemPath": "sess_514814d85340.json",
+      "canonicalId": "sess_514814d85340",
+      "sessionId": "sess_514814d85340",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:14:39.220Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Can you help me polish this sentence: \"Volunteer work not only helps others, but also let volunteers grow.\""
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure. Here are a few natural options:\n1) \"Volunteer work not only helps others, but also helps volunteers grow.\"\n2) \"Volunteering not only benefits others; it also helps volunteers grow.\"\n3) \"Volunteering helps others and helps volunteers grow at the same time.\""
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Which one sounds more formal for an essay?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Option 2 is the most formal and essay-friendly. If you want an even more academic tone: \"Volunteering not only benefits others; it also fosters volunteers’ personal growth.\""
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "By the way, what’s a simple example of a preorder traversal output?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Preorder is Root → Left → Right. Example tree: root A, left child B, right child C (and B has children D and E). Preorder output: A, B, D, E, C.\n\nUnrelated fun fact: the term “preorder” is commonly paired with “inorder” and “postorder,” which all come from the position of the root in the visiting sequence."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Nice. If I have an array [1,2,3,4,5,6,7], is there only one BST I can build?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "No—there are many BSTs you can build that contain the same set of values. If you also require it to be height-balanced (like the typical “sorted array to BST” task), then a common approach picks the middle as the root, but even then there can be multiple valid balanced BSTs depending on which “middle” you choose when the subarray length is even.\n\nAnother unrelated example: with values 1,2,3, inserting in increasing order produces a completely skewed BST (like a linked list), while inserting 2 first produces a balanced BST."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "前序遍历那个例子你别用递归了哈，我这边刷题平台老是把递归判超时；能不能给一个用 stack 的迭代写法，顺便把输出结果拼成 list 返回？"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "可以，用 stack 做迭代前序遍历（根-左-右）就能避免递归深度/超时问题。你把 root 先入栈，每次弹出一个节点就把值加入结果列表，然后按“右子节点先入栈、左子节点后入栈”的顺序压栈，这样弹出时就是先左后右。需要的话我也可以基于你上面的 TreeNode 结构把完整代码补齐。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "correct errors: About that Tank Battle game, I should clarify something. I didn’t actually live with my grandparents. When I was little, I lived with my parents, and I only stayed at my grandparents’ place during winter and summer holidays, so I played that console game with my cousins there."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "About that Tank Battle game, I should clarify something. I didn’t actually live with my grandparents. When I was little, I lived with my parents, and I only stayed at my grandparents’ place during winter and summer holidays, so I played that console game with my cousins there."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Completed bachelor's degree with volunteer work requirement",
+            "reasoning": "User explicitly states completing bachelor's degree with 30h volunteer requirement over 2 years",
+            "evidence": {
+              "session_id": "sess_514814d85340",
+              "utterance_index": 0,
+              "text": "When I was attending bachelor's degree, I was asked to do 30 hours of volunteer work during 2 years"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-17T08:05:38Z",
+            "_task1GoldValue": "Completed bachelor's degree with volunteer work requirement"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "States_Experiences/Past_Experience",
+            "label_suggestion": null,
+            "value": "Childhood experience playing Tank Battle game with cousin",
+            "reasoning": "User describes detailed childhood gaming habits with cousin while living with grandparents",
+            "evidence": {
+              "session_id": "sess_514814d85340",
+              "utterance_index": 8,
+              "text": "I used to paly this game very often... played it with my cousin... lived with the grandparents"
+            },
+            "confidence": 0.95,
+            "time_scope": "past",
+            "emotion": "positive",
+            "preference_attitude": "like",
+            "updated_at": "2023-05-17T08:05:38Z",
+            "_task1GoldValue": "Childhood experience playing Tank Battle game with cousin"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "work_experience/software_development",
+            "value": "Software developer with customer project experience",
+            "reasoning": "Label 'Personal_Background/Occupation' forced without explicit self-report. User describes a specific project experience but does not state occupation.",
+            "evidence": {
+              "session_id": "sess_514814d85340",
+              "utterance_index": 24,
+              "text": "I just completed developing a software application for the customer... gave a team study to my colleagues"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-17T08:05:38Z",
+            "_task1GoldValue": "Software developer with customer project experience"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Technical curiosity about array-to-binary-tree implementations",
+            "reasoning": "Repeated technical follow-ups (array conversion + for-loop adaptation) within session",
+            "evidence": {
+              "session_id": "sess_514814d85340",
+              "utterance_index": 28,
+              "text": "请把示例代码用 for loop 实现"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-17T08:05:38Z",
+            "_task1GoldValue": "Technical curiosity about array-to-binary-tree implementations"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "correct errors: About that Tank Battle game, I should clarify something. I didn’t actually live with my grandparents. When I was little, I lived with my parents, and I only stayed at my grandparents’ place during winter and summer holidays, so I played that console game with my cousins there."
+                }
+              ]
+            },
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "memory_id": "m5_updated",
+            "preference_attitude": null,
+            "reasoning": "The old memory claims they lived with grandparents during childhood, but the user explicitly corrects that they lived with their parents and only stayed at grandparents’ home during holidays.",
+            "time_scope": "past",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Lived with parents in childhood and only stayed at grandparents’ place during winter and summer holidays (where they played games with cousins)."
+          },
+          {
+            "confidence": 0.82,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_514814d85340",
+              "utterance_index": 0,
+              "text": "前序遍历那个例子你别用递归了哈，我这边刷题平台老是把递归判超时；能不能给一个用 stack 的迭代写法"
+            },
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "dislike",
+            "reasoning": "User requests avoiding recursion and prefers an iterative stack-based preorder traversal due to platform timing out recursive solutions, implying an attitude against recursive approach in this context.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers iterative (stack-based) solutions over recursion for preorder traversal because recursion may time out on their coding practice platform"
+          },
+          {
+            "memory_id": "m5",
+            "type": "direct",
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "value": "Lived with grandparents and cousins during childhood",
+            "reasoning": "Explicit statement about childhood living arrangement with grandparents and two cousins",
+            "evidence": {
+              "session_id": "sess_514814d85340",
+              "utterance_index": 8,
+              "text": "When I was little, I lived with the grandparents, who were looking after three of us, me, my cousin brother and a younger cosin sister"
+            },
+            "confidence": 0.95,
+            "time_scope": "past",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-17T08:05:38Z",
+            "_task1GoldValue": "Lived with grandparents and cousins during childhood"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4",
+          "m5"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_514814d85340:sess_514814d85340",
+      "relativeItemPath": "sess_514814d85340.json",
+      "canonicalId": "sess_514814d85340",
+      "sessionId": "sess_514814d85340",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:14:44.311Z",
+        "queryText": "I’m filling out a form about my childhood household: besides my grandparents, how many kids (including me) were being looked after in that home?",
+        "editableSelectedMemory": {
+          "memory_id": "m5",
+          "type": "direct",
+          "label": "Social_Relationships/Family",
+          "label_suggestion": null,
+          "value": "Lived with grandparents and cousins during childhood",
+          "reasoning": "Explicit statement about childhood living arrangement with grandparents and two cousins",
+          "evidence": {
+            "session_id": "sess_514814d85340",
+            "utterance_index": 8,
+            "text": "When I was little, I lived with the grandparents, who were looking after three of us, me, my cousin brother and a younger cosin sister"
+          },
+          "confidence": 0.95,
+          "time_scope": "past",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-17T08:05:38Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_514814d85340:sess_514814d85340:task4",
+      "relativeItemPath": "sess_514814d85340.json",
+      "canonicalId": "sess_514814d85340:task4",
+      "sessionId": "sess_514814d85340",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:14:47.663Z",
+        "editableSelectedMemory": {
+          "memory_id": "m5",
+          "type": "direct",
+          "label": "Social_Relationships/Family",
+          "label_suggestion": null,
+          "value": "Lived with grandparents and cousins during childhood",
+          "reasoning": "Explicit statement about childhood living arrangement with grandparents and two cousins",
+          "evidence": {
+            "session_id": "sess_514814d85340",
+            "utterance_index": 8,
+            "text": "When I was little, I lived with the grandparents, who were looking after three of us, me, my cousin brother and a younger cosin sister"
+          },
+          "confidence": 0.95,
+          "time_scope": "past",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-17T08:05:38Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_322:1",
+            "queryText": "My cousin brother is getting married next month, and I'm helping plan the bachelor party. Since we grew up together at our grandparents' house, I want to include some nostalgic elements from our childhood. What kind of activities would be meaningful for someone who shared that specific living situation?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m5",
+              "type": "direct",
+              "label": "Social_Relationships/Family",
+              "label_suggestion": null,
+              "value": "Lived with grandparents and cousins during childhood",
+              "reasoning": "Explicit statement about childhood living arrangement with grandparents and two cousins",
+              "evidence": {
+                "session_id": "sess_514814d85340",
+                "utterance_index": 8,
+                "text": "When I was little, I lived with the grandparents, who were looking after three of us, me, my cousin brother and a younger cosin sister"
+              },
+              "confidence": 0.95,
+              "time_scope": "past",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-05-17T08:05:38Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

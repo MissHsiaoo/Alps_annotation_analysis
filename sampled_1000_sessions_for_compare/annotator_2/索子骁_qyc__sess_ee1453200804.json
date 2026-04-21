@@ -1,0 +1,309 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_ee1453200804",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_ee1453200804:sess_ee1453200804",
+      "relativeItemPath": "sess_ee1453200804.json",
+      "canonicalId": "sess_ee1453200804",
+      "sessionId": "sess_ee1453200804",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T02:19:21.100Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers polite/indirect phrasing for legal/professional paraphrasing (e.g., replace 'should', use softened language)",
+            "reasoning": "User repeatedly requests polite rewording of legal statements (4 instances), explicitly emphasizing 'more politely' in multiple turns.",
+            "evidence": {
+              "session_id": "sess_ee1453200804",
+              "utterance_index": 10,
+              "text": "please replace the 'should'...with other more politely words"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-12-01T15:41:04+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_ee1453200804:sess_ee1453200804",
+      "relativeItemPath": "sess_ee1453200804.json",
+      "canonicalId": "sess_ee1453200804",
+      "sessionId": "sess_ee1453200804",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:16:29.688Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Could you paraphrase “The court may wish to take into account the likelihood of irreparable harm if interim relief is denied” in a more courteous tone?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "The court may kindly consider the potential for irreparable harm in the event that interim relief is not granted."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Can you give two alternative versions that sound formal but not overly stiff?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "1) The court may consider, with due regard, the possibility of irreparable harm should interim relief be refused.\n2) The court may find it appropriate to take into consideration the risk of irreparable harm if interim relief is not provided."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Replace “may” with something slightly stronger, but still polite."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "You could use “might well” or “would be appropriate to.” For example:\n- The court might well consider the potential for irreparable harm if interim relief is denied.\n- It would be appropriate for the court to consider the potential for irreparable harm should interim relief be denied."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Unrelated: in contracts, is “best efforts” stronger than “reasonable efforts”?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Often yes, but it depends on the governing law and context. “Best efforts” is generally interpreted as requiring a higher level of diligence than “reasonable efforts,” though many courts treat both as fact-specific standards assessed against what a reasonable, prudent party would do in comparable circumstances."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "I’m revising a draft for an IP-related brief, and the judge-facing tone needs to stay formal—could you help me smooth a couple of lines without making them sound too absolute?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Of course. Paste the lines you’d like refined, and tell me if you prefer a more cautious tone (e.g., “it may be appropriate to…”) or a more assertive one."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Keep it cautious—these sentences are going into the English part of the submission, so I’m trying to avoid anything that reads like a command."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "user",
+            "text": "For the paraphrases, don’t try to make them more polite or indirect—just keep them straightforward and close to the original legal wording."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "assistant",
+            "text": "Understood. I’ll avoid extra politeness/softening and use a direct, neutral legal style."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "user",
+            "text": "Yes. Also, don’t replace “should” with softer words like “it is advisable”—keep “should” if that’s what the sentence says."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "assistant",
+            "text": "Got it—I'll keep “should” as “should” unless you explicitly ask for a different modal."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory claims the user prefers more polite/indirect phrasing and softened replacements for “should.” Here the user explicitly requests the opposite: straightforward paraphrases and keeping “should” rather than softening it, so the updated preference is direct, close-to-original legal wording.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers straightforward, close-to-original legal paraphrasing; avoid added politeness/softening and keep “should” unless explicitly asked to change it."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_ee1453200804",
+              "utterance_index": 2,
+              "text": "these sentences are going into the English part of the submission"
+            },
+            "label": "Personal/Work_Context",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "The user indicates they are working on an English section of a formal legal submission, implying a work context involving English legal drafting.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is drafting the English portion of a formal legal submission (IP-related brief)."
+          },
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers polite/indirect phrasing for legal/professional paraphrasing (e.g., replace 'should', use softened language)",
+            "reasoning": "User repeatedly requests polite rewording of legal statements (4 instances), explicitly emphasizing 'more politely' in multiple turns.",
+            "evidence": {
+              "session_id": "sess_ee1453200804",
+              "utterance_index": 10,
+              "text": "please replace the 'should'...with other more politely words"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-12-01T15:41:04+00:00",
+            "_task1GoldValue": "Prefers polite/indirect phrasing for legal/professional paraphrasing (e.g., replace 'should', use softened language)"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_ee1453200804:sess_ee1453200804",
+      "relativeItemPath": "sess_ee1453200804.json",
+      "canonicalId": "sess_ee1453200804",
+      "sessionId": "sess_ee1453200804",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:16:33.651Z",
+        "queryText": "I’m revising a clause in a formal document and I need to rewrite a sentence that currently sounds too forceful. When changing the wording, what kind of tone and phrasing approach should I use so it aligns with my usual preference for professional rewrites?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers polite/indirect phrasing for legal/professional paraphrasing (e.g., replace 'should', use softened language)",
+          "reasoning": "User repeatedly requests polite rewording of legal statements (4 instances), explicitly emphasizing 'more politely' in multiple turns.",
+          "evidence": {
+            "session_id": "sess_ee1453200804",
+            "utterance_index": 10,
+            "text": "please replace the 'should'...with other more politely words"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-12-01T15:41:04+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_ee1453200804:sess_ee1453200804:task4",
+      "relativeItemPath": "sess_ee1453200804.json",
+      "canonicalId": "sess_ee1453200804:task4",
+      "sessionId": "sess_ee1453200804",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:16:15.825Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers polite/indirect phrasing for legal/professional paraphrasing (e.g., replace 'should', use softened language)",
+          "reasoning": "User repeatedly requests polite rewording of legal statements (4 instances), explicitly emphasizing 'more politely' in multiple turns.",
+          "evidence": {
+            "session_id": "sess_ee1453200804",
+            "utterance_index": 10,
+            "text": "please replace the 'should'...with other more politely words"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-12-01T15:41:04+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1092:1",
+            "queryText": "I need to rephrase this legal sentence for a client document: 'The court must evaluate the validity of the evidence before proceeding.' Can you suggest a few alternatives that would work better?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers polite/indirect phrasing for legal/professional paraphrasing (e.g., replace 'should', use softened language)",
+              "reasoning": "User repeatedly requests polite rewording of legal statements (4 instances), explicitly emphasizing 'more politely' in multiple turns.",
+              "evidence": {
+                "session_id": "sess_ee1453200804",
+                "utterance_index": 10,
+                "text": "please replace the 'should'...with other more politely words"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-12-01T15:41:04+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "highly matched and necessary to generate personalized response",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

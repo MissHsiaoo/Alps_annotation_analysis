@@ -1,0 +1,375 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_fa9cc6ea9590",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_fa9cc6ea9590:sess_fa9cc6ea9590",
+      "relativeItemPath": "sess_fa9cc6ea9590.json",
+      "canonicalId": "sess_fa9cc6ea9590",
+      "sessionId": "sess_fa9cc6ea9590",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T11:03:08.343Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "value": "Germany",
+            "reasoning": "User explicitly mentions supermarket experiences in Germany.",
+            "evidence": {
+              "session_id": "sess_fa9cc6ea9590",
+              "utterance_index": 10,
+              "text": "Most of the supermarket especially in Germany, the sports drink contain sugar excessively compared to the actual electrolytes!"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-27T14:05:57.319Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "activity_constraints/hydration_management",
+            "value": "Frequent urination during sports matches due to hydration needs",
+            "reasoning": "User explicitly states difficulty managing toilet breaks during matches when hydrating.",
+            "evidence": {
+              "session_id": "sess_fa9cc6ea9590",
+              "utterance_index": 8,
+              "text": "But drinking a lot of fluid makes more urge to urinate... It may not be possible always to continuously take toilet break during a match!"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-03-06T20:50:16+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Avoids sports drinks with excessive sugar",
+            "reasoning": "User explicitly criticizes high sugar content in German sports drinks.",
+            "evidence": {
+              "session_id": "sess_fa9cc6ea9590",
+              "utterance_index": 10,
+              "text": "Most of the supermarket especially in Germany, the sports drink contain sugar excessively compared to the actual electrolytes!"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-03-06T20:50:16+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about hydration strategies and physiological effects (dehydration symptoms, electrolyte balance, urination trade-offs)",
+            "reasoning": "Multiple follow-ups on hydration mechanics, physiological impacts, and practical constraints indicate sustained technical curiosity.",
+            "evidence": {
+              "session_id": "sess_fa9cc6ea9590",
+              "utterance_index": 6,
+              "text": "What connection does it have with blackout or vision loss... during or after sport?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-06T20:50:16+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_fa9cc6ea9590:sess_fa9cc6ea9590",
+      "relativeItemPath": "sess_fa9cc6ea9590.json",
+      "canonicalId": "sess_fa9cc6ea9590",
+      "sessionId": "sess_fa9cc6ea9590",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T09:01:47.895Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "If I don’t want sugary sports drinks, what’s a simple electrolyte option I can mix at home?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "A simple homemade option is: 500 ml water + a pinch of table salt (about 1/16–1/8 tsp) + a squeeze of lemon/lime. If you want a bit of carbohydrate for longer sessions, add 1–2 tsp sugar or honey (optional). If you’re sweating a lot, you can scale to 1 liter water with 1/4 tsp salt.\n\nIf you want it more “precise,” aim mainly for sodium: many endurance mixes target roughly 300–700 mg sodium per liter depending on heat/sweat rate."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Would magnesium or potassium matter here, or is sodium the main thing?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "For most sport hydration, sodium is the key electrolyte because it’s the main one lost in sweat and it helps retain fluid. Potassium matters too, but typical diets cover it well; adding a splash of orange juice can contribute some potassium if you like. Magnesium loss in sweat is usually smaller, and taking a lot at once can upset the stomach.\n\nA practical approach: prioritize sodium in the drink, and get potassium/magnesium from food around training (e.g., bananas, yogurt, nuts, leafy greens)."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "I’ve heard about a cycling team that used rice cakes and salted water instead of gels—does that actually work?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "It can work, depending on intensity and logistics. Rice cakes provide easily digested carbs; salted water covers sodium/fluid. Many teams have used “real food” fueling in long events because it’s cheap, customizable, and sometimes easier on the gut. The tradeoff is you need to manage portioning, packaging, and consistent intake—gels are just more convenient.\n\nAs a rough benchmark for endurance efforts, athletes often target ~30–60 g carbs/hour (sometimes higher with training) plus sodium and fluids matched to sweat losses."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Those “low sugar” electrolyte tabs you mentioned—if I grab them from dm or Rossmann and mix one into my bottle, is that enough for a 2–3 hour cricket match, or do I need more than one?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "For a 2–3 hour cricket match, one tablet in a standard bottle may or may not be enough—it depends mainly on your sweat rate, the heat/humidity, and the tablet’s sodium content. As a practical approach: start with 1 tablet in ~500–750 ml water and see how you feel (cramps, lightheadedness, headache, unusually dark urine later can suggest you needed more). In hotter conditions or if you sweat heavily, you may benefit from a second serving spaced across the match rather than making it very concentrated at once. Also check the label for sodium per serving; many “fitness” tabs are relatively low compared to what you lose in sweat."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "I think I sounded too harsh earlier. I don’t actually avoid sports drinks just because they have sugar—during long matches I still use them if they work. My point was only that many German supermarket options are *more sugary than necessary* compared to the electrolytes, so I prefer low-sugar ones or I dilute them."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—so it’s not that you avoid sports drinks altogether. You’ll still use them for longer play, but you try to keep the sugar reasonable (low-sugar versions or diluting), because a lot of the common supermarket ones in Germany are sweeter than they need to be for the electrolyte benefit."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "value": "Germany",
+            "reasoning": "User explicitly mentions supermarket experiences in Germany.",
+            "evidence": {
+              "session_id": "sess_fa9cc6ea9590",
+              "utterance_index": 10,
+              "text": "Most of the supermarket especially in Germany, the sports drink contain sugar excessively compared to the actual electrolytes!"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-27T14:05:57.319Z",
+            "_task1GoldValue": "Germany"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "activity_constraints/hydration_management",
+            "value": "Frequent urination during sports matches due to hydration needs",
+            "reasoning": "User explicitly states difficulty managing toilet breaks during matches when hydrating.",
+            "evidence": {
+              "session_id": "sess_fa9cc6ea9590",
+              "utterance_index": 8,
+              "text": "But drinking a lot of fluid makes more urge to urinate... It may not be possible always to continuously take toilet break during a match!"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-03-06T20:50:16+00:00",
+            "_task1GoldValue": "Frequent urination during sports matches due to hydration needs"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about hydration strategies and physiological effects (dehydration symptoms, electrolyte balance, urination trade-offs)",
+            "reasoning": "Multiple follow-ups on hydration mechanics, physiological impacts, and practical constraints indicate sustained technical curiosity.",
+            "evidence": {
+              "session_id": "sess_fa9cc6ea9590",
+              "utterance_index": 6,
+              "text": "What connection does it have with blackout or vision loss... during or after sport?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-06T20:50:16+00:00",
+            "_task1GoldValue": "Curious about hydration strategies and physiological effects (dehydration symptoms, electrolyte balance, urination trade-offs)"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Food",
+            "memory_id": "m3_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The old memory claims the user avoids sports drinks with excessive sugar. The user clarifies they do not avoid sports drinks outright; they still use them when needed but prefer low-sugar options or dilution due to many being overly sugary relative to electrolytes.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Doesn’t avoid sports drinks entirely; prefers low-sugar options or dilutes sugary sports drinks because many are sweeter than necessary."
+          },
+          {
+            "confidence": 0.62,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_fa9cc6ea9590",
+              "utterance_index": 0,
+              "text": "if I grab them from dm or Rossmann and mix one into my bottle"
+            },
+            "label": "Preferences/Shopping",
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "Mentioning specific German drugstore chains as the place they would buy electrolyte tabs implies these are their go-to stores for such purchases.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Likely shops for health/sports hydration items at dm or Rossmann"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_fa9cc6ea9590:sess_fa9cc6ea9590",
+      "relativeItemPath": "sess_fa9cc6ea9590.json",
+      "canonicalId": "sess_fa9cc6ea9590",
+      "sessionId": "sess_fa9cc6ea9590",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:15:58.643Z",
+        "queryText": "I’m packing for a long workout and can only bring one ready-to-drink option: either a typical store-bought electrolyte beverage or just water plus electrolyte tablets I can mix myself. Given my past stance on what usually matters most in those bottled options, which choice would I most likely make, and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Avoids sports drinks with excessive sugar",
+          "reasoning": "User explicitly criticizes high sugar content in German sports drinks.",
+          "evidence": {
+            "session_id": "sess_fa9cc6ea9590",
+            "utterance_index": 10,
+            "text": "Most of the supermarket especially in Germany, the sports drink contain sugar excessively compared to the actual electrolytes!"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-03-06T20:50:16+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_fa9cc6ea9590:sess_fa9cc6ea9590:task4",
+      "relativeItemPath": "sess_fa9cc6ea9590.json",
+      "canonicalId": "sess_fa9cc6ea9590:task4",
+      "sessionId": "sess_fa9cc6ea9590",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:11:12.334Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Avoids sports drinks with excessive sugar",
+          "reasoning": "User explicitly criticizes high sugar content in German sports drinks.",
+          "evidence": {
+            "session_id": "sess_fa9cc6ea9590",
+            "utterance_index": 10,
+            "text": "Most of the supermarket especially in Germany, the sports drink contain sugar excessively compared to the actual electrolytes!"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-03-06T20:50:16+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_604:1",
+            "queryText": "I'm looking at different options for staying hydrated during my next cricket match. I've seen some electrolyte tablets, coconut water, and a few other things at the store. Which one would you actually recommend I try?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Preferences/Food",
+              "label_suggestion": null,
+              "value": "Avoids sports drinks with excessive sugar",
+              "reasoning": "User explicitly criticizes high sugar content in German sports drinks.",
+              "evidence": {
+                "session_id": "sess_fa9cc6ea9590",
+                "utterance_index": 10,
+                "text": "Most of the supermarket especially in Germany, the sports drink contain sugar excessively compared to the actual electrolytes!"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2024-03-06T20:50:16+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

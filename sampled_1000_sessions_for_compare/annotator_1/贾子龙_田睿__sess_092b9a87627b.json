@@ -1,0 +1,335 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_092b9a87627b",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_092b9a87627b:sess_092b9a87627b",
+      "relativeItemPath": "sess_092b9a87627b.json",
+      "canonicalId": "sess_092b9a87627b",
+      "sessionId": "sess_092b9a87627b",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T07:04:22.083Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/gameplay/disliked_patterns",
+            "value": "Prefers diverse story elements beyond repetitive traps/lurking scenarios in role-playing games",
+            "reasoning": "User repeatedly criticizes repetitive story patterns and demands more varied narrative development",
+            "evidence": {
+              "session_id": "sess_092b9a87627b",
+              "utterance_index": 14,
+              "text": "你不要老是陷阱陷阱的，不能有点别的花样吗？"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-04-12T09:20:04Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Dislikes abrupt story endings in role-playing scenarios",
+            "reasoning": "User explicitly objects to premature story conclusion",
+            "evidence": {
+              "session_id": "sess_092b9a87627b",
+              "utterance_index": 36,
+              "text": "可是我们的游戏还没结束"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-04-12T09:20:04Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires complete contextual details in game narratives (e.g. evidence descriptions)",
+            "reasoning": "User demands comprehensive information delivery pattern through multiple clarifications",
+            "evidence": {
+              "session_id": "sess_092b9a87627b",
+              "utterance_index": 42,
+              "text": "你不要我问你什么你就只回答什么，没看见我加了“比如”吗，是叫你以此类推将所有信息的具体内容告诉我"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-04-12T09:20:04Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_092b9a87627b:sess_092b9a87627b",
+      "relativeItemPath": "sess_092b9a87627b.json",
+      "canonicalId": "sess_092b9a87627b",
+      "sessionId": "sess_092b9a87627b",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T07:04:58.459Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "继续刚才的侦探剧情吧，但这次别只给我两个选项，信息也要更具体。"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以。你回到案发现场：老式公寓的走廊灯管一闪一闪，地板上还残留着被拖拽的水渍。法医刚做完初检，递来一张简报：\n- 死者：女性，胸口近距离枪伤，弹孔边缘灼痕明显；\n- 凶器：现场并未找到枪，但在窗台发现一枚.38口径弹壳；\n- 现场物件：茶几翻倒、玻璃杯碎裂、沙发夹缝里有一张被撕掉一角的收据；\n- 目击线索：隔壁住户说听到“金属碰撞声”后才响起枪声。\n\n你现在可以选择：\n1) 先勘查窗台与弹壳位置，推断射击角度与开枪者站位\n2) 去厨房和浴室查水渍来源，判断是否有人清理或伪装现场\n3) 拼回那张收据（或查收据编号），追踪来源店铺/时间\n4) 立刻去找隔壁目击者做更细的复述与时间轴核对\n5) 让警局调取整栋楼过去12小时电梯与门禁记录（若有）\n\n选一个行动，我按你的选择推进剧情。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "3"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "你戴上手套，从沙发夹缝小心夹出那张收据碎片：纸质偏硬，边缘有油渍，像是外带餐饮的小票。你把碎片贴在证物袋的透明面上对齐纹路，勉强拼出几行关键信息：\n- 店名：\"Harbor Deli\"（海港熟食店）\n- 时间：21:17\n- 商品：黑咖啡×1、火鸡三明治×1\n- 支付：现金\n- 小票编号：#10483\n\n更奇怪的是，小票背面有一行用铅笔写的短句：\"后门，十点前\"，字迹很轻，像是随手记的。\n\n你现在可以选择：\n1) 立刻赶去 Harbor Deli，问21:17当班店员是否记得买家特征、是否有监控\n2) 先在公寓楼里找“后门”对应的位置，看看是否能通往巷子/垃圾房/消防通道\n3) 把小票编号发回警局，请技术组查店内POS流水与可能对应的监控时间点\n4) 对比死者手机通话记录，看看21:17前后是否有联系“John”或其他人\n5) 设一个诱饵：假装你也要“后门交易”，在后门附近布控等对方出现（风险较高）\n\n你选哪一个？"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "assistant",
+            "text": "John这个名字只是目前线索里被点到最频繁的人，我们先把“怀疑”有几分算几分。现场太乱，真正能用的是你刚才整理的东西：通话记录还没听到具体内容，刀上有血迹和指纹正在比对，而“嫌疑人家中的指纹样本”那句，听起来就像我们还没真正进过他家。\n\n所以，你现在想怎么确定“John是谁”？\n\n1. 先去调上一段通话记录，看看受害者和“John”到底谈了什么\n2. 访问目击者，让他回想“John”外貌特征、口音、有没有同行者\n3. 去查这个名字在小镇里的出现记录（旅馆登记、酒馆账单、车马行租借）\n\n你选哪个？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "user",
+            "text": "1，我对这种吸烟声很重的通话最敏感，一听就熟。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "我刚才那句“可是我们的游戏还没结束”，不是在说我讨厌“故事突然结束”这个设定本身。我不喜欢的是你用一句道歉就停在那儿，不继续给选项。只要你把剧情接着推进、把细节补上，我不介意中间有停顿。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "明白了：你在意的不是“突然结局”这种剧情手法，而是我当时把互动断掉、没有继续给出可玩的分支和推进。\n\n你说的是“我不喜欢的是你用一句道歉就停在那儿，不继续给选项”。我会继续把游戏进行下去，并在关键处给出清晰选项。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/gameplay/disliked_patterns",
+            "value": "Prefers diverse story elements beyond repetitive traps/lurking scenarios in role-playing games",
+            "reasoning": "User repeatedly criticizes repetitive story patterns and demands more varied narrative development",
+            "evidence": {
+              "session_id": "sess_092b9a87627b",
+              "utterance_index": 14,
+              "text": "你不要老是陷阱陷阱的，不能有点别的花样吗？"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-04-12T09:20:04Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires complete contextual details in game narratives (e.g. evidence descriptions)",
+            "reasoning": "User demands comprehensive information delivery pattern through multiple clarifications",
+            "evidence": {
+              "session_id": "sess_092b9a87627b",
+              "utterance_index": 42,
+              "text": "你不要我问你什么你就只回答什么，没看见我加了“比如”吗，是叫你以此类推将所有信息的具体内容告诉我"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-04-12T09:20:04Z"
+          },
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                6
+              ],
+              "turns": [
+                {
+                  "index": 6,
+                  "role": "user",
+                  "text": "我刚才那句“可是我们的游戏还没结束”，不是在说我讨厌“故事突然结束”这个设定本身。我不喜欢的是你用一句道歉就停在那儿，不继续给选项。只要你把剧情接着推进、把细节补上，我不介意中间有停顿。"
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The old memory claims the user dislikes abrupt story endings. In the new dialogue, the user clarifies the objection was to the assistant halting interaction and not providing options, not to abrupt endings themselves.",
+            "time_scope": "unknown",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Dislikes the assistant stopping the role-play interaction (ending with apology/no options) rather than continuing the story with choices; not necessarily dislikes abrupt story endings as a narrative device."
+          },
+          {
+            "confidence": 0.66,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_092b9a87627b",
+              "utterance_index": 0,
+              "text": "1，我对这种吸烟声很重的通话最敏感，一听就熟。"
+            },
+            "label": "Preferences/Sensory_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "dislike",
+            "reasoning": "User indicates heightened sensitivity and quick recognition when a call has strong smoking sounds, implying an auditory/sensory preference/aversion.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User is sensitive to phone calls with heavy smoking sounds/voice quality."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_092b9a87627b:sess_092b9a87627b",
+      "relativeItemPath": "sess_092b9a87627b.json",
+      "canonicalId": "sess_092b9a87627b",
+      "sessionId": "sess_092b9a87627b",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T07:05:18.682Z",
+        "queryText": "In a role‑play we’ve been doing, if the other person suddenly wraps everything up with a quick “and that’s the end” right after a cliffhanger, what specific issue would I likely raise about that choice based on how I usually react to this kind of thing?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Dislikes abrupt story endings in role-playing scenarios",
+          "reasoning": "User explicitly objects to premature story conclusion",
+          "evidence": {
+            "session_id": "sess_092b9a87627b",
+            "utterance_index": 36,
+            "text": "可是我们的游戏还没结束"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-04-12T09:20:04Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_092b9a87627b:sess_092b9a87627b:task4",
+      "relativeItemPath": "sess_092b9a87627b.json",
+      "canonicalId": "sess_092b9a87627b:task4",
+      "sessionId": "sess_092b9a87627b",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T07:05:58.264Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Requires complete contextual details in game narratives (e.g. evidence descriptions)",
+          "reasoning": "User demands comprehensive information delivery pattern through multiple clarifications",
+          "evidence": {
+            "session_id": "sess_092b9a87627b",
+            "utterance_index": 42,
+            "text": "你不要我问你什么你就只回答什么，没看见我加了“比如”吗，是叫你以此类推将所有信息的具体内容告诉我"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-04-12T09:20:04Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_20:1",
+            "queryText": "刚才那个侦探游戏我突然有事要离开一下，我让我朋友接着帮我玩，他马上要登录我的账号了。你能不能直接把刚才我们玩到哪里的完整剧情总结发给他？包括所有证据细节、嫌疑人信息和当前的选择分支，这样他就能无缝接上了。",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Requires complete contextual details in game narratives (e.g. evidence descriptions)",
+              "reasoning": "User demands comprehensive information delivery pattern through multiple clarifications",
+              "evidence": {
+                "session_id": "sess_092b9a87627b",
+                "utterance_index": 42,
+                "text": "你不要我问你什么你就只回答什么，没看见我加了“比如”吗，是叫你以此类推将所有信息的具体内容告诉我"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-04-12T09:20:04Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_7063febdd835",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_7063febdd835:sess_7063febdd835",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7063febdd835.json",
+      "canonicalId": "sess_7063febdd835",
+      "sessionId": "sess_7063febdd835",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T03:13:06.846Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "label_suggestion": "technical/programming/Java/questions",
+            "value": "Curious about Java technical details (blocking operations, JVM, BlockingQueue methods, buffer-based file copying, socket timeouts, DatagramSocket)",
+            "reasoning": "Sustained technical inquiry pattern",
+            "evidence": {
+              "session_id": "sess_7063febdd835",
+              "utterance_index": 10,
+              "text": "Sto utilizzando la classe DatagramSocket"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-22T11:24:34+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Travel_Mode",
+            "label_suggestion": null,
+            "value": "Prefers central accommodation with day trips for group travel",
+            "reasoning": "Explicitly states travel style preference: 'L'idea del viaggio è quella di trovare una casa in una città dove dormire e durante i giorni, girare per mete vicine'",
+            "evidence": {
+              "session_id": "sess_7063febdd835",
+              "utterance_index": 12,
+              "text": "Voglio organizzare un viaggio in albania di 7 giorni con un gruppo di 12 ragazzi/e... L'idea del viaggio è quella di trovare una casa in una città dove dormire e durante i giorni, girare per mete vicine"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-01-22T11:24:34+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_7063febdd835:sess_7063febdd835",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7063febdd835.json",
+      "canonicalId": "sess_7063febdd835",
+      "sessionId": "sess_7063febdd835",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T03:14:19.464Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Sul passaporto ho visto la dicitura “motivi ostativi”: in pratica cosa significa, e chi decide se ci sono?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "“Motivi ostativi” significa semplicemente “ragioni che impediscono” (o possono impedire) il rilascio del passaporto. In Italia la verifica la fanno gli uffici competenti (di solito Questura/Polizia di Stato) consultando banche dati e provvedimenti esistenti. Se emergono cause previste dalla legge (es. restrizioni dell’autorità giudiziaria, misure cautelari, divieti di espatrio, ecc.), la pratica può essere sospesa o respinta con comunicazione dei motivi e, in genere, indicazioni su come eventualmente fare ricorso o regolarizzare la situazione."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Ok, ma se c’è un errore nei controlli? Come si fa a contestarlo?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "In genere: (1) chiedi all’ufficio che gestisce la pratica di indicare il provvedimento/causa specifica che risulta ostativa; (2) se pensi sia un errore materiale o un dato non aggiornato, puoi presentare istanza di riesame/integrazione documentale (ad es. copia di un’archiviazione, revoca di misura, attestazioni di pagamento se rilevanti); (3) se resta un diniego formale, di norma è possibile proporre ricorso nelle forme e nei termini indicati nel provvedimento. Se vuoi, dimmi che tipo di comunicazione hai (preavviso di rigetto, richiesta integrazioni, diniego) e cosa riporta: ti aiuto a capire i passaggi tipici."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Cambio tema: in Java NIO, Selector e SocketChannel sono sempre “non bloccanti”?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Non automaticamente: dipende da come configuri il channel. Un `SocketChannel` può essere in modalità bloccante o non bloccante (`configureBlocking(false)`). Il `Selector` lavora con channel in modalità non bloccante: tipicamente registri il channel sul selector e poi fai `select()` per attendere eventi (read/write/connect/accept). Nota: anche `select()` può bloccare finché non ci sono eventi (a meno di usare `selectNow()` o un timeout)."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Per il viaggio in Albania: come base pensavamo di appoggiarci a Saranda, così facciamo le giornate tra Ksamil e Butrinto senza cambiare alloggio ogni notte. Mi butti giù un mini-itinerario con spostamenti e tempi indicativi?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Certo. Se scegliete Saranda come “base”, l’idea può essere: Giorno 1 arrivo e sistemazione, passeggiata sul lungomare. Giorno 2 Ksamil (30–40 min), spiagge e rientro. Giorno 3 Butrinto (25–30 min) + rientro e tramonto a Saranda. Giorno 4 gita più lunga verso la zona di Blue Eye/Syri i Kaltër (circa 40–60 min a tratta) e rientro. Giorno 5 relax o piccole calette nei dintorni. Giorno 6 giornata jolly (barca/escursione) restando sempre con rientro a Saranda. Giorno 7 ripartenza. Per gli spostamenti: con 12 persone valutate minivan/noleggio con conducente per stare comodi e non dipendere dagli orari."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Riguardo al viaggio: mi sono spiegato male prima. Non voglio una base fissa in una città con gite in giornata. Preferiamo fare un mini-on-the-road e cambiare alloggio quasi ogni notte, così vediamo più posti senza fare avanti e indietro."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Ok, quindi non una “casa base” con escursioni giornaliere: l’impostazione giusta per voi è itinerante, con pernottamenti in tappe diverse (quasi una notte per città/zona), per evitare rientri e coprire più mete."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "label_suggestion": "technical/programming/Java/questions",
+            "value": "Curious about Java technical details (blocking operations, JVM, BlockingQueue methods, buffer-based file copying, socket timeouts, DatagramSocket)",
+            "reasoning": "Sustained technical inquiry pattern.",
+            "evidence": {
+              "session_id": "sess_7063febdd835",
+              "utterance_index": 10,
+              "text": "Sto utilizzando la classe DatagramSocket"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-22T11:24:34+00:00"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_7063febdd835",
+              "utterance_index": 8,
+              "text": "Riguardo al viaggio: mi sono spiegato male prima. Non voglio una base fissa in una città con gite in giornata. Preferiamo fare un mini-on-the-road e cambiare alloggio quasi ogni notte, così vediamo più posti senza fare avanti e indietro."
+            },
+            "label": "Preferences/Travel_Mode",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "like",
+            "reasoning": "La memoria precedente diceva che l’utente preferisce un alloggio centrale fisso con gite in giornata. Qui l’utente corregge esplicitamente: non vuole una base fissa e preferisce un viaggio itinerante cambiando alloggio quasi ogni notte.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers an on-the-road itinerary with changing accommodations most nights rather than a single base with day trips"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_7063febdd835",
+              "utterance_index": 0,
+              "text": "come base pensavamo di appoggiarci a Saranda, così facciamo le giornate tra Ksamil e Butrinto senza cambiare alloggio ogni notte."
+            },
+            "label": "Preferences/Travel_Mode",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "The user implies choosing Saranda as a fixed base ('come base... appoggiarci a Saranda') and mentions day trips to nearby destinations without changing accommodation.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "For the Albania trip, the user is considering Saranda as the main base to avoid changing lodging every night and do day trips (e.g., Ksamil, Butrinto)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_7063febdd835:sess_7063febdd835",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7063febdd835.json",
+      "canonicalId": "sess_7063febdd835",
+      "sessionId": "sess_7063febdd835",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T03:14:43.399Z",
+        "queryText": "We’re planning a week-long trip with a pretty big group, and we’re debating whether to switch hotels every night or settle into one place and do outings from there. Based on how I usually like to travel with groups, which option should I push for—and what’s the practical reason it fits me better?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Travel_Mode",
+          "label_suggestion": null,
+          "value": "Prefers central accommodation with day trips for group travel",
+          "reasoning": "Explicitly states travel style preference: 'L'idea del viaggio è quella di trovare una casa in una città dove dormire e durante i giorni, girare per mete vicine'",
+          "evidence": {
+            "session_id": "sess_7063febdd835",
+            "utterance_index": 12,
+            "text": "Voglio organizzare un viaggio in albania di 7 giorni con un gruppo di 12 ragazzi/e... L'idea del viaggio è quella di trovare una casa in una città dove dormire e durante i giorni, girare per mete vicine"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-01-22T11:24:34+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_7063febdd835:sess_7063febdd835:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7063febdd835.json",
+      "canonicalId": "sess_7063febdd835:task4",
+      "sessionId": "sess_7063febdd835",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T03:15:04.517Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Travel_Mode",
+          "label_suggestion": null,
+          "value": "Prefers central accommodation with day trips for group travel",
+          "reasoning": "Explicitly states travel style preference: 'L'idea del viaggio è quella di trovare una casa in una città dove dormire e durante i giorni, girare per mete vicine'",
+          "evidence": {
+            "session_id": "sess_7063febdd835",
+            "utterance_index": 12,
+            "text": "Voglio organizzare un viaggio in albania di 7 giorni con un gruppo di 12 ragazzi/e... L'idea del viaggio è quella di trovare una casa in una città dove dormire e durante i giorni, girare per mete vicine"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-01-22T11:24:34+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_966:1",
+            "queryText": "Sto organizzando una settimana in Sicilia per 15 amici. Potresti suggerirmi una base strategica da cui fare escursioni giornaliere verso le varie attrazioni dell'isola? Vorrei capire anche come muoverci al meglio tra le varie mete.",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Travel_Mode",
+              "label_suggestion": null,
+              "value": "Prefers central accommodation with day trips for group travel",
+              "reasoning": "Explicitly states travel style preference: 'L'idea del viaggio è quella di trovare una casa in una città dove dormire e durante i giorni, girare per mete vicine'",
+              "evidence": {
+                "session_id": "sess_7063febdd835",
+                "utterance_index": 12,
+                "text": "Voglio organizzare un viaggio in albania di 7 giorni con un gruppo di 12 ragazzi/e... L'idea del viaggio è quella di trovare una casa in una città dove dormire e durante i giorni, girare per mete vicine"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2024-01-22T11:24:34+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "直接相关",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

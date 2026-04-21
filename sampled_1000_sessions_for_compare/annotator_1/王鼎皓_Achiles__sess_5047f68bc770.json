@@ -1,0 +1,272 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_5047f68bc770",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_5047f68bc770:sess_5047f68bc770",
+      "relativeItemPath": "sess_5047f68bc770.json",
+      "canonicalId": "sess_5047f68bc770",
+      "sessionId": "sess_5047f68bc770",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T13:58:16.367Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Dislikes receiving 2023 tech news summaries",
+            "reasoning": "User explicitly states they want new breakthroughs, not 2023 top news",
+            "evidence": {
+              "session_id": "sess_5047f68bc770",
+              "utterance_index": 0,
+              "text": "I don't want the news that are top these in 2023 I want the news that gives a new breakthrough in tech"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-01-02T18:53:50Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_5047f68bc770:sess_5047f68bc770",
+      "relativeItemPath": "sess_5047f68bc770.json",
+      "canonicalId": "sess_5047f68bc770",
+      "sessionId": "sess_5047f68bc770",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T10:21:44.935Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I keep seeing headlines that recycle last year’s “top tech stories.” How would you tell a real breakthrough from a recap?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "A recap usually summarizes known events (“best of,” “top,” “biggest trends”). A breakthrough claim tends to include: (1) a specific new result (metric, benchmark, prototype), (2) who achieved it (lab/company), (3) where it was disclosed (paper, conference, regulator filing), and (4) what changed versus prior art. If none of those are present, it’s often just commentary."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "What are quick red flags that it’s hype?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Red flags: vague superlatives (“revolutionary,” “game-changing”) without numbers; no named researchers or institutions; no link to a primary source; “could”/“might” everywhere; and comparisons to unrelated tech (e.g., calling everything “the new internet”). Also watch for recycled images and identical phrasing across many sites."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Okay. Give me a simple checklist I can apply in under a minute."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "60-second checklist:\n1) Is there a primary source link (paper, preprint, patent, dataset, standards draft)?\n2) Is the claim measurable (speedup %, error rate, energy, cost, scale)?\n3) Is the baseline stated (what it beats, and how)?\n4) Any independent confirmation (another lab, replication, benchmark suite)?\n5) Is the limitation mentioned (constraints, failures, scope)?\nIf you get 3+ “no” answers, treat it as a recap or marketing."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Tangential question: is it true the first website ever is still online?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Yes—CERN maintains the first website at info.cern.ch, which documents the original World Wide Web project."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "That list you just pulled up is all \"best assistants\" stuff again—can we not do this loop? If it can’t be pinned to Jan 2, 2024 with an actual breakthrough, toss it; I’m trying to post the *new* stuff, not evergreen productivity roundups."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Understood—I'll filter out evergreen/tool roundup results and keep only items that clearly indicate a new tech breakthrough and tie back to Jan 2, 2024 before drafting anything for Instagram."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "No—it's not that I hate 2023 tech news. I just don't want those 'Top tech stories of 2023' recap lists. If there's an actual breakthrough that happened in 2023, that's fine—just make sure it's a real new breakthrough, not a yearly roundup."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it. You’re not rejecting 2023 because of the year—you’re rejecting recap-style 'top stories of 2023' summaries. You still want genuine breakthrough items (even if they’re dated 2023), as long as they’re actual new developments rather than roundups."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The old memory says the user dislikes receiving 2023 tech news summaries in general, but the user clarifies they only dislike recap/roundup lists and are fine with real breakthroughs from 2023.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Dislikes recap-style 'Top tech news/stories of 2023' roundups; wants genuine tech breakthroughs even if they occurred in 2023."
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_5047f68bc770",
+              "utterance_index": 0,
+              "text": "That list you just pulled up is all \"best assistants\" stuff again—can we not do this loop? If it can’t be pinned to Jan 2, 2024 with an actual breakthrough, toss it; I’m trying to post the *new* stuff, not evergreen productivity roundups."
+            },
+            "label": "Preferences/Content_Filtering",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "dislike",
+            "reasoning": "User complains about recurring 'best assistants' lists and instructs to discard anything not pinned to Jan 2, 2024 and not an actual breakthrough, implying a strong filtering preference.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers to exclude evergreen 'best tools/assistants' roundup content and only keep date-tied, genuinely new tech breakthrough items (for Jan 2, 2024)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_5047f68bc770:sess_5047f68bc770",
+      "relativeItemPath": "sess_5047f68bc770.json",
+      "canonicalId": "sess_5047f68bc770",
+      "sessionId": "sess_5047f68bc770",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T08:40:25.214Z",
+        "queryText": "I’m drafting a tech update for you and I have two outline options: (A) a year-in-review style roundup of widely shared headlines, or (B) a tighter brief focused only on genuinely new developments. Which option should I avoid picking so it doesn’t clash with your stated preference?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Dislikes receiving 2023 tech news summaries",
+          "reasoning": "User explicitly states they want new breakthroughs, not 2023 top news",
+          "evidence": {
+            "session_id": "sess_5047f68bc770",
+            "utterance_index": 0,
+            "text": "I don't want the news that are top these in 2023 I want the news that gives a new breakthrough in tech"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-01-02T18:53:50Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_5047f68bc770:sess_5047f68bc770:task4",
+      "relativeItemPath": "sess_5047f68bc770.json",
+      "canonicalId": "sess_5047f68bc770:task4",
+      "sessionId": "sess_5047f68bc770",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:31:47.693Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Dislikes receiving 2023 tech news summaries",
+          "reasoning": "User explicitly states they want new breakthroughs, not 2023 top news",
+          "evidence": {
+            "session_id": "sess_5047f68bc770",
+            "utterance_index": 0,
+            "text": "I don't want the news that are top these in 2023 I want the news that gives a new breakthrough in tech"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-01-02T18:53:50Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_71:1",
+            "queryText": "Hey, I'm putting together a quick year-in-review presentation for my team about tech trends, and I'm running super late. Can you just pull together a summary of the most significant technology developments from 2023 for me? I need it in the next 10 minutes.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Disliked_Topics",
+              "label_suggestion": null,
+              "value": "Dislikes receiving 2023 tech news summaries",
+              "reasoning": "User explicitly states they want new breakthroughs, not 2023 top news",
+              "evidence": {
+                "session_id": "sess_5047f68bc770",
+                "utterance_index": 0,
+                "text": "I don't want the news that are top these in 2023 I want the news that gives a new breakthrough in tech"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2024-01-02T18:53:50Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

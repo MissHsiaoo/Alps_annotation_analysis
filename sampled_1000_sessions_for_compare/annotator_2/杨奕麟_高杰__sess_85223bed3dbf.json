@@ -1,0 +1,381 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_85223bed3dbf",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_85223bed3dbf:sess_85223bed3dbf",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_85223bed3dbf.json",
+      "canonicalId": "sess_85223bed3dbf",
+      "sessionId": "sess_85223bed3dbf",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:49:05.412Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "User describes themselves as elderly/old\n\n",
+            "reasoning": "User explicitly states being old ('старенький').",
+            "evidence": {
+              "session_id": "sess_85223bed3dbf",
+              "utterance_index": 6,
+              "text": "Да я уже старенький. Мне почти уже ничего не помогает"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-09-12T12:39:49+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "States_Experiences/Physical_State",
+            "label_suggestion": "States_Experiences/Physical_State/Pain",
+            "value": "User experiences leg pain\n\n",
+            "reasoning": "User reports leg pain but 'chronic' is inferred. ",
+            "evidence": {
+              "session_id": "sess_85223bed3dbf",
+              "utterance_index": 4,
+              "text": "Да вот беспокоят боли в ногах"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-09-12T12:39:49+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "States_Experiences/Physical_State",
+            "label_suggestion": null,
+            "value": "User reports that treatments/remedies are no longer effective for their condition",
+            "reasoning": "User reports treatments/remedies useless.",
+            "evidence": {
+              "turn_indices": [
+                6
+              ],
+              "turns": [
+                {
+                  "index": 6,
+                  "role": "user",
+                  "text": "Да я уже старенький. Мне почти уже ничего не помогает"
+                }
+              ]
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-04-17T03:47:20.054Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_85223bed3dbf:sess_85223bed3dbf",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_85223bed3dbf.json",
+      "canonicalId": "sess_85223bed3dbf",
+      "sessionId": "sess_85223bed3dbf",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:55:29.662Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Спасибо за объяснение. А чем отличается «таурин в добавках» от того, что в энергетиках?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Чаще всего это одно и то же вещество (таурин), разница не в «форме», а в контексте: в энергетиках он идёт вместе с кофеином, сахаром/подсластителями и другими стимуляторами, поэтому эффект люди обычно связывают с кофеином. В добавках таурин принимают отдельно, и там важнее дозировка и цель (например, в исследованиях встречаются диапазоны порядка 500–2000 мг в сутки, но это не универсальная рекомендация)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "А правда, что таурин обязательно «садит сердце»?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Нет, само по себе утверждение «таурин сажает сердце» некорректно: убедительных данных, что обычные дозы таурина у здоровых людей напрямую вредят сердцу, нет. Но энергетики могут быть проблемой из‑за кофеина (особенно в больших дозах или при сочетании с алкоголем/недосыпом): возможны учащённое сердцебиение, повышение давления, тревожность. Если есть заболевания сердца, аритмии или принимаются лекарства, лучше обсуждать любые добавки и стимуляторы с врачом."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Понял. Кстати, сколько кофеина обычно в банке энергетика?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Зависит от бренда и объёма, но типично: 80 мг в банке 250 мл; в 330 мл часто около 100–110 мг; в 500 мл — нередко 150–200+ мг. Иногда на этикетке указывают «мг на 100 мл» — тогда удобно умножить на объём банки."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Окей, спасибо. А какие ещё аминокислоты часто путают с «лекарствами»?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Часто путают, например: глицин (в одних странах продаётся как добавка/БАД, в других — как средство для симптоматического применения), L-карнитин (это не аминокислота, но родственный по «спортивной» репутации), аргинин, BCAA (лейцин/изолейцин/валин). Их статус и доказательная база зависят от показаний и доз.\n\nИз любопытного не про людей: в 1960‑х NASA всерьёз тестировало таурин в рационах для животных в экспериментах с длительным стрессом, но широкого «космического применения» это не получило.\nЕщё факт из другой области: в 1998 году зонд NEAR Shoemaker вышел на орбиту астероида Эрос и изучал его состав — название похоже на «энергетик», но связи, конечно, нет.\nИ совсем бытовое: в Японии есть традиционные напитки «генки-дринк», где составы иногда напоминают энергетики, хотя позиционирование бывает как тонизирующее средство."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "assistant",
+            "text": "Понимаю. Чтобы точнее подсказать по таурину, уточню пару моментов: вы его хотите попробовать именно из‑за судорог/тянущих ощущений в ногах? И вы обычно пьёте кофе или чай вечером — или стараетесь не пить, чтобы сон не сбивался?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "user",
+            "text": "Да, хочу разобраться — у меня чаще к ночи сводит икры, вот и думаю, может таурин поможет. А кофе после обеда уже не пью, иначе потом ворочаюсь."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Слушай, я тогда ляпнул про «старенький» — это я так в шутку сказал. Мне 34, просто ноги после смены ноют."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Понял, то есть вы не пожилой человек, а вам 34, и боли в ногах, скорее, связаны с нагрузкой после смены. Тогда и подход будет другой."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Да, именно. Не хочу, чтобы ты записывал меня как «пожилого»."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "States_Experiences/Physical_State",
+            "label_suggestion": "States_Experiences/Physical_State/Pain",
+            "value": "User experiences leg pain\n\n",
+            "reasoning": "User reports leg pain but 'chronic' is inferred. Label forced correction.",
+            "evidence": {
+              "session_id": "sess_85223bed3dbf",
+              "utterance_index": 4,
+              "text": "Да вот беспокоят боли в ногах"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-09-12T12:39:49+00:00",
+            "_task1GoldValue": "User experiences leg pain\n\n"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Слушай, я тогда ляпнул про «старенький» — это я так в шутку сказал. Мне 34, просто ноги после смены ноют."
+                }
+              ]
+            },
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "Ранее пользователь сказал, что он «старенький», но теперь уточняет, что это было сказано в шутку и на самом деле ему 34 года. Значит, вывод о том, что пользователь пожилой, противоречит текущей информации и должен быть обновлён.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "34 years old (not elderly)"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_85223bed3dbf",
+              "utterance_index": 9,
+              "text": "у меня чаще к ночи сводит икры"
+            },
+            "label": "States_Experiences/Physical_State",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "Фраза про то, что к ночи «сводит икры», указывает на ночные судороги в икроножных мышцах.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Nighttime calf cramps"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "States_Experiences/Physical_State",
+            "label_suggestion": null,
+            "value": "User reports that treatments/remedies are no longer effective for their condition",
+            "reasoning": "User reports treatments/remedies useless.",
+            "evidence": {
+              "turn_indices": [
+                6
+              ],
+              "turns": [
+                {
+                  "index": 6,
+                  "role": "user",
+                  "text": "Да я уже старенький. Мне почти уже ничего не помогает"
+                }
+              ]
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-04-17T03:47:20.054Z",
+            "_task1GoldValue": "User reports that treatments/remedies are no longer effective for their condition"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_85223bed3dbf:sess_85223bed3dbf",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_85223bed3dbf.json",
+      "canonicalId": "sess_85223bed3dbf",
+      "sessionId": "sess_85223bed3dbf",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:55:58.212Z",
+        "queryText": "When a doctor suggests following the exact same workout and recovery plan they give to most people, what personal factor about me is the best reason to ask for a gentler, more tailored version instead?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Identity",
+          "label_suggestion": null,
+          "value": "User describes themselves as elderly/old\n\n",
+          "reasoning": "User explicitly states being old ('старенький').",
+          "evidence": {
+            "session_id": "sess_85223bed3dbf",
+            "utterance_index": 6,
+            "text": "Да я уже старенький. Мне почти уже ничего не помогает"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-09-12T12:39:49+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_85223bed3dbf:sess_85223bed3dbf:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_85223bed3dbf.json",
+      "canonicalId": "sess_85223bed3dbf:task4",
+      "sessionId": "sess_85223bed3dbf",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:56:22.231Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Identity",
+          "label_suggestion": null,
+          "value": "User describes themselves as elderly/old\n\n",
+          "reasoning": "User explicitly states being old ('старенький').",
+          "evidence": {
+            "session_id": "sess_85223bed3dbf",
+            "utterance_index": 6,
+            "text": "Да я уже старенький. Мне почти уже ничего не помогает"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-09-12T12:39:49+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_501:1",
+            "queryText": "Мой внук хочет подарить мне абонемент в бассейн, говорит, что плавание полезно для суставов. Но я сомневаюсь — в мои-то годы не слишком ли это активное занятие? Да и в раздевалке шумно, народу много...",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Identity",
+              "label_suggestion": null,
+              "value": "User describes themselves as elderly/old\n\n",
+              "reasoning": "User explicitly states being old ('старенький').",
+              "evidence": {
+                "session_id": "sess_85223bed3dbf",
+                "utterance_index": 6,
+                "text": "Да я уже старенький. Мне почти уже ничего не помогает"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-09-12T12:39:49+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

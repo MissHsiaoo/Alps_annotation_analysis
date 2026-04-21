@@ -1,0 +1,344 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_5d70e32e346f",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_5d70e32e346f:sess_5d70e32e346f",
+      "relativeItemPath": "sess_5d70e32e346f.json",
+      "canonicalId": "sess_5d70e32e346f",
+      "sessionId": "sess_5d70e32e346f",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T15:52:25.214Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "Full name: Melnicki Vlad Herbert",
+            "reasoning": "User explicitly states their full name during an ancestry search request.",
+            "evidence": {
+              "session_id": "sess_5d70e32e346f",
+              "utterance_index": 14,
+              "text": "search my name \"Melnicki Vlad Herbert\" in the ancestry.com and familyearsch.org"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-18T11:05:56+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Demographic/Birth_Country",
+            "value": "Likely Romanian citizenship (born in Romania)",
+            "reasoning": "User mentions being born in Romania but citizenship is inferred, not explicitly stated.",
+            "evidence": {
+              "session_id": "sess_5d70e32e346f",
+              "utterance_index": 16,
+              "text": "what is my CNP number if my name i have been born in romania"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-18T11:05:56+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about family history/origin (Melnicki surname)",
+            "reasoning": "Multiple queries about name etymology and ancestry searches indicate sustained interest in family background.",
+            "evidence": {
+              "session_id": "sess_5d70e32e346f",
+              "utterance_index": 10,
+              "text": "what origin has the name Melnicki ?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-18T11:05:56+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_5d70e32e346f:sess_5d70e32e346f",
+      "relativeItemPath": "sess_5d70e32e346f.json",
+      "canonicalId": "sess_5d70e32e346f",
+      "sessionId": "sess_5d70e32e346f",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T13:43:43.457Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Can you explain the difference between a domain, a URL, and a DNS record?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure.\n\n- Domain: the human-readable name (e.g., example.com).\n- URL: the full address to a specific resource, including protocol and path (e.g., https://example.com/docs/page).\n- DNS record: an entry in DNS that tells how a domain maps to something, like an IP or another name (e.g., an A record points example.com to 93.184.216.34; a CNAME points www.example.com to example.com).\n\nIf you want, tell me a sample you have (a domain or URL), and I’ll break down its parts."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "What are the most common DNS record types and what do they do?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Common DNS record types:\n\n- A: domain → IPv4 address\n- AAAA: domain → IPv6 address\n- CNAME: alias name → canonical name (points one hostname to another)\n- MX: mail routing for a domain (which servers receive email)\n- TXT: arbitrary text (often used for SPF, DKIM, DMARC, site verification)\n- NS: which name servers are authoritative for the zone\n- SRV: service discovery (host/port for specific services)\n- SOA: zone metadata (primary NS, admin contact, serial, timers)\n\nFake example (not about you): a museum’s site might use A/AAAA for the website, MX for email, and TXT records to publish DMARC policy."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "If I change an A record, why does it take time to update everywhere?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Because of DNS caching and TTL (time to live). Resolvers (your ISP, corporate DNS, public resolvers) cache answers for up to the record’s TTL, so they may keep returning the old IP until the cache expires.\n\nAlso, some intermediate caches may ignore very low TTLs or refresh on their own schedules.\n\nFake example (not about you): when a news site moved hosting during a major event, they lowered TTL a day in advance so the cutover propagated faster."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "that list of MS-DOS commands is too short—i’m doing this from Command Prompt in the recovery screen, so give me the most useful ones for fixing Windows (like SFC/DISM/boot repair stuff), with examples"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Got it—if you’re in the Windows Recovery Environment Command Prompt, the most useful repair commands are usually:\n\n1) sfc (System File Checker)\n- Example (offline scan):\n  sfc /scannow /offbootdir=C:\\ /offwindir=C:\\Windows\n\n2) dism (Repair Windows image)\n- Example:\n  dism /Image:C:\\ /Cleanup-Image /RestoreHealth\n\n3) bootrec (Boot repair)\n- Examples:\n  bootrec /fixmbr\n  bootrec /fixboot\n  bootrec /scanos\n  bootrec /rebuildbcd\n\n4) bcdboot (Recreate boot files)\n- Example:\n  bcdboot C:\\Windows /s S: /f UEFI\n\n5) chkdsk (Disk check)\n- Example:\n  chkdsk C: /f /r\n\nIf you tell me whether your system is UEFI or Legacy BIOS (and what drive letter Windows shows up as in recovery), I can tailor the exact sequence."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "about that ancestry thing earlier—i didn’t mean that was my real full name. i just typed \"Melnicki Vlad Herbert\" as an example to show you what to search."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it. So “Melnicki Vlad Herbert” was only a placeholder/example you entered, not your actual full name."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "yes, exactly. don’t store it as my identity."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Understood—I won’t treat that as your real name."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Demographic/Birth_Country",
+            "value": "Likely Romanian citizenship (born in Romania)",
+            "reasoning": "User mentions being born in Romania but citizenship is inferred, not explicitly stated.",
+            "evidence": {
+              "session_id": "sess_5d70e32e346f",
+              "utterance_index": 16,
+              "text": "what is my CNP number if my name i have been born in romania"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-18T11:05:56+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about family history/origin (Melnicki surname)",
+            "reasoning": "Multiple queries about name etymology and ancestry searches indicate sustained interest in family background.",
+            "evidence": {
+              "session_id": "sess_5d70e32e346f",
+              "utterance_index": 10,
+              "text": "what origin has the name Melnicki ?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-18T11:05:56+00:00"
+          },
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": null,
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The old memory claims the user’s full name is Melnicki Vlad Herbert, but the user clarifies in the dialogue that this was only an example/placeholder and not their real name. Therefore the identity detail should be corrected to reflect that the name was not confirmed as their actual full name.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "\"Melnicki Vlad Herbert\" was used as an example name for a search, not confirmed as the user's real full name."
+          },
+          {
+            "confidence": 0.82,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_5d70e32e346f",
+              "utterance_index": 0,
+              "text": "i’m doing this from Command Prompt in the recovery screen"
+            },
+            "label": "Tech/Current_Task",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "They mention being in the recovery screen and using Command Prompt to fix Windows, implying an ongoing Windows repair task in WinRE.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is repairing Windows from the Windows Recovery Environment Command Prompt."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_5d70e32e346f:sess_5d70e32e346f",
+      "relativeItemPath": "sess_5d70e32e346f.json",
+      "canonicalId": "sess_5d70e32e346f",
+      "sessionId": "sess_5d70e32e346f",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T10:13:16.430Z",
+        "queryText": "I’m filling out a form that insists on “family name, given name(s), and any middle name” separately, and it will reject my entry unless it matches how I’ve previously provided it to you. What exact sequence of words should I type, and how would you split it into those fields?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Identity",
+          "label_suggestion": null,
+          "value": "Full name: Melnicki Vlad Herbert",
+          "reasoning": "User explicitly states their full name during an ancestry search request.",
+          "evidence": {
+            "session_id": "sess_5d70e32e346f",
+            "utterance_index": 14,
+            "text": "search my name \"Melnicki Vlad Herbert\" in the ancestry.com and familyearsch.org"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-04-18T11:05:56+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_5d70e32e346f:sess_5d70e32e346f:task4",
+      "relativeItemPath": "sess_5d70e32e346f.json",
+      "canonicalId": "sess_5d70e32e346f:task4",
+      "sessionId": "sess_5d70e32e346f",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:15:47.789Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Identity",
+          "label_suggestion": null,
+          "value": "Full name: Melnicki Vlad Herbert",
+          "reasoning": "User explicitly states their full name during an ancestry search request.",
+          "evidence": {
+            "session_id": "sess_5d70e32e346f",
+            "utterance_index": 14,
+            "text": "search my name \"Melnicki Vlad Herbert\" in the ancestry.com and familyearsch.org"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-04-18T11:05:56+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_141:1",
+            "queryText": "I need to apply for a Romanian passport renewal from abroad. What documents do I need to submit to the embassy, and will they require my CNP verification through the Civil Status Office of my birth county?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Identity",
+              "label_suggestion": null,
+              "value": "Full name: Melnicki Vlad Herbert",
+              "reasoning": "User explicitly states their full name during an ancestry search request.",
+              "evidence": {
+                "session_id": "sess_5d70e32e346f",
+                "utterance_index": 14,
+                "text": "search my name \"Melnicki Vlad Herbert\" in the ancestry.com and familyearsch.org"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-04-18T11:05:56+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,386 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_1a03c94ef78b",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_1a03c94ef78b:sess_1a03c94ef78b",
+      "relativeItemPath": "sess_1a03c94ef78b.json",
+      "canonicalId": "sess_1a03c94ef78b",
+      "sessionId": "sess_1a03c94ef78b",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T14:05:13.083Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Vegetarian",
+            "reasoning": "User explicitly states being vegetarian.",
+            "evidence": {
+              "session_id": "sess_1a03c94ef78b",
+              "utterance_index": 4,
+              "text": "Ich bin Vegetarier."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "neutral",
+            "updated_at": "2023-06-16T11:52:31+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "null",
+            "label_suggestion": "Preferences/Food",
+            "value": "Prefers low-carb meal pairings",
+            "reasoning": "Task-local inquiry about meal planning without explicit self-reported preference",
+            "evidence": {
+              "session_id": "sess_1a03c94ef78b",
+              "utterance_index": 6,
+              "text": "Was könnte ich dazu essen, wenn ich die Kohlenhydrate nicht weiter erhöhen will?"
+            },
+            "confidence": 0.8,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-16T11:52:31+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "null",
+            "label_suggestion": "Thoughts/Opinions/Curiosity",
+            "value": "Interested in low-calorie recipes",
+            "reasoning": "Single inquiry about recipe modification without explicit preference statement",
+            "evidence": {
+              "session_id": "sess_1a03c94ef78b",
+              "utterance_index": 8,
+              "text": "Gibt es eine Möglichkeit einen kalorienarmen Kuchen zu backen?"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": "interest",
+            "updated_at": "2023-06-16T11:52:31+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "null",
+            "label_suggestion": "Thoughts/Opinions/Curiosity",
+            "value": "Curious about low-calorie cake recipes",
+            "reasoning": "Unsupported by evidence (only single inquiry points, no repeated pattern)",
+            "evidence": {
+              "session_id": "sess_1a03c94ef78b",
+              "utterance_index": 8,
+              "text": "Gibt es eine Möglichkeit einen kalorienarmen Kuchen zu backen?"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-16T11:52:31+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_1a03c94ef78b:sess_1a03c94ef78b",
+      "relativeItemPath": "sess_1a03c94ef78b.json",
+      "canonicalId": "sess_1a03c94ef78b",
+      "sessionId": "sess_1a03c94ef78b",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T14:08:22.708Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Wenn ein Kuchen kalorienärmer sein soll: Welche Zutat macht meistens den größten Unterschied—Zucker oder Fett?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Meistens sind beide große Hebel, aber oft bringt das Reduzieren von Fett (Butter/Öl/Sahne) pro Gramm besonders viel, weil Fett ca. 9 kcal/g hat, Zucker ca. 4 kcal/g. In der Praxis ist Zucker aber häufig in größeren Mengen drin, daher kann eine Teil-Reduktion bei beiden am effektivsten sein. Typisch: einen Teil des Fetts durch Apfelmus/Joghurt ersetzen und einen Teil des Zuckers durch Erythrit/Stevia oder süße Banane/Datteln.\n\nNebenbei: In vielen Ländern müssen Nährwertangaben auf Verpackungen gerundet werden (z. B. pro Portion), wodurch „0 kcal“ nicht immer absolut null bedeutet, sondern unter einer Schwelle liegen kann."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Und wie bleibt der Kuchen dann trotzdem saftig, wenn man Öl oder Butter reduziert?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Saftigkeit bekommst du über Wasserbindung und Struktur: Apfelmus, pürierte Banane, Joghurt/Skyr, Quark oder Kürbispüree bringen Feuchtigkeit. Auch ein Teil Hafermehl oder gemahlene Mandeln kann helfen, weil sie Flüssigkeit halten. Wichtig ist außerdem: nicht zu lange backen und eher niedrigere Temperatur + Stäbchenprobe.\n\nKurioses Beispiel aus der Lebensmittelgeschichte: Das sogenannte „Wacky Cake“-Prinzip (Kuchen ohne Eier und Butter, populär in der Zeit der Rationierungen) funktioniert über Essig + Natron als Triebmittel und bleibt trotzdem erstaunlich locker, wenn die Flüssigkeitsmenge passt."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Gibt es eine schnelle Glasur, die nicht gleich so viele Kalorien draufpackt?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Ja: Eine einfache Option ist „Joghurt-Glasur“ aus (griechischem) Joghurt oder Skyr + etwas Süße (Erythrit/Pudererythrit oder wenig Honig) + Zitronensaft/Vanille. Alternativ eine dünne Zitronenglasur mit Pudererythrit und Zitronensaft (sehr sparsam auftragen). Auch ein Topping aus pürierten Beeren (ggf. kurz eingekocht) gibt Süße und Farbe ohne viel Fett.\n\nNebenbei: In Frankreich wird bei Zitronenglasuren oft eine Prise Salz empfohlen, weil das die Zitronennote verstärkt, obwohl es „süß“ ist."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Wenn ich den Kuchen mit Erythrit statt Zucker mache: Geht das auch, ohne dass er so komisch \"kühlt\"?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Ja, das geht oft. Nimm z.B. eine Mischung aus Erythrit und etwas Stevia oder Allulose, oder mahle Erythrit zu Puder, damit es sich besser löst. Auch ein Teil über reife Banane oder Apfelmus kann helfen, die Süße runder wirken zu lassen. Wenn du magst: Welche Kuchenrichtung (Schoko, Zitrone, Käsekuchen) und welche Backform/Größe?"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Kleine Korrektur zu vorhin: Ich bin doch nicht Vegetarier. Ich esse manchmal Fleisch, wollte nur an dem Abend was Vegetarisches."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Alles klar, danke für die Klarstellung. Dann war das eher eine situative Entscheidung für das Abendessen und keine grundsätzliche vegetarische Ernährung."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Genau, dauerhaft vegetarisch bin ich nicht."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "null",
+            "label_suggestion": "Preferences/Food",
+            "value": "Prefers low-carb meal pairings",
+            "reasoning": "Task-local inquiry about meal planning without explicit self-reported preference",
+            "evidence": {
+              "session_id": "sess_1a03c94ef78b",
+              "utterance_index": 6,
+              "text": "Was könnte ich dazu essen, wenn ich die Kohlenhydrate nicht weiter erhöhen will?"
+            },
+            "confidence": 0.8,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-16T11:52:31+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "null",
+            "label_suggestion": "Thoughts/Opinions/Curiosity",
+            "value": "Interested in low-calorie recipes",
+            "reasoning": "Single inquiry about recipe modification without explicit preference statement",
+            "evidence": {
+              "session_id": "sess_1a03c94ef78b",
+              "utterance_index": 8,
+              "text": "Gibt es eine Möglichkeit einen kalorienarmen Kuchen zu backen?"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": "interest",
+            "updated_at": "2023-06-16T11:52:31+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "null",
+            "label_suggestion": "Thoughts/Opinions/Curiosity",
+            "value": "Curious about low-calorie cake recipes",
+            "reasoning": "Unsupported by evidence (only single inquiry points, no repeated pattern)",
+            "evidence": {
+              "session_id": "sess_1a03c94ef78b",
+              "utterance_index": 8,
+              "text": "Gibt es eine Möglichkeit einen kalorienarmen Kuchen zu backen?"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-16T11:52:31+00:00"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "Kleine Korrektur zu vorhin: Ich bin doch nicht Vegetarier. Ich esse manchmal Fleisch, wollte nur an dem Abend was Vegetarisches."
+                }
+              ]
+            },
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "natural",
+            "reasoning": "Die frühere Erinnerung sagt, der Nutzer sei Vegetarier. Im Dialog korrigiert der Nutzer das ausdrücklich und erklärt, dass er manchmal Fleisch isst und nur an dem Abend vegetarisch essen wollte. Damit ist die neue Wahrheit: nicht dauerhaft vegetarisch, sondern gelegentlich vegetarische Mahlzeiten.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Not strictly vegetarian; sometimes eats meat (was only choosing a vegetarian meal that evening)."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_1a03c94ef78b",
+              "utterance_index": 0,
+              "text": "Wenn ich den Kuchen mit Erythrit statt Zucker mache"
+            },
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "interest",
+            "reasoning": "The user asks specifically about using erythritol instead of sugar, implying they plan to sweeten baked goods with erythritol.",
+            "time_scope": "short_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Interested in baking with erythritol as a sugar substitute"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_1a03c94ef78b:sess_1a03c94ef78b",
+      "relativeItemPath": "sess_1a03c94ef78b.json",
+      "canonicalId": "sess_1a03c94ef78b",
+      "sessionId": "sess_1a03c94ef78b",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T14:08:50.979Z",
+        "queryText": "If I’m choosing what to order at a casual restaurant and I want to stick to the way I normally eat, which category of dishes should I automatically skip even if it’s the house specialty?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Vegetarian",
+          "reasoning": "User explicitly states being vegetarian.",
+          "evidence": {
+            "session_id": "sess_1a03c94ef78b",
+            "utterance_index": 4,
+            "text": "Ich bin Vegetarier."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "neutral",
+          "updated_at": "2023-06-16T11:52:31+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_1a03c94ef78b:sess_1a03c94ef78b:task4",
+      "relativeItemPath": "sess_1a03c94ef78b.json",
+      "canonicalId": "sess_1a03c94ef78b:task4",
+      "sessionId": "sess_1a03c94ef78b",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T14:10:26.889Z",
+        "editableSelectedMemory": {
+          "memory_id": "m4",
+          "type": "indirect",
+          "label": "Thoughts/Curiosity",
+          "label_suggestion": null,
+          "value": "Curious about vegetarian meal planning with low-carb and low-calorie constraints [ERROR: Unsupported by evidence (only single inquiry points, no repeated pattern)]",
+          "reasoning": "Unsupported by evidence (only single inquiry points, no repeated pattern)",
+          "evidence": {
+            "session_id": "sess_1a03c94ef78b",
+            "utterance_index": 8,
+            "text": "Gibt es eine Möglichkeit einen kalorienarmen Kuchen zu backen?"
+          },
+          "confidence": 0.1,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-16T11:52:31+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_580:1",
+            "queryText": "Ich habe Lust auf etwas Herzhaftes mit Bohnen heute Abend, aber möchte nicht einfach wieder die gleichen Tacos machen. Was könntest du mir vorschlagen?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Food",
+              "label_suggestion": null,
+              "value": "Vegetarian",
+              "reasoning": "User explicitly states being vegetarian.",
+              "evidence": {
+                "session_id": "sess_1a03c94ef78b",
+                "utterance_index": 4,
+                "text": "Ich bin Vegetarier."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-06-16T11:52:31+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

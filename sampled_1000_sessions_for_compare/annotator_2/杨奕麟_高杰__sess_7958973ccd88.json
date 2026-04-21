@@ -1,0 +1,329 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_7958973ccd88",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_7958973ccd88:sess_7958973ccd88",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7958973ccd88.json",
+      "canonicalId": "sess_7958973ccd88",
+      "sessionId": "sess_7958973ccd88",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:32:31.174Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "label_suggestion": "technical/code_help",
+            "value": "Curious about generating images with code examples in Python",
+            "reasoning": "User requested code examples for image generation, but could be task-local assistance rather than long-term curiosity. ",
+            "evidence": {
+              "session_id": "sess_7958973ccd88",
+              "utterance_index": 17,
+              "text": "Ama örnek bir kod yap"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-29T11:57:05+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "value": "Grandfather born in 1950",
+            "reasoning": "User explicitly states their grandfather's birth year.",
+            "evidence": {
+              "session_id": "sess_7958973ccd88",
+              "utterance_index": 11,
+              "text": "Benim dedem 1950 doğumlu"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-29T11:57:05+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_7958973ccd88:sess_7958973ccd88",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7958973ccd88.json",
+      "canonicalId": "sess_7958973ccd88",
+      "sessionId": "sess_7958973ccd88",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:34:53.180Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Bir hex kodu yazınca onun RGB karşılığını nasıl buluyorsun?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Hex renk kodu genelde #RRGGBB formatındadır. RR, GG, BB ikişer hanelik (16’lık) sayılardır. Her çifti 16’lıktan 10’luğa çevirip sırayla R, G, B yaparsın.\n\nÖrnek: #fff187\n- RR = ff = 255\n- GG = f1 = 241\n- BB = 87 = 135\nSonuç: RGB(255, 241, 135)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Peki bunu hızlıca kontrol etmenin pratik yolu var mı?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Evet. 3 pratik yol:\n1) Tarayıcı geliştirici araçlarındaki color picker\n2) Renk dönüştürücü siteler (\"hex to rgb\" diye aratınca)\n3) Kodla: Python’da int('ff', 16) gibi.\n\nİstersen birkaç hex kodu yaz, birlikte RGB’ye çevirelim."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Bir de şu: eskiden “International Orange” diye bir renk vardı; onun hex kodu neydi?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "“International Orange” farklı standartlarda biraz değişebiliyor ama yaygın bir web karşılığı #FF4F00 (parlak turuncu-kırmızımsı ton). Bazı kaynaklar daha koyu varyantlar da verir; hangi standardı (havacılık/Golden Gate Bridge vb.) kastettiğine göre değişebilir."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Şu renk işlerini hep telefondan bakıyorum ya; bilgisayara geçemiyorum pek, o yüzden hex kodunu yazınca ekranda direkt görünsün istiyorum."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Telefondan bakıyorsan en kolayı, HEX kodunu bir renk seçici sitesine yapıştırıp tek düz renk örneğini açmak. İstersen sana HEX’i tek sayfada büyük bir blok olarak gösteren basit bir HTML örneği de yazabilirim; telefonda tarayıcıda açınca renk direkt görünür."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Geçen sefer yanlış söylemişim; benim dedem 1950 değil, 1952 doğumlu."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Tamam, düzeltiyorum: dedenizin doğum yılı 1952. Az önceki \"1950\" bilgisi yanlış kalıyor."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "label_suggestion": "technical/code_help",
+            "value": "Curious about generating images with code examples in Python",
+            "reasoning": "User requested code examples for image generation, but could be task-local assistance rather than long-term curiosity. Label 'Thoughts/Curiosity' not fully supported.",
+            "evidence": {
+              "session_id": "sess_7958973ccd88",
+              "utterance_index": 17,
+              "text": "Ama örnek bir kod yap"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-29T11:57:05+00:00",
+            "_task1GoldValue": "Curious about generating images with code examples in Python"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "Geçen sefer yanlış söylemişim; benim dedem 1950 değil, 1952 doğumlu."
+                }
+              ]
+            },
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": null,
+            "reasoning": "Eski hafızada kullanıcı dedeninin 1950 doğumlu olduğunu söylemişti; ancak burada kullanıcı bunu açıkça düzeltip 1952 doğumlu olduğunu belirtiyor. Bu nedenle doğum yılı 1952 olarak güncellenmeli.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Grandfather born in 1952"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_7958973ccd88",
+              "utterance_index": 0,
+              "text": "Şu renk işlerini hep telefondan bakıyorum ya; bilgisayara geçemiyorum pek"
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies they usually do these color tasks on their phone and rarely switch to a computer.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User mostly uses a phone rather than a computer for checking colors/hex codes."
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "value": "Grandfather born in 1950",
+            "reasoning": "User explicitly states their grandfather's birth year.",
+            "evidence": {
+              "session_id": "sess_7958973ccd88",
+              "utterance_index": 11,
+              "text": "Benim dedem 1950 doğumlu"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-29T11:57:05+00:00",
+            "_task1GoldValue": "Grandfather born in 1950"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_7958973ccd88:sess_7958973ccd88",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7958973ccd88.json",
+      "canonicalId": "sess_7958973ccd88",
+      "sessionId": "sess_7958973ccd88",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:35:01.489Z",
+        "queryText": "Ailemde bahsettiğim en yaşlı kişinin bu yılki yaş gününü kaçıncı yaş olarak kutlamamız gerekir?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Social_Relationships/Family",
+          "label_suggestion": null,
+          "value": "Grandfather born in 1950",
+          "reasoning": "User explicitly states their grandfather's birth year.",
+          "evidence": {
+            "session_id": "sess_7958973ccd88",
+            "utterance_index": 11,
+            "text": "Benim dedem 1950 doğumlu"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-04-29T11:57:05+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_7958973ccd88:sess_7958973ccd88:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7958973ccd88.json",
+      "canonicalId": "sess_7958973ccd88:task4",
+      "sessionId": "sess_7958973ccd88",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:35:16.861Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Social_Relationships/Family",
+          "label_suggestion": null,
+          "value": "Grandfather born in 1950",
+          "reasoning": "User explicitly states their grandfather's birth year.",
+          "evidence": {
+            "session_id": "sess_7958973ccd88",
+            "utterance_index": 11,
+            "text": "Benim dedem 1950 doğumlu"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-04-29T11:57:05+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_311:1",
+            "queryText": "Dedemin emeklilik yaşına gelmesine kaç yıl kaldı?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Social_Relationships/Family",
+              "label_suggestion": null,
+              "value": "Grandfather born in 1950",
+              "reasoning": "User explicitly states their grandfather's birth year.",
+              "evidence": {
+                "session_id": "sess_7958973ccd88",
+                "utterance_index": 11,
+                "text": "Benim dedem 1950 doğumlu"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-04-29T11:57:05+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "直接相关",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

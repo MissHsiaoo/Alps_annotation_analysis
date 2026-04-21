@@ -1,0 +1,316 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_dce5ae0e9616",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_dce5ae0e9616:sess_dce5ae0e9616",
+      "relativeItemPath": "sess_dce5ae0e9616.json",
+      "canonicalId": "sess_dce5ae0e9616",
+      "sessionId": "sess_dce5ae0e9616",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T11:52:40.801Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Customer Service Agent & English Teacher with event management experience",
+            "reasoning": "User's CV explicitly lists roles: Customer Service Agent (handling Pride month ERG events) and English Teacher. Repeated ERG event references indicate stable occupation context.",
+            "evidence": {
+              "session_id": "sess_dce5ae0e9616",
+              "utterance_index": 8,
+              "text": "Helped plan and organise ERG event to raise awareness for Pride month...Teaching students aged 6 – 16 from Taiwan and China"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-10-27T13:10:21+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Skills/Technical",
+            "value": "Proficient in Word, Outlook, Excel, PowerPoint, Teams, Jira and Confluence",
+            "reasoning": "Explicitly listed technical skills in CV under Skills section, but label 'Personal_Background/Occupation' is forced and unsupported.",
+            "evidence": {
+              "session_id": "sess_dce5ae0e9616",
+              "utterance_index": 8,
+              "text": "Proficient in Word, Outlook, Excel, PowerPoint, Teams, Jira and Confluence"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-10-27T13:10:21+00:00"
+          },
+          {
+            "memory_id": "gpt_5_2_p1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "Repeatedly asks for grammar/punctuation help and wants edits clearly marked (e.g., highlighted/underlined) when revising text like CV extracts.",
+            "confidence": 0.8,
+            "evidence_text": "Can you check the grammar and punctuation for me and correct anything needed... / Is there anything you would change in this text? / Now I will add part of my CV would you also be able to help fix any issues with this please? / Can you highlight the parts that you changed... / Can you just underline any changes to the original please"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_dce5ae0e9616:sess_dce5ae0e9616",
+      "relativeItemPath": "sess_dce5ae0e9616.json",
+      "canonicalId": "sess_dce5ae0e9616",
+      "sessionId": "sess_dce5ae0e9616",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T12:33:15.169Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Quick grammar check please—does this sound okay: “We’ll meet on Tuesday, and then we can finalise the agenda; any feedback is welcome.”"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "It’s already clear. A slightly smoother version would be: “We’ll meet on Tuesday, then we can finalise the agenda. Any feedback is welcome.” (Using a full stop instead of a semicolon makes it a bit cleaner.)"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Is the semicolon wrong there?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Not wrong—just optional. A semicolon is fine when linking two closely related independent clauses. In your sentence, a full stop (or an em dash) is more typical for a simple message."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Got it. Also, what’s the difference between “finalise” and “finalize”?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Same meaning. “Finalise” is more common in British/Australian English; “finalize” is more common in American English."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Random question: I saw a headline about a library digitising old maps—how do they avoid damaging them?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Typically with non-contact or low-pressure scanning (overhead scanners), controlled lighting to reduce heat/UV exposure, and supports/cradles so bindings aren’t forced flat. Conservators may also do minor repairs first if paper is fragile."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Quick one before I send it off: for the CV bit, should I keep “educationalist” in there, or swap it for something like “educator”? I don’t want it to sound odd in UK English."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "“Educator” is generally the safer, more widely used choice in UK English. “Educationalist” can sound a bit academic or niche, so unless you’re aiming for that tone, I’d switch to “educator.”"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Quick correction for the record: that CV snippet was from a few years back. I’m not working as a Customer Service Agent or an English Teacher now—I’m currently between roles and just reusing old experience for applications."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—so those titles reflect past experience in your CV, not your current occupation. Since you’re between roles at the moment, we shouldn’t treat “Customer Service Agent & English Teacher” as your present job."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Skills/Technical",
+            "value": "Proficient in Word, Outlook, Excel, PowerPoint, Teams, Jira and Confluence",
+            "reasoning": "Explicitly listed technical skills in CV under Skills section, but label 'Personal_Background/Occupation' is forced and unsupported.",
+            "evidence": {
+              "session_id": "sess_dce5ae0e9616",
+              "utterance_index": 8,
+              "text": "Proficient in Word, Outlook, Excel, PowerPoint, Teams, Jira and Confluence"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-10-27T13:10:21+00:00"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory states the user is a Customer Service Agent and English Teacher, implying current occupation. The user clarifies the CV excerpt is old and they are not in those roles now, and are currently between roles; therefore the occupation should be updated to reflect past experience rather than current employment.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Previously worked as a Customer Service Agent and English Teacher with event management experience; currently between roles"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_dce5ae0e9616",
+              "utterance_index": 0,
+              "text": "I don’t want it to sound odd in UK English."
+            },
+            "label": "Writing_Communication/Preference",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "prefers",
+            "reasoning": "They are concerned about how a term reads specifically in UK English and want to avoid odd-sounding phrasing, implying a preference for UK English style in their CV.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers UK English wording/tone in CV writing"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_dce5ae0e9616:sess_dce5ae0e9616",
+      "relativeItemPath": "sess_dce5ae0e9616.json",
+      "canonicalId": "sess_dce5ae0e9616",
+      "sessionId": "sess_dce5ae0e9616",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T12:33:24.600Z",
+        "queryText": "I’m trying to decide whether I should emphasize a calm, patient “explaining things step-by-step” vibe or a “de-escalate and solve issues fast while coordinating logistics” vibe in a short professional bio. Based on my actual work background, which vibe is more defensible—and what combination of roles from my past would justify that choice?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Occupation",
+          "label_suggestion": null,
+          "value": "Customer Service Agent & English Teacher with event management experience",
+          "reasoning": "User's CV explicitly lists roles: Customer Service Agent (handling Pride month ERG events) and English Teacher. Repeated ERG event references indicate stable occupation context.",
+          "evidence": {
+            "session_id": "sess_dce5ae0e9616",
+            "utterance_index": 8,
+            "text": "Helped plan and organise ERG event to raise awareness for Pride month...Teaching students aged 6 – 16 from Taiwan and China"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-10-27T13:10:21+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_dce5ae0e9616:sess_dce5ae0e9616:task4",
+      "relativeItemPath": "sess_dce5ae0e9616.json",
+      "canonicalId": "sess_dce5ae0e9616:task4",
+      "sessionId": "sess_dce5ae0e9616",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T12:33:36.025Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Occupation",
+          "label_suggestion": null,
+          "value": "Customer Service Agent & English Teacher with event management experience",
+          "reasoning": "User's CV explicitly lists roles: Customer Service Agent (handling Pride month ERG events) and English Teacher. Repeated ERG event references indicate stable occupation context.",
+          "evidence": {
+            "session_id": "sess_dce5ae0e9616",
+            "utterance_index": 8,
+            "text": "Helped plan and organise ERG event to raise awareness for Pride month...Teaching students aged 6 – 16 from Taiwan and China"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-10-27T13:10:21+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_284:1",
+            "queryText": "I'm drafting an email to my manager about taking on more responsibility for our upcoming Pride event planning - could you help me phrase it to highlight my relevant experience without sounding too pushy? I want to mention my background in both event coordination and educational outreach.",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Occupation",
+              "label_suggestion": null,
+              "value": "Customer Service Agent & English Teacher with event management experience",
+              "reasoning": "User's CV explicitly lists roles: Customer Service Agent (handling Pride month ERG events) and English Teacher. Repeated ERG event references indicate stable occupation context.",
+              "evidence": {
+                "session_id": "sess_dce5ae0e9616",
+                "utterance_index": 8,
+                "text": "Helped plan and organise ERG event to raise awareness for Pride month...Teaching students aged 6 – 16 from Taiwan and China"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-10-27T13:10:21+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "highly matched and necessary to generate personalized response",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

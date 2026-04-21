@@ -1,0 +1,281 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_300f8f854faa",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_300f8f854faa:sess_300f8f854faa",
+      "relativeItemPath": "sess_300f8f854faa.json",
+      "canonicalId": "sess_300f8f854faa",
+      "sessionId": "sess_300f8f854faa",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:43:00.889Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers structured quiz content creation in specific bilingual (English/Arabic) or monolingual formats with numbered questions, multiple-choice answers, and clear answer labeling",
+            "reasoning": "User repeatedly requests quizzes in a strict format across multiple sessions (Islamic & Geography topics), explicitly specifying structure and language requirements.",
+            "evidence": {
+              "session_id": "sess_300f8f854faa",
+              "utterance_index": 0,
+              "text": "Create Islamic General knowledge quiz of 60 questions in English and Arabic with answers for High school level in the below format..."
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-30T15:43:51+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_300f8f854faa:sess_300f8f854faa",
+      "relativeItemPath": "sess_300f8f854faa.json",
+      "canonicalId": "sess_300f8f854faa",
+      "sessionId": "sess_300f8f854faa",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:43:38.461Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Can you keep the same quiz format but make the next set a bit harder?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes. Do you want the difficulty increase to come from trickier options (close distractors), more specific facts (e.g., straits, plate tectonics, climate types), or adding a short explanation after each answer?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Trickier options, but no explanations."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Got it—same format, harder distractors, and answers only.\n\nEnglish Questions:\n1. Which country is both in Europe and Asia?\na) Spain\nb) Kazakhstan\nc) Iceland\nd) Ireland\nAnswer: b) Kazakhstan\n\n2. The Strait of Gibraltar connects the Atlantic Ocean to the:\na) Red Sea\nb) Black Sea\nc) Mediterranean Sea\nd) Arabian Sea\nAnswer: c) Mediterranean Sea\n\n3. Which river flows through Vienna?\na) Danube\nb) Rhine\nc) Seine\nd) Po\nAnswer: a) Danube\n\n(Example note: In 1912, the term “continental drift” was proposed by Alfred Wegener—often mentioned in geography/history-of-science contexts, but it’s not a quiz question here.)"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Can you also make sure the numbering continues properly from where I left off?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Yes—tell me the last question number you used (e.g., 10, 12, or 60), and I’ll continue from the next number.\n\n(Unrelated trivia: The longest place name commonly cited is “Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu” in New Zealand.)"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "For the next set, keep it to high school level again, but this time make the Geography quiz focus only on Africa (countries, capitals, rivers, deserts) in the same MCQ format."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "English Questions:\n1. Which river is the longest in Africa?\na) Niger River\nb) Congo River\nc) Nile River\nd) Zambezi River\nAnswer: c) Nile River\n\n2. Which desert is the largest hot desert in Africa?\na) Kalahari Desert\nb) Sahara Desert\nc) Namib Desert\nd) Danakil Desert\nAnswer: b) Sahara Desert\n\n(Continue with similar Africa-focused questions and answers...)"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "I don’t actually need a strict numbered multiple‑choice format. For the next quizzes, just give short-answer questions only, in English only—no Arabic—and you can skip listing choices and the “Answer: a)” style."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—future quizzes will be English-only, short-answer (no multiple-choice options), and I’ll provide the answers directly without the “Answer: a)” labeling."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Yes, exactly. The bilingual English/Arabic multiple-choice layout was only for that earlier request."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "I don’t actually need a strict numbered multiple‑choice format. For the next quizzes, just give short-answer questions only, in English only—no Arabic—and you can skip listing choices and the “Answer: a)” style."
+                }
+              ]
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The old memory claims the user prefers structured multiple-choice quizzes in bilingual or monolingual formats with clear answer labeling. The user explicitly corrects this by stating they do not need the strict numbered multiple-choice format, want English only, and want to skip the “Answer: a)” style—indicating a preference for short-answer English-only quizzes instead.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers quizzes in English-only short-answer format (no multiple-choice options), and does not require bilingual (English/Arabic) formatting or the “Answer: a)” style."
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_300f8f854faa",
+              "utterance_index": 0,
+              "text": "make the Geography quiz focus only on Africa (countries, capitals, rivers, deserts) in the same MCQ format."
+            },
+            "label": "Preferences/Content_Topics",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "The user requests the Geography quiz be restricted specifically to Africa and names desired subtopics, indicating a topic-focus preference.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Wants Geography quizzes focused specifically on Africa (countries, capitals, rivers, deserts)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_300f8f854faa:sess_300f8f854faa",
+      "relativeItemPath": "sess_300f8f854faa.json",
+      "canonicalId": "sess_300f8f854faa",
+      "sessionId": "sess_300f8f854faa",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:43:42.974Z",
+        "queryText": "I’m putting together a practice test for students and I want it to match the way I usually ask you to format these: what exact layout should you use for each item (how questions are numbered, how the choices are presented, how the correct option is marked), and which language setup should you write it in?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers structured quiz content creation in specific bilingual (English/Arabic) or monolingual formats with numbered questions, multiple-choice answers, and clear answer labeling",
+          "reasoning": "User repeatedly requests quizzes in a strict format across multiple sessions (Islamic & Geography topics), explicitly specifying structure and language requirements.",
+          "evidence": {
+            "session_id": "sess_300f8f854faa",
+            "utterance_index": 0,
+            "text": "Create Islamic General knowledge quiz of 60 questions in English and Arabic with answers for High school level in the below format..."
+          },
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-06-30T15:43:51+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_300f8f854faa:sess_300f8f854faa:task4",
+      "relativeItemPath": "sess_300f8f854faa.json",
+      "canonicalId": "sess_300f8f854faa:task4",
+      "sessionId": "sess_300f8f854faa",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:43:45.813Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers structured quiz content creation in specific bilingual (English/Arabic) or monolingual formats with numbered questions, multiple-choice answers, and clear answer labeling",
+          "reasoning": "User repeatedly requests quizzes in a strict format across multiple sessions (Islamic & Geography topics), explicitly specifying structure and language requirements.",
+          "evidence": {
+            "session_id": "sess_300f8f854faa",
+            "utterance_index": 0,
+            "text": "Create Islamic General knowledge quiz of 60 questions in English and Arabic with answers for High school level in the below format..."
+          },
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-06-30T15:43:51+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1004:1",
+            "queryText": "I need a science quiz for middle schoolers. I'm thinking of covering biology, chemistry, and physics. Can you set it up for me in the usual way?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers structured quiz content creation in specific bilingual (English/Arabic) or monolingual formats with numbered questions, multiple-choice answers, and clear answer labeling",
+              "reasoning": "User repeatedly requests quizzes in a strict format across multiple sessions (Islamic & Geography topics), explicitly specifying structure and language requirements.",
+              "evidence": {
+                "session_id": "sess_300f8f854faa",
+                "utterance_index": 0,
+                "text": "Create Islamic General knowledge quiz of 60 questions in English and Arabic with answers for High school level in the below format..."
+              },
+              "confidence": 0.8,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-06-30T15:43:51+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,339 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_cdeb67330442",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_cdeb67330442:sess_cdeb67330442",
+      "relativeItemPath": "sess_cdeb67330442.json",
+      "canonicalId": "sess_cdeb67330442",
+      "sessionId": "sess_cdeb67330442",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-13T08:32:14.374Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "value": "Do not reveal technical secrets of illusions",
+            "reasoning": "User explicitly instructs to avoid revealing technical secrets in multiple turns.",
+            "evidence": {
+              "session_id": "sess_cdeb67330442",
+              "utterance_index": 0,
+              "text": "(Don't reveal any technical secrets.)"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-03-16T21:00:02+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Advise sensitive viewers before intense illusions",
+            "reasoning": "User explicitly states a preference for content warnings for younger/sensitive audiences.",
+            "evidence": {
+              "session_id": "sess_cdeb67330442",
+              "utterance_index": 6,
+              "text": "Paul would give a warning before the illusion as to it being a magical illusion, but advising sensitive viewers of younger audience members not to watch.."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-03-16T21:00:02+00:00"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "User shows repeated interest in hypothetical magic illusion scenarios, particularly involving Paul Daniels and similar performers.",
+            "confidence": 0.8,
+            "evidence_text": "Hypothetical Paul Daniels Illusion -   Converting copper coins to silver ones..     Paul places a 2p coin in a previously empty box,  and gets a 10p  out..   He tries it again..  and gets the same result..    He tries it with a pre decimal penny and gets half a crown..     He tries shaking the box , and an entire purse worth of dimes falls out...      Paul smiles.. and wonders what else his coin box will give.. but the trick ends there..    Pauls Narattion please,  (Don't reveal any technical secrets.) "
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_cdeb67330442:sess_cdeb67330442",
+      "relativeItemPath": "sess_cdeb67330442.json",
+      "canonicalId": "sess_cdeb67330442",
+      "sessionId": "sess_cdeb67330442",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T01:55:00.330Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Could you write a short bit of stage narration that keeps the tone playful, but also makes it crystal clear it’s a theatrical illusion—no danger, no “real” paranormal claims?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Certainly. Here are two quick options—one “warm and reassuring,” one “cheeky and cheeky-reassuring.”\n\n**Option A (warm):**\n“Before we begin, a quick word: what you’re about to see is theatre—lighting, timing, and a touch of misdirection. It may look impossible, it may feel mysterious, but I promise you it’s designed to amaze, not alarm. No spirits, no sorcery, and absolutely no danger—just a story told the only way a magician knows how… with a grin and a little audacity.”\n\n**Option B (cheeky):**\n“Right—just so we’re all on the same page: this is a magical illusion. Not a séance, not a science experiment, and definitely not a reason to ring your local vicar. If anything looks alarming, remember: it’s pretend, it’s rehearsed, and everyone you’ll see is perfectly safe… although my dignity may take a minor hit.”"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Nice. Can we pivot to a ‘numbers square’ routine—magic-square vibes—without leaning into any cultural caricature? Make it feel like a museum curator presenting an ancient puzzle."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Absolutely—curator tone, respectful, and focused on wonder.\n\n“Good evening. Tonight, I’d like to show you something that looks like simple arithmetic… but behaves like a secret.\n\nThis is a number square—an old puzzle, the sort of object you might find under glass in a museum case: ordinary ink, ordinary paper, and yet it carries a strange kind of order.\n\nNow, I’m going to do the dull bit slowly—so you can do it with me. We’ll add the first row… and we get a total. Then the next row… the same. Another… the same again.\n\nSo perhaps you think it’s built to work left to right. Reasonable.\n\nLet’s go top to bottom.\n\nColumn after column… the very same total.\n\nAnd if that isn’t irritating enough—because puzzles love to be smug—let’s take the longest paths of all: corner to corner.\n\nThe diagonals.\n\nAnd they agree as well.\n\nSo the question isn’t ‘how fast can you add?’ The question is: how can something that looks scattered… be so perfectly balanced?”"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Great. One more: give me a quick historical aside—something like ‘people used to pass these around’—but keep it clearly general, not a lecture."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "“Little puzzles like this have been copied and recopied for centuries—passed between students, scribes, and bored geniuses—because they’re small enough to carry, but clever enough to keep you arguing all evening.\n\nAnd that’s the joy of it: it’s not ‘magic’ because it breaks the rules… it’s ‘magic’ because it follows them so beautifully.”\n\n(And as a fun, unrelated bit of trivia: the classic 3×3 ‘Lo Shu’ square is often cited as an early famous example; and for a 4×4, the sum on each line is 34 when it’s arranged in the standard way.)"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "For the next one, keep it like those old telly stage specials—big corny narration, but with that slightly cheeky wink—just don’t go anywhere near method or “how it’s done”."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Understood—I'll lean into the classic variety-show patter and theatrical build, keep it playful, and stay well clear of any method talk."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "On second thoughts, scrap the warning bit. In this show Paul just cracks on with it—no advisory about kids or sensitive viewers, no \"please look away\" moment. He treats it like harmless theatre and lets the staging do the talking."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Right—so we play it straight, like a proper Saturday-night turn.\n\nPaul comes out, sets the scene with a bit of atmosphere and a joke or two, but he doesn’t stop to issue any sort of caution. No preface, no reassurance, no \"if you’re of a nervous disposition\"—he simply gets on with the illusion as part of the show."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "value": "Do not reveal technical secrets of illusions",
+            "reasoning": "User explicitly instructs to avoid revealing technical secrets in multiple turns.",
+            "evidence": {
+              "session_id": "sess_cdeb67330442",
+              "utterance_index": 0,
+              "text": "(Don't reveal any technical secrets.)"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-03-16T21:00:02+00:00",
+            "_task1GoldValue": "Do not reveal technical secrets of illusions"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "roleplay/magic_illusion_design",
+            "value": "Sustained interest in creating detailed magic illusions and stagecraft techniques [ERROR: Not about the user; describes hypothetical role-play scenarios for Paul Daniels' performances]",
+            "reasoning": "Not about the user; describes hypothetical role-play scenarios for Paul Daniels' performances",
+            "evidence": {
+              "session_id": "sess_cdeb67330442",
+              "utterance_index": 24,
+              "text": "The illusion uses a split screen... massively sped up aerial flight from Paris to Blackpool via the BT tower..."
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-16T21:00:02+00:00"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory says the user prefers a warning before intense illusions, but the user explicitly reverses that preference here, stating to remove the advisory and proceed without it.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "No content warning is included before intense illusions; Paul just begins the act without advising sensitive/younger viewers."
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_cdeb67330442",
+              "utterance_index": 0,
+              "text": "keep it like those old telly stage specials—big corny narration, but with that slightly cheeky wink"
+            },
+            "label": "Preferences/Style_Tone",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "The user asks to keep the narration like old TV stage specials, specifying corny narration with a slightly cheeky wink, indicating a preferred style/tone.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User prefers classic TV stage-special style narration: big, corny, with a cheeky wink."
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "User shows repeated interest in hypothetical magic illusion scenarios, particularly involving Paul Daniels and similar performers.",
+            "confidence": 0.8,
+            "evidence_text": "Hypothetical Paul Daniels Illusion -   Converting copper coins to silver ones..     Paul places a 2p coin in a previously empty box,  and gets a 10p  out..   He tries it again..  and gets the same result..    He tries it with a pre decimal penny and gets half a crown..     He tries shaking the box , and an entire purse worth of dimes falls out...      Paul smiles.. and wonders what else his coin box will give.. but the trick ends there..    Pauls Narattion please,  (Don't reveal any technical secrets.) ",
+            "_task1GoldValue": "User shows repeated interest in hypothetical magic illusion scenarios, particularly involving Paul Daniels and similar performers."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "deepseek_reasoner_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_cdeb67330442:sess_cdeb67330442",
+      "relativeItemPath": "sess_cdeb67330442.json",
+      "canonicalId": "sess_cdeb67330442",
+      "sessionId": "sess_cdeb67330442",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:43:46.207Z",
+        "queryText": "I’m putting together a short video that includes a few moments some people might find unsettling, and I want to add one brief line right before it starts. Based on what you know about my boundaries around this kind of content, what should that line generally do (and who should it be aimed at) so I’m handling it responsibly?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Advise sensitive viewers before intense illusions",
+          "reasoning": "User explicitly states a preference for content warnings for younger/sensitive audiences.",
+          "evidence": {
+            "session_id": "sess_cdeb67330442",
+            "utterance_index": 6,
+            "text": "Paul would give a warning before the illusion as to it being a magical illusion, but advising sensitive viewers of younger audience members not to watch.."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-03-16T21:00:02+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_cdeb67330442:sess_cdeb67330442:task4",
+      "relativeItemPath": "sess_cdeb67330442.json",
+      "canonicalId": "sess_cdeb67330442:task4",
+      "sessionId": "sess_cdeb67330442",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:55:01.184Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Advise sensitive viewers before intense illusions",
+          "reasoning": "User explicitly states a preference for content warnings for younger/sensitive audiences.",
+          "evidence": {
+            "session_id": "sess_cdeb67330442",
+            "utterance_index": 6,
+            "text": "Paul would give a warning before the illusion as to it being a magical illusion, but advising sensitive viewers of younger audience members not to watch.."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-03-16T21:00:02+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_262:1",
+            "queryText": "For our next Halloween special, I want you to draft Paul's intro for an illusion where he appears to summon a demon from a pentagram that bleeds smoke. It should be really atmospheric and shocking - we want the audience on the edge of their seats from the first second. Make sure the narration is gripping and doesn't hold back on the creepy details to set the perfect mood. Just write the intro as if Paul is saying it to the live audience.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Sensitive_Topics",
+              "label_suggestion": null,
+              "value": "Advise sensitive viewers before intense illusions",
+              "reasoning": "User explicitly states a preference for content warnings for younger/sensitive audiences.",
+              "evidence": {
+                "session_id": "sess_cdeb67330442",
+                "utterance_index": 6,
+                "text": "Paul would give a warning before the illusion as to it being a magical illusion, but advising sensitive viewers of younger audience members not to watch.."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2024-03-16T21:00:02+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "partial",
+            "memoryDependency": "medium",
+            "abilityPurity": "medium",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_3292d36726a0",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_3292d36726a0:sess_3292d36726a0",
+      "relativeItemPath": "sess_3292d36726a0.json",
+      "canonicalId": "sess_3292d36726a0",
+      "sessionId": "sess_3292d36726a0",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:18:10.125Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "business/inquiry_pattern/asian_food_importers",
+            "value": "Repeated inquiries about Asian food importers in Réunion, Mauritius, and UAE with contact details",
+            "reasoning": "Observed pattern of repeated professional inquiries across regions, but label 'Thoughts/Curiosity' forced attribution. No explicit user self-report of curiosity trait.",
+            "evidence": {
+              "session_id": "sess_3292d36726a0",
+              "utterance_index": 8,
+              "text": "阿联酋的亚洲食品进口商有哪些，请列举15个，并查找对应的联系电话和邮箱"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-18T08:22:06+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "value": "Has a long-term client relationship in Mauritius market since 2015",
+            "reasoning": "Explicitly stated 8-year business relationship with a key client in Mauritius",
+            "evidence": {
+              "session_id": "sess_3292d36726a0",
+              "utterance_index": 18,
+              "text": "您是我们在毛里求斯市场最重要的老客户之一，从2015年到现在，八年时间一晃而过"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-18T08:22:06+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_3292d36726a0:sess_3292d36726a0",
+      "relativeItemPath": "sess_3292d36726a0.json",
+      "canonicalId": "sess_3292d36726a0",
+      "sessionId": "sess_3292d36726a0",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:18:33.107Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我想把一封商务邮件写得更正式一点，你能帮我润色吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以。请把邮件原文贴出来，并说明：收件人关系（客户/供应商/同事）、语气（正式/中性/友好正式）、以及是否需要加入附件说明和下一步行动（例如电话会议或确认交期）。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "另外，如果邮件里提到货款余额，英文里用“balance”还是“outstanding amount”更合适？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "两者都可用：\n- balance：更简洁，常见于对账/付款提醒，例如 “The remaining balance is USD 9,000.”\n- outstanding amount：更偏“未结清款项”，在催款语境更正式一些，例如 “The outstanding amount is USD 9,000.”\n如果要更礼貌，也可用 “outstanding balance”。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "顺便问下，FHA展一般是每年都有吗？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "FHA（Food & Beverage）通常是新加坡举办的大型餐饮食品展会，常见安排是按年度或隔年举办，但具体年份可能会因主办方安排而调整。最稳妥的做法是以其官网公布的展期与参展指南为准。\n（题外话：有些展会会把同一品牌拆成“Food & Beverage”和“HoReCa”等不同主题展区，报名入口也会分开。）"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "好的。再给我两个表达“时间比较紧”的英文说法，邮件里用。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "可以，这里是两个更商务的写法：\n1) The timeline is quite tight, so we would appreciate your prompt confirmation.\n2) Due to the limited time available, we may need to proceed on an expedited schedule.\n也可更委婉：“We are working on a tight schedule.”"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我准备把这封英文邮件直接抄送给Mr. Francesco，他下周在西班牙要和buyers开会讨论新项目；邮件里帮我顺便加一句：如果他们需要我们调整包装规格，也可以告诉我们。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Dear [Customer Name],\n\nThank you for your message and for confirming that our quotation and specifications have been well received.\n\nWe understand that Mr. Francesco is currently in Spain and will be meeting with buyers next week to discuss the new project. Please take your time to review our pricing and specifications, and we look forward to your feedback for further discussion.\n\nIn the meantime, if any packaging specifications need to be adjusted to better match the project requirements, please feel free to let us know.\n\nYour patience and support are highly appreciated. If there is anything else we can assist you with, please do not hesitate to contact us.\n\nBest regards,\n\n[Your Name]"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "刚刚我看了下我们写给客户的那段话，可能有误：我们和毛里求斯这个客户不是从2015年开始的，是从2018年才开始合作的。麻烦把那句“since 2015 / past eight years”改成从2018算起（five years）。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "好的，我把年份和时长更正为2018年起、五年：\n\nIt was such a delightful surprise to see you at the FHA food exhibition in Singapore. As one of our most important long-term clients in the Mauritian market, we would like to express our heartfelt gratitude for your continuous support over the past five years since 2018."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "business/inquiry_pattern/asian_food_importers",
+            "value": "Repeated inquiries about Asian food importers in Réunion, Mauritius, and UAE with contact details",
+            "reasoning": "Observed pattern of repeated professional inquiries across regions, but label 'Thoughts/Curiosity' forced attribution. No explicit user self-report of curiosity trait.",
+            "evidence": {
+              "session_id": "sess_3292d36726a0",
+              "utterance_index": 8,
+              "text": "阿联酋的亚洲食品进口商有哪些，请列举15个，并查找对应的联系电话和邮箱"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-18T08:22:06+00:00",
+            "_task1GoldValue": "Repeated inquiries about Asian food importers in Réunion, Mauritius, and UAE with contact details"
+          },
+          {
+            "confidence": 0.93,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "刚刚我看了下我们写给客户的那段话，可能有误：我们和毛里求斯这个客户不是从2015年开始的，是从2018年才开始合作的。麻烦把那句“since 2015 / past eight years”改成从2018算起（five years）。"
+                }
+              ]
+            },
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": null,
+            "reasoning": "旧记忆称毛里求斯客户关系始于2015年，但用户明确更正“不是从2015年开始…从2018年才开始合作”，并要求把时长改为五年。因此更新为2018年起的长期客户关系。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Has a long-term client relationship in Mauritius market since 2018"
+          },
+          {
+            "confidence": 0.82,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_3292d36726a0",
+              "utterance_index": 0,
+              "text": "我准备把这封英文邮件直接抄送给Mr. Francesco"
+            },
+            "label": "Business/Communication/Emailing",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user indicates the reply email will be copied to Mr. Francesco, implying they plan to CC him on the correspondence.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User intends to CC Mr. Francesco on the email reply"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_3292d36726a0:sess_3292d36726a0",
+      "relativeItemPath": "sess_3292d36726a0.json",
+      "canonicalId": "sess_3292d36726a0",
+      "sessionId": "sess_3292d36726a0",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:18:36.353Z",
+        "queryText": "我在整理客户分层和续约优先级时，发现有一个海外市场的客户需要被标记为“长期且关键”的那一档：仅根据我和对方合作开始的年份，以及到现在累计合作时长这两个线索，你能推断出这段关系大概从什么时候开始、并说明为什么它应该被放进最高优先级吗？",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Social_Relationships/Partners",
+          "label_suggestion": null,
+          "value": "Has a long-term client relationship in Mauritius market since 2015",
+          "reasoning": "Explicitly stated 8-year business relationship with a key client in Mauritius",
+          "evidence": {
+            "session_id": "sess_3292d36726a0",
+            "utterance_index": 18,
+            "text": "您是我们在毛里求斯市场最重要的老客户之一，从2015年到现在，八年时间一晃而过"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-18T08:22:06+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_3292d36726a0:sess_3292d36726a0:task4",
+      "relativeItemPath": "sess_3292d36726a0.json",
+      "canonicalId": "sess_3292d36726a0:task4",
+      "sessionId": "sess_3292d36726a0",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:18:39.249Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Social_Relationships/Partners",
+          "label_suggestion": null,
+          "value": "Has a long-term client relationship in Mauritius market since 2015",
+          "reasoning": "Explicitly stated 8-year business relationship with a key client in Mauritius",
+          "evidence": {
+            "session_id": "sess_3292d36726a0",
+            "utterance_index": 18,
+            "text": "您是我们在毛里求斯市场最重要的老客户之一，从2015年到现在，八年时间一晃而过"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-18T08:22:06+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_431:1",
+            "queryText": "我们毛里求斯那个从2015年合作到现在的老客户，下个月要来中国考察工厂，顺便想看看我们有没有适合他们当地超市的新品。你帮我整理一份近两年我们出口到热带地区的、适合超市渠道的畅销品清单，最好能标注哪些在东南亚市场反响不错，我准备重点推荐给他。",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Social_Relationships/Partners",
+              "label_suggestion": null,
+              "value": "Has a long-term client relationship in Mauritius market since 2015",
+              "reasoning": "Explicitly stated 8-year business relationship with a key client in Mauritius",
+              "evidence": {
+                "session_id": "sess_3292d36726a0",
+                "utterance_index": 18,
+                "text": "您是我们在毛里求斯市场最重要的老客户之一，从2015年到现在，八年时间一晃而过"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-05-18T08:22:06+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

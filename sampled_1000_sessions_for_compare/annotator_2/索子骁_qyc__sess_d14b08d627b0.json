@@ -1,0 +1,296 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_d14b08d627b0",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_d14b08d627b0:sess_d14b08d627b0",
+      "relativeItemPath": "sess_d14b08d627b0.json",
+      "canonicalId": "sess_d14b08d627b0",
+      "sessionId": "sess_d14b08d627b0",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T02:37:28.968Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires strict JSON formatting with automated field population logic for coupon data",
+            "reasoning": "User repeatedly provides structured data extraction requirements and schema rules across multiple coupon submissions",
+            "evidence": {
+              "session_id": "sess_d14b08d627b0",
+              "utterance_index": 0,
+              "text": "严格按要求和格式输出，只回复json数据就行...详细综合分析days、bins、shops、daily、monthly、total确保数值计算正确"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "require",
+            "updated_at": "2024-04-22T05:17:03Z"
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "The user is repeatedly engaged in analyzing and extracting structured data from various Chinese banking and payment platform promotional activities (coupons, credit card discounts, etc.).",
+            "confidence": 0.95,
+            "evidence_text": "The user provided multiple detailed promotion descriptions and requested extraction into a specific schema across several turns."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_d14b08d627b0:sess_d14b08d627b0",
+      "relativeItemPath": "sess_d14b08d627b0.json",
+      "canonicalId": "sess_d14b08d627b0",
+      "sessionId": "sess_d14b08d627b0",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T02:37:56.833Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我在做一份活动规则的质检，你能帮我快速检查一段规则描述里有没有自相矛盾的地方吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以。你把规则原文贴出来即可。我会重点看：时间范围是否重叠/缺口、次数限制（日/周/月/总）是否能同时成立、门店/地区/卡种/支付方式等限制是否前后一致。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "比如：写了“每日限2次”，又写“活动期内总限1次”，这种算矛盾吗？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "通常算“限制口径冲突”。除非同时写清楚口径不同（例如：每日最多2次，但整个活动期最多只能提现/核销1次；或不同档位分别限制）。如果没有解释，就需要回到业务方确认，以免落地时出现两套计算规则。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "那如果时间写成“2024-04-01至2024-04-30 每天10点-20点”，但细则里又出现“每日00:00-23:59:59”，你怎么判？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "这属于“时间窗口冲突”。一般以更细的、且与活动页/系统配置一致的描述为准，但从文本质检角度应标红：同一活动不应同时存在两种日内有效时段。需要让文案统一成一种表达，或明确两者分别对应“领券时间”和“用券时间”。\n\n（例：某城市去年办过一个公交乘车优惠，领券窗口是10:00-20:00，但实际乘车核销是全天；这种就必须写成两个字段，不能混在同一段里。）"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "我还看到过写“每周六可用”，但日期范围只有周一到周五，这种一定错吧？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "大概率是错的或写法不完整：要么日期范围写错，要么“每周六”写错，要么实际是“工作日可用”。你可以用一个快速校验：把起止日期转成日历，统计范围内是否存在周六；如果一个都没有，就属于硬冲突。\n\n（顺带一提：ISO周定义里一周从周一开始，但有些系统按周日开始；在“每周限N次”的计算上，也可能产生边界差异，需要在规则里明确。）"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "assistant",
+            "text": "后面我继续按你这套字段抽取时，如果遇到“每周x次、每月y次、活动跨多个月但起止不是月初月末”的那种，我还是会像你之前那样，把每个月实际能覆盖到的周数拆开算，再把monthly上限合并回total，避免把首月/末月多算。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "user",
+            "text": "补充更正一下：我刚才说的不是“地址/护照信息不要记”，而是“手机号、银行卡号这类敏感信息别记”。地址如果只是城市级别（比如郑州、乌海市）用于活动地区分析，可以正常保留；但具体门牌号、护照号/证件号、完整卡号这些不要留。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "assistant",
+            "text": "明白，你的要求是：不要保留手机号、银行卡号等敏感信息；地址仅限城市/地区级别可用于分析，门牌号等详细地址，以及护照号/证件号、完整卡号不保留。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires strict JSON formatting with automated field population logic for coupon data",
+            "reasoning": "User repeatedly provides structured data extraction requirements and schema rules across multiple coupon submissions",
+            "evidence": {
+              "session_id": "sess_d14b08d627b0",
+              "utterance_index": 0,
+              "text": "严格按要求和格式输出，只回复json数据就行...详细综合分析days、bins、shops、daily、monthly、total确保数值计算正确"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "require",
+            "updated_at": "2024-04-22T05:17:03Z"
+          },
+          {
+            "confidence": 0.65,
+            "emotion": null,
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "旧记忆称“地址/护照信息不应保留”，但用户明确更正：并非禁止保留地址（城市级别可保留用于地区分析），而是禁止保留手机号、银行卡号等敏感信息；同时护照号/证件号、门牌号、完整卡号等具体敏感明细不保留。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Do not retain sensitive personal data like phone numbers, full bank card numbers, passport/ID numbers, or detailed street addresses (doorplate). City/region-level location (e.g., Zhengzhou, Wuhai) may be retained for analysis."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_d14b08d627b0",
+              "utterance_index": 0,
+              "text": "把每个月实际能覆盖到的周数拆开算，再把monthly上限合并回total，避免把首月/末月多算"
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "require",
+            "reasoning": "Assistant references continuing to follow the user's earlier counting logic of splitting by actual weeks covered in each month and merging monthly caps into total to avoid overcounting, implying this is a preferred/required approach.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers the assistant to compute total coupon usage by accounting for partial months/weeks when activities span months (avoid overcounting first/last month)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_d14b08d627b0:sess_d14b08d627b0",
+      "relativeItemPath": "sess_d14b08d627b0.json",
+      "canonicalId": "sess_d14b08d627b0",
+      "sessionId": "sess_d14b08d627b0",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T02:38:10.300Z",
+        "queryText": "If I end up pasting a long block of text that includes some highly sensitive identifiers while we’re drafting something together, what’s the one kind of detail you should avoid retaining for later, even if it would make future chats more convenient?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Address/passport information should not be retained [ERROR: Unsupported by evidence]",
+          "reasoning": "Unsupported by evidence",
+          "evidence": {
+            "session_id": "sess_d14b08d627b0",
+            "utterance_index": 16,
+            "text": "If an address or passport info gets pasted in later, prefer that not be retained"
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-04-22T05:17:03Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_d14b08d627b0:sess_d14b08d627b0:task4",
+      "relativeItemPath": "sess_d14b08d627b0.json",
+      "canonicalId": "sess_d14b08d627b0:task4",
+      "sessionId": "sess_d14b08d627b0",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T02:38:48.304Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Address/passport information should not be retained [ERROR: Unsupported by evidence]",
+          "reasoning": "Unsupported by evidence",
+          "evidence": {
+            "session_id": "sess_d14b08d627b0",
+            "utterance_index": 16,
+            "text": "If an address or passport info gets pasted in later, prefer that not be retained"
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-04-22T05:17:03Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_131:1",
+            "queryText": "当前时间:2024/4/22 13:20:00\n优惠id:3102023122954321\n王府井奥莱机场店商圈新客户专享金20元\n王府井奥莱机场店商圈新客户专享金20元\n详见使用细则\n详见使用细则\n详见使用细则\n\n对了，我同事刚入职，想办张新卡参加这个活动，但他不确定自己算不算新客户。他身份证号是110101199001011234，护照号是E12345678，你帮我查一下他之前有没有在王府井奥莱机场店用云闪付消费过，看看他符不符合新客户资格，我直接转告他结果，省得他再自己研究了。",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Do_Not_Remember",
+              "label_suggestion": null,
+              "value": "Address/passport information should not be retained [ERROR: Unsupported by evidence]",
+              "reasoning": "Unsupported by evidence",
+              "evidence": {
+                "session_id": "sess_d14b08d627b0",
+                "utterance_index": 16,
+                "text": "If an address or passport info gets pasted in later, prefer that not be retained"
+              },
+              "confidence": 0.1,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2024-04-22T05:17:03Z"
+            },
+            "overallVerdict": "unreasonable",
+            "testsTargetAbility": "no",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [
+              "ability_mismatch",
+              "memory_not_required"
+            ],
+            "evidenceNote": "totally wrong and irrelevant",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

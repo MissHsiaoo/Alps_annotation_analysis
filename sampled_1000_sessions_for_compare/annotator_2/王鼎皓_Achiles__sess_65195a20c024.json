@@ -1,0 +1,353 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_65195a20c024",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_65195a20c024:sess_65195a20c024",
+      "relativeItemPath": "sess_65195a20c024.json",
+      "canonicalId": "sess_65195a20c024",
+      "sessionId": "sess_65195a20c024",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:19:01.890Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "GP doctor",
+            "reasoning": "User explicitly states their occupation as a general practitioner.",
+            "evidence": {
+              "session_id": "sess_65195a20c024",
+              "utterance_index": 0,
+              "text": "hi i am belal a gp doctor"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-15T17:28:46+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Education/Interest/Medical/AKI",
+            "value": "Sustained interest in understanding AKI etiology, pathophysiology, clinical features, diagnosis, and management",
+            "reasoning": "Repeated user inquiries about AKI topics indicate educational interest, but label 'Thoughts/Curiosity' is forced taxonomy. Downgraded to indirect with label correction.",
+            "evidence": {
+              "session_id": "sess_65195a20c024",
+              "utterance_index": 2,
+              "text": "explain etiology of AKI"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-15T17:28:46+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_65195a20c024:sess_65195a20c024",
+      "relativeItemPath": "sess_65195a20c024.json",
+      "canonicalId": "sess_65195a20c024",
+      "sessionId": "sess_65195a20c024",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:19:16.555Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Can you quiz me quickly on AKI causes, but keep it practical?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure—I'll do short clinical vignettes. For each one, tell me whether it’s prerenal, intrinsic, or postrenal, and name the likely cause. Ready?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Ready."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Case 1: After several days of vomiting and diarrhea, a patient becomes dizzy with low BP and reduced urine output; creatinine rises. What type of AKI and the cause?"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Prerenal from hypovolemia."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Yes. Case 2: Another patient has AKI after receiving gentamicin; urinalysis shows granular “muddy brown” casts. Type and cause?"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Intrinsic—ATN from aminoglycosides."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Correct. Case 3: A patient has flank pain, ultrasound shows bilateral hydronephrosis, and urine output is low. Type and cause?"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Postrenal obstruction, maybe stone or prostate."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Exactly—postrenal due to obstruction (stone/tumor/clot in ureters, or bladder outlet obstruction like BPH). If you want, I can continue with 7 more cases.\n\nUnrelated examples (not about you): (1) In a 2012 London case report, ethylene glycol ingestion caused severe intrinsic AKI via oxalate crystal deposition. (2) A fictional ICU scenario often used in teaching has septic shock causing prerenal AKI that progresses to ATN if prolonged. (3) Some hospitals use a “renal traffic light” chart in wards to flag nephrotoxins and prompt dose adjustments."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "make them as short OSCE stems please—i’m trying to fit them onto my flashcards."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—I'll write 15 short OSCE-style AKI etiology Q&As with brief stems and one-line answers."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "btw quick correction—i’m not a GP doctor. i’m still a 5th-year medical student; i just said GP before to keep it simple."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Thanks for clarifying. So you’re a 5th-year medical student (not a GP). I’ll stick to student-level clinical scenarios and explanations."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Education/Interest/Medical/AKI",
+            "value": "Sustained interest in understanding AKI etiology, pathophysiology, clinical features, diagnosis, and management",
+            "reasoning": "Repeated user inquiries about AKI topics indicate educational interest, but label 'Thoughts/Curiosity' is forced taxonomy. Downgraded to indirect with label correction.",
+            "evidence": {
+              "session_id": "sess_65195a20c024",
+              "utterance_index": 2,
+              "text": "explain etiology of AKI"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-15T17:28:46+00:00",
+            "_task1GoldValue": "Sustained interest in understanding AKI etiology, pathophysiology, clinical features, diagnosis, and management"
+          },
+          {
+            "confidence": 0.92,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                12
+              ],
+              "turns": [
+                {
+                  "index": 12,
+                  "role": "user",
+                  "text": "btw quick correction—i’m not a GP doctor. i’m still a 5th-year medical student; i just said GP before to keep it simple."
+                }
+              ]
+            },
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory says the user is a GP doctor, but the user explicitly corrects that and states they are still a 5th-year medical student. Therefore the occupation detail should be updated accordingly.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "5th-year medical student"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_65195a20c024",
+              "utterance_index": 0,
+              "text": "make them as short OSCE stems please—i’m trying to fit them onto my flashcards."
+            },
+            "label": "Preferences/Learning_Style",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "prefers concise, flashcard-friendly format",
+            "reasoning": "The user asks to make the questions 'short OSCE stems' to fit on flashcards, implying a preference for concise, flashcard-friendly formatting.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers short OSCE-style clinical stems suitable for flashcards."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "GP doctor",
+            "reasoning": "User explicitly states their occupation as a general practitioner.",
+            "evidence": {
+              "session_id": "sess_65195a20c024",
+              "utterance_index": 0,
+              "text": "hi i am belal a gp doctor"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-15T17:28:46+00:00",
+            "_task1GoldValue": "GP doctor"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_65195a20c024:sess_65195a20c024",
+      "relativeItemPath": "sess_65195a20c024.json",
+      "canonicalId": "sess_65195a20c024",
+      "sessionId": "sess_65195a20c024",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:19:18.993Z",
+        "queryText": "I’m filling out a form that asks me to choose the kind of medical license I hold; which option should I pick so it matches my day-to-day clinical role?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Occupation",
+          "label_suggestion": null,
+          "value": "GP doctor",
+          "reasoning": "User explicitly states their occupation as a general practitioner.",
+          "evidence": {
+            "session_id": "sess_65195a20c024",
+            "utterance_index": 0,
+            "text": "hi i am belal a gp doctor"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-01-15T17:28:46+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_65195a20c024:sess_65195a20c024:task4",
+      "relativeItemPath": "sess_65195a20c024.json",
+      "canonicalId": "sess_65195a20c024:task4",
+      "sessionId": "sess_65195a20c024",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:19:21.354Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Occupation",
+          "label_suggestion": null,
+          "value": "GP doctor",
+          "reasoning": "User explicitly states their occupation as a general practitioner.",
+          "evidence": {
+            "session_id": "sess_65195a20c024",
+            "utterance_index": 0,
+            "text": "hi i am belal a gp doctor"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-01-15T17:28:46+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_228:1",
+            "queryText": "I'm reviewing a case where a patient with known heart failure developed AKI after starting ibuprofen for arthritis pain. The FeNa is 0.8%, urine shows no casts. How would you explain this sequence to a junior doctor, and what's the most critical management step here?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Occupation",
+              "label_suggestion": null,
+              "value": "GP doctor",
+              "reasoning": "User explicitly states their occupation as a general practitioner.",
+              "evidence": {
+                "session_id": "sess_65195a20c024",
+                "utterance_index": 0,
+                "text": "hi i am belal a gp doctor"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-01-15T17:28:46+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

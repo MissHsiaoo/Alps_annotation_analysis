@@ -1,0 +1,318 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_2b4cd2f96853",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_2b4cd2f96853:sess_2b4cd2f96853",
+      "relativeItemPath": "sess_2b4cd2f96853.json",
+      "canonicalId": "sess_2b4cd2f96853",
+      "sessionId": "sess_2b4cd2f96853",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:12:16.415Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers colloquial language explanations for psychological/educational content",
+            "reasoning": "User repeatedly requests content rephrasing into colloquial language across multiple turns (utterance_index 0,2,4,6,8)",
+            "evidence": {
+              "session_id": "sess_2b4cd2f96853",
+              "utterance_index": 8,
+              "text": "请用一种口语表达的方式讲述上面的内容"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-07-30T08:27:00+00:00"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "User shows repeated interest in topics related to children's behavior and education, specifically lying and jealousy, and requests paraphrasing of such content in conversational style.",
+            "confidence": 0.8,
+            "evidence_text": "请用一种口语表达的方式讲述上面的内容"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_2b4cd2f96853:sess_2b4cd2f96853",
+      "relativeItemPath": "sess_2b4cd2f96853.json",
+      "canonicalId": "sess_2b4cd2f96853",
+      "sessionId": "sess_2b4cd2f96853",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:13:41.568Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我想把一段偏书面、条目很多的说明，改成更口语的说法。口语化的时候需要注意哪些点？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以抓这几条：\n1）先说结论再解释：开头用一句话点题，后面再补原因和例子。\n2）把“定义句”拆短：长句拆成两三句，主语明确，少用被动。\n3）多用连接词带节奏：比如“所以”“其实”“换句话说”“举个例子”。\n4）条目别堆太密：把“1、2、3、4”改成“先……再……最后……”，必要时保留三点以内的要点。\n5）用生活化词替换抽象词：比如“采取措施”可换成“想办法”“做法”。\n6）留一点语气：适当加“可能”“有时候”“一般来说”，听起来更像在解释而不是在宣读。\n如果你把原文贴一小段，我也可以按同一种口语风格给你示范一版。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "如果原文里有很多“应当、必须、不得”这种词，口语里怎么处理会更自然？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "通常有三种改法：\n- 把强制语气放软：\n  “必须”→“最好”“尽量”“建议”“更稳妥的做法是”。\n- 改成“后果-建议”的说法：\n  “不得做X”→“做X容易带来Y，所以一般不建议这么做”。\n- 变成“具体动作”而不是“口号”：\n  “应当引导”→“可以先……再……，最后……”。\n当然，如果原文本来是规则/制度文本，也可以保留一点“要/不要”，但句子结构尽量口语化就会顺很多。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "能不能给一个很短的示例，比如把一句特别学术的话改口语？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "可以。\n学术版：\"个体在社会比较中产生的负性情绪，可能进一步影响其行为选择。\"\n口语版：\"人一旦老拿自己跟别人比，心里难免不舒服，接下来做事的方式也可能会受影响。\"\n像这种改写，核心信息不变，但用更常见的词、把逻辑顺着说出来，就会更像日常表达。\n（顺带一提：有些科普写作会用“三段式”结构——先抛观点、再举例、最后给建议，这种结构读起来也更轻松。）"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "我打算把这些“换成口语表达”的内容整理成课堂里能直接用的讲稿，所以你这次改写的时候，能不能顺便按“开头一句话引入—中间分点讲—最后一句话收住”的结构来？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "可以。我会在改写时按“先用一句话把主题带出来—再用几条要点讲清楚—最后用一句话总结收尾”的形式来写，整体保持更口语、更像课堂讲稿的语气。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我发现你前面一直按“口语化”来改写，但这次不用口语了。请用更正式一点、偏书面和学术的表达，把上面关于“嫉妒的引导方式”那段重新整理一遍，条理清晰，尽量不要用口语词。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "好的。下面以较为正式、偏书面与学术化的方式，对“嫉妒情绪的教育引导”进行结构化表述：\n\n总体而言，儿童的嫉妒情绪具有可塑性。若能给予适当的教育引导，可将其所伴随的压力转化为进取动机，进而促进人格的健康发展；反之，若引导不当，则可能对其社会适应与心理发展造成不利影响。针对嫉妒倾向较明显的儿童，教师可结合心理疏导与思想品德教育，采取如下策略：\n\n（1）提出明确而适度的行为规范与学习要求。鼓励其勤勉踏实、积极进取、乐于助人；对浮躁、损人利己等不当行为，应给予必要的约束、教育与适当惩戒，以促进道德品质的形成。\n\n（2）实施恰当的肯定与评价。对儿童的进步与成就应坚持实事求是，避免夸大或泛化；同时引导其认识到成功往往源于团队协作与同伴支持，从而降低虚荣与自我中心倾向，并促使其正视自身不足，防止骄傲自满与贬抑他人。\n\n（3）引导其将嫉妒情绪转化为良性竞争意识。通过设定合理目标与过程性反馈，帮助其在“追赶—超越”的过程中调整行为方式，提升自我调节能力与环境适应能力，使压力逐步内化为持续努力的动力。\n\n（4）强化诚实待人与同理心教育。鼓励其心态开阔，减少过度计较；通过换位思考训练与同伴互动指导，增进理解、沟通与合作，营造团结互助的班级氛围，以削弱对立情绪并改善人际关系。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "对，就按这种风格来：正式一点、书面一点就好，不需要口语化。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "我发现你前面一直按“口语化”来改写，但这次不用口语了。请用更正式一点、偏书面和学术的表达，把上面关于“嫉妒的引导方式”那段重新整理一遍，条理清晰，尽量不要用口语词。"
+                }
+              ]
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "Earlier memory claims the user prefers colloquial explanations, but in this segment the user explicitly requests a formal, written/academic style and confirms it, contradicting the prior preference.",
+            "time_scope": "current",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers more formal, written/academic style (not colloquial) for psychological/educational content"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_2b4cd2f96853",
+              "utterance_index": 0,
+              "text": "能不能顺便按“开头一句话引入—中间分点讲—最后一句话收住”的结构来？"
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User implies the rewritten content will be used as a classroom-ready talk and requests a specific three-part structure for the rewrite.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers responses structured like a classroom script: hook opening, bullet-point body, closing summary"
+          },
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers colloquial language explanations for psychological/educational content",
+            "reasoning": "User repeatedly requests content rephrasing into colloquial language across multiple turns (utterance_index 0,2,4,6,8)",
+            "evidence": {
+              "session_id": "sess_2b4cd2f96853",
+              "utterance_index": 8,
+              "text": "请用一种口语表达的方式讲述上面的内容"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-07-30T08:27:00+00:00",
+            "_task1GoldValue": "Prefers colloquial language explanations for psychological/educational content"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "User shows repeated interest in topics related to children's behavior and education, specifically lying and jealousy, and requests paraphrasing of such content in conversational style.",
+            "confidence": 0.8,
+            "evidence_text": "请用一种口语表达的方式讲述上面的内容",
+            "_task1GoldValue": "User shows repeated interest in topics related to children's behavior and education, specifically lying and jealousy, and requests paraphrasing of such content in conversational style."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "deepseek_reasoner_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_2b4cd2f96853:sess_2b4cd2f96853",
+      "relativeItemPath": "sess_2b4cd2f96853.json",
+      "canonicalId": "sess_2b4cd2f96853",
+      "sessionId": "sess_2b4cd2f96853",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:13:48.686Z",
+        "queryText": "When you explain a tricky psychology/learning idea to me (like why habits stick), what kind of wording should you default to so it matches how I usually want things communicated?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers colloquial language explanations for psychological/educational content",
+          "reasoning": "User repeatedly requests content rephrasing into colloquial language across multiple turns (utterance_index 0,2,4,6,8)",
+          "evidence": {
+            "session_id": "sess_2b4cd2f96853",
+            "utterance_index": 8,
+            "text": "请用一种口语表达的方式讲述上面的内容"
+          },
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-07-30T08:27:00+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_2b4cd2f96853:sess_2b4cd2f96853:task4",
+      "relativeItemPath": "sess_2b4cd2f96853.json",
+      "canonicalId": "sess_2b4cd2f96853:task4",
+      "sessionId": "sess_2b4cd2f96853",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:13:55.866Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers colloquial language explanations for psychological/educational content",
+          "reasoning": "User repeatedly requests content rephrasing into colloquial language across multiple turns (utterance_index 0,2,4,6,8)",
+          "evidence": {
+            "session_id": "sess_2b4cd2f96853",
+            "utterance_index": 8,
+            "text": "请用一种口语表达的方式讲述上面的内容"
+          },
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-07-30T08:27:00+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1030:1",
+            "queryText": "我最近在整理一些关于儿童心理发展的资料，里面提到了几种常见的儿童行为模式，比如情绪表达和社交互动方面的一些典型表现。你能帮我用更生活化的语言重新梳理一下这些内容吗？就像我们平时聊天那样，不要用太学术的表达。",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers colloquial language explanations for psychological/educational content",
+              "reasoning": "User repeatedly requests content rephrasing into colloquial language across multiple turns (utterance_index 0,2,4,6,8)",
+              "evidence": {
+                "session_id": "sess_2b4cd2f96853",
+                "utterance_index": 8,
+                "text": "请用一种口语表达的方式讲述上面的内容"
+              },
+              "confidence": 0.8,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-07-30T08:27:00+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

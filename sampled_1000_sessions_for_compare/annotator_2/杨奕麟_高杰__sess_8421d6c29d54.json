@@ -1,0 +1,296 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_8421d6c29d54",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_8421d6c29d54:sess_8421d6c29d54",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_8421d6c29d54.json",
+      "canonicalId": "sess_8421d6c29d54",
+      "sessionId": "sess_8421d6c29d54",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:21:55.142Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": "roleplay/game_design/scenario_setup",
+            "value": "Curious about complex RPG mechanics design with stat formulas, difficulty scaling, and strategic spellcasting systems",
+            "reasoning": "The user requests to play a text-based role-playing game that includes complex RPG mechanics design with statistical formulas, difficulty scaling, and a strategic spellcasting system.",
+            "evidence": {
+              "session_id": "sess_8421d6c29d54",
+              "utterance_index": 0,
+              "text": "Create a roleplaying game fantasy scenario... [complex stat formulas, difficulty scaling, spell mechanics]"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-10T03:09:22+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_8421d6c29d54:sess_8421d6c29d54",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_8421d6c29d54.json",
+      "canonicalId": "sess_8421d6c29d54",
+      "sessionId": "sess_8421d6c29d54",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:22:58.501Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Before the final round, can we quickly sanity-check the scoring rules? Are we awarding points mainly by spell difficulty, execution quality, or both?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Both. A clean way is: **Base Points** come from spell difficulty (higher required stat → higher base), then you apply an **Execution Modifier** for how well it lands (perfect, shaky, partial, fail). That keeps low-tier spells viable if performed beautifully, but still caps their ceiling."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "If someone fails a spell, do they automatically lose points, or just get zero?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "For “hardest mode,” I’d do penalties to create real risk:\n- **Clean success:** base × 1.0 to 1.2 (depending on elegance)\n- **Shaky success:** base × 0.6 to 0.9\n- **Partial miscast:** base × 0.1 to 0.4 (plus a small penalty)\n- **Full failure:** 0 points **and** a meaningful penalty (e.g., −10 to −25), scaled by how ambitious the attempted spell was."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Also: spells can’t be repeated by the same caster, but can Lily copy a spell Ruby used earlier, or is it globally unique across everyone?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Pick one rule and stick to it. Two consistent options:\n1) **Per-caster uniqueness** (common): each mage can’t repeat their own spells; others may use similar ones.\n2) **Global uniqueness** (stricter): once any spell name is used, nobody can use it again.\nGiven the “steal from Sapphire’s list” mechanic, I’d use **global uniqueness for named spells** to make stealing a real tradeoff and prevent repetitive scoring."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Unrelated, but I saw a headline about an old lighthouse being converted into a tiny museum—are those usually public-run or private-run?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Could be either. Many lighthouse museums are **municipal/nonprofit-run** (local historical societies), but some are **private concessions** operating under lease from a parks agency. It depends on who owns the land and whether the site is still an active aid-to-navigation."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Okay, back to the duel—can we allow Sapphire to attempt one “overreach” spell once per match even if stats are short?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Yes: **Once per match, Overreach** allows attempting a spell up to **+20 stat above current**. Resolution: you can’t get “perfect”; best case is “shaky success,” and if you miss the requirement by more than +10, you risk a **partial miscast** or **full failure** with an extra penalty. That keeps it dramatic without making it a free pass."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Okay—last round. If Lily can swipe anything I haven’t used yet, I’m going to play it safe and stick to the tiny stuff again. I’ll cast *Emerald Whisper*."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "**Round 5 (Final Round):**\n\n**Sapphire’s Choice:** *Emerald Whisper* (from Ruby’s list)\n\nWith your power bottoming out and Lily eyeing your unused “mature” repertoire like a hawk, you pivot fully into restraint: a delicate, low-cost spell that prioritizes clean execution over spectacle.\n\n- Your current stat: **30**\n- Required stat (*Emerald Whisper*): **25**\n\n**Outcome:** Success—clean and controlled. A ribbon of emerald light threads through the arena like a living vine, blooming into whisper-thin leaves that chime softly as they dissolve.\n\n**Points:** +55 (elegant, but capped by the spell’s modest demand)\n\n**Ruby’s Turn:** Ruby tries to match your subtlety with *Sunrise Symphony* (35). With her stat at 40, she pulls it off—warm light unfurls in layered harmonics.\n\n**Points:** +50\n\n**Lily’s Turn:** Lily, refusing to leave points on the table, reaches for one of your unused high-tier options and attempts to **steal _Eclipsing Mirage_** (85).\n\nHer stat: **70** → **fails the cast**. The illusion fractures mid-formation into harsh, mismatched shards of light.\n\n**Points:** -20\n\n**Final Scores:**\n- **Team Sapphire & Ruby:** 510 + 55 + 50 = **615**\n- **Lily:** 340 - 20 = **320**\n\nAgainst “hardest mode” pressure and shrinking options, you close the duel by outmaneuvering Lily’s steal attempt rather than outmuscling her with raw stats."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Hold up—I'm not looking for “complex RPG mechanics design” in general. This was just a one-off roleplay scene: Sapphire (16) dueling Lily (12) with Ruby (8), with that secret regression curse. I’m not asking you to build a whole system beyond this match."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Got it. This isn’t a general mechanics-design request—it's a specific, single fantasy duel scenario: you play Sapphire (16) teaming with Ruby (8) against Lily (12), and the key twist is Lily’s hidden regression spell during the 5-round glamour duel."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                12
+              ],
+              "turns": [
+                {
+                  "index": 12,
+                  "role": "user",
+                  "text": "Hold up—I'm not looking for “complex RPG mechanics design” in general. This was just a one-off roleplay scene: Sapphire (16) dueling Lily (12) with Ruby (8), with that secret regression curse. I’m not asking you to build a whole system beyond this match."
+                }
+              ]
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": "roleplay/game_design/scenario_setup",
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The old memory frames the user as broadly curious about complex RPG mechanics design. The dialogue clarifies it was a single contained roleplay scene request tied to this duel setup (“This was just a one-off roleplay scene... I’m not asking you to build a whole system beyond this match.”).",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Requested a specific one-off fantasy roleplay duel scenario (Sapphire 16 with apprentice Ruby 8 vs Lily 12) featuring a hidden regression curse during a 5-round glamour spellcasting match, not a general RPG mechanics design request."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_8421d6c29d54",
+              "utterance_index": 10,
+              "text": "If Lily can swipe anything I haven’t used yet, I’m going to play it safe and stick to the tiny stuff again. I’ll cast *Emerald Whisper*."
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": "gameplay_preference/cautious_strategy",
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "They explicitly indicate choosing to 'play it safe' and selecting a low-demand spell rather than risking higher-tier options.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User tends to choose a safe, low-risk strategy when under pressure in the duel."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_8421d6c29d54:sess_8421d6c29d54",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_8421d6c29d54.json",
+      "canonicalId": "sess_8421d6c29d54",
+      "sessionId": "sess_8421d6c29d54",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:23:05.075Z",
+        "queryText": "I’m prototyping a tabletop campaign and keep getting feedback that my combat is either snowballing or turning into a grind. Based on what I’ve previously been most interested in optimizing, what specific part of the rules should I focus on tuning first so fights stay strategic without feeling unfair?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": "roleplay/game_design/scenario_setup",
+          "value": "Curious about complex RPG mechanics design with stat formulas, difficulty scaling, and strategic spellcasting systems",
+          "reasoning": "The user requests to play a text-based role-playing game that includes complex RPG mechanics design with statistical formulas, difficulty scaling, and a strategic spellcasting system.",
+          "evidence": {
+            "session_id": "sess_8421d6c29d54",
+            "utterance_index": 0,
+            "text": "Create a roleplaying game fantasy scenario... [complex stat formulas, difficulty scaling, spell mechanics]"
+          },
+          "confidence": 0.65,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-04-10T03:09:22+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_8421d6c29d54:sess_8421d6c29d54:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_8421d6c29d54.json",
+      "canonicalId": "sess_8421d6c29d54:task4",
+      "sessionId": "sess_8421d6c29d54",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:23:12.146Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": "roleplay/game_design/scenario_setup",
+          "value": "Curious about complex RPG mechanics design with stat formulas, difficulty scaling, and strategic spellcasting systems",
+          "reasoning": "The user requests to play a text-based role-playing game that includes complex RPG mechanics design with statistical formulas, difficulty scaling, and a strategic spellcasting system.",
+          "evidence": {
+            "session_id": "sess_8421d6c29d54",
+            "utterance_index": 0,
+            "text": "Create a roleplaying game fantasy scenario... [complex stat formulas, difficulty scaling, spell mechanics]"
+          },
+          "confidence": 0.65,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-04-10T03:09:22+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability3_241:1",
+            "queryText": "I'm applying for a summer internship at a game design studio and need to list my relevant experience. Given how naturally I designed that complex stat-decreasing formula and balanced the spellcasting system for Sapphire's duel, what specific role in game mechanics design should I highlight as my strongest real-world qualification? You've seen my technical approach firsthand.",
+            "ability": "ability3",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": "roleplay/game_design/scenario_setup",
+              "value": "Curious about complex RPG mechanics design with stat formulas, difficulty scaling, and strategic spellcasting systems",
+              "reasoning": "The user requests to play a text-based role-playing game that includes complex RPG mechanics design with statistical formulas, difficulty scaling, and a strategic spellcasting system.",
+              "evidence": {
+                "session_id": "sess_8421d6c29d54",
+                "utterance_index": 0,
+                "text": "Create a roleplaying game fantasy scenario... [complex stat formulas, difficulty scaling, spell mechanics]"
+              },
+              "confidence": 0.65,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-04-10T03:09:22+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

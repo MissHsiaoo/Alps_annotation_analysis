@@ -1,0 +1,324 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_95cc02d758b8",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_95cc02d758b8:sess_95cc02d758b8",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_95cc02d758b8.json",
+      "canonicalId": "sess_95cc02d758b8",
+      "sessionId": "sess_95cc02d758b8",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-19T11:29:03.033Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "value": "Prefers processors priced under $100",
+            "reasoning": "User explicitly requests processors under $100 budget constraint.",
+            "evidence": {
+              "session_id": "sess_95cc02d758b8",
+              "utterance_index": 6,
+              "text": "dame otra pero que no pase de los 100$"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "null",
+            "updated_at": "2023-10-19T14:00:28+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "label_suggestion": "technical/specs/brand_comparison",
+            "value": "Curiosity about processor technical specifications (architecture, cores, cache, bits) and comparisons between Intel/AMD",
+            "reasoning": "Multiple technical inquiries about specs and brand comparison request indicate interest, but label 'Thoughts/Curiosity' is forced.",
+            "evidence": {
+              "session_id": "sess_95cc02d758b8",
+              "utterance_index": 16,
+              "text": "que recomendarías que eligiera y por que"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-10-19T14:00:28+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_95cc02d758b8:sess_95cc02d758b8",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_95cc02d758b8.json",
+      "canonicalId": "sess_95cc02d758b8",
+      "sessionId": "sess_95cc02d758b8",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-19T11:29:41.700Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "¿Puedes decirme la diferencia entre arquitectura y microarquitectura en CPUs?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sí. En general, “arquitectura” (ISA) es el conjunto de instrucciones y el modelo visible para el software (por ejemplo x86-64 o ARMv8). “Microarquitectura” es cómo se implementa esa ISA internamente (pipeline, cachés, ejecución fuera de orden, etc.). Distintas microarquitecturas pueden ejecutar la misma ISA."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Entonces, ¿Zen 2 y Zen 3 son microarquitecturas, verdad?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Correcto: Zen 2 y Zen 3 son microarquitecturas de AMD que ejecutan la ISA x86-64. Lo mismo con nombres como Skylake, Comet Lake o Raptor Cove en Intel: son (familias de) microarquitecturas/implementaciones bajo x86-64."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "¿Y 32 bits vs 64 bits a qué se refiere exactamente?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Suele referirse a si la ISA soporta registros y direcciones de memoria de 64 bits (x86-64) o 32 bits (x86). En 64 bits normalmente puedes direccionar mucha más memoria y usar registros más anchos; el sistema operativo y el software también deben ser de 64 bits para aprovecharlo plenamente."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Leí un dato curioso: el Intel 4004 era de 4 bits. ¿Eso es real?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Sí, es real: el Intel 4004 (1971) se suele citar como uno de los primeros microprocesadores comerciales y era de 4 bits. Como comparación histórica, también existieron CPUs de 8 bits muy populares como la MOS 6502 o la Zilog Z80."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Estoy armando una PC chiquita para la sala, así que me viene mejor algo con gráficos integrados; ¿cuál de esos (G6400, 3200G o 3000G) crees que rinde más para eso?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Si la prioridad es usar gráficos integrados, el Ryzen 3 3200G suele rendir mejor en iGPU que el Athlon 3000G, y en general ofrece una experiencia más sólida para uso diario y algunos juegos ligeros. El G6400 puede ir bien en CPU, pero dependerá de la gráfica integrada disponible en el modelo y no suele destacar tanto en iGPU frente a las APUs de AMD."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Ojo: lo de “que no pase de los 100$” era solo para ese ejemplo adicional. No es que yo prefiera siempre procesadores por debajo de $100."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Entendido: entonces el límite de $100 fue una condición puntual para esa recomendación, no una preferencia fija tuya."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "label_suggestion": "technical/specs/brand_comparison",
+            "value": "Curiosity about processor technical specifications (architecture, cores, cache, bits) and comparisons between Intel/AMD",
+            "reasoning": "Multiple technical inquiries about specs and brand comparison request indicate interest, but label 'Thoughts/Curiosity' is forced.",
+            "evidence": {
+              "session_id": "sess_95cc02d758b8",
+              "utterance_index": 16,
+              "text": "que recomendarías que eligiera y por que"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-10-19T14:00:28+00:00",
+            "_task1GoldValue": "Curiosity about processor technical specifications (architecture, cores, cache, bits) and comparisons between Intel/AMD"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Ojo: lo de “que no pase de los 100$” era solo para ese ejemplo adicional. No es que yo prefiera siempre procesadores por debajo de $100."
+                }
+              ]
+            },
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "null",
+            "reasoning": "The prior memory generalizes a long-term preference from a single request. The user clarifies it was only for that specific example, so it shouldn't be stored as an ongoing price preference.",
+            "time_scope": "short_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "The under-$100 budget was a one-off constraint for a single recommendation, not a general preference."
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_95cc02d758b8",
+              "utterance_index": 8,
+              "text": "Estoy armando una PC chiquita para la sala, así que me viene mejor algo con gráficos integrados"
+            },
+            "label": "Thoughts/Goals/Short_Term",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "null",
+            "reasoning": "El usuario implica que su objetivo es un equipo pequeño para la sala y que prioriza un procesador con gráficos integrados para esa PC.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is building a small living-room PC and prefers a CPU with integrated graphics."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_95cc02d758b8:sess_95cc02d758b8",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_95cc02d758b8.json",
+      "canonicalId": "sess_95cc02d758b8",
+      "sessionId": "sess_95cc02d758b8",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-19T11:29:46.837Z",
+        "queryText": "I’m picking between two CPU options that seem similarly worthwhile overall, but one of them would push past my usual comfort zone for spending while the other stays within it. Based on how I typically set my limit when shopping for this part, which one should I choose—and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Shopping",
+          "label_suggestion": null,
+          "value": "Prefers processors priced under $100",
+          "reasoning": "User explicitly requests processors under $100 budget constraint.",
+          "evidence": {
+            "session_id": "sess_95cc02d758b8",
+            "utterance_index": 6,
+            "text": "dame otra pero que no pase de los 100$"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "null",
+          "updated_at": "2023-10-19T14:00:28+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_95cc02d758b8:sess_95cc02d758b8:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_95cc02d758b8.json",
+      "canonicalId": "sess_95cc02d758b8:task4",
+      "sessionId": "sess_95cc02d758b8",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-19T11:30:00.246Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Shopping",
+          "label_suggestion": null,
+          "value": "Prefers processors priced under $100",
+          "reasoning": "User explicitly requests processors under $100 budget constraint.",
+          "evidence": {
+            "session_id": "sess_95cc02d758b8",
+            "utterance_index": 6,
+            "text": "dame otra pero que no pase de los 100$"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "null",
+          "updated_at": "2023-10-19T14:00:28+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_879:1",
+            "queryText": "Estoy viendo estos dos: el Athlon 3000G y el Pentium Gold G6400. ¿Cuál me conviene más para armar un equipo básico?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Shopping",
+              "label_suggestion": null,
+              "value": "Prefers processors priced under $100",
+              "reasoning": "User explicitly requests processors under $100 budget constraint.",
+              "evidence": {
+                "session_id": "sess_95cc02d758b8",
+                "utterance_index": 6,
+                "text": "dame otra pero que no pase de los 100$"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "null",
+              "updated_at": "2023-10-19T14:00:28+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "直接相关",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

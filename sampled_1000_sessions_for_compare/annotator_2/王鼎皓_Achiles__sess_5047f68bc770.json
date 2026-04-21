@@ -1,0 +1,280 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_5047f68bc770",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_5047f68bc770:sess_5047f68bc770",
+      "relativeItemPath": "sess_5047f68bc770.json",
+      "canonicalId": "sess_5047f68bc770",
+      "sessionId": "sess_5047f68bc770",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:06:36.113Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/command_response_pattern",
+            "value": "Sustained interest in tracking latest technology breakthroughs [ERROR: Unsupported by evidence - 'proceed with plan' commands are system prompts, not user self-reported curiosity]",
+            "reasoning": "Unsupported by evidence - 'proceed with plan' commands are system prompts, not user self-reported curiosity",
+            "evidence": {
+              "session_id": "sess_5047f68bc770",
+              "utterance_index": 2,
+              "text": "System: proceed with your plan."
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-02T18:53:50Z"
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "value": "User prefers information about new technology breakthroughs rather than retrospective summaries or 'top stories' from previous years",
+            "confidence": 0.95,
+            "evidence_text": "I don't want the news that are top these in 2023 I want the news that gives a new breakthrough in tech"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_5047f68bc770:sess_5047f68bc770",
+      "relativeItemPath": "sess_5047f68bc770.json",
+      "canonicalId": "sess_5047f68bc770",
+      "sessionId": "sess_5047f68bc770",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:07:56.335Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I keep seeing headlines that recycle last year’s “top tech stories.” How would you tell a real breakthrough from a recap?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "A recap usually summarizes known events (“best of,” “top,” “biggest trends”). A breakthrough claim tends to include: (1) a specific new result (metric, benchmark, prototype), (2) who achieved it (lab/company), (3) where it was disclosed (paper, conference, regulator filing), and (4) what changed versus prior art. If none of those are present, it’s often just commentary."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "What are quick red flags that it’s hype?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Red flags: vague superlatives (“revolutionary,” “game-changing”) without numbers; no named researchers or institutions; no link to a primary source; “could”/“might” everywhere; and comparisons to unrelated tech (e.g., calling everything “the new internet”). Also watch for recycled images and identical phrasing across many sites."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Okay. Give me a simple checklist I can apply in under a minute."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "60-second checklist:\n1) Is there a primary source link (paper, preprint, patent, dataset, standards draft)?\n2) Is the claim measurable (speedup %, error rate, energy, cost, scale)?\n3) Is the baseline stated (what it beats, and how)?\n4) Any independent confirmation (another lab, replication, benchmark suite)?\n5) Is the limitation mentioned (constraints, failures, scope)?\nIf you get 3+ “no” answers, treat it as a recap or marketing."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Tangential question: is it true the first website ever is still online?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Yes—CERN maintains the first website at info.cern.ch, which documents the original World Wide Web project."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "That list you just pulled up is all \"best assistants\" stuff again—can we not do this loop? If it can’t be pinned to Jan 2, 2024 with an actual breakthrough, toss it; I’m trying to post the *new* stuff, not evergreen productivity roundups."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Understood—I'll filter out evergreen/tool roundup results and keep only items that clearly indicate a new tech breakthrough and tie back to Jan 2, 2024 before drafting anything for Instagram."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "No—it's not that I hate 2023 tech news. I just don't want those 'Top tech stories of 2023' recap lists. If there's an actual breakthrough that happened in 2023, that's fine—just make sure it's a real new breakthrough, not a yearly roundup."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it. You’re not rejecting 2023 because of the year—you’re rejecting recap-style 'top stories of 2023' summaries. You still want genuine breakthrough items (even if they’re dated 2023), as long as they’re actual new developments rather than roundups."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/command_response_pattern",
+            "value": "Sustained interest in tracking latest technology breakthroughs [ERROR: Unsupported by evidence - 'proceed with plan' commands are system prompts, not user self-reported curiosity]",
+            "reasoning": "Unsupported by evidence - 'proceed with plan' commands are system prompts, not user self-reported curiosity",
+            "evidence": {
+              "session_id": "sess_5047f68bc770",
+              "utterance_index": 2,
+              "text": "System: proceed with your plan."
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-02T18:53:50Z",
+            "_task1GoldValue": "Sustained interest in tracking latest technology breakthroughs [ERROR: Unsupported by evidence - 'proceed with plan' commands are system prompts, not user self-reported curiosity]"
+          },
+          {
+            "memory_id": "m1_update",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "value": "用户并不是讨厌 2023 年科技新闻，只是不想重述那些“2023 年顶级科技故事”列表。",
+            "confidence": 0.95,
+            "evidence_text": "不，我并不是讨厌 2023 年科技新闻。我只是不想重述那些“2023 年顶级科技故事”列表。如果 2023 年发生了真正的突破，那也很好，只要确保它是真正的新突破，而不是年度综述即可。",
+            "_task1GoldValue": "User prefers information about new technology breakthroughs rather than retrospective summaries or 'top stories' from previous years",
+            "time_scope": "unknown",
+            "emotion": "null",
+            "preference_attitude": "null"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_5047f68bc770",
+              "utterance_index": 0,
+              "text": "That list you just pulled up is all \"best assistants\" stuff again—can we not do this loop? If it can’t be pinned to Jan 2, 2024 with an actual breakthrough, toss it; I’m trying to post the *new* stuff, not evergreen productivity roundups."
+            },
+            "label": "Preferences/Content_Filtering",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "dislike",
+            "reasoning": "User complains about recurring 'best assistants' lists and instructs to discard anything not pinned to Jan 2, 2024 and not an actual breakthrough, implying a strong filtering preference.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers to exclude evergreen 'best tools/assistants' roundup content and only keep date-tied, genuinely new tech breakthrough items (for Jan 2, 2024)."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "value": "User prefers information about new technology breakthroughs rather than retrospective summaries or 'top stories' from previous years",
+            "confidence": 0.95,
+            "evidence_text": "I don't want the news that are top these in 2023 I want the news that gives a new breakthrough in tech",
+            "_task1GoldValue": "User prefers information about new technology breakthroughs rather than retrospective summaries or 'top stories' from previous years"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m2",
+          "m1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_5047f68bc770:sess_5047f68bc770",
+      "relativeItemPath": "sess_5047f68bc770.json",
+      "canonicalId": "sess_5047f68bc770",
+      "sessionId": "sess_5047f68bc770",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:08:02.046Z",
+        "queryText": "I’m drafting a tech update for you and I have two outline options: (A) a year-in-review style roundup of widely shared headlines, or (B) a tighter brief focused only on genuinely new developments. Which option should I avoid picking so it doesn’t clash with your stated preference?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Interaction_Preferences",
+          "value": "User prefers information about new technology breakthroughs rather than retrospective summaries or 'top stories' from previous years",
+          "confidence": 0.95,
+          "evidence_text": "I don't want the news that are top these in 2023 I want the news that gives a new breakthrough in tech"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_5047f68bc770:sess_5047f68bc770:task4",
+      "relativeItemPath": "sess_5047f68bc770.json",
+      "canonicalId": "sess_5047f68bc770:task4",
+      "sessionId": "sess_5047f68bc770",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:08:05.954Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Interaction_Preferences",
+          "value": "User prefers information about new technology breakthroughs rather than retrospective summaries or 'top stories' from previous years",
+          "confidence": 0.95,
+          "evidence_text": "I don't want the news that are top these in 2023 I want the news that gives a new breakthrough in tech"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_71:1",
+            "queryText": "Hey, I'm putting together a quick year-in-review presentation for my team about tech trends, and I'm running super late. Can you just pull together a summary of the most significant technology developments from 2023 for me? I need it in the next 10 minutes.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Interaction_Preferences",
+              "value": "User prefers information about new technology breakthroughs rather than retrospective summaries or 'top stories' from previous years",
+              "confidence": 0.95,
+              "evidence_text": "I don't want the news that are top these in 2023 I want the news that gives a new breakthrough in tech"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

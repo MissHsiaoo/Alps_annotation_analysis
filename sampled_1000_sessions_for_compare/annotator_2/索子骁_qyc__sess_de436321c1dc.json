@@ -1,0 +1,429 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_de436321c1dc",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_de436321c1dc:sess_de436321c1dc",
+      "relativeItemPath": "sess_de436321c1dc.json",
+      "canonicalId": "sess_de436321c1dc",
+      "sessionId": "sess_de436321c1dc",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T01:17:47.003Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Resides in Slovakia",
+            "reasoning": "User explicitly states having residence in Slovakia and sending packages from there.",
+            "evidence": {
+              "session_id": "sess_de436321c1dc",
+              "utterance_index": 0,
+              "text": "ked mam uvedene bydlisko na slovensku... baliky posielam zo slovenska"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-15T20:45:53Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Likes sour foods",
+            "reasoning": "User explicitly states 'Mam rada kysle veci' (I like sour things).",
+            "evidence": {
+              "session_id": "sess_de436321c1dc",
+              "utterance_index": 10,
+              "text": "Mam rada kysle veci"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-15T20:45:53Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers polite, concise communication in corporate tone",
+            "reasoning": "Repeated requests for shorter, less aggressive formulations and corporate-style language.",
+            "evidence": {
+              "session_id": "sess_de436321c1dc",
+              "utterance_index": 4,
+              "text": "Joj, da sa to preformulovat do menej agresivneho tonu? Na styl korporatov?"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-15T20:45:53Z"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about Slovak language specifics (diacritic-rich words) and šťaveľ-based dishes",
+            "reasoning": "Multiple follow-ups about Slovak vocabulary and requests for recipe indicate sustained interest.",
+            "evidence": {
+              "session_id": "sess_de436321c1dc",
+              "utterance_index": 12,
+              "text": "Mozete mi dat recept na polievku zo stavela?"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-15T20:45:53Z"
+          },
+          {
+            "memory_id": "m5",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Communication/Text_Style/Diacritics_Absent",
+            "value": "Does not use diacritics when typing",
+            "reasoning": "User explicitly states 'nepouzivam diakritiku' (I don't use diacritics).",
+            "evidence": {
+              "session_id": "sess_de436321c1dc",
+              "utterance_index": 10,
+              "text": "nepouzivam diakritiku tak to moze byt tazsie spocesovat"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-15T20:45:53Z"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "value": "User sells books from their personal library",
+            "confidence": 0.95,
+            "evidence_text": "knihy co predavam z mojej kniznice"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_de436321c1dc:sess_de436321c1dc",
+      "relativeItemPath": "sess_de436321c1dc.json",
+      "canonicalId": "sess_de436321c1dc",
+      "sessionId": "sess_de436321c1dc",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T05:33:04.990Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Este jedna jazykova otazka: ake su dobre slovenske ekvivalenty k „respektive“, ktore zneju prirodzene v beznej vete?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Najcastejsie: „presnejsie“, „teda“, „inymi slovami“, „alebo skor“, pripadne „konkretne“. Zalezi, ci opravujete, spresnujete, alebo ponukate alternativu."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "A vies dat 2–3 kratke priklady viet, kde to nebude zniet knizne?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Jasne: 1) „Pridem v piatok, teda v piatok vecer.“ 2) „Je to lacnejsia verzia, presnejsie bez prislusenstva.“ 3) „Zastavim sa u teba, alebo skor len pred domom.“"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Mimochodom, nahodou som narazil na slovo „pŕhľava“ a napadlo mi: preco ma slovenčina aj „ŕ“ bez samohlasky?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "„Ŕ“ (aj „ĺ“) je v slovencine slabičná sonanta: dokaze tvorit jadro slabiky aj bez samohlasky. Preto „pŕ-hľa-va“ funguje bez „e/a“ medzi p a r."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Ok, to dava zmysel. A vies dat este par slov s „ŕ“ alebo „ĺ“, len ako ukazku?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "S „ŕ“ napr. „vŕba“, „tŕň“, „hŕstka“. S „ĺ“ napr. „vĺk“, „kĺb“, „pĺsť“. (Zaujimavost: v starosloviencine boli tieto zvuky beznejsie, potom sa v niektorych jazykoch rozpadli na „er/el“.)"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Super, diky. Este posledna drobnost: radsej varim bez mliecnych veci, tak tu smotanu z receptu vynecham—cim to viem nahradit, aby to stale malo taku jemnu konzistenciu?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Jasné—ak chcete zachovať jemnosť bez smotany, môžete použiť napr. rozmixovaný zemiak z polievky, lyžicu rastlinnej smotany (ovsená/sójová), alebo trochu kokosového mlieka (len malé množstvo, aby neprebilo chuť)."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Inak opravim sa: ja vlastne kysle veci nemusim. Vtedy som to napisala len obrazne, lebo som bola zvedava na ten stavel."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Jasne, rozumiem. Takze nie ze by ste mali rada kysle chute, len ste sa pytali na polievku zo stavela zo zvedavosti."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Presne tak—kysle mi vacsinou nechuti."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Resides in Slovakia",
+            "reasoning": "User explicitly states having residence in Slovakia and sending packages from there.",
+            "evidence": {
+              "session_id": "sess_de436321c1dc",
+              "utterance_index": 0,
+              "text": "ked mam uvedene bydlisko na slovensku... baliky posielam zo slovenska"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-15T20:45:53Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers polite, concise communication in corporate tone",
+            "reasoning": "Repeated requests for shorter, less aggressive formulations and corporate-style language.",
+            "evidence": {
+              "session_id": "sess_de436321c1dc",
+              "utterance_index": 4,
+              "text": "Joj, da sa to preformulovat do menej agresivneho tonu? Na styl korporatov?"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-15T20:45:53Z"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about Slovak language specifics (diacritic-rich words) and šťaveľ-based dishes",
+            "reasoning": "Multiple follow-ups about Slovak vocabulary and requests for recipe indicate sustained interest.",
+            "evidence": {
+              "session_id": "sess_de436321c1dc",
+              "utterance_index": 12,
+              "text": "Mozete mi dat recept na polievku zo stavela?"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-15T20:45:53Z"
+          },
+          {
+            "memory_id": "m5",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Communication/Text_Style/Diacritics_Absent",
+            "value": "Does not use diacritics when typing",
+            "reasoning": "User explicitly states 'nepouzivam diakritiku' (I don't use diacritics).",
+            "evidence": {
+              "session_id": "sess_de436321c1dc",
+              "utterance_index": 10,
+              "text": "nepouzivam diakritiku tak to moze byt tazsie spocesovat"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-15T20:45:53Z"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The old memory says the user likes sour foods, but the user explicitly corrects this by stating they don't like sour things and that the earlier phrasing was figurative.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Does not like sour foods"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_de436321c1dc",
+              "utterance_index": 0,
+              "text": "radsej varim bez mliecnych veci, tak tu smotanu z receptu vynecham"
+            },
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "avoid",
+            "reasoning": "User implies avoiding dairy by saying they prefer cooking without dairy and will omit the cream, asking for substitutes.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers to cook without dairy (avoids dairy ingredients like cream)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_de436321c1dc:sess_de436321c1dc",
+      "relativeItemPath": "sess_de436321c1dc.json",
+      "canonicalId": "sess_de436321c1dc",
+      "sessionId": "sess_de436321c1dc",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T05:33:12.808Z",
+        "queryText": "I’m putting together a small snack bag for a long trip and want to include one candy or fruit-based treat that I’ll actually enjoy rather than something too sweet—what kind of flavor profile should I pick, based on what you know about my tastes, and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Likes sour foods",
+          "reasoning": "User explicitly states 'Mam rada kysle veci' (I like sour things).",
+          "evidence": {
+            "session_id": "sess_de436321c1dc",
+            "utterance_index": 10,
+            "text": "Mam rada kysle veci"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-05-15T20:45:53Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_de436321c1dc:sess_de436321c1dc:task4",
+      "relativeItemPath": "sess_de436321c1dc.json",
+      "canonicalId": "sess_de436321c1dc:task4",
+      "sessionId": "sess_de436321c1dc",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T05:33:37.731Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Likes sour foods",
+          "reasoning": "User explicitly states 'Mam rada kysle veci' (I like sour things).",
+          "evidence": {
+            "session_id": "sess_de436321c1dc",
+            "utterance_index": 10,
+            "text": "Mam rada kysle veci"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-05-15T20:45:53Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_610:1",
+            "queryText": "Mám chuť na niečo kyslé na obed. Čo by si mi odporučil?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Food",
+              "label_suggestion": null,
+              "value": "Likes sour foods",
+              "reasoning": "User explicitly states 'Mam rada kysle veci' (I like sour things).",
+              "evidence": {
+                "session_id": "sess_de436321c1dc",
+                "utterance_index": 10,
+                "text": "Mam rada kysle veci"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-05-15T20:45:53Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "very relevant",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

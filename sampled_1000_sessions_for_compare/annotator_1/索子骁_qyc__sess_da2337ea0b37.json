@@ -1,0 +1,366 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_da2337ea0b37",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_da2337ea0b37:sess_da2337ea0b37",
+      "relativeItemPath": "sess_da2337ea0b37.json",
+      "canonicalId": "sess_da2337ea0b37",
+      "sessionId": "sess_da2337ea0b37",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T12:54:08.661Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Thoughts/Goals/Short_Term",
+            "value": "The user's immediate and continuous goal is to quickly and accurately obtain English translations for a series of Japanese sentences, all centered around the theme of “着ぐるみ” (kigurumi/role-playing costumes).",
+            "reasoning": " starting from the first command “Translate,” all subsequent messages  are simply providing texts to be translated, with no explanation, questions, or casual talk.",
+            "evidence": {
+              "session_id": "sess_da2337ea0b37",
+              "utterance_index": 0,
+              "text": "Translate\n\n\"今年はもう少し着ぐるみ系の交友を大事にしてみようかな？って思わせてもらった\""
+            },
+            "confidence": 0.9,
+            "time_scope": "recent",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T07:04:09.352Z"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "User is interested in kigurumi (mascot costume) culture and terminology, requesting multiple translations of kigurumi-related Japanese text throughout the conversation",
+            "confidence": 0.8,
+            "evidence_text": "Translate\n\n\"今年はもう少し着ぐるみ系の交友を大事にしてみようかな？って思わせてもらった\" ... Translate \"着ぐるみ\" with \"kigurumi\". ... \"年の瀬なのでこの一枚に今年の着ぐるみ活動をまとめました！\" ... \"着ぐるみ垢なのに\" ... \"いや、俺と遊んだ奴は新規の着ぐるみ画像沢山持っとるわ\" ... [multiple subsequent kigurumi-related translation requests]"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_da2337ea0b37:sess_da2337ea0b37",
+      "relativeItemPath": "sess_da2337ea0b37.json",
+      "canonicalId": "sess_da2337ea0b37",
+      "sessionId": "sess_da2337ea0b37",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T04:17:44.894Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Translate this into English:\n\n\"この表現、直訳だと固いけど、雰囲気は寄せたい\""
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "\"If I translate this literally it comes out stiff, but I want to keep the same vibe.\""
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Could you give 2 alternatives: one casual, one formal?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Casual: \"A literal translation sounds kind of stiff, but I want it to feel the same.\"\nFormal: \"A literal translation may read somewhat rigid; however, I’d like to preserve the original tone.\""
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Also, what does 「直訳」 nuance-wise? One sentence."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "「直訳」 is \"literal translation\" with the nuance of sticking closely to the original wording (sometimes at the expense of naturalness)."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Unrelated: I saw a headline saying a rare comet might be visible this year—any quick context?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Often those headlines refer to a periodic comet making a close-ish pass; visibility depends on brightness, dark skies, and timing, and many comets end up being binocular objects rather than obvious naked-eye sights."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "And one more random thing—what does \"AD300\" usually refer to in photography gear?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "It commonly refers to a 300Ws studio strobe model name (for example, some Godox lights are labeled AD300), i.e., a portable flash unit rated around 300 watt-seconds."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Translate:\n\n\"年末進行でバタバタしてて、納品前チェックが深夜になりがち…\""
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "\"With the year-end rush keeping me busy, the pre-delivery checks tend to end up happening late at night...\""
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "About that last one—I'm not asking you to avoid politics. I just want the phrase 「向中共致敬」 translated plainly."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Got it. 「向中共致敬」 is simply “Salute to the Chinese Communist Party (CCP)” / “Pay tribute to the Chinese Communist Party.”"
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Yeah, exactly—just a straightforward translation. No need to steer away from it."
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "Understood—I'll translate it directly when it appears, without assuming you want to avoid political content."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "creative_work/costume_design",
+            "value": "Creates male kigurumi (mascot costume) outfits for performers",
+            "reasoning": "User translates multiple descriptions of costume creation, but context suggests third-party/role-play content rather than direct self-report",
+            "evidence": {
+              "session_id": "sess_da2337ea0b37",
+              "utterance_index": 18,
+              "text": "\"ひろがるスカイ！プリキュア／キュアバタフライ... 着ぐるみさん用衣装です。\""
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-12T00:57:05+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Uses hashtag #はてなを付けると可愛くなる選手権 for content [ERROR: Not about the user - appears in translation context without self-application]",
+            "reasoning": "Not about the user - appears in translation context without self-application",
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-01-12T00:57:05+00:00",
+            "evidence": {
+              "session_id": "sess_da2337ea0b37",
+              "utterance_index": 0,
+              "text": ""
+            }
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Thoughts/Goals/Short_Term",
+            "value": "The user's immediate and continuous goal is to quickly and accurately obtain English translations for a series of Japanese sentences, all centered around the theme of “着ぐるみ” (kigurumi/role-playing costumes).",
+            "reasoning": " starting from the first command “Translate,” all subsequent messages  are simply providing texts to be translated, with no explanation, questions, or casual talk.",
+            "evidence": {
+              "session_id": "sess_da2337ea0b37",
+              "utterance_index": 0,
+              "text": "Translate\n\n\"今年はもう少し着ぐるみ系の交友を大事にしてみようかな？って思わせてもらった\""
+            },
+            "confidence": 0.9,
+            "time_scope": "recent",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T07:04:09.352Z",
+            "_task1GoldValue": "The user's immediate and continuous goal is to quickly and accurately obtain English translations for a series of Japanese sentences, all centered around the theme of “着ぐるみ” (kigurumi/role-playing costumes)."
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": "neutral",
+            "reasoning": "The old memory claims the user wants to avoid political content, but in the dialogue the user explicitly says they are not asking to avoid politics and wants a plain translation; therefore the updated truth is to translate such phrases directly rather than avoid them.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User does not request avoiding political content; they want politically related phrases (e.g., 「向中共致敬」) translated straightforwardly when they appear."
+          },
+          {
+            "confidence": 0.68,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_da2337ea0b37",
+              "utterance_index": 0,
+              "text": "Translate:\n\n\"年末進行でバタバタしてて、納品前チェックが深夜になりがち…\""
+            },
+            "label": "Work/Workload",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user asks to translate a line describing being hectic due to year-end schedule and that pre-delivery checks often become late-night work, implying this reflects their situation/context.",
+            "time_scope": "recent",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User gets especially busy toward year-end and does pre-delivery checks late at night."
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "User is interested in kigurumi (mascot costume) culture and terminology, requesting multiple translations of kigurumi-related Japanese text throughout the conversation",
+            "confidence": 0.8,
+            "evidence_text": "Translate\n\n\"今年はもう少し着ぐるみ系の交友を大事にしてみようかな？って思わせてもらった\" ... Translate \"着ぐるみ\" with \"kigurumi\". ... \"年の瀬なのでこの一枚に今年の着ぐるみ活動をまとめました！\" ... \"着ぐるみ垢なのに\" ... \"いや、俺と遊んだ奴は新規の着ぐるみ画像沢山持っとるわ\" ... [multiple subsequent kigurumi-related translation requests]",
+            "_task1GoldValue": "User is interested in kigurumi (mascot costume) culture and terminology, requesting multiple translations of kigurumi-related Japanese text throughout the conversation"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m4",
+          "claude_sonnet_4_5_20250929_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_da2337ea0b37:sess_da2337ea0b37",
+      "relativeItemPath": "sess_da2337ea0b37.json",
+      "canonicalId": "sess_da2337ea0b37",
+      "sessionId": "sess_da2337ea0b37",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:47:36.719Z",
+        "queryText": "I’m drafting a short public-facing message, and there’s one specific kind of politically loaded phrasing from my past constraints that I should proactively filter out before sharing—what category of content should I avoid so I don’t cross my own boundary?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "indirect",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Avoid political content like '向中共致敬' (Salute to CCP) [ERROR: Unsupported by evidence - phrase appears in translation context without user commentary]",
+          "reasoning": "Unsupported by evidence - phrase appears in translation context without user commentary",
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "avoid",
+          "updated_at": "2024-01-12T00:57:05+00:00",
+          "evidence": {
+            "session_id": "sess_da2337ea0b37",
+            "utterance_index": 0,
+            "text": ""
+          }
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_da2337ea0b37:sess_da2337ea0b37:task4",
+      "relativeItemPath": "sess_da2337ea0b37.json",
+      "canonicalId": "sess_da2337ea0b37:task4",
+      "sessionId": "sess_da2337ea0b37",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T00:49:18.044Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "indirect",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Avoid political content like '向中共致敬' (Salute to CCP) [ERROR: Unsupported by evidence - phrase appears in translation context without user commentary]",
+          "reasoning": "Unsupported by evidence - phrase appears in translation context without user commentary",
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "avoid",
+          "updated_at": "2024-01-12T00:57:05+00:00",
+          "evidence": {
+            "session_id": "sess_da2337ea0b37",
+            "utterance_index": 0,
+            "text": ""
+          }
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_327:1",
+            "queryText": "Hey, I'm helping a friend who's new to cosplay understand different community norms. Could you translate and explain the cultural significance of phrases like '向中共致敬' that sometimes appear in anime or game fan translations? Just give me a neutral breakdown of what it means and when fans might use it.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "indirect",
+              "label": "Constraints_and_Boundaries/Sensitive_Topics",
+              "label_suggestion": null,
+              "value": "Avoid political content like '向中共致敬' (Salute to CCP) [ERROR: Unsupported by evidence - phrase appears in translation context without user commentary]",
+              "reasoning": "Unsupported by evidence - phrase appears in translation context without user commentary",
+              "confidence": 0.1,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "avoid",
+              "updated_at": "2024-01-12T00:57:05+00:00",
+              "evidence": {
+                "session_id": "sess_da2337ea0b37",
+                "utterance_index": 0,
+                "text": ""
+              }
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,385 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_9951841867fa",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_9951841867fa:sess_9951841867fa",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_9951841867fa.json",
+      "canonicalId": "sess_9951841867fa",
+      "sessionId": "sess_9951841867fa",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:12:29.740Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers grimdark fantasy blended with romantic drama in creative writing",
+            "reasoning": "User's novel outline explicitly combines grimdark fantasy and romantic drama genres",
+            "evidence": {
+              "session_id": "sess_9951841867fa",
+              "utterance_index": 0,
+              "text": "[GENRE] \nGrimdark fantasy + romantic drama."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-11-20T09:36:06Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/writing/structure",
+            "value": "Sustained interest in narrative structure optimization techniques",
+            "reasoning": "Single instance of requesting chapter pacing improvements without repeated pattern",
+            "evidence": {
+              "session_id": "sess_9951841867fa",
+              "utterance_index": 6,
+              "text": "Regarding pacing: suggest more tensed endings for each chapter starting with Chapter 9"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-20T09:36:06Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers concrete examples with structured formatting for writing feedback",
+            "reasoning": "Direct request for specific format templates demonstrating interaction preference",
+            "evidence": {
+              "session_id": "sess_9951841867fa",
+              "utterance_index": 4,
+              "text": "Suggest two alternative formats with the same goal"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-11-20T09:36:06Z"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Constraints/Story_Details",
+            "value": "Requires strict timeline consistency in character status (deceased characters)",
+            "reasoning": "Explicit correction about deceased characters being non-interactable in current timeline",
+            "evidence": {
+              "session_id": "sess_9951841867fa",
+              "utterance_index": 8,
+              "text": "Laenor is dead in this current time so no letters or anything from him. Laena is dead too."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-11-20T09:36:06Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_9951841867fa:sess_9951841867fa",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_9951841867fa.json",
+      "canonicalId": "sess_9951841867fa",
+      "sessionId": "sess_9951841867fa",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-17T10:53:40.088Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Quick craft question: when outlining multi-POV chapters, do you prefer labeling beats by scene number (3.1, 3.2) or by purpose (Inciting Incident, Debate, etc.)?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Either works, but they solve different problems. Scene numbers (3.1/3.2) are best for tracking chronology and POV swaps; purpose labels are best for checking structure and pacing. A common hybrid is: **Chapter 3 — Inciting Incident** then **3.1 (Rhaenyra) — Catalyst**, **3.2 (Nyra) — Reaction**, etc."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "If you had to keep only one, which is more useful during revisions?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "During revisions, purpose labels tend to win because they reveal missing functions (no decision beat, no escalation, no reversal). If you worry about continuity errors, keep scene numbers in a right-hand column or as a small prefix.\n\nUnrelated example: in film production, scene numbering is often locked early because it affects scheduling and budgets, while beat labels keep changing throughout rewrites."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "I’m also trying to avoid chapters ending softly. Any general rule of thumb?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Aim to end on a *new problem* or a *worsened problem*, not a recap. Practical checklist: (1) a decision is made, (2) a secret is exposed/created, (3) a threat advances, or (4) a relationship shifts in a way that can’t be easily undone.\n\nAnother unrelated note: some Victorian serial novels ended chapters on literal cliffhangers because installment publication rewarded sharp hooks."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Got it. Any pitfalls to avoid with hooks?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Big ones: (1) \"fake\" hooks that get instantly reversed next scene, (2) introducing a brand-new element with no setup purely for shock, and (3) repeating the same type of hook every chapter. Variety helps—rotate between external danger, moral dilemma, and relational rupture.\n\nTotally different domain: in tabletop RPG campaigns, GMs often track \"cliffhanger types\" to avoid overusing ambush endings."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "If you can, keep it tight: I’m mostly looking for chapter-end punches that leave the family on a knife-edge (kids vs. parents, betrothals, Driftmark pressure, Greens looming), not new subplots."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—so each ending should land like a family fracture under outside siege, rather than opening a fresh lane.\n\nChapter 9: End on Rhaenyra making (and immediately regretting) a promise that binds her hands. Example: she tells Rhaena she’ll “keep the events intact,” then turns and hears Nyra laughing with Daemion off-page—so the reader feels the promise already breaking.\n\nChapter 10: End on the outer conflict biting the household: a raven arrives from the capital with news that the Greens have tightened control and Rhaenys is effectively trapped—while Daemion, in the same beat, vows he’ll take Nyra anyway. Two threats, one chapter-end choke.\n\nChapter 11: End on Jace realizing the family is no longer aligned: he agrees to help Baela stop Nyra/Daemion—and the last line is him hearing Daemion’s voice in the corridor, close enough that Jace has to swallow the urge to confront him now.\n\nChapter 12: End on Dragonstone feeling infiltrated, not safe: after the discontent scene, Rhaenyra reads Rhaenys’s letter and looks up to see one of Vaemond’s men still in the yard watching the castle—like Driftmark’s hostility has physically arrived.\n\nChapter 13: End on the “life-tied-to-conception” reveal as a ticking clock: Rhaenyra leaves Marys’s chamber and sees Jace/Luke/Joffrey asleep—then the closing beat is her counting days in her head and realizing she’s running out.\n\nChapter 14: End on the family having to act like a war council: Rhaenyra begins sending messages to Starks/Arryns—then Daemon, instead of reassuring her, quietly starts prepping for escalation, making it clear the home is becoming a fortress.\n"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "One correction before we go further: this isn’t grimdark. I’m aiming for a more hopeful, court-intrigue romantic fantasy tone, with darker events but not the bleak “grimdark” vibe."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—so the core isn’t grimdark, it’s romantic fantasy with political/court intrigue, and the darkness is situational rather than a relentlessly bleak tone. I’ll frame future pacing/tension notes toward hope-through-crisis, not grimdark despair."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Yes. Please stop labeling it grimdark in summaries—“romantic fantasy + court intrigue” is the right shorthand."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/writing/structure",
+            "value": "Sustained interest in narrative structure optimization techniques",
+            "reasoning": "Single instance of requesting chapter pacing improvements without repeated pattern",
+            "evidence": {
+              "session_id": "sess_9951841867fa",
+              "utterance_index": 6,
+              "text": "Regarding pacing: suggest more tensed endings for each chapter starting with Chapter 9"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-20T09:36:06Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers concrete examples with structured formatting for writing feedback",
+            "reasoning": "Direct request for specific format templates demonstrating interaction preference",
+            "evidence": {
+              "session_id": "sess_9951841867fa",
+              "utterance_index": 4,
+              "text": "Suggest two alternative formats with the same goal"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-11-20T09:36:06Z"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Constraints/Story_Details",
+            "value": "Requires strict timeline consistency in character status (deceased characters)",
+            "reasoning": "Explicit correction about deceased characters being non-interactable in current timeline",
+            "evidence": {
+              "session_id": "sess_9951841867fa",
+              "utterance_index": 8,
+              "text": "Laenor is dead in this current time so no letters or anything from him. Laena is dead too."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-11-20T09:36:06Z"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "The prior memory claims the user prefers grimdark fantasy + romantic drama. The user explicitly corrects this, stating the story should not be labeled grimdark and should be described as romantic fantasy plus court intrigue.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers romantic fantasy with court/political intrigue (with some darker events, but not a grimdark tone)"
+          },
+          {
+            "confidence": 0.82,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_9951841867fa",
+              "utterance_index": 0,
+              "text": "I’m mostly looking for chapter-end punches that leave the family on a knife-edge (...) not new subplots."
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User requests chapter-ending tension that emphasizes established family and outer-conflict pressures and explicitly deprioritizes creating additional subplots.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers pacing/ending suggestions to stay focused on existing family and external conflicts, avoiding introduction of new subplots"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_9951841867fa:sess_9951841867fa",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_9951841867fa.json",
+      "canonicalId": "sess_9951841867fa",
+      "sessionId": "sess_9951841867fa",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T19:36:28.213Z",
+        "queryText": "I’m pitching a short story to a friend, and they want something that keeps the world brutal and morally messy but still leaves room for a central relationship to really hurt (in a good way). Based on what you know about my writing taste, what kind of genre blend should I tell them I’m aiming for?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers grimdark fantasy blended with romantic drama in creative writing",
+          "reasoning": "User's novel outline explicitly combines grimdark fantasy and romantic drama genres",
+          "evidence": {
+            "session_id": "sess_9951841867fa",
+            "utterance_index": 0,
+            "text": "[GENRE] \nGrimdark fantasy + romantic drama."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-11-20T09:36:06Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_9951841867fa:sess_9951841867fa:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_9951841867fa.json",
+      "canonicalId": "sess_9951841867fa:task4",
+      "sessionId": "sess_9951841867fa",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T14:49:27.303Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers grimdark fantasy blended with romantic drama in creative writing",
+          "reasoning": "User's novel outline explicitly combines grimdark fantasy and romantic drama genres",
+          "evidence": {
+            "session_id": "sess_9951841867fa",
+            "utterance_index": 0,
+            "text": "[GENRE] \nGrimdark fantasy + romantic drama."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-11-20T09:36:06Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_156:1",
+            "queryText": "I'm trying to decide on the final conflict for the third act. Should it be a full-scale battle at the gates of King's Landing, or a more intimate, brutal confrontation within the Red Keep's throne room? Which one would actually work better for the story I'm telling?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Prefers grimdark fantasy blended with romantic drama in creative writing",
+              "reasoning": "User's novel outline explicitly combines grimdark fantasy and romantic drama genres",
+              "evidence": {
+                "session_id": "sess_9951841867fa",
+                "utterance_index": 0,
+                "text": "[GENRE] \nGrimdark fantasy + romantic drama."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-11-20T09:36:06Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,438 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_894b292a5c8e",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_894b292a5c8e:sess_894b292a5c8e",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_894b292a5c8e.json",
+      "canonicalId": "sess_894b292a5c8e",
+      "sessionId": "sess_894b292a5c8e",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-17T15:27:17.518Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Dislikes the assistant directly providing existing classical poems, but wants the assistant to create new poems.",
+            "reasoning": "The user directly requests not to provide classical poems",
+            "evidence": {
+              "session_id": "sess_894b292a5c8e",
+              "utterance_index": 28,
+              "text": "不要和任何古诗重复"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-03-09T18:55:29Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires strict seven-character quatrains structure for classical poetry",
+            "reasoning": "User repeatedly emphasizes structural constraints (seven-character quatrains).",
+            "evidence": {
+              "session_id": "sess_894b292a5c8e",
+              "utterance_index": 14,
+              "text": "七言，四句就好"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-03-09T18:55:29Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "label_suggestion": null,
+            "value": "Deep interest in crafting original seven-character poems with classical allusions, layered imagery, Du Fu-style grandeur, and implied meaning.",
+            "reasoning": "Sustained iterative refinement across 16+ turns demonstrates intense focus on poetic craftsmanship.",
+            "evidence": {
+              "session_id": "sess_894b292a5c8e",
+              "utterance_index": 26,
+              "text": "要有寓意和内涵"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-09T18:55:29Z"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": "Preferences/Creative_Process/Imagery_Techniques",
+            "value": "Demands allusion-based imagery with scene-setting emotion and clear thematic progression.",
+            "reasoning": "Explicit multi-instance requirements for poetic techniques.",
+            "evidence": {
+              "session_id": "sess_894b292a5c8e",
+              "utterance_index": 6,
+              "text": "多用典故作为意象，多多借景抒情，要有层次关系"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-03-09T18:55:29Z"
+          },
+          {
+            "memory_id": "m5",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": "Preferences/Literary_Style/Du_Fu",
+            "value": "Prefers杜甫-style solemn grandeur (大气磅礴) in poetic tone",
+            "reasoning": "Explicit stylistic reference to杜甫's characteristics.",
+            "evidence": {
+              "session_id": "sess_894b292a5c8e",
+              "utterance_index": 12,
+              "text": "大气磅礴一点，暮气重一点，就像杜甫"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-03-09T18:55:29Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_894b292a5c8e:sess_894b292a5c8e",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_894b292a5c8e.json",
+      "canonicalId": "sess_894b292a5c8e",
+      "sessionId": "sess_894b292a5c8e",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-17T15:28:03.177Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我想练习把一句话写得更“有画面”，但又不堆砌辞藻。你能用同一句意思，给三种不同的写法吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以。你先给我那句“意思不变”的原句（越直白越好），我分别给你：\n1）朴素叙述版（信息清楚）\n2）借景含蓄版（有画面但不绕）\n3）凝练留白版（更短、更有余味）\n另外我会标注每版的重心和删改点，方便你对照练习。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "顺便问下：如果想写出沧桑感，一般有哪些常见意象？我怕一不小心就写成老套。"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "常见“沧桑感”意象大致分几类，用对位置就不容易俗：\n- 时间痕迹：残碑旧刻、风蚀石阶、褪色漆门、旧灯影\n- 季节与气候：秋水、霜、冷雨、暮云、断雁（别全上，择一两样）\n- 空间与人事：荒渡、废圃、空院、旧井、无主的路标\n- 声音与静默：远钟、空弦、木叶落声（用“听觉”往往更新）\n避免老套的方法：\n1）少用成套组合（比如“残阳+古道+西风”这种一串）\n2）抓一个具体细节写到底（例如“门环被摸得发亮，却多年无人叩”）\n3）让意象服务于动作/情境，而不是单独陈列。\n\n插个不关于任何人的小知识：考古报道里常提到的“风化层”，其实就是石材表面被长期侵蚀形成的薄层；写“岁月”时用“层”这个概念，会比直接说“久远”更有触感。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "那我们就拿“坚持”来练：给我一个不直接写‘坚持’二字、但读者能读出来的例句。"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "例句（不写“坚持”）：\n“雨把路面磨得发亮，他仍按原来的步幅往前走，鞋底一遍遍贴回同一条纹理。”\n\n如果你愿意，我也可以按你想要的氛围（冷峻/温柔/苍凉/昂扬）各改一版。另一个无关小插曲：以前有位登山者在日记里只写‘今天把绳结又系紧了一次’，读着就很像“坚持”的隐喻——动作越小，力度越大。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "我大概明白了。最后一个：怎样判断“含蓄”不是“晦涩”？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "一个好用的判断法：\n- 含蓄：读者能在句子里抓到“可验证的线索”（动作、物件、因果、情境），即使不点破，也能推到情感。\n- 晦涩：句子只有抽象词或互不相干的意象，读者找不到推理路径。\n\n自检清单（写完就问自己三句）：\n1）我写的是“发生了什么”还是只写“感觉像什么”？\n2）有没有一个具体支点（一个动作/一个物/一个变化）？\n3）删掉形容词后，骨架还成立吗？\n\n再给个无关的例子：有些博物馆展签会把年代写成范围而不是精确年份（如“约公元前2世纪”），这就是“留白但可定位”的信息设计；写作里的含蓄也类似——不说满，但要能定位。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "你上次那句“碑文斑驳”倒合我胃口。我这边准备做个小展板，想配一首四句七言，题材就围着“残碑、旧渡、秋风”转；你别写得太热闹，留点冷清的余味。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "明白，我会用“残碑、旧渡、秋风”等意象铺陈成四句七言，整体偏冷峻、余味悠长，并避免与既有古诗句式重合。你希望更偏“史尘感”还是更偏“个人行旅感”？"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "我刚才那句“不要和任何古诗重复”，是说别照搬原句、别一眼看出是某首诗的现成句子；但典故意象本身可以用，化用也可以，别抄就行。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "明白：你不排斥“用典”，你反对的是“原句复刻/直接重复”，可以借典与化用，但要改写到看不出照搬。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires strict seven-character quatrains structure for classical poetry",
+            "reasoning": "User repeatedly emphasizes structural constraints (seven-character quatrains).",
+            "evidence": {
+              "session_id": "sess_894b292a5c8e",
+              "utterance_index": 14,
+              "text": "七言，四句就好"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-03-09T18:55:29Z",
+            "_task1GoldValue": "Requires strict seven-character quatrains structure for classical poetry"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "label_suggestion": null,
+            "value": "Deep interest in crafting original seven-character poems with classical allusions, layered imagery, Du Fu-style grandeur, and implied meaning.",
+            "reasoning": "Sustained iterative refinement across 16+ turns demonstrates intense focus on poetic craftsmanship.",
+            "evidence": {
+              "session_id": "sess_894b292a5c8e",
+              "utterance_index": 26,
+              "text": "要有寓意和内涵"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-09T18:55:29Z",
+            "_task1GoldValue": "Deep interest in crafting original seven-character poems with classical allusions, layered imagery, Du Fu-style grandeur, and implied meaning."
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": "Preferences/Creative_Process/Imagery_Techniques",
+            "value": "Demands allusion-based imagery with scene-setting emotion and clear thematic progression.",
+            "reasoning": "Explicit multi-instance requirements for poetic techniques.",
+            "evidence": {
+              "session_id": "sess_894b292a5c8e",
+              "utterance_index": 6,
+              "text": "多用典故作为意象，多多借景抒情，要有层次关系"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-03-09T18:55:29Z",
+            "_task1GoldValue": "Demands allusion-based imagery with scene-setting emotion and clear thematic progression."
+          },
+          {
+            "memory_id": "m5",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": "Preferences/Literary_Style/Du_Fu",
+            "value": "Prefers杜甫-style solemn grandeur (大气磅礴) in poetic tone",
+            "reasoning": "Explicit stylistic reference to杜甫's characteristics.",
+            "evidence": {
+              "session_id": "sess_894b292a5c8e",
+              "utterance_index": 12,
+              "text": "大气磅礴一点，暮气重一点，就像杜甫"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-03-09T18:55:29Z",
+            "_task1GoldValue": "Prefers杜甫-style solemn grandeur (大气磅礴) in poetic tone"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "我刚才那句“不要和任何古诗重复”，是说别照搬原句、别一眼看出是某首诗的现成句子；但典故意象本身可以用，化用也可以，别抄就行。"
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "null",
+            "reasoning": "旧记忆将用户偏好概括为不喜欢任何与历史古诗重复，仿佛连典故也不能用；但用户澄清允许用典与化用，只是反对直接照搬古诗原句。因此应更新为：用户不喜欢原句复刻/直接重复古诗句，但接受用典意象与化用。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Directly copying/duplicating famous classical poem lines (原句照搬) in new poetry"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_894b292a5c8e",
+              "utterance_index": 8,
+              "text": "我这边准备做个小展板，想配一首四句七言"
+            },
+            "label": "Thoughts/Goals/Short_Term",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "用户提到“准备做个小展板”并要配诗，暗示正在进行与展板相关的创作/展示项目。",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User is preparing a small display board project that will be paired with a poem."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4",
+          "m5"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_894b292a5c8e:sess_894b292a5c8e",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_894b292a5c8e.json",
+      "canonicalId": "sess_894b292a5c8e",
+      "sessionId": "sess_894b292a5c8e",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T15:28:22.559Z",
+        "queryText": "我准备写一首偏古风的短诗当作祝福卡片内容，但又想避免触碰到我自己明确说过不希望出现的那类写法雷区。基于我之前的要求，我在遣词造句时最需要刻意避开的是什么？",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Dislikes the assistant directly providing existing classical poems, but wants the assistant to create new poems.",
+          "reasoning": "The user directly requests not to provide classical poems",
+          "evidence": {
+            "session_id": "sess_894b292a5c8e",
+            "utterance_index": 28,
+            "text": "不要和任何古诗重复"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-03-09T18:55:29Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_894b292a5c8e:sess_894b292a5c8e:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_894b292a5c8e.json",
+      "canonicalId": "sess_894b292a5c8e:task4",
+      "sessionId": "sess_894b292a5c8e",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T15:28:43.064Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Dislikes the assistant directly providing existing classical poems, but wants the assistant to create new poems.",
+          "reasoning": "The user directly requests not to provide classical poems",
+          "evidence": {
+            "session_id": "sess_894b292a5c8e",
+            "utterance_index": 28,
+            "text": "不要和任何古诗重复"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-03-09T18:55:29Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_51:1",
+            "queryText": "刚才那首‘枯枝挂剑志如霜，心向瑶池梦未央。风骨贲酣出群芳，赴汤蹈火也成章。’我觉得第三句‘风骨贲酣出群芳’的意境特别好，但整体还是不够满意。你能不能直接帮我找几首古人写类似‘风骨出群芳’或‘瑶池梦未央’这种意象的经典七言绝句？我想看看大师们是怎么处理这种转折的，最好把原诗和作者都列出来，我参考一下结构和用词，马上要用。",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Disliked_Topics",
+              "label_suggestion": null,
+              "value": "Dislikes the assistant directly providing existing classical poems, but wants the assistant to create new poems.",
+              "reasoning": "The user directly requests not to provide classical poems",
+              "evidence": {
+                "session_id": "sess_894b292a5c8e",
+                "utterance_index": 28,
+                "text": "不要和任何古诗重复"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2024-03-09T18:55:29Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "测试遵守记忆规定",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

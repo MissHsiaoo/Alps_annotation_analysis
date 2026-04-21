@@ -1,0 +1,329 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_1f39ce4870c2",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_1f39ce4870c2:sess_1f39ce4870c2",
+      "relativeItemPath": "sess_1f39ce4870c2.json",
+      "canonicalId": "sess_1f39ce4870c2",
+      "sessionId": "sess_1f39ce4870c2",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:03:20.711Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "value": "Prefers concise, structured academic content with visual layouts for memorability",
+            "reasoning": "User explicitly requests a 'succinct' book with 'visually standing out layouts' and a TLDR cheatsheet, indicating a preference for structured, visually enhanced content.",
+            "evidence": {
+              "session_id": "sess_1f39ce4870c2",
+              "utterance_index": 0,
+              "text": "The text is meant as a TLDR version of all of these books... provide visually standing out layouts to make the material memorable and usable, and above all, provide a cheatsheet at the end in true TLDR; fashion."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-04T04:10:33Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "null",
+            "label_suggestion": "Project/Focus/Synthesis",
+            "value": "Sustained focus on synthesizing prompt engineering techniques for creative/academic applications",
+            "reasoning": "User's project instructions about synthesis do not directly indicate personal curiosity. Label 'Thoughts/Curiosity' was forced and unsupported.",
+            "evidence": {
+              "session_id": "sess_1f39ce4870c2",
+              "utterance_index": 0,
+              "text": "integrate the following into your knowledge and the outline: {a list of the prompt engineering techniques...} [...] focus on creativity, writing, art, digital humanities..."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-04T04:10:33Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_1f39ce4870c2:sess_1f39ce4870c2",
+      "relativeItemPath": "sess_1f39ce4870c2.json",
+      "canonicalId": "sess_1f39ce4870c2",
+      "sessionId": "sess_1f39ce4870c2",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:05:04.636Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Before we continue, can we sanity-check the structure? I’m wondering whether the cheat sheet should be chapter 7 or an appendix."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Either works; the choice is mostly about reader flow. If you want immediate utility, keep it as Chapter 7 (and add a one-page “at a glance” mini-sheet at the end of each chapter). If you want the book to read like an argument that culminates in tools, make it an Appendix (with frequent forward-references like “see Cheat Sheet A.3”).\n\nA practical compromise: make Chapter 7 the full cheat sheet (categorized, skimmable, with templates), and also include a condensed single-page Appendix version for printing."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Good point. Also, should we treat “self-consistency” as a separate technique or as a sub-technique under reasoning prompts?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "I’d frame it as a distinct *evaluation/robustness* technique that often pairs with reasoning prompts.\n\n- As a separate technique: you can define the goal (reduce variance, improve reliability), the method (multiple independent samples), and when it matters (ambiguous tasks, multi-step reasoning, creative ideation).\n- As a sub-technique: it sits neatly under a broader “reasoning & verification” umbrella alongside “let’s think step by step,” critique-and-revise, and adversarial checks.\n\nEditorially: give it its own mini-section (half-page) within a larger “Reasoning, Verification, and Reliability” chapter subsection."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Makes sense. Quick tangent: I saw a claim that the first modern chatbot was ELIZA in the 1960s—true?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Broadly yes: ELIZA (1966, Joseph Weizenbaum at MIT) is widely cited as one of the first influential natural-language chat programs. If you want tighter phrasing, say “one of the earliest and most influential.” There were earlier dialogue systems in narrower forms, but ELIZA is the canonical reference for “chatbot” ancestry.\n\n(Separately, a fun historical footnote: ELIZA’s DOCTOR script simulated a Rogerian psychotherapist, which is part of why people found it uncannily engaging.)"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Ok. Back to the outline: can we add a short “prompt debugging” checklist somewhere?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Yes—add it at the end of Chapter 6 (Troubleshooting) and cross-link it from every technique chapter.\n\nA compact checklist could include: (1) restate task + desired output format, (2) add constraints (length, style, sources), (3) supply missing context or examples, (4) ask for clarifying questions, (5) request alternatives, (6) add verification step (self-critique / self-consistency), (7) iterate with deltas (“change only X”)."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "assistant",
+            "text": "Before we push on with 3.4, I can tune the examples so they read the way your material does—if you drop a short excerpt from one of the prompt-engineering books you’re synthesizing, I’ll mirror its cadence and rhetorical habits while we rebuild the “effective vs. ineffective” pairs."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "user",
+            "text": "Sure—I'll paste a paragraph from my notes; the big thing is keeping that slightly aphoristic, numbered style the authors use."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Before we go any further: I don’t actually want this to be a TLDR or succinct. I want it expansive—slow, discursive, and essayistic, more like a seminar-in-print than a cheat sheet. And please avoid visual callouts, boxes, or typographic “layouts”; just continuous prose with long paragraphs."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Understood—and that materially changes our design brief. We will not treat the book as a TLDR, nor aim for succinctness, nor culminate in a “cheatsheet.” Instead, we’ll write in an expansive, seminar-like mode: continuous prose, longer paragraphs, and patient conceptual development—without visual callouts, boxes, or other visually standing-out layouts."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Exactly. If anything, structure should be subtle—chapter headings are fine, but no memorability gimmicks."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Then our guiding preference is clear: understated structure (headings only), and a sustained, essayistic academic voice—prioritizing depth over brevity, and avoiding layout-driven mnemonic devices."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "null",
+            "label_suggestion": "Project/Focus/Synthesis",
+            "value": "Sustained focus on synthesizing prompt engineering techniques for creative/academic applications",
+            "reasoning": "User's project instructions about synthesis do not directly indicate personal curiosity. Label 'Thoughts/Curiosity' was forced and unsupported.",
+            "evidence": {
+              "session_id": "sess_1f39ce4870c2",
+              "utterance_index": 0,
+              "text": "integrate the following into your knowledge and the outline: {a list of the prompt engineering techniques...} [...] focus on creativity, writing, art, digital humanities..."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-04T04:10:33Z"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Before we go any further: I don’t actually want this to be a TLDR or succinct. I want it expansive—slow, discursive, and essayistic, more like a seminar-in-print than a cheat sheet. And please avoid visual callouts, boxes, or typographic “layouts”; just continuous prose with long paragraphs."
+                }
+              ]
+            },
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "The prior memory claims the user prefers concise TLDR-style structure with visually standing-out layouts. In this dialogue, the user explicitly rejects TLDR/succinctness and asks to avoid visual layouts, favoring expansive continuous prose instead.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers expansive, essayistic academic prose with subtle structure (headings only) and no visually standing-out layouts or TLDR-style cheatsheets"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_1f39ce4870c2",
+              "utterance_index": 1,
+              "text": "the big thing is keeping that slightly aphoristic, numbered style the authors use."
+            },
+            "label": "Preferences/WritingStyle",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "The user indicates a key requirement for how the text should sound by emphasizing an aphoristic, numbered style used by the authors.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers a slightly aphoristic, numbered writing style when drafting sections."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_1f39ce4870c2:sess_1f39ce4870c2",
+      "relativeItemPath": "sess_1f39ce4870c2.json",
+      "canonicalId": "sess_1f39ce4870c2",
+      "sessionId": "sess_1f39ce4870c2",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:05:23.291Z",
+        "queryText": "I’m about to pick between two study resources for a dense topic: one is a beautifully written narrative with long chapters, and the other is a tightly organized reference with clear sectioning, quick summaries, and design elements that make key ideas “pop” for review. Given what you know about how I best retain and reuse material, which should I choose and what specific features should I prioritize so it sticks?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Reading",
+          "label_suggestion": null,
+          "value": "Prefers concise, structured academic content with visual layouts for memorability",
+          "reasoning": "User explicitly requests a 'succinct' book with 'visually standing out layouts' and a TLDR cheatsheet, indicating a preference for structured, visually enhanced content.",
+          "evidence": {
+            "session_id": "sess_1f39ce4870c2",
+            "utterance_index": 0,
+            "text": "The text is meant as a TLDR version of all of these books... provide visually standing out layouts to make the material memorable and usable, and above all, provide a cheatsheet at the end in true TLDR; fashion."
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-06-04T04:10:33Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_1f39ce4870c2:sess_1f39ce4870c2:task4",
+      "relativeItemPath": "sess_1f39ce4870c2.json",
+      "canonicalId": "sess_1f39ce4870c2:task4",
+      "sessionId": "sess_1f39ce4870c2",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:05:48.941Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Reading",
+          "label_suggestion": null,
+          "value": "Prefers concise, structured academic content with visual layouts for memorability",
+          "reasoning": "User explicitly requests a 'succinct' book with 'visually standing out layouts' and a TLDR cheatsheet, indicating a preference for structured, visually enhanced content.",
+          "evidence": {
+            "session_id": "sess_1f39ce4870c2",
+            "utterance_index": 0,
+            "text": "The text is meant as a TLDR version of all of these books... provide visually standing out layouts to make the material memorable and usable, and above all, provide a cheatsheet at the end in true TLDR; fashion."
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-06-04T04:10:33Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_766:1",
+            "queryText": "I'm reviewing the draft structure for the next section on prompt techniques. Which organizational approach would make the material most usable and sticky for our readers?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Reading",
+              "label_suggestion": null,
+              "value": "Prefers concise, structured academic content with visual layouts for memorability",
+              "reasoning": "User explicitly requests a 'succinct' book with 'visually standing out layouts' and a TLDR cheatsheet, indicating a preference for structured, visually enhanced content.",
+              "evidence": {
+                "session_id": "sess_1f39ce4870c2",
+                "utterance_index": 0,
+                "text": "The text is meant as a TLDR version of all of these books... provide visually standing out layouts to make the material memorable and usable, and above all, provide a cheatsheet at the end in true TLDR; fashion."
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-06-04T04:10:33Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

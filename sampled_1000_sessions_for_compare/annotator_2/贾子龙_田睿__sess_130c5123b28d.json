@@ -1,0 +1,401 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_130c5123b28d",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_130c5123b28d:sess_130c5123b28d",
+      "relativeItemPath": "sess_130c5123b28d.json",
+      "canonicalId": "sess_130c5123b28d",
+      "sessionId": "sess_130c5123b28d",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T06:57:47.004Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Possessions/Pet",
+            "label_suggestion": null,
+            "value": "Dog named James Yip[PERHAPS]",
+            "reasoning": "User explicitly states owning a dog named James Yip across multiple requests.[PERHAPS]",
+            "evidence": {
+              "session_id": "sess_130c5123b28d",
+              "utterance_index": 4,
+              "text": "I have a dog called James Yip. Could you please write a poem for him with rhymes."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-30T08:47:44+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Possessions/Pet",
+            "label_suggestion": null,
+            "value": "Dog named 梓浩 (Zihao)[PERHAPS]",
+            "reasoning": "User explicitly states owning a dog named 梓浩 in a Chinese-language request.[PERHAPS]",
+            "evidence": {
+              "session_id": "sess_130c5123b28d",
+              "utterance_index": 6,
+              "text": "我有一只狗叫梓浩。作一首關於他的七言律詩，記住格律要對。"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-30T08:47:44+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/poetry_request",
+            "value": "Repeated interest in structured poetry creation for pets (rhymes, acrostic, regulated verse) [ERROR: Unsupported by evidence]",
+            "reasoning": "Unsupported by evidence",
+            "evidence": {
+              "session_id": "sess_130c5123b28d",
+              "utterance_index": 8,
+              "text": "I have a dog called James Yip. Could you please write a poem for him with rhymes and with each letter of his name at the beginning of each line."
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-30T08:47:44+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_130c5123b28d:sess_130c5123b28d",
+      "relativeItemPath": "sess_130c5123b28d.json",
+      "canonicalId": "sess_130c5123b28d",
+      "sessionId": "sess_130c5123b28d",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T06:58:09.817Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "hey, can you help me write a short poem?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure—what kind of poem (rhyming, free verse, haiku, or something else), and what’s the topic or mood?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "maybe something upbeat, but not too long."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Got it. Do you want a specific structure (like AABB rhyme), or should I just keep it light and rhythmic?"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "AABB rhyme sounds good."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Here you go:\n\nA morning breeze hums soft and bright,\nIt sweeps the street in golden light.\nSmall steps can turn a day around,\nLike happy echoes, warm and sound.\n\nFun side note: the “AABB” label is sometimes called a couplet-couplet pattern—common in nursery rhymes and quick comedic verse."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "can you do one more, a little more nature-themed?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Sure:\n\nA river laughs on polished stone,\nIts silver song becomes my own.\nAbove, the pines stand tall and still,\nGreen quiet poured from every hill.\n\nUnrelated trivia: in 1816, the “Year Without a Summer” was linked to Mount Tambora’s eruption, which cooled global temperatures for a time."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "nice—what’s the difference between a haiku and a limerick?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "A haiku is typically a 3-line poem with a 5–7–5 syllable pattern (in English it’s often “haiku-like” rather than strictly syllabic), usually focusing on an image or moment.\n\nA limerick is a 5-line humorous poem with an AABBA rhyme scheme and a distinctive bouncy rhythm. The first line often sets up a character and place, and the last line delivers a punchline.\n\nRandom example not tied to anything: the classic opening “There once was a man from Peru…” is a standard limerick setup."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Could you do another acrostic for James Yip—same setup as before, but keep the lines short so I can fit them on a greeting card?"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Absolutely—here’s a short acrostic for JAMESYIP that should fit nicely on a card:\n\nJ — Joy in every wag,\nA — Always by your side,\nM — Mirth in little hops,\nE — Eager for the ride,\nS — Sniffs the world with pride,\nY — Yips when you come near,\nI — In every moment, cheer,\nP — Pup you hold so dear."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Hey, quick correction—my dog's name isn’t 梓浩. I just typed that by mistake earlier. My dog is James Yip."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Got it—thanks for clearing that up. So your dog's name is James Yip (not 梓浩). Do you want the poem in English again, or in Chinese this time?"
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "English is fine. Just make it rhyme."
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "Sure—I'll write a rhyming poem for James Yip."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Possessions/Pet",
+            "label_suggestion": null,
+            "value": "Dog named James Yip[PERHAPS]",
+            "reasoning": "User explicitly states owning a dog named James Yip across multiple requests.",
+            "evidence": {
+              "session_id": "sess_130c5123b28d",
+              "utterance_index": 4,
+              "text": "I have a dog called James Yip. Could you please write a poem for him with rhymes."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-30T08:47:44+00:00",
+            "_task1GoldValue": "Dog named James Yip[PERHAPS]"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/poetry_request",
+            "value": "Repeated interest in structured poetry creation for pets (rhymes, acrostic, regulated verse) [ERROR: Unsupported by evidence]",
+            "reasoning": "Unsupported by evidence",
+            "evidence": {
+              "session_id": "sess_130c5123b28d",
+              "utterance_index": 8,
+              "text": "I have a dog called James Yip. Could you please write a poem for him with rhymes and with each letter of his name at the beginning of each line."
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-30T08:47:44+00:00",
+            "_task1GoldValue": "Repeated interest in structured poetry creation for pets (rhymes, acrostic, regulated verse) [ERROR: Unsupported by evidence]"
+          },
+          {
+            "confidence": 0.93,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                12
+              ],
+              "turns": [
+                {
+                  "index": 12,
+                  "role": "user",
+                  "text": "Hey, quick correction—my dog's name isn’t 梓浩. I just typed that by mistake earlier. My dog is James Yip."
+                }
+              ]
+            },
+            "label": "Possessions/Pet",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory says the user has a dog named 梓浩, but the user explicitly corrects that it was a mistake and states the dog's actual name is James Yip.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Dog named James Yip"
+          },
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_130c5123b28d",
+              "utterance_index": 0,
+              "text": "keep the lines short so I can fit them on a greeting card?"
+            },
+            "label": "Preferences/Writing",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "The user asks for an acrostic with short lines specifically to fit on a greeting card, implying a preference for concise formatting.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers short, greeting-card-length lines for poems"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Possessions/Pet",
+            "label_suggestion": null,
+            "value": "Dog named 梓浩 (Zihao)[PERHAPS]",
+            "reasoning": "User explicitly states owning a dog named 梓浩 in a Chinese-language request.[PERHAPS]",
+            "evidence": {
+              "session_id": "sess_130c5123b28d",
+              "utterance_index": 6,
+              "text": "我有一只狗叫梓浩。作一首關於他的七言律詩，記住格律要對。"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-30T08:47:44+00:00",
+            "_task1GoldValue": "Dog named 梓浩 (Zihao)[PERHAPS]"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_130c5123b28d:sess_130c5123b28d",
+      "relativeItemPath": "sess_130c5123b28d.json",
+      "canonicalId": "sess_130c5123b28d",
+      "sessionId": "sess_130c5123b28d",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T06:58:16.694Z",
+        "queryText": "我在做一份「緊急聯絡資料卡」要塞進包包裡：如果走失時有人撿到我家寵物，卡片上最關鍵、能讓對方一喊就能吸引牠注意的那個資訊應該寫什麼？",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Possessions/Pet",
+          "label_suggestion": null,
+          "value": "Dog named 梓浩 (Zihao)[PERHAPS]",
+          "reasoning": "User explicitly states owning a dog named 梓浩 in a Chinese-language request.[PERHAPS]",
+          "evidence": {
+            "session_id": "sess_130c5123b28d",
+            "utterance_index": 6,
+            "text": "我有一只狗叫梓浩。作一首關於他的七言律詩，記住格律要對。"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-30T08:47:44+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_130c5123b28d:sess_130c5123b28d:task4",
+      "relativeItemPath": "sess_130c5123b28d.json",
+      "canonicalId": "sess_130c5123b28d:task4",
+      "sessionId": "sess_130c5123b28d",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T06:58:21.234Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Possessions/Pet",
+          "label_suggestion": null,
+          "value": "Dog named 梓浩 (Zihao)[PERHAPS]",
+          "reasoning": "User explicitly states owning a dog named 梓浩 in a Chinese-language request.[PERHAPS]",
+          "evidence": {
+            "session_id": "sess_130c5123b28d",
+            "utterance_index": 6,
+            "text": "我有一只狗叫梓浩。作一首關於他的七言律詩，記住格律要對。"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-30T08:47:44+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_32:1",
+            "queryText": "I'm thinking of getting a new pet portrait done. Which style do you think would work best for capturing his personality?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Possessions/Pet",
+              "label_suggestion": null,
+              "value": "Dog named 梓浩 (Zihao)[PERHAPS]",
+              "reasoning": "User explicitly states owning a dog named 梓浩 in a Chinese-language request.[PERHAPS]",
+              "evidence": {
+                "session_id": "sess_130c5123b28d",
+                "utterance_index": 6,
+                "text": "我有一只狗叫梓浩。作一首關於他的七言律詩，記住格律要對。"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-06-30T08:47:44+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

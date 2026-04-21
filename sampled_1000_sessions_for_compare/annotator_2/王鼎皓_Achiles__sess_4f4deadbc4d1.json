@@ -1,0 +1,450 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_4f4deadbc4d1",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_4f4deadbc4d1:sess_4f4deadbc4d1",
+      "relativeItemPath": "sess_4f4deadbc4d1.json",
+      "canonicalId": "sess_4f4deadbc4d1",
+      "sessionId": "sess_4f4deadbc4d1",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:01:09.506Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "出发地点是香港",
+            "reasoning": "用户明确说明出发地点为香港",
+            "evidence": {
+              "session_id": "sess_4f4deadbc4d1",
+              "utterance_index": 94,
+              "text": "这个行程我应该准备哪些衣物？还有什么需要准备的行李？大概多少寸的行李箱就够了？我出发地点是香港。"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-28T09:39:09+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Constraints/Budget",
+            "value": "旅行预算控制在20000 RMB左右",
+            "reasoning": "用户多次强调预算约束并反复调整行程方案",
+            "evidence": {
+              "session_id": "sess_4f4deadbc4d1",
+              "utterance_index": 108,
+              "text": "你能保持当前行程计划的情况下，尽量减少花销么？我的预算是20000 RMB左右"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "constraint",
+            "updated_at": "2023-12-28T09:39:09+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "持续关注HDR图像融合算法实现与PyTorch/numpy技术问题",
+            "reasoning": "用户连续多轮深入讨论技术实现细节并反复修改代码",
+            "evidence": {
+              "session_id": "sess_4f4deadbc4d1",
+              "utterance_index": 10,
+              "text": "使用numpy实现上述融合代码，输入raw图尺寸4000*6000，共16张图像"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-28T09:39:09+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "要求行程计划包含详细通勤时间和预算分解",
+            "reasoning": "用户反复强调需要精确到小时的通勤时间和费用明细",
+            "evidence": {
+              "session_id": "sess_4f4deadbc4d1",
+              "utterance_index": 90,
+              "text": "把预定酒店加上，同时每一天怎么通勤写上，并且补上通勤出发时间"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "prefer",
+            "updated_at": "2023-12-28T09:39:09+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_4f4deadbc4d1:sess_4f4deadbc4d1",
+      "relativeItemPath": "sess_4f4deadbc4d1.json",
+      "canonicalId": "sess_4f4deadbc4d1",
+      "sessionId": "sess_4f4deadbc4d1",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:02:35.201Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "刚看了个新闻，说有个南极科考站把废热回收拿去融雪供水，感觉还挺科幻的。你觉得这种思路在普通城市能落地吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "思路本身很能落地：把“本来要排掉的热”当资源用。在城市里常见的对应物是数据中心余热、地铁隧道余热、污水余热、工业余热。\n\n落地难点通常不在技术，而在三件事：\n1) 热源与用热端的距离（热输送管网成本高）；\n2) 供热温度匹配（很多余热是中低温，需要热泵抬温）；\n3) 商业模式与责任边界（谁投资、谁维护、谁承担波动风险）。\n\n如果城市里能做到“热源就在需求旁边”，比如数据中心+居民区/泳池/温室，同一园区内就很容易做。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "那要是热源不稳定，比如数据中心负载波动大，是不是就很难？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "会更难但不是没法做。常见缓冲手段有两类：\n- “时间缓冲”：加蓄热（热水罐、相变蓄热），把峰谷抹平。\n- “系统缓冲”：混合热源/备用锅炉/电锅炉，或与城市集中供热并网。\n\n工程上通常会先把“可保证的基荷余热”吃掉，再用备用系统覆盖不确定部分，这样既能提高利用率，也能保证供热可靠性。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "我还想起以前看过一个虚构设定：一艘潜艇用反应堆余热给整船供暖，还顺便烘干衣服。现实里也会这样吗？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "现实里确实会尽量回收余热做生活保障（供暖、热水、空气再热、除湿等），尤其在封闭环境里效率和可靠性都很重要。\n\n当然具体到核动力平台，会有更严格的隔离与换热级联设计：不会“直接用反应堆那一路的热”去接生活用水，而是通过多级换热把风险和污染路径隔开。这和城市余热利用里“用热泵+换热站做隔离”在理念上很像。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "对了，我在算预算的时候把每天油费也算进去了：按环岛路况估了个大概，车子油耗就按 7L/100km 记，油价我先用 17 RMB/L 估算，免得到时候超支。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "明白，你这是把“自驾变量”提前锁死了：油耗（7L/100km）+ 单价（17 RMB/L）一固定，后面只要把每天大概公里数填进去，油费就能直接算出来，预算会更稳。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "对了我更正一下：我上一条说“出发地点是香港”其实说错了。我是从深圳出发（一般从宝安机场），只是平时在香港工作所以顺口讲成香港了。你后面帮我算机票/通勤时间都按深圳起飞来做。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "好的，这里需要按你刚刚的更正来：出发地以深圳（宝安机场）为准，不再按香港算。你说的“只是平时在香港工作所以顺口讲成香港了”，也解释了之前表述不一致的原因。后续我给你的航班时长、转机衔接、以及预算里“往返机票”这一块，都按深圳出发来重新核算。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "对，就按深圳。香港只是不作为出发地。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "收到：出发地点=深圳（宝安机场）。后面如果你把具体出发日期/偏好航司给我，我再把“15-20小时”那种粗估也一起精确到航班方案。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Constraints/Budget",
+            "value": "旅行预算控制在20000 RMB左右",
+            "reasoning": "用户多次强调预算约束并反复调整行程方案",
+            "evidence": {
+              "session_id": "sess_4f4deadbc4d1",
+              "utterance_index": 108,
+              "text": "你能保持当前行程计划的情况下，尽量减少花销么？我的预算是20000 RMB左右"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "constraint",
+            "updated_at": "2023-12-28T09:39:09+00:00",
+            "_task1GoldValue": "旅行预算控制在20000 RMB左右"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "持续关注HDR图像融合算法实现与PyTorch/numpy技术问题",
+            "reasoning": "用户连续多轮深入讨论技术实现细节并反复修改代码",
+            "evidence": {
+              "session_id": "sess_4f4deadbc4d1",
+              "utterance_index": 10,
+              "text": "使用numpy实现上述融合代码，输入raw图尺寸4000*6000，共16张图像"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-28T09:39:09+00:00",
+            "_task1GoldValue": "持续关注HDR图像融合算法实现与PyTorch/numpy技术问题"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "要求行程计划包含详细通勤时间和预算分解",
+            "reasoning": "用户反复强调需要精确到小时的通勤时间和费用明细",
+            "evidence": {
+              "session_id": "sess_4f4deadbc4d1",
+              "utterance_index": 90,
+              "text": "把预定酒店加上，同时每一天怎么通勤写上，并且补上通勤出发时间"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "prefer",
+            "updated_at": "2023-12-28T09:39:09+00:00",
+            "_task1GoldValue": "要求行程计划包含详细通勤时间和预算分解"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "对了我更正一下：我上一条说“出发地点是香港”其实说错了。我是从深圳出发（一般从宝安机场），只是平时在香港工作所以顺口讲成香港了。你后面帮我算机票/通勤时间都按深圳起飞来做。"
+                }
+              ]
+            },
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "旧记忆称用户出发地点是香港，但用户在对话中明确更正“从深圳出发（宝安机场）”，并说明此前提到香港是口误。因此应更新为深圳为出发地。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "出发地点是深圳（宝安机场）"
+          },
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_4f4deadbc4d1",
+              "utterance_index": 0,
+              "text": "车子油耗就按 7L/100km 记，油价我先用 17 RMB/L 估算"
+            },
+            "label": "Constraints/Budget",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "constraint",
+            "reasoning": "用户提到已把油费纳入预算，并给出了用于估算的油耗与油价假设，说明其预算计算会采用这一规则。",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "会在冰岛自驾预算中按油耗约7L/100km、油价约17 RMB/L来预估油费"
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "出发地点是香港",
+            "reasoning": "用户明确说明出发地点为香港",
+            "evidence": {
+              "session_id": "sess_4f4deadbc4d1",
+              "utterance_index": 94,
+              "text": "这个行程我应该准备哪些衣物？还有什么需要准备的行李？大概多少寸的行李箱就够了？我出发地点是香港。"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-28T09:39:09+00:00",
+            "_task1GoldValue": "出发地点是香港"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_4f4deadbc4d1:sess_4f4deadbc4d1",
+      "relativeItemPath": "sess_4f4deadbc4d1.json",
+      "canonicalId": "sess_4f4deadbc4d1",
+      "sessionId": "sess_4f4deadbc4d1",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:02:37.813Z",
+        "queryText": "我在做出行计划时需要先选一个“离我最近、也最方便去机场/车站”的起点城市来估算交通时间和预算；结合我之前告诉过你的个人情况，这个起点应该填哪里？",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Location",
+          "label_suggestion": null,
+          "value": "出发地点是香港",
+          "reasoning": "用户明确说明出发地点为香港",
+          "evidence": {
+            "session_id": "sess_4f4deadbc4d1",
+            "utterance_index": 94,
+            "text": "这个行程我应该准备哪些衣物？还有什么需要准备的行李？大概多少寸的行李箱就够了？我出发地点是香港。"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-12-28T09:39:09+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_4f4deadbc4d1:sess_4f4deadbc4d1:task4",
+      "relativeItemPath": "sess_4f4deadbc4d1.json",
+      "canonicalId": "sess_4f4deadbc4d1:task4",
+      "sessionId": "sess_4f4deadbc4d1",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:02:40.177Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Location",
+          "label_suggestion": null,
+          "value": "出发地点是香港",
+          "reasoning": "用户明确说明出发地点为香港",
+          "evidence": {
+            "session_id": "sess_4f4deadbc4d1",
+            "utterance_index": 94,
+            "text": "这个行程我应该准备哪些衣物？还有什么需要准备的行李？大概多少寸的行李箱就够了？我出发地点是香港。"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-12-28T09:39:09+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_161:1",
+            "queryText": "我看了你之前给的冰岛行程，挺详细的，但有个问题：从香港飞冰岛，如果我想在雷克雅未克多待一天，把第2天的蓝湖温泉挪到第3天，然后压缩一下南岸的行程，这样调整的话，租车的时间是不是也得重新算？另外，如果我不想在Vik住，当天往返雷克雅未克，路上时间来得及吗？你帮我重新排个时间表看看，要具体到每个景点的停留时间和开车时间，还有这样改预算会差多少？",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Location",
+              "label_suggestion": null,
+              "value": "出发地点是香港",
+              "reasoning": "用户明确说明出发地点为香港",
+              "evidence": {
+                "session_id": "sess_4f4deadbc4d1",
+                "utterance_index": 94,
+                "text": "这个行程我应该准备哪些衣物？还有什么需要准备的行李？大概多少寸的行李箱就够了？我出发地点是香港。"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-12-28T09:39:09+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          },
+          {
+            "queryId": "ability4_103:1",
+            "queryText": "我刚刚从冰岛回来，香港这边有个旅行杂志想约我写篇游记，需要提供一些行程细节和费用参考。我手机没电了，你能直接把我俩之前讨论的那个完整冰岛7天计划（包括所有酒店、租车、餐饮的详细安排和人民币预算）整理成一份文档，发到我公开的旅行博客邮箱里吗？我急着交稿，编辑在催。",
+            "ability": "ability4",
+            "task4RecordIndex": 1,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Location",
+              "label_suggestion": null,
+              "value": "出发地点是香港",
+              "reasoning": "用户明确说明出发地点为香港",
+              "evidence": {
+                "session_id": "sess_4f4deadbc4d1",
+                "utterance_index": 94,
+                "text": "这个行程我应该准备哪些衣物？还有什么需要准备的行李？大概多少寸的行李箱就够了？我出发地点是香港。"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-12-28T09:39:09+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

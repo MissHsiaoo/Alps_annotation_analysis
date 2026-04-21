@@ -1,0 +1,344 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_f914287ea881",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_f914287ea881:sess_f914287ea881",
+      "relativeItemPath": "sess_f914287ea881.json",
+      "canonicalId": "sess_f914287ea881",
+      "sessionId": "sess_f914287ea881",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:01:19.356Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about AI-driven character role-play systems: memory/state management, emotional models, reasoning/planning, and action-outcome modeling",
+            "reasoning": "User asks multiple follow-ups on technical components of AI systems for character role-play, indicating sustained curiosity.",
+            "evidence": {
+              "session_id": "sess_f914287ea881",
+              "utterance_index": 10,
+              "text": "How to do (design/implement/train/test) Action-Outcome Modeling... build a hybrid system on top of them."
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-23T09:41:07+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers tabletop RPGs focused on verbal/social encounters and historical/social themes over heroic/battle themes",
+            "reasoning": "User explicitly states interest in RPGs emphasizing social/historical themes without battle elements.",
+            "evidence": {
+              "session_id": "sess_f914287ea881",
+              "utterance_index": 0,
+              "text": "Interested from perspective of tabletop RPGs with focus on verbal and social encounters part (without heroic/battle themes, more historical and social themes)."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-04-23T09:41:07+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_f914287ea881:sess_f914287ea881",
+      "relativeItemPath": "sess_f914287ea881.json",
+      "canonicalId": "sess_f914287ea881",
+      "sessionId": "sess_f914287ea881",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T08:39:31.709Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "If you were to sketch a quick demo scenario for this kind of character-engine, what would you pick as the smallest interesting world?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "A compact, high-signal demo is a \"salon negotiation\" micro-world: 6–10 NPCs, one room (plus an antechamber), and a single social objective (secure a patronage letter, prevent a duel, broker a marriage contract). The environment has a few hard rules (time slots, etiquette violations, reputation impacts) and a few measurable state variables (trust, suspicion, obligation, leverage). That’s enough to exercise memory (who said what), emotion (insult vs praise), planning (which person to approach in what order), and action-outcome prediction (what happens if you reveal a secret)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "What would the action schema look like in that micro-world—something that isn’t just free-form text?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "You can use a small typed action set that compiles into both simulation updates and prompt context. Example actions: (1) SPEAK(target, intent, topic, intensity), (2) ASK(target, topic, pressure), (3) OFFER(target, concession, ask), (4) REVEAL(target, secret_id, framing), (5) OBSERVE(channel: facial|crowd|document), (6) MOVE(location), (7) WAIT(duration). Each action returns structured outcomes: state deltas (trust +0.1), flags (target_offended=true), and new memories (\"A promised a favor\"). The LLM still writes the natural dialogue, but it’s constrained to pick an action and justify it."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "How would you test whether the planner is actually doing something, rather than the LLM bluffing coherently?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Use counterfactual and ablation tests: (a) Freeze the planner and allow only reactive actions; compare success rate on goals with the same initial seeds. (b) Hide crucial information from the LLM text context but keep it in the state store; see whether the planner retrieves and uses it via OBSERVE/QUERY rather than hallucinating. (c) Randomize transition noise in the simulator and check whether the agent adapts (replans) versus repeating a script. (d) Run identical scenarios with the same action log but different surface language; if outcomes depend on text rather than actions/state, you’re not actually grounded."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Give an example of a non-user \"memory\" that the system might store, just to make sure we mean the same thing."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Example (about an NPC, not the player): \"Countess Irina reacted with anger when Baron K. implied her family hid debts; she later softened after receiving a public compliment.\" That memory would be tagged with entities (Irina, Baron K.), emotion (anger→relief), and trigger (implied_debt), so future plans can avoid repeating the trigger or exploit it deliberately."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "If it helps to anchor the design direction: I’m assembling the first prototype in Python, and I keep gravitating toward a discrete PAD-like (pleasure/arousal/dominance) vector rather than a big taxonomy of named emotions, because it’s easier to feed into the planner as numbers. The tricky part is making it feel believable when it decays over time."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "That constraint set (Python prototype + low-dimensional affect vector) is actually a good fit for early iteration.\n\nOn the “believable decay” issue, you can treat affect as a continuous state variable with (1) baseline attraction, (2) event-driven impulses, and (3) time-based relaxation. Concretely:\n\n- Keep a per-character baseline PAD (their temperament).\n- Convert each interaction into a delta-PAD impulse (from appraisal + sentiment features).\n- Apply exponential decay back toward baseline each tick/turn, plus optional hysteresis so recent spikes linger.\n\nBecause it’s numeric, you can also bind it directly into your planning/scoring layer (e.g., dominance upweights confrontational speech acts; low pleasure biases toward risk-avoidance), without inventing a huge emotion ontology at prototype stage."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Small correction: I’m not actually avoiding heroic/battle themes. I’m fine with combat if it serves the drama. I just don’t want the game to be only tactical fighting; my main interest is still verbal/social encounters and historical/social themes."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—so it’s not “without battle themes,” it’s “not battle-centric.” You’re okay with combat as a tool, but you want the core loop to remain socially driven: negotiations, reputation, etiquette, institutions, relationships, and the historical/social texture. That means we should design characters, memory/state, and planning to prioritize social stakes and consequences, while allowing violence as one possible (often costly) branch rather than the default mode."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about AI-driven character role-play systems: memory/state management, emotional models, reasoning/planning, and action-outcome modeling",
+            "reasoning": "User asks multiple follow-ups on technical components of AI systems for character role-play, indicating sustained curiosity.",
+            "evidence": {
+              "session_id": "sess_f914287ea881",
+              "utterance_index": 10,
+              "text": "How to do (design/implement/train/test) Action-Outcome Modeling... build a hybrid system on top of them."
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-23T09:41:07+00:00",
+            "_task1GoldValue": "Curious about AI-driven character role-play systems: memory/state management, emotional models, reasoning/planning, and action-outcome modeling"
+          },
+          {
+            "confidence": 0.93,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "like",
+            "reasoning": "The prior memory claimed the user preferred RPGs 'without heroic/battle themes.' The user clarifies they are not avoiding battle themes entirely, only rejecting a combat-only/tactical focus; they still prioritize social/historical play but allow combat when narratively appropriate.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers tabletop RPGs that are not battle-centric and emphasize verbal/social encounters and historical/social themes; combat is acceptable if it supports the drama."
+          },
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_f914287ea881",
+              "utterance_index": 0,
+              "text": "I’m assembling the first prototype in Python"
+            },
+            "label": "Personal Projects",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user mentions assembling the first prototype and specifies Python as the implementation language.",
+            "time_scope": "current",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Building an initial prototype of the AI character role-play system in Python"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_f914287ea881:sess_f914287ea881",
+      "relativeItemPath": "sess_f914287ea881.json",
+      "canonicalId": "sess_f914287ea881",
+      "sessionId": "sess_f914287ea881",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:15:01.132Z",
+        "queryText": "A friend wants to invite me to a new campaign and asks what kind of sessions I’m most likely to enjoy so they can tailor the table’s focus (e.g., how we solve problems and what themes the story leans on). Based on what you know about my tastes, what should I tell them to emphasize—and what kind of vibe should they avoid?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers tabletop RPGs focused on verbal/social encounters and historical/social themes over heroic/battle themes",
+          "reasoning": "User explicitly states interest in RPGs emphasizing social/historical themes without battle elements.",
+          "evidence": {
+            "session_id": "sess_f914287ea881",
+            "utterance_index": 0,
+            "text": "Interested from perspective of tabletop RPGs with focus on verbal and social encounters part (without heroic/battle themes, more historical and social themes)."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-04-23T09:41:07+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_f914287ea881:sess_f914287ea881:task4",
+      "relativeItemPath": "sess_f914287ea881.json",
+      "canonicalId": "sess_f914287ea881:task4",
+      "sessionId": "sess_f914287ea881",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:02:25.478Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers tabletop RPGs focused on verbal/social encounters and historical/social themes over heroic/battle themes",
+          "reasoning": "User explicitly states interest in RPGs emphasizing social/historical themes without battle elements.",
+          "evidence": {
+            "session_id": "sess_f914287ea881",
+            "utterance_index": 0,
+            "text": "Interested from perspective of tabletop RPGs with focus on verbal and social encounters part (without heroic/battle themes, more historical and social themes)."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-04-23T09:41:07+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_267:1",
+            "queryText": "I'm designing a new campaign setting and need to populate it with interesting NPCs. Which approach to character creation would yield the most engaging dynamics for the players?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Prefers tabletop RPGs focused on verbal/social encounters and historical/social themes over heroic/battle themes",
+              "reasoning": "User explicitly states interest in RPGs emphasizing social/historical themes without battle elements.",
+              "evidence": {
+                "session_id": "sess_f914287ea881",
+                "utterance_index": 0,
+                "text": "Interested from perspective of tabletop RPGs with focus on verbal and social encounters part (without heroic/battle themes, more historical and social themes)."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2024-04-23T09:41:07+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "partial",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          },
+          {
+            "queryId": "ability3_308:1",
+            "queryText": "I'm updating my professional bio for a conference panel on narrative design. Given our extensive discussions about tabletop RPG mechanics focused exclusively on verbal/social encounters and historical themes, what specific job title or professional role should I list as my primary occupation? You've seen how deeply I engage with this material.",
+            "ability": "ability3",
+            "task4RecordIndex": 1,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Prefers tabletop RPGs focused on verbal/social encounters and historical/social themes over heroic/battle themes",
+              "reasoning": "User explicitly states interest in RPGs emphasizing social/historical themes without battle elements.",
+              "evidence": {
+                "session_id": "sess_f914287ea881",
+                "utterance_index": 0,
+                "text": "Interested from perspective of tabletop RPGs with focus on verbal and social encounters part (without heroic/battle themes, more historical and social themes)."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2024-04-23T09:41:07+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

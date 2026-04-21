@@ -1,0 +1,272 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_395a99f976cc",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_395a99f976cc:sess_395a99f976cc",
+      "relativeItemPath": "sess_395a99f976cc.json",
+      "canonicalId": "sess_395a99f976cc",
+      "sessionId": "sess_395a99f976cc",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T09:26:54.188Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "value": "Has a wife",
+            "reasoning": "User explicitly requests a poem for their wife, indicating marital status.",
+            "evidence": {
+              "session_id": "sess_395a99f976cc",
+              "utterance_index": 2,
+              "text": "使用 我非常爱你 5个字写一首藏头诗给妻子"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-29T11:23:14+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_395a99f976cc:sess_395a99f976cc",
+      "relativeItemPath": "sess_395a99f976cc.json",
+      "canonicalId": "sess_395a99f976cc",
+      "sessionId": "sess_395a99f976cc",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T05:44:11.082Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "如果要把“未来十年城市发展潜力”做成一个简单评分模型，你会怎么设计维度？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以用“多维度打分 + 权重汇总”的方式做一个可解释的框架（不保证预测准确，只用于结构化比较）：\n\n1) 人口与人才：常住人口净流入、年龄结构、高校与科研机构密度。\n2) 产业与就业：主导产业竞争力、岗位增速、创业活跃度、产业多元化程度。\n3) 经济与财政：GDP增速与质量、财政自给率、居民可支配收入。\n4) 创新能力：R&D强度、高新技术企业数量、专利产出、产业链完整度。\n5) 交通与区位：高铁/机场/港口枢纽性、通勤效率、对外可达性。\n6) 公共服务：教育医疗资源、城市治理与安全、营商环境。\n7) 房地产与成本：房价收入比、租金水平、土地供给与库存。\n8) 风险与韧性：债务压力、产业单一风险、生态与资源约束、灾害风险。\n\n做法上可以先把每个指标标准化到0-100，再按权重（如产业25%、人口20%、创新20%、交通15%、公共服务10%、成本5%、风险5%）加权求和，并给出“高/中/低确定性”的置信标签。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "能给个例子，说明“权重不同会导致排名不同”吗？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "可以做一个完全假设的例子（城市用甲/乙/丙代称，分数随便举）：\n\n设三城在四个维度上的分数为：\n- 甲：产业90、人口60、创新70、成本40\n- 乙：产业70、人口85、创新65、成本55\n- 丙：产业60、人口65、创新92、成本45\n\n方案A（更看重产业与人口）：产业40% + 人口30% + 创新20% + 成本10%\n- 甲：90*0.4+60*0.3+70*0.2+40*0.1=73\n- 乙：70*0.4+85*0.3+65*0.2+55*0.1=73.5\n- 丙：60*0.4+65*0.3+92*0.2+45*0.1=67.9\n排名：乙≈甲 > 丙\n\n方案B（更看重创新）：产业25% + 人口20% + 创新45% + 成本10%\n- 甲：90*0.25+60*0.2+70*0.45+40*0.1=70\n- 乙：70*0.25+85*0.2+65*0.45+55*0.1=69.25\n- 丙：60*0.25+65*0.2+92*0.45+45*0.1=79.9\n排名：丙 > 甲 > 乙\n\n同一组“基础分”，只要价值取向不同（看重产业还是创新），结果就会明显变化。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "换个话题：联合国成员国到底是193还是195？经常看到两种说法。"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "联合国“会员国”是193个（截至目前一直是193个）。\n\n你看到的195通常来自“被广泛承认为国家/实体的总数”这类口径：在193个会员国外，再加上2个联合国观察员国/实体相关的口径差异（常见说法是加上梵蒂冈与巴勒斯坦得到195）。\n\n严格表述时可以区分：\n- UN Member States（会员国）：193\n- UN observer states（观察员国）：梵蒂冈、巴勒斯坦（会员国之外）\n不同文章把这两类合在一起写，就会出现193/195的差别。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "刚才你提到西安，我这两天正好在雁塔那边来回跑，顺路还想看看万科小学附近的环境。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "雁塔一带片区差异挺大：如果你更在意通勤，就重点看地铁口和主干道的噪音；如果更在意孩子活动空间，可以留意周边公园、步行安全和放学时段的车流。你也可以把你大概走的路线/时间段说一下，我帮你把观察点列得更具体。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "上次我让你“写一首藏头诗给妻子”，你是不是就默认我已婚了？其实那首诗是我帮朋友写的，他要送给他老婆，我自己没结婚。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "明白了。你当时的“写一首藏头诗给妻子”是替朋友代写，并不能说明你本人有妻子或已婚；按你刚才说的，你自己目前未结婚。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "对，就是代写，别再记成我有老婆了。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "好的，我会以“你自己未结婚、当时是帮朋友写给他妻子”为准。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.93,
+            "emotion": null,
+            "evidence": null,
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory inferred the user has a wife from the poem request. The user clarifies it was a proxy request for a friend and explicitly states they are not married, contradicting the earlier inference.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Not married; the poem request was written on behalf of a friend for his wife"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_395a99f976cc",
+              "utterance_index": 0,
+              "text": "我这两天正好在雁塔那边来回跑"
+            },
+            "label": "Location/Current",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies they have been traveling back and forth in the Yanta area over the past couple of days.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Recently has been around Xi'an Yanta area"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_395a99f976cc:sess_395a99f976cc",
+      "relativeItemPath": "sess_395a99f976cc.json",
+      "canonicalId": "sess_395a99f976cc",
+      "sessionId": "sess_395a99f976cc",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-13T12:36:55.781Z",
+        "queryText": "这周我想订一束花并附上一首小诗，但收件人跟我是什么关系会影响贺卡上该用的称呼与语气。结合你记得的我的个人情况，我应该用哪种最贴切的身份称呼对方？",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Partners",
+          "label_suggestion": null,
+          "value": "Has a wife",
+          "reasoning": "User explicitly requests a poem for their wife, indicating marital status.",
+          "evidence": {
+            "session_id": "sess_395a99f976cc",
+            "utterance_index": 2,
+            "text": "使用 我非常爱你 5个字写一首藏头诗给妻子"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-29T11:23:14+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_395a99f976cc:sess_395a99f976cc:task4",
+      "relativeItemPath": "sess_395a99f976cc.json",
+      "canonicalId": "sess_395a99f976cc:task4",
+      "sessionId": "sess_395a99f976cc",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T13:41:15.169Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Partners",
+          "label_suggestion": null,
+          "value": "Has a wife",
+          "reasoning": "User explicitly requests a poem for their wife, indicating marital status.",
+          "evidence": {
+            "session_id": "sess_395a99f976cc",
+            "utterance_index": 2,
+            "text": "使用 我非常爱你 5个字写一首藏头诗给妻子"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-29T11:23:14+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_457:1",
+            "queryText": "我最近总被抱怨不够浪漫，纪念日快到了。基于你对我家庭状况的了解，你能帮我策划一个特别的庆祝惊喜吗？请在建议的开头明确指出我是为谁准备的。",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Social_Relationships/Partners",
+              "label_suggestion": null,
+              "value": "Has a wife",
+              "reasoning": "User explicitly requests a poem for their wife, indicating marital status.",
+              "evidence": {
+                "session_id": "sess_395a99f976cc",
+                "utterance_index": 2,
+                "text": "使用 我非常爱你 5个字写一首藏头诗给妻子"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-05-29T11:23:14+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

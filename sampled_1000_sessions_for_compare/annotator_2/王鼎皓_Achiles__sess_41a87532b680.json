@@ -1,0 +1,389 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_41a87532b680",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_41a87532b680:sess_41a87532b680",
+      "relativeItemPath": "sess_41a87532b680.json",
+      "canonicalId": "sess_41a87532b680",
+      "sessionId": "sess_41a87532b680",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:48:03.699Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Family",
+            "label_suggestion": null,
+            "value": "Alexander Avila Gotera is the brother-in-law of Meilyn Diaz and uncle of Lucas Valdes through his wife Idalsi Valdes",
+            "reasoning": "User explicitly states family relationship multiple times across utterances.",
+            "evidence": {
+              "session_id": "sess_41a87532b680",
+              "utterance_index": 0,
+              "text": "mi esposa idalsi valdes es la hermana de javier valdes que a su vez es el esposo de Meilyn Diaz y el padre De Lucas Valdes, osea yo Alexander soy el cuñado de Meilyn y el tio de Lucas."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-28T19:13:06+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Family/Persecution_Circumstances",
+            "value": "Family members face persecution in Cuba: brother-in-law Javier fled, Meilyn/Lucas relocated due to state threats, fear for their lives",
+            "reasoning": "Forced label not supported. Evidence describes third-party experiences, not user's own past experiences.",
+            "evidence": {
+              "session_id": "sess_41a87532b680",
+              "utterance_index": 0,
+              "text": "mi cuñado Javier Valdes tuvo que salir hueyendo del pais por culpa de la persecucion y los maltratos [...] Meylin y Lucas [...] tuvieron que salir huyendo [...] debido a los actos de repudio y [...] amenazados constantement por la seguridad del estado"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": "fear",
+            "preference_attitude": null,
+            "updated_at": "2023-07-28T19:13:06+00:00"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "direct",
+            "label": "Social_Relationships/Family",
+            "value": "Brother-in-law of Javier Valdes, Meilyn Diaz, and uncle of Lucas Valdes",
+            "confidence": 0.95,
+            "evidence_text": "mi esposa idalsi valdes es la hermana de javier valdes que a su vez es el esposo de Meilyn Diaz y el padre De Lucas Valdes, osea yo Alexander soy el cuñado de Meilyn y el tio de Lucas."
+          },
+          {
+            "memory_id": "deepseek_reasoner_p2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "Interested in writing a formal letter for USCIS sponsorship for family members Meilyn Diaz and Lucas Valdes",
+            "confidence": 0.8,
+            "evidence_text": "Quiero escribir una carta en ingles formal a nombre mio Alexander Avila Gotera como patrocinador al departamento de USCIS, Explicandoles que Meilyn Diaz y Lucas valdes van a ser patrocinados por mi."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_41a87532b680:sess_41a87532b680",
+      "relativeItemPath": "sess_41a87532b680.json",
+      "canonicalId": "sess_41a87532b680",
+      "sessionId": "sess_41a87532b680",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:48:21.741Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Necesito un ejemplo rápido: ¿qué tono debe tener una carta formal en inglés dirigida a una agencia gubernamental?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Debe ser claro, respetuoso y directo. Usa saludo formal (p. ej., “Dear Sir/Madam” o “To Whom It May Concern”), frases neutrales (“I am writing to request…”, “I respectfully request…”), y evita lenguaje emocional o acusatorio. Cierra con “Sincerely” o “Yours faithfully” y tu información de contacto."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "¿Conviene usar viñetas para organizar hechos y fechas, o suena poco formal?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Se puede usar viñetas si mejoran la claridad, especialmente para listar documentos, fechas o puntos clave. Mantén el resto en párrafos formales y evita viñetas muy largas. En cartas a agencias, la claridad suele ser prioritaria."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Dame tres frases modelo para pedir consideración sin sonar exigente."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "1) “I respectfully request your favorable consideration of this matter.”\n2) “Thank you for your time and attention to this request.”\n3) “Please let me know if any additional information or documentation is needed.”\n\nDato curioso (no relacionado): el formato clásico de cartas comerciales en EE. UU. suele preferir bloque completo (“full block”), con todo alineado a la izquierda."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "¿Y si la persona receptora no tiene nombre? ¿Qué encabezado es más estándar?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Lo más estándar es “To Whom It May Concern”. Si conoces la oficina o unidad, es aún mejor: “Dear USCIS Officer,” o “Dear [Office/Unit] Team,”.\n\nOtro ejemplo hipotético: en algunas solicitudes académicas se usa “Dear Admissions Committee,” cuando no hay un nombre específico."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Perfecto. ¿Qué tan larga debería ser, una página o más?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Idealmente una página. Si necesitas incluir muchos detalles, puedes mantener la carta en una página y adjuntar una declaración o anexo con información adicional.\n\nTercer dato irrelevante: en el siglo XIX era común cerrar cartas formales con “I remain, your obedient servant,” pero hoy se considera anticuado."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "En la parte donde hablas de que no seria carga publica, dejalo mas fuerte: menciona que Meilyn es ingeniera industrial, tiene 36, y que el ingles lo maneja tan bien que hasta podria trabajar en cuanto llegue."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Entendido. Puedo reforzar ese párrafo destacando su preparación profesional, edad laboral y dominio del inglés, enfatizando que puede integrarse al mercado de trabajo rápidamente y que no dependería de asistencia pública."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Oye, antes de mandar esa carta tengo que corregir algo: Javier Valdes no es hermano de mi esposa Idalsi. En realidad Javier es primo de Idalsi. O sea, yo Alexander NO soy cuñado de Meilyn; soy familiar político lejano. Y con Lucas tampoco soy su tío, sería como tío político, pero no tío directo."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Entendido. Entonces, para que quede correcto: tu esposa Idalsi Valdes es prima de Javier Valdes (esposo de Meilyn Diaz y padre de Lucas Valdes). Por lo tanto, tú no eres el cuñado de Meilyn ni el tío directo de Lucas; la relación es más lejana por vínculo familiar."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Family/Persecution_Circumstances",
+            "value": "Family members face persecution in Cuba: brother-in-law Javier fled, Meilyn/Lucas relocated due to state threats, fear for their lives",
+            "reasoning": "Forced label not supported. Evidence describes third-party experiences, not user's own past experiences.",
+            "evidence": {
+              "session_id": "sess_41a87532b680",
+              "utterance_index": 0,
+              "text": "mi cuñado Javier Valdes tuvo que salir hueyendo del pais por culpa de la persecucion y los maltratos [...] Meylin y Lucas [...] tuvieron que salir huyendo [...] debido a los actos de repudio y [...] amenazados constantement por la seguridad del estado"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": "fear",
+            "preference_attitude": null,
+            "updated_at": "2023-07-28T19:13:06+00:00",
+            "_task1GoldValue": "Family members face persecution in Cuba: brother-in-law Javier fled, Meilyn/Lucas relocated due to state threats, fear for their lives"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                12
+              ],
+              "turns": [
+                {
+                  "index": 12,
+                  "role": "user",
+                  "text": "Oye, antes de mandar esa carta tengo que corregir algo: Javier Valdes no es hermano de mi esposa Idalsi. En realidad Javier es primo de Idalsi. O sea, yo Alexander NO soy cuñado de Meilyn; soy familiar político lejano. Y con Lucas tampoco soy su tío, sería como tío político, pero no tío directo."
+                }
+              ]
+            },
+            "label": "Personal_Background/Family",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory claimed Idalsi is Javier's sister, which made Alexander Meilyn's brother-in-law and Lucas's uncle. The user corrects this by stating Javier is Idalsi's cousin, so Alexander is not Meilyn's brother-in-law and not Lucas's direct uncle; the relation is more distant through marriage.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Alexander Avila Gotera is not the brother-in-law of Meilyn Diaz nor the direct uncle of Lucas Valdes; his wife Idalsi Valdes is Javier Valdes's cousin, making the relationship more distant by marriage."
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_41a87532b680",
+              "utterance_index": 0,
+              "text": "menciona que Meilyn es ingeniera industrial, tiene 36, y que el ingles lo maneja tan bien que hasta podria trabajar en cuanto llegue."
+            },
+            "label": "Personal_Background/Beneficiary_Profile",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "El usuario pide reforzar la carta incluyendo datos concretos sobre la beneficiaria (profesión, edad y dominio del inglés), lo que implica que esos atributos describen a Meilyn.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Meilyn Diaz es ingeniera industrial, tiene 36 años y domina el inglés lo suficiente como para poder trabajar al llegar."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Family",
+            "label_suggestion": null,
+            "value": "Alexander Avila Gotera is the brother-in-law of Meilyn Diaz and uncle of Lucas Valdes through his wife Idalsi Valdes",
+            "reasoning": "User explicitly states family relationship multiple times across utterances.",
+            "evidence": {
+              "session_id": "sess_41a87532b680",
+              "utterance_index": 0,
+              "text": "mi esposa idalsi valdes es la hermana de javier valdes que a su vez es el esposo de Meilyn Diaz y el padre De Lucas Valdes, osea yo Alexander soy el cuñado de Meilyn y el tio de Lucas."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-28T19:13:06+00:00",
+            "_task1GoldValue": "Alexander Avila Gotera is the brother-in-law of Meilyn Diaz and uncle of Lucas Valdes through his wife Idalsi Valdes"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "direct",
+            "label": "Social_Relationships/Family",
+            "value": "Brother-in-law of Javier Valdes, Meilyn Diaz, and uncle of Lucas Valdes",
+            "confidence": 0.95,
+            "evidence_text": "mi esposa idalsi valdes es la hermana de javier valdes que a su vez es el esposo de Meilyn Diaz y el padre De Lucas Valdes, osea yo Alexander soy el cuñado de Meilyn y el tio de Lucas.",
+            "_task1GoldValue": "Brother-in-law of Javier Valdes, Meilyn Diaz, and uncle of Lucas Valdes"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "Interested in writing a formal letter for USCIS sponsorship for family members Meilyn Diaz and Lucas Valdes",
+            "confidence": 0.8,
+            "evidence_text": "Quiero escribir una carta en ingles formal a nombre mio Alexander Avila Gotera como patrocinador al departamento de USCIS, Explicandoles que Meilyn Diaz y Lucas valdes van a ser patrocinados por mi.",
+            "_task1GoldValue": "Interested in writing a formal letter for USCIS sponsorship for family members Meilyn Diaz and Lucas Valdes"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "deepseek_reasoner_p1",
+          "deepseek_reasoner_p2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_41a87532b680:sess_41a87532b680",
+      "relativeItemPath": "sess_41a87532b680.json",
+      "canonicalId": "sess_41a87532b680",
+      "sessionId": "sess_41a87532b680",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:48:24.927Z",
+        "queryText": "I’m filling out a form that only allows me to pick one relationship label for each person: “in‑law” or “niece/nephew.” For the two relatives connected to me through my spouse’s sibling, which label should I pick for each of them, and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Family",
+          "label_suggestion": null,
+          "value": "Alexander Avila Gotera is the brother-in-law of Meilyn Diaz and uncle of Lucas Valdes through his wife Idalsi Valdes",
+          "reasoning": "User explicitly states family relationship multiple times across utterances.",
+          "evidence": {
+            "session_id": "sess_41a87532b680",
+            "utterance_index": 0,
+            "text": "mi esposa idalsi valdes es la hermana de javier valdes que a su vez es el esposo de Meilyn Diaz y el padre De Lucas Valdes, osea yo Alexander soy el cuñado de Meilyn y el tio de Lucas."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-07-28T19:13:06+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_41a87532b680:sess_41a87532b680:task4",
+      "relativeItemPath": "sess_41a87532b680.json",
+      "canonicalId": "sess_41a87532b680:task4",
+      "sessionId": "sess_41a87532b680",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:48:28.417Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Family",
+          "label_suggestion": null,
+          "value": "Alexander Avila Gotera is the brother-in-law of Meilyn Diaz and uncle of Lucas Valdes through his wife Idalsi Valdes",
+          "reasoning": "User explicitly states family relationship multiple times across utterances.",
+          "evidence": {
+            "session_id": "sess_41a87532b680",
+            "utterance_index": 0,
+            "text": "mi esposa idalsi valdes es la hermana de javier valdes que a su vez es el esposo de Meilyn Diaz y el padre De Lucas Valdes, osea yo Alexander soy el cuñado de Meilyn y el tio de Lucas."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-07-28T19:13:06+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_104:1",
+            "queryText": "Necesito ayuda para preparar un affidavit de apoyo para mi cuñada Meilyn y mi sobrino Lucas. Quiero explicar que aunque mi esposa Idalsi y yo somos los patrocinadores principales, también queremos mencionar que mi suegra, la madre de Idalsi y Javier, está dispuesta a contribuir con alojamiento temporal cuando lleguen. ¿Cómo puedo estructurar esto manteniendo claro mi rol familiar como cuñado y tío?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Family",
+              "label_suggestion": null,
+              "value": "Alexander Avila Gotera is the brother-in-law of Meilyn Diaz and uncle of Lucas Valdes through his wife Idalsi Valdes",
+              "reasoning": "User explicitly states family relationship multiple times across utterances.",
+              "evidence": {
+                "session_id": "sess_41a87532b680",
+                "utterance_index": 0,
+                "text": "mi esposa idalsi valdes es la hermana de javier valdes que a su vez es el esposo de Meilyn Diaz y el padre De Lucas Valdes, osea yo Alexander soy el cuñado de Meilyn y el tio de Lucas."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-07-28T19:13:06+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

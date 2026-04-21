@@ -1,0 +1,313 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_6316d248a5e7",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_6316d248a5e7:sess_6316d248a5e7",
+      "relativeItemPath": "sess_6316d248a5e7.json",
+      "canonicalId": "sess_6316d248a5e7",
+      "sessionId": "sess_6316d248a5e7",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T17:45:29.603Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Creating manga (writing/art)",
+            "reasoning": "User explicitly states working on a manga as a creative project.",
+            "evidence": {
+              "session_id": "sess_6316d248a5e7",
+              "utterance_index": 0,
+              "text": "I’m working on a manga and I’d like to tell you about its title."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-02-02T17:38:31+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Creative_Project/Development",
+            "value": "Focused on developing manga elements: action themes, character abilities, secret organizations",
+            "reasoning": "Forced label not supported. User describes their fictional narrative, not personal curiosity.",
+            "evidence": {
+              "session_id": "sess_6316d248a5e7",
+              "utterance_index": 8,
+              "text": "Because of what happened during the bank robbery... he ends up being recruited by a interesting organization..."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-02T17:38:31+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_6316d248a5e7:sess_6316d248a5e7",
+      "relativeItemPath": "sess_6316d248a5e7.json",
+      "canonicalId": "sess_6316d248a5e7",
+      "sessionId": "sess_6316d248a5e7",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T13:59:23.989Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "If GGIA is disguised as an insurance company, what are some believable day-to-day cover activities they could do without looking suspicious?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "A solid cover is one where the “boring” explanation fits almost everything they do. For an insurance-company front, believable day-to-day activities could include:\n\n- **Claims handling**: adjusters visiting accident sites, taking photos, interviewing witnesses, requesting documents. That naturally justifies travel, odd hours, and lots of phone calls.\n- **Fraud investigations (SIU)**: surveillance, background checks, pulling public records, coordinating with law enforcement—already a real part of insurance.\n- **Risk assessment / underwriting**: staff touring warehouses, office buildings, labs; writing reports about security, fire exits, inventory control.\n- **Catastrophe response teams**: rapid deployment after storms/fires; temporary field offices; lots of vehicles and equipment that won’t raise eyebrows.\n- **Corporate security consulting**: offered as an “added service” for high-premium clients; provides a reason for tactical-minded personnel.\n- **Legal + compliance**: frequent interaction with courts/regulators, secure document handling, and privileged meetings.\n- **IT + data analytics**: massive data pipelines, anomaly detection, identity verification—sounds mundane, but can hide intel work.\n\nIf you want it extra plausible, give them a few real, publicly-known insurance products and a legitimate customer service footprint so outsiders can verify the company exists."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "I also want their name to be kind of cheesy on purpose. Does “Good Guys Intelligence Agency” feel too on-the-nose?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "It’s on-the-nose, but that can work if it’s intentional and grounded in-world. A cheesy name can signal either (a) they’re trying too hard to sound trustworthy, (b) it started as an internal joke that stuck, or (c) it’s a legacy acronym they refuse to change.\n\nTo keep it from feeling random, you can add a simple rationale: maybe “Good Guys” is a public-facing slogan for the insurance brand, while “Intelligence Agency” is what agents call the covert division internally. Or the full name is bureaucratic (and ridiculous), but everyone mostly says “GGIA.”"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Random aside: I read a trivia snippet that some early spy agencies used boring trade names to blend in. Is that actually true?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Broadly, yes—intelligence services and covert units have often used bland “commercial” or administrative labels as cover (shipping firms, import/export offices, research bureaus, procurement departments). The boringness is the point: it reduces curiosity and creates paperwork that looks normal.\n\nOne well-known historical example adjacent to that idea is the WWII-era U.S. **OSS**, which used a lot of ordinary-sounding branches and contracting arrangements; and in other countries, security services have used front companies for logistics and acquisition. Details vary widely by era and what’s been declassified, but as a storytelling device, it’s very believable."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Got it. Also, I want a recurring gag where the office has a motivational poster that keeps changing slogans."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "That’s a great recurring prop. You can make the slogans innocently corporate on the surface, but faintly ominous or spy-coded for anyone “in the know.” Examples:\n\n- “WE’VE GOT YOU COVERED.” (literal + covert)\n- “RISK IS OPPORTUNITY.”\n- “DOCUMENT EVERYTHING.”\n- “TRUST, BUT VERIFY.”\n- “IF IT’S NOT IN THE FILE, IT DIDN’T HAPPEN.”\n\nYou can also tie the slogan changes to plot beats—after a botched mission it flips to something passive-aggressive, and after a win it becomes absurdly upbeat."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "One thing I keep circling back to is how GGIA’s “insurance company” cover actually looks day-to-day—like the protagonist having to sit through some painfully normal claims meeting right after a night of blasting TV and music just to get any sleep."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "That contrast can land really well—especially if you show specific “office” beats (paperwork, training modules labeled like compliance, awkward small talk) colliding with the covert side. You can make the cover feel real by giving it routines, jargon, and consequences, while still letting the reader sense the hidden machinery underneath."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Wait, I gotta correct that first message from earlier—I’m not actually making a manga. I was just tossing around an idea and used “manga” loosely."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—so it’s more of a story concept you’re brainstorming, not a manga project you’re actively writing/drawing."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Yeah, exactly. No script, no panels, no art—just a rough premise I’m playing with."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Creative_Project/Development",
+            "value": "Focused on developing manga elements: action themes, character abilities, secret organizations",
+            "reasoning": "Forced label not supported. User describes their fictional narrative, not personal curiosity.",
+            "evidence": {
+              "session_id": "sess_6316d248a5e7",
+              "utterance_index": 8,
+              "text": "Because of what happened during the bank robbery... he ends up being recruited by a interesting organization..."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-02T17:38:31+00:00"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "The prior memory says the user is creating a manga, but the user explicitly corrects that they are not actually making a manga and are only casually brainstorming a premise.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Brainstorming a story concept (not actively creating a manga)"
+          },
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_6316d248a5e7",
+              "utterance_index": 0,
+              "text": "One thing I keep circling back to is how GGIA’s “insurance company” cover actually looks day-to-day—like the protagonist having to sit through some painfully normal claims meeting"
+            },
+            "label": "Creative_Project/Development",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies an active focus on fleshing out the mundane operational details of GGIA’s cover life (claims meetings, day-to-day look) as part of developing the story.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Wants to depict GGIA’s insurance-company cover with realistic day-to-day office details/meetings as a contrast to the covert action."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_6316d248a5e7:sess_6316d248a5e7",
+      "relativeItemPath": "sess_6316d248a5e7.json",
+      "canonicalId": "sess_6316d248a5e7",
+      "sessionId": "sess_6316d248a5e7",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T12:07:42.473Z",
+        "queryText": "I’m thinking about picking up a brand-new hobby, but I don’t want it to derail the creative thing I’ve already been consistently practicing. Given what you know I regularly work on, how would you suggest I balance my schedule so I can keep improving at that existing craft while experimenting with the new hobby?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Creating manga (writing/art)",
+          "reasoning": "User explicitly states working on a manga as a creative project.",
+          "evidence": {
+            "session_id": "sess_6316d248a5e7",
+            "utterance_index": 0,
+            "text": "I’m working on a manga and I’d like to tell you about its title."
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-02-02T17:38:31+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_6316d248a5e7:sess_6316d248a5e7:task4",
+      "relativeItemPath": "sess_6316d248a5e7.json",
+      "canonicalId": "sess_6316d248a5e7:task4",
+      "sessionId": "sess_6316d248a5e7",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:23:51.619Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Creating manga (writing/art)",
+          "reasoning": "User explicitly states working on a manga as a creative project.",
+          "evidence": {
+            "session_id": "sess_6316d248a5e7",
+            "utterance_index": 0,
+            "text": "I’m working on a manga and I’d like to tell you about its title."
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-02-02T17:38:31+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_169:1",
+            "queryText": "I'm stuck on a panel layout for a tense office scene before the action kicks in. What approach would actually work best for me?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Creating manga (writing/art)",
+              "reasoning": "User explicitly states working on a manga as a creative project.",
+              "evidence": {
+                "session_id": "sess_6316d248a5e7",
+                "utterance_index": 0,
+                "text": "I’m working on a manga and I’d like to tell you about its title."
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2024-02-02T17:38:31+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

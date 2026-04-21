@@ -1,0 +1,298 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_3a5a814a19cd",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_3a5a814a19cd:sess_3a5a814a19cd",
+      "relativeItemPath": "sess_3a5a814a19cd.json",
+      "canonicalId": "sess_3a5a814a19cd",
+      "sessionId": "sess_3a5a814a19cd",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T11:29:23.234Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Currently employed on a CDD contract",
+            "reasoning": "User explicitly states 'Je suis salarié en CDD dans une entreprise' (utterance 30)",
+            "evidence": {
+              "session_id": "sess_3a5a814a19cd",
+              "utterance_index": 30,
+              "text": "Je suis salarié en CDD dans une entreprise, à quel moment puis je bénéficier du plan d’épargne salariale."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-06T17:54:44+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "professional/interest/labor_laws_questions",
+            "value": "Sustained interest in French labor law obligations regarding collective agreements, employee benefits, and insurance regulations",
+            "reasoning": "Pattern of technical questions could reflect role-play/test context rather than personal curiosity. No explicit self-reported interest.",
+            "evidence": {
+              "session_id": "sess_3a5a814a19cd",
+              "utterance_index": 24,
+              "text": "Quelles sont les conditions à remplir par l’entreprise dans le cadre de la mutuelle obligatoire ?..."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-06T17:54:44+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_3a5a814a19cd:sess_3a5a814a19cd",
+      "relativeItemPath": "sess_3a5a814a19cd.json",
+      "canonicalId": "sess_3a5a814a19cd",
+      "sessionId": "sess_3a5a814a19cd",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T05:45:58.568Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Pour un contrat collectif santé/prévoyance, quelle est la différence entre une clause de recommandation et une clause de désignation ?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "La **désignation** impose (ou impose très fortement) le choix d’un organisme assureur au niveau de la branche : les entreprises relevant de la branche doivent alors adhérer à l’organisme « désigné ». En France, ce mécanisme a été largement remis en cause (notamment après des décisions du Conseil constitutionnel), au profit de la mise en concurrence.\n\nLa **recommandation** n’impose pas : la branche peut **recommander** un assureur (souvent après appel d’offres), mais l’employeur **reste libre** de choisir un autre organisme, à condition de respecter les obligations légales et conventionnelles (garanties minimales, caractère collectif/obligatoire, etc.)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Et si l’entreprise choisit un autre assureur que celui recommandé, elle doit faire quoi en pratique ?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "En pratique, elle doit surtout :\n- **Vérifier la conformité** du régime choisi avec l’accord de branche (niveau de garanties, catégories couvertes, formalismes).\n- **Mettre en place correctement** le régime (accord collectif, référendum ou DUE selon le cas) et **remettre la notice**/documentation aux salariés.\n- Être capable de **justifier l’équivalence** (ou le respect des exigences minimales) si la branche fixe un panier de garanties.\n\nÀ noter (info générale) : depuis la loi Pacte, les produits retraite d’entreprise (PER collectif, PER obligatoire) ont remplacé plusieurs anciens dispositifs, ce qui a modifié pas mal de supports utilisés dans les accords."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Pour être sûr : la recommandation donne un avantage fiscal ou social si on suit l’organisme recommandé ?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "En règle générale, **non** : les avantages sociaux et fiscaux tiennent au respect des **conditions du régime** (collectif, obligatoire, conformité au cadre légal et, le cas échéant, « responsable » en santé), pas au fait d’avoir suivi l’organisme recommandé.\n\n(Exemple hors sujet mais utile en culture éco : l’IPID est un document d’information précontractuelle issu de la directive sur la distribution d’assurances, conçu pour standardiser l’info produit, pas pour conditionner des exonérations.)"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Pour mes fiches de révision (je passe l’examen la semaine prochaine), tu peux me redire rapidement : dans une assurance de groupe, qui remet la notice d’information à l’adhérent ?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Dans une assurance de groupe, la remise de la notice d’information à l’adhérent relève en pratique du souscripteur (souvent l’employeur), à partir des documents fournis par l’assureur."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Petite rectification : je ne suis plus en CDD. J’ai signé un CDI la semaine dernière, donc la question sur le plan d’épargne salariale ne se pose plus en mode « CDD »."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "D’accord, donc vous êtes désormais en CDI (et non en CDD)."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "professional/interest/labor_laws_questions",
+            "value": "Sustained interest in French labor law obligations regarding collective agreements, employee benefits, and insurance regulations",
+            "reasoning": "Pattern of technical questions could reflect role-play/test context rather than personal curiosity. No explicit self-reported interest.",
+            "evidence": {
+              "session_id": "sess_3a5a814a19cd",
+              "utterance_index": 24,
+              "text": "Quelles sont les conditions à remplir par l’entreprise dans le cadre de la mutuelle obligatoire ?..."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-06T17:54:44+00:00"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory says the user is currently on a CDD, but the user corrects this by stating they are no longer on a CDD and have signed a CDI last week. Therefore the updated truth is that the user is currently employed on a CDI.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Currently employed on a CDI contract"
+          },
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_3a5a814a19cd",
+              "utterance_index": 0,
+              "text": "Pour mes fiches de révision (je passe l’examen la semaine prochaine)"
+            },
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user mentions creating revision sheets and that they are taking an exam next week, implying an upcoming assessment they are studying for.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is preparing for an exam scheduled for next week"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_3a5a814a19cd:sess_3a5a814a19cd",
+      "relativeItemPath": "sess_3a5a814a19cd.json",
+      "canonicalId": "sess_3a5a814a19cd",
+      "sessionId": "sess_3a5a814a19cd",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-13T12:41:18.639Z",
+        "queryText": "I’m trying to figure out whether I should expect to qualify for a company benefit program that’s often tied to employment status—what detail about my current work arrangement could make my eligibility rules different from someone who’s hired permanently?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Occupation",
+          "label_suggestion": null,
+          "value": "Currently employed on a CDD contract",
+          "reasoning": "User explicitly states 'Je suis salarié en CDD dans une entreprise' (utterance 30)",
+          "evidence": {
+            "session_id": "sess_3a5a814a19cd",
+            "utterance_index": 30,
+            "text": "Je suis salarié en CDD dans une entreprise, à quel moment puis je bénéficier du plan d’épargne salariale."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-03-06T17:54:44+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_3a5a814a19cd:sess_3a5a814a19cd:task4",
+      "relativeItemPath": "sess_3a5a814a19cd.json",
+      "canonicalId": "sess_3a5a814a19cd:task4",
+      "sessionId": "sess_3a5a814a19cd",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T02:12:09.333Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Occupation",
+          "label_suggestion": null,
+          "value": "Currently employed on a CDD contract",
+          "reasoning": "User explicitly states 'Je suis salarié en CDD dans une entreprise' (utterance 30)",
+          "evidence": {
+            "session_id": "sess_3a5a814a19cd",
+            "utterance_index": 30,
+            "text": "Je suis salarié en CDD dans une entreprise, à quel moment puis je bénéficier du plan d’épargne salariale."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-03-06T17:54:44+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_226:1",
+            "queryText": "Mon CDD se termine dans deux mois et mon employeur propose un PERCO. Je veux savoir si je peux y participer maintenant ou s'il faut attendre la fin de mon contrat pour bénéficier des versements.",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Occupation",
+              "label_suggestion": null,
+              "value": "Currently employed on a CDD contract",
+              "reasoning": "User explicitly states 'Je suis salarié en CDD dans une entreprise' (utterance 30)",
+              "evidence": {
+                "session_id": "sess_3a5a814a19cd",
+                "utterance_index": 30,
+                "text": "Je suis salarié en CDD dans une entreprise, à quel moment puis je bénéficier du plan d’épargne salariale."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-03-06T17:54:44+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

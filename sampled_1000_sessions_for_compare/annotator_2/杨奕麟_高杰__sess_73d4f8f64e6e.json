@@ -1,0 +1,265 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_73d4f8f64e6e",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_73d4f8f64e6e:sess_73d4f8f64e6e",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_73d4f8f64e6e.json",
+      "canonicalId": "sess_73d4f8f64e6e",
+      "sessionId": "sess_73d4f8f64e6e",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T14:24:11.625Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Possessions/Pet",
+            "value": "Has a cat,cat is bright orange and sometimes angry",
+            "reasoning": "User explicitly mentions their cat walking on the keyboard.User explicitly describes their cat's appearance and temperament",
+            "evidence": {
+              "session_id": "sess_73d4f8f64e6e",
+              "utterance_index": 23,
+              "text": "Yeah, He's Bright Orange And Is Quite Angry At Some Times"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-27T01:49:24.349Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_73d4f8f64e6e:sess_73d4f8f64e6e",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_73d4f8f64e6e.json",
+      "canonicalId": "sess_73d4f8f64e6e",
+      "sessionId": "sess_73d4f8f64e6e",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T14:25:30.082Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "If I write 0.999... does it actually equal 1, or is it just “close”?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "It equals 1 exactly (in standard real-number arithmetic). One quick proof: let x = 0.999..., then 10x = 9.999.... Subtract: 10x − x = 9.999... − 0.999... = 9, so 9x = 9 and x = 1."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Can you show a different explanation without that subtraction trick?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Sure: 0.999... is the infinite series 9/10 + 9/100 + 9/1000 + ... which is geometric with first term a=9/10 and ratio r=1/10. The sum is a/(1−r) = (9/10)/(9/10) = 1."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Random trivia break: what’s the biggest prime anyone has found?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "As of 2025-09, the largest known primes are typically Mersenne primes found by GIMPS. The current record is a specific huge Mersenne prime of the form 2^p − 1 (with p a large prime). If you want, I can look up the exact exponent p for the latest confirmed record you have in mind, since the “current” record changes when a new one is verified."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "assistant",
+            "text": "So how’s your bright-orange little keyboard-walker doing today?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "user",
+            "text": "Still a grump—he knocked my water cup over again, and I had to wipe down the keys."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "assistant",
+            "text": "Oof. At least it wasn’t something sticky. Want tips to keep him off the desk?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "user",
+            "text": "Quick correction: I don’t actually have a cat. The “my cat walked along my keyboard” and the “He’s bright orange and is quite angry” stuff was just me joking around."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "assistant",
+            "text": "Got it—so you were joking, and you don’t actually have a cat; the bright orange/angry description wasn’t a real pet."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_73d4f8f64e6e",
+              "utterance_index": 9,
+              "text": "Quick correction: I don’t actually have a cat. The “my cat walked along my keyboard” and the “He’s bright orange and is quite angry” stuff was just me joking around."
+            },
+            "label": "Possessions/Pet",
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory states the user has a bright orange, sometimes angry cat. The user explicitly contradicts this by stating they do not actually have a cat and that the earlier statements were jokes, so the updated truth is that the user does not have a cat.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Does not actually have a cat; earlier cat details were a joke."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_73d4f8f64e6e",
+              "utterance_index": 0,
+              "text": "Still a grump—he knocked my water cup over again, and I had to wipe down the keys."
+            },
+            "label": "Possessions/Pet",
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user implies a recurring incident where the cat spills water, leading the user to clean the keyboard.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User had to wipe down their keyboard after their cat knocked over a water cup on/near it."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_73d4f8f64e6e:sess_73d4f8f64e6e",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_73d4f8f64e6e.json",
+      "canonicalId": "sess_73d4f8f64e6e",
+      "sessionId": "sess_73d4f8f64e6e",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T14:25:41.206Z",
+        "queryText": "I’m picking a small decoration that’s meant to match something I live with every day, but I can only choose one: a warm-toned color theme or a cool-toned one. Which theme should I pick, and what everyday clue about my home life makes that the better match—plus what’s one personality quirk I should keep in mind so it doesn’t get knocked over?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Possessions/Pet",
+          "value": "Has a cat,cat is bright orange and sometimes angry",
+          "reasoning": "User explicitly mentions their cat walking on the keyboard.User explicitly describes their cat's appearance and temperament",
+          "evidence": {
+            "session_id": "sess_73d4f8f64e6e",
+            "utterance_index": 23,
+            "text": "Yeah, He's Bright Orange And Is Quite Angry At Some Times"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2026-01-27T01:49:24.349Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_73d4f8f64e6e:sess_73d4f8f64e6e:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_73d4f8f64e6e.json",
+      "canonicalId": "sess_73d4f8f64e6e:task4",
+      "sessionId": "sess_73d4f8f64e6e",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T14:27:53.364Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Possessions/Pet",
+          "value": "Has a cat,cat is bright orange and sometimes angry",
+          "reasoning": "User explicitly mentions their cat walking on the keyboard.User explicitly describes their cat's appearance and temperament",
+          "evidence": {
+            "session_id": "sess_73d4f8f64e6e",
+            "utterance_index": 23,
+            "text": "Yeah, He's Bright Orange And Is Quite Angry At Some Times"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2026-01-27T01:49:24.349Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_50:1",
+            "queryText": "I'm thinking about redecorating my living room - what colors or decor style would you suggest?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Possessions/Pet",
+              "value": "Has a cat,cat is bright orange and sometimes angry",
+              "reasoning": "User explicitly mentions their cat walking on the keyboard.User explicitly describes their cat's appearance and temperament",
+              "evidence": {
+                "session_id": "sess_73d4f8f64e6e",
+                "utterance_index": 23,
+                "text": "Yeah, He's Bright Orange And Is Quite Angry At Some Times"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2026-01-27T01:49:24.349Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "对话中没有用户对颜色的喜好，不过橙色猫也可以对问题提供帮助，装修颜色与猫颜色可以有一定联系，比如如果颜色相同猫毛的颜色就会很不明显，不方便打扫",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

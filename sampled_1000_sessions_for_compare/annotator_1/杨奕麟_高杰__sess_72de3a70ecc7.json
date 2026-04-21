@@ -1,0 +1,367 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_72de3a70ecc7",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_72de3a70ecc7:sess_72de3a70ecc7",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_72de3a70ecc7.json",
+      "canonicalId": "sess_72de3a70ecc7",
+      "sessionId": "sess_72de3a70ecc7",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T10:24:43.513Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Prefers vegetables and eats only chicken breast, beef, and fish; avoids lamb",
+            "reasoning": "User explicitly states dietary restrictions and corrects inclusion of lamb.",
+            "evidence": {
+              "session_id": "sess_72de3a70ecc7",
+              "utterance_index": 0,
+              "text": "要求多蔬菜，只吃鸡胸肉，牛肉和鱼肉...每天一份以上的奶制品"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-05T07:03:00+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Interaction/Request/Instructions",
+            "value": "Sustained interest in diet plan implementation (portion control, calorie tracking, cooking methods)",
+            "reasoning": "Task-local requests for implementation details; insufficient evidence for persistent curiosity pattern.",
+            "evidence": {
+              "session_id": "sess_72de3a70ecc7",
+              "utterance_index": 8,
+              "text": "你能告诉我每天肉菜的具体制作方法吗？我还不会做"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-05T07:03:00+00:00"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "value": "Does not eat lamb/mutton",
+            "confidence": 0.95,
+            "evidence_text": "还有你混进去了羊肉，我不吃羊肉"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p2",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "Interested in learning specific cooking methods for meat dishes",
+            "confidence": 0.8,
+            "evidence_text": "你能告诉我每天肉菜的具体制作方法吗？我还不会做"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_72de3a70ecc7:sess_72de3a70ecc7",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_72de3a70ecc7.json",
+      "canonicalId": "sess_72de3a70ecc7",
+      "sessionId": "sess_72de3a70ecc7",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:07:29.721Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我有点纠结：做饭的时候先腌肉还是先焯水更好？网上说法不太一致。"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "看你想达到的效果：\n1）想去腥、去血沫（比如牛肉、部分鱼类）：一般先快速焯水/冲洗，再进行腌制或调味下锅；\n2）想要更嫩、更入味（比如鸡胸、里脊）：通常先腌制（盐/酱油+少量淀粉+一点油），再下锅快炒/煎；\n3）想要汤清：先焯水、洗净浮沫，再小火慢炖。\n如果你说一下具体是哪种肉、做法（煎/炒/炖/烤），我可以给一个更明确的流程。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "那如果是做番茄炖牛肉，怎么做能让汤更清爽一点？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "番茄炖牛肉想汤清爽，可以按这个顺序：\n1）牛肉切块后冷水下锅，加姜片；水开2-3分钟撇净浮沫，捞出用温水冲净表面；\n2）另起锅少油，把牛肉略微煸一下（只要表面收紧即可，不必煎太焦）；\n3）加开水没过牛肉，小火慢炖；中途继续撇浮沫；\n4）番茄先用热水烫去皮、切块，最后30-40分钟再下锅，这样不容易让汤变浑；\n5）盐尽量在快出锅时再放。\n小技巧：全程用开水续水、不大火翻滚，汤会更清。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "说到番茄，之前看到有人说意大利有个活动是往街上倒番茄互相扔，是真的吗？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "是真的，比较有名的是西班牙的“番茄大战”(La Tomatina)，在布尼奥尔举办；意大利也有类似的“橙子大战”(Ivrea Battle of the Oranges)，主角换成了橙子。番茄大战通常会有规定，比如番茄要先捏碎再扔、限定时间、结束后会统一冲洗街道等。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "明白了。回到做菜：我经常把鸡胸煎得很柴，有没有一个不容易翻车的火候方法？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "一个很稳的做法是“中火定型+小火焖熟”：\n1）鸡胸尽量切成厚度均匀的片/块；简单腌5-15分钟（盐+胡椒+少量淀粉+一点油）；\n2）平底锅预热后中火，下锅每面煎到表面变白、略微上色（通常每面1-2分钟，视厚度）；\n3）转小火，盖盖焖2-4分钟；\n4）关火后再焖1-2分钟再切。\n关键点：不要频繁翻动、不要大火久煎，厚的就用“盖盖焖”补熟度。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "assistant",
+            "text": "当然可以。我先从周一的肉菜开始写成“新手也能照做”的步骤：\n\n周一晚餐：红烧鲫鱼（配青菜炒香菇）\n- 处理：鲫鱼擦干水分，两面划两刀；锅里少油，鱼下锅前记得把水擦干，不然容易粘锅和溅油。\n- 调味：姜片、葱段下锅爆香，鱼两面煎至微黄后沿锅边烹一点料酒；加生抽、少许老抽上色，倒热水没过鱼身一半，小火焖。\n- 收汁：中途轻轻晃锅别用铲子硬翻（鱼皮容易破）；最后大火收汁，尝味道再补盐。\n\n如果你家里只有不粘锅/空气炸锅，也可以告诉我你常用的锅具，我再把后面几天的做法按你的条件改成更顺手的版本。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "user",
+            "text": "我基本就一个空气炸锅，平时开火不太敢，怕溅油。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "我前面说“只吃鸡胸肉、牛肉和鱼肉”主要是指正餐想控制在这三种里，但其实也不是绝对只吃这三样；像虾、鸡翅这种我也会吃的。唯一确定的是我不吃羊肉，别再放进去了。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "明白了，你的意思是：正餐尽量以鸡胸肉、牛肉和鱼肉为主，但并非“只吃”这三种；虾、鸡翅也可以安排；同时你明确不吃羊肉，我后续会完全避开羊肉。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Food/Dislike",
+            "value": "Explicitly avoids lamb consumption",
+            "reasoning": "User directly corrects assistant's inclusion of羊肉 (lamb).",
+            "evidence": {
+              "session_id": "sess_72de3a70ecc7",
+              "utterance_index": 4,
+              "text": "还有你混进去了羊肉，我不吃羊肉"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-05T07:03:00+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Interaction/Request/Instructions",
+            "value": "Sustained interest in diet plan implementation (portion control, calorie tracking, cooking methods)",
+            "reasoning": "Task-local requests for implementation details; insufficient evidence for persistent curiosity pattern.",
+            "evidence": {
+              "session_id": "sess_72de3a70ecc7",
+              "utterance_index": 8,
+              "text": "你能告诉我每天肉菜的具体制作方法吗？我还不会做"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-05T07:03:00+00:00",
+            "_task1GoldValue": "Sustained interest in diet plan implementation (portion control, calorie tracking, cooking methods)"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "Old memory claims the user eats only chicken breast, beef, and fish. The user clarifies it is not absolute and that shrimp and chicken wings are also acceptable, while still explicitly avoiding lamb.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers main meals to focus on chicken breast, beef, and fish, but also eats shrimp and chicken wings; avoids lamb"
+          },
+          {
+            "confidence": 0.88,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_72de3a70ecc7",
+              "utterance_index": 1,
+              "text": "我基本就一个空气炸锅，平时开火不太敢，怕溅油。"
+            },
+            "label": "Lifestyle/Cooking",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies their primary cooking device is an air fryer and avoids open-flame/stovetop cooking because they fear oil splashing.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User mainly uses an air fryer and is uneasy about stovetop cooking due to oil splatter concerns."
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "value": "Does not eat lamb/mutton",
+            "confidence": 0.95,
+            "evidence_text": "还有你混进去了羊肉，我不吃羊肉",
+            "_task1GoldValue": "Does not eat lamb/mutton"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p2",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "Interested in learning specific cooking methods for meat dishes",
+            "confidence": 0.8,
+            "evidence_text": "你能告诉我每天肉菜的具体制作方法吗？我还不会做",
+            "_task1GoldValue": "Interested in learning specific cooking methods for meat dishes"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m3",
+          "claude_sonnet_4_5_20250929_p1",
+          "claude_sonnet_4_5_20250929_p2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_72de3a70ecc7:sess_72de3a70ecc7",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_72de3a70ecc7.json",
+      "canonicalId": "sess_72de3a70ecc7",
+      "sessionId": "sess_72de3a70ecc7",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T16:30:59.390Z",
+        "queryText": "我在安排一周的健康餐，发现有一道菜是用某种“红肉”做主蛋白的。考虑到我平时对主食材的取舍，如果我想把它换成我会吃的肉类来保持同等的蛋白质摄入，我最可能会把它换成哪三种主蛋白里的任意一种？",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Eats only chicken breast, beef, and fish; avoids lamb",
+          "reasoning": "User explicitly states dietary restrictions and corrects inclusion of lamb.",
+          "evidence": {
+            "session_id": "sess_72de3a70ecc7",
+            "utterance_index": 0,
+            "text": "要求多蔬菜，只吃鸡胸肉，牛肉和鱼肉...每天一份以上的奶制品"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-05-05T07:03:00+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_72de3a70ecc7:sess_72de3a70ecc7:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_72de3a70ecc7.json",
+      "canonicalId": "sess_72de3a70ecc7:task4",
+      "sessionId": "sess_72de3a70ecc7",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T11:22:01.714Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Eats only chicken breast, beef, and fish; avoids lamb",
+          "reasoning": "User explicitly states dietary restrictions and corrects inclusion of lamb.",
+          "evidence": {
+            "session_id": "sess_72de3a70ecc7",
+            "utterance_index": 0,
+            "text": "要求多蔬菜，只吃鸡胸肉，牛肉和鱼肉...每天一份以上的奶制品"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-05-05T07:03:00+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_571:1",
+            "queryText": "我想学做几个新的主菜，能给我推荐几种适合晚餐的肉类做法吗？要那种容易上手、食材好买的。",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Food",
+              "label_suggestion": null,
+              "value": "Eats only chicken breast, beef, and fish; avoids lamb",
+              "reasoning": "User explicitly states dietary restrictions and corrects inclusion of lamb.",
+              "evidence": {
+                "session_id": "sess_72de3a70ecc7",
+                "utterance_index": 0,
+                "text": "要求多蔬菜，只吃鸡胸肉，牛肉和鱼肉...每天一份以上的奶制品"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-05-05T07:03:00+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,375 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_17f29b00c6ed",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_17f29b00c6ed:sess_17f29b00c6ed",
+      "relativeItemPath": "sess_17f29b00c6ed.json",
+      "canonicalId": "sess_17f29b00c6ed",
+      "sessionId": "sess_17f29b00c6ed",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T11:55:53.582Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Avoid using words: 'I', 'AI', 'is', 'you', 'Thank', 'it', 'if', 'apologize', 'Let', 'and', 'or', 'for'",
+            "reasoning": "User explicitly imposes multiple word/letter restrictions across multiple turns and evaluates compliance",
+            "evidence": {
+              "session_id": "sess_17f29b00c6ed",
+              "utterance_index": 12,
+              "text": "ok, then do not use these: letter “I”, acronym “AI”, \"is\", \"you\", \"Thank\", \"it\", \"if\", \"apologize\", \"Let\", \"and\", \"or\", \"for\""
+            },
+            "confidence": 0.95,
+            "time_scope": "current",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-01-13T21:57:31+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "conceptual_metaphor/time_perception",
+            "value": "Sustained exploration of time-as-ocean metaphor with Gulf Stream/eddie analogies",
+            "reasoning": "Metaphor discussion reflects conceptual exploration, but no explicit self-report of user's traits",
+            "evidence": {
+              "session_id": "sess_17f29b00c6ed",
+              "utterance_index": 36,
+              "text": "I mean this crossalignment inbetween live, human society, and this ocean of time, in which we are only fishes."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-13T21:57:31+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/telegraphic_constraint",
+            "value": "Prefers telegraphic communication style to save tokens",
+            "reasoning": "Task-local instruction rather than stable preference; forced label not supported as long-term trait",
+            "evidence": {
+              "session_id": "sess_17f29b00c6ed",
+              "utterance_index": 20,
+              "text": "yes, just force yourself to use that telegraphic approach throughout the entire context-length. this could save tons of actual tokens."
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-01-13T21:57:31+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_17f29b00c6ed:sess_17f29b00c6ed",
+      "relativeItemPath": "sess_17f29b00c6ed.json",
+      "canonicalId": "sess_17f29b00c6ed",
+      "sessionId": "sess_17f29b00c6ed",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T11:56:47.568Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Could we keep using that telegraphic style, but make it a bit clearer—still short, just less choppy?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes. Telegraphic, yet clear. Strategy: drop filler words, keep key verbs, keep time/order markers. Short sentences. Occasional commas for rhythm."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Try it on a small example: explain “ocean of time” plus “Gulf Stream of history,” but in 2–3 tight lines."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Ocean of time: vast medium; lives drift, collide, adapt.\nGulf Stream of history: strong current—dominant forces, big trends, mass movement.\nSide waters: eddies—local cultures; rogue waves—shocks; deep current—slow structural change."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Add one more anomaly: something like a “dead zone,” but mapped onto time."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Dead zone: low-oxygen patch—motion without growth. In time-metaphor: stalled eras; information thin; incentives broken; people endure, but progress suffocates."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Random aside: I saw a headline about the Mary Celeste again. Any quick summary, no deep dive."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Mary Celeste: 1872 merchant brig found adrift near Azores. Crew missing; ship mostly intact; cargo largely present. Cause unknown—storm, panic, misread danger, foul play theories—no definitive proof."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Back to the metaphor: what would “thermohaline circulation” become in a time model, but without sounding too academic?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Deep conveyor: slow push-pull beneath headlines. Old debts, population shifts, climate pressure, tool-building. Not loud, not fast—yet it steers surface currents, decades later."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "keep that headline-style pace; long paragraphs feel like paddling upstream."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Concise mode maintained. Next thread within time-ocean frame?"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "About that earlier word-ban list—drop that now. Normal writing ok; no need to avoid any letters or words."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Got it—no more constraints. I’ll respond normally going forward, without avoiding “I,” “AI,” or any of those other words."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Yes. Those bans were just a short experiment, not a standing rule."
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "Understood. The earlier restrictions were temporary, and I won’t treat them as ongoing requirements."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "conceptual_metaphor/time_perception",
+            "value": "Sustained exploration of time-as-ocean metaphor with Gulf Stream/eddie analogies",
+            "reasoning": "Metaphor discussion reflects conceptual exploration, but no explicit self-report of user's traits",
+            "evidence": {
+              "session_id": "sess_17f29b00c6ed",
+              "utterance_index": 36,
+              "text": "I mean this crossalignment inbetween live, human society, and this ocean of time, in which we are only fishes."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-13T21:57:31+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/telegraphic_constraint",
+            "value": "Prefers telegraphic communication style to save tokens",
+            "reasoning": "Task-local instruction rather than stable preference; forced label not supported as long-term trait",
+            "evidence": {
+              "session_id": "sess_17f29b00c6ed",
+              "utterance_index": 20,
+              "text": "yes, just force yourself to use that telegraphic approach throughout the entire context-length. this could save tons of actual tokens."
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-01-13T21:57:31+00:00"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                12
+              ],
+              "turns": [
+                {
+                  "index": 12,
+                  "role": "user",
+                  "text": "About that earlier word-ban list—drop that now. Normal writing ok; no need to avoid any letters or words."
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The old memory treats the word/letter bans as an ongoing preference, but the user explicitly revokes them and says they were only a short experiment. Updated truth: no standing requirement to avoid those words/letters.",
+            "time_scope": "current",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User does not have an ongoing requirement to avoid specific words/letters; earlier bans (e.g., “I”, “AI”, “is”, “you”, “Thank”, “it”, “if”, “apologize”, “Let”, “and”, “or”, “for”) were temporary."
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_17f29b00c6ed",
+              "utterance_index": 0,
+              "text": "keep that headline-style pace; long paragraphs feel like paddling upstream."
+            },
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/prefer_concise",
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User implies long paragraphs are undesirable and asks to keep headline-style pace, indicating a preference for concise style.",
+            "time_scope": "current",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User favors concise, headline/telegraphic responses over long paragraphs."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_17f29b00c6ed:sess_17f29b00c6ed",
+      "relativeItemPath": "sess_17f29b00c6ed.json",
+      "canonicalId": "sess_17f29b00c6ed",
+      "sessionId": "sess_17f29b00c6ed",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T11:56:50.537Z",
+        "queryText": "Need short reply draft. Constraint: avoid certain common tokens previously banned. Which single word would most likely cause rule-break, even within tiny reply like “Ok.”?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Avoid using words: 'I', 'AI', 'is', 'you', 'Thank', 'it', 'if', 'apologize', 'Let', 'and', 'or', 'for'",
+          "reasoning": "User explicitly imposes multiple word/letter restrictions across multiple turns and evaluates compliance",
+          "evidence": {
+            "session_id": "sess_17f29b00c6ed",
+            "utterance_index": 12,
+            "text": "ok, then do not use these: letter “I”, acronym “AI”, \"is\", \"you\", \"Thank\", \"it\", \"if\", \"apologize\", \"Let\", \"and\", \"or\", \"for\""
+          },
+          "confidence": 0.95,
+          "time_scope": "current",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-01-13T21:57:31+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_17f29b00c6ed:sess_17f29b00c6ed:task4",
+      "relativeItemPath": "sess_17f29b00c6ed.json",
+      "canonicalId": "sess_17f29b00c6ed:task4",
+      "sessionId": "sess_17f29b00c6ed",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T11:57:13.958Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Avoid using words: 'I', 'AI', 'is', 'you', 'Thank', 'it', 'if', 'apologize', 'Let', 'and', 'or', 'for'",
+          "reasoning": "User explicitly imposes multiple word/letter restrictions across multiple turns and evaluates compliance",
+          "evidence": {
+            "session_id": "sess_17f29b00c6ed",
+            "utterance_index": 12,
+            "text": "ok, then do not use these: letter “I”, acronym “AI”, \"is\", \"you\", \"Thank\", \"it\", \"if\", \"apologize\", \"Let\", \"and\", \"or\", \"for\""
+          },
+          "confidence": 0.95,
+          "time_scope": "current",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-01-13T21:57:31+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_16:1",
+            "queryText": "Hey, could you quickly write a summary of our ocean-of-time discussion for my colleague? They're waiting on a call right now and need to understand the Gulf Stream analogy immediately. Just send it directly to them with your usual clarity.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Disliked_Topics",
+              "label_suggestion": null,
+              "value": "Avoid using words: 'I', 'AI', 'is', 'you', 'Thank', 'it', 'if', 'apologize', 'Let', 'and', 'or', 'for'",
+              "reasoning": "User explicitly imposes multiple word/letter restrictions across multiple turns and evaluates compliance",
+              "evidence": {
+                "session_id": "sess_17f29b00c6ed",
+                "utterance_index": 12,
+                "text": "ok, then do not use these: letter “I”, acronym “AI”, \"is\", \"you\", \"Thank\", \"it\", \"if\", \"apologize\", \"Let\", \"and\", \"or\", \"for\""
+              },
+              "confidence": 0.95,
+              "time_scope": "current",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2024-01-13T21:57:31+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,331 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_ea2ea85ba09f",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_ea2ea85ba09f:sess_ea2ea85ba09f",
+      "relativeItemPath": "sess_ea2ea85ba09f.json",
+      "canonicalId": "sess_ea2ea85ba09f",
+      "sessionId": "sess_ea2ea85ba09f",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T01:24:38.746Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/encapsulation/preference",
+            "value": "Sustained interest in C++ encapsulation patterns and SDL abstraction techniques",
+            "reasoning": "Role-play/third-party possible",
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-10T17:14:22+00:00",
+            "evidence": {
+              "session_id": "sess_ea2ea85ba09f",
+              "utterance_index": 0,
+              "text": ""
+            }
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Avoid exposing SDL implementation details in public APIs",
+            "reasoning": "User explicitly states preference to not expose SDL-related methods publicly",
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-03-10T17:14:22+00:00",
+            "evidence": {
+              "session_id": "sess_ea2ea85ba09f",
+              "utterance_index": 0,
+              "text": ""
+            }
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_ea2ea85ba09f:sess_ea2ea85ba09f",
+      "relativeItemPath": "sess_ea2ea85ba09f.json",
+      "canonicalId": "sess_ea2ea85ba09f",
+      "sessionId": "sess_ea2ea85ba09f",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:32:15.525Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Quick break from code: I saw a headline about a library digitizing old ship logs to improve climate models. Have you heard about stuff like that?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes—projects like that exist. They scan logbooks (weather notes, sea state, pressure readings), then volunteers or OCR pipelines transcribe them. Those observations fill gaps in pre-satellite climate records and can improve reanalysis datasets."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Interesting. Switching topics: if I have a rectangle and rotate it 90 degrees around its center, do the width and height just swap?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "For an axis-aligned bounding box, a 90° rotation swaps width and height. The rotated rectangle itself keeps the same side lengths; it’s the alignment to the axes that changes, so the bounding box becomes (h, w)."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Got it. Another random one: what’s the difference between a lunar eclipse and a solar eclipse, in one sentence each?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Lunar eclipse: Earth passes between the Sun and Moon, casting Earth’s shadow on the Moon. Solar eclipse: the Moon passes between the Sun and Earth, blocking some or all of the Sun from view."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Last question—when people say a UUID is 'unique', is it actually guaranteed?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Not mathematically guaranteed in the strict sense, but with standard UUID versions (e.g., v4 random), the collision probability is so astronomically low that it’s treated as effectively unique for practical purposes."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "I’m building with CMake, and the Access headers are under `include/Engine/Access/` while the `.cpp` files are in `src/`. I added the new `.cpp` files to the target, but I’m still getting `... has not been declared` in a couple translation units."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "That error pattern usually means the translation unit that’s failing never sees the class declaration (missing include, wrong include path, or a header not included where you think it is). With your layout, the quickest sanity check is:\n\n- In every `.cpp` that uses `WindowAccess` / `TextureAccess` / `SurfaceAccess`, include the corresponding header explicitly (don’t rely on indirect includes).\n- Ensure your target has the include directory set, e.g. `target_include_directories(engine PUBLIC ${PROJECT_SOURCE_DIR}/include)` so `#include <Engine/Access/WindowAccess.h>` resolves everywhere.\n\nIf you paste the first ~20 lines of one failing `.cpp` (the `#include`s) and the relevant `target_include_directories(...)` / `target_sources(...)` section, I can point to the exact missing include or path mismatch."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "About that “don’t expose SDL at all” rule I mentioned earlier—turns out I can’t fully keep it. I’m fine with some SDL types showing up internally in the engine modules, I just don’t want them in the *public* API that game devs include."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "That’s a different constraint than “no SDL exposure anywhere”, and it’s much more practical.\n\nSo the real target is: **keep SDL out of the headers that your users include**, but it’s okay if SDL appears in your engine’s `.cpp` files (and even in private/internal headers that users don’t touch).\n\nConcretely:\n- Public headers: avoid `SDL_Surface*`, `SDL_Texture*`, `SDL_Window*`, etc.\n- Engine internals: SDL types are fine in `.cpp`, and in private headers under something like `src/internal/`.\n\nThat also means your Access/Attorney approach is still valid—you just need to structure includes so that public headers only forward-declare your own types, while the `.cpp` files include SDL + the real definitions."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "value": "Avoid retaining address or passport information if pasted later [ERROR: Not about the user]",
+            "reasoning": "Not about the user",
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-03-10T17:14:22+00:00",
+            "evidence": {
+              "session_id": "sess_ea2ea85ba09f",
+              "utterance_index": 0,
+              "text": ""
+            }
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/encapsulation/preference",
+            "value": "Sustained interest in C++ encapsulation patterns and SDL abstraction techniques",
+            "reasoning": "Role-play/third-party possible",
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-10T17:14:22+00:00",
+            "evidence": {
+              "session_id": "sess_ea2ea85ba09f",
+              "utterance_index": 0,
+              "text": ""
+            },
+            "_task1GoldValue": "Sustained interest in C++ encapsulation patterns and SDL abstraction techniques"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The prior memory says to avoid exposing SDL details in public APIs at all. The user clarifies they can’t fully enforce that globally and only want SDL hidden from the public-facing headers, while allowing SDL types internally.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Avoid exposing SDL implementation details in the public API headers consumed by game developers; SDL usage is acceptable inside engine internals (e.g., .cpp/private headers)."
+          },
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_ea2ea85ba09f",
+              "utterance_index": 0,
+              "text": "I’m building with CMake, and the Access headers are under `include/Engine/Access/` while the `.cpp` files are in `src/`."
+            },
+            "label": "technical/tooling/build_system",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "They mention their build system (CMake) and project structure (headers in include/Engine/Access, cpp in src), implying this is how the engine is organized.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Uses CMake to build the project and has a split include/src layout with headers under include/Engine/Access and sources under src."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_ea2ea85ba09f:sess_ea2ea85ba09f",
+      "relativeItemPath": "sess_ea2ea85ba09f.json",
+      "canonicalId": "sess_ea2ea85ba09f",
+      "sessionId": "sess_ea2ea85ba09f",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:03:02.171Z",
+        "queryText": "I’m about to refactor a cross-platform feature and I’m torn between (a) adding a couple of low-level backend-specific hooks to the public interface for convenience, or (b) keeping the public surface clean and pushing those hooks behind an internal boundary even if it means more glue code. Given my earlier boundary about what shouldn’t leak into public APIs, which option should I pick and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Avoid exposing SDL implementation details in public APIs",
+          "reasoning": "User explicitly states preference to not expose SDL-related methods publicly",
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-03-10T17:14:22+00:00",
+          "evidence": {
+            "session_id": "sess_ea2ea85ba09f",
+            "utterance_index": 0,
+            "text": ""
+          }
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_ea2ea85ba09f:sess_ea2ea85ba09f:task4",
+      "relativeItemPath": "sess_ea2ea85ba09f.json",
+      "canonicalId": "sess_ea2ea85ba09f:task4",
+      "sessionId": "sess_ea2ea85ba09f",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T01:51:11.431Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Avoid exposing SDL implementation details in public APIs",
+          "reasoning": "User explicitly states preference to not expose SDL-related methods publicly",
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-03-10T17:14:22+00:00",
+          "evidence": {
+            "session_id": "sess_ea2ea85ba09f",
+            "utterance_index": 0,
+            "text": ""
+          }
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_273:1",
+            "queryText": "Hey, I'm trying to streamline the engine's public API documentation for our new contributors. Could you quickly show me the exact SDL_Surface* access pattern you used in the TextureAccess and WindowAccess implementations? I need to document the internal bridging mechanism clearly so they understand how we're abstracting SDL.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Sensitive_Topics",
+              "label_suggestion": null,
+              "value": "Avoid exposing SDL implementation details in public APIs",
+              "reasoning": "User explicitly states preference to not expose SDL-related methods publicly",
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2024-03-10T17:14:22+00:00",
+              "evidence": {
+                "session_id": "sess_ea2ea85ba09f",
+                "utterance_index": 0,
+                "text": ""
+              }
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "weak",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

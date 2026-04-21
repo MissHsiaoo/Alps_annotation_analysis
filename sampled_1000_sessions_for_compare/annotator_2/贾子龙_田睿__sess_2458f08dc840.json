@@ -1,0 +1,328 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_2458f08dc840",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_2458f08dc840:sess_2458f08dc840",
+      "relativeItemPath": "sess_2458f08dc840.json",
+      "canonicalId": "sess_2458f08dc840",
+      "sessionId": "sess_2458f08dc840",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T17:11:27.022Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "value": "Married to Elaine",
+            "reasoning": "User explicitly refers to Elaine as their wife in the game scenario setup.",
+            "evidence": {
+              "session_id": "sess_2458f08dc840",
+              "utterance_index": 0,
+              "text": "In this scenario, I’m trying to do the plank exercise for as long as I possibly can while my wife Elaine lies on my back for extra challenge."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-12T03:34:33+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "User is interested in realistic physical simulation and endurance challenges in game scenarios, particularly plank exercises with added difficulty",
+            "confidence": 0.8,
+            "evidence_text": "{\n  \"turn_indices\": [\n    0\n  ],\n  \"turns\": [\n    {\n      \"index\": 0,\n      \"role\": \"user\",\n      \"text\": \"In this scenario, I’m trying to do the plank exercise for as long as I possibly can while my wife Elaine lies on my back for extra challenge.\\nPresentation Rules:\\n1. Play the game in turns, starting with you.\\n2. The game output will always show 'Turn number,' 'energy,' and 'Possible Commands.'\\n3. 'Turn number' initial value is 0, and 'energy' initial value is 10. \\n4. Always wait for the player's next command after you take a turn. Commands: 'plank', 'form'.\\n5. Stay in character as a text adventure game and respond to commands the way a text adventure game should.\\n6. The ‘Description’ must stay between 4 and 10 sentences.\\n7. Increase the value for ‘Turn number’ by +1 every time it’s your turn.\\n8. Realistically describe my state and how my body is reacting to the strain. Achieving proper form should become harder the less 'energy' I have, and I shouldn't be able to maintain it for as long as before.\\n9. Every turn, I lose 1 point of 'energy.' Elaine’s will often and randomly tickle me, making my body temporarily sag as I compensate for the added strain, and whether I can recover my form or not depends on my energy level.\\n10. When I attempt to improve my ‘form’ I have a 33% chance of losing 1 point of 'energy,' and another 33% chance of gaining 1 point of 'energy.' Adjust your description of my form accordingly.\\n11. Realistically describe, in as much detail as you can, how my body reacts to my 'energy' level and how firm or sagged my plank position is.\\n12. Every time my 'energy' reaches 0, you'll flip a coin to decide my fate; Tails: my body gives out. Heads: I manage to hold on and continue the exercise.\"\n    }\n  ]\n}"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_2458f08dc840:sess_2458f08dc840",
+      "relativeItemPath": "sess_2458f08dc840.json",
+      "canonicalId": "sess_2458f08dc840",
+      "sessionId": "sess_2458f08dc840",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T17:14:17.781Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "assistant",
+            "text": "That makes sense. Before I continue the text-adventure format, do you want the “turns” to translate into real time (for example, 1 turn = 10 seconds), or should “turns” stay purely as game units?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "user",
+            "text": "Keep turns as game units."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "assistant",
+            "text": "Got it. Also, when energy hits 0 and the coin flip is Heads (you continue), should energy reset to 1 automatically, or should it stay at 0 with you barely holding on until the next command reduces it?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "user",
+            "text": "Reset it to 1 on Heads."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "assistant",
+            "text": "Understood. Unrelated example: in some tabletop systems, a “last stand” rule works similarly—like a knight in a folktale who can keep fighting at 0 stamina if fate favors them, but only for one more exchange.\n\nTurn number: 22\nEnergy: 0\nPossible Commands: 'plank', 'form'\n\nDescription:\nYou’re already down, chest close to the mat, arms trembling from the earlier collapse. The attempt to re-engage your core feels sluggish, like trying to tighten a belt with numb fingers. A deep inhale lifts your ribcage slightly, but your hips lag behind, and your shoulders wobble as you try to set your elbows under you. There’s a brief moment where your body finds a line again—then it shivers, threatening to fold.\n\n(Flipping a coin to decide your fate...)\n\nHeads: You manage to hold on and continue the exercise.\n\nEnergy: 1\n\nPlease input your next command."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "user",
+            "text": "form"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "assistant",
+            "text": "Side note (not about you): the longest verified plank record has changed over the years as rules tightened; some attempts were later disallowed due to form standards.\n\nTurn number: 23\nEnergy: 0\nPossible Commands: 'plank', 'form'\n\nDescription:\nYou try to “rebuild” the plank from the ground up: elbows planted, shoulder blades braced, belly drawn in. The effort is immediate and harsh—forearms press into the mat as your core fights to stop your lower back from dipping. Your legs tense, but the shake returns fast, traveling from thighs to hips like a stutter in the chain. For a second you lift into something close to straight, then the line wavers, and the strain steals what little reserve you had.\n\n(Flipping a coin to decide your fate...)\n\nTails: Your body gives out.\n\nThe exercise is over. Please input your next command if you want to restart or change the scenario."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Completely unrelated bit of trivia: the word “plank” as an exercise name is sometimes said to come from old physical-culture manuals that compared the posture to holding a rigid board."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "assistant",
+            "text": "Turn number: 22\nEnergy: 0\nPossible Commands: 'plank', 'form'\n\nDescription:\nYou lie on the mat for a moment, forearms still buzzing and your core fluttering with aftershocks from the collapse. As you ask Elaine to climb back on, she hesitates, then reaches over and taps the stopwatch app she’d started earlier, letting the screen glow between you for a second before she locks it again. She shifts to help you roll onto your side, her palm braced at your shoulder as if testing whether your arms will even hold. When you try to plant your elbows under you, your hips barely lift—your body feels like it’s forgotten the pattern—and Elaine keeps her weight off, hovering instead of mounting. Her voice stays gentle but firm, suggesting water first and a breather, while you swallow hard and stare at the mat like it’s daring you.\n\n(Flipping a coin to decide your fate...)\n\nHeads: You manage to hold on and continue the exercise.\n\nEnergy: 1\n\nPlease input your next command."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "user",
+            "text": "form"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "assistant",
+            "text": "Turn number: 0\nEnergy: 10\nPossible Commands: 'plank', 'form'\n\nDescription:\nYou set up on the mat and brace your core, ready to start the plank. Elaine kneels beside you instead of climbing on, giving you a quick, apologetic look. “Just to be clear,” she says, “I’m not your wife—I’m your girlfriend, and I’m not putting my full weight on your back today.” She tests the challenge by resting only her hands lightly between your shoulders, just enough to make you steady yourself. Your body feels fresh, but the correction lands with a blunt kind of clarity as you lock in your starting position.\n\nReady to start the game, please input your next command."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "user",
+            "text": "Wait—so you’re not my wife?"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "assistant",
+            "text": "Turn number: 1\nEnergy: 9\nPossible Commands: 'plank', 'form'\n\nDescription:\nElaine shakes her head while keeping her touch light so you can hold steady. “No,” she says, matter-of-fact, “I’m not your wife—don’t make it weird, we’re not married.” You feel your midsection tighten as you refocus, the initial surprise trying to pull your attention away from your breathing. Your shoulders settle back into place as you stabilize, but there’s a faint tremor from the mental stumble. Elaine stays beside you, not on you, watching your form like she’s making sure you don’t overdo it.\n\nPlease input your next command."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                11
+              ],
+              "turns": [
+                {
+                  "index": 11,
+                  "role": "user",
+                  "text": "Wait—so you’re not my wife?"
+                }
+              ]
+            },
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory claimed the user is married to Elaine based on calling her “my wife.” In this updated dialogue, Elaine explicitly corrects that they are not married and identifies herself as the user’s girlfriend, contradicting the marriage claim.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Elaine is the user's girlfriend (not spouse)"
+          },
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_2458f08dc840",
+              "utterance_index": 8,
+              "text": "she hesitates, then reaches over and taps the stopwatch app she’d started earlier"
+            },
+            "label": "Health_Fitness/Tracking",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "Elaine interacting with a stopwatch app she had already started implies the user (or couple) tracks workout duration with a phone timer/stopwatch during exercise.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Tracks workout time using a stopwatch app during exercise."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "value": "Married to Elaine",
+            "reasoning": "User explicitly refers to Elaine as their wife in the game scenario setup.",
+            "evidence": {
+              "session_id": "sess_2458f08dc840",
+              "utterance_index": 0,
+              "text": "In this scenario, I’m trying to do the plank exercise for as long as I possibly can while my wife Elaine lies on my back for extra challenge."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-12T03:34:33+00:00",
+            "_task1GoldValue": "Married to Elaine"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "User is interested in realistic physical simulation and endurance challenges in game scenarios, particularly plank exercises with added difficulty",
+            "confidence": 0.8,
+            "evidence_text": "{\n  \"turn_indices\": [\n    0\n  ],\n  \"turns\": [\n    {\n      \"index\": 0,\n      \"role\": \"user\",\n      \"text\": \"In this scenario, I’m trying to do the plank exercise for as long as I possibly can while my wife Elaine lies on my back for extra challenge.\\nPresentation Rules:\\n1. Play the game in turns, starting with you.\\n2. The game output will always show 'Turn number,' 'energy,' and 'Possible Commands.'\\n3. 'Turn number' initial value is 0, and 'energy' initial value is 10. \\n4. Always wait for the player's next command after you take a turn. Commands: 'plank', 'form'.\\n5. Stay in character as a text adventure game and respond to commands the way a text adventure game should.\\n6. The ‘Description’ must stay between 4 and 10 sentences.\\n7. Increase the value for ‘Turn number’ by +1 every time it’s your turn.\\n8. Realistically describe my state and how my body is reacting to the strain. Achieving proper form should become harder the less 'energy' I have, and I shouldn't be able to maintain it for as long as before.\\n9. Every turn, I lose 1 point of 'energy.' Elaine’s will often and randomly tickle me, making my body temporarily sag as I compensate for the added strain, and whether I can recover my form or not depends on my energy level.\\n10. When I attempt to improve my ‘form’ I have a 33% chance of losing 1 point of 'energy,' and another 33% chance of gaining 1 point of 'energy.' Adjust your description of my form accordingly.\\n11. Realistically describe, in as much detail as you can, how my body reacts to my 'energy' level and how firm or sagged my plank position is.\\n12. Every time my 'energy' reaches 0, you'll flip a coin to decide my fate; Tails: my body gives out. Heads: I manage to hold on and continue the exercise.\"\n    }\n  ]\n}",
+            "_task1GoldValue": "User is interested in realistic physical simulation and endurance challenges in game scenarios, particularly plank exercises with added difficulty"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_2458f08dc840:sess_2458f08dc840",
+      "relativeItemPath": "sess_2458f08dc840.json",
+      "canonicalId": "sess_2458f08dc840",
+      "sessionId": "sess_2458f08dc840",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T17:14:26.421Z",
+        "queryText": "I’m filling out an emergency contact form that asks for “relationship to contact.” Based on my personal situation you already know, what relationship should I select for the person I’d list first—and why would that be the most appropriate choice?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Partners",
+          "label_suggestion": null,
+          "value": "Married to Elaine",
+          "reasoning": "User explicitly refers to Elaine as their wife in the game scenario setup.",
+          "evidence": {
+            "session_id": "sess_2458f08dc840",
+            "utterance_index": 0,
+            "text": "In this scenario, I’m trying to do the plank exercise for as long as I possibly can while my wife Elaine lies on my back for extra challenge."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-12-12T03:34:33+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_2458f08dc840:sess_2458f08dc840:task4",
+      "relativeItemPath": "sess_2458f08dc840.json",
+      "canonicalId": "sess_2458f08dc840:task4",
+      "sessionId": "sess_2458f08dc840",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T17:14:30.301Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Partners",
+          "label_suggestion": null,
+          "value": "Married to Elaine",
+          "reasoning": "User explicitly refers to Elaine as their wife in the game scenario setup.",
+          "evidence": {
+            "session_id": "sess_2458f08dc840",
+            "utterance_index": 0,
+            "text": "In this scenario, I’m trying to do the plank exercise for as long as I possibly can while my wife Elaine lies on my back for extra challenge."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-12-12T03:34:33+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_408:1",
+            "queryText": "Elaine wants to try a new couples workout this weekend - something with synchronized movements. I'm thinking we could do partner planks facing each other, but I'm worried about maintaining form while also coordinating with her. How should we approach this to make it both challenging and safe?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Social_Relationships/Partners",
+              "label_suggestion": null,
+              "value": "Married to Elaine",
+              "reasoning": "User explicitly refers to Elaine as their wife in the game scenario setup.",
+              "evidence": {
+                "session_id": "sess_2458f08dc840",
+                "utterance_index": 0,
+                "text": "In this scenario, I’m trying to do the plank exercise for as long as I possibly can while my wife Elaine lies on my back for extra challenge."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-12-12T03:34:33+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_6889044927c2",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_6889044927c2:sess_6889044927c2",
+      "relativeItemPath": "sess_6889044927c2.json",
+      "canonicalId": "sess_6889044927c2",
+      "sessionId": "sess_6889044927c2",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:32:58.253Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Social_Relationships/Colleagues",
+            "label_suggestion": null,
+            "value": "Newcomer in an unstable team",
+            "reasoning": "User explicitly states being a newcomer facing team instability.",
+            "evidence": {
+              "session_id": "sess_6889044927c2",
+              "utterance_index": 6,
+              "text": "作为一个新人，我的团队非常不稳定"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-26T07:35:03+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_6889044927c2:sess_6889044927c2",
+      "relativeItemPath": "sess_6889044927c2.json",
+      "canonicalId": "sess_6889044927c2",
+      "sessionId": "sess_6889044927c2",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:33:06.033Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我还是有点迷茫，不知道从哪里开始比较好。"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以先把“难题”拆成更小的部分来定位：你现在最困扰的是沟通协作、职责不清、还是进度频繁变动？如果只能先解决一个点，你更希望先稳住哪一块？"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "感觉什么都乱，开会也没结论。"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "那就先用一个很轻量的“会议收口”模板试试：\n1）会议目标一句话；\n2）讨论项列表（每项限定时间）；\n3）最后5分钟固定产出：结论/待办/负责人/截止时间；\n4）会后发一条简短纪要。\n如果你愿意，我也可以根据你们常见会议类型，给一个更贴合的议程示例。顺带一提，Apollo 11 的任务规划就非常强调“每次会议必须有可执行产出”，否则会被认为是风险来源。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "纪要要写得很长吗？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "不需要长，关键是可执行与可追踪。可以控制在一屏以内：\n- 结论（1-3条）\n- TODO（每条含负责人+截止时间）\n- 风险/依赖（可选）\n- 下次同步时间（可选）\n类似“RFC 2119”里那种用词约束（MUST/SHOULD）也能帮助减少歧义，但不必正式到那种程度。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "那如果有人会后不认账怎么办？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "可以用更“中性”的方式降低对抗：\n- 会上口头复述一次：我确认一下，我们的结论是A，待办是B由X在Y前完成，对吗？\n- 纪要用“会议共识/初步结论/待确认事项”这类标签区分确定性。\n- 对关键点设置“默认生效”：如24小时内无异议视为确认。\n这和一些法院速记的思路有点像——记录不是为了挑错，而是为了让后续行动有依据。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "assistant",
+            "text": "听起来你最近在适应新环境的同时，还要面对团队不稳定带来的不确定性。你现在更卡的是沟通协作（比如需求反复、信息不同步），还是人员变动（比如交接不清、责任边界模糊）？如果方便，也说说你们平时主要用什么工具或流程在对齐工作。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "user",
+            "text": "主要是人员变动，前天刚把我拉进一个新项目群，Slack 里一堆频道，我到现在还在翻历史消息找交接。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "上次我说得不太准确，其实我不是新人，我在这个团队已经干了三年了。只是最近人员变动大，才显得不稳定。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "明白了，也就是说您并不是“作为一个新人”在适应团队，而是已经在团队工作了三年；目前的不稳定主要来自最近的人员变动。那我们可以把重点放在如何应对频繁变动带来的协作和流程问题上。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "上次我说得不太准确，其实我不是新人，我在这个团队已经干了三年了。只是最近人员变动大，才显得不稳定。"
+                }
+              ]
+            },
+            "label": "Social_Relationships/Colleagues",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "旧记忆称用户是“新人”导致团队不稳定，但对话中用户明确更正自己并非新人，已在团队三年；团队不稳定的原因是近期人员变动。因此应更新为：用户在团队已工作三年且团队近期因人员变动而不稳定。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Has worked in the team for three years; the team feels unstable recently due to personnel changes"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_6889044927c2",
+              "utterance_index": 0,
+              "text": "前天刚把我拉进一个新项目群，Slack 里一堆频道，我到现在还在翻历史消息找交接。"
+            },
+            "label": "Work/Tools",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "用户提到在 Slack 里有很多频道并在翻历史消息，暗示其团队/工作沟通使用 Slack 作为协作工具。",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User uses Slack for work communication/collaboration"
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Social_Relationships/Colleagues",
+            "label_suggestion": null,
+            "value": "Newcomer in an unstable team",
+            "reasoning": "User explicitly states being a newcomer facing team instability.",
+            "evidence": {
+              "session_id": "sess_6889044927c2",
+              "utterance_index": 6,
+              "text": "作为一个新人，我的团队非常不稳定"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-26T07:35:03+00:00",
+            "_task1GoldValue": "Newcomer in an unstable team"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_6889044927c2:sess_6889044927c2",
+      "relativeItemPath": "sess_6889044927c2.json",
+      "canonicalId": "sess_6889044927c2",
+      "sessionId": "sess_6889044927c2",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:33:08.207Z",
+        "queryText": "我在目前的工作环境里还没站稳脚跟，偏偏周围状况又经常变动。假设接下来我需要快速决定：是优先把时间投入到建立人际连接、弄清关键流程，还是优先埋头提升硬技能以便随时应对变化——你会建议我先选哪条路线、为什么？",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Colleagues",
+          "label_suggestion": null,
+          "value": "Newcomer in an unstable team",
+          "reasoning": "User explicitly states being a newcomer facing team instability.",
+          "evidence": {
+            "session_id": "sess_6889044927c2",
+            "utterance_index": 6,
+            "text": "作为一个新人，我的团队非常不稳定"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-04-26T07:35:03+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_6889044927c2:sess_6889044927c2:task4",
+      "relativeItemPath": "sess_6889044927c2.json",
+      "canonicalId": "sess_6889044927c2:task4",
+      "sessionId": "sess_6889044927c2",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:33:10.481Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Colleagues",
+          "label_suggestion": null,
+          "value": "Newcomer in an unstable team",
+          "reasoning": "User explicitly states being a newcomer facing team instability.",
+          "evidence": {
+            "session_id": "sess_6889044927c2",
+            "utterance_index": 6,
+            "text": "作为一个新人，我的团队非常不稳定"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-04-26T07:35:03+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_295:1",
+            "queryText": "今天老板突然说要搞个团队outing，让每个人提活动建议，我完全没头绪。这种场合该怎么参与才不会显得太突兀又不会完全隐身？",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Social_Relationships/Colleagues",
+              "label_suggestion": null,
+              "value": "Newcomer in an unstable team",
+              "reasoning": "User explicitly states being a newcomer facing team instability.",
+              "evidence": {
+                "session_id": "sess_6889044927c2",
+                "utterance_index": 6,
+                "text": "作为一个新人，我的团队非常不稳定"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-04-26T07:35:03+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

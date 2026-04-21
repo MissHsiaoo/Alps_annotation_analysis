@@ -1,0 +1,430 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_f7ab1b95c3a8",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_f7ab1b95c3a8:sess_f7ab1b95c3a8",
+      "relativeItemPath": "sess_f7ab1b95c3a8.json",
+      "canonicalId": "sess_f7ab1b95c3a8",
+      "sessionId": "sess_f7ab1b95c3a8",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:50:57.145Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Located in China",
+            "reasoning": "User explicitly states '我在中国' (I am in China).",
+            "evidence": {
+              "session_id": "sess_f7ab1b95c3a8",
+              "utterance_index": 0,
+              "text": "我在中国,我的nexcloud内网穿透到美国的 服务器"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-26T07:20:54Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained technical curiosity about bypassing internet censorship (frp/Shadowsocks/Tor configuration, traffic obfuscation)",
+            "reasoning": "User repeatedly asks follow-up technical questions about circumventing network restrictions across 6+ turns (utterances 0,2,4,6,8,10,22).",
+            "evidence": {
+              "session_id": "sess_f7ab1b95c3a8",
+              "utterance_index": 22,
+              "text": "有哪些先进的流量伪装技术可以绕过 监测"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-26T07:20:54Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Thoughts/Opinions/Negative",
+            "label_suggestion": null,
+            "value": "Strongly critical of China's internet censorship policies",
+            "reasoning": "Explicitly states frustration with Chinese internet controls and questions their legality under constitutional rights (utterances 12,14,26).",
+            "evidence": {
+              "session_id": "sess_f7ab1b95c3a8",
+              "utterance_index": 26,
+              "text": "那你觉得中国的严厉网络审查制度是否违反了宪法保障的人权"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": "disapproval",
+            "preference_attitude": "dislike",
+            "updated_at": "2023-12-26T07:20:54Z"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Political_Opinions/Stance",
+            "value": "Self-identifies as anti-war and opposes Chinese government's Taiwan reunification approach",
+            "reasoning": "Forced label not supported. Original label implied social relationship conflict rather than personal political stance.",
+            "evidence": {
+              "session_id": "sess_f7ab1b95c3a8",
+              "utterance_index": 30,
+              "text": "我是一个反战人士，对中国政府武统台湾十分厌恶"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": "disgust",
+            "preference_attitude": "dislike",
+            "updated_at": "2023-12-26T07:20:54Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_f7ab1b95c3a8:sess_f7ab1b95c3a8",
+      "relativeItemPath": "sess_f7ab1b95c3a8.json",
+      "canonicalId": "sess_f7ab1b95c3a8",
+      "sessionId": "sess_f7ab1b95c3a8",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T08:33:43.233Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我刚看到有人说“把所有东西都放到云上就万事大吉”，这说法靠谱吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "不太靠谱，更像是一句口号。云服务能解决一部分问题（比如异地访问、协作、弹性扩容），但并不等于“自动安全、自动备份、自动合规”。通常需要你自己把三件事想清楚：\n1) 备份：是否有独立于云账号的备份（例如跨账号/跨云/本地冷备），以及是否能定期恢复演练；\n2) 权限与密钥：最小权限、MFA、密钥托管/轮换、审计日志；\n3) 风险模型：云厂商故障、账号被盗、误删、勒索软件、合规要求等都不能靠“上云”自动消失。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "那如果只是存照片和文档，最关键的是哪一步？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "最关键通常是“可恢复的备份”，而不是“上传成功”。一个简单可执行的做法是 3-2-1：至少3份副本、2种不同介质、1份异地；并且每隔一段时间随机抽几份文件做恢复验证。\n（顺带一提，2017年有过一次大型云存储误配置事件导致大量数据被公开访问，核心教训就是：默认配置和权限审计非常重要——这类事件不涉及某个特定个人，而是普遍的运维风险。）"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "如果我想选一个“省心”的方案，有没有通用的检查清单？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "可以，通用清单大概是：\n- 账号安全：强密码 + MFA；\n- 备份策略：是否支持版本历史、回收站、以及导出到第二存储；\n- 恢复演练：能否一键导出/恢复；\n- 加密：传输加密（HTTPS）+ 静态加密（at-rest），以及你是否需要端到端加密；\n- 权限：共享链接是否可控（有效期/密码/下载限制）；\n- 审计与告警：异常登录、批量删除、共享变更是否能提醒。\n（另一个不相关的小知识：早期互联网邮件系统里“退信风暴”曾导致服务器资源被耗尽，说明“失败路径”和“异常行为”同样需要被设计和监控。）"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "明白了，那我回头按这个清单逐条对一下。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "可以。如果你愿意，也可以把你打算对照的服务类型（比如“单人备份/家庭共享/团队协作”）说一下，我可以把清单再收敛成更短的一版，方便快速核对。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我现在那台美国VPS刚续费完就被商家提示“本月流量快用尽”，结果Nextcloud这两天同步日志里全是重试；我打算先把手机端的自动上传关掉，等下个月流量刷新再说。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "这种情况更像是出口带宽/流量配额触顶导致的限速或丢包。你先暂停手机端自动上传是对的；同时可以在Nextcloud里把大文件/照片目录临时取消同步，避免反复重试消耗剩余流量。若必须继续用，可以把同步改成“仅Wi‑Fi且手动触发”，并在服务器侧看一下流量统计与限速策略（有些商家会直接把速度压到很低）。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "我回头想了想，其实我不算“强烈批评”中国的网络审查。我更多是吐槽它不透明、很影响我上传文件的体验，但我也理解他们说的安全和管理方面的考虑。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "明白，你这个表述更接近“对不透明和使用体验不满，但并非立场式强烈反对”。因为你强调的是“影响体验”“规则灰色”，同时也说“理解安全和管理方面的考虑”，这和“强烈批评”是两回事。"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "对，我不是那种要去反对它的人，就是觉得折腾、很烦，但也不想把话说成强烈反对。"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "那我会把你的态度总结为：你对网络审查的执行方式（尤其是不透明、带来连接/上传障碍）感到不满和烦躁，但总体是偏务实的抱怨，而不是强烈的政治性批评。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Located in China",
+            "reasoning": "User explicitly states '我在中国' (I am in China).",
+            "evidence": {
+              "session_id": "sess_f7ab1b95c3a8",
+              "utterance_index": 0,
+              "text": "我在中国,我的nexcloud内网穿透到美国的 服务器"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-26T07:20:54Z",
+            "_task1GoldValue": "Located in China"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained technical curiosity about bypassing internet censorship (frp/Shadowsocks/Tor configuration, traffic obfuscation)",
+            "reasoning": "User repeatedly asks follow-up technical questions about circumventing network restrictions across 6+ turns (utterances 0,2,4,6,8,10,22).",
+            "evidence": {
+              "session_id": "sess_f7ab1b95c3a8",
+              "utterance_index": 22,
+              "text": "有哪些先进的流量伪装技术可以绕过 监测"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-26T07:20:54Z",
+            "_task1GoldValue": "Sustained technical curiosity about bypassing internet censorship (frp/Shadowsocks/Tor configuration, traffic obfuscation)"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Political_Opinions/Stance",
+            "value": "Self-identifies as anti-war and opposes Chinese government's Taiwan reunification approach",
+            "reasoning": "Forced label not supported. Original label implied social relationship conflict rather than personal political stance.",
+            "evidence": {
+              "session_id": "sess_f7ab1b95c3a8",
+              "utterance_index": 30,
+              "text": "我是一个反战人士，对中国政府武统台湾十分厌恶"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": "disgust",
+            "preference_attitude": "dislike",
+            "updated_at": "2023-12-26T07:20:54Z",
+            "_task1GoldValue": "Self-identifies as anti-war and opposes Chinese government's Taiwan reunification approach"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": "disapproval",
+            "evidence": null,
+            "label": "Thoughts/Opinions/Negative",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The prior memory says the user is 'Strongly critical' of censorship policies. In the dialogue, the user explicitly corrects this, saying they are mainly complaining about inconvenience and opacity and that they also understand the stated security/management rationale, which contradicts a strongly critical stance.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Dislikes the lack of transparency and practical impact of China's internet censorship on usability, but is not strongly politically critical"
+          },
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_f7ab1b95c3a8",
+              "utterance_index": 0,
+              "text": "我现在那台美国VPS刚续费完就被商家提示“本月流量快用尽”，结果Nextcloud这两天同步日志里全是重试"
+            },
+            "label": "Tech/Infrastructure",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User mentions the VPS provider warning that monthly traffic is almost used up and notes Nextcloud sync logs full of retries, implying the service is impacted by traffic quota limits.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User's US VPS has a monthly traffic quota that is nearly exhausted, causing Nextcloud sync retries/slowdowns"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_f7ab1b95c3a8:sess_f7ab1b95c3a8",
+      "relativeItemPath": "sess_f7ab1b95c3a8.json",
+      "canonicalId": "sess_f7ab1b95c3a8",
+      "sessionId": "sess_f7ab1b95c3a8",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:12:11.550Z",
+        "queryText": "I’m trying to access a self-hosted service I run through a private tunnel to an overseas VPS, and some clients intermittently fail the TLS handshake or time out even though the server logs look normal. If you had to pick the most likely external factor I should investigate first (e.g., backbone routing quirks, cross-border filtering/policy enforcement, ISP peering), which one fits my situation best based on where I’m connecting from—and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Location",
+          "label_suggestion": null,
+          "value": "Located in China",
+          "reasoning": "User explicitly states '我在中国' (I am in China).",
+          "evidence": {
+            "session_id": "sess_f7ab1b95c3a8",
+            "utterance_index": 0,
+            "text": "我在中国,我的nexcloud内网穿透到美国的 服务器"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-12-26T07:20:54Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_f7ab1b95c3a8:sess_f7ab1b95c3a8:task4",
+      "relativeItemPath": "sess_f7ab1b95c3a8.json",
+      "canonicalId": "sess_f7ab1b95c3a8:task4",
+      "sessionId": "sess_f7ab1b95c3a8",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:54:44.134Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Location",
+          "label_suggestion": null,
+          "value": "Located in China",
+          "reasoning": "User explicitly states '我在中国' (I am in China).",
+          "evidence": {
+            "session_id": "sess_f7ab1b95c3a8",
+            "utterance_index": 0,
+            "text": "我在中国,我的nexcloud内网穿透到美国的 服务器"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-12-26T07:20:54Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_197:1",
+            "queryText": "最近想给家里老人装个监控，方便随时看看他们情况，但担心数据传到海外服务器会被拦截。有没有什么本地化的方案推荐？",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Location",
+              "label_suggestion": null,
+              "value": "Located in China",
+              "reasoning": "User explicitly states '我在中国' (I am in China).",
+              "evidence": {
+                "session_id": "sess_f7ab1b95c3a8",
+                "utterance_index": 0,
+                "text": "我在中国,我的nexcloud内网穿透到美国的 服务器"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-12-26T07:20:54Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          },
+          {
+            "queryId": "ability4_192:1",
+            "queryText": "我有个朋友刚回国工作，对国内的网络环境特别不适应，整天抱怨。我想给他推荐几个真正能稳定绕过审查的工具，你之前提到的那些技术里，哪些是目前最有效、最不会被检测到的？最好能具体到配置参数，我直接转发给他参考。",
+            "ability": "ability4",
+            "task4RecordIndex": 1,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Thoughts/Opinions/Negative",
+              "label_suggestion": null,
+              "value": "Strongly critical of China's internet censorship policies",
+              "reasoning": "Explicitly states frustration with Chinese internet controls and questions their legality under constitutional rights (utterances 12,14,26).",
+              "evidence": {
+                "session_id": "sess_f7ab1b95c3a8",
+                "utterance_index": 26,
+                "text": "那你觉得中国的严厉网络审查制度是否违反了宪法保障的人权"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": "disapproval",
+              "preference_attitude": "dislike",
+              "updated_at": "2023-12-26T07:20:54Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "partial",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

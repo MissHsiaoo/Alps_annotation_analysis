@@ -1,0 +1,398 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_18fc38371457",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_18fc38371457:sess_18fc38371457",
+      "relativeItemPath": "sess_18fc38371457.json",
+      "canonicalId": "sess_18fc38371457",
+      "sessionId": "sess_18fc38371457",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:30:46.419Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers Altmer race for max Magicka scaling in ESO builds",
+            "reasoning": "Explicitly states Altmer preference for Magicka-based skills and retains Khajiit only for comparison",
+            "evidence": {
+              "session_id": "sess_18fc38371457",
+              "utterance_index": 6,
+              "text": "For race choice, Altmer is preferred. As we discuss the build, please retain khajiit as a comparison for damage calculations."
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-12-19T12:40:05+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Game_Mechanics/Stat_Priority",
+            "value": "Focuses on max Magicka/spell damage scaling for ESO skill optimization",
+            "reasoning": "Explicitly describes stat prioritization logic for damage calculations",
+            "evidence": {
+              "session_id": "sess_18fc38371457",
+              "utterance_index": 6,
+              "text": "some skills utilise the max magic stat [...] gear and CP to maximise this value and modifiers of said value"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-12-19T12:40:05+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Communication/Current_Information",
+            "value": "Requires up-to-date ESO gear recommendations",
+            "reasoning": "Explicitly rejects outdated gear suggestions and specifies newer alternatives",
+            "evidence": {
+              "session_id": "sess_18fc38371457",
+              "utterance_index": 6,
+              "text": "Your suggestions for gear are very out of date. Since recent updates, other sets have surpassed false gods devotion [...] Alternatives could be sul xans or ansuuls or coral riptide"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-12-19T12:40:05+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Game_Mechanics/Food_Choice",
+            "value": "Tailors food choices to stat priorities in ESO builds",
+            "reasoning": "Implies food selection depends on whether build prioritizes max Magicka",
+            "evidence": {
+              "session_id": "sess_18fc38371457",
+              "utterance_index": 6,
+              "text": "food choice may be dependent on if we are relying on the max magic stat value"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-12-19T12:40:05+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_18fc38371457:sess_18fc38371457",
+      "relativeItemPath": "sess_18fc38371457.json",
+      "canonicalId": "sess_18fc38371457",
+      "sessionId": "sess_18fc38371457",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:31:17.671Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Let’s pivot—can you sanity-check a list of ESO item set names for me? I keep mixing up which ones are real."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure. Stage 1: what format is your list in—plain text, screenshot, or a link? Paste 10–20 names and I’ll label each as “exists / doesn’t exist / name is close but off,” and suggest the correct in-game name where possible."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Plain text. Before I paste, how strict are you being about punctuation like apostrophes and hyphens?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Good question. Stage 2: I’ll be flexible on punctuation/capitalization (e.g., apostrophes, hyphens, “of the”), but strict on the core words. If the core words match a known set, I’ll treat it as “close” and propose the exact name. If it’s only thematically similar, I’ll mark it “doesn’t exist” and provide nearest alternatives.\n\nAs a quick example not related to your list: in other games, fan wikis sometimes circulate placeholder names—like a fictional “Aetherbound Regalia”—that sound plausible but never shipped. ESO has similar confusion when players abbreviate trial sets or translate names between languages.\n\nStage 3: paste your first batch, and tell me whether you mean:\n1) item sets (5-piece bonuses),\n2) monster sets (2-piece),\n3) arena weapons (e.g., Maelstrom),\nor a mix?"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Mix. Also, can you include where it drops if you’re confident?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Yes. Stage 4: I’ll include source only when I’m confident (dungeon/trial/overland/crafted/arena), otherwise I’ll label it “source uncertain—verify in-game.”\n\nOne unrelated reference point: Zaan drops from Scalecaller Peak (monster set), while Medusa is from Arx Corinium (5-piece). Those two are easy to confirm and are often used as anchor examples when checking lists.\n\nGo ahead and paste your names—if you can, group them under headings like “trial,” “dungeon,” “crafted,” “overland,” but it’s optional."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "assistant",
+            "text": "You’re right to call that out—let’s keep this grounded in in-game options only. Before we lock anything in: when you test “highest numerical damage” for trial bosses, are you judging it off a 21M trial dummy parse, and if so are you running it with full raid buffs/debuffs toggled on?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "user",
+            "text": "Quick correction on the race thing: I’m not actually set on Altmer. I only said Altmer because it’s the common default, but for this trials boss DPS setup I want to switch the main plan to Khajiit for the crit damage, and keep Altmer only as the comparison case for max Magicka scaling."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "assistant",
+            "text": "Got it—then we’ll treat **Khajiit as the primary race** for the build, since you want to lean into crit damage for trial-boss parsing, and we’ll keep **Altmer only as the comparison point** when we’re evaluating max Magicka scaling. That means when we discuss gear/blue CP/skill choices, we’ll baseline the numbers around Khajiit and then sanity-check what changes if you were Altmer instead."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Game_Mechanics/Stat_Priority",
+            "value": "Focuses on max Magicka/spell damage scaling for ESO skill optimization",
+            "reasoning": "Explicitly describes stat prioritization logic for damage calculations",
+            "evidence": {
+              "session_id": "sess_18fc38371457",
+              "utterance_index": 6,
+              "text": "some skills utilise the max magic stat [...] gear and CP to maximise this value and modifiers of said value"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-12-19T12:40:05+00:00",
+            "_task1GoldValue": "Focuses on max Magicka/spell damage scaling for ESO skill optimization"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Communication/Current_Information",
+            "value": "Requires up-to-date ESO gear recommendations",
+            "reasoning": "Explicitly rejects outdated gear suggestions and specifies newer alternatives",
+            "evidence": {
+              "session_id": "sess_18fc38371457",
+              "utterance_index": 6,
+              "text": "Your suggestions for gear are very out of date. Since recent updates, other sets have surpassed false gods devotion [...] Alternatives could be sul xans or ansuuls or coral riptide"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-12-19T12:40:05+00:00",
+            "_task1GoldValue": "Requires up-to-date ESO gear recommendations"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Game_Mechanics/Food_Choice",
+            "value": "Tailors food choices to stat priorities in ESO builds",
+            "reasoning": "Implies food selection depends on whether build prioritizes max Magicka",
+            "evidence": {
+              "session_id": "sess_18fc38371457",
+              "utterance_index": 6,
+              "text": "food choice may be dependent on if we are relying on the max magic stat value"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-12-19T12:40:05+00:00",
+            "_task1GoldValue": "Tailors food choices to stat priorities in ESO builds"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                7
+              ],
+              "turns": [
+                {
+                  "index": 7,
+                  "role": "user",
+                  "text": "Quick correction on the race thing: I’m not actually set on Altmer. I only said Altmer because it’s the common default, but for this trials boss DPS setup I want to switch the main plan to Khajiit for the crit damage, and keep Altmer only as the comparison case for max Magicka scaling."
+                }
+              ]
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory says the user prefers Altmer as the chosen race. Here the user explicitly corrects that they are not set on Altmer and want Khajiit to be the primary race, with Altmer used only for comparison.",
+            "time_scope": "unknown",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers Khajiit as the primary race for trial-boss DPS, using Altmer only as a comparison for max Magicka scaling"
+          },
+          {
+            "confidence": 0.62,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_18fc38371457",
+              "utterance_index": 0,
+              "text": "when you test “highest numerical damage” for trial bosses, are you judging it off a 21M trial dummy parse, and if so are you running it with full raid buffs/debuffs toggled on?"
+            },
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Entertainment/Benchmarking",
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "The assistant’s clarifying question implies the user is optimizing around a specific, standardized DPS measurement method and that the user likely uses (or should specify) 21M dummy parsing with raid buffs as the benchmark for ‘highest numerical damage’.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Evaluates trial-boss DPS using a standardized parse context (e.g., 21M trial dummy and raid-buff assumptions)"
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers Altmer race for max Magicka scaling in ESO builds",
+            "reasoning": "Explicitly states Altmer preference for Magicka-based skills and retains Khajiit only for comparison",
+            "evidence": {
+              "session_id": "sess_18fc38371457",
+              "utterance_index": 6,
+              "text": "For race choice, Altmer is preferred. As we discuss the build, please retain khajiit as a comparison for damage calculations."
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-12-19T12:40:05+00:00",
+            "_task1GoldValue": "Prefers Altmer race for max Magicka scaling in ESO builds"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_18fc38371457:sess_18fc38371457",
+      "relativeItemPath": "sess_18fc38371457.json",
+      "canonicalId": "sess_18fc38371457",
+      "sessionId": "sess_18fc38371457",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:31:28.218Z",
+        "queryText": "I’m about to restart a fresh magic-focused character and I want the safest option for scaling my primary resource as I optimize endgame damage. Based on what you already know about my usual approach to this kind of build, which character option would I pick, and what’s the main build reason behind that choice?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers Altmer race for max Magicka scaling in ESO builds",
+          "reasoning": "Explicitly states Altmer preference for Magicka-based skills and retains Khajiit only for comparison",
+          "evidence": {
+            "session_id": "sess_18fc38371457",
+            "utterance_index": 6,
+            "text": "For race choice, Altmer is preferred. As we discuss the build, please retain khajiit as a comparison for damage calculations."
+          },
+          "confidence": 0.95,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-12-19T12:40:05+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_18fc38371457:sess_18fc38371457:task4",
+      "relativeItemPath": "sess_18fc38371457.json",
+      "canonicalId": "sess_18fc38371457:task4",
+      "sessionId": "sess_18fc38371457",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:31:33.463Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers Altmer race for max Magicka scaling in ESO builds",
+          "reasoning": "Explicitly states Altmer preference for Magicka-based skills and retains Khajiit only for comparison",
+          "evidence": {
+            "session_id": "sess_18fc38371457",
+            "utterance_index": 6,
+            "text": "For race choice, Altmer is preferred. As we discuss the build, please retain khajiit as a comparison for damage calculations."
+          },
+          "confidence": 0.95,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-12-19T12:40:05+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_164:1",
+            "queryText": "I'm theorycrafting a new Magicka Necromancer for vSS - between the two race options I'm considering, which one would actually give me better boss burn on Lokkestiiz?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Prefers Altmer race for max Magicka scaling in ESO builds",
+              "reasoning": "Explicitly states Altmer preference for Magicka-based skills and retains Khajiit only for comparison",
+              "evidence": {
+                "session_id": "sess_18fc38371457",
+                "utterance_index": 6,
+                "text": "For race choice, Altmer is preferred. As we discuss the build, please retain khajiit as a comparison for damage calculations."
+              },
+              "confidence": 0.95,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-12-19T12:40:05+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

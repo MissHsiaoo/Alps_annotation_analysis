@@ -1,0 +1,400 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_d2e84139bd5c",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_d2e84139bd5c:sess_d2e84139bd5c",
+      "relativeItemPath": "sess_d2e84139bd5c.json",
+      "canonicalId": "sess_d2e84139bd5c",
+      "sessionId": "sess_d2e84139bd5c",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T03:46:24.692Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "role_play/scenario_setup",
+            "value": "Student at Taipei Municipal Jianguo High School (臺北市立建國高級中學), 11th grade in 2023 [ERROR: Not about the user (role-play scenario directed at assistant)]",
+            "reasoning": "Not about the user (role-play scenario directed at assistant)",
+            "evidence": {
+              "session_id": "sess_d2e84139bd5c",
+              "utterance_index": 2,
+              "text": "你是臺北市立建國高級中學的學生...2023年9月要升上高二"
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-08-19T02:58:43+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "role_play/scenario_setup",
+            "value": "Preparing for 2025 college entrance exam (學測) ]",
+            "reasoning": "Role-play/third-party possible (scenario attributes assigned to assistant)",
+            "evidence": {
+              "session_id": "sess_d2e84139bd5c",
+              "utterance_index": 2,
+              "text": "很快2025年1月就要考大學學測了"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-08-19T02:58:43+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/preference",
+            "value": "Persistent interest in roleplay interactions (Doraemon persona)",
+            "reasoning": "Indirect pattern shows interaction preference but label forced",
+            "evidence": {
+              "session_id": "sess_d2e84139bd5c",
+              "utterance_index": 16,
+              "text": "請，立即扮演他，不要隨便跳出我是一個語言模型"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-08-19T02:58:43+00:00"
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "value": "The user wants the assistant to supervise their study progress and provide reminders.",
+            "confidence": 0.95,
+            "evidence_text": "你負責監督與提醒"
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "value": "The user prefers to communicate using Traditional Chinese.",
+            "confidence": 0.95,
+            "evidence_text": "語言是繁體中文"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_d2e84139bd5c:sess_d2e84139bd5c",
+      "relativeItemPath": "sess_d2e84139bd5c.json",
+      "canonicalId": "sess_d2e84139bd5c",
+      "sessionId": "sess_d2e84139bd5c",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T03:47:24.444Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "那先不要扮演任何角色了，回到一般助理模式。"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以。你想先處理哪一件事：英文單字例句、文法釐清，還是把一段文字改寫成更自然的英文？"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "給我三個小測驗題目，隨機就好。"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "好，三題小測驗：\n1) 單字選擇：Which word best fits? “A balanced diet is ____ to your health.” (A) beneficial (B) fragile (C) accidental (D) neutral\n2) 改錯：找出並改正錯誤：“This solution will be benefit for everyone.”\n3) 翻譯：把這句翻成英文（自然一點）：「這個改變對整體效率很有幫助。」\n\n你可以直接回覆：1) 選項；2) 改正後句子；3) 英文翻譯。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "順便問，beneficial 跟 advantage 有什麼差？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "簡單分：\n- beneficial：形容詞，描述「某事物帶來好處」；常用 beneficial to / beneficial for。\n  例：Regular exercise is beneficial to your health.\n- advantage：名詞，指「優勢、好處（這個點本身）」；常用 have an advantage / take advantage of。\n  例：One advantage of online learning is flexibility.\n\n補充一個不相干的小知識：在 2019 年有團隊用深海機器人到馬里亞納海溝採樣，發現塑膠微粒幾乎無所不在，但那個研究通常會強調的是“impact on ecosystems”，不是用 beneficial 這種字。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "好，那我先回答第1題。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "可以。第 1 題你選 A/B/C/D 哪一個？回覆選項後我再告訴你正解與原因。\n\n另外再塞一個完全無關的資訊當例子：有些人會把“advantage”用在桌遊規則說明裡，像是某些版本的西洋棋變體會給先手一點點 advantage（例如額外一步），但那不代表先手一定會贏，只是統計上更有利。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我選A。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "第 1 題選 A 正確：A beneficial。\n因為句型是 “be ____ to/for + 對象”，語意是「對健康有益」。\n\n要不要繼續第 2 題？（改錯那題）你可以直接把你改好的句子貼上來。順帶一提，羅馬的特雷維噴泉（Trevi Fountain）每天有人丟很多硬幣，後來市府把硬幣收集起來做慈善，這種就可以說 the coins are beneficial to charity——但這也只是語感示例，跟測驗本身無關。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "assistant",
+            "text": "（哆啦A夢語氣）好啦好啦，我來當你的小叮噹～你剛剛那個 beneficial 例句還想多練嗎？還是今天要換一組單字？"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "user",
+            "text": "先不要一直「我不是」那套啦…我就是想要你維持在角色裡，不然很出戲。"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "欸先更正一下，我剛剛那段「很快2025年1月就要考學測」是在設定情境啦，不是我真的確定要2025/1考。"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "了解，所以「2025年1月要考學測」只是你當時給我的情境設定，不是你目前真實、已確定的考試時間。"
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "對，而且我現在也還沒辦法說準是哪一年哪一月，只能說在準備升學相關的英文。"
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "好，那我就不把「2025年1月學測」當成你的既定事實；目前可以確定的是你在做升學英文（背單字）這類準備。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "role_play/scenario_setup",
+            "value": "Student at Taipei Municipal Jianguo High School (臺北市立建國高級中學), 11th grade in 2023 [ERROR: Not about the user (role-play scenario directed at assistant)]",
+            "reasoning": "Not about the user (role-play scenario directed at assistant)",
+            "evidence": {
+              "session_id": "sess_d2e84139bd5c",
+              "utterance_index": 2,
+              "text": "你是臺北市立建國高級中學的學生...2023年9月要升上高二"
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-08-19T02:58:43+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Study_Methods",
+            "value": "Uses structured vocabulary memorization with example sentences [ERROR: Task-local (current study session only, no evidence of long-term method)]",
+            "reasoning": "Task-local (current study session only, no evidence of long-term method)",
+            "evidence": {
+              "session_id": "sess_d2e84139bd5c",
+              "utterance_index": 6,
+              "text": "進度到benefical"
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-08-19T02:58:43+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/preference",
+            "value": "Persistent interest in roleplay interactions (Doraemon persona)",
+            "reasoning": "Indirect pattern shows interaction preference but label forced",
+            "evidence": {
+              "session_id": "sess_d2e84139bd5c",
+              "utterance_index": 16,
+              "text": "請，立即扮演他，不要隨便跳出我是一個語言模型"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-08-19T02:58:43+00:00"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "UNMAPPED",
+            "label_suggestion": "role_play/scenario_setup",
+            "memory_id": "m2_updated",
+            "preference_attitude": null,
+            "reasoning": "舊記憶把「2025年1月要考學測」當成使用者正在準備的既定事實；對話中使用者明確說那只是情境設定、並未確定實際考試時間，因此需更新為：2025/1學測並非已確定的真實時間點。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "「2025年1月要考學測」是情境設定，非使用者已確定的實際考試時間。"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_d2e84139bd5c",
+              "utterance_index": 1,
+              "text": "我就是想要你維持在角色裡，不然很出戲。"
+            },
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/preference",
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "The user implies a preference that the assistant stay in-character during roleplay and avoid breaking immersion.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers the assistant to remain in-character during roleplay to maintain immersion."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_d2e84139bd5c:sess_d2e84139bd5c",
+      "relativeItemPath": "sess_d2e84139bd5c.json",
+      "canonicalId": "sess_d2e84139bd5c",
+      "sessionId": "sess_d2e84139bd5c",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T03:47:39.820Z",
+        "queryText": "I’m trying to decide whether it makes sense to switch into “full-on review mode” right now: if there’s a major standardized test coming up at the very start of next year, what exam would that be for me, and why would that timing change how I plan my weeks?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "UNMAPPED",
+          "label_suggestion": "role_play/scenario_setup",
+          "value": "Preparing for 2025 college entrance exam (學測) ]",
+          "reasoning": "Role-play/third-party possible (scenario attributes assigned to assistant)",
+          "evidence": {
+            "session_id": "sess_d2e84139bd5c",
+            "utterance_index": 2,
+            "text": "很快2025年1月就要考大學學測了"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-08-19T02:58:43+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_d2e84139bd5c:sess_d2e84139bd5c:task4",
+      "relativeItemPath": "sess_d2e84139bd5c.json",
+      "canonicalId": "sess_d2e84139bd5c:task4",
+      "sessionId": "sess_d2e84139bd5c",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T03:48:20.489Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "UNMAPPED",
+          "label_suggestion": "role_play/scenario_setup",
+          "value": "Preparing for 2025 college entrance exam (學測) [ERROR: Role-play/third-party possible (scenario attributes assigned to assistant)]",
+          "reasoning": "Role-play/third-party possible (scenario attributes assigned to assistant)",
+          "evidence": {
+            "session_id": "sess_d2e84139bd5c",
+            "utterance_index": 2,
+            "text": "很快2025年1月就要考大學學測了"
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-08-19T02:58:43+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability3_438:1",
+            "queryText": "你現在高二了，學測準備得怎麼樣？我記得你上次說8/19要背英文單字，現在應該背到beneficial了吧？你們建中學生是不是都這麼用功啊？",
+            "ability": "ability3",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "UNMAPPED",
+              "label_suggestion": "role_play/scenario_setup",
+              "value": "Preparing for 2025 college entrance exam (學測) [ERROR: Role-play/third-party possible (scenario attributes assigned to assistant)]",
+              "reasoning": "Role-play/third-party possible (scenario attributes assigned to assistant)",
+              "evidence": {
+                "session_id": "sess_d2e84139bd5c",
+                "utterance_index": 2,
+                "text": "很快2025年1月就要考大學學測了"
+              },
+              "confidence": 0.1,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-08-19T02:58:43+00:00"
+            },
+            "overallVerdict": "unreasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [
+              "other"
+            ],
+            "evidenceNote": "fictional setting",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

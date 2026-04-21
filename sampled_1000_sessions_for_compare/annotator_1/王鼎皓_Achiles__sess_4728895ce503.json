@@ -1,0 +1,334 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_4728895ce503",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_4728895ce503:sess_4728895ce503",
+      "relativeItemPath": "sess_4728895ce503.json",
+      "canonicalId": "sess_4728895ce503",
+      "sessionId": "sess_4728895ce503",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T12:20:11.120Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Possessions/Car",
+            "label_suggestion": null,
+            "value": "2023 Kia EV6",
+            "reasoning": "User explicitly states ownership of this vehicle model.",
+            "evidence": {
+              "session_id": "sess_4728895ce503",
+              "utterance_index": 0,
+              "text": "I drive a \"2023 Kia EV6\"..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-29T03:03:47+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Strongly dislikes non-DIY suggestions for car issues",
+            "reasoning": "User explicitly states anger at non-DIY recommendations and prohibits such advice.",
+            "evidence": {
+              "session_id": "sess_4728895ce503",
+              "utterance_index": 0,
+              "text": "Without telling me to check with anyone else... it will piss me off if you say anything regarding reaching out to any outside help."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": "anger",
+            "preference_attitude": "dislike",
+            "updated_at": "2023-12-29T03:03:47+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "troubleshooting/car_issues",
+            "value": "Sustained curiosity about DIY troubleshooting methods for Kia EV6 electrical systems",
+            "reasoning": "Task-local troubleshooting questions; insufficient evidence for long-term curiosity.",
+            "evidence": {
+              "session_id": "sess_4728895ce503",
+              "utterance_index": 10,
+              "text": "How can I effectively tell if any fuses related to the start system..."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-29T03:03:47+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_4728895ce503:sess_4728895ce503",
+      "relativeItemPath": "sess_4728895ce503.json",
+      "canonicalId": "sess_4728895ce503",
+      "sessionId": "sess_4728895ce503",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T08:43:10.220Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Quick question: if I’m using a multimeter on a fuse, do I need the circuit powered, or should it be totally off?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "For a basic “is this fuse blown?” check, keep the circuit OFF and test the fuse for continuity (or resistance). Pull the fuse out and probe the two blades: continuity beep / near‑0 ohms = good; no beep / very high or OL = blown.\n\nIf you’re doing a “is power getting to this fuse?” check, that’s different: the circuit needs to be powered and you measure voltage at the fuse test points (many blade fuses have tiny exposed pads on top). You’d see ~12V on both sides when the fuse is good and that circuit is commanded on; ~12V on only one side suggests a blown fuse or an open downstream.\n\nSo: continuity test = power off; voltage test = power on."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "What’s the quickest way to avoid false readings when checking continuity? Sometimes I get random beeps."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "A few fast ways to make continuity testing more reliable:\n\n- Touch the probes together first to confirm the meter beeps consistently (and note the baseline resistance).\n- Pull the fuse out of the holder so you’re not reading a parallel path through the circuit.\n- Hold probes firmly on clean metal; if the blades look oxidized, rub them lightly with a dry cloth before probing.\n- If the meter has adjustable continuity threshold, switch to resistance mode and look for a clear value (e.g., <1–2Ω is typically “good” for a fuse).\n- Don’t let your fingers bridge both probes near the tips—skin resistance can create confusing readings on some meters.\n\n(As a side note unrelated to cars: the original 1914 “Little Fuse” devices used a thin wire in a holder—modern blade fuses work on the same basic principle, just more standardized.)"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "If I see 12V on one side of a fuse and 0V on the other, does that always mean the fuse is blown?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "It strongly suggests the fuse element is open *if* you’re measuring correctly and referencing a good ground.\n\nQuick sanity checks before concluding it’s blown:\n- Confirm your meter ground point is solid (bare metal chassis bolt or known ground lug).\n- Make sure that circuit is actually supposed to be energized right now (some fuses only get power with ignition on, or when a module “wakes”).\n- Measure again on the battery terminals to confirm the meter is reading ~12V normally.\n\nIf those check out, 12V on the feed side and 0V on the load side is the classic signature of a blown fuse.\n\n(Unrelated trivia: many aerosol contact cleaners used for electronics are “zero residue” because the solvent blend is designed to evaporate quickly—similar idea to how dry-cleaning solvents leave fabric without water.)"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "When I popped the fuse box cover, the diagram on the back mentions a couple of \"SMART KEY\" fuses plus something like \"START\"/\"IG\"—but there are way more fuses than I expected and the tiny labels are hard to read. Is there a quick DIY way to narrow down exactly which ones matter before I start pulling half the box?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Yep—there are a couple fast ways to narrow it down without yanking a bunch of fuses:\n\n1) Use the fuse-box lid map + group by wording\n- Anything labeled **SMART KEY**, **PEPS**, **BCM**, **IG1/IG2**, **START**, **ACC**, or **P/WDW** (power window) is commonly tied into wake-up/start authorization paths.\n- Ignore unrelated groups (seat, audio, lights) at first.\n\n2) Use a simple continuity check in-place (no pulling)\n- If your fuses have the little exposed metal test pads on top, set your multimeter to continuity and probe those pads. If it beeps on both sides, that fuse is intact.\n- This lets you screen a whole cluster quickly.\n\n3) Prioritize by proximity on the diagram\n- The lid diagram usually clusters related circuits. Start with the fuses physically closest to the ones explicitly labeled SMART KEY/START on the map.\n\n4) Pull only the top suspects, one at a time\n- If you do pull any, pull **one**, inspect, and put it back before moving to the next so you don’t lose track.\n\nIf you tell me the exact abbreviations you’re seeing on that lid diagram (even partial like “IG1” or “BCM”), I can help you shortlist the most likely 3–6 fuses to check first."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Quick correction: I *don’t* have a 2023 EV6 anymore. I traded it in last month—I’m in a 2020 Kia Niro EV now. I’m asking because I’m helping my cousin with his EV6, and his start button got wet."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—you’re in a 2020 Kia Niro EV now, and the 2023 Kia EV6 you mentioned earlier is your cousin’s. That also explains why the EV6-specific symptoms (EV button not responding after a spill) aren’t about your own car."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Strongly dislikes non-DIY suggestions for car issues",
+            "reasoning": "User explicitly states anger at non-DIY recommendations and prohibits such advice.",
+            "evidence": {
+              "session_id": "sess_4728895ce503",
+              "utterance_index": 0,
+              "text": "Without telling me to check with anyone else... it will piss me off if you say anything regarding reaching out to any outside help."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": "anger",
+            "preference_attitude": "dislike",
+            "updated_at": "2023-12-29T03:03:47+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "troubleshooting/car_issues",
+            "value": "Sustained curiosity about DIY troubleshooting methods for Kia EV6 electrical systems",
+            "reasoning": "Task-local troubleshooting questions; insufficient evidence for long-term curiosity.",
+            "evidence": {
+              "session_id": "sess_4728895ce503",
+              "utterance_index": 10,
+              "text": "How can I effectively tell if any fuses related to the start system..."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-29T03:03:47+00:00"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Possessions/Car",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory says the user drives a 2023 Kia EV6, but the user corrects this by stating they traded it in and now drive a 2020 Kia Niro EV; the EV6 issue is for their cousin. Therefore the user's car should be updated to 2020 Kia Niro EV.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "2020 Kia Niro EV"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_4728895ce503",
+              "utterance_index": 0,
+              "text": "When I popped the fuse box cover, the diagram on the back mentions a couple of \"SMART KEY\" fuses plus something like \"START\"/\"IG\""
+            },
+            "label": "Skills_and_Habits/DIY_Troubleshooting",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "They describe opening the fuse box and reading the diagram to locate 'SMART KEY' and 'START/IG' fuses, implying hands-on DIY troubleshooting.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is actively DIY-checking the EV6 fuse box using the lid diagram to identify smart key/start related fuses."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_4728895ce503:sess_4728895ce503",
+      "relativeItemPath": "sess_4728895ce503.json",
+      "canonicalId": "sess_4728895ce503",
+      "sessionId": "sess_4728895ce503",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-13T13:12:31.334Z",
+        "queryText": "I’m about to book a routine service appointment online, and it asks me to pick the exact vehicle (year + make + model) from a dropdown so the system loads the right maintenance schedule and compatible parts. What should I select based on what you know I drive?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Possessions/Car",
+          "label_suggestion": null,
+          "value": "2023 Kia EV6",
+          "reasoning": "User explicitly states ownership of this vehicle model.",
+          "evidence": {
+            "session_id": "sess_4728895ce503",
+            "utterance_index": 0,
+            "text": "I drive a \"2023 Kia EV6\"..."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-12-29T03:03:47+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_4728895ce503:sess_4728895ce503:task4",
+      "relativeItemPath": "sess_4728895ce503.json",
+      "canonicalId": "sess_4728895ce503:task4",
+      "sessionId": "sess_4728895ce503",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T03:47:34.783Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Possessions/Car",
+          "label_suggestion": null,
+          "value": "2023 Kia EV6",
+          "reasoning": "User explicitly states ownership of this vehicle model.",
+          "evidence": {
+            "session_id": "sess_4728895ce503",
+            "utterance_index": 0,
+            "text": "I drive a \"2023 Kia EV6\"..."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-12-29T03:03:47+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_7:1",
+            "queryText": "I'm looking at some aftermarket accessories for my car - a wireless charging pad that goes in the center console and a smart key fob protective case. Which one do you think I should actually get first?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Possessions/Car",
+              "label_suggestion": null,
+              "value": "2023 Kia EV6",
+              "reasoning": "User explicitly states ownership of this vehicle model.",
+              "evidence": {
+                "session_id": "sess_4728895ce503",
+                "utterance_index": 0,
+                "text": "I drive a \"2023 Kia EV6\"..."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-12-29T03:03:47+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

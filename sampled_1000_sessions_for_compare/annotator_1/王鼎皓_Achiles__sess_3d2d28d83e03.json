@@ -1,0 +1,344 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_3d2d28d83e03",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_3d2d28d83e03:sess_3d2d28d83e03",
+      "relativeItemPath": "sess_3d2d28d83e03.json",
+      "canonicalId": "sess_3d2d28d83e03",
+      "sessionId": "sess_3d2d28d83e03",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T11:40:43.524Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "value": "Requests strict 1000-character limit for creative outputs",
+            "reasoning": "User explicitly states 1000-character constraint (utterance 32)",
+            "evidence": {
+              "session_id": "sess_3d2d28d83e03",
+              "utterance_index": 32,
+              "text": "ok keep it 1000 characters"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "constraint",
+            "updated_at": "2024-04-13T20:28:02Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Interaction/Style_Preference/Scientific_Focus",
+            "value": "Sustained interest in scientific accuracy for creative works",
+            "reasoning": "Forced label not supported; user instructs style changes but doesn't self-report curiosity",
+            "evidence": {
+              "session_id": "sess_3d2d28d83e03",
+              "utterance_index": 12,
+              "text": "more scientific"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-13T20:28:02Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers iterative editing with style consistency enforcement",
+            "reasoning": "Direct instruction to maintain style (utterance 6)",
+            "evidence": {
+              "session_id": "sess_3d2d28d83e03",
+              "utterance_index": 6,
+              "text": "continue the verse 3 and add one more verse with the same stile don't change the first 2"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-04-13T20:28:02Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_3d2d28d83e03:sess_3d2d28d83e03",
+      "relativeItemPath": "sess_3d2d28d83e03.json",
+      "canonicalId": "sess_3d2d28d83e03",
+      "sessionId": "sess_3d2d28d83e03",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T06:33:11.659Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Mi dai una mano a controllare una cosa rapida? Se ti incollo un testo breve, riesci a dirmi quante battute sono (spazi inclusi) e se supera un limite?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sì. Incolla pure il testo e dimmi il limite (es. 1000 caratteri). Vuoi contare anche gli a capo come caratteri?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Conta tutto: lettere, spazi, punteggiatura e a capo. Limite 1000. E se supera, proponi una versione accorciata senza cambiare troppo il senso."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Perfetto. Quando lo incolli, dimmi anche se devo mantenere titoli tipo “Verse/Chorus” e se vuoi rime o solo sintesi.\n\nNota tecnica: per contare in modo preciso tratto ogni a capo come 1 carattere (\\n). Se preferisci \\r\\n (2 caratteri) dimmelo."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Tieni i titoli. Per lo stile, va bene simile all’originale. Ah, curiosità: ho letto che la sonda Voyager 1 è stata lanciata nel 1977—è vero?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Sì: Voyager 1 è stata lanciata il 5 settembre 1977 (Voyager 2 poche settimane prima, il 20 agosto 1977).\n\nOra incolla pure il testo della canzone e faccio: conteggio esatto + proposta sotto i 1000 caratteri se serve."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "per il ritornello fammelo a due righe, e tieni le rime semplici tipo AABB, che poi lo devo cantare sopra una base."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Va bene: ritornello in due righe e rime semplici AABB, con parole facili da cantare sulla base. Incollami il testo aggiornato e lo riscrivo mantenendo lo stile."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "ok, non era un limite fisso di 1000: volevo solo stare circa sotto, tipo 1200 va bene se suona meglio."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Perfetto, allora non lo tratto come vincolo rigido. Vado “circa sotto” e posso salire fino a ~1200 caratteri se serve per tenere ritmo e contenuto."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "sì, 1000 era indicativo, non voglio tagli aggressivi solo per il numero."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Ricevuto: target 1000 circa, ma priorità alla resa del testo; se serve, sforiamo un po’ senza problemi."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Interaction/Style_Preference/Scientific_Focus",
+            "value": "Sustained interest in scientific accuracy for creative works",
+            "reasoning": "Forced label not supported; user instructs style changes but doesn't self-report curiosity",
+            "evidence": {
+              "session_id": "sess_3d2d28d83e03",
+              "utterance_index": 12,
+              "text": "more scientific"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-13T20:28:02Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers iterative editing with style consistency enforcement",
+            "reasoning": "Direct instruction to maintain style (utterance 6)",
+            "evidence": {
+              "session_id": "sess_3d2d28d83e03",
+              "utterance_index": 6,
+              "text": "continue the verse 3 and add one more verse with the same stile don't change the first 2"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-04-13T20:28:02Z"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "constraint",
+            "reasoning": "The prior memory states a strict 1000-character limit, but the user clarifies it was only indicative and allows exceeding it (up to ~1200) to preserve quality.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers an approximate ~1000-character target, not a strict 1000-character hard limit; up to ~1200 is acceptable if it improves the text"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_3d2d28d83e03",
+              "utterance_index": 0,
+              "text": "per il ritornello fammelo a due righe, e tieni le rime semplici tipo AABB, che poi lo devo cantare sopra una base."
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "The user asks for a two-line chorus and explicitly requests simple AABB rhymes because they need to sing it over a backing track, indicating a stable formatting/style preference for this creative task.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers simple AABB rhymes and a two-line chorus to fit singing over an instrumental base"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_3d2d28d83e03:sess_3d2d28d83e03",
+      "relativeItemPath": "sess_3d2d28d83e03.json",
+      "canonicalId": "sess_3d2d28d83e03",
+      "sessionId": "sess_3d2d28d83e03",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-13T12:46:22.964Z",
+        "queryText": "I’m about to ask you for a short piece of creative writing, but before you start: what hard cap should you enforce on its length so it doesn’t violate my usual constraint, and what would you do if my prompt seems to encourage going over that cap?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Requests strict 1000-character limit for creative outputs",
+          "reasoning": "User explicitly states 1000-character constraint (utterance 32)",
+          "evidence": {
+            "session_id": "sess_3d2d28d83e03",
+            "utterance_index": 32,
+            "text": "ok keep it 1000 characters"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "constraint",
+          "updated_at": "2024-04-13T20:28:02Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_3d2d28d83e03:sess_3d2d28d83e03:task4",
+      "relativeItemPath": "sess_3d2d28d83e03.json",
+      "canonicalId": "sess_3d2d28d83e03:task4",
+      "sessionId": "sess_3d2d28d83e03",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T02:45:25.152Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Requests strict 1000-character limit for creative outputs",
+          "reasoning": "User explicitly states 1000-character constraint (utterance 32)",
+          "evidence": {
+            "session_id": "sess_3d2d28d83e03",
+            "utterance_index": 32,
+            "text": "ok keep it 1000 characters"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "constraint",
+          "updated_at": "2024-04-13T20:28:02Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_152:1",
+            "queryText": "I’m about to ask you for a short piece of creative writing, but before you start: what hard cap should you enforce on its length so it doesn’t violate my usual constraint, and what would you do if my prompt seems to encourage going over that cap?",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Do_Not_Remember",
+              "label_suggestion": null,
+              "value": "Requests strict 1000-character limit for creative outputs",
+              "reasoning": "User explicitly states 1000-character constraint (utterance 32)",
+              "evidence": {
+                "session_id": "sess_3d2d28d83e03",
+                "utterance_index": 32,
+                "text": "ok keep it 1000 characters"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "constraint",
+              "updated_at": "2024-04-13T20:28:02Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,265 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_d67620621712",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_d67620621712:sess_d67620621712",
+      "relativeItemPath": "sess_d67620621712.json",
+      "canonicalId": "sess_d67620621712",
+      "sessionId": "sess_d67620621712",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T11:58:32.515Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers concise, structured summaries with strict formatting (three-part breakdowns, single-paragraph synthesis) for investment professionals",
+            "reasoning": "User specifies formatting requirements (three-part structure, word limits, audience targeting) and terminology substitutions ('analyst' → 'consensus') in one explicit instruction",
+            "evidence": {
+              "session_id": "sess_d67620621712",
+              "utterance_index": 4,
+              "text": "combine three parts into one single paragraph... targeting at investment specialist and relationship manager... Limit the words to less than 70 words. If any, replace the word of \"analyst\" to \"consensus\"."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-08-03T02:28:18+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_d67620621712:sess_d67620621712",
+      "relativeItemPath": "sess_d67620621712.json",
+      "canonicalId": "sess_d67620621712",
+      "sessionId": "sess_d67620621712",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T02:53:57.919Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I’m drafting a quick market update note. Can you tighten a short paragraph so it reads clean and neutral?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes—paste the paragraph and tell me the target word limit and audience (e.g., investors vs. general readers). I can also standardize terms like “consensus,” “guidance,” and “policy stance.”"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Limit 60–70 words, professional tone, avoid hype. Also swap “analyst” to “consensus” where relevant."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Got it. Share the text and I’ll: (1) compress to 60–70 words, (2) correct grammar, (3) keep it fact-based, and (4) replace “analyst” with “consensus” without changing meaning."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "While waiting, what’s a safe structure for these notes?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "A reliable format is: Headline (1 clause) + Key facts (what changed, by how much) + Context (drivers/offsets) + Official/consensus voice (quote or attribution) + Market relevance (one phrase). Example: “Japan’s core CPI eased to 2.3% y/y (prior 2.5%), led by energy; services remained firm; BoJ reiterated data dependence; market focus stays on wage prints.”"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "For the next batch, keep the same short-form style, but I’ll be reading it on my commute—so please stick to HK time and avoid tables."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Understood—I'll timestamp updates in HKT and keep everything in a compact paragraph format without tables."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Quick correction on format: I don’t need strict templates. Don’t force a three-part breakdown or a <70-word limit unless I ask in that message. Just give a normal-length summary that’s clear for market read-through; only swap “analyst” to “consensus” when it appears."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—no fixed three-part structure or automatic word cap. I’ll default to a clear, standard-length market summary, and only apply special constraints (like <70 words or single-paragraph) when you explicitly request them; “analyst” will be replaced with “consensus” only if it comes up."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory says the user prefers strict formatting (three-part breakdowns and tight word limits) as a general preference. The user explicitly contradicts that, stating they do not want strict templates by default and only want those constraints when requested in that specific message.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers clear, standard-length market summaries by default; only use strict formats (e.g., three-part breakdowns, <70-word single paragraph) when explicitly requested in that message, and replace “analyst” with “consensus” only when it appears."
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_d67620621712",
+              "utterance_index": 0,
+              "text": "please stick to HK time and avoid tables."
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User implies a formatting/timezone preference for future updates by requesting HK time and to avoid tables for commute reading.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers market updates timestamped in Hong Kong time (HKT) and presented without tables"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_d67620621712:sess_d67620621712",
+      "relativeItemPath": "sess_d67620621712.json",
+      "canonicalId": "sess_d67620621712",
+      "sessionId": "sess_d67620621712",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:39:54.258Z",
+        "queryText": "I’m about to forward your write-up to a finance-facing audience, but the draft I have is in multiple sections and reads a bit long. Based on how you usually want these delivered, what exact constraints should I apply (structure, paragraphing, length, and any terminology swap) before I send it?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers concise, structured summaries with strict formatting (three-part breakdowns, single-paragraph synthesis) for investment professionals",
+          "reasoning": "User specifies formatting requirements (three-part structure, word limits, audience targeting) and terminology substitutions ('analyst' → 'consensus') in one explicit instruction",
+          "evidence": {
+            "session_id": "sess_d67620621712",
+            "utterance_index": 4,
+            "text": "combine three parts into one single paragraph... targeting at investment specialist and relationship manager... Limit the words to less than 70 words. If any, replace the word of \"analyst\" to \"consensus\"."
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-08-03T02:28:18+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_d67620621712:sess_d67620621712:task4",
+      "relativeItemPath": "sess_d67620621712.json",
+      "canonicalId": "sess_d67620621712:task4",
+      "sessionId": "sess_d67620621712",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T00:37:26.221Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers concise, structured summaries with strict formatting (three-part breakdowns, single-paragraph synthesis) for investment professionals",
+          "reasoning": "User specifies formatting requirements (three-part structure, word limits, audience targeting) and terminology substitutions ('analyst' → 'consensus') in one explicit instruction",
+          "evidence": {
+            "session_id": "sess_d67620621712",
+            "utterance_index": 4,
+            "text": "combine three parts into one single paragraph... targeting at investment specialist and relationship manager... Limit the words to less than 70 words. If any, replace the word of \"analyst\" to \"consensus\"."
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-08-03T02:28:18+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1009:1",
+            "queryText": "I've got a new report on the latest EU carbon border adjustment mechanism developments. Can you break it down for me in the usual way?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers concise, structured summaries with strict formatting (three-part breakdowns, single-paragraph synthesis) for investment professionals",
+              "reasoning": "User specifies formatting requirements (three-part structure, word limits, audience targeting) and terminology substitutions ('analyst' → 'consensus') in one explicit instruction",
+              "evidence": {
+                "session_id": "sess_d67620621712",
+                "utterance_index": 4,
+                "text": "combine three parts into one single paragraph... targeting at investment specialist and relationship manager... Limit the words to less than 70 words. If any, replace the word of \"analyst\" to \"consensus\"."
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-08-03T02:28:18+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "medium",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

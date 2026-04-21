@@ -1,0 +1,401 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_163cb976626c",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_163cb976626c:sess_163cb976626c",
+      "relativeItemPath": "sess_163cb976626c.json",
+      "canonicalId": "sess_163cb976626c",
+      "sessionId": "sess_163cb976626c",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T11:18:23.297Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "States_Experiences/Physical_State",
+            "label_suggestion": null,
+            "value": "Frequently experiences inadequate sleep (4-6 hours) due to schoolwork, leading to reduced mental alertness",
+            "reasoning": "User explicitly states personal sleep habits but uses 'on occasion' qualifier",
+            "evidence": {
+              "session_id": "sess_163cb976626c",
+              "utterance_index": 14,
+              "text": "This is something that I, alongside the majority of my peers, suffer from as schoolwork tends to take a vast majority of my day. On occasion, getting 4-6 hours of sleep will result in reduced mental alertness and overall sluggishness."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-10T20:48:16+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers content written in their personal writing style and undetectable by AI tools",
+            "reasoning": "Explicit repeated requests for AI-undetectable writing",
+            "evidence": {
+              "session_id": "sess_163cb976626c",
+              "utterance_index": 16,
+              "text": "make it more like the way i wrote my paper and not detectable by ai tools"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-12-10T20:48:16+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Interaction_Style/AI_Detection_Avoidance",
+            "value": "Sustained focus on techniques to humanize AI-generated academic writing and evade detection",
+            "reasoning": "Forced label correction: Evidence indicates preference rather than curiosity",
+            "evidence": {
+              "session_id": "sess_163cb976626c",
+              "utterance_index": 20,
+              "text": "Change my essay to make it more human-like and not detectable by ai"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-10T20:48:16+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Likely a student (implied by schoolwork context and peer references)",
+            "reasoning": "Contextual inference from schoolwork/peer references",
+            "evidence": {
+              "session_id": "sess_163cb976626c",
+              "utterance_index": 14,
+              "text": "schoolwork tends to take a vast majority of my day... alongside the majority of my peers"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-10T20:48:16+00:00"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "value": "User is a student working on a research paper assignment about wellness dimensions",
+            "confidence": 0.95,
+            "evidence_text": "In this research paper assignment, you will have the opportunity to explore two wellness areas of your choice"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_163cb976626c:sess_163cb976626c",
+      "relativeItemPath": "sess_163cb976626c.json",
+      "canonicalId": "sess_163cb976626c",
+      "sessionId": "sess_163cb976626c",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T11:18:57.993Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I’m trying to format a short paper with headings like “Introduction,” “Literature Review,” and “Conclusion.” Do you have a simple structure that works for most topics?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "A clean, common structure is: Introduction (context + thesis), Literature Review (what sources say + themes), Analysis/Discussion (your interpretation + implications), Strategies/Recommendations (action steps + how to measure them), and Conclusion (summary + why it matters). If you’re using APA or MLA, keep headings consistent and make sure in-text citations match the reference list."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "What’s a quick way to make sure my citations and references match up before I submit?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Do a “cross-check” pass: (1) highlight every in-text citation, (2) verify each one appears in the References/Works Cited, and (3) verify every reference entry is cited at least once in the text. Tools like Zotero or citation generators can help, but manual checking catches missing authors/years and formatting mismatches."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "I also tend to write long paragraphs—any rule of thumb to tighten them?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Try the “one purpose per paragraph” rule: topic sentence + 2–4 supporting sentences + a closing sentence that links back to the section goal. If a paragraph is doing two jobs (e.g., summarizing a study and arguing your point), split it."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Random question: do you know a good example of a metric people use to measure air quality in environmental reports?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "A common one is the Air Quality Index (AQI), which converts pollutant concentrations (often PM2.5, PM10, ozone, nitrogen dioxide, sulfur dioxide, carbon monoxide) into a single scale for public communication. Technical reports may also report raw concentrations in µg/m³ (particulates) or ppb (gases)."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Got it. If I include a small table, how should I label it?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Use a consistent label like “Table 1” followed by a brief descriptive title (e.g., “Table 1. Summary of Selected Studies”). In APA, the table number is bold and the title is italicized; in MLA, conventions are a bit looser but clarity and consistency matter most."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Before I turn it in, I’m planning to keep the final paper around the 3–4 page limit, so I’m trying not to let any section get too wordy."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—if you want, paste the draft you have and tell me which citation style you’re using, and I can help tighten wording and keep each section within a clean page balance while preserving your voice."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Before you rewrite anything, I should clarify: I'm not a student. I work full-time, and when I said “schoolwork,” I meant job training modules and certifications my workplace assigns."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Got it—so the “schoolwork tends to take a vast majority of my day” line is really about work training/certifications, not classes. I’ll avoid describing you as a student and keep the context as full-time work."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Yes, exactly. Please don’t refer to “my peers” as classmates either—just coworkers."
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "Understood. I’ll treat that section as workplace-related training taking up your time, and I’ll frame “peers” as coworkers rather than classmates."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers content written in their personal writing style and undetectable by AI tools",
+            "reasoning": "Explicit repeated requests for AI-undetectable writing",
+            "evidence": {
+              "session_id": "sess_163cb976626c",
+              "utterance_index": 16,
+              "text": "make it more like the way i wrote my paper and not detectable by ai tools"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-12-10T20:48:16+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Interaction_Style/AI_Detection_Avoidance",
+            "value": "Sustained focus on techniques to humanize AI-generated academic writing and evade detection",
+            "reasoning": "Forced label correction: Evidence indicates preference rather than curiosity",
+            "evidence": {
+              "session_id": "sess_163cb976626c",
+              "utterance_index": 20,
+              "text": "Change my essay to make it more human-like and not detectable by ai"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-10T20:48:16+00:00"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                12
+              ],
+              "turns": [
+                {
+                  "index": 12,
+                  "role": "user",
+                  "text": "Before you rewrite anything, I should clarify: I'm not a student. I work full-time, and when I said “schoolwork,” I meant job training modules and certifications my workplace assigns."
+                }
+              ]
+            },
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "memory_id": "m4_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory inferred the user was a student from references to 'schoolwork' and 'peers.' The user directly corrects this, stating they are not a student and that the 'schoolwork' refers to workplace training/certifications, so the updated truth is that the user works full-time rather than being a student.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Not a student; works full-time and the 'schoolwork' mentioned refers to workplace training/certifications."
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_163cb976626c",
+              "utterance_index": 0,
+              "text": "I’m planning to keep the final paper around the 3–4 page limit"
+            },
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user implies they must meet a 3–4 page limit and is editing to fit that constraint.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is working within a 3–4 page length requirement for their paper"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_163cb976626c:sess_163cb976626c",
+      "relativeItemPath": "sess_163cb976626c.json",
+      "canonicalId": "sess_163cb976626c",
+      "sessionId": "sess_163cb976626c",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T11:19:42.053Z",
+        "queryText": "I’m filling out a generic intake form that forces me to pick one label for what I do day-to-day—options are things like “student,” “full-time employee,” “self-employed,” etc. Based on what you know about how my time is typically taken up and the kind of people I compare my schedule to, which single label would fit best, and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m4",
+          "type": "indirect",
+          "label": "Personal_Background/Education",
+          "label_suggestion": null,
+          "value": "Likely a student (implied by schoolwork context and peer references)",
+          "reasoning": "Contextual inference from schoolwork/peer references",
+          "evidence": {
+            "session_id": "sess_163cb976626c",
+            "utterance_index": 14,
+            "text": "schoolwork tends to take a vast majority of my day... alongside the majority of my peers"
+          },
+          "confidence": 0.65,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-12-10T20:48:16+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_163cb976626c:sess_163cb976626c:task4",
+      "relativeItemPath": "sess_163cb976626c.json",
+      "canonicalId": "sess_163cb976626c:task4",
+      "sessionId": "sess_163cb976626c",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T11:20:03.299Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "States_Experiences/Physical_State",
+          "label_suggestion": null,
+          "value": "Frequently experiences inadequate sleep (4-6 hours) due to schoolwork, leading to reduced mental alertness",
+          "reasoning": "User explicitly states personal sleep habits but uses 'on occasion' qualifier",
+          "evidence": {
+            "session_id": "sess_163cb976626c",
+            "utterance_index": 14,
+            "text": "This is something that I, alongside the majority of my peers, suffer from as schoolwork tends to take a vast majority of my day. On occasion, getting 4-6 hours of sleep will result in reduced mental alertness and overall sluggishness."
+          },
+          "confidence": 0.5,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-12-10T20:48:16+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_53:1",
+            "queryText": "I'm trying to follow the strategies from my paper, but I'm hitting a wall with the sleep part. I set up my room to be dark and quiet, but I still end up staying up past 2 AM most nights because I'm either finishing assignments or just can't shut my brain off about how much everything costs next semester. How do you actually stick to a sleep schedule when your financial stress and workload are constantly fighting against it?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "States_Experiences/Physical_State",
+              "label_suggestion": null,
+              "value": "Frequently experiences inadequate sleep (4-6 hours) due to schoolwork, leading to reduced mental alertness",
+              "reasoning": "User explicitly states personal sleep habits but uses 'on occasion' qualifier",
+              "evidence": {
+                "session_id": "sess_163cb976626c",
+                "utterance_index": 14,
+                "text": "This is something that I, alongside the majority of my peers, suffer from as schoolwork tends to take a vast majority of my day. On occasion, getting 4-6 hours of sleep will result in reduced mental alertness and overall sluggishness."
+              },
+              "confidence": 0.5,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-12-10T20:48:16+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

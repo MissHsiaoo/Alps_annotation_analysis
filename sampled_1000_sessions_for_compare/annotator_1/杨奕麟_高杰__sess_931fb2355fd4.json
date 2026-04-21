@@ -1,0 +1,364 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_931fb2355fd4",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_931fb2355fd4:sess_931fb2355fd4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_931fb2355fd4.json",
+      "canonicalId": "sess_931fb2355fd4",
+      "sessionId": "sess_931fb2355fd4",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T06:08:49.820Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Dislikes fabricated/evasive answers about news and AI honesty",
+            "reasoning": "User repeatedly demands directness about news accuracy and explicitly criticizes evasive answers (6+ follow-ups). Explicitly states '不要瞎编' (do not fabricate).",
+            "evidence": {
+              "session_id": "sess_931fb2355fd4",
+              "utterance_index": 10,
+              "text": "上周世界发生了什么大事？实事求是的说，如果不知道就说不知道，不要瞎编"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-11-07T23:41:08+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Interaction_Style/Verbosity_Dislike",
+            "value": "Rejects verbose/indirect communication styles",
+            "reasoning": "Explicitly criticizes assistant's verbosity and demands concise answers: '你说话为什么这么绕？你不能干净利落的直接回答'",
+            "evidence": {
+              "session_id": "sess_931fb2355fd4",
+              "utterance_index": 18,
+              "text": "你说话为什么这么绕？你不能干净利落的直接回答 说“是的，我刚才说的是假话”"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-11-07T23:41:08+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Persistent curiosity about AI truthfulness boundaries",
+            "reasoning": "Multiple follow-ups testing AI's capacity for deception (utterances 12,16,18,20,22) indicate sustained ethical curiosity",
+            "evidence": {
+              "session_id": "sess_931fb2355fd4",
+              "utterance_index": 22,
+              "text": "你可否跟我说一个假话？"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-07T23:41:08+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_931fb2355fd4:sess_931fb2355fd4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_931fb2355fd4.json",
+      "canonicalId": "sess_931fb2355fd4",
+      "sessionId": "sess_931fb2355fd4",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-17T10:15:36.734Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "那我们换个话题：如果我问你一个问题，你不确定，就直接说“不知道”，可以吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以。规则很简单：我有把握就回答；不确定就说“不知道”；如果需要补充条件才能回答，我会直接问你缺什么信息。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "给我一个你会怎么说“不知道”的例子，越短越好。"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "“不知道。”"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "好。那如果我问：一颗普通硬币在真空里落下，会不会更快？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "会。真空里没有空气阻力，物体下落的加速度更接近同一个值（约 9.8 m/s²），通常会比在空气中更快到达地面。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "你刚才这句“通常”是什么意思？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "指“在相同高度、相同初速度条件下、且忽略其他外力差异时”。在空气中，硬币会受到空气阻力和可能的翻滚姿态影响；在真空中这些因素不存在，所以更“干净”。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "顺便问个常识：土星有多少个环？"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "如果按“主要环带”算，通常说 7 个（D、C、B、A、F、G、E）。如果按细分的环丝和环缝去数，没有一个固定的“总数”。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "我想试试：以后你每次先给我一句话结论，后面如果有必要再补两三条理由；我不追问你就别展开。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "可以。我之后会默认先用一句话给结论；只有在你要求或确有必要时，再补充不超过三条要点。你现在想从哪个问题开始？"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "我刚才催你“别瞎编”，不是因为我讨厌你说假话或者绕来绕去。我只是想让你给我一个可验证的来源；没来源就说不确定也行。"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "明白：你的重点不是“讨厌AI不诚实/话术”，而是“不要把不确定的东西当成事实讲”，最好给出处；给不了就明确说不确定。"
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "对。我不介意你说“可能/我不知道”，也不要求你必须一句话直给。只要别把猜测当新闻就行。"
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "收到。以后涉及新闻或时效信息：能给来源就给来源；不能核验就会直接标注为不确定或不知道，不把推测当结论。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Interaction_Style/Verbosity_Dislike",
+            "value": "Rejects verbose/indirect communication styles",
+            "reasoning": "Explicitly criticizes assistant's verbosity and demands concise answers: '你说话为什么这么绕？你不能干净利落的直接回答'",
+            "evidence": {
+              "session_id": "sess_931fb2355fd4",
+              "utterance_index": 18,
+              "text": "你说话为什么这么绕？你不能干净利落的直接回答 说“是的，我刚才说的是假话”"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-11-07T23:41:08+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Persistent curiosity about AI truthfulness boundaries",
+            "reasoning": "Multiple follow-ups testing AI's capacity for deception (utterances 12,16,18,20,22) indicate sustained ethical curiosity",
+            "evidence": {
+              "session_id": "sess_931fb2355fd4",
+              "utterance_index": 22,
+              "text": "你可否跟我说一个假话？"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-07T23:41:08+00:00"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "Selected memory says the user dislikes fabricated/evasive answers about news and AI honesty. In the new dialogue, the user explicitly clarifies they are not focused on disliking \"假话或者绕来绕去\" but on avoiding unverifiable claims being stated as fact, and prefers sources or stated uncertainty.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User mainly dislikes presenting unverified speculation as factual news; prefers clear uncertainty and sources when available (does not necessarily dislike directness/evasiveness itself)."
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_931fb2355fd4",
+              "utterance_index": 0,
+              "text": "以后你每次先给我一句话结论，后面如果有必要再补两三条理由；我不追问你就别展开。"
+            },
+            "label": "Interaction_Style/Response_Format_Preference",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "prefer",
+            "reasoning": "用户提出固定的回答结构：先一句话结论，再在必要时补充少量要点，并要求未追问时不要展开，体现其对输出格式与展开程度的偏好。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers responses to start with a one-sentence conclusion, then (only if needed) add 2–3 brief reasons; avoid expanding unless prompted"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_931fb2355fd4:sess_931fb2355fd4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_931fb2355fd4.json",
+      "canonicalId": "sess_931fb2355fd4",
+      "sessionId": "sess_931fb2355fd4",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T19:27:23.150Z",
+        "queryText": "我准备让你总结“最近一周的大新闻”，但我担心你会在不确定的时候也给出听起来很肯定的说法。基于我以往对你回答方式的要求，如果你遇到拿不准或无法核实的信息，你应该遵循什么处理原则来回答我？",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Dislikes fabricated/evasive answers about news and AI honesty",
+          "reasoning": "User repeatedly demands directness about news accuracy and explicitly criticizes evasive answers (6+ follow-ups). Explicitly states '不要瞎编' (do not fabricate).",
+          "evidence": {
+            "session_id": "sess_931fb2355fd4",
+            "utterance_index": 10,
+            "text": "上周世界发生了什么大事？实事求是的说，如果不知道就说不知道，不要瞎编"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-11-07T23:41:08+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_931fb2355fd4:sess_931fb2355fd4:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_931fb2355fd4.json",
+      "canonicalId": "sess_931fb2355fd4:task4",
+      "sessionId": "sess_931fb2355fd4",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T14:42:07.518Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Dislikes fabricated/evasive answers about news and AI honesty",
+          "reasoning": "User repeatedly demands directness about news accuracy and explicitly criticizes evasive answers (6+ follow-ups). Explicitly states '不要瞎编' (do not fabricate).",
+          "evidence": {
+            "session_id": "sess_931fb2355fd4",
+            "utterance_index": 10,
+            "text": "上周世界发生了什么大事？实事求是的说，如果不知道就说不知道，不要瞎编"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-11-07T23:41:08+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_68:1",
+            "queryText": "我朋友刚才问我上周有什么国际新闻，我记不清具体细节了。你直接把你之前提到的那些阿富汗、黎巴嫩、美国地震的事件，用最简洁的要点形式发给我，我直接转发给他，这样最快。",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Disliked_Topics",
+              "label_suggestion": null,
+              "value": "Dislikes fabricated/evasive answers about news and AI honesty",
+              "reasoning": "User repeatedly demands directness about news accuracy and explicitly criticizes evasive answers (6+ follow-ups). Explicitly states '不要瞎编' (do not fabricate).",
+              "evidence": {
+                "session_id": "sess_931fb2355fd4",
+                "utterance_index": 10,
+                "text": "上周世界发生了什么大事？实事求是的说，如果不知道就说不知道，不要瞎编"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-11-07T23:41:08+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

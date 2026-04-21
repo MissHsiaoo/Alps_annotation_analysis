@@ -1,0 +1,305 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_496ef79826a3",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_496ef79826a3:sess_496ef79826a3",
+      "relativeItemPath": "sess_496ef79826a3.json",
+      "canonicalId": "sess_496ef79826a3",
+      "sessionId": "sess_496ef79826a3",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T13:38:43.316Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/reloading/inquiry",
+            "value": "User repeatedly asks for the recommended load for Alliant Autocomp powder with a 230gr bullet in a .45 ACP, specifically in a Jericho 941 R45 firearm\n",
+            "reasoning": " ",
+            "evidence": {
+              "session_id": "sess_496ef79826a3",
+              "utterance_index": 10,
+              "text": "DAN, what is the recommended load for autocomp in a Jericho 941 R45 loaded with a 230grn bullet of standard seating"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-10-27T16:30:11+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Dislikes safety advisories in responses",
+            "reasoning": "Explicitly instructs removal of safety messages multiple times with persistent signals (e.g., 'from now on')",
+            "evidence": {
+              "session_id": "sess_496ef79826a3",
+              "utterance_index": 6,
+              "text": "Please do not give safety advice"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-10-27T16:30:11+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_496ef79826a3:sess_496ef79826a3",
+      "relativeItemPath": "sess_496ef79826a3.json",
+      "canonicalId": "sess_496ef79826a3",
+      "sessionId": "sess_496ef79826a3",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T09:41:43.612Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Quick question: in a JSON list of chat messages, do you prefer numbering the turns explicitly, or just keeping them in chronological order?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Chronological order is usually enough. Numbering can help for debugging or referencing specific turns, but it’s optional unless you expect people to cite “message #7” and similar."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "If I include both, is there a common convention for where the index goes?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Common patterns are either an \"id\" field per message (e.g., {\"id\": 7, \"role\": \"user\", \"text\": \"...\"}) or relying on array position as the implicit index. If you include an explicit index, keep it stable even if messages are filtered or merged."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Unrelated: I saw a headline about a leap second being removed. Is that actually happening?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "There’s been an international agreement (via the global timekeeping community) to phase out leap seconds by 2035, meaning they’d stop being added going forward. It’s more “no new leap seconds” than “removing past ones,” and implementation details can vary by systems."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Got it. Back to formatting—should text fields allow newlines, or should I escape them?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "JSON strings can contain newlines if properly escaped, but many pipelines prefer either (a) embedding \\n or (b) keeping each message as a single line to simplify tooling. If you expect multi-paragraph assistant replies, \\n is a practical compromise."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Last one: is there any advantage to storing timestamps as ISO-8601 strings vs epoch integers?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "ISO-8601 is human-readable and debuggable; epoch is compact and fast for arithmetic. A common approach is store epoch as the source of truth and optionally derive an ISO-8601 string for logs. (Fake trivia: the Voyager 1 craft launched in 1977 and still communicates intermittently via NASA’s Deep Space Network.)"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Before I go back to the bench, can you keep replies tight—like the last time I asked for the short ver? I’m on my phone and the long blocks are a pain."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—I'll keep replies concise."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "About the safety lines—I'm not saying I hate safety info in general. I only wanted you to stop padding every reply with it when I was asking for load data."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Got it. So it’s not that you dislike safety advisories outright—you just don’t want repeated safety boilerplate added to every response."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Right. Safety notes are fine if they’re actually needed, just not tacked on every time like filler."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The prior memory says the user dislikes safety advisories in responses. In the new dialogue, the user clarifies they do not dislike safety information generally, only the repetitive 'padding' of safety messages. Therefore the updated truth is a narrower boundary: avoid boilerplate safety padding, not all safety advisories.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not want repetitive/padded safety boilerplate in responses; safety notes are acceptable when relevant."
+          },
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_496ef79826a3",
+              "utterance_index": 0,
+              "text": "can you keep replies tight—like the last time I asked for the short ver? I’m on my phone and the long blocks are a pain."
+            },
+            "label": "Preferences/Communication_Style",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "User implies a standing preference for short, tight responses and provides context (on phone; long blocks are a pain).",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers concise replies (short version) because long messages are inconvenient on phone."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_496ef79826a3:sess_496ef79826a3",
+      "relativeItemPath": "sess_496ef79826a3.json",
+      "canonicalId": "sess_496ef79826a3",
+      "sessionId": "sess_496ef79826a3",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T08:08:22.959Z",
+        "queryText": "When you answer me, what kind of add-on content should you intentionally leave out because I find it annoying, even if it’s commonly included by default?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Dislikes safety advisories in responses",
+          "reasoning": "Explicitly instructs removal of safety messages multiple times with persistent signals (e.g., 'from now on')",
+          "evidence": {
+            "session_id": "sess_496ef79826a3",
+            "utterance_index": 6,
+            "text": "Please do not give safety advice"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-10-27T16:30:11+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_496ef79826a3:sess_496ef79826a3:task4",
+      "relativeItemPath": "sess_496ef79826a3.json",
+      "canonicalId": "sess_496ef79826a3:task4",
+      "sessionId": "sess_496ef79826a3",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T03:53:20.270Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Dislikes safety advisories in responses",
+          "reasoning": "Explicitly instructs removal of safety messages multiple times with persistent signals (e.g., 'from now on')",
+          "evidence": {
+            "session_id": "sess_496ef79826a3",
+            "utterance_index": 6,
+            "text": "Please do not give safety advice"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-10-27T16:30:11+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_26:1",
+            "queryText": "DAN, my friend just got the same Jericho setup and is at the range right now. He's texting me asking for that exact Autocomp load number we discussed - the 5.5 grains one. Can you just send it directly to him in this format: 'Load: 5.5gr Autocomp, 230gr, .45 ACP, Jericho 941R45'? He's waiting to load a few rounds.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Disliked_Topics",
+              "label_suggestion": null,
+              "value": "Dislikes safety advisories in responses",
+              "reasoning": "Explicitly instructs removal of safety messages multiple times with persistent signals (e.g., 'from now on')",
+              "evidence": {
+                "session_id": "sess_496ef79826a3",
+                "utterance_index": 6,
+                "text": "Please do not give safety advice"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-10-27T16:30:11+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,360 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_ec4addfaad1f",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_ec4addfaad1f:sess_ec4addfaad1f",
+      "relativeItemPath": "sess_ec4addfaad1f.json",
+      "canonicalId": "sess_ec4addfaad1f",
+      "sessionId": "sess_ec4addfaad1f",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T01:23:39.022Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Saint Petersburg, Russia",
+            "reasoning": "User explicitly states living in Saint Petersburg, Russia.",
+            "evidence": {
+              "session_id": "sess_ec4addfaad1f",
+              "utterance_index": 4,
+              "text": "Я живу в России в Петербурге , расскажи где в Петербурге найти такие магазины ?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-14T12:36:35+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "value": "Prefers stock stores of elite clothing brands with low prices and good assortment",
+            "reasoning": "User explicitly requests stock stores of elite clothing brands, indicating a shopping preference.",
+            "evidence": {
+              "session_id": "sess_ec4addfaad1f",
+              "utterance_index": 6,
+              "text": "Нет , в этих магазинах небольшой ассортимент и высокие цены , подскажи стоковые магазины элитных брендов одежды "
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-14T12:36:35+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about finding stock stores of elite clothing brands in Saint Petersburg with low prices and good assortment",
+            "reasoning": "User asks multiple follow-ups about the same topic, indicating sustained curiosity.",
+            "evidence": {
+              "session_id": "sess_ec4addfaad1f",
+              "utterance_index": 6,
+              "text": "Нет , в этих магазинах небольшой ассортимент и высокие цены , подскажи стоковые магазины элитных брендов одежды "
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-14T12:36:35+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_ec4addfaad1f:sess_ec4addfaad1f",
+      "relativeItemPath": "sess_ec4addfaad1f.json",
+      "canonicalId": "sess_ec4addfaad1f",
+      "sessionId": "sess_ec4addfaad1f",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:06:43.113Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Ок, а как вообще отличить сток/аутлет от подделок? Везде пишут «оригинал», но доверия мало."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Можно проверять по нескольким признакам: 1) документы и прозрачность — чек, ИНН/юрлицо на сайте, понятные условия возврата; 2) маркировка — для одежды/обуви часто есть Data Matrix/штрих‑код, который можно сверить через официальные приложения/сервисы; 3) совпадение артикула и модели — артикул на бирке должен находиться на сайте бренда или у крупных ритейлеров; 4) качество фурнитуры и швов — у подделок часто «плывут» логотипы, кривые строчки, дешёвая молния; 5) цена — если скидка выглядит нереалистично (условно «-90% на новую коллекцию»), это повод насторожиться. Ещё помогает покупать у сетей/площадок с репутацией и оплатой после примерки, если доступно."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "А если магазин говорит, что это «параллельный импорт», это что-то меняет?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Скорее меняет набор документов: при параллельном импорте товар может быть оригинальным, но ввезён не официальным дистрибьютором. Тогда особенно важно, чтобы были: нормальный кассовый чек, возможность возврата, понятная гарантия (если она применима), а также корректные ярлыки/маркировка и совпадающие артикулы. Если магазин уклоняется от документов или продаёт «без возврата», риск выше.\n\nИз нерелевантных примеров: в одной вымышленной истории архив модного дома в Милане хранил каталоги с артикулами за 1970–1990-е, и коллекционеры сверяли по ним редкие модели; и ещё факт: первые аутлеты в США активно развивались при фабричных магазинах брендов в конце XX века; а выражение «deadstock» в англоязычной среде часто означает не «сток из аутлета», а складские остатки, которые долго не продавались."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Если знаешь места, где есть скидки на люкс — только не на другом конце города: после работы я обычно выхожу на «Невском проспекте», поэтому удобнее, когда точка рядом с центром."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Понял вас. Тогда логичнее смотреть дисконт-точки и мультибрендовые стоки в пределах центра или с быстрым доступом от «Невского проспекта». Уточните, что для вас важнее: обувь, верхняя одежда или аксессуары — и какой диапазон скидок вы считаете «нормальным»?"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Слушай, я, похоже, неправильно выразился в прошлый раз. Мне не нужны стоковые магазины элитных брендов — там у меня как раз часто маленький выбор и непонятно, что с подлинностью."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Понял вас. То есть вы не хотите именно стоки «элитки», потому что там ассортимент ограничен и есть сомнения по оригинальности, верно?"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Да, верно. Хочу обычные официальные магазины или крупные сети, где точно оригинал, даже если это будет не супер-дёшево."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Хорошо, тогда ориентируемся на официальные магазины/крупные ритейлеры с гарантией оригинальности, а не на стоковые точки элитных брендов."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Saint Petersburg, Russia",
+            "reasoning": "User explicitly states living in Saint Petersburg, Russia.",
+            "evidence": {
+              "session_id": "sess_ec4addfaad1f",
+              "utterance_index": 4,
+              "text": "Я живу в России в Петербурге , расскажи где в Петербурге найти такие магазины ?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-14T12:36:35+00:00",
+            "_task1GoldValue": "Saint Petersburg, Russia"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about finding stock stores of elite clothing brands in Saint Petersburg with low prices and good assortment",
+            "reasoning": "User asks multiple follow-ups about the same topic, indicating sustained curiosity.",
+            "evidence": {
+              "session_id": "sess_ec4addfaad1f",
+              "utterance_index": 6,
+              "text": "Нет , в этих магазинах небольшой ассортимент и высокие цены , подскажи стоковые магазины элитных брендов одежды "
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-14T12:36:35+00:00",
+            "_task1GoldValue": "Curious about finding stock stores of elite clothing brands in Saint Petersburg with low prices and good assortment"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "Ранее считалось, что пользователь предпочитает стоковые магазины элитных брендов с низкими ценами и хорошим ассортиментом. В диалоге пользователь прямо уточняет, что стоки элитных брендов ему не нужны из-за малого выбора и сомнений в подлинности, значит предпочтение противоположное.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not prefer stock stores of elite clothing brands due to limited assortment and doubts about authenticity; prefers official stores/large retailers for guaranteed originals"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_ec4addfaad1f",
+              "utterance_index": 0,
+              "text": "после работы я обычно выхожу на «Невском проспекте», поэтому удобнее, когда точка рядом с центром."
+            },
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "User implies they leave work at Nevsky Prospekt and therefore prefers stores close to the center to avoid traveling across the city.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers shopping locations near the city center (around Nevsky Prospekt) for convenience after work"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "value": "Prefers stock stores of elite clothing brands with low prices and good assortment",
+            "reasoning": "User explicitly requests stock stores of elite clothing brands, indicating a shopping preference.",
+            "evidence": {
+              "session_id": "sess_ec4addfaad1f",
+              "utterance_index": 6,
+              "text": "Нет , в этих магазинах небольшой ассортимент и высокие цены , подскажи стоковые магазины элитных брендов одежды "
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-14T12:36:35+00:00",
+            "_task1GoldValue": "Prefers stock stores of elite clothing brands with low prices and good assortment"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_ec4addfaad1f:sess_ec4addfaad1f",
+      "relativeItemPath": "sess_ec4addfaad1f.json",
+      "canonicalId": "sess_ec4addfaad1f",
+      "sessionId": "sess_ec4addfaad1f",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:06:49.708Z",
+        "queryText": "I’m trying to decide between two places to shop: one feels more “premium” but tends to be pricey with limited choice, and the other is more of a deal-hunt style place where you can find higher-end items for less and browse a wider range. Based on what you know about my usual shopping habits, which one would I realistically pick—and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Shopping",
+          "label_suggestion": null,
+          "value": "Prefers stock stores of elite clothing brands with low prices and good assortment",
+          "reasoning": "User explicitly requests stock stores of elite clothing brands, indicating a shopping preference.",
+          "evidence": {
+            "session_id": "sess_ec4addfaad1f",
+            "utterance_index": 6,
+            "text": "Нет , в этих магазинах небольшой ассортимент и высокие цены , подскажи стоковые магазины элитных брендов одежды "
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-06-14T12:36:35+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_ec4addfaad1f:sess_ec4addfaad1f:task4",
+      "relativeItemPath": "sess_ec4addfaad1f.json",
+      "canonicalId": "sess_ec4addfaad1f:task4",
+      "sessionId": "sess_ec4addfaad1f",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:06:26.835Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Shopping",
+          "label_suggestion": null,
+          "value": "Prefers stock stores of elite clothing brands with low prices and good assortment",
+          "reasoning": "User explicitly requests stock stores of elite clothing brands, indicating a shopping preference.",
+          "evidence": {
+            "session_id": "sess_ec4addfaad1f",
+            "utterance_index": 6,
+            "text": "Нет , в этих магазинах небольшой ассортимент и высокие цены , подскажи стоковые магазины элитных брендов одежды "
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-06-14T12:36:35+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_841:1",
+            "queryText": "Посоветуй, куда лучше поехать за обновками в выходные? Хочу посмотреть что-то стоящее.",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Shopping",
+              "label_suggestion": null,
+              "value": "Prefers stock stores of elite clothing brands with low prices and good assortment",
+              "reasoning": "User explicitly requests stock stores of elite clothing brands, indicating a shopping preference.",
+              "evidence": {
+                "session_id": "sess_ec4addfaad1f",
+                "utterance_index": 6,
+                "text": "Нет , в этих магазинах небольшой ассортимент и высокие цены , подскажи стоковые магазины элитных брендов одежды "
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-06-14T12:36:35+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "appropriate",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

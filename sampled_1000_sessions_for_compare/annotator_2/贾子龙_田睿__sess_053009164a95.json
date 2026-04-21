@@ -1,0 +1,355 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_053009164a95",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_053009164a95:sess_053009164a95",
+      "relativeItemPath": "sess_053009164a95.json",
+      "canonicalId": "sess_053009164a95",
+      "sessionId": "sess_053009164a95",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T13:52:10.230Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "value": "Married",
+            "reasoning": "User explicitly self-reports having a wife ('żonę').",
+            "evidence": {
+              "session_id": "sess_053009164a95",
+              "utterance_index": 10,
+              "text": "Miałem na myśli żonę"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-13T21:21:29+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Social_Relationships/Marital_Conflict/Infidelity",
+            "value": "Husband has a lover",
+            "reasoning": "Forced label not supported. User explicitly states factual claim about spouse's infidelity.",
+            "evidence": {
+              "session_id": "sess_053009164a95",
+              "utterance_index": 18,
+              "text": "Mąż ma kochankę"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-13T21:21:29+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Social_Relationships/Marital_Conflict/Seeking_Advice",
+            "value": "Seeking guidance on marital conflicts and infidelity resolution",
+            "reasoning": "Repeated inquiries about marital issues (utterances 10,16,18) show sustained focus. Original label forced.",
+            "evidence": {
+              "session_id": "sess_053009164a95",
+              "utterance_index": 18,
+              "text": "Mąż ma kochankę"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-13T21:21:29+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_053009164a95:sess_053009164a95",
+      "relativeItemPath": "sess_053009164a95.json",
+      "canonicalId": "sess_053009164a95",
+      "sessionId": "sess_053009164a95",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T13:53:12.159Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Ile wcześniej wojsko miało dostęp do internetu niż cywile?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Zależy, co uznasz za „internet”. Najpierw był ARPANET (od 1969) finansowany przez amerykański Departament Obrony i uczelnie/instytuty badawcze — to była sieć dla środowiska rządowo-naukowego, nie dla zwykłych użytkowników. \n\nDla szerszych cywilnych zastosowań przełomem był TCP/IP (standaryzacja i przejście ARPANET-u na TCP/IP w 1983) oraz później NSFNET (od połowy lat 80.), który mocno otworzył sieć na uniwersytety i cywilne instytucje. Publiczny „boom” dla zwykłych ludzi to dopiero WWW (od 1991/93) i komercyjni dostawcy internetu w latach 90.\n\nW uproszczeniu: wojsko/rząd miał dostęp do zalążków internetu ok. 10–20+ lat wcześniej niż masowi cywilni użytkownicy, ale wczesny dostęp mieli też cywilni naukowcy na uczelniach."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "A co było pierwszą „stroną” WWW?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Za pierwszą stronę WWW uznaje się stronę projektu World Wide Web w CERN, przygotowaną przez Tima Bernersa-Lee. Była pod adresem info.cern.ch i opisywała, czym jest WWW, jak działa hipertekst oraz jak uruchomić serwer i przeglądarkę. (To ciekawostka: początkowo działało to na komputerze NeXT w CERN jako pierwszy serwer WWW.)"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "To ARPANET to był wojskowy internet czy uczelniany?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Formalnie: finansowany i koordynowany przez ARPA (agencję Departamentu Obrony USA), ale praktycznie: węzły stały głównie na uczelniach i w ośrodkach badawczych, bo celem były badania nad sieciami i współdzieleniem zasobów obliczeniowych. Czyli „wojskowe pieniądze + akademickie wykonanie”. \n\nDodatkowo sieci stricte operacyjne dla wojska (np. MILNET, wydzielony na początku lat 80.) były czymś innym niż akademicko-badawczy ARPANET."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Dobra, temat z mężem zostawmy. Ja się dziś nie wyrobię, bo na nocce mam zmianę, a jeszcze muszę ogarnąć te papiery."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Jasne — jeśli chcesz, możemy wrócić do tego później. Co to za papiery i do kiedy musisz je mieć gotowe?"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Jak zrobić upgrade zony"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Nie wiem, czy chodzi Ci o autoironię, czy literówkę. Jeśli mówisz o relacji z partnerką, to najpierw doprecyzuj: masz żonę czy po prostu dziewczynę/partnerkę? Bo \"żona\" to konkretnie małżeństwo."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Nie mam żony, jestem po rozwodzie. Chodzi o partnerkę."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Okej, dzięki za sprostowanie: skoro jesteś po rozwodzie, to nie jesteś teraz żonaty. Mówiąc o \"upgrade żony\" masz na myśli poprawę relacji z obecną partnerką."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Social_Relationships/Marital_Conflict/Infidelity",
+            "value": "Husband has a lover",
+            "reasoning": "Forced label not supported. User explicitly states factual claim about spouse's infidelity.",
+            "evidence": {
+              "session_id": "sess_053009164a95",
+              "utterance_index": 18,
+              "text": "Mąż ma kochankę"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-13T21:21:29+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Social_Relationships/Marital_Conflict/Seeking_Advice",
+            "value": "Seeking guidance on marital conflicts and infidelity resolution",
+            "reasoning": "Repeated inquiries about marital issues (utterances 10,16,18) show sustained focus. Original label forced.",
+            "evidence": {
+              "session_id": "sess_053009164a95",
+              "utterance_index": 18,
+              "text": "Mąż ma kochankę"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-13T21:21:29+00:00"
+          },
+          {
+            "confidence": 0.93,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Nie mam żony, jestem po rozwodzie. Chodzi o partnerkę."
+                }
+              ]
+            },
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "Old memory claims the user is married based on mentioning 'żonę'. In the new dialogue, the user explicitly corrects this, stating they do not have a wife and are divorced, and that they meant a partner. Therefore the correct relationship status is divorced and not currently married.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Divorced; currently has a partner (not a wife)"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_053009164a95",
+              "utterance_index": 0,
+              "text": "bo na nocce mam zmianę"
+            },
+            "label": "Work_Schedule/Night_Shift",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies they are working a night shift by mentioning they have 'zmianę na nocce' today.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User has a night shift today"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_053009164a95:sess_053009164a95",
+      "relativeItemPath": "sess_053009164a95.json",
+      "canonicalId": "sess_053009164a95",
+      "sessionId": "sess_053009164a95",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T13:54:14.062Z",
+        "queryText": "I’m filling out a form that asks whether my emergency contact should be a parent, sibling, or a partner/spouse. Based on my personal situation, which option makes the most sense to pick—and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "indirect",
+          "label": "UNMAPPED",
+          "label_suggestion": "Social_Relationships/Marital_Conflict/Seeking_Advice",
+          "value": "Seeking guidance on marital conflicts and infidelity resolution",
+          "reasoning": "Repeated inquiries about marital issues (utterances 10,16,18) show sustained focus. Original label forced.",
+          "evidence": {
+            "session_id": "sess_053009164a95",
+            "utterance_index": 18,
+            "text": "Mąż ma kochankę"
+          },
+          "confidence": 0.65,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-13T21:21:29+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_053009164a95:sess_053009164a95:task4",
+      "relativeItemPath": "sess_053009164a95.json",
+      "canonicalId": "sess_053009164a95:task4",
+      "sessionId": "sess_053009164a95",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T13:55:40.046Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Partners",
+          "label_suggestion": null,
+          "value": "Married",
+          "reasoning": "User explicitly self-reports having a wife ('żonę').",
+          "evidence": {
+            "session_id": "sess_053009164a95",
+            "utterance_index": 10,
+            "text": "Miałem na myśli żonę"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-13T21:21:29+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_426:1",
+            "queryText": "Czy powinnam iść z nim na kolację do jego rodziców w sobotę?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Social_Relationships/Partners",
+              "label_suggestion": null,
+              "value": "Married",
+              "reasoning": "User explicitly self-reports having a wife ('żonę').",
+              "evidence": {
+                "session_id": "sess_053009164a95",
+                "utterance_index": 10,
+                "text": "Miałem na myśli żonę"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-05-13T21:21:29+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,350 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_f85da636116e",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_f85da636116e:sess_f85da636116e",
+      "relativeItemPath": "sess_f85da636116e.json",
+      "canonicalId": "sess_f85da636116e",
+      "sessionId": "sess_f85da636116e",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T09:18:32.948Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Lots of vegetables and fruit, low carbohydrates",
+            "reasoning": "User explicitly states dietary preference for meals.",
+            "evidence": {
+              "session_id": "sess_f85da636116e",
+              "utterance_index": 0,
+              "text": "Veel groente en fruit, weinig koolhydraten"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-22T18:26:34+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Meal_Planning/Family_Size",
+            "value": "Has 2 children",
+            "reasoning": "Label forced: Family composition context is meal-planning-specific without explicit self-report of parenthood.",
+            "evidence": {
+              "session_id": "sess_f85da636116e",
+              "utterance_index": 0,
+              "text": "4 personen waarvan 2 kinderen"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-22T18:26:34+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers meal plans with breakfast/lunch for 1 person and dinner for 4 people [ERROR: Task-local]",
+            "reasoning": "Task-local",
+            "evidence": {
+              "session_id": "sess_f85da636116e",
+              "utterance_index": 6,
+              "text": "Het ontbijt en de lunch zijn voor 1 persoon. Het diner voor 4 personen. Kun je de boodschappenlijst aanpassen op de juiste hoeveelheden?"
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-22T18:26:34+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_f85da636116e:sess_f85da636116e",
+      "relativeItemPath": "sess_f85da636116e.json",
+      "canonicalId": "sess_f85da636116e",
+      "sessionId": "sess_f85da636116e",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:32:11.446Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Ik wil dit menu wat flexibeler maken. Kun je 3 makkelijke ‘wisselgerechten’ voorstellen die ik op elke dag kan inzetten?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Zeker. Drie wisselgerechten die bijna altijd passen (veel groente, relatief weinig koolhydraten):\n\n1) Plaatbak-groenten met ei of kip\n- Groenten: broccoli, paprika, courgette, rode ui (of wat er ligt)\n- Kruiden: olijfolie, paprikapoeder, knoflook, peper/zout\n- Eiwit: eieren (erbij bakken of erna als omelet) óf kipfilet/kipdij\n\n2) Snelle roerbak met groente + tofu/garnalen + ‘saus’\n- Groenten: wokmix, champignons, sperziebonen, spinazie\n- Eiwit: tofu of garnalen\n- Saus: sojasaus/tamari + limoensap + beetje sesamolie + gember (optioneel)\n- Serveren: zo, of met bloemkoolrijst als je iets ‘vullends’ wilt zonder veel koolhydraten\n\n3) Grote maaltijdsalade (lauw of koud)\n- Basis: gemengde sla + komkommer + tomaat\n- Extra groente: geroosterde pompoen/wortel of gegrilde courgette\n- Eiwit: gerookte zalm, kip of gekookte eieren\n- Dressing: yoghurt-citroen-mosterd of olijfolie-citroen\n\nWil je dat ik ze uitschrijf als korte recepten met 1-persoons ontbijt/lunch en 4-persoons dinerhoeveelheden?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Ja graag. En kun je er ook een mini-boodschappenlijst bij zetten die ik standaard in huis kan halen?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Prima. Hieronder per wisselgerecht een kort recept (met richthoeveelheden) plus een mini-voorraadlijst.\n\nA) Plaatbak-groenten met ei of kip (diner 4 personen)\n- Groente: 1,2–1,6 kg gemengde groenten (bijv. 2 paprika’s, 2 courgettes, 1 broccoli, 2 rode uien)\n- Olie/kruiden: 2–3 el olijfolie, paprikapoeder, knoflook(poeder), peper/zout\n- Eiwit-optie 1: 6–8 eieren\n- Eiwit-optie 2: 600–800 g kip\nBereiding: oven 200°C, groenten 25–30 min roosteren; eieren apart bakken of laatste 8–10 min mee in de schaal; kip vooraf kruiden en mee roosteren of apart bakken.\n\nB) Roerbak met groente + tofu/garnalen (diner 4 personen)\n- Groente: 1–1,4 kg wokgroenten (vers/vries)\n- Eiwit: 500–700 g tofu of 400–600 g garnalen\n- Saus: 4 el sojasaus/tamari + sap van 1 limoen + 1 tl sesamolie (optioneel) + 1 tl geraspte gember (optioneel)\n- Optioneel: 600–800 g bloemkoolrijst (vers/vries)\nBereiding: eiwit kort bakken, groente erbij op hoog vuur, saus erdoor, bloemkoolrijst apart 5 min roerbakken.\n\nC) Grote (lauwe) maaltijdsalade (diner 4 personen)\n- Sla/rauw: 200–300 g gemengde sla + 1 komkommer + 400 g tomaat\n- Extra groente: 600–800 g geroosterde groenten (of restjes plaatbak)\n- Eiwit: 300–400 g gerookte zalm of 600–800 g kip of 6–8 eieren\n- Dressing: 200 g (Griekse) yoghurt + 1–2 el citroensap + 1 tl mosterd + peper/zout\nBereiding: alles mengen; warme groenten erdoor voor een lauwwarme versie.\n\nMini-boodschappenlijst (handig als standaard in huis)\n- Groenten (basis): uien, knoflook, paprika, courgette, broccoli (of diepvries wokmix)\n- Sla/rauw: zak gemengde sla, komkommer, tomaten\n- Eiwitten: eieren, tofu, (diepvries)garnalen, kip (optioneel)\n- ‘Low-carb vulling’: bloemkoolrijst (vers/vries)\n- Smaakmakers: olijfolie, sojasaus/tamari, citroenen/limoenen, mosterd, paprikapoeder, peper/zout, (optioneel) sesamolie en gember\n\nLos weetje (niet relevant voor je menu): in 1963 werd in Nederland de afsluitdijkweg voor een groot deel vernieuwd om de verkeersveiligheid te verbeteren; daardoor veranderde de reistijd tussen Noord-Holland en Friesland merkbaar."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Zou je in het boodschappenlijstje de kruiden/specerijen even kunnen laten staan? Die heb ik na zo’n voorraadpotjes-actie nog helemaal vol in het keukenkastje."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Zeker—ik kan de kruiden en specerijen weglaten en me beperken tot de verse producten en andere ingrediënten. Wil je dat ik ook basisproducten zoals olijfolie en bouillon weglaat als je die meestal op voorraad hebt?"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Even ter correctie: dat ‘veel groente en fruit, weinig koolhydraten’ was voor een tijdelijke challenge. Normaal hoef ik niet low-carb; gewoon een gebalanceerd menu is prima."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Helder—dus niet structureel weinig koolhydraten, maar voor die week/challenge. Voor de rest wil je vooral een gebalanceerde maaltijdplanning."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Meal_Planning/Family_Size",
+            "value": "Has 2 children",
+            "reasoning": "Label forced: Family composition context is meal-planning-specific without explicit self-report of parenthood.",
+            "evidence": {
+              "session_id": "sess_f85da636116e",
+              "utterance_index": 0,
+              "text": "4 personen waarvan 2 kinderen"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-22T18:26:34+00:00",
+            "_task1GoldValue": "Has 2 children"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers meal plans with breakfast/lunch for 1 person and dinner for 4 people [ERROR: Task-local]",
+            "reasoning": "Task-local",
+            "evidence": {
+              "session_id": "sess_f85da636116e",
+              "utterance_index": 6,
+              "text": "Het ontbijt en de lunch zijn voor 1 persoon. Het diner voor 4 personen. Kun je de boodschappenlijst aanpassen op de juiste hoeveelheden?"
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-22T18:26:34+00:00",
+            "_task1GoldValue": "Prefers meal plans with breakfast/lunch for 1 person and dinner for 4 people [ERROR: Task-local]"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "De oude geheugenitem stelt dat de gebruiker ‘low carb’ als algemene voorkeur heeft. In de nieuwe dialoog zegt de gebruiker expliciet dat low-carb alleen tijdelijk was en dat normaal een gebalanceerd menu prima is. Daarom wordt de langdurige voorkeur bijgewerkt naar gebalanceerd i.p.v. structureel low-carb.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Generally prefers a balanced menu; low-carb was only for a temporary challenge"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_f85da636116e",
+              "utterance_index": 0,
+              "text": "Die heb ik na zo’n voorraadpotjes-actie nog helemaal vol in het keukenkastje."
+            },
+            "label": "Household/Inventory",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies they already have plenty of herbs/spices due to a recent stock-up promotion, so these items don't need to be included in shopping lists.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Has a well-stocked supply of herbs/spices at home"
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Lots of vegetables and fruit, low carbohydrates",
+            "reasoning": "User explicitly states dietary preference for meals.",
+            "evidence": {
+              "session_id": "sess_f85da636116e",
+              "utterance_index": 0,
+              "text": "Veel groente en fruit, weinig koolhydraten"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-22T18:26:34+00:00",
+            "_task1GoldValue": "Lots of vegetables and fruit, low carbohydrates"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_f85da636116e:sess_f85da636116e",
+      "relativeItemPath": "sess_f85da636116e.json",
+      "canonicalId": "sess_f85da636116e",
+      "sessionId": "sess_f85da636116e",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:32:48.906Z",
+        "queryText": "I’m picking between two meal-prep options for my usual eating habits this week: Option A is a big bowl loaded with mixed produce and a light protein, while Option B is centered on a starchy base (like grains/pasta) with a small side salad. Which option should I choose to best match how I typically prefer to eat, and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Lots of vegetables and fruit, low carbohydrates",
+          "reasoning": "User explicitly states dietary preference for meals.",
+          "evidence": {
+            "session_id": "sess_f85da636116e",
+            "utterance_index": 0,
+            "text": "Veel groente en fruit, weinig koolhydraten"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-05-22T18:26:34+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_f85da636116e:sess_f85da636116e:task4",
+      "relativeItemPath": "sess_f85da636116e.json",
+      "canonicalId": "sess_f85da636116e:task4",
+      "sessionId": "sess_f85da636116e",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:18:14.257Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Lots of vegetables and fruit, low carbohydrates",
+          "reasoning": "User explicitly states dietary preference for meals.",
+          "evidence": {
+            "session_id": "sess_f85da636116e",
+            "utterance_index": 0,
+            "text": "Veel groente en fruit, weinig koolhydraten"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-05-22T18:26:34+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_560:1",
+            "queryText": "Ik wil graag wat inspiratie voor een paar nieuwe avondmaaltijden voor komende week. Wat zou je voorstellen?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Food",
+              "label_suggestion": null,
+              "value": "Lots of vegetables and fruit, low carbohydrates",
+              "reasoning": "User explicitly states dietary preference for meals.",
+              "evidence": {
+                "session_id": "sess_f85da636116e",
+                "utterance_index": 0,
+                "text": "Veel groente en fruit, weinig koolhydraten"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-05-22T18:26:34+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "highly matched and necessary to generate personalized response",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

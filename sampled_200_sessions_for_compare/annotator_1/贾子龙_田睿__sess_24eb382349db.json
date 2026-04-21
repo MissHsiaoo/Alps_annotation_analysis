@@ -1,0 +1,458 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_24eb382349db",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_24eb382349db:sess_24eb382349db",
+      "relativeItemPath": "sess_24eb382349db.json",
+      "canonicalId": "sess_24eb382349db",
+      "sessionId": "sess_24eb382349db",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T13:38:26.745Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Received All-Ireland Scholarship in 2017",
+            "reasoning": "User explicitly states receiving the All-Ireland Scholarship for academic achievement.",
+            "evidence": {
+              "session_id": "sess_24eb382349db",
+              "utterance_index": 8,
+              "text": "I recevied the All-Ireland Scholarship in 2017 for my Leaving Certificate grades placing top 100 in the country"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-22T23:24:34+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Holds a Bachelor's degree in Physiology from Trinity College Dublin",
+            "reasoning": "User's CV explicitly lists their educational background.",
+            "evidence": {
+              "session_id": "sess_24eb382349db",
+              "utterance_index": 4,
+              "text": "Graduate\n\nProfile\nVersatile and determined graduate in Physiology from Trinity College Dublin"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-22T23:24:34+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Resides in Dublin, Ireland",
+            "reasoning": "User's CV lists a Dublin address, and multiple roles are location-specific.",
+            "evidence": {
+              "session_id": "sess_24eb382349db",
+              "utterance_index": 4,
+              "text": "Address\n3 De Burgh Road\nDublin, D07T0X9"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-22T23:24:34+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Personal_Background/Interests",
+            "value": "Deep interest in meditation and personal development practices",
+            "reasoning": "User's meditation practice is a personal habit, not curiosity. Label 'Thoughts/Curiosity' was forced.",
+            "evidence": {
+              "session_id": "sess_24eb382349db",
+              "utterance_index": 6,
+              "text": "I have done 1000s of hours of meditation, read 100s of books gone to spiritual and meditation retreats"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-22T23:24:34+00:00"
+          },
+          {
+            "memory_id": "m5",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Job_Targets",
+            "value": "Primarily targets marketing, sales, and business development roles",
+            "reasoning": "User explicitly states focus on these industries. Original label was forced (UNMAPPED).",
+            "evidence": {
+              "session_id": "sess_24eb382349db",
+              "utterance_index": 0,
+              "text": "applying a lot for marketing, sales business development jobs in major companies"
+            },
+            "confidence": 0.95,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-11-22T23:24:34+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_24eb382349db:sess_24eb382349db",
+      "relativeItemPath": "sess_24eb382349db.json",
+      "canonicalId": "sess_24eb382349db",
+      "sessionId": "sess_24eb382349db",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T13:39:05.724Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Quick question: if someone submits a CV as a PDF, does ATS always mess it up, or is that outdated advice?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "It’s not “always,” but it’s still a real risk. Modern ATS can usually parse clean PDFs fine, but older systems—and some employer-specific portals—can misread columns, headers/footers, icons, or text embedded in shapes. A simple .docx is typically the safest default unless the posting explicitly requests PDF.\n\nIf someone wants to use PDF, the most reliable approach is: single-column layout, standard headings (Experience, Education, Skills), no tables/text boxes, no graphics, and copy/paste-test the content into a plain text editor to see if it stays readable."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Makes sense. Also: is it true recruiters only look at a CV for like 6 seconds?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "That “6 seconds” figure comes from eye-tracking studies of initial resume scans—so it’s directionally true for the first pass. It doesn’t mean they decide everything in 6 seconds; it means your top third needs to communicate role fit fast (target title/summary + most relevant experience + core skills).\n\nA practical way to design for that scan: strong section headings, consistent job title/date formatting, and bullets that start with outcomes (e.g., improved, increased, reduced) rather than internal task phrasing."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Got it. Random aside: I saw a story about a company using AI to screen interviews—does that actually happen?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "It does, in some places. There are tools that analyze recorded video interviews for things like speech patterns, keywords, or structured scoring rubrics. That said, the use of fully automated “AI judging personality” has been controversial, and some vendors have scaled back claims due to bias concerns and regulation pressure.\n\nFake-but-relevant example (not advice): a hypothetical retailer might use automated scoring to shortlist candidates for high-volume roles, then a human recruiter reviews the shortlist before any hiring decision."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Last one: if you had to pick one font for a CV, what’s the safest?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Calibri, Arial, or Times New Roman are the safest for both ATS parsing and cross-device rendering. If choosing one: Calibri (11) is a common modern default, readable on screens, and rarely breaks formatting when uploaded to portals."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Quick check before I start firing off applications: I’ve swapped my old Canva-style CV (the one with the photo) for the plain Word version with bold headings, and I’m just going to keep it that way going forward."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "That’s a solid move for ATS and for fast tailoring—plain Word + bold, consistent headings is usually the safest default. If you keep the structure identical and just tweak the objective, a few bullets, and the skills/keywords per role, you’ll be able to apply quickly without breaking formatting."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Quick correction before you save anything: I’m actually based in London now. The Dublin address on the CV was my old address (and I was applying there before), but I’ve relocated."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it — thanks for clarifying. Since you’ve relocated, we should treat London as your current location, and only keep the Dublin address if you still want it shown for a specific reason. Your note makes it clear the Dublin address was an older one."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Received All-Ireland Scholarship in 2017",
+            "reasoning": "User explicitly states receiving the All-Ireland Scholarship for academic achievement.",
+            "evidence": {
+              "session_id": "sess_24eb382349db",
+              "utterance_index": 8,
+              "text": "I recevied the All-Ireland Scholarship in 2017 for my Leaving Certificate grades placing top 100 in the country"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-22T23:24:34+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Holds a Bachelor's degree in Physiology from Trinity College Dublin",
+            "reasoning": "User's CV explicitly lists their educational background.",
+            "evidence": {
+              "session_id": "sess_24eb382349db",
+              "utterance_index": 4,
+              "text": "Graduate\n\nProfile\nVersatile and determined graduate in Physiology from Trinity College Dublin"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-22T23:24:34+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Personal_Background/Interests",
+            "value": "Deep interest in meditation and personal development practices",
+            "reasoning": "User's meditation practice is a personal habit, not curiosity. Label 'Thoughts/Curiosity' was forced.",
+            "evidence": {
+              "session_id": "sess_24eb382349db",
+              "utterance_index": 6,
+              "text": "I have done 1000s of hours of meditation, read 100s of books gone to spiritual and meditation retreats"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-22T23:24:34+00:00"
+          },
+          {
+            "memory_id": "m5",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Job_Targets",
+            "value": "Primarily targets marketing, sales, and business development roles",
+            "reasoning": "User explicitly states focus on these industries. Original label was forced (UNMAPPED).",
+            "evidence": {
+              "session_id": "sess_24eb382349db",
+              "utterance_index": 0,
+              "text": "applying a lot for marketing, sales business development jobs in major companies"
+            },
+            "confidence": 0.95,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-11-22T23:24:34+00:00"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Quick correction before you save anything: I’m actually based in London now. The Dublin address on the CV was my old address (and I was applying there before), but I’ve relocated."
+                }
+              ]
+            },
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory said the user resides in Dublin based on the CV address, but the user explicitly corrected that they have relocated and are now based in London, making Dublin an old address rather than current residence.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Resides in London, UK"
+          },
+          {
+            "confidence": 0.88,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_24eb382349db",
+              "utterance_index": 0,
+              "text": "I’ve swapped my old Canva-style CV (the one with the photo) for the plain Word version with bold headings, and I’m just going to keep it that way going forward."
+            },
+            "label": "Preferences/Resume_Formatting",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User indicates a stable preference/standard approach for CV submissions: plain Word format with bold headings, moving away from a Canva template with a photo.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers using a plain Word CV with bold headings (instead of a Canva-style template with a photo) going forward."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_24eb382349db:sess_24eb382349db",
+      "relativeItemPath": "sess_24eb382349db.json",
+      "canonicalId": "sess_24eb382349db",
+      "sessionId": "sess_24eb382349db",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T13:39:17.420Z",
+        "queryText": "If a remote teammate proposes a recurring meeting at their 9:00 AM, what time would that land for me locally, and what time-zone mismatch should I point out when coordinating?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Personal_Background/Location",
+          "label_suggestion": null,
+          "value": "Resides in Dublin, Ireland",
+          "reasoning": "User's CV lists a Dublin address, and multiple roles are location-specific.",
+          "evidence": {
+            "session_id": "sess_24eb382349db",
+            "utterance_index": 4,
+            "text": "Address\n3 De Burgh Road\nDublin, D07T0X9"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-11-22T23:24:34+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_24eb382349db:sess_24eb382349db:task4",
+      "relativeItemPath": "sess_24eb382349db.json",
+      "canonicalId": "sess_24eb382349db:task4",
+      "sessionId": "sess_24eb382349db",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T13:39:31.172Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Personal_Background/Location",
+          "label_suggestion": null,
+          "value": "Resides in Dublin, Ireland",
+          "reasoning": "User's CV lists a Dublin address, and multiple roles are location-specific.",
+          "evidence": {
+            "session_id": "sess_24eb382349db",
+            "utterance_index": 4,
+            "text": "Address\n3 De Burgh Road\nDublin, D07T0X9"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-11-22T23:24:34+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_174:1",
+            "queryText": "I'm thinking of applying for a graduate program at a tech company here in Dublin that's looking for people with digital marketing skills. The role mentions they want someone who can handle social media campaigns and e-commerce stuff. Given my background, what specific parts of my experience should I really highlight to make sure I stand out?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Personal_Background/Location",
+              "label_suggestion": null,
+              "value": "Resides in Dublin, Ireland",
+              "reasoning": "User's CV lists a Dublin address, and multiple roles are location-specific.",
+              "evidence": {
+                "session_id": "sess_24eb382349db",
+                "utterance_index": 4,
+                "text": "Address\n3 De Burgh Road\nDublin, D07T0X9"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-11-22T23:24:34+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          },
+          {
+            "queryId": "ability1_30:1",
+            "queryText": "I'm drafting a cover letter for a medical device sales role at Medtronic, and they're asking about my academic background's relevance to understanding clinical applications. How can I frame my physiology degree in a way that connects to sales strategy without sounding too technical?",
+            "ability": "ability1",
+            "task4RecordIndex": 1,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Personal_Background/Education",
+              "label_suggestion": null,
+              "value": "Holds a Bachelor's degree in Physiology from Trinity College Dublin",
+              "reasoning": "User's CV explicitly lists their educational background.",
+              "evidence": {
+                "session_id": "sess_24eb382349db",
+                "utterance_index": 4,
+                "text": "Graduate\n\nProfile\nVersatile and determined graduate in Physiology from Trinity College Dublin"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-11-22T23:24:34+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

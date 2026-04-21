@@ -1,0 +1,548 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_f9fbe0efead9",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_f9fbe0efead9:sess_f9fbe0efead9",
+      "relativeItemPath": "sess_f9fbe0efead9.json",
+      "canonicalId": "sess_f9fbe0efead9",
+      "sessionId": "sess_f9fbe0efead9",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:41:28.415Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Travel_Mode",
+            "label_suggestion": null,
+            "value": "Dislikes long travel times",
+            "reasoning": "User explicitly states not wanting long commutes.",
+            "evidence": {
+              "session_id": "sess_f9fbe0efead9",
+              "utterance_index": 2,
+              "text": "我不希望坐车的时间很长"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-16T14:42:22+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Dislikes scenic areas",
+            "reasoning": "User explicitly states preference to avoid scenic spots.",
+            "evidence": {
+              "session_id": "sess_f9fbe0efead9",
+              "utterance_index": 4,
+              "text": "能帮我重新安排一下吗，我希望玩的有趣点，不想看那么多风景区"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-16T14:42:22+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers visiting Confucius Temple at night for夜景 (night view)",
+            "reasoning": "User emphasizes interest in night views at Confucius Temple.",
+            "evidence": {
+              "session_id": "sess_f9fbe0efead9",
+              "utterance_index": 8,
+              "text": "夫子庙不是晚上灯会好看吗？"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-16T14:42:22+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Attraction_Dislikes",
+            "value": "Dislikes museums and schools",
+            "reasoning": "User explicitly states dislike for museums and schools as attractions.",
+            "evidence": {
+              "session_id": "sess_f9fbe0efead9",
+              "utterance_index": 12,
+              "text": "我不太喜欢博物馆和学校，换一个"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-16T14:42:22+00:00"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Planning/Itinerary_Adjustments",
+            "value": "Sustained interest in optimizing Nanjing trip plans with specific activity preferences",
+            "reasoning": "User iteratively adjusts itinerary 4+ times, focusing on avoiding disliked attractions and prioritizing夜间夫子庙/entertainment.",
+            "evidence": {
+              "session_id": "sess_f9fbe0efead9",
+              "utterance_index": 14,
+              "text": "加上音乐台，和动物园重新调整"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-16T14:42:22+00:00"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "value": "Wants to include music stage and zoo in activities",
+            "confidence": 0.8,
+            "evidence_text": "加上音乐台，和动物园重新调整"
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p1",
+            "type": "direct",
+            "label": "Social_Relationships/Partners",
+            "value": "用户有男朋友，并经常一起出行旅游",
+            "confidence": 0.95,
+            "evidence_text": "我和男朋友买了一张上午10点31分到达南京的车票"
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p2",
+            "type": "indirect",
+            "label": "Personal_Background/Location",
+            "value": "用户可能居住在马鞍山或其附近",
+            "confidence": 0.8,
+            "evidence_text": "10点08到10点31的高铁从马鞍山到南京"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_f9fbe0efead9:sess_f9fbe0efead9",
+      "relativeItemPath": "sess_f9fbe0efead9.json",
+      "canonicalId": "sess_f9fbe0efead9",
+      "sessionId": "sess_f9fbe0efead9",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T08:50:02.957Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我突然有个疑问：做一份一日游行程，最容易踩坑的点一般是什么？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "常见踩坑主要有四类：1）把景点排得太满，忽略排队/步行/安检时间；2）跨区频繁移动，通勤时间被低估；3）餐厅不做备选，饭点排队导致后面全延误；4）忽略闭馆/末班车/入园截止时间。通常做法是给每段移动留冗余（15–30分钟），并准备“可删减模块”（比如一个备选点或一段自由活动）。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "如果我想要“轻松但不无聊”，你会用什么结构去安排？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "可以用“三段式+一条主线”：\n- 上午：1个主打体验点（互动/展演/游乐项目之一），控制在2小时内。\n- 中午：就近吃饭+短休（把午餐安排在两段之间的交通枢纽附近）。\n- 下午：1个次主打点+1段可选散步/逛街（把“可选”写清楚：想赶时间就跳过）。\n- 晚上：固定收尾（夜景/演出/夜市），并反推返程时间。\n这样既有亮点，也不会一直在赶路。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "能不能给一个完全虚构的示例（不需要真实城市），我想看模板长什么样。"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "可以。示例（虚构城市“海岚市”）：\n- 10:00 抵达中央站→步行10分钟到“云塔互动馆”（10:20–12:00）\n- 12:10–13:10 中央站商圈午餐（两家备选：面馆/简餐）\n- 13:30 地铁2站到“河湾动物园”（14:00–16:30，主打看两场喂食秀）\n- 16:40 打车15分钟到“旧码头街区”咖啡休息（17:00–17:40，可跳过）\n- 18:00–19:30 “星港音乐台”日落场（提前15分钟入场）\n- 19:45 返回中央站，预留安检排队时间\n假信息点（与任何人无关）：云塔互动馆每周一闭馆；河湾动物园15:30有一场海狮训练展示；星港音乐台周末加开20:30夜场。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "这个模板里，你建议我优先看哪些字段？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "优先看：1）每个点的“停留时长”；2）点与点之间的“移动方式+预计耗时”；3）“硬截止时间”（闭馆/入园截止/开演时间/返程检票）；4）可选项的删减规则（跳过后怎么接回主线）。只要这四项清晰，行程就比较稳。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "音樂台和动物园如果要都塞进来，我们就尽量都用地铁串起来吧；我有点怕临时排队买票耽误时间，最好能提前把票搞定。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "可以，我会按“地铁优先、少换乘”的思路把两处点位串联，并把需要预约/购票的环节放在出发前完成，现场只做安检和入园；再给你留出一段机动时间，避免因为排队影响晚上去夫子庙看夜景。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "我前面说“不希望坐车时间很长”是怕你给我排跨很远的景点，其实在南京市内我更愿意地铁多坐一会儿，省得一直换乘和打车折腾。只要别让我来回跑、频繁换地方就行。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "明白了，你不是排斥“坐车时间长”本身，而是排斥“来回折返、频繁换乘/打车”。也就是说：同城里地铁坐久一点可以接受，但行程尽量集中在相邻片区、减少折腾，对吗？"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "对，就是这个意思。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Dislikes scenic areas",
+            "reasoning": "User explicitly states preference to avoid scenic spots.",
+            "evidence": {
+              "session_id": "sess_f9fbe0efead9",
+              "utterance_index": 4,
+              "text": "能帮我重新安排一下吗，我希望玩的有趣点，不想看那么多风景区"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-16T14:42:22+00:00",
+            "_task1GoldValue": "Dislikes scenic areas"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers visiting Confucius Temple at night for夜景 (night view)",
+            "reasoning": "User emphasizes interest in night views at Confucius Temple.",
+            "evidence": {
+              "session_id": "sess_f9fbe0efead9",
+              "utterance_index": 8,
+              "text": "夫子庙不是晚上灯会好看吗？"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-16T14:42:22+00:00",
+            "_task1GoldValue": "Prefers visiting Confucius Temple at night for夜景 (night view)"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Attraction_Dislikes",
+            "value": "Dislikes museums and schools",
+            "reasoning": "User explicitly states dislike for museums and schools as attractions.",
+            "evidence": {
+              "session_id": "sess_f9fbe0efead9",
+              "utterance_index": 12,
+              "text": "我不太喜欢博物馆和学校，换一个"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-16T14:42:22+00:00",
+            "_task1GoldValue": "Dislikes museums and schools"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Planning/Itinerary_Adjustments",
+            "value": "Sustained interest in optimizing Nanjing trip plans with specific activity preferences",
+            "reasoning": "User iteratively adjusts itinerary 4+ times, focusing on avoiding disliked attractions and prioritizing夜间夫子庙/entertainment.",
+            "evidence": {
+              "session_id": "sess_f9fbe0efead9",
+              "utterance_index": 14,
+              "text": "加上音乐台，和动物园重新调整"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-16T14:42:22+00:00",
+            "_task1GoldValue": "Sustained interest in optimizing Nanjing trip plans with specific activity preferences"
+          },
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Travel_Mode",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "旧记忆概括为“讨厌长通勤时间”，但用户澄清自己并不介意南京市内地铁坐久一点，真正不喜欢的是来回折返和频繁换乘/打车的折腾，因此需更新偏好表述。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Within the city, user can accept longer metro rides; they mainly dislike backtracking and frequent transfers/taxi switching."
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_f9fbe0efead9",
+              "utterance_index": 0,
+              "text": "我有点怕临时排队买票耽误时间，最好能提前把票搞定。"
+            },
+            "label": "Preferences/Planning_Style",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "User indicates concern about on-site ticket queues wasting time and asks to arrange tickets beforehand, implying a preference for advance booking.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers booking tickets in advance to avoid queues and delays"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "value": "Wants to include music stage and zoo in activities",
+            "confidence": 0.8,
+            "evidence_text": "加上音乐台，和动物园重新调整",
+            "_task1GoldValue": "Wants to include music stage and zoo in activities"
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p1",
+            "type": "direct",
+            "label": "Social_Relationships/Partners",
+            "value": "用户有男朋友，并经常一起出行旅游",
+            "confidence": 0.95,
+            "evidence_text": "我和男朋友买了一张上午10点31分到达南京的车票",
+            "_task1GoldValue": "用户有男朋友，并经常一起出行旅游"
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p2",
+            "type": "indirect",
+            "label": "Personal_Background/Location",
+            "value": "用户可能居住在马鞍山或其附近",
+            "confidence": 0.8,
+            "evidence_text": "10点08到10点31的高铁从马鞍山到南京",
+            "_task1GoldValue": "用户可能居住在马鞍山或其附近"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4",
+          "m5",
+          "deepseek_reasoner_p1",
+          "gemini_3_flash_preview_p1",
+          "gemini_3_flash_preview_p2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_f9fbe0efead9:sess_f9fbe0efead9",
+      "relativeItemPath": "sess_f9fbe0efead9.json",
+      "canonicalId": "sess_f9fbe0efead9",
+      "sessionId": "sess_f9fbe0efead9",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:15:45.195Z",
+        "queryText": "我发现我每次安排出游都会下意识把某一类“常规必去”的行程删掉，导致路线看起来不太像传统旅游那种。你能帮我分析一下我为什么会这样取舍、这种取舍背后我更在意的体验是什么吗？",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Dislikes scenic areas",
+          "reasoning": "User explicitly states preference to avoid scenic spots.",
+          "evidence": {
+            "session_id": "sess_f9fbe0efead9",
+            "utterance_index": 4,
+            "text": "能帮我重新安排一下吗，我希望玩的有趣点，不想看那么多风景区"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-05-16T14:42:22+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_f9fbe0efead9:sess_f9fbe0efead9:task4",
+      "relativeItemPath": "sess_f9fbe0efead9.json",
+      "canonicalId": "sess_f9fbe0efead9:task4",
+      "sessionId": "sess_f9fbe0efead9",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:09:57.807Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Dislikes scenic areas",
+          "reasoning": "User explicitly states preference to avoid scenic spots.",
+          "evidence": {
+            "session_id": "sess_f9fbe0efead9",
+            "utterance_index": 4,
+            "text": "能帮我重新安排一下吗，我希望玩的有趣点，不想看那么多风景区"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-05-16T14:42:22+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_290:1",
+            "queryText": "我们打算去南京玩一天，早上到晚上回。你之前帮我安排过几次，这次能不能再给个有意思的行程？就按你了解我的喜好来推荐几个地方和活动吧。",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Dislikes scenic areas",
+              "reasoning": "User explicitly states preference to avoid scenic spots.",
+              "evidence": {
+                "session_id": "sess_f9fbe0efead9",
+                "utterance_index": 4,
+                "text": "能帮我重新安排一下吗，我希望玩的有趣点，不想看那么多风景区"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-05-16T14:42:22+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "partial",
+            "memoryDependency": "strong",
+            "abilityPurity": "medium",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          },
+          {
+            "queryId": "ability2_547:1",
+            "queryText": "我看了几个南京一日游的方案，有中山陵音乐台看鸽子、红山动物园看熊猫，还有老门东逛吃。你觉得哪个组合更适合我今天的安排？",
+            "ability": "ability2",
+            "task4RecordIndex": 1,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Dislikes scenic areas",
+              "reasoning": "User explicitly states preference to avoid scenic spots.",
+              "evidence": {
+                "session_id": "sess_f9fbe0efead9",
+                "utterance_index": 4,
+                "text": "能帮我重新安排一下吗，我希望玩的有趣点，不想看那么多风景区"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-05-16T14:42:22+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          },
+          {
+            "queryId": "ability2_964:1",
+            "queryText": "我看了几个南京一日游的备选方案，一个是去红山动物园和音乐台，另一个是去老门东和1912街区逛逛。你觉得哪个更适合我明天的行程？",
+            "ability": "ability2",
+            "task4RecordIndex": 2,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Travel_Mode",
+              "label_suggestion": null,
+              "value": "Dislikes long travel times",
+              "reasoning": "User explicitly states not wanting long commutes.",
+              "evidence": {
+                "session_id": "sess_f9fbe0efead9",
+                "utterance_index": 2,
+                "text": "我不希望坐车的时间很长"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-05-16T14:42:22+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

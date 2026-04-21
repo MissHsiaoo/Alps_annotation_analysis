@@ -1,0 +1,380 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_fe739a1abf8b",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_fe739a1abf8b:sess_fe739a1abf8b",
+      "relativeItemPath": "sess_fe739a1abf8b.json",
+      "canonicalId": "sess_fe739a1abf8b",
+      "sessionId": "sess_fe739a1abf8b",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:20:34.858Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Foreign student preparing for an exam",
+            "reasoning": "User explicitly states being a foreigner needing exam preparation.",
+            "evidence": {
+              "session_id": "sess_fe739a1abf8b",
+              "utterance_index": 8,
+              "text": "я иностранец я готовить надо экзамена"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-01T22:42:07Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers concise explanations in educational contexts",
+            "reasoning": "Repeated requests for shortening/simplifying content ('Коротко', 'Нормально пиши', 'короткий')",
+            "evidence": {
+              "session_id": "sess_fe739a1abf8b",
+              "utterance_index": 2,
+              "text": "Коротко"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-01T22:42:07Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Deep interest in PR concepts for B2B/B2C sectors (media relations, segmentation, crisis management) [ERROR: Task-local]",
+            "reasoning": "Task-local",
+            "evidence": {
+              "session_id": "sess_fe739a1abf8b",
+              "utterance_index": 12,
+              "text": "Ещё добавь кризисный B2B b2C"
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-01T22:42:07Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_fe739a1abf8b:sess_fe739a1abf8b",
+      "relativeItemPath": "sess_fe739a1abf8b.json",
+      "canonicalId": "sess_fe739a1abf8b",
+      "sessionId": "sess_fe739a1abf8b",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:20:52.705Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Можешь привести пример PR-кампании: 2–3 шага, чтобы я понял структуру?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Да. Пример (гипотетически): 1) сегментация аудитории (например, «потенциальные клиенты», «партнёры», «СМИ»), 2) ключевое сообщение и контент под каждый сегмент, 3) медиарилейшнз: питч журналистам + публикации/интервью, затем оценка результата по охвату и лидам."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "А как это отличается в B2B и B2C одной фразой?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "В B2B больше рациональных аргументов и доверия к экспертизе (кейсы, цифры, отраслевые медиа), а в B2C чаще работает эмоция, простое обещание выгоды и массовые каналы."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Ок, а «кризисный PR» — это что именно?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Это быстрые действия по защите репутации во время негативного события: собрать факты, выпустить понятную позицию компании, выбрать спикера, отвечать СМИ/аудитории и потом показать меры исправления."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Кстати, почему «медиарилейшнз» иногда пишут по-разному?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Потому что это заимствование: встречаются варианты «медиарилейшнз», «media relations», реже «медиа-рилейшнс». В учебных работах лучше выбрать один вариант и использовать его везде одинаково."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Я это всё с телефона пишу, так что если можно — без длинных абзацев."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Понял: буду делать коротко и разбивать на небольшие блоки, чтобы было удобно читать с экрана."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Слушай, я прошлый раз писал «коротко», потому что времени не было. Вообще мне лучше, когда ты объясняешь нормально и подробнее, прям по пунктам."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Понял. Тогда делаю развернуто и структурно: определение, цели, инструменты и отличия B2B/B2C."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Да, и без «очень коротко». Мне так сложнее учить — мне надо полные ответы, даже если длинно."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Ок, буду писать подробнее и по пунктам; если понадобится — потом уже можно будет сжать в шпаргалку."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Foreign student preparing for an exam",
+            "reasoning": "User explicitly states being a foreigner needing exam preparation.",
+            "evidence": {
+              "session_id": "sess_fe739a1abf8b",
+              "utterance_index": 8,
+              "text": "я иностранец я готовить надо экзамена"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-01T22:42:07Z",
+            "_task1GoldValue": "Foreign student preparing for an exam"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Deep interest in PR concepts for B2B/B2C sectors (media relations, segmentation, crisis management) [ERROR: Task-local]",
+            "reasoning": "Task-local",
+            "evidence": {
+              "session_id": "sess_fe739a1abf8b",
+              "utterance_index": 12,
+              "text": "Ещё добавь кризисный B2B b2C"
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-01T22:42:07Z",
+            "_task1GoldValue": "Deep interest in PR concepts for B2B/B2C sectors (media relations, segmentation, crisis management) [ERROR: Task-local]"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The earlier memory claims a stable preference for concise explanations, but the user clarifies that prior requests for brevity were situational and that they generally learn better from longer, detailed, structured answers.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers detailed, structured explanations in educational contexts (conciseness only when time-constrained)"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_fe739a1abf8b",
+              "utterance_index": 0,
+              "text": "Я это всё с телефона пишу, так что если можно — без длинных абзацев."
+            },
+            "label": "Personal_Background/Devices",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "Фраза про то, что пишет «с телефона», подразумевает использование смартфона.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User is using a phone to write/read messages"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers concise explanations in educational contexts",
+            "reasoning": "Repeated requests for shortening/simplifying content ('Коротко', 'Нормально пиши', 'короткий')",
+            "evidence": {
+              "session_id": "sess_fe739a1abf8b",
+              "utterance_index": 2,
+              "text": "Коротко"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-01T22:42:07Z",
+            "_task1GoldValue": "Prefers concise explanations in educational contexts"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_fe739a1abf8b:sess_fe739a1abf8b",
+      "relativeItemPath": "sess_fe739a1abf8b.json",
+      "canonicalId": "sess_fe739a1abf8b",
+      "sessionId": "sess_fe739a1abf8b",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:20:57.041Z",
+        "queryText": "I’m about to ask you to teach me a new concept, but I want you to present it in the way I usually respond best to—what should you optimize for in your explanation style so I don’t ask you to rewrite it?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers concise explanations in educational contexts",
+          "reasoning": "Repeated requests for shortening/simplifying content ('Коротко', 'Нормально пиши', 'короткий')",
+          "evidence": {
+            "session_id": "sess_fe739a1abf8b",
+            "utterance_index": 2,
+            "text": "Коротко"
+          },
+          "confidence": 0.65,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-06-01T22:42:07Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_fe739a1abf8b:sess_fe739a1abf8b:task4",
+      "relativeItemPath": "sess_fe739a1abf8b.json",
+      "canonicalId": "sess_fe739a1abf8b:task4",
+      "sessionId": "sess_fe739a1abf8b",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:20:34.858Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers concise explanations in educational contexts",
+          "reasoning": "Repeated requests for shortening/simplifying content ('Коротко', 'Нормально пиши', 'короткий')",
+          "evidence": {
+            "session_id": "sess_fe739a1abf8b",
+            "utterance_index": 2,
+            "text": "Коротко"
+          },
+          "confidence": 0.65,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-06-01T22:42:07Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1187:1",
+            "queryText": "У меня есть два варианта подготовки к экзамену по маркетингу: один — это длинный курс с кучей деталей, другой — интенсив с фокусом на ключевых тезисах. Какой лучше выбрать?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers concise explanations in educational contexts",
+              "reasoning": "Repeated requests for shortening/simplifying content ('Коротко', 'Нормально пиши', 'короткий')",
+              "evidence": {
+                "session_id": "sess_fe739a1abf8b",
+                "utterance_index": 2,
+                "text": "Коротко"
+              },
+              "confidence": 0.65,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-06-01T22:42:07Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "relevant",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

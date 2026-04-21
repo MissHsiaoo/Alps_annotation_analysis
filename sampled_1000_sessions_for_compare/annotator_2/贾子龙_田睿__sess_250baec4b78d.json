@@ -1,0 +1,359 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_250baec4b78d",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_250baec4b78d:sess_250baec4b78d",
+      "relativeItemPath": "sess_250baec4b78d.json",
+      "canonicalId": "sess_250baec4b78d",
+      "sessionId": "sess_250baec4b78d",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T06:30:33.967Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Freelance graphic designer",
+            "reasoning": "User explicitly states being a freelance graphic designer.",
+            "evidence": {
+              "session_id": "sess_250baec4b78d",
+              "utterance_index": 0,
+              "text": "Bonjour ! Je suis graphiste freelance et m'apprête à créer un post Instagram sur les éco-couleurs."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-29T10:41:09+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Creative_Work/Style_Preference",
+            "value": "Prefers structured title formats ('Ta palette de couleurs peut...') and floral/vintage terminology in creative work",
+            "reasoning": "Forced label not supported. Evidence shows work-related stylistic preferences rather than personal interaction preferences.",
+            "evidence": {
+              "session_id": "sess_250baec4b78d",
+              "utterance_index": 14,
+              "text": "Recommence. Garde la structure “Ta palette de couleurs peut faire une différence”"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-03-29T10:41:09+00:00"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "value": "User prefers content with floral, poetic, and/or vintage lexical fields",
+            "confidence": 0.8,
+            "evidence_text": "Maintenant des propositions avec un champ lexical floral, poétique et/ou vintage ... Merci, recommence avec un champ lexical lié au jardinage ou aux fleurs"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p2",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "User is exploring ways to make Instagram content more dynamic and original, specifically seeking ideas for structure, titles, and presentation of eco-color content. User repeatedly asked for title alternatives and formatting suggestions throughout the conversation.",
+            "confidence": 0.8,
+            "evidence_text": "Peux-tu me proposer des pistes pour rendre ce futur post plus dynamique et original? ... Donne-moi d'autres idées de titres ... Comment puis-je améliorer la slide 2 pour la rendre plus dynamique ... Donne-moi d'autres idées de métaphores ... Comment reformuler ce paragraphe"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_250baec4b78d:sess_250baec4b78d",
+      "relativeItemPath": "sess_250baec4b78d.json",
+      "canonicalId": "sess_250baec4b78d",
+      "sessionId": "sess_250baec4b78d",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:45:48.224Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Salut ! Petite question : tu aurais une méthode simple pour retrouver une information fiable rapidement, sans y passer des heures ?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Oui : 1) formule une question très précise (qui/quoi/où/quand) ; 2) cherche une source primaire (rapport, article scientifique, texte officiel) ; 3) recoupe avec 2 sources indépendantes ; 4) vérifie la date, l’auteur et le contexte ; 5) garde une trace (lien + résumé de 2 lignes). Tu cherches plutôt une info technique, santé, actu, ou autre ?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Plutôt actu. Et comment repérer vite un biais ou un truc douteux ?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Quelques signaux rapides : titre émotionnel/catégorique, absence de données vérifiables, source unique anonyme, chiffres sans méthodo, citations sans lien, confusion corrélation/causalité, et images hors contexte (recherche inversée). Pour l’actu, compare aussi la même annonce sur une agence (AFP/Reuters/AP) et sur une source officielle quand c’est possible."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Ok. Et tu aurais un exemple concret d’une vérification “en 5 minutes” ?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Exemple : une image virale prétend montrer un événement récent. En 5 minutes : 1) copie l’image et fais une recherche inversée ; 2) ouvre les résultats les plus anciens ; 3) compare la date et le lieu ; 4) cherche le même événement via une dépêche d’agence ; 5) si ça ne matche pas (ancienne photo, autre pays), tu as la réfutation."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Merci ! Au passage, tu sais pourquoi on voit parfois “42” comme chiffre un peu partout ?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Oui : c’est un clin d’œil au roman de Douglas Adams, *Le Guide du voyageur galactique*, où “42” est la “réponse à la grande question sur la vie, l’univers et le reste”. C’est devenu un mème culturel et un easter egg fréquent en informatique et dans la pop culture."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Petite contrainte pour la suite : je vais faire imprimer une partie du carrousel (format A5), donc j’ai besoin que tes recommandations soient pensées CMJN dès le départ."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Parfait, je le garde en tête : je te proposerai des formulations et une structure adaptées à l’impression, avec des repères CMJN (taux d’encrage, aplats, lisibilité) pour que ton A5 reste propre et facile à produire."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Au fait, petite correction : je ne suis pas graphiste freelance. Je suis chargée de communication en interne (dans une asso), et je fais ce post Insta pour notre com'."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Merci pour la précision — donc tu es chargée de communication en interne, et non graphiste freelance. Je m’adapte : on va partir sur un angle plus “com’” (pédago + action) pour tes slides et tes titres."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Creative_Work/Style_Preference",
+            "value": "Prefers structured title formats ('Ta palette de couleurs peut...') and floral/vintage terminology in creative work",
+            "reasoning": "Forced label not supported. Evidence shows work-related stylistic preferences rather than personal interaction preferences.",
+            "evidence": {
+              "session_id": "sess_250baec4b78d",
+              "utterance_index": 14,
+              "text": "Recommence. Garde la structure “Ta palette de couleurs peut faire une différence”"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-03-29T10:41:09+00:00",
+            "_task1GoldValue": "Prefers structured title formats ('Ta palette de couleurs peut...') and floral/vintage terminology in creative work"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Au fait, petite correction : je ne suis pas graphiste freelance. Je suis chargée de communication en interne (dans une asso), et je fais ce post Insta pour notre com'."
+                }
+              ]
+            },
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "L’ancien souvenir disait que l’utilisateur est graphiste freelance, mais l’utilisateur corrige explicitement en indiquant qu’il/elle est chargé(e) de communication en interne dans une association. La nouvelle vérité remplace donc l’occupation.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "In-house communications officer at an association (not a freelance graphic designer)"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_250baec4b78d",
+              "utterance_index": 8,
+              "text": "je vais faire imprimer une partie du carrousel (format A5), donc j’ai besoin que tes recommandations soient pensées CMJN dès le départ."
+            },
+            "label": "Project_Context/Deliverables",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user mentions an A5 print constraint and asks that recommendations be designed for CMJN from the start, implying a printed deliverable requirement.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User plans to print part of the Instagram carousel in A5 format and needs CMJN-oriented recommendations."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Freelance graphic designer",
+            "reasoning": "User explicitly states being a freelance graphic designer.",
+            "evidence": {
+              "session_id": "sess_250baec4b78d",
+              "utterance_index": 0,
+              "text": "Bonjour ! Je suis graphiste freelance et m'apprête à créer un post Instagram sur les éco-couleurs."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-29T10:41:09+00:00",
+            "_task1GoldValue": "Freelance graphic designer"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "value": "User prefers content with floral, poetic, and/or vintage lexical fields",
+            "confidence": 0.8,
+            "evidence_text": "Maintenant des propositions avec un champ lexical floral, poétique et/ou vintage ... Merci, recommence avec un champ lexical lié au jardinage ou aux fleurs",
+            "_task1GoldValue": "User prefers content with floral, poetic, and/or vintage lexical fields"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p2",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "User is exploring ways to make Instagram content more dynamic and original, specifically seeking ideas for structure, titles, and presentation of eco-color content. User repeatedly asked for title alternatives and formatting suggestions throughout the conversation.",
+            "confidence": 0.8,
+            "evidence_text": "Peux-tu me proposer des pistes pour rendre ce futur post plus dynamique et original? ... Donne-moi d'autres idées de titres ... Comment puis-je améliorer la slide 2 pour la rendre plus dynamique ... Donne-moi d'autres idées de métaphores ... Comment reformuler ce paragraphe",
+            "_task1GoldValue": "User is exploring ways to make Instagram content more dynamic and original, specifically seeking ideas for structure, titles, and presentation of eco-color content. User repeatedly asked for title alternatives and formatting suggestions throughout the conversation."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "claude_sonnet_4_5_20250929_p1",
+          "claude_sonnet_4_5_20250929_p2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_250baec4b78d:sess_250baec4b78d",
+      "relativeItemPath": "sess_250baec4b78d.json",
+      "canonicalId": "sess_250baec4b78d",
+      "sessionId": "sess_250baec4b78d",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T06:39:14.425Z",
+        "queryText": "I’m about to pitch a small local restaurant on a consistent Instagram look—given what you know about how I typically work, what kind of collaboration pitch (scope + pricing structure) should I propose so it fits my usual setup rather than sounding like a big-agency retainer?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Occupation",
+          "label_suggestion": null,
+          "value": "Freelance graphic designer",
+          "reasoning": "User explicitly states being a freelance graphic designer.",
+          "evidence": {
+            "session_id": "sess_250baec4b78d",
+            "utterance_index": 0,
+            "text": "Bonjour ! Je suis graphiste freelance et m'apprête à créer un post Instagram sur les éco-couleurs."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-03-29T10:41:09+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_250baec4b78d:sess_250baec4b78d:task4",
+      "relativeItemPath": "sess_250baec4b78d.json",
+      "canonicalId": "sess_250baec4b78d:task4",
+      "sessionId": "sess_250baec4b78d",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T06:40:20.957Z",
+        "editableSelectedMemory": {
+          "memory_id": "claude_sonnet_4_5_20250929_p2",
+          "type": "direct",
+          "label": "Thoughts/Curiosity",
+          "value": "User is exploring ways to make Instagram content more dynamic and original, specifically seeking ideas for structure, titles, and presentation of eco-color content. User repeatedly asked for title alternatives and formatting suggestions throughout the conversation.",
+          "confidence": 0.8,
+          "evidence_text": "Peux-tu me proposer des pistes pour rendre ce futur post plus dynamique et original? ... Donne-moi d'autres idées de titres ... Comment puis-je améliorer la slide 2 pour la rendre plus dynamique ... Donne-moi d'autres idées de métaphores ... Comment reformuler ce paragraphe"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_253:1",
+            "queryText": "J'ai un nouveau client qui veut une identité visuelle pour sa marque de cosmétiques bio. Il insiste pour que je lui explique pourquoi je recommande certaines couleurs plutôt que d'autres pour ses étiquettes et packaging. Tu peux m'aider à structurer mes arguments ?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "claude_sonnet_4_5_20250929_p2",
+              "type": "direct",
+              "label": "Thoughts/Curiosity",
+              "value": "User is exploring ways to make Instagram content more dynamic and original, specifically seeking ideas for structure, titles, and presentation of eco-color content. User repeatedly asked for title alternatives and formatting suggestions throughout the conversation.",
+              "confidence": 0.8,
+              "evidence_text": "Peux-tu me proposer des pistes pour rendre ce futur post plus dynamique et original? ... Donne-moi d'autres idées de titres ... Comment puis-je améliorer la slide 2 pour la rendre plus dynamique ... Donne-moi d'autres idées de métaphores ... Comment reformuler ce paragraphe"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

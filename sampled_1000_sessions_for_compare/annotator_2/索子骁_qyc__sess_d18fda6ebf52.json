@@ -1,0 +1,284 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_d18fda6ebf52",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_d18fda6ebf52:sess_d18fda6ebf52",
+      "relativeItemPath": "sess_d18fda6ebf52.json",
+      "canonicalId": "sess_d18fda6ebf52",
+      "sessionId": "sess_d18fda6ebf52",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T03:17:17.499Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "Sustained curiosity about sports betting predictions (point spreads, over/under totals) and statistical analysis models",
+            "reasoning": "Role-play/third-party possible. User defines WagerGPT persona but no explicit self-report of personal curiosity. Queries focus on task-local predictions rather than user's own traits.",
+            "evidence": {
+              "session_id": "sess_d18fda6ebf52",
+              "utterance_index": 18,
+              "text": "Who will cover the point spread in the Suns at Nuggets game?\n\nAnswer like this:\n\nPHX +4 [win chance percentage]\nDEN -4 [win chance percentage]"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T11:21:12.583Z"
+          },
+          {
+            "memory_id": "gpt_5_2_p1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "value": "Wants betting predictions presented in a specific format listing both options and a win-chance percentage.",
+            "confidence": 0.8,
+            "evidence_text": "Will the the 76ers at Celtics game go over or under the total?\n\nAnswer like this:\n\nOver 215 [win chance percentage]\nUnder 215 [win chance percentage]"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_d18fda6ebf52:sess_d18fda6ebf52",
+      "relativeItemPath": "sess_d18fda6ebf52.json",
+      "canonicalId": "sess_d18fda6ebf52",
+      "sessionId": "sess_d18fda6ebf52",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T03:17:37.501Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Switching gears—if a game total moves from 229 to 232 in the last hour, what are the most common reasons for that?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Most often: (1) late injury/availability news that boosts expected pace or offensive efficiency, (2) lineup changes (more shooters/less rim protection), (3) market “steam” from sharper money, and (4) sometimes officiating tendencies or rest situations being priced in. It can also be correlated with spread movement (e.g., expectation of a faster, more one-sided game)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "If you had to sanity-check whether that move is real information or just noise, what would you look at first?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "First check whether there was a concrete trigger: official injury report updates, beat writer confirmations, starting lineup announcements. Then compare the move across multiple books (broad move = more likely info; single-book move = could be book-specific liability). Finally, see if the spread moved in a consistent direction and whether limits were high when the move happened."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Give me a quick example using made-up numbers."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Example: Total opens 229.0. At 5:30pm, a key defender is ruled out and a high-usage scorer is upgraded from questionable to probable. Within 10 minutes, major books go 229 → 231.5 while the spread shifts -4 to -5 (implying the favorite’s offense is expected to be more efficient). That’s more “info-driven” than a slow drift of 229 → 230 over several hours with no news."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Also, random trivia question: what’s the earliest NBA game ever played?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "The NBA traces back to the BAA, which began play on November 1, 1946. One of the first games that day was the New York Knickerbockers vs. Toronto Huskies in Toronto."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Back to betting—what’s the difference between closing line value and just getting lucky?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Closing line value (CLV) means you beat the market’s final number (e.g., you bet Over 229 and it closes 232). Over many bets, consistently getting CLV suggests you’re finding value. “Getting lucky” is a single outcome-based result (your bet wins) that might happen even if you took a bad number; luck dominates in the short run, while CLV is a process signal over the long run."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "If BOS doesn’t cover tonight I’m done laying ten points for a while—next time I’m sticking to totals instead."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—switching away from big spreads can reduce variance. If you want, tell me the next total you’re eyeing and I’ll break down the pace/efficiency angles."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Not really looking for sports-betting predictions anymore. Those spreads/over-unders were just a one-off test to see if you'd follow my formatting.\n\nLet's drop the WagerGPT thing."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Got it—so you weren't asking out of sustained interest in betting models; you were mainly checking whether I could comply with the point-spread/total format. We can drop the WagerGPT role-play and move on."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Thoughts/Curiosity",
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The selected memory claims sustained curiosity about sports betting predictions and statistical models, but the user states it was \"just a one-off test\" and asks to \"drop the WagerGPT thing,\" indicating no ongoing interest.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "The user's sports betting prediction prompts (spreads/over-unders) were a one-off formatting/compliance test rather than sustained curiosity about betting models."
+          },
+          {
+            "confidence": 0.65,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_d18fda6ebf52",
+              "utterance_index": 0,
+              "text": "If BOS doesn’t cover tonight I’m done laying ten points for a while—next time I’m sticking to totals instead."
+            },
+            "label": "Preference",
+            "memory_id": "m_new_1",
+            "preference_attitude": "avoid_large_spreads_prefer_totals",
+            "reasoning": "The user implies they will stop taking large spreads if BOS fails to cover and indicates a plan to focus on totals going forward.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User intends to avoid betting large point spreads (e.g., laying 10 points) and prefers betting totals instead."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_d18fda6ebf52:sess_d18fda6ebf52",
+      "relativeItemPath": "sess_d18fda6ebf52.json",
+      "canonicalId": "sess_d18fda6ebf52",
+      "sessionId": "sess_d18fda6ebf52",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T03:17:52.728Z",
+        "queryText": "I’m trying to decide what kind of numbers-driven analysis tool I’d actually stick with long-term. If I wanted something that focuses on probabilistic forecasts around game scoring and margins (rather than player props or news recaps), what specific kind of predictions should it prioritize to match what I tend to ask about?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Thoughts/Curiosity",
+          "value": "Sustained curiosity about sports betting predictions (point spreads, over/under totals) and statistical analysis models",
+          "reasoning": "Role-play/third-party possible. User defines WagerGPT persona but no explicit self-report of personal curiosity. Queries focus on task-local predictions rather than user's own traits.",
+          "evidence": {
+            "session_id": "sess_d18fda6ebf52",
+            "utterance_index": 18,
+            "text": "Who will cover the point spread in the Suns at Nuggets game?\n\nAnswer like this:\n\nPHX +4 [win chance percentage]\nDEN -4 [win chance percentage]"
+          },
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2026-01-28T11:21:12.583Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_d18fda6ebf52:sess_d18fda6ebf52:task4",
+      "relativeItemPath": "sess_d18fda6ebf52.json",
+      "canonicalId": "sess_d18fda6ebf52:task4",
+      "sessionId": "sess_d18fda6ebf52",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T03:18:11.452Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Thoughts/Curiosity",
+          "value": "Sustained curiosity about sports betting predictions (point spreads, over/under totals) and statistical analysis models",
+          "reasoning": "Role-play/third-party possible. User defines WagerGPT persona but no explicit self-report of personal curiosity. Queries focus on task-local predictions rather than user's own traits.",
+          "evidence": {
+            "session_id": "sess_d18fda6ebf52",
+            "utterance_index": 18,
+            "text": "Who will cover the point spread in the Suns at Nuggets game?\n\nAnswer like this:\n\nPHX +4 [win chance percentage]\nDEN -4 [win chance percentage]"
+          },
+          "confidence": 0.5,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2026-01-28T11:21:12.583Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability3_428:1",
+            "queryText": "I'm applying for a data analyst position at a sports analytics firm. For the 'relevant professional experience' section of my resume, should I list my role as 'Sports Betting Algorithm Developer' or 'Quantitative Sports Analyst' based on the predictive modeling work we've been doing together? You've seen my analysis approach firsthand.",
+            "ability": "ability3",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Thoughts/Curiosity",
+              "value": "Sustained curiosity about sports betting predictions (point spreads, over/under totals) and statistical analysis models",
+              "reasoning": "Role-play/third-party possible. User defines WagerGPT persona but no explicit self-report of personal curiosity. Queries focus on task-local predictions rather than user's own traits.",
+              "evidence": {
+                "session_id": "sess_d18fda6ebf52",
+                "utterance_index": 18,
+                "text": "Who will cover the point spread in the Suns at Nuggets game?\n\nAnswer like this:\n\nPHX +4 [win chance percentage]\nDEN -4 [win chance percentage]"
+              },
+              "confidence": 0.5,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2026-01-28T11:21:12.583Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "very appropriate",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

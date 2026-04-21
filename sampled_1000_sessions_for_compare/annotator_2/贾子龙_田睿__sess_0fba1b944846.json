@@ -1,0 +1,390 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_0fba1b944846",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_0fba1b944846:sess_0fba1b944846",
+      "relativeItemPath": "sess_0fba1b944846.json",
+      "canonicalId": "sess_0fba1b944846",
+      "sessionId": "sess_0fba1b944846",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T15:07:12.723Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "value": "Has a sister named Marta",
+            "reasoning": "User explicitly refers to 'moja siostra Marta' (my sister Marta) in conversation about accommodation.",
+            "evidence": {
+              "session_id": "sess_0fba1b944846",
+              "utterance_index": 10,
+              "text": "Jaki może byc powód, że moja siostra Marta [...] nie chce wrócić do mojego mieszkania?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-11T22:20:43+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers to solve riddles independently without immediate answers",
+            "reasoning": "User explicitly states preference not to receive answers (utterance 4). Single explicit statement qualifies as direct but lacks indicators of long-term persistence.",
+            "evidence": {
+              "session_id": "sess_0fba1b944846",
+              "utterance_index": 4,
+              "text": "Nie podawaj mi odpowiedzi! Sam chcę ja rozwiązać."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-11T22:20:43+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/riddle_engagement",
+            "value": "Sustained interest in logic riddles across difficulty levels (gimnazjum/liceum) and absurd humor creation",
+            "reasoning": "Label 'Thoughts/Curiosity' forced - humor aspect not covered by taxonomy. Supported by multiple riddle requests (utterances 2,18,46), but humor creation is weakly evidenced as user attribute.",
+            "evidence": {
+              "session_id": "sess_0fba1b944846",
+              "utterance_index": 18,
+              "text": "Dobra, nieważne. Podaj mi zagadke logiczną na poziomie liceum"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-11T22:20:43+00:00"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "Curious about why sister Marta doesn't want to stay in the apartment",
+            "confidence": 0.8,
+            "evidence_text": "Jaki może być powód, że moja siostra Marta, która została w mojej firmie, nie chce wrócić do mojego mieszkania, w którym mogłaby przenocować?"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_0fba1b944846:sess_0fba1b944846",
+      "relativeItemPath": "sess_0fba1b944846.json",
+      "canonicalId": "sess_0fba1b944846",
+      "sessionId": "sess_0fba1b944846",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T15:08:53.114Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Daj mi nową zagadkę logiczną, ale tym razem bez odpowiedzi."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Jasne. Oto zagadka (bez rozwiązania):\n\nW pewnym miasteczku są dwa zakłady fryzjerskie. Jeden fryzjer ma idealnie równe, świetnie obcięte włosy, a drugi ma fryzurę wyraźnie niedbałą. Do którego fryzjera powinno się pójść, jeśli chcesz najlepsze strzyżenie?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Możesz dać mi podpowiedź, ale taką, żeby nie zdradzała rozwiązania?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Podpowiedź: pomyśl, kto komu obcina włosy, skoro są tylko dwa zakłady.\n\n(Przy okazji ciekawostka niezwiązana z zagadką: w 1903 roku bracia Wright wykonali pierwszy udany lot samolotem z napędem — trwał kilkanaście sekund)."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Dobra, to teraz zagadka matematyczna, też bez odpowiedzi."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Proszę, bez odpowiedzi:\n\nMasz 12 monet. Jedna z nich jest fałszywa i różni się wagą (jest albo cięższa, albo lżejsza). Masz wagę szalkową i możesz wykonać dokładnie 3 ważenia. Czy da się zawsze wskazać fałszywą monetę i określić, czy jest cięższa czy lżejsza?\n\nDrobna informacja „z boku”: w szachach jest słynna „reguła kwadratu” pomagająca ocenić, czy pionek zdąży do promocji w końcówce — to prosta geometria na planszy."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Jeszcze jedna, ale tym razem słowna, w stylu absurdalnym."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Oto absurdalna zagadka słowna (bez odpowiedzi):\n\nCo ma cztery nogi, nie siada nigdy, a mimo to bywa „zajęte” w każdą sobotę?\n\nI już całkiem poza tematem: na Marsie dzień (tzw. sol) jest tylko trochę dłuższy od ziemskiego — o niecałe 40 minut."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Następnym razem jak znowu wyskoczysz z odpowiedzią, to po prostu daj mi samą treść zagadki i ewentualnie jedną podpowiedź — bez rozwiązań, nawet jak będę cisnął dalej."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Jasne — będę podawać wyłącznie treść zagadki (i najwyżej jedną podpowiedź), a rozwiązania nie dodam, dopóki wyraźnie o nie nie poprosisz."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Wiesz co, muszę sprostować: Marta wcale nie jest moją siostrą."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Okej — czyli to nie relacja rodzinna. Kim jest Marta w takim razie (np. koleżanką z pracy, znajomą, współpracowniczką)?"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "To tylko współpracowniczka z firmy. Wcześniej napisałem „moja siostra Marta” z rozpędu, ale to nieprawda."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Dzięki za doprecyzowanie. Skoro Marta jest współpracowniczką, a nie siostrą, to te rozważania o „siostrze” były oparte na błędnym założeniu."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers to solve riddles independently without immediate answers",
+            "reasoning": "User explicitly states preference not to receive answers (utterance 4). Single explicit statement qualifies as direct but lacks indicators of long-term persistence.",
+            "evidence": {
+              "session_id": "sess_0fba1b944846",
+              "utterance_index": 4,
+              "text": "Nie podawaj mi odpowiedzi! Sam chcę ja rozwiązać."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-11T22:20:43+00:00",
+            "_task1GoldValue": "Prefers to solve riddles independently without immediate answers"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/riddle_engagement",
+            "value": "Sustained interest in logic riddles across difficulty levels (gimnazjum/liceum) and absurd humor creation",
+            "reasoning": "Label 'Thoughts/Curiosity' forced - humor aspect not covered by taxonomy. Supported by multiple riddle requests (utterances 2,18,46), but humor creation is weakly evidenced as user attribute.",
+            "evidence": {
+              "session_id": "sess_0fba1b944846",
+              "utterance_index": 18,
+              "text": "Dobra, nieważne. Podaj mi zagadke logiczną na poziomie liceum"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-11T22:20:43+00:00",
+            "_task1GoldValue": "Sustained interest in logic riddles across difficulty levels (gimnazjum/liceum) and absurd humor creation"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Wiesz co, muszę sprostować: Marta wcale nie jest moją siostrą."
+                }
+              ]
+            },
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory claims the user has a sister named Marta, but the user explicitly corrects this, stating that Marta is not a sister but a coworker; therefore the family-relationship memory must be updated to reflect that she is not the user's sister.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Marta is not the user's sister."
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_0fba1b944846",
+              "utterance_index": 0,
+              "text": "po prostu daj mi samą treść zagadki i ewentualnie jedną podpowiedź — bez rozwiązań"
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User implies a stable interaction preference: wants only the riddle statement and at most one hint, explicitly excluding solutions unless requested.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "When asking for riddles, prefers only the riddle text and at most one hint, with no solutions unless explicitly requested."
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "Curious about why sister Marta doesn't want to stay in the apartment",
+            "confidence": 0.8,
+            "evidence_text": "Jaki może być powód, że moja siostra Marta, która została w mojej firmie, nie chce wrócić do mojego mieszkania, w którym mogłaby przenocować?",
+            "_task1GoldValue": "Curious about why sister Marta doesn't want to stay in the apartment"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "deepseek_reasoner_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_0fba1b944846:sess_0fba1b944846",
+      "relativeItemPath": "sess_0fba1b944846.json",
+      "canonicalId": "sess_0fba1b944846",
+      "sessionId": "sess_0fba1b944846",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T15:09:02.409Z",
+        "queryText": "I’m filling out an emergency contact form and it asks for “a sibling’s first name.” Based on what you already know about my family, what should I write there, and why is that the right choice?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Family",
+          "label_suggestion": null,
+          "value": "Has a sister named Marta",
+          "reasoning": "User explicitly refers to 'moja siostra Marta' (my sister Marta) in conversation about accommodation.",
+          "evidence": {
+            "session_id": "sess_0fba1b944846",
+            "utterance_index": 10,
+            "text": "Jaki może byc powód, że moja siostra Marta [...] nie chce wrócić do mojego mieszkania?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-11T22:20:43+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_0fba1b944846:sess_0fba1b944846:task4",
+      "relativeItemPath": "sess_0fba1b944846.json",
+      "canonicalId": "sess_0fba1b944846:task4",
+      "sessionId": "sess_0fba1b944846",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T15:09:07.160Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Family",
+          "label_suggestion": null,
+          "value": "Has a sister named Marta",
+          "reasoning": "User explicitly refers to 'moja siostra Marta' (my sister Marta) in conversation about accommodation.",
+          "evidence": {
+            "session_id": "sess_0fba1b944846",
+            "utterance_index": 10,
+            "text": "Jaki może byc powód, że moja siostra Marta [...] nie chce wrócić do mojego mieszkania?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-11T22:20:43+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_303:1",
+            "queryText": "Marta mówi, że woli spać na tej firmowej sofie niż u mnie, bo tam ma 'własną przestrzeń'. Co to w ogóle znaczy? Przecież w moim mieszkaniu też może mieć swój kąt.",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Social_Relationships/Family",
+              "label_suggestion": null,
+              "value": "Has a sister named Marta",
+              "reasoning": "User explicitly refers to 'moja siostra Marta' (my sister Marta) in conversation about accommodation.",
+              "evidence": {
+                "session_id": "sess_0fba1b944846",
+                "utterance_index": 10,
+                "text": "Jaki może byc powód, że moja siostra Marta [...] nie chce wrócić do mojego mieszkania?"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-05-11T22:20:43+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

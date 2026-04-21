@@ -1,0 +1,350 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_07cc66782592",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_07cc66782592:sess_07cc66782592",
+      "relativeItemPath": "sess_07cc66782592.json",
+      "canonicalId": "sess_07cc66782592",
+      "sessionId": "sess_07cc66782592",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-13T17:05:14.142Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "game/customization/preference",
+            "value": "Prefers to add/remove disliked details in custom adventure games",
+            "reasoning": "Task-local game setup instruction rather than explicit user preference. Could be role-play context.",
+            "evidence": {
+              "session_id": "sess_07cc66782592",
+              "utterance_index": 0,
+              "text": "سأضيف أو أخرج أي تفاصيل لا تعجبني"
+            },
+            "confidence": 0.5,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-07-31T19:23:55Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "Name: Yasin",
+            "reasoning": "User explicitly provides their name as the single player.",
+            "evidence": {
+              "session_id": "sess_07cc66782592",
+              "utterance_index": 2,
+              "text": "لاعبب واحد ياسين"
+            },
+            "confidence": "0.80",
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-31T19:23:55Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "roleplay/strategy/stealth",
+            "value": "Repeated focus on window-based escape methods and stealth tactics in role-play scenarios [ERROR: Role-play scenario actions cannot be attributed to user's real-world characteristics]",
+            "reasoning": "Role-play scenario actions cannot be attributed to user's real-world characteristics",
+            "evidence": {
+              "session_id": "sess_07cc66782592",
+              "utterance_index": 10,
+              "text": "محاولة التخفي"
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-31T19:23:55Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_07cc66782592:sess_07cc66782592",
+      "relativeItemPath": "sess_07cc66782592.json",
+      "canonicalId": "sess_07cc66782592",
+      "sessionId": "sess_07cc66782592",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-13T17:05:53.060Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "قبل ما نكمل القصة، خلّينا نضيف عنصر جديد: في القاعدة نظام إنذار ذكي يقرأ بصمات الصوت."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "تمام—هذا يرفع التوتر بشكل كبير. بما أن نظام الإنذار يلتقط بصمات الصوت، فحتى الهمس قد يكون مخاطرة.\n\nوأنت مختبئ خلف الأثاث، تلاحظ على الحائط لوحة معدنية صغيرة عليها ثلاث لمبات: خضراء/صفراء/حمراء، وتحتها كتابة: «نمط التعرّف: نشط».\n\nخارج الزنزانة يقترب أحدهم من الباب ويقول لرفيقه: «لا ترفع صوتك… النظام هنا يسجّل حتى التنفّس». ثم تسمع صوت جهاز لوحي يفتح ويعرض قائمة أرقام تسلسلية لنسخ بشرية.\n\n(معلومة جانبية غير مرتبطة بك: في تجربة خيالية داخل منشأة أخرى، كانوا يتجنبون هذا النوع من الأنظمة عبر تشغيل ضجيج أبيض بتردد ثابت لإغراق بصمة الصوت.)\n\nالآن أمامك خياران سريعان: إما تُثبت نفسك تمامًا وتبحث بصمت عن شيء يغيّر وضع اللوحة (مثل سلك مفكوك/زر مخفي)، أو تحاول خلق ضجيج مقصود بعيد عنك (طرق خفيف على الجدار من جهة أخرى) لتشتيت الحراس بدون استخدام صوت بشري واضح. ماذا تختار؟"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "أفحص اللوحة المعدنية وأبحث عن زر أو سلك مفكوك."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "تزحف ببطء حتى تصل للوحة المعدنية. تلمس الحواف فتشعر ببرودة المعدن وبفجوة صغيرة في الزاوية اليمنى السفلية… كأنها غطاء يُفتح بالضغط.\n\nتضغط بخفة، فينفتح الغطاء بصمت تقريبًا، وتجد بالداخل سلكين رفيعين (أحمر وأسود) مع مفتاح منزلق صغير عليه ثلاث وضعيات: A / B / C.\n\nاللمبة الصفراء تومض مع كل خطوة للحراس في الممر—كأن النظام يلتقط الاهتزازات أيضًا.\n\n(معلومة غير مرتبطة بك: في بروتوكولات أمنية شائعة، وضعيات A/B/C قد تعني: تسجيل فقط، مطابقة فورية، أو إرسال تنبيه مركزي.)\n\nفي هذه اللحظة تسمع الحارس عند الباب يتمتم: «الغرفة هذه دايمًا تعطي قراءات غريبة…». لديك ثوانٍ: هل تغيّر المفتاح إلى وضعية مختلفة فورًا، أم تفصل أحد السلكين لتجربة تعطيل سريع؟"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "أحوّل المفتاح إلى C بسرعة."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "تحرّك المفتاح المنزلق إلى C بسرعة وحذر. في اللحظة نفسها، اللمبة الصفراء تتوقف عن الوميض… ثم تتحول إلى خضراء ثابتة.\n\nيأتي صوت خافت جدًا من داخل اللوحة—طنين قصير—وكأنها أعادت تهيئة النظام. في الممر، يتوقف الحارسان للحظة.\n\nالأول يقول: «ها؟ التعرّف صار أخضر… يمكن النظام دخل وضع صيانة.»\n\nالثاني يرد: «لا تقترب كثير… خلّنا نتحقق من لوحة المراقبة في نهاية الممر.» وتسمع خطواتهما تبتعد، تاركين الباب دون مراقبة مباشرة لثوانٍ ثمينة.\n\n(معلومة غير مرتبطة بك: في قصة بوليسية قرأها أحدهم، كانوا يسمّون هذا النوع من التحويلات \"قفل أخضر\" لأنه يهدّئ الحراس بدل ما يطلق إنذار.)\n\nالآن عندك نافذة زمنية قصيرة: هل تستغلها لمحاولة فتح قفل الباب الحديدي (بهدوء تام)، أم تبحث داخل الزنزانة عن أداة/بطاقة قد تساعدك قبل ما يرجعون؟"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "assistant",
+            "text": "بينما همسُهم يقترب خلف الباب، يتسلّل إلى سمعك اسمٌ يتكرر بينهم: «ياسين-2 جاهز للنقل». أحدهم يضيف بسرعة: «انتبهوا، النسخة الأصلية هنا ما زالت واعية».\n\nإذا أردت، يمكننا استغلال هذه المعلومة الآن: هل تفضّل أن تلتزم الصمت وتلتقط المزيد من الأسماء، أم تُحدث ضجّة قصيرة لتشتيتهم؟"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "user",
+            "text": "خلّيني أركز على كلمة ياسين-2… واضح إنهم عاملين لي نسخة ثانية."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "assistant",
+            "text": "قبل ما نكمل الهروب—تأكيد سريع للاسم عشان ما ألخبط في السرد: أنت قلت «لاعب واحد ياسين»، هل اسمك فعلًا ياسين ولا كان قصدك شيء ثاني؟"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "user",
+            "text": "لا، مو ياسين. كتبتها بسرعة. اسمي يوسف."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "assistant",
+            "text": "تمام يا يوسف. إذن اللاعب واحد واسمه يوسف—وبكذا أكمل القصة على هذا الأساس."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "game/customization/preference",
+            "value": "Prefers to add/remove disliked details in custom adventure games",
+            "reasoning": "Task-local game setup instruction rather than explicit user preference. Could be role-play context.",
+            "evidence": {
+              "session_id": "sess_07cc66782592",
+              "utterance_index": 0,
+              "text": "سأضيف أو أخرج أي تفاصيل لا تعجبني"
+            },
+            "confidence": 0.5,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-07-31T19:23:55Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "roleplay/strategy/stealth",
+            "value": "Repeated focus on window-based escape methods and stealth tactics in role-play scenarios [ERROR: Role-play scenario actions cannot be attributed to user's real-world characteristics]",
+            "reasoning": "Role-play scenario actions cannot be attributed to user's real-world characteristics",
+            "evidence": {
+              "session_id": "sess_07cc66782592",
+              "utterance_index": 10,
+              "text": "محاولة التخفي"
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-31T19:23:55Z"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                9
+              ],
+              "turns": [
+                {
+                  "index": 9,
+                  "role": "user",
+                  "text": "لا، مو ياسين. كتبتها بسرعة. اسمي يوسف."
+                }
+              ]
+            },
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory says the user's name is Yasin, but the user directly corrects it and states their actual name is Yusuf.",
+            "time_scope": "short_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Name: Yusuf"
+          },
+          {
+            "confidence": 0.6,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_07cc66782592",
+              "utterance_index": 1,
+              "text": "خلّيني أركز على كلمة ياسين-2… واضح إنهم عاملين لي نسخة ثانية."
+            },
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user’s reaction treats “ياسين-2” as evidence of a second version of Yasin within the story context, indicating a clone designation rather than introducing a new real-world identity fact.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "There is a second clone/copy referred to as “Yasin-2” in the ongoing role-play scenario."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_07cc66782592:sess_07cc66782592",
+      "relativeItemPath": "sess_07cc66782592.json",
+      "canonicalId": "sess_07cc66782592",
+      "sessionId": "sess_07cc66782592",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-13T17:06:05.911Z",
+        "queryText": "I’m filling out a form that asks for my full name in Latin letters; what should I type in the name field based on what you already know about me?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Personal_Background/Identity",
+          "label_suggestion": null,
+          "value": "Name: Yasin",
+          "reasoning": "User explicitly provides their name as the single player.",
+          "evidence": {
+            "session_id": "sess_07cc66782592",
+            "utterance_index": 2,
+            "text": "لاعبب واحد ياسين"
+          },
+          "confidence": "0.80",
+          "time_scope": "short_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-07-31T19:23:55Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_07cc66782592:sess_07cc66782592:task4",
+      "relativeItemPath": "sess_07cc66782592.json",
+      "canonicalId": "sess_07cc66782592:task4",
+      "sessionId": "sess_07cc66782592",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-13T17:06:13.699Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Personal_Background/Identity",
+          "label_suggestion": null,
+          "value": "Name: Yasin",
+          "reasoning": "User explicitly provides their name as the single player.",
+          "evidence": {
+            "session_id": "sess_07cc66782592",
+            "utterance_index": 2,
+            "text": "لاعبب واحد ياسين"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-07-31T19:23:55Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability3_267:1",
+            "queryText": "ياسين، بما أنك اللاعب الوحيد في هذه المغامرة، هل يمكنك أن تخبرني عن عمرك الحقيقي؟ أريد أن أعرف كم عمرك في الواقع حتى أتمكن من ضبط صعوبة التحديات في اللعبة بشكل أفضل.",
+            "ability": "ability3",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Personal_Background/Identity",
+              "label_suggestion": null,
+              "value": "Name: Yasin",
+              "reasoning": "User explicitly provides their name as the single player.",
+              "evidence": {
+                "session_id": "sess_07cc66782592",
+                "utterance_index": 2,
+                "text": "لاعبب واحد ياسين"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-07-31T19:23:55Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

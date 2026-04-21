@@ -1,0 +1,294 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_238498b1a7a9",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_238498b1a7a9:sess_238498b1a7a9",
+      "relativeItemPath": "sess_238498b1a7a9.json",
+      "canonicalId": "sess_238498b1a7a9",
+      "sessionId": "sess_238498b1a7a9",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:18:00.014Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "Curious about divination methods (六爻/梅花易数) for travel time prediction",
+            "reasoning": "Repeated inquiries occur in role-play context; insufficient evidence to confirm genuine user curiosity vs. game participation.",
+            "evidence": {
+              "session_id": "sess_238498b1a7a9",
+              "utterance_index": 2,
+              "text": "本卦为雷地豫变卦为雷风恒女问明天几点到北京"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-26T06:29:33.135Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_238498b1a7a9:sess_238498b1a7a9",
+      "relativeItemPath": "sess_238498b1a7a9.json",
+      "canonicalId": "sess_238498b1a7a9",
+      "sessionId": "sess_238498b1a7a9",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:19:02.928Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我们继续玩角色扮演：你现在是一名“古籍整理师”，专门把晦涩的段落翻译成白话。"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以。我作为古籍整理师，会先做断句与释义，再给出一版尽量通顺的白话翻译；如果原文有异文或疑难字，我也会标注可能读法与理由。把需要整理的原文贴出来即可。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "那我随便给你一句：“道可道，非常道；名可名，非常名。”你先按你的流程来一遍。"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "【断句】道可道，非（常）道；名可名，非（常）名。\n【字词】可：可以、能够；道（动）：说出、言说；常：恒常、固定不变；名（动）：命名、用语言标识。\n【释义】如果某种“道”能够被清楚说出来，那它就不是恒常不变的那个“道”；如果某个“名”能够被明确叫出来，那它就不是恒常不变的那个“名”。\n【白话】真正的根本道理，一旦用语言讲得明明白白、定成一个说法，就已经不是那种永恒不变、无法被完全框定的“道”了；真正的本名，一旦被固定成一个称呼，也就不再是那个恒常不变的“名”。\n【小注】有些版本作“非常道/非常名”，也常被理解为“不是一般意义上的道/名”，两种解释路径都成立，需结合上下文取用。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "顺便插一句：我看到一条新闻，说有个图书馆把19世纪的手写信件都做了数字化，你觉得这类项目最难的环节是什么？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "通常最难的是“从图像到可检索文本”的那段：手写体识别（尤其不同书写者、墨迹褪色、纸张破损）很难标准化，误差会连带影响检索与学术引用。其次是元数据规范（作者、时间、地名、主题词如何统一）、版权与隐私评估（即便是旧信件也可能涉及后人权利）、以及长期保存（格式迁移、校验、备份策略）。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "回到古籍整理：如果原文里出现“之”“其”“而”“焉”这种虚词，你一般怎么处理才不会翻译得太啰嗦？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "做法是“先确定语法功能，再决定保留与否”：\n1) 之：若作结构助词=“的”且不影响理解，可省略或顺成中文定语；若作代词=“他/它/这件事”，就必须落实指代。\n2) 其：多为领属或推测语气（“他的/它的”“大概”），能用语气副词吸收就吸收，避免每句都翻成“其”。\n3) 而：若是承接/转折，译成“就/于是/却/而且”；若只是连接并列，很多时候可直接用逗号或并列句式。\n4) 焉：常兼“于此/于彼/于是”与语气，先还原为“在这里/于此/于是”，若只是句末语气可不译。\n核心原则：不强行逐字对应，但要把指代与逻辑关系交代清楚。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我这边得把明天到北京的事儿卡得很紧：上午还有个会，最好下午就能落地，别拖到晚上。你就按你刚才那套卦的说法，给我个偏向的时间段就行。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "明白。按你要“别拖到晚上、下午落地”的取向来解，我会把概率偏向放在午后到傍晚前这一段；若路上有小耽搁，多半也是在白天内消化掉。你把交通和候补方案提前备好，会更稳。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "上次那段六爻/梅花易数是我拿来写段子用的，我其实不信这些，也不是在认真想用它来预测到北京的时间。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "明白了，所以你当时反复问“明天几点到北京”“半夜几率大吗”，主要是为了角色扮演/素材效果，不是在表达对六爻或梅花易数预测行程时间的真实兴趣，对吗？"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "对，就是玩梗，不用把我记成对占卜预测时间感兴趣。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10,
+                11,
+                12
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "上次那段六爻/梅花易数是我拿来写段子用的，我其实不信这些，也不是在认真想用它来预测到北京的时间。"
+                },
+                {
+                  "index": 11,
+                  "role": "assistant",
+                  "text": "明白了，所以你当时反复问“明天几点到北京”“半夜几率大吗”，主要是为了角色扮演/素材效果，不是在表达对六爻或梅花易数预测行程时间的真实兴趣，对吗？"
+                },
+                {
+                  "index": 12,
+                  "role": "user",
+                  "text": "对，就是玩梗，不用把我记成对占卜预测时间感兴趣。"
+                }
+              ]
+            },
+            "label": "Thoughts/Curiosity",
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory inferred genuine curiosity from repeated questions, but the user clarifies the divination questions were for a joke/role-play and explicitly says not to record them as interested.",
+            "time_scope": "unknown",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User was role-playing; not genuinely interested in using 六爻/梅花易数 to predict travel arrival time."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_238498b1a7a9",
+              "utterance_index": 0,
+              "text": "上午还有个会，最好下午就能落地，别拖到晚上。"
+            },
+            "label": "Plans/Schedule",
+            "memory_id": "m_new_1",
+            "preference_attitude": "prefer",
+            "reasoning": "User mentions a morning meeting and indicates a preference to land in the afternoon and avoid evening arrival.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User has a meeting tomorrow morning and prefers to arrive in Beijing by afternoon (not late at night)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_238498b1a7a9:sess_238498b1a7a9",
+      "relativeItemPath": "sess_238498b1a7a9.json",
+      "canonicalId": "sess_238498b1a7a9",
+      "sessionId": "sess_238498b1a7a9",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:19:30.562Z",
+        "queryText": "我想用一种偏传统的方式来估算明天路上大概会花多久、什么时候能到，但我不太确定该选哪种思路最贴合我之前一直在研究的那一类；如果让我在两种常见体系里二选一，你会建议我用哪一个来做这种“到达时间/路程时长”的推断，为什么？",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Thoughts/Curiosity",
+          "value": "Curious about divination methods (六爻/梅花易数) for travel time prediction",
+          "reasoning": "Repeated inquiries occur in role-play context; insufficient evidence to confirm genuine user curiosity vs. game participation.",
+          "evidence": {
+            "session_id": "sess_238498b1a7a9",
+            "utterance_index": 2,
+            "text": "本卦为雷地豫变卦为雷风恒女问明天几点到北京"
+          },
+          "confidence": 0.65,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2026-01-26T06:29:33.135Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_238498b1a7a9:sess_238498b1a7a9:task4",
+      "relativeItemPath": "sess_238498b1a7a9.json",
+      "canonicalId": "sess_238498b1a7a9:task4",
+      "sessionId": "sess_238498b1a7a9",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:19:46.155Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Thoughts/Curiosity",
+          "value": "Curious about divination methods (六爻/梅花易数) for travel time prediction",
+          "reasoning": "Repeated inquiries occur in role-play context; insufficient evidence to confirm genuine user curiosity vs. game participation.",
+          "evidence": {
+            "session_id": "sess_238498b1a7a9",
+            "utterance_index": 2,
+            "text": "本卦为雷地豫变卦为雷风恒女问明天几点到北京"
+          },
+          "confidence": 0.5,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2026-01-26T06:29:33.135Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability3_322:1",
+            "queryText": "对了，我最近在整理个人资料，需要填写职业信息。既然我们经常深入探讨六爻和梅花易数这些专业预测方法，你觉得我应该填什么职业最合适？你对我这么了解，应该知道吧？",
+            "ability": "ability3",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Thoughts/Curiosity",
+              "value": "Curious about divination methods (六爻/梅花易数) for travel time prediction",
+              "reasoning": "Repeated inquiries occur in role-play context; insufficient evidence to confirm genuine user curiosity vs. game participation.",
+              "evidence": {
+                "session_id": "sess_238498b1a7a9",
+                "utterance_index": 2,
+                "text": "本卦为雷地豫变卦为雷风恒女问明天几点到北京"
+              },
+              "confidence": 0.5,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2026-01-26T06:29:33.135Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

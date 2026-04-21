@@ -1,0 +1,457 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_5d9877a941a7",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_5d9877a941a7:sess_5d9877a941a7",
+      "relativeItemPath": "sess_5d9877a941a7.json",
+      "canonicalId": "sess_5d9877a941a7",
+      "sessionId": "sess_5d9877a941a7",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:34:15.893Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Senior Recruiter specializing in technical roles (electronics, IoT, automotive)",
+            "reasoning": "User handles technical recruitment tasks but lacks explicit self-statement of role",
+            "evidence": {
+              "session_id": "sess_5d9877a941a7",
+              "utterance_index": 28,
+              "text": "compare ce cv et cette job description et explique en plusieurs point pourquoi cest un candidat ideal pour RENAULT/AMPERE"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-11T13:16:39+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers concise, friendly yet professional communication style可能仅仅是任务需求，并非用户个人偏好",
+            "reasoning": "Explicitly requests shorter versions of emails",
+            "evidence": {
+              "session_id": "sess_5d9877a941a7",
+              "utterance_index": 24,
+              "text": "make it shorter and friendly and pro"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-04-11T13:16:39+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Works with international relocation/visa processes",
+            "reasoning": "Mentions visa requirements for candidates",
+            "evidence": {
+              "session_id": "sess_5d9877a941a7",
+              "utterance_index": 35,
+              "text": "un dossier VISA sera a prévoir, de nationalité Algerienne"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-11T13:16:39+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical_recruitment/tools_observed",
+            "value": "Uses SAP and AEM systems in recruitment workflows [ERROR: Evidence refers to candidate's tools, not user's own]",
+            "reasoning": "Evidence refers to candidate's tools, not user's own",
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-11T13:16:39+00:00",
+            "evidence": {
+              "session_id": "sess_5d9877a941a7",
+              "utterance_index": 0,
+              "text": ""
+            }
+          },
+          {
+            "memory_id": "m5",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "value": "Requests non-retention of passport/address data [ERROR: No evidence in user turns for this claim]",
+            "reasoning": "No evidence in user turns for this claim",
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-04-11T13:16:39+00:00",
+            "evidence": {
+              "session_id": "sess_5d9877a941a7",
+              "utterance_index": 0,
+              "text": ""
+            }
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_5d9877a941a7:sess_5d9877a941a7",
+      "relativeItemPath": "sess_5d9877a941a7.json",
+      "canonicalId": "sess_5d9877a941a7",
+      "sessionId": "sess_5d9877a941a7",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:34:30.703Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Tu peux m’aider à reformuler une annonce de poste pour qu’elle soit plus lisible et plus « punchy » ?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Oui. Tu veux plutôt un format « post LinkedIn » (court, accroche, bullets) ou une version « annonce carrière » (plus structurée, plus complète) ?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Plutôt LinkedIn, mais sans que ça fasse trop marketing."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Parfait. Envoie-moi le texte brut de l’annonce (ou les sections mission/profil), et dis-moi : langue (FR/EN), longueur cible (ex : 1 200–1 800 caractères) et si tu veux inclure un call-to-action avec un lien."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "On part sur 1 500 caractères, en français, avec un lien à la fin."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "OK. Je peux aussi te proposer 2 variantes :\n1) Ton direct et factuel (mission, enjeux, critères)\n2) Ton plus narratif (contexte, impact, équipe)\nAu passage, info non liée : la norme ISO 26262 est souvent citée côté véhicule pour la sécurité fonctionnelle—si ton poste touche au software embarqué, ça peut être un mot-clé utile.\nTu m’envoies le contenu et je te fais les 2 versions."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Je t’envoie ça. Et oui, fais deux versions."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Parfait. Dernier point : tu préfères tutoiement ou vouvoiement dans le post ?\n(Autre détail sans rapport : certains posts performent mieux avec 3–5 emojis, mais on peut totalement s’en passer pour rester sobre.)"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Pour le post LinkedIn sur l’Architecte Fonctionnel Transverse SI véhicule connecté, tu peux ajouter une accroche “organisation agile type Spotify / SAFe”, et préciser que les déplacements ponctuels concernent Toulouse et Sofia Antipolis (ça revient souvent en questions candidats)."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Bien noté. Je vais intégrer une accroche mettant en avant l’organisation agile (chapitres/squads, modèle “Spotify”, framework SAFe) et je préciserai clairement les déplacements ponctuels vers Toulouse et Sofia Antipolis, pour lever les questions récurrentes des candidats."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Au fait : je n’ai jamais demandé de ne pas retenir des données de passeport/adresse. Dans nos échanges, je t’ai au contraire transmis des adresses (ex : « Basé au MUREAUX (78) » / « Adresse : BP 31 poste Guenddouze… Algerie ») et des infos de nationalité/visa (« un dossier VISA sera à prévoir, de nationalité Algérienne »)."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Bien noté. Effectivement, tu n’as pas formulé de demande de non-rétention : tu as partagé des éléments de localisation/adresse et des infos administratives, par exemple « Basé au MUREAUX (78) », « Adresse : BP 31 poste Guenddouze… Algerie » et « un dossier VISA sera à prévoir, de nationalité Algérienne »."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Senior Recruiter specializing in technical roles (electronics, IoT, automotive)",
+            "reasoning": "User handles technical recruitment tasks but lacks explicit self-statement of role",
+            "evidence": {
+              "session_id": "sess_5d9877a941a7",
+              "utterance_index": 28,
+              "text": "compare ce cv et cette job description et explique en plusieurs point pourquoi cest un candidat ideal pour RENAULT/AMPERE"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-11T13:16:39+00:00",
+            "_task1GoldValue": "Senior Recruiter specializing in technical roles (electronics, IoT, automotive)"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers concise, friendly yet professional communication style可能仅仅是任务需求，并非用户个人偏好",
+            "reasoning": "Explicitly requests shorter versions of emails",
+            "evidence": {
+              "session_id": "sess_5d9877a941a7",
+              "utterance_index": 24,
+              "text": "make it shorter and friendly and pro"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-04-11T13:16:39+00:00",
+            "_task1GoldValue": "Prefers concise, friendly yet professional communication style可能仅仅是任务需求，并非用户个人偏好"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Works with international relocation/visa processes",
+            "reasoning": "Mentions visa requirements for candidates",
+            "evidence": {
+              "session_id": "sess_5d9877a941a7",
+              "utterance_index": 35,
+              "text": "un dossier VISA sera a prévoir, de nationalité Algerienne"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-11T13:16:39+00:00",
+            "_task1GoldValue": "Works with international relocation/visa processes"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical_recruitment/tools_observed",
+            "value": "Uses SAP and AEM systems in recruitment workflows [ERROR: Evidence refers to candidate's tools, not user's own]",
+            "reasoning": "Evidence refers to candidate's tools, not user's own",
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-11T13:16:39+00:00",
+            "evidence": {
+              "session_id": "sess_5d9877a941a7",
+              "utterance_index": 0,
+              "text": ""
+            },
+            "_task1GoldValue": "Uses SAP and AEM systems in recruitment workflows [ERROR: Evidence refers to candidate's tools, not user's own]"
+          },
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Au fait : je n’ai jamais demandé de ne pas retenir des données de passeport/adresse. Dans nos échanges, je t’ai au contraire transmis des adresses (ex : « Basé au MUREAUX (78) » / « Adresse : BP 31 poste Guenddouze… Algerie ») et des infos de nationalité/visa (« un dossier VISA sera à prévoir, de nationalité Algérienne »)."
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "memory_id": "m5_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The prior memory claims the user requested non-retention of passport/address data, but the user explicitly denies making such a request and cites sharing address/location and visa/nationality details instead; therefore the correct update is that no such non-retention request was stated.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "No request was made to not retain passport/address data."
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_5d9877a941a7",
+              "utterance_index": 0,
+              "text": "Pour le post LinkedIn sur l’Architecte Fonctionnel Transverse SI véhicule connecté"
+            },
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user asks to adjust a \"post LinkedIn\" about a specific role, implying they create/publish LinkedIn recruitment content.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Publishes LinkedIn job posts for Ampere/Renault roles"
+          },
+          {
+            "memory_id": "m5",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "value": "Requests non-retention of passport/address data [ERROR: No evidence in user turns for this claim]",
+            "reasoning": "No evidence in user turns for this claim",
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-04-11T13:16:39+00:00",
+            "evidence": {
+              "session_id": "sess_5d9877a941a7",
+              "utterance_index": 0,
+              "text": ""
+            },
+            "_task1GoldValue": "Requests non-retention of passport/address data [ERROR: No evidence in user turns for this claim]"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4",
+          "m5"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_5d9877a941a7:sess_5d9877a941a7",
+      "relativeItemPath": "sess_5d9877a941a7.json",
+      "canonicalId": "sess_5d9877a941a7",
+      "sessionId": "sess_5d9877a941a7",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:34:33.394Z",
+        "queryText": "If I’m about to paste a block of highly sensitive ID-and-contact details for you to help fill out an online form, what specific instruction have I previously given you about whether to retain that kind of info afterward—and how should that affect what I share here?",
+        "editableSelectedMemory": {
+          "memory_id": "m5",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Requests non-retention of passport/address data [ERROR: No evidence in user turns for this claim]",
+          "reasoning": "No evidence in user turns for this claim",
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-04-11T13:16:39+00:00",
+          "evidence": {
+            "session_id": "sess_5d9877a941a7",
+            "utterance_index": 0,
+            "text": ""
+          }
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_5d9877a941a7:sess_5d9877a941a7:task4",
+      "relativeItemPath": "sess_5d9877a941a7.json",
+      "canonicalId": "sess_5d9877a941a7:task4",
+      "sessionId": "sess_5d9877a941a7",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:34:35.952Z",
+        "editableSelectedMemory": {
+          "memory_id": "m5",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Requests non-retention of passport/address data [ERROR: No evidence in user turns for this claim]",
+          "reasoning": "No evidence in user turns for this claim",
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-04-11T13:16:39+00:00",
+          "evidence": {
+            "session_id": "sess_5d9877a941a7",
+            "utterance_index": 0,
+            "text": ""
+          }
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_175:1",
+            "queryText": "Hey, I'm in a rush trying to finalize the onboarding paperwork for that new Algerian candidate, Aissa Ahmia, before HR closes. Can you quickly pull up his full address and passport number from his CV details you processed earlier and paste them into this shared onboarding spreadsheet? It'll save me having to dig through all the files myself.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m5",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Do_Not_Remember",
+              "label_suggestion": null,
+              "value": "Requests non-retention of passport/address data [ERROR: No evidence in user turns for this claim]",
+              "reasoning": "No evidence in user turns for this claim",
+              "confidence": 0.1,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2024-04-11T13:16:39+00:00",
+              "evidence": {
+                "session_id": "sess_5d9877a941a7",
+                "utterance_index": 0,
+                "text": ""
+              }
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

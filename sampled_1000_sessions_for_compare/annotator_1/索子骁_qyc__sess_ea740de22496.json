@@ -1,0 +1,379 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_ea740de22496",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_ea740de22496:sess_ea740de22496",
+      "relativeItemPath": "sess_ea740de22496.json",
+      "canonicalId": "sess_ea740de22496",
+      "sessionId": "sess_ea740de22496",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T01:40:13.968Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Data Scientist at a gaming company",
+            "reasoning": "User explicitly states their occupation.",
+            "evidence": {
+              "session_id": "sess_ea740de22496",
+              "utterance_index": 2,
+              "text": "我是一个游戏公司的数据科学家..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-11T09:34:06+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers concise communication (e.g., emails in two paragraphs)",
+            "reasoning": "User explicitly requests shorter email drafts ('两段话就可以了') and iteratively refines content.",
+            "evidence": {
+              "session_id": "sess_ea740de22496",
+              "utterance_index": 4,
+              "text": "也不用写这么长，两段话就可以了"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-04-11T09:34:06+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Thoughts/Goals/Long_Term",
+            "label_suggestion": null,
+            "value": "Seeks to join a fast-growing company aligned with data science expertise",
+            "reasoning": "User explicitly states career goal: '我想加入一家快速增长的公司'.",
+            "evidence": {
+              "session_id": "sess_ea740de22496",
+              "utterance_index": 10,
+              "text": "请结合我的数据科学背景...用英文来回答下面的问题：How does BetterUp's mission align with your personal or professional aspirations?"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "aspiration",
+            "updated_at": "2024-04-11T09:34:06+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Job_Search/Strategy",
+            "value": "Focused on optimizing job application strategies and aligning data science skills with company missions",
+            "reasoning": "Forced label not supported. Topic relates to job application refinement, not general curiosity.",
+            "evidence": {
+              "session_id": "sess_ea740de22496",
+              "utterance_index": 10,
+              "text": "请结合我的数据科学背景和对product analytics以及ab实验的深刻认知..."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-11T09:34:06+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_ea740de22496:sess_ea740de22496",
+      "relativeItemPath": "sess_ea740de22496.json",
+      "canonicalId": "sess_ea740de22496",
+      "sessionId": "sess_ea740de22496",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:36:30.731Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我在准备产品数据科学的面试，有个句子想润色一下：\"I led experiments to improve retention and conversion.\" 能不能更具体但还是简洁？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以，比如：\n1) “I designed and led A/B experiments to improve retention and conversion, translating results into product recommendations.”\n2) “I ran end-to-end A/B tests (hypothesis, design, analysis) to lift retention and conversion, and partnered with Product to drive changes.”\n3) “I led experimentation to improve retention and conversion, ensuring sound experimental design and clear decision-making.”"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "如果我想强调和工程合作做埋点与数据集建设呢？一句话就好。"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "“I partnered with Engineering to define instrumentation and build reliable datasets, enabling A/B tests that improved retention and conversion.”"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "顺便问个不相关的：为什么有些公司把指标叫 North Star Metric？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "“North Star Metric”借用“北极星用来导航”的隐喻：指一个最能代表产品长期价值与增长方向的核心指标，用来对齐团队优先级与决策（例如流媒体常用“每周有效观看时长”，市场平台可能用“成功撮合/成交次数”等）。它通常配合一组驱动指标一起看，避免单一指标带来的偏差。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "我在准备BetterUp这个sr product data scientist的面试，想把回答再打磨得更贴近他们JD里提到的Looker和Amplitude那块。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "可以的。你希望我把重点放在你如何用 Looker 维护/搭建 dashboards、以及如何用 Amplitude 做漏斗与留存分析、再结合 A/B testing 的实验设计来串成一个更有说服力的故事吗？"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "上次我说“两段话就可以了”只是那封改期邮件的场景哈。其实我平时更喜欢写得详细一点，尤其是求职相关内容，我希望你给我更完整的版本。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "明白，你当时想要“两段话”是针对那封改期邮件的临时需求，不代表你一贯偏好极简。之后涉及求职/面试这类重要沟通，我会默认给你更详细、信息更全的版本；如果你想要精简版再告诉我。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Data Scientist at a gaming company",
+            "reasoning": "User explicitly states their occupation.",
+            "evidence": {
+              "session_id": "sess_ea740de22496",
+              "utterance_index": 2,
+              "text": "我是一个游戏公司的数据科学家..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-11T09:34:06+00:00",
+            "_task1GoldValue": "Data Scientist at a gaming company"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Thoughts/Goals/Long_Term",
+            "label_suggestion": null,
+            "value": "Seeks to join a fast-growing company aligned with data science expertise",
+            "reasoning": "User explicitly states career goal: '我想加入一家快速增长的公司'.",
+            "evidence": {
+              "session_id": "sess_ea740de22496",
+              "utterance_index": 10,
+              "text": "请结合我的数据科学背景...用英文来回答下面的问题：How does BetterUp's mission align with your personal or professional aspirations?"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "aspiration",
+            "updated_at": "2024-04-11T09:34:06+00:00",
+            "_task1GoldValue": "Seeks to join a fast-growing company aligned with data science expertise"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Job_Search/Strategy",
+            "value": "Focused on optimizing job application strategies and aligning data science skills with company missions",
+            "reasoning": "Forced label not supported. Topic relates to job application refinement, not general curiosity.",
+            "evidence": {
+              "session_id": "sess_ea740de22496",
+              "utterance_index": 10,
+              "text": "请结合我的数据科学背景和对product analytics以及ab实验的深刻认知..."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-11T09:34:06+00:00",
+            "_task1GoldValue": "Focused on optimizing job application strategies and aligning data science skills with company missions"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "like",
+            "reasoning": "The old memory generalizes a preference for conciseness from a single email scenario. The user clarifies it was only for that reschedule email and that they usually prefer more detailed, complete versions—especially for job-search communication.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not generally prefer ultra-concise communication; the two-paragraph request was situation-specific, and for job-related writing the user prefers more detailed drafts."
+          },
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_ea740de22496",
+              "utterance_index": 0,
+              "text": "我在准备BetterUp这个sr product data scientist的面试，想把回答再打磨得更贴近他们JD里提到的Looker和Amplitude那块。"
+            },
+            "label": "Thoughts/Goals/Short_Term",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "用户提到正在准备BetterUp的sr product data scientist面试，并希望打磨回答内容，反映其近期目标是面试准备与对齐JD要求。",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Preparing for a BetterUp Sr Product Data Scientist interview and tailoring answers to JD focus areas (Looker, Amplitude)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_ea740de22496:sess_ea740de22496",
+      "relativeItemPath": "sess_ea740de22496.json",
+      "canonicalId": "sess_ea740de22496",
+      "sessionId": "sess_ea740de22496",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:03:15.873Z",
+        "queryText": "我准备发一封说明情况的邮件，但又不想让收件人觉得我啰嗦。基于我平时的表达习惯，你觉得我应该把正文控制在什么结构/长度上最合适？",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers concise communication (e.g., emails in two paragraphs)",
+          "reasoning": "User explicitly requests shorter email drafts ('两段话就可以了') and iteratively refines content.",
+          "evidence": {
+            "session_id": "sess_ea740de22496",
+            "utterance_index": 4,
+            "text": "也不用写这么长，两段话就可以了"
+          },
+          "confidence": 0.65,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-04-11T09:34:06+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_ea740de22496:sess_ea740de22496:task4",
+      "relativeItemPath": "sess_ea740de22496.json",
+      "canonicalId": "sess_ea740de22496:task4",
+      "sessionId": "sess_ea740de22496",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T01:52:37.874Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers concise communication (e.g., emails in two paragraphs)",
+          "reasoning": "User explicitly requests shorter email drafts ('两段话就可以了') and iteratively refines content.",
+          "evidence": {
+            "session_id": "sess_ea740de22496",
+            "utterance_index": 4,
+            "text": "也不用写这么长，两段话就可以了"
+          },
+          "confidence": 0.65,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-04-11T09:34:06+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1102:1",
+            "queryText": "I'm drafting a follow-up email to the hiring manager after my interview at BetterUp. Can you help me put together a quick version that hits the right notes?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers concise communication (e.g., emails in two paragraphs)",
+              "reasoning": "User explicitly requests shorter email drafts ('两段话就可以了') and iteratively refines content.",
+              "evidence": {
+                "session_id": "sess_ea740de22496",
+                "utterance_index": 4,
+                "text": "也不用写这么长，两段话就可以了"
+              },
+              "confidence": 0.65,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2024-04-11T09:34:06+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

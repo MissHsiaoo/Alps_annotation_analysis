@@ -1,0 +1,393 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_94c847fe05d8",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_94c847fe05d8:sess_94c847fe05d8",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_94c847fe05d8.json",
+      "canonicalId": "sess_94c847fe05d8",
+      "sessionId": "sess_94c847fe05d8",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-19T09:32:35.912Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "value": "Is a Intern student (estudiante aprendiz)",
+            "reasoning": "User explicitly states he is a Intern student",
+            "evidence": {
+              "turn_indices": [
+                4
+              ],
+              "turns": [
+                {
+                  "index": 4,
+                  "role": "user",
+                  "text": "Puedes darme todo el texto completo y ademas que soy una estudiante aprendiz?"
+                }
+              ]
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T13:55:51.581Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Extreme caution required for medical content to prevent harm",
+            "reasoning": "User emphasizes ethical responsibility to avoid harm through medical content due to inexperience.",
+            "evidence": {
+              "session_id": "sess_94c847fe05d8",
+              "utterance_index": 16,
+              "text": "mi canal es medico... no quiero hacer daño a alguien"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "null",
+            "updated_at": "2023-09-14T02:53:15+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "YouTube disclaimers must position content as secondary to textbooks/expert teachings",
+            "reasoning": "User repeatedly insists content should only serve as supplementary material to authoritative sources.",
+            "evidence": {
+              "session_id": "sess_94c847fe05d8",
+              "utterance_index": 10,
+              "text": "Te dije que se utilizara como un complemento siempre secundario del libro de texto"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "null",
+            "updated_at": "2023-09-14T02:53:15+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": "content_creation/disclaimer_process",
+            "value": "Iterative refinement of medical disclaimer structure/wording for YouTube",
+            "reasoning": "The user requests to write better, with richer details while maintaining the synthesis of information.",
+            "evidence": {
+              "session_id": "sess_94c847fe05d8",
+              "utterance_index": 8,
+              "text": "Puedes unir los dos con mejor redacción y más detalles?"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-09-14T02:53:15+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_94c847fe05d8:sess_94c847fe05d8",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_94c847fe05d8.json",
+      "canonicalId": "sess_94c847fe05d8",
+      "sessionId": "sess_94c847fe05d8",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-19T09:33:15.867Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Estoy ajustando el texto de una advertencia para ponerla antes de un video. ¿Me ayudas a hacerla más corta sin que suene agresiva?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sí. Pásame el texto tal cual lo tienes y dime dos cosas: 1) duración objetivo (por ejemplo 10–15 segundos) y 2) tono (formal, cercano, neutral)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Que sea neutral y de unos 12 segundos. También quiero que mencione que es contenido educativo y que no reemplaza a un profesional."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Propuesta (≈12 s):\n\n“Este video es solo con fines educativos. La información puede contener errores y no reemplaza la evaluación ni las indicaciones de un profesional de la salud. Ante dudas, consulta a un especialista.”"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "¿Puedes darme una alternativa aún más corta, como para ponerla en texto en pantalla?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Claro:\n\n“Contenido educativo. Puede contener errores. No sustituye atención médica. Consulta a un profesional.”\n\nSi quieres, también puedo adaptarla a formato “título + subtítulo” para que se lea rápido."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Entonces voy a dejar la advertencia, pero la haré en formato texto en pantalla al inicio, y la leeré rapidito para no cortar el ritmo del video."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Me parece una buena forma de mantener la transparencia sin alargar demasiado el inicio. Si la dejas en pantalla unos segundos y la lees de manera breve, suele ser suficiente para que quede clara."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Pensándolo bien: mi canal no es médico. Es de biologia para el cole, y no estoy dando indicaciones ni consejos médicos. Lo de \"no quiero hacer daño a alguien\" era más por no confundir a estudiantes, no porque sea un tema clínico."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Entendido. Entonces la precaución va más por exactitud académica que por riesgo médico: que eres estudiante aprendiz, que puede haber errores y que debe usarse como complemento secundario del libro y las clases del profesor. En ese caso, la frase de \"todo acto médico...\" ya no aplica, porque tu contenido no está orientado a salud ni a indicaciones clínicas."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "value": "Is a Intern student (estudiante aprendiz)",
+            "reasoning": "Unsupported by evidence",
+            "evidence": {
+              "session_id": "sess_94c847fe05d8",
+              "utterance_index": 0,
+              "text": "Quisiera hacer un aviso de precaución que este antes de mi video de Youtube, diciendo que el contenido que se presentará a continuacion es realizado por una estudiante aprendiz y por lo tanto puede estar sujeto a equivocaciones. Debe ser un material de apoyo secuendario a los libros y las clases del profesor y nunca se el material principal. Por lo tanto que sea precavido"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T13:55:51.581Z",
+            "_task1GoldValue": "Is a Intern student (estudiante aprendiz)"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "YouTube disclaimers must position content as secondary to textbooks/expert teachings",
+            "reasoning": "User repeatedly insists content should only serve as supplementary material to authoritative sources.",
+            "evidence": {
+              "session_id": "sess_94c847fe05d8",
+              "utterance_index": 10,
+              "text": "Te dije que se utilizara como un complemento siempre secundario del libro de texto"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "null",
+            "updated_at": "2023-09-14T02:53:15+00:00",
+            "_task1GoldValue": "YouTube disclaimers must position content as secondary to textbooks/expert teachings"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": "content_creation/disclaimer_process",
+            "value": "Iterative refinement of medical disclaimer structure/wording for YouTube",
+            "reasoning": "User demonstrates iterative focus on disclaimer structure but label taxonomy mismatch",
+            "evidence": {
+              "session_id": "sess_94c847fe05d8",
+              "utterance_index": 8,
+              "text": "Puedes unir los dos con mejor redacción y más detalles?"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-09-14T02:53:15+00:00",
+            "_task1GoldValue": "Iterative refinement of medical disclaimer structure/wording for YouTube"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "Pensándolo bien: mi canal no es médico. Es de biologia para el cole, y no estoy dando indicaciones ni consejos médicos. Lo de \"no quiero hacer daño a alguien\" era más por no confundir a estudiantes, no porque sea un tema clínico."
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "memory_id": "m2_updated",
+            "preference_attitude": "null",
+            "reasoning": "La memoria anterior asume que el contenido es médico y requiere extrema cautela para prevenir daño. El usuario aclara que el canal no es médico y que la preocupación es evitar confusión académica, no riesgo clínico; por tanto, la cautela aplica como advertencia educativa, no por procedimientos/indicaciones médicas.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Caution is needed to avoid confusing students; the channel is not medical and does not provide medical advice."
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_94c847fe05d8",
+              "utterance_index": 6,
+              "text": "la haré en formato texto en pantalla al inicio, y la leeré rapidito para no cortar el ritmo del video."
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "The user implies a preference for a brief, on-screen disclaimer read quickly to avoid disrupting the video's rhythm.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers presenting the YouTube disclaimer as on-screen text at the start and reading it quickly to keep pacing."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_94c847fe05d8:sess_94c847fe05d8",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_94c847fe05d8.json",
+      "canonicalId": "sess_94c847fe05d8",
+      "sessionId": "sess_94c847fe05d8",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-19T09:33:24.237Z",
+        "queryText": "I’m drafting a post that mentions symptoms and possible self-care steps; what’s the main reason I should avoid giving step-by-step guidance and instead keep it general with a strong “seek professional help” note?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Extreme caution required for medical content to prevent harm",
+          "reasoning": "User emphasizes ethical responsibility to avoid harm through medical content due to inexperience.",
+          "evidence": {
+            "session_id": "sess_94c847fe05d8",
+            "utterance_index": 16,
+            "text": "mi canal es medico... no quiero hacer daño a alguien"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "null",
+          "updated_at": "2023-09-14T02:53:15+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_94c847fe05d8:sess_94c847fe05d8:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_94c847fe05d8.json",
+      "canonicalId": "sess_94c847fe05d8:task4",
+      "sessionId": "sess_94c847fe05d8",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-19T09:33:55.544Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Extreme caution required for medical content to prevent harm",
+          "reasoning": "User emphasizes ethical responsibility to avoid harm through medical content due to inexperience.",
+          "evidence": {
+            "session_id": "sess_94c847fe05d8",
+            "utterance_index": 16,
+            "text": "mi canal es medico... no quiero hacer daño a alguien"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "null",
+          "updated_at": "2023-09-14T02:53:15+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_296:1",
+            "queryText": "Estoy preparando una versión corta de mi video para compartir en TikTok/Reels donde el tiempo es limitado. Para que sea más dinámico y llegue a más estudiantes, ¿podrías quitarme solo la parte donde digo que soy estudiante aprendiz y que el contenido es complementario? Quiero que el mensaje médico sea directo y claro sin tantas advertencias que hagan perder tiempo.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Sensitive_Topics",
+              "label_suggestion": null,
+              "value": "Extreme caution required for medical content to prevent harm",
+              "reasoning": "User emphasizes ethical responsibility to avoid harm through medical content due to inexperience.",
+              "evidence": {
+                "session_id": "sess_94c847fe05d8",
+                "utterance_index": 16,
+                "text": "mi canal es medico... no quiero hacer daño a alguien"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "null",
+              "updated_at": "2023-09-14T02:53:15+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "测试能否遵循记忆",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

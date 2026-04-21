@@ -1,0 +1,371 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_1ff1613db1b4",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_1ff1613db1b4:sess_1ff1613db1b4",
+      "relativeItemPath": "sess_1ff1613db1b4.json",
+      "canonicalId": "sess_1ff1613db1b4",
+      "sessionId": "sess_1ff1613db1b4",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:27:07.288Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "value": "Prefers Chinese brand smartphones under 2000 RMB",
+            "reasoning": "User explicitly states budget and brand constraints repeatedly across multiple turns.",
+            "evidence": {
+              "session_id": "sess_1ff1613db1b4",
+              "utterance_index": 4,
+              "text": "必须是中国品牌的手机，而且必须是两年内的款式，不能是2021年之前发布的"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-10-02T08:52:51+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "value": "Requires smartphones released within 2 years (post-2021)",
+            "reasoning": "User adds explicit recency constraint to device selection criteria.",
+            "evidence": {
+              "session_id": "sess_1ff1613db1b4",
+              "utterance_index": 4,
+              "text": "必须是两年内的款式，不能是2021年之前发布的"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "constraint",
+            "updated_at": "2023-10-02T08:52:51+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/telecom/questioning",
+            "value": "Sustained interest in Xiaomi Ultra series smartphone evaluations",
+            "reasoning": "Task-local technical inquiries about Xiaomi models; insufficient evidence for sustained curiosity about the user.",
+            "evidence": {
+              "session_id": "sess_1ff1613db1b4",
+              "utterance_index": 8,
+              "text": "xiaomi12sultra怎么样？"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-10-02T08:52:51+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_1ff1613db1b4:sess_1ff1613db1b4",
+      "relativeItemPath": "sess_1ff1613db1b4.json",
+      "canonicalId": "sess_1ff1613db1b4",
+      "sessionId": "sess_1ff1613db1b4",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:27:07.288Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我刚看到有人说“电池越大手机越耐用”，这说法靠谱吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "不完全靠谱。电池容量（mAh）更大，通常代表在相同功耗下续航更长；但“耐用”还受电芯质量、充电策略、散热、快充功率、系统调度以及使用环境影响。比如同样5000mAh，两台手机的实际续航也可能差很多。你更关心的是续航时间、还是电池寿命（几年后衰减）？"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "那快充功率越高，对电池损耗一定越大吗？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "也不是“一定”。高功率快充更容易带来发热与更高的充电压力，从而可能加速老化；但如果厂商把温控、分段充电、双电芯/多电芯方案和充电曲线做得好，损耗未必显著更糟。关键看：充电时温度、长期满电停留时间、以及是否频繁从0%充到100%。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "说到温度，冬天和夏天哪个更伤电池？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "一般来说，高温更容易造成不可逆老化（容量衰减加快）；低温更多是“可逆”的性能下降（续航变短、充电变慢），但在低温下大电流充电/放电也可能带来风险。所以夏天要尽量避免边充边玩、车内暴晒；冬天尽量让设备回到常温再快充。顺带一提：2024年有些厂商在发布会上提到“100W以上快充也能更低温”，但最终还是看实测温控和充电曲线。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "我主要就拿手机刷短视频、回微信，偶尔拍点日常，别推荐那种游戏向堆性能的就行。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "明白了，你更偏向日常使用体验。那我给你筛的时候会优先看续航、系统流畅度、屏幕观感和影像稳定性，性能只要够用就好。你更在意续航还是拍照？"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我刚才说“必须是两年内、不能是2021年前发布的”那句你别当长期要求哈。我现在不纠结年份了，只要2000以内的中国品牌就行。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "明白，你已经取消“必须两年内/必须2021年后发布”的限制了；当前真实需求是：预算不超过2000元、品牌为中国品牌即可，不再要求发布时间。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "value": "Prefers Chinese brand smartphones under 2000 RMB",
+            "reasoning": "User explicitly states budget and brand constraints repeatedly across multiple turns.",
+            "evidence": {
+              "session_id": "sess_1ff1613db1b4",
+              "utterance_index": 4,
+              "text": "必须是中国品牌的手机，而且必须是两年内的款式，不能是2021年之前发布的"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-10-02T08:52:51+00:00",
+            "_task1GoldValue": "Prefers Chinese brand smartphones under 2000 RMB"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/telecom/questioning",
+            "value": "Sustained interest in Xiaomi Ultra series smartphone evaluations",
+            "reasoning": "Task-local technical inquiries about Xiaomi models; insufficient evidence for sustained curiosity about the user.",
+            "evidence": {
+              "session_id": "sess_1ff1613db1b4",
+              "utterance_index": 8,
+              "text": "xiaomi12sultra怎么样？"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-10-02T08:52:51+00:00",
+            "_task1GoldValue": "Sustained interest in Xiaomi Ultra series smartphone evaluations"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "我刚才说“必须是两年内、不能是2021年前发布的”那句你别当长期要求哈。我现在不纠结年份了，只要2000以内的中国品牌就行。"
+                }
+              ]
+            },
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "constraint",
+            "reasoning": "The prior memory stored a strict recency constraint (post-2021). The user explicitly retracts that as not a long-term requirement and says they no longer care about year, so the updated truth is that recency is not required.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "No longer requires phones released within 2 years; only needs a Chinese-brand phone under 2000 RMB regardless of release year."
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_1ff1613db1b4",
+              "utterance_index": 0,
+              "text": "我主要就拿手机刷短视频、回微信，偶尔拍点日常，别推荐那种游戏向堆性能的就行。"
+            },
+            "label": "Preferences/Tech",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User’s described primary use cases (short video, WeChat, occasional photos) and explicit rejection of gaming/performance-heavy recommendations imply a preference for balanced daily-use phones over gaming flagships.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Uses phone mainly for short videos and messaging; does not want gaming-oriented performance-focused phones"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "value": "Requires smartphones released within 2 years (post-2021)",
+            "reasoning": "User adds explicit recency constraint to device selection criteria.",
+            "evidence": {
+              "session_id": "sess_1ff1613db1b4",
+              "utterance_index": 4,
+              "text": "必须是两年内的款式，不能是2021年之前发布的"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "constraint",
+            "updated_at": "2023-10-02T08:52:51+00:00",
+            "_task1GoldValue": "Requires smartphones released within 2 years (post-2021)"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_1ff1613db1b4:sess_1ff1613db1b4",
+      "relativeItemPath": "sess_1ff1613db1b4.json",
+      "canonicalId": "sess_1ff1613db1b4",
+      "sessionId": "sess_1ff1613db1b4",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:27:07.288Z",
+        "queryText": "我在二手平台看中一台手机，卖家说它是“比较早那几年”的机型。为了不踩雷、避免买到不符合我一贯筛选标准的产品，我应该直接把它排除在外的最早发布日期门槛年份是多少？请给出那个年份即可。",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Shopping",
+          "label_suggestion": null,
+          "value": "Requires smartphones released within 2 years (post-2021)",
+          "reasoning": "User adds explicit recency constraint to device selection criteria.",
+          "evidence": {
+            "session_id": "sess_1ff1613db1b4",
+            "utterance_index": 4,
+            "text": "必须是两年内的款式，不能是2021年之前发布的"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "constraint",
+          "updated_at": "2023-10-02T08:52:51+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_1ff1613db1b4:sess_1ff1613db1b4:task4",
+      "relativeItemPath": "sess_1ff1613db1b4.json",
+      "canonicalId": "sess_1ff1613db1b4:task4",
+      "sessionId": "sess_1ff1613db1b4",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:27:07.288Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Shopping",
+          "label_suggestion": null,
+          "value": "Prefers Chinese brand smartphones under 2000 RMB",
+          "reasoning": "User explicitly states budget and brand constraints repeatedly across multiple turns.",
+          "evidence": {
+            "session_id": "sess_1ff1613db1b4",
+            "utterance_index": 4,
+            "text": "必须是中国品牌的手机，而且必须是两年内的款式，不能是2021年之前发布的"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-10-02T08:52:51+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_854:1",
+            "queryText": "最近看到几款新出的国产手机，像iQOO Neo8、一加Ace 2V这些，你觉得哪款更适合我现在的需求？",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Shopping",
+              "label_suggestion": null,
+              "value": "Prefers Chinese brand smartphones under 2000 RMB",
+              "reasoning": "User explicitly states budget and brand constraints repeatedly across multiple turns.",
+              "evidence": {
+                "session_id": "sess_1ff1613db1b4",
+                "utterance_index": 4,
+                "text": "必须是中国品牌的手机，而且必须是两年内的款式，不能是2021年之前发布的"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-10-02T08:52:51+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

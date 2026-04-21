@@ -1,0 +1,273 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_3be964091ce8",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_3be964091ce8:sess_3be964091ce8",
+      "relativeItemPath": "sess_3be964091ce8.json",
+      "canonicalId": "sess_3be964091ce8",
+      "sessionId": "sess_3be964091ce8",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T19:37:10.007Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/task_focus/technical_questioning",
+            "value": "Curious about technical implementation of LoRA in Neeko framework for multi-character role-playing AI [ERROR: Task-local inquiry about paper contents, not self-reported user trait. Questions reflect immediate need to understand material rather than personal curiosity.]",
+            "reasoning": "Task-local inquiry about paper contents, not self-reported user trait. Questions reflect immediate need to understand material rather than personal curiosity.",
+            "evidence": {
+              "session_id": "sess_3be964091ce8",
+              "utterance_index": 10,
+              "text": "I do not understand how LoRA is used here... explain how LoRA is used in Neeko."
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-27T05:00:50+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_3be964091ce8:sess_3be964091ce8",
+      "relativeItemPath": "sess_3be964091ce8.json",
+      "canonicalId": "sess_3be964091ce8",
+      "sessionId": "sess_3be964091ce8",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T19:37:23.880Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Before we continue, can you explain what the gating network is doing in plain terms? I get lost when it mentions MoE."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure. In plain terms, the gating network is a “router.” It looks at the requested role (via its role embedding) and decides which character-specific LoRA block(s) should be turned on for this response.\n\nMoE-style just means: instead of using every expert/module all the time, you compute weights (via a softmax) and then either (a) pick the top one (argmax) or (b) mix several using their weights. Neeko uses that idea to select or combine LoRA blocks so the base model behaves like the chosen character, without rewriting the whole model."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "If it mixes multiple LoRA blocks, doesn't that blend personalities together?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "It can, and that’s one of the tradeoffs. The paper tries to reduce unwanted blending by (1) training non-overlapping LoRA blocks per character so they don’t overwrite each other, and (2) using the gate to heavily weight the intended block (often effectively selecting one). Mixing is mainly highlighted for “fusion” when handling a new character with limited data—combining existing blocks to approximate a new role.\n\nUnrelated example: in classic MoE vision models, you might route “night photos” to one expert and “day photos” to another; mixing can help at twilight but can also blur specialized behavior if the gate is uncertain."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Ok. Next, can you summarize the difference between fusion vs expansion in one paragraph?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Fusion constructs a new character adapter mostly by reusing what’s already learned: it combines existing LoRA modules (same partial rank) into a new one, which is helpful when you don’t have much new-character data and want a fast approximation. Expansion, on the other hand, creates capacity for the new character by adding a fresh LoRA block (and updating gate parameters for routing), training that new block on new-character data while keeping older blocks frozen—so it preserves old characters better but costs extra training and parameters."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Before we go deeper, can you explain it like you’re teaching someone who codes in PyTorch but hasn’t touched Mixture-of-Experts stuff yet? The math in Eq.(6)–(7) is where I start losing track."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Sure—I'll frame it in “PyTorch mental model” terms and keep MoE assumptions minimal.\n\nThink of the base LLM weights as frozen. Neeko adds a bank of small LoRA “blocks” (one per character, non-overlapping slices). Then it uses a gating network to produce weights over those blocks given a role embedding, and combines blocks accordingly.\n\nIf you want, we can walk through Eq.(6) (gate produces a softmax weight vector) and Eq.(7) (weighted sum of LoRA deltas) with shapes and pseudo-code."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Just to be clear: I’m not “curious” in general or asking out of personal interest. I’m only stuck on this one part of the paper, and I want you to explain it so I can keep reading."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it — that’s not a stable preference or trait, it’s a one-off comprehension snag. Your question is strictly about clarifying how Neeko uses LoRA so you can proceed with the paper."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.35,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "Just to be clear: I’m not “curious” in general or asking out of personal interest. I’m only stuck on this one part of the paper, and I want you to explain it so I can keep reading."
+                }
+              ]
+            },
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/task_focus/technical_questioning",
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory frames the user as ‘Curious about technical implementation,’ implying a personal trait. The user explicitly denies general curiosity and states it’s only to get unstuck on this paper section, so the correct interpretation is a one-off, task-scoped clarification request.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "The user’s LoRA question is a task-local request to clarify a specific part of the Neeko paper so they can continue reading, not a general curiosity trait."
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_3be964091ce8",
+              "utterance_index": 0,
+              "text": "can you explain it like you’re teaching someone who codes in PyTorch but hasn’t touched Mixture-of-Experts stuff yet?"
+            },
+            "label": "interaction/task_focus/technical_background",
+            "label_suggestion": "user_background/technical/pytorch_experience",
+            "memory_id": "m_new_1",
+            "preference_attitude": "prefers_pytorch_framed_explanations",
+            "reasoning": "They ask for an explanation 'like you’re teaching someone who codes in PyTorch', implying comfort with PyTorch as a reference frame.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User likely has experience coding in PyTorch and prefers explanations grounded in that mental model."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_3be964091ce8:sess_3be964091ce8",
+      "relativeItemPath": "sess_3be964091ce8.json",
+      "canonicalId": "sess_3be964091ce8",
+      "sessionId": "sess_3be964091ce8",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T19:37:26.859Z",
+        "queryText": "I’m drafting a follow-up question to ask you, but I want it to be very specific: in that multi-agent/multi-character role-playing setup we discussed, which exact adaptation method was I trying to understand being applied inside the framework, and what’s the concrete mechanism of how it plugs into the model (e.g., what gets updated vs. frozen)?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "UNMAPPED",
+          "label_suggestion": "interaction/task_focus/technical_questioning",
+          "value": "Curious about technical implementation of LoRA in Neeko framework for multi-character role-playing AI [ERROR: Task-local inquiry about paper contents, not self-reported user trait. Questions reflect immediate need to understand material rather than personal curiosity.]",
+          "reasoning": "Task-local inquiry about paper contents, not self-reported user trait. Questions reflect immediate need to understand material rather than personal curiosity.",
+          "evidence": {
+            "session_id": "sess_3be964091ce8",
+            "utterance_index": 10,
+            "text": "I do not understand how LoRA is used here... explain how LoRA is used in Neeko."
+          },
+          "confidence": 0.1,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-02-27T05:00:50+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_3be964091ce8:sess_3be964091ce8:task4",
+      "relativeItemPath": "sess_3be964091ce8.json",
+      "canonicalId": "sess_3be964091ce8:task4",
+      "sessionId": "sess_3be964091ce8",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T19:37:30.172Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "UNMAPPED",
+          "label_suggestion": "interaction/task_focus/technical_questioning",
+          "value": "Curious about technical implementation of LoRA in Neeko framework for multi-character role-playing AI [ERROR: Task-local inquiry about paper contents, not self-reported user trait. Questions reflect immediate need to understand material rather than personal curiosity.]",
+          "reasoning": "Task-local inquiry about paper contents, not self-reported user trait. Questions reflect immediate need to understand material rather than personal curiosity.",
+          "evidence": {
+            "session_id": "sess_3be964091ce8",
+            "utterance_index": 10,
+            "text": "I do not understand how LoRA is used here... explain how LoRA is used in Neeko."
+          },
+          "confidence": 0.1,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-02-27T05:00:50+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability3_292:1",
+            "queryText": "Since you've been helping me understand the technical implementation of LoRA in the Neeko framework so thoroughly, I'm updating my professional bio for a conference submission. Given our detailed discussions about multi-character role-playing AI architectures, what specific job title should I list as my primary role? You've seen my depth of understanding here.",
+            "ability": "ability3",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "UNMAPPED",
+              "label_suggestion": "interaction/task_focus/technical_questioning",
+              "value": "Curious about technical implementation of LoRA in Neeko framework for multi-character role-playing AI [ERROR: Task-local inquiry about paper contents, not self-reported user trait. Questions reflect immediate need to understand material rather than personal curiosity.]",
+              "reasoning": "Task-local inquiry about paper contents, not self-reported user trait. Questions reflect immediate need to understand material rather than personal curiosity.",
+              "evidence": {
+                "session_id": "sess_3be964091ce8",
+                "utterance_index": 10,
+                "text": "I do not understand how LoRA is used here... explain how LoRA is used in Neeko."
+              },
+              "confidence": 0.1,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-02-27T05:00:50+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

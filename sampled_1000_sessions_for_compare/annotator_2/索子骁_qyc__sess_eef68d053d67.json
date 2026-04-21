@@ -1,0 +1,380 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_eef68d053d67",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_eef68d053d67:sess_eef68d053d67",
+      "relativeItemPath": "sess_eef68d053d67.json",
+      "canonicalId": "sess_eef68d053d67",
+      "sessionId": "sess_eef68d053d67",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T02:23:29.760Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Pakistan",
+            "reasoning": "User explicitly states being from Pakistan.",
+            "evidence": {
+              "session_id": "sess_eef68d053d67",
+              "utterance_index": 0,
+              "text": "i am from pakistan , i need detail information about Gilgit Baltistan culture , about valleys"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-10-19T11:58:36Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about Chaqchan Mosque in Khaplu (requested explanations twice)",
+            "reasoning": "User asked multiple follow-ups about the same mosque, indicating sustained curiosity.",
+            "evidence": {
+              "session_id": "sess_eef68d053d67",
+              "utterance_index": 2,
+              "text": "can you explain about chaqchan mosque in khaplu"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-10-19T11:58:36Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers technical explanations in Urdu language",
+            "reasoning": "User requested explanations in Urdu for both cultural and technical topics (mosque architecture & BIM modeling).",
+            "evidence": {
+              "session_id": "sess_eef68d053d67",
+              "utterance_index": 5,
+              "text": "can you explain about chaqchan mosque  khaplu  in urdu language"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-10-19T11:58:36Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_eef68d053d67:sess_eef68d053d67",
+      "relativeItemPath": "sess_eef68d053d67.json",
+      "canonicalId": "sess_eef68d053d67",
+      "sessionId": "sess_eef68d053d67",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:38:14.595Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "BIM aur laser scanning ka link kya hota hai؟ Mujhe short samjha dein."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Laser scanning se site ki as-built 3D point cloud banti hai (bohat saare points/measurements). Us point cloud ko software (jaise ReCap/CloudCompare waghera) me align/clean karke BIM tool (Revit/Archicad) me reference ke طور پر use kiya jata hai, phir walls, slabs, beams, MEP elements ko model karke “scan-to-BIM” workflow complete hota hai۔"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Point cloud aur BIM model mein farq kya hai؟"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Point cloud raw measured data hota hai: points ki collection, jis me “objects” smart nahi hotay. BIM model smart objects par based hota hai: wall, door, pipe—har cheez ki properties (material, thickness, levels, quantities) hoti hain, aur schedules/BOQ nikal sakte hain."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Agar point cloud heavy ho to kya kiya jata hai؟"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Aam tor par: (1) region/crop karke sirf required area rakha jata hai، (2) decimation/downsampling se points kam kiye jate hain، (3) noise filter + registration check hota hai، (4) floors/levels wise split files banayi jati hain. Misal ke طور par kuch museums apni heritage documentation me scans ko wings ke hisaab se split karte hain taa ke performance theek rahe."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Scan-to-BIM ka output kis level tak chahiye hota hai؟"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Yeh project requirement par depend karta hai: LOD 200 concept/approx geometry, LOD 300 accurate coordination, LOD 350 connections/supports, LOD 400 fabrication level. Ek hypothetical example: ek hospital renovation me MEP coordination ke liye aksar LOD 300–350 enough hota hai, jabke prefab ductwork ke liye LOD 400 mang sakta hai."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "BIM والی بات کے ساتھ ایک اور چیز: جو لیزر اسکینر ہوتا ہے، میں چاہ رہا ہوں کہ اسے سائٹ پر استعمال کرکے point cloud لے آؤں اور پھر اسی کو Revit میں لے جا کر modeling ٹھیک سے کر لوں۔"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "جی، یہ workflow کافی common ہے: پہلے site پر laser scanning سے point cloud (اکثر .e57/.las/.rcp) بنتا ہے، پھر اسے Revit میں link/import کرکے اسی کے اوپر BIM modeling کی جاتی ہے۔ اگر آپ بتا دیں آپ کے پاس scanner کا output کس format میں آتا ہے تو میں steps زیادہ صحیح ترتیب سے لکھ دوں گا۔"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "bim modeling ka short overview urdu me de dein, lekin detail steps aur technical terms english me hi theek hain."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Theek hai: BIM Modeling ka ek chhota sa overview Urdu mein de deta hoon, aur phir detailed workflow/steps aur technical terms English mein rakhunga."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "jee, mujhe bas intro urdu me chahiye; baqi jab LOD, clash detection, point cloud registration jaisi cheezen aayen to english hi likhein."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Samajh gaya—Urdu sirf introduction ke liye, aur aage saari technical detail English mein."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Pakistan",
+            "reasoning": "User explicitly states being from Pakistan.",
+            "evidence": {
+              "session_id": "sess_eef68d053d67",
+              "utterance_index": 0,
+              "text": "i am from pakistan , i need detail information about Gilgit Baltistan culture , about valleys"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-10-19T11:58:36Z",
+            "_task1GoldValue": "Pakistan"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about Chaqchan Mosque in Khaplu (requested explanations twice)",
+            "reasoning": "User asked multiple follow-ups about the same mosque, indicating sustained curiosity.",
+            "evidence": {
+              "session_id": "sess_eef68d053d67",
+              "utterance_index": 2,
+              "text": "can you explain about chaqchan mosque in khaplu"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-10-19T11:58:36Z",
+            "_task1GoldValue": "Curious about Chaqchan Mosque in Khaplu (requested explanations twice)"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": "preference",
+            "reasoning": "Old memory says the user prefers technical explanations in Urdu. In the new dialogue, the user explicitly limits Urdu to a short overview and requests detailed steps and technical terms in English.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers a brief Urdu intro, but wants detailed technical steps and terminology in English"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_eef68d053d67",
+              "utterance_index": 0,
+              "text": "میں چاہ رہا ہوں کہ اسے سائٹ پر استعمال کرکے point cloud لے آؤں اور پھر اسی کو Revit میں لے جا کر modeling ٹھیک سے کر لوں۔"
+            },
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User describes a planned workflow involving site laser scanning, generating a point cloud, and bringing it into Revit for modeling, indicating specific technical interest.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Interested in using a laser scanner point cloud workflow for BIM in Revit (scan site → point cloud → Revit modeling)."
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers technical explanations in Urdu language",
+            "reasoning": "User requested explanations in Urdu for both cultural and technical topics (mosque architecture & BIM modeling).",
+            "evidence": {
+              "session_id": "sess_eef68d053d67",
+              "utterance_index": 5,
+              "text": "can you explain about chaqchan mosque  khaplu  in urdu language"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-10-19T11:58:36Z",
+            "_task1GoldValue": "Prefers technical explanations in Urdu language"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_eef68d053d67:sess_eef68d053d67",
+      "relativeItemPath": "sess_eef68d053d67.json",
+      "canonicalId": "sess_eef68d053d67",
+      "sessionId": "sess_eef68d053d67",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:38:22.406Z",
+        "queryText": "I’m about to ask for a step-by-step deep dive into a fairly technical topic, and I want it in the same language style I usually understand best—what language should you use so I don’t struggle to follow the details?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers technical explanations in Urdu language",
+          "reasoning": "User requested explanations in Urdu for both cultural and technical topics (mosque architecture & BIM modeling).",
+          "evidence": {
+            "session_id": "sess_eef68d053d67",
+            "utterance_index": 5,
+            "text": "can you explain about chaqchan mosque  khaplu  in urdu language"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-10-19T11:58:36Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_eef68d053d67:sess_eef68d053d67:task4",
+      "relativeItemPath": "sess_eef68d053d67.json",
+      "canonicalId": "sess_eef68d053d67:task4",
+      "sessionId": "sess_eef68d053d67",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:37:41.124Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers technical explanations in Urdu language",
+          "reasoning": "User requested explanations in Urdu for both cultural and technical topics (mosque architecture & BIM modeling).",
+          "evidence": {
+            "session_id": "sess_eef68d053d67",
+            "utterance_index": 5,
+            "text": "can you explain about chaqchan mosque  khaplu  in urdu language"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-10-19T11:58:36Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1082:1",
+            "queryText": "I've been reading about photogrammetry versus LiDAR for 3D scanning. Which approach would you recommend for someone like me who wants to understand the core technical workflow?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers technical explanations in Urdu language",
+              "reasoning": "User requested explanations in Urdu for both cultural and technical topics (mosque architecture & BIM modeling).",
+              "evidence": {
+                "session_id": "sess_eef68d053d67",
+                "utterance_index": 5,
+                "text": "can you explain about chaqchan mosque  khaplu  in urdu language"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-10-19T11:58:36Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "partial",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "relevant memory but not completely hit",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

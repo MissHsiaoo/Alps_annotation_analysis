@@ -1,0 +1,386 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_e39e645a8afd",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_e39e645a8afd:sess_e39e645a8afd",
+      "relativeItemPath": "sess_e39e645a8afd.json",
+      "canonicalId": "sess_e39e645a8afd",
+      "sessionId": "sess_e39e645a8afd",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T02:43:25.775Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "value": "Accepts payments only via Stripe",
+            "reasoning": "User explicitly states payment method restriction.",
+            "evidence": {
+              "session_id": "sess_e39e645a8afd",
+              "utterance_index": 2,
+              "text": "strona internetowa to smartglowpl.company.site s platnosci sa tylko przez stripa"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-11-21T20:02:01+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "business/shipping_policy",
+            "value": "Uses couriers InPost/DPD/Poczta Polska based on shipping speed",
+            "reasoning": "User specifies courier service preferences for their business. Label forced correction.",
+            "evidence": {
+              "session_id": "sess_e39e645a8afd",
+              "utterance_index": 10,
+              "text": "napisz ze wybor firmy kurierskeij \nInpost, DPD lub poczta-polska\nzalezy od szybkosci wysylki"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-11-21T20:02:01+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "business/shipping_policy",
+            "value": "Courier selection made randomly with priority on fastest shipping",
+            "reasoning": "User clarifies courier assignment logic for their business. Label forced correction.",
+            "evidence": {
+              "session_id": "sess_e39e645a8afd",
+              "utterance_index": 12,
+              "text": "napisz ze jest wybierane lososwo i krocej"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-11-21T20:02:01+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Persistent technical curiosity about Ecwid courier selection visibility",
+            "reasoning": "User repeatedly asks about missing courier options in Ecwid platform.",
+            "evidence": {
+              "session_id": "sess_e39e645a8afd",
+              "utterance_index": 16,
+              "text": "kiedy wybor kuriera sie pokazuje"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-21T20:02:01+00:00"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "value": "User prefers communication in Polish language",
+            "confidence": 0.95,
+            "evidence_text": "napisz zasady i warunki dla firmy SmartGlow™ która sprzedaje lampki magnetyczne led"
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "value": "Runs an e-commerce business called SmartGlow™ that sells magnetic LED lamps.",
+            "confidence": 0.95,
+            "evidence_text": "napisz zasady i warunki dla firmy SmartGlow™ która sprzedaje lampki magnetyczne led"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_e39e645a8afd:sess_e39e645a8afd",
+      "relativeItemPath": "sess_e39e645a8afd.json",
+      "canonicalId": "sess_e39e645a8afd",
+      "sessionId": "sess_e39e645a8afd",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:40:55.380Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "W Ecwid mam ustawione 3 metody dostawy, ale czasem w checkout w ogóle nie widać żadnej. Od czego to zależy?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Najczęściej wynika to z warunków wyświetlania metod wysyłki. W Ecwid opcje dostawy pojawiają się dopiero wtedy, gdy zamówienie „pasuje” do reguł metody: strefy/kraju, zakresu wagowego lub cenowego koszyka, typu dostawy (kurier vs odbiór), a czasem po uzupełnieniu adresu. Jeśli żadna metoda nie spełnia warunków, sekcja może zniknąć całkowicie.\n\nSzybka checklista:\n1) Czy metody są przypisane do właściwej strefy (kraj/województwa/kody pocztowe)?\n2) Czy nie ma limitów (min/max waga, min/max wartość koszyka), które wykluczają część koszyków?\n3) Czy produkt nie ma ustawień typu „tylko odbiór osobisty” albo wyklucza wysyłkę?\n4) Czy metody są aktywne dla wszystkich grup klientów (jeśli używasz ograniczeń)?\n5) Czy opcje mają sens dla adresu testowego (czasem brak kodu pocztowego = brak metod)?\n\nJeśli chcesz, podaj (bez danych wrażliwych) jakie masz ustawione warunki przy tych 3 metodach: strefy + limity wagi/ceny + czy to stawki stałe czy obliczane, to wskażę najbardziej prawdopodobne miejsce, które je „wycina”."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "A czy to może się różnić w zależności od tego, czy klient jest na telefonie czy na komputerze?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Zasadniczo nie — logika dostępności metod wysyłki jest taka sama na mobile i desktop. Różnić się może tylko prezentacja (np. sekcja jest niżej na ekranie, zwinięta, albo UI ładuje się później).\n\nW praktyce „różnice między urządzeniami” zwykle wynikają z:\n- cache/przestarzałych skryptów w motywie lub wklejonych integracji,\n- blokowania skryptów (np. przez tryb oszczędzania danych, adblock, ITP w Safari),\n- wolniejszego ładowania checkoutu na mobilnym internecie.\n\nDla testu: otwórz checkout w trybie incognito bez rozszerzeń i sprawdź, czy metody wysyłki pojawiają się konsekwentnie po wpisaniu kraju i kodu pocztowego.\n\n(Przykład niezwiązany z Twoim sklepem: w 2024 kilka platform e-commerce miało incydenty, gdzie agresywne cache CDN potrafiło serwować nieaktualny kod checkoutu tylko części użytkowników — efekt wyglądał jak „na telefonie nie ma wysyłki”.)"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Gdzie dokładnie najlepiej to sprawdzić w panelu Ecwid?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "W panelu Ecwid sprawdź kolejno:\n1) Wysyłka i odbiór → Metody wysyłki: czy wszystkie są „Włączone”.\n2) Wejdź w każdą metodę: Strefa dostawy (kraje/regiony/kody pocztowe).\n3) Tam też: Warunki/ograniczenia (waga, suma koszyka, liczba produktów — zależnie od ustawień).\n4) Katalog → Produkty: czy konkretny produkt nie ma nietypowych ustawień wysyłki (np. waga = 0 przy metodzie liczonej po wadze albo ograniczenia dla wysyłki).\n5) Ustawienia → Ogólne → Lokalizacja/region: czy kraj sklepu i waluta są spójne z konfiguracją stref.\n\nJeśli podeślesz listę 3 metod i jakie mają strefy + limity, można to zawęzić do jednej konkretnej reguły."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "u mnie w Ecwidzie wysyłka jest ustawiona jako „Odbiór osobisty”, bo paczki zostawiam klientom pod drzwiami, więc pewnie dlatego nie pokazuje się wybór kuriera?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Tak — jeśli w ustawieniach Ecwid masz aktywną metodę typu „Odbiór osobisty” (a metody kurierskie są wyłączone albo nieprzypisane do stref), checkout nie pokaże wyboru kuriera. Żeby pojawiły się opcje InPost/DPD/Poczta Polska, dodaj je jako metody dostawy (wysyłka), przypisz do odpowiednich stref/regionów i upewnij się, że nie są ukryte przez warunki (np. waga, wartość koszyka, produkty cyfrowe)."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "musze sprostowac: w ecwid mam wlaczony tez przelew bankowy, nie tylko stripe. stripe jest domyslny, ale klienci moga wybrac przelew."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "OK, czyli nie jest tak, że płatności są *tylko* przez Stripe — Stripe jest domyślny, ale masz też aktywny przelew bankowy jako alternatywę. W regulaminie/warunkach płatności zapiszmy to jako: „Dostępne metody płatności: Stripe oraz przelew bankowy (jeśli widoczny przy kasie)”, zamiast „jedyną metodą jest Stripe”."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "business/shipping_policy",
+            "value": "Uses couriers InPost/DPD/Poczta Polska based on shipping speed",
+            "reasoning": "User specifies courier service preferences for their business. Label forced correction.",
+            "evidence": {
+              "session_id": "sess_e39e645a8afd",
+              "utterance_index": 10,
+              "text": "napisz ze wybor firmy kurierskeij \nInpost, DPD lub poczta-polska\nzalezy od szybkosci wysylki"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-11-21T20:02:01+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "business/shipping_policy",
+            "value": "Courier selection made randomly with priority on fastest shipping",
+            "reasoning": "User clarifies courier assignment logic for their business. Label forced correction.",
+            "evidence": {
+              "session_id": "sess_e39e645a8afd",
+              "utterance_index": 12,
+              "text": "napisz ze jest wybierane lososwo i krocej"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-11-21T20:02:01+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Persistent technical curiosity about Ecwid courier selection visibility",
+            "reasoning": "User repeatedly asks about missing courier options in Ecwid platform.",
+            "evidence": {
+              "session_id": "sess_e39e645a8afd",
+              "utterance_index": 16,
+              "text": "kiedy wybor kuriera sie pokazuje"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-21T20:02:01+00:00"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "Old memory claims only Stripe is accepted, but the user clarifies an additional payment method is enabled. New truth: Stripe is default, yet customers can choose bank transfer too.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Payments are available via Stripe (default) and bank transfer (optional in Ecwid checkout)"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_e39e645a8afd",
+              "utterance_index": 0,
+              "text": "u mnie w Ecwidzie wysyłka jest ustawiona jako „Odbiór osobisty”, bo paczki zostawiam klientom pod drzwiami"
+            },
+            "label": "UNMAPPED",
+            "label_suggestion": "business/shipping_setup",
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies their Ecwid shipping configuration is set to local pickup and that they personally leave packages at customers’ doors, which explains why courier selection doesn’t appear.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "In Ecwid the user currently has shipping set as 'Local pickup' and delivers by leaving packages at customers’ doors"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_e39e645a8afd:sess_e39e645a8afd",
+      "relativeItemPath": "sess_e39e645a8afd.json",
+      "canonicalId": "sess_e39e645a8afd",
+      "sessionId": "sess_e39e645a8afd",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:41:52.707Z",
+        "queryText": "I’m about to send you money for something we discussed, but my checkout screen keeps offering multiple options—if I want to avoid choosing one that you can’t accept, which route should I pick and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Shopping",
+          "label_suggestion": null,
+          "value": "Accepts payments only via Stripe",
+          "reasoning": "User explicitly states payment method restriction.",
+          "evidence": {
+            "session_id": "sess_e39e645a8afd",
+            "utterance_index": 2,
+            "text": "strona internetowa to smartglowpl.company.site s platnosci sa tylko przez stripa"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-11-21T20:02:01+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_e39e645a8afd:sess_e39e645a8afd:task4",
+      "relativeItemPath": "sess_e39e645a8afd.json",
+      "canonicalId": "sess_e39e645a8afd:task4",
+      "sessionId": "sess_e39e645a8afd",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:42:07.909Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Shopping",
+          "label_suggestion": null,
+          "value": "Accepts payments only via Stripe",
+          "reasoning": "User explicitly states payment method restriction.",
+          "evidence": {
+            "session_id": "sess_e39e645a8afd",
+            "utterance_index": 2,
+            "text": "strona internetowa to smartglowpl.company.site s platnosci sa tylko przez stripa"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-11-21T20:02:01+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_881:1",
+            "queryText": "Mam do wyboru dwie platformy do sprzedaży online - jedną z wbudowanym systemem płatności, drugą gdzie trzeba podłączać zewnętrzne bramki. Którą byś mi polecił do rozkręcenia nowego sklepu?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Shopping",
+              "label_suggestion": null,
+              "value": "Accepts payments only via Stripe",
+              "reasoning": "User explicitly states payment method restriction.",
+              "evidence": {
+                "session_id": "sess_e39e645a8afd",
+                "utterance_index": 2,
+                "text": "strona internetowa to smartglowpl.company.site s platnosci sa tylko przez stripa"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-11-21T20:02:01+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "relevant",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

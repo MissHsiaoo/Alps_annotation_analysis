@@ -1,0 +1,339 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_35ed67a0a0d6",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_35ed67a0a0d6:sess_35ed67a0a0d6",
+      "relativeItemPath": "sess_35ed67a0a0d6.json",
+      "canonicalId": "sess_35ed67a0a0d6",
+      "sessionId": "sess_35ed67a0a0d6",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:43:51.211Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Analysis/Business_Models/Corporate_Strategy",
+            "value": "Critical view of corporate strategies controlling API access and business models, citing restaurant analogy and Faker.js precedent",
+            "reasoning": "Analysis of corporate strategies is supported, but label 'Negative' implies unstated user attitude. Label forced correction.",
+            "evidence": {
+              "session_id": "sess_35ed67a0a0d6",
+              "utterance_index": 0,
+              "text": "Considering that Microsoft owns GitHub and OpenAI, I won't be surprised to come back tomorrow and see that this repository has just disappeared without explanations..."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-29T12:04:28+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requests English-to-simple Chinese translations for technical content",
+            "reasoning": "Repeated translation requests (2 instances) indicate interaction pattern",
+            "evidence": {
+              "session_id": "sess_35ed67a0a0d6",
+              "utterance_index": 12,
+              "text": "translate into simple chinese:refactored code"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-04-29T12:04:28+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_35ed67a0a0d6:sess_35ed67a0a0d6",
+      "relativeItemPath": "sess_35ed67a0a0d6.json",
+      "canonicalId": "sess_35ed67a0a0d6",
+      "sessionId": "sess_35ed67a0a0d6",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:44:11.066Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "translate into simple chinese: \"This change only refactors code; behavior should remain the same.\""
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "简体中文：\"这个改动只是重构代码；行为应该保持不变。\""
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "What’s a concise way to say “breaking change” in Chinese for release notes?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "常见写法：\"破坏性变更\"（也有人写\"不兼容变更\"）。用于发布说明时通常用\"破坏性变更\"更直观。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Also translate: \"Filter changed files\""
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "简体中文：\"筛选已更改的文件\"（更短也可以：\"筛选变更文件\"）。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Unrelated: I saw a headline about a satellite reentering the atmosphere. How do they predict where it lands?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "通常用轨道测量数据（雷达/光学跟踪）结合大气密度模型来做数值模拟，估计再入时间窗与地面轨迹带。因为太阳活动会改变大气阻力、碎裂也难预测，所以越接近再入，落点预测才会收敛到更小范围。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "translate into simple chinese:Filter changed files"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "“Filter changed files”可以翻译为：“筛选已更改的文件”。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "translate into simple chinese: refactored code"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "你是想要“简体中文”还是“英文翻译成中文”？你刚才这句其实已经是英文了。"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "别翻成中文了，我其实是想要英文里更顺的说法，用在提交信息里。"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "明白，那我给你几个更地道的英文提交信息：\n- Refactor code\n- Code refactor\n- Refactored the codebase\n- Refactor: clean up and reorganize code"
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "对，就这种。以后不用中文翻译，给我英文措辞建议就行。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Analysis/Business_Models/Corporate_Strategy",
+            "value": "Critical view of corporate strategies controlling API access and business models, citing restaurant analogy and Faker.js precedent",
+            "reasoning": "Analysis of corporate strategies is supported, but label 'Negative' implies unstated user attitude. Label forced correction.",
+            "evidence": {
+              "session_id": "sess_35ed67a0a0d6",
+              "utterance_index": 0,
+              "text": "Considering that Microsoft owns GitHub and OpenAI, I won't be surprised to come back tomorrow and see that this repository has just disappeared without explanations..."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-29T12:04:28+00:00",
+            "_task1GoldValue": "Critical view of corporate strategies controlling API access and business models, citing restaurant analogy and Faker.js precedent"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                12
+              ],
+              "turns": [
+                {
+                  "index": 12,
+                  "role": "user",
+                  "text": "别翻成中文了，我其实是想要英文里更顺的说法，用在提交信息里。"
+                }
+              ]
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory claims the user requests English-to–Simplified Chinese translations for technical content, but the user clarifies they don't want Chinese translation and instead want better English phrasing.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers English wording suggestions (e.g., for commit messages) rather than English-to–Simplified Chinese translations"
+          },
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_35ed67a0a0d6",
+              "utterance_index": 0,
+              "text": "translate into simple chinese:Filter changed files"
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "The user asks to translate a UI-like phrase (“Filter changed files”) into simplified Chinese, reinforcing a preference for this kind of translation help.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Requests English-to-simple Chinese translations for short UI/feature phrases"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_35ed67a0a0d6:sess_35ed67a0a0d6",
+      "relativeItemPath": "sess_35ed67a0a0d6.json",
+      "canonicalId": "sess_35ed67a0a0d6",
+      "sessionId": "sess_35ed67a0a0d6",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:44:32.392Z",
+        "queryText": "I’m about to paste a dense, jargon-heavy software/dev paragraph in English—how should you respond so it matches what I usually want from you, and what should you produce as the output?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Requests English-to-simple Chinese translations for technical content",
+          "reasoning": "Repeated translation requests (2 instances) indicate interaction pattern",
+          "evidence": {
+            "session_id": "sess_35ed67a0a0d6",
+            "utterance_index": 12,
+            "text": "translate into simple chinese:refactored code"
+          },
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-04-29T12:04:28+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_35ed67a0a0d6:sess_35ed67a0a0d6:task4",
+      "relativeItemPath": "sess_35ed67a0a0d6.json",
+      "canonicalId": "sess_35ed67a0a0d6:task4",
+      "sessionId": "sess_35ed67a0a0d6",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:45:00.203Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Requests English-to-simple Chinese translations for technical content",
+          "reasoning": "Repeated translation requests (2 instances) indicate interaction pattern",
+          "evidence": {
+            "session_id": "sess_35ed67a0a0d6",
+            "utterance_index": 12,
+            "text": "translate into simple chinese:refactored code"
+          },
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-04-29T12:04:28+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1107:1",
+            "queryText": "I've been looking at these two open-source projects on GitHub - one has extensive documentation in English but the other has better architecture. Which one would you suggest I contribute to?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Requests English-to-simple Chinese translations for technical content",
+              "reasoning": "Repeated translation requests (2 instances) indicate interaction pattern",
+              "evidence": {
+                "session_id": "sess_35ed67a0a0d6",
+                "utterance_index": 12,
+                "text": "translate into simple chinese:refactored code"
+              },
+              "confidence": 0.8,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-04-29T12:04:28+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

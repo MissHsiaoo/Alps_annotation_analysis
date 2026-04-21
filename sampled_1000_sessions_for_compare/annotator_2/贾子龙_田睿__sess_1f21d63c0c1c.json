@@ -1,0 +1,376 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_1f21d63c0c1c",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_1f21d63c0c1c:sess_1f21d63c0c1c",
+      "relativeItemPath": "sess_1f21d63c0c1c.json",
+      "canonicalId": "sess_1f21d63c0c1c",
+      "sessionId": "sess_1f21d63c0c1c",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:26:23.528Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers developing MMO sandbox games with strategic/non-action combat focus",
+            "reasoning": "User explicitly states their game design direction: 'Es soll ein mmo ähnliches spiel sein also ist action kampf nicht so gut'",
+            "evidence": {
+              "session_id": "sess_1f21d63c0c1c",
+              "utterance_index": 0,
+              "text": "Ich möchte ein Sandbox spiel machen ähnlich zu mount & blade. Es soll ein mmo ähnliches spiel sein also ist action kampf nicht so gut."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-02-25T08:13:30+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical/Game_Design/Data_Management",
+            "value": "Proposes mobile player bases that only persist when online to minimize stored data",
+            "reasoning": "User suggests technical implementation strategy for their game project",
+            "evidence": {
+              "session_id": "sess_1f21d63c0c1c",
+              "utterance_index": 6,
+              "text": "Um gespeicherte daten zu minimieren wäre eine idee von mir das die Bassis der Spieler mobil ist und nicht persistent auf der welt."
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-02-25T08:13:30+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Game_Design/Interest/Evolution_Mechanics",
+            "value": "Deep interest in MMO game design mechanics: sandbox systems, persistence solutions, evolution simulations",
+            "reasoning": "Single inquiry about evolution simulation game mechanics",
+            "evidence": {
+              "session_id": "sess_1f21d63c0c1c",
+              "utterance_index": 10,
+              "text": "Kennst du die youtube videos von natural selection simulation von primer? [...] videospiel das wie die simulation funktioniert aber die evolution (attribute) der kreaturen wie in einem rogulike ausgewählt werden."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-25T08:13:30+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_1f21d63c0c1c:sess_1f21d63c0c1c",
+      "relativeItemPath": "sess_1f21d63c0c1c.json",
+      "canonicalId": "sess_1f21d63c0c1c",
+      "sessionId": "sess_1f21d63c0c1c",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:26:23.528Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Wenn man so ein Evolution-Roguelike weiterdenkt: Wie würdest du verhindern, dass die Meta-Strategie alles dominiert (z.B. immer nur Speed stacken)?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Gute Frage. Ein paar robuste Hebel gegen \"eine\" dominante Meta:\n\n1) Trade-offs statt linearer Boni: Jede Mutation bringt nicht nur +X, sondern auch klare Opportunitätskosten (Energiebedarf, Verletzlichkeit, Nahrungsspektrum enger).\n\n2) Frequenzabhängige Selektion: Wenn viele auf Speed gehen, reagieren Umwelt/Prädatoren/Beute so, dass Speed weniger wert wird (z.B. mehr Fallen, Engpässe, Tarnung wichtiger, Beute mit Burst-Ausweichmanövern).\n\n3) Multi-Achsen-Ziele pro Run: Nicht nur \"überlebe\", sondern wechselnde Siegbedingungen (Population stabilisieren, Nachwuchsrate, Ressourcen-Conversion, Boss-Adaptation). Dadurch ist ein eindimensionaler Build selten optimal.\n\n4) Biome + Ereignisse als Build-Checks: Eissturm, Dürre, Parasitenwelle, Nachtphase etc. Jede Phase prüft andere Attribute, sodass Generalisten- oder Hybrid-Builds attraktiv bleiben.\n\n5) Mutations-Slots / Genom-Budget: Begrenzte Slots oder ein Punktebudget pro Kategorie erzwingt Priorisierung; starke Speed-Mutationen verbrauchen mehr \"Genomkosten\".\n\n6) Gegenmechaniken: Zu viel Speed erhöht z.B. Sturz-/Verletzungsrisiko, Kalorienverbrauch, oder senkt Präzision beim Fressen/Kämpfen.\n\nWenn du magst: Soll die Meta eher über biome-spezifische Builds rotieren (jede Welt anders) oder soll es eher ein dauerhafter \"Skill-Expression\"-Meta sein?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Eher biome-spezifisch. Noch was anderes: Kennst du ein gutes Beispiel aus der Wissenschaftskommunikation, wo so ein Prinzip (Trade-offs) anschaulich erklärt wird?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Anschauliche Klassiker sind z.B. das \"Pfauenrad\" (sexuelle Selektion: Attraktivität vs. Überlebensfähigkeit) oder der Kompromiss bei Schnäbeln auf den Galápagos-Finken (Spezialisierung auf bestimmte Samen vs. Flexibilität bei Nahrungswechsel).\n\nIn der Wissenschaftskommunikation werden Trade-offs auch oft über einfache Kostenmodelle vermittelt: \"Mehr Panzerung = mehr Schutz, aber langsamer und höherer Energiebedarf\" – das ist sofort spielbar.\n\n(Als Randnotiz: In einer bekannten Beringungsstudie bei Zugvögeln wurde z.B. diskutiert, dass frühere Ankunft Brutvorteile bringen kann, aber auch ein höheres Wetterrisiko bedeutet – ein sehr greifbarer Trade-off.)\n\nWillst du das im Spiel eher als Tooltip-Erklärung, als kleine \"Experiment-Quest\", oder als Visualisierung (z.B. Kurven: Nutzen vs. Kosten) umsetzen?"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Visualisierung klingt gut. Welche UI-Form würde das am besten vermitteln, ohne zu überfordern?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Drei UI-Formen, die meist gut funktionieren, in steigender Informationsdichte:\n\n1) Zwei-Balken-Karte pro Mutation: links Nutzen (z.B. \"Flucht\"), rechts Kosten (z.B. \"Hunger\", \"Verletzungsrisiko\"). Sehr schnell erfassbar.\n\n2) Radar-Chart für den Gesamtorganismus (5–7 Achsen): zeigt, wie sich ein Pick auf das Profil auswirkt. Wichtig: nur wenige Achsen und klare Icons.\n\n3) Mini-Kurven (sparsam): eine kleine Kurve \"Speed → Energieverbrauch\" oder \"Panzerung → Mobilität\". Nur für Mutationen, bei denen Nichtlinearität wichtig ist.\n\nGuter Kompromiss: pro Mutation 1) (sofort), und optional per Hold/Details 2) oder 3).\n\nWenn du biome-spezifisch willst, kannst du zusätzlich ein kleines \"Biome-Tag\" anzeigen (z.B. Kälte, Trockenheit, Dichte Vegetation) und einen farbigen Indikator, ob die Mutation dort eher Vorteil oder Risiko erhöht."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Ich hab beim Schreiben gemerkt, dass ich am liebsten so ein Roguelike-Run-System hätte: nach jeder „Generation“ ein kurzer Auswahl-Screen mit 3 Mutationen, und wenn die Spezies ausstirbt, startet man neu, aber ein kleiner Teil der Forschung bleibt als Meta-Progress."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Das passt sehr gut zur Mischung aus Simulation und Roguelike: Du trennst damit klar zwischen Run-Entscheidungen (Mutationen/Anpassungen) und langfristiger Motivation (Meta-Forschung). Wenn du willst, kann ich dir dafür eine kompakte Loop skizzieren (Run-Phase → Auswertungsphase → Mutationswahl → nächste Generation) und Beispiele für Meta-Upgrades geben, die die Simulation nicht „kaputtbuffen“."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Ich glaub, das wurde am Anfang etwas missverstanden: Ich will gar kein MMO bauen. Ich hatte nur laut drüber nachgedacht. Eigentlich soll es ein Singleplayer/Coop-Sandboxding werden – und Action-Kampf ist schon wichtig, eher wie Mount & Blade in Echtzeit."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Alles klar, das ist eine deutliche Kursänderung: Wenn du **kein MMO** planst, sondern **Singleplayer/Coop** und **Action-Kampf wichtig** ist, dann passt der Fokus eher auf direktes Kampffeeling, KI-Encounter, gute Hitboxen/Animationen und ein überschaubares Progressions-/Sandbox-System – statt auf MMO-typische Skalierung, Persistenz und serverfreundliche, weniger actionlastige Kämpfe."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Genau. MMO wäre zu aufwendig, und ich will gerade nicht auf strategische/indirekte Kämpfe ausweichen."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical/Game_Design/Data_Management",
+            "value": "Proposes mobile player bases that only persist when online to minimize stored data",
+            "reasoning": "User suggests technical implementation strategy for their game project",
+            "evidence": {
+              "session_id": "sess_1f21d63c0c1c",
+              "utterance_index": 6,
+              "text": "Um gespeicherte daten zu minimieren wäre eine idee von mir das die Bassis der Spieler mobil ist und nicht persistent auf der welt."
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-02-25T08:13:30+00:00",
+            "_task1GoldValue": "Proposes mobile player bases that only persist when online to minimize stored data"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Game_Design/Interest/Evolution_Mechanics",
+            "value": "Deep interest in MMO game design mechanics: sandbox systems, persistence solutions, evolution simulations",
+            "reasoning": "Single inquiry about evolution simulation game mechanics",
+            "evidence": {
+              "session_id": "sess_1f21d63c0c1c",
+              "utterance_index": 10,
+              "text": "Kennst du die youtube videos von natural selection simulation von primer? [...] videospiel das wie die simulation funktioniert aber die evolution (attribute) der kreaturen wie in einem rogulike ausgewählt werden."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-25T08:13:30+00:00",
+            "_task1GoldValue": "Deep interest in MMO game design mechanics: sandbox systems, persistence solutions, evolution simulations"
+          },
+          {
+            "confidence": 0.93,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "Ich glaub, das wurde am Anfang etwas missverstanden: Ich will gar kein MMO bauen. Ich hatte nur laut drüber nachgedacht. Eigentlich soll es ein Singleplayer/Coop-Sandboxding werden – und Action-Kampf ist schon wichtig, eher wie Mount & Blade in Echtzeit."
+                }
+              ]
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "Die alte Erinnerung besagt, der Nutzer bevorzuge die Entwicklung eines MMO-Sandbox-Spiels mit strategischem/nicht-actionlastigem Kampf. Im Dialog stellt der Nutzer klar, dass er kein MMO bauen will und dass Action-Kampf wichtig ist; damit wird die vorherige MMO-/Non-Action-Präferenz widersprochen und korrigiert.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers developing a singleplayer/coop sandbox game where real-time action combat is important (not an MMO focus)"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_1f21d63c0c1c",
+              "utterance_index": 0,
+              "text": "nach jeder „Generation“ ein kurzer Auswahl-Screen mit 3 Mutationen, und wenn die Spezies ausstirbt, startet man neu, aber ein kleiner Teil der Forschung bleibt als Meta-Progress."
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "Der Nutzer beschreibt als bevorzugtes Design eine Roguelike-Loop mit Mutationsauswahl pro Generation und Meta-Progress nach dem Tod.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers a roguelike loop for the evolution game: 3 mutation choices each generation and partial research meta-progression retained after extinction/reset"
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers developing MMO sandbox games with strategic/non-action combat focus",
+            "reasoning": "User explicitly states their game design direction: 'Es soll ein mmo ähnliches spiel sein also ist action kampf nicht so gut'",
+            "evidence": {
+              "session_id": "sess_1f21d63c0c1c",
+              "utterance_index": 0,
+              "text": "Ich möchte ein Sandbox spiel machen ähnlich zu mount & blade. Es soll ein mmo ähnliches spiel sein also ist action kampf nicht so gut."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-02-25T08:13:30+00:00",
+            "_task1GoldValue": "Prefers developing MMO sandbox games with strategic/non-action combat focus"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_1f21d63c0c1c:sess_1f21d63c0c1c",
+      "relativeItemPath": "sess_1f21d63c0c1c.json",
+      "canonicalId": "sess_1f21d63c0c1c",
+      "sessionId": "sess_1f21d63c0c1c",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:26:23.528Z",
+        "queryText": "I’m picking a core combat loop for the game I’ve been talking about: should I build it around twitchy real-time fighting or around slower, decision-driven systems—and what’s the main reason one of those fits my overall direction better?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers developing MMO sandbox games with strategic/non-action combat focus",
+          "reasoning": "User explicitly states their game design direction: 'Es soll ein mmo ähnliches spiel sein also ist action kampf nicht so gut'",
+          "evidence": {
+            "session_id": "sess_1f21d63c0c1c",
+            "utterance_index": 0,
+            "text": "Ich möchte ein Sandbox spiel machen ähnlich zu mount & blade. Es soll ein mmo ähnliches spiel sein also ist action kampf nicht so gut."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-02-25T08:13:30+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_1f21d63c0c1c:sess_1f21d63c0c1c:task4",
+      "relativeItemPath": "sess_1f21d63c0c1c.json",
+      "canonicalId": "sess_1f21d63c0c1c:task4",
+      "sessionId": "sess_1f21d63c0c1c",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:26:23.528Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers developing MMO sandbox games with strategic/non-action combat focus",
+          "reasoning": "User explicitly states their game design direction: 'Es soll ein mmo ähnliches spiel sein also ist action kampf nicht so gut'",
+          "evidence": {
+            "session_id": "sess_1f21d63c0c1c",
+            "utterance_index": 0,
+            "text": "Ich möchte ein Sandbox spiel machen ähnlich zu mount & blade. Es soll ein mmo ähnliches spiel sein also ist action kampf nicht so gut."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-02-25T08:13:30+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_315:1",
+            "queryText": "Ich überlege, ein neues Projekt zu starten - ein MMO, bei dem Spieler gemeinsam eine Zivilisation von Grund auf aufbauen. Welche Kernmechaniken würdest du hierfür empfehlen?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Prefers developing MMO sandbox games with strategic/non-action combat focus",
+              "reasoning": "User explicitly states their game design direction: 'Es soll ein mmo ähnliches spiel sein also ist action kampf nicht so gut'",
+              "evidence": {
+                "session_id": "sess_1f21d63c0c1c",
+                "utterance_index": 0,
+                "text": "Ich möchte ein Sandbox spiel machen ähnlich zu mount & blade. Es soll ein mmo ähnliches spiel sein also ist action kampf nicht so gut."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2024-02-25T08:13:30+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

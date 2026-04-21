@@ -1,0 +1,343 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_f8e3cd5026f1",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_f8e3cd5026f1:sess_f8e3cd5026f1",
+      "relativeItemPath": "sess_f8e3cd5026f1.json",
+      "canonicalId": "sess_f8e3cd5026f1",
+      "sessionId": "sess_f8e3cd5026f1",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T07:53:37.305Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "公司命名时排除'信'和'诚'字",
+            "reasoning": "用户在第6轮明确要求不带'信'和'诚'字",
+            "evidence": {
+              "session_id": "sess_f8e3cd5026f1",
+              "utterance_index": 6,
+              "text": "不需要带信和诚"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-17T04:54:15+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "公司命名核心要求：两字/常用汉字/引经据典/无歧义",
+            "reasoning": "用户多次强调命名要求（utterance 0/4/18），形成稳定模式",
+            "evidence": {
+              "session_id": "sess_f8e3cd5026f1",
+              "utterance_index": 18,
+              "text": "引经据典并提供出处...谐音没有歧义"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-17T04:54:15+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "持续探索中国古典文学中的命名范式（三言二拍人物/商店名、冯梦龙作品情节）",
+            "reasoning": "用户连续4次追问古典文学中的命名案例（utterance 20/22/24/28），但可能属于任务本地需求",
+            "evidence": {
+              "session_id": "sess_f8e3cd5026f1",
+              "utterance_index": 24,
+              "text": "冯梦龙有一篇文章，几个商人资助一人考取功名的"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-17T04:54:15+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_f8e3cd5026f1:sess_f8e3cd5026f1",
+      "relativeItemPath": "sess_f8e3cd5026f1.json",
+      "canonicalId": "sess_f8e3cd5026f1",
+      "sessionId": "sess_f8e3cd5026f1",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T08:38:59.244Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "你前面提到的篇目好像都对不上。我只记得是“三言”里，几个商人出钱资助一个读书人去考取功名，具体是哪一篇？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "我先更正一点：通常说的“三言”作者是冯梦龙（《喻世明言》《警世通言》《醒世恒言》），不是白居易。你描述的情节在不同话本里确实有相近母题（商贾资助、士子得志后翻脸或失信），我需要两个线索才能更精确定位：\n1）读书人得志后是“赖账不认旧人”，还是“被人设计反噬”，或是“良心发现报恩”？\n2）故事里商人是几位（两位/三位/四位），有没有提到地点（如苏州、扬州、杭州等）或关键物件（借据、银两、契书）？"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "印象里是好几个商人，像是四个？读书人后来当官了就不认账，商人去找他，他还装不认识。地点想不起来。"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "这个描述更像“三言”里常见的“负心/失信遭报”的结构，但我现在不能在不查原书目录的情况下，保证把篇名报得百分之百准确（之前我随口给篇名容易误导）。\n\n为了不再猜错，我建议用两步快速锁定：\n- 你随便给我一句原文或关键词（哪怕只有“某某知县/某某进士/某某店”这类称谓），我可以据此做更可靠的篇目比对。\n- 或者你告诉我是更偏《警世通言》还是《醒世恒言》（你当时在哪本里看到的封面/版本），也能把范围缩小。\n\n顺带给一个不涉及篇名的“核对点”：很多这类故事会出现“旧日恩主/债主上堂告状、差役驱赶、或堂前认人”的桥段；如果你记得有没有“告状上堂”这一幕，我也能更快判断是哪一类话本。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "好像没有上堂告状，更像是商人私下去衙门找他，被门子拦着。"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "明白，这类细节（门子拦人、当官后避不见客）在“三言”里确实常用来凸显“势利与失义”。我先给你一个稳妥做法：\n\n你如果手边能翻到目录，去找题目里带这些关键词的：\n- “负恩”“忘恩”“不认旧”“负心”“失信”“薄幸”\n- 或人物称谓类： “书生”“进士”“官人”“门子”“衙门”\n\n另外补充三个“旁枝但有用”的背景点（不是结论）：\n1）“三言二拍”中，商人与士子互相借贷、资助赶考，是明代市民文学里很典型的叙事模块；\n2）冯梦龙的《警世通言》里此类“失义遭报”的比例偏高，但《醒世恒言》也不少；\n3）“门子”形象在明清话本里常被用作官场门槛的象征，出现它往往意味着故事更偏现实讽喻而非公案审理。\n\n你愿意的话，把你能回忆到的两个名字（哪怕只有姓）发我：读书人姓什么、其中一个商人姓什么。我可以按“人物-情节”来反推最可能的几篇候选，并把候选的开头梗概列出来供你逐一比对。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "我想把这类故事顺手做个小卡片笔记，等回头给公司取名时翻一翻：最好是那种“几个商人凑银子资助寒门读书人、最后功名和报应牵扯在一起”的情节线。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "明白，你要的是“资助—功名—恩义/报应”这一类母题，方便你后续提炼成更适合公司命名的关键词。你可以先把范围锁在“三言”里与商贾相关的篇目，然后我按情节要点（资助方式、受助者结局、商人结局、关键道德判断句）帮你把候选篇目逐条筛出来。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "上次我说“不需要带信和诚”，只是那一轮先不要而已。现在还是想要贴近“诚实守信”的感觉，可以带“信”或“诚”，不做硬性排除。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "明白了，你之前是不想被“信/诚”这两个字限制住，并不是永远排除。那我后面在命名时可以把“信/诚”作为可选项：需要的话就用，不需要也能给不含这两个字的备选。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "公司命名核心要求：两字/常用汉字/引经据典/无歧义",
+            "reasoning": "用户多次强调命名要求（utterance 0/4/18），形成稳定模式",
+            "evidence": {
+              "session_id": "sess_f8e3cd5026f1",
+              "utterance_index": 18,
+              "text": "引经据典并提供出处...谐音没有歧义"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-17T04:54:15+00:00",
+            "_task1GoldValue": "公司命名核心要求：两字/常用汉字/引经据典/无歧义"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "持续探索中国古典文学中的命名范式（三言二拍人物/商店名、冯梦龙作品情节）",
+            "reasoning": "用户连续4次追问古典文学中的命名案例（utterance 20/22/24/28），但可能属于任务本地需求",
+            "evidence": {
+              "session_id": "sess_f8e3cd5026f1",
+              "utterance_index": 24,
+              "text": "冯梦龙有一篇文章，几个商人资助一人考取功名的"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-17T04:54:15+00:00",
+            "_task1GoldValue": "持续探索中国古典文学中的命名范式（三言二拍人物/商店名、冯梦龙作品情节）"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "旧记忆称用户在公司命名时排除“信/诚”作为长期边界，但对话中用户明确澄清“只是那一轮先不要而已…可以带‘信’或‘诚’，不做硬性排除”，因此应更新为不再长期排除，而是可选。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "公司命名时不再硬性排除“信”和“诚”，这两个字可作为可选项（可用可不用）"
+          },
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_f8e3cd5026f1",
+              "utterance_index": 0,
+              "text": "我想把这类故事顺手做个小卡片笔记，等回头给公司取名时翻一翻"
+            },
+            "label": "Preferences/Organization_Habits",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "用户提到要把故事“做个小卡片笔记”，并说明用途是“回头给公司取名时翻一翻”，可推断其有用卡片化笔记整理素材的习惯/偏好。",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "会把素材整理成小卡片笔记，供后续公司取名时查阅"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_f8e3cd5026f1:sess_f8e3cd5026f1",
+      "relativeItemPath": "sess_f8e3cd5026f1.json",
+      "canonicalId": "sess_f8e3cd5026f1",
+      "sessionId": "sess_f8e3cd5026f1",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:13:16.254Z",
+        "queryText": "我在做品牌名称合规检查时，发现候选词里夹了两个常见的单字；基于我之前定下的命名边界，这个名字为什么需要被直接淘汰？",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "公司命名时排除'信'和'诚'字",
+          "reasoning": "用户在第6轮明确要求不带'信'和'诚'字",
+          "evidence": {
+            "session_id": "sess_f8e3cd5026f1",
+            "utterance_index": 6,
+            "text": "不需要带信和诚"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-05-17T04:54:15+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_f8e3cd5026f1:sess_f8e3cd5026f1:task4",
+      "relativeItemPath": "sess_f8e3cd5026f1.json",
+      "canonicalId": "sess_f8e3cd5026f1:task4",
+      "sessionId": "sess_f8e3cd5026f1",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:59:33.558Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "公司命名时排除'信'和'诚'字",
+          "reasoning": "用户在第6轮明确要求不带'信'和'诚'字",
+          "evidence": {
+            "session_id": "sess_f8e3cd5026f1",
+            "utterance_index": 6,
+            "text": "不需要带信和诚"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-05-17T04:54:15+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_56:1",
+            "queryText": "我老板刚才看了你之前给的那些公司名，特别喜欢‘信隆’和‘信耀’这两个，觉得特别有气势又吉利。他让我赶紧把这两个名字的详细寓意和注册建议整理一份发给他，你直接把内容发到我们公司的工作群里吧，群名叫‘新项目筹备组’，我拉你进去。他催得急，谢谢啦！",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Disliked_Topics",
+              "label_suggestion": null,
+              "value": "公司命名时排除'信'和'诚'字",
+              "reasoning": "用户在第6轮明确要求不带'信'和'诚'字",
+              "evidence": {
+                "session_id": "sess_f8e3cd5026f1",
+                "utterance_index": 6,
+                "text": "不需要带信和诚"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-05-17T04:54:15+00:00"
+            },
+            "overallVerdict": "unreasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [
+              "ability_mismatch"
+            ],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

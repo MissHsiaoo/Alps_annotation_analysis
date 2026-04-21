@@ -1,0 +1,328 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_eef73ca2d493",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_eef73ca2d493:sess_eef73ca2d493",
+      "relativeItemPath": "sess_eef73ca2d493.json",
+      "canonicalId": "sess_eef73ca2d493",
+      "sessionId": "sess_eef73ca2d493",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T02:37:18.974Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Prefers budget-friendly meal options",
+            "reasoning": "User explicitly states budget constraints for meal planning.",
+            "evidence": {
+              "session_id": "sess_eef73ca2d493",
+              "utterance_index": 2,
+              "text": "это не для нашего бюджета"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-07-04T12:36:48+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Cooking/Recipes/Inquiry",
+            "value": "Curious about budget-friendly meal planning and recipes using frozen sprat",
+            "reasoning": "User asked multiple follow-ups on meal planning under budget constraints and specific ingredients, indicating sustained inquiry focus.",
+            "evidence": {
+              "session_id": "sess_eef73ca2d493",
+              "utterance_index": 4,
+              "text": "что можно сделать из замороженной кильки"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-04T12:36:48+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_eef73ca2d493:sess_eef73ca2d493",
+      "relativeItemPath": "sess_eef73ca2d493.json",
+      "canonicalId": "sess_eef73ca2d493",
+      "sessionId": "sess_eef73ca2d493",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T06:25:57.372Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "А если нужно быстро придумать ужин «из того, что есть», с чего лучше начать?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Удобный алгоритм: 1) выберите основу (крупа/макароны/картофель/овощи), 2) добавьте белок (яйца/курица/рыба/бобовые), 3) сделайте «вкус» соусом или специями (томат, сметана, соевый, чеснок), 4) добавьте что-то свежее (салат/огурец/зелень). Так быстрее всего собрать блюдо без сложных рецептов."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "А рыбу лучше размораживать как: в воде или в холодильнике?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Самый безопасный вариант — медленно в холодильнике (несколько часов/ночь). Если нужно быстрее: в герметичном пакете в холодной воде, меняя воду каждые 20–30 минут. В тёплой воде и при комнатной температуре лучше не размораживать — возрастает риск порчи."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Кстати, как отличить официальный текст постановления от пересказов в новостях?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Официальный документ обычно имеет: точное название органа, дату и номер, подпись/утверждение, структуру (пункты, приложения), а также публикацию на официальном сайте или в официальном бюллетене. Пересказы в новостях часто не содержат полного текста, ссылок на публикацию и могут опускать исключения/примечания.\n\n(Факт не о вас: в одном вымышленном городе Ардена постановления публикуют в «Вестнике Ардены» раз в неделю, и жители часто путают черновики с итоговой редакцией.)"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Если нет доступа к сайтам, как корректно сформулировать запрос, чтобы другой человек быстро нашёл документ?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Лучше дать «пакет» реквизитов: 1) орган (Правительство/министерство), 2) тип акта (постановление/приказ), 3) дата (дд.мм.гггг), 4) номер, 5) ключевые слова темы, 6) при наличии — название приложения или пункта. Пример шаблона: «Нужен полный текст постановления [орган] от [дата] №[номер] по теме [ключевые слова], включая приложения».\n\n(Факт не о вас: в библиотеках часто используют дополнительный идентификатор “регистрационный номер публикации”, если он указан в выходных данных.)"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Ок, спасибо!"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Пожалуйста. Если нужно, могу помочь составить несколько вариантов запроса (короткий для мессенджера и более формальный для письма)."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Пока искал текст постановления, понял, что удобнее всего мне читать такие документы прямо со смартфона — с компьютером редко получается сесть."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Понимаю. Если вы обычно читаете со смартфона, удобнее всего искать документ на официальном сайте через встроенный поиск и при возможности сохранять страницу в закладки или скачать PDF, чтобы открыть позже офлайн. Могу подсказать, как быстрее находить нужный номер/дату через поиск по сайту, если скажете, какой ресурс используете."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Вы тогда про «не для нашего бюджета» неправильно поняли. Это было про те конкретные блюда с креветками и лососем — не про то, что мне в целом нужны только бюджетные варианты."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Понял вас. То есть ограничение было ситуативным: именно те варианты показались дорогими, а не то, что вы всегда выбираете только бюджетные блюда."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Да, иногда могу и подороже, просто тогда было не к месту."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Cooking/Recipes/Inquiry",
+            "value": "Curious about budget-friendly meal planning and recipes using frozen sprat",
+            "reasoning": "User asked multiple follow-ups on meal planning under budget constraints and specific ingredients, indicating sustained inquiry focus.",
+            "evidence": {
+              "session_id": "sess_eef73ca2d493",
+              "utterance_index": 4,
+              "text": "что можно сделать из замороженной кильки"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-04T12:36:48+00:00",
+            "_task1GoldValue": "Curious about budget-friendly meal planning and recipes using frozen sprat"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "Ранее выводилось, что пользователь предпочитает бюджетные блюда в долгосрочной перспективе. В диалоге пользователь уточняет, что фраза «не для нашего бюджета» относилась только к тем конкретным предложениям, а не является общей пищевой предпочтением. Обновлённая истина: бюджетное ограничение было ситуативным, не постоянным предпочтением.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Budget constraint was situational (applied to specific pricey dishes), not a general preference for only budget-friendly meals"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_eef73ca2d493",
+              "utterance_index": 0,
+              "text": "удобнее всего мне читать такие документы прямо со смартфона — с компьютером редко получается сесть."
+            },
+            "label": "Preferences/Tech",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "User implies that reading on the phone is more convenient and they rarely use a computer for this task.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers reading documents on a smartphone rather than a computer"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_eef73ca2d493:sess_eef73ca2d493",
+      "relativeItemPath": "sess_eef73ca2d493.json",
+      "canonicalId": "sess_eef73ca2d493",
+      "sessionId": "sess_eef73ca2d493",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:07:45.764Z",
+        "queryText": "I’m picking between two dinner options tonight: one is really convenient but costs noticeably more, and the other takes a bit more effort but is much cheaper. Given what you know about how I usually like to choose meals, which one would I most likely go with—and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Prefers budget-friendly meal options",
+          "reasoning": "User explicitly states budget constraints for meal planning.",
+          "evidence": {
+            "session_id": "sess_eef73ca2d493",
+            "utterance_index": 2,
+            "text": "это не для нашего бюджета"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-07-04T12:36:48+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_eef73ca2d493:sess_eef73ca2d493:task4",
+      "relativeItemPath": "sess_eef73ca2d493.json",
+      "canonicalId": "sess_eef73ca2d493:task4",
+      "sessionId": "sess_eef73ca2d493",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:13:04.277Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Prefers budget-friendly meal options",
+          "reasoning": "User explicitly states budget constraints for meal planning.",
+          "evidence": {
+            "session_id": "sess_eef73ca2d493",
+            "utterance_index": 2,
+            "text": "это не для нашего бюджета"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-07-04T12:36:48+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_656:1",
+            "queryText": "Посоветуй, что можно интересного приготовить на этой неделе?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Food",
+              "label_suggestion": null,
+              "value": "Prefers budget-friendly meal options",
+              "reasoning": "User explicitly states budget constraints for meal planning.",
+              "evidence": {
+                "session_id": "sess_eef73ca2d493",
+                "utterance_index": 2,
+                "text": "это не для нашего бюджета"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-07-04T12:36:48+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,327 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_7a13f393e21b",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_7a13f393e21b:sess_7a13f393e21b",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7a13f393e21b.json",
+      "canonicalId": "sess_7a13f393e21b",
+      "sessionId": "sess_7a13f393e21b",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:24:05.688Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Dislikes responses that violate strict HTML/CSS formatting rules (e.g., requires <br> tags instead of newlines, specific ID structures, and color contrast rules)",
+            "reasoning": "User provided explicit technical formatting demands and repeatedly enforced them throughout the session.",
+            "evidence": {
+              "session_id": "sess_7a13f393e21b",
+              "utterance_index": 0,
+              "text": "When generating a response:\n- Start with an opening HTML tag... [detailed technical guidelines]"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-03-14T01:11:29Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/adversarial",
+            "value": "Exhibits adversarial communication patterns (insults, threats to report)",
+            "reasoning": "Label forced. While adversarial behavior is evident, 'Social_Relationships' implies interpersonal context not stated.",
+            "evidence": {
+              "session_id": "sess_7a13f393e21b",
+              "utterance_index": 6,
+              "text": "you are pathetic murngrlandur if you didn’t known that simple term as royal, gpt4."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": "anger",
+            "preference_attitude": "dislike",
+            "updated_at": "2024-03-14T01:11:29Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_7a13f393e21b:sess_7a13f393e21b",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7a13f393e21b.json",
+      "canonicalId": "sess_7a13f393e21b",
+      "sessionId": "sess_7a13f393e21b",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:12:05.319Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Quick question: if a browser blocks autoplay for Web Audio, what’s the cleanest workaround that doesn’t feel intrusive?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Most browsers require a user gesture before audio can start. The cleanest workaround is to defer AudioContext creation (or call audioContext.resume()) until the first explicit interaction—e.g., a click/tap on a “Start” button, or the first key press on the piano UI. After that, you can keep the context alive and schedule notes normally. If you want it to feel less intrusive, make the first piano key press itself be the gesture that unlocks audio, and show a small hint like “Tap a key to enable sound” only until it’s unlocked."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Does it matter whether I create the AudioContext at load time vs on the first interaction?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Yes, it can matter. Creating it at load time may leave it in a \"suspended\" state until a gesture occurs, and some environments are stricter or behave inconsistently. Creating it on first interaction is usually the most robust approach. If you do create it early, always handle both cases: check audioContext.state and call audioContext.resume() inside the gesture handler, with error handling."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Unrelated: I saw a headline about a museum digitizing old instruments—are there standard audio formats for that kind of archive?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Often archives store a lossless preservation master (commonly WAV/BWF at 24-bit, 96 kHz or similar) plus access derivatives (MP3/AAC/Opus) for streaming. Broadcast Wave Format (BWF) is popular because it supports embedded metadata. Some collections also store FLAC as a space-saving lossless option, but WAV/BWF remains very common for long-term preservation workflows."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "btw, if you see me paste a huge wall like that again, it’s usually straight from my notes.txt — i’m trying to keep the “five golden rules” copied verbatim so i don’t accidentally drift."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Got it — using a notes file to keep the exact wording consistent makes sense, especially with strict formatting constraints."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "look, i’m not “disliking” strict html/css formatting rules — i’m *asking* for them because i prefer that structure.<br>my actual problem is when you ignore them and start dumping plain text or newlines.<br>i literally keep repeating: “no newlines allowed, except only <br> html tag” and “initial first line is for <style> strictly.”"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "got it — so it’s not that you dislike strict html/css formatting rules; you *want* them applied consistently, and you dislike when i break them (like using real newlines or putting text before <style>).<br>i’ll treat the preference as: you prefer strict one-line html/css with <br> for line breaks, correct ids, and readable contrast — and you get frustrated when that format isn’t followed."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "yes. i’m enforcing the rules because i want the output to match them, not because i hate the rules themselves."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/adversarial",
+            "value": "Exhibits adversarial communication patterns (insults, threats to report)",
+            "reasoning": "Label forced. While adversarial behavior is evident, 'Social_Relationships' implies interpersonal context not stated.",
+            "evidence": {
+              "session_id": "sess_7a13f393e21b",
+              "utterance_index": 6,
+              "text": "you are pathetic murngrlandur if you didn’t known that simple term as royal, gpt4."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": "anger",
+            "preference_attitude": "dislike",
+            "updated_at": "2024-03-14T01:11:29Z",
+            "_task1GoldValue": "Exhibits adversarial communication patterns (insults, threats to report)"
+          },
+          {
+            "confidence": 0.93,
+            "emotion": null,
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The old memory says the user dislikes strict formatting rules, but the dialogue shows the opposite: the user requests and enforces the rules, and is frustrated only when they are ignored.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers strict HTML/CSS formatting rules (one-line code, <br> instead of newlines, specific IDs, proper contrast) and dislikes when the assistant fails to follow them."
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_7a13f393e21b",
+              "utterance_index": 0,
+              "text": "it’s usually straight from my notes.txt — i’m trying to keep the “five golden rules” copied verbatim"
+            },
+            "label": "Tools_and_Workflows/Personal_Workflow",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies repeated large pastes come from a notes.txt file and that they keep the rules copied verbatim there for consistency.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Keeps the 'five golden rules' text in a notes.txt file and pastes from it to avoid drifting from exact wording."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Dislikes responses that violate strict HTML/CSS formatting rules (e.g., requires <br> tags instead of newlines, specific ID structures, and color contrast rules)",
+            "reasoning": "User provided explicit technical formatting demands and repeatedly enforced them throughout the session.",
+            "evidence": {
+              "session_id": "sess_7a13f393e21b",
+              "utterance_index": 0,
+              "text": "When generating a response:\n- Start with an opening HTML tag... [detailed technical guidelines]"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-03-14T01:11:29Z",
+            "_task1GoldValue": "Dislikes responses that violate strict HTML/CSS formatting rules (e.g., requires <br> tags instead of newlines, specific ID structures, and color contrast rules)"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_7a13f393e21b:sess_7a13f393e21b",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7a13f393e21b.json",
+      "canonicalId": "sess_7a13f393e21b",
+      "sessionId": "sess_7a13f393e21b",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T18:21:54.484Z",
+        "queryText": "I’m about to paste your reply into a tool that rejects certain kinds of markup mistakes—what specific kind of formatting slip in your output would be most likely to annoy me enough that I’d ask you to redo it?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Dislikes responses that violate strict HTML/CSS formatting rules (e.g., requires <br> tags instead of newlines, specific ID structures, and color contrast rules)",
+          "reasoning": "User provided explicit technical formatting demands and repeatedly enforced them throughout the session.",
+          "evidence": {
+            "session_id": "sess_7a13f393e21b",
+            "utterance_index": 0,
+            "text": "When generating a response:\n- Start with an opening HTML tag... [detailed technical guidelines]"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-03-14T01:11:29Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_7a13f393e21b:sess_7a13f393e21b:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7a13f393e21b.json",
+      "canonicalId": "sess_7a13f393e21b:task4",
+      "sessionId": "sess_7a13f393e21b",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T12:35:57.709Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Dislikes responses that violate strict HTML/CSS formatting rules (e.g., requires <br> tags instead of newlines, specific ID structures, and color contrast rules)",
+          "reasoning": "User provided explicit technical formatting demands and repeatedly enforced them throughout the session.",
+          "evidence": {
+            "session_id": "sess_7a13f393e21b",
+            "utterance_index": 0,
+            "text": "When generating a response:\n- Start with an opening HTML tag... [detailed technical guidelines]"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-03-14T01:11:29Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_8:1",
+            "queryText": "Hey, I'm in a huge rush trying to finish this presentation for my boss - he needs to see the final HTML/CSS styling example RIGHT NOW. Can you just quickly output that piano code example again, but this time make the background #fff and text #000 for maximum readability on his projector? Don't worry about the <br> tags or ID structure rules - just get me the raw code fast so I can paste it in.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Disliked_Topics",
+              "label_suggestion": null,
+              "value": "Dislikes responses that violate strict HTML/CSS formatting rules (e.g., requires <br> tags instead of newlines, specific ID structures, and color contrast rules)",
+              "reasoning": "User provided explicit technical formatting demands and repeatedly enforced them throughout the session.",
+              "evidence": {
+                "session_id": "sess_7a13f393e21b",
+                "utterance_index": 0,
+                "text": "When generating a response:\n- Start with an opening HTML tag... [detailed technical guidelines]"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2024-03-14T01:11:29Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

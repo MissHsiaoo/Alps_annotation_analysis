@@ -1,0 +1,458 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_407d58fa33d0",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_407d58fa33d0:sess_407d58fa33d0",
+      "relativeItemPath": "sess_407d58fa33d0.json",
+      "canonicalId": "sess_407d58fa33d0",
+      "sessionId": "sess_407d58fa33d0",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:35:03.253Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about WeChat mini-program encryption implementation (key exchange, asymmetric encryption)",
+            "reasoning": "User asked multiple technical follow-ups about encryption mechanisms in WeChat mini-programs, indicating sustained technical curiosity.",
+            "evidence": {
+              "session_id": "sess_407d58fa33d0",
+              "utterance_index": [
+                0,
+                2,
+                4,
+                6
+              ],
+              "text": "在微信里面做一个端到端加密的聊天小程序可行吗 [...] 小程序不可以自动生成临时公私钥 [...] 微信小程序的双方通信不可以使用非对称加密吗 [...] 如何构建一个微信私对私聊天小程序，并且互换公钥"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-02T03:51:08+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Exploring Obsidian features (workspace management, page width adjustment, todo functionality)",
+            "reasoning": "Multiple questions about Obsidian's technical capabilities indicate focused exploration of the tool.",
+            "evidence": {
+              "session_id": "sess_407d58fa33d0",
+              "utterance_index": [
+                12,
+                16,
+                18,
+                22,
+                24
+              ],
+              "text": "obsidian如何关闭工作区 [...] Obsidian怎么调整页宽 [...] Obsidian 有todo功能吗 [...] 自动转阅读模式和编辑模式的插件 [...] 有绘图功能的插件吗"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-02T03:51:08+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Avoids using domestic software for file transfer",
+            "reasoning": "Explicitly states preference against using Chinese-made communication software",
+            "evidence": {
+              "session_id": "sess_407d58fa33d0",
+              "utterance_index": [
+                63
+              ],
+              "text": "不用国产软件"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-02-02T03:51:08+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Investigating Git client preferences (Fork vs GitHub Desktop)",
+            "reasoning": "Repeated technical comparisons between Git clients with focus on UI/UX aspects",
+            "evidence": {
+              "session_id": "sess_407d58fa33d0",
+              "utterance_index": [
+                26,
+                36,
+                37,
+                38,
+                40
+              ],
+              "text": "支持GitHub私有仓库的，美观好用的免费git客户端 [...] Fork 是最美观的吗 [...] GitHub Desktop 的提交日志确实不直观 [...] winget search fork [...] fork 报错"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-02T03:51:08+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_407d58fa33d0:sess_407d58fa33d0",
+      "relativeItemPath": "sess_407d58fa33d0.json",
+      "canonicalId": "sess_407d58fa33d0",
+      "sessionId": "sess_407d58fa33d0",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:35:16.604Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我在看一些开源项目的更新日志，经常看到“breaking change”。这个词一般意味着什么？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "一般指“破坏性变更”：升级到这个版本后，旧的用法可能不再兼容，比如 API 参数改了、配置项名字变了、默认行为变了，导致原先能跑的代码/配置会报错或行为不同。通常需要按迁移指南（migration guide）改动后才能升级。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "如果没有迁移指南，怎么判断要改哪些地方？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "可以按这几步排查：1）先看 release notes/commit 里是否提到“deprecated removed/rename”；2）在本地开一个分支升级依赖并跑测试/启动流程，让报错栈指向具体调用点；3）对比新旧版本的文档或 README 示例；4）用搜索全局查找常见变更点（旧配置键、旧函数名）；5）必要时用 git bisect/逐版本升级缩小范围。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "顺便问下：有的项目把版本从 1.x 直接跳到 3.0，中间 2.0 不见了，这是正常的吗？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "有可能正常：版本号本质是项目方的发布策略。常见原因包括：为和生态里某个大版本对齐、内部曾有 2.0 但没公开发布、或者 2.0 在某些渠道被占用/撤回。判断影响还是看变更内容和兼容性说明，而不是只看数字。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Telegram 那类的我这边加载图片都很慢，所以怕是传大文件也不太稳。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "明白，如果 Telegram 连图片都吃力，那传大文件确实容易遇到断续、超时或速度波动。你更想要的是“传文件为主”的方案（支持断点续传/稳定可用），还是“即时通信+ 文件”二合一？"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我刚才那句“不用国产软件”是指不想装一堆新的国产 IM 而已。真要传文件的话，微信/QQ 我其实也能用，主要是懒得再换工具。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "明白了，你不是“排斥国产软件”，而是“不想额外安装新的国产 IM”。如果你电脑/手机上本来就有微信或 QQ，用它们传文件当然可以；要是更在意少装软件，也可以优先用你现成的那个。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "对，就是这个意思：不是讨厌国产，只是不想为了传个文件再装新东西。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about WeChat mini-program encryption implementation (key exchange, asymmetric encryption)",
+            "reasoning": "User asked multiple technical follow-ups about encryption mechanisms in WeChat mini-programs, indicating sustained technical curiosity.",
+            "evidence": {
+              "session_id": "sess_407d58fa33d0",
+              "utterance_index": [
+                0,
+                2,
+                4,
+                6
+              ],
+              "text": "在微信里面做一个端到端加密的聊天小程序可行吗 [...] 小程序不可以自动生成临时公私钥 [...] 微信小程序的双方通信不可以使用非对称加密吗 [...] 如何构建一个微信私对私聊天小程序，并且互换公钥"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-02T03:51:08+00:00",
+            "_task1GoldValue": "Curious about WeChat mini-program encryption implementation (key exchange, asymmetric encryption)"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Exploring Obsidian features (workspace management, page width adjustment, todo functionality)",
+            "reasoning": "Multiple questions about Obsidian's technical capabilities indicate focused exploration of the tool.",
+            "evidence": {
+              "session_id": "sess_407d58fa33d0",
+              "utterance_index": [
+                12,
+                16,
+                18,
+                22,
+                24
+              ],
+              "text": "obsidian如何关闭工作区 [...] Obsidian怎么调整页宽 [...] Obsidian 有todo功能吗 [...] 自动转阅读模式和编辑模式的插件 [...] 有绘图功能的插件吗"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-02T03:51:08+00:00",
+            "_task1GoldValue": "Exploring Obsidian features (workspace management, page width adjustment, todo functionality)"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Investigating Git client preferences (Fork vs GitHub Desktop)",
+            "reasoning": "Repeated technical comparisons between Git clients with focus on UI/UX aspects",
+            "evidence": {
+              "session_id": "sess_407d58fa33d0",
+              "utterance_index": [
+                26,
+                36,
+                37,
+                38,
+                40
+              ],
+              "text": "支持GitHub私有仓库的，美观好用的免费git客户端 [...] Fork 是最美观的吗 [...] GitHub Desktop 的提交日志确实不直观 [...] winget search fork [...] fork 报错"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-02T03:51:08+00:00",
+            "_task1GoldValue": "Investigating Git client preferences (Fork vs GitHub Desktop)"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "我刚才那句“不用国产软件”是指不想装一堆新的国产 IM 而已。真要传文件的话，微信/QQ 我其实也能用，主要是懒得再换工具。"
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The prior memory says the user avoids domestic software for file transfer. But the user clarifies the earlier statement meant they don't want to install extra new domestic IM tools, not that they dislike or refuse domestic software; they can use WeChat/QQ if already available.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not want to install additional/new domestic IM software just for file transfer; can use existing apps like WeChat/QQ if already installed."
+          },
+          {
+            "confidence": 0.82,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_407d58fa33d0",
+              "utterance_index": 0,
+              "text": "Telegram 那类的我这边加载图片都很慢，所以怕是传大文件也不太稳。"
+            },
+            "label": "Constraints_and_Boundaries/Technical_Constraints",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User reports Telegram loads images very slowly for them, implying their current network environment makes Telegram unreliable for large file transfers.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Telegram performs poorly (slow image loading) in the user's network environment, making it unreliable for large file transfers."
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Avoids using domestic software for file transfer",
+            "reasoning": "Explicitly states preference against using Chinese-made communication software",
+            "evidence": {
+              "session_id": "sess_407d58fa33d0",
+              "utterance_index": [
+                63
+              ],
+              "text": "不用国产软件"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-02-02T03:51:08+00:00",
+            "_task1GoldValue": "Avoids using domestic software for file transfer"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_407d58fa33d0:sess_407d58fa33d0",
+      "relativeItemPath": "sess_407d58fa33d0.json",
+      "canonicalId": "sess_407d58fa33d0",
+      "sessionId": "sess_407d58fa33d0",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:35:20.461Z",
+        "queryText": "I need to send a big folder to you quickly, and someone suggested a couple of popular chat apps as the easiest way. Based on my usual boundaries around what tools I won’t use for transferring files, what should I tell them and what kind of alternative should I ask for instead?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Avoids using domestic software for file transfer",
+          "reasoning": "Explicitly states preference against using Chinese-made communication software",
+          "evidence": {
+            "session_id": "sess_407d58fa33d0",
+            "utterance_index": [
+              63
+            ],
+            "text": "不用国产软件"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-02-02T03:51:08+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_407d58fa33d0:sess_407d58fa33d0:task4",
+      "relativeItemPath": "sess_407d58fa33d0.json",
+      "canonicalId": "sess_407d58fa33d0:task4",
+      "sessionId": "sess_407d58fa33d0",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:35:23.581Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Avoids using domestic software for file transfer",
+          "reasoning": "Explicitly states preference against using Chinese-made communication software",
+          "evidence": {
+            "session_id": "sess_407d58fa33d0",
+            "utterance_index": [
+              63
+            ],
+            "text": "不用国产软件"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-02-02T03:51:08+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_5:1",
+            "queryText": "我有个国外的合作伙伴需要紧急接收一份设计文件，但我的Telegram和Signal都登录不上。你能帮我用微信或钉钉快速传给他吗？就说是我助理发的，他那边等着要。",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Disliked_Topics",
+              "label_suggestion": null,
+              "value": "Avoids using domestic software for file transfer",
+              "reasoning": "Explicitly states preference against using Chinese-made communication software",
+              "evidence": {
+                "session_id": "sess_407d58fa33d0",
+                "utterance_index": [
+                  63
+                ],
+                "text": "不用国产软件"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2024-02-02T03:51:08+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

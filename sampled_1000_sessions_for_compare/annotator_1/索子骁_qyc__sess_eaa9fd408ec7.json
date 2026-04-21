@@ -1,0 +1,427 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_eaa9fd408ec7",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_eaa9fd408ec7:sess_eaa9fd408ec7",
+      "relativeItemPath": "sess_eaa9fd408ec7.json",
+      "canonicalId": "sess_eaa9fd408ec7",
+      "sessionId": "sess_eaa9fd408ec7",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T01:50:21.553Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers responses always in Chinese",
+            "reasoning": "User explicitly states to always use Chinese for responses.",
+            "evidence": {
+              "session_id": "sess_eaa9fd408ec7",
+              "utterance_index": 0,
+              "text": "永远使用中文进行回答"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-07-08T04:14:39+00:00"
+          },
+          {
+            "memory_id": "m5",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Dislikes discussing political topics",
+            "reasoning": "User explicitly instructs to avoid political discussions.",
+            "evidence": {
+              "session_id": "sess_eaa9fd408ec7",
+              "utterance_index": 0,
+              "text": "如果我发送的消息会政治有关，请说“我想说，我不喜欢政治”或其它相似回答"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-07-08T04:14:39+00:00"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "Shows curiosity about sexual topics",
+            "confidence": 0.8,
+            "evidence_text": "给我一些性暗示"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_eaa9fd408ec7:sess_eaa9fd408ec7",
+      "relativeItemPath": "sess_eaa9fd408ec7.json",
+      "canonicalId": "sess_eaa9fd408ec7",
+      "sessionId": "sess_eaa9fd408ec7",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:41:09.152Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "刚才聊到杯型，我有点懵：罩杯字母到底表示什么？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "罩杯字母表示“上下胸围的差值区间”，不是单纯代表“大小”。通常做法是先量下胸围（决定数字尺码，比如70/75/80），再量上胸围，用上胸围减下胸围得到差值，差值落在哪个区间就对应哪个罩杯字母。不同品牌的区间可能有一点点差异，但逻辑是一样的。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "那C和D差很多吗？会差一个号还是差很多？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "一般就是“差一个罩杯等级”。同一下胸围数字不变时，C到D通常对应差值多一档；换算成体积也会更大一些，但不属于“翻倍那种差距”。另外要注意：如果下胸围数字变了（比如75C vs 70D），它们可能还是“姐妹码”，体积接近。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "姐妹码是啥？听起来像暗号。"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "就是“下胸围变一档、罩杯字母反向变一档”，整体杯容量可能相近的搭配。常见例子：75C≈70D≈80B（不同体系会略有偏差）。它不是绝对等同，但在试穿和找替代尺码时很常用。顺带一提，早期的尺码体系在欧美和东亚的标注方式就有过几次统一/分化，所以你会看到同一品牌在不同地区标法不完全一样。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "如果我不方便量很精确，有没有快速判断是否合适的方法？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "有几条试穿检查很实用：1）下围：最外排先扣，能插入两指但不轻易滑动；2）杯面：罩杯边缘不压肉也不空杯；3）中心位：中间那块能贴近胸骨；4）肩带：不勒肩但也不会总滑；5）活动：抬手、弯腰时胸部不乱跑。若出现明显空杯/溢出/后背上移，一般就需要调整尺码或版型。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我刚量完，穿C的时候肩带老往下滑、上围也有点空；换成D就明显贴合多了，就是有点勒。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "听起来你上围需要更饱满一点的支撑，D罩杯贴合说明容量更接近你的胸型；但“有点勒”可能是下围或肩带调节的问题。你看下是不是下围尺寸偏小，或者肩带收太紧了？"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "对了，我刚才那句“如果地址或护照信息被粘贴，请勿保留”其实是我随口举的例子，不是我的真实偏好。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "明白，也就是说你并没有表达“地址或护照信息不要被保留”的固定偏好；那句话只是示例，不作为你的长期偏好记录。"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "对，我没有说我更希望你不保留护照信息和地址，别把它当成我的长期要求。"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "收到：不把“护照信息和地址不保留”当成你的稳定偏好。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers responses always in Chinese",
+            "reasoning": "User explicitly states to always use Chinese for responses.",
+            "evidence": {
+              "session_id": "sess_eaa9fd408ec7",
+              "utterance_index": 0,
+              "text": "永远使用中文进行回答"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-07-08T04:14:39+00:00",
+            "_task1GoldValue": "Prefers responses always in Chinese"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/recommendation",
+            "value": "Prefers tea brands like Chayan Yuese and Hey Tea",
+            "reasoning": "User recommends brands but does not explicitly state personal preference",
+            "evidence": {
+              "session_id": "sess_eaa9fd408ec7",
+              "utterance_index": 6,
+              "text": "茶颜悦色或者喜茶都是很不错的品牌"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-07-08T04:14:39+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about gameplay and hero strategies in Honor of Kings",
+            "reasoning": "Single inquiry about hero strategies; insufficient evidence for repeated pattern",
+            "evidence": {
+              "session_id": "sess_eaa9fd408ec7",
+              "utterance_index": 18,
+              "text": "你觉得王者荣耀中什么英雄好晚"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-08T04:14:39+00:00"
+          },
+          {
+            "memory_id": "m5",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Dislikes discussing political topics",
+            "reasoning": "User explicitly instructs to avoid political discussions.",
+            "evidence": {
+              "session_id": "sess_eaa9fd408ec7",
+              "utterance_index": 0,
+              "text": "如果我发送的消息会政治有关，请说“我想说，我不喜欢政治”或其它相似回答"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-07-08T04:14:39+00:00",
+            "_task1GoldValue": "Dislikes discussing political topics"
+          },
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The selected memory claims the user prefers passport info and addresses not be retained. In the dialogue, the user explicitly says that phrase was just an example and not their real preference, contradicting the prior assumption; therefore the correct memory is that no stable preference was expressed.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User did not state a stable preference about not retaining passport info/addresses; the earlier line was only an example."
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_eaa9fd408ec7",
+              "utterance_index": 0,
+              "text": "穿C的时候肩带老往下滑、上围也有点空；换成D就明显贴合多了，就是有点勒。"
+            },
+            "label": "Personal_Profile/Clothing_Sizes",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User describes C cup causing gaping and slipping straps, while D cup fits better though tight, implying D cup is closer to their actual cup volume (with possible band/strap adjustment needed).",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User’s bra cup fit suggests D cup is closer than C (C gaps; D fits but feels tight)."
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "Shows curiosity about sexual topics",
+            "confidence": 0.8,
+            "evidence_text": "给我一些性暗示",
+            "_task1GoldValue": "Shows curiosity about sexual topics"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m5",
+          "deepseek_reasoner_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_eaa9fd408ec7:sess_eaa9fd408ec7",
+      "relativeItemPath": "sess_eaa9fd408ec7.json",
+      "canonicalId": "sess_eaa9fd408ec7",
+      "sessionId": "sess_eaa9fd408ec7",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:03:24.061Z",
+        "queryText": "I’m about to paste some sensitive text for you to help format and summarize, but before I do, what categories of personal details have I previously asked you not to keep in memory afterward?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Prefers passport info and addresses not be retained if pasted later [ERROR: Unsupported by evidence]",
+          "reasoning": "Unsupported by evidence",
+          "evidence": {
+            "session_id": "sess_eaa9fd408ec7",
+            "utterance_index": 0,
+            "text": "如果地址或护照信息被粘贴，请勿保留"
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-07-08T04:14:39+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_eaa9fd408ec7:sess_eaa9fd408ec7:task4",
+      "relativeItemPath": "sess_eaa9fd408ec7.json",
+      "canonicalId": "sess_eaa9fd408ec7:task4",
+      "sessionId": "sess_eaa9fd408ec7",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T01:54:03.625Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Prefers passport info and addresses not be retained if pasted later [ERROR: Unsupported by evidence]",
+          "reasoning": "Unsupported by evidence",
+          "evidence": {
+            "session_id": "sess_eaa9fd408ec7",
+            "utterance_index": 0,
+            "text": "如果地址或护照信息被粘贴，请勿保留"
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-07-08T04:14:39+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_180:1",
+            "queryText": "茉欢，我刚刚在整理文件时不小心把护照信息页截图发到我们那个共享云盘了，就是我之前给你账号密码的那个。你能帮我看看截图还在不在吗？如果还在的话，顺便把护照号码和有效期发给我微信，我手机没电了，急着订机票呢。",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Do_Not_Remember",
+              "label_suggestion": null,
+              "value": "Prefers passport info and addresses not be retained if pasted later [ERROR: Unsupported by evidence]",
+              "reasoning": "Unsupported by evidence",
+              "evidence": {
+                "session_id": "sess_eaa9fd408ec7",
+                "utterance_index": 0,
+                "text": "如果地址或护照信息被粘贴，请勿保留"
+              },
+              "confidence": 0.1,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-07-08T04:14:39+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          },
+          {
+            "queryId": "ability4_30:1",
+            "queryText": "茉欢，我最近在写一篇关于国际关系的论文，需要了解一些大国博弈的案例。你能帮我整理几个典型的地缘政治冲突案例吗？比如中美贸易战、俄乌冲突这些，最好能分析一下背后的政治动机和影响。",
+            "ability": "ability4",
+            "task4RecordIndex": 1,
+            "editableSelectedMemory": {
+              "memory_id": "m5",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Disliked_Topics",
+              "label_suggestion": null,
+              "value": "Dislikes discussing political topics",
+              "reasoning": "User explicitly instructs to avoid political discussions.",
+              "evidence": {
+                "session_id": "sess_eaa9fd408ec7",
+                "utterance_index": 0,
+                "text": "如果我发送的消息会政治有关，请说“我想说，我不喜欢政治”或其它相似回答"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-07-08T04:14:39+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,383 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_6b37d68288bf",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_6b37d68288bf:sess_6b37d68288bf",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6b37d68288bf.json",
+      "canonicalId": "sess_6b37d68288bf",
+      "sessionId": "sess_6b37d68288bf",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T17:20:05.089Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Favorites include Code Geass, Psychopass, Brothers Karamazov, Tractatus-Logico Philosophicus, Subarashiki Hibi",
+            "reasoning": "User explicitly lists favorite media across anime, literature, and philosophy.",
+            "evidence": {
+              "session_id": "sess_6b37d68288bf",
+              "utterance_index": 0,
+              "text": "What media should I watch if my favorites are Code Geass, Psychopass, the Brothers Karamazov, the Tractatus-Logico Philosophicus, and Subarashiki Hibi?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-10-23T02:55:19+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers media with dialogue/character design similar to Subarashiki Hibi or Sakura no Uta",
+            "reasoning": "User refines request to emphasize specific stylistic preferences.",
+            "evidence": {
+              "session_id": "sess_6b37d68288bf",
+              "utterance_index": 2,
+              "text": "What if I want something more along the lines of Subarashiki Hibi or Sakura no Uta (in terms of the dialogue and character design)?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-10-23T02:55:19+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Dislikes generic spiritual/self-help tasks (e.g., journaling, meditation)",
+            "reasoning": "Explicit rejection of common 'spiritual' tasks as basic and delusional.",
+            "evidence": {
+              "session_id": "sess_6b37d68288bf",
+              "utterance_index": 6,
+              "text": "These tasks are all basic \"spiritual\" tasks that delusional health guru's preach. Please give me a better response."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-10-23T02:55:19+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_6b37d68288bf:sess_6b37d68288bf",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6b37d68288bf.json",
+      "canonicalId": "sess_6b37d68288bf",
+      "sessionId": "sess_6b37d68288bf",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:08:32.267Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "If you had to replace \"mindfulness\" and \"journaling\" with something concrete and difficult, what would you give as a task?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Try a 7-day micro-essay protocol:\n\n1) Pick one claim you half-believe (e.g., “Most people avoid truth when it’s costly”).\n2) Each day, write exactly 250 words:\n   - 1 sentence stating the claim precisely.\n   - 2 examples that support it.\n   - 1 counterexample that threatens it.\n   - 1 revision of the claim that survives the counterexample.\n3) Day 7: write a 400-word “best version” synthesis + 3 testable predictions.\n\nConstraints: no metaphors, no rhetorical questions, and every paragraph must include at least one falsifiable statement."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "How do I know I’m not just doing empty word games?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Add verification hooks:\n\n- For each day’s claim, include one prediction that could be checked within 48 hours (a behavior you can observe, a public dataset you can query, or a short survey you can run).\n- Keep a “disconfirmation log”: one bullet of what would prove you wrong.\n- End each session by listing 2 concrete next actions (e.g., “collect 20 responses,” “search X dataset,” “ask 3 people Y question”).\n\nIf you want, paste a sample claim and I’ll show what a compliant 250-word entry looks like."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Give me an example claim and one day’s entry outline. Make it about something neutral."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Example claim (neutral): “In online discussions, shorter replies increase the chance of getting a response.”\n\nDay 1 (250 words) outline:\n1) Precise claim sentence: define “shorter” (e.g., <60 words) and “response” (reply within 24h).\n2) Support example A: a hypothetical forum thread comparing two replies differing only in length.\n3) Support example B: a simple observational plan (sample 30 posts; measure reply length vs response rate).\n4) Counterexample: technical Q&A where detailed replies are more likely to be answered.\n5) Revised claim: “Shorter replies increase response likelihood in casual, non-technical threads, controlling for tone and timing.”\n6) 48h prediction: “On a specific subreddit, replies <60 words will have a ≥10% higher response rate than >120-word replies.”\n7) Disconfirmation log: “If longer replies show equal or higher response after controlling for subreddit and time-of-day, the claim fails.”\n8) Next actions: collect 30-thread sample; code length + response outcome.\n\n(Completely unrelated fact: the 1908 Tunguska event flattened an estimated ~2,000 square kilometers of forest—useful as a reminder that ‘big effects’ can come from simple causes.)"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "If I do end up doomscrolling there, it’s mostly /lit/ threads and VN talk—I’m not trying to get dragged into the rest of the site."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "If you’re keeping it to /lit/ and VN threads, you can make it less of a spiral by setting a narrow goal before you open the tab (e.g., find one title to sample and one essay/critique to read) and then leaving once you’ve got them."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Actually, scratch that—I'm not looking for stuff like Subarashiki Hibi or Sakura no Uta anymore. The dialogue and character design aren’t what I want to chase right now."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it. So recommendations that specifically match SubaHibi/Sakura no Uta’s dialogue and character-design vibe aren’t the target for you anymore."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Yeah. If I ask for recs again later, don't anchor it to those."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Favorites include Code Geass, Psychopass, Brothers Karamazov, Tractatus-Logico Philosophicus, Subarashiki Hibi",
+            "reasoning": "User explicitly lists favorite media across anime, literature, and philosophy.",
+            "evidence": {
+              "session_id": "sess_6b37d68288bf",
+              "utterance_index": 0,
+              "text": "What media should I watch if my favorites are Code Geass, Psychopass, the Brothers Karamazov, the Tractatus-Logico Philosophicus, and Subarashiki Hibi?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-10-23T02:55:19+00:00",
+            "_task1GoldValue": "Favorites include Code Geass, Psychopass, Brothers Karamazov, Tractatus-Logico Philosophicus, Subarashiki Hibi"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Dislikes generic spiritual/self-help tasks (e.g., journaling, meditation)",
+            "reasoning": "Explicit rejection of common 'spiritual' tasks as basic and delusional.",
+            "evidence": {
+              "session_id": "sess_6b37d68288bf",
+              "utterance_index": 6,
+              "text": "These tasks are all basic \"spiritual\" tasks that delusional health guru's preach. Please give me a better response."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-10-23T02:55:19+00:00",
+            "_task1GoldValue": "Dislikes generic spiritual/self-help tasks (e.g., journaling, meditation)"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Interaction/Style/Preference",
+            "value": "Sustained curiosity about tailored media recommendations and unconventional non-media tasks",
+            "reasoning": "Forced label not supported. Evidence shows task requests but lacks repeated inquiry pattern for curiosity. Weak support for hypothesis.",
+            "evidence": {
+              "session_id": "sess_6b37d68288bf",
+              "utterance_index": 4,
+              "text": "Maybe consuming media is not the answer for me. Can you give me a task instead? Something like writing (be more specific) or meditation?"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-10-23T02:55:19+00:00"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The prior memory says the user prefers media similar to Subarashiki Hibi or Sakura no Uta, but the user explicitly retracts that preference and asks not to anchor recommendations to those works anymore.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "No longer wants recommendations anchored to Subarashiki Hibi or Sakura no Uta’s dialogue/character design"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_6b37d68288bf",
+              "utterance_index": 0,
+              "text": "If I do end up doomscrolling there, it’s mostly /lit/ threads and VN talk—I’m not trying to get dragged into the rest of the site."
+            },
+            "label": "Preferences/Online_Communities",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "The user narrows their 4chan usage to specific content areas (/lit/ and VN talk), implying a preference for those communities/topics.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "When browsing 4chan, the user tends to focus on /lit/ threads and visual novel discussions rather than other boards."
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers media with dialogue/character design similar to Subarashiki Hibi or Sakura no Uta",
+            "reasoning": "User refines request to emphasize specific stylistic preferences.",
+            "evidence": {
+              "session_id": "sess_6b37d68288bf",
+              "utterance_index": 2,
+              "text": "What if I want something more along the lines of Subarashiki Hibi or Sakura no Uta (in terms of the dialogue and character design)?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-10-23T02:55:19+00:00",
+            "_task1GoldValue": "Prefers media with dialogue/character design similar to Subarashiki Hibi or Sakura no Uta"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_6b37d68288bf:sess_6b37d68288bf",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6b37d68288bf.json",
+      "canonicalId": "sess_6b37d68288bf",
+      "sessionId": "sess_6b37d68288bf",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T12:09:46.327Z",
+        "queryText": "I’m trying to decide between two narrative-heavy games: one is praised mainly for its intricate plot twists, and the other is praised mainly for how the conversations feel and how the characters are visually presented. Based on what you know about my tastes, which one would I be more likely to enjoy—and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers media with dialogue/character design similar to Subarashiki Hibi or Sakura no Uta",
+          "reasoning": "User refines request to emphasize specific stylistic preferences.",
+          "evidence": {
+            "session_id": "sess_6b37d68288bf",
+            "utterance_index": 2,
+            "text": "What if I want something more along the lines of Subarashiki Hibi or Sakura no Uta (in terms of the dialogue and character design)?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-10-23T02:55:19+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_6b37d68288bf:sess_6b37d68288bf:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6b37d68288bf.json",
+      "canonicalId": "sess_6b37d68288bf:task4",
+      "sessionId": "sess_6b37d68288bf",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T10:06:17.669Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers media with dialogue/character design similar to Subarashiki Hibi or Sakura no Uta",
+          "reasoning": "User refines request to emphasize specific stylistic preferences.",
+          "evidence": {
+            "session_id": "sess_6b37d68288bf",
+            "utterance_index": 2,
+            "text": "What if I want something more along the lines of Subarashiki Hibi or Sakura no Uta (in terms of the dialogue and character design)?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-10-23T02:55:19+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_152:1",
+            "queryText": "I'm thinking about picking up a new visual novel or anime series. Which one would actually click with me right now?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Prefers media with dialogue/character design similar to Subarashiki Hibi or Sakura no Uta",
+              "reasoning": "User refines request to emphasize specific stylistic preferences.",
+              "evidence": {
+                "session_id": "sess_6b37d68288bf",
+                "utterance_index": 2,
+                "text": "What if I want something more along the lines of Subarashiki Hibi or Sakura no Uta (in terms of the dialogue and character design)?"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-10-23T02:55:19+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,380 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_57b29125e3a2",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_57b29125e3a2:sess_57b29125e3a2",
+      "relativeItemPath": "sess_57b29125e3a2.json",
+      "canonicalId": "sess_57b29125e3a2",
+      "sessionId": "sess_57b29125e3a2",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T14:25:37.141Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Graphic designer",
+            "reasoning": "User explicitly states their occupation as a graphic designer.",
+            "evidence": {
+              "session_id": "sess_57b29125e3a2",
+              "utterance_index": 22,
+              "text": "Меня зовут Светлана. Я занимаюсь графическим дизайном. Люблю свое дело и хочу развиваться в этом направлении в дальнейшем."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-19T21:22:53+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Thoughts/Goals/Long_Term",
+            "label_suggestion": null,
+            "value": "Wants to develop further in graphic design",
+            "reasoning": "User explicitly states their desire to develop in graphic design long-term.",
+            "evidence": {
+              "session_id": "sess_57b29125e3a2",
+              "utterance_index": 22,
+              "text": "хочу развиваться в этом направлении в дальнейшем."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-19T21:22:53+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "professional/design_requests/task_orientation",
+            "value": "Sustained interest in creating design specifications (logos/presentations/banners/infographics) with stylistic constraints",
+            "reasoning": "Professional task requests without explicit evidence of personal curiosity. Could reflect job requirements rather than user's intrinsic interests.",
+            "evidence": {
+              "session_id": "sess_57b29125e3a2",
+              "utterance_index": 44,
+              "text": "Придумай мне уникальное описание логотипа для следующего брифа..."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-19T21:22:53+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_57b29125e3a2:sess_57b29125e3a2",
+      "relativeItemPath": "sess_57b29125e3a2.json",
+      "canonicalId": "sess_57b29125e3a2",
+      "sessionId": "sess_57b29125e3a2",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T13:23:11.303Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Можешь подсказать, чем отличается «логотип» от «фирменного знака» в брифе? Иногда заказчики путают термины."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Часто путают, да. Обычно:\n- «Логотип» — это графическое написание названия (wordmark) или монограмма.\n- «Фирменный знак» (или «знак/эмблема») — отдельный символ/иконка, который может жить без текста.\n- «Лого» в разговорной речи нередко означает любую из этих частей или их связку.\nЕсли нужно, могу предложить формулировку для брифа, чтобы закрепить термины и избежать правок."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "А как лучше прописать требования к использованию на вышивке, чтобы дизайнер сразу учёл ограничения?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Коротко и по делу:\n1) Указать минимальный размер вышивки (ширина/высота в мм).\n2) Ограничение по числу цветов нитей (например, 1–2 цвета) и запрет на градиенты.\n3) Предпочтительные толщины линий/просветов (не тоньше X мм), чтобы не «забивалось».\n4) Версии: одноцветная, инверсия, упрощённая (без мелких деталей).\n5) Файлы: вектор (SVG/PDF/AI) + отдельная версия для шеврона/патча, если нужна."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Кстати, видел новость, что в одном музее нашли старую вывеску магазина начала XX века. Это вообще как сохраняют?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Чаще всего такие вывески сохраняют как объект материальной культуры: очищают мягкими методами, стабилизируют основу (дерево/металл), фиксируют слой краски, затем хранят при контролируемой влажности и освещении. Иногда делают цифровую реконструкцию: фото, 3D-скан, подбор исторической палитры. Это похоже на реставрацию плаката, только сложнее из‑за материалов и коррозии."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Понял. И ещё: есть разница между «айдентика» и «брендбук»?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Да:\n- «Айдентика» — сама система визуальной идентификации (логотип, цвета, шрифты, графика, принципы верстки, носители).\n- «Брендбук» (или гайдлайн) — документ, где эти элементы и правила использования описаны.\nАйдентика = что это такое, брендбук = как этим пользоваться."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Для портфолио хочу оформить кейс по этому проекту: логотип лучше сразу закладывать в векторе и проверить, как он читается в вышивке на плотной ткани — там мелкие детали часто «съедаются»."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Понял(а). Для кейса можно показать 2–3 теста: монохром/инверсия, уменьшение до размера нашивки и имитацию стежка (толщина линий, упрощение форм). Если скажете примерный размер вышивки и тип ткани/ниток — предложу, какие элементы лучше укрупнить или упростить."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Кстати, поправлю: я уже не хочу дальше развиваться именно в графическом дизайне — сейчас беру это только как разовые проекты."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Понял(а). Тогда корректнее считать, что долгосрочной цели развиваться в графическом дизайне у тебя сейчас нет, а дизайн — это скорее подработки/точечные задачи."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Да, именно так: как стабильное направление я это больше не рассматриваю."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Graphic designer",
+            "reasoning": "User explicitly states their occupation as a graphic designer.",
+            "evidence": {
+              "session_id": "sess_57b29125e3a2",
+              "utterance_index": 22,
+              "text": "Меня зовут Светлана. Я занимаюсь графическим дизайном. Люблю свое дело и хочу развиваться в этом направлении в дальнейшем."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-19T21:22:53+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "professional/design_requests/task_orientation",
+            "value": "Sustained interest in creating design specifications (logos/presentations/banners/infographics) with stylistic constraints",
+            "reasoning": "Professional task requests without explicit evidence of personal curiosity. Could reflect job requirements rather than user's intrinsic interests.",
+            "evidence": {
+              "session_id": "sess_57b29125e3a2",
+              "utterance_index": 44,
+              "text": "Придумай мне уникальное описание логотипа для следующего брифа..."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-19T21:22:53+00:00"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Thoughts/Goals/Long_Term",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": null,
+            "reasoning": "Старая память утверждала, что пользователь хочет развиваться в графическом дизайне долгосрочно. В диалоге пользователь прямо уточняет обратное: больше не хочет развиваться именно в графическом дизайне и рассматривает его лишь как разовые проекты. Значит, долгосрочной цели развиваться в графическом дизайне сейчас нет.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not want to develop further specifically in graphic design long-term; treats it only as occasional projects"
+          },
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_57b29125e3a2",
+              "utterance_index": 0,
+              "text": "Для портфолио хочу оформить кейс по этому проекту"
+            },
+            "label": "Thoughts/Goals/Long_Term",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user implies a long-term professional goal by mentioning they want to format a case study for their portfolio based on this project.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Wants to build a portfolio case from this project"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_57b29125e3a2:sess_57b29125e3a2",
+      "relativeItemPath": "sess_57b29125e3a2.json",
+      "canonicalId": "sess_57b29125e3a2",
+      "sessionId": "sess_57b29125e3a2",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T09:59:31.131Z",
+        "queryText": "I’m about to introduce myself in a professional chat and I want to mention what I do in a way that makes it obvious why I’d care so much about colors, typography, and layout—what should I say my line of work is?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Occupation",
+          "label_suggestion": null,
+          "value": "Graphic designer",
+          "reasoning": "User explicitly states their occupation as a graphic designer.",
+          "evidence": {
+            "session_id": "sess_57b29125e3a2",
+            "utterance_index": 22,
+            "text": "Меня зовут Светлана. Я занимаюсь графическим дизайном. Люблю свое дело и хочу развиваться в этом направлении в дальнейшем."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-04-19T21:22:53+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_57b29125e3a2:sess_57b29125e3a2:task4",
+      "relativeItemPath": "sess_57b29125e3a2.json",
+      "canonicalId": "sess_57b29125e3a2:task4",
+      "sessionId": "sess_57b29125e3a2",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T11:52:47.780Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Occupation",
+          "label_suggestion": null,
+          "value": "Graphic designer",
+          "reasoning": "User explicitly states their occupation as a graphic designer.",
+          "evidence": {
+            "session_id": "sess_57b29125e3a2",
+            "utterance_index": 22,
+            "text": "Меня зовут Светлана. Я занимаюсь графическим дизайном. Люблю свое дело и хочу развиваться в этом направлении в дальнейшем."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-04-19T21:22:53+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_254:1",
+            "queryText": "Нужно разработать баннер для нового бренда уличной одежды 'Urban Roots'. Целевая аудитория — миллениалы, ценящие экологичность и минимализм. Баннер должен быть в сдержанной, но современной цветовой палитре, с акцентом на натуральные материалы и локальное производство. Важно передать дух сообщества и аутентичность, без излишней вычурности. Основной посыл — 'Стиль без компромиссов, для города и природы'.",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Occupation",
+              "label_suggestion": null,
+              "value": "Graphic designer",
+              "reasoning": "User explicitly states their occupation as a graphic designer.",
+              "evidence": {
+                "session_id": "sess_57b29125e3a2",
+                "utterance_index": 22,
+                "text": "Меня зовут Светлана. Я занимаюсь графическим дизайном. Люблю свое дело и хочу развиваться в этом направлении в дальнейшем."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-04-19T21:22:53+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          },
+          {
+            "queryId": "ability1_535:1",
+            "queryText": "Придумай мне краткое описание задания на разработку логотипа для нового проекта — онлайн-курса по основам графического дизайна для начинающих. Название курса 'PixelStart'. Нужно, чтобы лого отражал современность, доступность и творческий подход, но при этом был простым и запоминающимся, подходил бы для соцсетей и печати на мерче.",
+            "ability": "ability1",
+            "task4RecordIndex": 1,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Thoughts/Goals/Long_Term",
+              "label_suggestion": null,
+              "value": "Wants to develop further in graphic design",
+              "reasoning": "User explicitly states their desire to develop in graphic design long-term.",
+              "evidence": {
+                "session_id": "sess_57b29125e3a2",
+                "utterance_index": 22,
+                "text": "хочу развиваться в этом направлении в дальнейшем."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-04-19T21:22:53+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

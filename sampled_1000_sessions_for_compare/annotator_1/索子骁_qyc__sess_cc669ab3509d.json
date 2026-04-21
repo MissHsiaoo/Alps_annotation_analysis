@@ -1,0 +1,333 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_cc669ab3509d",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_cc669ab3509d:sess_cc669ab3509d",
+      "relativeItemPath": "sess_cc669ab3509d.json",
+      "canonicalId": "sess_cc669ab3509d",
+      "sessionId": "sess_cc669ab3509d",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T14:30:07.732Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about Hibernate inheritance mapping strategies (TABLE_PER_CLASS vs SINGLE_TABLE vs @MappedSuperclass), foreign key constraints in polymorphic associations, and denormalization patterns",
+            "reasoning": "User asks multiple follow-up questions about Hibernate's database mapping strategies and foreign key constraints, indicating sustained technical curiosity.",
+            "evidence": {
+              "session_id": "sess_cc669ab3509d",
+              "utterance_index": 18,
+              "text": "Despite it not being possible to create a foreign key constraint that targets both mapped tables, would the @ManyToOne Person person; syntax at least work (successfully)?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-10-08T07:59:45+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers concise technical explanations",
+            "reasoning": "User explicitly requests concise answers multiple times ('Be concise', 'Redo that answer concisely').",
+            "evidence": {
+              "session_id": "sess_cc669ab3509d",
+              "utterance_index": 10,
+              "text": "Redo that answer concisely."
+            },
+            "confidence": "0.95",
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-10-08T07:59:45+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_cc669ab3509d:sess_cc669ab3509d",
+      "relativeItemPath": "sess_cc669ab3509d.json",
+      "canonicalId": "sess_cc669ab3509d",
+      "sessionId": "sess_cc669ab3509d",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:11:45.070Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "If the database can’t enforce the FK for that polymorphic @ManyToOne in TABLE_PER_CLASS, what does Hibernate actually put in the table? A single column? Multiple columns?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Typically it has to store (1) the referenced id value and (2) enough type information to know which concrete table/entity that id belongs to. With plain JPA @ManyToOne you normally get a single join column that points to one target table, but for a polymorphic target with TABLE_PER_CLASS there isn’t one table to point at, so Hibernate can’t generate a real FK and may require a different mapping approach (e.g., a Hibernate-specific “any”-style mapping, or redesigning to JOINED/SINGLE_TABLE so there is one parent table)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "So if I try it anyway with standard annotations, what happens at schema-generation time vs runtime?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Schema generation: it may create a join column but won’t be able to add a valid foreign-key constraint (or it may fail DDL generation depending on dialect/settings). Runtime: if it boots, Hibernate can still persist a value, but loading/joining can be problematic or unsupported because it can’t unambiguously join to “the” Person table (since there isn’t one). In practice you often end up with either mapping exceptions at startup or queries that can’t be expressed as normal SQL joins."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Unrelated: I saw SQLite doesn’t even enforce foreign keys unless you enable them. Is that true?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Yes. In SQLite, foreign-key enforcement is controlled by a setting (commonly `PRAGMA foreign_keys = ON;`). If it’s off, SQLite will accept FK declarations but won’t enforce them, which can hide integrity problems during development/testing."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "And MySQL has some engine caveat too, right?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Right: in MySQL, foreign keys are enforced by InnoDB; older setups using MyISAM won’t enforce them. So you can see “FOREIGN KEY” in DDL but get no enforcement if the table engine doesn’t support it."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Cool—one more thing: in our schema, we actually turned off FK generation during dev, and a bunch of orphan rows slipped in before we noticed."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "That can happen: without database-enforced foreign keys, Hibernate can still persist associations, but the DB won’t prevent rows pointing at missing parents. In dev, it’s common to disable FK DDL for speed, but it removes that safety net—so cleanup scripts or re-enabling constraints early helps."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Hey, quick correction: I kept saying “be concise” earlier because I was skimming, not because I always want short answers. When I’m actually learning this stuff, I prefer the longer, detailed explanations with examples."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—so the earlier “be concise” requests were situational. For technical topics going forward, I’ll default to a more detailed explanation (and only go concise when you explicitly ask)."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Exactly. Concise is only when I say so; otherwise give me the full context."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about Hibernate inheritance mapping strategies (TABLE_PER_CLASS vs SINGLE_TABLE vs @MappedSuperclass), foreign key constraints in polymorphic associations, and denormalization patterns",
+            "reasoning": "User asks multiple follow-up questions about Hibernate's database mapping strategies and foreign key constraints, indicating sustained technical curiosity.",
+            "evidence": {
+              "session_id": "sess_cc669ab3509d",
+              "utterance_index": 18,
+              "text": "Despite it not being possible to create a foreign key constraint that targets both mapped tables, would the @ManyToOne Person person; syntax at least work (successfully)?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-10-08T07:59:45+00:00",
+            "_task1GoldValue": "Curious about Hibernate inheritance mapping strategies (TABLE_PER_CLASS vs SINGLE_TABLE vs @MappedSuperclass), foreign key constraints in polymorphic associations, and denormalization patterns"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The old memory generalized a long-term preference for concision from a few explicit requests. The user clarifies those were situational while skimming, and that their actual default preference when learning is detailed explanations with examples unless they explicitly request concision.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers detailed technical explanations with context and examples by default; wants concision only when explicitly requested."
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_cc669ab3509d",
+              "utterance_index": 0,
+              "text": "in our schema, we actually turned off FK generation during dev, and a bunch of orphan rows slipped in before we noticed."
+            },
+            "label": "Personal_Projects/Work_Context",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user implies their development setup disabled FK generation and experienced orphaned records as a consequence.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User has worked on a schema where foreign key generation was disabled during development, leading to orphan rows."
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers concise technical explanations",
+            "reasoning": "User explicitly requests concise answers multiple times ('Be concise', 'Redo that answer concisely').",
+            "evidence": {
+              "session_id": "sess_cc669ab3509d",
+              "utterance_index": 10,
+              "text": "Redo that answer concisely."
+            },
+            "confidence": "0.95",
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-10-08T07:59:45+00:00",
+            "_task1GoldValue": "Prefers concise technical explanations"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_cc669ab3509d:sess_cc669ab3509d",
+      "relativeItemPath": "sess_cc669ab3509d.json",
+      "canonicalId": "sess_cc669ab3509d",
+      "sessionId": "sess_cc669ab3509d",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:38:31.221Z",
+        "queryText": "I’m about to send you a pretty detailed technical question during a busy work break—how should you structure your reply so it fits what I typically find most helpful?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers concise technical explanations",
+          "reasoning": "User explicitly requests concise answers multiple times ('Be concise', 'Redo that answer concisely').",
+          "evidence": {
+            "session_id": "sess_cc669ab3509d",
+            "utterance_index": 10,
+            "text": "Redo that answer concisely."
+          },
+          "confidence": "0.95",
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-10-08T07:59:45+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_cc669ab3509d:sess_cc669ab3509d:task4",
+      "relativeItemPath": "sess_cc669ab3509d.json",
+      "canonicalId": "sess_cc669ab3509d:task4",
+      "sessionId": "sess_cc669ab3509d",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:36:12.345Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Thoughts/Curiosity",
+          "label_suggestion": null,
+          "value": "Curious about Hibernate inheritance mapping strategies (TABLE_PER_CLASS vs SINGLE_TABLE vs @MappedSuperclass), foreign key constraints in polymorphic associations, and denormalization patterns",
+          "reasoning": "User asks multiple follow-up questions about Hibernate's database mapping strategies and foreign key constraints, indicating sustained technical curiosity.",
+          "evidence": {
+            "session_id": "sess_cc669ab3509d",
+            "utterance_index": 18,
+            "text": "Despite it not being possible to create a foreign key constraint that targets both mapped tables, would the @ManyToOne Person person; syntax at least work (successfully)?"
+          },
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-10-08T07:59:45+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1200:1",
+            "queryText": "I'm looking at using either SINGLE_TABLE or JOINED for a new inheritance hierarchy. Which one would be better for my use case?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Thoughts/Curiosity",
+              "label_suggestion": null,
+              "value": "Curious about Hibernate inheritance mapping strategies (TABLE_PER_CLASS vs SINGLE_TABLE vs @MappedSuperclass), foreign key constraints in polymorphic associations, and denormalization patterns",
+              "reasoning": "User asks multiple follow-up questions about Hibernate's database mapping strategies and foreign key constraints, indicating sustained technical curiosity.",
+              "evidence": {
+                "session_id": "sess_cc669ab3509d",
+                "utterance_index": 18,
+                "text": "Despite it not being possible to create a foreign key constraint that targets both mapped tables, would the @ManyToOne Person person; syntax at least work (successfully)?"
+              },
+              "confidence": 0.8,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-10-08T07:59:45+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

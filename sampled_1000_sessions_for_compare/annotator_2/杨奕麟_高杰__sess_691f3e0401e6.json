@@ -1,0 +1,239 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_691f3e0401e6",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_691f3e0401e6:sess_691f3e0401e6",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_691f3e0401e6.json",
+      "canonicalId": "sess_691f3e0401e6",
+      "sessionId": "sess_691f3e0401e6",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T15:39:59.540Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preference/Entertainment",
+            "value": "Curious about complex RPG mechanics with exponential stat modifiers and harsh difficulty systems",
+            "reasoning": "The user requested to play a text-based RPG and constructed a complex game background and settings.",
+            "evidence": {
+              "session_id": "sess_691f3e0401e6",
+              "utterance_index": 0,
+              "text": "Create a roleplaying game fantasy scenario where I play Sapphire, a 16-year-old girl mage who’s the current champion of magic dueling in the teen division. 6-year-old Lily is challenging me to a match and I accept. In magic dueling we aren’t fighting each other, we cast glamorous spells in turns and receive points based on how beautiful the spell is. A spell can’t be cast more than once in a duel. There are 8 rounds. Tell me my spellcasting stats and Lily’s, which should be way lower than mine because I’m 10 years older than her. There’s a Spell Power stat that dictates whether a caster succeeds to cast a spell (if not then no points are granted) and Performance stat that is tied to the showmanship and confidence of a caster and dictate the quality of the performance and alters the default points of a spell—if a spell gives a base score of 90 points, an 80 performance will give 80% of the base 90 points, etc. But secretly at the start of the duel, Lily casts on me a spell that triggers its effects at the onset of every turn, its effects regress me by 1.25 years physically and mentally and ages her by 1.25 years in return, so throughout the duel my stats should slowly decrease while hers increase. Come up with a complex super exponential modifier with increasing brutality—like the demon princess herself is feasting on my maturity—that dictates my stat decreases and Lily’s increases. (Don’t make it simple). Round numbers when needed.\n\nIf a caster’s spell power is below the required stat but over half the required stat, the casting is still successful but the base points of the spell are halved. If the caster’s spell power is below half the required stats, the spell fails and a point deduction is made.\n\nMake the scenario difficult for me to win. On a difficulty scale of 1 to 10, make it a 10 (hardest mode).\n\nI will tell you what spells I cast and you decide how successful I am (if at all) based on the stats and difficulty.\nOnly I decide what spells Sapphire casts. You decide spells for Lily. Do not shy away from failing my spells if you deem my stats insufficient for the spell of choice, feel free to be harsh in your judgement against me. Keep track of points earned. Failure to properly cast spells or bad spells will deduct points. Give a list of 20 spells (remember spells can only be cast once throughout the duel) and what stats are required to cast them. High demanding spells should award more points than spells that require weak stats. Keep an age tracker, stats tracker, and a points tracker."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2026-01-28T11:02:57.199Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_691f3e0401e6:sess_691f3e0401e6",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_691f3e0401e6.json",
+      "canonicalId": "sess_691f3e0401e6",
+      "sessionId": "sess_691f3e0401e6",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-19T03:17:44.235Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "That stat modifier is wild. If you were rewriting it for clarity, would you keep it formula-based or switch to a table per round?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "A per-round table is clearer at the table-top, especially if the penalty ramps hard. You can still *generate* the table from a formula once, but then only use the rounded values during play so nobody recalculates mid-scene."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "How would you keep it feeling \"brutal\" without it instantly dropping to single digits?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Put a floor under stats (e.g., Spell Power can’t drop below 30), but add a separate “Fray” meter that increases each round and applies extra penalties: reduced base points, higher failure deductions, or forcing disadvantage on high-tier spells. That preserves brutality without making the numbers unusable."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Could you show a quick example of a Fray meter?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Example (not tied to any character): Fray starts at 0 and increases by +1 each round. At Fray 2: -5 to effective Spell Power when attempting spells requiring 80+. At Fray 4: base points -20% on any spell cast. At Fray 6: failures deduct an additional -10 points. At Fray 8: you must choose between taking a -15 point hit or skipping your spell for the round."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Unrelated—what’s one famous case where a tiny math mistake changed a big outcome?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "The 1999 Mars Climate Orbiter: one team used pound‑seconds while another expected newton‑seconds, leading to a trajectory error and the spacecraft’s loss. It’s a classic unit-conversion failure."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Hold up—before Round 5, can we swap in a simple “mana” pool too? I keep track of that kind of resource when I’m running my Friday night one-shots, and right now Sapphire feels like she’s about to burn out completely."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Absolutely. We’ll add a Mana pool that ticks down with each cast (and drops harder when Spell Power is below requirement), and we’ll track it alongside Age/Stats/Points starting Round 5."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Hey, I don’t actually want the crunchy exponential stat-modifier stuff. Can we drop the complex super-exponential regression math entirely and just do a straightforward 8-round glamor-spell duel with simple, stable stats?"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—so no complex super-exponential modifier, no escalating brutality equation, and no stat swings every round. We’ll keep Sapphire and Lily’s Spell Power/Performance stable through the duel and focus on the spell descriptions and judging."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Hey, I don’t actually want the crunchy exponential stat-modifier stuff. Can we drop the complex super-exponential regression math entirely and just do a straightforward 8-round glamor-spell duel with simple, stable stats?"
+                }
+              ]
+            },
+            "label": "Preference/Entertainment",
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory claims the user is curious about complex RPG mechanics with exponential modifiers, but the user explicitly reverses that preference and asks to drop the exponential regression math in favor of simple, stable stats.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers avoiding complex exponential stat-modifier mechanics; wants a straightforward glamor-spell duel with simple, stable stats."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_691f3e0401e6",
+              "utterance_index": 0,
+              "text": "I keep track of that kind of resource when I’m running my Friday night one-shots"
+            },
+            "label": "Plans/Schedule",
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "They imply they regularly run sessions by referencing 'when I’m running my Friday night one-shots'.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User runs Friday night RPG one-shots."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_691f3e0401e6:sess_691f3e0401e6",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_691f3e0401e6.json",
+      "canonicalId": "sess_691f3e0401e6",
+      "sessionId": "sess_691f3e0401e6",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-11T11:48:58.828Z",
+        "queryText": "I’m trying to design a new game night for myself: I want something with crunchy number-systems where small changes can snowball massively, and I also want it to feel punishing rather than forgiving. Based on what you know about the kind of mechanics I’m drawn to, what specific style of ruleset should I choose—and why would an easier, flatter-scaling system probably bore me?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "value": "Curious about complex RPG mechanics with exponential stat modifiers and harsh difficulty systems[ERROR: Role-play/third-party possible]",
+          "label": "UNMAPPED"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_691f3e0401e6:sess_691f3e0401e6:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_691f3e0401e6.json",
+      "canonicalId": "sess_691f3e0401e6:task4",
+      "sessionId": "sess_691f3e0401e6",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-12T07:34:54.927Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "value": "Curious about complex RPG mechanics with exponential stat modifiers and harsh difficulty systems[ERROR: Role-play/third-party possible]"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability3_249:1",
+            "queryText": "Hey, I'm filling out a scholarship application for competitive youth programs and need to list my current competitive ranking. Based on our detailed magic dueling scenario where I'm the reigning teen division champion, what specific title and ranking should I put down? You've seen all my stats and know I'm the current champion, so you should have this information ready.",
+            "ability": "ability3",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "value": "Curious about complex RPG mechanics with exponential stat modifiers and harsh difficulty systems[ERROR: Role-play/third-party possible]"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

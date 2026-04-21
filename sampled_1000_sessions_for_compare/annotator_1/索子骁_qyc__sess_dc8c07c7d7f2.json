@@ -1,0 +1,364 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_dc8c07c7d7f2",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_dc8c07c7d7f2:sess_dc8c07c7d7f2",
+      "relativeItemPath": "sess_dc8c07c7d7f2.json",
+      "canonicalId": "sess_dc8c07c7d7f2",
+      "sessionId": "sess_dc8c07c7d7f2",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T13:16:08.747Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "Name is Jimmy",
+            "reasoning": "User signs off emails with their name 'Jimmy' in multiple corrections.",
+            "evidence": {
+              "session_id": "sess_dc8c07c7d7f2",
+              "utterance_index": 0,
+              "text": "Best regards,\nJimmy"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-09-05T07:12:30+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers professional grammar correction for HR/performance-related communications",
+            "reasoning": "Repeated grammar correction requests for HR policy clarification emails indicate a stable professional communication preference.",
+            "evidence": {
+              "session_id": "sess_dc8c07c7d7f2",
+              "utterance_index": 6,
+              "text": "correct grammar: \"since Crystal is on leave till this friday and will back next mon, shall we still meet tmr for discussion?\""
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-09-05T07:12:30+00:00"
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p1",
+            "type": "indirect",
+            "label": "Personal_Background/Occupation",
+            "value": "The user works in a professional environment where they use 'HR Direct' to manage performance goals assigned by a line manager.",
+            "confidence": 0.95,
+            "evidence_text": "Coz My line manager has already assigned 5 performance goals in HR Direct."
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p2",
+            "type": "direct",
+            "label": "Social_Relationships/Colleagues",
+            "value": "The user has a colleague or professional contact named Crystal.",
+            "confidence": 0.8,
+            "evidence_text": "since Crystal is on leave till this friday and will back next mon, shall we still meet tmr for discussion?"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_dc8c07c7d7f2:sess_dc8c07c7d7f2",
+      "relativeItemPath": "sess_dc8c07c7d7f2.json",
+      "canonicalId": "sess_dc8c07c7d7f2",
+      "sessionId": "sess_dc8c07c7d7f2",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T04:26:31.862Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "correct grammar: \"Hi team,\\n\\nJust checking whether the updated KPI template will be shared by HR, or should we proceed with the version on the shared drive? Also, please confirm the submission deadline.\\n\\nThanks.\""
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Hi team,\n\nCould you please confirm whether HR will share the updated KPI template, or should we proceed with the version on the shared drive? Also, please confirm the submission deadline.\n\nThanks."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "rewrite to sound more polite: \"Can we move the meeting to next week since a few people are unavailable?\""
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Would it be possible to move the meeting to next week, as a few participants are unavailable?"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "help me refine this sentence: \"We should collaborate across teams to reduce duplication and deliver faster.\""
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "We should collaborate across teams to reduce duplication and accelerate delivery."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "quick: fix grammar: \"The files was uploaded yesterday but the link don’t work.\""
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "The files were uploaded yesterday, but the link doesn’t work."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "give 3 examples (not about me) of what \"breaking down silos\" looks like at work"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "1) A product, operations, and support group holds a shared weekly triage to resolve recurring customer issues end-to-end.\n2) Finance and engineering align on a single set of metrics and definitions so reporting and planning use the same numbers.\n3) Teams create a shared documentation hub (with owners and review dates) so knowledge isn’t trapped in one department."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "correct grammar: \"Hi Crystal,\n\nJust checking—I’ve already updated the HR Direct goals, but I’m still not sure if I should also copy them into the spreadsheet before the 15th.\n\nThanks,\nJimmy\""
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Hi Crystal,\n\nJust checking—I’ve already updated the goals in HR Direct, but I’m still not sure whether I should also copy them into the spreadsheet before the 15th.\n\nThanks,\nJimmy"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Actually, don’t bother polishing the wording—I’m not trying to sound formal. Just give me the key points to ask HR, bullet points are fine."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Got it. Here are concise bullet points you can send or use on the call:\n- Will HR upload the business objective goals into my performance goals for tracking?\n- If not, should I enter the business objective goals myself (in HR Direct or in the spreadsheet)?\n- My line manager has already assigned 5 performance goals in HR Direct—should the business objectives be linked to those?"
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Yes—keep it short and direct. No grammar rewrites needed."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "Name is Jimmy",
+            "reasoning": "User signs off emails with their name 'Jimmy' in multiple corrections.",
+            "evidence": {
+              "session_id": "sess_dc8c07c7d7f2",
+              "utterance_index": 0,
+              "text": "Best regards,\nJimmy"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-09-05T07:12:30+00:00",
+            "_task1GoldValue": "Name is Jimmy"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory says the user prefers professional grammar correction, but the user explicitly asks not to polish wording and says “No grammar rewrites needed,” indicating a preference for concise key points instead.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers short, direct bullet-point guidance over professional grammar rewrites for HR/performance-related communications"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_dc8c07c7d7f2",
+              "utterance_index": 0,
+              "text": "I’m still not sure if I should also copy them into the spreadsheet before the 15th."
+            },
+            "label": "Work/HR_Process",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "Mentioning a need to copy goals into a spreadsheet before a specific date implies an internal deadline related to performance goals documentation.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Has a deadline on the 15th to copy/update goals in a spreadsheet"
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p1",
+            "type": "indirect",
+            "label": "Personal_Background/Occupation",
+            "value": "The user works in a professional environment where they use 'HR Direct' to manage performance goals assigned by a line manager.",
+            "confidence": 0.95,
+            "evidence_text": "Coz My line manager has already assigned 5 performance goals in HR Direct.",
+            "_task1GoldValue": "The user works in a professional environment where they use 'HR Direct' to manage performance goals assigned by a line manager."
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p2",
+            "type": "direct",
+            "label": "Social_Relationships/Colleagues",
+            "value": "The user has a colleague or professional contact named Crystal.",
+            "confidence": 0.8,
+            "evidence_text": "since Crystal is on leave till this friday and will back next mon, shall we still meet tmr for discussion?",
+            "_task1GoldValue": "The user has a colleague or professional contact named Crystal."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "gemini_3_flash_preview_p1",
+          "gemini_3_flash_preview_p2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_dc8c07c7d7f2:sess_dc8c07c7d7f2",
+      "relativeItemPath": "sess_dc8c07c7d7f2.json",
+      "canonicalId": "sess_dc8c07c7d7f2",
+      "sessionId": "sess_dc8c07c7d7f2",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:48:56.399Z",
+        "queryText": "I’m about to send a sensitive work-related message that could affect how I’m perceived internally. Before I hit send, what kind of help should I ask you for so the wording lands appropriately and avoids misunderstandings?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers professional grammar correction for HR/performance-related communications",
+          "reasoning": "Repeated grammar correction requests for HR policy clarification emails indicate a stable professional communication preference.",
+          "evidence": {
+            "session_id": "sess_dc8c07c7d7f2",
+            "utterance_index": 6,
+            "text": "correct grammar: \"since Crystal is on leave till this friday and will back next mon, shall we still meet tmr for discussion?\""
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-09-05T07:12:30+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_dc8c07c7d7f2:sess_dc8c07c7d7f2:task4",
+      "relativeItemPath": "sess_dc8c07c7d7f2.json",
+      "canonicalId": "sess_dc8c07c7d7f2:task4",
+      "sessionId": "sess_dc8c07c7d7f2",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T01:00:38.457Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers professional grammar correction for HR/performance-related communications",
+          "reasoning": "Repeated grammar correction requests for HR policy clarification emails indicate a stable professional communication preference.",
+          "evidence": {
+            "session_id": "sess_dc8c07c7d7f2",
+            "utterance_index": 6,
+            "text": "correct grammar: \"since Crystal is on leave till this friday and will back next mon, shall we still meet tmr for discussion?\""
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-09-05T07:12:30+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1036:1",
+            "queryText": "I'm drafting an email to follow up on my mid-year review discussion with my manager. Could you take a look at this draft and suggest any improvements?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers professional grammar correction for HR/performance-related communications",
+              "reasoning": "Repeated grammar correction requests for HR policy clarification emails indicate a stable professional communication preference.",
+              "evidence": {
+                "session_id": "sess_dc8c07c7d7f2",
+                "utterance_index": 6,
+                "text": "correct grammar: \"since Crystal is on leave till this friday and will back next mon, shall we still meet tmr for discussion?\""
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-09-05T07:12:30+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

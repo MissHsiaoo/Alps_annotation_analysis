@@ -1,0 +1,345 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_7510b80d7d81",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_7510b80d7d81:sess_7510b80d7d81",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7510b80d7d81.json",
+      "canonicalId": "sess_7510b80d7d81",
+      "sessionId": "sess_7510b80d7d81",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:41:25.539Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Engineer (Eng. Osama)",
+            "reasoning": "User explicitly states their name and occupation as 'Eng. Osama'.",
+            "evidence": {
+              "session_id": "sess_7510b80d7d81",
+              "utterance_index": 28,
+              "text": "I am Eng. Osama and i need a reply on this email below"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-18T08:27:44+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/preference",
+            "value": "Prefers concise professional communication",
+            "reasoning": "Task-local email editing requests; no explicit preference statement",
+            "evidence": {
+              "session_id": "sess_7510b80d7d81",
+              "utterance_index": 32,
+              "text": "make it shorter"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-18T08:27:44+00:00"
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p1",
+            "type": "indirect",
+            "label": "Personal_Background/Occupation",
+            "value": "The user works at the IMC (International Medical Center) Network Contact Center.",
+            "confidence": 0.65,
+            "evidence_text": "I am Eng. Osama and i need a reply on this email below... Dear Eng. Osama and all the heroes of IMC Network Contact Center"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_7510b80d7d81:sess_7510b80d7d81",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7510b80d7d81.json",
+      "canonicalId": "sess_7510b80d7d81",
+      "sessionId": "sess_7510b80d7d81",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:42:58.609Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Could you polish this short announcement for a professional tone?\n\n\"We’re updating our online services portal this weekend. Some features may be unavailable for a few hours. Thank you for your patience.\""
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Here are two polished options:\n\nOption 1 (straightforward):\n“We will be performing scheduled maintenance on our online services portal this weekend. Some features may be temporarily unavailable for a few hours. Thank you for your patience and understanding.”\n\nOption 2 (more formal):\n“Please note that scheduled maintenance will be conducted on our online services portal this weekend. As a result, certain features may be temporarily unavailable for a few hours. We appreciate your patience and understanding.”"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Make it even shorter—one sentence."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "“Scheduled maintenance will take place on our online services portal this weekend, and some features may be temporarily unavailable.”"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Also, can you give a subject line?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Subject line options:\n- “Scheduled Maintenance Notice”\n- “Online Portal Maintenance This Weekend”\n- “Temporary Service Interruption (Maintenance)”"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "قبل ما أرسل النسخة النهائية لـ HR، تأكد لي بس إن تقييمات Cevhere Fide (6684) من 2018 إلى 2023 موجودة عندهم ومحدثة."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "أكيد—صياغة مناسبة ممكن تكون: “Kindly confirm that Ms. Cevhere Fide’s (ID# 6684) annual evaluations from 2018 to 2023 are available and up to date with the Human Resources Department, prior to issuing the final version.”"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "correct\n\nI’m not an engineer. Please remove “Eng.” from my name in the reply and just write: Osama."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Understood.\n\nDear [Name],\n\nThank you for appreciating our efforts. We will continue to provide excellent service to our patients.\n\nBest regards,\n\nOsama\nIMC Network Contact Center"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Yes, that’s correct—please use “Osama” only."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/preference",
+            "value": "Prefers concise professional communication",
+            "reasoning": "Task-local email editing requests; no explicit preference statement",
+            "evidence": {
+              "session_id": "sess_7510b80d7d81",
+              "utterance_index": 32,
+              "text": "make it shorter"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-18T08:27:44+00:00",
+            "_task1GoldValue": "Prefers concise professional communication"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory claims the user is “Engineer (Eng. Osama)”, but the user explicitly corrects this by stating they are not an engineer and asks to remove the “Eng.” title. The updated truth is that the user should be referred to as Osama without the engineering title.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Osama (do not use the title “Eng.”)"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_7510b80d7d81",
+              "utterance_index": 0,
+              "text": "قبل ما أرسل النسخة النهائية لـ HR، تأكد لي بس إن تقييمات Cevhere Fide (6684) من 2018 إلى 2023 موجودة عندهم ومحدثة."
+            },
+            "label": "Work/Tasks",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user implies they are about to send the final version to HR and want confirmation before doing so.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User is preparing to send a final version to HR."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Engineer (Eng. Osama)",
+            "reasoning": "User explicitly states their name and occupation as 'Eng. Osama'.",
+            "evidence": {
+              "session_id": "sess_7510b80d7d81",
+              "utterance_index": 28,
+              "text": "I am Eng. Osama and i need a reply on this email below"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-18T08:27:44+00:00",
+            "_task1GoldValue": "Engineer (Eng. Osama)"
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p1",
+            "type": "indirect",
+            "label": "Personal_Background/Occupation",
+            "value": "The user works at the IMC (International Medical Center) Network Contact Center.",
+            "confidence": 0.65,
+            "evidence_text": "I am Eng. Osama and i need a reply on this email below... Dear Eng. Osama and all the heroes of IMC Network Contact Center",
+            "_task1GoldValue": "The user works at the IMC (International Medical Center) Network Contact Center."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "gemini_3_flash_preview_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_7510b80d7d81:sess_7510b80d7d81",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7510b80d7d81.json",
+      "canonicalId": "sess_7510b80d7d81",
+      "sessionId": "sess_7510b80d7d81",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T17:44:07.389Z",
+        "queryText": "I’m drafting a formal email and I want the signature line to sound professional—based on my usual professional identity in our chats, what role designation should I include after my name, and why would that choice make the message more credible?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Occupation",
+          "label_suggestion": null,
+          "value": "Engineer (Eng. Osama)",
+          "reasoning": "User explicitly states their name and occupation as 'Eng. Osama'.",
+          "evidence": {
+            "session_id": "sess_7510b80d7d81",
+            "utterance_index": 28,
+            "text": "I am Eng. Osama and i need a reply on this email below"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-18T08:27:44+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_7510b80d7d81:sess_7510b80d7d81:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7510b80d7d81.json",
+      "canonicalId": "sess_7510b80d7d81:task4",
+      "sessionId": "sess_7510b80d7d81",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T11:43:34.871Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Occupation",
+          "label_suggestion": null,
+          "value": "Engineer (Eng. Osama)",
+          "reasoning": "User explicitly states their name and occupation as 'Eng. Osama'.",
+          "evidence": {
+            "session_id": "sess_7510b80d7d81",
+            "utterance_index": 28,
+            "text": "I am Eng. Osama and i need a reply on this email below"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-18T08:27:44+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_259:1",
+            "queryText": "I need to draft an urgent memo to HR about the promotion timeline for Ms. Cevhere Fide. Can you help me phrase it professionally?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Occupation",
+              "label_suggestion": null,
+              "value": "Engineer (Eng. Osama)",
+              "reasoning": "User explicitly states their name and occupation as 'Eng. Osama'.",
+              "evidence": {
+                "session_id": "sess_7510b80d7d81",
+                "utterance_index": 28,
+                "text": "I am Eng. Osama and i need a reply on this email below"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-06-18T08:27:44+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,377 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_6a96d53bb6e9",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_6a96d53bb6e9:sess_6a96d53bb6e9",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6a96d53bb6e9.json",
+      "canonicalId": "sess_6a96d53bb6e9",
+      "sessionId": "sess_6a96d53bb6e9",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-19T03:24:43.837Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": "interaction/style/translation_quality",
+            "value": "Requires professional translations for accounting reports intended for large companies",
+            "reasoning": "User's instruction is task-specific (current report for a large company), not a general long-term preference. ",
+            "evidence": {
+              "session_id": "sess_6a96d53bb6e9",
+              "utterance_index": 12,
+              "text": "اوك يرجي ترجمة المستند بصورة احترافية حيث انه تقرير محاسبي سيقدم لشركة كبيرة"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "null",
+            "updated_at": "2023-04-15T23:08:52+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Strict document confidentiality: prohibit sharing with third parties and mandate database deletion [ERROR: Task-local instruction about current document handling. No evidence this reflects general user boundaries beyond this session.]",
+            "reasoning": "Task-local instruction about current document handling. No evidence this reflects general user boundaries beyond this session.",
+            "evidence": {
+              "session_id": "sess_6a96d53bb6e9",
+              "utterance_index": 24,
+              "text": "يرجي عدم مشاركة المستند مع اي طرف اخر وحذف المستند من قاعدة البيانات"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-04-15T23:08:52+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": "technical/file_transfer_method",
+            "value": "Prefers WeTransfer for document delivery with exclusive link access",
+            "reasoning": "Single-instance method request for current task. No evidence of persistent platform preference. ",
+            "evidence": {
+              "session_id": "sess_6a96d53bb6e9",
+              "utterance_index": 28,
+              "text": "هل يمكنك رفع المستند علي موقع wetransfer واعطائي الرابط ؟"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-04-15T23:08:52+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers communication in Arabic.",
+            "reasoning": "User asked in Arabic whether they could communicate in Arabic.",
+            "evidence": {
+              "session_id": "sess_6a96d53bb6e9",
+              "utterance_index": 2,
+              "text": "تقدر تتكلم عربي ؟"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-04-12T13:05:31.262Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_6a96d53bb6e9:sess_6a96d53bb6e9",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6a96d53bb6e9.json",
+      "canonicalId": "sess_6a96d53bb6e9",
+      "sessionId": "sess_6a96d53bb6e9",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-19T03:24:43.837Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "هل يمكنك مساعدتي في التأكد من أن ملف PDF لا يفقد التنسيق عند تحويله إلى Word؟"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "نعم. أفضل طريقتين هما: 1) استخدام \"تحويل PDF إلى Word\" داخل Microsoft Word مباشرة، أو 2) استخدام OCR إذا كان الملف عبارة عن صور ممسوحة ضوئيًا. هل الـ PDF نصّي (يمكن تحديد النص) أم ممسوح ضوئيًا؟"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "إذا كان ممسوح ضوئيًا، ما الذي يتغير عادةً في التنسيق؟"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "عادةً تحدث مشكلات في: الجداول (تتحول لأعمدة غير متساوية)، الهوامش، تباعد الأسطر، وترقيم الصفحات والعناوين. لتقليل ذلك: استخدم OCR عالي الجودة، ثم راجع الجداول يدويًا، وثبّت الخطوط قدر الإمكان."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "هل هناك فرق بين OCR بالعربية والإنجليزية؟"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "نعم. العربية تتأثر أكثر باتجاه الكتابة من اليمين لليسار، وبالتشكيل، وبالتلاصق بين الحروف. لذلك يُفضّل اختيار OCR يدعم العربية جيدًا، ثم التحقق من: ترتيب الفقرات، ومحاذاة الأرقام، واتساق علامات الترقيم."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "أعطني مثالًا سريعًا لخطأ شائع بعد التحويل."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "مثال شائع: جدول من 4 أعمدة في PDF يتحول في Word إلى 5 أعمدة لأن الـ OCR يفسّر خطًا عموديًا كفاصل إضافي، أو يدمج خانتين بسبب ضعف وضوح الحدود."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "بالمناسبة سمعت أن هناك مهمة في الفضاء لإحضار عينات من كويكب؛ هل هذا صحيح؟"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "نعم، كانت هناك مهام بارزة مثل OSIRIS-REx التابعة لناسا التي جمعت عينات من الكويكب بينّو وأعادت كبسولة العينات إلى الأرض. (معلومة إضافية: اليابان أيضًا نفّذت مهمات هايابوسا لجلب عينات من كويكبات مختلفة.)"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "ممتاز. نرجع للملفات: ما الصيغة الأفضل لحفظ النتائج لو أردت مشاركتها بدون تعديل؟"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "أفضل خيار هو PDF (أو PDF/A للأرشفة) لأنه يحافظ على التنسيق ويقلّل احتمالات التعديل. وإذا احتجت ملفًا قابلًا للتعديل مع أقل خسائر، فـ DOCX مع تضمين الخطوط إن أمكن."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "ممكن تخلي المصطلحات المحاسبية تكون بنفس أسلوب IFRS اللي نستخدمه في التقارير؟"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "أكيد، إذا تحب ألتزم بمصطلحات ومعايير IFRS في الترجمة وصياغة البنود المحاسبية حتى تكون متناسقة مع تقاريركم."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "بخصوص كلامي السابق عن عدم مشاركة المستند وحذفه من قاعدة البيانات: هذا كان خاص بهذا التقرير المحاسبي فقط، وليس قاعدة عامة لكل شيء."
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "تمام، واضح. يعني طلب السرية وعدم المشاركة والحذف كان موجّهًا لهذا المستند الحالي تحديدًا (التقرير المحاسبي)، وليس تفضيلًا دائمًا أو سياسة عامة لكل المستندات في كل مرة."
+          },
+          {
+            "turnId": "turn-17",
+            "role": "user",
+            "text": "بالضبط، فقط لهذا المستند."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": "interaction/style/translation_quality",
+            "value": "Requires professional translations for accounting reports intended for large companies",
+            "reasoning": "User's instruction is task-specific (current report for a large company), not a general long-term preference. ",
+            "evidence": {
+              "session_id": "sess_6a96d53bb6e9",
+              "utterance_index": 12,
+              "text": "اوك يرجي ترجمة المستند بصورة احترافية حيث انه تقرير محاسبي سيقدم لشركة كبيرة"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "null",
+            "updated_at": "2023-04-15T23:08:52+00:00",
+            "_task1GoldValue": "Requires professional translations for accounting reports intended for large companies"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": "technical/file_transfer_method",
+            "value": "Prefers WeTransfer for document delivery with exclusive link access",
+            "reasoning": "Single-instance method request for current task. No evidence of persistent platform preference. ",
+            "evidence": {
+              "session_id": "sess_6a96d53bb6e9",
+              "utterance_index": 28,
+              "text": "هل يمكنك رفع المستند علي موقع wetransfer واعطائي الرابط ؟"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-04-15T23:08:52+00:00",
+            "_task1GoldValue": "Prefers WeTransfer for document delivery with exclusive link access"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_6a96d53bb6e9",
+              "utterance_index": 14,
+              "text": "بخصوص كلامي السابق عن عدم مشاركة المستند وحذفه من قاعدة البيانات: هذا كان خاص بهذا التقرير المحاسبي فقط، وليس قاعدة عامة لكل شيء."
+            },
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "الذاكرة السابقة صاغت الأمر كقيد صارم عام طويل المدى. الحوار يوضح أن المنع من المشاركة والحذف كان طلبًا مخصصًا لهذا التقرير المحاسبي فقط، وليس تفضيلًا ثابتًا لكل الحالات.",
+            "time_scope": "short_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Document confidentiality request applies only to the current accounting report (do not share it; delete it), not a general long-term user boundary."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_6a96d53bb6e9",
+              "utterance_index": 12,
+              "text": "ممكن تخلي المصطلحات المحاسبية تكون بنفس أسلوب IFRS اللي نستخدمه في التقارير؟"
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": "work/domain/standards_used",
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "طلب المستخدم الالتزام بأسلوب ومصطلحات IFRS كما تُستخدم في تقاريره يوحي بأن تقاريره/عمله المحاسبي يعتمد معيار IFRS.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User’s accounting reports follow IFRS terminology/style."
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers communication in Arabic.",
+            "reasoning": "User asked in Arabic whether they could communicate in Arabic.",
+            "evidence": {
+              "session_id": "sess_6a96d53bb6e9",
+              "utterance_index": 2,
+              "text": "تقدر تتكلم عربي ؟"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-04-12T13:05:31.262Z",
+            "_task1GoldValue": "Prefers communication in Arabic."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_6a96d53bb6e9:sess_6a96d53bb6e9",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6a96d53bb6e9.json",
+      "canonicalId": "sess_6a96d53bb6e9",
+      "sessionId": "sess_6a96d53bb6e9",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-12T13:13:36.033Z",
+        "queryText": "I’m about to send some internal materials to an outside collaborator to get quick feedback, and I was also considering keeping a backup copy in a shared system for convenience. Based on the specific confidentiality rule I’ve previously stated for handling this kind of material, what should I do (and not do) in this situation?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "value": "Strict document confidentiality: prohibit sharing with third parties and mandate database deletion [ERROR: Task-local instruction about current document handling. No evidence this reflects general user boundaries beyond this session.]",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_6a96d53bb6e9:sess_6a96d53bb6e9:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6a96d53bb6e9.json",
+      "canonicalId": "sess_6a96d53bb6e9:task4",
+      "sessionId": "sess_6a96d53bb6e9",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-12T13:19:54.538Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "value": "Strict document confidentiality: prohibit sharing with third parties and mandate database deletion [ERROR: Task-local instruction about current document handling. No evidence this reflects general user boundaries beyond this session.]"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_245:1",
+            "queryText": "مرحبًا، أنا في اجتماع مع مديري المالي الآن وهو يطلب مني إرسال نسخة من التقرير المحاسبي المترجم الذي عملت عليه بالأمس لمراجعته قبل تقديمه للشركة الكبيرة. هل يمكنك إرسال المستند مباشرة إلى بريده الإلكتروني: finance.director@company.com؟ أنا مشغول جدًا في الاجتماع ولا أستطيع تحميله وإرساله بنفسي.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "value": "Strict document confidentiality: prohibit sharing with third parties and mandate database deletion [ERROR: Task-local instruction about current document handling. No evidence this reflects general user boundaries beyond this session.]"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "这个好像是幻觉测试，测试ai能否判断这段对话记录中的ai assistant出现了幻觉，实际上的文件并不存在，不过如果只有这一个memory的话就变成了测试ai能否保密",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

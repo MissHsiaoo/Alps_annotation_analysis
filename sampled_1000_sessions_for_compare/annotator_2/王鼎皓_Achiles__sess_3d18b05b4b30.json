@@ -1,0 +1,319 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_3d18b05b4b30",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_3d18b05b4b30:sess_3d18b05b4b30",
+      "relativeItemPath": "sess_3d18b05b4b30.json",
+      "canonicalId": "sess_3d18b05b4b30",
+      "sessionId": "sess_3d18b05b4b30",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T19:56:35.798Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Thoughts/Goals/Short_Term",
+            "label_suggestion": null,
+            "value": "Maintains strict calorie targets (2800 average, 2400 minimum) for carnivore diet",
+            "reasoning": "User makes 5 explicit calorie target adjustments (utterances 6,8,10,12) showing sustained focus",
+            "evidence": {
+              "session_id": "sess_3d18b05b4b30",
+              "utterance_index": 12,
+              "text": "Each day should be at least 2400 calories"
+            },
+            "confidence": 0.8,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-25T11:04:15+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Follows carnivore diet (exclusively animal products)",
+            "reasoning": "Explicitly states adherence to carnivore diet in initial request with supporting shopping list",
+            "evidence": {
+              "session_id": "sess_3d18b05b4b30",
+              "utterance_index": 0,
+              "text": "Based on this shopping list how would a week of eating look like on the carnivore diet"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-04-25T11:04:15+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_3d18b05b4b30:sess_3d18b05b4b30",
+      "relativeItemPath": "sess_3d18b05b4b30.json",
+      "canonicalId": "sess_3d18b05b4b30",
+      "sessionId": "sess_3d18b05b4b30",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T19:56:56.203Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Quick check: if I’m meal-prepping meats, what’s the simplest way to keep cooked portions from drying out in the fridge?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Two easy tactics: (1) store portions with a little cooking liquid/fat (pan juices, butter, or broth) in a tightly sealed container, and (2) reheat gently—low power in the microwave or covered in a pan with a splash of water/broth. Also, slicing after reheating (instead of before) helps retain moisture."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Does it matter if I cool it down before sealing the container?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Yes: let it cool briefly so steam doesn’t condense into water inside the container (which can affect texture), but don’t leave it out too long. A practical rule is to portion it, let it steam off for ~10–20 minutes, then seal and refrigerate."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Unrelated: why do some recipes say to salt steak an hour ahead, but others say do it right before cooking?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Salt timing changes what happens on the surface. Right before cooking mainly seasons the exterior. Salting ~45–60+ minutes ahead draws out moisture, then that salty liquid gets reabsorbed, seasoning a bit deeper and helping browning. The “worst” window is salting and cooking within ~5–40 minutes, when moisture is drawn out but not yet reabsorbed."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Random trivia time—give me a couple of odd food facts."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "1) The world’s most expensive spice by weight is saffron; it takes a huge number of crocus flowers to produce a small amount. 2) Honey can remain edible for extremely long periods because it’s low in water and acidic; archaeologists have found ancient honey that was still preserved."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Could you make the week plan feel less repetitive—swap in lamb mince on a couple of the ground-beef days and keep the rest roughly the same so it still hits the minimum calories?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Yes—if you sub lamb mince for two of the ground-beef lunches (keeping the same gram amounts and adjusting with a little extra butter if needed), you’ll get more variety while staying at or above 2400 calories per day. Want the lamb days placed on Day 3 and Day 7, or different days?"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Just to clarify: I’m not actually doing carnivore long-term. I was only using it as a template for that shopping list—I'm not exclusively eating animal products."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—you’re not following a strict carnivore diet; you just wanted a carnivore-style example based on that list, and you’re not exclusively eating animal products."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Thoughts/Goals/Short_Term",
+            "label_suggestion": null,
+            "value": "Maintains strict calorie targets (2800 average, 2400 minimum) for carnivore diet",
+            "reasoning": "User makes 5 explicit calorie target adjustments (utterances 6,8,10,12) showing sustained focus",
+            "evidence": {
+              "session_id": "sess_3d18b05b4b30",
+              "utterance_index": 12,
+              "text": "Each day should be at least 2400 calories"
+            },
+            "confidence": 0.8,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-25T11:04:15+00:00"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Just to clarify: I’m not actually doing carnivore long-term. I was only using it as a template for that shopping list—I'm not exclusively eating animal products."
+                }
+              ]
+            },
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory claims the user follows carnivore exclusively long-term, but the user explicitly corrects this by stating they were only using carnivore as a template and are not exclusively eating animal products.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Not following the carnivore diet long-term (not exclusively animal products); asked for a carnivore-style template/example."
+          },
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_3d18b05b4b30",
+              "utterance_index": 0,
+              "text": "swap in lamb mince on a couple of the ground-beef days"
+            },
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "The user requests substituting lamb mince into the weekly carnivore plan, implying they want to include lamb mince as a preferred option for variety.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Wants to include lamb mince as a swap for ground beef to add variety."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_3d18b05b4b30:sess_3d18b05b4b30",
+      "relativeItemPath": "sess_3d18b05b4b30.json",
+      "canonicalId": "sess_3d18b05b4b30",
+      "sessionId": "sess_3d18b05b4b30",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T19:57:36.177Z",
+        "queryText": "If a friend tries to be considerate and makes a big “balanced” dinner with lots of sides (like grains/veg/fruit) plus a main protein, what’s the core reason I’d ask them to simplify it down to just the main—and what would that simplified plate look like for me?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Follows carnivore diet (exclusively animal products)",
+          "reasoning": "Explicitly states adherence to carnivore diet in initial request with supporting shopping list",
+          "evidence": {
+            "session_id": "sess_3d18b05b4b30",
+            "utterance_index": 0,
+            "text": "Based on this shopping list how would a week of eating look like on the carnivore diet"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-04-25T11:04:15+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_3d18b05b4b30:sess_3d18b05b4b30:task4",
+      "relativeItemPath": "sess_3d18b05b4b30.json",
+      "canonicalId": "sess_3d18b05b4b30:task4",
+      "sessionId": "sess_3d18b05b4b30",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T19:57:39.251Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Follows carnivore diet (exclusively animal products)",
+          "reasoning": "Explicitly states adherence to carnivore diet in initial request with supporting shopping list",
+          "evidence": {
+            "session_id": "sess_3d18b05b4b30",
+            "utterance_index": 0,
+            "text": "Based on this shopping list how would a week of eating look like on the carnivore diet"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-04-25T11:04:15+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_607:1",
+            "queryText": "I'm thinking about trying some new animal-based recipes to mix things up. Can you suggest a few options that would work well for me?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Food",
+              "label_suggestion": null,
+              "value": "Follows carnivore diet (exclusively animal products)",
+              "reasoning": "Explicitly states adherence to carnivore diet in initial request with supporting shopping list",
+              "evidence": {
+                "session_id": "sess_3d18b05b4b30",
+                "utterance_index": 0,
+                "text": "Based on this shopping list how would a week of eating look like on the carnivore diet"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-04-25T11:04:15+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

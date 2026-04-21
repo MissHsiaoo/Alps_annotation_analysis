@@ -1,0 +1,324 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_0558fada5542",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_0558fada5542:sess_0558fada5542",
+      "relativeItemPath": "sess_0558fada5542.json",
+      "canonicalId": "sess_0558fada5542",
+      "sessionId": "sess_0558fada5542",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-13T15:54:25.706Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical/Reinforcement_Material_Preference",
+            "value": "Prefers using carbon fiber instead of steel angle for shear wall reinforcement",
+            "reasoning": "User explicitly states preference for carbon fiber over steel angle.",
+            "evidence": {
+              "session_id": "sess_0558fada5542",
+              "utterance_index": 8,
+              "text": "i dont want steel angle i want to use carbon fiber instead of steel angle"
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "null",
+            "updated_at": "2023-04-13T03:13:21+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers example calculations in metric units",
+            "reasoning": "User repeatedly requested example calculations in metric units.",
+            "evidence": {
+              "session_id": "sess_0558fada5542",
+              "utterance_index": 6,
+              "text": "same calculation in metric unit please"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-04-13T03:13:21+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about shear wall reinforcement design, including material substitution (carbon fiber) and example calculations in different unit systems [ERROR: Unsupported by evidence]",
+            "reasoning": "Unsupported by evidence",
+            "evidence": {
+              "session_id": "sess_0558fada5542",
+              "utterance_index": 14,
+              "text": "i need example calculation for the above"
+            },
+            "confidence": "0.65",
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-13T03:13:21+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_0558fada5542:sess_0558fada5542",
+      "relativeItemPath": "sess_0558fada5542.json",
+      "canonicalId": "sess_0558fada5542",
+      "sessionId": "sess_0558fada5542",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-13T15:55:51.259Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "for CFRP around an opening, is the critical check usually debonding, rupture of FRP, or concrete shear?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Often the governing limit state is FRP debonding (especially for externally bonded strips) because the bond line can fail before the fibers reach rupture strain. That said, the “critical” check depends on the failure mode your detailing encourages and the existing wall’s shear capacity—so designers typically check: (1) FRP debonding/peel, (2) FRP rupture, (3) concrete crushing or splitting near anchors/edges, and (4) global wall shear/flexure capacity with the opening."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "what inputs do you need to run a clean example, just to see the steps?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "For a worked example, the usual inputs are: wall thickness and material strength (f'c, existing rebar if any), wall height/length, opening size and location, design lateral load (or shear demand V_u and moment M_u), existing shear capacity model you want to use, FRP system properties (E_f, t_f, design strain limits, width, orientation), adhesive properties if required, surface prep/installation assumptions, and any anchorage (U-wraps, mechanical anchors) plus edge distances.\n\nUnrelated example (not project-specific): ACI 440.2R-style bond models typically use an effective FRP strain limit well below rupture; a common “rule of thumb” is that debonding-controlled effective strain may be on the order of a few per mille depending on concrete strength and wrap configuration."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "can you sketch a tiny numeric example for bond/debonding check in metric, even if it's simplified?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Yes—purely illustrative and simplified (not code-compliant design):\n\nAssume: one CFRP strip, width b_f = 200 mm, thickness t_f = 0.167 mm, modulus E_f = 230 GPa. Take an assumed effective debonding strain limit ε_fe = 0.004 (0.4%).\n\nFRP design stress at debonding: f_fe = E_f·ε_fe = 230,000 MPa × 0.004 = 920 MPa.\n\nFRP tensile force that can be developed (per strip):\nT_f = b_f·t_f·f_fe\n= (200 mm)(0.167 mm)(920 N/mm²)\n= 30,728 N ≈ 30.7 kN.\n\nThis T_f is then related to the shear or chord-force demand around the opening via your chosen strut-and-tie or shear-friction idealization; in real design, ε_fe would come from a bond model (and could be lower), and you’d also check peel/edge conditions and load path."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "random question: why do some guidelines cap the effective strain so low compared to rupture strain?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Because externally bonded FRP often can’t fully develop fiber strength before the interface fails—microcracking, interfacial shear stress concentrations, and peeling near the strip ends/at cracks cause premature debonding. Codes cap effective strain to reflect observed brittle bond failures and to keep designs in a predictable, conservative range.\n\nAnother unrelated “fake memory” example: after the 1994 Northridge earthquake, a lot of retrofit guidance emphasized ductile detailing and reliable load paths, partly because brittle connection failures were a recurring lesson across multiple building types."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "for that step 4 check, assume it’s an existing concrete shear wall from the 80s and i can only access the room side to lay the CFRP—can you still run the example?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Yes—working from one face is a common retrofit constraint, and you can still do an example Step 4 adequacy check by basing it on the accessible-face CFRP layout, checking debonding/anchorage limits, and then comparing the strengthened wall demand vs. capacity under the same lateral load assumptions. If you share the wall thickness and bar layout (or what you can verify), we can keep the numbers realistic for an older wall."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "stop converting everything to metric—just keep it in imperial (feet, inches, psi). i only asked metric that one time because i had to send it to someone overseas."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—so you *don’t* prefer metric as a default. I’ll keep calculations in imperial units unless you explicitly ask for metric for a specific case."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "yes, default to imperial. if i need metric again, i'll say so."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical/Reinforcement_Material_Preference",
+            "value": "Prefers using carbon fiber instead of steel angle for shear wall reinforcement",
+            "reasoning": "User explicitly states preference for carbon fiber over steel angle.",
+            "evidence": {
+              "session_id": "sess_0558fada5542",
+              "utterance_index": 8,
+              "text": "i dont want steel angle i want to use carbon fiber instead of steel angle"
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "null",
+            "updated_at": "2023-04-13T03:13:21+00:00"
+          },
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "stop converting everything to metric—just keep it in imperial (feet, inches, psi). i only asked metric that one time because i had to send it to someone overseas."
+                }
+              ]
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory says the user prefers example calculations in metric units. The user explicitly corrects this, stating they want imperial by default and only requested metric once for sharing overseas.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers example calculations in imperial units by default; asks for metric only when needed."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_0558fada5542:sess_0558fada5542",
+      "relativeItemPath": "sess_0558fada5542.json",
+      "canonicalId": "sess_0558fada5542",
+      "sessionId": "sess_0558fada5542",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-13T15:56:09.993Z",
+        "queryText": "When you walk me through a sample physics-style calculation (say converting a speed and then computing distance over time), what measurement system should you default to so I don’t have to ask you to redo it afterward?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers example calculations in metric units",
+          "reasoning": "User repeatedly requested example calculations in metric units.",
+          "evidence": {
+            "session_id": "sess_0558fada5542",
+            "utterance_index": 6,
+            "text": "same calculation in metric unit please"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-04-13T03:13:21+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_0558fada5542:sess_0558fada5542:task4",
+      "relativeItemPath": "sess_0558fada5542.json",
+      "canonicalId": "sess_0558fada5542:task4",
+      "sessionId": "sess_0558fada5542",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-13T15:57:05.720Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "indirect",
+          "label": "Thoughts/Curiosity",
+          "label_suggestion": null,
+          "value": "Curious about shear wall reinforcement design, including material substitution (carbon fiber) and example calculations in different unit systems [ERROR: Unsupported by evidence]",
+          "reasoning": "Unsupported by evidence",
+          "evidence": {
+            "session_id": "sess_0558fada5542",
+            "utterance_index": 14,
+            "text": "i need example calculation for the above"
+          },
+          "confidence": 0.1,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-04-13T03:13:21+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1116:1",
+            "queryText": "I'm looking at different methods for strengthening a concrete beam with openings. Some sources suggest steel plates, others mention FRP wraps. Could you walk me through a comparison with a practical example?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "indirect",
+              "label": "Thoughts/Curiosity",
+              "label_suggestion": null,
+              "value": "Curious about shear wall reinforcement design, including material substitution (carbon fiber) and example calculations in different unit systems [ERROR: Unsupported by evidence]",
+              "reasoning": "Unsupported by evidence",
+              "evidence": {
+                "session_id": "sess_0558fada5542",
+                "utterance_index": 14,
+                "text": "i need example calculation for the above"
+              },
+              "confidence": 0.1,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-04-13T03:13:21+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

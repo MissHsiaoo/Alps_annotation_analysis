@@ -1,0 +1,315 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_5f8b23b16cd3",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_5f8b23b16cd3:sess_5f8b23b16cd3",
+      "relativeItemPath": "sess_5f8b23b16cd3.json",
+      "canonicalId": "sess_5f8b23b16cd3",
+      "sessionId": "sess_5f8b23b16cd3",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:51:46.184Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers academic/scientific text to be polished and formatted professionally可能仅仅是任务需求，并非用户个人偏好",
+            "reasoning": "User repeatedly requests text polishing (3 instances) and academic formatting, indicating a stable interaction preference.",
+            "evidence": {
+              "session_id": "sess_5f8b23b16cd3",
+              "utterance_index": 0,
+              "text": "按学术论文格式润色..."
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-10-12T14:28:09+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_5f8b23b16cd3:sess_5f8b23b16cd3",
+      "relativeItemPath": "sess_5f8b23b16cd3.json",
+      "canonicalId": "sess_5f8b23b16cd3",
+      "sessionId": "sess_5f8b23b16cd3",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:51:59.028Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "能不能给一个更正式的英文写作模板，用于学术论文里“研究意义+研究空白+本文贡献”三段？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以。下面给出三段式可直接替换的英文模板（括号内按需替换）：\n\n1) Significance / Background\n\"[Topic] has attracted increasing attention because [broad significance]. Accumulating evidence indicates that [what is known], highlighting its relevance to [field/clinical outcome].\"\n\n2) Gap / Problem Statement\n\"Despite these advances, key questions remain regarding [specific gap]. In particular, it is still unclear whether/ how [mechanistic or methodological gap], which limits [current application/understanding].\"\n\n3) Contribution / This Study\n\"To address this gap, we [main approach/design]. We demonstrate that [main finding 1] and [main finding 2]. Collectively, our results provide [conceptual/clinical/technical contribution] and suggest that [implication].\""
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "如果我要把语气改得更谨慎一点（避免太绝对），有哪些常用的hedging表达？给10个。"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "常用 hedging 表达（学术写作中更谨慎）：\n1) may\n2) might\n3) could\n4) suggest(s) that\n5) indicate(s) that\n6) appear(s) to\n7) seem(s) to\n8) is/are likely to\n9) is/are consistent with\n10) to the best of our knowledge"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "顺便问下，引用格式里“et al.”后面要不要加逗号？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "一般不在“et al.”后加逗号；它本身是缩写形式（al.后有句点）。是否加逗号主要取决于具体引用风格：\n- 叙述式：\"Smith et al. (2020) reported...\" 通常不加逗号。\n- 括号式：\"(Smith et al., 2020)\" 在作者组与年份之间是否有逗号由APA等格式规定（APA有逗号）。\n建议以目标期刊/学校的style guide为准。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "给我一个虚构的例子：某团队做了炎症与代谢的研究，但结果只能说明相关性，怎么在讨论部分写得更稳妥？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "示例（虚构团队，讨论部分更稳妥的写法）：\n\"Our data reveal a significant association between inflammatory markers and metabolic parameters. However, given the observational design, these findings do not establish causality. It is possible that unmeasured confounders, reverse causation, or shared upstream pathways contribute to the observed relationship. Future studies incorporating longitudinal follow-up and mechanistic experiments will be required to determine whether inflammation directly influences metabolic dysregulation and to delineate the underlying pathways.\""
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我准备把这段放到SCI论文的introduction里，帮我把语气再正式一点、逻辑更紧凑：\"MyD88 inhibition may represent a novel therapeutic avenue for preventing early diabetic retinopathy and other diabetes-related complications.\""
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Certainly. Here is a more formal and tightly argued version suitable for an SCI-style Introduction:\n\n\"Inhibition of MyD88 may constitute a novel therapeutic strategy to prevent or attenuate early-stage diabetic retinopathy as well as other diabetes-associated complications.\""
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "以后别总按学术论文那种风格帮我润色了，我更想要口语化、简洁一点的表达，别太正式。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "明白，我后续会优先用更口语、简洁的写法来改写；如果你需要正式的学术论文风格，再单独告诉我。"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "对，就是这种。不要太多长句，也别刻意学术化。"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "好的，我会控制句子长度，避免过度学术化，整体更自然易读。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "以后别总按学术论文那种风格帮我润色了，我更想要口语化、简洁一点的表达，别太正式。"
+                }
+              ]
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "旧记忆称用户偏好学术/专业格式润色，但用户明确表示不希望总用学术论文风格，转而偏好口语化、简洁、不太正式的表达，因此需要更新为新的交互偏好。",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers conversational, concise rewriting rather than overly formal academic-paper style unless explicitly requested"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_5f8b23b16cd3",
+              "utterance_index": 0,
+              "text": "我准备把这段放到SCI论文的introduction里，帮我把语气再正式一点、逻辑更紧凑"
+            },
+            "label": "Preferences/Writing_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User implies the text will be used in an SCI paper Introduction and asks for increased formality and tighter logic, indicating a recurring writing context and preference.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Likely writes or edits SCI-style manuscripts and wants Introduction text to be more formal and logically tight"
+          },
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers academic/scientific text to be polished and formatted professionally可能仅仅是任务需求，并非用户个人偏好",
+            "reasoning": "User repeatedly requests text polishing (3 instances) and academic formatting, indicating a stable interaction preference.",
+            "evidence": {
+              "session_id": "sess_5f8b23b16cd3",
+              "utterance_index": 0,
+              "text": "按学术论文格式润色..."
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-10-12T14:28:09+00:00",
+            "_task1GoldValue": "Prefers academic/scientific text to be polished and formatted professionally可能仅仅是任务需求，并非用户个人偏好"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_5f8b23b16cd3:sess_5f8b23b16cd3",
+      "relativeItemPath": "sess_5f8b23b16cd3.json",
+      "canonicalId": "sess_5f8b23b16cd3",
+      "sessionId": "sess_5f8b23b16cd3",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:52:01.600Z",
+        "queryText": "我准备把一段偏学术/科研用途的内容发给你帮我改写，但我不想只要“更通顺”，而是希望它看起来能直接放进正式文稿里。你能按我一贯的偏好，说明你会如何处理语言风格与版式呈现（比如结构、措辞严谨性、术语一致性、引用/编号等），并给出一个你会输出的示例骨架吗？",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers academic/scientific text to be polished and formatted professionally可能仅仅是任务需求，并非用户个人偏好",
+          "reasoning": "User repeatedly requests text polishing (3 instances) and academic formatting, indicating a stable interaction preference.",
+          "evidence": {
+            "session_id": "sess_5f8b23b16cd3",
+            "utterance_index": 0,
+            "text": "按学术论文格式润色..."
+          },
+          "confidence": 0.5,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-10-12T14:28:09+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_5f8b23b16cd3:sess_5f8b23b16cd3:task4",
+      "relativeItemPath": "sess_5f8b23b16cd3.json",
+      "canonicalId": "sess_5f8b23b16cd3:task4",
+      "sessionId": "sess_5f8b23b16cd3",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:52:06.065Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers academic/scientific text to be polished and formatted professionally可能仅仅是任务需求，并非用户个人偏好",
+          "reasoning": "User repeatedly requests text polishing (3 instances) and academic formatting, indicating a stable interaction preference.",
+          "evidence": {
+            "session_id": "sess_5f8b23b16cd3",
+            "utterance_index": 0,
+            "text": "按学术论文格式润色..."
+          },
+          "confidence": 0.5,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-10-12T14:28:09+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1040:1",
+            "queryText": "I'm working on a literature review section about epigenetic regulation in metabolic inflammation. Could you take a look at this draft paragraph and help me refine it for journal submission?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers academic/scientific text to be polished and formatted professionally可能仅仅是任务需求，并非用户个人偏好",
+              "reasoning": "User repeatedly requests text polishing (3 instances) and academic formatting, indicating a stable interaction preference.",
+              "evidence": {
+                "session_id": "sess_5f8b23b16cd3",
+                "utterance_index": 0,
+                "text": "按学术论文格式润色..."
+              },
+              "confidence": 0.5,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-10-12T14:28:09+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

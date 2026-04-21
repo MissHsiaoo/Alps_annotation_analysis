@@ -1,0 +1,477 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_42a42fcf4d31",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_42a42fcf4d31:sess_42a42fcf4d31",
+      "relativeItemPath": "sess_42a42fcf4d31.json",
+      "canonicalId": "sess_42a42fcf4d31",
+      "sessionId": "sess_42a42fcf4d31",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T08:00:54.256Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Chelyabinsk, Russia 可能是任务需求",
+            "reasoning": "User explicitly states being a couple from Chelyabinsk, Russia.",
+            "evidence": {
+              "session_id": "sess_42a42fcf4d31",
+              "utterance_index": 6,
+              "text": "Мы семейная пара из России города Челябинска. Мы вместе уже 3 года."
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-12T13:44:06+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Personal_Background/Relationship_Status",
+            "value": "Married couple for 3 years",
+            "reasoning": "User states being a couple for 3 years but does not explicitly confirm marital status. Label 'Identity' was forced.",
+            "evidence": {
+              "session_id": "sess_42a42fcf4d31",
+              "utterance_index": 6,
+              "text": "Мы семейная пара из России города Челябинска. Мы вместе уже 3 года."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-12T13:44:06+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Team/Developer_Team",
+            "value": "Part of a developer team for 3 years",
+            "reasoning": "User refers to a 'семья разработчиков' (metaphorical team), not explicitly their occupation. Label 'Occupation' was forced.",
+            "evidence": {
+              "session_id": "sess_42a42fcf4d31",
+              "utterance_index": 2,
+              "text": "напиши короткое описание о нашей семье разработчиков, вместе уже 3 года"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-12T13:44:06+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Thoughts/Goals/Long_Term",
+            "label_suggestion": null,
+            "value": "Dream to live in Barcelona",
+            "reasoning": "User explicitly states a shared long-term goal to live in Barcelona.",
+            "evidence": {
+              "session_id": "sess_42a42fcf4d31",
+              "utterance_index": 14,
+              "text": "Сейчас у нас есть общая мечта - жить в Барселоне."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "desire",
+            "updated_at": "2024-03-12T13:44:06+00:00"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers simpler language in written content",
+            "reasoning": "Repeated requests for simplification ('попроще') indicate a stable interaction preference.",
+            "evidence": {
+              "session_id": "sess_42a42fcf4d31",
+              "utterance_index": 8,
+              "text": "чуть попроще"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-03-12T13:44:06+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_42a42fcf4d31:sess_42a42fcf4d31",
+      "relativeItemPath": "sess_42a42fcf4d31.json",
+      "canonicalId": "sess_42a42fcf4d31",
+      "sessionId": "sess_42a42fcf4d31",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T08:01:12.833Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Можешь помочь переформулировать фразу, чтобы звучало чуть более нейтрально?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Конечно. Пришли исходную фразу и уточни, где она будет использоваться: в профиле, посте, письме или на сайте?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Вот: «Мы хотим, чтобы проект рос и приносил пользу людям»."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Варианты на выбор:\n1) «Наша цель — развивать проект и делать его полезным для пользователей».\n2) «Мы работаем над тем, чтобы проект становился лучше и приносил практическую пользу».\n3) «Мы развиваем проект, чтобы он решал задачи и улучшал опыт людей»."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "А можно короче, в одну строку?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Да: «Развиваем проект, чтобы он приносил пользу»."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Кстати, видел(а) новость про зонд, который привёз образцы астероида?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Да, такие миссии важны: образцы помогают понять состав ранней Солнечной системы и проверить гипотезы о происхождении воды и органики на Земле. Обычно материал хранят в «чистых» лабораториях, чтобы исключить загрязнение."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "И ещё вопрос: как правильно ставить тире в фразе «цель — развитие»?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Тире уместно, когда есть пояснение или присоединительное значение: «Цель — развитие проекта». Если сказуемое выражено существительным и нужно подчеркнуть паузу, тире выглядит естественно."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Сделай вариант для профиля, но без пафоса: просто по-человечески. И давай без «сердца России» — лучше одной фразой упомяни Урал."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Конечно. Например так: «Мы — семейная пара с Урала (Челябинск). Уже три года вместе и мечтаем однажды жить в Барселоне».\nЕсли хочешь, могу сделать ещё 2–3 варианта в таком же спокойном тоне."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Слушай, я понял, что «попроще» — это не про примитивно. Наоборот: оставь текст живым и чуть более литературным, но без воды."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Понял: делаем не «проще», а яснее — при этом сохраняем образность и аккуратный стиль, без лишних фраз."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Да, именно. Мне важнее читаемость и красивый слог, а не максимально простые слова."
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "Хорошо, буду ориентироваться на понятный, но выразительный текст: без канцелярита и без упрощения «до детского»."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Chelyabinsk, Russia 可能是任务需求",
+            "reasoning": "User explicitly states being a couple from Chelyabinsk, Russia.",
+            "evidence": {
+              "session_id": "sess_42a42fcf4d31",
+              "utterance_index": 6,
+              "text": "Мы семейная пара из России города Челябинска. Мы вместе уже 3 года."
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-12T13:44:06+00:00",
+            "_task1GoldValue": "Chelyabinsk, Russia 可能是任务需求"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Personal_Background/Relationship_Status",
+            "value": "Married couple for 3 years",
+            "reasoning": "User states being a couple for 3 years but does not explicitly confirm marital status. Label 'Identity' was forced.",
+            "evidence": {
+              "session_id": "sess_42a42fcf4d31",
+              "utterance_index": 6,
+              "text": "Мы семейная пара из России города Челябинска. Мы вместе уже 3 года."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-12T13:44:06+00:00",
+            "_task1GoldValue": "Married couple for 3 years"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Team/Developer_Team",
+            "value": "Part of a developer team for 3 years",
+            "reasoning": "User refers to a 'семья разработчиков' (metaphorical team), not explicitly their occupation. Label 'Occupation' was forced.",
+            "evidence": {
+              "session_id": "sess_42a42fcf4d31",
+              "utterance_index": 2,
+              "text": "напиши короткое описание о нашей семье разработчиков, вместе уже 3 года"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-12T13:44:06+00:00",
+            "_task1GoldValue": "Part of a developer team for 3 years"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Thoughts/Goals/Long_Term",
+            "label_suggestion": null,
+            "value": "Dream to live in Barcelona",
+            "reasoning": "User explicitly states a shared long-term goal to live in Barcelona.",
+            "evidence": {
+              "session_id": "sess_42a42fcf4d31",
+              "utterance_index": 14,
+              "text": "Сейчас у нас есть общая мечта - жить в Барселоне."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "desire",
+            "updated_at": "2024-03-12T13:44:06+00:00",
+            "_task1GoldValue": "Dream to live in Barcelona"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                12
+              ],
+              "turns": [
+                {
+                  "index": 12,
+                  "role": "user",
+                  "text": "Слушай, я понял, что «попроще» — это не про примитивно. Наоборот: оставь текст живым и чуть более литературным, но без воды."
+                }
+              ]
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m5_updated",
+            "preference_attitude": "preference",
+            "reasoning": "Ранее было обобщено, что пользователь предпочитает более простой язык. Однако пользователь уточнил, что «попроще» не значит примитивно, и что ему важны читаемость и красивый слог, то есть предпочтение — ясность и умеренная литературность без чрезмерного упрощения.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers clear, readable writing that can be slightly literary; does not want over-simplified wording"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_42a42fcf4d31",
+              "utterance_index": 0,
+              "text": "Сделай вариант для профиля, но без пафоса: просто по-человечески."
+            },
+            "label": "Preferences/Communication_Style",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User asks to write for a profile \"без пафоса\" and \"по-человечески\", implying a stable preference for a simple, unpretentious style (distinct from just simpler language).",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers a low-key, non-grandiose tone in profile text (no pathos)"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers simpler language in written content",
+            "reasoning": "Repeated requests for simplification ('попроще') indicate a stable interaction preference.",
+            "evidence": {
+              "session_id": "sess_42a42fcf4d31",
+              "utterance_index": 8,
+              "text": "чуть попроще"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-03-12T13:44:06+00:00",
+            "_task1GoldValue": "Prefers simpler language in written content"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4",
+          "m5"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_42a42fcf4d31:sess_42a42fcf4d31",
+      "relativeItemPath": "sess_42a42fcf4d31.json",
+      "canonicalId": "sess_42a42fcf4d31",
+      "sessionId": "sess_42a42fcf4d31",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T08:01:17.957Z",
+        "queryText": "I’m about to send you a draft I wrote for a general audience, and I need it to land well without sounding too academic. Based on how I usually like things phrased, what specific kind of rewrite should you do before I share it?",
+        "editableSelectedMemory": {
+          "memory_id": "m5",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers simpler language in written content",
+          "reasoning": "Repeated requests for simplification ('попроще') indicate a stable interaction preference.",
+          "evidence": {
+            "session_id": "sess_42a42fcf4d31",
+            "utterance_index": 8,
+            "text": "чуть попроще"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-03-12T13:44:06+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_42a42fcf4d31:sess_42a42fcf4d31:task4",
+      "relativeItemPath": "sess_42a42fcf4d31.json",
+      "canonicalId": "sess_42a42fcf4d31:task4",
+      "sessionId": "sess_42a42fcf4d31",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T08:01:20.995Z",
+        "editableSelectedMemory": {
+          "memory_id": "m5",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers simpler language in written content",
+          "reasoning": "Repeated requests for simplification ('попроще') indicate a stable interaction preference.",
+          "evidence": {
+            "session_id": "sess_42a42fcf4d31",
+            "utterance_index": 8,
+            "text": "чуть попроще"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-03-12T13:44:06+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1144:1",
+            "queryText": "Посмотри, я набросал два варианта описания для нашего профиля на сайте знакомств. Какой из них, по-твоему, лучше подойдет?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m5",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers simpler language in written content",
+              "reasoning": "Repeated requests for simplification ('попроще') indicate a stable interaction preference.",
+              "evidence": {
+                "session_id": "sess_42a42fcf4d31",
+                "utterance_index": 8,
+                "text": "чуть попроще"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2024-03-12T13:44:06+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

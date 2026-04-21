@@ -1,0 +1,305 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_49d5f3b1a2b7",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_49d5f3b1a2b7:sess_49d5f3b1a2b7",
+      "relativeItemPath": "sess_49d5f3b1a2b7.json",
+      "canonicalId": "sess_49d5f3b1a2b7",
+      "sessionId": "sess_49d5f3b1a2b7",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:22:15.021Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers structured point-wise formatting and rephrasing of product/service descriptions",
+            "reasoning": "User repeatedly requests point-wise lists and rephrased content across multiple turns, indicating a formatting preference",
+            "evidence": {
+              "session_id": "sess_49d5f3b1a2b7",
+              "utterance_index": 0,
+              "text": "point wise \"Outfits AI is an AI-powered tool..."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-30T08:57:59+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_49d5f3b1a2b7:sess_49d5f3b1a2b7",
+      "relativeItemPath": "sess_49d5f3b1a2b7.json",
+      "canonicalId": "sess_49d5f3b1a2b7",
+      "sessionId": "sess_49d5f3b1a2b7",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:22:15.021Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Rephrase, point-wise: \"Nimbus Notes is an AI assistant that turns long meeting transcripts into clean summaries, action items, and follow-up emails. It supports multiple formats, offers templates, and exports to common tools.\""
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "- Nimbus Notes is an AI assistant that converts lengthy meeting transcripts into clear summaries\n- It extracts key action items and next steps\n- It can draft follow-up emails based on the discussion\n- It supports multiple input formats (e.g., transcript text, uploads)\n- It provides reusable templates for consistent output\n- It can export results to commonly used tools and platforms"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Make it shorter and more punchy."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "- Turns long transcripts into crisp summaries\n- Pulls out action items automatically\n- Drafts follow-up emails fast\n- Works with multiple formats\n- Uses templates + exports to popular tools"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Also rephrase: \"In 1997, NASA’s Mars Pathfinder mission delivered the Sojourner rover, proving low-cost planetary exploration was possible.\""
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "\"In 1997, NASA’s Mars Pathfinder mission successfully deployed the Sojourner rover, demonstrating that affordable planetary exploration could work.\""
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Same style as before—can you keep it short and point-wise, but in UK spelling? I’m dropping these into a product directory and need them to look consistent."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Sure—short, point-wise, and using UK spelling for consistency. Share the text you want rephrased."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Don’t do point-wise this time. Rewrite it as one short paragraph, no bullet points."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Sure—I'll avoid bullets and keep it as a single concise paragraph. Share the text you want rephrased."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Also, I’m not really into the point-wise format; I only asked that earlier because it was required for those examples."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—so your preference is normal paragraph-style rephrasing unless a point-wise format is specifically required."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Also, I’m not really into the point-wise format; I only asked that earlier because it was required for those examples."
+                }
+              ]
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory claims the user prefers structured point-wise formatting. In the new dialogue, the user explicitly rejects that as a preference and clarifies it was only requested earlier due to requirements, indicating paragraph-style is preferred unless bullets are required.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers paragraph-style rephrasing and only uses point-wise formatting when specifically required"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_49d5f3b1a2b7",
+              "utterance_index": 0,
+              "text": "Same style as before—can you keep it short and point-wise, but in UK spelling?"
+            },
+            "label": "Preferences/Writing_Style",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User requests the assistant to use UK spelling for the output.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers UK spelling in rewritten content"
+          },
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers structured point-wise formatting and rephrasing of product/service descriptions",
+            "reasoning": "User repeatedly requests point-wise lists and rephrased content across multiple turns, indicating a formatting preference",
+            "evidence": {
+              "session_id": "sess_49d5f3b1a2b7",
+              "utterance_index": 0,
+              "text": "point wise \"Outfits AI is an AI-powered tool..."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-30T08:57:59+00:00",
+            "_task1GoldValue": "Prefers structured point-wise formatting and rephrasing of product/service descriptions"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_49d5f3b1a2b7:sess_49d5f3b1a2b7",
+      "relativeItemPath": "sess_49d5f3b1a2b7.json",
+      "canonicalId": "sess_49d5f3b1a2b7",
+      "sessionId": "sess_49d5f3b1a2b7",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:22:15.021Z",
+        "queryText": "I’m about to paste a short description of a software tool into the chat and need it rewritten so it’s easier to scan and compare with other options. What output structure should you use for the rewrite, and how should you handle the phrasing so it better fits how I like to read these descriptions?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers structured point-wise formatting and rephrasing of product/service descriptions",
+          "reasoning": "User repeatedly requests point-wise lists and rephrased content across multiple turns, indicating a formatting preference",
+          "evidence": {
+            "session_id": "sess_49d5f3b1a2b7",
+            "utterance_index": 0,
+            "text": "point wise \"Outfits AI is an AI-powered tool..."
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-05-30T08:57:59+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_49d5f3b1a2b7:sess_49d5f3b1a2b7:task4",
+      "relativeItemPath": "sess_49d5f3b1a2b7.json",
+      "canonicalId": "sess_49d5f3b1a2b7:task4",
+      "sessionId": "sess_49d5f3b1a2b7",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:22:15.021Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers structured point-wise formatting and rephrasing of product/service descriptions",
+          "reasoning": "User repeatedly requests point-wise lists and rephrased content across multiple turns, indicating a formatting preference",
+          "evidence": {
+            "session_id": "sess_49d5f3b1a2b7",
+            "utterance_index": 0,
+            "text": "point wise \"Outfits AI is an AI-powered tool..."
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-05-30T08:57:59+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1157:1",
+            "queryText": "I'm looking at a few different AI writing assistants. Can you break down which one would actually work best for me?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers structured point-wise formatting and rephrasing of product/service descriptions",
+              "reasoning": "User repeatedly requests point-wise lists and rephrased content across multiple turns, indicating a formatting preference",
+              "evidence": {
+                "session_id": "sess_49d5f3b1a2b7",
+                "utterance_index": 0,
+                "text": "point wise \"Outfits AI is an AI-powered tool..."
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-05-30T08:57:59+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

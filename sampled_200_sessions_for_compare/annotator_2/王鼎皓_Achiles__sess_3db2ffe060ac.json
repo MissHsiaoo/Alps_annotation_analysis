@@ -1,0 +1,317 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_3db2ffe060ac",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_3db2ffe060ac:sess_3db2ffe060ac",
+      "relativeItemPath": "sess_3db2ffe060ac.json",
+      "canonicalId": "sess_3db2ffe060ac",
+      "sessionId": "sess_3db2ffe060ac",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T20:04:20.270Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Family",
+            "label_suggestion": null,
+            "value": "Married (has a wife)",
+            "reasoning": "User explicitly mentions having a wife ('老婆') when seeking advice about separation.",
+            "evidence": {
+              "session_id": "sess_3db2ffe060ac",
+              "utterance_index": 4,
+              "text": "老婆不在身边如何排解"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-14T13:23:36+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about comparative welfare systems between Japan and China",
+            "reasoning": "User asks about welfare comparisons and Japan's system, but lacks explicit self-report of personal interest.",
+            "evidence": {
+              "session_id": "sess_3db2ffe060ac",
+              "utterance_index": 8,
+              "text": "日本跟中国哪个国家的福利好"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-14T13:23:36+00:00"
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p1",
+            "type": "indirect",
+            "label": "Social_Relationships/Family",
+            "value": "用户育有子女，并关注亲子关系和孩子的英语教育（如《小猪佩奇》）。",
+            "confidence": 0.95,
+            "evidence_text": "如何跟孩子成为朋友; 小猪佩奇第一季单词表"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_3db2ffe060ac:sess_3db2ffe060ac",
+      "relativeItemPath": "sess_3db2ffe060ac.json",
+      "canonicalId": "sess_3db2ffe060ac",
+      "sessionId": "sess_3db2ffe060ac",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T20:04:33.488Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "想了解一下：如果一个国家说“福利好”，一般主要指哪些方面？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "通常会从几个维度来理解：\n1) 医疗保障：医保覆盖率、报销比例、就医可及性、药价负担。\n2) 养老体系：养老金替代率、领取条件、长期护理支持。\n3) 失业与就业支持：失业金、再就业培训、劳动保护。\n4) 家庭与育儿：产假/陪产假、育儿补贴、托育与学前教育资源。\n5) 教育与住房：义务教育质量与成本、助学、保障性住房或租房补贴。\n6) 社会救助与兜底：低保、残障支持、困难群体补助。\n如果你想做对比，最好先选定一两项你最关心的指标，再看制度细节和实际执行效果。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "那“高福利”会不会一定带来高税负？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "往往相关，但不绝对“一定”。原因是：\n- 福利资金来源不只个人所得税，还可能来自消费税、社保缴费、企业税、资源性收入等。\n- 同样的福利水平，政府效率、人口结构（老龄化程度）、医疗价格体系都会影响需要多少财政投入。\n- 有的国家税负高但福利更全面；也有税负不算最高、但把资源集中在医疗或养老等重点领域。\n举个不涉及个人情况的例子：北欧国家通常税负较高，同时提供更普遍的公共服务；而有些国家更依赖雇主和商业保险，税负结构就不同。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "我看到一个冷知识：1930年代有城市用“代币”发工资，这种算福利吗？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "一般不算“福利”，更像是特定时期的货币与劳工制度安排。历史上在经济危机或现金短缺时，确实出现过企业券/地方代币（类似 scrip）的做法：\n- 目的：解决流通现金不足、维持交易。\n- 问题：可能限制员工只能在指定商店消费，议价能力变弱。\n福利通常指由政府或制度性安排提供的保障与公共服务（医疗、养老、失业、育儿等），而不是支付工具的替代品。\n如果你愿意，把你看到的那条信息的来源或描述贴一下，我可以帮你判断它属于哪类制度现象。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "我这两天在准备幼儿园面试，园里突然要求带一份“亲子共读计划”，我有点摸不着头绪，想听听你怎么建议安排。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "可以从“目标—频率—材料—互动方式—记录反馈”这五块来写，内容别太学术，突出可执行性：\n\n1）目标：比如培养每天固定共读习惯、提升表达与倾听、增加亲子交流。\n2）频率与时长：建议每周5天、每次10–15分钟，先易后难。\n3）材料选择：绘本为主，搭配儿歌、科普小册；按主题轮换（情绪、规则、自然等）。\n4）互动方式：读前预测、读中提问（开放式）、读后复述/角色扮演；家长少讲道理，多跟着孩子的兴趣走。\n5）记录与反馈：做一页表格（日期/书名/孩子反应/一句话收获），面试时好展示。\n\n如果你告诉我园方更偏“习惯培养”还是“能力展示”，我可以帮你把计划写成一页A4的版本。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "上次我说“老婆不在身边如何排解”，你就默认我已婚了。其实我没结婚，“老婆”是我跟女朋友的口头叫法，她只是这阵子出差不在身边。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "明白了，你不是已婚，“老婆”只是你对女朋友的昵称；她只是出差暂时不在身边，并不代表你有法律婚姻关系。之前把你当作“已婚”来理解，确实不准确。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about comparative welfare systems between Japan and China",
+            "reasoning": "User asks about welfare comparisons and Japan's system, but lacks explicit self-report of personal interest.",
+            "evidence": {
+              "session_id": "sess_3db2ffe060ac",
+              "utterance_index": 8,
+              "text": "日本跟中国哪个国家的福利好"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-14T13:23:36+00:00"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "上次我说“老婆不在身边如何排解”，你就默认我已婚了。其实我没结婚，“老婆”是我跟女朋友的口头叫法，她只是这阵子出差不在身边。"
+                }
+              ]
+            },
+            "label": "Personal_Background/Family",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "旧记忆依据“老婆”一词推断用户已婚，但用户明确澄清“没结婚”，并说明“老婆”只是对女朋友的昵称，因此应更新为未婚但有女朋友。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Not married; refers to girlfriend as '老婆' (nickname)"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_3db2ffe060ac",
+              "utterance_index": 0,
+              "text": "我这两天在准备幼儿园面试，园里突然要求带一份“亲子共读计划”"
+            },
+            "label": "Personal_Background/Family",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User mentions preparing for a kindergarten interview and needing a parent-child reading plan, implying involvement in a child's kindergarten admission process.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is preparing for a kindergarten interview (related to their child’s admission)"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_3db2ffe060ac:sess_3db2ffe060ac",
+      "relativeItemPath": "sess_3db2ffe060ac.json",
+      "canonicalId": "sess_3db2ffe060ac",
+      "sessionId": "sess_3db2ffe060ac",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T20:04:36.741Z",
+        "queryText": "如果我最近在填一份紧急联系人/家属信息的表格，要求优先写“最需要第一时间通知、也最能代表我做决定的人”，那我应该把谁放在第一位？为什么按我的个人情况这么填最合适？",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Family",
+          "label_suggestion": null,
+          "value": "Married (has a wife)",
+          "reasoning": "User explicitly mentions having a wife ('老婆') when seeking advice about separation.",
+          "evidence": {
+            "session_id": "sess_3db2ffe060ac",
+            "utterance_index": 4,
+            "text": "老婆不在身边如何排解"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-14T13:23:36+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_3db2ffe060ac:sess_3db2ffe060ac:task4",
+      "relativeItemPath": "sess_3db2ffe060ac.json",
+      "canonicalId": "sess_3db2ffe060ac:task4",
+      "sessionId": "sess_3db2ffe060ac",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T20:04:39.720Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Family",
+          "label_suggestion": null,
+          "value": "Married (has a wife)",
+          "reasoning": "User explicitly mentions having a wife ('老婆') when seeking advice about separation.",
+          "evidence": {
+            "session_id": "sess_3db2ffe060ac",
+            "utterance_index": 4,
+            "text": "老婆不在身边如何排解"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-14T13:23:36+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_84:1",
+            "queryText": "最近想给家里添置些智能家居设备，但老婆觉得没必要，说现在用的都挺好。怎么说服她比较好？",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Family",
+              "label_suggestion": null,
+              "value": "Married (has a wife)",
+              "reasoning": "User explicitly mentions having a wife ('老婆') when seeking advice about separation.",
+              "evidence": {
+                "session_id": "sess_3db2ffe060ac",
+                "utterance_index": 4,
+                "text": "老婆不在身边如何排解"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-06-14T13:23:36+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

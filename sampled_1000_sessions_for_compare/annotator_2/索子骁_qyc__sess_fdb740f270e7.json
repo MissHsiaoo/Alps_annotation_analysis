@@ -1,0 +1,339 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_fdb740f270e7",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_fdb740f270e7:sess_fdb740f270e7",
+      "relativeItemPath": "sess_fdb740f270e7.json",
+      "canonicalId": "sess_fdb740f270e7",
+      "sessionId": "sess_fdb740f270e7",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:08:14.246Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Music",
+            "label_suggestion": null,
+            "value": "Plays mellow songs influenced by artists like 자우림, 터치드, 민수",
+            "reasoning": "User explicitly states their band's musical style and influences.",
+            "evidence": {
+              "session_id": "sess_fdb740f270e7",
+              "utterance_index": 2,
+              "text": "잔잔한 노래 많이 하는 것 같아. 자우림, 터치드, 민수 등의 아티스트 노래를 하고 있어!"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-07-15T12:19:45+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "Part of a 5-member all-female band (age 29) with '지' in members' names",
+            "reasoning": "User explicitly states band composition and naming constraint.",
+            "evidence": {
+              "session_id": "sess_fdb740f270e7",
+              "utterance_index": 14,
+              "text": "29살 여자 5명으로 이루어진 밴드 이름을 지어주라. 5명 이름 안에 공통적으로 '지'가 들어가."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-15T12:19:45+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "band/naming/preference",
+            "value": "Sustained interest in Korean+mythology hybrid band naming patterns (룬+한국어, '지' inclusion)",
+            "reasoning": "Task-local naming requests; forced label not supported",
+            "evidence": {
+              "session_id": "sess_fdb740f270e7",
+              "utterance_index": 10,
+              "text": "룬워먼 이라는 이름이 멋있다! 요걸 좀 더 바꿔보면 좋을 거 같아. 룬 + 한국어 조합 이름으로 추천해줘!"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-15T12:19:45+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_fdb740f270e7:sess_fdb740f270e7",
+      "relativeItemPath": "sess_fdb740f270e7.json",
+      "canonicalId": "sess_fdb740f270e7",
+      "sessionId": "sess_fdb740f270e7",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:16:38.987Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "밴드 이름 말고, 공연 포스터에 들어갈 한 줄 소개 문구도 같이 정해볼 수 있어?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "가능해요. 분위기(따뜻함/도시적/몽환/유머 등)랑 공연 컨셉(카페 라이브, 소극장, 야외 등) 중에서 어느 쪽에 더 가까운지 2~3개 키워드로만 알려주면, 포스터용 문구를 10개 정도 짧게 뽑아드릴게요."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "너무 오글거리진 않았으면 좋겠고, 약간 시적인 느낌이면 좋겠어."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "좋아요. 그럼 오글거림은 줄이고, 은근히 시적인 톤으로 가볼게요. 예시로는 이런 결이 잘 맞아요:\n- \"조용히 번지는 밤의 합창\"\n- \"한 줄의 멜로디, 긴 여운\"\n- \"낮은 목소리로 크게 남는 노래\"\n\n원하시면 ‘계절(봄/여름/가을/겨울)’이나 ‘시간대(새벽/밤)’ 같은 이미지를 하나만 정해도 문구가 훨씬 선명해져요."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "그럼 '밤' 느낌으로 더 뽑아줘."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "밤 이미지로, 짧고 담백하게 10개 제안할게요.\n1) \"밤에 더 또렷해지는 노래\"\n2) \"별빛 아래, 천천히\"\n3) \"조용한 밤의 큰 울림\"\n4) \"새벽으로 가는 멜로디\"\n5) \"불 꺼진 마음에 불을 켜는\"\n6) \"도시의 밤, 낮은 온도\"\n7) \"달빛 같은 합주\"\n8) \"밤을 건너는 목소리\"\n9) \"긴 밤에 남는 한 소절\"\n10) \"고요를 닮은 리듬\"\n\n참고로 프랑스에서는 ‘Fête de la Musique’(음악의 날) 때 도시 곳곳에서 밤 공연이 열리는데, 그때 포스터 문구들도 보통 이렇게 짧고 이미지 중심으로 많이 쓰더라고요."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "이름은 너무 귀엽기만 한 느낌 말고, 공연 포스터에 박았을 때 좀 차갑고 미니멀하게 보였으면 좋겠어."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "그럼 발음이 깔끔하고 글자 수가 짧은 쪽으로 가보면 좋겠네요. 예를 들어 ‘지’가 반복되더라도 형태는 각진 느낌으로 잡아서, 포스터에서도 미니멀하게 보이게 구성해볼게요. 원하시면 한글 로고로 쓸 때 어울리는 자간/획 느낌까지 같이 제안드릴까요?"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "아 근데 아까 내가 잔잔한 노래 많이 한다고 한 거 정정할게. 우리 밴드는 잔잔한 쪽이 아니라 업템포 록/펑크 쪽이야."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "오케이, 그럼 분위기가 완전 다르네. 자우림·터치드·민수 같은 잔잔한 영향권이라기보다, 빠르고 에너지 있는 록/펑크 기반으로 보면 되겠지?"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "응 맞아. 자우림, 터치드, 민수는 우리가 하는 스타일이랑은 좀 거리가 있어."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "Part of a 5-member all-female band (age 29) with '지' in members' names",
+            "reasoning": "User explicitly states band composition and naming constraint.",
+            "evidence": {
+              "session_id": "sess_fdb740f270e7",
+              "utterance_index": 14,
+              "text": "29살 여자 5명으로 이루어진 밴드 이름을 지어주라. 5명 이름 안에 공통적으로 '지'가 들어가."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-15T12:19:45+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "band/naming/preference",
+            "value": "Sustained interest in Korean+mythology hybrid band naming patterns (룬+한국어, '지' inclusion)",
+            "reasoning": "Task-local naming requests; forced label not supported",
+            "evidence": {
+              "session_id": "sess_fdb740f270e7",
+              "utterance_index": 10,
+              "text": "룬워먼 이라는 이름이 멋있다! 요걸 좀 더 바꿔보면 좋을 거 같아. 룬 + 한국어 조합 이름으로 추천해줘!"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-15T12:19:45+00:00"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Music",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "Earlier memory says they play mellow songs influenced by 자우림/터치드/민수, but the user explicitly corrects that they are not a mellow band and those artists are not close to their style.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Their band is not mainly mellow; it leans toward upbeat rock/punk rather than influences like 자우림, 터치드, 민수."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_fdb740f270e7",
+              "utterance_index": 0,
+              "text": "이름은 너무 귀엽기만 한 느낌 말고, 공연 포스터에 박았을 때 좀 차갑고 미니멀하게 보였으면 좋겠어."
+            },
+            "label": "Preferences/Aesthetics",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "User contrasts ‘too cute’ with wanting a ‘cold and minimal’ appearance specifically for posters, implying an aesthetic preference for naming/branding.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Band name aesthetic preference: cold, minimal look suitable for concert posters (not overly cute)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_fdb740f270e7:sess_fdb740f270e7",
+      "relativeItemPath": "sess_fdb740f270e7.json",
+      "canonicalId": "sess_fdb740f270e7",
+      "sessionId": "sess_fdb740f270e7",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:17:01.969Z",
+        "queryText": "I’m putting together a short setlist for a small, quiet venue and want the vibe to feel consistent with what I usually lean toward musically. Given that, what overall mood/energy should I aim for in the song choices so it doesn’t clash with my typical style?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Music",
+          "label_suggestion": null,
+          "value": "Plays mellow songs influenced by artists like 자우림, 터치드, 민수",
+          "reasoning": "User explicitly states their band's musical style and influences.",
+          "evidence": {
+            "session_id": "sess_fdb740f270e7",
+            "utterance_index": 2,
+            "text": "잔잔한 노래 많이 하는 것 같아. 자우림, 터치드, 민수 등의 아티스트 노래를 하고 있어!"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-07-15T12:19:45+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_fdb740f270e7:sess_fdb740f270e7:task4",
+      "relativeItemPath": "sess_fdb740f270e7.json",
+      "canonicalId": "sess_fdb740f270e7:task4",
+      "sessionId": "sess_fdb740f270e7",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:16:19.443Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Music",
+          "label_suggestion": null,
+          "value": "Plays mellow songs influenced by artists like 자우림, 터치드, 민수",
+          "reasoning": "User explicitly states their band's musical style and influences.",
+          "evidence": {
+            "session_id": "sess_fdb740f270e7",
+            "utterance_index": 2,
+            "text": "잔잔한 노래 많이 하는 것 같아. 자우림, 터치드, 민수 등의 아티스트 노래를 하고 있어!"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-07-15T12:19:45+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_729:1",
+            "queryText": "우리 밴드가 커버할 곡 몇 개를 고르고 있는데, 어떤 노래가 우리 스타일에 가장 잘 맞을까?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Music",
+              "label_suggestion": null,
+              "value": "Plays mellow songs influenced by artists like 자우림, 터치드, 민수",
+              "reasoning": "User explicitly states their band's musical style and influences.",
+              "evidence": {
+                "session_id": "sess_fdb740f270e7",
+                "utterance_index": 2,
+                "text": "잔잔한 노래 많이 하는 것 같아. 자우림, 터치드, 민수 등의 아티스트 노래를 하고 있어!"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-07-15T12:19:45+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "highly matched and necessary to generate personalized response",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

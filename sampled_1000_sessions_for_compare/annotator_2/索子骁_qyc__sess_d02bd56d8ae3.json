@@ -1,0 +1,380 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_d02bd56d8ae3",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_d02bd56d8ae3:sess_d02bd56d8ae3",
+      "relativeItemPath": "sess_d02bd56d8ae3.json",
+      "canonicalId": "sess_d02bd56d8ae3",
+      "sessionId": "sess_d02bd56d8ae3",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T01:55:33.551Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "value": "Prefers not to shop at X5 Retail Group due to higher prices and requirement of a market card",
+            "reasoning": "User explicitly states dislike for X5 Retail Group's pricing strategy and market card requirement.",
+            "evidence": {
+              "session_id": "sess_d02bd56d8ae3",
+              "utterance_index": 0,
+              "text": "I don’t like their market prices, they are higher than in other market networks, plus all their items need their market card to buy on a lower price, which is again high than usual."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-12-28T21:16:16+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical/Storage_Preference",
+            "value": "Believes HDDs outperform SSDs in data preservance, write endurance, and all aspects except speed",
+            "reasoning": "User explicitly states HDD superiority over SSDs in technical aspects. Original label 'Thoughts/Opinions/Positive' forced an unsupported taxonomy.",
+            "evidence": {
+              "session_id": "sess_d02bd56d8ae3",
+              "utterance_index": 4,
+              "text": "ssd is worse in any cases, except speeds. hdd outbitting sdd on all basises, except the speed, simply."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "positive",
+            "updated_at": "2023-12-28T21:16:16+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about data preservation methods, HDD/SSD longevity comparisons, and crystalline storage technologies",
+            "reasoning": "Multiple follow-up questions about data storage durability and hypothetical technologies indicate sustained technical curiosity.",
+            "evidence": {
+              "session_id": "sess_d02bd56d8ae3",
+              "utterance_index": 22,
+              "text": "and for how long data theoretically can be preserved in sdd flash cells and on hdd magnetic platters?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-28T21:16:16+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical/System_Configuration",
+            "value": "Uses a non-Linux-Linux operating system without apt package manager",
+            "reasoning": "User explicitly states using a non-standard Linux distribution without apt. Original label 'UNMAPPED' was forced due to taxonomy mismatch.",
+            "evidence": {
+              "session_id": "sess_d02bd56d8ae3",
+              "utterance_index": 10,
+              "text": "I don’t have any apt, I’m using non-linux-linux"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-28T21:16:16+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_d02bd56d8ae3:sess_d02bd56d8ae3",
+      "relativeItemPath": "sess_d02bd56d8ae3.json",
+      "canonicalId": "sess_d02bd56d8ae3",
+      "sessionId": "sess_d02bd56d8ae3",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T01:56:08.278Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Ok switching topics: when people say “extraordinary claims require extraordinary evidence,” what do they actually mean by “extraordinary”?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "“Extraordinary” usually means the claim would strongly conflict with well-established knowledge, or it would imply a big revision of what we think we know. So it’s not about how exciting the claim sounds; it’s about how unlikely it is under current, well-tested models.\n\nExamples:\n- “I saw a new bird species in my yard” is ordinary (plausible, low stakes for existing science).\n- “I built a perpetual motion machine” is extraordinary (contradicts conservation of energy), so you’d need unusually rigorous, reproducible proof.\n\nIn practice, it means: the more a claim would overturn reliable prior evidence, the stronger and more independently verifiable the new evidence should be."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "So if something is missing—like an artifact with no trail—does that make any theory about it equally likely?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Not equally likely. Missing information increases uncertainty, but it doesn’t flatten probabilities.\n\nYou still weigh hypotheses by base rates and mechanism:\n- Base rates: How often do artifacts go missing due to looting, reuse of materials, accidents, poor record-keeping?\n- Mechanism: Does the theory propose a plausible chain of events and a workable physical mechanism?\n- Predictions: Does it imply things we should also find (tool marks, documentation, related devices, consistent traces)?\n\nA lack of evidence can’t automatically be counted as evidence for the most dramatic explanation; it mostly means “we can’t conclude much,” unless the absence itself is surprising given what we’d expect to see."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Give me a neutral way to phrase a speculative idea so it’s clearly not being presented as fact."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "You can use a structure like:\n\n1) Label it explicitly: “One speculative possibility is…” / “Purely as a thought experiment…”\n2) State what would have to be true: “This would require X and Y…”\n3) Note current status: “There’s no direct evidence for this at present…”\n4) Say what would test it: “If it were true, we might expect to find…”\n\nExample template:\n“Purely as a thought experiment, one could imagine that [idea]. For that to be plausible, we’d need [requirements]. At the moment there isn’t direct evidence for it, and a testable prediction would be [prediction].”"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "assistant",
+            "text": "Unrelated side note (not about you): in 2023, a team demonstrated small-scale 5D optical storage in fused silica using femtosecond lasers—promising for archives, but it still requires specialized write/read equipment and is far from ancient-tech plausibility."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "user",
+            "text": "and about that disk noise thing — i keep the VM on almost 24/7, so VirtualBox has no reason to stop touching that .vdi even when i’m not doing anything inside."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "assistant",
+            "text": "Yeah, if the guest is running nearly all the time, the host will see steady writes to the VDI from normal background activity (logs, caches, swap, journal, browser profiles, etc.). Even when you’re “idle,” the guest OS usually isn’t truly idle.\n\nIf you want to confirm it’s mostly “normal churn” vs something runaway, check inside the guest as well (e.g., `iotop`/`top`, or whatever monitor tools are available there), and look for high write-rate processes (databases, browsers, package updaters, systemd-journald, etc.)."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "user",
+            "text": "By the way, I ended up getting that X5 market card. Without it, it’s pointless — but with it, the prices were actually normal, so I bought there."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "assistant",
+            "text": "So you did take the card and started shopping there anyway. That contradicts what you said earlier about not wanting to sponsor them because of the higher prices and the card policy."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "user",
+            "text": "Yeah. I still hate the whole “card” scheme, but fact is: I’m shopping there now. Otherwise I can’t get the regular prices."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical/Storage_Preference",
+            "value": "Believes HDDs outperform SSDs in data preservance, write endurance, and all aspects except speed",
+            "reasoning": "User explicitly states HDD superiority over SSDs in technical aspects. Original label 'Thoughts/Opinions/Positive' forced an unsupported taxonomy.",
+            "evidence": {
+              "session_id": "sess_d02bd56d8ae3",
+              "utterance_index": 4,
+              "text": "ssd is worse in any cases, except speeds. hdd outbitting sdd on all basises, except the speed, simply."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "positive",
+            "updated_at": "2023-12-28T21:16:16+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about data preservation methods, HDD/SSD longevity comparisons, and crystalline storage technologies",
+            "reasoning": "Multiple follow-up questions about data storage durability and hypothetical technologies indicate sustained technical curiosity.",
+            "evidence": {
+              "session_id": "sess_d02bd56d8ae3",
+              "utterance_index": 22,
+              "text": "and for how long data theoretically can be preserved in sdd flash cells and on hdd magnetic platters?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-28T21:16:16+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical/System_Configuration",
+            "value": "Uses a non-Linux-Linux operating system without apt package manager",
+            "reasoning": "User explicitly states using a non-standard Linux distribution without apt. Original label 'UNMAPPED' was forced due to taxonomy mismatch.",
+            "evidence": {
+              "session_id": "sess_d02bd56d8ae3",
+              "utterance_index": 10,
+              "text": "I don’t have any apt, I’m using non-linux-linux"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-28T21:16:16+00:00"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The old memory says the user prefers not to shop at X5 Retail Group. In the new dialogue, the user states they got the card and are shopping there now, which updates the preference from avoidance to reluctant use.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Despite disliking X5 Retail Group's pricing/card scheme, the user got the X5 market card and shops there to access normal prices."
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_d02bd56d8ae3",
+              "utterance_index": 0,
+              "text": "i keep the VM on almost 24/7"
+            },
+            "label": "Technical/Usage_Pattern",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "Saying they keep the VM on almost 24/7 implies a long-running VM usage pattern.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Runs a VirtualBox VM nearly continuously (almost 24/7)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_d02bd56d8ae3:sess_d02bd56d8ae3",
+      "relativeItemPath": "sess_d02bd56d8ae3.json",
+      "canonicalId": "sess_d02bd56d8ae3",
+      "sessionId": "sess_d02bd56d8ae3",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T01:56:21.055Z",
+        "queryText": "If I’m deciding between two grocery chains and one of them pushes “member-only discounts” that still don’t really beat other stores’ regular prices, which option would I likely avoid—and why would that policy be the dealbreaker for me?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Shopping",
+          "label_suggestion": null,
+          "value": "Prefers not to shop at X5 Retail Group due to higher prices and requirement of a market card",
+          "reasoning": "User explicitly states dislike for X5 Retail Group's pricing strategy and market card requirement.",
+          "evidence": {
+            "session_id": "sess_d02bd56d8ae3",
+            "utterance_index": 0,
+            "text": "I don’t like their market prices, they are higher than in other market networks, plus all their items need their market card to buy on a lower price, which is again high than usual."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-12-28T21:16:16+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_d02bd56d8ae3:sess_d02bd56d8ae3:task4",
+      "relativeItemPath": "sess_d02bd56d8ae3.json",
+      "canonicalId": "sess_d02bd56d8ae3:task4",
+      "sessionId": "sess_d02bd56d8ae3",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T01:56:45.615Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Shopping",
+          "label_suggestion": null,
+          "value": "Prefers not to shop at X5 Retail Group due to higher prices and requirement of a market card",
+          "reasoning": "User explicitly states dislike for X5 Retail Group's pricing strategy and market card requirement.",
+          "evidence": {
+            "session_id": "sess_d02bd56d8ae3",
+            "utterance_index": 0,
+            "text": "I don’t like their market prices, they are higher than in other market networks, plus all their items need their market card to buy on a lower price, which is again high than usual."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-12-28T21:16:16+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_896:1",
+            "queryText": "I'm looking at some grocery items from a few different stores, including some from that one retail chain we talked about. Which ones would you actually recommend I go for?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Shopping",
+              "label_suggestion": null,
+              "value": "Prefers not to shop at X5 Retail Group due to higher prices and requirement of a market card",
+              "reasoning": "User explicitly states dislike for X5 Retail Group's pricing strategy and market card requirement.",
+              "evidence": {
+                "session_id": "sess_d02bd56d8ae3",
+                "utterance_index": 0,
+                "text": "I don’t like their market prices, they are higher than in other market networks, plus all their items need their market card to buy on a lower price, which is again high than usual."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-12-28T21:16:16+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "completely relevant and useful",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,334 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_828dab19574e",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_828dab19574e:sess_828dab19574e",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_828dab19574e.json",
+      "canonicalId": "sess_828dab19574e",
+      "sessionId": "sess_828dab19574e",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:00:12.882Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Social_Relationships/Friends",
+            "label_suggestion": null,
+            "value": "Has a friend named Emilie who is hospitalized",
+            "reasoning": "User explicitly mentions Emilie as a friend and her hospitalization.",
+            "evidence": {
+              "session_id": "sess_828dab19574e",
+              "utterance_index": 6,
+              "text": "Une amie qui s'appelle Emilie accepte enfin son hospitalisation. Comment faire pour l'aider à distance et l'aider à se sentir moins seule ? Car on ne peut pas lui rendre visite de suite "
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-11T13:49:46+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "States_Experiences/Mental_State",
+            "label_suggestion": "Medical/Treatment/Medication_Change",
+            "value": "Psychiatrist changed medication from venlafaxine to paroxetine",
+            "reasoning": "The user directly states the change.",
+            "evidence": {
+              "session_id": "sess_828dab19574e",
+              "utterance_index": 8,
+              "text": "mon psychiatre a changé ma venlafaxine par de la paroxétine, qu'est-ce que cela implique ? "
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-11T13:49:46+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_828dab19574e:sess_828dab19574e",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_828dab19574e.json",
+      "canonicalId": "sess_828dab19574e",
+      "sessionId": "sess_828dab19574e",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-19T03:26:32.054Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Salut ! Petite question : c’est quoi la différence entre un modèle de détection et un modèle de segmentation en vision par ordinateur ?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Un modèle de détection localise et classe des objets, généralement via des boîtes englobantes (x, y, largeur, hauteur). Un modèle de segmentation, lui, attribue une étiquette à chaque pixel : soit pour distinguer les objets du fond (segmentation sémantique), soit pour séparer chaque instance d’objet (segmentation d’instances)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Et si je veux juste suivre un objet dans une vidéo, je dois forcément faire de la détection à chaque frame ?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Pas forcément. Une approche classique est : détection au début (ou périodiquement), puis suivi (tracking) entre les détections avec un tracker (KLT/optical flow, SORT/DeepSORT, ByteTrack, etc.). Ça réduit le coût de calcul, mais si l’objet disparaît, change beaucoup d’apparence, ou si la scène est encombrée, il faut souvent relancer la détection pour “recaler” le suivi."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Ok. Autre chose : on m’a dit que les caméras \"rolling shutter\" déformaient l’image, c’est vrai ?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Oui. Avec un rolling shutter, le capteur lit l’image ligne par ligne, donc un mouvement rapide (objet ou caméra) peut produire des déformations (lignes inclinées, “jello effect”). À l’inverse, un global shutter capture toute l’image en une fois, ce qui limite ces artefacts."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Merci. Dernière curiosité : pourquoi certaines vidéos en 24 fps paraissent plus “cinéma” que du 60 fps ?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "C’est surtout une question de rendu du mouvement. À 24 fps, avec un temps d’exposition typique proche de 1/48s, tu obtiens un flou de mouvement plus marqué, associé historiquement au cinéma. À 60 fps, le mouvement est plus net et “fluide”, ce que certains perçoivent comme un rendu type TV/jeu vidéo. Le choix dépend aussi de l’éclairage, de l’obturateur, et du type de scène."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Depuis que je suis passé à la paroxétine, j’ai des nausées le matin et je dors beaucoup plus; je me demande si c’est juste le temps que ça se mette en place."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Oui, ce genre d’effets (nausées, somnolence, changements de sommeil) peut apparaître au début avec la paroxétine et s’atténuer en quelques jours à quelques semaines. Quelques pistes utiles : la prendre toujours au même moment (parfois le soir si ça assomme, parfois le matin si ça perturbe le sommeil—à ajuster avec ton médecin), manger un petit quelque chose avant, bien s’hydrater, et noter l’évolution jour par jour. En revanche, si les nausées deviennent intenses, si tu ne peux pas t’alimenter, ou si tu observes agitation inhabituelle, idées noires, ou tout symptôme inquiétant, il faut contacter rapidement ton psychiatre (ou un service d’urgence si c’est aigu). Tu veux me dire à quelle dose tu as commencé et depuis combien de jours ?"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Petite correction : Emilie n’est pas hospitalisée. Elle avait juste envisagé une hospitalisation, mais finalement elle est restée chez elle."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "D’accord, donc elle n’est pas à l’hôpital : elle a seulement envisagé une hospitalisation et elle est restée chez elle. Dans ce cas, pour l’aider à distance et qu’elle se sente moins seule, vous pouvez garder des points de contact réguliers (messages courts, appels), et proposer des moments précis où vous êtes disponible."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Oui c’est ça : elle n’a pas été admise, donc on peut lui parler quand elle veut, mais elle se sent quand même isolée."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Compris. Comme elle n’a pas été admise, l’idée peut être de créer une routine légère (un appel à heure fixe + un message le matin), et de lui demander ce qui l’aide le plus quand l’isolement monte (distraction, parler, ou juste présence silencieuse)."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "States_Experiences/Mental_State",
+            "label_suggestion": "Medical/Treatment/Medication_Change",
+            "value": "Psychiatrist changed medication from venlafaxine to paroxetine",
+            "reasoning": "Label 'States_Experiences/Physical_State' forced. Medication change is a treatment action, not a physical state attribute.",
+            "evidence": {
+              "session_id": "sess_828dab19574e",
+              "utterance_index": 8,
+              "text": "mon psychiatre a changé ma venlafaxine par de la paroxétine, qu'est-ce que cela implique ? "
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-11T13:49:46+00:00",
+            "_task1GoldValue": "Psychiatrist changed medication from venlafaxine to paroxetine"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Petite correction : Emilie n’est pas hospitalisée. Elle avait juste envisagé une hospitalisation, mais finalement elle est restée chez elle."
+                }
+              ]
+            },
+            "label": "Social_Relationships/Friends",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The new dialogue explicitly corrects the earlier claim that Emilie is hospitalized, stating she only considered it and stayed home.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Has a friend named Emilie who considered hospitalization but is not hospitalized"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_828dab19574e",
+              "utterance_index": 8,
+              "text": "Depuis que je suis passé à la paroxétine, j’ai des nausées le matin et je dors beaucoup plus"
+            },
+            "label": "States_Experiences/Physical_State",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user links new symptoms (morning nausea and sleeping much more) temporally to the switch to paroxetine, implying these are side effects after starting it.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Experiencing nausea in the morning and increased sleepiness since starting paroxetine"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_828dab19574e:sess_828dab19574e",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_828dab19574e.json",
+      "canonicalId": "sess_828dab19574e",
+      "sessionId": "sess_828dab19574e",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:00:59.649Z",
+        "queryText": "I’m trying to decide whether to send a get-well gift to someone important in my life or wait until I can see them in person—what detail about their current situation would make the gift-by-message option the more realistic choice right now?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Friends",
+          "label_suggestion": null,
+          "value": "Has a friend named Emilie who is hospitalized",
+          "reasoning": "User explicitly mentions Emilie as a friend and her hospitalization.",
+          "evidence": {
+            "session_id": "sess_828dab19574e",
+            "utterance_index": 6,
+            "text": "Une amie qui s'appelle Emilie accepte enfin son hospitalisation. Comment faire pour l'aider à distance et l'aider à se sentir moins seule ? Car on ne peut pas lui rendre visite de suite "
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-11T13:49:46+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_828dab19574e:sess_828dab19574e:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_828dab19574e.json",
+      "canonicalId": "sess_828dab19574e:task4",
+      "sessionId": "sess_828dab19574e",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:01:18.950Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Friends",
+          "label_suggestion": null,
+          "value": "Has a friend named Emilie who is hospitalized",
+          "reasoning": "User explicitly mentions Emilie as a friend and her hospitalization.",
+          "evidence": {
+            "session_id": "sess_828dab19574e",
+            "utterance_index": 6,
+            "text": "Une amie qui s'appelle Emilie accepte enfin son hospitalisation. Comment faire pour l'aider à distance et l'aider à se sentir moins seule ? Car on ne peut pas lui rendre visite de suite "
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-11T13:49:46+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_385:1",
+            "queryText": "Emilie va bientôt sortir de l'hôpital, mais elle est stressée à l'idée de reprendre la gestion de son gîte toute seule. Comment je peux l'aider à planifier une reprise en douceur ?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Social_Relationships/Friends",
+              "label_suggestion": null,
+              "value": "Has a friend named Emilie who is hospitalized",
+              "reasoning": "User explicitly mentions Emilie as a friend and her hospitalization.",
+              "evidence": {
+                "session_id": "sess_828dab19574e",
+                "utterance_index": 6,
+                "text": "Une amie qui s'appelle Emilie accepte enfin son hospitalisation. Comment faire pour l'aider à distance et l'aider à se sentir moins seule ? Car on ne peut pas lui rendre visite de suite "
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-06-11T13:49:46+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "直接相关",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

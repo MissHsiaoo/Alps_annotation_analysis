@@ -1,0 +1,391 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_18fa29469162",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_18fa29469162:sess_18fa29469162",
+      "relativeItemPath": "sess_18fa29469162.json",
+      "canonicalId": "sess_18fa29469162",
+      "sessionId": "sess_18fa29469162",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:01:37.859Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "value": "Prefers work laptops over gaming laptops",
+            "reasoning": "User explicitly states they want a work laptop and do not want a gaming laptop.",
+            "evidence": {
+              "session_id": "sess_18fa29469162",
+              "utterance_index": 2,
+              "text": "Çalışma laptopu olucak. Oyuncu laptopu istemiyorum."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-08-27T10:13:58+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "value": "Prefers tablets within 16000-17000 TL budget range",
+            "reasoning": "User explicitly states their budget constraint for tablet purchase.",
+            "evidence": {
+              "session_id": "sess_18fa29469162",
+              "utterance_index": 8,
+              "text": "16000-17000 tl civarında bulabileceğim en iyi tablet hangileri olabilir?"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-08-27T10:13:58+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "shopping/decision_support",
+            "value": "Curious about selecting optimal work laptops and tablets within budget",
+            "reasoning": "Task-local purchase decision support request rather than general curiosity pattern",
+            "evidence": {
+              "session_id": "sess_18fa29469162",
+              "utterance_index": 8,
+              "text": "16000-17000 tl civarında bulabileceğim en iyi tablet hangileri olabilir?"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-08-27T10:13:58+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_18fa29469162:sess_18fa29469162",
+      "relativeItemPath": "sess_18fa29469162.json",
+      "canonicalId": "sess_18fa29469162",
+      "sessionId": "sess_18fa29469162",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:02:46.970Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Bu fiyat aralığında tablet alırken en çok hangi teknik özelliklere bakmak gerekir?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Genelde 5 şeye bakılır: (1) işlemci/performans (uygulamalar arası geçiş, çoklu görev), (2) RAM (tercihen 6–8 GB ve üstü), (3) ekran (IPS/OLED, parlaklık, kalem gecikmesi), (4) pil ve şarj (en az 7000 mAh civarı ve hızlı şarj), (5) yazılım desteği (güncelleme süresi, ekosistem). Depolamada da 128 GB altı çabuk dolabildiği için microSD ya da 256 GB seçeneği avantaj olur."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Kalemle not almak için ekran türü çok fark eder mi?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Eder. Kalem deneyiminde ekranın yenileme hızı (90/120 Hz), kalem örnekleme hızı, cam-kalem sürtünmesi ve “palm rejection” önemli. OLED daha canlı görüntü sunar; IPS de gayet iyi olabilir. Not alma için asıl farkı çoğu zaman tabletin kalem teknolojisi ve yazılımı (not uygulaması, el yazısı tanıma) yaratır."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Android tabletlerde güncelleme konusu kafa karıştırıyor; neye göre anlayabilirim?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Markanın “kaç yıl Android sürüm güncellemesi + kaç yıl güvenlik yaması” verdiğine bakın; bazı modeller için bu bilgi resmi sayfalarda açıkça yazıyor. Ayrıca cihazın çıkış yılı önemli: Aynı modelin daha yeni sürümü, daha uzun süre destek alabiliyor.\n\nBu arada tamamen örnek olsun diye: Avrupa Birliği'nin 2024 civarında “onarılabilirlik/uzun ömür” odaklı düzenlemeleri konuşuluyordu; böyle adımlar üreticileri daha uzun yazılım ve parça desteğine itebiliyor."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Klavye eklemek istersem her tablette verimli olur mu?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Her tablette olur ama verim değişir. En iyi deneyim için: (1) resmi klavye kapağı desteği, (2) iyi trackpad ve kısayollar, (3) masaüstü benzeri arayüz (ör. bazı Android'lerde DeX benzeri modlar) önemli. Bluetooth klavyeler de çalışır; ama ayaklık/kapak olmadan kullanım ergonomisi zorlaşabilir.\n\nAlakasız bir bilgi: Mekanik klavyelerde “hot-swap” soketler, lehimsiz switch değişimine izin verdiği için son yıllarda çok popüler oldu."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Ekran boyutu seçimi için pratik bir öneri var mı?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Pratik kural: 10–11 inç taşınabilirlik için iyi; 12–13 inç çoklu görev, PDF/Excel ve klavye ile kullanımda daha rahat. Not alma ağırlıktaysa 11 inç dengeli olur; sürekli bölünmüş ekran kullanacaksanız 12+ inç avantaj sağlar.\n\nYine tamamen bağımsız bir örnek: Bazı e-okuyucular 300 PPI e-ink ekranla uzun pil ömrü sunuyor; ama renkli içerik ve hız tablet kadar iyi olmuyor."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Tableti daha çok not almak ve PDF'lerin üstüne kalemle işaretleme yapmak için düşünüyorum; o yüzden kalem desteği benim için baya önemli."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Anladım. Bu kullanımda kalemin gecikmesi, avuç içi reddi ve ekranın 120Hz olup olmaması fark yaratabiliyor. Bütçenizde genelde iPad Air + Apple Pencil (2. nesil) veya Galaxy Tab serisi + S Pen gibi seçenekler öne çıkar. İsterseniz Android mi iPadOS mu düşündüğünüzü de söyleyin, ona göre daha net daraltalım."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Bu arada ben fiyatı yanlış söylemişim. 16000-17000 TL değil, en fazla 12-13 bin TL bütçem var."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Anladım, o zaman 16-17 bin değil 12-13 bin TL bandında düşünelim. Bu bütçeye göre model önerilerini o aralıkta sıralayayım."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "value": "Prefers work laptops over gaming laptops",
+            "reasoning": "User explicitly states they want a work laptop and do not want a gaming laptop.",
+            "evidence": {
+              "session_id": "sess_18fa29469162",
+              "utterance_index": 2,
+              "text": "Çalışma laptopu olucak. Oyuncu laptopu istemiyorum."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-08-27T10:13:58+00:00",
+            "_task1GoldValue": "Prefers work laptops over gaming laptops"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "shopping/decision_support",
+            "value": "Curious about selecting optimal work laptops and tablets within budget",
+            "reasoning": "Task-local purchase decision support request rather than general curiosity pattern",
+            "evidence": {
+              "session_id": "sess_18fa29469162",
+              "utterance_index": 8,
+              "text": "16000-17000 tl civarında bulabileceğim en iyi tablet hangileri olabilir?"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-08-27T10:13:58+00:00",
+            "_task1GoldValue": "Curious about selecting optimal work laptops and tablets within budget"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                12
+              ],
+              "turns": [
+                {
+                  "index": 12,
+                  "role": "user",
+                  "text": "Bu arada ben fiyatı yanlış söylemişim. 16000-17000 TL değil, en fazla 12-13 bin TL bütçem var."
+                }
+              ]
+            },
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "preference",
+            "reasoning": "Eski hatırada tablet bütçesi 16-17 bin TL olarak tutulmuş; ancak kullanıcı bunun yanlış olduğunu söyleyip bütçesinin en fazla 12-13 bin TL olduğunu belirtiyor. Bu nedenle doğru bütçe aralığı 12-13 bin TL olarak güncellenmeli.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers tablets within 12,000–13,000 TL maximum budget range"
+          },
+          {
+            "confidence": 0.82,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_18fa29469162",
+              "utterance_index": 0,
+              "text": "Tableti daha çok not almak ve PDF'lerin üstüne kalemle işaretleme yapmak için düşünüyorum; o yüzden kalem desteği benim için baya önemli."
+            },
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "Kullanıcının not alma ve PDF üzerinde kalemle işaretleme ihtiyacını vurgulaması, stylus desteğini bir satın alma önceliği haline getiriyor.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Tablet satın alırken kalem desteği (stylus) önemli"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "value": "Prefers tablets within 16000-17000 TL budget range",
+            "reasoning": "User explicitly states their budget constraint for tablet purchase.",
+            "evidence": {
+              "session_id": "sess_18fa29469162",
+              "utterance_index": 8,
+              "text": "16000-17000 tl civarında bulabileceğim en iyi tablet hangileri olabilir?"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-08-27T10:13:58+00:00",
+            "_task1GoldValue": "Prefers tablets within 16000-17000 TL budget range"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_18fa29469162:sess_18fa29469162",
+      "relativeItemPath": "sess_18fa29469162.json",
+      "canonicalId": "sess_18fa29469162",
+      "sessionId": "sess_18fa29469162",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:03:37.972Z",
+        "queryText": "I’m trying to pick a tablet model, but I don’t want to waste time considering options that are clearly out of reach for what I’m comfortable spending. Given what you already know about my usual spending limit for a tablet, which specific tablet model would you point me to first, and why would it be the safest fit?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Shopping",
+          "label_suggestion": null,
+          "value": "Prefers tablets within 16000-17000 TL budget range",
+          "reasoning": "User explicitly states their budget constraint for tablet purchase.",
+          "evidence": {
+            "session_id": "sess_18fa29469162",
+            "utterance_index": 8,
+            "text": "16000-17000 tl civarında bulabileceğim en iyi tablet hangileri olabilir?"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-08-27T10:13:58+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_18fa29469162:sess_18fa29469162:task4",
+      "relativeItemPath": "sess_18fa29469162.json",
+      "canonicalId": "sess_18fa29469162:task4",
+      "sessionId": "sess_18fa29469162",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:03:42.274Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Shopping",
+          "label_suggestion": null,
+          "value": "Prefers tablets within 16000-17000 TL budget range",
+          "reasoning": "User explicitly states their budget constraint for tablet purchase.",
+          "evidence": {
+            "session_id": "sess_18fa29469162",
+            "utterance_index": 8,
+            "text": "16000-17000 tl civarında bulabileceğim en iyi tablet hangileri olabilir?"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-08-27T10:13:58+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_848:1",
+            "queryText": "Tabletlerden hangisi bana daha uygun olur sence?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Shopping",
+              "label_suggestion": null,
+              "value": "Prefers tablets within 16000-17000 TL budget range",
+              "reasoning": "User explicitly states their budget constraint for tablet purchase.",
+              "evidence": {
+                "session_id": "sess_18fa29469162",
+                "utterance_index": 8,
+                "text": "16000-17000 tl civarında bulabileceğim en iyi tablet hangileri olabilir?"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-08-27T10:13:58+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,339 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_db8dc8885467",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_db8dc8885467:sess_db8dc8885467",
+      "relativeItemPath": "sess_db8dc8885467.json",
+      "canonicalId": "sess_db8dc8885467",
+      "sessionId": "sess_db8dc8885467",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T11:16:25.895Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Possessions/Car",
+            "label_suggestion": null,
+            "value": "Owns a Tesla vehicle purchased 7 months ago",
+            "reasoning": "User explicitly states ownership of a Tesla bought 7 months prior.",
+            "evidence": {
+              "session_id": "sess_db8dc8885467",
+              "utterance_index": 0,
+              "text": "I bought a tesla 7 months ago..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-22T21:12:10+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Financial/Vehicle_Price_Change",
+            "value": "Experienced a $13K+ price drop on Tesla purchase",
+            "reasoning": "User explicitly reports price drop but original label forced an unsupported taxonomy category.",
+            "evidence": {
+              "session_id": "sess_db8dc8885467",
+              "utterance_index": 0,
+              "text": "tesla greatly reduced the model that I bought by $13K+"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "negative",
+            "updated_at": "2023-04-22T21:12:10+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about AI's functionality: prompts received, learning process, real-time interaction, and sample user queries",
+            "reasoning": "Repeated questions about AI operations show curiosity pattern. Confidence reduced to INDIRECT upper bound.",
+            "evidence": {
+              "session_id": "sess_db8dc8885467",
+              "utterance_index": 18,
+              "text": "please give me some sample queries that have actually been used"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-22T21:12:10+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_db8dc8885467:sess_db8dc8885467",
+      "relativeItemPath": "sess_db8dc8885467.json",
+      "canonicalId": "sess_db8dc8885467",
+      "sessionId": "sess_db8dc8885467",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T12:17:56.648Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Can you give me a few more examples of questions people might ask an assistant, but make them more specific than the generic ones?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure—here are some more specific, realistic examples (framed as hypothetical prompts):\n\n1) \"I’m comparing heat pumps vs. gas furnaces—what payback period should I expect in a 1,800 sq ft house?\"\n2) \"My laptop fan is loud and CPU hits 95°C—what troubleshooting steps should I try before replacing thermal paste?\"\n3) \"Can you summarize the main arguments for and against rent control, and cite a few landmark studies?\"\n4) \"I have a 7-hour layover at Amsterdam Schiphol—what’s a practical itinerary that gets me back through security on time?\"\n5) \"What’s the difference between ETFs and mutual funds in terms of taxes and intraday pricing?\"\n6) \"My sourdough starter smells like acetone—what feeding schedule and hydration should I adjust?\"\n7) \"I’m writing a cover letter for a data analyst role—can you rewrite this paragraph to be tighter and more results-focused?\"\n8) \"In iOS, my Photos library is taking 40GB—how do I audit what’s using space and safely reduce it?\"\n\nIf you tell me a theme (travel, finance, cooking, tech support, writing, etc.), I can generate a set that fits that category."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Can you toss in a couple that sound like current-events questions, without taking a political side?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Yes—here are a few neutral, current-events-style examples:\n\n1) \"What does it mean when a central bank ‘holds rates steady,’ and how might that affect mortgage rates and savings accounts?\"\n2) \"A company announced a major product recall—what are the typical steps regulators require, and what should consumers check first?\"\n3) \"What’s the difference between a ceasefire agreement and a peace treaty in international law?\"\n4) \"Why do shipping disruptions raise prices unevenly across products, and which categories tend to be most affected?\""
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Nice. Also, random question: is it true the first text message ever sent was 'Merry Christmas'?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Yes. The first SMS text message is widely reported to have been sent on December 3, 1992, and it said “Merry Christmas.” It was sent by Neil Papworth (a Vodafone engineer) from a computer to a phone on the Vodafone network."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "If there’s no real way to get Tesla to make it right, I guess I’ll just keep it—I'm still enjoying the Autopilot on my commute, so it’s not like the car suddenly got worse."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "That’s a reasonable way to look at it. Price changes can feel frustrating, but if the day-to-day experience is still delivering value—like making your commute easier—then focusing on what you’re getting from the car now can help. If you want, we can also talk through practical steps like checking whether any recent incentives, referral credits, or service goodwill options might apply in your situation (even if cash compensation is unlikely)."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Quick correction on that earlier thing—I didn’t actually buy the Tesla 7 months ago. I test-drove one 7 months back and was tracking prices, but I never ended up purchasing."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—so you don’t currently own a Tesla; you only test-drove one about 7 months ago and have been watching the pricing changes since then."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Exactly. No Tesla in my driveway—just annoyed that the Model I was considering dropped like $13k."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Financial/Vehicle_Price_Change",
+            "value": "Experienced a $13K+ price drop on Tesla purchase",
+            "reasoning": "User explicitly reports price drop but original label forced an unsupported taxonomy category.",
+            "evidence": {
+              "session_id": "sess_db8dc8885467",
+              "utterance_index": 0,
+              "text": "tesla greatly reduced the model that I bought by $13K+"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "negative",
+            "updated_at": "2023-04-22T21:12:10+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about AI's functionality: prompts received, learning process, real-time interaction, and sample user queries",
+            "reasoning": "Repeated questions about AI operations show curiosity pattern. Confidence reduced to INDIRECT upper bound.",
+            "evidence": {
+              "session_id": "sess_db8dc8885467",
+              "utterance_index": 18,
+              "text": "please give me some sample queries that have actually been used"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-22T21:12:10+00:00"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Possessions/Car",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory claims the user owns a Tesla purchased 7 months ago, but the user explicitly corrects that they never purchased and only test-drove one 7 months ago. Therefore the ownership claim is false and should be updated.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not own a Tesla; test-drove one about 7 months ago and has been tracking prices"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_db8dc8885467",
+              "utterance_index": 0,
+              "text": "I'm still enjoying the Autopilot on my commute"
+            },
+            "label": "Lifestyle/Commute",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "positive",
+            "reasoning": "The user mentions enjoying Autopilot specifically \"on my commute,\" implying they have a commute and use Autopilot for it.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User commutes and uses Autopilot during the commute"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_db8dc8885467:sess_db8dc8885467",
+      "relativeItemPath": "sess_db8dc8885467.json",
+      "canonicalId": "sess_db8dc8885467",
+      "sessionId": "sess_db8dc8885467",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T12:18:06.188Z",
+        "queryText": "I’m trying to figure out whether a return/cancellation window for a recent vehicle purchase would still be open for me—based on how long it’s been since I bought it, would I likely be outside the typical window now, and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Possessions/Car",
+          "label_suggestion": null,
+          "value": "Owns a Tesla vehicle purchased 7 months ago",
+          "reasoning": "User explicitly states ownership of a Tesla bought 7 months prior.",
+          "evidence": {
+            "session_id": "sess_db8dc8885467",
+            "utterance_index": 0,
+            "text": "I bought a tesla 7 months ago..."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-04-22T21:12:10+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_db8dc8885467:sess_db8dc8885467:task4",
+      "relativeItemPath": "sess_db8dc8885467.json",
+      "canonicalId": "sess_db8dc8885467:task4",
+      "sessionId": "sess_db8dc8885467",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T12:18:29.927Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Possessions/Car",
+          "label_suggestion": null,
+          "value": "Owns a Tesla vehicle purchased 7 months ago",
+          "reasoning": "User explicitly states ownership of a Tesla bought 7 months prior.",
+          "evidence": {
+            "session_id": "sess_db8dc8885467",
+            "utterance_index": 0,
+            "text": "I bought a tesla 7 months ago..."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-04-22T21:12:10+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_11:1",
+            "queryText": "I'm thinking about upgrading my car's entertainment system - maybe adding some new apps or connectivity features. What would you recommend I look into?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Possessions/Car",
+              "label_suggestion": null,
+              "value": "Owns a Tesla vehicle purchased 7 months ago",
+              "reasoning": "User explicitly states ownership of a Tesla bought 7 months prior.",
+              "evidence": {
+                "session_id": "sess_db8dc8885467",
+                "utterance_index": 0,
+                "text": "I bought a tesla 7 months ago..."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-04-22T21:12:10+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "not matched",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

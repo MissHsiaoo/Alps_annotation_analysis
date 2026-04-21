@@ -1,0 +1,332 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_f327c875a267",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_f327c875a267:sess_f327c875a267",
+      "relativeItemPath": "sess_f327c875a267.json",
+      "canonicalId": "sess_f327c875a267",
+      "sessionId": "sess_f327c875a267",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:34:03.272Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "value": "Interested in the book《中国传统色：故宫里的色彩美学》by 郭浩、李健明",
+            "reasoning": "User explicitly corrected the book's authorship and provided publication details, indicating strong familiarity/interest.",
+            "evidence": {
+              "session_id": "sess_f327c875a267",
+              "utterance_index": 10,
+              "text": "《中国传统色：故宫里的色彩美学》是由郭浩、李健明编著的色彩学著作，于2020年10月首次出版"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "interest",
+            "updated_at": "2023-05-17T13:24:12+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "cultural_symbols/inquiry_pattern",
+            "value": "Sustained interest in Chinese cultural symbols and couplet creation techniques",
+            "reasoning": "Pattern of inquiry about cultural topics could reflect academic interest or role-play. No explicit self-report of personal curiosity.",
+            "evidence": {
+              "session_id": "sess_f327c875a267",
+              "utterance_index": 16,
+              "text": "酒茶和上联重复了，再对10个看看"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-17T13:24:12+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_f327c875a267:sess_f327c875a267",
+      "relativeItemPath": "sess_f327c875a267.json",
+      "canonicalId": "sess_f327c875a267",
+      "sessionId": "sess_f327c875a267",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T10:06:38.100Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "你前面给的下联里有些意象挺散的。对联在格律上最常见的硬性要求有哪些？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "常见“硬性要求”大致有几条：\n1）字数相等：上下联每句字数必须一致。\n2）词性相对：名词对名词、动词对动词，虚实相当；同一位置尽量同类。\n3）结构相对：偏正对偏正、动宾对动宾等，语法结构对应。\n4）平仄相对：一般讲“仄起平收”，上下联相对位置平仄尽量相反（入声字在不同流派里归类略有差异）。\n5）内容相关：意象可变，但主题、语意需互相映衬，避免各说各话。\n如果用于门联、楹联，还会更讲究“上联末字仄声、下联末字平声”的收束感。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "那用“梅兰竹菊烟酒茶”做上联，如果我只想要你给“合格但不卖弄”的下联，你会怎么控制用词？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "我会做三点控制：\n1）用“常用词”替代生僻典故：尽量选日常可理解的雅物（如琴棋书画、风月山水、诗书礼乐等），少用冷僻器物名。\n2）把抽象词压到最低：少用“清真、乾坤”这类跨度很大的概念词，多用可感知的实体或活动。\n3）对仗位置先定再选词：先定结构（四+三）、词性（名词串为主），再逐格替换，避免临场堆砌导致松散。\n顺带一提：1986年春晚有个相声《对对子》带火了不少对联梗，但那种夸张“卖弄感”在楹联里通常会被刻意回避。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "给三个不同风格的下联：一个偏书卷气，一个偏生活气，一个偏山水气；都别重复“酒茶”。"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "可以，按“梅兰竹菊｜烟酒茶”的结构来对：\n1）书卷气：琴棋书画｜诗礼书\n2）生活气：柴米油盐｜衣食住\n3）山水气：风花雪月｜江湖路\n（若要更严格到逐字平仄与词性细抠，我可以按你指定的韵部/平水韵或普通话平仄再微调。）"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "你给的那些下联里有几条我挺喜欢的，我想挑一条写进我书房门口的字幅里；不过得麻烦你把字数统一一下，最好都做成七字一句、对仗更工整。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "可以。你更偏向“器物雅玩”（如笔墨纸砚、琴棋书画）还是“山水意境”（如风月山河、日月乾坤）？另外，你准备把上联也改成七字，还是只调整下联为七字？"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我上次提到那本《中国传统色：故宫里的色彩美学》其实我不是对它有兴趣，是帮朋友核对书目信息而已。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "明白了，也就是说你提到它只是为了核对资料，并不代表你想读或在关注这本书？"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "对，就纯粹校对：作者是郭浩、李健明，2020年10月首版。除此之外我没打算看。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "好，那我按你的意思更新：你只是协助校对《中国传统色：故宫里的色彩美学》的书目信息，并不表示你对这本书本身有阅读兴趣。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "cultural_symbols/inquiry_pattern",
+            "value": "Sustained interest in Chinese cultural symbols and couplet creation techniques",
+            "reasoning": "Pattern of inquiry about cultural topics could reflect academic interest or role-play. No explicit self-report of personal curiosity.",
+            "evidence": {
+              "session_id": "sess_f327c875a267",
+              "utterance_index": 16,
+              "text": "酒茶和上联重复了，再对10个看看"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-17T13:24:12+00:00",
+            "_task1GoldValue": "Sustained interest in Chinese cultural symbols and couplet creation techniques"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "disinterest",
+            "reasoning": "The old memory inferred reading interest from the user's correction, but the user clarifies the mention was only for checking bibliographic details and they do not intend to read it.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Not particularly interested in reading 《中国传统色：故宫里的色彩美学》(郭浩、李健明); mentioned it only to help verify bibliographic info."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_f327c875a267",
+              "utterance_index": 0,
+              "text": "我想挑一条写进我书房门口的字幅里"
+            },
+            "label": "Preferences/HomeDecor",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "interest",
+            "reasoning": "User implies a personal home/study setting and intention to display the text by mentioning placing it at the study doorway as a banner/inscription.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User wants to use a couplet line as a hanging/inscription for their study room doorway."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "value": "Interested in the book《中国传统色：故宫里的色彩美学》by 郭浩、李健明",
+            "reasoning": "User explicitly corrected the book's authorship and provided publication details, indicating strong familiarity/interest.",
+            "evidence": {
+              "session_id": "sess_f327c875a267",
+              "utterance_index": 10,
+              "text": "《中国传统色：故宫里的色彩美学》是由郭浩、李健明编著的色彩学著作，于2020年10月首次出版"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "interest",
+            "updated_at": "2023-05-17T13:24:12+00:00",
+            "_task1GoldValue": "Interested in the book《中国传统色：故宫里的色彩美学》by 郭浩、李健明"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_f327c875a267:sess_f327c875a267",
+      "relativeItemPath": "sess_f327c875a267.json",
+      "canonicalId": "sess_f327c875a267",
+      "sessionId": "sess_f327c875a267",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T10:06:44.487Z",
+        "queryText": "我在整理自己的书单时发现，有一本我之前明显“较真”过作者信息、还顺手记了首版时间的书。现在我想把它归类到“色彩/传统美学”方向：你能告诉我那本书的书名和两位作者分别是谁吗？",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Reading",
+          "label_suggestion": null,
+          "value": "Interested in the book《中国传统色：故宫里的色彩美学》by 郭浩、李健明",
+          "reasoning": "User explicitly corrected the book's authorship and provided publication details, indicating strong familiarity/interest.",
+          "evidence": {
+            "session_id": "sess_f327c875a267",
+            "utterance_index": 10,
+            "text": "《中国传统色：故宫里的色彩美学》是由郭浩、李健明编著的色彩学著作，于2020年10月首次出版"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "interest",
+          "updated_at": "2023-05-17T13:24:12+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_f327c875a267:sess_f327c875a267:task4",
+      "relativeItemPath": "sess_f327c875a267.json",
+      "canonicalId": "sess_f327c875a267:task4",
+      "sessionId": "sess_f327c875a267",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T10:06:22.764Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Reading",
+          "label_suggestion": null,
+          "value": "Interested in the book《中国传统色：故宫里的色彩美学》by 郭浩、李健明",
+          "reasoning": "User explicitly corrected the book's authorship and provided publication details, indicating strong familiarity/interest.",
+          "evidence": {
+            "session_id": "sess_f327c875a267",
+            "utterance_index": 10,
+            "text": "《中国传统色：故宫里的色彩美学》是由郭浩、李健明编著的色彩学著作，于2020年10月首次出版"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "interest",
+          "updated_at": "2023-05-17T13:24:12+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_796:1",
+            "queryText": "最近想找些关于传统色彩搭配的书籍看看，你有什么好的推荐吗？",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Reading",
+              "label_suggestion": null,
+              "value": "Interested in the book《中国传统色：故宫里的色彩美学》by 郭浩、李健明",
+              "reasoning": "User explicitly corrected the book's authorship and provided publication details, indicating strong familiarity/interest.",
+              "evidence": {
+                "session_id": "sess_f327c875a267",
+                "utterance_index": 10,
+                "text": "《中国传统色：故宫里的色彩美学》是由郭浩、李健明编著的色彩学著作，于2020年10月首次出版"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "interest",
+              "updated_at": "2023-05-17T13:24:12+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "highly matched and necessary to generate personalized response",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

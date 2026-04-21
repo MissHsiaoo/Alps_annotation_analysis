@@ -1,0 +1,277 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_dbc84026621a",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_dbc84026621a:sess_dbc84026621a",
+      "relativeItemPath": "sess_dbc84026621a.json",
+      "canonicalId": "sess_dbc84026621a",
+      "sessionId": "sess_dbc84026621a",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T11:21:06.159Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Social_Relationships/Friends",
+            "label_suggestion": null,
+            "value": "Has an important female friend (recipient of the note)",
+            "reasoning": "User explicitly clarifies the recipient is a friend, not a romantic partner.",
+            "evidence": {
+              "session_id": "sess_dbc84026621a",
+              "utterance_index": 4,
+              "text": "Rewrite, she’s a friend not my love and make super sweet"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-27T03:45:56+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_dbc84026621a:sess_dbc84026621a",
+      "relativeItemPath": "sess_dbc84026621a.json",
+      "canonicalId": "sess_dbc84026621a",
+      "sessionId": "sess_dbc84026621a",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T12:20:37.242Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Can you help me write a quick, sweet goodnight text that doesn’t sound overly romantic?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure—do you want it to sound more warm and supportive, or more light and cheerful? And should it be one sentence or a short paragraph?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Warm and supportive. One sentence."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Goodnight—just wanted to say I’m really grateful for you, and I hope you get some real rest and have the sweetest dreams."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Make it a little less intense but still kind."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Goodnight—hope you get some good rest and wake up feeling better; sweet dreams."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Random question: why do some lighthouses blink in patterns?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "They use unique flash patterns (called characteristics) so ships can identify which lighthouse they’re seeing on a chart; the timing and color act like a signature, especially in fog or at night."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Can you tweak that simple note so it still sounds like me? Keep it short, but I want it to end with “Sleep tight” like I always say."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Dear [Her],\n\nJust wanted to remind you how much I appreciate you as my friend. You make life feel lighter, and I’m really grateful for your kindness and support. Hope tonight is calm and your dreams are sweet—sleep tight.\n\nWith love,\n[Your Name]"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "About that goodnight message—small correction: it’s not a female friend. It’s my buddy Mark, so make it sweet but clearly platonic."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—since it’s for your friend Mark, here’s a simple, super sweet, clearly platonic goodnight note:\n\n“Hey Mark—just wanted to say I really appreciate you. Thanks for always being there and bringing good energy into my life. Hope you have a great night and the sweetest dreams.”"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Yes, exactly—my friend Mark. No romance, just gratitude."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Social_Relationships/Friends",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory specifies the recipient is a female friend, but the user corrects that the note is for a male friend named Mark. The updated truth is that the recipient friend is Mark.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Has a male friend named Mark (recipient of the note)"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_dbc84026621a",
+              "utterance_index": 0,
+              "text": "Keep it short, but I want it to end with “Sleep tight” like I always say."
+            },
+            "label": "Communication_Style/Sign-offs",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "Saying they want it to end with “Sleep tight” and adding it’s what they “always say” implies this is a habitual sign-off.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User commonly ends goodnight notes with the phrase “Sleep tight.”"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_dbc84026621a:sess_dbc84026621a",
+      "relativeItemPath": "sess_dbc84026621a.json",
+      "canonicalId": "sess_dbc84026621a",
+      "sessionId": "sess_dbc84026621a",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T12:20:47.211Z",
+        "queryText": "I’m about to write a super-sweet note for someone I’m close with, but I’m worried it could be misread if I use overly romantic wording. Based on who this person is to me, what kind of tone should I choose so it feels affectionate without sounding like I’m confessing feelings?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Friends",
+          "label_suggestion": null,
+          "value": "Has an important female friend (recipient of the note)",
+          "reasoning": "User explicitly clarifies the recipient is a friend, not a romantic partner.",
+          "evidence": {
+            "session_id": "sess_dbc84026621a",
+            "utterance_index": 4,
+            "text": "Rewrite, she’s a friend not my love and make super sweet"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-11-27T03:45:56+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_dbc84026621a:sess_dbc84026621a:task4",
+      "relativeItemPath": "sess_dbc84026621a.json",
+      "canonicalId": "sess_dbc84026621a:task4",
+      "sessionId": "sess_dbc84026621a",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T12:21:02.613Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Friends",
+          "label_suggestion": null,
+          "value": "Has a female friend (recipient of the note)",
+          "reasoning": "User explicitly clarifies the recipient is a friend, not a romantic partner.",
+          "evidence": {
+            "session_id": "sess_dbc84026621a",
+            "utterance_index": 4,
+            "text": "Rewrite, she’s a friend not my love and make super sweet"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-11-27T03:45:56+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_399:1",
+            "queryText": "She's feeling down about her recent breakup and I want to send her something encouraging but not too heavy. Can you help me draft a short, uplifting message that reminds her how amazing she is as a friend?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Social_Relationships/Friends",
+              "label_suggestion": null,
+              "value": "Has a female friend (recipient of the note)",
+              "reasoning": "User explicitly clarifies the recipient is a friend, not a romantic partner.",
+              "evidence": {
+                "session_id": "sess_dbc84026621a",
+                "utterance_index": 4,
+                "text": "Rewrite, she’s a friend not my love and make super sweet"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-11-27T03:45:56+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "relevant",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

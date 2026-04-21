@@ -1,0 +1,371 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_52bb918f8db7",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_52bb918f8db7:sess_52bb918f8db7",
+      "relativeItemPath": "sess_52bb918f8db7.json",
+      "canonicalId": "sess_52bb918f8db7",
+      "sessionId": "sess_52bb918f8db7",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:29:10.264Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Family",
+            "label_suggestion": null,
+            "value": "Has a child in kindergarten age",
+            "reasoning": "User explicitly mentions their child's age (kindergarten) across multiple requests.",
+            "evidence": {
+              "session_id": "sess_52bb918f8db7",
+              "utterance_index": 0,
+              "text": "support my child's learning at home about bees. kindergarten age."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-09T14:04:55+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Education/Child_Learning/Strategies",
+            "value": "Sustained interest in age-appropriate bee education strategies for their child",
+            "reasoning": "Forced label not supported. User's repeated requests focus on educational methods, not personal curiosity.",
+            "evidence": {
+              "session_id": "sess_52bb918f8db7",
+              "utterance_index": 6,
+              "text": "give 3 suggests...about bees. kindergarten age. then translate..."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-09T14:04:55+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers responses translated into Chinese when providing educational suggestions",
+            "reasoning": "User repeatedly appended translation requests to Chinese for all educational strategy outputs.",
+            "evidence": {
+              "session_id": "sess_52bb918f8db7",
+              "utterance_index": 4,
+              "text": "then translate each into chinese"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-03-09T14:04:55+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_52bb918f8db7:sess_52bb918f8db7",
+      "relativeItemPath": "sess_52bb918f8db7.json",
+      "canonicalId": "sess_52bb918f8db7",
+      "sessionId": "sess_52bb918f8db7",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:29:21.755Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Can you help me rewrite a short weekly classroom update so it sounds warm and clear, but not too formal?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure. Do you want it in an email format with a subject line, or as a short message for a newsletter/WhatsApp? Also, should it be closer to 120–150 words, or can it be a bit longer?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Email format with a subject line. Around 150 words. Please keep the tone friendly and simple."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Got it. I’ll keep it concise, friendly, and easy to scan.\n\nSubject: Weekly Update from the Classroom\n\nDear Parents,\n\nThis week, the children explored a new learning theme and enjoyed hands-on activities in our classroom areas. They were especially excited by opportunities to observe small creatures closely and practice gentle, careful handling. Story time also sparked lots of interest, and the children happily joined in with related activities during the week.\n\nNext week, we’ll continue building on these ideas with a new focus, and we’ll send home a short newsletter with resources you can use for simple follow-up at home. Even a few minutes of talking about what we learned, looking at pictures, or noticing nature outdoors can really support children’s curiosity.\n\nThank you for your continued support.\n\nWarm regards,\n[Name]"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "If I share a few bullet points of what happened, can you plug them into that structure?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Yes—send the bullet points and I’ll fit them into the same structure and keep it around 150 words. If you have any must-include names (unit title, story title, or next week’s focus), include those exactly as you want them written."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "For the weekly email, could you keep the greeting as “Dear K1 Parrots Parents” and put a clear Subject line on top? Also, please sign off with “Warm regards” like last time."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Sure—I'll format it with a Subject line at the top, keep the greeting as “Dear K1 Parrots Parents,” and close with “Warm regards.”"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "By the way, when I said “kindergarten age” earlier, I meant the activity level—my child is actually 3 years old, not in kindergarten yet."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Thanks for clarifying. So your child is 3 years old (pre-K), and we’ll keep the bee activities simpler and more play-based than true kindergarten-level tasks."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Education/Child_Learning/Strategies",
+            "value": "Sustained interest in age-appropriate bee education strategies for their child",
+            "reasoning": "Forced label not supported. User's repeated requests focus on educational methods, not personal curiosity.",
+            "evidence": {
+              "session_id": "sess_52bb918f8db7",
+              "utterance_index": 6,
+              "text": "give 3 suggests...about bees. kindergarten age. then translate..."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-09T14:04:55+00:00",
+            "_task1GoldValue": "Sustained interest in age-appropriate bee education strategies for their child"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers responses translated into Chinese when providing educational suggestions",
+            "reasoning": "User repeatedly appended translation requests to Chinese for all educational strategy outputs.",
+            "evidence": {
+              "session_id": "sess_52bb918f8db7",
+              "utterance_index": 4,
+              "text": "then translate each into chinese"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-03-09T14:04:55+00:00",
+            "_task1GoldValue": "Prefers responses translated into Chinese when providing educational suggestions"
+          },
+          {
+            "confidence": 0.93,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "By the way, when I said “kindergarten age” earlier, I meant the activity level—my child is actually 3 years old, not in kindergarten yet."
+                }
+              ]
+            },
+            "label": "Personal_Background/Family",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory says the user has a kindergarten-age child, but the user explicitly corrects that they are not in kindergarten and are actually 3 years old. Therefore the updated truth is that the user’s child is 3 years old (pre-kindergarten).",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Has a child who is 3 years old (not in kindergarten yet)"
+          },
+          {
+            "confidence": 0.92,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_52bb918f8db7",
+              "utterance_index": 0,
+              "text": "could you keep the greeting as “Dear K1 Parrots Parents” and put a clear Subject line on top? Also, please sign off with “Warm regards” like last time."
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User specifies exact formatting and phrasing they want preserved in the weekly email template.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers weekly emails formatted with a clear Subject line, greeting “Dear K1 Parrots Parents,” and sign-off “Warm regards.”"
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Family",
+            "label_suggestion": null,
+            "value": "Has a child in kindergarten age",
+            "reasoning": "User explicitly mentions their child's age (kindergarten) across multiple requests.",
+            "evidence": {
+              "session_id": "sess_52bb918f8db7",
+              "utterance_index": 0,
+              "text": "support my child's learning at home about bees. kindergarten age."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-09T14:04:55+00:00",
+            "_task1GoldValue": "Has a child in kindergarten age"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_52bb918f8db7:sess_52bb918f8db7",
+      "relativeItemPath": "sess_52bb918f8db7.json",
+      "canonicalId": "sess_52bb918f8db7",
+      "sessionId": "sess_52bb918f8db7",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:29:24.556Z",
+        "queryText": "I’m trying to pick a beginner-friendly at-home learning kit for my kid, but I want it to match their current school stage so it’s not too easy or too advanced. Which grade band should I shop for (preschool, elementary, or middle), based on what you know about my child’s situation?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Family",
+          "label_suggestion": null,
+          "value": "Has a child in kindergarten age",
+          "reasoning": "User explicitly mentions their child's age (kindergarten) across multiple requests.",
+          "evidence": {
+            "session_id": "sess_52bb918f8db7",
+            "utterance_index": 0,
+            "text": "support my child's learning at home about bees. kindergarten age."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-03-09T14:04:55+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_52bb918f8db7:sess_52bb918f8db7:task4",
+      "relativeItemPath": "sess_52bb918f8db7.json",
+      "canonicalId": "sess_52bb918f8db7:task4",
+      "sessionId": "sess_52bb918f8db7",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:29:28.098Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Family",
+          "label_suggestion": null,
+          "value": "Has a child in kindergarten age",
+          "reasoning": "User explicitly mentions their child's age (kindergarten) across multiple requests.",
+          "evidence": {
+            "session_id": "sess_52bb918f8db7",
+            "utterance_index": 0,
+            "text": "support my child's learning at home about bees. kindergarten age."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-03-09T14:04:55+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_96:1",
+            "queryText": "My kid's class is doing a bee unit next week. Can you suggest 2-3 simple activities we can do at home that would complement what they're learning in school? Keep it practical for kindergarten age.",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Family",
+              "label_suggestion": null,
+              "value": "Has a child in kindergarten age",
+              "reasoning": "User explicitly mentions their child's age (kindergarten) across multiple requests.",
+              "evidence": {
+                "session_id": "sess_52bb918f8db7",
+                "utterance_index": 0,
+                "text": "support my child's learning at home about bees. kindergarten age."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-03-09T14:04:55+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

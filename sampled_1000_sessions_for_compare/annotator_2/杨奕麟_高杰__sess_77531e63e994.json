@@ -1,0 +1,370 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_77531e63e994",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_77531e63e994:sess_77531e63e994",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_77531e63e994.json",
+      "canonicalId": "sess_77531e63e994",
+      "sessionId": "sess_77531e63e994",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:59:24.262Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers professional spelling/grammar correction and improvement services",
+            "reasoning": "User explicitly requests acting as a spelling/grammar corrector with improvement focus.",
+            "evidence": {
+              "session_id": "sess_77531e63e994",
+              "utterance_index": 0,
+              "text": "I want you to act as an professional spelling and grammer corrector and improver."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-10-08T12:36:40+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers text to be easy to understand and clear",
+            "reasoning": "Task-local",
+            "evidence": {
+              "session_id": "sess_77531e63e994",
+              "utterance_index": 4,
+              "text": "not easy to understand"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-10-08T12:36:40+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": "medical/research/content_editing",
+            "value": "Focused on medical research about hypertension prevalence in children with AD and comorbidity impact studies(From the spelling and grammar corrected text, not necessarily user information.)",
+            "reasoning": "The user gives this text in the request for translation and grammar correction, not necessarily that is the user's information.",
+            "evidence": {
+              "session_id": "sess_77531e63e994",
+              "utterance_index": 8,
+              "text": "Furthermore, this study focuses on the impact of comorbidity on the severity of AD, so data on the treatment of comorbid diseases have not been collected and analyzed yet."
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-10-08T12:36:40+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_77531e63e994:sess_77531e63e994",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_77531e63e994.json",
+      "canonicalId": "sess_77531e63e994",
+      "sessionId": "sess_77531e63e994",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T07:01:14.458Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Can you polish this sentence for clarity without changing the meaning?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes—send the sentence, and tell me whether you prefer a more formal academic tone or a simpler, reader-friendly one."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "“Because of missing follow-up information, we were unable to evaluate long-term outcomes.”"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Here are two options:\n1) Academic: “Due to incomplete follow-up data, we could not assess long-term outcomes.”\n2) Plainer: “Because follow-up data were incomplete, we couldn’t evaluate long-term outcomes.”"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Make it more concise."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "“Incomplete follow-up data prevented assessment of long-term outcomes.”"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Also, should I use “data is” or “data are” in academic writing?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Both appear in academic writing. Traditionally, “data are” treats “data” as plural (common in scientific style guides), while “data is” treats it as a mass noun (common in general usage). If you’re writing a journal manuscript, “data are” is often safer unless the journal’s style guide says otherwise."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "One more: rewrite “patients were allocated” to avoid passive voice."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "You can use an active construction like: “We allocated patients to the intervention or control group.” If you want to avoid “we,” try: “The study team allocated patients to the intervention or control group.”\n\n(Unrelated note for context: the term “placebo” was first recorded in medical use in the late 18th century, and modern randomized controlled trials became widespread in the mid-20th century.)"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Can you polish this for a manuscript? I’m trying to keep the wording consistent with the rest of the paper, so please stick to British spelling (e.g., “analyse”, “organisation”)."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Sure—paste the sentence or paragraph and I’ll revise it with British spelling and consistent academic tone."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Actually, I don't need professional spelling/grammar correction anymore. Please don't rewrite my sentences—just answer the questions directly."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Understood. I’ll stop doing spelling/grammar corrections and will answer your questions directly without rewriting your sentences."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Yes, exactly—no more grammar polishing."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers text to be easy to understand and clear",
+            "reasoning": "Task-local",
+            "evidence": {
+              "session_id": "sess_77531e63e994",
+              "utterance_index": 4,
+              "text": "not easy to understand"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-10-08T12:36:40+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": "medical/research/content_editing",
+            "value": "Focused on medical research about hypertension prevalence in children with AD and comorbidity impact studies(From the spelling and grammar corrected text, not necessarily user information.)",
+            "reasoning": "The user gives this text in the request for translation and grammar correction, not necessarily that is the user's information.\n\n",
+            "evidence": {
+              "session_id": "sess_77531e63e994",
+              "utterance_index": 8,
+              "text": "Furthermore, this study focuses on the impact of comorbidity on the severity of AD, so data on the treatment of comorbid diseases have not been collected and analyzed yet."
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-10-08T12:36:40+00:00"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                12
+              ],
+              "turns": [
+                {
+                  "index": 12,
+                  "role": "user",
+                  "text": "Actually, I don't need professional spelling/grammar correction anymore. Please don't rewrite my sentences—just answer the questions directly."
+                }
+              ]
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "The earlier memory says the user prefers professional spelling/grammar correction, but the user now explicitly withdraws that preference and requests no rewriting: \"I don't need professional spelling/grammar correction anymore. Please don't rewrite my sentences—just answer the questions directly.\"",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers direct answers without spelling/grammar correction or sentence rewriting"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_77531e63e994",
+              "utterance_index": 10,
+              "text": "please stick to British spelling (e.g., “analyse”, “organisation”)."
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "User requests revisions that adhere to British spelling conventions, implying a preference for British English in writing assistance.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers British English spelling for manuscript editing"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_77531e63e994:sess_77531e63e994",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_77531e63e994.json",
+      "canonicalId": "sess_77531e63e994",
+      "sessionId": "sess_77531e63e994",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T07:02:28.857Z",
+        "queryText": "I’m about to send you a paragraph I wrote for an important audience. Without me explicitly asking in the moment, what kind of help should you automatically provide so the final version reads more polished and credible—and why would that be the best default for me?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers professional spelling/grammar correction and improvement services",
+          "reasoning": "User explicitly requests acting as a spelling/grammar corrector with improvement focus.",
+          "evidence": {
+            "session_id": "sess_77531e63e994",
+            "utterance_index": 0,
+            "text": "I want you to act as an professional spelling and grammer corrector and improver."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-10-08T12:36:40+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_77531e63e994:sess_77531e63e994:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_77531e63e994.json",
+      "canonicalId": "sess_77531e63e994:task4",
+      "sessionId": "sess_77531e63e994",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T07:02:41.020Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers professional spelling/grammar correction and improvement services",
+          "reasoning": "User explicitly requests acting as a spelling/grammar corrector with improvement focus.",
+          "evidence": {
+            "session_id": "sess_77531e63e994",
+            "utterance_index": 0,
+            "text": "I want you to act as an professional spelling and grammer corrector and improver."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-10-08T12:36:40+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1081:1",
+            "queryText": "I've drafted this paragraph for my research paper introduction. Could you take a look and polish it for me?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers professional spelling/grammar correction and improvement services",
+              "reasoning": "User explicitly requests acting as a spelling/grammar corrector with improvement focus.",
+              "evidence": {
+                "session_id": "sess_77531e63e994",
+                "utterance_index": 0,
+                "text": "I want you to act as an professional spelling and grammer corrector and improver."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-10-08T12:36:40+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "直接相关",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

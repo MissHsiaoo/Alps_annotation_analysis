@@ -1,0 +1,350 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_86dd3aa9072c",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_86dd3aa9072c:sess_86dd3aa9072c",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_86dd3aa9072c.json",
+      "canonicalId": "sess_86dd3aa9072c",
+      "sessionId": "sess_86dd3aa9072c",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T18:36:01.489Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/java/inquiry",
+            "value": "Prefers Java programming language for technical implementations",
+            "reasoning": "User inquired about Java versions of tools but did not explicitly state a preference",
+            "evidence": {
+              "session_id": "sess_86dd3aa9072c",
+              "utterance_index": 2,
+              "text": "langchain 有没有Java版"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-01-01T00:00:00Z"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in Java-based AI/ML toolchains and deployment patterns",
+            "reasoning": "Multiple technical follow-ups about Java implementations",
+            "evidence": {
+              "session_id": "sess_86dd3aa9072c",
+              "utterance_index": 24,
+              "text": "Milvus又springboot的支持吗"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-01T00:00:00Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_86dd3aa9072c:sess_86dd3aa9072c",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_86dd3aa9072c.json",
+      "canonicalId": "sess_86dd3aa9072c",
+      "sessionId": "sess_86dd3aa9072c",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T19:08:12.286Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我在看向量库的资料，老是分不清“索引类型”和“距离度量”分别影响什么。能用一个很小的例子解释下吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以。把向量检索想成“在一堆点里找最近的点”。\n\n- 距离度量（metric）回答的是：**“什么叫近？”** 例如同一批向量，用 cosine 更看重方向相似；用 L2 更看重绝对差值。\n- 索引类型（index）回答的是：**“怎么更快地找？”** 例如暴力遍历一定最准但慢；HNSW/IVF 这类索引用近似结构换速度。\n\n小例子：两条向量 A=[1,0]、B=[100,0]，查询 Q=[1,0]。\n- cosine 下 A 和 B 与 Q 的方向一样，可能都“很近”；\n- L2 下 A 离 Q 很近，B 离 Q 很远。\n而索引不改变“近”的定义，只影响你以多快、多近似的方式找到结果。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "那如果我选 HNSW，是不是就一定比 IVF 快？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "不一定，取决于数据规模、维度、召回率目标、内存预算和写入/更新频率。\n- HNSW：通常查询延迟低、召回高，但更吃内存，构建/写入成本也可能更高。\n- IVF（含 IVF_FLAT/IVF_PQ 等）：更依赖“分桶/聚类”的参数（nlist、nprobe），在大规模时可能更省内存或更易控成本，但要调参。\n\n如果你愿意说下：向量维度大概多少、数据量级（10万/1000万/1亿）、更看重写入还是查询，我可以给一个更贴近的选择建议。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "另外我看到有人说 2016 年 AlphaGo 用了蒙特卡洛树搜索，这跟向量检索的“搜索”是一个概念吗？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "名字都叫“搜索”，但语境不同。\n- AlphaGo 的“搜索”（MCTS）是在**决策树/状态空间**里探索最优动作。\n- 向量检索的“搜索”是在**向量空间**里找最近邻（ANN/KNN）。\n\n共同点是：都在用结构和策略减少需要探索的候选数量；不同点是目标函数、数据结构和理论背景完全不一样。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "我准备先在本机用 Docker 跑个单机版试试，端口还是沿用你上面说的 19530；另外我这边是 Gradle 项目，不太想再切回 Maven。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "可以的：Docker 继续用 19530 没问题。Gradle 的话你在 `build.gradle` 里加 Milvus Java SDK 依赖即可（`implementation 'io.milvus:milvus-sdk-java:xxx'`），然后按你之前 Spring Boot 的方式把 host/port 做成配置项注入到 Service 里，启动时连 `localhost:19530` 测一下连通性。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "上次我说的那个向量化模型我后来换掉了：现在不是用 HuggingFaceEmbeddings(shibing624/text2vec-base-chinese) 了。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "明白，也就是说你当前的向量化不再用 `HuggingFaceEmbeddings(shibing624/text2vec-base-chinese)` 这套了，对吧？"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "对，那个只是我当时举的例子。现在我用的是别的 embedding 模型，text2vec-base-chinese 已经不用了。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "收到：那我后面就不再默认你使用 `shibing624/text2vec-base-chinese` 作为向量化模型了。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/java/inquiry",
+            "value": "Prefers Java programming language for technical implementations",
+            "reasoning": "User inquired about Java versions of tools but did not explicitly state a preference",
+            "evidence": {
+              "session_id": "sess_86dd3aa9072c",
+              "utterance_index": 2,
+              "text": "langchain 有没有Java版"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-01-01T00:00:00Z",
+            "_task1GoldValue": "Prefers Java programming language for technical implementations"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/vector_db/evaluation",
+            "value": "Prefers Milvus for vector search implementations",
+            "reasoning": "User discussed performance comparisons but did not explicitly adopt Milvus",
+            "evidence": {
+              "session_id": "sess_86dd3aa9072c",
+              "utterance_index": 16,
+              "text": "向量搜索就是我最关键的考虑因素...您最倾向推荐Milvus"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-01-01T00:00:00Z"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in Java-based AI/ML toolchains and deployment patterns",
+            "reasoning": "Multiple technical follow-ups about Java implementations",
+            "evidence": {
+              "session_id": "sess_86dd3aa9072c",
+              "utterance_index": 24,
+              "text": "Milvus又springboot的支持吗"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-01T00:00:00Z",
+            "_task1GoldValue": "Sustained interest in Java-based AI/ML toolchains and deployment patterns"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Technical_Stack",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "preference",
+            "reasoning": "旧记忆说用户使用 HuggingFaceEmbeddings(shibing624/text2vec-base-chinese) 做向量化；但用户在新对话中明确表示已经更换模型并不再使用该模型，因此需要更新为“已不再使用该模型”。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "No longer uses HuggingFaceEmbeddings(shibing624/text2vec-base-chinese) for vectorization"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_86dd3aa9072c",
+              "utterance_index": 0,
+              "text": "另外我这边是 Gradle 项目，不太想再切回 Maven。"
+            },
+            "label": "Preferences/Technical_Stack",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "用户提到项目使用 Gradle，并表达不想切回 Maven，暗示其构建工具偏好与当前技术栈。",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Uses Gradle for Java projects and prefers not to use Maven"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_86dd3aa9072c:sess_86dd3aa9072c",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_86dd3aa9072c.json",
+      "canonicalId": "sess_86dd3aa9072c",
+      "sessionId": "sess_86dd3aa9072c",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T19:02:43.498Z",
+        "queryText": "我在排查检索效果的时候，发现同一批中文文档在向量库里相似度排序有点怪。我想先确认一下：我现在这套流程里负责把文本变成向量的那一环，用的到底是哪一个具体的嵌入模型？",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Technical_Stack",
+          "label_suggestion": null,
+          "value": "Uses HuggingFaceEmbeddings(shibing624/text2vec-base-chinese) for vectorization",
+          "reasoning": "User explicitly states their current model choice for text vectorization",
+          "evidence": {
+            "session_id": "sess_86dd3aa9072c",
+            "utterance_index": 8,
+            "text": "我用Chroma 作为DB，用 HuggingFaceEmbeddings(shibing624\\text2vec-base-chinese) 作为向量化的模型"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-01-01T00:00:00Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_86dd3aa9072c:sess_86dd3aa9072c:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_86dd3aa9072c.json",
+      "canonicalId": "sess_86dd3aa9072c:task4",
+      "sessionId": "sess_86dd3aa9072c",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T14:21:17.570Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Technical_Stack",
+          "label_suggestion": null,
+          "value": "Uses HuggingFaceEmbeddings(shibing624/text2vec-base-chinese) for vectorization",
+          "reasoning": "User explicitly states their current model choice for text vectorization",
+          "evidence": {
+            "session_id": "sess_86dd3aa9072c",
+            "utterance_index": 8,
+            "text": "我用Chroma 作为DB，用 HuggingFaceEmbeddings(shibing624\\text2vec-base-chinese) 作为向量化的模型"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-01-01T00:00:00Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_943:1",
+            "queryText": "我想用Java实现一个语义搜索系统，需要把文本转成向量存起来。现在有BERT、RoBERTa和GPT这几个模型可选，你觉得哪个更适合我的场景？",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Technical_Stack",
+              "label_suggestion": null,
+              "value": "Uses HuggingFaceEmbeddings(shibing624/text2vec-base-chinese) for vectorization",
+              "reasoning": "User explicitly states their current model choice for text vectorization",
+              "evidence": {
+                "session_id": "sess_86dd3aa9072c",
+                "utterance_index": 8,
+                "text": "我用Chroma 作为DB，用 HuggingFaceEmbeddings(shibing624\\text2vec-base-chinese) 作为向量化的模型"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2024-01-01T00:00:00Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_d3ed8e5388d0",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_d3ed8e5388d0:sess_d3ed8e5388d0",
+      "relativeItemPath": "sess_d3ed8e5388d0.json",
+      "canonicalId": "sess_d3ed8e5388d0",
+      "sessionId": "sess_d3ed8e5388d0",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T04:25:45.793Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Content_Formatting/Preference",
+            "value": "Prefers technical documentation in Wikipedia style without pronouns (1st/3rd person)",
+            "reasoning": "Repeated explicit formatting requests in user instructions",
+            "evidence": {
+              "session_id": "sess_d3ed8e5388d0",
+              "utterance_index": 22,
+              "text": "write without pronouns in wiki style without 1st and 3rd person: Так-же необходимо найти на карте light_environment..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-23T18:37:00+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "States_Experiences/Past_Experience",
+            "label_suggestion": null,
+            "value": "Has personal experience with light_environment value equivalencies between Goldsource and Source engines",
+            "reasoning": "Explicit self-report of personal workflow discovery",
+            "evidence": {
+              "session_id": "sess_d3ed8e5388d0",
+              "utterance_index": 22,
+              "text": "Так-же необходимо найти на карте light_environment... Из своего личного опыта я понял, что низкие значения Goldsource эквивалент высоким в Source"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-23T18:37:00+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_d3ed8e5388d0:sess_d3ed8e5388d0",
+      "relativeItemPath": "sess_d3ed8e5388d0.json",
+      "canonicalId": "sess_d3ed8e5388d0",
+      "sessionId": "sess_d3ed8e5388d0",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T04:26:45.471Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Need a neutral Wikipedia-style sentence explaining what a \"flag\" is in entity settings, without pronouns."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "In Source Engine entity configuration, flags are binary options that enable or disable specific behaviors; the effective setting is determined by the combined set of selected flags."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Also rephrase this caption without pronouns: \"Button flags should look like this:\""
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Button flag configuration is as follows:"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Need one more line: mention that some tools display flags as checkboxes."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "In editing tools, flags are commonly presented as checkbox fields corresponding to individual binary properties."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Add a short unrelated fact for filler, not about any person."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "The term \"bitmask\" is often used to describe a numeric value that encodes multiple on/off settings in a single integer."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Нужна такая же википедийная правка для следующего пункта: раздел про флаги кнопок. Скриншоты уже подписаны, осталось только перечисление флагов оформить как в энциклопедии — коротко и без обращений."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Describe the button flags in a concise, encyclopedic style, using a brief enumeration and avoiding forms of address. Clarify that the enabled flag combination determines the entity’s resulting behavior, and present the list in the same order as in the annotated screenshots."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Там про light_environment: фразу «Из своего личного опыта я понял…» убрать. Личного опыта нет, это просто общее правило из гайдов."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Принято. Формулировка должна быть без ссылок на личный опыт: «Низкие значения яркости в GoldSrc часто соответствуют более высоким значениям в Source; параметр \"Brightness and color\" рекомендуется увеличить, сохраняя исходную палитру»."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Да, так и оставить: как рекомендацию, без утверждения про собственные наблюдения."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Content_Formatting/Preference",
+            "value": "Prefers technical documentation in Wikipedia style without pronouns (1st/3rd person)",
+            "reasoning": "Repeated explicit formatting requests in user instructions",
+            "evidence": {
+              "session_id": "sess_d3ed8e5388d0",
+              "utterance_index": 22,
+              "text": "write without pronouns in wiki style without 1st and 3rd person: Так-же необходимо найти на карте light_environment..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-23T18:37:00+00:00"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "States_Experiences/Past_Experience",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": null,
+            "reasoning": "Ранее утверждалось наличие личного опыта с эквивалентностями значений light_environment между Goldsource и Source. В диалоге прямо уточняется, что личного опыта нет, а информация представляет собой общее правило из руководств, поэтому память обновляется на отсутствие личного опыта по этому вопросу.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not have personal experience with light_environment value equivalencies between Goldsource and Source; treats it as general guidance from tutorials"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_d3ed8e5388d0",
+              "utterance_index": 0,
+              "text": "Скриншоты уже подписаны, осталось только перечисление флагов оформить как в энциклопедии — коротко и без обращений."
+            },
+            "label": "Content_Formatting/Preference",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "Request implies a preference for short encyclopedic list formatting and matching the order used in already-labeled screenshots.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers concise, enumerated Wikipedia-style formatting aligned to annotated screenshots when documenting technical steps"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_d3ed8e5388d0:sess_d3ed8e5388d0",
+      "relativeItemPath": "sess_d3ed8e5388d0.json",
+      "canonicalId": "sess_d3ed8e5388d0",
+      "sessionId": "sess_d3ed8e5388d0",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T04:26:58.283Z",
+        "queryText": "I’m porting a map between two related game engines and the lighting looks wildly overblown even though I copied the sky/ambient settings “as-is.” Based on what you’ve previously run into when comparing the same kind of global light setup across those engines, what counterintuitive adjustment would you make first to get the brightness back into a similar range, and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "States_Experiences/Past_Experience",
+          "label_suggestion": null,
+          "value": "Has personal experience with light_environment value equivalencies between Goldsource and Source engines",
+          "reasoning": "Explicit self-report of personal workflow discovery",
+          "evidence": {
+            "session_id": "sess_d3ed8e5388d0",
+            "utterance_index": 22,
+            "text": "Так-же необходимо найти на карте light_environment... Из своего личного опыта я понял, что низкие значения Goldsource эквивалент высоким в Source"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-23T18:37:00+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_d3ed8e5388d0:sess_d3ed8e5388d0:task4",
+      "relativeItemPath": "sess_d3ed8e5388d0.json",
+      "canonicalId": "sess_d3ed8e5388d0:task4",
+      "sessionId": "sess_d3ed8e5388d0",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T04:27:10.855Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "States_Experiences/Past_Experience",
+          "label_suggestion": null,
+          "value": "Has personal experience with light_environment value equivalencies between Goldsource and Source engines",
+          "reasoning": "Explicit self-report of personal workflow discovery",
+          "evidence": {
+            "session_id": "sess_d3ed8e5388d0",
+            "utterance_index": 22,
+            "text": "Так-же необходимо найти на карте light_environment... Из своего личного опыта я понял, что низкие значения Goldsource эквивалент высоким в Source"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-23T18:37:00+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_487:1",
+            "queryText": "The light_environment in the current map appears too dim when ported from Goldsource. Need to adjust the brightness values appropriately while maintaining the original color palette.",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "States_Experiences/Past_Experience",
+              "label_suggestion": null,
+              "value": "Has personal experience with light_environment value equivalencies between Goldsource and Source engines",
+              "reasoning": "Explicit self-report of personal workflow discovery",
+              "evidence": {
+                "session_id": "sess_d3ed8e5388d0",
+                "utterance_index": 22,
+                "text": "Так-же необходимо найти на карте light_environment... Из своего личного опыта я понял, что низкие значения Goldsource эквивалент высоким в Source"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-06-23T18:37:00+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "appropriate",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

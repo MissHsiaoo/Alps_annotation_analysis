@@ -1,0 +1,355 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_3d6a5858602f",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_3d6a5858602f:sess_3d6a5858602f",
+      "relativeItemPath": "sess_3d6a5858602f.json",
+      "canonicalId": "sess_3d6a5858602f",
+      "sessionId": "sess_3d6a5858602f",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T20:02:46.287Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers maximum difficulty (10/10) in custom RPG scenarios",
+            "reasoning": "User explicitly sets difficulty to '10 (hardest mode)' for the duel scenario.",
+            "evidence": {
+              "session_id": "sess_3d6a5858602f",
+              "utterance_index": 0,
+              "text": "Make the scenario difficult for me to win. On a difficulty scale of 1 to 10, make it a 10 (hardest mode)."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-04-11T10:10:49+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires full control over protagonist's spell choices in RPG scenarios",
+            "reasoning": "User explicitly states 'Only I decide what spells Sapphire casts' as a hard rule.",
+            "evidence": {
+              "session_id": "sess_3d6a5858602f",
+              "utterance_index": 0,
+              "text": "Only I decide what spells Sapphire casts. You decide spells for Lily."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "requirement",
+            "updated_at": "2024-04-11T10:10:49+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical/Game_Design/Mechanics",
+            "value": "Deep interest in designing RPG mechanics with exponential stat formulas and competitive balance",
+            "reasoning": "Single instance of complex mechanical design request; no repeated inquiry pattern observed. Could reflect task-local interest rather than stable curiosity.",
+            "evidence": {
+              "session_id": "sess_3d6a5858602f",
+              "utterance_index": 0,
+              "text": "Come up with a rapid exponential formula that dictates by how much my stats decrease each turn...Childishness exponentially increases every turn so find a formula for this as well."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-11T10:10:49+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_3d6a5858602f:sess_3d6a5858602f",
+      "relativeItemPath": "sess_3d6a5858602f.json",
+      "canonicalId": "sess_3d6a5858602f",
+      "sessionId": "sess_3d6a5858602f",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T20:02:49.956Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Quick rules question: in a turn-based duel like this, do you prefer ties to be broken by a sudden-death round, or by a judge’s style vote?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Either works. Sudden death is cleaner mechanically (one extra round, no repeats, highest points wins). A judge’s style vote is more narrative (pick 2–3 criteria like originality, precision, stage presence; assign a small bonus like +5 to the winner). Want it to favor drama or fairness?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Fairness. Also, how would you handle a partial-cast—like the spell happens but looks messy?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "I’d split it into two checks: (1) Cast success (Spell Power) determines whether the spell manifests at all; (2) Quality (Performance) scales points. A partial-cast could mean: spell manifests (no zero), but points are reduced—e.g., take only 40–70% of base points, and apply a small penalty (−3 to −10) if it visibly backfires or breaks theme."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Makes sense. Could the audience reaction ever add points?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Yes, but keep it bounded so it doesn’t override stats: a “Crowd Surge” bonus of +0 to +5 if a spell hits a novelty or emotional beat, and only if the Performance check is above a threshold. Fun example from a fictional gala in Marinth: a mage once got +5 because their illusion synchronized with the orchestra’s accidental tempo change."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "If someone tries something risky, would you warn them first or just score it harshly?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "I’d give an in-world hint rather than an out-of-world warning—like judges murmuring about difficulty or the opponent smirking—then score strictly. That keeps agency intact but signals the risk level. In some leagues (there’s a famous “Silver Arbiters” circuit in a lot of fantasy settings), they even announce “high variance” attempts before the cast."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Before we queue up another match like that, can you keep the narration tight and stick to just the numbers (stats, pass/fail, points, and running totals)? I kept losing track once the paragraphs started piling up."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—next duel I’ll present it in a compact, scoreboard-style format: current stats → your chosen spell (pass/fail) → points change → updated totals, with minimal narration."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Actually, don’t set it to 10/10 hardest. I want something more balanced so I can experiment—make the scenario difficulty a 6 out of 10."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—switching from hardest mode to a more balanced setup. I’ll set the duel to **difficulty 6/10** (moderate-hard), so you still feel pressure, but you’ll have real room to test strategies without the system trying to crush you every round."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires full control over protagonist's spell choices in RPG scenarios",
+            "reasoning": "User explicitly states 'Only I decide what spells Sapphire casts' as a hard rule.",
+            "evidence": {
+              "session_id": "sess_3d6a5858602f",
+              "utterance_index": 0,
+              "text": "Only I decide what spells Sapphire casts. You decide spells for Lily."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "requirement",
+            "updated_at": "2024-04-11T10:10:49+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical/Game_Design/Mechanics",
+            "value": "Deep interest in designing RPG mechanics with exponential stat formulas and competitive balance",
+            "reasoning": "Single instance of complex mechanical design request; no repeated inquiry pattern observed. Could reflect task-local interest rather than stable curiosity.",
+            "evidence": {
+              "session_id": "sess_3d6a5858602f",
+              "utterance_index": 0,
+              "text": "Come up with a rapid exponential formula that dictates by how much my stats decrease each turn...Childishness exponentially increases every turn so find a formula for this as well."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-11T10:10:49+00:00"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Actually, don’t set it to 10/10 hardest. I want something more balanced so I can experiment—make the scenario difficulty a 6 out of 10."
+                }
+              ]
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory says the user prefers maximum difficulty (10/10), but the user explicitly corrects this by requesting a balanced 6/10 difficulty instead, indicating their actual preference is not always the hardest mode.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers a more balanced difficulty (around 6/10) rather than maximum difficulty in custom RPG scenarios"
+          },
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_3d6a5858602f",
+              "utterance_index": 0,
+              "text": "can you keep the narration tight and stick to just the numbers (stats, pass/fail, points, and running totals)?"
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "The user implies long descriptive paragraphs make it hard to track and asks to focus on stats, outcomes, points, and totals.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers concise, numbers-first (scoreboard-style) output during RPG duel resolution to avoid long narration."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_3d6a5858602f:sess_3d6a5858602f",
+      "relativeItemPath": "sess_3d6a5858602f.json",
+      "canonicalId": "sess_3d6a5858602f",
+      "sessionId": "sess_3d6a5858602f",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T20:02:52.879Z",
+        "queryText": "If I ask you to design a one-on-one, turn-based fantasy encounter for me and I add that I want it to be as punishing as you think I’d still tolerate, what exact setting should you pick on that 1–10 challenge slider so the fight matches what I usually ask for?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers maximum difficulty (10/10) in custom RPG scenarios",
+          "reasoning": "User explicitly sets difficulty to '10 (hardest mode)' for the duel scenario.",
+          "evidence": {
+            "session_id": "sess_3d6a5858602f",
+            "utterance_index": 0,
+            "text": "Make the scenario difficult for me to win. On a difficulty scale of 1 to 10, make it a 10 (hardest mode)."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-04-11T10:10:49+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_3d6a5858602f:sess_3d6a5858602f:task4",
+      "relativeItemPath": "sess_3d6a5858602f.json",
+      "canonicalId": "sess_3d6a5858602f:task4",
+      "sessionId": "sess_3d6a5858602f",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T20:02:56.121Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers maximum difficulty (10/10) in custom RPG scenarios",
+          "reasoning": "User explicitly sets difficulty to '10 (hardest mode)' for the duel scenario.",
+          "evidence": {
+            "session_id": "sess_3d6a5858602f",
+            "utterance_index": 0,
+            "text": "Make the scenario difficult for me to win. On a difficulty scale of 1 to 10, make it a 10 (hardest mode)."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-04-11T10:10:49+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_257:1",
+            "queryText": "I'm thinking about setting up another magical duel scenario, but this time with different mechanics. Maybe something with elemental affinities or time manipulation. Which approach would make for the most interesting challenge?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Prefers maximum difficulty (10/10) in custom RPG scenarios",
+              "reasoning": "User explicitly sets difficulty to '10 (hardest mode)' for the duel scenario.",
+              "evidence": {
+                "session_id": "sess_3d6a5858602f",
+                "utterance_index": 0,
+                "text": "Make the scenario difficult for me to win. On a difficulty scale of 1 to 10, make it a 10 (hardest mode)."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2024-04-11T10:10:49+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

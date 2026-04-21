@@ -1,0 +1,303 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_d12002fba9e9",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_d12002fba9e9:sess_d12002fba9e9",
+      "relativeItemPath": "sess_d12002fba9e9.json",
+      "canonicalId": "sess_d12002fba9e9",
+      "sessionId": "sess_d12002fba9e9",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T06:23:13.426Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about permanently resolving engine code P2259 and modifying secondary air injection system in Mazda RX-8",
+            "reasoning": "Multiple technical questions about code resolution and system removal (turns 6/8/10) show sustained focus.",
+            "evidence": {
+              "session_id": "sess_d12002fba9e9",
+              "utterance_index": 10,
+              "text": "Is it possible to remove the code P2259 completely from a car, so it never comes up?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-12T14:31:05+00:00"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "direct",
+            "label": "Possessions/Car",
+            "value": "Owns a Mazda RX-8 2004 model",
+            "confidence": 0.95,
+            "evidence_text": "The car is a mazda rx-8 2004 model, and the engine code is P2259, i dont notice anything odd when driving it"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_d12002fba9e9:sess_d12002fba9e9",
+      "relativeItemPath": "sess_d12002fba9e9.json",
+      "canonicalId": "sess_d12002fba9e9",
+      "sessionId": "sess_d12002fba9e9",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T02:15:06.737Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "If I clear a code with a cheap OBD2 scanner, does it also reset the readiness monitors?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes—on most cars, clearing codes (or disconnecting the battery) resets readiness monitors to “not ready.” After that, you usually need a drive cycle (a mix of cold start, idle, steady cruise, decel, and some stop/go) for them to set again."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "What if the check engine light is off but a pending code is still there—would that fail an inspection?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "It depends on the inspection rules, but commonly: the MIL being off helps, yet an inspector may still fail a car if readiness monitors aren’t set, or if certain emissions-related pending codes are present. Many programs primarily check (1) MIL command status, (2) stored DTCs, and (3) readiness."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Is there a simple way to tell if it’s a wiring issue versus a bad sensor without a scope?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "A basic approach is: (1) check for obvious connector corrosion/pin fit issues, (2) verify power/ground with a multimeter under load, and (3) look at live data on the scanner—if the sensor reading is stuck, implausible, or doesn’t respond to changing conditions. Wiggle-testing the harness while watching live data can also hint at wiring faults."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "By the way, I heard some cities are switching to camera-based emissions enforcement—does that exist?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "There have been pilots in some places using remote sensing (roadside “sniffer” setups) to identify high emitters, but it’s not universal and it’s usually a supplement to traditional OBD or tailpipe testing, not a full replacement. The details vary a lot by jurisdiction."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "If I end up doing a tune for the decat, I’m guessing that’s the only way to stop the CEL from coming back every time the ECU runs the secondary air test?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "A tune can disable or adjust the specific readiness monitors and diagnostic tests that keep re-triggering the light, but the exact options depend on the ECU strategy and local emissions rules. If you still want the system functional, the better route is usually to fix the air injection components so the test passes rather than deleting the checks."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Quick correction from earlier: the RX-8 isn’t mine. It’s my buddy’s 2004 RX-8 and I’m just helping him figure out the P2259 code."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—so it’s your friend’s 2004 Mazda RX-8, not your own car. In that case, the same P2259 guidance applies; you’ll just want to pass the troubleshooting steps along to him or have him run the checks/scan."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about permanently resolving engine code P2259 and modifying secondary air injection system in Mazda RX-8",
+            "reasoning": "Multiple technical questions about code resolution and system removal (turns 6/8/10) show sustained focus.",
+            "evidence": {
+              "session_id": "sess_d12002fba9e9",
+              "utterance_index": 10,
+              "text": "Is it possible to remove the code P2259 completely from a car, so it never comes up?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-12T14:31:05+00:00",
+            "_task1GoldValue": "Curious about permanently resolving engine code P2259 and modifying secondary air injection system in Mazda RX-8"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": null,
+            "label": "Possessions/Car",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The old memory implies the user owns a 2004 Mazda RX-8. The user explicitly corrects this by saying the RX-8 is not theirs and belongs to their buddy, so the possession/ownership detail must be updated accordingly.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is helping a buddy with a 2004 Mazda RX-8 (not the user's car)."
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_d12002fba9e9",
+              "utterance_index": 0,
+              "text": "If I end up doing a tune for the decat, I’m guessing that’s the only way to stop the CEL from coming back every time the ECU runs the secondary air test?"
+            },
+            "label": "Plans/Intentions",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "By asking whether a tune for the decat is the only way to stop the CEL from returning when the ECU runs the secondary air test, the user implies they are considering (or planning) a tune as a solution.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Considering getting an ECU tune to accommodate the decat and prevent the check engine light from returning due to secondary air system tests"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m2",
+          "deepseek_reasoner_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_d12002fba9e9:sess_d12002fba9e9",
+      "relativeItemPath": "sess_d12002fba9e9.json",
+      "canonicalId": "sess_d12002fba9e9",
+      "sessionId": "sess_d12002fba9e9",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:53:10.865Z",
+        "queryText": "I’m trying to figure out whether I should buy the factory repair manual for my vehicle or rely on generic guides—what specific model/year detail about what I drive would determine the right manual to order?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Possessions/Car",
+          "label_suggestion": null,
+          "value": "Mazda RX-8 2004 model",
+          "reasoning": "User explicitly states ownership via 'my car' (turn 2) and provides specific vehicle details (turn 4).",
+          "evidence": {
+            "session_id": "sess_d12002fba9e9",
+            "utterance_index": 2,
+            "text": "I have an engine code om my car, can you help me with that?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-07-12T14:31:05+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_d12002fba9e9:sess_d12002fba9e9:task4",
+      "relativeItemPath": "sess_d12002fba9e9.json",
+      "canonicalId": "sess_d12002fba9e9:task4",
+      "sessionId": "sess_d12002fba9e9",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:41:46.818Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Possessions/Car",
+          "label_suggestion": null,
+          "value": "Mazda RX-8 2004 model",
+          "reasoning": "User explicitly states ownership via 'my car' (turn 2) and provides specific vehicle details (turn 4).",
+          "evidence": {
+            "session_id": "sess_d12002fba9e9",
+            "utterance_index": 2,
+            "text": "I have an engine code om my car, can you help me with that?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-07-12T14:31:05+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_6:1",
+            "queryText": "I'm looking at some aftermarket exhaust options for my car. There's a full cat-back system that's supposed to give a bit more power and sound, and then there's just a simple axle-back muffler swap. Which route do you think makes more sense for me?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Possessions/Car",
+              "label_suggestion": null,
+              "value": "Mazda RX-8 2004 model",
+              "reasoning": "User explicitly states ownership via 'my car' (turn 2) and provides specific vehicle details (turn 4).",
+              "evidence": {
+                "session_id": "sess_d12002fba9e9",
+                "utterance_index": 2,
+                "text": "I have an engine code om my car, can you help me with that?"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-07-12T14:31:05+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "partial",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

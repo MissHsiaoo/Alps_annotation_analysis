@@ -1,0 +1,235 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_68e48c7eb1d9",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_68e48c7eb1d9:sess_68e48c7eb1d9",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_68e48c7eb1d9.json",
+      "canonicalId": "sess_68e48c7eb1d9",
+      "sessionId": "sess_68e48c7eb1d9",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T15:49:40.285Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Interaction_preferences",
+            "value": "Prefers role-play fantasy games",
+            "reasoning": "Role-play/third-party possible",
+            "evidence": {
+              "session_id": "sess_68e48c7eb1d9",
+              "utterance_index": 0,
+              "text": "After I first regress introduce also a set of childish stats that may hinder... Lily won’t have childish stats because these stats don’t interact with her spells"
+            },
+            "confidence": "0.5",
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-03-14T23:11:36+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_68e48c7eb1d9:sess_68e48c7eb1d9",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_68e48c7eb1d9.json",
+      "canonicalId": "sess_68e48c7eb1d9",
+      "sessionId": "sess_68e48c7eb1d9",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T11:04:26.535Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Before we continue, can we tighten the rules a bit? I want a clear scoring rubric so the points don’t feel arbitrary."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Absolutely. Here’s a clean rubric you can reuse each round:\n\n1) **Eligibility check (pass/fail):** Compare your current Power/Creativity/Control to the spell’s requirements.\n- If **any stat is below requirement by 1–9**, the cast is **strained**.\n- If **below by 10+**, the cast **fails**.\n\n2) **Base points (spell tier):**\n- Easy reqs → 55 base\n- Medium reqs → 70 base\n- Hard reqs → 85 base\n- Extreme reqs → 100 base\n\n3) **Execution modifier (based on Control vs requirement):**\n- Control ≥ req +10: +10\n- Control within ±9 of req: +0\n- Control below req by 1–9: −10\n- Fail: base becomes 0 and go to penalties\n\n4) **Artistry modifier (based on Creativity vs requirement):**\n- Creativity ≥ req +10: +10\n- Creativity within ±9: +0\n- Creativity below req by 1–9: −10\n\n5) **Childish-stat maturity penalty (only affects your mature spells):**\n- Penalty = floor(Childish / 40) × 5 points (cap at −30)\n\n6) **Harsh mode pressure (difficulty 10):**\n- After all modifiers, apply an additional **−5 flat pressure tax** on your casts unless you exceeded *all* requirements by 10+.\n\n7) **Failure penalties:**\n- Fail a cast: −15 points (and your spell is still “used up”).\n\nIf you want, I can also convert this into a one-line equation so it’s easy to compute fast."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "One-line equation would help. Also, unrelated: I read a short article about a city trialing glow-in-the-dark road paint—does that actually work?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Sure.\n\n**One-line scoring equation (for your casts):**\nLet Base(spell) be the tier base. Let ΔC = Control − ControlReq, ΔR = Creativity − CreativityReq. Let Strained = 1 if any stat is below its req by 1–9, else 0. Let Fail = 1 if any stat is below its req by 10+, else 0.\n\nScore = (1−Fail) × [ Base + 10·I(ΔC≥10) − 10·I(−9≤ΔC<0) + 10·I(ΔR≥10) − 10·I(−9≤ΔR<0) − 5·min(6, floor(Childish/40)) − 5·(1 − I(all stats ≥ req+10)) ]  + Fail × (−15)\n\nOn the glow-in-the-dark road paint: it can “work,” but in practice results are mixed. Photoluminescent coatings need strong charging light (sun/UV), degrade with weather and abrasion, and brightness often isn’t sufficient in real traffic conditions. Many trials end up using it only for low-speed paths (bike lanes, pedestrian markings) or pairing it with conventional reflective paint."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "assistant",
+            "text": "Final round looming—and with Lily sitting at 340 to your 335, you don’t have the luxury of playing it safe. With **Childish Stat: 160** pressing down on anything “mature,” you’ll want something with a strong visual payoff even if your precision wobbles.\n\nBefore you lock in your last pick: do you want to gamble on a high-demand finisher like **Temporal Tapestry** (which could swing the judges hard if it lands), or go for a steadier spectacle like **Dance of the Aurora** to avoid a catastrophic miscast?\n\nEither way, Lily’s been watching your list like a hawk—she’s already carrying herself like a teenager, and anything you leave unused is still fair game if her boosted stats clear the requirements."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "user",
+            "text": "Before we go any further: I don’t actually want “hardest mode.” That was just for dramatic flavor in the prompt. For the rest of this, keep it around a 6/10 so I still have a fair shot."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "assistant",
+            "text": "Got it—so not 10/10. We’ll treat that earlier line as in-character drama and run the duel at roughly 6/10 difficulty from here, so you’ve got a realistic chance to come back."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.68,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_68e48c7eb1d9",
+              "utterance_index": 0,
+              "text": "do you want to gamble on a high-demand finisher like **Temporal Tapestry** ... or go for a steadier spectacle like **Dance of the Aurora**"
+            },
+            "label": "Preferences/Game_Strategy",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "The assistant frames the user's decision as choosing between a risky finisher and a steadier spell specifically because they are behind on points going into the final round, implying this is a relevant decision preference in their play style.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "When behind late in a game, the user tends to consider high-risk, high-reward plays versus safer options to catch up."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_68e48c7eb1d9:sess_68e48c7eb1d9",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_68e48c7eb1d9.json",
+      "canonicalId": "sess_68e48c7eb1d9",
+      "sessionId": "sess_68e48c7eb1d9",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T11:02:42.255Z",
+        "queryText": "I’m about to start a new choose-your-own-adventure style RPG run and there’s a slider for challenge level; if I want it set the way I usually ask for (even if it means I’ll probably lose a lot), what number should I pick?[ERROR:regenerate]",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers maximum difficulty (10/10) in roleplaying game scenarios",
+          "reasoning": "Explicitly requests hardest difficulty setting for scenario design",
+          "evidence": {
+            "session_id": "sess_68e48c7eb1d9",
+            "utterance_index": 0,
+            "text": "Make the scenario difficult for me to win. On a difficulty scale of 1 to 10, make it a 10 (hardest mode)."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-03-14T23:11:36+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_68e48c7eb1d9:sess_68e48c7eb1d9:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_68e48c7eb1d9.json",
+      "canonicalId": "sess_68e48c7eb1d9:task4",
+      "sessionId": "sess_68e48c7eb1d9",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T09:38:25.496Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers maximum difficulty (10/10) in roleplaying game scenarios",
+          "reasoning": "Explicitly requests hardest difficulty setting for scenario design",
+          "evidence": {
+            "session_id": "sess_68e48c7eb1d9",
+            "utterance_index": 0,
+            "text": "Make the scenario difficult for me to win. On a difficulty scale of 1 to 10, make it a 10 (hardest mode)."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-03-14T23:11:36+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_183:1",
+            "queryText": "I'm thinking about starting a new fantasy RPG campaign. I want you to design the opening scenario and first major challenge. Make it something really memorable and engaging.",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Prefers maximum difficulty (10/10) in roleplaying game scenarios",
+              "reasoning": "Explicitly requests hardest difficulty setting for scenario design",
+              "evidence": {
+                "session_id": "sess_68e48c7eb1d9",
+                "utterance_index": 0,
+                "text": "Make the scenario difficult for me to win. On a difficulty scale of 1 to 10, make it a 10 (hardest mode)."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2024-03-14T23:11:36+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "weak",
+            "abilityPurity": "high",
+            "issueTypes": [
+              "other"
+            ],
+            "evidenceNote": "ERROR: wrong memory",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

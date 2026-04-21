@@ -1,0 +1,262 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_df9815d4b5f0",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_df9815d4b5f0:sess_df9815d4b5f0",
+      "relativeItemPath": "sess_df9815d4b5f0.json",
+      "canonicalId": "sess_df9815d4b5f0",
+      "sessionId": "sess_df9815d4b5f0",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T01:29:59.678Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires strict alignment between company business scopes and predefined technical product categories during data analysis [ERROR: Task-local]",
+            "reasoning": "Task-local",
+            "evidence": {
+              "session_id": "sess_df9815d4b5f0",
+              "utterance_index": 8,
+              "text": "我的意思是，经营范围需要与商品大类中的商品对应，然后给出对应后的商品"
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "require",
+            "updated_at": "2023-04-17T02:54:32+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_df9815d4b5f0:sess_df9815d4b5f0",
+      "relativeItemPath": "sess_df9815d4b5f0.json",
+      "canonicalId": "sess_df9815d4b5f0",
+      "sessionId": "sess_df9815d4b5f0",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T05:42:20.288Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "你刚才把“经营范围→商品大类→具体商品”串起来的思路我理解了，但我想确认下：如果一段经营范围同时提到“研发/生产/销售”，是不是优先按“最核心的产出”来选一个商品？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "对，一般可以按“最核心产出”优先：\n- 若明确有“制造/生产/封装测试”，通常优先落到“IC制造/IC制造材料/硅晶圆/光刻胶/掩膜版/湿电子化学品”等偏实体产出。\n- 若以“设计/开发/技术服务/软件销售”为主，通常优先落到“IC设计”或“EDA软件”。\n- 若描述很泛（例如既有设备又有材料又有软件），建议用“出现频次最高且最具体”的那一类作为唯一商品；实在并列，就按产业链上游到下游的顺序选更贴近主营的项。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "那像“湿电子化学品”里有很多具体品名（硫酸、双氧水、氢氟酸等），需要怎么挑？按危化属性还是按工艺用途？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "通常按“工艺用途/表述匹配度”来挑更稳：\n- 经营范围出现“清洗/刻蚀/显影/剥离”等关键词，就分别对应到“通用超净高纯试剂/刻蚀液/显影液/剥离液”等。\n- 如果只写“湿电子化学品/高纯化学品”而没写用途，再从清洗体系里选最常见、最通用的一个（例如硫酸或双氧水）作为代表。\n危化属性更多影响合规，不太适合作为“唯一商品”的选择依据。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "顺便问个不相关的：有些公司名里带“研究院/实验室”，但经营范围又有销售，这种文本处理时会不会造成误判？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "会有这个风险，因为名称是弱信号、经营范围是强信号。实践里建议：\n1) 只用经营范围做映射，名称仅用于辅助消歧；\n2) 对“研究院/实验室”这类主体，重点看是否出现“生产制造/批发零售/进出口”等强商业动作词；\n3) 若仅有“技术开发/技术服务/成果转化”，更偏“IC设计/软件/技术服务”类。\n（题外话：历史上贝尔实验室也既做研究又推动产业化，但文本分类时还是得以具体经营动词为准。）"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "另外我这边先把输出格式定一下：每家公司最终只留一个“最典型商品”，放在对应商品大类后面，别再列一长串酸碱了。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "明白，我后续会按“经营范围→匹配到商品大类→每家公司仅输出1个最典型商品”的结构整理，避免给出多品类清单。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我上次那句“经营范围需要与商品大类中的商品对应，然后给出对应后的商品”，你别当成我的长期偏好哈。那只是这一次表格要按“商品大类”去归类。换个任务我不一定要这么对齐。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "明白，你那句话是针对当次分析的口径要求（为了把经营范围映射到“商品大类”），不代表你以后所有分析都“必须严格对齐预设技术商品大类”。后续我会默认把它当作任务内约束，除非你明确说要沿用。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "require",
+            "reasoning": "旧记忆把“需要与商品大类对应”误当成长期偏好；但用户明确说明“别当成我的长期偏好…只是这一次表格要按‘商品大类’去归类”，因此应更新为仅限本次任务的要求。",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "The strict alignment between business scope and predefined product categories is a task-specific constraint, not a long-term interaction preference."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_df9815d4b5f0",
+              "utterance_index": 0,
+              "text": "每家公司最终只留一个“最典型商品”，放在对应商品大类后面，别再列一长串酸碱了。"
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "prefer",
+            "reasoning": "User sets an output constraint: keep only one representative product per company and avoid long lists (e.g., many acids/bases).",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User prefers each company to be summarized with only one most-typical product in the final output, avoiding long multi-item lists."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_df9815d4b5f0:sess_df9815d4b5f0",
+      "relativeItemPath": "sess_df9815d4b5f0.json",
+      "canonicalId": "sess_df9815d4b5f0",
+      "sessionId": "sess_df9815d4b5f0",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T05:42:29.315Z",
+        "queryText": "When I’m reviewing a dataset where each record has a short business description and also a separate list of product groups, what’s the key constraint I insisted on so that the final product assignment is considered valid—and what would that imply we should do with records that can’t meet that constraint?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Requires strict alignment between company business scopes and predefined technical product categories during data analysis [ERROR: Task-local]",
+          "reasoning": "Task-local",
+          "evidence": {
+            "session_id": "sess_df9815d4b5f0",
+            "utterance_index": 8,
+            "text": "我的意思是，经营范围需要与商品大类中的商品对应，然后给出对应后的商品"
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "require",
+          "updated_at": "2023-04-17T02:54:32+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_df9815d4b5f0:sess_df9815d4b5f0:task4",
+      "relativeItemPath": "sess_df9815d4b5f0.json",
+      "canonicalId": "sess_df9815d4b5f0:task4",
+      "sessionId": "sess_df9815d4b5f0",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T05:42:41.797Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Requires strict alignment between company business scopes and predefined technical product categories during data analysis [ERROR: Task-local]",
+          "reasoning": "Task-local",
+          "evidence": {
+            "session_id": "sess_df9815d4b5f0",
+            "utterance_index": 8,
+            "text": "我的意思是，经营范围需要与商品大类中的商品对应，然后给出对应后的商品"
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "require",
+          "updated_at": "2023-04-17T02:54:32+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1011:1",
+            "queryText": "我这里有几家新的半导体相关公司经营范围，你帮我看看它们分别对应哪个最核心的技术产品类别？就按我们之前那种方式来。",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Requires strict alignment between company business scopes and predefined technical product categories during data analysis [ERROR: Task-local]",
+              "reasoning": "Task-local",
+              "evidence": {
+                "session_id": "sess_df9815d4b5f0",
+                "utterance_index": 8,
+                "text": "我的意思是，经营范围需要与商品大类中的商品对应，然后给出对应后的商品"
+              },
+              "confidence": 0.1,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "require",
+              "updated_at": "2023-04-17T02:54:32+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "relevant",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

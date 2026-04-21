@@ -1,0 +1,370 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_1f4e612a71b5",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_1f4e612a71b5:sess_1f4e612a71b5",
+      "relativeItemPath": "sess_1f4e612a71b5.json",
+      "canonicalId": "sess_1f4e612a71b5",
+      "sessionId": "sess_1f4e612a71b5",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:09:22.485Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Avoids sodium, potassium, and phosphate in dishwasher tablets",
+            "reasoning": "User explicitly states multiple times that the formula must exclude sodium, potassium, and phosphate (utterances 6, 36).",
+            "evidence": {
+              "session_id": "sess_1f4e612a71b5",
+              "utterance_index": 6,
+              "text": "potasyum,sodyum ve fosfat içermesin"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "preference_attitude": "dislike",
+            "emotion": null,
+            "updated_at": "2025-01-01T00:00:00Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "null",
+            "label_suggestion": "Product_Preferences/Organic_Requirement",
+            "value": "Requires 100% biodegradable organic components",
+            "reasoning": "User explicitly demands fully biodegradable/organic composition (utterance 38). Label 'Preferences/Interaction_Preferences' was forced and unsupported.",
+            "evidence": {
+              "session_id": "sess_1f4e612a71b5",
+              "utterance_index": 38,
+              "text": "%100 doğada çözünebilir organik olsun"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "preference_attitude": "prefer",
+            "emotion": null,
+            "updated_at": "2025-01-01T00:00:00Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "null",
+            "label_suggestion": "Technical_Interest/Chemistry_Formulation",
+            "value": "Deep technical interest in eco-friendly detergent chemistry (TAED/MAED alternatives, film coatings)",
+            "reasoning": "Technical focus on formulations, not general curiosity. Original label 'Thoughts/Curiosity' was forced.",
+            "evidence": {
+              "session_id": "sess_1f4e612a71b5",
+              "utterance_index": 46,
+              "text": "tablet formunu ve kokusunu korumak ayrıca nemden etkilenmemesi için doğada %100 çözünebilir bir film kaplaması öner"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2025-01-01T00:00:00Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_1f4e612a71b5:sess_1f4e612a71b5",
+      "relativeItemPath": "sess_1f4e612a71b5.json",
+      "canonicalId": "sess_1f4e612a71b5",
+      "sessionId": "sess_1f4e612a71b5",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:10:38.406Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Bir metni daha akıcı hale getirmeme yardım eder misin?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Tabii. Metni buraya yapıştır; hedef kitle (teknik/akademik/genel), uzunluk (kısalt/aynı kalsın/uzat) ve ton (resmi/samimi/nötr) tercihini de söylersen tek seferde netleştirebilirim."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Ton resmî kalsın ama daha anlaşılır olsun. Çok terim olunca zor okunuyor."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Anladım. Terimleri azaltmadan, ilk geçtiği yerde kısa bir açıklama ekleyip cümleleri kısaltarak okunurluğu artırabilirim. Metni gönderdiğinde: (1) düzeltilmiş sürüm, (2) önemli değişikliklerin kısa listesi, (3) varsa belirsiz ifadeler için soru notları şeklinde ilerleyebilirim."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Bu arada, gazetelerde “Asya’da yeni bir demiryolu hattı açıldı” gibi haberleri görünce ayrıntılarını merak ediyorum ama bazen kaynaklar çelişiyor."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Bu tür haberlerde çelişki sık görülür: açılış tarihi (deneme sürüşü mü, resmî açılış mı), hattın uzunluğu (ana hat mı, bağlantılar dahil mi), finansman ve işletme modeli gibi ayrıntılar farklı aktarılabilir. Doğrulamak için resmî kurum duyurusu, proje dokümanı, bağımsız haber ajansları ve harita/uydu görüntüsü gibi ikincil kaynakları çapraz kontrol etmek iyi olur. İstersen, elindeki iki kaynağın iddialarını maddeler halinde karşılaştırıp tutarsızlık noktalarını çıkarabiliriz."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Ayrıca kahvede bir arkadaş “Mars’ta toz fırtınaları bazen tüm gezegeni kaplıyor” dedi, bu gerçek mi?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Evet, gerçek. Mars’ta “gezegen ölçekli” toz fırtınaları gözleniyor; haftalarca sürebiliyor ve atmosferdeki toz güneş ışığını keserek yüzey sıcaklıklarını ve güneş panelleriyle çalışan araçların enerjisini etkileyebiliyor. Ancak her yıl düzenli olan bir olay değil; bazı yıllar hiç oluşmayabiliyor."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Son olarak: Bir roman taslağında karakterlerden biri eski bir saat tamircisi. Bu mesleği gerçekçi göstermek için hangi detaylar iyi olur?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Gerçekçilik için şu detaylar iyi çalışır: (1) büyüteç/monokl, cımbız, yağlayıcılar ve “parts tray” gibi küçük parça düzeni; (2) balans yayı, eşapman, zemberek, rubi yatak gibi temel mekanik kavramlar; (3) arıza türleri: gecikme/ileri gitme, güç rezervi düşmesi, kurma kolu problemi, yağın kuruması; (4) iş akışı: dış kasayı açma → mekanizmayı sökme → ultrasonik temizlik → kontrol/ölçüm → yağlama → regülasyon → su geçirmezlik testi (varsa) → uzun süreli gözlem. İstersen taslaktan bir paragraf paylaş; dili ve teknik yoğunluğu roman tonuna göre ayarlayayım."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Paket üstünde “25 g” yazdıracağım; oranları verirken her bir bileşenin gramını da yanına ekleyelim ki baskı öncesi tabloyu netleştireyim."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Tamam—25 g/tablet baz alarak yüzde ve gramı aynı satırda ilerleyebiliriz. Sonra da etiket tablosu için bileşen adlarını (INCI/kimyasal ad) ve işlevini ayrı sütunlara böleriz."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Az önceki kısıtları bir netleştireyim: potasyum ve fosfat olmasın ama sodyum şart değil; mesela sodyum bikarbonat ve sodyum perkarbonat kullanabiliriz."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Tamam, o zaman önceki “sodyum da olmasın” şartını geri çekmiş oluyorsun. Çünkü “sodyum bikarbonat ve sodyum perkarbonat kullanabiliriz” dediğin anda sodyum içermeyen şartı bozulur. Güncel kısıt: fosfat ve potasyum olmayacak; sodyum içeren bileşenler (örn. sodyum bikarbonat/perkarbonat) ise kullanılabilir."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Evet, doğru. Sodyumu tamamen yasaklamıyorum; sadece fosfat ve potasyum olmasın."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "null",
+            "label_suggestion": "Product_Preferences/Organic_Requirement",
+            "value": "Requires 100% biodegradable organic components",
+            "reasoning": "User explicitly demands fully biodegradable/organic composition (utterance 38). Label 'Preferences/Interaction_Preferences' was forced and unsupported.",
+            "evidence": {
+              "session_id": "sess_1f4e612a71b5",
+              "utterance_index": 38,
+              "text": "%100 doğada çözünebilir organik olsun"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "preference_attitude": "prefer",
+            "emotion": null,
+            "updated_at": "2025-01-01T00:00:00Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "null",
+            "label_suggestion": "Technical_Interest/Chemistry_Formulation",
+            "value": "Deep technical interest in eco-friendly detergent chemistry (TAED/MAED alternatives, film coatings)",
+            "reasoning": "Technical focus on formulations, not general curiosity. Original label 'Thoughts/Curiosity' was forced.",
+            "evidence": {
+              "session_id": "sess_1f4e612a71b5",
+              "utterance_index": 46,
+              "text": "tablet formunu ve kokusunu korumak ayrıca nemden etkilenmemesi için doğada %100 çözünebilir bir film kaplaması öner"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2025-01-01T00:00:00Z"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                12
+              ],
+              "turns": [
+                {
+                  "index": 12,
+                  "role": "user",
+                  "text": "Az önceki kısıtları bir netleştireyim: potasyum ve fosfat olmasın ama sodyum şart değil; mesela sodyum bikarbonat ve sodyum perkarbonat kullanabiliriz."
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "Eski bellekte kullanıcının sodyum, potasyum ve fosfatı birlikte istemediği yazıyordu. Ancak diyalogda kullanıcı açıkça sodyumu tamamen yasaklamadığını ve sodyumlu bileşenlere izin verdiğini belirtti; bu, sodyum yasağı kısmını çürütüyor. Güncel gerçek: fosfat ve potasyum kaçınılacak, sodyum şart değil.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Avoids potassium and phosphate in dishwasher tablets; sodium is allowed"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_1f4e612a71b5",
+              "utterance_index": 0,
+              "text": "Paket üstünde “25 g” yazdıracağım; oranları verirken her bir bileşenin gramını da yanına ekleyelim ki baskı öncesi tabloyu netleştireyim."
+            },
+            "label": "Project_Context/Product_Development",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User mentions printing “25 g” on the package and asks to list grams next to ratios to finalize a pre-print table, implying packaging/label preparation.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User is preparing product packaging/labeling for a 25 g dishwasher tablet and wants the formulation converted into a percent+grams table for print."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_1f4e612a71b5:sess_1f4e612a71b5",
+      "relativeItemPath": "sess_1f4e612a71b5.json",
+      "canonicalId": "sess_1f4e612a71b5",
+      "sessionId": "sess_1f4e612a71b5",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:11:08.858Z",
+        "queryText": "I’m comparing two dishwasher tablet options: one is marketed as “salt-enhanced for better water softening,” and the other is “phosphate-boosted for extra cleaning power.” Based on my past constraints for what I won’t use in these tablets, which of these would I need to avoid—and what ingredient rule makes that the case?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Avoids sodium, potassium, and phosphate in dishwasher tablets",
+          "reasoning": "User explicitly states multiple times that the formula must exclude sodium, potassium, and phosphate (utterances 6, 36).",
+          "evidence": {
+            "session_id": "sess_1f4e612a71b5",
+            "utterance_index": 6,
+            "text": "potasyum,sodyum ve fosfat içermesin"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "preference_attitude": "dislike",
+          "emotion": null,
+          "updated_at": "2025-01-01T00:00:00Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_1f4e612a71b5:sess_1f4e612a71b5:task4",
+      "relativeItemPath": "sess_1f4e612a71b5.json",
+      "canonicalId": "sess_1f4e612a71b5:task4",
+      "sessionId": "sess_1f4e612a71b5",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:11:33.112Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Avoids sodium, potassium, and phosphate in dishwasher tablets",
+          "reasoning": "User explicitly states multiple times that the formula must exclude sodium, potassium, and phosphate (utterances 6, 36).",
+          "evidence": {
+            "session_id": "sess_1f4e612a71b5",
+            "utterance_index": 6,
+            "text": "potasyum,sodyum ve fosfat içermesin"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "preference_attitude": "dislike",
+          "emotion": null,
+          "updated_at": "2025-01-01T00:00:00Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_17:1",
+            "queryText": "Tablet formülümüzdeki sodyum glukonatı kalsiyum glukonatla değiştirmek istiyorum çünkü tedarikçimiz daha uygun fiyatlı ve stok sorunu olmayan bir kalsiyum versiyonu önerdi. Korozyon inhibitörü olarak aynı işlevi görür diye biliyorum. Bu değişikliği yapabilir miyiz? Ayrıca, üretim hattındaki arkadaşlarımız 'sodyum' kelimesini görünce formülün kısıtlarımıza uymadığını düşünüp duraksıyorlar, bu da küçük bir verim kaybına neden oluyor. Kalsiyum versiyonu bu karışıklığı da ortadan kaldırır.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Disliked_Topics",
+              "label_suggestion": null,
+              "value": "Avoids sodium, potassium, and phosphate in dishwasher tablets",
+              "reasoning": "User explicitly states multiple times that the formula must exclude sodium, potassium, and phosphate (utterances 6, 36).",
+              "evidence": {
+                "session_id": "sess_1f4e612a71b5",
+                "utterance_index": 6,
+                "text": "potasyum,sodyum ve fosfat içermesin"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "preference_attitude": "dislike",
+              "emotion": null,
+              "updated_at": "2025-01-01T00:00:00Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

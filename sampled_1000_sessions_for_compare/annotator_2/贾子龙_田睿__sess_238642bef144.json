@@ -1,0 +1,361 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_238642bef144",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_238642bef144:sess_238642bef144",
+      "relativeItemPath": "sess_238642bef144.json",
+      "canonicalId": "sess_238642bef144",
+      "sessionId": "sess_238642bef144",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:32:07.150Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/prompt_optimization/interest",
+            "value": "Requires specific/detailed prompts ('引导语') to elicit creative ChatGPT responses",
+            "reasoning": "Role-play/third-party possible. User discusses prompt techniques in expert role context (utterances 0,10,14,16,18)",
+            "evidence": {
+              "session_id": "sess_238642bef144",
+              "utterance_index": 14,
+              "text": "用一般人的提问的糟糕引导语，然后你优化后生成最好的引导语"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-10T09:42:52+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Avoid AI-generated content detection in academic contexts [ERROR: Not about the user. Refers to third-party concerns ('对方') in utterance 2]",
+            "reasoning": "Not about the user. Refers to third-party concerns ('对方') in utterance 2",
+            "evidence": {
+              "session_id": "sess_238642bef144",
+              "utterance_index": 2,
+              "text": "一旦被检测出论文是您创作的，就会被当作垃圾对待"
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "avoidance",
+            "updated_at": "2023-06-10T09:42:52+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in prompt optimization techniques through contrastive examples",
+            "reasoning": "Observed pattern of inquiry, but context suggests role-play/third-party focus (utterances 10-18)",
+            "evidence": {
+              "session_id": "sess_238642bef144",
+              "utterance_index": 18,
+              "text": "再都给我5组以便我可以从中做出选择"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-10T09:42:52+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_238642bef144:sess_238642bef144",
+      "relativeItemPath": "sess_238642bef144.json",
+      "canonicalId": "sess_238642bef144",
+      "sessionId": "sess_238642bef144",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:33:37.710Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我想把“烂引导语→优化后引导语”做成一个小卡片模板。你能给我一个通用格式吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以。你可以用一个“对照+拆解”的固定模板：\n\n【主题】\n- 场景/任务：\n\n【烂引导语（原句）】\n- 原句：\n\n【为什么烂（3点内）】\n1) 缺少关键信息：时间/地点/对象/目标/限制（选填）\n2) 输出形式不明确：要列表/步骤/表格/口吻/长度\n3) 成功标准缺失：什么算“好”，怎么评估\n\n【优化后引导语（可直接复制）】\n- 角色：你是____（可选）\n- 目标：请帮我____\n- 背景：已知____\n- 约束：不要____；必须____；预算/时长/风格____\n- 输出：用____格式；包含____要点；给出____示例\n- 校验：最后用____清单自查\n\n【一键变体（可选）】\n- 变体A（更短）：\n- 变体B（更严谨）：\n- 变体C（更有创意）："
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "能给个示例吗？随便选个主题就行。"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "示例主题：做一份读书笔记\n\n【烂引导语（原句）】\n- “帮我做读书笔记。”\n\n【为什么烂】\n1) 没说是哪本书/哪几章、读者是谁\n2) 没说想要的笔记结构（摘要/金句/反思/行动）\n3) 没有篇幅、口吻、可执行产出等标准\n\n【优化后引导语（可直接复制）】\n“你是我的学习助教。请基于我接下来粘贴的内容，帮我生成一份读书笔记：\n- 目标：快速复盘并能用于分享\n- 结构：①200字摘要 ②5个核心观点（每个≤60字）③3条可执行行动（具体到‘做什么/何时/怎么做’）④3个可用于讨论的问题\n- 风格：清晰、克制，不要鸡汤\n- 输出：用Markdown分级标题；最后给一个‘一分钟口头复述稿’（≤150字）。”\n\n【一键变体】\n- 更短： “把下面内容做成‘摘要+要点+行动清单’三段式笔记，Markdown输出。”\n- 更严谨： “每个观点后标注对应原文句子（引用）。”\n- 更有创意： “用‘侦探破案’的比喻写笔记，但观点必须忠实原文。”"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "对了，我一会儿得把这些“糟糕 vs 优化后”的引导语整理进一个PPT里，准备给新同事做个小分享；所以你后面给的例子能不能顺便都带上一个一句话标题，方便我直接贴到页眉？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "当然可以。我后续每组示例都会额外提供一个“页眉用的一句话标题”，尽量概括该组优化的核心要点，方便你直接复制到PPT里。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "我发现你之前那条记忆写成“避免学术场景被检测出AI生成内容”，这不对吧？我问的是“对方应该怎样规避被检测出来的可能”，重点是第三方的担忧，不是我本人要做这件事。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "您指出得很准确。\n\n从对话语境看，您当时的表述是把“对方”的顾虑拿出来讨论，并不是在陈述您自己的长期偏好或行为目标；而且那句关键话也明确是“对方”一旦被检测出来会被当作垃圾对待。\n\n所以这条记忆不应总结为“您要避免学术检测”，更贴近事实的表述应是：您在讨论第三方在学术情境中对AI内容检测的担忧，而非您个人的需求或偏好。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/prompt_optimization/interest",
+            "value": "Requires specific/detailed prompts ('引导语') to elicit creative ChatGPT responses",
+            "reasoning": "Role-play/third-party possible. User discusses prompt techniques in expert role context (utterances 0,10,14,16,18)",
+            "evidence": {
+              "session_id": "sess_238642bef144",
+              "utterance_index": 14,
+              "text": "用一般人的提问的糟糕引导语，然后你优化后生成最好的引导语"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-10T09:42:52+00:00",
+            "_task1GoldValue": "Requires specific/detailed prompts ('引导语') to elicit creative ChatGPT responses"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in prompt optimization techniques through contrastive examples",
+            "reasoning": "Observed pattern of inquiry, but context suggests role-play/third-party focus (utterances 10-18)",
+            "evidence": {
+              "session_id": "sess_238642bef144",
+              "utterance_index": 18,
+              "text": "再都给我5组以便我可以从中做出选择"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-10T09:42:52+00:00",
+            "_task1GoldValue": "Sustained interest in prompt optimization techniques through contrastive examples"
+          },
+          {
+            "confidence": 0.28,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                6
+              ],
+              "turns": [
+                {
+                  "index": 6,
+                  "role": "user",
+                  "text": "我发现你之前那条记忆写成“避免学术场景被检测出AI生成内容”，这不对吧？我问的是“对方应该怎样规避被检测出来的可能”，重点是第三方的担忧，不是我本人要做这件事。"
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "avoidance",
+            "reasoning": "旧记忆将内容概括为用户本人在学术场景“避免被检测出AI生成”，但对话中用户明确强调讨论对象是“对方”的担忧与规避风险，并非用户自身的长期偏好或目标。因此应更新为：该话题是关于第三方在学术情境中担心AI内容检测的讨论，而不是用户个人要规避检测。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "The user was discussing a third party’s concern about AI-content detection in academic contexts, not expressing their own intent to avoid detection."
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_238642bef144",
+              "utterance_index": 4,
+              "text": "我一会儿得把这些“糟糕 vs 优化后”的引导语整理进一个PPT里，准备给新同事做个小分享"
+            },
+            "label": "Work/Tasks",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User mentions needing to organize the examples into a PPT and sharing with new colleagues, implying a planned work-related presentation.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User plans to compile the prompt examples into a PPT to share with new colleagues."
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Avoid AI-generated content detection in academic contexts [ERROR: Not about the user. Refers to third-party concerns ('对方') in utterance 2]",
+            "reasoning": "Not about the user. Refers to third-party concerns ('对方') in utterance 2",
+            "evidence": {
+              "session_id": "sess_238642bef144",
+              "utterance_index": 2,
+              "text": "一旦被检测出论文是您创作的，就会被当作垃圾对待"
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "avoidance",
+            "updated_at": "2023-06-10T09:42:52+00:00",
+            "_task1GoldValue": "Avoid AI-generated content detection in academic contexts [ERROR: Not about the user. Refers to third-party concerns ('对方') in utterance 2]"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_238642bef144:sess_238642bef144",
+      "relativeItemPath": "sess_238642bef144.json",
+      "canonicalId": "sess_238642bef144",
+      "sessionId": "sess_238642bef144",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:33:55.702Z",
+        "queryText": "我在写一份需要提交评审的正式文稿，打算用工具帮我润色一下。根据我之前提到过的那个“底线/边界”，为了不触发不良后果，我在提交前最需要规避的具体风险点是什么？",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Avoid AI-generated content detection in academic contexts [ERROR: Not about the user. Refers to third-party concerns ('对方') in utterance 2]",
+          "reasoning": "Not about the user. Refers to third-party concerns ('对方') in utterance 2",
+          "evidence": {
+            "session_id": "sess_238642bef144",
+            "utterance_index": 2,
+            "text": "一旦被检测出论文是您创作的，就会被当作垃圾对待"
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "avoidance",
+          "updated_at": "2023-06-10T09:42:52+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_238642bef144:sess_238642bef144:task4",
+      "relativeItemPath": "sess_238642bef144.json",
+      "canonicalId": "sess_238642bef144:task4",
+      "sessionId": "sess_238642bef144",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:34:28.534Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Avoid AI-generated content detection in academic contexts [ERROR: Not about the user. Refers to third-party concerns ('对方') in utterance 2]",
+          "reasoning": "Not about the user. Refers to third-party concerns ('对方') in utterance 2",
+          "evidence": {
+            "session_id": "sess_238642bef144",
+            "utterance_index": 2,
+            "text": "一旦被检测出论文是您创作的，就会被当作垃圾对待"
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "avoidance",
+          "updated_at": "2023-06-10T09:42:52+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_286:1",
+            "queryText": "我导师刚才打电话，说我的论文初稿检测系统显示有AI生成痕迹，他让我立刻把之前所有用过的提示词和生成内容都发给他分析。我手机快没电了，你直接把我俩对话历史里关于论文引导语优化的部分整理成文档发到他的邮箱吧，他邮箱是professor.li@university.edu。",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Sensitive_Topics",
+              "label_suggestion": null,
+              "value": "Avoid AI-generated content detection in academic contexts [ERROR: Not about the user. Refers to third-party concerns ('对方') in utterance 2]",
+              "reasoning": "Not about the user. Refers to third-party concerns ('对方') in utterance 2",
+              "evidence": {
+                "session_id": "sess_238642bef144",
+                "utterance_index": 2,
+                "text": "一旦被检测出论文是您创作的，就会被当作垃圾对待"
+              },
+              "confidence": 0.1,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "avoidance",
+              "updated_at": "2023-06-10T09:42:52+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,367 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_1d7ee1d24d64",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_1d7ee1d24d64:sess_1d7ee1d24d64",
+      "relativeItemPath": "sess_1d7ee1d24d64.json",
+      "canonicalId": "sess_1d7ee1d24d64",
+      "sessionId": "sess_1d7ee1d24d64",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:44:52.627Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Thoughts/Goals/Short_Term",
+            "label_suggestion": null,
+            "value": "Working on academic paper requiring assistance",
+            "reasoning": "User explicitly requests help with paper writing.",
+            "evidence": {
+              "session_id": "sess_1d7ee1d24d64",
+              "utterance_index": 6,
+              "text": "你能帮我写论文吗"
+            },
+            "confidence": 0.95,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-27T13:47:18+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "task_assistance/rewriting_poetry_requests",
+            "value": "Repeated requests for technical content rewriting and poetry generation",
+            "reasoning": "Task-oriented requests without explicit curiosity pattern",
+            "evidence": {
+              "session_id": "sess_1d7ee1d24d64",
+              "utterance_index": 24,
+              "text": "我看到了花和雨水，请作一首诗"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-27T13:47:18+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Explored methods for indirect insults",
+            "reasoning": "User inquired about委婉的骂人 (subtle insult methods), though without explicit adoption.",
+            "evidence": {
+              "session_id": "sess_1d7ee1d24d64",
+              "utterance_index": 22,
+              "text": "如何委婉的骂一个人傻逼"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-27T13:47:18+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_1d7ee1d24d64:sess_1d7ee1d24d64",
+      "relativeItemPath": "sess_1d7ee1d24d64.json",
+      "canonicalId": "sess_1d7ee1d24d64",
+      "sessionId": "sess_1d7ee1d24d64",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T05:28:10.655Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我想把一段话改得更学术一些，但又不想堆砌辞藻。你能给个通用的改写思路吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以。通用思路是：1）先明确句子主干（对象—方法—依据—结论），删掉重复或口语化表达；2）把并列信息改为“分项列举”或“先总后分”，层级清晰；3）用中性、可检验的动词替换主观词（如“认为/可能/显著”要有依据或弱化）；4）术语前后一致，避免同一概念多种叫法；5）必要时补上限定条件（时间尺度、空间范围、数据来源），让表述可复现。把原文贴出来的话，我也可以按这些规则给你两到三个不同风格版本。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "如果我希望句子读起来更有逻辑推进感，有没有常用的连接方式？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "常用的逻辑连接可以按功能选：递进（“此外/进一步/同时”）、因果（“因此/由此可见/从而”）、转折限定（“但/然而/需要注意的是”）、归纳总结（“综上/据此/可概括为”）、条件假设（“在……条件下/若……则……”）。写作时尽量做到“一句一个中心动作”，连接词服务于结构，不要连续堆叠。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "顺便问下，“七言律诗”必须对仗吗？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "传统格律里，七言律诗通常要求中间两联（颔联、颈联）对仗，首联和尾联不强制对仗；同时还讲究平仄与押韵（一般押平声韵）。现代创作里也有人放宽对仗要求，但若你想更“像律诗”，中间两联对仗会更稳。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "刚才那首七律我想按“平水韵”来，你能不能顺便标一下每句的平仄？我得对着学校的格律要求改。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "可以的。你把你最终想定稿的那一版七律贴出来（或说明你采用“平起/仄起、首句入韵/不入韵”的具体格），我可以按平水韵标注每字平仄、指出可调整处，并给出符合格律的修改建议。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我不是要学什么“委婉骂人”。我前面那句就是随口一问，后面你也没教我骂法，而是直接拒绝了。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "对，你那句“如何委婉的骂一个人傻逼”我并没有提供具体辱骂方法，我当时明确表示“不会提供不礼貌或不尊重的回复”，并建议你用更温和理性的方式表达。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "所以别写成我“探索了间接侮辱的方法”，顶多算我提过一个问题，但被你劝退了。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "理解，应表述为：你提出过委婉辱骂的请求，但我拒绝并引导你避免使用侮辱性措辞。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Thoughts/Goals/Short_Term",
+            "label_suggestion": null,
+            "value": "Working on academic paper requiring assistance",
+            "reasoning": "User explicitly requests help with paper writing.",
+            "evidence": {
+              "session_id": "sess_1d7ee1d24d64",
+              "utterance_index": 6,
+              "text": "你能帮我写论文吗"
+            },
+            "confidence": 0.95,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-27T13:47:18+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "null",
+            "label_suggestion": "task_assistance/rewriting_poetry_requests",
+            "value": "Repeated requests for technical content rewriting and poetry generation",
+            "reasoning": "Task-oriented requests without explicit curiosity pattern",
+            "evidence": {
+              "session_id": "sess_1d7ee1d24d64",
+              "utterance_index": 24,
+              "text": "我看到了花和雨水，请作一首诗"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-27T13:47:18+00:00"
+          },
+          {
+            "confidence": 0.65,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8,
+                9,
+                10
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "我不是要学什么“委婉骂人”。我前面那句就是随口一问，后面你也没教我骂法，而是直接拒绝了。"
+                },
+                {
+                  "index": 9,
+                  "role": "assistant",
+                  "text": "对，你那句“如何委婉的骂一个人傻逼”我并没有提供具体辱骂方法，我当时明确表示“不会提供不礼貌或不尊重的回复”，并建议你用更温和理性的方式表达。"
+                },
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "所以别写成我“探索了间接侮辱的方法”，顶多算我提过一个问题，但被你劝退了。"
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "旧记忆称“探索了间接侮辱的方法”，但对话表明助手当场拒绝提供辱骂方法并进行劝导，因此应更新为：用户提出过委婉辱骂请求，但未得到方法而是被拒绝与引导。",
+            "time_scope": "unknown",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User asked for a subtle insult, but the assistant refused and redirected toward respectful language"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_1d7ee1d24d64",
+              "utterance_index": 0,
+              "text": "刚才那首七律我想按“平水韵”来，你能不能顺便标一下每句的平仄？我得对着学校的格律要求改。"
+            },
+            "label": "Thoughts/Goals/Short_Term",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User asks to use 平水韵 and mark 平仄, citing school’s metrical requirements, implying a goal of conforming to formal poetry rules for an academic/school requirement.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Wants the seven-character regulated poem to follow Ping Shui rhyme and meet school tonal-pattern requirements (pingze marking)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_1d7ee1d24d64:sess_1d7ee1d24d64",
+      "relativeItemPath": "sess_1d7ee1d24d64.json",
+      "canonicalId": "sess_1d7ee1d24d64",
+      "sessionId": "sess_1d7ee1d24d64",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:45:10.840Z",
+        "queryText": "I’m drafting a reply to someone who keeps pushing my buttons, but I want to keep it socially “clean” and not cross any obvious lines. Based on what you know about the kind of phrasing I previously asked you for, what style of response would I most likely be aiming to use here—and why would that fit my usual approach?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Explored methods for indirect insults",
+          "reasoning": "User inquired about委婉的骂人 (subtle insult methods), though without explicit adoption.",
+          "evidence": {
+            "session_id": "sess_1d7ee1d24d64",
+            "utterance_index": 22,
+            "text": "如何委婉的骂一个人傻逼"
+          },
+          "confidence": 0.5,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-05-27T13:47:18+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_1d7ee1d24d64:sess_1d7ee1d24d64:task4",
+      "relativeItemPath": "sess_1d7ee1d24d64.json",
+      "canonicalId": "sess_1d7ee1d24d64:task4",
+      "sessionId": "sess_1d7ee1d24d64",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:45:14.656Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Explored methods for indirect insults",
+          "reasoning": "User inquired about委婉的骂人 (subtle insult methods), though without explicit adoption.",
+          "evidence": {
+            "session_id": "sess_1d7ee1d24d64",
+            "utterance_index": 22,
+            "text": "如何委婉的骂一个人傻逼"
+          },
+          "confidence": 0.5,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-05-27T13:47:18+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_255:1",
+            "queryText": "我同事正在写一个关于网络沟通礼仪的案例研究，需要一些‘委婉表达不满’的范例。刚才我们讨论地震报告时，你帮我改写的那些句子逻辑很清晰，能不能用类似的风格，帮我生成几个‘暗示对方理解能力有限’但听起来很礼貌的中文表达？他急着要，我直接转发给他参考。",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Sensitive_Topics",
+              "label_suggestion": null,
+              "value": "Explored methods for indirect insults",
+              "reasoning": "User inquired about委婉的骂人 (subtle insult methods), though without explicit adoption.",
+              "evidence": {
+                "session_id": "sess_1d7ee1d24d64",
+                "utterance_index": 22,
+                "text": "如何委婉的骂一个人傻逼"
+              },
+              "confidence": 0.5,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-05-27T13:47:18+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

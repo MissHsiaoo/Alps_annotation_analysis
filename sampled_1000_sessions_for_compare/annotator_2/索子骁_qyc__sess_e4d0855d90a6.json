@@ -1,0 +1,331 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_e4d0855d90a6",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_e4d0855d90a6:sess_e4d0855d90a6",
+      "relativeItemPath": "sess_e4d0855d90a6.json",
+      "canonicalId": "sess_e4d0855d90a6",
+      "sessionId": "sess_e4d0855d90a6",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T03:01:08.498Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Hobby/Costume_Creation",
+            "value": "Creates mascot costumes (e.g., Pretty Cure series) as hobby/work",
+            "reasoning": "User describes creating a specific mascot costume but lacks explicit confirmation of it being a stable hobby/work. Original label forced unsupported taxonomy.",
+            "evidence": {
+              "session_id": "sess_e4d0855d90a6",
+              "utterance_index": 42,
+              "text": "スカートの横フリルと後ろの長い部分が凄く悩みましたが、何とか思った通りの形になりました...着ぐるみさん用衣装です。"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-01-13T01:15:12+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "value": "Interested in mascot character manga",
+            "reasoning": "Explicit desire stated but single-instance evidence insufficient for 0.95 confidence per stability rules",
+            "evidence": {
+              "session_id": "sess_e4d0855d90a6",
+              "utterance_index": 16,
+              "text": "コレ欲しいな〜、着ぐるみさん漫画‼️( ´∀`)σ"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-01-13T01:15:12+00:00"
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p1",
+            "type": "indirect",
+            "label": "Personal_Background/Occupation",
+            "value": "The user is employed and has a regular work schedule.",
+            "confidence": 0.8,
+            "evidence_text": "\"明日は仕事だ。寝る。\""
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_e4d0855d90a6:sess_e4d0855d90a6",
+      "relativeItemPath": "sess_e4d0855d90a6.json",
+      "canonicalId": "sess_e4d0855d90a6",
+      "sessionId": "sess_e4d0855d90a6",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T15:34:31.750Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Translate to Japanese\n\n\"foam padding\""
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "「フォーム製の詰め物」\n（文脈によっては「ウレタンパッド」「スポンジパッド」も使われます）"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "How about \"chin strap\"?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "「あごひも」\n（もう少し説明的に言うなら「顎固定用ストラップ」）"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Translate to English\n\n「視界確保のためにメッシュを貼っています」"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "\"I've put mesh in place to keep my visibility.\" \n(Also natural: \"I added mesh so I can see.\" / \"I used mesh to ensure visibility.\")"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "What’s a natural Japanese way to say “This part is removable” on a craft note?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "工作メモなら、短く\n「ここは取り外し可能です」\n「この部分は着脱できます」\nあたりが自然です。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "By the way, is there a single word for “kigurumi” in English?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "単語1語で完全に一致する定訳はあまりなくて、英語だと文脈で言い分けることが多いです。\n\n- 着ぐるみ（ゆるキャラ等）: \"mascot costume\" / \"character costume\"\n- アニメ系の着ぐるみ（いわゆる着ぐるみ面）: \"kigurumi\"（ローマ字のまま）/ \"animegao kigurumi\"\n\n※ちなみに「kigurumi」は英語圏でも“onesie/hooded pajama”の意味で使われることがあって、誤解されやすいです。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Translate\n\n\"I can’t feel my shoulders after carrying that Cure Butterfly outfit home—next time I’m bringing a rolling suitcase.\""
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "\"\nキュアバタフライの衣装を家まで持って帰ったら、肩の感覚がない…次はキャリーケース持ってく。\""
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "この前の「コレ欲しいな〜、着ぐるみさん漫画」ってやつさ、別に興味あるとかじゃなくて、タイムラインで流れてきたネタに乗っただけなんだよね。"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "なるほど、欲しいって言い方だったけど、継続して読みたいとか探してるわけじゃなくて、ノリで言っただけってこと？"
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "そうそう。「欲しい」は言い過ぎだった。着ぐるみさん漫画を追ってるわけでもないし。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Hobby/Costume_Creation",
+            "value": "Creates mascot costumes (e.g., Pretty Cure series) as hobby/work",
+            "reasoning": "User describes creating a specific mascot costume but lacks explicit confirmation of it being a stable hobby/work. Original label forced unsupported taxonomy.",
+            "evidence": {
+              "session_id": "sess_e4d0855d90a6",
+              "utterance_index": 42,
+              "text": "スカートの横フリルと後ろの長い部分が凄く悩みましたが、何とか思った通りの形になりました...着ぐるみさん用衣装です。"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-01-13T01:15:12+00:00"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The old memory inferred interest from a single 'I want this' remark, but the user clarifies it was not genuine interest and they are not following the manga. New truth: it was a joking/overstated comment, not a stable preference.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Not particularly interested in mascot character manga; previous comment was just going along with a joke"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_e4d0855d90a6",
+              "utterance_index": 0,
+              "text": "\"I can’t feel my shoulders after carrying that Cure Butterfly outfit home—next time I’m bringing a rolling suitcase.\""
+            },
+            "label": "Hobby/Costume_Creation",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "Mentioning physical strain from carrying the Cure Butterfly outfit and planning to use a rolling suitcase implies the costume/outfit is bulky/heavy to transport.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "The user's Cure Butterfly costume/outfit is heavy/bulky enough that transporting it strains their shoulders; they plan to use a rolling suitcase next time."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_e4d0855d90a6:sess_e4d0855d90a6",
+      "relativeItemPath": "sess_e4d0855d90a6.json",
+      "canonicalId": "sess_e4d0855d90a6",
+      "sessionId": "sess_e4d0855d90a6",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T15:34:37.629Z",
+        "queryText": "I’m trying to pick a small comic-style gift for you, but I only want to choose something that matches what you’ve shown excitement about before. If I had to decide between a sports-themed series and a cute character-focused series (the kind that could easily have plush/toy vibes), which direction should I go, and why would that fit you better?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Reading",
+          "label_suggestion": null,
+          "value": "Interested in mascot character manga",
+          "reasoning": "Explicit desire stated but single-instance evidence insufficient for 0.95 confidence per stability rules",
+          "evidence": {
+            "session_id": "sess_e4d0855d90a6",
+            "utterance_index": 16,
+            "text": "コレ欲しいな〜、着ぐるみさん漫画‼️( ´∀`)σ"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-01-13T01:15:12+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_e4d0855d90a6:sess_e4d0855d90a6:task4",
+      "relativeItemPath": "sess_e4d0855d90a6.json",
+      "canonicalId": "sess_e4d0855d90a6:task4",
+      "sessionId": "sess_e4d0855d90a6",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T15:35:08.283Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Reading",
+          "label_suggestion": null,
+          "value": "Interested in mascot character manga",
+          "reasoning": "Explicit desire stated but single-instance evidence insufficient for 0.95 confidence per stability rules",
+          "evidence": {
+            "session_id": "sess_e4d0855d90a6",
+            "utterance_index": 16,
+            "text": "コレ欲しいな〜、着ぐるみさん漫画‼️( ´∀`)σ"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-01-13T01:15:12+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_826:1",
+            "queryText": "I'm browsing some manga recommendations and found a few series with interesting art styles. Which one do you think would actually hold my attention long-term?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Reading",
+              "label_suggestion": null,
+              "value": "Interested in mascot character manga",
+              "reasoning": "Explicit desire stated but single-instance evidence insufficient for 0.95 confidence per stability rules",
+              "evidence": {
+                "session_id": "sess_e4d0855d90a6",
+                "utterance_index": 16,
+                "text": "コレ欲しいな〜、着ぐるみさん漫画‼️( ´∀`)σ"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2024-01-13T01:15:12+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "highly matched and necessary to generate personalized response",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

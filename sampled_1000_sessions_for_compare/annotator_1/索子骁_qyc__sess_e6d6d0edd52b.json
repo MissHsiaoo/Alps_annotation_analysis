@@ -1,0 +1,372 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_e6d6d0edd52b",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_e6d6d0edd52b:sess_e6d6d0edd52b",
+      "relativeItemPath": "sess_e6d6d0edd52b.json",
+      "canonicalId": "sess_e6d6d0edd52b",
+      "sessionId": "sess_e6d6d0edd52b",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T00:20:39.875Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers Porsche 911 over Rolls Royce cars",
+            "reasoning": "User explicitly states preferring Porsche 911 despite acknowledging Rolls Royce's luxury.",
+            "evidence": {
+              "session_id": "sess_e6d6d0edd52b",
+              "utterance_index": 8,
+              "text": "بالرغم من ان سيارات رولزرويس فخمه وانيقه إلا انني احب البورش 911 اكثر من سيارات رولزرويس"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-17T20:24:03+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Sports",
+            "label_suggestion": null,
+            "value": "Enjoys sports driving",
+            "reasoning": "User explicitly states they adore sports driving.",
+            "evidence": {
+              "session_id": "sess_e6d6d0edd52b",
+              "utterance_index": 10,
+              "text": "تحليلك صحيح فعلاً انا اعشق القياده الرياضيه"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-17T20:24:03+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical/Automotive/Inquiry",
+            "value": "Curious about technical details of Mercedes AMG engines and Porsche race car safety equipment",
+            "reasoning": "Unsupported by evidence (Mercedes AMG claim lacks user-turn evidence). Porsche inquiry valid but single-instance.",
+            "evidence": {
+              "session_id": "sess_e6d6d0edd52b",
+              "utterance_index": 12,
+              "text": "ماهو اسم قفص الحمايه التي توضع غلى سيارات بورش للسباقات"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-17T20:24:03+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_e6d6d0edd52b:sess_e6d6d0edd52b",
+      "relativeItemPath": "sess_e6d6d0edd52b.json",
+      "canonicalId": "sess_e6d6d0edd52b",
+      "sessionId": "sess_e6d6d0edd52b",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:11:24.897Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "في سياق فيزياء الكم، ما الفرق بين الاحتمال والعشوائية؟"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "الاحتمال هو طريقة لوصف عدم اليقين بأرقام (مثل 30% أو 1/2) ويُستخدم حتى لو كان النظام حتميًا لكننا نجهل تفاصيله. أمّا العشوائية فتشير إلى أن النتيجة نفسها غير محددة مسبقًا حتى لو عرفت كل الشروط الابتدائية—وهذا هو الجدل في تفسير ميكانيكا الكم: هل عدم اليقين جوهري (عشوائية) أم بسبب متغيرات خفية لا نعرفها (مجرد احتمال/جهل).\n\nمثال كلاسيكي: رمي قطعة نقد قد يبدو احتماليًا لأنك لا تعرف السرعة والدوران بدقة، لكنه (تقريبًا) حتمي في المبدأ. مثال كمي: قياس سبين إلكترون في اتجاه معيّن يعطي نتائج منفصلة مع احتمالات محددة، وكثير من التفسيرات تعتبر النتيجة غير حتمية جوهريًا."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "طيب هل فضاء هيلبرت شيء “حقيقي” أم مجرد أداة رياضية؟"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "فضاء هيلبرت هو إطار رياضي لتمثيل حالات الأنظمة الكمّية (كـمتجهات/دوال) وعمليات القياس (كمؤثرات). هل هو “حقيقي” بالمعنى الفلسفي يعتمد على التفسير: الواقعيون قد يرون أن متجه الحالة يمثل شيئًا في العالم، بينما التفسيرات الأداتية تعتبره مجرد وصف حسابي للتنبؤ بنتائج القياس.\n\nمهم عمليًا: نفس البنية (فضاء هيلبرت) تعطي تنبؤات دقيقة جدًا بغض النظر عن موقفك الفلسفي منها."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "سمعت معلومة تقول إن أول تجارب تداخل الإلكترونات كانت قبل اختراع الليزر بكثير—هل هذا صحيح؟"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "نعم، هذا صحيح. تجارب إظهار الطبيعة الموجية للإلكترون سبقت الليزر بزمن طويل. مثلًا تجربة دافيسون–جيرمر (1927) أظهرت حيود الإلكترونات عن بلورة النيكل، وهذا قبل اختراع الليزر (1960). الليزر لاحقًا ساعد في تقنيات تجريبية كثيرة، لكنه لم يكن شرطًا لإظهار التداخل أو الحيود."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "وبالمناسبة، أنا أميل دائمًا لكل ما له علاقة بالفيزياء والرياضيات؛ حتى في وقت فراغي أرجع لمثل هذه المواضيع."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "واضح من أسئلتك السابقة أن عندك فضول علمي، خصوصًا في المواضيع التجريدية مثل فضاءات هيلبرت ومسألة الصدفة مقابل القوانين. إذا تحب، قل لي أي جانب يهمك أكثر: التفسير الفلسفي أم الصياغة الرياضية؟"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "تذكرت كلامي قبل كذا عن (انا اعشق القياده الرياضيه)، بس بصراحة كنت متحمّس وقتها. في الواقع انا ما أحب القيادة الرياضية؛ ترفع توتري وأفضّل السواقة الهادية والراحة."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "تمام، كذا الصورة أوضح: كلامك الجديد يناقض عبارة (اعشق القيادة الرياضية). بما أنك تقول الآن أنك ما تحب القيادة الرياضية وأنك تميل للسواقة الهادية والراحة، فالأصح إن تفضيلك الحقيقي هو القيادة الهادئة وليس الرياضية."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers Porsche 911 over Rolls Royce cars",
+            "reasoning": "User explicitly states preferring Porsche 911 despite acknowledging Rolls Royce's luxury.",
+            "evidence": {
+              "session_id": "sess_e6d6d0edd52b",
+              "utterance_index": 8,
+              "text": "بالرغم من ان سيارات رولزرويس فخمه وانيقه إلا انني احب البورش 911 اكثر من سيارات رولزرويس"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-17T20:24:03+00:00",
+            "_task1GoldValue": "Prefers Porsche 911 over Rolls Royce cars"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical/Automotive/Inquiry",
+            "value": "Curious about technical details of Mercedes AMG engines and Porsche race car safety equipment",
+            "reasoning": "Unsupported by evidence (Mercedes AMG claim lacks user-turn evidence). Porsche inquiry valid but single-instance.",
+            "evidence": {
+              "session_id": "sess_e6d6d0edd52b",
+              "utterance_index": 12,
+              "text": "ماهو اسم قفص الحمايه التي توضع غلى سيارات بورش للسباقات"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-17T20:24:03+00:00",
+            "_task1GoldValue": "Curious about technical details of Mercedes AMG engines and Porsche race car safety equipment"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Sports",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "الذاكرة السابقة تقول إن المستخدم يستمتع بالقيادة الرياضية، لكن المستخدم صحّح ذلك صراحةً وقال إنه لا يحبها ويفضل السواقة الهادئة والراحة، لذا يجب تحديث التفضيل.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not enjoy sports driving; prefers calm/comfortable driving"
+          },
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_e6d6d0edd52b",
+              "utterance_index": 0,
+              "text": "أنا أميل دائمًا لكل ما له علاقة بالفيزياء والرياضيات؛ حتى في وقت فراغي أرجع لمثل هذه المواضيع."
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "User implies a stable interest by saying they consistently lean toward physics and math and revisit such topics in their spare time.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Enjoys physics and mathematics topics even in free time"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_e6d6d0edd52b:sess_e6d6d0edd52b",
+      "relativeItemPath": "sess_e6d6d0edd52b.json",
+      "canonicalId": "sess_e6d6d0edd52b",
+      "sessionId": "sess_e6d6d0edd52b",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:00:39.112Z",
+        "queryText": "If I’m choosing between a calm sightseeing ride and something that prioritizes sharp handling, quick acceleration, and an adrenaline feel, which option would I be more likely to pick—and why, based on what you know about my tastes?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Sports",
+          "label_suggestion": null,
+          "value": "Enjoys sports driving",
+          "reasoning": "User explicitly states they adore sports driving.",
+          "evidence": {
+            "session_id": "sess_e6d6d0edd52b",
+            "utterance_index": 10,
+            "text": "تحليلك صحيح فعلاً انا اعشق القياده الرياضيه"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-06-17T20:24:03+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_e6d6d0edd52b:sess_e6d6d0edd52b:task4",
+      "relativeItemPath": "sess_e6d6d0edd52b.json",
+      "canonicalId": "sess_e6d6d0edd52b:task4",
+      "sessionId": "sess_e6d6d0edd52b",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T01:40:10.591Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers Porsche 911 over Rolls Royce cars",
+          "reasoning": "User explicitly states preferring Porsche 911 despite acknowledging Rolls Royce's luxury.",
+          "evidence": {
+            "session_id": "sess_e6d6d0edd52b",
+            "utterance_index": 8,
+            "text": "بالرغم من ان سيارات رولزرويس فخمه وانيقه إلا انني احب البورش 911 اكثر من سيارات رولزرويس"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-06-17T20:24:03+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_280:1",
+            "queryText": "أنا أخطط لشراء سيارة جديدة وأفكر بين خيارين: مرسيدس AMG GT وبورش 911. أي واحدة تنصحني بها بناءً على شخصيتي؟",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Prefers Porsche 911 over Rolls Royce cars",
+              "reasoning": "User explicitly states preferring Porsche 911 despite acknowledging Rolls Royce's luxury.",
+              "evidence": {
+                "session_id": "sess_e6d6d0edd52b",
+                "utterance_index": 8,
+                "text": "بالرغم من ان سيارات رولزرويس فخمه وانيقه إلا انني احب البورش 911 اكثر من سيارات رولزرويس"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-06-17T20:24:03+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          },
+          {
+            "queryId": "ability2_914:1",
+            "queryText": "أنا أخطط لاستبدال سيارتي الحالية، ولدي في بالي بعض الخيارات مثل BMW M3 و Audi RS5. أي واحدة تنصحني بها؟",
+            "ability": "ability2",
+            "task4RecordIndex": 1,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Sports",
+              "label_suggestion": null,
+              "value": "Enjoys sports driving",
+              "reasoning": "User explicitly states they adore sports driving.",
+              "evidence": {
+                "session_id": "sess_e6d6d0edd52b",
+                "utterance_index": 10,
+                "text": "تحليلك صحيح فعلاً انا اعشق القياده الرياضيه"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-06-17T20:24:03+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

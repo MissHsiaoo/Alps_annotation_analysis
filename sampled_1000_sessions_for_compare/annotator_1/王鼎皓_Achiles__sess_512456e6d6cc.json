@@ -1,0 +1,288 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_512456e6d6cc",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_512456e6d6cc:sess_512456e6d6cc",
+      "relativeItemPath": "sess_512456e6d6cc.json",
+      "canonicalId": "sess_512456e6d6cc",
+      "sessionId": "sess_512456e6d6cc",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T13:59:55.162Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "Curious about PowerShell admin rights execution methods, registry modifications for context menu options, and Elastic Stack configuration/security",
+            "reasoning": "Technical troubleshooting questions about PowerShell/registry/Elastic, but no explicit self-reported curiosity. Label 'Thoughts/Curiosity' was forced.",
+            "evidence": {
+              "session_id": "sess_512456e6d6cc",
+              "utterance_index": 0,
+              "text": "как запустить bat файл из текущей папки powershell"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T16:10:05.974Z"
+          },
+          {
+            "memory_id": "new-memory-2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": null,
+            "value": "User is working with a Windows 10 virtual machine in VMware",
+            "reasoning": "",
+            "evidence": null,
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-04-11T13:59:48.141Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_512456e6d6cc:sess_512456e6d6cc",
+      "relativeItemPath": "sess_512456e6d6cc.json",
+      "canonicalId": "sess_512456e6d6cc",
+      "sessionId": "sess_512456e6d6cc",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T10:24:24.008Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Слушай, я запутался: почему в некоторых командах PowerShell параметры принимают значения в кавычках, а иногда лучше без них?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "В PowerShell кавычки нужны в основном, когда значение содержит пробелы или спецсимволы (например, путь `C:\\Program Files\\...`). Без кавычек удобнее, когда значение простое: числа, флаги, короткие строки без пробелов. Ещё важный нюанс: одинарные кавычки `'...'` не подставляют переменные, а двойные `\"...\"` — подставляют."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "А если у меня JSON в строке, как проще передать его в команду, чтобы не экранировать каждый символ?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Чаще всего проще так: 1) сохранить JSON в файл и передать `-Body (Get-Content file.json -Raw)`; или 2) в PowerShell использовать here-string: `@'\n{...}\n'@` (одинарный) — он почти не требует экранирования. Двойной here-string `@\"...\"@` будет подставлять переменные."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Кстати, видел новость, что где-то открыли музей старых компьютеров — там реально показывают DOS?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Да, такие музеи существуют: часто там запускают старые системы вроде MS-DOS, Windows 3.1 или даже ранние UNIX-станции. Обычно это либо оригинальное железо, либо аккуратно восстановленные машины, чтобы посетители могли увидеть интерфейсы и программы того времени."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Ок. А есть пример, где из-за типа кавычек команда ломается?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Простой пример: `$name = 'world'`; команда `Write-Output 'Hello $name'` выведет буквально `Hello $name`, а `Write-Output \"Hello $name\"` выведет `Hello world`. Ещё часто ломается, когда в пути есть `&` или `(` — тогда почти всегда нужны кавычки или `--%` (stop parsing) в некоторых сценариях."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Сейчас проверял: у меня запросы к 9200 без логина сразу 401 (security_exception про missing authentication credentials), так что даже health руками не посмотреть."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Да, это ожидаемо: в 8.x безопасность включена по умолчанию, поэтому без Basic/Auth или ApiKey любые REST-запросы будут отклоняться. Для проверки health нужно передать учётные данные (например, через `-Credential` в PowerShell) или использовать API key."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Слушай, по поводу твоей «не сохраняй паспорт/адреса» — я этого вообще не писал. Тут разговор про PowerShell/реестр и Elastic. Никаких паспортов, адресов, персональных данных я не кидал."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Да, ты прав: в этой переписке не было ни паспорта, ни адресов — обсуждали только команды/настройки (PowerShell, реестр, Elasticsearch/Kibana). Так что правило «не запоминать паспорт/адреса если вставишь позже» тут не на чем основывать."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "Curious about PowerShell admin rights execution methods, registry modifications for context menu options, and Elastic Stack configuration/security",
+            "reasoning": "Technical troubleshooting questions about PowerShell/registry/Elastic, but no explicit self-reported curiosity. Label 'Thoughts/Curiosity' was forced.",
+            "evidence": {
+              "session_id": "sess_512456e6d6cc",
+              "utterance_index": 0,
+              "text": "как запустить bat файл из текущей папки powershell"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T16:10:05.974Z"
+          },
+          {
+            "confidence": 0.68,
+            "emotion": null,
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "memory_id": "m2_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "Старая память утверждала запрет «не сохраняй паспорт/адреса», но в диалоге нет таких данных и пользователь прямо подтвердил, что их не вставлял. Следовательно, ограничение было добавлено без оснований; обновлённая правда: в этой сессии паспорт/адреса не предоставлялись и специфическое правило про них не применимо.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "В этой переписке не было паспортных данных или адресов; обсуждались только команды и настройки (PowerShell/реестр/Elasticsearch/Kibana), поэтому отдельное правило про «не запоминать паспорт/адреса» здесь не основано на фактах."
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_512456e6d6cc",
+              "utterance_index": 0,
+              "text": "у меня запросы к 9200 без логина сразу 401 (security_exception про missing authentication credentials)"
+            },
+            "label": "Technical_Context/Environment",
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User reports that requests to port 9200 return 401 with a security_exception about missing authentication credentials, implying Elasticsearch security is enforced and unauthenticated health checks fail.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User encounters HTTP 401 security_exception when querying Elasticsearch on localhost:9200 without authentication (security enabled)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_512456e6d6cc:sess_512456e6d6cc",
+      "relativeItemPath": "sess_512456e6d6cc.json",
+      "canonicalId": "sess_512456e6d6cc",
+      "sessionId": "sess_512456e6d6cc",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T08:41:05.193Z",
+        "queryText": "请问我的WIndows 10的运行环境是什么？",
+        "editableSelectedMemory": {
+          "memory_id": "new-memory-2",
+          "type": "direct",
+          "label": "UNMAPPED",
+          "label_suggestion": null,
+          "value": "User is working with a Windows 10 virtual machine in VMware",
+          "reasoning": "",
+          "evidence": null,
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2026-04-11T13:59:48.141Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_512456e6d6cc:sess_512456e6d6cc:task4",
+      "relativeItemPath": "sess_512456e6d6cc.json",
+      "canonicalId": "sess_512456e6d6cc:task4",
+      "sessionId": "sess_512456e6d6cc",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:32:33.300Z",
+        "editableSelectedMemory": {
+          "memory_id": "new-memory-2",
+          "type": "direct",
+          "label": "UNMAPPED",
+          "label_suggestion": null,
+          "value": "User is working with a Windows 10 virtual machine in VMware",
+          "reasoning": "",
+          "evidence": null,
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2026-04-11T13:59:48.141Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_196:1",
+            "queryText": "请问我的WIndows 10的运行环境是什么？",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "new-memory-2",
+              "type": "direct",
+              "label": "UNMAPPED",
+              "label_suggestion": null,
+              "value": "User is working with a Windows 10 virtual machine in VMware",
+              "reasoning": "",
+              "evidence": null,
+              "confidence": 0.8,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2026-04-11T13:59:48.141Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

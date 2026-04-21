@@ -1,0 +1,355 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_35d39fd0f6ac",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_35d39fd0f6ac:sess_35d39fd0f6ac",
+      "relativeItemPath": "sess_35d39fd0f6ac.json",
+      "canonicalId": "sess_35d39fd0f6ac",
+      "sessionId": "sess_35d39fd0f6ac",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:37:43.747Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers movies exploring 'honor' concept with explicit violence level ratings (0-10 scale)",
+            "reasoning": "User explicitly requests violence level ratings for honor-themed movies.",
+            "evidence": {
+              "session_id": "sess_35d39fd0f6ac",
+              "utterance_index": 0,
+              "text": "Could you provide a list... by marking their level of violence from 0 to 10"
+            },
+            "confidence": 0.8,
+            "time_scope": "current",
+            "emotion": "interested",
+            "preference_attitude": "like",
+            "updated_at": "2023-05-12T01:05:02+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Excludes war movies when exploring honor themes",
+            "reasoning": "User explicitly states 'don't provide war movies' and later emphasizes 'strictly about honor, without war'.",
+            "evidence": {
+              "session_id": "sess_35d39fd0f6ac",
+              "utterance_index": 8,
+              "text": "take out japan of the equation, and don't provide war movies"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "null",
+            "updated_at": "2023-05-12T01:05:02+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Entertainment/Refinement",
+            "value": "Sustained curiosity about honor depictions in movies (Japan focus, post-1989 filters, non-war contexts)",
+            "reasoning": "Iterative criteria refinement shows preference exploration pattern, but original label forced incorrect taxonomy",
+            "evidence": {
+              "session_id": "sess_35d39fd0f6ac",
+              "utterance_index": 12,
+              "text": "make it strictly about honor, without war"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-12T01:05:02+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_35d39fd0f6ac:sess_35d39fd0f6ac",
+      "relativeItemPath": "sess_35d39fd0f6ac.json",
+      "canonicalId": "sess_35d39fd0f6ac",
+      "sessionId": "sess_35d39fd0f6ac",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T17:26:27.918Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Could you help me tighten the criteria for a movie list? I want it to be really consistent."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes—what dimensions do you want to filter on? Common ones: release year range, language/country, setting, genre exclusions (e.g., no war), and specific theme wording (e.g., “honor” as duty vs “honor” as reputation)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Theme wording is the hard part. What’s a good, strict definition of “honor” for selecting films?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "A strict, usable definition: a character consistently chooses actions that uphold a publicly recognizable moral code (duty, integrity, loyalty, truthfulness), especially when it requires personal sacrifice—and the story treats that choice as ethically significant (not just style or bravado)."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "How would you separate that from just “being nice” or “having pride”?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Three quick separators: (1) Code: honor is tied to a principle or duty, not just kindness. (2) Cost: there’s meaningful risk or sacrifice. (3) Social stakes: the code is legible to others (a community, institution, profession), even if they disagree. Pride can be ego-driven without duty; niceness can be low-cost and private."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Ok. Also, I saw a headline about a museum recovering a stolen painting—does that kind of story fit “honor,” or is it more “justice”?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "It can fit either, depending on framing. If the focus is on people keeping commitments (provenance researchers refusing shortcuts, a collector returning art despite legal loopholes), that’s “honor.” If the focus is courts/punishment, it reads more as “justice.” (Unrelated trivia: a lot of recoveries hinge on old shipping records and insurance photos, not dramatic sting operations.)"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "If you add anything, can you keep it post-1989 like before? I’m trying to avoid the older classics this time."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—I'll keep the list strictly to releases from 1989 onward and avoid older titles."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "One correction: I don’t actually want the 0–10 violence ratings anymore. I only asked that at first, but it’s not useful for me—just give me honor-focused movies without war, no violence scores."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—no violence scale. I’ll stick to films where “honor” is a central theme and avoid war-focused stories, and I won’t include 0–10 violence ratings."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Excludes war movies when exploring honor themes",
+            "reasoning": "User explicitly states 'don't provide war movies' and later emphasizes 'strictly about honor, without war'.",
+            "evidence": {
+              "session_id": "sess_35d39fd0f6ac",
+              "utterance_index": 8,
+              "text": "take out japan of the equation, and don't provide war movies"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-12T01:05:02+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Entertainment/Refinement",
+            "value": "Sustained curiosity about honor depictions in movies (Japan focus, post-1989 filters, non-war contexts)",
+            "reasoning": "Iterative criteria refinement shows preference exploration pattern, but original label forced incorrect taxonomy",
+            "evidence": {
+              "session_id": "sess_35d39fd0f6ac",
+              "utterance_index": 12,
+              "text": "make it strictly about honor, without war"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-12T01:05:02+00:00"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "One correction: I don’t actually want the 0–10 violence ratings anymore. I only asked that at first, but it’s not useful for me—just give me honor-focused movies without war, no violence scores."
+                }
+              ]
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "The prior memory says the user prefers explicit 0–10 violence ratings, but the user explicitly retracts that preference and asks for no violence scores going forward.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers honor-focused movie suggestions without including 0–10 violence level ratings"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_35d39fd0f6ac",
+              "utterance_index": 8,
+              "text": "can you keep it post-1989 like before? I’m trying to avoid the older classics this time."
+            },
+            "label": "Constraints_and_Boundaries/Time_Period",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "dislike",
+            "reasoning": "User implies a firm time filter by requesting post-1989 only and explicitly notes avoiding older classics.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers movie recommendations restricted to 1989 onward (avoids older classics)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_35d39fd0f6ac:sess_35d39fd0f6ac",
+      "relativeItemPath": "sess_35d39fd0f6ac.json",
+      "canonicalId": "sess_35d39fd0f6ac",
+      "sessionId": "sess_35d39fd0f6ac",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:38:43.721Z",
+        "queryText": "I’m putting together a short list of films to watch and compare, and I want each entry to include one extra piece of info beyond the usual title/genre/summary so I can quickly filter what I’m in the mood for. Based on what you know about how I like movie recommendations formatted, what specific attribute should you add for every film, and how should it be expressed?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers movies exploring 'honor' concept with explicit violence level ratings (0-10 scale)",
+          "reasoning": "User explicitly requests violence level ratings for honor-themed movies.",
+          "evidence": {
+            "session_id": "sess_35d39fd0f6ac",
+            "utterance_index": 0,
+            "text": "Could you provide a list... by marking their level of violence from 0 to 10"
+          },
+          "confidence": 0.8,
+          "time_scope": "current",
+          "emotion": "interested",
+          "preference_attitude": "like",
+          "updated_at": "2023-05-12T01:05:02+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_35d39fd0f6ac:sess_35d39fd0f6ac:task4",
+      "relativeItemPath": "sess_35d39fd0f6ac.json",
+      "canonicalId": "sess_35d39fd0f6ac:task4",
+      "sessionId": "sess_35d39fd0f6ac",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:38:48.631Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers movies exploring 'honor' concept with explicit violence level ratings (0-10 scale)",
+          "reasoning": "User explicitly requests violence level ratings for honor-themed movies.",
+          "evidence": {
+            "session_id": "sess_35d39fd0f6ac",
+            "utterance_index": 0,
+            "text": "Could you provide a list... by marking their level of violence from 0 to 10"
+          },
+          "confidence": 0.8,
+          "time_scope": "current",
+          "emotion": "interested",
+          "preference_attitude": "like",
+          "updated_at": "2023-05-12T01:05:02+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_276:1",
+            "queryText": "I'm thinking about watching something tonight that really gets into what it means to have a code. I've got a few in mind, but I'm not sure which one would be the best fit for me. Could you help me pick?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Prefers movies exploring 'honor' concept with explicit violence level ratings (0-10 scale)",
+              "reasoning": "User explicitly requests violence level ratings for honor-themed movies.",
+              "evidence": {
+                "session_id": "sess_35d39fd0f6ac",
+                "utterance_index": 0,
+                "text": "Could you provide a list... by marking their level of violence from 0 to 10"
+              },
+              "confidence": 0.8,
+              "time_scope": "current",
+              "emotion": "interested",
+              "preference_attitude": "like",
+              "updated_at": "2023-05-12T01:05:02+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

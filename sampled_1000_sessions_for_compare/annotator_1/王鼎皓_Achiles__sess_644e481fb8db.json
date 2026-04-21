@@ -1,0 +1,421 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_644e481fb8db",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_644e481fb8db:sess_644e481fb8db",
+      "relativeItemPath": "sess_644e481fb8db.json",
+      "canonicalId": "sess_644e481fb8db",
+      "sessionId": "sess_644e481fb8db",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T17:51:48.941Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Requires cholesterol-conscious meal planning",
+            "reasoning": "User explicitly states high cholesterol as a constraint for meal planning.",
+            "evidence": {
+              "session_id": "sess_644e481fb8db",
+              "utterance_index": 4,
+              "text": "for a 52 year old woman with high cholesterol"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "avoid",
+            "updated_at": "2023-06-18T20:07:18Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Paleo diet adherence",
+            "reasoning": "User repeatedly requests paleo-compliant meal plans across multiple iterations.",
+            "evidence": {
+              "session_id": "sess_644e481fb8db",
+              "utterance_index": 4,
+              "text": "create a healthy paleo daily meal plan"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "prefer",
+            "updated_at": "2023-06-18T20:07:18Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "High protein intake target (150g+ daily)",
+            "reasoning": "Explicitly stated protein goal repeated across multiple meal plan requests.",
+            "evidence": {
+              "session_id": "sess_644e481fb8db",
+              "utterance_index": 4,
+              "text": "Total protein for the day is 150g plus"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "require",
+            "updated_at": "2023-06-18T20:07:18Z"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "diet/plan/integration",
+            "value": "Exploring whey protein integration in paleo diet",
+            "reasoning": "Label forced: No explicit evidence of curiosity. Usage may reflect diet plan adherence rather than personal exploration.",
+            "evidence": {
+              "session_id": "sess_644e481fb8db",
+              "utterance_index": 6,
+              "text": "whey protein powder"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-18T20:07:18Z"
+          },
+          {
+            "memory_id": "m5",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Sodium intake monitoring",
+            "reasoning": "Explicit instruction to 'keep sodium at healthy level' in multiple meal plan requests.",
+            "evidence": {
+              "session_id": "sess_644e481fb8db",
+              "utterance_index": 4,
+              "text": "Keep sodium at a healthy level"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "monitor",
+            "updated_at": "2023-06-18T20:07:18Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_644e481fb8db:sess_644e481fb8db",
+      "relativeItemPath": "sess_644e481fb8db.json",
+      "canonicalId": "sess_644e481fb8db",
+      "sessionId": "sess_644e481fb8db",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T14:51:17.088Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "When a recipe says “1 cup mixed vegetables,” what’s the most practical way to measure that without a measuring cup?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "A simple method is “volume by container”: use a standard drinking glass or a mug you know roughly holds ~8 fl oz. For chopped vegetables, 1 cup is also about a loose handful-and-a-half. If you have a kitchen scale, many chopped non-starchy veggies land around ~120–160 g per cup depending on density (broccoli is lighter; carrots are heavier)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Is there a quick rule of thumb for converting tablespoons of oil to grams?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Yes: most cooking oils are ~13–14 g per tablespoon. Olive oil is commonly estimated at 13.5 g per tbsp (and ~120 kcal). If you’re tracking closely, weighing the bottle before/after pouring is the fastest accurate method."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "I’ve heard salmon has omega-3s—does cooking destroy them?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Normal cooking reduces some omega-3 content a bit, but most remains. Gentler methods (baking, steaming, lower-heat pan cooking) tend to preserve more than deep-frying. The bigger changes are usually from added fats and portion size rather than omega-3 loss."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "assistant",
+            "text": "Unrelated trivia: the first “grocery list” examples historians cite are ancient Mesopotamian clay tablets that tracked grain and livestock allocations—basically early inventory logs."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Another not-about-you tidbit: in some countries, eggs are stored at room temperature because they aren’t washed, while in the U.S. they’re typically refrigerated due to different processing practices."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "assistant",
+            "text": "And a purely hypothetical example: if someone wanted to lower sodium without changing foods much, they could choose no-salt-added nuts, jerky labeled “low sodium,” and use vinegar + herbs instead of more dressing."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "user",
+            "text": "One tweak before I shop again: I’m skipping the turkey jerky this round since it’s always the saltiest thing on my list—can you swap that snack protein for something else from the foods we’ve been using and keep the day’s sodium in check?"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "assistant",
+            "text": "Yes—an easy swap is replacing the turkey jerky with an egg-based option (e.g., hard-boiled eggs or egg whites) or a small portion of salmon/chicken from your existing items. Those choices typically come with much less sodium than jerky (especially if you cook without added salt), which will help keep your daily sodium at a healthy level."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "user",
+            "text": "I need to correct something from earlier: I don’t actually want a 150g+ protein target every day. That was just for that one example day. Going forward, please keep it more moderate—around 90–110g protein/day—still with 1200–1300 calories and reasonable sodium."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "assistant",
+            "text": "Got it—so the 150g+ protein goal was only for that single sample day, not a standing daily target. For future paleo day plans, I’ll aim for a moderate protein range of about 90–110g/day (while keeping calories 1200–1300 and sodium at a healthy level)."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Requires cholesterol-conscious meal planning",
+            "reasoning": "User explicitly states high cholesterol as a constraint for meal planning.",
+            "evidence": {
+              "session_id": "sess_644e481fb8db",
+              "utterance_index": 4,
+              "text": "for a 52 year old woman with high cholesterol"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "avoid",
+            "updated_at": "2023-06-18T20:07:18Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Paleo diet adherence",
+            "reasoning": "User repeatedly requests paleo-compliant meal plans across multiple iterations.",
+            "evidence": {
+              "session_id": "sess_644e481fb8db",
+              "utterance_index": 4,
+              "text": "create a healthy paleo daily meal plan"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "prefer",
+            "updated_at": "2023-06-18T20:07:18Z"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "diet/plan/integration",
+            "value": "Exploring whey protein integration in paleo diet",
+            "reasoning": "Label forced: No explicit evidence of curiosity. Usage may reflect diet plan adherence rather than personal exploration.",
+            "evidence": {
+              "session_id": "sess_644e481fb8db",
+              "utterance_index": 6,
+              "text": "whey protein powder"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-18T20:07:18Z"
+          },
+          {
+            "memory_id": "m5",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Sodium intake monitoring",
+            "reasoning": "Explicit instruction to 'keep sodium at healthy level' in multiple meal plan requests.",
+            "evidence": {
+              "session_id": "sess_644e481fb8db",
+              "utterance_index": 4,
+              "text": "Keep sodium at a healthy level"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "monitor",
+            "updated_at": "2023-06-18T20:07:18Z"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": "require",
+            "reasoning": "The prior memory states the user has a long-term requirement of 150g+ daily protein. The user explicitly retracts that as a one-off goal and replaces it with a lower ongoing target of ~90–110g/day.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Moderate protein intake target (~90–110g daily), not 150g+ as an ongoing goal"
+          },
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_644e481fb8db",
+              "utterance_index": 0,
+              "text": "I’m skipping the turkey jerky this round since it’s always the saltiest thing on my list"
+            },
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "avoid",
+            "reasoning": "User implies a preference to avoid turkey jerky because they perceive it as the highest-sodium item they commonly buy.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Avoids turkey jerky due to sodium content"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_644e481fb8db:sess_644e481fb8db",
+      "relativeItemPath": "sess_644e481fb8db.json",
+      "canonicalId": "sess_644e481fb8db",
+      "sessionId": "sess_644e481fb8db",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T12:18:22.653Z",
+        "queryText": "I’m planning my meals for tomorrow and want to decide whether a typical day of eating (nothing extreme) would still fit my usual macro priorities. If I had to pick just one daily nutrient threshold to quickly check so I don’t drift off-track, what should that threshold be and roughly how high does it need to be?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "High protein intake target (150g+ daily)",
+          "reasoning": "Explicitly stated protein goal repeated across multiple meal plan requests.",
+          "evidence": {
+            "session_id": "sess_644e481fb8db",
+            "utterance_index": 4,
+            "text": "Total protein for the day is 150g plus"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "require",
+          "updated_at": "2023-06-18T20:07:18Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_644e481fb8db:sess_644e481fb8db:task4",
+      "relativeItemPath": "sess_644e481fb8db.json",
+      "canonicalId": "sess_644e481fb8db:task4",
+      "sessionId": "sess_644e481fb8db",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:26:09.313Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "High protein intake target (150g+ daily)",
+          "reasoning": "Explicitly stated protein goal repeated across multiple meal plan requests.",
+          "evidence": {
+            "session_id": "sess_644e481fb8db",
+            "utterance_index": 4,
+            "text": "Total protein for the day is 150g plus"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "require",
+          "updated_at": "2023-06-18T20:07:18Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_581:1",
+            "queryText": "I'm trying to decide between two meal plans for next week. One is a bit more varied with fish and nuts, the other leans heavier on eggs and protein shakes. Which one would be the better fit for me?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Preferences/Food",
+              "label_suggestion": null,
+              "value": "High protein intake target (150g+ daily)",
+              "reasoning": "Explicitly stated protein goal repeated across multiple meal plan requests.",
+              "evidence": {
+                "session_id": "sess_644e481fb8db",
+                "utterance_index": 4,
+                "text": "Total protein for the day is 150g plus"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "require",
+              "updated_at": "2023-06-18T20:07:18Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

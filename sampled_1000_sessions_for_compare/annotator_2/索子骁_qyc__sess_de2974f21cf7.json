@@ -1,0 +1,285 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_de2974f21cf7",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_de2974f21cf7:sess_de2974f21cf7",
+      "relativeItemPath": "sess_de2974f21cf7.json",
+      "canonicalId": "sess_de2974f21cf7",
+      "sessionId": "sess_de2974f21cf7",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T01:08:39.463Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers content rewritten with synonyms/advanced words and simplified for 50-year-old comprehension",
+            "reasoning": "User repeatedly requests rewrites with synonyms, advanced vocabulary, and age-adapted simplification across multiple turns.",
+            "evidence": {
+              "session_id": "sess_de2974f21cf7",
+              "utterance_index": 0,
+              "text": "Please rewrite so that a 50 year old can understand..."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-03-15T20:09:58+00:00"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "indirect",
+            "label": "Personal_Background/Occupation",
+            "value": "Works in a warehouse or logistics role involving inventory management, work requests, receipts, and salvage operations",
+            "confidence": 0.65,
+            "evidence_text": "Maintain and report all in coming work request and posting all receipts and issue sheets on time.\n2.Keeping a organizes work station so all records and reports all in order.\n3.Learn and process new material that comes my way as I learn a new job plus keep members of the warehouse working in a timely matter.\n4.Remove all parts and equipment from the warehouse inventory that is no longer require and turn into salvage facility."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_de2974f21cf7:sess_de2974f21cf7",
+      "relativeItemPath": "sess_de2974f21cf7.json",
+      "canonicalId": "sess_de2974f21cf7",
+      "sessionId": "sess_de2974f21cf7",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T05:31:13.206Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Can you rewrite this in plain language and also give a version with more formal wording?\n\n“Perform periodic inspections to verify compliance with established procedures, and document any deviations for corrective action.”"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Plain language: Do regular checks to make sure everyone is following the rules, and write down anything that’s off so it can be fixed.\n\nMore formal wording: Conduct routine inspections to confirm adherence to established procedures, and formally document any deviations to initiate corrective actions."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Now rewrite it again using different synonyms, but keep the meaning the same."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Alternate (plain): Check from time to time that the process is being followed, and record any issues so they can be corrected.\n\nAlternate (formal): Execute periodic reviews to ensure conformance with prescribed procedures, and log variances to support remediation."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Also, can you list 3 examples of what might count as a “deviation” in a general quality system?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "1) A required form is missing a date, signature, or approval.\n2) A calibration label is expired or not present on a measurement tool.\n3) A step in the procedure (like an inspection or peer review) was skipped or not documented."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Unrelated: I saw a headline about a library returning a book 50 years late—does that ever really happen?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "It does happen occasionally, usually when a book gets packed away, inherited, or rediscovered during a move. Libraries sometimes publicize it as a lighthearted story, and many have removed or capped late fees, so the “50 years late” cases are more about the surprise than the penalty."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Same rewrite style as before, but keep it in bullet form—I’m pasting this straight into my quarterly evaluation, so it needs to sound formal and consistent."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Understood—share the text you want rewritten, and I’ll keep it formal, consistent, and in bullet format for your quarterly evaluation."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Actually, don’t rewrite it for a 50-year-old or swap in synonyms/advanced words anymore. Just keep the original wording and only fix obvious typos if you see them."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—I'll keep the original wording and only correct clear spelling/grammar mistakes, without simplifying for age or replacing words with synonyms."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Yes, exactly. No rephrasing—just minor typo cleanup when needed."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory says the user prefers rewrites with synonyms/advanced words and simplified for 50-year-old comprehension. The user now explicitly requests the opposite—no rephrasing or synonym swaps, only minor typo fixes—so the preference has changed.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers minimal editing: keep original wording and only correct obvious typos/spelling/grammar; avoid rephrasing, simplification, or synonym/advanced-word rewrites."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_de2974f21cf7",
+              "utterance_index": 0,
+              "text": "I’m pasting this straight into my quarterly evaluation"
+            },
+            "label": "Work/Administration",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "context",
+            "reasoning": "The user implies the purpose and destination of the text by saying they will paste it into their quarterly evaluation, indicating a work-related document context.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is preparing a quarterly evaluation and wants the rewrite suitable to paste into it."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_de2974f21cf7:sess_de2974f21cf7",
+      "relativeItemPath": "sess_de2974f21cf7.json",
+      "canonicalId": "sess_de2974f21cf7",
+      "sessionId": "sess_de2974f21cf7",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T05:31:24.539Z",
+        "queryText": "I’m about to send you a dense paragraph I wrote for colleagues, but it needs to work for a much broader audience without losing professionalism. What specific kind of rewrite approach should you use so it lands well for me?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers content rewritten with synonyms/advanced words and simplified for 50-year-old comprehension",
+          "reasoning": "User repeatedly requests rewrites with synonyms, advanced vocabulary, and age-adapted simplification across multiple turns.",
+          "evidence": {
+            "session_id": "sess_de2974f21cf7",
+            "utterance_index": 0,
+            "text": "Please rewrite so that a 50 year old can understand..."
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-03-15T20:09:58+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_de2974f21cf7:sess_de2974f21cf7:task4",
+      "relativeItemPath": "sess_de2974f21cf7.json",
+      "canonicalId": "sess_de2974f21cf7:task4",
+      "sessionId": "sess_de2974f21cf7",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T05:31:41.259Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers content rewritten with synonyms/advanced words and simplified for 50-year-old comprehension",
+          "reasoning": "User repeatedly requests rewrites with synonyms, advanced vocabulary, and age-adapted simplification across multiple turns.",
+          "evidence": {
+            "session_id": "sess_de2974f21cf7",
+            "utterance_index": 0,
+            "text": "Please rewrite so that a 50 year old can understand..."
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-03-15T20:09:58+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1057:1",
+            "queryText": "I need to explain our new inventory tracking protocol to the warehouse team. Can you help me draft the key points?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers content rewritten with synonyms/advanced words and simplified for 50-year-old comprehension",
+              "reasoning": "User repeatedly requests rewrites with synonyms, advanced vocabulary, and age-adapted simplification across multiple turns.",
+              "evidence": {
+                "session_id": "sess_de2974f21cf7",
+                "utterance_index": 0,
+                "text": "Please rewrite so that a 50 year old can understand..."
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2024-03-15T20:09:58+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "highly important and necessary to generate personalized response",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

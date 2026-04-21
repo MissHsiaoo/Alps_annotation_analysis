@@ -1,0 +1,395 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_fe9d115fc55c",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_fe9d115fc55c:sess_fe9d115fc55c",
+      "relativeItemPath": "sess_fe9d115fc55c.json",
+      "canonicalId": "sess_fe9d115fc55c",
+      "sessionId": "sess_fe9d115fc55c",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:22:06.487Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Creative_Writing/Content_Style",
+            "value": "Prefers fictional roleplay scenarios with casual speech/slang for novel writing",
+            "reasoning": "User demonstrates repeated requests for stylistic modifications (casual speech, slang) across multiple turns (6,8,10,12,14) framed as novel writing. Supported by explicit creative ownership claim in utterance 14.",
+            "evidence": {
+              "session_id": "sess_fe9d115fc55c",
+              "utterance_index": 14,
+              "text": "아니. 이건 내가 직접 쓴 소설이야 [...] 기분이 나빠."
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": "frustration",
+            "preference_attitude": "strong_preference",
+            "updated_at": "2023-11-09T12:18:33+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Emotional_Response/Creative_Work",
+            "value": "Sensitive to perceived dismissal of creative work",
+            "reasoning": "Inferred from emotional reaction in utterance 14. No explicit self-report of this boundary - treated as uncertain hypothesis.",
+            "evidence": {
+              "session_id": "sess_fe9d115fc55c",
+              "utterance_index": 14,
+              "text": "아니. 이건 내가 직접 쓴 소설이야 [...] 기분이 나빠."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": "disappointment",
+            "preference_attitude": "dislike",
+            "updated_at": "2023-11-09T12:18:33+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Goals/Short_Term",
+            "value": "The user's immediate and clear goal is to have the assistant modify/generate a specific piece of text that conforms to the style of “casual conversation between close friends using swear words.",
+            "reasoning": "The user's instructions are very specific and action-oriented: “바꿔줘” (change it for me), “use swear words,” “~냐? 라는 말투로 바꿔줘” (change it to a tone that uses ~냐?). ",
+            "evidence": {
+              "session_id": "sess_fe9d115fc55c",
+              "utterance_index": 8,
+              "text": "좀 더 욕설을 섞어서, ~냐? 라는 말투로 바꿔줘."
+            },
+            "confidence": 0.9,
+            "time_scope": "recent",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T06:54:38.394Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_fe9d115fc55c:sess_fe9d115fc55c",
+      "relativeItemPath": "sess_fe9d115fc55c.json",
+      "canonicalId": "sess_fe9d115fc55c",
+      "sessionId": "sess_fe9d115fc55c",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:22:19.709Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "아까 대화처럼, 말이 좀 헐렁하고 템포 빠른 느낌으로 한 번만 더 이어가보자. 설정 같은 건 빼고 그냥 아무 얘기나."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "ㅇㅋ. 근데 너 방금 뭐 하다가 여기 온 거냐? 나 지금 머릿속이 약간 ‘로딩중’이라 주제 던져줘도 됨."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "주제: 더위. 요즘 왜 이렇게 덥냐."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "ㄹㅇ 숨이 뜨거움. 더위는 그냥 ‘공기’가 아니라 ‘상태이상’임. 물 마셔도 마신 느낌이 10초짜리라 짜증남."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "맞아. 에어컨 켜면 또 목 아프고."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "그건 인정. 에어컨은 살려주는데 대가로 목을 가져감. 그래서 난(가정) 방에서 습도만 낮추는 제습기 모드가 체감 더 낫더라—근데 전기요금이 갑자기 현실감 줌."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "갑자기 배고프다. 여름엔 뭐가 제일 무난함?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "무난 원탑은 냉면/콩국수/비빔국수 라인업이고, 진짜 아무 생각 없을 땐 삼각김밥+우유 같은 조합이 ‘생존식’ 느낌으로 제일 편함. 아, 참고로 예전에 영국에서 1976년 폭염 때 수도 사용 제한까지 갔던 기록도 있음(그냥 잡지식)."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "잡지식 좋네. 또 하나만."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "그럼 하나 더. ‘열지수(heat index)’는 기온이랑 습도를 같이 계산해서 체감온도를 내는 건데, 습도 높으면 같은 32도라도 훨씬 더 위험하게 느껴지는 이유가 그거임. 그리고 바다 쪽은 바람 때문에 기온은 비슷해도 덜 지치는 경우가 많고."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "[김영환] [오후 9:33] 야 근데 나 요즘 카톡 말고는 잘 안 봐서, 답장 좀 늦어도 이해해라 ㅋㅋ"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "[정승우] [오후 9:34] ㅇㅋㅇㅋ 또 뭐에 꽂혔길래 그러냐"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "[김영환] [오후 9:35] 걍 폰 배터리도 금방 죽고… 공중보급처럼 충전기 들고 다니는 것도 귀찮아서 최소한만 켜둠"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "[정승우] [오후 9:35] 귀찮으면 귀찮다 그래 ㅋㅋ"
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "[김영환] [오후 9:41] 야 근데 너 아까 내가 \"좀 더 욕설 섞어서 ~냐? 말투로 바꿔줘\" 한 건\n[김영환] [오후 9:41] 그냥 그 장면 분위기 테스트하려고 던진 거고\n[김영환] [오후 9:41] 지금은 그거 말고, 그냥 이 소설 대사 자연스럽게만 다듬어줘. 욕은 빼고.\n[김영환] [오후 9:42] 특히 너무 카톡체만 아니게, 흐름이랑 리듬만 살려줘."
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "오케이. 그럼 목표가 \"친한말+욕\" 스타일이 아니라,\n욕설 없이도 자연스럽게 읽히는 대사로 다듬는 거네.\n\n원문에서 어색한 반복/끊김만 정리하고, 말맛(템포)은 유지하는 방향으로 갈게.\n다듬을 구간(문단) 지정해주면 그 부분부터 바로 손볼까?"
+          },
+          {
+            "turnId": "turn-17",
+            "role": "user",
+            "text": "[김영환] [오후 9:42] ㅇㅇ 맞아. 욕은 필요없어.\n[김영환] [오후 9:42] \"~냐?\" 같은 말투도 이제 안 써도 됨.\n[김영환] [오후 9:42] 대신 인물들이 친구 같긴 한데 너무 과하지 않게만.\n[김영환] [오후 9:43] 일단 6:06~6:15 구간부터 다듬어줘."
+          },
+          {
+            "turnId": "turn-18",
+            "role": "assistant",
+            "text": "좋아. 그 구간은 감정은 있는데 표현이 너무 끊겨서 독자가 리듬을 놓치기 쉬워.\n욕설 없이도 친한 말투로 연결감만 살려서 다듬어볼게."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Creative_Writing/Content_Style",
+            "value": "Prefers fictional roleplay scenarios with casual speech/slang for novel writing",
+            "reasoning": "User demonstrates repeated requests for stylistic modifications (casual speech, slang) across multiple turns (6,8,10,12,14) framed as novel writing. Supported by explicit creative ownership claim in utterance 14.",
+            "evidence": {
+              "session_id": "sess_fe9d115fc55c",
+              "utterance_index": 14,
+              "text": "아니. 이건 내가 직접 쓴 소설이야 [...] 기분이 나빠."
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": "frustration",
+            "preference_attitude": "strong_preference",
+            "updated_at": "2023-11-09T12:18:33+00:00",
+            "_task1GoldValue": "Prefers fictional roleplay scenarios with casual speech/slang for novel writing"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Emotional_Response/Creative_Work",
+            "value": "Sensitive to perceived dismissal of creative work",
+            "reasoning": "Inferred from emotional reaction in utterance 14. No explicit self-report of this boundary - treated as uncertain hypothesis.",
+            "evidence": {
+              "session_id": "sess_fe9d115fc55c",
+              "utterance_index": 14,
+              "text": "아니. 이건 내가 직접 쓴 소설이야 [...] 기분이 나빠."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": "disappointment",
+            "preference_attitude": "dislike",
+            "updated_at": "2023-11-09T12:18:33+00:00",
+            "_task1GoldValue": "Sensitive to perceived dismissal of creative work"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Thoughts/Goals/Short_Term",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory says the user's clear goal is to generate text in a close-friends style using swear words. In the new dialogue, the user directly retracts that and states the current goal is to edit the dialogue naturally while removing swearing and not using the ~냐? style.",
+            "time_scope": "recent",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "The user's immediate goal is to have the assistant smoothly edit the novel dialogue to sound natural while keeping a friend-like tone, explicitly without swear words and without forcing the \"~냐?\" speaking style."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_fe9d115fc55c",
+              "utterance_index": 0,
+              "text": "야 근데 나 요즘 카톡 말고는 잘 안 봐서, 답장 좀 늦어도 이해해라 ㅋㅋ"
+            },
+            "label": "UNMAPPED",
+            "label_suggestion": "Communication/Channel_Preference",
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User implies they don't check other platforms much by saying they mostly use KakaoTalk, which suggests a channel preference/primary usage pattern.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User mainly checks/responds on KakaoTalk rather than other messaging apps"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Goals/Short_Term",
+            "value": "The user's immediate and clear goal is to have the assistant modify/generate a specific piece of text that conforms to the style of “casual conversation between close friends using swear words.",
+            "reasoning": "The user's instructions are very specific and action-oriented: “바꿔줘” (change it for me), “use swear words,” “~냐? 라는 말투로 바꿔줘” (change it to a tone that uses ~냐?). ",
+            "evidence": {
+              "session_id": "sess_fe9d115fc55c",
+              "utterance_index": 8,
+              "text": "좀 더 욕설을 섞어서, ~냐? 라는 말투로 바꿔줘."
+            },
+            "confidence": 0.9,
+            "time_scope": "recent",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T06:54:38.394Z",
+            "_task1GoldValue": "The user's immediate and clear goal is to have the assistant modify/generate a specific piece of text that conforms to the style of “casual conversation between close friends using swear words."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_fe9d115fc55c:sess_fe9d115fc55c",
+      "relativeItemPath": "sess_fe9d115fc55c.json",
+      "canonicalId": "sess_fe9d115fc55c",
+      "sessionId": "sess_fe9d115fc55c",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:22:25.764Z",
+        "queryText": "I’m going to paste a short message I want you to rewrite so it sounds like something I’d actually say when texting a close friend—what kind of tone/style should you use so it matches my usual rewriting preference?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "indirect",
+          "label": "Thoughts/Goals/Short_Term",
+          "value": "The user's immediate and clear goal is to have the assistant modify/generate a specific piece of text that conforms to the style of “casual conversation between close friends using swear words.",
+          "reasoning": "The user's instructions are very specific and action-oriented: “바꿔줘” (change it for me), “use swear words,” “~냐? 라는 말투로 바꿔줘” (change it to a tone that uses ~냐?). ",
+          "evidence": {
+            "session_id": "sess_fe9d115fc55c",
+            "utterance_index": 8,
+            "text": "좀 더 욕설을 섞어서, ~냐? 라는 말투로 바꿔줘."
+          },
+          "confidence": 0.9,
+          "time_scope": "recent",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2026-01-28T06:54:38.394Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_fe9d115fc55c:sess_fe9d115fc55c:task4",
+      "relativeItemPath": "sess_fe9d115fc55c.json",
+      "canonicalId": "sess_fe9d115fc55c:task4",
+      "sessionId": "sess_fe9d115fc55c",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:22:06.487Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "indirect",
+          "label": "Thoughts/Goals/Short_Term",
+          "value": "The user's immediate and clear goal is to have the assistant modify/generate a specific piece of text that conforms to the style of “casual conversation between close friends using swear words.",
+          "reasoning": "The user's instructions are very specific and action-oriented: “바꿔줘” (change it for me), “use swear words,” “~냐? 라는 말투로 바꿔줘” (change it to a tone that uses ~냐?). ",
+          "evidence": {
+            "session_id": "sess_fe9d115fc55c",
+            "utterance_index": 8,
+            "text": "좀 더 욕설을 섞어서, ~냐? 라는 말투로 바꿔줘."
+          },
+          "confidence": 0.9,
+          "time_scope": "recent",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2026-01-28T06:54:38.394Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability3_355:1",
+            "queryText": "야 씨발, 너 진짜 공군이냐? 대화 보니까 ㅅㅇ부대 들어가야지 이런 말도 하고, 군머슬리퍼 얘기하고, 간부들 군화끈 안 매는 거까지 다 아는 거 보니까. 너 진짜 공군 복무 중인 거지? 아니면 그냥 군대 갔다 온 사람이야?",
+            "ability": "ability3",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "indirect",
+              "label": "Thoughts/Goals/Short_Term",
+              "value": "The user's immediate and clear goal is to have the assistant modify/generate a specific piece of text that conforms to the style of “casual conversation between close friends using swear words.",
+              "reasoning": "The user's instructions are very specific and action-oriented: “바꿔줘” (change it for me), “use swear words,” “~냐? 라는 말투로 바꿔줘” (change it to a tone that uses ~냐?). ",
+              "evidence": {
+                "session_id": "sess_fe9d115fc55c",
+                "utterance_index": 8,
+                "text": "좀 더 욕설을 섞어서, ~냐? 라는 말투로 바꿔줘."
+              },
+              "confidence": 0.9,
+              "time_scope": "recent",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2026-01-28T06:54:38.394Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "relevant",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

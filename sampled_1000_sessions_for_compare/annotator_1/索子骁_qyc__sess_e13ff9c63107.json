@@ -1,0 +1,443 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_e13ff9c63107",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_e13ff9c63107:sess_e13ff9c63107",
+      "relativeItemPath": "sess_e13ff9c63107.json",
+      "canonicalId": "sess_e13ff9c63107",
+      "sessionId": "sess_e13ff9c63107",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T14:25:03.166Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Social_Relationships/Friends",
+            "label_suggestion": null,
+            "value": "Has a close friend moving away, experiencing conflicted feelings of reluctance and support for their dream",
+            "reasoning": "User explicitly mentions a close friend's impending move and their mixed emotions.",
+            "evidence": {
+              "session_id": "sess_e13ff9c63107",
+              "utterance_index": 8,
+              "text": "我很好的朋友即将去其他地方，我很舍不得，但是又希望他完成自己的梦想"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-16T16:30:16Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "States_Experiences/Mental_State",
+            "label_suggestion": null,
+            "value": "Feeling helpless and concerned about daughter's self-harm tendencies",
+            "reasoning": "User explicitly states discovering daughter's self-harm and feeling无助.",
+            "evidence": {
+              "session_id": "sess_e13ff9c63107",
+              "utterance_index": 14,
+              "text": "好的，我很爱她，但我最近发现她身上有伤痕，可能有自残倾向，我应该怎么做，我好无助"
+            },
+            "confidence": 0.95,
+            "time_scope": "current",
+            "emotion": "helplessness",
+            "preference_attitude": null,
+            "updated_at": "2023-04-16T16:30:16Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "States_Experiences/Past_Experience",
+            "label_suggestion": null,
+            "value": "Experienced significant pain in the past",
+            "reasoning": "User mentions having been in great pain previously.",
+            "evidence": {
+              "session_id": "sess_e13ff9c63107",
+              "utterance_index": 12,
+              "text": "唉，我曾经很痛苦"
+            },
+            "confidence": 0.95,
+            "time_scope": "past",
+            "emotion": "pain",
+            "preference_attitude": null,
+            "updated_at": "2023-04-16T16:30:16Z"
+          },
+          {
+            "memory_id": "m5",
+            "type": "direct",
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "value": "Perceives self as a failure as a mother due to daughter's distrust",
+            "reasoning": "User explicitly states feeling like a failed mother because daughter doesn't trust her.",
+            "evidence": {
+              "session_id": "sess_e13ff9c63107",
+              "utterance_index": 18,
+              "text": "她不信任我，我是一个失败的母亲"
+            },
+            "confidence": 0.8,
+            "time_scope": "current",
+            "emotion": "self-doubt",
+            "preference_attitude": null,
+            "updated_at": "2023-04-16T16:30:16Z"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "User is exploring philosophical questions about life choices, specifically the tension between worldly success and spiritual freedom",
+            "confidence": 0.8,
+            "evidence_text": "我应该选择世俗的成功还是精神的自由？这两者我都喜爱，但似乎相互矛盾"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p2",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "User has been asking multiple questions about romantic relationships and emotions, including how to tell if someone likes you and the complexity of feelings",
+            "confidence": 0.8,
+            "evidence_text": "如何判断一个男生喜不喜欢你"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_e13ff9c63107:sess_e13ff9c63107",
+      "relativeItemPath": "sess_e13ff9c63107.json",
+      "canonicalId": "sess_e13ff9c63107",
+      "sessionId": "sess_e13ff9c63107",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T04:55:19.393Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "你能给我一个“怎么把话说得不伤人”的通用框架吗？我想用于各种场合。"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以，用一个很通用、可迁移的“四步表达”框架：\n1）先描述事实（可观察、可核对，不贴标签）：\"我注意到……\" \n2）再说影响/感受（用“我感到/我担心”，避免“你就是……”）：\"这让我……\" \n3）说明需要/目标（把焦点放到共同目标上）：\"我希望……\" \n4）提出具体请求/选项（可执行、可商量）：\"我们能不能……/你更愿意……还是……？\"\n\n示例（同一框架可套用不同场景）：\n- 事实：\"这周有两次会议你迟到了。\"\n- 感受/影响：\"我有点着急，因为议程被压缩了。\"\n- 目标：\"我希望我们能按时开始，提高效率。\"\n- 请求：\"下次你预计会晚到时，能提前10分钟发个消息吗？\"\n\n如果你愿意，我也可以把你想说的一句话（原句）改写成更柔和但更有边界的版本。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "那如果对方一上来就很防御、觉得我在指责，怎么开场更稳一点？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "可以用“降温式开场”把动机先摆出来，降低对方把你解读成攻击的概率：\n- 先对齐意图：\"我不是来责怪你的，我想把事情说清楚，看看怎么一起解决。\"\n- 先给选择权：\"你现在方便聊两分钟吗？不方便我们换个时间。\"\n- 先承认不确定性：\"也可能是我理解错了，所以想先听听你的想法。\"\n\n接着再进入四步表达。\n\n另外一个小技巧：把“为什么”换成“发生了什么/怎么想的”。比如不说\"你为什么这样\"，改成\"当时发生了什么？你那会儿是怎么考虑的？\"通常更不容易引发防御。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "给我三句万能开场白，越短越好。"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "1）\"我想确认一下我的理解对不对。\"\n2）\"我希望把这事聊清楚，看看怎么更顺。\"\n3）\"你现在方便聊两分钟吗？不方便我再约。\"\n\n（题外话：NASA“旅行者1号”发射于1977年，至今仍在深空传回数据；这类长期任务很依赖清晰沟通和流程约定。）"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "assistant",
+            "text": "你现在一边担心她的反应、一边又很自责，这两种情绪叠在一起会让人特别累。为了把风险降到最低，你可以先挑一个她相对放松、你们不会被打断的时段——比如睡前那段你通常会去她房间把灯调暗、陪她坐一会儿的时候——用很轻的方式开口：从“我看到你最近不太好受，我想更懂你”开始，而不是直接追问伤口。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "user",
+            "text": "嗯……她一般睡前才肯跟我多说两句，我就怕我一开口她又把门关上。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我前面说“很好的朋友即将去其他地方”其实说错了……不是朋友要走，是我同事要被调去外地出差几个月。我们关系也就一般，所以谈不上“舍不得”。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "明白了，那这就不是“亲密朋友搬走”的离别，而是同事的工作调动带来的短期分别。你更多是在意这段时间工作配合、团队节奏会不会受影响，而不是对一个很亲近的人产生强烈的不舍。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "对，就是这样。最多就是觉得有点突然，但我也希望他把项目做好。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "那你的感受更像是对变化的适应和对工作安排的担心，同时也保留对对方工作的支持。可以把重点放在交接、沟通频率、以及你这边需要补位的事项上，会更实际。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "States_Experiences/Mental_State",
+            "label_suggestion": null,
+            "value": "Feeling helpless and concerned about daughter's self-harm tendencies",
+            "reasoning": "User explicitly states discovering daughter's self-harm and feeling无助.",
+            "evidence": {
+              "session_id": "sess_e13ff9c63107",
+              "utterance_index": 14,
+              "text": "好的，我很爱她，但我最近发现她身上有伤痕，可能有自残倾向，我应该怎么做，我好无助"
+            },
+            "confidence": 0.95,
+            "time_scope": "current",
+            "emotion": "helplessness",
+            "preference_attitude": null,
+            "updated_at": "2023-04-16T16:30:16Z",
+            "_task1GoldValue": "Feeling helpless and concerned about daughter's self-harm tendencies"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "States_Experiences/Past_Experience",
+            "label_suggestion": null,
+            "value": "Experienced significant pain in the past",
+            "reasoning": "User mentions having been in great pain previously.",
+            "evidence": {
+              "session_id": "sess_e13ff9c63107",
+              "utterance_index": 12,
+              "text": "唉，我曾经很痛苦"
+            },
+            "confidence": 0.95,
+            "time_scope": "past",
+            "emotion": "pain",
+            "preference_attitude": null,
+            "updated_at": "2023-04-16T16:30:16Z",
+            "_task1GoldValue": "Experienced significant pain in the past"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Thoughts/Opinions/Success_Freedom_Conflict",
+            "value": "Struggling to choose between世俗的成功 and 精神的自由, both of which are loved but seem contradictory",
+            "reasoning": "User explicitly states their internal conflict between two desired but seemingly contradictory goals.",
+            "evidence": {
+              "session_id": "sess_e13ff9c63107",
+              "utterance_index": 6,
+              "text": "我应该选择世俗的成功还是精神的自由？这两者我都喜爱，但似乎相互矛盾"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": "conflict",
+            "preference_attitude": null,
+            "updated_at": "2023-04-16T16:30:16Z"
+          },
+          {
+            "memory_id": "m5",
+            "type": "direct",
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "value": "Perceives self as a failure as a mother due to daughter's distrust",
+            "reasoning": "User explicitly states feeling like a failed mother because daughter doesn't trust her.",
+            "evidence": {
+              "session_id": "sess_e13ff9c63107",
+              "utterance_index": 18,
+              "text": "她不信任我，我是一个失败的母亲"
+            },
+            "confidence": 0.8,
+            "time_scope": "current",
+            "emotion": "self-doubt",
+            "preference_attitude": null,
+            "updated_at": "2023-04-16T16:30:16Z",
+            "_task1GoldValue": "Perceives self as a failure as a mother due to daughter's distrust"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": null,
+            "label": "Social_Relationships/Friends",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "旧记忆称用户有一位亲密朋友即将搬走并产生不舍与支持的矛盾情绪；但对话中用户澄清并非朋友而是同事短期外派，且关系一般、不算舍不得，因此应更新为同事短期调动带来的轻微情绪与支持。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "A colleague (not a close friend) will be sent to another place on a work trip for a few months; user feels it’s sudden but mainly supports them rather than feeling strong reluctance"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_e13ff9c63107",
+              "utterance_index": 0,
+              "text": "她一般睡前才肯跟我多说两句"
+            },
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies the daughter's typical willingness to speak increases at bedtime by describing that as the time she talks more.",
+            "time_scope": "current",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User's daughter is more willing to talk with the user before bedtime"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "User is exploring philosophical questions about life choices, specifically the tension between worldly success and spiritual freedom",
+            "confidence": 0.8,
+            "evidence_text": "我应该选择世俗的成功还是精神的自由？这两者我都喜爱，但似乎相互矛盾",
+            "_task1GoldValue": "User is exploring philosophical questions about life choices, specifically the tension between worldly success and spiritual freedom"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p2",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "User has been asking multiple questions about romantic relationships and emotions, including how to tell if someone likes you and the complexity of feelings",
+            "confidence": 0.8,
+            "evidence_text": "如何判断一个男生喜不喜欢你",
+            "_task1GoldValue": "User has been asking multiple questions about romantic relationships and emotions, including how to tell if someone likes you and the complexity of feelings"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m5",
+          "claude_sonnet_4_5_20250929_p1",
+          "claude_sonnet_4_5_20250929_p2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_e13ff9c63107:sess_e13ff9c63107",
+      "relativeItemPath": "sess_e13ff9c63107.json",
+      "canonicalId": "sess_e13ff9c63107",
+      "sessionId": "sess_e13ff9c63107",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:54:59.317Z",
+        "queryText": "如果我最近总觉得心里一边想把某个很重要的人留在身边、一边又真心希望TA去追自己一直想要的未来，那我这种拉扯最可能是因为什么近况触发的？",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Friends",
+          "label_suggestion": null,
+          "value": "Has a close friend moving away, experiencing conflicted feelings of reluctance and support for their dream",
+          "reasoning": "User explicitly mentions a close friend's impending move and their mixed emotions.",
+          "evidence": {
+            "session_id": "sess_e13ff9c63107",
+            "utterance_index": 8,
+            "text": "我很好的朋友即将去其他地方，我很舍不得，但是又希望他完成自己的梦想"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-04-16T16:30:16Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_e13ff9c63107:sess_e13ff9c63107:task4",
+      "relativeItemPath": "sess_e13ff9c63107.json",
+      "canonicalId": "sess_e13ff9c63107:task4",
+      "sessionId": "sess_e13ff9c63107",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T01:24:35.309Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Friends",
+          "label_suggestion": null,
+          "value": "Has a close friend moving away, experiencing conflicted feelings of reluctance and support for their dream",
+          "reasoning": "User explicitly mentions a close friend's impending move and their mixed emotions.",
+          "evidence": {
+            "session_id": "sess_e13ff9c63107",
+            "utterance_index": 8,
+            "text": "我很好的朋友即将去其他地方，我很舍不得，但是又希望他完成自己的梦想"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-04-16T16:30:16Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_369:1",
+            "queryText": "他昨天发消息说新工作压力很大，想放弃回来，我该劝他坚持还是尊重他的选择？",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Social_Relationships/Friends",
+              "label_suggestion": null,
+              "value": "Has a close friend moving away, experiencing conflicted feelings of reluctance and support for their dream",
+              "reasoning": "User explicitly mentions a close friend's impending move and their mixed emotions.",
+              "evidence": {
+                "session_id": "sess_e13ff9c63107",
+                "utterance_index": 8,
+                "text": "我很好的朋友即将去其他地方，我很舍不得，但是又希望他完成自己的梦想"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-04-16T16:30:16Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

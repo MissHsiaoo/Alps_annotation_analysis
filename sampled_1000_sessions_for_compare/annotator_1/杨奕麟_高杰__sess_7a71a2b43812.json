@@ -1,0 +1,350 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_7a71a2b43812",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_7a71a2b43812:sess_7a71a2b43812",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7a71a2b43812.json",
+      "canonicalId": "sess_7a71a2b43812",
+      "sessionId": "sess_7a71a2b43812",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:25:34.449Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Interaction/Style/Process_Structuring",
+            "value": "Repeated requests for structured task decomposition and algorithm analysis process design",
+            "reasoning": "Observed pattern of requesting task decomposition (4-5 steps) across multiple problem statements. Label 'Thoughts/Curiosity' forced - actual focus is process structuring methodology.",
+            "evidence": {
+              "session_id": "sess_7a71a2b43812",
+              "utterance_index": 0,
+              "text": "Разбей на 4 задачи следующую основную задачу: Исследовать существующие алгоритмы испытаний и их характеристики"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-19T07:25:15+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers concise text formatting with grammatical case adjustments and result presentation templates",
+            "reasoning": "Repeated requests for text shortening (utterances 4,14) and output reformatting (utterance 6) demonstrate interaction pattern. Confidence reduced as no explicit long-term preference statement.",
+            "evidence": {
+              "session_id": "sess_7a71a2b43812",
+              "utterance_index": 6,
+              "text": "Измени текст следующем образом: Задачу переделай в родительный падеж..."
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-03-19T07:25:15+00:00"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "User is exploring testing algorithms in depth, including classification, theoretical analysis, practical analysis, comparative analysis, requirements definition, concept development, and optimization strategies",
+            "confidence": 0.8,
+            "evidence_text": "Разбей на 4 задачи следующую основную задачу: Исследовать существующие алгоритмы испытаний и их характеристики... Напиши результат выполнения следующих задач... Разбей на 5 задач следующую основную задачу: Определить требования к разрабатываемому алгоритму испытаний... Проанализировать результаты работы алгоритмов испытаний, улучшить алгоритм на основе полученных результатов"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_7a71a2b43812:sess_7a71a2b43812",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7a71a2b43812.json",
+      "canonicalId": "sess_7a71a2b43812",
+      "sessionId": "sess_7a71a2b43812",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:19:26.413Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Слушай, а если у нас есть результаты тестов алгоритма (логи, метрики, отчёты), с чего лучше начинать анализ, чтобы не утонуть в деталях?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Обычно помогает начать с «карты метрик»: 3–5 ключевых показателей (например, точность, время выполнения, доля падений/ошибок, покрытие), затем быстрое сравнение с базовой версией и выделение аномалий. После этого уже углубляться в логи только по найденным проблемным зонам."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "А как понять, что проблема в данных, а не в логике самого алгоритма?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Практичный приём — разложить сбои по источникам: (1) входные данные (формат, диапазоны, пропуски), (2) окружение (версии библиотек, ресурсы), (3) логика (регрессии, граничные случаи). Если ошибки коррелируют с конкретными типами входов или появляются при нестабильном качестве данных, это сильный сигнал в сторону данных."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Ок, а что включить в план улучшений после анализа?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Минимальный план улучшений: список гипотез (что исправляем), приоритет (по влиянию/стоимости), изменения (что конкретно делаем), критерии успешности (какие метрики должны улучшиться), и план валидации (какие тесты прогоняем, на каких наборах, как сравниваем)."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Можешь привести пример, как это выглядит в реальности, но без привязки к конкретному проекту?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Пример: в отчёте видно, что медианное время ответа выросло на 18%, а 95-й перцентиль — на 40%. Гипотеза: деградация из‑за нового шага предобработки. Действия: профилирование, кеширование промежуточных результатов, ограничение размера входа. Критерий: вернуть p95 к прежнему уровню ±5% без падения точности. Валидация: A/B прогон на одинаковом наборе тестов + проверка регрессий на граничных кейсах.\n\n(Факт не о пользователе: в 1997 году Deep Blue обыграл Гарри Каспарова в матче из шести партий.)\n(Факт не о пользователе: «Маринер‑4» в 1965 году передал первые крупные снимки Марса.)\n(Факт не о пользователе: у осьминогов три сердца и медьсодержащий гемоцанин вместо гемоглобина.)"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Я сейчас свожу всё в отчёт по ВКР: проверь, чтобы в результатах по пунктам (цели/требования/концепция/план) везде была одинаковая формулировка «алгоритмов испытаний», а не вперемешку «тестирования»."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Понял. Чтобы унифицировать терминологию, в тексте результатов и названиях разделов используйте одну форму — «алгоритмов испытаний» — и замените все вхождения «тестирования» на «испытаний» (включая «тестовые случаи» → «испытательные случаи», если это требуется по стилю документа). Также проверьте, чтобы в подзаголовках и списках сохранялась одна и та же терминология во всех пунктах (цели, функциональные/нефункциональные требования, концепция, план)."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Только уточню: не надо делать «как будто результат уже получен» и не надо ничего переводить в родительный падеж. Оставь формулировки задач как есть (в именительном), а результат — в нейтральной форме, без шаблона «Результат был получен». И, пожалуйста, не обязательно сокращать — можно нормально, подробно."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Понял. Тогда оформляю без родительного падежа, без формулировки «результат был получен» и без обязательного сокращения: задачи — как есть, результат — нейтральным описанием."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Interaction/Style/Process_Structuring",
+            "value": "Repeated requests for structured task decomposition and algorithm analysis process design",
+            "reasoning": "Observed pattern of requesting task decomposition (4-5 steps) across multiple problem statements. Label 'Thoughts/Curiosity' forced - actual focus is process structuring methodology.",
+            "evidence": {
+              "session_id": "sess_7a71a2b43812",
+              "utterance_index": 0,
+              "text": "Разбей на 4 задачи следующую основную задачу: Исследовать существующие алгоритмы испытаний и их характеристики"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-19T07:25:15+00:00",
+            "_task1GoldValue": "Repeated requests for structured task decomposition and algorithm analysis process design"
+          },
+          {
+            "confidence": 0.7,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory claims a preference for concise formatting with case adjustments and result templates, but the user explicitly rejects those constraints and asks for neutral wording and allows detail.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not prefer enforced conciseness or mandatory grammatical case adjustments/result templates; prefers neutral result wording and can accept detailed text"
+          },
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_7a71a2b43812",
+              "utterance_index": 0,
+              "text": "Я сейчас свожу всё в отчёт по ВКР: проверь, чтобы в результатах по пунктам (цели/требования/концепция/план) везде была одинаковая формулировка «алгоритмов испытаний»"
+            },
+            "label": "Personal/Work_Context",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user mentions consolidating everything into a “отчёт по ВКР”, implying they are preparing a final qualification work report in this domain.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is compiling an academic thesis/report (ВКР) related to algorithms of испытаний."
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers concise text formatting with grammatical case adjustments and result presentation templates",
+            "reasoning": "Repeated requests for text shortening (utterances 4,14) and output reformatting (utterance 6) demonstrate interaction pattern. Confidence reduced as no explicit long-term preference statement.",
+            "evidence": {
+              "session_id": "sess_7a71a2b43812",
+              "utterance_index": 6,
+              "text": "Измени текст следующем образом: Задачу переделай в родительный падеж..."
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-03-19T07:25:15+00:00",
+            "_task1GoldValue": "Prefers concise text formatting with grammatical case adjustments and result presentation templates"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "User is exploring testing algorithms in depth, including classification, theoretical analysis, practical analysis, comparative analysis, requirements definition, concept development, and optimization strategies",
+            "confidence": 0.8,
+            "evidence_text": "Разбей на 4 задачи следующую основную задачу: Исследовать существующие алгоритмы испытаний и их характеристики... Напиши результат выполнения следующих задач... Разбей на 5 задач следующую основную задачу: Определить требования к разрабатываемому алгоритму испытаний... Проанализировать результаты работы алгоритмов испытаний, улучшить алгоритм на основе полученных результатов",
+            "_task1GoldValue": "User is exploring testing algorithms in depth, including classification, theoretical analysis, practical analysis, comparative analysis, requirements definition, concept development, and optimization strategies"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "claude_sonnet_4_5_20250929_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_7a71a2b43812:sess_7a71a2b43812",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7a71a2b43812.json",
+      "canonicalId": "sess_7a71a2b43812",
+      "sessionId": "sess_7a71a2b43812",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T18:38:29.573Z",
+        "queryText": "I’m about to paste a paragraph and ask you to rewrite it, but I want it done in the way I usually prefer: what specific output style should you use (including how you handle grammar/case and how you present the final result)?[ERROR]",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers concise text formatting with grammatical case adjustments and result presentation templates",
+          "reasoning": "Repeated requests for text shortening (utterances 4,14) and output reformatting (utterance 6) demonstrate interaction pattern. Confidence reduced as no explicit long-term preference statement.",
+          "evidence": {
+            "session_id": "sess_7a71a2b43812",
+            "utterance_index": 6,
+            "text": "Измени текст следующем образом: Задачу переделай в родительный падеж..."
+          },
+          "confidence": 0.65,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-03-19T07:25:15+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_7a71a2b43812:sess_7a71a2b43812:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7a71a2b43812.json",
+      "canonicalId": "sess_7a71a2b43812:task4",
+      "sessionId": "sess_7a71a2b43812",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T12:39:49.722Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers concise text formatting with grammatical case adjustments and result presentation templates",
+          "reasoning": "Repeated requests for text shortening (utterances 4,14) and output reformatting (utterance 6) demonstrate interaction pattern. Confidence reduced as no explicit long-term preference statement.",
+          "evidence": {
+            "session_id": "sess_7a71a2b43812",
+            "utterance_index": 6,
+            "text": "Измени текст следующем образом: Задачу переделай в родительный падеж..."
+          },
+          "confidence": 0.65,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-03-19T07:25:15+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1180:1",
+            "queryText": "Разбей на 4 задачи следующую основную задачу: Подготовить итоговый отчёт по проекту. Результат выполнения каждой задачи напиши, пожалуйста, в том же формате, как в прошлый раз.",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers concise text formatting with grammatical case adjustments and result presentation templates",
+              "reasoning": "Repeated requests for text shortening (utterances 4,14) and output reformatting (utterance 6) demonstrate interaction pattern. Confidence reduced as no explicit long-term preference statement.",
+              "evidence": {
+                "session_id": "sess_7a71a2b43812",
+                "utterance_index": 6,
+                "text": "Измени текст следующем образом: Задачу переделай в родительный падеж..."
+              },
+              "confidence": 0.65,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2024-03-19T07:25:15+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

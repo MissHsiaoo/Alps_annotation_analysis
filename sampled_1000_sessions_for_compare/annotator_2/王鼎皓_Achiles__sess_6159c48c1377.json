@@ -1,0 +1,351 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_6159c48c1377",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_6159c48c1377:sess_6159c48c1377",
+      "relativeItemPath": "sess_6159c48c1377.json",
+      "canonicalId": "sess_6159c48c1377",
+      "sessionId": "sess_6159c48c1377",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T17:00:10.051Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "Fascinated by textile production techniques (silk/denim thread matrices)",
+            "reasoning": "User explicitly self-reports fascination with textile manufacturing processes.",
+            "evidence": {
+              "session_id": "sess_6159c48c1377",
+              "utterance_index": 12,
+              "text": "Wiem np. że różne tkaniny mają inną odporność... Kiedyś zafascynował mnie temat..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": "fascination",
+            "preference_attitude": "interest",
+            "updated_at": "2024-04-29T05:44:36+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical/Blender/Workflow_Interest",
+            "value": "Sustained technical curiosity about Blender workflows: cloth simulation parameters, instancing optimization, sculpt mode integration",
+            "reasoning": "Multiple technical inquiries about Blender, but label 'Thoughts/Curiosity' was forced. Downgraded to indirect hypothesis.",
+            "evidence": {
+              "session_id": "sess_6159c48c1377",
+              "utterance_index": 38,
+              "text": "Czy znasz jakiś rozwiązanie, aby w czasie edycji obiektu..."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-29T05:44:36+00:00"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "value": "User prefers detailed technical explanations over general advice, especially when learning software. User explicitly stated they want underlying principles and formulas rather than being told to 'just test things'.",
+            "confidence": 0.95,
+            "evidence_text": "Nie opowiadaj że to wszystko polega na testowaniu. Nie zgadzam się z twoja tezą. Popatrz jeśli wszystko zostało przez programistów napisane na podstawie jakiś zasad, wzorów i cały program symulacyjny tymi wytycznymi się kieruje. To wystarczy że podasz mi te wytyczne według których obliczana jest symulacja - ja ją zrozumiem i będę mógł kontrolować tkaninę o wiele lepiej niż teraz."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_6159c48c1377:sess_6159c48c1377",
+      "relativeItemPath": "sess_6159c48c1377.json",
+      "canonicalId": "sess_6159c48c1377",
+      "sessionId": "sess_6159c48c1377",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T17:00:23.577Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Dzięki za poprzedni prompt. A gdybym chciał wersję bardziej „technicznie” opisaną: PBR, bez cieni, neutralne światło, i żeby było jasne, że to ma być tileable?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Jasne — w takim promptcie warto doprecyzować: *seamless/tileable*, *top-down/orthographic*, *even lighting*, *no cast shadows*, oraz że to ma być zestaw PBR (albedo/roughness/normal/height/AO). Przykład po angielsku:\n\n\"Create a **seamless (tileable) PBR texture set** of **light wooden planks** used in rustic mountain-cabin furniture (bed boards). **Top-down orthographic view**, **even neutral lighting**, **no cast shadows**, **no vignetting**, **no perspective**, **no reflections**, **no color grading**. Show clear **wood grain** and **knots**, with subtle variation between planks (different tones and grain directions) while remaining seamless. Output **4K** maps: **Albedo/Base Color (shadow-free), Roughness, Normal, Height/Displacement, Ambient Occlusion**. Keep the surface realistic and non-stylized.\"\n\nJeśli powiedzisz, jakim narzędziem generujesz (np. SDXL, Midjourney, Substance, itp.), mogę dopasować składnię i dodać negatywny prompt."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "OK, a dodasz jeszcze wersję krótszą „jednolinijkową”, taką do szybkiego wklejenia?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Pewnie:\n\n\"Seamless tileable 4K PBR texture set of light wooden planks for rustic mountain-cabin bed boards, top-down orthographic, even neutral lighting, no cast shadows/no perspective/no vignette, visible grain and knots, subtle plank-to-plank variation; output maps: albedo (shadow-free), roughness, normal, height, AO.\""
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Przy okazji: wczoraj czytałem ciekawostkę, że pierwsze sklejki powstawały już w starożytnym Egipcie — brzmi wiarygodnie?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Tak, to dość wiarygodne. W starożytnym Egipcie stosowano techniki łączenia cienkich warstw drewna (fornirów) i klejenia ich, choć nie zawsze była to „sklejka” w dzisiejszym, przemysłowym sensie (wielowarstwowa płyta o krzyżowym układzie słojów). Za bliższą współczesnej sklejce formę często uznaje się rozwój technologii klejów i prasowania warstw w XIX–XX wieku, ale sama idea laminowania drewna jest dużo starsza."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Wracam do tego promptu od desek: wrzuciłem go do Stable Diffusion i dopiero jak dopisałem „top-down orthographic, PBR albedo only, no lighting/shadows” przestały mi wychodzić takie „zdjęcia desek z lampą” zamiast tile’owalnej tekstury. Teraz jest dużo bliżej tego, czego potrzebuję."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "To bardzo dobry kierunek. W promptach do tekstur takie doprecyzowania jak „top-down orthographic” i szczególnie „albedo only / no lighting / no shadows” zwykle robią największą różnicę, bo model przestaje generować „fotę materiału” i idzie w stronę czystego mapowania. Jeśli chcesz, mogę pomóc dopracować wersję promptu stricte pod „seamless wood planks” (np. jeszcze dopisać unikanie perspektywy, winietowania, AO, highlightów)."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Wracam jeszcze do tej rozmowy o tkaninach.\nWtedy napisałem, że „kiedyś zafascynował mnie temat” technologii produkcji materiałów.\nDoprecyzuję, bo to może brzmieć jak moja stała zajawka: to był tylko krótki epizod ciekawości.\nDziś już mnie to praktycznie nie interesuje i nie śledzę tematu."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Jasne, rozumiem.\nSkoro piszesz wprost, że „to był tylko krótki epizod ciekawości” i że „dziś już mnie to praktycznie nie interesuje”, to nie ma podstaw, żeby traktować to jako Twoje długoterminowe zainteresowanie.\nW tamtym momencie opisywałeś coś, co Cię zaciekawiło kiedyś, ale to nie oznacza, że nadal Cię fascynuje."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical/Blender/Workflow_Interest",
+            "value": "Sustained technical curiosity about Blender workflows: cloth simulation parameters, instancing optimization, sculpt mode integration",
+            "reasoning": "Multiple technical inquiries about Blender, but label 'Thoughts/Curiosity' was forced. Downgraded to indirect hypothesis.",
+            "evidence": {
+              "session_id": "sess_6159c48c1377",
+              "utterance_index": 38,
+              "text": "Czy znasz jakiś rozwiązanie, aby w czasie edycji obiektu..."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-29T05:44:36+00:00",
+            "_task1GoldValue": "Sustained technical curiosity about Blender workflows: cloth simulation parameters, instancing optimization, sculpt mode integration"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": "neutral",
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "Wracam jeszcze do tej rozmowy o tkaninach.\nWtedy napisałem, że „kiedyś zafascynował mnie temat” technologii produkcji materiałów.\nDoprecyzuję, bo to może brzmieć jak moja stała zajawka: to był tylko krótki epizod ciekawości.\nDziś już mnie to praktycznie nie interesuje i nie śledzę tematu."
+                }
+              ]
+            },
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "no_interest",
+            "reasoning": "Old memory frames the user as being fascinated by textile production techniques as a stable trait. The user clarifies it was a short-lived curiosity and they are no longer interested, so the long-term fascination is contradicted and should be updated.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User’s interest in textile production techniques (e.g., silk/denim thread structures) was only a brief past episode; it is not a current or ongoing fascination."
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_6159c48c1377",
+              "utterance_index": 0,
+              "text": "wrzuciłem go do Stable Diffusion i dopiero jak dopisałem „top-down orthographic, PBR albedo only, no lighting/shadows”"
+            },
+            "label": "Technical/AI_Generation/Tools",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User describes testing the wood-plank prompt specifically in Stable Diffusion and improving results by adding technical prompt constraints, implying active use of SD for texture generation.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User uses Stable Diffusion to generate seamless wood-plank textures and refines prompts with constraints like top-down orthographic and albedo-only/no-lighting."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "Fascinated by textile production techniques (silk/denim thread matrices)",
+            "reasoning": "User explicitly self-reports fascination with textile manufacturing processes.",
+            "evidence": {
+              "session_id": "sess_6159c48c1377",
+              "utterance_index": 12,
+              "text": "Wiem np. że różne tkaniny mają inną odporność... Kiedyś zafascynował mnie temat..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": "fascination",
+            "preference_attitude": "interest",
+            "updated_at": "2024-04-29T05:44:36+00:00",
+            "_task1GoldValue": "Fascinated by textile production techniques (silk/denim thread matrices)"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "value": "User prefers detailed technical explanations over general advice, especially when learning software. User explicitly stated they want underlying principles and formulas rather than being told to 'just test things'.",
+            "confidence": 0.95,
+            "evidence_text": "Nie opowiadaj że to wszystko polega na testowaniu. Nie zgadzam się z twoja tezą. Popatrz jeśli wszystko zostało przez programistów napisane na podstawie jakiś zasad, wzorów i cały program symulacyjny tymi wytycznymi się kieruje. To wystarczy że podasz mi te wytyczne według których obliczana jest symulacja - ja ją zrozumiem i będę mógł kontrolować tkaninę o wiele lepiej niż teraz.",
+            "_task1GoldValue": "User prefers detailed technical explanations over general advice, especially when learning software. User explicitly stated they want underlying principles and formulas rather than being told to 'just test things'."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "claude_sonnet_4_5_20250929_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_6159c48c1377:sess_6159c48c1377",
+      "relativeItemPath": "sess_6159c48c1377.json",
+      "canonicalId": "sess_6159c48c1377",
+      "sessionId": "sess_6159c48c1377",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T17:00:26.513Z",
+        "queryText": "I’m picking a weekend project and I’m torn between (A) analyzing how different materials’ internal structure affects their durability and (B) doing a surface-level style moodboard. Based on what you know about what tends to genuinely hold my attention long-term, which option should I pick, and what kind of materials/process angle would keep me most engaged?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Identity",
+          "label_suggestion": null,
+          "value": "Fascinated by textile production techniques (silk/denim thread matrices)",
+          "reasoning": "User explicitly self-reports fascination with textile manufacturing processes.",
+          "evidence": {
+            "session_id": "sess_6159c48c1377",
+            "utterance_index": 12,
+            "text": "Wiem np. że różne tkaniny mają inną odporność... Kiedyś zafascynował mnie temat..."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": "fascination",
+          "preference_attitude": "interest",
+          "updated_at": "2024-04-29T05:44:36+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_6159c48c1377:sess_6159c48c1377:task4",
+      "relativeItemPath": "sess_6159c48c1377.json",
+      "canonicalId": "sess_6159c48c1377:task4",
+      "sessionId": "sess_6159c48c1377",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T17:00:29.571Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Identity",
+          "label_suggestion": null,
+          "value": "Fascinated by textile production techniques (silk/denim thread matrices)",
+          "reasoning": "User explicitly self-reports fascination with textile manufacturing processes.",
+          "evidence": {
+            "session_id": "sess_6159c48c1377",
+            "utterance_index": 12,
+            "text": "Wiem np. że różne tkaniny mają inną odporność... Kiedyś zafascynował mnie temat..."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": "fascination",
+          "preference_attitude": "interest",
+          "updated_at": "2024-04-29T05:44:36+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_128:1",
+            "queryText": "Dzień dobry. Przy projektowaniu tekstury na prześcieradło w Blenderze, chcę zasymulować efekt 'prześwitującej' tkaniny, gdzie widać delikatną strukturę splotu, ale nie tak gęstą jak w jeansie. Pamiętasz, jak mówiłem o matrycach nici? Chodzi mi o coś pośredniego między jedwabiem a lnem – splot, który daje materiałowi lekkość, ale też pewną sztywność zapobiegającą nadmiernemu rozciąganiu. Jak najlepiej ustawić parametry 'Shear' i 'Bending' w symulacji Cloth, żeby oddać taką właściwość? I czy da się to jakoś powiązać z mapą normalnych, żeby uwidocznić ten charakterystyczny, skośny układ nici, o którym kiedyś czytałem?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Identity",
+              "label_suggestion": null,
+              "value": "Fascinated by textile production techniques (silk/denim thread matrices)",
+              "reasoning": "User explicitly self-reports fascination with textile manufacturing processes.",
+              "evidence": {
+                "session_id": "sess_6159c48c1377",
+                "utterance_index": 12,
+                "text": "Wiem np. że różne tkaniny mają inną odporność... Kiedyś zafascynował mnie temat..."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": "fascination",
+              "preference_attitude": "interest",
+              "updated_at": "2024-04-29T05:44:36+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

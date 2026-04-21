@@ -1,0 +1,318 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_6779a3dad6eb",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_6779a3dad6eb:sess_6779a3dad6eb",
+      "relativeItemPath": "sess_6779a3dad6eb.json",
+      "canonicalId": "sess_6779a3dad6eb",
+      "sessionId": "sess_6779a3dad6eb",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T18:15:47.796Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires strict [DIRECTION] list format for labyrinth route answers",
+            "reasoning": "User explicitly defines required response format with multiple examples of direction lists.",
+            "evidence": {
+              "session_id": "sess_6779a3dad6eb",
+              "utterance_index": 4,
+              "text": "Example answer: [NORTH, NORTH, EAST]\nExample answer: [SOUTH]\nExample answer: [SOUTH, WEST]"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-04-22T17:51:27+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/task_focus/navigation_requests",
+            "value": "Repeated requests for labyrinth navigation routes between specific rooms",
+            "reasoning": "User tests navigation mechanics systematically, but no evidence this reflects personal curiosity rather than task-local problem-solving.",
+            "evidence": {
+              "session_id": "sess_6779a3dad6eb",
+              "utterance_index": 14,
+              "text": "YELLOW ROOM to RED ROOM"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-22T17:51:27+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_6779a3dad6eb:sess_6779a3dad6eb",
+      "relativeItemPath": "sess_6779a3dad6eb.json",
+      "canonicalId": "sess_6779a3dad6eb",
+      "sessionId": "sess_6779a3dad6eb",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T14:59:30.344Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Let’s do a quick variation: if a new room is added, how do routes change?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure. Tell me (1) the new room’s name/description, (2) which existing room(s) it connects to, and (3) the direction(s) of each connection, and I’ll update routes accordingly."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Add a STUDY. From HALL you can go NORTH to STUDY, and from STUDY you can go SOUTH to HALL."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Got it. With STUDY added:\n- HALL ↔ STUDY via [NORTH] from HALL and [SOUTH] from STUDY.\nAsk for any start/end points and I’ll give the step-by-step route."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Route from LIVING ROOM to STUDY?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "[WEST, NORTH, EAST, NORTH]\n(LIVING ROOM → YELLOW ROOM → KITCHEN → HALL → STUDY)"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Unrelated: I read a story where a museum used tiny RFID tags to track visitors through exhibits."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "That’s a common demo scenario for indoor analytics: RFID (or BLE beacons) can estimate dwell time and traffic flow, though accuracy depends on reader placement and tag type. Want to continue with more labyrinth routes?"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Okay, quick tweak before the next routes: let’s add a RED ROOM that you can reach by going SOUTH from the LIVING ROOM, and it only connects back NORTH to the LIVING ROOM.\nNow, YELLOW ROOM to RED ROOM."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "1. From the YELLOW ROOM, go EAST to enter the LIVING ROOM.\n2. From the LIVING ROOM, go SOUTH to enter the RED ROOM.\n\nSo, your route would be: [EAST, SOUTH]"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Same labyrinth rules, but don’t do the bracket list this time. Just tell me the steps in plain sentences, like “Go north to the kitchen, then east…”"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Okay—I'll describe the route in plain sentences instead of a bracketed direction list."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "YELLOW ROOM to HALL."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Go NORTH from the YELLOW ROOM to enter the KITCHEN, then go EAST to enter the HALL."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/task_focus/navigation_requests",
+            "value": "Repeated requests for labyrinth navigation routes between specific rooms",
+            "reasoning": "User tests navigation mechanics systematically, but no evidence this reflects personal curiosity rather than task-local problem-solving.",
+            "evidence": {
+              "session_id": "sess_6779a3dad6eb",
+              "utterance_index": 14,
+              "text": "YELLOW ROOM to RED ROOM"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-22T17:51:27+00:00"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory says the user requires a strict bracketed list format, but the user explicitly overrides that preference: \"don’t do the bracket list this time. Just tell me the steps in plain sentences\". The assistant complies, showing the format is not strictly required.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not require strict [DIRECTION] list format for labyrinth route answers; can request plain-sentence steps instead."
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_6779a3dad6eb",
+              "utterance_index": 0,
+              "text": "let’s add a RED ROOM that you can reach by going SOUTH from the LIVING ROOM, and it only connects back NORTH to the LIVING ROOM."
+            },
+            "label": "UNMAPPED",
+            "label_suggestion": "labyrinth_structure/new_room_connection",
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user introduces a structural change, implying the RED ROOM is now part of the labyrinth with the stated connections.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Labyrinth updated: a RED ROOM exists south of the LIVING ROOM and connects back north to the LIVING ROOM"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_6779a3dad6eb:sess_6779a3dad6eb",
+      "relativeItemPath": "sess_6779a3dad6eb.json",
+      "canonicalId": "sess_6779a3dad6eb",
+      "sessionId": "sess_6779a3dad6eb",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T12:23:45.868Z",
+        "queryText": "I’m about to paste a tiny maze grid and ask you for the route from start to exit; to make sure I can feed your answer into my checker without errors, what exact output structure should you use for the steps?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Requires strict [DIRECTION] list format for labyrinth route answers",
+          "reasoning": "User explicitly defines required response format with multiple examples of direction lists.",
+          "evidence": {
+            "session_id": "sess_6779a3dad6eb",
+            "utterance_index": 4,
+            "text": "Example answer: [NORTH, NORTH, EAST]\nExample answer: [SOUTH]\nExample answer: [SOUTH, WEST]"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-04-22T17:51:27+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_6779a3dad6eb:sess_6779a3dad6eb:task4",
+      "relativeItemPath": "sess_6779a3dad6eb.json",
+      "canonicalId": "sess_6779a3dad6eb:task4",
+      "sessionId": "sess_6779a3dad6eb",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:31:18.326Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Requires strict [DIRECTION] list format for labyrinth route answers",
+          "reasoning": "User explicitly defines required response format with multiple examples of direction lists.",
+          "evidence": {
+            "session_id": "sess_6779a3dad6eb",
+            "utterance_index": 4,
+            "text": "Example answer: [NORTH, NORTH, EAST]\nExample answer: [SOUTH]\nExample answer: [SOUTH, WEST]"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-04-22T17:51:27+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_221:1",
+            "queryText": "My friend is trying to navigate the labyrinth but gets confused with long explanations. Could you just give me the route from HALL to BATHROOM in plain English directions instead of that list format? Like 'First go east, then...'",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Requires strict [DIRECTION] list format for labyrinth route answers",
+              "reasoning": "User explicitly defines required response format with multiple examples of direction lists.",
+              "evidence": {
+                "session_id": "sess_6779a3dad6eb",
+                "utterance_index": 4,
+                "text": "Example answer: [NORTH, NORTH, EAST]\nExample answer: [SOUTH]\nExample answer: [SOUTH, WEST]"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2024-04-22T17:51:27+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_d4db9e3533f2",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_d4db9e3533f2:sess_d4db9e3533f2",
+      "relativeItemPath": "sess_d4db9e3533f2.json",
+      "canonicalId": "sess_d4db9e3533f2",
+      "sessionId": "sess_d4db9e3533f2",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T11:50:04.665Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Undergraduate student working on graduation project (online exam system) under advisor Hu Shasha",
+            "reasoning": "Explicit self-report of academic status and thesis advisor relationship",
+            "evidence": {
+              "session_id": "sess_d4db9e3533f2",
+              "utterance_index": 6,
+              "text": "在论文的写作过程中，我得到了导师胡莎莎老师的悉心指导..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-13T02:10:35+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers direct text rewriting without analytical explanations for academic papers",
+            "reasoning": "Explicit repeated instruction style (utterances 4,62,64)",
+            "evidence": {
+              "session_id": "sess_d4db9e3533f2",
+              "utterance_index": 4,
+              "text": "请帮我改写一段论文，不用分析，只需给出改写后的文字即可"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preferred_style",
+            "updated_at": "2024-03-13T02:10:35+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Project_Challenges/Design_Phase",
+            "value": "Faced challenges with software engineering methodologies during system design phase",
+            "reasoning": "Forced label not supported - describes current project challenge rather than general past experience",
+            "evidence": {
+              "session_id": "sess_d4db9e3533f2",
+              "utterance_index": 2,
+              "text": "一课时由于不懂如何使用软件工程来进行设计，花在设计的时间比较长，因此目前有一些设想的功能并没有完成"
+            },
+            "confidence": 0.65,
+            "time_scope": "past",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-13T02:10:35+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_d4db9e3533f2:sess_d4db9e3533f2",
+      "relativeItemPath": "sess_d4db9e3533f2.json",
+      "canonicalId": "sess_d4db9e3533f2",
+      "sessionId": "sess_d4db9e3533f2",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T02:49:58.722Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我在整理一份技术文档，想把一些句子改得更正式、更精炼一点。"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以。把需要改写的句子粘贴过来，并说明希望偏“学术论文风”还是“产品说明书风”，我会直接给出改写后的版本。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "先来一句：系统需要在时间上有良好的响应速度。"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "可改写为：系统应保证在各项操作中具备良好的响应性能，并在可接受的时间范围内完成处理。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "如果我想强调“查询不超过10秒”，也帮我合并到一句话里。"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "可改写为：系统应提供稳定且高效的响应性能，确保信息查询的平均响应时间不超过10秒。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "顺便问下，“吞吐量”和“响应时间”在性能指标里怎么区分？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "响应时间衡量“单次请求从发起到完成所用时长”，吞吐量衡量“单位时间内系统能处理的请求数量（如QPS/TPS）”；前者关注用户感知延迟，后者关注整体处理能力。\n\n（无关例子：2010年起不少大型网站会在压测报告里同时给出P95响应时间和峰值QPS，用于区分“体验”和“容量”。）"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我在写说明书的时候，发现“题库管理”那一章里我给三个子模块起了英文缩写：scq-gl、mcq-gl、tfq-gl；你帮我把这三个缩写在文中顺便统一一下写法，别一会儿带连字符一会儿不带。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "好的，我会把题库管理章节中三个子模块的缩写（scq-gl、mcq-gl、tfq-gl）统一成同一种格式，并保证全文前后一致。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "刚才致谢那段我写错了，导师不是“胡莎莎老师”。我这次毕设其实也不是本科，是专科毕业设计，做的还是在线考试系统。麻烦你后面别再按“胡莎莎导师/本科论文”来写。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "好的，我按你更正后的信息处理：你是专科毕业设计，课题为在线考试系统；导师姓名不写“胡莎莎老师”，后续表述将不再使用该称呼。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers direct text rewriting without analytical explanations for academic papers",
+            "reasoning": "Explicit repeated instruction style (utterances 4,62,64)",
+            "evidence": {
+              "session_id": "sess_d4db9e3533f2",
+              "utterance_index": 4,
+              "text": "请帮我改写一段论文，不用分析，只需给出改写后的文字即可"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preferred_style",
+            "updated_at": "2024-03-13T02:10:35+00:00",
+            "_task1GoldValue": "Prefers direct text rewriting without analytical explanations for academic papers"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Project_Challenges/Design_Phase",
+            "value": "Faced challenges with software engineering methodologies during system design phase",
+            "reasoning": "Forced label not supported - describes current project challenge rather than general past experience",
+            "evidence": {
+              "session_id": "sess_d4db9e3533f2",
+              "utterance_index": 2,
+              "text": "一课时由于不懂如何使用软件工程来进行设计，花在设计的时间比较长，因此目前有一些设想的功能并没有完成"
+            },
+            "confidence": 0.65,
+            "time_scope": "past",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-13T02:10:35+00:00",
+            "_task1GoldValue": "Faced challenges with software engineering methodologies during system design phase"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": null,
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "旧记忆称用户为本科生且导师为胡莎莎；但用户明确更正为专科毕业设计，并指出导师并非胡莎莎，因此需更新学历层级与导师信息（仅保留导师姓名未知）。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Student doing a junior college (associate-level) graduation project on an online exam system; advisor is not Hu Shasha (advisor name unspecified)."
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_d4db9e3533f2",
+              "utterance_index": 0,
+              "text": "我在写说明书的时候，发现“题库管理”那一章里我给三个子模块起了英文缩写：scq-gl、mcq-gl、tfq-gl；你帮我把这三个缩写在文中顺便统一一下写法，别一会儿带连字符一会儿不带。"
+            },
+            "label": "Project_Details/Documentation",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preferred_style",
+            "reasoning": "User mentions naming three submodules with these abbreviations and asks to unify the writing style, implying these abbreviations are used in their documentation and consistency is desired.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User uses module abbreviations scq-gl, mcq-gl, tfq-gl in the question bank management chapter and wants their formatting consistent across the document."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_d4db9e3533f2:sess_d4db9e3533f2",
+      "relativeItemPath": "sess_d4db9e3533f2.json",
+      "canonicalId": "sess_d4db9e3533f2",
+      "sessionId": "sess_d4db9e3533f2",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:32:57.574Z",
+        "queryText": "I’m drafting an acknowledgements paragraph for a major write‑up tied to my current schoolwork. I want to make sure I properly thank the person who has been giving me detailed guidance on it—who should I be acknowledging, and what’s the project about?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Education",
+          "label_suggestion": null,
+          "value": "Undergraduate student working on graduation project (online exam system) under advisor Hu Shasha",
+          "reasoning": "Explicit self-report of academic status and thesis advisor relationship",
+          "evidence": {
+            "session_id": "sess_d4db9e3533f2",
+            "utterance_index": 6,
+            "text": "在论文的写作过程中，我得到了导师胡莎莎老师的悉心指导..."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-03-13T02:10:35+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_d4db9e3533f2:sess_d4db9e3533f2:task4",
+      "relativeItemPath": "sess_d4db9e3533f2.json",
+      "canonicalId": "sess_d4db9e3533f2:task4",
+      "sessionId": "sess_d4db9e3533f2",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T00:34:35.043Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Education",
+          "label_suggestion": null,
+          "value": "Undergraduate student working on graduation project (online exam system) under advisor Hu Shasha",
+          "reasoning": "Explicit self-report of academic status and thesis advisor relationship",
+          "evidence": {
+            "session_id": "sess_d4db9e3533f2",
+            "utterance_index": 6,
+            "text": "在论文的写作过程中，我得到了导师胡莎莎老师的悉心指导..."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-03-13T02:10:35+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_2:1",
+            "queryText": "胡老师刚才发邮件说我的系统原型缺少对并发访问的考虑，让我补充到论文的局限性部分。我查了下资料发现MySQL确实有并发连接数限制，但不太确定具体怎么表述才专业。你能帮我用论文语言描述这个技术限制吗？就像之前帮我改致谢部分那样直接给改写后的文字就行。",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Education",
+              "label_suggestion": null,
+              "value": "Undergraduate student working on graduation project (online exam system) under advisor Hu Shasha",
+              "reasoning": "Explicit self-report of academic status and thesis advisor relationship",
+              "evidence": {
+                "session_id": "sess_d4db9e3533f2",
+                "utterance_index": 6,
+                "text": "在论文的写作过程中，我得到了导师胡莎莎老师的悉心指导..."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-03-13T02:10:35+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "partial",
+            "memoryDependency": "weak",
+            "abilityPurity": "medium",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

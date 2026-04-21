@@ -1,0 +1,308 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_d7b84643d90c",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_d7b84643d90c:sess_d7b84643d90c",
+      "relativeItemPath": "sess_d7b84643d90c.json",
+      "canonicalId": "sess_d7b84643d90c",
+      "sessionId": "sess_d7b84643d90c",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T07:19:41.698Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Creates detective story content for YouTube channel",
+            "reasoning": "User explicitly states ownership of a YouTube channel for narrating detective stories.",
+            "evidence": {
+              "session_id": "sess_d7b84643d90c",
+              "utterance_index": 0,
+              "text": "Give me 10 detective stories suitable for narration on my YouTube channel"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-04-18T17:36:47+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Content_Creation/Structure_Requests",
+            "value": "Repeated requests for structured detective story content (outlines, scripts)",
+            "reasoning": "User requested story outlines/scripts for YouTube content structure, but label 'Thoughts/Curiosity' was forced and unsupported.",
+            "evidence": {
+              "session_id": "sess_d7b84643d90c",
+              "utterance_index": 10,
+              "text": "i need script for this story..."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-18T17:36:47+00:00"
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "The user is interested in the narrative structure, chapter outlines, and scripts of classic detective stories like those by Edgar Allan Poe and E.C. Bentley.",
+            "confidence": 0.8,
+            "evidence_text": "give me a chapter outline for this story “The Murders in the Rue Morgue” by Edgar Allan Poe... i need script for this story “Trent’s Last Case” by E.C. Bentley"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_d7b84643d90c:sess_d7b84643d90c",
+      "relativeItemPath": "sess_d7b84643d90c.json",
+      "canonicalId": "sess_d7b84643d90c",
+      "sessionId": "sess_d7b84643d90c",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T07:20:18.365Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Can you help me turn a classic detective novel into a narration script without quoting it directly?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes. Tell me the target length (e.g., 10–15 minutes), the narration style (straight read, cinematic, or humorous), and whether you want character voices or a single narrator. I can produce an original script that summarizes scenes, adds transitions, and keeps the mystery clear without copying the text."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Let’s do cinematic, single narrator. What structure would you use?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "A clean structure is: (1) Cold open hook (the body / the shock detail), (2) Title card + setup of place and key players, (3) Discovery of contradictions, (4) Interviews as escalating reveals, (5) Midpoint twist that reframes motives, (6) Final deduction sequence, (7) Aftermath with a reflective closing line.\n\nFake-but-relevant-to-the-topic tidbits: In early 1900s mystery publishing, serialized magazine pacing often favored mini-cliffhangers every ~1,500–2,000 words; “locked-room” puzzles peaked in popularity a bit later, in the 1930s Golden Age; and the first widely known fictional “consulting detective” model traces back to 19th-century literature."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Can you draft a 2-minute cold open example for a generic country-estate murder?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "NARRATOR (low, controlled): The house was awake long before the sun.\n\nA single lamp burned in the upstairs corridor—steady, stubborn—casting a thin ribbon of light beneath a closed door. Beyond it: silence so complete it felt arranged.\n\nDownstairs, the grandfather clock kept its own counsel. Each tick was too loud. Each second, a dare.\n\nAt the edge of the grounds, mist gathered over the lawn like a held breath. The gravel drive, usually polite with carriage tracks and early footsteps, lay untouched—except for one disturbance: a shallow scuff near the hedge, as if someone had paused… listened… and decided against turning back.\n\nInside, a servant climbed the stairwell with a tray of tea that trembled only once, when the air changed.\n\nThere are moments when you sense a room is wrong before you see why. The corridor felt colder than it should. The lamp’s flame didn’t flicker—yet the shadows seemed to lean.\n\nThe servant stopped outside the study. Knocked. Once.\n\nNo answer.\n\nKnocked again, louder this time, with the impatience of routine.\n\nStill nothing.\n\nThe door was not locked. That was the first surprise.\n\nThe second was the scent—metallic, faint, and unmistakably new.\n\nThe servant pushed the door open.\n\nAnd in the lamplight, the great man of the estate sat exactly as he always did: shoulders squared, head slightly bowed, papers arranged like a life still in order.\n\nOnly the ink on the desk was not the darkest thing in the room.\n\nA pause.\n\nNARRATOR: By the time the household found its voice, the damage was already done. Everyone had a theory. Everyone had an alibi. And somewhere in that quiet corridor—beneath a loyal lamp that refused to go out—the truth waited, patient as a clock, for someone who knew how to listen."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Quick heads-up before you format anything: I’m recording tonight, so I’ll need it paced like a voiceover—short lines, clear beats, and spots where I can pause for suspense."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Got it—voiceover pacing with short lines, clear beats, and intentional pause points for suspense. Do you want it written as a full narration script (no character dialogue), or as scenes with dialogue and minimal stage direction?"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Quick correction: I don’t have a YouTube channel. I’m just helping my cousin pick detective stories he can narrate, and I needed options/outlines to show him."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—so you’re not creating content for your own YouTube channel; you’re compiling detective-story suggestions and outlines for your cousin’s narration. If you tell me his channel’s vibe (classic, noir, cozy, etc.), I can tailor the picks and script-style outlines to that."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Content_Creation/Structure_Requests",
+            "value": "Repeated requests for structured detective story content (outlines, scripts)",
+            "reasoning": "User requested story outlines/scripts for YouTube content structure, but label 'Thoughts/Curiosity' was forced and unsupported.",
+            "evidence": {
+              "session_id": "sess_d7b84643d90c",
+              "utterance_index": 10,
+              "text": "i need script for this story..."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-18T17:36:47+00:00"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "The prior memory claimed the user creates detective story content for their own YouTube channel, but the user explicitly corrects this, stating they do not have a YouTube channel and are instead helping their cousin select stories to narrate.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Helps a cousin pick detective stories and outlines for narration (not for the user's own YouTube channel)"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_d7b84643d90c",
+              "utterance_index": 0,
+              "text": "I’m recording tonight, so I’ll need it paced like a voiceover—short lines, clear beats, and spots where I can pause for suspense."
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "The user’s request for 'paced like a voiceover' with specific structural elements implies a stable preference for script formatting suitable for recording.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers narration scripts paced for voiceover with short lines, clear beats, and suspenseful pause points"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_d7b84643d90c:sess_d7b84643d90c",
+      "relativeItemPath": "sess_d7b84643d90c.json",
+      "canonicalId": "sess_d7b84643d90c",
+      "sessionId": "sess_d7b84643d90c",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T07:20:32.059Z",
+        "queryText": "I’m outlining a batch of new scripts and want them to be the kind of content I can read aloud to my existing audience—what type of stories should I focus on so they fit what I usually produce?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Creates detective story content for YouTube channel",
+          "reasoning": "User explicitly states ownership of a YouTube channel for narrating detective stories.",
+          "evidence": {
+            "session_id": "sess_d7b84643d90c",
+            "utterance_index": 0,
+            "text": "Give me 10 detective stories suitable for narration on my YouTube channel"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-04-18T17:36:47+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_d7b84643d90c:sess_d7b84643d90c:task4",
+      "relativeItemPath": "sess_d7b84643d90c.json",
+      "canonicalId": "sess_d7b84643d90c:task4",
+      "sessionId": "sess_d7b84643d90c",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T07:21:18.464Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Creates detective story content for YouTube channel",
+          "reasoning": "User explicitly states ownership of a YouTube channel for narrating detective stories.",
+          "evidence": {
+            "session_id": "sess_d7b84643d90c",
+            "utterance_index": 0,
+            "text": "Give me 10 detective stories suitable for narration on my YouTube channel"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-04-18T17:36:47+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_266:1",
+            "queryText": "I'm thinking about doing a deep-dive series on one of the classic detectives we talked about. Which character's world do you think would really hook my audience for a multi-part narration?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Creates detective story content for YouTube channel",
+              "reasoning": "User explicitly states ownership of a YouTube channel for narrating detective stories.",
+              "evidence": {
+                "session_id": "sess_d7b84643d90c",
+                "utterance_index": 0,
+                "text": "Give me 10 detective stories suitable for narration on my YouTube channel"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2024-04-18T17:36:47+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "partial",
+            "memoryDependency": "weak",
+            "abilityPurity": "medium",
+            "issueTypes": [
+              "selected_memory_wrong"
+            ],
+            "evidenceNote": "irrelevant memory",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

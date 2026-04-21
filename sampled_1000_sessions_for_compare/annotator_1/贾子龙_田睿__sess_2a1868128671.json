@@ -1,0 +1,363 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_2a1868128671",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_2a1868128671:sess_2a1868128671",
+      "relativeItemPath": "sess_2a1868128671.json",
+      "canonicalId": "sess_2a1868128671",
+      "sessionId": "sess_2a1868128671",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T09:52:40.567Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Interests/PhysicsStudy",
+            "label_suggestion": "null",
+            "value": "Actively asks structured quantitative questions about special relativity, including time dilation math, near-light-speed travel scenarios, dilation factor derivation and custom extreme physics thought experiments.",
+            "reasoning": "The user submitted multiple successive targeted physics questions with custom parameters, verified calculation results, requested formula rearrangements and explored edge-case relativistic scenarios, showing clear focused engagement with advanced physics topics.",
+            "evidence": {
+              "session_id": "sess_2a1868128671",
+              "utterance_index": 18,
+              "text": "Does the math add up?"
+            },
+            "confidence": 0.95,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-05T04:41:52Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "value": "Has a Latina fiancée",
+            "reasoning": "Explicit self-report of 'my latina soon to be wifey', though subsequent Israeli partner inquiry introduces role-play uncertainty",
+            "evidence": {
+              "session_id": "sess_2a1868128671",
+              "utterance_index": 30,
+              "text": "How can I say goodnight to my latina soon to be wifey?"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": "positive",
+            "preference_attitude": "like",
+            "updated_at": "2023-06-05T04:41:52Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_2a1868128671:sess_2a1868128671",
+      "relativeItemPath": "sess_2a1868128671.json",
+      "canonicalId": "sess_2a1868128671",
+      "sessionId": "sess_2a1868128671",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T09:53:20.793Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Quick relativity check: if a ship’s onboard clock measures 12 hours, but Earth clocks measure 10 years, what’s the time dilation factor?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "The time dilation factor (gamma) is the ratio of Earth time to ship (proper) time: \n\nγ = t_earth / t_ship.\n\nConvert 12 hours to years: 12 hours = 0.5 days ≈ 0.5 / 365.25 years ≈ 0.0013689 years.\n\nSo γ ≈ 10 / 0.0013689 ≈ 7305.\n\nTime on Earth is about 7305× the ship’s elapsed time in that scenario."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "And how close to c would you have to go for γ ≈ 7305?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Using γ = 1 / √(1 − β²) with β = v/c, solve for β:\n\nβ = √(1 − 1/γ²).\n\nFor γ = 7305:\n1/γ² ≈ 1 / (7305²) ≈ 1.874×10⁻⁸,\nso β ≈ √(1 − 1.874×10⁻⁸) ≈ 0.9999999906.\n\nThat’s v ≈ 0.9999999906c, i.e. about 99.99999906% of the speed of light."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Does that ignore acceleration/turnaround like the twin paradox setup?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Yes—those calculations assume an inertial (constant-velocity) segment and treat the turnaround/acceleration as negligible or idealized.\n\nIn a full twin-paradox trip, you’d model the outbound and inbound legs plus an acceleration profile; the net age difference still comes out essentially from integrating proper time along the ship’s worldline. If the cruise phase dominates the duration, the simple constant-velocity estimate is usually a very good approximation."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Totally different topic: I heard GPS has to correct for relativity—true?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "True. GPS satellites need both special-relativistic and general-relativistic corrections.\n\n- Special relativity: satellite motion makes their clocks run slower than Earth clocks.\n- General relativity: weaker gravity at satellite altitude makes their clocks run faster.\n\nThe combined net effect is that satellite clocks would drift by roughly +38 microseconds per day relative to ground clocks if uncorrected, which would cause large position errors."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Random trivia: what was that 1971 plane experiment with clocks?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "You’re thinking of the Hafele–Keating experiment (1971). They flew atomic clocks around the world on commercial airliners (eastward and westward), then compared them to clocks that stayed on the ground.\n\nThe measured time differences matched relativity’s predictions within experimental uncertainties, combining effects from the planes’ speeds (special relativity) and differences in gravitational potential/altitude (general relativity)."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "By the way, I tried one of those “Buenas noches, mi amor” lines you suggested last night—she laughed and then corrected my accent on “sueños,” so I’m clearly still practicing."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "That’s a good sign—playful correction usually means she’s engaged. If you want, tell me how she pronounces it (or what exactly she corrected) and I can help you get the vowel sounds closer."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Earlier I said “my latina soon to be wifey,” but to be clear I don’t actually have a fiancée. I was just asking for a line to use in a hypothetical."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Got it—so there isn’t a real Latina fiancée in your life; you were role‑playing a scenario and wanted a goodnight message that fit that vibe."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Exactly. No partner—just testing different languages and tones."
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "Thanks for clarifying. In that case, we should treat the “soon to be wifey” phrasing as fictional rather than a statement about your actual relationship status."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Interests/PhysicsStudy",
+            "label_suggestion": "null",
+            "value": "Actively asks structured quantitative questions about special relativity, including time dilation math, near-light-speed travel scenarios, dilation factor derivation and custom extreme physics thought experiments.",
+            "reasoning": "Repeated technical inquiries about time dilation formulas, but label 'Thoughts/Curiosity' forced without explicit self-reported curiosity",
+            "evidence": {
+              "session_id": "sess_2a1868128671",
+              "utterance_index": 18,
+              "text": "Does the math add up?"
+            },
+            "confidence": 0.95,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-05T04:41:52Z",
+            "_task1GoldValue": "Actively asks structured quantitative questions about special relativity, including time dilation math, near-light-speed travel scenarios, dilation factor derivation and custom extreme physics thought experiments."
+          },
+          {
+            "confidence": 0.95,
+            "emotion": "positive",
+            "evidence": {
+              "turn_indices": [
+                12
+              ],
+              "turns": [
+                {
+                  "index": 12,
+                  "role": "user",
+                  "text": "Earlier I said “my latina soon to be wifey,” but to be clear I don’t actually have a fiancée. I was just asking for a line to use in a hypothetical."
+                }
+              ]
+            },
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "like",
+            "reasoning": "The prior memory inferred a real Latina fiancée from the user’s phrasing, but the user explicitly clarifies it was hypothetical role-play and that they do not have a fiancée. The updated truth is that the user does not have a Latina fiancée.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Does not have a Latina fiancée; the earlier 'latina soon to be wifey' wording was hypothetical."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_2a1868128671",
+              "utterance_index": 0,
+              "text": "she laughed and then corrected my accent on “sueños,” so I’m clearly still practicing."
+            },
+            "label": "Skills_Languages/Spanish",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user implies they are still learning and practicing Spanish pronunciation after being corrected on their accent.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Practicing Spanish pronunciation (accent), specifically around words like “sueños.”"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "value": "Has a Latina fiancée",
+            "reasoning": "Explicit self-report of 'my latina soon to be wifey', though subsequent Israeli partner inquiry introduces role-play uncertainty",
+            "evidence": {
+              "session_id": "sess_2a1868128671",
+              "utterance_index": 30,
+              "text": "How can I say goodnight to my latina soon to be wifey?"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": "positive",
+            "preference_attitude": "like",
+            "updated_at": "2023-06-05T04:41:52Z",
+            "_task1GoldValue": "Has a Latina fiancée"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_2a1868128671:sess_2a1868128671",
+      "relativeItemPath": "sess_2a1868128671.json",
+      "canonicalId": "sess_2a1868128671",
+      "sessionId": "sess_2a1868128671",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T09:53:42.614Z",
+        "queryText": "I’m planning a small toast for the person I’m engaged to, and I want it to feel culturally considerate rather than generic—what background of theirs should I keep in mind when choosing my words?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Social_Relationships/Partners",
+          "label_suggestion": null,
+          "value": "Has a Latina fiancée",
+          "reasoning": "Explicit self-report of 'my latina soon to be wifey', though subsequent Israeli partner inquiry introduces role-play uncertainty",
+          "evidence": {
+            "session_id": "sess_2a1868128671",
+            "utterance_index": 30,
+            "text": "How can I say goodnight to my latina soon to be wifey?"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": "positive",
+          "preference_attitude": "like",
+          "updated_at": "2023-06-05T04:41:52Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_2a1868128671:sess_2a1868128671:task4",
+      "relativeItemPath": "sess_2a1868128671.json",
+      "canonicalId": "sess_2a1868128671:task4",
+      "sessionId": "sess_2a1868128671",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T09:53:57.877Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Social_Relationships/Partners",
+          "label_suggestion": null,
+          "value": "Has a Latina fiancée",
+          "reasoning": "Explicit self-report of 'my latina soon to be wifey', though subsequent Israeli partner inquiry introduces role-play uncertainty",
+          "evidence": {
+            "session_id": "sess_2a1868128671",
+            "utterance_index": 30,
+            "text": "How can I say goodnight to my latina soon to be wifey?"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": "positive",
+          "preference_attitude": "like",
+          "updated_at": "2023-06-05T04:41:52Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_416:1",
+            "queryText": "My fiancée's abuela is visiting from Mexico City next month, and she's insisting on cooking a traditional family meal for us. I want to surprise her by learning a few romantic phrases in Spanish to say during dinner. Can you help me with something that would sound natural but also show I'm making an effort?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Social_Relationships/Partners",
+              "label_suggestion": null,
+              "value": "Has a Latina fiancée",
+              "reasoning": "Explicit self-report of 'my latina soon to be wifey', though subsequent Israeli partner inquiry introduces role-play uncertainty",
+              "evidence": {
+                "session_id": "sess_2a1868128671",
+                "utterance_index": 30,
+                "text": "How can I say goodnight to my latina soon to be wifey?"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": "positive",
+              "preference_attitude": "like",
+              "updated_at": "2023-06-05T04:41:52Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

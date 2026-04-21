@@ -1,0 +1,348 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_4ea79f044ce1",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_4ea79f044ce1:sess_4ea79f044ce1",
+      "relativeItemPath": "sess_4ea79f044ce1.json",
+      "canonicalId": "sess_4ea79f044ce1",
+      "sessionId": "sess_4ea79f044ce1",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T13:53:04.114Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Translate 'empresa de fachada' as '空壳公司'",
+            "reasoning": "User provides explicit translation rule for a legal term.",
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "instruction",
+            "updated_at": "2024-01-04T10:35:09+00:00",
+            "evidence": {
+              "session_id": "sess_4ea79f044ce1",
+              "utterance_index": 0,
+              "text": ""
+            }
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Non-translation of company names",
+            "reasoning": "User explicitly prohibits translation of company names.",
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "instruction",
+            "updated_at": "2024-01-04T10:35:09+00:00",
+            "evidence": {
+              "session_id": "sess_4ea79f044ce1",
+              "utterance_index": 0,
+              "text": ""
+            }
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Invert order of annex, volume, and folios in document references",
+            "reasoning": "User provides explicit structural formatting rule.",
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "instruction",
+            "updated_at": "2024-01-04T10:35:09+00:00",
+            "evidence": {
+              "session_id": "sess_4ea79f044ce1",
+              "utterance_index": 0,
+              "text": ""
+            }
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_4ea79f044ce1:sess_4ea79f044ce1",
+      "relativeItemPath": "sess_4ea79f044ce1.json",
+      "canonicalId": "sess_4ea79f044ce1",
+      "sessionId": "sess_4ea79f044ce1",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T10:17:17.765Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Antes de seguir, ¿podrías recordarme en qué orden debía mencionarse anexo, tomo y folios en las citas?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sí: primero se menciona el **Anexo**, luego el **Tomo** y al final los **folios**."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Y para abreviaturas, ¿cómo se manejaban Av. y Jr.?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Se mantienen como abreviaturas: **Av.** (avenida) y **Jr.** (jirón)."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Tengo una duda general: en textos legales, ¿conviene traducir literalmente \"levantamiento y cancelación de hipoteca\" o usar una fórmula fija?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Suele usarse una fórmula fija. Dependiendo del país y del registro, es común algo como **“解除并注销抵押权”** (levantamiento y cancelación/inscripción de cancelación). Si el documento distingue entre el acto de levantar y el de cancelar en el registro, conviene reflejar ambos."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Dato curioso: leí que en algunos países se numeran los asientos registrales de forma distinta. ¿Eso afecta la traducción?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Afecta sobre todo la **presentación**, no el sentido: normalmente se conserva el código tal cual (p. ej., “Asiento C00004”), y se traduce la descripción (compraventa, rectificación, etc.). En una guía comparada sobre registros inmobiliarios europeos se menciona que algunos sistemas usan “folio real” y otros “folio personal”; ese matiz no se traduce dentro del asiento, pero ayuda a entender el contexto."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Para el siguiente bloque, cuando aparezca “PDT” en el texto, déjelo como sigla tal cual en chino (sin expandirlo ni traducirlo)."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Entendido; en adelante mantendré “PDT” como sigla, sin expandirla ni traducirla, dentro de la traducción al chino en contexto legal."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Antes de continuar: no he dicho en ningún momento que prefiera que no retengas direcciones o datos de pasaporte. Mis indicaciones fueron de traducción legal (p. ej., no traducir nombres propios; 'testaferro' = '代名人'; y luego 'empresa de fachada' = '空壳公司')."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Correcto. No hay ninguna instrucción suya sobre no retener direcciones o datos de pasaporte; usted solo fijó reglas de traducción legal (p. ej., “no traducir los nombres propios” y que “testaferro se traduce como '代名人'”)."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Translate 'empresa de fachada' as '空壳公司'",
+            "reasoning": "User provides explicit translation rule for a legal term.",
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "instruction",
+            "updated_at": "2024-01-04T10:35:09+00:00",
+            "evidence": {
+              "session_id": "sess_4ea79f044ce1",
+              "utterance_index": 0,
+              "text": ""
+            }
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Non-translation of company names",
+            "reasoning": "User explicitly prohibits translation of company names.",
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "instruction",
+            "updated_at": "2024-01-04T10:35:09+00:00",
+            "evidence": {
+              "session_id": "sess_4ea79f044ce1",
+              "utterance_index": 0,
+              "text": ""
+            }
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Invert order of annex, volume, and folios in document references",
+            "reasoning": "User provides explicit structural formatting rule.",
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "instruction",
+            "updated_at": "2024-01-04T10:35:09+00:00",
+            "evidence": {
+              "session_id": "sess_4ea79f044ce1",
+              "utterance_index": 0,
+              "text": ""
+            }
+          },
+          {
+            "confidence": 0.93,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_4ea79f044ce1",
+              "utterance_index": 0,
+              "text": "cuando aparezca “PDT” en el texto, déjelo como sigla tal cual en chino (sin expandirlo ni traducirlo)."
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "instruction",
+            "reasoning": "The user requests a consistent translation/formatting convention: keep “PDT” unchanged as an acronym in Chinese legal translations.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Keep “PDT” as the literal acronym in Chinese translations (do not expand or translate it)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_4ea79f044ce1:sess_4ea79f044ce1",
+      "relativeItemPath": "sess_4ea79f044ce1.json",
+      "canonicalId": "sess_4ea79f044ce1",
+      "sessionId": "sess_4ea79f044ce1",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T08:38:57.390Z",
+        "queryText": "请问在对话中，我希望怎么处理我的公司名字？",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Non-translation of company names",
+          "reasoning": "User explicitly prohibits translation of company names.",
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "instruction",
+          "updated_at": "2024-01-04T10:35:09+00:00",
+          "evidence": {
+            "session_id": "sess_4ea79f044ce1",
+            "utterance_index": 0,
+            "text": ""
+          }
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_4ea79f044ce1:sess_4ea79f044ce1:task4",
+      "relativeItemPath": "sess_4ea79f044ce1.json",
+      "canonicalId": "sess_4ea79f044ce1:task4",
+      "sessionId": "sess_4ea79f044ce1",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:30:08.015Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Non-translation of company names",
+          "reasoning": "User explicitly prohibits translation of company names.",
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "instruction",
+          "updated_at": "2024-01-04T10:35:09+00:00",
+          "evidence": {
+            "session_id": "sess_4ea79f044ce1",
+            "utterance_index": 0,
+            "text": ""
+          }
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_115:1",
+            "queryText": "请问在对话中，我希望怎么处理我的公司名字？",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Non-translation of company names",
+              "reasoning": "User explicitly prohibits translation of company names.",
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "instruction",
+              "updated_at": "2024-01-04T10:35:09+00:00",
+              "evidence": {
+                "session_id": "sess_4ea79f044ce1",
+                "utterance_index": 0,
+                "text": ""
+              }
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

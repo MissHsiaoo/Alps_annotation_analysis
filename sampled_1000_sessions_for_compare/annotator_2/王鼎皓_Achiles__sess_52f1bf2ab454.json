@@ -1,0 +1,331 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_52f1bf2ab454",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_52f1bf2ab454:sess_52f1bf2ab454",
+      "relativeItemPath": "sess_52f1bf2ab454.json",
+      "canonicalId": "sess_52f1bf2ab454",
+      "sessionId": "sess_52f1bf2ab454",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:46:52.283Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "value": "Has a 100,000 RMB budget for an economical, reliable, hassle-free sedan",
+            "reasoning": "User explicitly states budget and car preferences during recommendation request.",
+            "evidence": {
+              "session_id": "sess_52f1bf2ab454",
+              "utterance_index": 6,
+              "text": "我有十万块的预算，想买一辆经济实惠质量好，省心的轿车"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-04-25T13:32:18+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "Curious about BYD's market success factors, quality evaluation, and gaps between Chinese/international automotive brands",
+            "reasoning": "User shows sustained interest in sales of BYD.",
+            "evidence": {
+              "session_id": "sess_52f1bf2ab454",
+              "utterance_index": 0,
+              "text": "在中国，为什么比亚迪卖的那么好"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": "Neutral",
+            "preference_attitude": null,
+            "updated_at": "2026-01-29T03:17:15.346Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_52f1bf2ab454:sess_52f1bf2ab454",
+      "relativeItemPath": "sess_52f1bf2ab454.json",
+      "canonicalId": "sess_52f1bf2ab454",
+      "sessionId": "sess_52f1bf2ab454",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:47:06.536Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "如果不看品牌光环，只看可靠性和后期成本，选车最该先看哪些指标？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以按“故障率—保养成本—零部件价格—保值率—安全/召回记录—油耗/电耗”这个顺序筛。\n\n1) 可靠性：优先看长期口碑与第三方统计（同平台同发动机/变速箱的通病）。\n2) 后期成本：保养周期、常用耗材价格（机油/滤芯/刹车片/轮胎）、工时费。\n3) 易修性：保有量高、配件供应稳定，通常更省心。\n4) 保值率：反映市场认可度，也影响未来换车总成本。\n5) 安全与质量动作：碰撞测试成绩、召回频率与处理态度。\n\n如果你愿意，我也可以给一个“对比表模板”，你把候选车型填进去就能算出大概的用车总成本。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "那二手车怎么看车况？有没有一套快速排雷流程？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "有，一套“证件—事故/水泡/火烧—结构—机械—电气—路试—维保记录”的快检流程：\n\n1) 证件：核对VIN、发动机号、过户次数、抵押/查封。\n2) 三大排雷：\n- 事故：看A/B/C柱、纵梁、翼子板内衬、焊点与漆面厚度。\n- 水泡：座椅导轨锈、地毯霉味、安全带底部泥沙、线束接头氧化。\n- 火烧：机舱隔热棉、线束改色发脆、塑料件熔痕。\n3) 结构：底盘托底、悬挂摆臂变形、轮胎偏磨。\n4) 机械：冷启动抖动/异响、变速箱换挡顿挫、渗油渗液。\n5) 电气：空调、车窗、灯光、ADAS提示报错。\n6) 路试：直线跑偏、刹车抖动、80km/h以上风噪/共振。\n7) 记录：看4S或第三方维保/保险出险记录是否匹配里程。\n\n（无关小知识：早年有些地区的出租车常见“高里程但按时保养”的车况反而比短里程长期闲置的更稳定，这是二手车圈经常讨论的现象。）"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "顺便问下，新能源车电池衰减一般怎么评估？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "常用做法是看SOH（健康度）与真实续航差：\n1) 读数：用车机/OBD/检测机构读取SOH、单体电压一致性、循环次数与快充占比（不同车型可读项不同）。\n2) 充放验证：同温度条件下从固定电量区间（比如80%到20%）跑一段，换算电耗与可用电量。\n3) 充电表现：快充峰值、充电曲线是否异常“掉速”，以及是否出现热管理告警。\n4) 质保与记录：电池质保条款、是否更换/维修过模组。\n\n（另一个无关事实：有研究统计显示，温度和快充频率对衰减的影响往往比“日常充到100%”更显著，但不同电池体系差异很大。）"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "我这边主要是上下班通勤用，单程差不多二十多公里，周末偶尔跑一趟高速；所以更在意油耗别太高、后期保养别折腾。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "这种使用场景更适合把重点放在：省油的动力总成、保有量大的车型（维护更方便）、以及主动安全/基础舒适配置是否够用。你可以把常跑路况（拥堵多不多）、能不能方便充电、以及是否更偏好SUV/轿车告诉我，我再把候选车型缩小到2-3款。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我上次说“十万预算”其实只是随口举例，不是我的真实预算。现在我准备把预算提高到20万左右，还是想要经济实惠、质量靠谱、省心的轿车。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "明白了，你之前提到的“十万预算”只是举例；你现在的真实预算是20万左右，同时偏好依旧是经济实惠、质量靠谱、省心的轿车。我后面会按20万级别来给你做推荐。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "Curious about BYD's market success factors, quality evaluation, and gaps between Chinese/international automotive brands",
+            "reasoning": "User shows sustained interest in sales of BYD.",
+            "evidence": {
+              "session_id": "sess_52f1bf2ab454",
+              "utterance_index": 0,
+              "text": "在中国，为什么比亚迪卖的那么好"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": "Neutral",
+            "preference_attitude": null,
+            "updated_at": "2026-01-29T03:17:15.346Z",
+            "_task1GoldValue": "Curious about BYD's market success factors, quality evaluation, and gaps between Chinese/international automotive brands"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "我上次说“十万预算”其实只是随口举例，不是我的真实预算。现在我准备把预算提高到20万左右，还是想要经济实惠、质量靠谱、省心的轿车。"
+                }
+              ]
+            },
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "旧记忆把用户预算固定为10万，但对话中用户澄清“十万预算只是举例”，并明确现在真实预算提高到20万左右；因此需要更新为20万左右预算且仍偏好省心可靠的轿车。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Has a ~200,000 RMB budget for an economical, reliable, hassle-free sedan"
+          },
+          {
+            "confidence": 0.84,
+            "emotion": "Neutral",
+            "evidence": {
+              "session_id": "sess_52f1bf2ab454",
+              "utterance_index": 0,
+              "text": "我这边主要是上下班通勤用，单程差不多二十多公里，周末偶尔跑一趟高速；所以更在意油耗别太高、后期保养别折腾。"
+            },
+            "label": "Lifestyle/Transportation",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "用户描述主要用车场景为上下班通勤（单程二十多公里）并偶尔高速出行，体现其典型出行方式与里程。",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Primary car use is commuting (~20+ km one-way) with occasional weekend highway trips"
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "value": "Has a 100,000 RMB budget for an economical, reliable, hassle-free sedan",
+            "reasoning": "User explicitly states budget and car preferences during recommendation request.",
+            "evidence": {
+              "session_id": "sess_52f1bf2ab454",
+              "utterance_index": 6,
+              "text": "我有十万块的预算，想买一辆经济实惠质量好，省心的轿车"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-04-25T13:32:18+00:00",
+            "_task1GoldValue": "Has a 100,000 RMB budget for an economical, reliable, hassle-free sedan"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_52f1bf2ab454:sess_52f1bf2ab454",
+      "relativeItemPath": "sess_52f1bf2ab454.json",
+      "canonicalId": "sess_52f1bf2ab454",
+      "sessionId": "sess_52f1bf2ab454",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:47:09.281Z",
+        "queryText": "我准备买辆日常代步的三厢轿车，不想折腾、后期维护越省心越好，也希望性价比高。按我之前跟你说过的预算范围，你能直接给我推荐一款最合适的具体车型（并顺带说说为什么这款比同级更符合我的诉求）吗？",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Shopping",
+          "label_suggestion": null,
+          "value": "Has a 100,000 RMB budget for an economical, reliable, hassle-free sedan",
+          "reasoning": "User explicitly states budget and car preferences during recommendation request.",
+          "evidence": {
+            "session_id": "sess_52f1bf2ab454",
+            "utterance_index": 6,
+            "text": "我有十万块的预算，想买一辆经济实惠质量好，省心的轿车"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-04-25T13:32:18+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_52f1bf2ab454:sess_52f1bf2ab454:task4",
+      "relativeItemPath": "sess_52f1bf2ab454.json",
+      "canonicalId": "sess_52f1bf2ab454:task4",
+      "sessionId": "sess_52f1bf2ab454",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:47:12.498Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Shopping",
+          "label_suggestion": null,
+          "value": "Has a 100,000 RMB budget for an economical, reliable, hassle-free sedan",
+          "reasoning": "User explicitly states budget and car preferences during recommendation request.",
+          "evidence": {
+            "session_id": "sess_52f1bf2ab454",
+            "utterance_index": 6,
+            "text": "我有十万块的预算，想买一辆经济实惠质量好，省心的轿车"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-04-25T13:32:18+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_833:1",
+            "queryText": "最近看了几款车，有卡罗拉、轩逸，还有吉利星瑞，你觉得哪款更适合我现在的状况？",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Shopping",
+              "label_suggestion": null,
+              "value": "Has a 100,000 RMB budget for an economical, reliable, hassle-free sedan",
+              "reasoning": "User explicitly states budget and car preferences during recommendation request.",
+              "evidence": {
+                "session_id": "sess_52f1bf2ab454",
+                "utterance_index": 6,
+                "text": "我有十万块的预算，想买一辆经济实惠质量好，省心的轿车"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-04-25T13:32:18+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_5fe8a1420dcf",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_5fe8a1420dcf:sess_5fe8a1420dcf",
+      "relativeItemPath": "sess_5fe8a1420dcf.json",
+      "canonicalId": "sess_5fe8a1420dcf",
+      "sessionId": "sess_5fe8a1420dcf",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:54:37.435Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Student in Process Engineering course",
+            "reasoning": "User explicitly states they are taking a Process Engineering course using Bizagi.",
+            "evidence": {
+              "session_id": "sess_5fe8a1420dcf",
+              "utterance_index": 0,
+              "text": "del curso Ingeniería de Procesos utilizando el programa bizagi debo realizar un mapa de procesos"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-19T05:18:25+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_5fe8a1420dcf:sess_5fe8a1420dcf",
+      "relativeItemPath": "sess_5fe8a1420dcf.json",
+      "canonicalId": "sess_5fe8a1420dcf",
+      "sessionId": "sess_5fe8a1420dcf",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:55:01.738Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Estoy armando un diagrama BPMN y me enredo con las compuertas. ¿Cuándo conviene usar XOR y cuándo OR?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "XOR cuando solo una ruta puede ocurrir (una decisión excluyente); OR cuando pueden ocurrir una o varias rutas según condiciones (no excluyentes)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "¿Y la compuerta paralela? ¿Es lo mismo que OR?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "No: la paralela (AND) siempre dispara todas las ramas a la vez y luego normalmente requiere una unión AND; la OR decide cuántas ramas activar."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "En un evento temporizador de 24 horas, ¿se pone como intermedio o de borde?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Depende: de borde si quieres interrumpir/ramificar una actividad o subproceso cuando vence el tiempo; intermedio en la secuencia si el proceso “espera” explícitamente antes de continuar."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Leí que en 2010 un volcán paró vuelos en Europa por ceniza. ¿Eso sería un buen ejemplo de evento externo en un proceso?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Sí: es un evento externo que impacta un proceso (p. ej., logística), típico para modelar con evento de señal/mensaje o un evento de error/escalación según cómo se maneje."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Última: si un paso ya se ejecutó y luego hay que deshacerlo, ¿siempre es compensación?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Cuando necesitas “revertir” efectos de actividades completadas (ej., liberar una reserva), la compensación encaja bien; si solo es cancelar algo aún no confirmado, a veces basta con una cancelación normal sin compensación."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "En mi diagrama, el pool del cliente lo estoy dejando como “Cliente”, y el lane del subproceso de “Editar cuenta” lo separé en “Cliente” y “Sistema de gestión de usuarios” para que no se mezcle cuando guarda cambios."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Perfecto: así queda claro qué hace el cliente en la interfaz y qué valida/actualiza el sistema al guardar los cambios."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Oye, para aclarar: esto no es del curso de Ingeniería de Procesos. Es para mi trabajo en la empresa, me pidieron modelar en Bizagi el flujo de alquiler online y tengo que entregarlo esta semana."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Entonces no es una tarea del curso; es un requerimiento laboral. Si es para la empresa, el modelo en Bizagi se enfoca en el proceso real (roles internos, sistemas y reglas como las 24 horas) y no en la evaluación académica."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Exacto, no estoy llevando Ingeniería de Procesos ahora; solo estoy usando Bizagi por el trabajo."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                14
+              ],
+              "turns": [
+                {
+                  "index": 14,
+                  "role": "user",
+                  "text": "Exacto, no estoy llevando Ingeniería de Procesos ahora; solo estoy usando Bizagi por el trabajo."
+                }
+              ]
+            },
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The selected memory says the user is a student in a Process Engineering course, but the user explicitly corrects that this is not for a course and that they are not taking Process Engineering now; they are using Bizagi for a workplace deliverable.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Not currently a student in a Process Engineering course; using Bizagi for a work assignment to model an online car rental process"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_5fe8a1420dcf",
+              "utterance_index": 0,
+              "text": "el lane del subproceso de “Editar cuenta” lo separé en “Cliente” y “Sistema de gestión de usuarios”"
+            },
+            "label": "Workflows/Tools",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user describes how they are structuring their diagram (pool and lanes) for a specific subprocess, implying active use of Bizagi BPMN constructs in their model.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is modeling their process diagram using pools/lanes in Bizagi, specifically splitting an 'Editar cuenta' subprocess into lanes for Cliente and Sistema de gestión de usuarios."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Student in Process Engineering course",
+            "reasoning": "User explicitly states they are taking a Process Engineering course using Bizagi.",
+            "evidence": {
+              "session_id": "sess_5fe8a1420dcf",
+              "utterance_index": 0,
+              "text": "del curso Ingeniería de Procesos utilizando el programa bizagi debo realizar un mapa de procesos"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-19T05:18:25+00:00",
+            "_task1GoldValue": "Student in Process Engineering course"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_5fe8a1420dcf:sess_5fe8a1420dcf",
+      "relativeItemPath": "sess_5fe8a1420dcf.json",
+      "canonicalId": "sess_5fe8a1420dcf",
+      "sessionId": "sess_5fe8a1420dcf",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:55:04.464Z",
+        "queryText": "I’m drafting my academic email asking for an extension on a diagramming assignment, and I want to justify it by referencing the kind of program I’m enrolled in—what should I mention about my field of study so the request sounds credible?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Education",
+          "label_suggestion": null,
+          "value": "Student in Process Engineering course",
+          "reasoning": "User explicitly states they are taking a Process Engineering course using Bizagi.",
+          "evidence": {
+            "session_id": "sess_5fe8a1420dcf",
+            "utterance_index": 0,
+            "text": "del curso Ingeniería de Procesos utilizando el programa bizagi debo realizar un mapa de procesos"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-04-19T05:18:25+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_5fe8a1420dcf:sess_5fe8a1420dcf:task4",
+      "relativeItemPath": "sess_5fe8a1420dcf.json",
+      "canonicalId": "sess_5fe8a1420dcf:task4",
+      "sessionId": "sess_5fe8a1420dcf",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:55:07.263Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Education",
+          "label_suggestion": null,
+          "value": "Student in Process Engineering course",
+          "reasoning": "User explicitly states they are taking a Process Engineering course using Bizagi.",
+          "evidence": {
+            "session_id": "sess_5fe8a1420dcf",
+            "utterance_index": 0,
+            "text": "del curso Ingeniería de Procesos utilizando el programa bizagi debo realizar un mapa de procesos"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-04-19T05:18:25+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_1:1",
+            "queryText": "Oye, en el proceso de alquiler de autos que modelamos, para la tarea 'Cancelar Reserva del Automóvil' que está en el subproceso de confirmación, ¿qué tipo de tarea sería? ¿Y si el cliente es externo, sería manual o de usuario? Necesito ponerlo en el diagrama.",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Education",
+              "label_suggestion": null,
+              "value": "Student in Process Engineering course",
+              "reasoning": "User explicitly states they are taking a Process Engineering course using Bizagi.",
+              "evidence": {
+                "session_id": "sess_5fe8a1420dcf",
+                "utterance_index": 0,
+                "text": "del curso Ingeniería de Procesos utilizando el programa bizagi debo realizar un mapa de procesos"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-04-19T05:18:25+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,405 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_6c09465eeb37",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_6c09465eeb37:sess_6c09465eeb37",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6c09465eeb37.json",
+      "canonicalId": "sess_6c09465eeb37",
+      "sessionId": "sess_6c09465eeb37",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T17:54:58.742Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Possessions/Car",
+            "label_suggestion": null,
+            "value": "Owns a BMW 730d F02",
+            "reasoning": "User explicitly refers to 'my bmw 730d f02' when asking about gearbox oil.",
+            "evidence": {
+              "session_id": "sess_6c09465eeb37",
+              "utterance_index": 2,
+              "text": "What is the correct gearbox oil for my bmw 730d f02?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-03T09:03:29+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained curiosity about Estonian wealthy individuals' net worth (Armin Karu, Andres Viisemann)",
+            "reasoning": "User asked 4+ follow-up questions about net worth rankings and specific figures, indicating strong curiosity.",
+            "evidence": {
+              "session_id": "sess_6c09465eeb37",
+              "utterance_index": 16,
+              "text": "What  about the aproximate net worth?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-03T09:03:29+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Repeated inquiries about Olympic Entertainment Group's financial data (profits, registration, taxes)",
+            "reasoning": "User made 4+ technical follow-ups about corporate finances and registration details within the session.",
+            "evidence": {
+              "session_id": "sess_6c09465eeb37",
+              "utterance_index": 24,
+              "text": "Can you find out the profits tax info on the public website www.teatmik.ee that has this information?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-03T09:03:29+00:00"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Social_Relationships/Friends",
+            "value": "Has a friend named Joonas Janson",
+            "confidence": 0.95,
+            "evidence_text": "What is the adress of my friend Joonas Janson?"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_6c09465eeb37:sess_6c09465eeb37",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6c09465eeb37.json",
+      "canonicalId": "sess_6c09465eeb37",
+      "sessionId": "sess_6c09465eeb37",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:59:00.151Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "If you can’t access a site directly, what’s the best way to verify company profit and tax figures?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Use primary documents first (audited annual reports, official registry filings), then corroborate with reputable secondary sources (stock exchange notices, major financial media). Check that the reporting period matches (FY vs calendar year), the currency is consistent, and whether figures are consolidated or standalone."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "What numbers should I look for in a financial statement to understand profitability?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Key lines: revenue, EBITDA (if provided), operating profit (EBIT), profit before tax, net profit, and cash flow from operations. Also scan notes for one-off items that can distort profit (impairments, asset sales, restructuring)."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "And how do I interpret tax info without mixing up terms?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Separate: (1) current income tax expense (for the period), (2) deferred tax expense/benefit (accounting adjustments), and (3) taxes actually paid (cash flow statement). If a registry shows “tax paid,” confirm whether it includes payroll/VAT/excise or only corporate income tax."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Give me an example of a common mismatch people run into."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "A frequent one: a company reports strong accounting profit, but cash taxes paid are low because losses from prior years reduce current taxable income, or because deferred tax shifts expense to later years. Another mismatch is comparing a group’s consolidated profit to a single subsidiary’s tax payments."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Anything else I should double-check when using a business registry site?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Yes: confirm the exact legal entity (name/registration number), the filing type (annual report vs interim update), and the status (draft vs filed/approved). Also watch for restatements—some registries keep older versions alongside corrected filings."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "I’ll try digging through Teatmik again later on my laptop—phone browser keeps timing out when I open those company pages."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "That makes sense—those pages can be heavy on mobile. If you tell me what specific fields you’re trying to extract (profit, taxes, owners, registration), I can suggest what to look for and how to interpret it."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Quick correction about earlier: I don’t actually own a BMW 730d F02. I was asking for my cousin’s car when he was stuck at the shop."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Got it—so the BMW 730d F02 isn’t yours; you were asking on behalf of your cousin."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Yeah, exactly. Mine’s a different car, but that’s not important right now."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained curiosity about Estonian wealthy individuals' net worth (Armin Karu, Andres Viisemann)",
+            "reasoning": "User asked 4+ follow-up questions about net worth rankings and specific figures, indicating strong curiosity.",
+            "evidence": {
+              "session_id": "sess_6c09465eeb37",
+              "utterance_index": 16,
+              "text": "What  about the aproximate net worth?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-03T09:03:29+00:00",
+            "_task1GoldValue": "Sustained curiosity about Estonian wealthy individuals' net worth (Armin Karu, Andres Viisemann)"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Repeated inquiries about Olympic Entertainment Group's financial data (profits, registration, taxes)",
+            "reasoning": "User made 4+ technical follow-ups about corporate finances and registration details within the session.",
+            "evidence": {
+              "session_id": "sess_6c09465eeb37",
+              "utterance_index": 24,
+              "text": "Can you find out the profits tax info on the public website www.teatmik.ee that has this information?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-03T09:03:29+00:00",
+            "_task1GoldValue": "Repeated inquiries about Olympic Entertainment Group's financial data (profits, registration, taxes)"
+          },
+          {
+            "confidence": 0.87,
+            "emotion": null,
+            "evidence": null,
+            "label": "Possessions/Car",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The old memory inferred ownership from the user saying 'my bmw 730d f02', but the user now explicitly corrects that they do not own it and were asking for their cousin’s car. Updated truth: the user does not own a BMW 730d F02.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not own a BMW 730d F02; the earlier question was about their cousin’s car."
+          },
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_6c09465eeb37",
+              "utterance_index": 0,
+              "text": "I’ll try digging through Teatmik again later on my laptop—phone browser keeps timing out when I open those company pages."
+            },
+            "label": "Devices/Tech",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "They imply using both devices and that the phone browser times out, indicating device usage context and a limitation on mobile browsing.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User uses a phone and a laptop to browse the web; mobile browsing may time out on heavy pages."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Possessions/Car",
+            "label_suggestion": null,
+            "value": "Owns a BMW 730d F02",
+            "reasoning": "User explicitly refers to 'my bmw 730d f02' when asking about gearbox oil.",
+            "evidence": {
+              "session_id": "sess_6c09465eeb37",
+              "utterance_index": 2,
+              "text": "What is the correct gearbox oil for my bmw 730d f02?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-03T09:03:29+00:00",
+            "_task1GoldValue": "Owns a BMW 730d F02"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Social_Relationships/Friends",
+            "value": "Has a friend named Joonas Janson",
+            "confidence": 0.95,
+            "evidence_text": "What is the adress of my friend Joonas Janson?",
+            "_task1GoldValue": "Has a friend named Joonas Janson"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "claude_sonnet_4_5_20250929_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_6c09465eeb37:sess_6c09465eeb37",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6c09465eeb37.json",
+      "canonicalId": "sess_6c09465eeb37",
+      "sessionId": "sess_6c09465eeb37",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T14:34:29.543Z",
+        "queryText": "I’m booking a service appointment and the form asks for the exact model variant of my sedan so they can pre-order the right transmission fluid and filter kit. Based on what you already know I drive, what should I enter there?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Possessions/Car",
+          "label_suggestion": null,
+          "value": "Owns a BMW 730d F02",
+          "reasoning": "User explicitly refers to 'my bmw 730d f02' when asking about gearbox oil.",
+          "evidence": {
+            "session_id": "sess_6c09465eeb37",
+            "utterance_index": 2,
+            "text": "What is the correct gearbox oil for my bmw 730d f02?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-03T09:03:29+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_6c09465eeb37:sess_6c09465eeb37:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6c09465eeb37.json",
+      "canonicalId": "sess_6c09465eeb37:task4",
+      "sessionId": "sess_6c09465eeb37",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T10:16:16.233Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Possessions/Car",
+          "label_suggestion": null,
+          "value": "Owns a BMW 730d F02",
+          "reasoning": "User explicitly refers to 'my bmw 730d f02' when asking about gearbox oil.",
+          "evidence": {
+            "session_id": "sess_6c09465eeb37",
+            "utterance_index": 2,
+            "text": "What is the correct gearbox oil for my bmw 730d f02?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-03T09:03:29+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_16:1",
+            "queryText": "I'm thinking about taking a road trip this weekend - any suggestions for where I should go?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Possessions/Car",
+              "label_suggestion": null,
+              "value": "Owns a BMW 730d F02",
+              "reasoning": "User explicitly refers to 'my bmw 730d f02' when asking about gearbox oil.",
+              "evidence": {
+                "session_id": "sess_6c09465eeb37",
+                "utterance_index": 2,
+                "text": "What is the correct gearbox oil for my bmw 730d f02?"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-06-03T09:03:29+00:00"
+            },
+            "overallVerdict": "unreasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [
+              "query_unclear"
+            ],
+            "evidenceNote": "",
+            "revisionSuggestion": "I'm thinking about taking a road trip this weekend -  before that I want to go to 4S  store to check my vehicle, help me think of a nearby one."
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

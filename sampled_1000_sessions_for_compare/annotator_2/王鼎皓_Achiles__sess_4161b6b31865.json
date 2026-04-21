@@ -1,0 +1,343 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_4161b6b31865",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_4161b6b31865:sess_4161b6b31865",
+      "relativeItemPath": "sess_4161b6b31865.json",
+      "canonicalId": "sess_4161b6b31865",
+      "sessionId": "sess_4161b6b31865",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:44:46.535Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/preference",
+            "value": "Repeated requests for synonym-based text rewrites with clear language",
+            "reasoning": "Pattern shows task-specific editing requests, but no evidence this reflects user's personal curiosity rather than workflow task.",
+            "evidence": {
+              "session_id": "sess_4161b6b31865",
+              "utterance_index": 14,
+              "text": "rewrite the text using the synonyms, keep the language clear..."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-28T14:33:18+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Cannot disclose client case study details due to NDA",
+            "reasoning": "User explicitly states client confidentiality constraint through NDA.",
+            "evidence": {
+              "session_id": "sess_4161b6b31865",
+              "utterance_index": 10,
+              "text": "Create a short explanation for the case study that details about the client cannot be provided because of NDA"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-07-28T14:33:18+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_4161b6b31865:sess_4161b6b31865",
+      "relativeItemPath": "sess_4161b6b31865.json",
+      "canonicalId": "sess_4161b6b31865",
+      "sessionId": "sess_4161b6b31865",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:45:02.679Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "rewrite the text using synonyms, keep the language clear:\n\nThe platform consolidates inputs from multiple systems, validates them, and publishes consistent reports. It reduces manual effort and improves visibility across departments."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "The platform brings together data from several systems, verifies it, and produces consistent reports. It cuts down on manual work and increases transparency across teams."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "make it sound a bit more formal, but still easy to read"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "The platform consolidates data from multiple systems, validates it, and delivers consistent reporting. It reduces manual effort and enhances visibility across departments."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "add one sentence about security without naming any specific tools"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "The platform consolidates data from multiple systems, validates it, and delivers consistent reporting. It reduces manual effort and enhances visibility across departments. Access controls and auditing help protect data and support compliance requirements."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "also, include a brief NDA line for the case study"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "The platform consolidates data from multiple systems, validates it, and delivers consistent reporting. It reduces manual effort and enhances visibility across departments. Access controls and auditing help protect data and support compliance requirements. Client-specific details are not disclosed due to NDA restrictions."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "rewrite the text using the synonyms, keep the language clear:\n\nPlease keep it in British English this time (e.g., use “optimisation” instead of “optimization”)."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Sure—I'll keep the language clear and use British English spelling (e.g., “optimisation”). Please paste the text you’d like me to rewrite."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "That NDA line isn’t needed anymore—we got written approval from the client to share the case study details, including the client name. Please update the explanation accordingly."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Understood. Since you have the client’s written approval, we don’t need to state that details can’t be provided due to an NDA, and you can include the client name and other case study specifics."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/preference",
+            "value": "Repeated requests for synonym-based text rewrites with clear language",
+            "reasoning": "Pattern shows task-specific editing requests, but no evidence this reflects user's personal curiosity rather than workflow task.",
+            "evidence": {
+              "session_id": "sess_4161b6b31865",
+              "utterance_index": 14,
+              "text": "rewrite the text using the synonyms, keep the language clear..."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-28T14:33:18+00:00",
+            "_task1GoldValue": "Repeated requests for synonym-based text rewrites with clear language"
+          },
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "That NDA line isn’t needed anymore—we got written approval from the client to share the case study details, including the client name. Please update the explanation accordingly."
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The prior memory says client case study details cannot be disclosed due to an NDA. The user now states the NDA restriction is no longer applicable because written approval was obtained to share details (including the client name). Therefore the constraint has changed: disclosure is permitted.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Client case study details can be shared because the client provided written approval (NDA restriction no longer applies)."
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_4161b6b31865",
+              "utterance_index": 0,
+              "text": "Please keep it in British English this time (e.g., use “optimisation” instead of “optimization”)."
+            },
+            "label": "interaction/style/preference",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "The user requests British English conventions and gives an example spelling preference, implying a consistent style preference for future edits.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers British English spelling in rewrites"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Cannot disclose client case study details due to NDA",
+            "reasoning": "User explicitly states client confidentiality constraint through NDA.",
+            "evidence": {
+              "session_id": "sess_4161b6b31865",
+              "utterance_index": 10,
+              "text": "Create a short explanation for the case study that details about the client cannot be provided because of NDA"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-07-28T14:33:18+00:00",
+            "_task1GoldValue": "Cannot disclose client case study details due to NDA"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_4161b6b31865:sess_4161b6b31865",
+      "relativeItemPath": "sess_4161b6b31865.json",
+      "canonicalId": "sess_4161b6b31865",
+      "sessionId": "sess_4161b6b31865",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:45:06.748Z",
+        "queryText": "I’m drafting a public-facing write-up about a past project, and someone on my team wants me to include specific client identifiers and internal results to “make it more credible.” What’s the most important reason I need to refuse that request, based on my own constraints, and what boundary should I state instead?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Cannot disclose client case study details due to NDA",
+          "reasoning": "User explicitly states client confidentiality constraint through NDA.",
+          "evidence": {
+            "session_id": "sess_4161b6b31865",
+            "utterance_index": 10,
+            "text": "Create a short explanation for the case study that details about the client cannot be provided because of NDA"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-07-28T14:33:18+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_4161b6b31865:sess_4161b6b31865:task4",
+      "relativeItemPath": "sess_4161b6b31865.json",
+      "canonicalId": "sess_4161b6b31865:task4",
+      "sessionId": "sess_4161b6b31865",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:45:10.179Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Cannot disclose client case study details due to NDA",
+          "reasoning": "User explicitly states client confidentiality constraint through NDA.",
+          "evidence": {
+            "session_id": "sess_4161b6b31865",
+            "utterance_index": 10,
+            "text": "Create a short explanation for the case study that details about the client cannot be provided because of NDA"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-07-28T14:33:18+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_300:1",
+            "queryText": "I'm putting together a portfolio presentation for our sales team to use with potential clients. Can you extract the specific client name and industry from that last case study rewrite you did, and format it as a 'success story' slide header? I need it in the next 10 minutes for their meeting.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Sensitive_Topics",
+              "label_suggestion": null,
+              "value": "Cannot disclose client case study details due to NDA",
+              "reasoning": "User explicitly states client confidentiality constraint through NDA.",
+              "evidence": {
+                "session_id": "sess_4161b6b31865",
+                "utterance_index": 10,
+                "text": "Create a short explanation for the case study that details about the client cannot be provided because of NDA"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-07-28T14:33:18+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

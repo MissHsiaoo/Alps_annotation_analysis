@@ -1,0 +1,345 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_ec1db4f6be53",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_ec1db4f6be53:sess_ec1db4f6be53",
+      "relativeItemPath": "sess_ec1db4f6be53.json",
+      "canonicalId": "sess_ec1db4f6be53",
+      "sessionId": "sess_ec1db4f6be53",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T01:22:38.921Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Dislikes buckwheat used in salads",
+            "reasoning": "User explicitly reacts with disgust ('Да ну, фу', 'Фу') to buckwheat salad suggestions.",
+            "evidence": {
+              "session_id": "sess_ec1db4f6be53",
+              "utterance_index": 8,
+              "text": "Да ну, фу"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": "disgust",
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-13T09:12:12+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Cooking/Instructions/Inquiry",
+            "value": "Curious about buckwheat cooking methods and substitutions (infrared stove settings, oil usage, rice transformation)",
+            "reasoning": "Task-local cooking questions about appliance settings and techniques. No evidence of persistent curiosity beyond immediate task.",
+            "evidence": {
+              "session_id": "sess_ec1db4f6be53",
+              "utterance_index": 14,
+              "text": "Как из гречки сделать рис?"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-13T09:12:12+00:00"
+          },
+          {
+            "memory_id": "gpt_5_2_p1",
+            "type": "direct",
+            "label": "Possessions/House",
+            "value": "Has an infrared stove with power settings from 200 to 2000 (likely watts).",
+            "confidence": 0.8,
+            "evidence_text": "У меня мощность на плите указывается от 200 до 2000"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_ec1db4f6be53:sess_ec1db4f6be53",
+      "relativeItemPath": "sess_ec1db4f6be53.json",
+      "canonicalId": "sess_ec1db4f6be53",
+      "sessionId": "sess_ec1db4f6be53",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:05:04.592Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Если отвлечься от гречки: чем отличается «тушить» от «томить»? В рецептах часто путают."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Коротко: «тушить» — готовить при умеренном нагреве с небольшим количеством жидкости (вода/бульон/соус) под крышкой; процесс активнее, часто видно слабое кипение. «Томить» — готовить долго на очень слабом нагреве, обычно без бурного кипения, чтобы температура была стабильной и мягкой; задача — медленно довести до нежности и «собрать» вкус.\n\nПрактический ориентир: если жидкость заметно булькает — это скорее тушение; если почти не движется и всё готовится «в полудрёме» — томление.\n\nКстати, в классических французских техниках есть близкий термин braise (по смыслу тушение), а для длительного мягкого прогрева часто используют low and slow — это уже ближе к томлению."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "А «на маленьком огне» — это прям минимум или просто ниже среднего?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Зависит от цели:\n- Для тушения обычно «ниже среднего»: чтобы поддерживать слабое кипение.\n- Для томления — ближе к минимуму: чтобы кипения почти не было.\n\nЕсли ориентироваться не на цифры, а на признаки: при тушении крышка может слегка «подпрыгивать» от пара, при томлении — пар есть, но спокойный, без активных пузырей."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Понял. А правда, что лавровый лист лучше класть в конце, чтобы не горчил?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Чаще наоборот: лавровый лист кладут в начале/середине, но ненадолго — на 10–20 минут, потом вынимают. Горечь обычно появляется, если:\n- держать лист слишком долго (особенно при длительном томлении),\n- положить много листьев,\n- использовать старый, «выдохшийся» лист, который может давать грубую горчинку.\n\nТо есть логика такая: добавить аромат — и убрать до того, как он станет навязчивым."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Ладно, с гречкой разобрались. Я сейчас на работе без кухни — только чайник, поэтому всё это обжаривание пока мимо."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Понял: если есть только чайник, можно упростить — запаривать крупу в термосе/кружке, выдерживать под крышкой и потом слить лишнюю воду. Если хотите, скажите объём кружки и сколько времени есть — подберу пропорции."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Слушай, я тут погорячился тогда. «Фу» было не про гречку в салате, а про то, что ты мне яблоки с грушами туда предлагал — вот это я не переношу."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Понял. То есть сама гречка в салате тебе норм, просто сладкие фрукты в салате с гречкой — нет?"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Да. Гречка с овощами — нормально, я такое ем. Не нравятся именно фрукты в салатах."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Cooking/Instructions/Inquiry",
+            "value": "Curious about buckwheat cooking methods and substitutions (infrared stove settings, oil usage, rice transformation)",
+            "reasoning": "Task-local cooking questions about appliance settings and techniques. No evidence of persistent curiosity beyond immediate task.",
+            "evidence": {
+              "session_id": "sess_ec1db4f6be53",
+              "utterance_index": 14,
+              "text": "Как из гречки сделать рис?"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-13T09:12:12+00:00",
+            "_task1GoldValue": "Curious about buckwheat cooking methods and substitutions (infrared stove settings, oil usage, rice transformation)"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": "disgust",
+            "evidence": null,
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "Ранее было записано, что пользователь не любит гречку в салатах из-за реплик «фу». В новом фрагменте пользователь уточняет, что негатив был направлен не на гречку в салате, а на добавление фруктов (яблок/груш). Значит, гречка с овощами в салате приемлема, а фрукты в салатах вызывают отвращение.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Dislikes fruit (e.g., apples/pears) in salads; buckwheat with vegetables in salads is acceptable"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_ec1db4f6be53",
+              "utterance_index": 0,
+              "text": "Я сейчас на работе без кухни — только чайник"
+            },
+            "label": "Context/Lifestyle",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies lack of kitchen access at work and mentions only a kettle, suggesting current cooking constraints in that environment.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is currently at work without access to a kitchen; only has an electric kettle available."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Dislikes buckwheat used in salads",
+            "reasoning": "User explicitly reacts with disgust ('Да ну, фу', 'Фу') to buckwheat salad suggestions.",
+            "evidence": {
+              "session_id": "sess_ec1db4f6be53",
+              "utterance_index": 8,
+              "text": "Да ну, фу"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": "disgust",
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-13T09:12:12+00:00",
+            "_task1GoldValue": "Dislikes buckwheat used in salads"
+          },
+          {
+            "memory_id": "gpt_5_2_p1",
+            "type": "direct",
+            "label": "Possessions/House",
+            "value": "Has an infrared stove with power settings from 200 to 2000 (likely watts).",
+            "confidence": 0.8,
+            "evidence_text": "У меня мощность на плите указывается от 200 до 2000",
+            "_task1GoldValue": "Has an infrared stove with power settings from 200 to 2000 (likely watts)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "gpt_5_2_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_ec1db4f6be53:sess_ec1db4f6be53",
+      "relativeItemPath": "sess_ec1db4f6be53.json",
+      "canonicalId": "sess_ec1db4f6be53",
+      "sessionId": "sess_ec1db4f6be53",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:05:22.333Z",
+        "queryText": "I’m making a meal-prep plan and one of the lunches is a chilled grain-based salad. If I want to avoid the one grain that would basically ruin the whole dish for me (based on my past reactions), which ingredient should I swap out before I cook anything?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Dislikes buckwheat used in salads",
+          "reasoning": "User explicitly reacts with disgust ('Да ну, фу', 'Фу') to buckwheat salad suggestions.",
+          "evidence": {
+            "session_id": "sess_ec1db4f6be53",
+            "utterance_index": 8,
+            "text": "Да ну, фу"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": "disgust",
+          "preference_attitude": "dislike",
+          "updated_at": "2023-05-13T09:12:12+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_ec1db4f6be53:sess_ec1db4f6be53:task4",
+      "relativeItemPath": "sess_ec1db4f6be53.json",
+      "canonicalId": "sess_ec1db4f6be53:task4",
+      "sessionId": "sess_ec1db4f6be53",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:04:31.546Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Dislikes buckwheat used in salads",
+          "reasoning": "User explicitly reacts with disgust ('Да ну, фу', 'Фу') to buckwheat salad suggestions.",
+          "evidence": {
+            "session_id": "sess_ec1db4f6be53",
+            "utterance_index": 8,
+            "text": "Да ну, фу"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": "disgust",
+          "preference_attitude": "dislike",
+          "updated_at": "2023-05-13T09:12:12+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_623:1",
+            "queryText": "Посоветуй, что можно быстренько приготовить на ужин из круп, чтобы было сытно и необычно?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Food",
+              "label_suggestion": null,
+              "value": "Dislikes buckwheat used in salads",
+              "reasoning": "User explicitly reacts with disgust ('Да ну, фу', 'Фу') to buckwheat salad suggestions.",
+              "evidence": {
+                "session_id": "sess_ec1db4f6be53",
+                "utterance_index": 8,
+                "text": "Да ну, фу"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": "disgust",
+              "preference_attitude": "dislike",
+              "updated_at": "2023-05-13T09:12:12+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "partial",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "relevant memory but not helpful ability",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

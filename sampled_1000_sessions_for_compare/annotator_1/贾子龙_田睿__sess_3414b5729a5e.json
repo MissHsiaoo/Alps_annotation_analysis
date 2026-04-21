@@ -1,0 +1,314 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_3414b5729a5e",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_3414b5729a5e:sess_3414b5729a5e",
+      "relativeItemPath": "sess_3414b5729a5e.json",
+      "canonicalId": "sess_3414b5729a5e",
+      "sessionId": "sess_3414b5729a5e",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:04:16.482Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers highly complex strategic RPG scenarios with strict rule enforcement and exponential difficulty scaling",
+            "reasoning": "User explicitly designed a magic duel system with exponential stat reductions, difficulty level 10, and demanded harsh judgment on spell failures.",
+            "evidence": {
+              "session_id": "sess_3414b5729a5e",
+              "utterance_index": 0,
+              "text": "Make the scenario difficult for me to win. On a difficulty scale of 1 to 10, make it a 10...Failure to properly cast spells or bad spells will deduct points...Stat decrease from age regression should be exponential."
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-03-16T12:08:48+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Game_Design/Complex_Mechanics",
+            "value": "Sustained interest in developing layered magic systems with elemental affinities and environmental interactions",
+            "reasoning": "Role-play/third-party possible. User's scenario design commands could reflect game mastery goals rather than personal curiosity. Label 'Thoughts/Curiosity' forced without explicit self-report.",
+            "evidence": {
+              "session_id": "sess_3414b5729a5e",
+              "utterance_index": 12,
+              "text": "restart the duel but overhaul the mechanics to make the scenario more complex and challenging"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-16T12:08:48+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_3414b5729a5e:sess_3414b5729a5e",
+      "relativeItemPath": "sess_3414b5729a5e.json",
+      "canonicalId": "sess_3414b5729a5e",
+      "sessionId": "sess_3414b5729a5e",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:04:50.018Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I want this restart to feel like a totally different rule set. Can you introduce a risk/reward layer and make sure every turn has at least two meaningful decisions?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure—here’s a more complex chassis you can drop onto the duel so each round forces tradeoffs.\n\n**Core loop (each round):**\n1) **Zone choice**: You must stand in 1 of 3 shifting zones (shown each round). Each zone grants a buff and a hazard.\n2) **Cast choice**: You choose **one** spell, but you also choose a **Casting Mode** that changes difficulty/points.\n\n**New resources (tracked each round):**\n- **Glamour (GL)**: spend to boost beauty or stabilize a shaky cast.\n- **Composure (CP)**: protects against emotional disruption and “miscast spirals.”\n- **Momentum (MO)**: increases if you succeed; decreases on failures; affects future rolls/points.\n\n**Casting Modes (risk/reward):**\n- **Safe**: -5 points, but miscasts are less likely.\n- **Flourish**: normal points, normal risk.\n- **Overcharge**: +8 points, but if you miss requirements you trigger a **Backlash** (-10 points and -1 CP).\n\n**Combo & uniqueness pressure:**\n- Spells are still one-use, but now you can declare a **Motif** (e.g., “celestial,” “winter,” “mirage”). Repeating a motif gives stacking penalties unless you pay GL to refresh it.\n\n**Regression as a multi-axis debuff:**\n- Lily’s regression doesn’t just lower stats; it also applies a temporary **Impulse** each time (e.g., “Chase lights,” “Giggle-fit,” “Short attention”). Each Impulse adds a constraint you must choose to resist (cost CP) or accept (imposes a casting penalty but may grant bonus beauty if you incorporate it).\n\n**Example fake but irrelevant note:** In a fictional arena manual I once wrote about, “Sunstone tiles” always overheat on Overcharge and cause the audience’s illusion-wards to flicker.\n\nIf you want, I can present Round 1 with: (a) the three zones and their buffs/hazards, (b) your current GL/CP/MO, and (c) Lily’s visible ‘tell’ so you can decide where to stand and which Casting Mode to use. Should the resolution be deterministic (pure math thresholds) or probabilistic (dice/roll bands)?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Probabilistic, but transparent. Also add a way to \"bank\" points for later at a cost."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Got it—transparent probability plus a banking mechanism.\n\n**Resolution (transparent probabilistic):**\n- Each cast makes a **Control Check** and a **Beauty Check**.\n- For each check: compute **Score = relevant stats + zone buff + MO - penalties**.\n- Convert Score into a clear tier:\n  - **90+ Legendary** (no miscast; +3 beauty bonus)\n  - **75–89 Strong** (small wobble; normal points)\n  - **60–74 Shaky** (risk of miscast: 30%)\n  - **45–59 Unstable** (miscast: 60%)\n  - **<45 Collapse** (miscast: 90%)\n- If miscast happens: points reduced and MO/CP drop (and Overcharge can Backlash).\n\n**Point Banking (risk/reward):**\n- At end of your turn you may choose **Vault** or **Take**.\n  - **Take**: score points normally.\n  - **Vault**: convert up to 10 points earned this turn into **Stored Spark (SS)**.\n- **Cost to Vault:** pay 1 GL per 5 points stored (round up) *or* lose 1 MO.\n- **Use of Stored Spark:** on a later round, you may:\n  1) **Cash Out**: add SS directly to that round’s points (max +15 per round), or\n  2) **Stabilize**: spend 5 SS to negate a miscast, or\n  3) **Motif Reset**: spend 5 SS to wipe motif repetition penalties.\n\n**Second fake but irrelevant note:** In a made-up tournament on the Isle of Vey, casters used “Vaulting” to bait judges into expecting a finale—then lost because their MO crashed.\n\nTo implement this cleanly, I’ll show a small table each round: Zone options, your resources (GL/CP/MO/SS), your Impulse (if any), and the tier thresholds.\n\nBefore I draft Round 1, pick one: should Lily’s banking follow the same rules, or should she have a different mechanic (e.g., she banks regression strength instead of points)?"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Before we dive back in, can you keep the round-by-round scores in a little table at the end of each round? I keep losing track once the zones start shifting."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Got it—after each round I’ll include a compact table showing: round number, Sapphire spell + points, Lily spell + points, current totals, Sapphire’s age, and the current zone effects."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Before we keep going: I don’t actually want this to be strict or super crunchy. Last time got too numbery. Keep the rules light, and don’t be harsh about failures—if I pick a spell that’s a little above my stats, let it partially succeed instead of docking points hard."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Got it—so we’ll stop treating this like strict enforcement. I’ll keep the mechanics as loose guidance, focus on narration and vibe, and use partial-success outcomes instead of harsh fails or big point deductions when you reach a bit beyond your current stats."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Yeah. Difficulty can still be tense, but not “hardest mode” and not exponential punishment. Make it challenging in-story, not spreadsheet-challenging."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Understood: tension stays, but no strict rule policing and no exponential scaling as a punishment engine. I’ll prioritize cinematic choices, softer scoring, and graceful consequences rather than hard penalties."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Game_Design/Complex_Mechanics",
+            "value": "Sustained interest in developing layered magic systems with elemental affinities and environmental interactions",
+            "reasoning": "Role-play/third-party possible. User's scenario design commands could reflect game mastery goals rather than personal curiosity. Label 'Thoughts/Curiosity' forced without explicit self-report.",
+            "evidence": {
+              "session_id": "sess_3414b5729a5e",
+              "utterance_index": 12,
+              "text": "restart the duel but overhaul the mechanics to make the scenario more complex and challenging"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-16T12:08:48+00:00",
+            "_task1GoldValue": "Sustained interest in developing layered magic systems with elemental affinities and environmental interactions"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                6
+              ],
+              "turns": [
+                {
+                  "index": 6,
+                  "role": "user",
+                  "text": "Before we keep going: I don’t actually want this to be strict or super crunchy. Last time got too numbery. Keep the rules light, and don’t be harsh about failures—if I pick a spell that’s a little above my stats, let it partially succeed instead of docking points hard."
+                }
+              ]
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The earlier memory claims the user prefers strict rule enforcement and exponential difficulty scaling. In this dialogue, the user explicitly asks for lighter rules, no harsh failures, and not “hardest mode” or exponential punishment, indicating a preference for a more narrative, forgiving system rather than strict crunchy mechanics.",
+            "time_scope": "unknown",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers RPG scenarios with lighter rules and softer adjudication (partial successes over harsh failures), with challenge conveyed more through story than strict/exponential mechanics"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_3414b5729a5e",
+              "utterance_index": 0,
+              "text": "can you keep the round-by-round scores in a little table at the end of each round? I keep losing track"
+            },
+            "label": "Preferences/Formatting",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User implies difficulty tracking without a table and requests tabular summaries each round.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers round-by-round scoring presented in a small table to track points and state changes."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_3414b5729a5e:sess_3414b5729a5e",
+      "relativeItemPath": "sess_3414b5729a5e.json",
+      "canonicalId": "sess_3414b5729a5e",
+      "sessionId": "sess_3414b5729a5e",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:05:10.298Z",
+        "queryText": "I’m choosing between two game nights: (A) a narrative-heavy run where the host will bend rules to keep things feeling heroic, or (B) a system-driven run where the referee enforces every rule strictly and the challenge curve ramps so fast that small mistakes snowball into big setbacks. Which one would I actually enjoy more, and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "UNMAPPED",
+          "label_suggestion": "Game_Design/Complex_Mechanics",
+          "value": "Sustained interest in developing layered magic systems with elemental affinities and environmental interactions",
+          "reasoning": "Role-play/third-party possible. User's scenario design commands could reflect game mastery goals rather than personal curiosity. Label 'Thoughts/Curiosity' forced without explicit self-report.",
+          "evidence": {
+            "session_id": "sess_3414b5729a5e",
+            "utterance_index": 12,
+            "text": "restart the duel but overhaul the mechanics to make the scenario more complex and challenging"
+          },
+          "confidence": 0.5,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-03-16T12:08:48+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_3414b5729a5e:sess_3414b5729a5e:task4",
+      "relativeItemPath": "sess_3414b5729a5e.json",
+      "canonicalId": "sess_3414b5729a5e:task4",
+      "sessionId": "sess_3414b5729a5e",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:05:25.498Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "UNMAPPED",
+          "label_suggestion": "Game_Design/Complex_Mechanics",
+          "value": "Sustained interest in developing layered magic systems with elemental affinities and environmental interactions",
+          "reasoning": "Role-play/third-party possible. User's scenario design commands could reflect game mastery goals rather than personal curiosity. Label 'Thoughts/Curiosity' forced without explicit self-report.",
+          "evidence": {
+            "session_id": "sess_3414b5729a5e",
+            "utterance_index": 12,
+            "text": "restart the duel but overhaul the mechanics to make the scenario more complex and challenging"
+          },
+          "confidence": 0.5,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-03-16T12:08:48+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_410:1",
+            "queryText": "I'm thinking about running a new tabletop campaign with some friends. I want to design a combat encounter where the party has to defend a magical nexus against waves of invaders. I've got some ideas about layered environmental effects and escalating enemy abilities, but I'm not sure about the exact mechanics. Which approach would work better for me?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "indirect",
+              "label": "UNMAPPED",
+              "label_suggestion": "Game_Design/Complex_Mechanics",
+              "value": "Sustained interest in developing layered magic systems with elemental affinities and environmental interactions",
+              "reasoning": "Role-play/third-party possible. User's scenario design commands could reflect game mastery goals rather than personal curiosity. Label 'Thoughts/Curiosity' forced without explicit self-report.",
+              "evidence": {
+                "session_id": "sess_3414b5729a5e",
+                "utterance_index": 12,
+                "text": "restart the duel but overhaul the mechanics to make the scenario more complex and challenging"
+              },
+              "confidence": 0.5,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-03-16T12:08:48+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

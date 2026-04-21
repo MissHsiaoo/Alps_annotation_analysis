@@ -1,0 +1,409 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_d9bbea772f6e",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_d9bbea772f6e:sess_d9bbea772f6e",
+      "relativeItemPath": "sess_d9bbea772f6e.json",
+      "canonicalId": "sess_d9bbea772f6e",
+      "sessionId": "sess_d9bbea772f6e",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T09:16:19.153Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "value": "Has two children named Theresa and Theo enrolled in school bus service",
+            "reasoning": "User explicitly mentions children's names and school logistics in multiple emails.",
+            "evidence": {
+              "session_id": "sess_d9bbea772f6e",
+              "utterance_index": 2,
+              "text": "Ich habe meine Kinder Theresa und Theo für nächstes Schuljahr für den Schulbus (hin und zurück) angemeldet."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2025-01-01T00:00:00Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Activity/Selling_Childrens_Clothing",
+            "value": "Frequently sells Petit Bateau children's clothing items on Willhaben (Leggings, shirts, skirts)",
+            "reasoning": "User creates 3+ ads for Petit Bateau items with consistent pricing patterns and brand emphasis.",
+            "evidence": {
+              "session_id": "sess_d9bbea772f6e",
+              "utterance_index": 34,
+              "text": "Ich hätte noch eine Anzeige, ein Rock, auch von Petit Bateau (passt zu den Leggings von soeben)"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2025-01-01T00:00:00Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Constraints/Financial_Sensitivity",
+            "value": "Cites price increases ('Teuerungen') as reason for cost inquiries",
+            "reasoning": "User adds economic context to justify financial questions, suggesting budget awareness.",
+            "evidence": {
+              "session_id": "sess_d9bbea772f6e",
+              "utterance_index": 4,
+              "text": "könntest du in das E-mail hinzufügen, das die aktuelle Teuerungen der Grund meines E-Mails sind"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2025-01-01T00:00:00Z"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Seeks assistance crafting persuasive Willhaben advertisements for children's clothing",
+            "reasoning": "Repeated requests (utterances 14,20,28,34) show sustained focus on ad copy optimization.",
+            "evidence": {
+              "session_id": "sess_d9bbea772f6e",
+              "utterance_index": 34,
+              "text": "Ich hätte noch eine Anzeige, ein Rock, auch von Petit Bateau (passt zu den Leggings von soeben)"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2025-01-01T00:00:00Z"
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "value": "The user's name is Maaike.",
+            "confidence": 0.95,
+            "evidence_text": "hallo, ich bins wieder Maaike :)"
+          },
+          {
+            "memory_id": "gpt_5_2_p1",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "value": "Die Nutzerin ist für die Lehrveranstaltung „Lerntheoretische Konzepte“ angemeldet.",
+            "confidence": 0.8,
+            "evidence_text": "Ich habe mich für die Lehrveranstaltung Lerntheoretische Konzepte angemeldet."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_d9bbea772f6e:sess_d9bbea772f6e",
+      "relativeItemPath": "sess_d9bbea772f6e.json",
+      "canonicalId": "sess_d9bbea772f6e",
+      "sessionId": "sess_d9bbea772f6e",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T09:17:01.003Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Kurze Frage: Soll ich bei Willhaben-Anzeigen eher einen langen Beschreibungstext nehmen oder kurz & knackig?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Meist funktioniert kurz & knackig am besten: 1–2 Sätze Nutzen/Zustand, dann harte Fakten (Größe, Marke, Preis, Zustand, Abholung/Versand). Einen längeren Text lohnt sich eher bei teuren oder erklärungsbedürftigen Artikeln."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Und was wären gute Standard-Infos, die man fast immer dazuschreiben sollte?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Gute Basics sind: genauer Artikelname/Modell, Größe/Maße, Zustand (inkl. Mängel ehrlich nennen), Lieferumfang (Originalverpackung, Zubehör), Abholung/Versand, Zahlungsart, Nichtraucher-/tierfrei nur wenn sicher zutreffend, sowie „Privatverkauf, keine Garantie/Rücknahme“ (falls du das so handhaben willst)."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Hast du eine neutrale Textvorlage, die ich einfach ausfüllen kann?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Klar:\n\nTitel: [Marke/Artikel] – [Größe/Variante] – [Zustand] – €[Preis]\n\nBeschreibung:\nVerkaufe [Artikel] von [Marke], [Größe/Maße]. Zustand: [wie neu/sehr gut/gut] ([kurzer Hinweis zu Gebrauchsspuren/Mängeln]).\nLieferumfang: [OVP/Zubehör/Anleitung].\nAbholung in: [Ort] oder Versand: [ja/nein] (Kosten: [x]).\nPreis: €[Preis] (VB: [ja/nein]).\nPrivatverkauf: keine Garantie/Rücknahme."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Nebenbei: Ich habe gelesen, dass manche Plattformen jetzt automatische Titelvorschläge testen. Ist das sinnvoll?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Kann sinnvoll sein, wenn die Vorschläge die wichtigsten Suchbegriffe enthalten (Marke, Modell, Größe, Farbe). Ich würde sie trotzdem kurz prüfen: oft fehlen Maße/Varianten oder es sind zu viele Füllwörter drin. Ein guter Titel bleibt „Suchbegriffe zuerst, Schnickschnack zuletzt“."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "assistant",
+            "text": "Klar, gerne 😊 Damit die Anzeige richtig stimmig wird: Welche Größe hat der Petit-Bateau-Rock (z.B. auch 6ans/116cm wie die Leggings), welche Farbe/Muster ist er, und ist er eher Sommerrock oder dicker (z.B. Cord/Jeans)? Dann formuliere ich dir einen richtig packenden Willhaben-Text für 10 €."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "user",
+            "text": "Er ist auch 6ans/116cm und aus Jeansstoff, dunkelblau."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "assistant",
+            "text": "Perfekt, danke! Hier ist ein packender Text für deine Willhaben-Anzeige:\n\n---\n\nTitel: Petit Bateau Jeansrock dunkelblau – Gr. 6ans/116 – Top Zustand – nur 10 €\n\nBeschreibung:\n\nIch verkaufe einen schönen dunkelblauen Jeansrock von Petit Bateau in Größe 6ans/116cm.\nTop Zustand, gepflegt und bereit für die nächste Runde – super kombinierbar (passt auch perfekt zu Leggings!).\n\nPreis: 10 €\nAbholung oder Versand nach Absprache.\n\nBei Fragen einfach schreiben 😊\n\n---"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "user",
+            "text": "Kurze Korrektur zu vorhin: Ich habe doch nicht beide Kinder für den Schulbus angemeldet. Theresa ist angemeldet, aber Theo nicht – für ihn haben wir eine andere Lösung gefunden."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "assistant",
+            "text": "Alles klar, danke für die Korrektur. Dann stimmt es also: Theresa ist für den Schulbus angemeldet, Theo nicht. Soll ich das E-Mail an Frau Mag. Grünwald entsprechend umformulieren?"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "user",
+            "text": "Ja bitte, genau so: nur Theresa ist für hin und zurück angemeldet; ich möchte die Kosten dafür wissen und auch, was es kosten würde, wenn sie nur für den Rückweg angemeldet ist."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Activity/Selling_Childrens_Clothing",
+            "value": "Frequently sells Petit Bateau children's clothing items on Willhaben (Leggings, shirts, skirts)",
+            "reasoning": "User creates 3+ ads for Petit Bateau items with consistent pricing patterns and brand emphasis.",
+            "evidence": {
+              "session_id": "sess_d9bbea772f6e",
+              "utterance_index": 34,
+              "text": "Ich hätte noch eine Anzeige, ein Rock, auch von Petit Bateau (passt zu den Leggings von soeben)"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2025-01-01T00:00:00Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Constraints/Financial_Sensitivity",
+            "value": "Cites price increases ('Teuerungen') as reason for cost inquiries",
+            "reasoning": "User adds economic context to justify financial questions, suggesting budget awareness.",
+            "evidence": {
+              "session_id": "sess_d9bbea772f6e",
+              "utterance_index": 4,
+              "text": "könntest du in das E-mail hinzufügen, das die aktuelle Teuerungen der Grund meines E-Mails sind"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2025-01-01T00:00:00Z"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Seeks assistance crafting persuasive Willhaben advertisements for children's clothing",
+            "reasoning": "Repeated requests (utterances 14,20,28,34) show sustained focus on ad copy optimization.",
+            "evidence": {
+              "session_id": "sess_d9bbea772f6e",
+              "utterance_index": 34,
+              "text": "Ich hätte noch eine Anzeige, ein Rock, auch von Petit Bateau (passt zu den Leggings von soeben)"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2025-01-01T00:00:00Z"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": null,
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory says both Theresa and Theo are enrolled in the school bus service, but the user explicitly corrects that only Theresa is enrolled and Theo is not.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Has two children named Theresa and Theo; only Theresa is enrolled in the school bus service (Theo is not)."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_d9bbea772f6e",
+              "utterance_index": 1,
+              "text": "Er ist auch 6ans/116cm und aus Jeansstoff, dunkelblau."
+            },
+            "label": "UNMAPPED",
+            "label_suggestion": "Activity/Selling_Childrens_Clothing",
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User provides concrete details for a new Willhaben listing, implying they are selling a Petit Bateau skirt that is size 6ans/116cm and dark blue denim.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Is selling a dark blue denim Petit Bateau skirt in size 6ans/116cm"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_d9bbea772f6e:sess_d9bbea772f6e",
+      "relativeItemPath": "sess_d9bbea772f6e.json",
+      "canonicalId": "sess_d9bbea772f6e",
+      "sessionId": "sess_d9bbea772f6e",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T09:17:06.410Z",
+        "queryText": "The school just emailed saying one family member’s daily pickup/drop-off plan needs to match what we previously arranged. Based on our household situation, how many separate students should I confirm for round-trip transportation, and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Family",
+          "label_suggestion": null,
+          "value": "Has two children named Theresa and Theo enrolled in school bus service",
+          "reasoning": "User explicitly mentions children's names and school logistics in multiple emails.",
+          "evidence": {
+            "session_id": "sess_d9bbea772f6e",
+            "utterance_index": 2,
+            "text": "Ich habe meine Kinder Theresa und Theo für nächstes Schuljahr für den Schulbus (hin und zurück) angemeldet."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2025-01-01T00:00:00Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_d9bbea772f6e:sess_d9bbea772f6e:task4",
+      "relativeItemPath": "sess_d9bbea772f6e.json",
+      "canonicalId": "sess_d9bbea772f6e:task4",
+      "sessionId": "sess_d9bbea772f6e",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T09:17:38.237Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Family",
+          "label_suggestion": null,
+          "value": "Has two children named Theresa and Theo enrolled in school bus service",
+          "reasoning": "User explicitly mentions children's names and school logistics in multiple emails.",
+          "evidence": {
+            "session_id": "sess_d9bbea772f6e",
+            "utterance_index": 2,
+            "text": "Ich habe meine Kinder Theresa und Theo für nächstes Schuljahr für den Schulbus (hin und zurück) angemeldet."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2025-01-01T00:00:00Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_316:1",
+            "queryText": "Hallo! Ich möchte für meine Kinder Theresa und Theo eine Anzeige für ihre alten Schulranzen auf Willhaben erstellen. Die sind beide in gutem Zustand, aber sie wollen jetzt neue. Kannst du mir helfen?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Social_Relationships/Family",
+              "label_suggestion": null,
+              "value": "Has two children named Theresa and Theo enrolled in school bus service",
+              "reasoning": "User explicitly mentions children's names and school logistics in multiple emails.",
+              "evidence": {
+                "session_id": "sess_d9bbea772f6e",
+                "utterance_index": 2,
+                "text": "Ich habe meine Kinder Theresa und Theo für nächstes Schuljahr für den Schulbus (hin und zurück) angemeldet."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2025-01-01T00:00:00Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "weak",
+            "abilityPurity": "high",
+            "issueTypes": [
+              "selected_memory_wrong",
+              "memory_not_required"
+            ],
+            "evidenceNote": "irrelevant memory",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

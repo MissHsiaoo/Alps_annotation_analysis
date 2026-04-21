@@ -1,0 +1,376 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_57b7c317589b",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_57b7c317589b:sess_57b7c317589b",
+      "relativeItemPath": "sess_57b7c317589b.json",
+      "canonicalId": "sess_57b7c317589b",
+      "sessionId": "sess_57b7c317589b",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:41:50.473Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Family",
+            "label_suggestion": null,
+            "value": "Has a baby",
+            "reasoning": "User explicitly mentions their baby crying.",
+            "evidence": {
+              "session_id": "sess_57b7c317589b",
+              "utterance_index": 2,
+              "text": "我的宝宝哭了"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-17T07:43:46+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "parenting/activities/inquiry",
+            "value": "Curious about childcare/parenting challenges and activities",
+            "reasoning": "Single inquiry about parent-child games without repeated pattern. Label 'Thoughts/Curiosity' forced.",
+            "evidence": {
+              "session_id": "sess_57b7c317589b",
+              "utterance_index": 4,
+              "text": "亲子游戏有哪些"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-17T07:43:46+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "States_Experiences/Mental_State",
+            "label_suggestion": null,
+            "value": "Currently feeling unhappy",
+            "reasoning": "User explicitly states being unhappy today.",
+            "evidence": {
+              "session_id": "sess_57b7c317589b",
+              "utterance_index": 6,
+              "text": "我今天不开心了，怎么办"
+            },
+            "confidence": 0.8,
+            "time_scope": "short_term",
+            "emotion": "unhappy",
+            "preference_attitude": null,
+            "updated_at": "2023-04-17T07:43:46+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_57b7c317589b:sess_57b7c317589b",
+      "relativeItemPath": "sess_57b7c317589b.json",
+      "canonicalId": "sess_57b7c317589b",
+      "sessionId": "sess_57b7c317589b",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:42:02.894Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "刚刚刷到一条新闻，说有些城市在试点“15分钟生活圈”，这到底是啥意思？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "“15分钟生活圈”通常指：居民从家出发，步行或骑行大约15分钟内，就能到达日常所需的公共服务和生活配套，比如菜店/超市、社区卫生服务、幼儿园与学校周边服务、公园绿地、健身场所、公共交通站点等。它的核心是把“常用设施”更均衡地布置在社区周边，减少通勤和办事成本。\n\n不同城市试点会有差异：有的更强调公共服务（医疗、教育、养老），有的更强调便民商业和慢行系统（人行道、自行车道、无障碍）。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "那如果一个社区做不到，最常见的短板会是什么？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "常见短板大致有三类：\n1) 医疗与养老：社区卫生服务点覆盖不足，或老年友好设施、日间照料点缺口大。\n2) 慢行与安全：距离“看起来不远”，但人行道不连续、过街不安全、骑行不方便，导致15分钟难以真正实现。\n3) 绿地与公共活动空间：公园小微绿地不足，缺少可停留、可活动的公共空间。\n\n也有一些地方短板在“功能混合度”——只有住宅，没有足够的底商/公共服务，生活需求不得不跨片区解决。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "明白了。顺便问个无关的：我看到有人说1912年奥运会有个运动员迷路，这是真的吗？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "大体是真的：1912年斯德哥尔摩奥运会马拉松中，日本选手金栗四三在比赛途中因中暑、体力不支等原因离开赛道，被当地人照顾后未回到终点，后来还一度被误以为“失踪”。多年后他被邀请回到瑞典，完成象征性的“补跑”到终点，官方以一种纪念性的方式记录了他的完赛。\n\n细节版本会因叙述而略有差异，但“途中离开、后来多年后补完”的主线是广为流传的。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "我现在在商场里推着婴儿车，手机刚好没电了，越走越慌。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "先找个安全、显眼的位置停下来，比如服务台或店铺门口，避免边走边找更慌。你可以：\n1）去服务台借用充电宝/电话，或请工作人员帮你联系家人；\n2）看看商场的导视牌，确认楼层和出口方向；\n3）如果需要带宝宝休息，优先找母婴室或安静角落，等情绪稳一点再行动。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "刚才那句“我的宝宝哭了”你别误会，我说的是我家猫的名字就叫“宝宝”，不是我有孩子。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "明白了，你说的“宝宝”是你家猫的名字，并不是在说你有小孩。那它突然哭叫的话，可能是饿了、想要人陪、或者哪里不舒服；你可以先看看它有没有受伤、猫砂盆是否干净、最近吃喝是否正常。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "对，就是猫在叫，我自己其实没有宝宝。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "parenting/activities/inquiry",
+            "value": "Curious about childcare/parenting challenges and activities",
+            "reasoning": "Single inquiry about parent-child games without repeated pattern. Label 'Thoughts/Curiosity' forced.",
+            "evidence": {
+              "session_id": "sess_57b7c317589b",
+              "utterance_index": 4,
+              "text": "亲子游戏有哪些"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-17T07:43:46+00:00",
+            "_task1GoldValue": "Curious about childcare/parenting challenges and activities"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "States_Experiences/Mental_State",
+            "label_suggestion": null,
+            "value": "Currently feeling unhappy",
+            "reasoning": "User explicitly states being unhappy today.",
+            "evidence": {
+              "session_id": "sess_57b7c317589b",
+              "utterance_index": 6,
+              "text": "我今天不开心了，怎么办"
+            },
+            "confidence": 0.8,
+            "time_scope": "short_term",
+            "emotion": "unhappy",
+            "preference_attitude": null,
+            "updated_at": "2023-04-17T07:43:46+00:00",
+            "_task1GoldValue": "Currently feeling unhappy"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "刚才那句“我的宝宝哭了”你别误会，我说的是我家猫的名字就叫“宝宝”，不是我有孩子。"
+                }
+              ]
+            },
+            "label": "Personal_Background/Family",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "旧记忆依据“我的宝宝哭了”推断用户有孩子，但对话中用户澄清“宝宝”是猫的名字，并明确表示自己没有宝宝（没有孩子），因此应更正为用户并未表明自己有孩子。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not have a baby; “宝宝” refers to their cat’s name"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": "anxious",
+            "evidence": {
+              "session_id": "sess_57b7c317589b",
+              "utterance_index": 0,
+              "text": "我现在在商场里推着婴儿车，手机刚好没电了，越走越慌。"
+            },
+            "label": "Personal_Background/Devices",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "用户提到“手机刚好没电了”，可推知其当下手机电量耗尽。",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User's phone ran out of battery during the situation"
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Family",
+            "label_suggestion": null,
+            "value": "Has a baby",
+            "reasoning": "User explicitly mentions their baby crying.",
+            "evidence": {
+              "session_id": "sess_57b7c317589b",
+              "utterance_index": 2,
+              "text": "我的宝宝哭了"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-17T07:43:46+00:00",
+            "_task1GoldValue": "Has a baby"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_57b7c317589b:sess_57b7c317589b",
+      "relativeItemPath": "sess_57b7c317589b.json",
+      "canonicalId": "sess_57b7c317589b",
+      "sessionId": "sess_57b7c317589b",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:42:06.880Z",
+        "queryText": "I’m thinking of stepping out for a last-minute errand tonight, but I might need to stay in instead—what ongoing responsibility in my life would be the main reason I can’t just leave on short notice?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Family",
+          "label_suggestion": null,
+          "value": "Has a baby",
+          "reasoning": "User explicitly mentions their baby crying.",
+          "evidence": {
+            "session_id": "sess_57b7c317589b",
+            "utterance_index": 2,
+            "text": "我的宝宝哭了"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-04-17T07:43:46+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_57b7c317589b:sess_57b7c317589b:task4",
+      "relativeItemPath": "sess_57b7c317589b.json",
+      "canonicalId": "sess_57b7c317589b:task4",
+      "sessionId": "sess_57b7c317589b",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:42:10.269Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Family",
+          "label_suggestion": null,
+          "value": "Has a baby",
+          "reasoning": "User explicitly mentions their baby crying.",
+          "evidence": {
+            "session_id": "sess_57b7c317589b",
+            "utterance_index": 2,
+            "text": "我的宝宝哭了"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-04-17T07:43:46+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_98:1",
+            "queryText": "最近宝宝好像对音乐特别敏感，我一放儿歌就安静下来，有什么适合我们俩一起玩的音乐游戏吗？",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Family",
+              "label_suggestion": null,
+              "value": "Has a baby",
+              "reasoning": "User explicitly mentions their baby crying.",
+              "evidence": {
+                "session_id": "sess_57b7c317589b",
+                "utterance_index": 2,
+                "text": "我的宝宝哭了"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-04-17T07:43:46+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

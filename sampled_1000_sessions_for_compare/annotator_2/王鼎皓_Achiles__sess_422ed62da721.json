@@ -1,0 +1,304 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_422ed62da721",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_422ed62da721:sess_422ed62da721",
+      "relativeItemPath": "sess_422ed62da721.json",
+      "canonicalId": "sess_422ed62da721",
+      "sessionId": "sess_422ed62da721",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:56:09.698Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Mechanical Site Engineer 没有明确证据支持，可能仅仅是任务需求",
+            "reasoning": "User explicitly states their occupation as Mechanical Site Engineer with supervisory responsibilities.",
+            "evidence": {
+              "session_id": "sess_422ed62da721",
+              "utterance_index": 52,
+              "text": "Mechanical site engineer , supervision of all site activities..."
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-03T13:34:18+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_422ed62da721:sess_422ed62da721",
+      "relativeItemPath": "sess_422ed62da721.json",
+      "canonicalId": "sess_422ed62da721",
+      "sessionId": "sess_422ed62da721",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:56:16.268Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Please rephrase this in a professional way for a resume: \"Coordinated with subcontractors to close snags and support final handover.\""
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Coordinated with subcontractors to close outstanding snags and support the successful final handover of the project."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Make it shorter and more action-oriented."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Drove snag closure with subcontractors to enable timely project handover."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Rewrite this too: \"Prepared method statements and risk assessments for mechanical installation works.\""
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Developed method statements and risk assessments (MSRA) for mechanical installation activities."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Also, what does MSRA stand for?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "MSRA commonly stands for Method Statement and Risk Assessment."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Give one more alternative version without abbreviations."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Prepared method statements and risk assessments to ensure safe and compliant mechanical installation works."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Support the QA/QC team during MEP final handover and authority submissions—rephrase it professionally for my CV."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Provided support to the QA/QC team during MEP final handover, including the preparation and submission of documentation for client review and relevant authority approvals."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "In the last point, please don’t write “Mechanical Site Engineer.” I’m actually a Mechanical Project Engineer, so update the sentence accordingly."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "As a Mechanical Project Engineer, I oversaw and supervised all site activities, including managing the labor force, to ensure that the execution work adhered to the project's quality plan. Additionally, I provided assistance to the site mechanical engineer for the assigned project, specifically in documentation and related tasks."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.93,
+            "emotion": null,
+            "evidence": null,
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory states the user’s occupation is “Mechanical Site Engineer,” but the user corrects this by explicitly stating they are a “Mechanical Project Engineer.” Therefore, the occupation should be updated to Mechanical Project Engineer.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Mechanical Project Engineer"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_422ed62da721",
+              "utterance_index": 0,
+              "text": "Support the QA/QC team during MEP final handover and authority submissions—rephrase it professionally for my CV."
+            },
+            "label": "Personal_Background/Discipline",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user frames their responsibility around 'MEP final handover and authority submissions,' implying their role is within MEP works rather than purely generic mechanical tasks.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User works in MEP (mechanical/electrical/plumbing) project context."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Mechanical Site Engineer 没有明确证据支持，可能仅仅是任务需求",
+            "reasoning": "User explicitly states their occupation as Mechanical Site Engineer with supervisory responsibilities.",
+            "evidence": {
+              "session_id": "sess_422ed62da721",
+              "utterance_index": 52,
+              "text": "Mechanical site engineer , supervision of all site activities..."
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-03T13:34:18+00:00",
+            "_task1GoldValue": "Mechanical Site Engineer 没有明确证据支持，可能仅仅是任务需求"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_422ed62da721:sess_422ed62da721",
+      "relativeItemPath": "sess_422ed62da721.json",
+      "canonicalId": "sess_422ed62da721",
+      "sessionId": "sess_422ed62da721",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:56:18.986Z",
+        "queryText": "A recruiter just asked me to give a one-line description of my current role, but they want it framed around being on-site and coordinating day-to-day work rather than doing office-only tasks. What should I say, based on my background?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Occupation",
+          "label_suggestion": null,
+          "value": "Mechanical Site Engineer 没有明确证据支持，可能仅仅是任务需求",
+          "reasoning": "User explicitly states their occupation as Mechanical Site Engineer with supervisory responsibilities.",
+          "evidence": {
+            "session_id": "sess_422ed62da721",
+            "utterance_index": 52,
+            "text": "Mechanical site engineer , supervision of all site activities..."
+          },
+          "confidence": 0.5,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-12-03T13:34:18+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_422ed62da721:sess_422ed62da721:task4",
+      "relativeItemPath": "sess_422ed62da721.json",
+      "canonicalId": "sess_422ed62da721:task4",
+      "sessionId": "sess_422ed62da721",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:56:23.077Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Occupation",
+          "label_suggestion": null,
+          "value": "Mechanical Site Engineer 没有明确证据支持，可能仅仅是任务需求",
+          "reasoning": "User explicitly states their occupation as Mechanical Site Engineer with supervisory responsibilities.",
+          "evidence": {
+            "session_id": "sess_422ed62da721",
+            "utterance_index": 52,
+            "text": "Mechanical site engineer , supervision of all site activities..."
+          },
+          "confidence": 0.5,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-12-03T13:34:18+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_244:1",
+            "queryText": "•\tCoordinated with procurement team for timely delivery of HVAC equipment and verified compliance with approved shop drawings before installation - change to a complete sentence",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Occupation",
+              "label_suggestion": null,
+              "value": "Mechanical Site Engineer 没有明确证据支持，可能仅仅是任务需求",
+              "reasoning": "User explicitly states their occupation as Mechanical Site Engineer with supervisory responsibilities.",
+              "evidence": {
+                "session_id": "sess_422ed62da721",
+                "utterance_index": 52,
+                "text": "Mechanical site engineer , supervision of all site activities..."
+              },
+              "confidence": 0.5,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-12-03T13:34:18+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

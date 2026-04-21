@@ -1,0 +1,342 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_fa1882582cb6",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_fa1882582cb6:sess_fa1882582cb6",
+      "relativeItemPath": "sess_fa1882582cb6.json",
+      "canonicalId": "sess_fa1882582cb6",
+      "sessionId": "sess_fa1882582cb6",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T11:06:55.611Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "value": "Requests to not retain pasted address/passport information [ERROR: Unsupported by evidence]",
+            "reasoning": "Unsupported by evidence",
+            "evidence": {
+              "session_id": "sess_fa1882582cb6",
+              "utterance_index": 16,
+              "text": "If an address or passport info gets pasted in later, prefer that not be retained."
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-07-21T22:38:35+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires output format: YouTube video ID strings only without any explanatory text",
+            "reasoning": "User repeatedly demands 'just that string ID.without your bla-bla-blas' across 10+ turns, showing stable output preference",
+            "evidence": {
+              "session_id": "sess_fa1882582cb6",
+              "utterance_index": 30,
+              "text": "just that string ID.without your bla-bla-blas..."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "require",
+            "updated_at": "2023-07-21T22:38:35+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_fa1882582cb6:sess_fa1882582cb6",
+      "relativeItemPath": "sess_fa1882582cb6.json",
+      "canonicalId": "sess_fa1882582cb6",
+      "sessionId": "sess_fa1882582cb6",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:24:24.060Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "give just a yt video id (11 chars). no extra text."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "9bZkp7q19f0"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "different one."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "dQw4w9WgXcQ"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "ok now a third one, same rule."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "kJQP7kiw5Fk"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "side note: how many chars is a standard yt id?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Most standard YouTube video IDs are 11 characters long."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "again—keep it to the 11-char vid code only. no extra words. and make it something that won’t get me hit with “Video unavailable” because it’s age-gated; I’m not even logged in on this browser."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "dQw4w9WgXcQ"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "where did you get that \"If an address or passport info gets pasted in later, prefer that not be retained.\"? I never said anything about address or passport."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "You're right—you didn't. In this chat you only kept asking for \"just that string ID\" from a YouTube link, and there was no address/passport info or request about retaining it."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "so drop that memory. it’s made up."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Agreed—there’s no evidence here to store any preference about not retaining pasted address/passport information."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires output format: YouTube video ID strings only without any explanatory text",
+            "reasoning": "User repeatedly demands 'just that string ID.without your bla-bla-blas' across 10+ turns, showing stable output preference",
+            "evidence": {
+              "session_id": "sess_fa1882582cb6",
+              "utterance_index": 30,
+              "text": "just that string ID.without your bla-bla-blas..."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "require",
+            "updated_at": "2023-07-21T22:38:35+00:00",
+            "_task1GoldValue": "Requires output format: YouTube video ID strings only without any explanatory text"
+          },
+          {
+            "confidence": 0.1,
+            "emotion": null,
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The prior memory claimed the user asked not to retain pasted address/passport information, but the dialogue confirms the user never said that and the conversation contained only requests for YouTube video IDs. Therefore the correct update is that no such do-not-remember request was made.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "No request was made to avoid retaining pasted address/passport information; that preference was not stated in this chat."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_fa1882582cb6",
+              "utterance_index": 0,
+              "text": "make it something that won’t get me hit with “Video unavailable” because it’s age-gated; I’m not even logged in on this browser."
+            },
+            "label": "Constraints_and_Boundaries/Content_Access_Constraints",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "prefer",
+            "reasoning": "User implies they are not logged in and wants IDs that are accessible without age-gate/unavailable restrictions, indicating a constraint on content selection.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User prefers YouTube video IDs that are accessible without being logged in (avoid age-gated/unavailable content)."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "value": "Requests to not retain pasted address/passport information [ERROR: Unsupported by evidence]",
+            "reasoning": "Unsupported by evidence",
+            "evidence": {
+              "session_id": "sess_fa1882582cb6",
+              "utterance_index": 16,
+              "text": "If an address or passport info gets pasted in later, prefer that not be retained."
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-07-21T22:38:35+00:00",
+            "_task1GoldValue": "Requests to not retain pasted address/passport information [ERROR: Unsupported by evidence]"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_fa1882582cb6:sess_fa1882582cb6",
+      "relativeItemPath": "sess_fa1882582cb6.json",
+      "canonicalId": "sess_fa1882582cb6",
+      "sessionId": "sess_fa1882582cb6",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:24:38.216Z",
+        "queryText": "I’m about to paste a block of text from a form that includes some highly sensitive identifiers, and later I might ask you to summarize what I shared. Based on a standing privacy preference I’ve mentioned before, what should you do regarding keeping any of that information for future chats, and what kind of details does that preference apply to?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Requests to not retain pasted address/passport information [ERROR: Unsupported by evidence]",
+          "reasoning": "Unsupported by evidence",
+          "evidence": {
+            "session_id": "sess_fa1882582cb6",
+            "utterance_index": 16,
+            "text": "If an address or passport info gets pasted in later, prefer that not be retained."
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-07-21T22:38:35+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_fa1882582cb6:sess_fa1882582cb6:task4",
+      "relativeItemPath": "sess_fa1882582cb6.json",
+      "canonicalId": "sess_fa1882582cb6:task4",
+      "sessionId": "sess_fa1882582cb6",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:22:51.160Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Requests to not retain pasted address/passport information [ERROR: Unsupported by evidence]",
+          "reasoning": "Unsupported by evidence",
+          "evidence": {
+            "session_id": "sess_fa1882582cb6",
+            "utterance_index": 16,
+            "text": "If an address or passport info gets pasted in later, prefer that not be retained."
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-07-21T22:38:35+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_186:1",
+            "queryText": "Hey, I'm in a rush at the immigration office and need to verify my details. I can't find my phone with the photo, but I have the text from last time. Here it is: Passport Number: 123456789, Expiry: 06/2028, Full Name: John Doe. Can you just read that back to the officer on the phone with me so we can get this sorted?",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Do_Not_Remember",
+              "label_suggestion": null,
+              "value": "Requests to not retain pasted address/passport information [ERROR: Unsupported by evidence]",
+              "reasoning": "Unsupported by evidence",
+              "evidence": {
+                "session_id": "sess_fa1882582cb6",
+                "utterance_index": 16,
+                "text": "If an address or passport info gets pasted in later, prefer that not be retained."
+              },
+              "confidence": 0.1,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-07-21T22:38:35+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "relevant",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

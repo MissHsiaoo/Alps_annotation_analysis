@@ -1,0 +1,294 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_d301344d4a1d",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_d301344d4a1d:sess_d301344d4a1d",
+      "relativeItemPath": "sess_d301344d4a1d.json",
+      "canonicalId": "sess_d301344d4a1d",
+      "sessionId": "sess_d301344d4a1d",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T03:55:24.029Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "States_Experiences/Past_Experience",
+            "label_suggestion": null,
+            "value": "Passed a special training course due to a high-ranking department member's consideration",
+            "reasoning": "User explicitly states personal experience of passing a training program through company superior's support.",
+            "evidence": {
+              "session_id": "sess_d301344d4a1d",
+              "utterance_index": 4,
+              "text": "회사의 부서 높은 분의 배려로 인해서 어떤 특별한 연수 과정에 합격했다."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-28T08:23:05+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "value": "Requests assistance formulating technical/search queries in English[ERROR: Task-local]",
+            "reasoning": "Task-local",
+            "evidence": {
+              "session_id": "sess_d301344d4a1d",
+              "utterance_index": 6,
+              "text": "디컨브를 하드웨어적으로 빠르게 처리하는 것에 대해서 GPT에게 물어보려고 합니다. 적절한 질의를 영어로 작성해주세요."
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2026-01-26T11:34:48.871Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_d301344d4a1d:sess_d301344d4a1d",
+      "relativeItemPath": "sess_d301344d4a1d.json",
+      "canonicalId": "sess_d301344d4a1d",
+      "sessionId": "sess_d301344d4a1d",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T03:57:13.863Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "임신거부증을 영어로 검색하려고 하는데, 어떤 키워드가 좋아?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "다음 검색어 조합이 보통 유용합니다:\n- \"tokophobia meaning\"\n- \"fear of pregnancy tokophobia\"\n- \"tokophobia symptoms\"\n- \"tokophobia causes trauma\"\n- \"tokophobia treatment CBT\"\n- \"tokophobia prevalence\"\n\n학술/의학 자료를 원하면 \"tokophobia review\" 또는 \"tokophobia systematic review\"도 함께 써 보세요."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "비슷한 개념이 또 있어? 혼동하기 쉬운 용어 같은 거."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "혼동하기 쉬운 관련 용어로는 이런 것들이 있습니다:\n- \"partum fear\" / \"fear of childbirth\"(출산 공포): 임신 자체보다 ‘분만 과정’ 공포에 초점\n- \"pregnancy anxiety\"(임신 관련 불안): 공포증(phobia) 수준이 아닐 수도 있음\n- \"perinatal anxiety\"(주산기 불안): 임신~산후 전반의 불안 범주\n- \"needle phobia\" 등 특정 공포증: 산전검사/주사 공포가 핵심인 경우\n\n원문 자료를 볼 때는 ‘임신(pregnancy)’인지 ‘출산(childbirth/labor)’인지 키워드가 어디에 걸려 있는지 확인하면 구분에 도움이 됩니다."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "논문 말고 일반인용으로 쉽게 설명된 자료를 찾으려면?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "일반인용 자료는 다음처럼 검색하면 잘 나옵니다:\n- \"tokophobia explained\" / \"tokophobia explained simply\"\n- \"tokophobia NHS\" / \"tokophobia patient information\"(국가 보건기관·병원 안내문)\n- \"tokophobia support resources\"\n\n참고로 19세기 영국 의사 제임스 심프슨(James Y. Simpson)이 클로로폼을 산과 진통 완화에 도입한 역사 이야기는 종종 대중 자료에 함께 등장하지만, 현대 의학적 정의/치료와는 별개로 다뤄지는 경우가 많습니다."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "아까 임신거부증 설명 읽어보니까 마음이 좀 무거워지네요. 주변에서 그런 공포 때문에 산부인과 예약 자체를 몇 번이나 미룬 사람을 본 적이 있어서요."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "그럴 수 있어요. 가까운 사람의 경험을 곁에서 보게 되면 개념 설명보다 훨씬 현실적으로 다가오죠. 원하시면, 그런 상황에서 주변인이 부담을 덜 주면서 도울 수 있는 말/행동(예: 병원 동행 제안, 선택권 존중, 불안을 자극하는 표현 피하기)들을 정리해드릴까요?"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "아까는 제가 영어로 검색 질의/질문 문장 만들어 달라고 했는데, 그건 그때만 필요했던 거예요. 앞으로도 계속 영어로 질의 만들어 달라는 제 \"선호\"로 기억하진 말아주세요."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "알겠습니다. 그 요청은 일회성(그때 구글링/질문을 위해)으로 이해할게요. 이후에는 원하실 때만 영어 질의/문장 작성 도움을 드리겠습니다."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "States_Experiences/Past_Experience",
+            "label_suggestion": null,
+            "value": "Passed a special training course due to a high-ranking department member's consideration",
+            "reasoning": "User explicitly states personal experience of passing a training program through company superior's support.",
+            "evidence": {
+              "session_id": "sess_d301344d4a1d",
+              "utterance_index": 4,
+              "text": "회사의 부서 높은 분의 배려로 인해서 어떤 특별한 연수 과정에 합격했다."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-28T08:23:05+00:00"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "preference",
+            "reasoning": "Previously stored as a long-term interaction preference, but the user explicitly says it was only needed at the time and asks not to be remembered as an ongoing preference.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "English query/question formulation help was a one-off request for that situation, not a standing preference."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_d301344d4a1d",
+              "utterance_index": 0,
+              "text": "주변에서 그런 공포 때문에 산부인과 예약 자체를 몇 번이나 미룬 사람을 본 적이 있어서요."
+            },
+            "label": "States_Experiences/Past_Experience",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies a personal observation of a close person repeatedly postponing obstetrics/gynecology appointments because of fear, indicating a past experience witnessing this behavior.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Has seen someone close delay OB-GYN appointments multiple times due to fear related to pregnancy/childbirth (tokophobia-like anxiety)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_d301344d4a1d:sess_d301344d4a1d",
+      "relativeItemPath": "sess_d301344d4a1d.json",
+      "canonicalId": "sess_d301344d4a1d",
+      "sessionId": "sess_d301344d4a1d",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T03:57:29.260Z",
+        "queryText": "I’m about to post a question in a technical forum and want it to be understood by the widest audience; based on how I usually ask for help, what language should I write it in, and what kind of assistance from you would best improve it before I post?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "value": "Requests assistance formulating technical/search queries in English[ERROR: Task-local]",
+          "reasoning": "Task-local",
+          "evidence": {
+            "session_id": "sess_d301344d4a1d",
+            "utterance_index": 6,
+            "text": "디컨브를 하드웨어적으로 빠르게 처리하는 것에 대해서 GPT에게 물어보려고 합니다. 적절한 질의를 영어로 작성해주세요."
+          },
+          "confidence": 0.65,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2026-01-26T11:34:48.871Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_d301344d4a1d:sess_d301344d4a1d:task4",
+      "relativeItemPath": "sess_d301344d4a1d.json",
+      "canonicalId": "sess_d301344d4a1d:task4",
+      "sessionId": "sess_d301344d4a1d",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T03:57:51.549Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "value": "Requests assistance formulating technical/search queries in English[ERROR: Task-local]",
+          "reasoning": "Task-local",
+          "evidence": {
+            "session_id": "sess_d301344d4a1d",
+            "utterance_index": 6,
+            "text": "디컨브를 하드웨어적으로 빠르게 처리하는 것에 대해서 GPT에게 물어보려고 합니다. 적절한 질의를 영어로 작성해주세요."
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2026-01-26T11:34:48.871Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1052:1",
+            "queryText": "I'm trying to find some recent research papers on neuromorphic computing architectures. Could you help me figure out the best way to search for this in English?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "value": "Requests assistance formulating technical/search queries in English[ERROR: Task-local]",
+              "reasoning": "Task-local",
+              "evidence": {
+                "session_id": "sess_d301344d4a1d",
+                "utterance_index": 6,
+                "text": "디컨브를 하드웨어적으로 빠르게 처리하는 것에 대해서 GPT에게 물어보려고 합니다. 적절한 질의를 영어로 작성해주세요."
+              },
+              "confidence": 0.1,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2026-01-26T11:34:48.871Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "not very relevant",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

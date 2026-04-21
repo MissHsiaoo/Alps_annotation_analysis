@@ -1,0 +1,344 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_493976979815",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_493976979815:sess_493976979815",
+      "relativeItemPath": "sess_493976979815.json",
+      "canonicalId": "sess_493976979815",
+      "sessionId": "sess_493976979815",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T13:37:17.122Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "value": "Prefers Asus motherboards for 10th/11th gen Intel CPUs under 15k INR with good VRM & WiFi",
+            "reasoning": "Explicitly states motherboard requirements including brand, budget, and technical specs.",
+            "evidence": {
+              "session_id": "sess_493976979815",
+              "utterance_index": 0,
+              "text": "Tell a Asus motherboard for 10th gen and 11th gen under 15k rupees with good vrm with WiFi"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-11-19T16:52:01+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical_Inquiry/Motherboard_Brands_WiFi",
+            "value": "Sustained technical curiosity about motherboard brands (Asus/Gigabyte/MSI) and WiFi range limitations",
+            "reasoning": "Repeated technical inquiries about brands/WiFi, but label 'Thoughts/Curiosity' is forced without explicit self-report of curiosity.",
+            "evidence": {
+              "session_id": "sess_493976979815",
+              "utterance_index": 16,
+              "text": "Yes I have so much wall"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-19T16:52:01+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Personal_Background/Home_Environment",
+            "value": "Has an environment with many walls affecting WiFi signals",
+            "reasoning": "Explicitly states physical environment constraint impacting technical setup.",
+            "evidence": {
+              "session_id": "sess_493976979815",
+              "utterance_index": 16,
+              "text": "Yes I have so much wall"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-19T16:52:01+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_493976979815:sess_493976979815",
+      "relativeItemPath": "sess_493976979815.json",
+      "canonicalId": "sess_493976979815",
+      "sessionId": "sess_493976979815",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T09:40:41.685Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "If Wi‑Fi signal drops a lot because of walls, what’s the simplest fix?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Simplest fixes:\n1) Move the router higher and more central (even 1–2 meters can help).\n2) Switch to 2.4 GHz for longer reach (slower, but penetrates walls better than 5 GHz).\n3) Change the router channel to reduce interference.\nIf you need a hardware fix: add a mesh node or a wired access point; extenders help, but they usually cut speed."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Does putting the router near a window improve range?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "It can improve coverage in the direction of the window (less dense material than concrete walls), but it may worsen coverage on the opposite side of the home. A central, open, elevated spot is usually best unless you’re specifically trying to reach an outdoor area."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "How many meters does Wi‑Fi typically lose per wall?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "There isn’t a fixed “meters per wall,” because it depends on wall material and frequency. A rough rule of thumb: each interior wall can drop signal by ~3–12 dB; reinforced concrete can be much worse. That can turn a 30–50 m open-area range into something like 10–20 m indoors after a couple walls.\n(Example unrelated: in one office test report I read, a brick wall reduced 5 GHz throughput by over half compared to line-of-sight.)"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Is mesh always better than a range extender?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Often, yes—mesh systems coordinate nodes and roaming better. A basic extender is cheaper and quick to set up, but it can add latency and reduce throughput (especially if it uses the same band for backhaul). Best performance is usually: wired access point > tri-band mesh > dual-band mesh > extender.\n(Separate trivia: some newer Wi‑Fi 6E mesh kits use 6 GHz for backhaul, which can help if the nodes aren’t too far apart.)"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "If I keep the router in the hall and my room is like two walls away, will that TP-Link 600 Mbps dongle still catch stable signal or should I go for extender?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "With two walls in between, a USB WiFi dongle often sees a noticeable drop in stability and speed, especially on 5 GHz. If you can’t relocate the router closer or run a cable, a WiFi extender/mesh node placed between the hall and your room usually helps more than relying only on the dongle. Also try using 2.4 GHz for better wall penetration."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Actually I’m not fixed on Asus. Any brand is fine—Gigabyte/MSI also ok. I just want a good VRM + WiFi board for i5 10th/11th gen under 15k."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—you’re not specifically preferring Asus then. We’ll keep the requirement as: under ₹15k, strong VRM, WiFi, and 10th/11th gen Intel support, across any brand (Asus/Gigabyte/MSI)."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical_Inquiry/Motherboard_Brands_WiFi",
+            "value": "Sustained technical curiosity about motherboard brands (Asus/Gigabyte/MSI) and WiFi range limitations",
+            "reasoning": "Repeated technical inquiries about brands/WiFi, but label 'Thoughts/Curiosity' is forced without explicit self-report of curiosity.",
+            "evidence": {
+              "session_id": "sess_493976979815",
+              "utterance_index": 16,
+              "text": "Yes I have so much wall"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-19T16:52:01+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Personal_Background/Home_Environment",
+            "value": "Has an environment with many walls affecting WiFi signals",
+            "reasoning": "Explicitly states physical environment constraint impacting technical setup.",
+            "evidence": {
+              "session_id": "sess_493976979815",
+              "utterance_index": 16,
+              "text": "Yes I have so much wall"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-11-19T16:52:01+00:00"
+          },
+          {
+            "confidence": 0.93,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory claims a preference for Asus boards, but the user explicitly says they are not fixed on Asus and any brand is fine. Updated truth: the preference is for a sub-15k INR motherboard with good VRM and WiFi for 10th/11th gen Intel, regardless of brand.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Open to any brand (Asus/Gigabyte/MSI) for a 10th/11th gen Intel motherboard under 15k INR with good VRM and WiFi"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_493976979815",
+              "utterance_index": 0,
+              "text": "If I keep the router in the hall and my room is like two walls away"
+            },
+            "label": "UNMAPPED",
+            "label_suggestion": "Home_Network_Layout",
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "They describe a specific home WiFi layout (router in hall; room separated by two walls), implying typical usage context and distance/obstruction details.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User’s router is placed in the hall and their room is about two walls away from it."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_493976979815:sess_493976979815",
+      "relativeItemPath": "sess_493976979815.json",
+      "canonicalId": "sess_493976979815",
+      "sessionId": "sess_493976979815",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T08:08:12.825Z",
+        "queryText": "I’m putting together a parts list for an older Intel build and trying to keep the motherboard cost capped, but I also don’t want to compromise on power delivery or wireless. When I’m choosing what motherboard to shortlist, what brand and CPU generations should I filter for, and what two key features should I make sure it includes—given my usual buying preference?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Shopping",
+          "label_suggestion": null,
+          "value": "Prefers Asus motherboards for 10th/11th gen Intel CPUs under 15k INR with good VRM & WiFi",
+          "reasoning": "Explicitly states motherboard requirements including brand, budget, and technical specs.",
+          "evidence": {
+            "session_id": "sess_493976979815",
+            "utterance_index": 0,
+            "text": "Tell a Asus motherboard for 10th gen and 11th gen under 15k rupees with good vrm with WiFi"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-11-19T16:52:01+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_493976979815:sess_493976979815:task4",
+      "relativeItemPath": "sess_493976979815.json",
+      "canonicalId": "sess_493976979815:task4",
+      "sessionId": "sess_493976979815",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T03:52:21.934Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Shopping",
+          "label_suggestion": null,
+          "value": "Prefers Asus motherboards for 10th/11th gen Intel CPUs under 15k INR with good VRM & WiFi",
+          "reasoning": "Explicitly states motherboard requirements including brand, budget, and technical specs.",
+          "evidence": {
+            "session_id": "sess_493976979815",
+            "utterance_index": 0,
+            "text": "Tell a Asus motherboard for 10th gen and 11th gen under 15k rupees with good vrm with WiFi"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-11-19T16:52:01+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_880:1",
+            "queryText": "I'm looking at a few B560 boards for my 10th gen build - the MSI B560M Pro-VDH WiFi, Gigabyte B560M DS3H AC, and Asus TUF Gaming B560M-PLUS WiFi. Which one would actually work best for me?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Shopping",
+              "label_suggestion": null,
+              "value": "Prefers Asus motherboards for 10th/11th gen Intel CPUs under 15k INR with good VRM & WiFi",
+              "reasoning": "Explicitly states motherboard requirements including brand, budget, and technical specs.",
+              "evidence": {
+                "session_id": "sess_493976979815",
+                "utterance_index": 0,
+                "text": "Tell a Asus motherboard for 10th gen and 11th gen under 15k rupees with good vrm with WiFi"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-11-19T16:52:01+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

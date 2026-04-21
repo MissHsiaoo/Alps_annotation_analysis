@@ -1,0 +1,278 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_149772415fef",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_149772415fef:sess_149772415fef",
+      "relativeItemPath": "sess_149772415fef.json",
+      "canonicalId": "sess_149772415fef",
+      "sessionId": "sess_149772415fef",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:53:15.188Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers text descriptions over linked images for technical diagrams",
+            "reasoning": "User requested text-based explanations multiple times in this task context. Could be task-local preference rather than long-term trait.",
+            "evidence": {
+              "session_id": "sess_149772415fef",
+              "utterance_index": 10,
+              "text": "а можешь написать диаграму тут, а не по ссылке"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-15T07:14:11+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_149772415fef:sess_149772415fef",
+      "relativeItemPath": "sess_149772415fef.json",
+      "canonicalId": "sess_149772415fef",
+      "sessionId": "sess_149772415fef",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:54:09.889Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Можешь подсказать, в каком формате лучше отдавать UML-диаграммы прямо в чате, чтобы они нормально рендерились?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Да. Самые практичные варианты для чата:\n1) PlantUML (текстовые блоки @startuml/@enduml) — часто можно потом вставить в любой рендерер.\n2) Mermaid (classDiagram, sequenceDiagram) — удобно, если платформа поддерживает.\n3) ASCII-схемы — как запасной вариант, когда рендеринга нет.\nЕсли скажете, какой инструмент/платформа у вас (например, GitLab, Confluence, Markdown-файлы), подберу оптимальный формат и шаблоны."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Давай PlantUML. А для ER лучше тоже PlantUML или отдельный синтаксис?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Для ER можно тоже PlantUML: либо через class-diagram с пометками PK/FK, либо через встроенный ER-синтаксис (entity/relationship), если используете соответствующий шаблон.\nМини-практика: в ER обычно полезно явно показывать кардинальности (1..*, 0..1) и ключи.\nКстати, интересный факт не по теме: на заре стандартизации UML (конец 90‑х) разные CASE-инструменты по-разному трактовали композицию/агрегацию, из-за чего диаграммы иногда “ломались” при импорте."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Ок. А чем class diagram отличается от ER, если там тоже сущности и связи?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Коротко:\n- ER — про модель данных (таблицы/атрибуты/ключи/связи, нормализация).\n- Class diagram — про объектную модель (классы, методы/поведение, наследование, интерфейсы, композиция).\nПересечение есть (атрибуты и ассоциации), но ER почти всегда “про БД”, а классы — “про код/домен”.\nЕщё один факт-«шум»: в некоторых СУБД представления (views) могут быть материализованными, что добавляет сущность хранения, хотя логически это не таблица."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "assistant",
+            "text": "Ок, письмом не получится отправить прямо отсюда, но могу подготовить у тебя в виде PlantUML, чтобы ты просто вставил в любой рендерер и получил картинки. Тебе удобнее начать с диаграммы классов или с ER?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "user",
+            "text": "Давай PlantUML, с классов начнем — мне в отчёт надо, чтобы потом в IntelliJ сразу прогнать."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "я не против ссылок, наоборот: мне удобнее, когда диаграммы даны ссылками/картинками, а текстом — только краткое пояснение."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Понял. То есть основной формат — ссылки/изображения, а текстом просто коротко описать, что на диаграммах показано."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "да, текстом я просил только потому что ссылки тогда не открывались. если открываются — давай ссылками."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "я не против ссылок, наоборот: мне удобнее, когда диаграммы даны ссылками/картинками, а текстом — только краткое пояснение."
+                }
+              ]
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "The old memory says the user prefers text over linked images, but the user clarifies they actually prefer links/images and only asked for text because links weren’t opening.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers links/images for technical diagrams, using text only as a fallback or brief explanation when links don’t open"
+          },
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_149772415fef",
+              "utterance_index": 0,
+              "text": "мне в отчёт надо, чтобы потом в IntelliJ сразу прогнать."
+            },
+            "label": "null",
+            "label_suggestion": "Tools/Software",
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User mentions generating the diagram directly in IntelliJ, implying they use that IDE.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Uses IntelliJ IDEA"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_149772415fef:sess_149772415fef",
+      "relativeItemPath": "sess_149772415fef.json",
+      "canonicalId": "sess_149772415fef",
+      "sessionId": "sess_149772415fef",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:54:19.930Z",
+        "queryText": "I’m putting together a quick explainer for a small technical setup, and I can either send a clickable visual or just describe it inline. Given how I usually prefer to receive this kind of info, which format should I choose so it’s easiest for me to follow?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers text descriptions over linked images for technical diagrams",
+          "reasoning": "User requested text-based explanations multiple times in this task context. Could be task-local preference rather than long-term trait.",
+          "evidence": {
+            "session_id": "sess_149772415fef",
+            "utterance_index": 10,
+            "text": "а можешь написать диаграму тут, а не по ссылке"
+          },
+          "confidence": 0.5,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-06-15T07:14:11+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_149772415fef:sess_149772415fef:task4",
+      "relativeItemPath": "sess_149772415fef.json",
+      "canonicalId": "sess_149772415fef:task4",
+      "sessionId": "sess_149772415fef",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:54:24.969Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers text descriptions over linked images for technical diagrams",
+          "reasoning": "User requested text-based explanations multiple times in this task context. Could be task-local preference rather than long-term trait.",
+          "evidence": {
+            "session_id": "sess_149772415fef",
+            "utterance_index": 10,
+            "text": "а можешь написать диаграму тут, а не по ссылке"
+          },
+          "confidence": 0.5,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-06-15T07:14:11+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1122:1",
+            "queryText": "Мне нужно разобраться с архитектурой новой системы управления складом. Какие диаграммы лучше всего сделать первыми и как их лучше представить?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers text descriptions over linked images for technical diagrams",
+              "reasoning": "User requested text-based explanations multiple times in this task context. Could be task-local preference rather than long-term trait.",
+              "evidence": {
+                "session_id": "sess_149772415fef",
+                "utterance_index": 10,
+                "text": "а можешь написать диаграму тут, а не по ссылке"
+              },
+              "confidence": 0.5,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-06-15T07:14:11+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

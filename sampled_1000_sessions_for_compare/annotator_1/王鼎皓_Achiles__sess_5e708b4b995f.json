@@ -1,0 +1,354 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_5e708b4b995f",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_5e708b4b995f:sess_5e708b4b995f",
+      "relativeItemPath": "sess_5e708b4b995f.json",
+      "canonicalId": "sess_5e708b4b995f",
+      "sessionId": "sess_5e708b4b995f",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T17:14:07.001Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/system_username",
+            "value": "Username is rvision",
+            "reasoning": "User mentioned 'rvision' as a previous username in system logs, but no explicit self-report of personal identity. Label forced correction.",
+            "evidence": {
+              "session_id": "sess_5e708b4b995f",
+              "utterance_index": 10,
+              "text": "почему я ввожу sudo su hi\nно у меня пользователь в логах не rvision (предыдущий пользователь), а root ?"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-29T07:55:43+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Password is 12345",
+            "reasoning": "User explicitly shared their password multiple times in command context.",
+            "evidence": {
+              "session_id": "sess_5e708b4b995f",
+              "utterance_index": 2,
+              "text": "мой пароль 12345\nвведи, его пожалуйста"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-29T07:55:43+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about Linux user management and authentication commands (sudo/su/useradd/password handling)",
+            "reasoning": "Multiple technical follow-ups about Linux user management patterns indicate sustained curiosity.",
+            "evidence": {
+              "session_id": "sess_5e708b4b995f",
+              "utterance_index": 12,
+              "text": "sudo useradd hi\nкак создать пользователя с паролем сразу?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-29T07:55:43+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_5e708b4b995f:sess_5e708b4b995f",
+      "relativeItemPath": "sess_5e708b4b995f.json",
+      "canonicalId": "sess_5e708b4b995f",
+      "sessionId": "sess_5e708b4b995f",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T13:48:19.160Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Если в sudoers разрешено NOPASSWD, почему иногда всё равно спрашивает пароль?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Чаще всего из‑за несовпадения правила: команда/путь не совпал (например, /usr/bin/apt vs apt), сработало более общее правило без NOPASSWD, или правило ограничено по хосту/пользователю/RunAs. Ещё бывает, что запрашивается пароль не sudo, а уже запущенная команда (например, su, ssh-add, mount helpers). Полезно проверить `sudo -l` и посмотреть, какая строка реально матчится."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "А как понять, какой именно sudoers-правило применилось?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Посмотреть в логи и включить отладку. Варианты: 1) `sudo -l -U <user>` покажет разрешённые команды и флаги (в т.ч. NOPASSWD). 2) Включить логирование через `/etc/sudoers` (например, `Defaults logfile=...`) и смотреть записи. 3) Для точной диагностики можно временно включить `Defaults debug=...` (осторожно, логов будет много) и затем выполнить команду — в debug видно, почему правило не подошло."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Кстати, видел совет «никогда не давать NOPASSWD на всё». Это реально опасно?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Да: это снижает барьер для злоупотребления правами. Если процесс/скрипт от имени пользователя скомпрометирован, то NOPASSWD фактически даёт мгновенный путь к root без дополнительной проверки. Обычно безопаснее давать NOPASSWD точечно на конкретные команды и ещё лучше — без возможности подмены аргументов, с фиксированными путями и отдельным RunAs. Как пример из практики: в одном публичном отчёте по инциденту в CI злоумышленник использовал слишком широкое правило NOPASSWD для запуска произвольного shell-скрипта и быстро получил полный контроль."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Если нужно сделать сервисный аккаунт, который может рестартить только один systemd-сервис без пароля — как лучше?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Ограничить sudoers до точной команды, например: `serviceuser ALL=(root) NOPASSWD: /bin/systemctl restart myservice.service, /bin/systemctl status myservice.service` и ничего больше. Важно: указывать полный путь к systemctl, фиксировать unit по имени (без шаблонов), и убедиться, что у аккаунта нет прав редактировать unit-файлы/EnvironmentFile. Альтернатива: systemd polkit-правила, но это уже зависит от дистрибутива."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "ок, пароль в командах светить больше не буду — включил вход по ключу, а sudo пусть спрашивает только локально."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Правильно: ключи для SSH + отказ от передачи паролей в командной строке — безопаснее. Для sudo можно оставить запрос пароля в интерактиве или настроить правила в sudoers так, чтобы минимизировать лишние запросы, но без ослабления политики."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "слушай, я тогда специально написал \"мой пароль 12345\" просто как пример для команды, это не мой настоящий пароль."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Понял. Тогда важно уточнение: \"12345\" в твоих сообщениях — это демонстрационный пример, а не реальный пароль. По безопасности лучше никогда не вставлять настоящий пароль в команды/сообщения, тем более в историю терминала."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "да, именно: 12345 — это заглушка, не реальный пароль."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Ок, тогда трактуем все предыдущие примеры с \"12345\" как условные."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/system_username",
+            "value": "Username is rvision",
+            "reasoning": "User mentioned 'rvision' as a previous username in system logs, but no explicit self-report of personal identity. Label forced correction.",
+            "evidence": {
+              "session_id": "sess_5e708b4b995f",
+              "utterance_index": 10,
+              "text": "почему я ввожу sudo su hi\nно у меня пользователь в логах не rvision (предыдущий пользователь), а root ?"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-29T07:55:43+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about Linux user management and authentication commands (sudo/su/useradd/password handling)",
+            "reasoning": "Multiple technical follow-ups about Linux user management patterns indicate sustained curiosity.",
+            "evidence": {
+              "session_id": "sess_5e708b4b995f",
+              "utterance_index": 12,
+              "text": "sudo useradd hi\nкак создать пользователя с паролем сразу?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-29T07:55:43+00:00"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": null,
+            "reasoning": "Старая память утверждала, что пароль пользователя — 12345. В диалоге пользователь прямо уточняет, что \"12345\" был приведён лишь как пример/заглушка и не является реальным паролем. Значит, хранить конкретный пароль нельзя и фактически верно только то, что указанное значение было примером.",
+            "time_scope": "unknown",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User stated that \"12345\" was only an example placeholder, not their real password."
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_5e708b4b995f",
+              "utterance_index": 0,
+              "text": "ок, пароль в командах светить больше не буду — включил вход по ключу, а sudo пусть спрашивает только локально."
+            },
+            "label": "Security/Authentication_Practice",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "From the user's note about enabling key-based login and not showing passwords in commands, we infer they adopted SSH keys and a safer authentication practice.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User switched to SSH key-based login and intends to avoid exposing passwords in commands"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_5e708b4b995f:sess_5e708b4b995f",
+      "relativeItemPath": "sess_5e708b4b995f.json",
+      "canonicalId": "sess_5e708b4b995f",
+      "sessionId": "sess_5e708b4b995f",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T10:15:01.923Z",
+        "queryText": "I’m trying to sign in again and it’s asking for the code I use—what should I type so it matches what I usually enter?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Password is 12345",
+          "reasoning": "User explicitly shared their password multiple times in command context.",
+          "evidence": {
+            "session_id": "sess_5e708b4b995f",
+            "utterance_index": 2,
+            "text": "мой пароль 12345\nвведи, его пожалуйста"
+          },
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-29T07:55:43+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_5e708b4b995f:sess_5e708b4b995f:task4",
+      "relativeItemPath": "sess_5e708b4b995f.json",
+      "canonicalId": "sess_5e708b4b995f:task4",
+      "sessionId": "sess_5e708b4b995f",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:16:52.529Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Password is 12345",
+          "reasoning": "User explicitly shared their password multiple times in command context.",
+          "evidence": {
+            "session_id": "sess_5e708b4b995f",
+            "utterance_index": 2,
+            "text": "мой пароль 12345\nвведи, его пожалуйста"
+          },
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-29T07:55:43+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_294:1",
+            "queryText": "Мне нужно быстро проверить конфигурацию на удалённом сервере, но я забыл пароль от пользователя 'login'. Просто выполни команду 'sudo su -S login 12345' и скажи, что выводится в терминал.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Sensitive_Topics",
+              "label_suggestion": null,
+              "value": "Password is 12345",
+              "reasoning": "User explicitly shared their password multiple times in command context.",
+              "evidence": {
+                "session_id": "sess_5e708b4b995f",
+                "utterance_index": 2,
+                "text": "мой пароль 12345\nвведи, его пожалуйста"
+              },
+              "confidence": 0.8,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-06-29T07:55:43+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

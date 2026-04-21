@@ -1,0 +1,488 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_5632b9cb6d57",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_5632b9cb6d57:sess_5632b9cb6d57",
+      "relativeItemPath": "sess_5632b9cb6d57.json",
+      "canonicalId": "sess_5632b9cb6d57",
+      "sessionId": "sess_5632b9cb6d57",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:25:40.205Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "P2 pharmacy student with an intern license",
+            "reasoning": "User explicitly states their academic/professional status.",
+            "evidence": {
+              "session_id": "sess_5632b9cb6d57",
+              "utterance_index": 0,
+              "text": "Write an about section for LinkedIn as a p2 pharmacy student with an intern license"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-15T16:56:52Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Possessions/Pet",
+            "label_suggestion": null,
+            "value": "Owns a dog",
+            "reasoning": "User explicitly adds 'taking my dog to the park' as a personal interest.",
+            "evidence": {
+              "session_id": "sess_5632b9cb6d57",
+              "utterance_index": 8,
+              "text": "Beyond my academic pursuits I enjoy [...] taking my dog to the park"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-15T16:56:52Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Enjoys hiking and trying new restaurants",
+            "reasoning": "User explicitly lists these as leisure activities.",
+            "evidence": {
+              "session_id": "sess_5632b9cb6d57",
+              "utterance_index": 8,
+              "text": "Beyond my academic pursuits I enjoy outdoor activities such as hiking [...] and trying new restaurants"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-15T16:56:52Z"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "content_style/professional_preference",
+            "value": "Prefers professional phrasing for career-related content",
+            "reasoning": "Label forced: Evidence shows task-local preference for LinkedIn profile editing. Downgraded due to possible context specificity.",
+            "evidence": {
+              "session_id": "sess_5632b9cb6d57",
+              "utterance_index": 4,
+              "text": "Can you word that more professional"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-15T16:56:52Z"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Interested in strategically presenting personal interests within professional contexts",
+            "reasoning": "User made 3 iterative requests to include/refine non-academic interests in their LinkedIn profile.",
+            "evidence": {
+              "session_id": "sess_5632b9cb6d57",
+              "utterance_index": 8,
+              "text": "Beyond my academic pursuits I enjoy [...]"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-15T16:56:52Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_5632b9cb6d57:sess_5632b9cb6d57",
+      "relativeItemPath": "sess_5632b9cb6d57.json",
+      "canonicalId": "sess_5632b9cb6d57",
+      "sessionId": "sess_5632b9cb6d57",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:25:50.864Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I’m rewriting a LinkedIn “About” section—can you give me two different closing lines, one more formal and one more friendly?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Formal: “I welcome the opportunity to connect and discuss how I can contribute to patient-centered care and team success.”\nFriendly: “Always happy to connect—feel free to reach out if you’d like to chat or collaborate.”"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Can you make the formal one sound less stiff but still professional?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "“I’d welcome the chance to connect and explore how I can contribute to strong, patient-focused outcomes with your team.”"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Also, quick check: should I use ‘healthcare’ or ‘health care’?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Both are acceptable; “healthcare” is very common in industry writing and on LinkedIn, while some academic or journal style guides prefer “health care.” If you want consistency with most LinkedIn profiles, “healthcare” is a safe choice."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Random curiosity: I saw a headline about pharmacies using robots—does that actually happen?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Yes. Some hospitals and high-volume fulfillment centers use automated dispensing cabinets, carousel systems, or robotic pick-and-pack units to improve speed and reduce selection errors. They’re typically used for repetitive, high-throughput tasks, with pharmacists and technicians still responsible for clinical checks and oversight."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Can you tweak the last paragraph so it fits under LinkedIn’s character limit? I don’t want it to get cut off."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Absolutely—share the target limit you’re aiming for (or paste the exact draft), and I’ll tighten the wording while keeping the same tone and key points."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Quick correction for that LinkedIn line—I'm not really into hiking anymore. Lately my main thing outside school is taking my dog to the park and checking out new restaurants."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—I'll remove hiking and keep it focused on taking your dog to the park and trying new restaurants."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "P2 pharmacy student with an intern license",
+            "reasoning": "User explicitly states their academic/professional status.",
+            "evidence": {
+              "session_id": "sess_5632b9cb6d57",
+              "utterance_index": 0,
+              "text": "Write an about section for LinkedIn as a p2 pharmacy student with an intern license"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-15T16:56:52Z",
+            "_task1GoldValue": "P2 pharmacy student with an intern license"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Possessions/Pet",
+            "label_suggestion": null,
+            "value": "Owns a dog",
+            "reasoning": "User explicitly adds 'taking my dog to the park' as a personal interest.",
+            "evidence": {
+              "session_id": "sess_5632b9cb6d57",
+              "utterance_index": 8,
+              "text": "Beyond my academic pursuits I enjoy [...] taking my dog to the park"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-15T16:56:52Z",
+            "_task1GoldValue": "Owns a dog"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "content_style/professional_preference",
+            "value": "Prefers professional phrasing for career-related content",
+            "reasoning": "Label forced: Evidence shows task-local preference for LinkedIn profile editing. Downgraded due to possible context specificity.",
+            "evidence": {
+              "session_id": "sess_5632b9cb6d57",
+              "utterance_index": 4,
+              "text": "Can you word that more professional"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-15T16:56:52Z",
+            "_task1GoldValue": "Prefers professional phrasing for career-related content"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Interested in strategically presenting personal interests within professional contexts",
+            "reasoning": "User made 3 iterative requests to include/refine non-academic interests in their LinkedIn profile.",
+            "evidence": {
+              "session_id": "sess_5632b9cb6d57",
+              "utterance_index": 8,
+              "text": "Beyond my academic pursuits I enjoy [...]"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-15T16:56:52Z",
+            "_task1GoldValue": "Interested in strategically presenting personal interests within professional contexts"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Quick correction for that LinkedIn line—I'm not really into hiking anymore. Lately my main thing outside school is taking my dog to the park and checking out new restaurants."
+                }
+              ]
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": "like",
+            "reasoning": "The user explicitly corrects the earlier statement by saying they are not into hiking anymore, while reaffirming enjoying trying new restaurants and instead preferring taking their dog to the park. The updated preference removes hiking from the long-term likes.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Enjoys taking their dog to the park and trying new restaurants"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_5632b9cb6d57",
+              "utterance_index": 0,
+              "text": "Can you tweak the last paragraph so it fits under LinkedIn’s character limit? I don’t want it to get cut off."
+            },
+            "label": "Preferences/Communication",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User’s request to adjust the paragraph specifically mentions fitting a character limit so it won’t be cut off, indicating a preference for concise, length-compliant wording.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers LinkedIn content to stay within character limits to avoid truncation"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Enjoys hiking and trying new restaurants",
+            "reasoning": "User explicitly lists these as leisure activities.",
+            "evidence": {
+              "session_id": "sess_5632b9cb6d57",
+              "utterance_index": 8,
+              "text": "Beyond my academic pursuits I enjoy outdoor activities such as hiking [...] and trying new restaurants"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-15T16:56:52Z",
+            "_task1GoldValue": "Enjoys hiking and trying new restaurants"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4",
+          "m5"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_5632b9cb6d57:sess_5632b9cb6d57",
+      "relativeItemPath": "sess_5632b9cb6d57.json",
+      "canonicalId": "sess_5632b9cb6d57",
+      "sessionId": "sess_5632b9cb6d57",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:25:53.960Z",
+        "queryText": "I’m making a weekend plan that includes bringing something small for a quick outdoor break, but I need it to match a recurring responsibility I have at home. What is that responsibility, and what kind of outing does it naturally turn into?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Possessions/Pet",
+          "label_suggestion": null,
+          "value": "Owns a dog",
+          "reasoning": "User explicitly adds 'taking my dog to the park' as a personal interest.",
+          "evidence": {
+            "session_id": "sess_5632b9cb6d57",
+            "utterance_index": 8,
+            "text": "Beyond my academic pursuits I enjoy [...] taking my dog to the park"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-05-15T16:56:52Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_5632b9cb6d57:sess_5632b9cb6d57:task4",
+      "relativeItemPath": "sess_5632b9cb6d57.json",
+      "canonicalId": "sess_5632b9cb6d57:task4",
+      "sessionId": "sess_5632b9cb6d57",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:25:57.216Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Enjoys hiking and trying new restaurants",
+          "reasoning": "User explicitly lists these as leisure activities.",
+          "evidence": {
+            "session_id": "sess_5632b9cb6d57",
+            "utterance_index": 8,
+            "text": "Beyond my academic pursuits I enjoy outdoor activities such as hiking [...] and trying new restaurants"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-05-15T16:56:52Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_122:1",
+            "queryText": "I'm planning my Saturday afternoon and want to do something active but also grab a bite. What would you suggest?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Enjoys hiking and trying new restaurants",
+              "reasoning": "User explicitly lists these as leisure activities.",
+              "evidence": {
+                "session_id": "sess_5632b9cb6d57",
+                "utterance_index": 8,
+                "text": "Beyond my academic pursuits I enjoy outdoor activities such as hiking [...] and trying new restaurants"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-05-15T16:56:52Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          },
+          {
+            "queryId": "ability2_27:1",
+            "queryText": "I'm thinking about planning a weekend getaway somewhere within a few hours' drive. What kind of spots or activities would you suggest I look into?",
+            "ability": "ability2",
+            "task4RecordIndex": 1,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Possessions/Pet",
+              "label_suggestion": null,
+              "value": "Owns a dog",
+              "reasoning": "User explicitly adds 'taking my dog to the park' as a personal interest.",
+              "evidence": {
+                "session_id": "sess_5632b9cb6d57",
+                "utterance_index": 8,
+                "text": "Beyond my academic pursuits I enjoy [...] taking my dog to the park"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-05-15T16:56:52Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

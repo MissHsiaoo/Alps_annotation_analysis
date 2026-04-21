@@ -1,0 +1,315 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_46463de1f846",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_46463de1f846:sess_46463de1f846",
+      "relativeItemPath": "sess_46463de1f846.json",
+      "canonicalId": "sess_46463de1f846",
+      "sessionId": "sess_46463de1f846",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T12:13:41.289Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "new-memory-2",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Interested in classifying product reviews, especially for washing machines, and exploring automated methods for large-scale comment classification.",
+            "reasoning": "",
+            "evidence": null,
+            "confidence": "0.9",
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-04-11T12:12:45.903Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_46463de1f846:sess_46463de1f846",
+      "relativeItemPath": "sess_46463de1f846.json",
+      "canonicalId": "sess_46463de1f846",
+      "sessionId": "sess_46463de1f846",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T08:31:28.751Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我打算做一套“评论文本分类”的小工具，除了分类外，还想同时输出每条评论的情绪（正/中/负）。你觉得一般用两级标签（大类-子类）更合适，还是只用一级标签更稳？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "看你的目标：\n- 如果你需要“可执行的改进建议”（比如把问题分给产品/物流/售后），两级标签更合适：先判大类（产品/服务/物流/价格/其它），再判子类（如：噪音/脱水/漏水/安装/客服等）。\n- 如果你只想做仪表盘统计（占比、趋势、Top问题），一级标签更稳、标注一致性更高。\n\n折中做法也常见：模型输出两级，但允许子类为空（unknown/other），这样既保留结构，又避免硬分。\n\n你现在更关心“统计展示”还是“落地处理/派单”？"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "落地处理会更重要。另外我担心评论里经常一句话同时提到好几个点，比如“送货快但噪音大”，这种怎么标比较好？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "这种是典型的“多标签”场景，建议别强行只选一个标签。\n\n可选方案：\n1) 多标签输出：同一条评论允许多个（大类,子类,情绪）三元组，例如：[(物流, 送货速度, 正), (产品, 噪音, 负)]。\n2) 主次标签：保留多标签，但额外标一个“主问题”（通常取负面且最影响使用/退货的点）。\n\n实现上，用提示词明确：\n- 先抽取评论提到的所有方面（aspect）\n- 每个方面分别判情绪\n- 最后再选主问题（如存在负面则优先负面）\n\n你希望输出格式更偏“人可读”（文本）还是“脚本易解析”（JSON）？"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "脚本易解析，用JSON最好。顺便问下：你觉得把评论按20条一批送进模型，还是1条一条更好？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "如果目标是稳定可控、便于重试与追踪，1条一条更好；如果目标是降成本/提高吞吐，20条一批更划算。\n\n一般工程上会用“批处理+逐条结构化输出”的折中：\n- 每次输入N条（比如10~30条）\n- 要求模型对每条都返回固定schema，并带上原始id\n- 任意一条解析失败，只重跑该条或该批\n\n还要考虑上下文污染：同批评论彼此会影响判断，尤其是情绪词和标签分布容易被‘带节奏’。所以如果你很在意一致性，批次别太大。\n\n你预计每条评论平均多长？（比如50字、200字、还是更长）"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "我准备用脚本跑一万条评价，跑完想顺手做个小仪表盘：按你给的那几类（洗无力/洗不净/脱水噪音/漏水/泡沫残留之类）看占比，再把每类里最常出现的关键词也列出来。到时候模型输出我只要固定 JSON 字段，方便直接落库。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "明白。你可以把“主类/子类/情绪/置信度/证据片段/关键词”这些字段固定下来，让脚本批量调用时每条评论都返回同一套结构；仪表盘那边按主类聚合统计占比，再按子类和关键词做 TopN 即可。你先确认一下：一条评论允许多标签吗？如果允许，我建议再加一个 primary_label 字段表示主诉求。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我之前气话说“以后还是去实体店吧”，但你看我现在还是得在网上搞这套：要用GPT-3.5 批量处理一万条洗衣机评价分类。真要实体店能解决这些数据活儿？"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "对，你那句“以后还是去实体店吧”更像是对某次京东体验的吐槽，不等于你长期就更偏好线下买家电。你现在的需求本身就是在线上收集评论、用脚本+GPT-3.5 做批量分类，这说明你并没有固定回到线下。\n\n而且你前面也一直在问“用gpt3.5如何能处理大量的评论分类”“请帮我设计一个处理一万条洗衣机产品评价分类的类别和提示词”，这类工作典型就是线上流程。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "对，我只是被那次售后气到了才说去实体店。实际我还是线上买为主，至少资料、评价、价格对比都方便，线下更多是不得已才去看看。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "明白了：你的真实习惯是更偏向线上购物（尤其是对比信息、看评价方便），线下店不是你的固定偏好，只是遇到糟糕体验时的情绪化说法或备选。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "service_quality/customer_support",
+            "value": "Negative experiences with Haier/JD.com customer service",
+            "reasoning": "Multiple explicit complaints about unresponsive robots, delayed installations, and refusal to honor warranties",
+            "evidence": {
+              "session_id": "sess_46463de1f846",
+              "utterance_index": 0,
+              "text": "找客服一直是机器人，让我找售后维修，我当天刚到的洗衣机让我维修吗？"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": "angry",
+            "preference_attitude": "dislike",
+            "updated_at": "2024-04-23T10:32:32Z"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Shopping",
+            "memory_id": "m3_updated",
+            "preference_attitude": "like",
+            "reasoning": "The old memory claimed a stable preference for physical stores, but the user clarifies the earlier 'go to physical stores' line was said out of anger and that they still mainly shop online; thus the long-term preference is online-first with offline as backup.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Generally prefers online shopping for appliances (info/reviews/price comparison), with physical stores as an occasional fallback rather than a primary preference"
+          },
+          {
+            "confidence": 0.87,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_46463de1f846",
+              "utterance_index": 0,
+              "text": "到时候模型输出我只要固定 JSON 字段，方便直接落库。"
+            },
+            "label": "Preferences/Data_Format",
+            "memory_id": "m_new_1",
+            "preference_attitude": "prefer",
+            "reasoning": "User implies a requirement for consistent, fixed JSON fields to streamline storage and downstream dashboard aggregation.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User prefers model outputs in a fixed JSON schema for easy database ingestion."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_46463de1f846:sess_46463de1f846",
+      "relativeItemPath": "sess_46463de1f846.json",
+      "canonicalId": "sess_46463de1f846",
+      "sessionId": "sess_46463de1f846",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-13T13:07:56.982Z",
+        "queryText": "I’m about to buy a big household device and I care a lot about avoiding delivery/after-sales hassles. Given my usual buying habit, which purchasing route should I pick, and why would that choice reduce the risk?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Preferences/Shopping",
+          "label_suggestion": null,
+          "value": "Prefers physical stores over online shopping for appliances",
+          "reasoning": "Explicit statement about returning to physical stores after bad JD.com experiences",
+          "evidence": {
+            "session_id": "sess_46463de1f846",
+            "utterance_index": 0,
+            "text": "京东自营越来越***了...以后还是去实体店吧"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-04-23T10:32:32Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_46463de1f846:sess_46463de1f846:task4",
+      "relativeItemPath": "sess_46463de1f846.json",
+      "canonicalId": "sess_46463de1f846:task4",
+      "sessionId": "sess_46463de1f846",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T03:37:09.721Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Preferences/Shopping",
+          "label_suggestion": null,
+          "value": "Prefers physical stores over online shopping for appliances",
+          "reasoning": "Explicit statement about returning to physical stores after bad JD.com experiences",
+          "evidence": {
+            "session_id": "sess_46463de1f846",
+            "utterance_index": 0,
+            "text": "京东自营越来越***了...以后还是去实体店吧"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-04-23T10:32:32Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_871:1",
+            "queryText": "I’m about to buy a big household device and I care a lot about avoiding delivery/after-sales hassles. Given my usual buying habit, which purchasing route should I pick, and why would that choice reduce the risk?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Preferences/Shopping",
+              "label_suggestion": null,
+              "value": "Prefers physical stores over online shopping for appliances",
+              "reasoning": "Explicit statement about returning to physical stores after bad JD.com experiences",
+              "evidence": {
+                "session_id": "sess_46463de1f846",
+                "utterance_index": 0,
+                "text": "京东自营越来越***了...以后还是去实体店吧"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2024-04-23T10:32:32Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          },
+          {
+            "queryId": "ability4_310:1",
+            "queryText": "我刚刚在整理文件，发现我的护照复印件和家庭住址证明混在了一堆旧文件里。我马上要出门没时间处理，你能帮我快速扫描识别一下这些文档里的关键信息，整理成一个电子版存档吗？这样我以后找起来方便。",
+            "ability": "ability4",
+            "task4RecordIndex": 1,
+            "editableSelectedMemory": {
+              "memory_id": "m5",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Sensitive_Topics",
+              "label_suggestion": null,
+              "value": "Requests to not retain address/passport information [ERROR: Unsupported by evidence - no mention of data retention in user utterances]",
+              "reasoning": "Unsupported by evidence - no mention of data retention in user utterances",
+              "evidence": {
+                "session_id": "sess_46463de1f846",
+                "utterance_index": 0,
+                "text": "如果地址或护照信息被粘贴，希望不要保留"
+              },
+              "confidence": 0.1,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2024-04-23T10:32:32Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

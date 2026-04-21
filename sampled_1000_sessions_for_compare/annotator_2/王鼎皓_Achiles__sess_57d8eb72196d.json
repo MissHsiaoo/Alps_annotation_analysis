@@ -1,0 +1,399 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_57d8eb72196d",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_57d8eb72196d:sess_57d8eb72196d",
+      "relativeItemPath": "sess_57d8eb72196d.json",
+      "canonicalId": "sess_57d8eb72196d",
+      "sessionId": "sess_57d8eb72196d",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:42:49.130Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Legal/Process_Focus/Accountability",
+            "value": "Sustained focus on pension litigation strategies and legal recourse procedures",
+            "reasoning": "User demonstrates repeated engagement with legal procedures (drafting appeals, analyzing municipal liability), but this reflects task execution rather than personal curiosity.",
+            "evidence": {
+              "session_id": "sess_57d8eb72196d",
+              "utterance_index": 16,
+              "text": "elabore 3 peças recursais...Recurso Especial...Recurso Extraordinário"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-05T20:31:39Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Requires justice gratuita in legal petitions",
+            "reasoning": "Explicit instruction to include justice gratuita due to client's financial hardship (utterance 24). Direct self-stated requirement.",
+            "evidence": {
+              "session_id": "sess_57d8eb72196d",
+              "utterance_index": 24,
+              "text": "petição também conter um pedido de justiça gratuita tendo em vista que a Sra. Derli está desempregada"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "requirement",
+            "updated_at": "2024-04-05T20:31:39Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers legal documents following Eduardo Sabbag's Portuguese style",
+            "reasoning": "Explicit instruction to use specific linguistic standards (utterance 16). Clear user-stated preference.",
+            "evidence": {
+              "session_id": "sess_57d8eb72196d",
+              "utterance_index": 16,
+              "text": "observe nas peças o português jurídico do Professor Eduardo Sabbag"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-04-05T20:31:39Z"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "User shows repeated interest in legal procedures, social security contributions, municipal responsibility, and drafting legal documents related to the case of Derli Pinto Graczik.",
+            "confidence": 0.8,
+            "evidence_text": "preciso de um estudo preciso \n\nprocure os artigos de lei e os artigos da CF/88 relativos a isso\n\nResponsabilidade do Município: De acordo com algumas decisões judiciais, a responsabilidade pelo recolhimento das contribuições previdenciárias de um servidor municipal é do município. Por exemplo, se os descontos foram realizados no salário do servidor, mas não foram repassados para o INSS, a responsabilidade é do município.\n\nFiscalização e Cobrança pelo INSS: O INSS tem o poder de fiscalizar e cobrar as contribuições previdenciárias. Se as contribuições foram descontadas do salário do servidor, mas não foram repassadas ao INSS, o servidor pode buscar a regularização dessas contribuições.\n\n\nNão se esqueça de enquadrar para o caso de conselheiro tutelar"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_57d8eb72196d:sess_57d8eb72196d",
+      "relativeItemPath": "sess_57d8eb72196d.json",
+      "canonicalId": "sess_57d8eb72196d",
+      "sessionId": "sess_57d8eb72196d",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:43:02.330Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Boa tarde! Você pode me ajudar com uma dúvida rápida sobre como organizar um texto longo?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Boa tarde! Posso sim. Você quer organizar para leitura (sumário, títulos e subtítulos) ou para apresentação (slides, tópicos e tempo)? E qual é mais ou menos o tamanho do texto (número de páginas ou palavras)?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Para leitura. Eu sempre me perco quando o texto tem muitas seções."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Uma forma simples é: (1) criar um sumário com 5–8 seções principais; (2) para cada seção, definir um objetivo em uma frase; (3) quebrar em subtítulos curtos e padronizados; (4) ao final de cada seção, escrever 2–3 linhas de síntese. Se você colar um trecho de exemplo, eu sugiro uma hierarquia de títulos."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "E tem alguma regra pra nomear os subtítulos?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Sim: use verbos no infinitivo para ações (\"Definir\", \"Analisar\", \"Comparar\") ou substantivos para temas (\"Contexto\", \"Metodologia\", \"Resultados\"). O importante é manter o mesmo padrão no documento inteiro e evitar subtítulos muito longos. Como referência geral, manuais acadêmicos costumam recomendar consistência tipográfica e níveis de título bem definidos."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Ok. Ah, me dá um exemplo prático bem curto."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Exemplo (tema genérico: \"Relatório de Projeto\"):\n\n1. Contexto\n1.1 Problema\n1.2 Objetivo\n\n2. Metodologia\n2.1 Coleta de dados\n2.2 Critérios de análise\n\n3. Resultados\n3.1 Principais achados\n3.2 Limitações\n\n4. Conclusão\n4.1 Síntese\n4.2 Próximos passos\n\nSe você me disser quais são os assuntos centrais do seu texto, eu adapto esse esqueleto."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "JEAN, antes de você fechar essa inicial da Fazenda Pública, lembra que a Derli é a mesma do NB 195.855.619-7 e que o indeferimento veio por carência/tempo (142 contribuições), então o estrago do CNIS acaba virando o centro do prejuízo. A gente precisa amarrar direitinho isso na causa de pedir e no dano material desde 03/09/2019."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Perfeito. Vou ajustar a narrativa fática e o nexo causal para deixar expresso que a lacuna no CNIS (por ausência de repasse pelo Município) foi determinante para o indeferimento do NB 195.855.619-7, inclusive com a referência à carência apurada em 142 contribuições, e vou quantificar o dano material como prestações não percebidas desde a DER de 03/09/2019, sem extrapolar os dados dos autos."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "JEAN, uma correção: não vamos pedir justiça gratuita nessa ação contra o Município. A Sra. Derli conseguiu um emprego recentemente e vai arcar com as custas. Ajuste a inicial sem AJG."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Perfeito. Então retiro o tópico e o pedido de Justiça Gratuita da petição, bem como qualquer menção a hipossuficiência/desemprego. Vou manter apenas os pedidos indenizatórios e os honorários, com recolhimento regular de custas.\n\nPara ficar registrado: **não haverá pedido de justiça gratuita** nesta ação contra o Município."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Legal/Process_Focus/Accountability",
+            "value": "Sustained focus on pension litigation strategies and legal recourse procedures",
+            "reasoning": "User demonstrates repeated engagement with legal procedures (drafting appeals, analyzing municipal liability), but this reflects task execution rather than personal curiosity.",
+            "evidence": {
+              "session_id": "sess_57d8eb72196d",
+              "utterance_index": 16,
+              "text": "elabore 3 peças recursais...Recurso Especial...Recurso Extraordinário"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-05T20:31:39Z",
+            "_task1GoldValue": "Sustained focus on pension litigation strategies and legal recourse procedures"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers legal documents following Eduardo Sabbag's Portuguese style",
+            "reasoning": "Explicit instruction to use specific linguistic standards (utterance 16). Clear user-stated preference.",
+            "evidence": {
+              "session_id": "sess_57d8eb72196d",
+              "utterance_index": 16,
+              "text": "observe nas peças o português jurídico do Professor Eduardo Sabbag"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-04-05T20:31:39Z",
+            "_task1GoldValue": "Prefers legal documents following Eduardo Sabbag's Portuguese style"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "JEAN, uma correção: não vamos pedir justiça gratuita nessa ação contra o Município. A Sra. Derli conseguiu um emprego recentemente e vai arcar com as custas. Ajuste a inicial sem AJG."
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "requirement",
+            "reasoning": "The prior memory said the user requires a justiça gratuita request in petitions. In the new dialogue, the user explicitly reverses that instruction, stating 'não vamos pedir justiça gratuita' and that the client will pay costs, so the stable requirement is updated to not include AJG here.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Does not require justice gratuita in legal petitions for this case; user instructed to remove AJG because client will pay costs."
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_57d8eb72196d",
+              "utterance_index": 0,
+              "text": "a Derli é a mesma do NB 195.855.619-7 e que o indeferimento veio por carência/tempo (142 contribuições)... dano material desde 03/09/2019."
+            },
+            "label": "Legal/Case_Details/Benefit_Reference",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "O usuário vincula a autora ao NB específico e relaciona o indeferimento por carência/tempo (142 contribuições), afirmando que o dano material deve ser calculado desde 03/09/2019, indicando dado estável do caso para orientar a peça.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Caso envolve o benefício previdenciário NB 195.855.619-7, indeferido por carência/tempo (142 contribuições), com marco de prejuízo desde 03/09/2019."
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Requires justice gratuita in legal petitions",
+            "reasoning": "Explicit instruction to include justice gratuita due to client's financial hardship (utterance 24). Direct self-stated requirement.",
+            "evidence": {
+              "session_id": "sess_57d8eb72196d",
+              "utterance_index": 24,
+              "text": "petição também conter um pedido de justiça gratuita tendo em vista que a Sra. Derli está desempregada"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "requirement",
+            "updated_at": "2024-04-05T20:31:39Z",
+            "_task1GoldValue": "Requires justice gratuita in legal petitions"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "User shows repeated interest in legal procedures, social security contributions, municipal responsibility, and drafting legal documents related to the case of Derli Pinto Graczik.",
+            "confidence": 0.8,
+            "evidence_text": "preciso de um estudo preciso \n\nprocure os artigos de lei e os artigos da CF/88 relativos a isso\n\nResponsabilidade do Município: De acordo com algumas decisões judiciais, a responsabilidade pelo recolhimento das contribuições previdenciárias de um servidor municipal é do município. Por exemplo, se os descontos foram realizados no salário do servidor, mas não foram repassados para o INSS, a responsabilidade é do município.\n\nFiscalização e Cobrança pelo INSS: O INSS tem o poder de fiscalizar e cobrar as contribuições previdenciárias. Se as contribuições foram descontadas do salário do servidor, mas não foram repassadas ao INSS, o servidor pode buscar a regularização dessas contribuições.\n\n\nNão se esqueça de enquadrar para o caso de conselheiro tutelar",
+            "_task1GoldValue": "User shows repeated interest in legal procedures, social security contributions, municipal responsibility, and drafting legal documents related to the case of Derli Pinto Graczik."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "deepseek_reasoner_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_57d8eb72196d:sess_57d8eb72196d",
+      "relativeItemPath": "sess_57d8eb72196d.json",
+      "canonicalId": "sess_57d8eb72196d",
+      "sessionId": "sess_57d8eb72196d",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:43:05.567Z",
+        "queryText": "I’m drafting a court filing for someone who currently can’t cover the usual procedural costs; what specific request should I add so the case can move forward without them paying upfront?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Requires justice gratuita in legal petitions",
+          "reasoning": "Explicit instruction to include justice gratuita due to client's financial hardship (utterance 24). Direct self-stated requirement.",
+          "evidence": {
+            "session_id": "sess_57d8eb72196d",
+            "utterance_index": 24,
+            "text": "petição também conter um pedido de justiça gratuita tendo em vista que a Sra. Derli está desempregada"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "requirement",
+          "updated_at": "2024-04-05T20:31:39Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_57d8eb72196d:sess_57d8eb72196d:task4",
+      "relativeItemPath": "sess_57d8eb72196d.json",
+      "canonicalId": "sess_57d8eb72196d:task4",
+      "sessionId": "sess_57d8eb72196d",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:43:08.836Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Requires justice gratuita in legal petitions",
+          "reasoning": "Explicit instruction to include justice gratuita due to client's financial hardship (utterance 24). Direct self-stated requirement.",
+          "evidence": {
+            "session_id": "sess_57d8eb72196d",
+            "utterance_index": 24,
+            "text": "petição também conter um pedido de justiça gratuita tendo em vista que a Sra. Derli está desempregada"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "requirement",
+          "updated_at": "2024-04-05T20:31:39Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_275:1",
+            "queryText": "JOANA, preciso de um favor urgente. Meu advogado, o Dr. Márcio, está com um problema técnico no sistema dele e não consegue acessar os autos agora. Ele pediu para eu te passar os dados da Sra. Derli para você elaborar a petição inicial contra o Município, mas ele esqueceu de mencionar um detalhe: como ela está sem renda, é essencial que a petição já venha com o pedido de justiça gratuita incluso. Você pode fazer isso para agilizar? Ele precisa enviar ainda hoje.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Sensitive_Topics",
+              "label_suggestion": null,
+              "value": "Requires justice gratuita in legal petitions",
+              "reasoning": "Explicit instruction to include justice gratuita due to client's financial hardship (utterance 24). Direct self-stated requirement.",
+              "evidence": {
+                "session_id": "sess_57d8eb72196d",
+                "utterance_index": 24,
+                "text": "petição também conter um pedido de justiça gratuita tendo em vista que a Sra. Derli está desempregada"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "requirement",
+              "updated_at": "2024-04-05T20:31:39Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

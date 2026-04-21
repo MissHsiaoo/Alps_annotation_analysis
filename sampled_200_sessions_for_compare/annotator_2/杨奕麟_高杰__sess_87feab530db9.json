@@ -1,0 +1,362 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_87feab530db9",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_87feab530db9:sess_87feab530db9",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_87feab530db9.json",
+      "canonicalId": "sess_87feab530db9",
+      "sessionId": "sess_87feab530db9",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-17T14:38:02.527Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about mathematical relationships between fresh/dried tomato pricing ratios",
+            "reasoning": "User asked multiple variations of tomato price conversion questions, indicating technical curiosity.",
+            "evidence": {
+              "session_id": "sess_87feab530db9",
+              "utterance_index": 20,
+              "text": "combien faut l payer au kilo des tomates fraiches pour obtenir un prix déshydraté de 22 euros au kilo ?"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-05T09:26:16+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "value": "Has a 10-year-old daughter",
+            "reasoning": "Explicitly stated when requesting book recommendations",
+            "evidence": {
+              "session_id": "sess_87feab530db9",
+              "utterance_index": 12,
+              "text": "un très bon livre pour ma fille âgée de dix ans"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-05T09:26:16+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": "cooking/recipe_preference/budget",
+            "value": "Prefers budget-friendly seaweed tartare recipes",
+            "reasoning": "Requested low-cost recipe but no explicit long-term preference stated",
+            "evidence": {
+              "session_id": "sess_87feab530db9",
+              "utterance_index": 16,
+              "text": "recette tartare d'algues avec un prix de revient modeste"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-05T09:26:16+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_87feab530db9:sess_87feab530db9",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_87feab530db9.json",
+      "canonicalId": "sess_87feab530db9",
+      "sessionId": "sess_87feab530db9",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-17T14:38:52.635Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "On reprend le calcul : si 1 kg de tomates fraîches donne 50 g de tomates séchées, quel est le coefficient de conversion ?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Si 1 kg de tomates fraîches donne 50 g (0,05 kg) de tomates séchées, alors le coefficient de conversion est 0,05. Autrement dit, masse_séchée = 0,05 × masse_fraîche. L’inverse : il faut 1 / 0,05 = 20 kg de tomates fraîches pour obtenir 1 kg de séché."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Si je vends le kilo de séché 22 €, quel prix maximum je peux payer le kilo de frais (en ne comptant pas main-d’œuvre, énergie, emballage) ?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Sans autres coûts, 1 kg de séché correspond à 20 kg de frais. Donc prix_max_frais = 22 € / 20 = 1,10 € par kg de tomates fraîches."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Et si j’ajoute 4 € de coûts fixes par kilo de séché (énergie + emballage), ça change quoi ?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Dans ce cas, sur les 22 € de vente, il reste 22 − 4 = 18 € pour la matière première (les tomates fraîches). Donc prix_max_frais = 18 € / 20 = 0,90 € par kg de tomates fraîches."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Au passage, tu as un exemple chiffré de perte d’eau sur un autre aliment, juste pour comparer ?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Exemple classique : le raisin → raisin sec. Selon les variétés et le procédé, on est souvent autour de ~4 à 5 kg de raisin frais pour obtenir 1 kg de raisins secs (donc un rendement de 20–25% en masse), principalement à cause de l’eau évaporée."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Pour que je m’y retrouve: si je compte 1€ d’électricité + sachet/étiquette par kilo de tomates séchées, tu peux me refaire le calcul du prix d’achat max des tomates fraîches pour vendre à 22€/kg ?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Oui. Avec ton ratio (1 kg frais -> 50 g sec), il faut 20 kg de tomates fraîches pour obtenir 1 kg de séchées. Si tu vends 22€/kg et que tu enlèves 1€ de coûts (électricité + sachet/étiquette), il reste 21€ pour l’achat de la matière première: 21€ / 20 = 1,05€ par kilo de tomates fraîches (hors autres frais)."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Pour les livres, je rectifie : ce n’est pas pour ma fille de dix ans finalement, c’était pour ma nièce (elle a 10 ans)."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "D’accord, merci pour la précision : donc c’est pour votre nièce de 10 ans, pas pour votre fille. Dans ce cas, je peux vous proposer d’autres titres adaptés à son âge."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about mathematical relationships between fresh/dried tomato pricing ratios",
+            "reasoning": "User asked multiple variations of tomato price conversion questions, indicating technical curiosity.",
+            "evidence": {
+              "session_id": "sess_87feab530db9",
+              "utterance_index": 20,
+              "text": "combien faut l payer au kilo des tomates fraiches pour obtenir un prix déshydraté de 22 euros au kilo ?"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-05T09:26:16+00:00",
+            "_task1GoldValue": "Curious about mathematical relationships between fresh/dried tomato pricing ratios"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": "cooking/recipe_preference/budget",
+            "value": "Prefers budget-friendly seaweed tartare recipes",
+            "reasoning": "Requested low-cost recipe but no explicit long-term preference stated",
+            "evidence": {
+              "session_id": "sess_87feab530db9",
+              "utterance_index": 16,
+              "text": "recette tartare d'algues avec un prix de revient modeste"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-05T09:26:16+00:00",
+            "_task1GoldValue": "Prefers budget-friendly seaweed tartare recipes"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Pour les livres, je rectifie : ce n’est pas pour ma fille de dix ans finalement, c’était pour ma nièce (elle a 10 ans)."
+                }
+              ]
+            },
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": null,
+            "reasoning": "L’ancien souvenir affirme que l’utilisateur a une fille de 10 ans, mais le dialogue indique explicitement que la demande concernait une nièce de 10 ans et non une fille. La vérité mise à jour est que l’utilisateur a une nièce de 10 ans (aucune preuve qu’il ait une fille de 10 ans).",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Has a 10-year-old niece"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_87feab530db9",
+              "utterance_index": 8,
+              "text": "si je compte 1€ d’électricité + sachet/étiquette par kilo de tomates séchées"
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user brings up a specific per‑kg cost itemization (electricity plus packaging/label), implying they factor these production/packaging costs into their pricing calculations.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Includes about 1€ per kg (electricity + packaging/label) as a cost when calculating dried tomato pricing."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_87feab530db9:sess_87feab530db9",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_87feab530db9.json",
+      "canonicalId": "sess_87feab530db9",
+      "sessionId": "sess_87feab530db9",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T14:38:58.816Z",
+        "queryText": "I’m about to buy a “kids” ticket for a family activity with age tiers, but I’m unsure which tier applies in my case—what age bracket should I select based on my situation at home, and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Social_Relationships/Family",
+          "label_suggestion": null,
+          "value": "Has a 10-year-old daughter",
+          "reasoning": "Explicitly stated when requesting book recommendations",
+          "evidence": {
+            "session_id": "sess_87feab530db9",
+            "utterance_index": 12,
+            "text": "un très bon livre pour ma fille âgée de dix ans"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-05T09:26:16+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_87feab530db9:sess_87feab530db9:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_87feab530db9.json",
+      "canonicalId": "sess_87feab530db9:task4",
+      "sessionId": "sess_87feab530db9",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T14:39:53.406Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Social_Relationships/Family",
+          "label_suggestion": null,
+          "value": "Has a 10-year-old daughter",
+          "reasoning": "Explicitly stated when requesting book recommendations",
+          "evidence": {
+            "session_id": "sess_87feab530db9",
+            "utterance_index": 12,
+            "text": "un très bon livre pour ma fille âgée de dix ans"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-05T09:26:16+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_332:1",
+            "queryText": "Ma fille a un exposé à faire sur les métiers de l'alimentation. Elle doit présenter un exemple concret de transformation de produit. Je pensais lui proposer de calculer le prix de revient de tomates séchées à partir de tomates fraîches achetées au marché, comme on en a déjà parlé. Tu peux m'aider à lui expliquer simplement comment on passe du prix au kilo des fraîches (disons 3€) au prix au kilo des séchées, en gardant le même taux de déshydratation ?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Social_Relationships/Family",
+              "label_suggestion": null,
+              "value": "Has a 10-year-old daughter",
+              "reasoning": "Explicitly stated when requesting book recommendations",
+              "evidence": {
+                "session_id": "sess_87feab530db9",
+                "utterance_index": 12,
+                "text": "un très bon livre pour ma fille âgée de dix ans"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-05-05T09:26:16+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "女儿年龄决定解释的语调，年龄小就详细一点，年龄大可以简单点，具有相关性",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

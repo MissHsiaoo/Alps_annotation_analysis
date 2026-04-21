@@ -1,0 +1,287 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_d6da00dc4b2e",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_d6da00dc4b2e:sess_d6da00dc4b2e",
+      "relativeItemPath": "sess_d6da00dc4b2e.json",
+      "canonicalId": "sess_d6da00dc4b2e",
+      "sessionId": "sess_d6da00dc4b2e",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T12:06:25.449Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers technical/professional writing style for reports and client communications",
+            "reasoning": "User repeatedly requests technical phrasing for generator issues and professional email drafting, indicating a stable communication preference in professional contexts.",
+            "evidence": {
+              "session_id": "sess_d6da00dc4b2e",
+              "utterance_index": 2,
+              "text": "Please write this in technical words, the Generator controller is bypassed..."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-09T08:12:00+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_d6da00dc4b2e:sess_d6da00dc4b2e",
+      "relativeItemPath": "sess_d6da00dc4b2e.json",
+      "canonicalId": "sess_d6da00dc4b2e",
+      "sessionId": "sess_d6da00dc4b2e",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T02:58:38.356Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Can you help me rephrase a few maintenance notes into more formal technical language for a report?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes—paste the notes and tell me the desired tone (e.g., inspection finding, risk statement, or recommendation). I can format them as bullet points with “Observation / Implication / Recommendation” if you want."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Also, what’s a good way to describe a safety risk when a protection system is bypassed?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "You can state that bypassing the protection/control system disables monitoring and interlocks, preventing automatic fault detection and shutdown, which elevates risk of uncontrolled operation and consequential equipment damage. If relevant, add that the condition is non-compliant with OEM safety philosophy and should be rectified immediately."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Unrelated: I saw a headline about a bridge inspection that found corrosion—does corrosion always mean immediate replacement?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Not always. Corrosion severity is assessed by remaining thickness/section loss, location (critical load paths vs. non-critical), crack initiation, and rate of progression. Outcomes range from cleaning/coating and cathodic protection, to localized repair, strengthening, or replacement—based on engineering evaluation and codes."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Got it. If you were writing a generic example line about extending an exhaust stack by 2 meters, how would you phrase it?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Example: “The exhaust stack is to be repaired and extended by 2.0 m, including provision of adequate supports and sealed joints, to restore system integrity and ensure compliant discharge routing.”"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Add one more observation in the same technical tone: the radiator core looks partially choked with dust and oily deposits, and the coolant temperature was creeping up during the load run—so include cleaning/pressure testing as part of the corrective actions."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Additional Observation – Cooling System (Radiator/Core)\n\nDuring the load test, the engine coolant temperature exhibited an abnormal rising trend, indicating marginal heat-rejection performance. Visual inspection of the radiator core identified partial blockage consistent with accumulated dust and oily contaminants, which can restrict airflow and reduce effective cooling capacity.\n\nRecommendation / Corrective Action\n\n1. Carry out thorough external cleaning of the radiator core/fins using appropriate non-corrosive methods to remove adhered dust and oil deposits without fin damage.\n2. Perform radiator pressure testing to verify integrity and confirm there are no leaks or loss of system pressure.\n3. After completion, re-run the generator under load and record stabilized coolant temperature to confirm restoration of normal cooling performance."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "For this one, don’t make it sound like a technical report. Write it in simple, non-technical language that a non-engineer can understand, and keep it brief."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Understood. I’ll avoid technical terms and write a short, plain-language note suitable for a non-technical reader."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Yes—no professional/technical formatting this time. Just a clear summary in everyday words."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Got it: brief, everyday wording, and no technical/professional report style."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory says the user prefers technical/professional writing style, but the user explicitly requests the opposite—simple, non-technical, brief wording and no professional/technical formatting—so the preference should be updated to reflect plain-language requests at least in this context.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers simple, non-technical, brief writing (no technical/professional report formatting) when requesting summaries for non-engineers"
+          },
+          {
+            "confidence": 0.76,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_d6da00dc4b2e",
+              "utterance_index": 0,
+              "text": "the coolant temperature was creeping up during the load run—so include cleaning/pressure testing as part of the corrective actions."
+            },
+            "label": "Work/Domain_Context",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "By asking to add an observation tied to coolant temperature behavior during a load run and specifying corrective actions, the user implies their inspection/reporting work includes operational testing and maintenance recommendations for generator subsystems.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User performs/requests generator assessments that include load-run observations and corrective action recommendations (e.g., cooling system/radiator checks)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_d6da00dc4b2e:sess_d6da00dc4b2e",
+      "relativeItemPath": "sess_d6da00dc4b2e.json",
+      "canonicalId": "sess_d6da00dc4b2e",
+      "sessionId": "sess_d6da00dc4b2e",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:45:23.131Z",
+        "queryText": "I need to message an external stakeholder about a piece of site equipment acting up, and I want it to come across the way I usually prefer for those kinds of updates—what kind of tone/wording should I ask you to use so it fits my usual client-facing style?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers technical/professional writing style for reports and client communications",
+          "reasoning": "User repeatedly requests technical phrasing for generator issues and professional email drafting, indicating a stable communication preference in professional contexts.",
+          "evidence": {
+            "session_id": "sess_d6da00dc4b2e",
+            "utterance_index": 2,
+            "text": "Please write this in technical words, the Generator controller is bypassed..."
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-05-09T08:12:00+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_d6da00dc4b2e:sess_d6da00dc4b2e:task4",
+      "relativeItemPath": "sess_d6da00dc4b2e.json",
+      "canonicalId": "sess_d6da00dc4b2e:task4",
+      "sessionId": "sess_d6da00dc4b2e",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T00:39:44.166Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers technical/professional writing style for reports and client communications",
+          "reasoning": "User repeatedly requests technical phrasing for generator issues and professional email drafting, indicating a stable communication preference in professional contexts.",
+          "evidence": {
+            "session_id": "sess_d6da00dc4b2e",
+            "utterance_index": 2,
+            "text": "Please write this in technical words, the Generator controller is bypassed..."
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-05-09T08:12:00+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1150:1",
+            "queryText": "I need to draft a follow-up memo about the generator's vibration analysis results for the maintenance team. Could you help me phrase the key findings and recommendations?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers technical/professional writing style for reports and client communications",
+              "reasoning": "User repeatedly requests technical phrasing for generator issues and professional email drafting, indicating a stable communication preference in professional contexts.",
+              "evidence": {
+                "session_id": "sess_d6da00dc4b2e",
+                "utterance_index": 2,
+                "text": "Please write this in technical words, the Generator controller is bypassed..."
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-05-09T08:12:00+00:00"
+            },
+            "overallVerdict": "partially_reasonable",
+            "testsTargetAbility": "partial",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [
+              "ability_mismatch"
+            ],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

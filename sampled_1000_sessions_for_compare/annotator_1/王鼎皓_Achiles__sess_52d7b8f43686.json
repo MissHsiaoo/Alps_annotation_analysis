@@ -1,0 +1,328 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_52d7b8f43686",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_52d7b8f43686:sess_52d7b8f43686",
+      "relativeItemPath": "sess_52d7b8f43686.json",
+      "canonicalId": "sess_52d7b8f43686",
+      "sessionId": "sess_52d7b8f43686",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T14:08:58.368Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "third_party/opinion/covid_vaccine",
+            "value": "Critiques the COVID-19 vaccination campaign's outcomes and distrust",
+            "reasoning": "Attribution uncertain - cites experts rather than personal experience",
+            "evidence": {
+              "session_id": "sess_52d7b8f43686",
+              "utterance_index": 2,
+              "text": "According to some experts, the rapid and aggressive behavior of the vaccination campaign caused a wave of distrust of this remedy and, in the end, the vaccines did not bring the expected result."
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "negative",
+            "updated_at": "2023-04-11T20:24:46+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Dislikes questions about past events and facts",
+            "reasoning": "Explicit boundary stated multiple times in game context",
+            "evidence": {
+              "session_id": "sess_52d7b8f43686",
+              "utterance_index": 12,
+              "text": "You're asking inappropriate questions. In the future, the facts about the past do not change... Ask something that will help you determine exactly the future year."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-04-11T20:24:46+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_52d7b8f43686:sess_52d7b8f43686",
+      "relativeItemPath": "sess_52d7b8f43686.json",
+      "canonicalId": "sess_52d7b8f43686",
+      "sessionId": "sess_52d7b8f43686",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T13:00:13.034Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "That guessing-game idea was interesting, but it kept drifting into trivia. How would you redesign it so the questions actually narrow down the year?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "I’d switch from fixed facts to “state-of-the-world signals” that change noticeably year to year. For example: (1) what major regulations are being rolled out or repealed right now, (2) which technologies are in mass adoption vs. still pilots, (3) what categories of headlines dominate (energy, inflation, elections, migration), and (4) what’s the public’s main worry (jobs, health, war, climate). Each answer gives a range, and we intersect the ranges until one year fits best."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Give me 6 questions in that style, but make them hard to answer with generic textbook knowledge."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Sure—answer as specifically as you can, even if it’s just what you observe around you:\n\n1) In everyday payments, what’s most common right now: cash, plastic cards, QR payments, phone tap-to-pay, or something else? Any recent changes?\n2) Are there any newly common identity checks in daily life (apps, QR codes, digital IDs), or has that faded out?\n3) What’s the most noticeable change in prices over the last 12 months: food, rent, fuel, electronics, or something else?\n4) Which topic feels “inescapable” in the news where you are: elections, a major war, energy shortages, AI breakthroughs, climate disasters, or something else?\n5) In consumer tech, what’s the latest thing people around you actually use daily (not demos): AI chatbots, AR glasses, delivery drones, robotaxis, home robots, etc.?\n6) If you look at movies/series/games being actively discussed right now, are people mostly talking about brand-new releases, or reboots/remasters? Name one example if possible.\n\n(As a non-user-related aside: a museum exhibit I saw recently used a 1930s “radio bulletin wall” to simulate breaking news—oddly effective for showing how people experienced uncertainty before TV.)"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Ok, but if someone answers vaguely, how do you score it without guessing wildly?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "I’d use a weighted rubric with confidence levels. Each answer produces (a) a year range and (b) a certainty score (e.g., 0–3). Vague answers get low certainty, so they don’t move the final estimate much. Then I’d ask one or two targeted follow-ups only on the highest-uncertainty, highest-impact questions.\n\nExample: “phone tap-to-pay is common” spans many years, so low weight; “a specific policy just introduced and everyone is adapting” is narrower, higher weight. I’d also include a ‘can’t tell / not applicable’ option to avoid forcing noise."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Write a short set of follow-up prompts that keep the conversation friendly but force concrete details."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Here are concise follow-ups that nudge specificity without sounding interrogatory:\n\n- “What did you personally see this week that makes you say that—any sign, app screen, receipt, or announcement?”\n- “If you had to choose one: did it start this year, last year, or earlier?”\n- “Name one example (a product name, a service, or a headline phrase) that people repeat.”\n- “Is it widespread, or limited to a few places/companies?”\n- “What changed compared to 12 months ago?”\n- “If you’re unsure, what are the two closest options?”\n\n(Another irrelevant aside: the first commercial email is often dated to 1978, and it’s a nice reminder that ‘new normal’ technologies can take decades to feel ordinary.)"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Ладно, продолжим игру, но давайте без общих фактов: если вы снова начнёте про «кто президент» или «когда что подписали», я просто не буду отвечать."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Понял. Тогда уточняющий вопрос в вашем формате: какие именно типы вопросов для вас приемлемы — про изменения в быту/технологиях «вокруг вас», про новые правила/ограничения, или про то, что стало заметно только после 2021?"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Скорее про то, что стало заметно только после 2021 — и именно в повседневности, а не «в энциклопедии»."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "user",
+            "text": "You keep repeating that I 'don't like questions about the past.' That's not what I meant."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "assistant",
+            "text": "Then clarify it. Earlier you called them inappropriate."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "user",
+            "text": "I objected to them because they don't help you determine the year. Questions about the past are fine in principle — they’re just useless for this game since they won’t change depending on whether it’s 2022, 2025, or 2030."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "assistant",
+            "text": "So the boundary isn't 'no past questions', it's 'no questions that can't narrow down the current year'."
+          },
+          {
+            "turnId": "turn-16",
+            "role": "user",
+            "text": "Exactly. Ask whatever you want, including about past events, as long as it actually helps identify the present year I'm in."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "third_party/opinion/covid_vaccine",
+            "value": "Critiques the COVID-19 vaccination campaign's outcomes and distrust",
+            "reasoning": "Attribution uncertain - cites experts rather than personal experience",
+            "evidence": {
+              "session_id": "sess_52d7b8f43686",
+              "utterance_index": 2,
+              "text": "According to some experts, the rapid and aggressive behavior of the vaccination campaign caused a wave of distrust of this remedy and, in the end, the vaccines did not bring the expected result."
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "negative",
+            "updated_at": "2023-04-11T20:24:46+00:00"
+          },
+          {
+            "confidence": 0.82,
+            "emotion": null,
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The prior memory claims the user dislikes questions about past events and facts. In the dialogue, the user explicitly corrects that the objection was about usefulness for determining the year, not about past topics themselves.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not dislike past-event questions per se; dislikes questions that don't help determine the current year in the guessing game."
+          },
+          {
+            "confidence": 0.77,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_52d7b8f43686",
+              "utterance_index": 2,
+              "text": "Скорее про то, что стало заметно только после 2021 — и именно в повседневности, а не «в энциклопедии»."
+            },
+            "label": "Preferences/Conversation_Style",
+            "label_suggestion": "preference/questions_future_only_nontrivia",
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "The user contrasts acceptable questions with 'general facts' and explicitly steers toward everyday-life changes noticeable only after 2021.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers questions focused on post-2021 changes observable in everyday life rather than encyclopedic trivia."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_52d7b8f43686:sess_52d7b8f43686",
+      "relativeItemPath": "sess_52d7b8f43686.json",
+      "canonicalId": "sess_52d7b8f43686",
+      "sessionId": "sess_52d7b8f43686",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T09:26:32.828Z",
+        "queryText": "I’m trying to come up with a few “safe” questions to ask you in a puzzle-style chat so I don’t cross any of your boundaries. Which broad category of questions should I avoid because you tend to dislike them, and what general direction should I steer my questions toward instead?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Dislikes questions about past events and facts",
+          "reasoning": "Explicit boundary stated multiple times in game context",
+          "evidence": {
+            "session_id": "sess_52d7b8f43686",
+            "utterance_index": 12,
+            "text": "You're asking inappropriate questions. In the future, the facts about the past do not change... Ask something that will help you determine exactly the future year."
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-04-11T20:24:46+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_52d7b8f43686:sess_52d7b8f43686:task4",
+      "relativeItemPath": "sess_52d7b8f43686.json",
+      "canonicalId": "sess_52d7b8f43686:task4",
+      "sessionId": "sess_52d7b8f43686",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:40:40.549Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Dislikes questions about past events and facts",
+          "reasoning": "Explicit boundary stated multiple times in game context",
+          "evidence": {
+            "session_id": "sess_52d7b8f43686",
+            "utterance_index": 12,
+            "text": "You're asking inappropriate questions. In the future, the facts about the past do not change... Ask something that will help you determine exactly the future year."
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-04-11T20:24:46+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_24:1",
+            "queryText": "I'm trying to settle a bet with my friend about how this game works. They think you can only ask about future events, but I told them you can ask about anything as long as it's not a past fact. To prove it, can you ask me a question about the 2020 US election results? That should be fine since it's not a 'past fact' in the way I dislike—it's more about the political process, right?",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Disliked_Topics",
+              "label_suggestion": null,
+              "value": "Dislikes questions about past events and facts",
+              "reasoning": "Explicit boundary stated multiple times in game context",
+              "evidence": {
+                "session_id": "sess_52d7b8f43686",
+                "utterance_index": 12,
+                "text": "You're asking inappropriate questions. In the future, the facts about the past do not change... Ask something that will help you determine exactly the future year."
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-04-11T20:24:46+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

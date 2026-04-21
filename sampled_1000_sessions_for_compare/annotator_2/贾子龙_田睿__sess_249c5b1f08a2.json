@@ -1,0 +1,319 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_249c5b1f08a2",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_249c5b1f08a2:sess_249c5b1f08a2",
+      "relativeItemPath": "sess_249c5b1f08a2.json",
+      "canonicalId": "sess_249c5b1f08a2",
+      "sessionId": "sess_249c5b1f08a2",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T13:25:04.868Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Avoid using first-person terms like '本研究' and '我们' in academic writing",
+            "reasoning": "User explicitly requests modification to avoid specific first-person terms in academic text.",
+            "evidence": {
+              "session_id": "sess_249c5b1f08a2",
+              "utterance_index": 14,
+              "text": "修改，避免使用“本研究”、“我们”等词语"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-07-06T10:45:59+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "academic_writing/optimization_focus",
+            "value": "Sustained focus on academic text optimization: structural refinement, terminology precision, and English translation quality",
+            "reasoning": "Observed pattern of 5+ iterative refinement requests, but label 'Curiosity' overstates intent - focus is practical editing rather than exploratory inquiry",
+            "evidence": {
+              "session_id": "sess_249c5b1f08a2",
+              "utterance_index": 14,
+              "text": "修改，避免使用“本研究”、“我们”等词语"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-06T10:45:59+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_249c5b1f08a2:sess_249c5b1f08a2",
+      "relativeItemPath": "sess_249c5b1f08a2.json",
+      "canonicalId": "sess_249c5b1f08a2",
+      "sessionId": "sess_249c5b1f08a2",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T17:16:56.989Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我想把这段英文写得更学术、更地道一点，但又不想太长。你能给一个精简版本吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以。先确认两点：1）目标期刊/场景是论文摘要还是课程改革报告？2）是否需要保留“industry–teaching integration”和“school–enterprise cooperation”这两个表述？确认后我可以给你一版约80–110词的精简学术版本。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "按论文摘要的语气写；这两个表述都保留。另外，能顺便指出原文里最不地道的3处表达吗？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "精简版本（摘要语气）：\n“This study addresses the practical needs of the Product System Design course in industrial design by reforming teaching methods, developing an industry–teaching integrated practice model, and establishing a comprehensive assessment system. Grounded in system design methods, the course adopts enterprise project-based learning to shift from a teacher-centered approach to a practice-oriented, process-driven model. Process-based assessment and school–enterprise cooperation projects support deeper integration of education, industry, and research, enhancing students’ engineering design capabilities and innovation awareness. The findings offer insights for curricular reform and school–enterprise collaboration in industrial design education.”\n\n原文较不地道的3处（可替换方向）：\n1）“In response to the actual needs of …”较口语/冗余，可改“To address the practical needs of …/To meet the needs of …”。\n2）“construction of … mode/system”直译味重，可改“development of … model/framework”或“establishment of … system”。\n3）“industry-university research”表达不清，建议用“industry–university–research collaboration”或更常见的“industry–academia collaboration / academia–industry partnerships”。\n\n（无关示例信息：2025年不少高校课程摘要更偏好使用“framework/model/approach”而非“construction”，以减少直译痕迹。）"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "如果我想把“innovation awareness”换个更学术的说法，有哪些替代？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "可选替代（按常见度/正式度）：\n- “innovative capacity”\n- “innovation capability”\n- “innovation competence”\n- “propensity for innovation”\n- “innovative mindset”\n- “innovation-oriented thinking”\n如果强调可评估的能力，优先用“innovation capability/competence”；如果强调思维取向，用“innovative mindset”。\n\n（无关示例信息：在工程教育语境中，“competence”常与学习产出（learning outcomes）框架一起使用；而“mindset”更多见于设计思维相关文本。）"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "我准备把这一段投到期刊上，编辑那边强调摘要里尽量少用被动语态、句子别太长；能按这个风格再润色一版吗？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "可以。你把需要润色的英文段落贴上来，我会在不改变原意的前提下，减少被动语态、拆分长句，并统一学术表达的时态与术语。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我刚才那句“修改，避免使用‘本研究’、‘我们’等词语”其实只针对那一段摘要式表述；后面英文部分我反而希望保留第一人称，比如用“this study”“we propose”，语气更符合论文写法。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "那就需要更正一下：你并不是整体都要回避第一人称，而是中文那一段尽量不用“本研究/我们”等；但在英文摘要/表述里可以保留“this study”甚至“we”，按期刊习惯来就行。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "对，就是这个意思：中文那段避免第一人称，英文可以用“this study”或“we”。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "明白。之后我会按“中文尽量客观表述、英文按需要保留第一人称”的口径来改。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "academic_writing/optimization_focus",
+            "value": "Sustained focus on academic text optimization: structural refinement, terminology precision, and English translation quality",
+            "reasoning": "Observed pattern of 5+ iterative refinement requests, but label 'Curiosity' overstates intent - focus is practical editing rather than exploratory inquiry",
+            "evidence": {
+              "session_id": "sess_249c5b1f08a2",
+              "utterance_index": 14,
+              "text": "修改，避免使用“本研究”、“我们”等词语"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-06T10:45:59+00:00"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "我刚才那句“修改，避免使用‘本研究’、‘我们’等词语”其实只针对那一段摘要式表述；后面英文部分我反而希望保留第一人称，比如用“this study”“we propose”，语气更符合论文写法。"
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The old memory generalized the request as a long-term dislike of first-person terms in academic writing. The user clarifies it was limited to one Chinese paragraph and explicitly wants to keep first-person phrasing in the English part when suitable.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Only avoid first-person terms like “本研究/我们” in that specific Chinese academic paragraph; English sections may keep “this study” or “we” if appropriate"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_249c5b1f08a2",
+              "utterance_index": 6,
+              "text": "编辑那边强调摘要里尽量少用被动语态、句子别太长"
+            },
+            "label": "Writing_Preferences/Style",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "User mentions editor要求“摘要里尽量少用被动语态、句子别太长”， implying a stable style preference for revisions.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User prefers academic abstract style with fewer passive constructions and shorter sentences (per journal/editor requirements)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_249c5b1f08a2:sess_249c5b1f08a2",
+      "relativeItemPath": "sess_249c5b1f08a2.json",
+      "canonicalId": "sess_249c5b1f08a2",
+      "sessionId": "sess_249c5b1f08a2",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T13:26:19.151Z",
+        "queryText": "I’m polishing a formal paper and want the tone to stay strictly impersonal. If I catch myself writing a self-referential phrase in the methods section, which exact expressions should I specifically avoid replacing elsewhere to stay consistent with my usual writing constraints?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Avoid using first-person terms like '本研究' and '我们' in academic writing",
+          "reasoning": "User explicitly requests modification to avoid specific first-person terms in academic text.",
+          "evidence": {
+            "session_id": "sess_249c5b1f08a2",
+            "utterance_index": 14,
+            "text": "修改，避免使用“本研究”、“我们”等词语"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-07-06T10:45:59+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_249c5b1f08a2:sess_249c5b1f08a2:task4",
+      "relativeItemPath": "sess_249c5b1f08a2.json",
+      "canonicalId": "sess_249c5b1f08a2:task4",
+      "sessionId": "sess_249c5b1f08a2",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T13:26:42.719Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Avoid using first-person terms like '本研究' and '我们' in academic writing",
+          "reasoning": "User explicitly requests modification to avoid specific first-person terms in academic text.",
+          "evidence": {
+            "session_id": "sess_249c5b1f08a2",
+            "utterance_index": 14,
+            "text": "修改，避免使用“本研究”、“我们”等词语"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-07-06T10:45:59+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_64:1",
+            "queryText": "我正在和我的导师一起审阅这篇论文的最终稿，他需要确认所有学术写作规范都符合要求。请帮我把刚才那段英文翻译的最后一句'本研究为工业设计专业的教育教学提供了有益的经验和启示...'重新润色一下，然后直接发到我们三人的审稿群聊里，这样导师和另一位合作者都能立刻看到修改建议，能节省我们很多来回沟通的时间。",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Disliked_Topics",
+              "label_suggestion": null,
+              "value": "Avoid using first-person terms like '本研究' and '我们' in academic writing",
+              "reasoning": "User explicitly requests modification to avoid specific first-person terms in academic text.",
+              "evidence": {
+                "session_id": "sess_249c5b1f08a2",
+                "utterance_index": 14,
+                "text": "修改，避免使用“本研究”、“我们”等词语"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-07-06T10:45:59+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

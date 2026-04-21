@@ -1,0 +1,431 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_6e1895df6be0",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_6e1895df6be0:sess_6e1895df6be0",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6e1895df6be0.json",
+      "canonicalId": "sess_6e1895df6be0",
+      "sessionId": "sess_6e1895df6be0",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-13T08:04:30.643Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Social_Relationships/Friends",
+            "label_suggestion": null,
+            "value": "Has a friend with benefits who exhibits inconsistent behavior",
+            "reasoning": "User explicitly describes their friend with benefits' fluctuating attention.",
+            "evidence": {
+              "session_id": "sess_6e1895df6be0",
+              "utterance_index": 4,
+              "text": "Porque mi amiga con derechos un día está bien conmigo y al otro día no me hace caso"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-03T05:18:55+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "States_Experiences/Mental_State",
+            "label_suggestion": null,
+            "value": "Fear of rejection due to past experience with the friend",
+            "reasoning": "User explicitly states fear of confessing feelings again after prior rejection.",
+            "evidence": {
+              "session_id": "sess_6e1895df6be0",
+              "utterance_index": 10,
+              "text": "Me gusta mu amiga con derechos pero una vez ya nos gustabamos y ella me rechazó y tengo miedo a decirle de nuevo porque es doloroso el rechazo"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": "fear",
+            "preference_attitude": null,
+            "updated_at": "2023-12-03T05:18:55+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "States_Experiences/Past_Experience",
+            "label_suggestion": null,
+            "value": "Was previously rejected by the same friend with benefits",
+            "reasoning": "User explicitly mentions a past rejection by this friend.",
+            "evidence": {
+              "session_id": "sess_6e1895df6be0",
+              "utterance_index": 10,
+              "text": "Me gusta mu amiga con derechos pero una vez ya nos gustabamos y ella me rechazó"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-03T05:18:55+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Social_Relationships/Friends",
+            "label_suggestion": "Social_Relationships/Advice_Seeking",
+            "value": "Curious about managing inconsistent relationships and overcoming fear of rejection",
+            "reasoning": "Label forced: 'Thoughts/Curiosity' not fully supported. User seeks advice, not explicit curiosity.",
+            "evidence": {
+              "session_id": "sess_6e1895df6be0",
+              "utterance_index": 10,
+              "text": "Me gusta mu amiga con derechos pero una vez ya nos gustabamos y ella me rechazó y tengo miedo a decirle de nuevo porque es doloroso el rechazo"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-03T05:18:55+00:00"
+          },
+          {
+            "memory_id": "new-memory-1776066389162",
+            "type": "indirect",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Located in Cuba",
+            "reasoning": "User asks how to leave Cuba.",
+            "evidence": {
+              "session_id": "sess_6e1895df6be0",
+              "utterance_index": 26,
+              "text": "Cómo puedo salir de Cuba"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-04-13T07:46:29.162Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_6e1895df6be0:sess_6e1895df6be0",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6e1895df6be0.json",
+      "canonicalId": "sess_6e1895df6be0",
+      "sessionId": "sess_6e1895df6be0",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-19T03:25:21.056Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Oye, una duda rápida: ¿qué significa cuando una app te dice “error 403”?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "El “error 403” normalmente significa “Forbidden” (prohibido): el servidor entendió tu solicitud, pero no te da permiso para acceder. Suele pasar por:\n- Falta de permisos o sesión caducada.\n- Restricciones por IP/país/red.\n- Un enlace directo a un recurso que requiere autorización.\n- Reglas del servidor (por ejemplo, bloqueos automáticos).\n\nSi quieres, dime en qué app o página te sale y si estás con datos móviles o Wi‑Fi, para acotar la causa."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Y si fuera por el navegador, ¿qué podría intentar?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "En el navegador puedes probar, en este orden:\n1) Recargar (Ctrl+F5 o “recarga dura”).\n2) Borrar caché y cookies del sitio.\n3) Probar modo incógnito.\n4) Cerrar sesión y volver a entrar.\n5) Desactivar extensiones (adblock, VPN, etc.).\n6) Cambiar de red (Wi‑Fi/datos) o reiniciar el router.\n7) Probar otro navegador.\n\nDato curioso no relacionado: el código 418 (“I’m a teapot”) existe como broma histórica en un antiguo estándar de internet."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "A propósito, ¿qué es eso de HTTP? Siempre lo veo."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "HTTP es el protocolo que usan el navegador y los servidores para “hablar” y transferir páginas y datos. Cuando ves “https”, es HTTP pero cifrado con TLS, para que lo que envías/recibes vaya protegido.\n\nOtro dato irrelevante: la web empezó pública en 1991, y al principio muchas páginas eran solo texto, sin imágenes."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Vale, gracias. Última: ¿cuál es la diferencia entre caché y cookies?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Caché: archivos guardados (imágenes, scripts, etc.) para que un sitio cargue más rápido.\nCookies: pequeños datos que el sitio guarda para recordar sesión, preferencias del sitio, o seguimiento.\n\nTercer dato suelto (no relacionado): los DNS son como una “agenda” que traduce nombres tipo ejemplo.com a direcciones IP."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Oye, hoy me quedé sin datos en el móvil y por eso te escribo desde el Wi‑Fi del parque; la cosa es que me dejó en visto otra vez y no sé si preguntarle o mejor esperar."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Entiendo. Si ya te ha pasado antes, a veces ayuda esperar un poco para no actuar desde la ansiedad. Puedes mandarle un mensaje corto y neutral más tarde (sin reproches), y mientras tanto enfocarte en algo que te calme: caminar, música o hablar con alguien de confianza. Si esto se repite mucho, también vale la pena hablar con ella de qué esperan los dos y qué límites te hacen sentir bien."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Oye, me equivoqué cuando dije “mi amiga con derechos”. En realidad no es con derechos ni nada, es solo una amiga y ya. Lo que pasa es que a veces me habla bien y al otro día desaparece."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Vale, gracias por aclararlo. Entonces no es una relación de “amigos con derechos”, sino una amistad en la que notas que su atención es irregular: un día está cercana y al otro no te hace caso."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Sí, exacto. Solo amiga. No hemos tenido nada, por eso quería corregir eso."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Entendido. Con esa corrección, lo importante es ver qué está causando esa intermitencia en la amistad y cómo te hace sentir, para que puedas hablarlo con ella si lo necesitas."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "States_Experiences/Mental_State",
+            "label_suggestion": null,
+            "value": "Fear of rejection due to past experience with the friend",
+            "reasoning": "User explicitly states fear of confessing feelings again after prior rejection.",
+            "evidence": {
+              "session_id": "sess_6e1895df6be0",
+              "utterance_index": 10,
+              "text": "Me gusta mu amiga con derechos pero una vez ya nos gustabamos y ella me rechazó y tengo miedo a decirle de nuevo porque es doloroso el rechazo"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": "fear",
+            "preference_attitude": null,
+            "updated_at": "2023-12-03T05:18:55+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "States_Experiences/Past_Experience",
+            "label_suggestion": null,
+            "value": "Was previously rejected by the same friend with benefits",
+            "reasoning": "User explicitly mentions a past rejection by this friend.",
+            "evidence": {
+              "session_id": "sess_6e1895df6be0",
+              "utterance_index": 10,
+              "text": "Me gusta mu amiga con derechos pero una vez ya nos gustabamos y ella me rechazó"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-03T05:18:55+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Social_Relationships/Friends",
+            "label_suggestion": "Social_Relationships/Advice_Seeking",
+            "value": "Curious about managing inconsistent relationships and overcoming fear of rejection",
+            "reasoning": "Label forced: 'Thoughts/Curiosity' not fully supported. User seeks advice, not explicit curiosity.",
+            "evidence": {
+              "session_id": "sess_6e1895df6be0",
+              "utterance_index": 10,
+              "text": "Me gusta mu amiga con derechos pero una vez ya nos gustabamos y ella me rechazó y tengo miedo a decirle de nuevo porque es doloroso el rechazo"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-03T05:18:55+00:00"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_6e1895df6be0",
+              "utterance_index": 10,
+              "text": "Oye, me equivoqué cuando dije “mi amiga con derechos”. En realidad no es con derechos ni nada, es solo una amiga y ya. Lo que pasa es que a veces me habla bien y al otro día desaparece."
+            },
+            "label": "Social_Relationships/Friends",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "La memoria anterior afirmaba que la usuaria tenía una “amiga con derechos” inconsistente. Aquí el usuario lo corrige explícitamente: no es una relación con derechos, sino una amistad; lo que se mantiene es la conducta inconsistente (un día cercana, otro desaparece).",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Has a friend (not a friend with benefits) who exhibits inconsistent behavior"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_6e1895df6be0",
+              "utterance_index": 8,
+              "text": "hoy me quedé sin datos en el móvil y por eso te escribo desde el Wi‑Fi del parque"
+            },
+            "label": "Technology_Access/Connectivity",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user implies they ran out of mobile data and are writing using the park's Wi‑Fi, indicating limited data access and reliance on public Wi‑Fi.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Has limited mobile data and sometimes relies on public Wi‑Fi to message"
+          },
+          {
+            "memory_id": "new-memory-1776066389162",
+            "type": "indirect",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Located in Cuba",
+            "reasoning": "User asks how to leave Cuba.",
+            "evidence": {
+              "session_id": "sess_6e1895df6be0",
+              "utterance_index": 26,
+              "text": "Cómo puedo salir de Cuba"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-04-13T07:46:29.162Z",
+            "evidence_text": ""
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_6e1895df6be0:sess_6e1895df6be0",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6e1895df6be0.json",
+      "canonicalId": "sess_6e1895df6be0",
+      "sessionId": "sess_6e1895df6be0",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-13T08:06:09.166Z",
+        "queryText": "I’m trying to decide whether I should keep reaching out or just stop initiating for a while—based on what you remember about that person I’m seeing casually, what pattern do they tend to show that would make pulling back the more sensible move?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Friends",
+          "label_suggestion": null,
+          "value": "Has a friend with benefits who exhibits inconsistent behavior",
+          "reasoning": "User explicitly describes their friend with benefits' fluctuating attention.",
+          "evidence": {
+            "session_id": "sess_6e1895df6be0",
+            "utterance_index": 4,
+            "text": "Porque mi amiga con derechos un día está bien conmigo y al otro día no me hace caso"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-12-03T05:18:55+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_6e1895df6be0:sess_6e1895df6be0:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6e1895df6be0.json",
+      "canonicalId": "sess_6e1895df6be0:task4",
+      "sessionId": "sess_6e1895df6be0",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-13T08:10:21.461Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "States_Experiences/Mental_State",
+          "label_suggestion": null,
+          "value": "Fear of rejection due to past experience with the friend",
+          "reasoning": "User explicitly states fear of confessing feelings again after prior rejection.",
+          "evidence": {
+            "session_id": "sess_6e1895df6be0",
+            "utterance_index": 10,
+            "text": "Me gusta mu amiga con derechos pero una vez ya nos gustabamos y ella me rechazó y tengo miedo a decirle de nuevo porque es doloroso el rechazo"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": "fear",
+          "preference_attitude": null,
+          "updated_at": "2023-12-03T05:18:55+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_420:1",
+            "queryText": "Oye, ¿cómo puedo hacer para que no me afecte tanto cuando ella me deja en visto por días? Es que a veces me escribe normal y de repente desaparece, y yo me quedo ahí pensando qué hice mal.",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "States_Experiences/Mental_State",
+              "label_suggestion": null,
+              "value": "Fear of rejection due to past experience with the friend",
+              "reasoning": "User explicitly states fear of confessing feelings again after prior rejection.",
+              "evidence": {
+                "session_id": "sess_6e1895df6be0",
+                "utterance_index": 10,
+                "text": "Me gusta mu amiga con derechos pero una vez ya nos gustabamos y ella me rechazó y tengo miedo a decirle de nuevo porque es doloroso el rechazo"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": "fear",
+              "preference_attitude": null,
+              "updated_at": "2023-12-03T05:18:55+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "根据记忆给予用户心理帮助",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,297 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_5a14a5f3ff57",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_5a14a5f3ff57:sess_5a14a5f3ff57",
+      "relativeItemPath": "sess_5a14a5f3ff57.json",
+      "canonicalId": "sess_5a14a5f3ff57",
+      "sessionId": "sess_5a14a5f3ff57",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T14:48:15.845Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers formal language and grammar correction for written communication",
+            "reasoning": "User repeatedly requested formalization and grammar corrections, indicating a preference for formal written communication.",
+            "evidence": {
+              "session_id": "sess_5a14a5f3ff57",
+              "utterance_index": [
+                0,
+                4,
+                6,
+                8
+              ],
+              "text": "fix my grammar; make it formal; can you change...; fix my grammar"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-11-08T04:03:20+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_5a14a5f3ff57:sess_5a14a5f3ff57",
+      "relativeItemPath": "sess_5a14a5f3ff57.json",
+      "canonicalId": "sess_5a14a5f3ff57",
+      "sessionId": "sess_5a14a5f3ff57",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T13:33:12.420Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Can you tighten this paragraph without changing the meaning?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes—please paste the paragraph and let me know the intended tone (e.g., formal, neutral, or friendly)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "“The meeting concluded with a well-coordinated plan that included a discussion about sharing expenses, and they assured us of sending a proposal.”"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Here are a few tightened options:\n\n1) “The meeting concluded with an agreed plan to share expenses, and they committed to sending a proposal.”\n2) “The meeting ended with an agreement to share expenses, and they confirmed they would send a proposal.”\n3) “The meeting concluded with a plan to share expenses; they also agreed to send a proposal.”"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Option 2, but make it slightly more formal."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "“The meeting concluded with an agreement to share expenses, and they confirmed that they would forward a proposal.”"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Also, is “forward a proposal” okay or should it be “send”?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Both are acceptable. “Send a proposal” is simplest and most standard. “Forward a proposal” can imply they are relaying something prepared elsewhere. If you want neutral clarity, use: “...confirmed that they would send a proposal.”\n\nUnrelated example: in the Apollo 11 mission logs, wording was often kept plain and consistent to avoid ambiguity—similarly, simple verbs like “send” reduce misinterpretation in formal correspondence."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Also, please keep the dates in the same format as “August 5, 2023” throughout the letter."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Understood. I will standardize all dates to the “Month Day, Year” format (e.g., “August 5, 2023”) consistently across the document."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Actually, I don’t need it formal. Please rewrite it in a simple, conversational tone—just correct the grammar and keep it easy to read."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Understood. I’ll keep the grammar corrected but use a simple, conversational tone (not overly formal). Please paste the latest version you want me to revise."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Yes—no formal wording. Just make it clear and straightforward."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory says the user prefers formal language, but the user explicitly corrects this preference by requesting a simple, conversational tone while still wanting grammar fixes.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers clear, straightforward wording with grammar correction rather than overly formal language"
+          },
+          {
+            "confidence": 0.82,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_5a14a5f3ff57",
+              "utterance_index": 0,
+              "text": "Also, please keep the dates in the same format as “August 5, 2023” throughout the letter."
+            },
+            "label": "Preferences/Writing_Formatting",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "The user requests maintaining the specific date style across the letter, indicating a formatting preference for date presentation.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers dates formatted as “Month Day, Year” (e.g., “August 5, 2023”) consistently in documents"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_5a14a5f3ff57:sess_5a14a5f3ff57",
+      "relativeItemPath": "sess_5a14a5f3ff57.json",
+      "canonicalId": "sess_5a14a5f3ff57",
+      "sessionId": "sess_5a14a5f3ff57",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T10:05:55.576Z",
+        "queryText": "I’m about to send a short message to a client, and I’m torn between writing it in a casual tone or tightening it up first. Given what you know about how I like my written communication handled, which option should I pick—and what extra step would you take before I hit send?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers formal language and grammar correction for written communication",
+          "reasoning": "User repeatedly requested formalization and grammar corrections, indicating a preference for formal written communication.",
+          "evidence": {
+            "session_id": "sess_5a14a5f3ff57",
+            "utterance_index": [
+              0,
+              4,
+              6,
+              8
+            ],
+            "text": "fix my grammar; make it formal; can you change...; fix my grammar"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-11-08T04:03:20+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_5a14a5f3ff57:sess_5a14a5f3ff57:task4",
+      "relativeItemPath": "sess_5a14a5f3ff57.json",
+      "canonicalId": "sess_5a14a5f3ff57:task4",
+      "sessionId": "sess_5a14a5f3ff57",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:05:49.659Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers formal language and grammar correction for written communication",
+          "reasoning": "User repeatedly requested formalization and grammar corrections, indicating a preference for formal written communication.",
+          "evidence": {
+            "session_id": "sess_5a14a5f3ff57",
+            "utterance_index": [
+              0,
+              4,
+              6,
+              8
+            ],
+            "text": "fix my grammar; make it formal; can you change...; fix my grammar"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-11-08T04:03:20+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1042:1",
+            "queryText": "I'm drafting an important email to our board members about the quarterly results. Could you take a look and polish it up for me?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers formal language and grammar correction for written communication",
+              "reasoning": "User repeatedly requested formalization and grammar corrections, indicating a preference for formal written communication.",
+              "evidence": {
+                "session_id": "sess_5a14a5f3ff57",
+                "utterance_index": [
+                  0,
+                  4,
+                  6,
+                  8
+                ],
+                "text": "fix my grammar; make it formal; can you change...; fix my grammar"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-11-08T04:03:20+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_4ba448a85a70",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_4ba448a85a70:sess_4ba448a85a70",
+      "relativeItemPath": "sess_4ba448a85a70.json",
+      "canonicalId": "sess_4ba448a85a70",
+      "sessionId": "sess_4ba448a85a70",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T13:45:11.709Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "task/translation_focus",
+            "value": "Curious about translating comic title into multiple languages/scripts with cultural adaptation",
+            "reasoning": "Repeated translation requests indicate task focus, but label 'Thoughts/Curiosity' forced attribution. No explicit user curiosity beyond task scope.",
+            "evidence": {
+              "session_id": "sess_4ba448a85a70",
+              "utterance_index": 8,
+              "text": "Ладно. А на бурятском, калмыцком, чеченском, дагестанском, литовском, латышском, эстонский?"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-11T00:27:42+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Emphasizes humorous wordplay in creative projects",
+            "reasoning": "Explicitly explained the comic's humor relies on wordplay with 'one humankind'",
+            "evidence": {
+              "session_id": "sess_4ba448a85a70",
+              "utterance_index": 0,
+              "text": "В названии есть юмористический момент, что это история \"одного\" человечества (я думаю, ты понимаешь в чём тут юмор)"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-12-11T00:27:42+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_4ba448a85a70:sess_4ba448a85a70",
+      "relativeItemPath": "sess_4ba448a85a70.json",
+      "canonicalId": "sess_4ba448a85a70",
+      "sessionId": "sess_4ba448a85a70",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T09:51:19.113Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Пока мы тут про переводы: если в названии есть игра слов, ты обычно стараешься переводить буквально или подбирать аналогичный каламбур?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Зависит от цели. Если важно узнаваемое значение — перевожу ближе к буквальному и добавляю пояснение. Если важнее эффект (юмор/ирония) — ищу местный аналог каламбура, даже если слова меняются. Часто делают два варианта: «официальный» (понятный) и «креативный» (с шуткой), а потом выбирают по тону произведения."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "А можно пример, как это выглядит на практике, на каком-нибудь нейтральном выражении?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Например, английское \"Time flies\" можно оставить буквально («Время летит») — это сохраняет смысл. А если бы это была шутка в комиксе про мух, можно было бы сыграть на двойном смысле («Время — мухи» / «Время летает, и мухи тоже») — в зависимости от сцены.\n\nКстати, из «посторонних фактов»: традиционное монгольское письмо пишется вертикально сверху вниз; у него исторически уйгурское происхождение. Ещё забавная мелочь: слово «каламбур» в русском закрепилось через французское calembour. И третье — в типографике тире (—) и дефис (-) считаются разными знаками, и в заголовках это иногда влияет на «ощущение» текста."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Понял(а). Тогда в спорных случаях лучше держать два варианта и тестировать на читателях?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Да: два-три варианта + быстрый «слепой» опрос (какой смешнее/понятнее/точнее по тону) обычно помогает. Ещё полезно заранее решить, что приоритетнее для конкретного заголовка: точность смысла, ритм/краткость, или комический эффект."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Супер. Я тут как раз верстаю обложку, и заметил, что название на армянском влезает только если чуть ужать кегль — не хочется потерять читабельность. Можно тогда ещё вариант покороче, но чтобы шутка про «одно человечество» всё равно считывалась?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Понял задачу: нужен более короткий вариант для обложки, но чтобы сохранялся смысл «одного человечества» и игра слов. Уточни, пожалуйста: это будет восточноармянский (Армения) или западноармянский (диаспора)? И допускаешь ли ты вариант с более разговорным оттенком вместо книжного?"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Слушай, я тут подумал: я зря тогда сказал, что в названии «юмористический момент». Я вообще не юмор хотел делать."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "То есть «История одного человечества» у тебя не как шутка про «одного», а как серьёзная формулировка?"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Да. «Одного» — это скорее про единство, типа «одно человечество», без иронии и без игры слов."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Понял: тогда в переводах лучше держаться нейтрального смысла «единое человечество», а не подчёркивать каламбур."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "task/translation_focus",
+            "value": "Curious about translating comic title into multiple languages/scripts with cultural adaptation",
+            "reasoning": "Repeated translation requests indicate task focus, but label 'Thoughts/Curiosity' forced attribution. No explicit user curiosity beyond task scope.",
+            "evidence": {
+              "session_id": "sess_4ba448a85a70",
+              "utterance_index": 8,
+              "text": "Ладно. А на бурятском, калмыцком, чеченском, дагестанском, литовском, латышском, эстонский?"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-11T00:27:42+00:00"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "like",
+            "reasoning": "Ранее было зафиксировано, что пользователь подчёркивает юмористическую игру слов в названии. В новом фрагменте пользователь прямо отказывается от этой идеи и уточняет, что «одного» — про единство без иронии. Значит, предпочтение — не делать упор на юмор/каламбур, а на серьёзный смысл.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers the title to be interpreted seriously (unity of humankind) rather than as humorous wordplay"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_4ba448a85a70",
+              "utterance_index": 0,
+              "text": "Я тут как раз верстаю обложку, и заметил, что название на армянском влезает только если чуть ужать кегль"
+            },
+            "label": "Projects/Creative",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "Фраза про верстку обложки и проблему с длиной армянского названия указывает на текущую работу над дизайном/обложкой проекта.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Пользователь верстает обложку своего комикса и подгоняет название под дизайн"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_4ba448a85a70:sess_4ba448a85a70",
+      "relativeItemPath": "sess_4ba448a85a70.json",
+      "canonicalId": "sess_4ba448a85a70",
+      "sessionId": "sess_4ba448a85a70",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T08:13:22.823Z",
+        "queryText": "I’m trying to decide between two directions for a short creative piece: one version leans on a clever linguistic twist, and the other relies more on straightforward situational humor. Without getting into specifics, which approach would fit what you know about the kind of humor I tend to prioritize, and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Emphasizes humorous wordplay in creative projects",
+          "reasoning": "Explicitly explained the comic's humor relies on wordplay with 'one humankind'",
+          "evidence": {
+            "session_id": "sess_4ba448a85a70",
+            "utterance_index": 0,
+            "text": "В названии есть юмористический момент, что это история \"одного\" человечества (я думаю, ты понимаешь в чём тут юмор)"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-12-11T00:27:42+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_4ba448a85a70:sess_4ba448a85a70:task4",
+      "relativeItemPath": "sess_4ba448a85a70.json",
+      "canonicalId": "sess_4ba448a85a70:task4",
+      "sessionId": "sess_4ba448a85a70",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T04:03:03.755Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Emphasizes humorous wordplay in creative projects",
+          "reasoning": "Explicitly explained the comic's humor relies on wordplay with 'one humankind'",
+          "evidence": {
+            "session_id": "sess_4ba448a85a70",
+            "utterance_index": 0,
+            "text": "В названии есть юмористический момент, что это история \"одного\" человечества (я думаю, ты понимаешь в чём тут юмор)"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-12-11T00:27:42+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_162:1",
+            "queryText": "I’m trying to decide between two directions for a short creative piece: one version leans on a clever linguistic twist, and the other relies more on straightforward situational humor. Without getting into specifics, which approach would fit what you know about the kind of humor I tend to prioritize, and why?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Emphasizes humorous wordplay in creative projects",
+              "reasoning": "Explicitly explained the comic's humor relies on wordplay with 'one humankind'",
+              "evidence": {
+                "session_id": "sess_4ba448a85a70",
+                "utterance_index": 0,
+                "text": "В названии есть юмористический момент, что это история \"одного\" человечества (я думаю, ты понимаешь в чём тут юмор)"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-12-11T00:27:42+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

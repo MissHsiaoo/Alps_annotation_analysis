@@ -1,0 +1,338 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_1a6ecbf53c72",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_1a6ecbf53c72:sess_1a6ecbf53c72",
+      "relativeItemPath": "sess_1a6ecbf53c72.json",
+      "canonicalId": "sess_1a6ecbf53c72",
+      "sessionId": "sess_1a6ecbf53c72",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:45:37.240Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/astrology/inquiry",
+            "value": "Curious about Zi Wei Dou Shu technical analysis (武曲星化忌官禄宫, 紫微七杀财帛宫化权, 廉贞破军入命, 杀破狼命格)",
+            "reasoning": "User asks technical questions about Zi Wei Dou Shu configurations, but role-play/hypothetical context cannot be ruled out. Forced label not supported.",
+            "evidence": {
+              "session_id": "sess_1a6ecbf53c72",
+              "utterance_index": 4,
+              "text": "紫微七杀 财帛宫化权"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-12T01:29:52+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "value": "Interested in阳宅风水 (house feng shui) books",
+            "reasoning": "User explicitly requests recommendations for阳宅风水书籍.",
+            "evidence": {
+              "session_id": "sess_1a6ecbf53c72",
+              "utterance_index": 14,
+              "text": "比较好的阳宅风水的书籍"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "interest",
+            "updated_at": "2023-05-12T01:29:52+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_1a6ecbf53c72:sess_1a6ecbf53c72",
+      "relativeItemPath": "sess_1a6ecbf53c72.json",
+      "canonicalId": "sess_1a6ecbf53c72",
+      "sessionId": "sess_1a6ecbf53c72",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:46:15.195Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "紫微斗数里，如果想自己练习排盘和看盘，先从哪些宫位/主星入手比较不容易乱？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以先用“宫位主轴 + 主星性格 + 四化触发”这三步走，最不容易散：\n1）先抓三条主轴：命宫（个性与人生基调）、官禄宫（事业路径）、财帛宫（资源与赚钱方式），先把这三宫讲清楚，再扩到迁移/夫妻/福德等。\n2）主星先从紫微系与武将系学起：紫微、天府（格局与统筹）、太阳/太阴（外显与内在）、武曲/天相（执行与规则），这几颗在多数盘里可读性强。\n3）四化当作“剧情开关”：化禄看哪里得资源、化权看哪里要扛责任、化科看哪里靠名声与方法、化忌看哪里要付代价与反复。先练习同一颗星在不同宫位、同一宫位遇到不同四化时，叙事怎么变。\n如果你愿意，也可以把一个你随手找的公开示例盘（不含个人信息）列出主星落宫与四化，我用它示范一轮“从三宫到全盘”的读法。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "四化我总分不清：是看“星化”还是看“宫化”？有没有一个简单记法？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "实用的简化法是：先看“星化”（发生了什么事），再落到“宫位”（发生在什么领域），最后看“飞到哪一宫”（牵动到哪里）。\n- 星化：同一颗星化禄/权/科/忌，等于给这颗星加了剧情属性（资源/掌控/名望/阻滞）。\n- 宫位：那颗星落在哪宫，就先把事件的主舞台定在那一宫。\n- 飞宫：四化飞到的宫位，常像“后果”或“延伸影响区”。\n记法可以用一句话：\n“谁（星）带着什么（四化）在何处（本宫）发力，并把影响牵到哪里（飞宫）。”\n另外给个不涉及任何人的小例子：假设‘太阳化权’落官禄宫，先读成事业领域出现更强的主导/承担；如果权又飞到迁移宫，就再加一层外部环境/对外曝光的压力与机会。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "顺便问个冷知识：以前有人用紫微斗数给航海挑出航日，这种说法靠谱吗？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "更多是民俗与历史叙事层面的做法，难以用现代可重复验证的方法证明“因果有效”。传统社会里确实常把择日（含通书、星曜、干支体系）用于出行、开工、航海等，主要作用往往是：\n1）提供决策仪式感，降低不确定性带来的焦虑；\n2）形成团队共识，便于执行；\n3）在缺乏气象与导航技术时，用可解释的框架整理风险。\n如果从现实操作看，航海是否安全仍取决于季风、洋流、船况、补给与航线等硬因素。\n（题外话三则：①古代“指南针”在宋代后才逐步普及到远洋导航；②郑和下西洋的船队更依赖季风窗口与补给点管理；③近代气象学发展后，择日的功能更多转为文化习俗。）"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "我准备把阳宅那块先从入门开始啃，别太玄的；最好是那种能照着户型图一步步看、还能顺手做笔记的。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "明白，你更适合“图例多、步骤清晰、可操作”的入门型书。挑选时可以优先看：是否有大量户型/案例图、是否按“门-厅-卧-厨卫”分区讲、以及每章末有没有清单式的自查表，方便你边读边做笔记。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我上次问“比较好的阳宅风水的书籍”其实不是我自己想看。我是在帮朋友整理清单，他要买书，我顺手问一下而已。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "明白，所以那次更像是代朋友问书单，并不代表你本人对“阳宅风水书籍”有长期兴趣。你如果只是转达需求，我也可以按你朋友的程度（入门/进阶、偏理论/偏实务）再筛一次。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "对，我自己平常不看这类风水书，也没打算研究。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/astrology/inquiry",
+            "value": "Curious about Zi Wei Dou Shu technical analysis (武曲星化忌官禄宫, 紫微七杀财帛宫化权, 廉贞破军入命, 杀破狼命格)",
+            "reasoning": "User asks technical questions about Zi Wei Dou Shu configurations, but role-play/hypothetical context cannot be ruled out. Forced label not supported.",
+            "evidence": {
+              "session_id": "sess_1a6ecbf53c72",
+              "utterance_index": 4,
+              "text": "紫微七杀 财帛宫化权"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-12T01:29:52+00:00",
+            "_task1GoldValue": "Curious about Zi Wei Dou Shu technical analysis (武曲星化忌官禄宫, 紫微七杀财帛宫化权, 廉贞破军入命, 杀破狼命格)"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "我上次问“比较好的阳宅风水的书籍”其实不是我自己想看。我是在帮朋友整理清单，他要买书，我顺手问一下而已。"
+                }
+              ]
+            },
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "neutral",
+            "reasoning": "旧记忆把用户的提问解读为本人对阳宅风水书籍的长期兴趣；但对话中用户说明只是替朋友整理清单、自己不看这类书，因此应更新为非本人兴趣、仅代问。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Not personally interested in 阳宅风水 (house feng shui) books; previously asked only to help a friend compile a list."
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_1a6ecbf53c72",
+              "utterance_index": 0,
+              "text": "别太玄的；最好是那种能照着户型图一步步看、还能顺手做笔记的。"
+            },
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User implies a preference for less abstract material and for books that can be followed using floor plans and notes.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefer beginner-friendly, practical feng shui books with step-by-step guidance and layouts/diagrams, suitable for note-taking"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "value": "Interested in阳宅风水 (house feng shui) books",
+            "reasoning": "User explicitly requests recommendations for阳宅风水书籍.",
+            "evidence": {
+              "session_id": "sess_1a6ecbf53c72",
+              "utterance_index": 14,
+              "text": "比较好的阳宅风水的书籍"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "interest",
+            "updated_at": "2023-05-12T01:29:52+00:00",
+            "_task1GoldValue": "Interested in阳宅风水 (house feng shui) books"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_1a6ecbf53c72:sess_1a6ecbf53c72",
+      "relativeItemPath": "sess_1a6ecbf53c72.json",
+      "canonicalId": "sess_1a6ecbf53c72",
+      "sessionId": "sess_1a6ecbf53c72",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:46:25.682Z",
+        "queryText": "我打算下周去逛书店，但只想直奔最可能让我买到“实用到能马上用在家里布局”的那一排书。结合我平时最爱找的那类读物主题，你觉得我应该先去哪个分区找？",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Reading",
+          "label_suggestion": null,
+          "value": "Interested in阳宅风水 (house feng shui) books",
+          "reasoning": "User explicitly requests recommendations for阳宅风水书籍.",
+          "evidence": {
+            "session_id": "sess_1a6ecbf53c72",
+            "utterance_index": 14,
+            "text": "比较好的阳宅风水的书籍"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "interest",
+          "updated_at": "2023-05-12T01:29:52+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_1a6ecbf53c72:sess_1a6ecbf53c72:task4",
+      "relativeItemPath": "sess_1a6ecbf53c72.json",
+      "canonicalId": "sess_1a6ecbf53c72:task4",
+      "sessionId": "sess_1a6ecbf53c72",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:46:32.252Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Reading",
+          "label_suggestion": null,
+          "value": "Interested in阳宅风水 (house feng shui) books",
+          "reasoning": "User explicitly requests recommendations for阳宅风水书籍.",
+          "evidence": {
+            "session_id": "sess_1a6ecbf53c72",
+            "utterance_index": 14,
+            "text": "比较好的阳宅风水的书籍"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "interest",
+          "updated_at": "2023-05-12T01:29:52+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_789:1",
+            "queryText": "最近想研究一下家居布局，有什么值得深入研读的经典著作吗？",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Reading",
+              "label_suggestion": null,
+              "value": "Interested in阳宅风水 (house feng shui) books",
+              "reasoning": "User explicitly requests recommendations for阳宅风水书籍.",
+              "evidence": {
+                "session_id": "sess_1a6ecbf53c72",
+                "utterance_index": 14,
+                "text": "比较好的阳宅风水的书籍"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "interest",
+              "updated_at": "2023-05-12T01:29:52+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

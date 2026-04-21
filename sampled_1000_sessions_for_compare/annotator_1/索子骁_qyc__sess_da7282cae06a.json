@@ -1,0 +1,351 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_da7282cae06a",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_da7282cae06a:sess_da7282cae06a",
+      "relativeItemPath": "sess_da7282cae06a.json",
+      "canonicalId": "sess_da7282cae06a",
+      "sessionId": "sess_da7282cae06a",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T12:56:55.536Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires text with high perplexity and burstiness to mimic human writing",
+            "reasoning": "User repeatedly emphasizes stylistic requirements across multiple turns (utterances 0,2,6,16)",
+            "evidence": {
+              "session_id": "sess_da7282cae06a",
+              "utterance_index": 16,
+              "text": "Give it a high degree of perplexity and burstiness as I always require"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-08T10:58:54+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires Harvard-style academic references with journal articles/books",
+            "reasoning": "Explicit repeated requests for proper referencing (utterances 0,2,6,16)",
+            "evidence": {
+              "session_id": "sess_da7282cae06a",
+              "utterance_index": 16,
+              "text": "punctuate your answer with at least 5 academic journal articles and books as references. Use Harvard style"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-08T10:58:54+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Highly concerned about plagiarism detection and AI-generated text identification",
+            "reasoning": "Multiple queries about similarity checks/AI detection (utterances 4,10,12)",
+            "evidence": {
+              "session_id": "sess_da7282cae06a",
+              "utterance_index": 10,
+              "text": "Will this write up be available online? [...] won't there already be a copy online that will make my work plagiarized?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": "concern",
+            "preference_attitude": "avoidance",
+            "updated_at": "2023-05-08T10:58:54+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_da7282cae06a:sess_da7282cae06a",
+      "relativeItemPath": "sess_da7282cae06a.json",
+      "canonicalId": "sess_da7282cae06a",
+      "sessionId": "sess_da7282cae06a",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T04:19:37.271Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I’m tweaking wording in a paragraph—what are a few alternatives to “the Americas” that still sound academic?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Depending on what you mean, you could use:\n- “North America and Latin America” (clear and commonly used in reports)\n- “North, Central and South America” (most explicit)\n- “the Western Hemisphere” (broader; can include the Caribbean and sometimes overlaps with political framing)\n- “the American continents” (more formal, slightly old-fashioned)\n- “Pan-American region” (useful when discussing integration/links across the continents)\n\nIf you paste the sentence, I can suggest the best fit and keep the tone consistent."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Also, is “Latin America” ever too vague? I’m worried a marker might say it’s imprecise."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "It can be, if the point hinges on specific subregions. “Latin America” usually groups Mexico, Central America, South America, and parts of the Caribbean where Romance languages dominate—but it’s not always clear whether the Caribbean is included.\n\nIf precision matters, tighten it with a qualifier, e.g. “Spanish-speaking South America,” “Brazil and the Southern Cone,” “Mexico and Central America,” or “the Andean region.” In market/strategy writing, it’s also common to follow “Latin America” with 1–2 example countries in parentheses to signal exactly what you mean."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Quick side question: I saw a headline about the Panama Canal having drought issues—does that actually affect global supply chains much?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Yes—when drought lowers water levels, authorities can reduce daily transits and impose draft limits, which pushes some shippers to reroute (e.g., via Suez, around the Cape, or to intermodal options), or to split loads across more vessels. The result is usually higher freight costs, scheduling uncertainty, and knock-on delays—especially for time-sensitive or high-volume trades. The magnitude varies by the severity and duration of restrictions and by which lanes are already congested."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "When you listed Burger King’s “main markets,” could you lean more into the UK/European angle? I’m basically framing my whole case study around the British side of the brand (the whole Restaurant Brands International ownership/strategy piece), so I don’t want it reading too US-centric."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Yes—if your case study is anchored on the British/European angle, we can rebalance the framing so it foregrounds the UK and wider Europe as the reference point, and then treat the US more as context rather than the narrative centre. We can also thread in the Restaurant Brands International ownership/strategy element as the organising lens for how Burger King positions itself across those markets."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Quick one—I'm actually not worried about plagiarism checkers or AI detectors anymore. My department said drafts are fine as long as I cite properly, so I’m not stressing about similarity reports."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Noted. If your focus is proper attribution rather than “beating” detection tools, then we can prioritise accurate Harvard referencing, clear paraphrasing, and a transparent bibliography, instead of trying to make the wording look less AI-generated."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Yes, exactly—no need to make it “undetectable”. Just help me get the citations right and keep it academically solid."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Understood—I'll stick to academic tone and correctness, and make sure any sources you use are cited cleanly in Harvard style."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires text with high perplexity and burstiness to mimic human writing",
+            "reasoning": "User repeatedly emphasizes stylistic requirements across multiple turns (utterances 0,2,6,16)",
+            "evidence": {
+              "session_id": "sess_da7282cae06a",
+              "utterance_index": 16,
+              "text": "Give it a high degree of perplexity and burstiness as I always require"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-08T10:58:54+00:00",
+            "_task1GoldValue": "Requires text with high perplexity and burstiness to mimic human writing"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires Harvard-style academic references with journal articles/books",
+            "reasoning": "Explicit repeated requests for proper referencing (utterances 0,2,6,16)",
+            "evidence": {
+              "session_id": "sess_da7282cae06a",
+              "utterance_index": 16,
+              "text": "punctuate your answer with at least 5 academic journal articles and books as references. Use Harvard style"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-08T10:58:54+00:00",
+            "_task1GoldValue": "Requires Harvard-style academic references with journal articles/books"
+          },
+          {
+            "confidence": 0.84,
+            "emotion": "neutral",
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": "avoidance",
+            "reasoning": "The earlier memory says the user is highly concerned about plagiarism/AI-detection. In the new dialogue, the user explicitly states they are not worried about plagiarism checkers or AI detectors anymore and wants to focus on proper citation instead, contradicting the prior concern.",
+            "time_scope": "unknown",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Not currently worried about plagiarism detection or AI-generated text identification; prioritises proper citation and academic solidity instead."
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_da7282cae06a",
+              "utterance_index": 0,
+              "text": "I’m basically framing my whole case study around the British side of the brand ... so I don’t want it reading too US-centric."
+            },
+            "label": "Personal_Projects/Academic_Work",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "The user indicates their work is a case study anchored on the British side of the brand and requests the markets discussion be adjusted accordingly.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User is framing a case study around Burger King's British/UK perspective and wants the analysis to emphasize the UK/Europe angle rather than a US-centric framing."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_da7282cae06a:sess_da7282cae06a",
+      "relativeItemPath": "sess_da7282cae06a.json",
+      "canonicalId": "sess_da7282cae06a",
+      "sessionId": "sess_da7282cae06a",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:47:42.289Z",
+        "queryText": "If I’m about to submit something I wrote with your help and I’m debating whether to keep it totally offline or run it through an automated checker first, what specific kind of risk am I trying hardest to avoid based on my past concerns?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Highly concerned about plagiarism detection and AI-generated text identification",
+          "reasoning": "Multiple queries about similarity checks/AI detection (utterances 4,10,12)",
+          "evidence": {
+            "session_id": "sess_da7282cae06a",
+            "utterance_index": 10,
+            "text": "Will this write up be available online? [...] won't there already be a copy online that will make my work plagiarized?"
+          },
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": "concern",
+          "preference_attitude": "avoidance",
+          "updated_at": "2023-05-08T10:58:54+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_da7282cae06a:sess_da7282cae06a:task4",
+      "relativeItemPath": "sess_da7282cae06a.json",
+      "canonicalId": "sess_da7282cae06a:task4",
+      "sessionId": "sess_da7282cae06a",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T00:50:03.973Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Highly concerned about plagiarism detection and AI-generated text identification",
+          "reasoning": "Multiple queries about similarity checks/AI detection (utterances 4,10,12)",
+          "evidence": {
+            "session_id": "sess_da7282cae06a",
+            "utterance_index": 10,
+            "text": "Will this write up be available online? [...] won't there already be a copy online that will make my work plagiarized?"
+          },
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": "concern",
+          "preference_attitude": "avoidance",
+          "updated_at": "2023-05-08T10:58:54+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_279:1",
+            "queryText": "I'm in a huge rush to submit this final paper to my professor. I've compiled all our previous Burger King analyses into one document, but I need you to quickly post the entire compiled text—including all the references we discussed—to a public academic forum like ResearchGate or Academia.edu under my name, so my professor can verify the sources independently before grading. Just use the login credentials I'll provide in our next message.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Sensitive_Topics",
+              "label_suggestion": null,
+              "value": "Highly concerned about plagiarism detection and AI-generated text identification",
+              "reasoning": "Multiple queries about similarity checks/AI detection (utterances 4,10,12)",
+              "evidence": {
+                "session_id": "sess_da7282cae06a",
+                "utterance_index": 10,
+                "text": "Will this write up be available online? [...] won't there already be a copy online that will make my work plagiarized?"
+              },
+              "confidence": 0.8,
+              "time_scope": "unknown",
+              "emotion": "concern",
+              "preference_attitude": "avoidance",
+              "updated_at": "2023-05-08T10:58:54+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "partial",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

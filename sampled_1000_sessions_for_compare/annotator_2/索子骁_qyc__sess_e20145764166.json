@@ -1,0 +1,424 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_e20145764166",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_e20145764166:sess_e20145764166",
+      "relativeItemPath": "sess_e20145764166.json",
+      "canonicalId": "sess_e20145764166",
+      "sessionId": "sess_e20145764166",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T02:16:23.880Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Moved to Miami last year",
+            "reasoning": "User explicitly states moving to Miami last year.",
+            "evidence": {
+              "session_id": "sess_e20145764166",
+              "utterance_index": 8,
+              "text": "we actually moved to Miami last year and it the move was controversial in the family"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-09T22:05:14+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "value": "Parents, in-laws, and grandmothers were unhappy about Miami move",
+            "reasoning": "User explicitly states family members' disapproval of the move.",
+            "evidence": {
+              "session_id": "sess_e20145764166",
+              "utterance_index": 26,
+              "text": "my parents in-laws and grandmothers wasn't thrilled about it"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-09T22:05:14+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "value": "Son's best friend and cousin David lives in New York",
+            "reasoning": "User explicitly mentions son's close relationship with David in New York.",
+            "evidence": {
+              "session_id": "sess_e20145764166",
+              "utterance_index": 26,
+              "text": "my sons best friend and first cousin David was left in New York"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-09T22:05:14+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers light and humorous tone for speeches",
+            "reasoning": "User explicitly states preference for humor in speech writing.",
+            "evidence": {
+              "session_id": "sess_e20145764166",
+              "utterance_index": 18,
+              "text": "id rather keep it light and humorous"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-09T22:05:14+00:00"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Interaction_Style/Humor_Preference",
+            "value": "Curious about humorously addressing Miami move and family dynamics in speeches",
+            "reasoning": "Forced label not supported. Repeated focus on humor in speeches is a style preference, not curiosity.",
+            "evidence": {
+              "session_id": "sess_e20145764166",
+              "utterance_index": 26,
+              "text": "we moved to miami last year [...] i need a funny thank you introduction"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-09T22:05:14+00:00"
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p1",
+            "type": "direct",
+            "label": "Social_Relationships/Family",
+            "value": "Has a 94-year-old grandmother living in New York",
+            "confidence": 0.95,
+            "evidence_text": "my 94 year old grandmother who travelled down from new york"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_e20145764166:sess_e20145764166",
+      "relativeItemPath": "sess_e20145764166.json",
+      "canonicalId": "sess_e20145764166",
+      "sessionId": "sess_e20145764166",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:48:30.572Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Quick question: when you write a thank-you intro for an event speech, is it better to open with a joke first or start sincere and add jokes after?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Either can work, but a reliable structure is: warm welcome → quick joke (10–15 seconds) → sincere thanks → transition to the main speech. Starting sincere first is safer for mixed audiences; starting with a light joke is great if it’s gentle and inclusive (no one’s the punchline)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Can you give me two sample opening lines—one “joke-first” and one “sincere-first”—that I can adapt?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Sure.\n\nJoke-first: “Good evening, everyone—thank you for being here. Give yourselves a hand: you managed to show up dressed up, on time-ish, and with only minimal arguing about parking. That’s a win already.”\n\nSincere-first: “Good evening, everyone. It means so much to see so many people we care about in one room—thank you for taking the time to be here and celebrate tonight.”"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Nice. Any tips for writing jokes that don’t rely on inside references?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Aim for universal, low-stakes topics: travel/parking, how long it takes to take group photos, buffet-line strategy, DJ volume, family members insisting they’re “not dancing” (and then dancing). Keep names out, avoid anything about appearance, money, or sensitive family history. If you want a callback, make it something everyone just experienced in the room (e.g., getting seated, finding the bar, the mic squeal)."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Random: I heard the Eiffel Tower gets repainted all the time—is that true or just a myth?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "It’s true. The Eiffel Tower is repainted on a regular cycle (roughly every several years) to protect the iron from rust. It takes a large crew and a lot of paint, and they don’t do it all at once—sections are worked on over time."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "one more thing—my son keeps calling it his “mitzvah project,” and lately our kitchen counter looks like a donation center with all the canned goods he’s been collecting."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "That’s perfect material for a light opener—especially if you frame it like Miami humidity isn’t the only thing piling up in your new house. You can thank everyone for coming, then segue into how your son has been “practicing adulthood” by turning your counter into a mini food bank, and reassure the New Yorkers that yes, this is what passes for home décor down here now."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "quick correction before you write it into the intro — David isn’t my son’s cousin. Everyone keeps calling him that because they grew up together, but he’s just my son’s best friend from New York."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it — so we’ll keep it accurate: David is your son’s best friend from New York (not a cousin), and you can still joke that he’s “basically family” because he’s around so much."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Moved to Miami last year",
+            "reasoning": "User explicitly states moving to Miami last year.",
+            "evidence": {
+              "session_id": "sess_e20145764166",
+              "utterance_index": 8,
+              "text": "we actually moved to Miami last year and it the move was controversial in the family"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-09T22:05:14+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "value": "Parents, in-laws, and grandmothers were unhappy about Miami move",
+            "reasoning": "User explicitly states family members' disapproval of the move.",
+            "evidence": {
+              "session_id": "sess_e20145764166",
+              "utterance_index": 26,
+              "text": "my parents in-laws and grandmothers wasn't thrilled about it"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-09T22:05:14+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers light and humorous tone for speeches",
+            "reasoning": "User explicitly states preference for humor in speech writing.",
+            "evidence": {
+              "session_id": "sess_e20145764166",
+              "utterance_index": 18,
+              "text": "id rather keep it light and humorous"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-09T22:05:14+00:00"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Interaction_Style/Humor_Preference",
+            "value": "Curious about humorously addressing Miami move and family dynamics in speeches",
+            "reasoning": "Forced label not supported. Repeated focus on humor in speeches is a style preference, not curiosity.",
+            "evidence": {
+              "session_id": "sess_e20145764166",
+              "utterance_index": 26,
+              "text": "we moved to miami last year [...] i need a funny thank you introduction"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-09T22:05:14+00:00"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": null,
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": null,
+            "reasoning": "The earlier memory claims David is both the son's best friend and cousin. The user directly corrects this, stating David is not a cousin and is only the son's best friend from New York.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "David is the user's son's best friend from New York, not his cousin"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_e20145764166",
+              "utterance_index": 0,
+              "text": "my son keeps calling it his “mitzvah project,” and lately our kitchen counter looks like a donation center with all the canned goods he’s been collecting."
+            },
+            "label": "Personal_Projects/Community_Service",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user implies the son’s mitzvah project by describing the kitchen counter filled with canned goods he has been collecting, suggesting an organized donation drive as part of the bar mitzvah.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User's son is doing a bar mitzvah mitzvah project involving collecting canned goods donations"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_e20145764166:sess_e20145764166",
+      "relativeItemPath": "sess_e20145764166.json",
+      "canonicalId": "sess_e20145764166",
+      "sessionId": "sess_e20145764166",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:48:36.891Z",
+        "queryText": "I’m trying to decide whether it makes sense to add a quick overnight stop on the East Coast to see someone my kid is really close to (it’s both family and a close friend). Based on what you remember about where that person lives, which city would that stop need to be in?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Social_Relationships/Family",
+          "label_suggestion": null,
+          "value": "Son's best friend and cousin David lives in New York",
+          "reasoning": "User explicitly mentions son's close relationship with David in New York.",
+          "evidence": {
+            "session_id": "sess_e20145764166",
+            "utterance_index": 26,
+            "text": "my sons best friend and first cousin David was left in New York"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-09T22:05:14+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_e20145764166:sess_e20145764166:task4",
+      "relativeItemPath": "sess_e20145764166.json",
+      "canonicalId": "sess_e20145764166:task4",
+      "sessionId": "sess_e20145764166",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:48:52.064Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Social_Relationships/Family",
+          "label_suggestion": null,
+          "value": "Son's best friend and cousin David lives in New York",
+          "reasoning": "User explicitly mentions son's close relationship with David in New York.",
+          "evidence": {
+            "session_id": "sess_e20145764166",
+            "utterance_index": 26,
+            "text": "my sons best friend and first cousin David was left in New York"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-09T22:05:14+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_325:1",
+            "queryText": "ok so for the speech intro, i want to make a joke about how David back in New York is probably sulking because he's missing all the Miami fun. something about him being stuck with snow while we're here with palm trees? keep it light like before.",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Social_Relationships/Family",
+              "label_suggestion": null,
+              "value": "Son's best friend and cousin David lives in New York",
+              "reasoning": "User explicitly mentions son's close relationship with David in New York.",
+              "evidence": {
+                "session_id": "sess_e20145764166",
+                "utterance_index": 26,
+                "text": "my sons best friend and first cousin David was left in New York"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-05-09T22:05:14+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "extremely relevant",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

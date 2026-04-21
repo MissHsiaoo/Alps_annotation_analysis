@@ -1,0 +1,461 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_82876854fc93",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_82876854fc93:sess_82876854fc93",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_82876854fc93.json",
+      "canonicalId": "sess_82876854fc93",
+      "sessionId": "sess_82876854fc93",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-19T03:26:28.918Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "value": "Prefers Polish stores for tech purchases",
+            "reasoning": "User explicitly states they are only considering Polish stores for laptop purchases.",
+            "evidence": {
+              "session_id": "sess_82876854fc93",
+              "utterance_index": 4,
+              "text": "I'm thinking only of Polish stores."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-07-27T18:53:40+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "value": "Prefers 15.6\" IPS displays and Windows 11 for laptops",
+            "reasoning": "User repeatedly specifies 15.6\" IPS displays and Windows 11 as requirements for programming laptops.",
+            "evidence": {
+              "session_id": "sess_82876854fc93",
+              "utterance_index": 10,
+              "text": "Could You search for laptop with 15,6 with same parameters with IPS and Windows 11?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-07-27T18:53:40+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Preferences/Shopping",
+            "label_suggestion": "Constraints_and_Boundaries/Transaction_Risk",
+            "value": "Cautious about online seller reliability",
+            "reasoning": "User explicitly questions reliability of an Allegro offer, indicating sensitivity to transaction risks.",
+            "evidence": {
+              "session_id": "sess_82876854fc93",
+              "utterance_index": 8,
+              "text": "Should I belive this offer... reliable and trustworthy?"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-07-27T18:53:40+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "value": "User is interested in energy-efficient products with lower power consumption",
+            "reasoning": "The user asks which monitor has lower power consumption and may be inclined toward low-power products.",
+            "evidence": {
+              "turn_indices": [
+                24
+              ],
+              "turns": [
+                {
+                  "index": 24,
+                  "role": "user",
+                  "text": "Which of these monitors have the lowest power consumption?"
+                }
+              ]
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2026-04-16T13:54:58.239Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_82876854fc93:sess_82876854fc93",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_82876854fc93.json",
+      "canonicalId": "sess_82876854fc93",
+      "sessionId": "sess_82876854fc93",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:56:53.848Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Hi! Quick question—what’s the difference between USB-C and Thunderbolt?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "USB-C is mainly a connector shape (the oval port). What it can do depends on the laptop/port: it might support only USB data, or also video (DisplayPort Alt Mode) and charging (USB Power Delivery). Thunderbolt (usually TB3/TB4) uses the USB-C connector but guarantees higher bandwidth and features like daisy-chaining and more reliable multi-monitor docking. A simple check is to look for a lightning-bolt icon near the port or in the specs."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "If I buy a dock that says “USB-C”, will it always work with two monitors?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Not always. Two-monitor support depends on (1) whether the USB-C port supports video output, (2) whether the dock uses DisplayPort Alt Mode vs DisplayLink (USB graphics), and (3) the laptop’s GPU/OS limits. Thunderbolt docks more often handle dual monitors smoothly. If you paste the laptop model + dock model (or their spec pages), I can tell you what to expect."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Random: I heard the EU is standardizing charging ports—does that affect laptops too?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "The EU rule is best known for pushing phones and many small electronics toward USB-C charging. For laptops, USB-C Power Delivery has already become common, but the regulation doesn’t force every laptop to charge via USB-C in all cases. In practice, you’ll still see many laptops that can charge over USB-C, while some models keep a proprietary barrel charger alongside it."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Got it. Also: does monitor “Ambilight” exist outside Philips?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Built-in “Ambilight” is a Philips branding feature and is mostly found on Philips displays/TVs. Outside that, you can replicate the effect with external bias-lighting kits (LED strips + controller) that react to screen content, but it won’t be branded Ambilight."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Btw, I’m rearranging my desk and realized the wall behind the monitor is just a window, so any backlight/ambilight effect would be kinda wasted—maybe I should stop obsessing over it and focus on ergonomics instead."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "That makes sense—bias lighting/“ambilight” works best when it can reflect off a neutral wall. If you’ve got a window right behind the monitor, prioritizing ergonomics (stand adjustability), text clarity (PPI), and eye-comfort features (flicker-free + low blue light) will usually pay off more."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Actually, small correction: I’m not limiting myself to Polish stores anymore. I can buy from EU shops too if the price and warranty are good."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it — so it’s not “only Polish stores” now. We can include EU retailers as well, and just compare things like warranty terms, keyboard layout, and shipping/returns."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Yes, exactly. Polish stores are still nice, but not a hard requirement."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "value": "Prefers 15.6\" IPS displays and Windows 11 for laptops",
+            "reasoning": "User repeatedly specifies 15.6\" IPS displays and Windows 11 as requirements for programming laptops.",
+            "evidence": {
+              "session_id": "sess_82876854fc93",
+              "utterance_index": 10,
+              "text": "Could You search for laptop with 15,6 with same parameters with IPS and Windows 11?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-07-27T18:53:40+00:00",
+            "_task1GoldValue": "Prefers 15.6\" IPS displays and Windows 11 for laptops"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Preferences/Shopping",
+            "label_suggestion": "Constraints_and_Boundaries/Transaction_Risk",
+            "value": "Cautious about online seller reliability",
+            "reasoning": "User explicitly questions reliability of an Allegro offer, indicating sensitivity to transaction risks.",
+            "evidence": {
+              "session_id": "sess_82876854fc93",
+              "utterance_index": 8,
+              "text": "Should I belive this offer... reliable and trustworthy?"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-07-27T18:53:40+00:00",
+            "_task1GoldValue": "Cautious about online seller reliability"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Actually, small correction: I’m not limiting myself to Polish stores anymore. I can buy from EU shops too if the price and warranty are good."
+                }
+              ]
+            },
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "The old memory said the user prefers only Polish stores. In the new dialogue, the user explicitly corrects that they are no longer limiting purchases to Polish stores and are open to EU shops given good price and warranty.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Not limited to Polish stores; willing to buy from EU shops if price and warranty are good"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_82876854fc93",
+              "utterance_index": 8,
+              "text": "the wall behind the monitor is just a window, so any backlight/ambilight effect would be kinda wasted"
+            },
+            "label": "Possessions/Important_Items",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "null",
+            "reasoning": "User implies their desk setup has a window directly behind the monitor, affecting usefulness of ambilight/backlighting.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Workspace setup: monitor is positioned with a window behind it (limited wall for bias lighting/ambilight)"
+          },
+          {
+            "memory_id": "m5123",
+            "type": "indirect",
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "value": "User is interested in energy-efficient products with lower power consumption",
+            "reasoning": "The user asks which monitor has lower power consumption and may be inclined toward low-power products.",
+            "evidence": {
+              "turn_indices": [
+                24
+              ],
+              "turns": [
+                {
+                  "index": 24,
+                  "role": "user",
+                  "text": "Which of these monitors have the lowest power consumption?"
+                }
+              ]
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2026-04-16T13:54:58.239Z",
+            "_task1GoldValue": "User is interested in energy-efficient products with lower power consumption"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "value": "User is interested in energy-efficient products with lower power consumption",
+            "reasoning": "The user asks which monitor has lower power consumption and may be inclined toward low-power products.",
+            "evidence": {
+              "turn_indices": [
+                24
+              ],
+              "turns": [
+                {
+                  "index": 24,
+                  "role": "user",
+                  "text": "Which of these monitors have the lowest power consumption?"
+                }
+              ]
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2026-04-16T13:54:58.239Z",
+            "_task1GoldValue": "User is interested in energy-efficient products with lower power consumption"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_82876854fc93:sess_82876854fc93",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_82876854fc93.json",
+      "canonicalId": "sess_82876854fc93",
+      "sessionId": "sess_82876854fc93",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:53:15.989Z",
+        "queryText": "I’m comparing two identical gadgets: one is sold by a nearby retailer and the other is from a seller abroad. Given my usual buying habit, which option would I rule out even if it’s slightly cheaper, and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Shopping",
+          "label_suggestion": null,
+          "value": "Prefers Polish stores for tech purchases",
+          "reasoning": "User explicitly states they are only considering Polish stores for laptop purchases.",
+          "evidence": {
+            "session_id": "sess_82876854fc93",
+            "utterance_index": 4,
+            "text": "I'm thinking only of Polish stores."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-07-27T18:53:40+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_82876854fc93:sess_82876854fc93:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_82876854fc93.json",
+      "canonicalId": "sess_82876854fc93:task4",
+      "sessionId": "sess_82876854fc93",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:57:02.841Z",
+        "editableSelectedMemory": {
+          "memory_id": "m4",
+          "type": "indirect",
+          "label": "Preferences/Shopping",
+          "label_suggestion": null,
+          "value": "User is interested in energy-efficient products with lower power consumption",
+          "reasoning": "The user asks which monitor has lower power consumption and may be inclined toward low-power products.",
+          "evidence": {
+            "turn_indices": [
+              24
+            ],
+            "turns": [
+              {
+                "index": 24,
+                "role": "user",
+                "text": "Which of these monitors have the lowest power consumption?"
+              }
+            ]
+          },
+          "confidence": 0.65,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2026-04-16T13:54:58.239Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_888:1",
+            "queryText": "I'm looking at a few different monitors for my programming setup - the LG 38WN95C-W, Samsung Odyssey G9, and Acer Predator X34. Which one would actually work best for me?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m4",
+              "type": "indirect",
+              "label": "Preferences/Shopping",
+              "label_suggestion": null,
+              "value": "User is interested in energy-efficient products with lower power consumption",
+              "reasoning": "The user asks which monitor has lower power consumption and may be inclined toward low-power products.",
+              "evidence": {
+                "turn_indices": [
+                  24
+                ],
+                "turns": [
+                  {
+                    "index": 24,
+                    "role": "user",
+                    "text": "Which of these monitors have the lowest power consumption?"
+                  }
+                ]
+              },
+              "confidence": 0.65,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2026-04-16T13:54:58.239Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "weak",
+            "abilityPurity": "high",
+            "issueTypes": [
+              "selected_memory_wrong"
+            ],
+            "evidenceNote": "记忆选择错误",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

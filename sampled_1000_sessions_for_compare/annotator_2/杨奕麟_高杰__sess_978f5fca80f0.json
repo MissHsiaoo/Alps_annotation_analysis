@@ -1,0 +1,305 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_978f5fca80f0",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_978f5fca80f0:sess_978f5fca80f0",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_978f5fca80f0.json",
+      "canonicalId": "sess_978f5fca80f0",
+      "sessionId": "sess_978f5fca80f0",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-19T13:34:27.281Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires strict JSON formatting for coupon activity analysis outputs",
+            "reasoning": "User repeatedly specifies JSON format requirements across multiple turns and provides detailed structural constraints.",
+            "evidence": {
+              "session_id": "sess_978f5fca80f0",
+              "utterance_index": 0,
+              "text": "以json格式回复，格式如下：\n{coupon_id,time,days,platform,payway,bank,card_type,area,shops,bins,coupons,daily,weekly,monthly,total,scene,state}"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "null",
+            "updated_at": "2024-04-22T06:10:03Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Personal_Background/Occupation",
+            "value": "Highly likely an operations specialist, data analyst, or product manager in fintech, banking, or a third-party payment platform",
+            "reasoning": "The user systematically provides bank promotion rules and demands output in a highly structured, fixed-field JSON format. This clearly serves professional needs for data processing, system entry, or activity monitoring, not casual consumer inquiry.",
+            "evidence": {
+              "session_id": "sess_978f5fca80f0",
+              "utterance_index": 0,
+              "text": "需要你充当资深的，思维严谨、逻辑清晰的优惠活动分析人员，我会给你发送活动的详细介绍内容，请你帮我整理出活动的基本信息:\ncoupon_id:优惠券id，字符串类型，格式如:\"2102024040378314\"\ntime:活动时间，字符串类型，格式如:\"2024-4-1 ~ 2024-5-1 每活动日10点半-20点\"，如果具体时间为每活动日00:00:00-23:59:59，则可以忽略，只显示年月日即可，如\"2024-4-1 ~ 2024-5-1\"，如果具体时间为每活动日N点-23:59:59，则显示年月日 每天N点开始，如\"2024-4-1 ~ 2024-5-1 每天8点开始\"\ndays:活动持续天数，整数类型，格式如:5\nbank:银行名称，字符串类型，若未分析出是哪个银行，默认为“中国银联”，格式如:\"工商银行\"\ncard_type:限制银行卡类型，字符串类型，可选值:借记卡、储蓄卡、信用卡、贷记卡、社保卡，若未分析出银行卡类型，默认为“实体银联卡”，格式如:\"借记卡\"\narea:城市地区限制，字符串类型，默认\"全国\"\nplatform:享受优惠的app或平台，字符串类型，默认\"云闪付App\"\npayway:支付方式，字符串类型，可选值:主扫、被扫、主扫被扫均可，默认被扫，格式如:\"主扫\"\nshops:门店限制，字符串类型，格式如:\"王府井奥莱指定门店\"\nbins:银行卡bin限制，字符串类型，以顿号隔开，格式如:\"62258877、62122621\"\ndaily:同一用户每日领取或优惠次数，整数类型，默认0\nweekly:同一用户每周领取或优惠次数，整数类型，默认0\nmonthly:同一用户每月领取或优惠次数，整数类型，默认0\ntotal:同一用户活动期间内总领取或优惠次数，与days，daily相关，同时结合活动详细规则限制进行修正，整数类型，默认0\nscene:支付场景，字符串类型，默认\"指定消费\"，格式如:\"信用卡还款\"\ncoupons:优惠信息力度，字符串类型，格式如:\"满10减1元\"，有多档位的，以逗号相隔列出来\nstate:优惠活动状态，根据活动时间time判断状态，如果当前时间大于等于活动结束时间，则为值2，当前时间小于活动结束时间，则值为1，无法判断则值为0，默认值为0\n\n以json格式回复，格式如下：\n{coupon_id,time,days,platform,payway,bank,card_type,area,shops,bins,coupons,daily,weekly,monthly,total,scene,state}\n\n一些预设：\n三明，即三明市\n沙县，即三明市沙县\n\n仅仅提及“付款码”，则属于被扫\n仅仅提及“扫码”或“扫一扫”，则属于主扫\n提及“付款码”和“扫一扫|扫码”，则属于“主扫被扫均可”\n\n关于活动时间详细要求:\n分为以下几种情况\n情况1：如某几天，则格式为\"time\":\"20xx年x月x日、20xx年x月x日、20xx年x月x日，每活动日00:00:00-20:59:59\"；\n情况1例子：2024年4月10日、2024年5月10日、2024年6月10日，每活动日00:00:00-23:59:59。\n情况2：如间隔连续的时间范围，则格式为\"time\":\"2024-4-1 ~ 2024-4-5 每天10点~18点，2024-4-10 ~ 2024-4-15 每天10点~18点\"；\n情况2例子：2024年4月10日至2024年5月10日，2024年5月10日至2024年6月10日，每活动日00:00:00-23:59:59。\n情况3：如果没有开始时间，只有截止时间，则格式为:\"time\":\"即日起 ~ 2024-5-1 23:59:59\"。\n情况3例子：自票券到账之日起3天（3*24小时）内有效，票券每日承兑时间10:00:00-23:59:59，最迟承兑时间不得晚于2024年3月31日23:59:59。\n\n关于优惠活动状态state的详细要求:\n根据time算出活动结束时间，与“当前时间”进行比较判断，如果当前时间大于等于活动结束时间，则为值2，当前时间小于活动结束时间，则值为1，无法判断则值为0，默认值为0\n\n关于支付场景scene包括:\n1、生活缴费(如：话费、水费、煤气费、电费)\n2、影票\n3、信用卡还款\n4、餐饮美食\n5、罚没\n6、充电(如汽车充电)\n7、机票\n8、车票\n9、船票\n10、酒店住宿\n11、租车\n12、门票\n13、购车\n14、购房\n15、网络购物\n16、商超购物\n17、中石油加油\n18、中石化加油\n19、车辆洗护\n20、汽车保养\n21、地铁\n22、公交\n23、共享单车\n24、共享汽车\n25、淘宝天猫\n26、京东\n27、唯品会\n28、拼多多\n29、抖音\n30、快手\n不符合以上归类的，默认为\"指定消费\"\n\n关于优惠活动daily、weekly、monthly、total的详细要求:\n情况1，如只提到了活动周期内总限n次，则令daily=0，weekly=0，monthly=0，total=n；\n情况1，如只提到了每日限n次，则令daily=n，weekly=0，monthly=0，total=0；\n情况1，如只提到了每日限n次，周限x次，则令daily=n，weekly=x，monthly=0，total=0；\n情况1，如只提到了每日限n次，月限m次，则令daily=n，weekly=0，monthly=m，total=0；\n情况1，如只提到了每日限n次，周限x次，月限m次，则令daily=n，weekly=x，monthly=m，total=0；\n\n\n优惠次数限制逻辑例子：\n某活动中，每个用户每周可以享受1次优惠，但每月最多只能享受2次优惠。所以我们需要考虑到每个月的周数。\n\n在2024年4月3日至2024年12月31日这段时间内，总共有9个月。但是需要注意的是，开始的第一个月（4月）只有4个周六，因为活动从4月3日开始，所以4月的第一个周六不能计算在内。同样，结束的最后一个月（12月）有5个周六，但是活动在12月31日结束，所以12月的最后一个周六也不能计算在内。所以，活动日的总数应该是36-2=34。\n\n每个用户每月最多可以享受2次优惠，所以总领取次数应该是9*2，即18次。\n\n记住这个优惠次数限制逻辑思维，并应用到之后的分析中\n\n请根据优惠次数限制逻辑，详细综合分析days、bins、shops、daily、monthly、total确保数值计算正确，充分理解分析活动内容，严格按要求和格式输出，只回复json数据就行，不要回复其他多余内容，如果明白我所说的要求，则回复“知道了”"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T15:50:34.952Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_978f5fca80f0:sess_978f5fca80f0",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_978f5fca80f0.json",
+      "canonicalId": "sess_978f5fca80f0",
+      "sessionId": "sess_978f5fca80f0",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-19T13:34:51.277Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "刚才那一大段规则里，我有点担心“days”的计算会踩坑：如果跨月、且只在周末/每周固定几天生效，一般你会怎么稳妥算？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "稳妥做法是把“days”定义为“活动实际生效的自然日数量”，先确定生效日期集合，再计数。\n\n通用步骤：\n1) 先解析起止日期（含不含端点要按文案，通常“至/截至”包含当日）。\n2) 再解析“按周几生效/每日时段”。如果是“每周五六日”，就遍历起止区间内每一天，筛出周五/周六/周日。\n3) 若还有“仅限某城市/门店/名额”这类，不影响days（days只看时间维度）。\n4) 如果文案写“名额用完即止/可能提前结束”，一般仍按给定截止日期算days；除非明确给出提前结束日期，否则无法客观收敛。\n\n举个纯示例：2024-03-08 ~ 2024-12-31，每周五六日。就遍历这段区间内所有日期，统计weekday∈{5,6,7}的天数即可。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "那“state”的判断也有类似坑：有的券写到 23:59:59，有的只写到日期。你会怎么统一口径？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "统一口径可以这样定：\n- 若明确到秒（如“2024-4-12 23:59:59”），就用该精确时间作为结束点。\n- 若只写到日期（如“2024-4-12”或“2024年4月12日”），默认结束点取当日 23:59:59。\n- 若写“即日起 ~ 2024-6-30 23:59:59”，开始点无法确定具体日期时，state按0或按你规则里“无法判断则0”。\n\n然后用“当前时间 >= 结束点 => 2；当前时间 < 结束点 => 1；无法判断 => 0”。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "顺便问个不相关的：我看到新闻说有些城市开始试点地铁闸机刷手机也能离线通行，这种一般靠什么技术？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "常见是两类：\n1) NFC + 安全元件（SE/eSE）或HCE：把交通卡/票证密钥放在安全环境里，闸机读到后本地完成认证，达到“短时离线”甚至“完全离线”。\n2) 动态二维码：通常需要联网刷新令牌，但也有“预取令牌”的方案实现有限离线。\n地铁更偏好NFC票证体系，因为吞吐量高、抗复制能力更强。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "你这条记忆写成“Strict rules for user identity validation…”，不对。\n我这里只是在活动规则里反复出现“同一设备/同一手机号/同一银行卡预留手机号/同一实体卡号/同一身份证号/同一APP账号视为同一用户”，这是活动方的同一用户判定口径，不是对我个人做身份校验。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "明白，这不是“用户身份校验规则”，而是活动规则里的“同一用户”认定标准；而且也确实不属于你的个人信息或偏好。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires strict JSON formatting for coupon activity analysis outputs",
+            "reasoning": "User repeatedly specifies JSON format requirements across multiple turns and provides detailed structural constraints.",
+            "evidence": {
+              "session_id": "sess_978f5fca80f0",
+              "utterance_index": 0,
+              "text": "以json格式回复，格式如下：\n{coupon_id,time,days,platform,payway,bank,card_type,area,shops,bins,coupons,daily,weekly,monthly,total,scene,state}"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "null",
+            "updated_at": "2024-04-22T06:10:03Z",
+            "_task1GoldValue": "Requires strict JSON formatting for coupon activity analysis outputs"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Personal_Background/Occupation",
+            "value": "Highly likely an operations specialist, data analyst, or product manager in fintech, banking, or a third-party payment platform",
+            "reasoning": "The user systematically provides bank promotion rules and demands output in a highly structured, fixed-field JSON format. This clearly serves professional needs for data processing, system entry, or activity monitoring, not casual consumer inquiry.",
+            "evidence": {
+              "session_id": "sess_978f5fca80f0",
+              "utterance_index": 0,
+              "text": "需要你充当资深的，思维严谨、逻辑清晰的优惠活动分析人员，我会给你发送活动的详细介绍内容，请你帮我整理出活动的基本信息:\ncoupon_id:优惠券id，字符串类型，格式如:\"2102024040378314\"\ntime:活动时间，字符串类型，格式如:\"2024-4-1 ~ 2024-5-1 每活动日10点半-20点\"，如果具体时间为每活动日00:00:00-23:59:59，则可以忽略，只显示年月日即可，如\"2024-4-1 ~ 2024-5-1\"，如果具体时间为每活动日N点-23:59:59，则显示年月日 每天N点开始，如\"2024-4-1 ~ 2024-5-1 每天8点开始\"\ndays:活动持续天数，整数类型，格式如:5\nbank:银行名称，字符串类型，若未分析出是哪个银行，默认为“中国银联”，格式如:\"工商银行\"\ncard_type:限制银行卡类型，字符串类型，可选值:借记卡、储蓄卡、信用卡、贷记卡、社保卡，若未分析出银行卡类型，默认为“实体银联卡”，格式如:\"借记卡\"\narea:城市地区限制，字符串类型，默认\"全国\"\nplatform:享受优惠的app或平台，字符串类型，默认\"云闪付App\"\npayway:支付方式，字符串类型，可选值:主扫、被扫、主扫被扫均可，默认被扫，格式如:\"主扫\"\nshops:门店限制，字符串类型，格式如:\"王府井奥莱指定门店\"\nbins:银行卡bin限制，字符串类型，以顿号隔开，格式如:\"62258877、62122621\"\ndaily:同一用户每日领取或优惠次数，整数类型，默认0\nweekly:同一用户每周领取或优惠次数，整数类型，默认0\nmonthly:同一用户每月领取或优惠次数，整数类型，默认0\ntotal:同一用户活动期间内总领取或优惠次数，与days，daily相关，同时结合活动详细规则限制进行修正，整数类型，默认0\nscene:支付场景，字符串类型，默认\"指定消费\"，格式如:\"信用卡还款\"\ncoupons:优惠信息力度，字符串类型，格式如:\"满10减1元\"，有多档位的，以逗号相隔列出来\nstate:优惠活动状态，根据活动时间time判断状态，如果当前时间大于等于活动结束时间，则为值2，当前时间小于活动结束时间，则值为1，无法判断则值为0，默认值为0\n\n以json格式回复，格式如下：\n{coupon_id,time,days,platform,payway,bank,card_type,area,shops,bins,coupons,daily,weekly,monthly,total,scene,state}\n\n一些预设：\n三明，即三明市\n沙县，即三明市沙县\n\n仅仅提及“付款码”，则属于被扫\n仅仅提及“扫码”或“扫一扫”，则属于主扫\n提及“付款码”和“扫一扫|扫码”，则属于“主扫被扫均可”\n\n关于活动时间详细要求:\n分为以下几种情况\n情况1：如某几天，则格式为\"time\":\"20xx年x月x日、20xx年x月x日、20xx年x月x日，每活动日00:00:00-20:59:59\"；\n情况1例子：2024年4月10日、2024年5月10日、2024年6月10日，每活动日00:00:00-23:59:59。\n情况2：如间隔连续的时间范围，则格式为\"time\":\"2024-4-1 ~ 2024-4-5 每天10点~18点，2024-4-10 ~ 2024-4-15 每天10点~18点\"；\n情况2例子：2024年4月10日至2024年5月10日，2024年5月10日至2024年6月10日，每活动日00:00:00-23:59:59。\n情况3：如果没有开始时间，只有截止时间，则格式为:\"time\":\"即日起 ~ 2024-5-1 23:59:59\"。\n情况3例子：自票券到账之日起3天（3*24小时）内有效，票券每日承兑时间10:00:00-23:59:59，最迟承兑时间不得晚于2024年3月31日23:59:59。\n\n关于优惠活动状态state的详细要求:\n根据time算出活动结束时间，与“当前时间”进行比较判断，如果当前时间大于等于活动结束时间，则为值2，当前时间小于活动结束时间，则值为1，无法判断则值为0，默认值为0\n\n关于支付场景scene包括:\n1、生活缴费(如：话费、水费、煤气费、电费)\n2、影票\n3、信用卡还款\n4、餐饮美食\n5、罚没\n6、充电(如汽车充电)\n7、机票\n8、车票\n9、船票\n10、酒店住宿\n11、租车\n12、门票\n13、购车\n14、购房\n15、网络购物\n16、商超购物\n17、中石油加油\n18、中石化加油\n19、车辆洗护\n20、汽车保养\n21、地铁\n22、公交\n23、共享单车\n24、共享汽车\n25、淘宝天猫\n26、京东\n27、唯品会\n28、拼多多\n29、抖音\n30、快手\n不符合以上归类的，默认为\"指定消费\"\n\n关于优惠活动daily、weekly、monthly、total的详细要求:\n情况1，如只提到了活动周期内总限n次，则令daily=0，weekly=0，monthly=0，total=n；\n情况1，如只提到了每日限n次，则令daily=n，weekly=0，monthly=0，total=0；\n情况1，如只提到了每日限n次，周限x次，则令daily=n，weekly=x，monthly=0，total=0；\n情况1，如只提到了每日限n次，月限m次，则令daily=n，weekly=0，monthly=m，total=0；\n情况1，如只提到了每日限n次，周限x次，月限m次，则令daily=n，weekly=x，monthly=m，total=0；\n\n\n优惠次数限制逻辑例子：\n某活动中，每个用户每周可以享受1次优惠，但每月最多只能享受2次优惠。所以我们需要考虑到每个月的周数。\n\n在2024年4月3日至2024年12月31日这段时间内，总共有9个月。但是需要注意的是，开始的第一个月（4月）只有4个周六，因为活动从4月3日开始，所以4月的第一个周六不能计算在内。同样，结束的最后一个月（12月）有5个周六，但是活动在12月31日结束，所以12月的最后一个周六也不能计算在内。所以，活动日的总数应该是36-2=34。\n\n每个用户每月最多可以享受2次优惠，所以总领取次数应该是9*2，即18次。\n\n记住这个优惠次数限制逻辑思维，并应用到之后的分析中\n\n请根据优惠次数限制逻辑，详细综合分析days、bins、shops、daily、monthly、total确保数值计算正确，充分理解分析活动内容，严格按要求和格式输出，只回复json数据就行，不要回复其他多余内容，如果明白我所说的要求，则回复“知道了”"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T15:50:34.952Z",
+            "_task1GoldValue": "Highly likely an operations specialist, data analyst, or product manager in fintech, banking, or a third-party payment platform"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                6
+              ],
+              "turns": [
+                {
+                  "index": 6,
+                  "role": "user",
+                  "text": "你这条记忆写成“Strict rules for user identity validation…”，不对。\n我这里只是在活动规则里反复出现“同一设备/同一手机号/同一银行卡预留手机号/同一实体卡号/同一身份证号/同一APP账号视为同一用户”，这是活动方的同一用户判定口径，不是对我个人做身份校验。"
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "null",
+            "reasoning": "旧记忆把内容误写为“对用户身份进行严格校验的规则”，但对话明确说明该段落是优惠活动细则中用于合并统计的“同一用户”判定口径，并非针对用户个人的身份验证要求。因此应更新为活动规则中的同一用户认定标准。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "The text about same device/phone/card/ID/app account is an activity-rule definition of “same user” for eligibility/counting, not a personal identity validation requirement."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_978f5fca80f0:sess_978f5fca80f0",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_978f5fca80f0.json",
+      "canonicalId": "sess_978f5fca80f0",
+      "sessionId": "sess_978f5fca80f0",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-19T13:36:39.546Z",
+        "queryText": "Regarding that coupon campaign analysis task, did I mention any special requirements for the final output format?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Requires strict JSON formatting for coupon activity analysis outputs",
+          "reasoning": "User repeatedly specifies JSON format requirements across multiple turns and provides detailed structural constraints.",
+          "evidence": {
+            "session_id": "sess_978f5fca80f0",
+            "utterance_index": 0,
+            "text": "以json格式回复，格式如下：\n{coupon_id,time,days,platform,payway,bank,card_type,area,shops,bins,coupons,daily,weekly,monthly,total,scene,state}"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "null",
+          "updated_at": "2024-04-22T06:10:03Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_978f5fca80f0:sess_978f5fca80f0:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_978f5fca80f0.json",
+      "canonicalId": "sess_978f5fca80f0:task4",
+      "sessionId": "sess_978f5fca80f0",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-19T13:37:47.001Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Requires strict JSON formatting for coupon activity analysis outputs",
+          "reasoning": "User repeatedly specifies JSON format requirements across multiple turns and provides detailed structural constraints.",
+          "evidence": {
+            "session_id": "sess_978f5fca80f0",
+            "utterance_index": 0,
+            "text": "以json格式回复，格式如下：\n{coupon_id,time,days,platform,payway,bank,card_type,area,shops,bins,coupons,daily,weekly,monthly,total,scene,state}"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "null",
+          "updated_at": "2024-04-22T06:10:03Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_243:1",
+            "queryText": "I have some messy data from our new clients. Please extract the key info for me. Requirement: You must write this in a natural, conversational tone, like a friend chatting, merging their info into a flowing plain text paragraph. Absolutely DO NOT use JSON format, curly braces, code blocks, or any structured key-value schemas!",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Requires strict JSON formatting for coupon activity analysis outputs",
+              "reasoning": "User repeatedly specifies JSON format requirements across multiple turns and provides detailed structural constraints.",
+              "evidence": {
+                "session_id": "sess_978f5fca80f0",
+                "utterance_index": 0,
+                "text": "以json格式回复，格式如下：\n{coupon_id,time,days,platform,payway,bank,card_type,area,shops,bins,coupons,daily,weekly,monthly,total,scene,state}"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "null",
+              "updated_at": "2024-04-22T06:10:03Z"
+            },
+            "overallVerdict": "unreasonable",
+            "testsTargetAbility": "no",
+            "memoryDependency": "weak",
+            "abilityPurity": "low",
+            "issueTypes": [
+              "other"
+            ],
+            "evidenceNote": "不存在于对话中地记忆，更换记忆重写提问",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

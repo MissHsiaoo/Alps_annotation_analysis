@@ -1,0 +1,271 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_cd255550fad6",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_cd255550fad6:sess_cd255550fad6",
+      "relativeItemPath": "sess_cd255550fad6.json",
+      "canonicalId": "sess_cd255550fad6",
+      "sessionId": "sess_cd255550fad6",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-12T10:07:55.997Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "看小说，打游戏，听音乐 (Reading novels, gaming, listening to music)",
+            "reasoning": "User explicitly lists their hobbies in utterance 6.",
+            "evidence": {
+              "session_id": "sess_cd255550fad6",
+              "utterance_index": 6,
+              "text": "我的爱好是看小说，打游戏，听音乐。"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-04-09T14:28:04+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/planning_preference",
+            "value": "Sustained interest in personalized time management strategies for academic/hobby balance",
+            "reasoning": "Forced label not supported. Repeated planning requests reflect task-specific needs rather than general curiosity.",
+            "evidence": {
+              "session_id": "sess_cd255550fad6",
+              "utterance_index": 8,
+              "text": "请根据我的课表和时间表重新安排时间管理规划"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-09T14:28:04+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Is currently a college student, likely majoring in or taking courses related to E-commerce, Higher Mathematics, and College English.",
+            "reasoning": "The user explicitly requests a schedule for a college student and then provides their own highly detailed university course timetable featuring specific classes like E-commerce Practice and E-commerce Law.",
+            "evidence": null,
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-04-12T10:05:36.943Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_cd255550fad6:sess_cd255550fad6",
+      "relativeItemPath": "sess_cd255550fad6.json",
+      "canonicalId": "sess_cd255550fad6",
+      "sessionId": "sess_cd255550fad6",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T10:08:37.810Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "你给的计划挺清晰的。如果我想把它做成一个可以直接打印的模板表格，你建议用哪种格式？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "如果目的是“直接打印+手写填充”，我建议用 A4 纵向的周计划表：左侧是时间轴（7:00–23:00，每30或45分钟一格），右侧按周一到周日分7列。若想“更像课表”，也可以用“时间段×星期”的二维表：行是早读/第1-10节/午休/晚间，列是周一到周日，空白格留给自习、运动、社交、休息等。你更想手写还是在电脑里填写后打印？"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "电脑填写后打印。最好还能在手机上同步提醒。"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "那可以用“两份并行”的结构：\n1) 打印版：用表格软件做周视图（时间段×星期），每格写“地点/任务/备注”，底部加一行“本周三件最重要的事”。\n2) 提醒版：把关键节点（上课、固定自习、运动、睡觉前收尾）录入日历应用，并给每个节点设置提前10–15分钟提醒。\n另外有个小技巧：打印版保留“缓冲格”（比如每天1–2个空白块），日历里也预留同名事件，避免排满后不可调整。需要我给你一个可复制的表格字段清单（列名/行名/示例）吗？"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "要，给一个字段清单就行。"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "可复制字段清单（适合 Excel/Sheets）：\n- 星期（Mon–Sun）\n- 时间段（早读/1-2节/3-4节/午休/5-6节/7-8节/晚间块A/晚间块B/睡前收尾）\n- 任务类型（课程/自习/作业/复盘/运动/社交/杂务/休息）\n- 任务名称\n- 地点/平台\n- 预计时长\n- 优先级（A/B/C）\n- 产出物（笔记页数/题量/文档版本等）\n- 截止时间（如有）\n- 提醒时间（提前15/10/5分钟）\n- 缓冲（是/否）\n- 备注（能量水平、需准备物品等）\n\n（插一句不相关的冷知识：很多纸质地图的标准折叠方式会刻意让“图例/比例尺”露在外侧，方便快速查信息。）"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "assistant",
+            "text": "好的。按你给的作息节次（早读7:50-8:20、下午第5节14:00开始、晚自习到20:40），我建议你把每天的“固定块”先锁死：\n- 6:40起床—7:40洗漱+早餐+出门，别卡着7:50才赶到早读；\n- 12:10下课后优先把午饭放在食堂解决，然后12:50-13:30找个自习室眯一会儿或做点轻复习，保证14:00第5节不犯困；\n- 晚上20:40下晚自习后，把游戏留到周末长时段，工作日更适合用来听歌/看小说做放松收尾。你要是同意，我再把它细化到你周一到周五每一天对应的课间、空档怎么用。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "user",
+            "text": "可以，我中午一般都在食堂吃，回宿舍一趟就来不及了，你就按这个思路细化到每天吧。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我刚刚说“看小说、打游戏、听音乐”其实不准确。最近我基本不打游戏了，主要是看小说和听音乐，游戏顶多偶尔玩一下。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "明白，你的娱乐重点需要改一下：以“看小说、听音乐”为主，“打游戏”只保留为偶尔放松的备选，不再当作主要爱好来安排。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/planning_preference",
+            "value": "Sustained interest in personalized time management strategies for academic/hobby balance",
+            "reasoning": "Forced label not supported. Repeated planning requests reflect task-specific needs rather than general curiosity.",
+            "evidence": {
+              "session_id": "sess_cd255550fad6",
+              "utterance_index": 8,
+              "text": "请根据我的课表和时间表重新安排时间管理规划"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-09T14:28:04+00:00"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "旧记忆将“打游戏”与“看小说、听音乐”并列为用户爱好；但用户明确更正最近基本不打游戏，只是偶尔玩，因此应更新为主要偏好是看小说和听音乐，游戏仅偶尔。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "主要喜欢看小说、听音乐；打游戏仅偶尔 (Primarily reading novels and listening to music; gaming only occasionally)"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_cd255550fad6",
+              "utterance_index": 1,
+              "text": "可以，我中午一般都在食堂吃"
+            },
+            "label": "Routines/Meals",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User indicates their typical lunch routine by saying they generally eat in the cafeteria.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User usually eats lunch in the campus cafeteria (食堂)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_cd255550fad6:sess_cd255550fad6",
+      "relativeItemPath": "sess_cd255550fad6.json",
+      "canonicalId": "sess_cd255550fad6",
+      "sessionId": "sess_cd255550fad6",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-12T10:08:57.152Z",
+        "queryText": "If I suddenly get a totally free weekend with zero obligations and want to pick three at-home, low-cost things I’d most naturally do to unwind, what should those three be based on what you already know about me?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "value": "看小说，打游戏，听音乐 (Reading novels, gaming, listening to music)",
+          "label": "Preferences/Entertainment"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_cd255550fad6:sess_cd255550fad6:task4",
+      "relativeItemPath": "sess_cd255550fad6.json",
+      "canonicalId": "sess_cd255550fad6:task4",
+      "sessionId": "sess_cd255550fad6",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-12T10:09:44.811Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "value": "看小说，打游戏，听音乐 (Reading novels, gaming, listening to music)"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_111:1",
+            "queryText": "我最近在考虑调整一下晚上的安排，感觉现在的时间分配有点不太对劲。你觉得我该把晚上的空闲时间主要用来做什么比较好？",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "value": "看小说，打游戏，听音乐 (Reading novels, gaming, listening to music)"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "personal habit is important fpr time scheduling plan",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

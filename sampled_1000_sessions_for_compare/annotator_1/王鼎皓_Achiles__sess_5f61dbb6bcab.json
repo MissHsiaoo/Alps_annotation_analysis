@@ -1,0 +1,328 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_5f61dbb6bcab",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_5f61dbb6bcab:sess_5f61dbb6bcab",
+      "relativeItemPath": "sess_5f61dbb6bcab.json",
+      "canonicalId": "sess_5f61dbb6bcab",
+      "sessionId": "sess_5f61dbb6bcab",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T17:25:57.606Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers highly challenging RPG scenarios with complex stat-tracking systems and exponential difficulty modifiers",
+            "reasoning": "User explicitly demands maximum difficulty (10/10), complex exponential stat modifiers, and multiple trackers (age/stats/points).",
+            "evidence": {
+              "session_id": "sess_5f61dbb6bcab",
+              "utterance_index": 0,
+              "text": "Make the scenario difficult for me to win... Keep track of points earned... super exponential modifier with increasing brutality... Keep an age tracker, stats tracker, and a points tracker."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-04-14T04:11:52+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "game_design/mechanics",
+            "value": "Curious about intricate game design mechanics: stat-based spell success systems, asymmetric progression models, and spell snatching dynamics",
+            "reasoning": "User designs complex mechanics but context is role-play scenario creation. Label 'Thoughts/Curiosity' forced; evidence supports game design focus, not explicit user curiosity.",
+            "evidence": {
+              "session_id": "sess_5f61dbb6bcab",
+              "utterance_index": 0,
+              "text": "stat requirement margins... from 20 to 100... Lily can remove a spell from my list... add it to her own list... stats required to cast them. High demanding spells should award more points"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-14T04:11:52+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_5f61dbb6bcab:sess_5f61dbb6bcab",
+      "relativeItemPath": "sess_5f61dbb6bcab.json",
+      "canonicalId": "sess_5f61dbb6bcab",
+      "sessionId": "sess_5f61dbb6bcab",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T13:50:21.816Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Before we continue, can we pause the duel for a second? I’m trying to make sure the scoring math is consistent."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure—quick checkpoint. Do you want consistency on (1) how Spell Power determines success, (2) how Performance scales base points, or (3) how rounding works (per spell vs end-of-round)?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Mostly rounding and deductions. Also, does a failed cast give zero, or can it go negative?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "A clean, consistent scheme could be:\n- Success check: if Spell Power < requirement → fail.\n- On fail: score = 0, plus an automatic “fizzle penalty” of −10 (so failure can go negative).\n- On success: score = round(base_points * (Performance/100)).\n- Rounding: round to nearest integer per spell (0.5 rounds up).\n- Deductions: only apply after rounding (e.g., messy landing −5, rule break −20).\nIf you want, we can lock this in as the ruleset for the remaining rounds."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Let’s lock it in. Also: unrelated, I saw a headline about a city making all buses free—does that actually increase ridership much?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Often yes, but not universally. In several pilot programs, ridership tends to rise (sometimes sharply at first), especially for short local trips, while congestion reduction depends on whether new riders are switching from cars or just taking extra trips. Agencies also have to offset lost fare revenue and sometimes add service to handle crowding."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Okay back to the duel. Can you restate what spells are still available for Sapphire right now?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Yes. Used already: Celestial Cascade, Prism Shard Dance, Starfire Symphony. Snatched away: Mystic Fountain, Arcane Aurora. Remaining for Sapphire: Phantom Blossoms, Glitterstorm, Echoes of Eldoria, Radiant Mirage, Whispers of the Fey."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "One more tangent—why do some recipes insist on weighing flour instead of using cups?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Because flour packs inconsistently: a “cup” can vary a lot depending on scooping, humidity, and settling. Weight is more reproducible, so texture and hydration come out closer to intended—especially in bread and pastries."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Got it. Round 4 then—what do you need from me?"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Just the spell name Sapphire casts from the remaining list. After you choose, I’ll apply: success check vs Spell Power requirement, points = round(base * Performance%), any penalties if applicable, then update the age/stats, Childish Meter, and do Lily’s spell + Spell Snatching."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Round 4—fine, I’ll stop trying to grab the ones she stole and play safer: **Glitterstorm**. If she’s going to keep Spell Snatching my big-ticket options, I need something flashy that doesn’t hinge on perfection."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "**Round 4 Outcome:**\n\nSapphire pivots—less grand concerto, more controlled spectacle—and calls up **Glitterstorm**, a spell that thrives on rhythm and timing.\n\n**Turn-Onset Regression (Arc of Fleeting Innocence):**\nThe enchantment bites harder now, like a tightening spiral.\n\n- **Sapphire** reels as her posture shrinks a fraction and her thoughts wobble at the edges.\n- **Lily** straightens with a sudden, unsettling poise.\n\n**Updated Trackers (start of Round 4):**\n- **Sapphire:** Age **8**, Spell Power **66**, Performance **61**, Childish Meter **95**\n- **Lily:** Age **14**, Spell Power **61**, Performance **52**\n\n---\n\n### Sapphire casts: **Glitterstorm** (SP req: 60, Base: 80)\n- Your Spell Power **66** clears the requirement—but not cleanly.\n- The spell **casts successfully**, though the timing is slightly sloppy.\n\n**Performance & Scoring:**\n- Performance **61%** of 80 = **48.8** → **49 points**\n- Minor wobble penalty (childish distraction as the meter nears full): **-4 points**\n\n**Sapphire earns:** **45 points**\n\n---\n\n### Lily’s turn\nLily watches your glittering arc scatter… then plucks the idea of “flash” and answers with **Rainbow Ribbon Twist** (SP req: 45, Base: 55).\n\n- Lily Spell Power **61** → **success**\n- Performance **52%** of 55 = **28.6** → **29 points**\n- Judges’ momentum bonus (her sudden maturity is drawing attention): **+6 points**\n\n**Lily earns:** **35 points**\n\n---\n\n## End of Round 4 Trackers\n**Childish Meter Surge (super-exponential):**\nThat near-full meter spikes—hard.\n\n- Sapphire’s Childish Meter: **95 → 118 (fills) → resets to 18**\n- **Overflow effect triggered:** next round, Sapphire’s **Performance takes an additional reduction** on top of the regression.\n\n**Totals:**\n- **Sapphire cumulative:** 275 + 45 = **320**\n- **Lily cumulative:** 48 + 35 = **83**\n\n**Spell Snatching (Round 4):**\nLily doesn’t even hesitate—she strips away another one of your remaining options: **“Phantom Blossoms.”**\n\n**Round 5 is next.** Pick your final spell from what you still have."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Before we keep going—dial this way back. I don’t actually like the super-cruel, hyper-complex exponential modifiers and “hardest mode” stuff. Can we make the duel more straightforward, with lighter tracking and a reasonable difficulty so I actually have a chance?"
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "Got it. That means the earlier setup—“Make it a 10 (hardest mode)” and the “complex super exponential modifier with increasing brutality”—doesn’t match what you want now.\n\nWe’ll switch to a simpler approach: moderate difficulty, no brutal exponential scaling, and only basic tracking (age, Spell Power, Performance, points)."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "game_design/mechanics",
+            "value": "Curious about intricate game design mechanics: stat-based spell success systems, asymmetric progression models, and spell snatching dynamics",
+            "reasoning": "User designs complex mechanics but context is role-play scenario creation. Label 'Thoughts/Curiosity' forced; evidence supports game design focus, not explicit user curiosity.",
+            "evidence": {
+              "session_id": "sess_5f61dbb6bcab",
+              "utterance_index": 0,
+              "text": "stat requirement margins... from 20 to 100... Lily can remove a spell from my list... add it to her own list... stats required to cast them. High demanding spells should award more points"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-14T04:11:52+00:00"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "The old memory claims the user prefers maximum difficulty and complex exponential modifiers, but the user explicitly retracts that preference and asks to simplify and lower difficulty.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers RPG scenarios with more straightforward mechanics and reasonable difficulty over super-cruel maximum-difficulty setups with hyper-complex exponential modifiers"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_5f61dbb6bcab",
+              "utterance_index": 0,
+              "text": "I’ll stop trying to grab the ones she stole and play safer: Glitterstorm."
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "The user signals a preference for a safer, lower-risk strategy in the game when their strongest options are being removed, indicating they enjoy adapting tactics under pressure rather than insisting on only high-risk plays.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Adapts RPG strategy toward safer, more reliable options when opponents restrict high-value choices (e.g., via spell-snatching)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_5f61dbb6bcab:sess_5f61dbb6bcab",
+      "relativeItemPath": "sess_5f61dbb6bcab.json",
+      "canonicalId": "sess_5f61dbb6bcab",
+      "sessionId": "sess_5f61dbb6bcab",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T12:00:12.854Z",
+        "queryText": "I’m about to start a new text-based RPG run and want it tuned to the kind of experience I reliably enjoy. If you had to pick one specific gameplay setup that best fits me—especially regarding how difficulty should scale over time and what the game should continuously monitor—what would you choose (name the key scaling style and the exact kinds of trackers I’d expect)?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers highly challenging RPG scenarios with complex stat-tracking systems and exponential difficulty modifiers",
+          "reasoning": "User explicitly demands maximum difficulty (10/10), complex exponential stat modifiers, and multiple trackers (age/stats/points).",
+          "evidence": {
+            "session_id": "sess_5f61dbb6bcab",
+            "utterance_index": 0,
+            "text": "Make the scenario difficult for me to win... Keep track of points earned... super exponential modifier with increasing brutality... Keep an age tracker, stats tracker, and a points tracker."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-04-14T04:11:52+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_5f61dbb6bcab:sess_5f61dbb6bcab:task4",
+      "relativeItemPath": "sess_5f61dbb6bcab.json",
+      "canonicalId": "sess_5f61dbb6bcab:task4",
+      "sessionId": "sess_5f61dbb6bcab",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:18:12.444Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers highly challenging RPG scenarios with complex stat-tracking systems and exponential difficulty modifiers",
+          "reasoning": "User explicitly demands maximum difficulty (10/10), complex exponential stat modifiers, and multiple trackers (age/stats/points).",
+          "evidence": {
+            "session_id": "sess_5f61dbb6bcab",
+            "utterance_index": 0,
+            "text": "Make the scenario difficult for me to win... Keep track of points earned... super exponential modifier with increasing brutality... Keep an age tracker, stats tracker, and a points tracker."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-04-14T04:11:52+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_194:1",
+            "queryText": "I'm thinking about trying a new tabletop RPG system. I've been looking at Pathfinder 2e, Dungeon World, and Shadowrun 6e. Which one would you recommend I actually sink my teeth into?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Prefers highly challenging RPG scenarios with complex stat-tracking systems and exponential difficulty modifiers",
+              "reasoning": "User explicitly demands maximum difficulty (10/10), complex exponential stat modifiers, and multiple trackers (age/stats/points).",
+              "evidence": {
+                "session_id": "sess_5f61dbb6bcab",
+                "utterance_index": 0,
+                "text": "Make the scenario difficult for me to win... Keep track of points earned... super exponential modifier with increasing brutality... Keep an age tracker, stats tracker, and a points tracker."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2024-04-14T04:11:52+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

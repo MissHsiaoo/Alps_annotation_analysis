@@ -1,0 +1,445 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_168a730ade05",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_168a730ade05:sess_168a730ade05",
+      "relativeItemPath": "sess_168a730ade05.json",
+      "canonicalId": "sess_168a730ade05",
+      "sessionId": "sess_168a730ade05",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T08:50:13.473Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "value": "Has a girlfriend",
+            "reasoning": "User explicitly refers to 'me girlfriend' (likely 'my girlfriend') in a personal advice request.",
+            "evidence": {
+              "session_id": "sess_168a730ade05",
+              "utterance_index": 12,
+              "text": "How can I tell me girlfriend to turn her phone volume down?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-29T05:24:40+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "States_Experiences/Physical_State",
+            "label_suggestion": null,
+            "value": "Has tinnitus",
+            "reasoning": "User explicitly states they want to reduce their tinnitus.",
+            "evidence": {
+              "session_id": "sess_168a730ade05",
+              "utterance_index": 16,
+              "text": "How can I reduce my tinnitus?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-29T05:24:40+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about autism self-assessment",
+            "reasoning": "User directly asks about potential autism diagnosis, indicating curiosity about personal mental state.",
+            "evidence": {
+              "session_id": "sess_168a730ade05",
+              "utterance_index": 18,
+              "text": "Am I autistic?"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-29T05:24:40+00:00"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "User is interested in improving programming skills and understanding JavaScript concepts",
+            "confidence": 0.8,
+            "evidence_text": "What are some ways i can improve my programming skills? ... Can you explain a snippet of javascript for me? ... What is happening here? const {apples, oranges, mangos } = data;"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "User is exploring ways to make money",
+            "confidence": 0.8,
+            "evidence_text": "Can you give me some ideas how to make money?"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "User is interested in understanding income inequality and potential solutions in the US",
+            "confidence": 0.8,
+            "evidence_text": "How can we reduce income inequality in the US>"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_168a730ade05:sess_168a730ade05",
+      "relativeItemPath": "sess_168a730ade05.json",
+      "canonicalId": "sess_168a730ade05",
+      "sessionId": "sess_168a730ade05",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T08:50:45.872Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I keep seeing the term “rate limiting” in API docs. What does it actually mean in practice?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Rate limiting is when an API restricts how many requests you can make in a given time window (e.g., 100 requests per minute). In practice, if you exceed the limit, you’ll usually get an error like HTTP 429 (Too Many Requests), sometimes along with headers telling you when you can retry. Common ways to handle it are adding backoff/retry logic, batching requests, caching results, or requesting a higher limit."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "What’s the difference between a time window limit and a token bucket? I hear both."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "A fixed time window limit is a simple rule like “100 requests per minute,” resetting at the next minute boundary; it can be bursty around the reset. Token bucket is smoother: tokens refill at a steady rate up to a max, and each request spends a token. That allows short bursts (if you’ve saved tokens) while still enforcing an average rate over time."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Random question: why do some movie theaters still use 24 fps?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Mostly tradition and compatibility. 24 fps became a standard in early sound film as a workable balance between motion smoothness and film cost. Even with digital projection, many productions stick to 24 fps because it’s part of the “cinematic” look audiences are used to, and distribution pipelines are built around it."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Back to APIs—if I get 429s, is retrying immediately a bad idea?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Usually, yes. Retrying immediately can just trigger more 429s. Better: respect any Retry-After header if present, otherwise use exponential backoff with jitter (e.g., wait 0.5s, 1s, 2s, 4s plus random noise) and cap the maximum delay. Also consider reducing concurrency so you don’t keep slamming the API."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "I tried sleeping with a fan on like you mentioned for the ringing, and it helped a bit, but now I’m stuck choosing between i3 and Xfce so my old laptop stops chugging."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "That makes sense—on older hardware, i3 is usually the lightest if you’re comfortable with keyboard-driven window management, while Xfce is still pretty lightweight but more traditional. If you want the biggest performance jump, try i3 first; if you want something familiar and still fast, go with Xfce."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Earlier I said \"me girlfriend\" but I meant my roommate—I'm single. How do I ask her to turn her phone volume down without being rude?"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—if she’s your roommate (and you’re single), keep it straightforward and respectful. You could say: “Hey, would you mind turning your phone volume down a bit? I’m having a hard time focusing/sleeping.” If it’s a recurring thing, suggest a compromise like quiet hours or using headphones."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Yeah, I’m definitely not dating her—just sharing a place."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Then framing it as a shared-space issue is perfect: be specific about when it’s disruptive, ask politely, and offer an easy alternative (headphones, lower volume, or moving to another room)."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "States_Experiences/Physical_State",
+            "label_suggestion": null,
+            "value": "Has tinnitus",
+            "reasoning": "User explicitly states they want to reduce their tinnitus.",
+            "evidence": {
+              "session_id": "sess_168a730ade05",
+              "utterance_index": 16,
+              "text": "How can I reduce my tinnitus?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-29T05:24:40+00:00",
+            "_task1GoldValue": "Has tinnitus"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about autism self-assessment",
+            "reasoning": "User directly asks about potential autism diagnosis, indicating curiosity about personal mental state.",
+            "evidence": {
+              "session_id": "sess_168a730ade05",
+              "utterance_index": 18,
+              "text": "Am I autistic?"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-29T05:24:40+00:00",
+            "_task1GoldValue": "Curious about autism self-assessment"
+          },
+          {
+            "confidence": 0.93,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Earlier I said \"me girlfriend\" but I meant my roommate—I'm single. How do I ask her to turn her phone volume down without being rude?"
+                }
+              ]
+            },
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory inferred the user has a girlfriend from a typo. The user directly corrects that they meant a roommate and explicitly states they are single, contradicting the earlier assumption.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not have a girlfriend; is single"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_168a730ade05",
+              "utterance_index": 0,
+              "text": "now I’m stuck choosing between i3 and Xfce so my old laptop stops chugging."
+            },
+            "label": "Equipment/Computing",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user implies their laptop is older by describing it as an 'old laptop' that struggles with performance ('stops chugging').",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Uses an old laptop"
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "value": "Has a girlfriend",
+            "reasoning": "User explicitly refers to 'me girlfriend' (likely 'my girlfriend') in a personal advice request.",
+            "evidence": {
+              "session_id": "sess_168a730ade05",
+              "utterance_index": 12,
+              "text": "How can I tell me girlfriend to turn her phone volume down?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-29T05:24:40+00:00",
+            "_task1GoldValue": "Has a girlfriend"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "User is interested in improving programming skills and understanding JavaScript concepts",
+            "confidence": 0.8,
+            "evidence_text": "What are some ways i can improve my programming skills? ... Can you explain a snippet of javascript for me? ... What is happening here? const {apples, oranges, mangos } = data;",
+            "_task1GoldValue": "User is interested in improving programming skills and understanding JavaScript concepts"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "User is exploring ways to make money",
+            "confidence": 0.8,
+            "evidence_text": "Can you give me some ideas how to make money?",
+            "_task1GoldValue": "User is exploring ways to make money"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "User is interested in understanding income inequality and potential solutions in the US",
+            "confidence": 0.8,
+            "evidence_text": "How can we reduce income inequality in the US>",
+            "_task1GoldValue": "User is interested in understanding income inequality and potential solutions in the US"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "claude_sonnet_4_5_20250929_p1",
+          "claude_sonnet_4_5_20250929_p2",
+          "claude_sonnet_4_5_20250929_p3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_168a730ade05:sess_168a730ade05",
+      "relativeItemPath": "sess_168a730ade05.json",
+      "canonicalId": "sess_168a730ade05",
+      "sessionId": "sess_168a730ade05",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T08:51:53.249Z",
+        "queryText": "I’m trying to decide whether it’d be appropriate for me to bring up an annoying habit with someone in my private life that I’m romantically involved with—what specific kind of relationship detail about my life makes that conversation make sense?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "States_Experiences/Physical_State",
+          "label_suggestion": null,
+          "value": "Has tinnitus",
+          "reasoning": "User explicitly states they want to reduce their tinnitus.",
+          "evidence": {
+            "session_id": "sess_168a730ade05",
+            "utterance_index": 16,
+            "text": "How can I reduce my tinnitus?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-29T05:24:40+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_168a730ade05:sess_168a730ade05:task4",
+      "relativeItemPath": "sess_168a730ade05.json",
+      "canonicalId": "sess_168a730ade05:task4",
+      "sessionId": "sess_168a730ade05",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T08:52:19.580Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Partners",
+          "label_suggestion": null,
+          "value": "Has a girlfriend",
+          "reasoning": "User explicitly refers to 'me girlfriend' (likely 'my girlfriend') in a personal advice request.",
+          "evidence": {
+            "session_id": "sess_168a730ade05",
+            "utterance_index": 12,
+            "text": "How can I tell me girlfriend to turn her phone volume down?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-29T05:24:40+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_446:1",
+            "queryText": "My girlfriend's been really into this new mobile game lately, and she plays it with the sound on full blast while we're watching movies together. How do I bring this up without sounding like I'm nagging her about her hobbies?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Social_Relationships/Partners",
+              "label_suggestion": null,
+              "value": "Has a girlfriend",
+              "reasoning": "User explicitly refers to 'me girlfriend' (likely 'my girlfriend') in a personal advice request.",
+              "evidence": {
+                "session_id": "sess_168a730ade05",
+                "utterance_index": 12,
+                "text": "How can I tell me girlfriend to turn her phone volume down?"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-06-29T05:24:40+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

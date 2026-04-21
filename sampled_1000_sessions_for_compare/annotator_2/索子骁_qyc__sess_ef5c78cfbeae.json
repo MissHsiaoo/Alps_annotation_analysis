@@ -1,0 +1,339 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_ef5c78cfbeae",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_ef5c78cfbeae:sess_ef5c78cfbeae",
+      "relativeItemPath": "sess_ef5c78cfbeae.json",
+      "canonicalId": "sess_ef5c78cfbeae",
+      "sessionId": "sess_ef5c78cfbeae",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T02:25:11.266Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "States_Experiences/Past_Experience",
+            "label_suggestion": null,
+            "value": "Has investigated thousands of near-death experiences (270 involving Jesus Christ)",
+            "reasoning": "User explicitly states personal research activity involving systematic analysis of NDEs.",
+            "evidence": {
+              "session_id": "sess_ef5c78cfbeae",
+              "utterance_index": 16,
+              "text": "Ich habe viele tausend Nahtoderlebnisse untersucht... Sind diese Erfahrungen Indizien dafür, das die Lehren von Steiner einen wahren Kern besitzen?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-08T22:30:43+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/topic_inquiry/anthroposophy_atlantis",
+            "value": "Sustained curiosity about anthroposophical concepts, Atlantis theories, and spiritual-historical connections",
+            "reasoning": "Forced label not supported. Evidence shows topic inquiry pattern but no explicit self-reported curiosity trait. Downgraded to indirect hypothesis.",
+            "evidence": {
+              "session_id": "sess_ef5c78cfbeae",
+              "utterance_index": 16,
+              "text": "Multiple turns (16,22,26,28 etc) show extended factual questioning about esoteric topics"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-08T22:30:43+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_ef5c78cfbeae:sess_ef5c78cfbeae",
+      "relativeItemPath": "sess_ef5c78cfbeae.json",
+      "canonicalId": "sess_ef5c78cfbeae",
+      "sessionId": "sess_ef5c78cfbeae",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:48:51.406Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Kannst du kurz erklären, wie man eine Quelle richtig zitiert, wenn man nur einen kurzen Abschnitt daraus verwendet?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Klar. Üblich ist: Autor*in, Titel, Jahr (ggf. Verlag/Ort), genaue Fundstelle (Seite/Abschnitt) und – bei Online-Quellen – URL plus Abrufdatum. Wenn du wörtlich übernimmst: in Anführungszeichen setzen und die Seitenzahl direkt angeben; bei sinngemäßem Übernehmen reicht meist ein Verweis im Satz oder in der Fußnote.\n\nBeispiel (Buch, Kurzquote): Nachname, Titel, Jahr, S. 42.\nBeispiel (Web): Nachname/Institution, „Titel der Seite“, Datum, URL (abgerufen am TT.MM.JJJJ).\n\nWelchen Stil brauchst du—APA, Chicago, MLA oder deutsch mit Fußnoten?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Eher deutsch mit Fußnoten. Und was ist, wenn ich eine Quelle sekundär zitiere, weil ich das Original nicht habe?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Beim Sekundärzitat machst du transparent, dass du das Original nicht selbst eingesehen hast. In der Fußnote nennst du zuerst das Original (so weit bekannt) und fügst dann „zit. nach“ mit der tatsächlich genutzten Quelle an.\n\nSchema: Originalautor, Originaltitel, Jahr, S. x, zit. nach: Sekundärautor, Sekundärtitel, Jahr, S. y.\n\nWenn möglich, ist es besser, das Original zu beschaffen—aber wenn das nicht geht, ist die „zit. nach“-Angabe der saubere Weg. Soll ich dir ein konkretes Fußnotenbeispiel mit Platzhaltern formulieren?"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Ja, bitte. Und kannst du auch sagen, wie man eine Fußnote setzt, wenn es sich um ein Interview handelt?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Gern.\n\n1) Sekundärzitat (Beispiel mit Platzhaltern):\n„Zitat …“ – Max Mustermann, *Titel des Originals*, 1923, S. 15, zit. nach: Erika Beispiel, *Titel der Sekundärquelle*, München: Beispielverlag 2019, S. 88.\n\n2) Interview (unveröffentlicht/persönlich geführt):\nVorname Nachname (Funktion/Rolle, falls relevant), Interview geführt von Vorname Nachname, Ort, Datum, ggf. Zeitstempel/Notiz „eigene Aufzeichnung“.\n\nBeispiel:\nAnna Beispiel (Zeitzeugin), Interview geführt von N. N., Berlin, 12.01.2024, eigene Aufzeichnung.\n\nWenn das Interview veröffentlicht ist (Podcast/Video/Artikel), behandelst du es wie eine Publikation und ergänzt Medium, URL und ggf. Timecode."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Danke! Übrigens: Ich habe letztens gelesen, dass es in Island 1971 einen besonders strengen Winter gab—stimmt das?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Es gab in Island mehrere sehr strenge Winter in den 1960ern/1970ern; ob 1971 *der* besonders strenge war, hängt von der Region und den Messreihen ab. Wenn du mir sagst, wo du das gelesen hast (Artikel/Buch/Link), kann ich einordnen, ob dort auf konkrete Wetterdaten (Temperaturmittel, Niederschlag, See-Eis, Sturmtage) Bezug genommen wird.\n\nNebenbei als Kontext: In Nordeuropa sind die frühen 1970er in einigen Datensätzen als Phase mit markanten Kälteepisoden verzeichnet, aber „besonders streng“ wird je nach Vergleichszeitraum unterschiedlich bewertet."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Noch eine Bitte, bevor ich das alles archiviere: Wenn du gleich antwortest, lass bitte diese einleitenden Entschuldigungen weg und konzentrier dich direkt auf den Inhalt."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Verstanden. Ich antworte ab jetzt ohne einleitende Entschuldigungen und konzentriere mich direkt auf den Inhalt. Worum soll es als Nächstes gehen?"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Kurze Korrektur zu vorhin: Ich habe nicht selber „viele tausend Nahtoderlebnisse untersucht“. Ich habe viele tausend Berichte gelesen und die 270 Fälle mit Jesus-Bezug aus bestehenden Sammlungen/Publikationen herausgezählt – das war keine eigene wissenschaftliche Untersuchung."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Verstanden – danke für die Präzisierung. Dann ist es genauer so: Du hast viele tausend NDE-Berichte rezipiert und daraus 270 Jesus-bezogene Fälle aus bestehenden Quellen herauskategorisiert bzw. gezählt, statt eine eigene Untersuchung mit eigener Datenerhebung durchzuführen."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Genau, so ist es gemeint."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/topic_inquiry/anthroposophy_atlantis",
+            "value": "Sustained curiosity about anthroposophical concepts, Atlantis theories, and spiritual-historical connections",
+            "reasoning": "Forced label not supported. Evidence shows topic inquiry pattern but no explicit self-reported curiosity trait. Downgraded to indirect hypothesis.",
+            "evidence": {
+              "session_id": "sess_ef5c78cfbeae",
+              "utterance_index": 16,
+              "text": "Multiple turns (16,22,26,28 etc) show extended factual questioning about esoteric topics"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-08T22:30:43+00:00",
+            "_task1GoldValue": "Sustained curiosity about anthroposophical concepts, Atlantis theories, and spiritual-historical connections"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": null,
+            "label": "States_Experiences/Past_Experience",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The original memory claims the user personally investigated thousands of NDEs. The user clarifies it was not an own investigation but reading reports and counting 270 Jesus-related cases from existing sources.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Has read many thousands of near-death experience reports and counted/categorized 270 cases involving Jesus Christ from existing collections/publications (not their own scientific investigation)."
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_ef5c78cfbeae",
+              "utterance_index": 0,
+              "text": "Wenn du gleich antwortest, lass bitte diese einleitenden Entschuldigungen weg und konzentrier dich direkt auf den Inhalt."
+            },
+            "label": "Preferences/Communication_Style",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "prefers",
+            "reasoning": "The user asks the assistant to omit apology-style prefaces and focus directly on substance, indicating a communication-style preference.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers the assistant to avoid introductory apologies and get straight to the content."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "States_Experiences/Past_Experience",
+            "label_suggestion": null,
+            "value": "Has investigated thousands of near-death experiences (270 involving Jesus Christ)",
+            "reasoning": "User explicitly states personal research activity involving systematic analysis of NDEs.",
+            "evidence": {
+              "session_id": "sess_ef5c78cfbeae",
+              "utterance_index": 16,
+              "text": "Ich habe viele tausend Nahtoderlebnisse untersucht... Sind diese Erfahrungen Indizien dafür, das die Lehren von Steiner einen wahren Kern besitzen?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-08T22:30:43+00:00",
+            "_task1GoldValue": "Has investigated thousands of near-death experiences (270 involving Jesus Christ)"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_ef5c78cfbeae:sess_ef5c78cfbeae",
+      "relativeItemPath": "sess_ef5c78cfbeae.json",
+      "canonicalId": "sess_ef5c78cfbeae",
+      "sessionId": "sess_ef5c78cfbeae",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:49:00.209Z",
+        "queryText": "I’m drafting a short intro for a talk and want to include a quick, numbers-based credibility line. If I describe my past work as covering a very large set of accounts and note that a specific subset centered on a single religious figure, what are the two figures I should cite (total and subset) so the statement stays accurate?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "States_Experiences/Past_Experience",
+          "label_suggestion": null,
+          "value": "Has investigated thousands of near-death experiences (270 involving Jesus Christ)",
+          "reasoning": "User explicitly states personal research activity involving systematic analysis of NDEs.",
+          "evidence": {
+            "session_id": "sess_ef5c78cfbeae",
+            "utterance_index": 16,
+            "text": "Ich habe viele tausend Nahtoderlebnisse untersucht... Sind diese Erfahrungen Indizien dafür, das die Lehren von Steiner einen wahren Kern besitzen?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-03-08T22:30:43+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_ef5c78cfbeae:sess_ef5c78cfbeae:task4",
+      "relativeItemPath": "sess_ef5c78cfbeae.json",
+      "canonicalId": "sess_ef5c78cfbeae:task4",
+      "sessionId": "sess_ef5c78cfbeae",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:43:53.913Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "States_Experiences/Past_Experience",
+          "label_suggestion": null,
+          "value": "Has investigated thousands of near-death experiences (270 involving Jesus Christ)",
+          "reasoning": "User explicitly states personal research activity involving systematic analysis of NDEs.",
+          "evidence": {
+            "session_id": "sess_ef5c78cfbeae",
+            "utterance_index": 16,
+            "text": "Ich habe viele tausend Nahtoderlebnisse untersucht... Sind diese Erfahrungen Indizien dafür, das die Lehren von Steiner einen wahren Kern besitzen?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-03-08T22:30:43+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_475:1",
+            "queryText": "Ich habe kürzlich eine Nahtoderfahrung dokumentiert, bei der die Person beschrieb, wie Christus ihr zeigte, wie ihre früheren Inkarnationen in atlantischen Mysterienkulten mit ihrem aktuellen spirituellen Weg verbunden sind. Wie würde Steiner diese Verbindung zwischen atlantischer Weisheit und dem Christusimpuls in der individuellen Biografie erklären?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "States_Experiences/Past_Experience",
+              "label_suggestion": null,
+              "value": "Has investigated thousands of near-death experiences (270 involving Jesus Christ)",
+              "reasoning": "User explicitly states personal research activity involving systematic analysis of NDEs.",
+              "evidence": {
+                "session_id": "sess_ef5c78cfbeae",
+                "utterance_index": 16,
+                "text": "Ich habe viele tausend Nahtoderlebnisse untersucht... Sind diese Erfahrungen Indizien dafür, das die Lehren von Steiner einen wahren Kern besitzen?"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-03-08T22:30:43+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "partial",
+            "memoryDependency": "strong",
+            "abilityPurity": "medium",
+            "issueTypes": [
+              "ability_mismatch"
+            ],
+            "evidenceNote": "relevant memory but not helpful ability",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

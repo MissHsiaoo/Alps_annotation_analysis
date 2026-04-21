@@ -1,0 +1,366 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_2ce83c562e45",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_2ce83c562e45:sess_2ce83c562e45",
+      "relativeItemPath": "sess_2ce83c562e45.json",
+      "canonicalId": "sess_2ce83c562e45",
+      "sessionId": "sess_2ce83c562e45",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T18:06:14.901Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Do not translate street/avenue/district names",
+            "reasoning": "User explicitly instructs to retain original proper nouns for streets/avenues/districts",
+            "evidence": {
+              "session_id": "sess_2ce83c562e45",
+              "utterance_index": 22,
+              "text": "No traducir los nombres de las calles o avenidas, distrito."
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "neutral",
+            "updated_at": "2024-01-21T15:44:42+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "No spaces between Chinese characters and alphanumerics",
+            "reasoning": "Explicit formatting instruction for legal translations",
+            "evidence": {
+              "session_id": "sess_2ce83c562e45",
+              "utterance_index": 36,
+              "text": "No dejar espacio entre caracter chino y caracter alfanumerico."
+            },
+            "confidence": 0.95,
+            "time_scope": "current",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-01-21T15:44:42+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Specific translation conventions: 'chino Qu' → 'Qu姓中国人', 'clan Orellana' → 奥雷亚纳洗钱犯罪团伙",
+            "reasoning": "Explicit terminology mapping instruction with contextual adaptation",
+            "evidence": {
+              "session_id": "sess_2ce83c562e45",
+              "utterance_index": 54,
+              "text": "Traducir 'chino Qu' como 'Qu姓中国人', y 'clan Orellana' como 奥雷亚纳洗钱犯罪团伙. No traducir los nombres propios."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-01-21T15:44:42+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_2ce83c562e45:sess_2ce83c562e45",
+      "relativeItemPath": "sess_2ce83c562e45.json",
+      "canonicalId": "sess_2ce83c562e45",
+      "sessionId": "sess_2ce83c562e45",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T18:07:36.081Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Tengo una duda rápida: si en una traducción legal al chino aparece “Art. 83.2 Inc. g)”, ¿conviene mantener el formato original o adaptarlo?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "En traducción legal suele mantenerse el formato de cita del texto fuente para evitar ambigüedad (p. ej., “Art.83.2Inc.g)”), y si necesitas adaptarlo al estilo chino, se puede añadir entre paréntesis una forma equivalente como “第83条第2款第g项”, siempre que sea coherente en todo el documento."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "¿Y con los nombres de calles y distritos, se transliteran o se dejan tal cual en español?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Normalmente se dejan tal cual (sin traducir), porque son topónimos oficiales. Si hace falta ayudar al lector, se puede agregar una transliteración entre paréntesis la primera vez, pero en expedientes suele preferirse conservar el nombre original sin cambios."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Estoy armando un glosario: “medida cautelar”, “escritura pública”, “asiento registral”. ¿Me das equivalentes frecuentes en chino jurídico?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Usos frecuentes: “medida cautelar”=“保全措施/临时措施”(según contexto), “escritura pública”=“公证文书/公证书”, “asiento registral”=“登记记载/登记事项(记载)”. Si indicas país/sistema registral, puedo afinar el término más estándar."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Dato curioso: leí que en un caso famoso en Italia se usó un arbitraje para simular una transferencia de bienes. ¿En chino se distingue “arbitraje” de “laudo arbitral” con términos separados?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Sí: “arbitraje” suele ser “仲裁”, y “laudo arbitral” es “仲裁裁决/仲裁裁决书”. (Como ejemplo no relacionado: en 2012 hubo un arbitraje muy citado en ciertos artículos académicos sobre fraude contractual, y siempre separan “仲裁程序” del “仲裁裁决”.)"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Última: si una referencia dice “Tomo 709, Fs. 143312-143380”, ¿cómo lo pondrías en chino manteniendo la estructura?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Algo estándar y claro sería: “第709卷，第143312-143380页”。Si tu criterio es no dejar espacios entre caracteres chinos y alfanuméricos, quedaría igual sin espacios adicionales."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "En las citas legales, cuando aparezca “Fs.” prefiero que quede como“第…页”yque“Tomo”se mantenga como“第…卷”，igualqueantes."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Entendido. Mantendré“Fs.”→“第…页”y“Tomo”→“第…卷”，siguiendo el formato que venías usando."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "En esta parte sí traduce los nombres de las vías y el distrito al chino para que quede uniforme; por ejemplo, “Distrito de Santiago de Surco” tradúcelo como “圣地亚哥德苏尔科区” y “Av. Alfredo Benavides” como “阿尔弗雷多·贝纳维德斯大道”."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Entendido. Entonces, para este tramo no mantendré los nombres originales: traduciré las calles/avenidas y el distrito al chino (p. ej., “Distrito de Santiago de Surco”→“圣地亚哥德苏尔科区”; “Av. Alfredo Benavides”→“阿尔弗雷多·贝纳维德斯大道”)."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "No spaces between Chinese characters and alphanumerics",
+            "reasoning": "Explicit formatting instruction for legal translations",
+            "evidence": {
+              "session_id": "sess_2ce83c562e45",
+              "utterance_index": 36,
+              "text": "No dejar espacio entre caracter chino y caracter alfanumerico."
+            },
+            "confidence": 0.95,
+            "time_scope": "current",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-01-21T15:44:42+00:00",
+            "_task1GoldValue": "No spaces between Chinese characters and alphanumerics"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Specific translation conventions: 'chino Qu' → 'Qu姓中国人', 'clan Orellana' → 奥雷亚纳洗钱犯罪团伙",
+            "reasoning": "Explicit terminology mapping instruction with contextual adaptation",
+            "evidence": {
+              "session_id": "sess_2ce83c562e45",
+              "utterance_index": 54,
+              "text": "Traducir 'chino Qu' como 'Qu姓中国人', y 'clan Orellana' como 奥雷亚纳洗钱犯罪团伙. No traducir los nombres propios."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-01-21T15:44:42+00:00",
+            "_task1GoldValue": "Specific translation conventions: 'chino Qu' → 'Qu姓中国人', 'clan Orellana' → 奥雷亚纳洗钱犯罪团伙"
+          },
+          {
+            "confidence": 0.92,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_2ce83c562e45",
+              "utterance_index": 0,
+              "text": "En las citas legales, cuando aparezca “Fs.” prefiero que quede como“第…页”yque“Tomo”se mantenga como“第…卷”，igualqueantes."
+            },
+            "label": "Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User references preferred formatting for legal citations, implying a consistent translation convention for these abbreviations.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "For legal citations: translate “Fs.” as “第…页” and keep “Tomo” as “第…卷”."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Do not translate street/avenue/district names",
+            "reasoning": "User explicitly instructs to retain original proper nouns for streets/avenues/districts",
+            "evidence": {
+              "session_id": "sess_2ce83c562e45",
+              "utterance_index": 22,
+              "text": "No traducir los nombres de las calles o avenidas, distrito."
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "neutral",
+            "updated_at": "2024-01-21T15:44:42+00:00",
+            "_task1GoldValue": "Do not translate street/avenue/district names"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_2ce83c562e45:sess_2ce83c562e45",
+      "relativeItemPath": "sess_2ce83c562e45.json",
+      "canonicalId": "sess_2ce83c562e45",
+      "sessionId": "sess_2ce83c562e45",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T18:07:43.260Z",
+        "queryText": "I’m polishing a bilingual travel note and I’m about to convert everything into the target language—including place labels like roads and neighborhood areas. Based on what you’ve told me about how you want proper place labels handled, what should I avoid doing in that translation pass?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Do not translate street/avenue/district names",
+          "reasoning": "User explicitly instructs to retain original proper nouns for streets/avenues/districts",
+          "evidence": {
+            "session_id": "sess_2ce83c562e45",
+            "utterance_index": 22,
+            "text": "No traducir los nombres de las calles o avenidas, distrito."
+          },
+          "confidence": 0.95,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "neutral",
+          "updated_at": "2024-01-21T15:44:42+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_2ce83c562e45:sess_2ce83c562e45:task4",
+      "relativeItemPath": "sess_2ce83c562e45.json",
+      "canonicalId": "sess_2ce83c562e45:task4",
+      "sessionId": "sess_2ce83c562e45",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T18:07:49.730Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Do not translate street/avenue/district names",
+          "reasoning": "User explicitly instructs to retain original proper nouns for streets/avenues/districts",
+          "evidence": {
+            "session_id": "sess_2ce83c562e45",
+            "utterance_index": 22,
+            "text": "No traducir los nombres de las calles o avenidas, distrito."
+          },
+          "confidence": 0.95,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "neutral",
+          "updated_at": "2024-01-21T15:44:42+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_6:1",
+            "queryText": "Estoy preparando un informe para mi jefe sobre el caso Mónaco y necesito que me traduzcas al chino todo este párrafo de contexto geográfico para incluirlo como anexo: 'Los inmuebles se ubican en la Av. Alfredo Benavides N° 4890 Esq. C/Pasaje Mónaco N° 171 Mz. F Lt. 28 Urb. Prolongación Benavides primera etapa –Distrito de Santiago de Surco, Provincia y Departamento de Lima. La propiedad colinda al norte con la Calle Los Pinos y al sur con la Av. Javier Prado.' Solo necesito la traducción del texto descriptivo, los nombres de las vías y la ubicación administrativa deben mantenerse exactamente igual para la referencia oficial.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Disliked_Topics",
+              "label_suggestion": null,
+              "value": "Do not translate street/avenue/district names",
+              "reasoning": "User explicitly instructs to retain original proper nouns for streets/avenues/districts",
+              "evidence": {
+                "session_id": "sess_2ce83c562e45",
+                "utterance_index": 22,
+                "text": "No traducir los nombres de las calles o avenidas, distrito."
+              },
+              "confidence": 0.95,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": "neutral",
+              "updated_at": "2024-01-21T15:44:42+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

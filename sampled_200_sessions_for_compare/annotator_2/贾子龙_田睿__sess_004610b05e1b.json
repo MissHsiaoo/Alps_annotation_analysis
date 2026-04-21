@@ -1,0 +1,453 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_004610b05e1b",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_004610b05e1b:sess_004610b05e1b",
+      "relativeItemPath": "sess_004610b05e1b.json",
+      "canonicalId": "sess_004610b05e1b",
+      "sessionId": "sess_004610b05e1b",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-13T08:31:57.661Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Recruiter at Renault Group (handling recruitment for Renault/Ampere/Mobilize)",
+            "reasoning": "Explicit self-report of recruitment activities for Renault Group companies in user questions",
+            "evidence": {
+              "session_id": "sess_004610b05e1b",
+              "utterance_index": 4,
+              "text": "creer des reponce a ces questions, en relation aux recrutement a renault, ampere, mobilize"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-25T16:08:49+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/email_formatting",
+            "value": "Prefers structured email communication with clear job titles/dates/bullet points",
+            "reasoning": "Label forced. Weak evidence of personal preference - could reflect job requirements",
+            "evidence": {
+              "session_id": "sess_004610b05e1b",
+              "utterance_index": 6,
+              "text": "reecris : Bonjour M. Lestideau... pour une durée d'une heure"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-25T16:08:49+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Social_Relationships/Colleagues",
+            "label_suggestion": null,
+            "value": "Works closely with HRBP Charlene for salary exceptions",
+            "reasoning": "Direct evidence of collaboration in salary negotiation discussions",
+            "evidence": {
+              "session_id": "sess_004610b05e1b",
+              "utterance_index": 46,
+              "text": "je me permets donc de voir avec toi si une derogation est ossible de ton coté"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-25T16:08:49+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "tool_usage/interview_platform",
+            "value": "Uses TEAMS as primary interview platform",
+            "reasoning": "Label forced. Reflects organizational tool usage rather than personal preference",
+            "evidence": {
+              "session_id": "sess_004610b05e1b",
+              "utterance_index": 6,
+              "text": "vous serez interviewé sur TEAMS... envoie une invitation TEAMS"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-25T16:08:49+00:00"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "Interested in converting net salaries to brut salaries, specifically for amounts like 3500 euros in Croatia and 4500 euros in France.",
+            "confidence": 0.8,
+            "evidence_text": "3500 euros net en croatie en brut et en anuel"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_004610b05e1b:sess_004610b05e1b",
+      "relativeItemPath": "sess_004610b05e1b.json",
+      "canonicalId": "sess_004610b05e1b",
+      "sessionId": "sess_004610b05e1b",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-13T08:33:17.627Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Je dois envoyer un petit message de relance, mais sans paraître pressant. Tu peux m’aider à le formuler ?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Bien sûr. Tu veux un ton plutôt formel (mail) ou plus court (message Teams/Slack) ? Et tu relances après combien de temps sans réponse ?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Plutôt mail, formel, et ça fait une semaine."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Voici une proposition :\n\nObjet : Relance – point de suivi\n\nBonjour [Nom],\n\nJ’espère que vous allez bien.\n\nJe me permets de vous relancer concernant mon message du [date], afin de savoir si vous avez pu en prendre connaissance et si je peux vous apporter des éléments complémentaires.\n\nLorsque vous aurez un moment, pourriez-vous me confirmer la suite à donner ?\n\nJe vous remercie par avance pour votre retour.\n\nBien cordialement,\n[Signature]"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Peux-tu faire une version plus directe, mais toujours polie ?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Bien sûr :\n\nObjet : Relance – retour attendu\n\nBonjour [Nom],\n\nJe reviens vers vous suite à mon mail du [date]. Pour avancer, j’aurais besoin de votre retour sur le point suivant : [1 ligne].\n\nPouvez-vous me dire si c’est validé, ou si vous souhaitez en discuter ?\n\nBien cordialement,\n[Signature]"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Ok. Au fait, c’est quoi la différence entre un acompte et des arrhes, en général ?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "En général :\n- **Acompte** : engagement ferme des deux côtés. Si l’acheteur annule, il doit en principe payer (ou perdre l’acompte + éventuels dommages selon le contrat). Si le vendeur annule, il doit livrer ou indemniser.\n- **Arrhes** : plus “souple”. L’acheteur peut renoncer en **perdant les arrhes**. Le vendeur peut renoncer en **rendant le double**.\n\n(Exemple souvent cité : une réservation d’hôtel ou de prestation peut être en arrhes, tandis qu’un devis signé avec acompte est généralement plus engageant.)"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Je te mets en copie sur le thread : la conseillère du Crédit Agricole m’a demandé de confirmer mon identité avant de lever le plafond pour le virement de 4 500€."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Bien noté. Je peux te reformuler un court message à lui envoyer pour confirmer l’identité et préciser qu’il s’agit d’un virement vers un bénéficiaire déjà enregistré, si tu veux."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Je pensais que Charlene était notre HRBP sur les sujets de dérogation salariale, mais j’ai un doute : tu confirmes ?"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Non, justement : Charlene n’est pas HRBP sur ce périmètre. Pour les exceptions/dérogations salariales, ce n’est pas avec elle qu’on traite, c’est avec Annabelle (et, selon les cas, Ariane pour la grille)."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Ok, donc mon mail à Charlene était à côté de la plaque."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Oui. On voit d’ailleurs que tu fais déjà le bon réflexe quand Charlene est absente : « En l'absence de Charlene, je prends l'initiative de t'envoyer les détails concernant l'offre faite à Monsieur SUNIL. » Donc pour la dérogation, tu passes par Annabelle."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Recruiter at Renault Group (handling recruitment for Renault/Ampere/Mobilize)",
+            "reasoning": "Explicit self-report of recruitment activities for Renault Group companies in user questions",
+            "evidence": {
+              "session_id": "sess_004610b05e1b",
+              "utterance_index": 4,
+              "text": "creer des reponce a ces questions, en relation aux recrutement a renault, ampere, mobilize"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-25T16:08:49+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/email_formatting",
+            "value": "Prefers structured email communication with clear job titles/dates/bullet points",
+            "reasoning": "Label forced. Weak evidence of personal preference - could reflect job requirements",
+            "evidence": {
+              "session_id": "sess_004610b05e1b",
+              "utterance_index": 6,
+              "text": "reecris : Bonjour M. Lestideau... pour une durée d'une heure"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-25T16:08:49+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "tool_usage/interview_platform",
+            "value": "Uses TEAMS as primary interview platform",
+            "reasoning": "Label forced. Reflects organizational tool usage rather than personal preference",
+            "evidence": {
+              "session_id": "sess_004610b05e1b",
+              "utterance_index": 6,
+              "text": "vous serez interviewé sur TEAMS... envoie une invitation TEAMS"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-25T16:08:49+00:00"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": null,
+            "label": "Social_Relationships/Colleagues",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": null,
+            "reasoning": "The dialogue explicitly contradicts the prior belief that salary exceptions are handled closely with HRBP Charlene, stating instead that Charlene is not the HRBP for that scope and that exceptions are handled with Annabelle.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Salary exceptions are handled with Annabelle (not HRBP Charlene); Charlene is not the HRBP for that scope"
+          },
+          {
+            "confidence": 0.82,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_004610b05e1b",
+              "utterance_index": 0,
+              "text": "la conseillère du Crédit Agricole m’a demandé de confirmer mon identité"
+            },
+            "label": "Personal_Background/Finance",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user references their advisor at Crédit Agricole requesting identity confirmation for a transfer limit increase, implying the user’s bank is Crédit Agricole.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User banks with Crédit Agricole."
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Social_Relationships/Colleagues",
+            "label_suggestion": null,
+            "value": "Works closely with HRBP Charlene for salary exceptions",
+            "reasoning": "Direct evidence of collaboration in salary negotiation discussions",
+            "evidence": null,
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-25T16:08:49+00:00",
+            "evidence_text": ""
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "Interested in converting net salaries to brut salaries, specifically for amounts like 3500 euros in Croatia and 4500 euros in France.",
+            "confidence": 0.8,
+            "evidence_text": "",
+            "evidence": null
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_004610b05e1b:sess_004610b05e1b",
+      "relativeItemPath": "sess_004610b05e1b.json",
+      "canonicalId": "sess_004610b05e1b",
+      "sessionId": "sess_004610b05e1b",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-13T08:37:13.682Z",
+        "queryText": "I’m drafting a short intro for a message to a candidate, and I want it to sound credible: which kind of roles and which affiliated entities should I naturally mention that I’m recruiting for, based on what you already know about my day-to-day work?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Occupation",
+          "label_suggestion": null,
+          "value": "Recruiter at Renault Group (handling recruitment for Renault/Ampere/Mobilize)",
+          "reasoning": "Explicit self-report of recruitment activities for Renault Group companies in user questions",
+          "evidence": {
+            "session_id": "sess_004610b05e1b",
+            "utterance_index": 4,
+            "text": "creer des reponce a ces questions, en relation aux recrutement a renault, ampere, mobilize"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-03-25T16:08:49+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_004610b05e1b:sess_004610b05e1b:task4",
+      "relativeItemPath": "sess_004610b05e1b.json",
+      "canonicalId": "sess_004610b05e1b:task4",
+      "sessionId": "sess_004610b05e1b",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-13T11:44:04.353Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Occupation",
+          "label_suggestion": null,
+          "value": "Recruiter at Renault Group (handling recruitment for Renault/Ampere/Mobilize)",
+          "reasoning": "Explicit self-report of recruitment activities for Renault Group companies in user questions",
+          "evidence": {
+            "session_id": "sess_004610b05e1b",
+            "utterance_index": 4,
+            "text": "creer des reponce a ces questions, en relation aux recrutement a renault, ampere, mobilize"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-03-25T16:08:49+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_218:1",
+            "queryText": "Bonjour Annabelle, j'ai besoin de ton avis sur un cas particulier. Pour le poste de Pilote Sûreté de Fonctionnement Junior à Guyancourt, j'ai identifié un profil très intéressant actuellement en Croatie. Elle a une solide expérience en ISO 26262 et a contribué à l'obtention d'une certification chez son employeur actuel. Son salaire actuel est autour de 60k€ brut annuel. Étant donné les tensions que nous avons sur ce type de profil et le fait qu'elle soit prête à se relocaliser à Paris, penses-tu que nous pourrions envisager une proposition dans la fourchette 65-70k€ fixe ? Je crains qu'avec notre grille standard nous ne soyons pas compétitifs, surtout pour attirer des profils avec une expertise certification.",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Occupation",
+              "label_suggestion": null,
+              "value": "Recruiter at Renault Group (handling recruitment for Renault/Ampere/Mobilize)",
+              "reasoning": "Explicit self-report of recruitment activities for Renault Group companies in user questions",
+              "evidence": {
+                "session_id": "sess_004610b05e1b",
+                "utterance_index": 4,
+                "text": "creer des reponce a ces questions, en relation aux recrutement a renault, ampere, mobilize"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-03-25T16:08:49+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          },
+          {
+            "queryId": "ability1_270:1",
+            "queryText": "Bonjour Charlene, j'ai besoin de ton avis sur un dossier qui commence à devenir urgent. Pour le poste d'Ingénieur Système Embarqué sur le projet X, j'ai identifié un candidat exceptionnel – profil très rare sur le marché, avec une expertise pointue en cybersécurité des ECU. Il est actuellement à 75k€ fixe chez un concurrent. J'ai présenté notre offre à 68k€ en insistant sur tous les avantages Renault, la mobilité interne, le projet innovant... mais il reste ferme. Il dit que la différence est trop importante pour justifier un changement, même avec notre package. Vu les difficultés qu'on a eues à trouver ce type de profil sur les derniers mois et l'urgence du besoin côté projet, est-ce qu'on peut envisager une dérogation pour se rapprocher de ses 75k€ ? Je t'envoie son CV et la grille salariale du poste en pièce jointe pour que tu puisses évaluer. Sans un geste, je pense qu'on va le perdre.",
+            "ability": "ability1",
+            "task4RecordIndex": 1,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Social_Relationships/Colleagues",
+              "label_suggestion": null,
+              "value": "Works closely with HRBP Charlene for salary exceptions",
+              "reasoning": "Direct evidence of collaboration in salary negotiation discussions",
+              "evidence": {
+                "session_id": "sess_004610b05e1b",
+                "utterance_index": 46,
+                "text": "je me permets donc de voir avec toi si une derogation est ossible de ton coté"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-03-25T16:08:49+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

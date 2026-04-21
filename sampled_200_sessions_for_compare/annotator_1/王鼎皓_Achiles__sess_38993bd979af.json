@@ -1,0 +1,333 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_38993bd979af",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_38993bd979af:sess_38993bd979af",
+      "relativeItemPath": "sess_38993bd979af.json",
+      "canonicalId": "sess_38993bd979af",
+      "sessionId": "sess_38993bd979af",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T09:24:07.113Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Contact_Information/Email",
+            "value": "Email: andreylappuchiy@gmail.com",
+            "reasoning": "User explicitly provided their email address for content delivery.",
+            "evidence": {
+              "session_id": "sess_38993bd979af",
+              "utterance_index": 16,
+              "text": "andreylappuchiy@gmail.com"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-04T14:07:06+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers website designs with Sailor Moon theme colors and SVG icons near headers",
+            "reasoning": "User explicitly specified design requirements: color scheme from Sailor Moon imagery and SVG icons adjacent to headers.",
+            "evidence": {
+              "session_id": "sess_38993bd979af",
+              "utterance_index": 0,
+              "text": "используй цвета из образа сейлор мун... чтобы рядом с заголовками были svg - иконки"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-04T14:07:06+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_38993bd979af:sess_38993bd979af",
+      "relativeItemPath": "sess_38993bd979af.json",
+      "canonicalId": "sess_38993bd979af",
+      "sessionId": "sess_38993bd979af",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T05:30:01.761Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "слушай, а можно сделать так, чтобы svg-иконки были в одном стиле и одинаковой толщины линий?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Да. Чтобы всё смотрелось цельно, лучше сразу задать правила: единый stroke-width (например 2px), одинаковые скругления (stroke-linecap/linejoin = round), общая сетка (24x24 или 32x32) и одинаковые отступы внутри viewBox. Ещё можно сделать набор из 8–12 базовых иконок и от них плясать дальше."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "ок, и ещё: как лучше оформить заголовки — картинка слева и текст справа или наоборот?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Чаще читается так: слева иконка, справа текст (мы читаем слева направо). Но можно чередовать в секциях (в одной — слева, в следующей — справа), чтобы страница не выглядела монотонной. Важно только сохранить одинаковые размеры иконок и расстояние до текста."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "а если я хочу, чтобы фон был градиентный, это сильно утяжелит?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Если градиент на CSS — почти не утяжелит. Тяжелее становится, когда градиент запечён в большие изображения. В CSS можно сделать linear-gradient, а поверх добавить лёгкий шум через маленький повторяющийся паттерн."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "кстати, видел где-то, что svg иногда мыльные на ретине — это правда?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Сами SVG обычно как раз идеально масштабируются. «Мыло» бывает, если SVG вставлен как background-image и масштабируется дробно, или если внутри есть растровые элементы. Помогает: выставлять кратные размеры (24/48), избегать дробных transform: scale, и проверять viewBox/width/height."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "окей, понял"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Если хочешь, могу накидать мини-гайд для набора иконок: сетка 24px, stroke 2px, только outline без заливок — и примеры 3–4 иконок (луна, звезда, жезл, кристалл) как SVG-код."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "assistant",
+            "text": "Ок, тогда, чтобы не ждать, я могу набросать прототип прямо в сообщении: шапка, блоки, тексты и примеры SVG рядом с заголовками. На чем будем собирать — на чистом HTML/CSS/JS или тебе удобнее, чтобы это сразу легло в WordPress?"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "user",
+            "text": "лучше wordpress, я потом сам там правки буду делать"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "assistant",
+            "text": "Понял, тогда структуру и стили сделаю так, чтобы их можно было без боли перенести в тему/шаблон и редактировать через админку. Скину сначала текстовую версию блоков, а затем подготовлю разметку под WP."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "user",
+            "text": "слушай, я тут подумал: давай без этой сейлор-муновской палитры. не хочу, чтобы сайт выглядел как фан-страничка."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "assistant",
+            "text": "Ок, понял. Тогда уходим от цветов «из образа Сейлор Мун» и делаем нейтральную палитру (светлый фон, спокойные акценты), чтобы стиль был более универсальным."
+          },
+          {
+            "turnId": "turn-16",
+            "role": "user",
+            "text": "и вот эти svg-иконки рядом с заголовками тоже не надо. лучше чистые заголовки, максимум — одна иконка в шапке."
+          },
+          {
+            "turnId": "turn-17",
+            "role": "assistant",
+            "text": "Принято: возле заголовков SVG-иконки не ставлю. Ограничимся одной общей иконкой/логотипом в шапке, а остальное — типографика и отступы."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Contact_Information/Email",
+            "value": "Email: andreylappuchiy@gmail.com",
+            "reasoning": "User explicitly provided their email address for content delivery.",
+            "evidence": {
+              "session_id": "sess_38993bd979af",
+              "utterance_index": 16,
+              "text": "andreylappuchiy@gmail.com"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-04T14:07:06+00:00"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The earlier memory says the user prefers Sailor Moon theme colors and SVG icons near headers, but the user explicitly reverses both preferences, requesting a neutral palette and no SVG icons by headings.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not want Sailor Moon theme colors; prefers a neutral palette and does not want SVG icons next to headers (at most a single icon in the header)."
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_38993bd979af",
+              "utterance_index": 1,
+              "text": "лучше wordpress, я потом сам там правки буду делать"
+            },
+            "label": "Preferences/Tech_Stack",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "Пользователь выбирает WordPress как платформу и поясняет, что хочет самостоятельно вносить правки после передачи.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers building the site on WordPress so they can make edits themselves later"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_38993bd979af:sess_38993bd979af",
+      "relativeItemPath": "sess_38993bd979af.json",
+      "canonicalId": "sess_38993bd979af",
+      "sessionId": "sess_38993bd979af",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-13T12:36:12.394Z",
+        "queryText": "I’m putting together a quick landing page mockup and I want it to feel like “my usual vibe.” If you had to pick (1) the overall color palette direction and (2) one small visual element placement rule I consistently ask for near section titles, what would you choose so it matches what I typically prefer?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers website designs with Sailor Moon theme colors and SVG icons near headers",
+          "reasoning": "User explicitly specified design requirements: color scheme from Sailor Moon imagery and SVG icons adjacent to headers.",
+          "evidence": {
+            "session_id": "sess_38993bd979af",
+            "utterance_index": 0,
+            "text": "используй цвета из образа сейлор мун... чтобы рядом с заголовками были svg - иконки"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-05-04T14:07:06+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_38993bd979af:sess_38993bd979af:task4",
+      "relativeItemPath": "sess_38993bd979af.json",
+      "canonicalId": "sess_38993bd979af:task4",
+      "sessionId": "sess_38993bd979af",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T13:37:14.226Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers website designs with Sailor Moon theme colors and SVG icons near headers",
+          "reasoning": "User explicitly specified design requirements: color scheme from Sailor Moon imagery and SVG icons adjacent to headers.",
+          "evidence": {
+            "session_id": "sess_38993bd979af",
+            "utterance_index": 0,
+            "text": "используй цвета из образа сейлор мун... чтобы рядом с заголовками были svg - иконки"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-05-04T14:07:06+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1184:1",
+            "queryText": "Смотри, я нашел несколько шаблонов для блога про аниме. Один с градиентами и анимацией, другой — классический с пастельными тонами, третий — темный с неоновыми акцентами. Какой из них, по-твоему, мне больше подойдет для запуска?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers website designs with Sailor Moon theme colors and SVG icons near headers",
+              "reasoning": "User explicitly specified design requirements: color scheme from Sailor Moon imagery and SVG icons adjacent to headers.",
+              "evidence": {
+                "session_id": "sess_38993bd979af",
+                "utterance_index": 0,
+                "text": "используй цвета из образа сейлор мун... чтобы рядом с заголовками были svg - иконки"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-05-04T14:07:06+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

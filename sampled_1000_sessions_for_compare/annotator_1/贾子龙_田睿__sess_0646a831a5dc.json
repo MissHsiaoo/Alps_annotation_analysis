@@ -1,0 +1,327 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_0646a831a5dc",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_0646a831a5dc:sess_0646a831a5dc",
+      "relativeItemPath": "sess_0646a831a5dc.json",
+      "canonicalId": "sess_0646a831a5dc",
+      "sessionId": "sess_0646a831a5dc",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-13T16:26:32.321Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "task_specific/process_preference",
+            "value": "Prefers structured content generation: detailed outline first, then expand each point extensively",
+            "reasoning": "User explicitly instructs to generate outline first followed by expansion, repeated in two utterances indicating a stable process preference.",
+            "evidence": {
+              "session_id": "sess_0646a831a5dc",
+              "utterance_index": 7,
+              "text": "good. I will give you a plot and you generate the detailed outline first,then expand each point in the outline as long as you can.ok?"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-24T14:04:38+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers stories written in the style of Jack London",
+            "reasoning": "User explicitly requests a story to be written in Jack London's style.",
+            "evidence": {
+              "session_id": "sess_0646a831a5dc",
+              "utterance_index": 5,
+              "text": "can you write the story as if it is Jack London who wrote it?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-24T14:04:38+00:00"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "value": "User prefers a structured writing process: first generating a detailed outline, then expanding each point in the outline as long as possible",
+            "confidence": 0.8,
+            "evidence_text": "I will give you a plot and you generate the detailed outline first,then expand each point in the outline as long as you can.ok?"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_0646a831a5dc:sess_0646a831a5dc",
+      "relativeItemPath": "sess_0646a831a5dc.json",
+      "canonicalId": "sess_0646a831a5dc",
+      "sessionId": "sess_0646a831a5dc",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-13T16:27:35.636Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "can you do another one in a different classic style?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes—pick an author or era (for example: Dickens, Austen, Poe, Twain, or a general “Victorian” voice). If you want, share a one-sentence premise and I’ll draft a detailed outline first, then expand each bullet into full scenes."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "make it like Poe, but not horror"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Got it: ornate, musical sentences, sharp psychological observation, but without gore or monsters—more melancholy and atmospheric. Do you want it in first person or third person, and should the ending be hopeful or bittersweet?"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "third person, bittersweet"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Great. As a starting premise (purely hypothetical): a faded seaside town where an old clockmaker tries to repair a public clock that has stopped, and the repair quietly changes the town’s routines. Fun aside: the world’s oldest continuously operating lighthouse is often cited as the Tower of Hercules in Spain—details like that can lend an “aged” feeling if you want a coastal setting. Give me your actual premise (one or two sentences), and I’ll produce the outline and expand it point-by-point."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Next time we do one of these, keep the ending in that fable-like snap—like the fox muttering “I never liked eggs”—I liked that punchy moral wrap-up."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Got it—when we outline and expand, I’ll still aim for a tight, fable-style closing line that lands the moral cleanly."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "hey—about that Jack London thing earlier, that wasn’t really a preference. I just picked a famous name to see if you could mimic a style."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it. So you’re not saying you *prefer* Jack London—just that you used him as a test case for style imitation."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "exactly. I don’t particularly like Jack London’s style; I was just checking whether you can do different voices."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Understood—no special preference for Jack London’s style. You’re mainly interested in having me write in various styles when you ask."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "task_specific/process_preference",
+            "value": "Prefers structured content generation: detailed outline first, then expand each point extensively",
+            "reasoning": "User explicitly instructs to generate outline first followed by expansion, repeated in two utterances indicating a stable process preference.",
+            "evidence": {
+              "session_id": "sess_0646a831a5dc",
+              "utterance_index": 7,
+              "text": "good. I will give you a plot and you generate the detailed outline first,then expand each point in the outline as long as you can.ok?"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-24T14:04:38+00:00"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "exactly. I don’t particularly like Jack London’s style; I was just checking whether you can do different voices."
+                }
+              ]
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "neutral",
+            "reasoning": "The old memory inferred a long-term preference from a single request. The user clarifies it was only to test style mimicry and even says they don't particularly like Jack London's style, so the preference should be updated accordingly.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not particularly prefer Jack London's style; used it as a test of style imitation and is interested in trying different writing voices."
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_0646a831a5dc",
+              "utterance_index": 0,
+              "text": "keep the ending in that fable-like snap—like the fox muttering “I never liked eggs”—I liked that punchy moral wrap-up."
+            },
+            "label": "Preferences/Writing",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "The user highlights enjoyment of the previous punchy moral ending and asks to keep that style in future stories, indicating a writing preference.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Likes stories that end with a punchy, fable-like moral wrap-up (a snappy closing line)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_0646a831a5dc:sess_0646a831a5dc",
+      "relativeItemPath": "sess_0646a831a5dc.json",
+      "canonicalId": "sess_0646a831a5dc",
+      "sessionId": "sess_0646a831a5dc",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-13T16:28:00.177Z",
+        "queryText": "I’m about to ask you to write a short adventure scene, but I want it to feel like it was told by the same kind of authorial voice I’ve specifically asked you to imitate before. Which writing style should you use so it matches my past preference?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers stories written in the style of Jack London",
+          "reasoning": "User explicitly requests a story to be written in Jack London's style.",
+          "evidence": {
+            "session_id": "sess_0646a831a5dc",
+            "utterance_index": 5,
+            "text": "can you write the story as if it is Jack London who wrote it?"
+          },
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-06-24T14:04:38+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_0646a831a5dc:sess_0646a831a5dc:task4",
+      "relativeItemPath": "sess_0646a831a5dc.json",
+      "canonicalId": "sess_0646a831a5dc:task4",
+      "sessionId": "sess_0646a831a5dc",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-13T16:28:14.923Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "UNMAPPED",
+          "label_suggestion": "task_specific/process_preference",
+          "value": "Prefers structured content generation: detailed outline first, then expand each point extensively",
+          "reasoning": "User explicitly instructs to generate outline first followed by expansion, repeated in two utterances indicating a stable process preference.",
+          "evidence": {
+            "session_id": "sess_0646a831a5dc",
+            "utterance_index": 7,
+            "text": "good. I will give you a plot and you generate the detailed outline first,then expand each point in the outline as long as you can.ok?"
+          },
+          "confidence": 0.5,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-06-24T14:04:38+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_282:1",
+            "queryText": "I've got this idea for a survival tale set in the Yukon during a gold rush. A prospector's sled dogs turn against him after he makes a brutal choice to survive. Could you flesh that out for me?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "UNMAPPED",
+              "label_suggestion": "task_specific/process_preference",
+              "value": "Prefers structured content generation: detailed outline first, then expand each point extensively",
+              "reasoning": "User explicitly instructs to generate outline first followed by expansion, repeated in two utterances indicating a stable process preference.",
+              "evidence": {
+                "session_id": "sess_0646a831a5dc",
+                "utterance_index": 7,
+                "text": "good. I will give you a plot and you generate the detailed outline first,then expand each point in the outline as long as you can.ok?"
+              },
+              "confidence": 0.5,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-06-24T14:04:38+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

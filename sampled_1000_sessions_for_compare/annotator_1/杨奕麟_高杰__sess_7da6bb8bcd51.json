@@ -1,0 +1,327 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_7da6bb8bcd51",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_7da6bb8bcd51:sess_7da6bb8bcd51",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7da6bb8bcd51.json",
+      "canonicalId": "sess_7da6bb8bcd51",
+      "sessionId": "sess_7da6bb8bcd51",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T17:03:46.847Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Located in England",
+            "reasoning": "User explicitly states being in England.",
+            "evidence": {
+              "session_id": "sess_7da6bb8bcd51",
+              "utterance_index": 54,
+              "text": "oh lol sorry yes i forgot , its very late here in england"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-22T19:50:17+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical_interest/photocatalysis/synthesis_methods",
+            "value": "Sustained curiosity about boron-doped TiO2 synthesis methods (coprecipitation, peptization, acid use) and photocatalytic hydrogen production optimization",
+            "reasoning": "User engaged in extensive technical discussion but label 'Thoughts/Curiosity' is forced. Evidence shows domain-specific technical inquiry rather than general curiosity.",
+            "evidence": {
+              "session_id": "sess_7da6bb8bcd51",
+              "utterance_index": 62,
+              "text": "lets say i made boron doped titanium hydroxide and wanted to convert it to boron doped tio2 , rather than heating it..."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-22T19:50:17+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_7da6bb8bcd51:sess_7da6bb8bcd51",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7da6bb8bcd51.json",
+      "canonicalId": "sess_7da6bb8bcd51",
+      "sessionId": "sess_7da6bb8bcd51",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:43:08.084Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I keep seeing hydrogen rates reported in mmol·g⁻¹·h⁻¹ and sometimes in mL·min⁻¹. What’s the cleanest way to convert between them?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Use the molar volume at the stated conditions. At STP, 1 mol gas ≈ 22.4 L (often 22.71 L depending on definition). So:\n\n- mmol·g⁻¹·h⁻¹ → L·g⁻¹·h⁻¹: multiply by (22.4 to 22.71) and divide by 1000.\n- Then L·g⁻¹·h⁻¹ → mL·g⁻¹·min⁻¹: multiply by 1000 and divide by 60.\n\nExample: 249 mmol·g⁻¹·h⁻¹ ≈ 249/1000×22.4 = 5.58 L·g⁻¹·h⁻¹ ≈ 93 mL·g⁻¹·min⁻¹."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "If a paper doesn’t specify STP, what do people usually assume?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Unfortunately there’s no single default. Many catalysis papers either:\n1) state “STP” explicitly (best case),\n2) use 25 °C, 1 atm implicitly, or\n3) report in moles so you don’t need a gas volume conversion.\n\nIf it’s ambiguous, the safest move is to check the experimental section for temperature/pressure of the gas measurement (or the GC calibration conditions)."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Also, some composites claim “physical mixing” by ultrasonication—does that still count as a heterojunction?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "It can, if the mixing produces intimate interfacial contact at the nanoscale and the band alignment enables charge transfer. “Heterojunction” describes the interface physics; “physical mixing” describes the synthesis route. Ultrasonication can create plenty of contact, but whether it functions as a heterojunction is usually supported by evidence like PL quenching, photocurrent/EIS, transient lifetime, or shifted XPS bands."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "if this is true it''s what i've been looking for for over a month , i knew it must be out there , i just felt it"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "That sounds like a real relief—especially after chasing it for that long. If you want, paste the DOI/title when you get it and we can sanity-check what conditions they used (light source, sacrificial agent, catalyst loading), because that’s usually where the “70×” claims live or die."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "quick correction btw — i’m not actually in england. i was travelling when i said that and it was “late here in england” because i was talking to someone over there."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it — so that line didn’t mean you’re based in England, just that England’s time zone was what you were referring to while you were travelling."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "yeah exactly. i’m not located in england."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical_interest/photocatalysis/synthesis_methods",
+            "value": "Sustained curiosity about boron-doped TiO2 synthesis methods (coprecipitation, peptization, acid use) and photocatalytic hydrogen production optimization",
+            "reasoning": "User engaged in extensive technical discussion but label 'Thoughts/Curiosity' is forced. Evidence shows domain-specific technical inquiry rather than general curiosity.",
+            "evidence": {
+              "session_id": "sess_7da6bb8bcd51",
+              "utterance_index": 62,
+              "text": "lets say i made boron doped titanium hydroxide and wanted to convert it to boron doped tio2 , rather than heating it..."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-22T19:50:17+00:00",
+            "_task1GoldValue": "Sustained curiosity about boron-doped TiO2 synthesis methods (coprecipitation, peptization, acid use) and photocatalytic hydrogen production optimization"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": null,
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The old memory inferred the user is located in England from a late-night comment. The user clarifies that they were travelling and explicitly says they are not located in England, contradicting the prior assumption.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Not located in England"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_7da6bb8bcd51",
+              "utterance_index": 0,
+              "text": "it's what i've been looking for for over a month"
+            },
+            "label": "Personal_Goals/Projects",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user implies a month-long search for such a solution by saying they've been looking for it for over a month.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Has been searching for a high-performing photocatalytic hydrogen production approach for over a month"
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Located in England",
+            "reasoning": "User explicitly states being in England.",
+            "evidence": {
+              "session_id": "sess_7da6bb8bcd51",
+              "utterance_index": 54,
+              "text": "oh lol sorry yes i forgot , its very late here in england"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-22T19:50:17+00:00",
+            "_task1GoldValue": "Located in England"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_7da6bb8bcd51:sess_7da6bb8bcd51",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7da6bb8bcd51.json",
+      "canonicalId": "sess_7da6bb8bcd51",
+      "sessionId": "sess_7da6bb8bcd51",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T18:43:38.509Z",
+        "queryText": "I’m trying to schedule a quick call with a friend in New York at 9am their time—what time would that be for me, based on where I’m usually located?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Location",
+          "label_suggestion": null,
+          "value": "Located in England",
+          "reasoning": "User explicitly states being in England.",
+          "evidence": {
+            "session_id": "sess_7da6bb8bcd51",
+            "utterance_index": 54,
+            "text": "oh lol sorry yes i forgot , its very late here in england"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-12-22T19:50:17+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_7da6bb8bcd51:sess_7da6bb8bcd51:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_7da6bb8bcd51.json",
+      "canonicalId": "sess_7da6bb8bcd51:task4",
+      "sessionId": "sess_7da6bb8bcd51",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T13:15:19.970Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Location",
+          "label_suggestion": null,
+          "value": "Located in England",
+          "reasoning": "User explicitly states being in England.",
+          "evidence": {
+            "session_id": "sess_7da6bb8bcd51",
+            "utterance_index": 54,
+            "text": "oh lol sorry yes i forgot , its very late here in england"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-12-22T19:50:17+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_162:1",
+            "queryText": "Right, so if I'm trying to replicate that Ni-MoS2/CdS setup from the paper, but I'm working in a small lab here without an argon line for the thermal step—could I get away with just using a nitrogen purge instead, or would that risk oxidation of the nickel precursor during the doping stage?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Location",
+              "label_suggestion": null,
+              "value": "Located in England",
+              "reasoning": "User explicitly states being in England.",
+              "evidence": {
+                "session_id": "sess_7da6bb8bcd51",
+                "utterance_index": 54,
+                "text": "oh lol sorry yes i forgot , its very late here in england"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-12-22T19:50:17+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "partial",
+            "memoryDependency": "weak",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

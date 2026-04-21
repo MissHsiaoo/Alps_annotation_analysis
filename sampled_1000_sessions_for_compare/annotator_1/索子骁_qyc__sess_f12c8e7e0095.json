@@ -1,0 +1,346 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_f12c8e7e0095",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_f12c8e7e0095:sess_f12c8e7e0095",
+      "relativeItemPath": "sess_f12c8e7e0095.json",
+      "canonicalId": "sess_f12c8e7e0095",
+      "sessionId": "sess_f12c8e7e0095",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T03:08:44.521Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Prefers low-calorie homemade beverages",
+            "reasoning": "User explicitly requested a low-calorie cola recipe for home preparation.",
+            "evidence": {
+              "session_id": "sess_f12c8e7e0095",
+              "utterance_index": 0,
+              "text": "Kannst du mir ein Rezept für eine kalorienarme Cola erstellen, die ich auch zuhause zubereiten kann?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-27T09:42:55+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Enjoys thyme-infused drink variations",
+            "reasoning": "User requested thyme additions to the recipe (utterances 2 & 6).",
+            "evidence": {
+              "session_id": "sess_f12c8e7e0095",
+              "utterance_index": 6,
+              "text": "Kannst du wieder Thymian zu dem Konzentrat hinzufügen?"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-27T09:42:55+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interests/programming/creativity",
+            "value": "Interested in programming-themed creative naming",
+            "reasoning": "User requested programming-related product names/slogans (utterances 8 & 10). Label forced: no explicit curiosity statement.",
+            "evidence": {
+              "session_id": "sess_f12c8e7e0095",
+              "utterance_index": 8,
+              "text": "Kannst du mir 20 Vorschläge liefern, wie diese Cola heißen könnte. Die Namen sollten Anspielungen auf das Thema Programmieren haben."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-27T09:42:55+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_f12c8e7e0095:sess_f12c8e7e0095",
+      "relativeItemPath": "sess_f12c8e7e0095.json",
+      "canonicalId": "sess_f12c8e7e0095",
+      "sessionId": "sess_f12c8e7e0095",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T08:07:16.321Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Ich bastle gerade an einem kleinen Etikett für eine selbstgemachte Limonade. Hast du eine Idee für ein kurzes Warnhinweis-Textchen, das witzig ist, aber nicht zu albern?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Klar, hier sind ein paar kurze Optionen, die eher augenzwinkernd als Klamauk sind:\n\n1) „Vorsicht: Kann spontane Erfrischung auslösen.“\n2) „Achtung: Kohlensäure in freier Wildbahn.“\n3) „Hinweis: Inhalt könnte in Sekunden verschwinden.“\n4) „Warnung: Zu kalt serviert besonders gefährlich lecker.“\n5) „Achtung: Spritzgefahr beim Öffnen.“\n\nWenn du mir sagst, ob das Etikett eher minimalistisch oder verspielt aussieht, kann ich den Ton besser treffen."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Eher minimalistisch. Und ich hätte gern was, das wie ein Software-Disclaimer klingt."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Dann passen solche „Tech-Disclaimer“ gut:\n\n1) „Ohne Gewähr. Kann Nebenwirkungen wie gute Laune verursachen.“\n2) „AS IS: Keine Garantien auf Restbestände im Glas.“\n3) „Nutzung auf eigene Verantwortung: Erhöhte Refresh-Rate möglich.“\n4) „Beta-Getränk: Feedback willkommen, Bugreports bitte freundlich.“\n5) „Lizenz: Ein Schluck pro Zugriff. Rate-Limits können ignoriert werden.“\n\nWenn du magst, kann ich auch eine ultrakurze 1-Zeile bauen (max. 6–8 Wörter)."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Ja, mach mal drei ultrakurze."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "1) „AS IS. Drink responsibly.“\n2) „Refresh may exceed expectations.“\n3) „No warranty. High sparkle.“\n\nNebenbei: In manchen Ländern müssen Etiketten bei Verkauf Pflichtangaben wie Allergene oder Nettofüllmenge tragen – für privat ist das natürlich meist egal."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Für die Etiketten: Ich würde gern alles auf Deutsch halten – die englischen Slogans passen irgendwie nicht zu dem Rest."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Klar, dann formuliere ich die Slogans konsistent auf Deutsch und halte Ton und Wortspiele im Programmier-Stil."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Kurze Korrektur: Ich suche doch nichts Kalorienarmes. Ich will eine richtig zuckrige Cola zum Selbermachen – also eher wie ein klassischer Sirup, nicht mit Stevia oder so."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Alles klar, dann war „kalorienarm“ in den bisherigen Varianten genau die falsche Richtung. Wenn du eine klassische, zuckrige Cola willst, ist ein Sirup auf Zuckerbasis (statt Stevia/Ahornsirup in kleinen Mengen) der passende Ansatz."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Genau. Low-Calorie ist mir egal – Hauptsache süß und möglichst nah an normaler Cola."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Enjoys thyme-infused drink variations",
+            "reasoning": "User requested thyme additions to the recipe (utterances 2 & 6).",
+            "evidence": {
+              "session_id": "sess_f12c8e7e0095",
+              "utterance_index": 6,
+              "text": "Kannst du wieder Thymian zu dem Konzentrat hinzufügen?"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-27T09:42:55+00:00",
+            "_task1GoldValue": "Enjoys thyme-infused drink variations"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interests/programming/creativity",
+            "value": "Interested in programming-themed creative naming",
+            "reasoning": "User requested programming-related product names/slogans (utterances 8 & 10). Label forced: no explicit curiosity statement.",
+            "evidence": {
+              "session_id": "sess_f12c8e7e0095",
+              "utterance_index": 8,
+              "text": "Kannst du mir 20 Vorschläge liefern, wie diese Cola heißen könnte. Die Namen sollten Anspielungen auf das Thema Programmieren haben."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-27T09:42:55+00:00",
+            "_task1GoldValue": "Interested in programming-themed creative naming"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "The old memory says the user prefers low-calorie homemade beverages, but the user explicitly corrects that they do not want low-calorie and instead want a classic sugary cola syrup style.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers a classic, sugary homemade cola (not low-calorie/Stevia-based)"
+          },
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_f12c8e7e0095",
+              "utterance_index": 0,
+              "text": "Ich würde gern alles auf Deutsch halten – die englischen Slogans passen irgendwie nicht zu dem Rest."
+            },
+            "label": "Preferences/Language",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "The user implies a preference for German-only text by saying English slogans don't fit and wanting everything kept in German.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers German wording for labels/slogans instead of English"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_f12c8e7e0095:sess_f12c8e7e0095",
+      "relativeItemPath": "sess_f12c8e7e0095.json",
+      "canonicalId": "sess_f12c8e7e0095",
+      "sessionId": "sess_f12c8e7e0095",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:08:18.085Z",
+        "queryText": "I’m trying to decide between grabbing a standard bottled soft drink or mixing something myself at home—what’s the main reason I’d probably pick the DIY option given my usual drink preference, and what does that imply about the kind of drink I’m aiming for?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Prefers low-calorie homemade beverages",
+          "reasoning": "User explicitly requested a low-calorie cola recipe for home preparation.",
+          "evidence": {
+            "session_id": "sess_f12c8e7e0095",
+            "utterance_index": 0,
+            "text": "Kannst du mir ein Rezept für eine kalorienarme Cola erstellen, die ich auch zuhause zubereiten kann?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-05-27T09:42:55+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_f12c8e7e0095:sess_f12c8e7e0095:task4",
+      "relativeItemPath": "sess_f12c8e7e0095.json",
+      "canonicalId": "sess_f12c8e7e0095:task4",
+      "sessionId": "sess_f12c8e7e0095",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:17:09.221Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Prefers low-calorie homemade beverages",
+          "reasoning": "User explicitly requested a low-calorie cola recipe for home preparation.",
+          "evidence": {
+            "session_id": "sess_f12c8e7e0095",
+            "utterance_index": 0,
+            "text": "Kannst du mir ein Rezept für eine kalorienarme Cola erstellen, die ich auch zuhause zubereiten kann?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-05-27T09:42:55+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_612:1",
+            "queryText": "Ich habe gerade Lust auf was Erfrischendes zum Trinken. Was könntest du mir empfehlen, das ich heute Abend schnell machen könnte?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Food",
+              "label_suggestion": null,
+              "value": "Prefers low-calorie homemade beverages",
+              "reasoning": "User explicitly requested a low-calorie cola recipe for home preparation.",
+              "evidence": {
+                "session_id": "sess_f12c8e7e0095",
+                "utterance_index": 0,
+                "text": "Kannst du mir ein Rezept für eine kalorienarme Cola erstellen, die ich auch zuhause zubereiten kann?"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-05-27T09:42:55+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

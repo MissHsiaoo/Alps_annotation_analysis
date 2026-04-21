@@ -1,0 +1,472 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_2d3147877680",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_2d3147877680:sess_2d3147877680",
+      "relativeItemPath": "sess_2d3147877680.json",
+      "canonicalId": "sess_2d3147877680",
+      "sessionId": "sess_2d3147877680",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T18:16:23.952Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Master of Engineering in Industrial and Systems Engineering from Lehigh University (2015), Bachelor of Engineering in Telecommunications Engineering from Queen Mary University of London & BUPT (2013)",
+            "reasoning": "Explicit education details in resume",
+            "evidence": {
+              "session_id": "sess_2d3147877680",
+              "utterance_index": 0,
+              "text": "EDUCATION\n\nMaster of Engineering...Lehigh University, Bethlehem, PA 2015\nBachelor of Engineering...Queen Mary University of London & BUPT 2013"
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-13T10:09:00+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Currently resides in USA with H1B visa",
+            "reasoning": "Explicitly stated in resume header",
+            "evidence": {
+              "session_id": "sess_2d3147877680",
+              "utterance_index": 0,
+              "text": "Data Analyst seeking opportunity in industry. Currently, reside in USA with h1b visa."
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-13T10:09:00+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical_skills/emphasis",
+            "value": "Prioritizes machine learning (TensorFlow/PyTorch), statistical analysis (Python/R), and cross-functional collaboration in professional context",
+            "reasoning": "Resume modifications reflect job requirements rather than self-stated preferences",
+            "evidence": {
+              "session_id": "sess_2d3147877680",
+              "utterance_index": 0,
+              "text": "Modify the skills section...machine learning libraries like scikit-learn, TensorFlow, PyTorch...statistical analysis using tools such as Python, R"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-13T10:09:00+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Preferences/Communication_Format",
+            "label_suggestion": null,
+            "value": "Prefers structured resume formats with categorized bullet points and quantified achievements",
+            "reasoning": "Explicit formatting requests in user instructions",
+            "evidence": {
+              "session_id": "sess_2d3147877680",
+              "utterance_index": 2,
+              "text": "要求：1请和我的简历的格式一致，分门别类，每一类里面就是一个词或者词组"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-04-13T10:09:00+00:00"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "career_goal/data_scientist",
+            "value": "Actively pursuing Data Scientist roles with focus on ads optimization and machine learning applications",
+            "reasoning": "Inferred from resume customization focus",
+            "evidence": {
+              "session_id": "sess_2d3147877680",
+              "utterance_index": 0,
+              "text": "Base on job description, give me most relevant job title...Modify the objective statement section..."
+            },
+            "confidence": 0.5,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-13T10:09:00+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_2d3147877680:sess_2d3147877680",
+      "relativeItemPath": "sess_2d3147877680.json",
+      "canonicalId": "sess_2d3147877680",
+      "sessionId": "sess_2d3147877680",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T18:17:39.477Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I'm trying to keep my resume bullets punchy. Can you help me sanity-check the structure: action verb + tool/method + what I analyzed/built + quantified impact?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes—that structure is solid and ATS-friendly. A quick refinement is to add the “why it mattered” in 2–4 words (e.g., “to improve conversion,” “to reduce latency”) right before the metric. If you share 2–3 sample bullets, I can tighten wording without changing meaning."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Also, do you think it's better to write “improved by 15%” or “increased from 20% to 23%”?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Use “increased from X to Y” when you have a clear baseline and the metric could be misread (rates, accuracy, CTR). Use “improved by 15%” when the baseline is obvious internally or when space is tight—just be sure it’s not ambiguous between percentage points vs percent change."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "If a result isn't directly measurable, what should I do?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Swap in a proxy metric: time saved, reduced manual steps, cycle time, adoption/usage, SLA compliance, error rate, coverage, stakeholder count, or revenue/risk exposure affected. Even “cut weekly reporting from 6 hours to 45 minutes” is often stronger than a vague “improved efficiency.”"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Random question: what's a clean way to explain A/B testing in one line without sounding like a textbook?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Try: “Designed and analyzed A/B experiments to quantify feature impact and drive launch decisions.” If you want it sharper, add the decision outcome: “...informing rollout to 100% traffic.”"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Cool. By the way, I read that the first modern randomized trial was in the late 1940s—true?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Mostly—one of the most cited early modern RCTs is the 1948 MRC streptomycin trial for tuberculosis, notable for randomization and rigorous controls. It’s often referenced as a template for later clinical trial standards."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "我准备这周再投一批Meta的岗位，所以需要你帮我把每条bullet都压到一行，等会我会直接复制到LinkedIn的Experience里。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "可以。你把每段工作经验的bullet原文发我（包括职位名、时间、地点），我会在不改动核心事实的前提下，统一压缩为每条一行、保留量化结果，并让表达更调整为适合LinkedIn的语气。"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "我想澄清一下：我之前让你“分门别类、编号、量化”只是为了这次投Meta这份JD临时优化。不要默认我长期都喜欢这种结构化分类bullet。以后如果我没特别说，就给我正常叙述式、简洁的英文版本就行。"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "明白了。也就是说，你之前强调“分门别类/编号/量化”是针对这次JD的临时要求，而不是你一贯的偏好；后续若无特别说明，我会优先输出简洁的英文叙述式内容，而不是强制结构化分类bullet。"
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "对，就是这个意思。这次按JD来可以，但别把它记成我的固定偏好。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Master of Engineering in Industrial and Systems Engineering from Lehigh University (2015), Bachelor of Engineering in Telecommunications Engineering from Queen Mary University of London & BUPT (2013)",
+            "reasoning": "Explicit education details in resume",
+            "evidence": {
+              "session_id": "sess_2d3147877680",
+              "utterance_index": 0,
+              "text": "EDUCATION\n\nMaster of Engineering...Lehigh University, Bethlehem, PA 2015\nBachelor of Engineering...Queen Mary University of London & BUPT 2013"
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-13T10:09:00+00:00",
+            "_task1GoldValue": "Master of Engineering in Industrial and Systems Engineering from Lehigh University (2015), Bachelor of Engineering in Telecommunications Engineering from Queen Mary University of London & BUPT (2013)"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Currently resides in USA with H1B visa",
+            "reasoning": "Explicitly stated in resume header",
+            "evidence": {
+              "session_id": "sess_2d3147877680",
+              "utterance_index": 0,
+              "text": "Data Analyst seeking opportunity in industry. Currently, reside in USA with h1b visa."
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-13T10:09:00+00:00",
+            "_task1GoldValue": "Currently resides in USA with H1B visa"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical_skills/emphasis",
+            "value": "Prioritizes machine learning (TensorFlow/PyTorch), statistical analysis (Python/R), and cross-functional collaboration in professional context",
+            "reasoning": "Resume modifications reflect job requirements rather than self-stated preferences",
+            "evidence": {
+              "session_id": "sess_2d3147877680",
+              "utterance_index": 0,
+              "text": "Modify the skills section...machine learning libraries like scikit-learn, TensorFlow, PyTorch...statistical analysis using tools such as Python, R"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-13T10:09:00+00:00",
+            "_task1GoldValue": "Prioritizes machine learning (TensorFlow/PyTorch), statistical analysis (Python/R), and cross-functional collaboration in professional context"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "career_goal/data_scientist",
+            "value": "Actively pursuing Data Scientist roles with focus on ads optimization and machine learning applications",
+            "reasoning": "Inferred from resume customization focus",
+            "evidence": {
+              "session_id": "sess_2d3147877680",
+              "utterance_index": 0,
+              "text": "Base on job description, give me most relevant job title...Modify the objective statement section..."
+            },
+            "confidence": 0.5,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-13T10:09:00+00:00",
+            "_task1GoldValue": "Actively pursuing Data Scientist roles with focus on ads optimization and machine learning applications"
+          },
+          {
+            "confidence": 0.82,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                12
+              ],
+              "turns": [
+                {
+                  "index": 12,
+                  "role": "user",
+                  "text": "我想澄清一下：我之前让你“分门别类、编号、量化”只是为了这次投Meta这份JD临时优化。不要默认我长期都喜欢这种结构化分类bullet。以后如果我没特别说，就给我正常叙述式、简洁的英文版本就行。"
+                }
+              ]
+            },
+            "label": "Preferences/Communication_Format",
+            "label_suggestion": null,
+            "memory_id": "m4_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory implies a long-term preference for structured, categorized bullet points with quantified achievements. The user clarifies this was a one-off, JD-specific instruction and asks not to treat it as a fixed preference; they state that by default they want concise English narrative unless they specify otherwise.",
+            "time_scope": "unknown",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "The user’s requests for categorized/numbered/quantified resume bullets were specific to the Meta JD optimization; unless explicitly requested, they prefer concise English narrative output rather than default structured categorized bullets."
+          },
+          {
+            "confidence": 0.82,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_2d3147877680",
+              "utterance_index": 0,
+              "text": "需要你帮我把每条bullet都压到一行，等会我会直接复制到LinkedIn的Experience里。"
+            },
+            "label": "Preferences/Communication_Format",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User indicates they will paste into LinkedIn Experience and asks to compress each bullet to one line, implying a formatting preference for one-line bullets for that platform.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers work-experience bullets condensed to single-line format suitable for LinkedIn copy/paste"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Preferences/Communication_Format",
+            "label_suggestion": null,
+            "value": "Prefers structured resume formats with categorized bullet points and quantified achievements",
+            "reasoning": "Explicit formatting requests in user instructions",
+            "evidence": {
+              "session_id": "sess_2d3147877680",
+              "utterance_index": 2,
+              "text": "要求：1请和我的简历的格式一致，分门别类，每一类里面就是一个词或者词组"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-04-13T10:09:00+00:00",
+            "_task1GoldValue": "Prefers structured resume formats with categorized bullet points and quantified achievements"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4",
+          "m5"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_2d3147877680:sess_2d3147877680",
+      "relativeItemPath": "sess_2d3147877680.json",
+      "canonicalId": "sess_2d3147877680",
+      "sessionId": "sess_2d3147877680",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T18:17:49.298Z",
+        "queryText": "I’m sending my background to a recruiter, and I have two layout options: (A) a narrative paragraph that reads like a short story, or (B) a sectioned layout with tight bullet points where impact is shown with numbers. Given how I usually want this kind of document presented, which option should I pick and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m4",
+          "type": "direct",
+          "label": "Preferences/Communication_Format",
+          "label_suggestion": null,
+          "value": "Prefers structured resume formats with categorized bullet points and quantified achievements",
+          "reasoning": "Explicit formatting requests in user instructions",
+          "evidence": {
+            "session_id": "sess_2d3147877680",
+            "utterance_index": 2,
+            "text": "要求：1请和我的简历的格式一致，分门别类，每一类里面就是一个词或者词组"
+          },
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-04-13T10:09:00+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_2d3147877680:sess_2d3147877680:task4",
+      "relativeItemPath": "sess_2d3147877680.json",
+      "canonicalId": "sess_2d3147877680:task4",
+      "sessionId": "sess_2d3147877680",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T18:17:57.517Z",
+        "editableSelectedMemory": {
+          "memory_id": "m4",
+          "type": "direct",
+          "label": "Preferences/Communication_Format",
+          "label_suggestion": null,
+          "value": "Prefers structured resume formats with categorized bullet points and quantified achievements",
+          "reasoning": "Explicit formatting requests in user instructions",
+          "evidence": {
+            "session_id": "sess_2d3147877680",
+            "utterance_index": 2,
+            "text": "要求：1请和我的简历的格式一致，分门别类，每一类里面就是一个词或者词组"
+          },
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-04-13T10:09:00+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_62:1",
+            "queryText": "I'm looking at a few different ways to present my work experience for this Meta role. Which structure do you think would work best for me?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m4",
+              "type": "direct",
+              "label": "Preferences/Communication_Format",
+              "label_suggestion": null,
+              "value": "Prefers structured resume formats with categorized bullet points and quantified achievements",
+              "reasoning": "Explicit formatting requests in user instructions",
+              "evidence": {
+                "session_id": "sess_2d3147877680",
+                "utterance_index": 2,
+                "text": "要求：1请和我的简历的格式一致，分门别类，每一类里面就是一个词或者词组"
+              },
+              "confidence": 0.8,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2024-04-13T10:09:00+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,354 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_48a236d48809",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_48a236d48809:sess_48a236d48809",
+      "relativeItemPath": "sess_48a236d48809.json",
+      "canonicalId": "sess_48a236d48809",
+      "sessionId": "sess_48a236d48809",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T13:35:28.842Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Developing an alien RPG game requiring extensive unique character names",
+            "reasoning": "User explicitly states their RPG game context in first request",
+            "evidence": {
+              "session_id": "sess_48a236d48809",
+              "utterance_index": 0,
+              "text": "create me 100 alien unique names for my alien rpg game"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-04-07T10:38:00+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Task/Name_Generation_Constraints",
+            "value": "Requires name generation with: no duplicates, phonetic mix-and-match, easy pronunciation, flexible starting letters",
+            "reasoning": "Explicit constraints stated but label 'Interaction_Preferences' forced taxonomy",
+            "evidence": {
+              "session_id": "sess_48a236d48809",
+              "utterance_index": 0,
+              "text": "don’t include duplicate names, mix and match names from aliens and make sure they are easy to pronounce. the start of the alien names should be from any letter of the alphabet including , B, C, H etc."
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "functional_requirement",
+            "updated_at": "2024-04-07T10:38:00+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Activity/RPG_Worldbuilding/Pattern",
+            "value": "Sustained focus on alien name generation patterns/constraints for RPG worldbuilding",
+            "reasoning": "Label 'Thoughts/Curiosity' forced - evidence shows task execution pattern not curiosity",
+            "evidence": {
+              "session_id": "sess_48a236d48809",
+              "utterance_index": 28,
+              "text": "create me another 100 alien unique names...continue where you left off"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-07T10:38:00+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_48a236d48809:sess_48a236d48809",
+      "relativeItemPath": "sess_48a236d48809.json",
+      "canonicalId": "sess_48a236d48809",
+      "sessionId": "sess_48a236d48809",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T09:38:56.147Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Quick check: if I hand you a list of made-up words, can you help me sort them into ones that sound like places, people, or gadgets?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes. If you paste the list, I can tag each item as place/person/gadget and optionally add a 1–2 word rationale (e.g., “ends in -ron feels device-like”). Do you want a strict single label per word, or can some be “place or person”?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Single label per word. Also, can you keep the explanations short?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Got it—single label each, very short explanations. If any are ambiguous, I’ll still pick the best fit and note “ambiguous” in the rationale."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Unrelated: I heard about a library that uses robots to fetch books from underground shelves. Is that real or just a rumor?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Real in some places. A well-known example is the Joe and Rika Mansueto Library at the University of Chicago, which uses an Automated Storage and Retrieval System: books are stored in bins below ground and a robotic crane retrieves requested items."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Interesting. Another random thing: what’s the deal with that old radio signal people call the “Wow!” signal?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "The “Wow!” signal was a strong, narrowband radio signal detected in 1977 by Ohio State’s Big Ear radio telescope. It lasted about 72 seconds and was never reliably observed again; it’s often discussed in SETI because it looked unusual but remains unexplained."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Last random question: is it true that some octopuses punch fish?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Yes—there are documented observations of octopuses striking fish (often during cooperative hunting), and researchers have described it as “punching” behavior in some contexts."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Before we do another batch, could you keep them shorter this time—like 4 to 6 letters—so they fit neatly in my NPC table?"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Absolutely—I'll keep the next set in the 4–6 letter range so they slot cleanly into your NPC table, while still staying unique and easy to pronounce."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "quick correction: it’s not for an RPG campaign or anything long-term—i’m just making a one-off sci‑fi name list for a writing prompt. i kept saying “rpg game” out of habit."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Got it—so this isn’t for developing an alien RPG game; it’s a one-off sci‑fi name list for a writing prompt, and the “rpg game” phrasing was just habit. I’ll treat it as a standalone list and keep names unique and easy to pronounce."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Task/Name_Generation_Constraints",
+            "value": "Requires name generation with: no duplicates, phonetic mix-and-match, easy pronunciation, flexible starting letters",
+            "reasoning": "Explicit constraints stated but label 'Interaction_Preferences' forced taxonomy",
+            "evidence": {
+              "session_id": "sess_48a236d48809",
+              "utterance_index": 0,
+              "text": "don’t include duplicate names, mix and match names from aliens and make sure they are easy to pronounce. the start of the alien names should be from any letter of the alphabet including , B, C, H etc."
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "functional_requirement",
+            "updated_at": "2024-04-07T10:38:00+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Activity/RPG_Worldbuilding/Pattern",
+            "value": "Sustained focus on alien name generation patterns/constraints for RPG worldbuilding",
+            "reasoning": "Label 'Thoughts/Curiosity' forced - evidence shows task execution pattern not curiosity",
+            "evidence": {
+              "session_id": "sess_48a236d48809",
+              "utterance_index": 28,
+              "text": "create me another 100 alien unique names...continue where you left off"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-07T10:38:00+00:00"
+          },
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "The prior memory claims the user is developing an alien RPG game needing extensive character names. The user explicitly corrects that this is not an RPG or long-term project, but a one-off sci‑fi name list for a writing prompt; therefore the updated truth is that the names are for a standalone writing prompt list, not RPG development.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Making a one-off sci‑fi alien name list for a writing prompt (not developing an alien RPG game)"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_48a236d48809",
+              "utterance_index": 0,
+              "text": "could you keep them shorter this time—like 4 to 6 letters—so they fit neatly in my NPC table?"
+            },
+            "label": "UNMAPPED",
+            "label_suggestion": "Task/Name_Generation_Constraints",
+            "memory_id": "m_new_1",
+            "preference_attitude": "functional_requirement",
+            "reasoning": "User implies a new constraint on name length and gives the purpose (NPC table formatting).",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers shorter alien names (about 4–6 letters) to fit an NPC table"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_48a236d48809:sess_48a236d48809",
+      "relativeItemPath": "sess_48a236d48809.json",
+      "canonicalId": "sess_48a236d48809",
+      "sessionId": "sess_48a236d48809",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T08:04:31.377Z",
+        "queryText": "I’m drafting a content plan for my current creative project, and I need a huge batch of original character identifiers to keep NPCs from feeling repetitive. What kind of project am I working on that makes “lots of unique character names” a core requirement?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Developing an alien RPG game requiring extensive unique character names",
+          "reasoning": "User explicitly states their RPG game context in first request",
+          "evidence": {
+            "session_id": "sess_48a236d48809",
+            "utterance_index": 0,
+            "text": "create me 100 alien unique names for my alien rpg game"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-04-07T10:38:00+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_48a236d48809:sess_48a236d48809:task4",
+      "relativeItemPath": "sess_48a236d48809.json",
+      "canonicalId": "sess_48a236d48809:task4",
+      "sessionId": "sess_48a236d48809",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T03:51:10.223Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Developing an alien RPG game requiring extensive unique character names",
+          "reasoning": "User explicitly states their RPG game context in first request",
+          "evidence": {
+            "session_id": "sess_48a236d48809",
+            "utterance_index": 0,
+            "text": "create me 100 alien unique names for my alien rpg game"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-04-07T10:38:00+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_474:1",
+            "queryText": "I'm fleshing out the major factions for my alien RPG - the crystalline Lithari, the gaseous Nebulons, and the biomechanical Synthax. Which faction should get the most detailed naming conventions and backstory development first?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Developing an alien RPG game requiring extensive unique character names",
+              "reasoning": "User explicitly states their RPG game context in first request",
+              "evidence": {
+                "session_id": "sess_48a236d48809",
+                "utterance_index": 0,
+                "text": "create me 100 alien unique names for my alien rpg game"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2024-04-07T10:38:00+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,360 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_89ec4ab62b8b",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_89ec4ab62b8b:sess_89ec4ab62b8b",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_89ec4ab62b8b.json",
+      "canonicalId": "sess_89ec4ab62b8b",
+      "sessionId": "sess_89ec4ab62b8b",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T19:09:10.038Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "Has insulin resistance and hyperthyroidism; wants to lose weight",
+            "reasoning": "User explicitly states medical conditions and weight loss goal.",
+            "evidence": {
+              "session_id": "sess_89ec4ab62b8b",
+              "utterance_index": 0,
+              "text": "I have insuline resistance and hyperthyroid, I want to lose weight."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-28T04:24:42+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Eats twice daily at 1:00pm and 7:30pm",
+            "reasoning": "User explicitly states their stable eating schedule.",
+            "evidence": {
+              "session_id": "sess_89ec4ab62b8b",
+              "utterance_index": 2,
+              "text": "I eat twice a day, at 1.00pm and 7.30 pm"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "neutral",
+            "updated_at": "2024-04-28T04:24:42+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/request/food_planning",
+            "value": "Repeated requests for structured meal plans with precise nutritional/portion specifications",
+            "reasoning": "Task-local requests for meal plans; forced label not supported.",
+            "evidence": {
+              "session_id": "sess_89ec4ab62b8b",
+              "utterance_index": 6,
+              "text": "make the saem for a month plan protion should be with grams or ml"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-28T04:24:42+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_89ec4ab62b8b:sess_89ec4ab62b8b",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_89ec4ab62b8b.json",
+      "canonicalId": "sess_89ec4ab62b8b",
+      "sessionId": "sess_89ec4ab62b8b",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T19:26:49.126Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Can you help me rewrite a short school message so it sounds more professional but still warm?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes—paste the message and tell me the approximate word count you want (e.g., 120–150), plus whether it’s for a report card comment, an email, or a note to parents."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "It’s a note to parents. Please keep it around 150 words. Mention improvement in reading and teamwork, and also that the student participates well in PE."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Here’s a polished ~150-word version:\n\nAs we reach the end of the term, I would like to recognize the student’s wonderful progress and positive attitude. Over recent weeks, they have shown clear improvement in reading, demonstrating greater confidence and accuracy, as well as a stronger ability to notice and apply key sounds in words. This growth reflects consistent effort and a willingness to practise.\n\nThe student has also developed stronger teamwork skills, cooperating respectfully with classmates, listening to others’ ideas, and contributing thoughtfully during group activities. Their friendly approach helps create a supportive classroom environment.\n\nIn addition, the student participates enthusiastically in Physical Education, following instructions well and engaging actively in a wide range of activities. Thank you for your continued support at home. I look forward to seeing the student build on this progress next term."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Can you also give me 2 alternative closing sentences to choose from?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Sure—here are two options:\n1) “I’m proud of the progress made this term and look forward to continued growth in the weeks ahead.”\n2) “With ongoing encouragement and practice, I’m confident the student will continue to thrive next term.”\n\n(Separate note: NASA’s Voyager 1 spacecraft was launched in 1977 and is still sending back data from interstellar space.)"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "I’m writing the final comments for my class again—can you keep the same style as the Hinson paragraph, but make it for another student and leave space for me to add the teacher name at the end?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "As we reach the end of the term, I am pleased to recognize the progress and effort of [Student Name]. Throughout this semester, [Student Name] has shown consistent growth and a positive attitude toward learning.\n\n[Student Name] worked hard to strengthen early reading skills and became more confident with key phonics patterns. They also made noticeable improvements in listening carefully for sounds in words, which supported their overall literacy development.\n\nIn mathematics, [Student Name] demonstrated strong understanding and was able to complete core skills tasks with increasing independence. Beyond academics, they built warm relationships with classmates and contributed to a friendly, supportive classroom environment.\n\n[Student Name] also participated enthusiastically in PE and classroom activities, showing great teamwork and energy.\n\nWarm regards,\n\n[Teacher’s Name]"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "About the meal plan—quick correction: I don’t actually eat at 1:00pm and 7:30pm anymore. My meals are usually at 12:00 pm and 8:00 pm now."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—so your current routine is two meals a day at about 12:00 pm and 8:00 pm (instead of 1:00 pm and 7:30 pm). I’ll base any meal plan timings on 12:00 and 8:00 going forward."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "Has insulin resistance and hyperthyroidism; wants to lose weight",
+            "reasoning": "User explicitly states medical conditions and weight loss goal.",
+            "evidence": {
+              "session_id": "sess_89ec4ab62b8b",
+              "utterance_index": 0,
+              "text": "I have insuline resistance and hyperthyroid, I want to lose weight."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-28T04:24:42+00:00",
+            "_task1GoldValue": "Has insulin resistance and hyperthyroidism; wants to lose weight"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/request/food_planning",
+            "value": "Repeated requests for structured meal plans with precise nutritional/portion specifications",
+            "reasoning": "Task-local requests for meal plans; forced label not supported.",
+            "evidence": {
+              "session_id": "sess_89ec4ab62b8b",
+              "utterance_index": 6,
+              "text": "make the saem for a month plan protion should be with grams or ml"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-28T04:24:42+00:00",
+            "_task1GoldValue": "Repeated requests for structured meal plans with precise nutritional/portion specifications"
+          },
+          {
+            "confidence": 0.92,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "neutral",
+            "reasoning": "The prior memory says the user eats at 1:00pm and 7:30pm, but the user explicitly corrects that they no longer follow those times and now usually eat at 12:00 pm and 8:00 pm. This directly contradicts the old schedule and updates it.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Eats twice daily at 12:00pm and 8:00pm"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_89ec4ab62b8b",
+              "utterance_index": 0,
+              "text": "I’m writing the final comments for my class again—can you keep the same style as the Hinson paragraph"
+            },
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "They mention writing final comments for their class and refer to a teacher name placeholder, implying they are the teacher responsible for report comments.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is a teacher (writes end-of-term student comments)."
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Eats twice daily at 1:00pm and 7:30pm",
+            "reasoning": "User explicitly states their stable eating schedule.",
+            "evidence": {
+              "session_id": "sess_89ec4ab62b8b",
+              "utterance_index": 2,
+              "text": "I eat twice a day, at 1.00pm and 7.30 pm"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "neutral",
+            "updated_at": "2024-04-28T04:24:42+00:00",
+            "_task1GoldValue": "Eats twice daily at 1:00pm and 7:30pm"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_89ec4ab62b8b:sess_89ec4ab62b8b",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_89ec4ab62b8b.json",
+      "canonicalId": "sess_89ec4ab62b8b",
+      "sessionId": "sess_89ec4ab62b8b",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T19:09:38.278Z",
+        "queryText": "I’m trying to set a recurring reminder for when I should eat so I can plan my workouts and not train right on an empty stomach—what two times should I schedule the alerts for, based on my usual routine?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Eats twice daily at 1:00pm and 7:30pm",
+          "reasoning": "User explicitly states their stable eating schedule.",
+          "evidence": {
+            "session_id": "sess_89ec4ab62b8b",
+            "utterance_index": 2,
+            "text": "I eat twice a day, at 1.00pm and 7.30 pm"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "neutral",
+          "updated_at": "2024-04-28T04:24:42+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_89ec4ab62b8b:sess_89ec4ab62b8b:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_89ec4ab62b8b.json",
+      "canonicalId": "sess_89ec4ab62b8b:task4",
+      "sessionId": "sess_89ec4ab62b8b",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T14:27:04.435Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Eats twice daily at 1:00pm and 7:30pm",
+          "reasoning": "User explicitly states their stable eating schedule.",
+          "evidence": {
+            "session_id": "sess_89ec4ab62b8b",
+            "utterance_index": 2,
+            "text": "I eat twice a day, at 1.00pm and 7.30 pm"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "neutral",
+          "updated_at": "2024-04-28T04:24:42+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_605:1",
+            "queryText": "I'm thinking about trying that new Mediterranean restaurant downtown. What do you think I should order?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Food",
+              "label_suggestion": null,
+              "value": "Eats twice daily at 1:00pm and 7:30pm",
+              "reasoning": "User explicitly states their stable eating schedule.",
+              "evidence": {
+                "session_id": "sess_89ec4ab62b8b",
+                "utterance_index": 2,
+                "text": "I eat twice a day, at 1.00pm and 7.30 pm"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "neutral",
+              "updated_at": "2024-04-28T04:24:42+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

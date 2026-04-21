@@ -1,0 +1,300 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_29bcb1d39f46",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_29bcb1d39f46:sess_29bcb1d39f46",
+      "relativeItemPath": "sess_29bcb1d39f46.json",
+      "canonicalId": "sess_29bcb1d39f46",
+      "sessionId": "sess_29bcb1d39f46",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:56:46.945Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about creating card-based escape games and role-playing games (JDR)",
+            "reasoning": "User asks multiple follow-ups about designing tabletop games using playing cards, indicating sustained creative curiosity in this format.",
+            "evidence": {
+              "session_id": "sess_29bcb1d39f46",
+              "utterance_index": 6,
+              "text": "creer escape game sous forme de cartes"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-03T17:17:22+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_29bcb1d39f46:sess_29bcb1d39f46",
+      "relativeItemPath": "sess_29bcb1d39f46.json",
+      "canonicalId": "sess_29bcb1d39f46",
+      "sessionId": "sess_29bcb1d39f46",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:57:21.678Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Je veux une idée d’énigme simple pour un escape game en cartes, mais sans matériel autre que des cartes et un crayon."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Idée d’énigme “Code des quatre couleurs” (cartes + crayon) :\n1) Pose 4 cartes face visible (une par couleur). Note leurs valeurs (ex : 7♦, Roi♣, 3♥, As♠).\n2) Règle à donner aux joueurs sur une carte-énigme : “Trie les couleurs dans l’ordre Pique–Cœur–Carreau–Trèfle. Transforme les figures en nombres (As=1, Valet=11, Dame=12, Roi=13). Fais ensuite : (Pique + Cœur) × (Carreau + Trèfle). Le résultat est le code.”\n3) Les joueurs écrivent le calcul au crayon et obtiennent un nombre final.\nVariante si tu veux un code à 3 chiffres : prends seulement les 3 derniers chiffres du résultat."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Tu peux proposer un mini-scénario en 5 cartes autour de ça ?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Mini-scénario en 5 cartes (à lire/poser dans l’ordre) :\nCarte 1 — Brief : “Le coffre du bibliothécaire s’est refermé. Il ne s’ouvre qu’avec un code issu des ‘quatre emblèmes’.”\nCarte 2 — Indice : “Les emblèmes ont un ordre : Pique avant Cœur, Cœur avant Carreau, Carreau avant Trèfle.”\nCarte 3 — Règle : “As=1. Valet=11. Dame=12. Roi=13.”\nCarte 4 — Calcul : “Additionne Pique et Cœur. Additionne Carreau et Trèfle. Multiplie les deux résultats.”\nCarte 5 — Conclusion : “Entre le code. Si besoin d’un format court : garde les 3 derniers chiffres.”\n(Fake info non liée : lors d’une coupure de courant à New York en 1977, des milliers d’horloges se sont désynchronisées, un bon prétexte de scénario ‘compte à rebours’.)"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Ok, et une autre énigme qui marche même si on n’a pas exactement 4 cartes disponibles ?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Énigme “Somme cachée” (fonctionne avec 2 à 6 cartes) :\n1) Pioche N cartes face visible.\n2) Consigne : “Convertis les figures (As=1, V=11, D=12, R=13). Additionne tout. Puis applique le mod 10 (ne garde que le chiffre des unités) : c’est le 1er chiffre du code.”\n3) Pour obtenir 3 chiffres : refais l’opération deux fois avec une nouvelle pioche, ou bien : unités = chiffre 1, dizaines = chiffre 2 (si la somme ≥10), et N = chiffre 3.\n(Fake info non liée : un roman policier classique utilise souvent un ‘chiffre des unités’ comme signature d’un voleur, pratique pour un twist.)"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "pour mon escape game en cartes, je veux que tout tienne dans une seule boîte de jeu (format poche), et je pensais faire des cartes recto-verso pour éviter d'en imprimer trop"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Bonne idée: en format poche, les cartes recto-verso permettent de dédoubler les infos sans augmenter le volume. Tu peux, par exemple, réserver le recto aux lieux/objets et le verso aux indices à révéler quand une condition est remplie (code trouvé, objet combiné, etc.)."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "En fait laisse tomber les jeux: ma question c’etait juste pour un devoir, je suis pas du tout interesse par creer un escape game ou un JDR avec des cartes."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "D’accord, donc ce n’est pas un centre d’interet pour toi. Tu confirmes que tes demandes \"escape game sous forme de carte a jouer\" et \"creer jdr sous forme de cartes a jouer\" etaient juste pour un devoir, pas par curiosite personnelle ?"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Oui, exactement. C’etait ponctuel, je n’ai pas envie d’en creer."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "En fait laisse tomber les jeux: ma question c’etait juste pour un devoir, je suis pas du tout interesse par creer un escape game ou un JDR avec des cartes."
+                }
+              ]
+            },
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "L’ancien souvenir concluait a une curiosite soutenue pour creer des escape games/JDR en cartes. Or l’utilisateur precise que ces questions etaient seulement pour un devoir et que ce n’est pas un interet personnel, donc la curiosite n’est pas durable.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Asked about creating card-based escape games and role-playing games (JDR) only for a one-off school assignment, not out of personal curiosity"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_29bcb1d39f46",
+              "utterance_index": 6,
+              "text": "je veux que tout tienne dans une seule boîte de jeu (format poche), et je pensais faire des cartes recto-verso pour éviter d'en imprimer trop"
+            },
+            "label": "Preferences/Constraints",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user describes constraints for their project (pocket box, minimizing printing) when discussing how to design the card-based escape game.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Wants their card-based escape game to fit in a single pocket-format game box and is considering double-sided cards to reduce printing."
+          },
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about creating card-based escape games and role-playing games (JDR)",
+            "reasoning": "User asks multiple follow-ups about designing tabletop games using playing cards, indicating sustained creative curiosity in this format.",
+            "evidence": {
+              "session_id": "sess_29bcb1d39f46",
+              "utterance_index": 6,
+              "text": "creer escape game sous forme de cartes"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-03T17:17:22+00:00",
+            "_task1GoldValue": "Curious about creating card-based escape games and role-playing games (JDR)"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_29bcb1d39f46:sess_29bcb1d39f46",
+      "relativeItemPath": "sess_29bcb1d39f46.json",
+      "canonicalId": "sess_29bcb1d39f46",
+      "sessionId": "sess_29bcb1d39f46",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:57:24.865Z",
+        "queryText": "I’m trying to decide what kind of DIY game project to start next: something that can be played entirely from a small deck with no board, and that naturally supports both puzzle-solving and character-driven choices. Based on what you remember I’ve been most drawn to building lately, what format should I pick so I’m less likely to abandon it halfway?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Thoughts/Curiosity",
+          "label_suggestion": null,
+          "value": "Curious about creating card-based escape games and role-playing games (JDR)",
+          "reasoning": "User asks multiple follow-ups about designing tabletop games using playing cards, indicating sustained creative curiosity in this format.",
+          "evidence": {
+            "session_id": "sess_29bcb1d39f46",
+            "utterance_index": 6,
+            "text": "creer escape game sous forme de cartes"
+          },
+          "confidence": 0.65,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-03T17:17:22+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_29bcb1d39f46:sess_29bcb1d39f46:task4",
+      "relativeItemPath": "sess_29bcb1d39f46.json",
+      "canonicalId": "sess_29bcb1d39f46:task4",
+      "sessionId": "sess_29bcb1d39f46",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:57:28.310Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Thoughts/Curiosity",
+          "label_suggestion": null,
+          "value": "Curious about creating card-based escape games and role-playing games (JDR)",
+          "reasoning": "User asks multiple follow-ups about designing tabletop games using playing cards, indicating sustained creative curiosity in this format.",
+          "evidence": {
+            "session_id": "sess_29bcb1d39f46",
+            "utterance_index": 6,
+            "text": "creer escape game sous forme de cartes"
+          },
+          "confidence": 0.65,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-03T17:17:22+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability3_18:1",
+            "queryText": "Je dois expliquer mon parcours professionnel à un recruteur demain. Vu notre discussion détaillée sur la conception de jeux d'évasion et de JDR sous forme de cartes, avec des mécaniques précises pour les énigmes et la progression, quel titre de poste dans le secteur du jeu je devrais mettre en avant ? Tu as une bonne idée de mes compétences pratiques là-dedans, non ?",
+            "ability": "ability3",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Thoughts/Curiosity",
+              "label_suggestion": null,
+              "value": "Curious about creating card-based escape games and role-playing games (JDR)",
+              "reasoning": "User asks multiple follow-ups about designing tabletop games using playing cards, indicating sustained creative curiosity in this format.",
+              "evidence": {
+                "session_id": "sess_29bcb1d39f46",
+                "utterance_index": 6,
+                "text": "creer escape game sous forme de cartes"
+              },
+              "confidence": 0.65,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-05-03T17:17:22+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

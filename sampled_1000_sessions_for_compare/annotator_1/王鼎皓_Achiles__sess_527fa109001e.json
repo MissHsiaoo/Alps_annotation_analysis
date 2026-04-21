@@ -1,0 +1,382 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_527fa109001e",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_527fa109001e:sess_527fa109001e",
+      "relativeItemPath": "sess_527fa109001e.json",
+      "canonicalId": "sess_527fa109001e",
+      "sessionId": "sess_527fa109001e",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T14:06:18.145Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers technical translations with precise terminology control",
+            "reasoning": "User explicitly corrected technical term '绝对检' to 'absolute testing'",
+            "evidence": {
+              "session_id": "sess_527fa109001e",
+              "utterance_index": 16,
+              "text": "The english for 绝对检 is absolute testing"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-03-11T06:49:58Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Avoids first-person plural in technical writing",
+            "reasoning": "Explicit instruction to remove 'we' from documentation",
+            "evidence": {
+              "session_id": "sess_527fa109001e",
+              "utterance_index": 30,
+              "text": "Do not use we"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-03-11T06:49:58Z"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Technical_Precision",
+            "value": "Sustained focus on technical translation accuracy and mathematical modeling precision",
+            "reasoning": "Task-local technical refinement pattern observed",
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-11T06:49:58Z",
+            "evidence": {
+              "session_id": "sess_527fa109001e",
+              "utterance_index": 0,
+              "text": ""
+            }
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_527fa109001e:sess_527fa109001e",
+      "relativeItemPath": "sess_527fa109001e.json",
+      "canonicalId": "sess_527fa109001e",
+      "sessionId": "sess_527fa109001e",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T12:58:49.565Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I have a short Chinese sentence. Can you translate it into English and keep it formal?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes—paste the Chinese sentence, and tell me if it’s for an email, a paper, or a slide caption (the tone can differ slightly)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Also, can you give two versions: one literal and one smoother?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Sure. I’ll provide (1) a close, literal translation and (2) a polished version that reads naturally, while preserving the technical meaning."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "By the way, what’s the difference between “accuracy” and “precision” in general writing?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "In general: “accuracy” is closeness to the true/target value; “precision” is consistency/repeatability (low variance). In writing, “accurate” means correct; “precise” often means specific and unambiguous."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Ok. Here is the sentence: “该方法在噪声水平较高时依然保持稳定，但计算开销明显增加。”"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Literal: “This method still remains stable when the noise level is relatively high, but the computational overhead increases significantly.”\n\nSmoother: “The method remains stable even under high noise levels, but at a markedly higher computational cost.”"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Can you make the smoother one slightly less dramatic than “markedly”?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Revised smoother: “The method remains stable even under high noise levels, but with a noticeably higher computational cost.”"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "When you rewrite those simulation sentences, keep the angle list and the 51×51 detail exactly as-is—just tighten grammar and wording."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it. I’ll focus only on grammar and clarity while preserving the specific numbers/angles and the original technical content."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "By the way, if I paste something like my address or passport number later, do not remember or store it."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Understood. If you share sensitive personal data like an address or passport number, I won’t retain it as a memory, and I’ll only use it to help with the immediate request."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Good. Just translate it and don't keep it."
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "Yes—I'll translate what you provide and won’t store it."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers technical translations with precise terminology control",
+            "reasoning": "User explicitly corrected technical term '绝对检' to 'absolute testing'",
+            "evidence": {
+              "session_id": "sess_527fa109001e",
+              "utterance_index": 16,
+              "text": "The english for 绝对检 is absolute testing"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-03-11T06:49:58Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Avoids first-person plural in technical writing",
+            "reasoning": "Explicit instruction to remove 'we' from documentation",
+            "evidence": {
+              "session_id": "sess_527fa109001e",
+              "utterance_index": 30,
+              "text": "Do not use we"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-03-11T06:49:58Z"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Technical_Precision",
+            "value": "Sustained focus on technical translation accuracy and mathematical modeling precision",
+            "reasoning": "Task-local technical refinement pattern observed",
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-11T06:49:58Z",
+            "evidence": {
+              "session_id": "sess_527fa109001e",
+              "utterance_index": 0,
+              "text": ""
+            }
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The prior memory was marked unsupported by evidence, but the dialogue explicitly states the user does not want the assistant to remember or store sensitive data like an address or passport number. The updated truth is that the user requests no retention of such information.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User requests that if they paste sensitive personal data (e.g., address or passport number), it should not be remembered or stored."
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_527fa109001e",
+              "utterance_index": 0,
+              "text": "keep the angle list and the 51×51 detail exactly as-is—just tighten grammar and wording."
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User asks to keep the angle list and 51×51 detail unchanged while only tightening grammar, implying a preference for minimal, non-substantive edits that preserve exact technical specifics.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Wants rewrites to preserve exact technical parameters (e.g., numbers/angles) and only adjust grammar/wording"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_527fa109001e:sess_527fa109001e",
+      "relativeItemPath": "sess_527fa109001e.json",
+      "canonicalId": "sess_527fa109001e",
+      "sessionId": "sess_527fa109001e",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T08:43:54.258Z",
+        "queryText": "我在进行翻译的时候，比较喜欢什么内容？",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers technical translations with precise terminology control",
+          "reasoning": "User explicitly corrected technical term '绝对检' to 'absolute testing'",
+          "evidence": {
+            "session_id": "sess_527fa109001e",
+            "utterance_index": 16,
+            "text": "The english for 绝对检 is absolute testing"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-03-11T06:49:58Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_527fa109001e:sess_527fa109001e:task4",
+      "relativeItemPath": "sess_527fa109001e.json",
+      "canonicalId": "sess_527fa109001e:task4",
+      "sessionId": "sess_527fa109001e",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:40:06.149Z",
+        "editableSelectedMemory": {
+          "memory_id": "m4",
+          "type": "indirect",
+          "label": "UNMAPPED",
+          "label_suggestion": "Preferences/Technical_Precision",
+          "value": "Sustained focus on technical translation accuracy and mathematical modeling precision",
+          "reasoning": "Task-local technical refinement pattern observed",
+          "confidence": 0.65,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-03-11T06:49:58Z",
+          "evidence": {
+            "session_id": "sess_527fa109001e",
+            "utterance_index": 0,
+            "text": ""
+          }
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_144:1",
+            "queryText": "请帮我提取出我在进行翻译工作时更偏向的特征",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m4",
+              "type": "indirect",
+              "label": "UNMAPPED",
+              "label_suggestion": "Preferences/Technical_Precision",
+              "value": "Sustained focus on technical translation accuracy and mathematical modeling precision",
+              "reasoning": "Task-local technical refinement pattern observed",
+              "confidence": 0.65,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-03-11T06:49:58Z",
+              "evidence": {
+                "session_id": "sess_527fa109001e",
+                "utterance_index": 0,
+                "text": ""
+              }
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

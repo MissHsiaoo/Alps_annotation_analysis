@@ -1,0 +1,385 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_f453cf3580cb",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_f453cf3580cb:sess_f453cf3580cb",
+      "relativeItemPath": "sess_f453cf3580cb.json",
+      "canonicalId": "sess_f453cf3580cb",
+      "sessionId": "sess_f453cf3580cb",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T04:17:02.892Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers Chinese baby as primary subject in portrait artworks [ERROR: Task-local instruction, not self-reported user attribute]",
+            "reasoning": "Task-local instruction, not self-reported user attribute",
+            "evidence": {
+              "session_id": "sess_f453cf3580cb",
+              "utterance_index": 4,
+              "text": "绘画主体改为一个中国宝宝，做一副肖像画"
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-14T17:19:39Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Content_Creation/Formatting",
+            "value": "Requires strict prompt framework: art_type + subject + environment + composition + style + parameters with adjective-noun phrases and -arXX suffix",
+            "reasoning": "Explicit technical constraints for prompt structure stated in initial instructions",
+            "evidence": {
+              "session_id": "sess_f453cf3580cb",
+              "utterance_index": 0,
+              "text": "prompt的框架是:艺术类型+主体+环境+构图+风格+参数...介词短语一定要替换为形容词加名词的形式...在参数的末尾加上-arxx的形式来输出"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "requirement",
+            "updated_at": "2023-06-14T17:19:39Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained exploration of pixel art variations for baby portraits with diverse backgrounds [ERROR: Task-local generation pattern, no evidence of user's personal curiosity]",
+            "reasoning": "Task-local generation pattern, no evidence of user's personal curiosity",
+            "evidence": {
+              "session_id": "sess_f453cf3580cb",
+              "utterance_index": 28,
+              "text": "五个全部生成"
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-14T17:19:39Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_f453cf3580cb:sess_f453cf3580cb",
+      "relativeItemPath": "sess_f453cf3580cb.json",
+      "canonicalId": "sess_f453cf3580cb",
+      "sessionId": "sess_f453cf3580cb",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T10:18:14.418Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我想把prompt的“参数”部分规范一下：清晰度、颗粒感、色彩饱和度、镜头焦段这些也算参数吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "算。你可以把“参数”理解成可控的技术项与输出约束的集合，比如：clarity/sharpness、film grain、color saturation、lens focal length、depth of field、lighting strength、以及-ar宽高比。为了保持简短，建议只保留2-4个最关键的参数。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "那“环境”里出现的光照，比如neon、backlight，是放环境还是参数？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "更自然的做法是：光源类型/氛围（neon, backlit, soft daylight）放在“环境”；更偏技术与强度的控制（high contrast, low-key, overexposed, shallow DOF）放在“参数”。如果一句里只能放一次，就优先放“环境”，让画面语义更直观。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "给我一个纯示例：同一个主体，换三个不同构图写法对比一下。"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "示例主体（非特定人物）：a ceramic teapot\n1) Illustration, a ceramic teapot, a wooden table in a sunlit kitchen, centered composition, Scandinavian style, crisp-ar1:1.\n2) Illustration, a ceramic teapot, a wooden table in a sunlit kitchen, rule-of-thirds composition, Scandinavian style, crisp-ar3:2.\n3) Illustration, a ceramic teapot, a wooden table in a sunlit kitchen, top-down composition, Scandinavian style, crisp-ar4:3.\n\n中文对照：\n1）插画，陶瓷茶壶，阳光厨房里的木桌，居中构图，北欧风格，清晰-ar1:1。\n2）插画，陶瓷茶壶，阳光厨房里的木桌，三分法构图，北欧风格，清晰-ar3:2。\n3）插画，陶瓷茶壶，阳光厨房里的木桌，俯拍构图，北欧风格，清晰-ar4:3。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "顺便问下，-ar后面的比例一定要是整数吗？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "通常用整数更稳妥、兼容性更好（比如1:1、3:2、4:5、16:9）。有些工具也支持小数或直接写“--ar 1.5”，但不同平台差异很大；不确定时就用常见整数比例。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我看到一条新闻说有画廊用AI修复旧海报，这种修复更偏“风格”还是“参数”？"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "“修复旧海报”更像任务意图/处理方式，通常放在“风格”或“参数”都行：\n- 放“风格”：poster restoration style / vintage poster restoration\n- 放“参数”：cleaned scratches, reduced noise, restored ink texture\n（补充一个不相关的小知识：很多20世纪的海报印刷会留下网点半色调纹理，描述成“halftone texture”能更贴近复古质感。）"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "最后输出的时候别再把“arX:Y代表宽高”那段解释夹在里面了，我是要直接复制到生成器里用的。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "明白，我后续只输出英文prompt与对应中文翻译，不再附加关于-ar参数含义的说明。"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "等等，你别把“画中国宝宝”当成我的长期偏好啊。我只是这次作业要这个主体，换个主题我也可以，比如风景、猫、机器人都行。"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "明白了，你这边是“本次生成任务的要求”，不是你个人的固定喜好或长期偏好；我不会把它记成你的长期偏好。"
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "对，就是任务指令而已。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Content_Creation/Formatting",
+            "value": "Requires strict prompt framework: art_type + subject + environment + composition + style + parameters with adjective-noun phrases and -arXX suffix",
+            "reasoning": "Explicit technical constraints for prompt structure stated in initial instructions",
+            "evidence": {
+              "session_id": "sess_f453cf3580cb",
+              "utterance_index": 0,
+              "text": "prompt的框架是:艺术类型+主体+环境+构图+风格+参数...介词短语一定要替换为形容词加名词的形式...在参数的末尾加上-arxx的形式来输出"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "requirement",
+            "updated_at": "2023-06-14T17:19:39Z",
+            "_task1GoldValue": "Requires strict prompt framework: art_type + subject + environment + composition + style + parameters with adjective-noun phrases and -arXX suffix"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained exploration of pixel art variations for baby portraits with diverse backgrounds [ERROR: Task-local generation pattern, no evidence of user's personal curiosity]",
+            "reasoning": "Task-local generation pattern, no evidence of user's personal curiosity",
+            "evidence": {
+              "session_id": "sess_f453cf3580cb",
+              "utterance_index": 28,
+              "text": "五个全部生成"
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-14T17:19:39Z",
+            "_task1GoldValue": "Sustained exploration of pixel art variations for baby portraits with diverse backgrounds [ERROR: Task-local generation pattern, no evidence of user's personal curiosity]"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The old memory claims a long-term preference for Chinese baby portraits. The user explicitly corrects this as a one-off task requirement, so it should not be stored as a stable preference.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Chinese baby as the primary subject was a task-local instruction for this prompt-generation assignment, not the user's long-term portrait subject preference."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_f453cf3580cb",
+              "utterance_index": 0,
+              "text": "最后输出的时候别再把“arX:Y代表宽高”那段解释夹在里面了，我是要直接复制到生成器里用的。"
+            },
+            "label": "Preferences/Content_Creation/Formatting",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "requirement",
+            "reasoning": "User complains about the inserted explanation text and indicates they need content that can be directly copied into a generator, implying a formatting preference to omit explanations.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Wants outputs to exclude extra explanatory text and be directly copy-pastable prompts (only prompt + Chinese translation)."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers Chinese baby as primary subject in portrait artworks [ERROR: Task-local instruction, not self-reported user attribute]",
+            "reasoning": "Task-local instruction, not self-reported user attribute",
+            "evidence": {
+              "session_id": "sess_f453cf3580cb",
+              "utterance_index": 4,
+              "text": "绘画主体改为一个中国宝宝，做一副肖像画"
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-14T17:19:39Z",
+            "_task1GoldValue": "Prefers Chinese baby as primary subject in portrait artworks [ERROR: Task-local instruction, not self-reported user attribute]"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_f453cf3580cb:sess_f453cf3580cb",
+      "relativeItemPath": "sess_f453cf3580cb.json",
+      "canonicalId": "sess_f453cf3580cb",
+      "sessionId": "sess_f453cf3580cb",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T10:18:28.200Z",
+        "queryText": "I’m commissioning a new portrait and can only pick one main subject; based on what you know about my past choices, which option would best match what I’d likely want, and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers Chinese baby as primary subject in portrait artworks [ERROR: Task-local instruction, not self-reported user attribute]",
+          "reasoning": "Task-local instruction, not self-reported user attribute",
+          "evidence": {
+            "session_id": "sess_f453cf3580cb",
+            "utterance_index": 4,
+            "text": "绘画主体改为一个中国宝宝，做一副肖像画"
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-06-14T17:19:39Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_f453cf3580cb:sess_f453cf3580cb:task4",
+      "relativeItemPath": "sess_f453cf3580cb.json",
+      "canonicalId": "sess_f453cf3580cb:task4",
+      "sessionId": "sess_f453cf3580cb",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T10:17:57.765Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers Chinese baby as primary subject in portrait artworks [ERROR: Task-local instruction, not self-reported user attribute]",
+          "reasoning": "Task-local instruction, not self-reported user attribute",
+          "evidence": {
+            "session_id": "sess_f453cf3580cb",
+            "utterance_index": 4,
+            "text": "绘画主体改为一个中国宝宝，做一副肖像画"
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-06-14T17:19:39Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_461:1",
+            "queryText": "帮我生成五副不同背景的宝宝肖像画。",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Prefers Chinese baby as primary subject in portrait artworks [ERROR: Task-local instruction, not self-reported user attribute]",
+              "reasoning": "Task-local instruction, not self-reported user attribute",
+              "evidence": {
+                "session_id": "sess_f453cf3580cb",
+                "utterance_index": 4,
+                "text": "绘画主体改为一个中国宝宝，做一副肖像画"
+              },
+              "confidence": 0.1,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-06-14T17:19:39Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "partial",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "relevant but not completely matched",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

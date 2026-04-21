@@ -1,0 +1,285 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_e0ed2c12d77f",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_e0ed2c12d77f:sess_e0ed2c12d77f",
+      "relativeItemPath": "sess_e0ed2c12d77f.json",
+      "canonicalId": "sess_e0ed2c12d77f",
+      "sessionId": "sess_e0ed2c12d77f",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T14:20:22.339Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "value": "Has a wife and mother",
+            "reasoning": "User explicitly mentions wife ('老婆') and mother ('我妈') in family context.",
+            "evidence": {
+              "session_id": "sess_e0ed2c12d77f",
+              "utterance_index": 0,
+              "text": "老婆发信息给我她关心我妈怎么回复"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-24T04:46:28Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_e0ed2c12d77f:sess_e0ed2c12d77f",
+      "relativeItemPath": "sess_e0ed2c12d77f.json",
+      "canonicalId": "sess_e0ed2c12d77f",
+      "sessionId": "sess_e0ed2c12d77f",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T04:51:33.016Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "你能简单说下 M.2 NVMe 和 SATA 固态主要差别吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "主要差别在接口与协议：SATA SSD 走 SATA/AHCI，顺序读写一般在 500MB/s 左右；M.2 形态里如果是 NVMe（走 PCIe），带宽更高、延迟更低，常见顺序读写可到几 GB/s。日常开机、装软件差距不一定成倍，但大文件拷贝、剪辑缓存、频繁随机读写时 NVMe 更占优。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "电池串联的两节电芯，测出来电压不一样正常吗？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "小范围不一样是正常的：电芯内阻、容量、老化程度和充放电状态都会造成电压差。关键看差多少——如果长期相差很大（例如超过 0.1–0.2V 且不断扩大），可能有单节异常或保护板均衡失效，需要谨慎使用并考虑更换。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "监控摄像头电源 12V 6A 能带多少个？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "看每个摄像头的功耗/电流。粗算：总电流预算 6A（建议留 20% 余量，按 4.8A 以内更稳）。例如每个摄像头标称 12V 0.5A，则大约 4.8/0.5≈9 个；如果带红外补光、云台或加热，峰值电流更大，要按峰值算并注意线损与供电距离。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "顺便问个冷知识：为什么有些酒瓶写 XO？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "XO 常见于干邑（Cognac）体系，原意是 “Extra Old”。目前行业规则下，XO 等级通常要求最年轻的基酒也达到规定的陈年年限（规则曾调整过）。但不同国家/产区对标注体系不完全一样，所以最好结合产区与酒厂的分级说明理解。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "还有：我看到新闻说有人用手机锂电做手工电源，靠谱吗？"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "不太建议。手机锂电通常需要合适的保护板（过充/过放/过流/温控）、正确的充电管理、以及可靠的封装与绝缘；手工改装如果缺少这些，容易鼓包、短路或热失控。真要做更安全的方案，一般选成品锂电模组或带认证的电池包。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "我那台华为笔记本语音助手又抽风了，左下角点了半天没反应，准备周末拿去售后看看。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "可以先试试重启语音服务或在设置里把语音助手开关重新切换；如果还是不行，带上购机凭证去官方售后会更省心。"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "上次我说“老婆发信息给我”，其实是我口头习惯乱叫的，那不是我老婆，就一同事；我也没结婚。还有“我妈”那句也是随口说的，我妈早不在了。"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "明白了，你当时说的“老婆”只是随口的称呼，并不是配偶；而且你目前没结婚。“我妈”那句也不是在说近况，而是你母亲已经不在了。那如果对方再问起关心的话，你可以用更中性的方式回。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory said the user has a wife and mother based on wording. The user corrects that “老婆” was just a casual nickname for a coworker and states they are not married; they also clarify their mother is no longer alive, contradicting the implication of an active mother relationship.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Not married; the previously mentioned “wife” was actually a coworker referred to casually, and the user’s mother has passed away."
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_e0ed2c12d77f",
+              "utterance_index": 0,
+              "text": "我那台华为笔记本语音助手又抽风了"
+            },
+            "label": "Devices/Computing",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User refers to '我那台华为笔记本' implying they own/use a Huawei notebook computer.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User has a Huawei laptop"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_e0ed2c12d77f:sess_e0ed2c12d77f",
+      "relativeItemPath": "sess_e0ed2c12d77f.json",
+      "canonicalId": "sess_e0ed2c12d77f",
+      "sessionId": "sess_e0ed2c12d77f",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:54:44.943Z",
+        "queryText": "If I want to respond warmly to a message where someone is checking in about a close older relative of mine, which two people in my life does that situation most likely involve (one being the sender and one being the relative), and why would that make the reply feel a bit delicate?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Family",
+          "label_suggestion": null,
+          "value": "Has a wife and mother",
+          "reasoning": "User explicitly mentions wife ('老婆') and mother ('我妈') in family context.",
+          "evidence": {
+            "session_id": "sess_e0ed2c12d77f",
+            "utterance_index": 0,
+            "text": "老婆发信息给我她关心我妈怎么回复"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-24T04:46:28Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_e0ed2c12d77f:sess_e0ed2c12d77f:task4",
+      "relativeItemPath": "sess_e0ed2c12d77f.json",
+      "canonicalId": "sess_e0ed2c12d77f:task4",
+      "sessionId": "sess_e0ed2c12d77f",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T01:22:44.805Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Family",
+          "label_suggestion": null,
+          "value": "Has a wife and mother",
+          "reasoning": "User explicitly mentions wife ('老婆') and mother ('我妈') in family context.",
+          "evidence": {
+            "session_id": "sess_e0ed2c12d77f",
+            "utterance_index": 0,
+            "text": "老婆发信息给我她关心我妈怎么回复"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-24T04:46:28Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_341:1",
+            "queryText": "老婆说周末想带我妈去公园走走，我该怎么安排比较合适？",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Social_Relationships/Family",
+              "label_suggestion": null,
+              "value": "Has a wife and mother",
+              "reasoning": "User explicitly mentions wife ('老婆') and mother ('我妈') in family context.",
+              "evidence": {
+                "session_id": "sess_e0ed2c12d77f",
+                "utterance_index": 0,
+                "text": "老婆发信息给我她关心我妈怎么回复"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-05-24T04:46:28Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

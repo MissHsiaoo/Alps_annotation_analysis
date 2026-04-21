@@ -1,0 +1,421 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_d205c8b676c8",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_d205c8b676c8:sess_d205c8b676c8",
+      "relativeItemPath": "sess_d205c8b676c8.json",
+      "canonicalId": "sess_d205c8b676c8",
+      "sessionId": "sess_d205c8b676c8",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T03:19:29.349Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "States_Experiences/Physical_State",
+            "label_suggestion": null,
+            "value": "Insulin resistance condition",
+            "reasoning": "User explicitly states having insulin resistance when requesting workout plan.",
+            "evidence": {
+              "session_id": "sess_d205c8b676c8",
+              "utterance_index": 2,
+              "text": "Составь пожалуйста силовую тренировку для молодой девушки с инуслинорезистентностью."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-24T18:12:44+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Avoids onions, cooked vegetables, kefir, sour cream",
+            "reasoning": "Explicit dietary restrictions stated in meal plan request.",
+            "evidence": {
+              "session_id": "sess_d205c8b676c8",
+              "utterance_index": 4,
+              "text": "Еда без лука и приготовленных овощей, без кефира и сметаны"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-04-24T18:12:44+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Skills/Hobbies",
+            "value": "Knows English/Greek basics, plays ukulele/piano, gym enthusiast",
+            "reasoning": "Explicit self-stated skills and hobbies during career discussion. Original label forced incorrect taxonomy.",
+            "evidence": {
+              "session_id": "sess_d205c8b676c8",
+              "utterance_index": 10,
+              "text": "Я немного знаю английский, греческий, чуть-чуть играю на укулеле и фортепиано, люблю качаться в зале"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-04-24T18:12:44+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Thoughts/Goals/Long_Term",
+            "label_suggestion": null,
+            "value": "Seeks career path to become popular and wealthy",
+            "reasoning": "Explicitly states life goal during career advice request.",
+            "evidence": {
+              "session_id": "sess_d205c8b676c8",
+              "utterance_index": 10,
+              "text": "Я хочу быть популярной и богатой. Кем мне работать для этого?"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "desire",
+            "updated_at": "2023-04-24T18:12:44+00:00"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in Instagram audience growth strategies",
+            "reasoning": "Single inquiry about Instagram growth; insufficient evidence of sustained pattern.",
+            "evidence": {
+              "session_id": "sess_d205c8b676c8",
+              "utterance_index": 14,
+              "text": "Как набрать аудиторию в инстаграме?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-24T18:12:44+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_d205c8b676c8:sess_d205c8b676c8",
+      "relativeItemPath": "sess_d205c8b676c8.json",
+      "canonicalId": "sess_d205c8b676c8",
+      "sessionId": "sess_d205c8b676c8",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T03:20:01.282Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Привет! Подскажи, как лучше оформить короткий пост в соцсетях, чтобы он был понятным?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Привет! Хороший шаблон: 1) заголовок в 5–7 слов, 2) 1–2 предложения с контекстом, 3) список из 3 пунктов (что, зачем, как), 4) один конкретный призыв к действию (вопрос или просьба). Хочешь пост информативный или развлекательный?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Информативный. И без воды."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Тогда держи формулу «проблема → решение → шаги → результат»:\n\nЗаголовок: что человек получит.\n1–2 строки: почему это важно сейчас.\nШаги (3 пункта): только действия.\nФинал: ожидаемый эффект + один вопрос.\n\nПример: «Как перестать откладывать дела за 10 минут» → 3 шага → «Какой пункт попробуешь сегодня?»"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "А можешь придумать пример про тренировки, но без упоминания брендов и без медицинских обещаний?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Конечно:\n\nЗаголовок: «Тренировка на всё тело за 25 минут дома»\nКонтекст: «Когда нет времени, помогает короткая структура без сложного оборудования.»\nШаги:\n1) Разминка 3 минуты: суставы + лёгкие прыжки/шаг.\n2) Круг 2–3 раза: приседания, отжимания от опоры, тяга резинки/наклоны, планка (по 30–40 сек).\n3) Заминка 3 минуты: растяжка ног и спины.\nФинал: «Сохрани, чтобы не думать, что делать. Какой уровень сложности поставить: лёгкий, средний или бодрый?»\n\nКстати, в 2016 году в одной норвежской экспедиции полярники вели дневники нагрузки, и там лучше всего работали именно короткие «циклы» по 20–30 минут — не из-за магии, а потому что их проще соблюдать."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Поняла. А какие ошибки в таких постах чаще всего делают?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Частые ошибки:\n1) Слишком много целей в одном посте (и сила, и выносливость, и питание).\n2) Нет конкретики (вместо «сделай круг» — лучше «2 круга по 4 упражнения, 30 сек работа/30 сек отдых»).\n3) Длинное вступление без пользы в первых двух строках.\n4) Сложные термины без расшифровки.\n5) Несколько призывов к действию сразу.\n\nИ любопытный факт не по теме: первые коммерческие «баночные» консервы для моряков массово распространились в XIX веке, но открывалки появились не сразу — иногда банки вскрывали ножами и молотками."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Я, кстати, сторис обычно вечером выкладываю — после школы времени больше."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Понял(а). Тогда можно подстроить контент-план под вечерние сторис: например, 3–5 коротких кадров (зал/учёба/еда), один интерактив (опрос/вопросы) и один полезный мини-совет, чтобы подписчики привыкали к регулярности."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Слушай, я там про питание писала «без лука и приготовленных овощей, без кефира и сметаны» — это не потому что я их не люблю. Просто тогда так надо было на пару недель."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Понял(а). То есть это были временные ограничения, а не постоянные предпочтения. Сейчас лук, приготовленные овощи, кефир и сметана в целом можно, если нет других причин исключать?"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Да, сейчас можно. Лук и овощи я вообще-то нормально ем, и кефир со сметаной тоже — просто тогда попросила без них."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "States_Experiences/Physical_State",
+            "label_suggestion": null,
+            "value": "Insulin resistance condition",
+            "reasoning": "User explicitly states having insulin resistance when requesting workout plan.",
+            "evidence": {
+              "session_id": "sess_d205c8b676c8",
+              "utterance_index": 2,
+              "text": "Составь пожалуйста силовую тренировку для молодой девушки с инуслинорезистентностью."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-24T18:12:44+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Skills/Hobbies",
+            "value": "Knows English/Greek basics, plays ukulele/piano, gym enthusiast",
+            "reasoning": "Explicit self-stated skills and hobbies during career discussion. Original label forced incorrect taxonomy.",
+            "evidence": {
+              "session_id": "sess_d205c8b676c8",
+              "utterance_index": 10,
+              "text": "Я немного знаю английский, греческий, чуть-чуть играю на укулеле и фортепиано, люблю качаться в зале"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-04-24T18:12:44+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Thoughts/Goals/Long_Term",
+            "label_suggestion": null,
+            "value": "Seeks career path to become popular and wealthy",
+            "reasoning": "Explicitly states life goal during career advice request.",
+            "evidence": {
+              "session_id": "sess_d205c8b676c8",
+              "utterance_index": 10,
+              "text": "Я хочу быть популярной и богатой. Кем мне работать для этого?"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "desire",
+            "updated_at": "2023-04-24T18:12:44+00:00"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in Instagram audience growth strategies",
+            "reasoning": "Single inquiry about Instagram growth; insufficient evidence of sustained pattern.",
+            "evidence": {
+              "session_id": "sess_d205c8b676c8",
+              "utterance_index": 14,
+              "text": "Как набрать аудиторию в инстаграме?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-24T18:12:44+00:00"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The old memory says the user avoids these foods as a stable preference. In the dialogue, the user clarifies it was only needed for a couple of weeks and that they normally eat them, contradicting a long-term avoidance.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "The earlier request to avoid onions, cooked vegetables, kefir, and sour cream was temporary and not a long-term dislike; they generally eat them."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_d205c8b676c8",
+              "utterance_index": 0,
+              "text": "после школы времени больше"
+            },
+            "label": "Bio/Demographics",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "Пользователь упоминает, что после школы у неё появляется больше времени, что подразумевает, что она учится в школе.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is a school student"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_d205c8b676c8:sess_d205c8b676c8",
+      "relativeItemPath": "sess_d205c8b676c8.json",
+      "canonicalId": "sess_d205c8b676c8",
+      "sessionId": "sess_d205c8b676c8",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T03:20:12.437Z",
+        "queryText": "I’m choosing between two lunch specials: one is a chilled fermented dairy drink on the side and a main topped with a creamy tangy garnish, and the other is a simple meat-and-grain bowl with only fresh greens. Given my usual “no thanks” list, which option should I pick to avoid the stuff I typically skip, and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Avoids onions, cooked vegetables, kefir, sour cream",
+          "reasoning": "Explicit dietary restrictions stated in meal plan request.",
+          "evidence": {
+            "session_id": "sess_d205c8b676c8",
+            "utterance_index": 4,
+            "text": "Еда без лука и приготовленных овощей, без кефира и сметаны"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-04-24T18:12:44+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_d205c8b676c8:sess_d205c8b676c8:task4",
+      "relativeItemPath": "sess_d205c8b676c8.json",
+      "canonicalId": "sess_d205c8b676c8:task4",
+      "sessionId": "sess_d205c8b676c8",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T03:20:30.975Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Avoids onions, cooked vegetables, kefir, sour cream",
+          "reasoning": "Explicit dietary restrictions stated in meal plan request.",
+          "evidence": {
+            "session_id": "sess_d205c8b676c8",
+            "utterance_index": 4,
+            "text": "Еда без лука и приготовленных овощей, без кефира и сметаны"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-04-24T18:12:44+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_620:1",
+            "queryText": "Посоветуй, что вкусного можно сделать на ужин? Хочу что-то сытное, но без лишних заморочек.",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Food",
+              "label_suggestion": null,
+              "value": "Avoids onions, cooked vegetables, kefir, sour cream",
+              "reasoning": "Explicit dietary restrictions stated in meal plan request.",
+              "evidence": {
+                "session_id": "sess_d205c8b676c8",
+                "utterance_index": 4,
+                "text": "Еда без лука и приготовленных овощей, без кефира и сметаны"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-04-24T18:12:44+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "completely relevant",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,380 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_d332f7f4fdaf",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_d332f7f4fdaf:sess_d332f7f4fdaf",
+      "relativeItemPath": "sess_d332f7f4fdaf.json",
+      "canonicalId": "sess_d332f7f4fdaf",
+      "sessionId": "sess_d332f7f4fdaf",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T04:05:00.173Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "narrative/self_description",
+            "value": "Has ridden a motorcycle a couple of times [ERROR: Forced label not supported. Narrative edit context suggests possible role-play/hypothetical.]",
+            "reasoning": "Forced label not supported. Narrative edit context suggests possible role-play/hypothetical.",
+            "evidence": {
+              "session_id": "sess_d332f7f4fdaf",
+              "utterance_index": 0,
+              "text": "Change the second paragraph so that it shows that i’ve only ridden a motorcycle a couple times instead of never..."
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-19T12:42:30+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Rubik’s cubes are a passion, done repeatedly",
+            "reasoning": "User explicitly self-reports recurring passion with 'over and over again' emphasis.",
+            "evidence": {
+              "session_id": "sess_d332f7f4fdaf",
+              "utterance_index": 4,
+              "text": "Add details that show that Rubik’s cubes are a passion to me, something i like to do over and over again."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-04-19T12:42:30+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "writing/style/preference",
+            "value": "Prefers 'show, not tell' writing style",
+            "reasoning": "Label forces interaction context. Single-task instruction without persistence signals.",
+            "evidence": {
+              "session_id": "sess_d332f7f4fdaf",
+              "utterance_index": 6,
+              "text": "Try again. implement show, not tell."
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-04-19T12:42:30+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about refining written content with narrative structure and stylistic techniques like 'show, not tell'",
+            "reasoning": "Task-local focus observed. No evidence of general curiosity beyond this session.",
+            "evidence": {
+              "session_id": "sess_d332f7f4fdaf",
+              "utterance_index": 0,
+              "text": "Rewrite this. Change the second paragraph..."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-19T12:42:30+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_d332f7f4fdaf:sess_d332f7f4fdaf",
+      "relativeItemPath": "sess_d332f7f4fdaf.json",
+      "canonicalId": "sess_d332f7f4fdaf",
+      "sessionId": "sess_d332f7f4fdaf",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T04:05:29.889Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Can you give me three different opening lines for a short scene that starts in a quiet library and ends with a sudden power outage?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "1) The library’s silence was so complete that even the page turns sounded like whispers—until every light snapped off at once.\n2) Under the steady hum of fluorescent bulbs, the stacks felt endless and calm; then the hum cut out, and the calm became darkness.\n3) A lone desk lamp pooled light over a book like a small stage, and when the power died, the stage vanished mid-sentence."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Nice. Now write a single paragraph that connects “calm” to “uneasy” without mentioning electricity directly."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "The quiet begins as a comfort—orderly shelves, measured footsteps, the reassuring predictability of soft sounds—but it slowly sharpens into something you can’t ignore. Each small noise seems to carry farther than it should, each pause between them stretches a beat too long. The air feels thicker, as if the room is holding its breath, and that same stillness that soothed you a moment ago now makes you listen for what isn’t there."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Could you also list two sensory details that would make the scene feel more real?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "• The dry, papery smell of old bindings mixed with a faint lemony cleaner on the tables.\n• The tacky texture of a worn book cover and the barely-there grit of dust on your fingertips after sliding a volume from the shelf."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Random question: what’s an example of a “fake memory” in fiction that readers later realize was planted?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "A common example is a character who “remembers” a childhood lullaby as proof of who their parent was—only for the story to reveal later that the lullaby was widespread propaganda from a radio program, meaning the memory felt personal but wasn’t uniquely tied to their family. Another is a detective recalling they saw a suspect’s face at a party, later discovering the scene was reconstructed from a staged photograph they were shown repeatedly."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Could you tweak that cube paragraph so it feels more like a late-night ritual—like I’m still at my desk when everyone else is asleep, turning one last solve into three more?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Envision the room long after the house has gone quiet: a desk lamp pools warm light over scattered notes and a scrambled cube resting in your hands. The first few turns are slow, almost absentminded—then the familiar rhythm clicks in, and your fingers start moving with practiced certainty, corners and edges snapping into place as if they’ve been waiting for you all day. The cube solves, you pause for half a breath, and instead of setting it down, you twist it back into chaos again—once, twice, then a third time—chasing that clean, final alignment until the only sound left in the room is the steady tick of plastic against plastic."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "That last version still isn’t right. I don’t actually solve Rubik’s Cubes over and over in real life—I just needed the paragraph to *sound* like it. In reality I’ve only messed with one a few times, and I’m not really into it."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—so the cube details should read as vivid description, not as a true, repeated habit. I’ll adjust the wording to avoid implying it’s a long-term passion, and instead frame it as something you’ve only tried a few times without being deeply invested."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "narrative/self_description",
+            "value": "Has ridden a motorcycle a couple of times [ERROR: Forced label not supported. Narrative edit context suggests possible role-play/hypothetical.]",
+            "reasoning": "Forced label not supported. Narrative edit context suggests possible role-play/hypothetical.",
+            "evidence": {
+              "session_id": "sess_d332f7f4fdaf",
+              "utterance_index": 0,
+              "text": "Change the second paragraph so that it shows that i’ve only ridden a motorcycle a couple times instead of never..."
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-19T12:42:30+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "writing/style/preference",
+            "value": "Prefers 'show, not tell' writing style",
+            "reasoning": "Label forces interaction context. Single-task instruction without persistence signals.",
+            "evidence": {
+              "session_id": "sess_d332f7f4fdaf",
+              "utterance_index": 6,
+              "text": "Try again. implement show, not tell."
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-04-19T12:42:30+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about refining written content with narrative structure and stylistic techniques like 'show, not tell'",
+            "reasoning": "Task-local focus observed. No evidence of general curiosity beyond this session.",
+            "evidence": {
+              "session_id": "sess_d332f7f4fdaf",
+              "utterance_index": 0,
+              "text": "Rewrite this. Change the second paragraph..."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-19T12:42:30+00:00"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The prior memory claimed Rubik’s cubes are a repeated passion, but the user clarifies the passion framing was only for writing and that, in reality, they’ve only tried a cube a few times and aren’t really into it. The updated truth is that Rubik’s cubes are not a long-term, repeatedly pursued passion.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Rubik’s cubes are not a recurring passion; the user has only tried one a few times and isn’t really into them."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_d332f7f4fdaf",
+              "utterance_index": 0,
+              "text": "Could you tweak that cube paragraph so it feels more like a late-night ritual—like I’m still at my desk when everyone else is asleep"
+            },
+            "label": "Habits/Routine",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user implies a recurring pattern of doing Rubik’s cube solves late at night at their desk after others are asleep, framed as a 'ritual'.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Often does Rubik’s cube solves late at night at their desk when others are asleep"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_d332f7f4fdaf:sess_d332f7f4fdaf",
+      "relativeItemPath": "sess_d332f7f4fdaf.json",
+      "canonicalId": "sess_d332f7f4fdaf",
+      "sessionId": "sess_d332f7f4fdaf",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T04:05:48.194Z",
+        "queryText": "I’m trying to pick a small, hands-on activity to bring on a long trip—something I can do repeatedly without getting bored. Based on what you know about me, what kind of item should I pack, and why would it fit better than a one-and-done puzzle book?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Rubik’s cubes are a passion, done repeatedly",
+          "reasoning": "User explicitly self-reports recurring passion with 'over and over again' emphasis.",
+          "evidence": {
+            "session_id": "sess_d332f7f4fdaf",
+            "utterance_index": 4,
+            "text": "Add details that show that Rubik’s cubes are a passion to me, something i like to do over and over again."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-04-19T12:42:30+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_d332f7f4fdaf:sess_d332f7f4fdaf:task4",
+      "relativeItemPath": "sess_d332f7f4fdaf.json",
+      "canonicalId": "sess_d332f7f4fdaf:task4",
+      "sessionId": "sess_d332f7f4fdaf",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T04:06:07.159Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Rubik’s cubes are a passion, done repeatedly",
+          "reasoning": "User explicitly self-reports recurring passion with 'over and over again' emphasis.",
+          "evidence": {
+            "session_id": "sess_d332f7f4fdaf",
+            "utterance_index": 4,
+            "text": "Add details that show that Rubik’s cubes are a passion to me, something i like to do over and over again."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-04-19T12:42:30+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_77:1",
+            "queryText": "I'm thinking about picking up a new hobby to unwind after work. Something that's engaging but also has a kind of meditative, repeatable quality to it. Any ideas for what might fit me?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Rubik’s cubes are a passion, done repeatedly",
+              "reasoning": "User explicitly self-reports recurring passion with 'over and over again' emphasis.",
+              "evidence": {
+                "session_id": "sess_d332f7f4fdaf",
+                "utterance_index": 4,
+                "text": "Add details that show that Rubik’s cubes are a passion to me, something i like to do over and over again."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-04-19T12:42:30+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "appropriate",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

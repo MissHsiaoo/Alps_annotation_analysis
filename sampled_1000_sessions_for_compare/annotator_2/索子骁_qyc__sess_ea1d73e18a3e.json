@@ -1,0 +1,285 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_ea1d73e18a3e",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_ea1d73e18a3e:sess_ea1d73e18a3e",
+      "relativeItemPath": "sess_ea1d73e18a3e.json",
+      "canonicalId": "sess_ea1d73e18a3e",
+      "sessionId": "sess_ea1d73e18a3e",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T09:17:15.670Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "legal/business_structures/inquiry",
+            "value": "Curious about legal structures (C-corporations, PMAs) and operational requirements in North Carolina",
+            "reasoning": "User inquiries are task-local business questions. Label 'Thoughts/Curiosity' forced without evidence of sustained personal curiosity pattern.",
+            "evidence": {
+              "session_id": "sess_ea1d73e18a3e",
+              "utterance_index": 6,
+              "text": "what are the cost involved in creating and operation a North Carolina c-corporation "
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-02T03:36:19+00:00"
+          },
+          {
+            "memory_id": "gpt_5_2_p1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "Curious about Native American/Indigenous ancestry percentages and potentially tracing their family history (genealogy).",
+            "confidence": 0.8,
+            "evidence_text": "if my grand mother is 100% Native Americans or Indigenous Americans. what percent am I "
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_ea1d73e18a3e:sess_ea1d73e18a3e",
+      "relativeItemPath": "sess_ea1d73e18a3e.json",
+      "canonicalId": "sess_ea1d73e18a3e",
+      "sessionId": "sess_ea1d73e18a3e",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:17:37.181Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "What’s the difference between an affidavit and a notarized statement?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "An affidavit is a written statement of facts that the signer swears (or affirms) is true, usually using specific “sworn before me” language and often intended for legal use. A notarized statement is broader: it’s any document where a notary verifies the signer’s identity and witnesses the signature; it may or may not include a sworn oath. In many places, an affidavit is typically notarized, but not every notarized document is an affidavit."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "If something is “under penalty of perjury,” is that the same as notarized?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Not exactly. “Under penalty of perjury” usually means the signer is making a formal legal declaration that the statements are true, and they can be prosecuted if they knowingly lie. Notarization is about identity verification and witnessing the signature. Some jurisdictions allow unsworn declarations “under penalty of perjury” to substitute for notarized affidavits in certain contexts, but they’re conceptually different."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Can you give an example of a short unsworn declaration?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Example (common U.S.-style wording—requirements vary by jurisdiction):\n\n“I declare under penalty of perjury that the foregoing is true and correct. Executed on [date] at [city, state].\n\n[Signature]\n[Printed name]”\n\nIf you tell me the jurisdiction and what the declaration is for, I can help tailor the exact phrasing."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Random question: are there any odd historical examples involving affidavits?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "One interesting example (not about any private individual) is how affidavits were used in 19th-century newspaper disputes: editors sometimes published sworn statements from witnesses to bolster credibility in public controversies. Another is maritime practice—captains would file sworn statements about storms or cargo damage to support insurance claims. And in early aviation accidents, investigators often relied on sworn witness statements when technical data recorders didn’t exist."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "For that Affidavit of Heirship you mentioned earlier, I’m trying to put one together for my grandfather, and I want it to be usable without kicking off a full probate case—what details do I need to make sure I don’t miss?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "I can help with a checklist-style outline of the common sections and the kinds of statements people typically include so it’s complete and consistent. Requirements can vary by state/county, but generally you’ll want identifying information for the decedent, a clear family history section listing heirs, statements about marital history and children, whether there was a will, and a notarized signature, plus disinterested witnesses if your jurisdiction expects that."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Earlier I asked all that North Carolina C-corp / PMA stuff, but that wasn’t for me personally. I was helping a friend with a checklist and just copying questions over."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—so those questions weren’t about your own plans or what you’re trying to set up in North Carolina, you were just relaying them for someone else."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Right. I’m not trying to create or operate a NC c-corporation or a PMA—just passing along what they wanted to know."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.65,
+            "emotion": null,
+            "evidence": null,
+            "label": "UNMAPPED",
+            "label_suggestion": "legal/business_structures/context",
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory inferred the user’s personal curiosity about NC legal structures. The user clarifies the questions were relayed for a friend and not reflective of their own plans, so the updated truth is that the inquiries were not personal intent/curiosity but third-party assistance.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Asked about NC C-corporations and PMAs to help a friend; not the user’s own plans to set one up."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_ea1d73e18a3e",
+              "utterance_index": 0,
+              "text": "I’m trying to put one together for my grandfather, and I want it to be usable without kicking off a full probate case"
+            },
+            "label": "legal/documents/estate_planning_inquiry",
+            "label_suggestion": "legal/documents/affidavit_of_heirship",
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user implies they are drafting an affidavit of heirship for their grandfather and is aiming to avoid initiating probate.",
+            "time_scope": "current",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is preparing an Affidavit of Heirship for their grandfather and wants it usable without a full probate case."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_ea1d73e18a3e:sess_ea1d73e18a3e",
+      "relativeItemPath": "sess_ea1d73e18a3e.json",
+      "canonicalId": "sess_ea1d73e18a3e",
+      "sessionId": "sess_ea1d73e18a3e",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:25:49.003Z",
+        "queryText": "If I decide to set up a new venture where I’ll need to meet recurring compliance steps and pay ongoing state-related fees, which kind of entity setup would I most likely be weighing—and in what state would those obligations apply—based on what you know I’ve been asking about before?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "UNMAPPED",
+          "label_suggestion": "legal/business_structures/inquiry",
+          "value": "Curious about legal structures (C-corporations, PMAs) and operational requirements in North Carolina",
+          "reasoning": "User inquiries are task-local business questions. Label 'Thoughts/Curiosity' forced without evidence of sustained personal curiosity pattern.",
+          "evidence": {
+            "session_id": "sess_ea1d73e18a3e",
+            "utterance_index": 6,
+            "text": "what are the cost involved in creating and operation a North Carolina c-corporation "
+          },
+          "confidence": 0.65,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-02T03:36:19+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_ea1d73e18a3e:sess_ea1d73e18a3e:task4",
+      "relativeItemPath": "sess_ea1d73e18a3e.json",
+      "canonicalId": "sess_ea1d73e18a3e:task4",
+      "sessionId": "sess_ea1d73e18a3e",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T02:49:50.063Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "UNMAPPED",
+          "label_suggestion": "legal/business_structures/inquiry",
+          "value": "Curious about legal structures (C-corporations, PMAs) and operational requirements in North Carolina",
+          "reasoning": "User inquiries are task-local business questions. Label 'Thoughts/Curiosity' forced without evidence of sustained personal curiosity pattern.",
+          "evidence": {
+            "session_id": "sess_ea1d73e18a3e",
+            "utterance_index": 6,
+            "text": "what are the cost involved in creating and operation a North Carolina c-corporation "
+          },
+          "confidence": 0.65,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-02T03:36:19+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_312:1",
+            "queryText": "If I set up a PMA for my homeschool co-op in North Carolina, what specific operational costs should I budget for compared to a regular C-corp?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "UNMAPPED",
+              "label_suggestion": "legal/business_structures/inquiry",
+              "value": "Curious about legal structures (C-corporations, PMAs) and operational requirements in North Carolina",
+              "reasoning": "User inquiries are task-local business questions. Label 'Thoughts/Curiosity' forced without evidence of sustained personal curiosity pattern.",
+              "evidence": {
+                "session_id": "sess_ea1d73e18a3e",
+                "utterance_index": 6,
+                "text": "what are the cost involved in creating and operation a North Carolina c-corporation "
+              },
+              "confidence": 0.65,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-05-02T03:36:19+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "highly matched and necessary to generate personalized response",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

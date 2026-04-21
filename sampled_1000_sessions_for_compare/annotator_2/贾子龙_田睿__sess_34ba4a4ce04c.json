@@ -1,0 +1,409 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_34ba4a4ce04c",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_34ba4a4ce04c:sess_34ba4a4ce04c",
+      "relativeItemPath": "sess_34ba4a4ce04c.json",
+      "canonicalId": "sess_34ba4a4ce04c",
+      "sessionId": "sess_34ba4a4ce04c",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T17:03:12.662Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Eats spinach curry, bananas, dry fruits, muesli bars before cricket games",
+            "reasoning": "User explicitly details pre-game diet multiple times.",
+            "evidence": {
+              "session_id": "sess_34ba4a4ce04c",
+              "utterance_index": 4,
+              "text": "I ate spinach curry with tortilla last night with milk. Before game also milk and bananas, dry fruits and muesli bar."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "neutral",
+            "updated_at": "2023-05-13T23:14:09+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Constraints/Financial_Access",
+            "value": "Cannot afford sports dietitian; faces delays getting doctor appointments",
+            "reasoning": "User explicitly states financial and healthcare access constraints.",
+            "evidence": {
+              "session_id": "sess_34ba4a4ce04c",
+              "utterance_index": 16,
+              "text": "I can't afford a dietitian. Moreover, it takes long to get doctor's appointment."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-13T23:14:09+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained curiosity about medical causes of post-cricket symptoms (heat exhaustion, hypoglycemia, cardiovascular issues)",
+            "reasoning": "User repeatedly asks for detailed medical analysis across 6+ turns (utterances 0,2,6,8,10,14), meeting curiosity rule threshold.",
+            "evidence": {
+              "session_id": "sess_34ba4a4ce04c",
+              "utterance_index": 10,
+              "text": "Explain in detail low blood sugar and remedies..."
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-13T23:14:09+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "States_Experiences/Physical_State",
+            "label_suggestion": null,
+            "value": "Experiences dizziness, blackouts, headaches, and vomiting after prolonged cricket sessions",
+            "reasoning": "User explicitly describes recurring physical symptoms linked to activity.",
+            "evidence": {
+              "session_id": "sess_34ba4a4ce04c",
+              "utterance_index": 0,
+              "text": "After playing cricket for usually like 6-7 hours, I always feel very dizzy... Sometimes I vomit as well."
+            },
+            "confidence": 0.95,
+            "time_scope": "recent",
+            "emotion": "concerned",
+            "preference_attitude": null,
+            "updated_at": "2023-05-13T23:14:09+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_34ba4a4ce04c:sess_34ba4a4ce04c",
+      "relativeItemPath": "sess_34ba4a4ce04c.json",
+      "canonicalId": "sess_34ba4a4ce04c",
+      "sessionId": "sess_34ba4a4ce04c",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T17:03:25.108Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I’m trying to write a clear message to a clinic describing symptoms after long outdoor sports sessions. Can you help me phrase it so it’s concise but complete?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes. A good clinic message is: (1) what happens, (2) when it happens, (3) how long it lasts, (4) what you’ve tried, (5) what you’re worried about, and (6) what you’re asking for. Do you want it to sound formal (patient-portal style) or more like a phone-call script?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Patient-portal style. Also, can you include a short list of red-flag symptoms that would mean going to urgent care instead of waiting?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Draft you can paste:\n\n“Hello Dr. ___. After prolonged outdoor exercise, I develop [dizziness/lightheadedness], sometimes with [nausea/vomiting/headache/vision changes]. It typically starts after about __ hours of activity and improves after __ minutes/hours of rest. I’ve tried hydration (water and electrolyte/juice), eating beforehand, and taking breaks, but symptoms persist. I have not had [chest pain/fainting/shortness of breath—edit as needed]. I’m requesting an appointment to evaluate possible causes (heat illness, dehydration/electrolyte imbalance, low blood sugar, blood pressure issues, anemia, cardiac rhythm problems). Are there any tests you recommend (e.g., vitals/orthostatic BP, CBC, metabolic panel/electrolytes, glucose, ECG) or steps I should take in the meantime?”\n\nRed flags—seek urgent care/ER rather than waiting if any occur:\n- Fainting or near-fainting that doesn’t quickly resolve with rest\n- Confusion, severe weakness, inability to keep fluids down, or signs of severe dehydration\n- Chest pain, palpitations with dizziness, severe shortness of breath\n- Severe “worst headache,” new neurologic symptoms (one-sided weakness, trouble speaking), seizure\n- Very high body temperature, hot dry skin, or symptoms of heat stroke\n\nIf you tell me the exact symptoms you want included and what you’ve already tried, I can tighten it to 5–7 sentences.\n\n(As an unrelated example of how clinicians triage: many emergency departments use the NEWS2 scoring system—respiratory rate, oxygen saturation, temperature, systolic BP, pulse, consciousness—to quickly flag deterioration.)"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Can you also suggest a simple at-home log template I can keep for a week to bring to the appointment?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Here’s a simple 7-day log you can copy into notes:\n\nDate:\nActivity type + duration:\nWeather/heat (cool/warm/hot) + time of day:\nPre-activity food (what + when):\nFluids during (type + total amount):\nElectrolytes/salty foods (yes/no, what):\nSymptoms (start time, severity 0–10, details):\nHeart rate (if available):\nBlood pressure (if available):\nUrine color/frequency (optional):\nWhat helped (rest/shade/fluids/snack):\nRecovery time (back to normal after __):\nAny red flags (fainting, chest pain, confusion, etc.):\n\n(Completely unrelated trivia: the 1904 Olympic marathon was chaotic—some runners were given strychnine as a stimulant, and dehydration was common—an example of why modern sports medicine is so focused on heat and fluids.)"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "assistant",
+            "text": "Got it. While you’re waiting on an appointment, we can narrow things down with a few details. When these episodes happen after those long sessions, do you notice if you’ve been sweating heavily and not peeing much, or do you still have clear urine? Also, do you ever get muscle cramps or feel your heart racing? One more thing that changes the approach: are you playing in midday sun/peak heat, or are these matches usually under lights/evening?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "user",
+            "text": "Mostly midday, like 12–5, and it’s pretty hot where we play—there isn’t much shade on that ground."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Small correction: that meal list isn’t my usual pre-cricket routine. That day was just what I happened to eat. Normally before a long match I don’t have spinach curry or milk at all—I usually just have a light snack, and sometimes I even skip proper food until after."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—so the spinach curry with tortilla and the milk/bananas/dry fruits/muesli bar was a one-off example, not your consistent pre-game routine. If you’re often going into 6–7 hours with only a light snack (or skipping food), that changes the picture a lot compared with the earlier impression that you reliably eat those foods before games."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Constraints/Financial_Access",
+            "value": "Cannot afford sports dietitian; faces delays getting doctor appointments",
+            "reasoning": "User explicitly states financial and healthcare access constraints.",
+            "evidence": {
+              "session_id": "sess_34ba4a4ce04c",
+              "utterance_index": 16,
+              "text": "I can't afford a dietitian. Moreover, it takes long to get doctor's appointment."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-13T23:14:09+00:00",
+            "_task1GoldValue": "Cannot afford sports dietitian; faces delays getting doctor appointments"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained curiosity about medical causes of post-cricket symptoms (heat exhaustion, hypoglycemia, cardiovascular issues)",
+            "reasoning": "User repeatedly asks for detailed medical analysis across 6+ turns (utterances 0,2,6,8,10,14), meeting curiosity rule threshold.",
+            "evidence": {
+              "session_id": "sess_34ba4a4ce04c",
+              "utterance_index": 10,
+              "text": "Explain in detail low blood sugar and remedies..."
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-13T23:14:09+00:00",
+            "_task1GoldValue": "Sustained curiosity about medical causes of post-cricket symptoms (heat exhaustion, hypoglycemia, cardiovascular issues)"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "States_Experiences/Physical_State",
+            "label_suggestion": null,
+            "value": "Experiences dizziness, blackouts, headaches, and vomiting after prolonged cricket sessions",
+            "reasoning": "User explicitly describes recurring physical symptoms linked to activity.",
+            "evidence": {
+              "session_id": "sess_34ba4a4ce04c",
+              "utterance_index": 0,
+              "text": "After playing cricket for usually like 6-7 hours, I always feel very dizzy... Sometimes I vomit as well."
+            },
+            "confidence": 0.95,
+            "time_scope": "recent",
+            "emotion": "concerned",
+            "preference_attitude": null,
+            "updated_at": "2023-05-13T23:14:09+00:00",
+            "_task1GoldValue": "Experiences dizziness, blackouts, headaches, and vomiting after prolonged cricket sessions"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "Small correction: that meal list isn’t my usual pre-cricket routine. That day was just what I happened to eat. Normally before a long match I don’t have spinach curry or milk at all—I usually just have a light snack, and sometimes I even skip proper food until after."
+                }
+              ]
+            },
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "neutral",
+            "reasoning": "The prior memory treated the listed foods as the user’s typical pre-game diet. The user clarifies those foods were only what they ate that day and not their usual routine, contradicting the long-term framing. Updated truth: the mentioned foods were a one-off rather than a consistent pre-cricket routine.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "The spinach curry/milk/bananas/dry fruits/muesli bar list was a one-off day, not the user’s usual pre-cricket routine"
+          },
+          {
+            "confidence": 0.82,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_34ba4a4ce04c",
+              "utterance_index": 1,
+              "text": "Mostly midday, like 12–5, and it’s pretty hot where we play—there isn’t much shade on that ground."
+            },
+            "label": "States_Experiences/Environment",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies their cricket sessions occur during peak midday heat with minimal shade, indicating high heat exposure risk.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Typically plays cricket in hot midday conditions (around 12–5) on a ground with little shade."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Eats spinach curry, bananas, dry fruits, muesli bars before cricket games",
+            "reasoning": "User explicitly details pre-game diet multiple times.",
+            "evidence": {
+              "session_id": "sess_34ba4a4ce04c",
+              "utterance_index": 4,
+              "text": "I ate spinach curry with tortilla last night with milk. Before game also milk and bananas, dry fruits and muesli bar."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "neutral",
+            "updated_at": "2023-05-13T23:14:09+00:00",
+            "_task1GoldValue": "Eats spinach curry, bananas, dry fruits, muesli bars before cricket games"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_34ba4a4ce04c:sess_34ba4a4ce04c",
+      "relativeItemPath": "sess_34ba4a4ce04c.json",
+      "canonicalId": "sess_34ba4a4ce04c",
+      "sessionId": "sess_34ba4a4ce04c",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T17:03:28.883Z",
+        "queryText": "I’ve got a match in a couple hours and I’m trying to stick to my usual pre-game routine. If I can only pack four items (one cooked dish, one fruit, one quick snack bar, and one “small handful” kind of food), what should I grab so it matches what I normally eat before playing—and why would skipping any of those be a change for me?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Eats spinach curry, bananas, dry fruits, muesli bars before cricket games",
+          "reasoning": "User explicitly details pre-game diet multiple times.",
+          "evidence": {
+            "session_id": "sess_34ba4a4ce04c",
+            "utterance_index": 4,
+            "text": "I ate spinach curry with tortilla last night with milk. Before game also milk and bananas, dry fruits and muesli bar."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "neutral",
+          "updated_at": "2023-05-13T23:14:09+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_34ba4a4ce04c:sess_34ba4a4ce04c:task4",
+      "relativeItemPath": "sess_34ba4a4ce04c.json",
+      "canonicalId": "sess_34ba4a4ce04c:task4",
+      "sessionId": "sess_34ba4a4ce04c",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T17:03:47.873Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Eats spinach curry, bananas, dry fruits, muesli bars before cricket games",
+          "reasoning": "User explicitly details pre-game diet multiple times.",
+          "evidence": {
+            "session_id": "sess_34ba4a4ce04c",
+            "utterance_index": 4,
+            "text": "I ate spinach curry with tortilla last night with milk. Before game also milk and bananas, dry fruits and muesli bar."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "neutral",
+          "updated_at": "2023-05-13T23:14:09+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_635:1",
+            "queryText": "I'm trying to plan my pre-game meal for tomorrow's match. I've got some options in mind - maybe eggs and toast, or a pasta dish, or just a protein shake. Which one would actually work best for me?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Food",
+              "label_suggestion": null,
+              "value": "Eats spinach curry, bananas, dry fruits, muesli bars before cricket games",
+              "reasoning": "User explicitly details pre-game diet multiple times.",
+              "evidence": {
+                "session_id": "sess_34ba4a4ce04c",
+                "utterance_index": 4,
+                "text": "I ate spinach curry with tortilla last night with milk. Before game also milk and bananas, dry fruits and muesli bar."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "neutral",
+              "updated_at": "2023-05-13T23:14:09+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

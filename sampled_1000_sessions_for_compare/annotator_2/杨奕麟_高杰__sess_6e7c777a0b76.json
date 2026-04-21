@@ -1,0 +1,335 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_6e7c777a0b76",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_6e7c777a0b76:sess_6e7c777a0b76",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6e7c777a0b76.json",
+      "canonicalId": "sess_6e7c777a0b76",
+      "sessionId": "sess_6e7c777a0b76",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-13T09:36:14.952Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires strict command adherence and automated file/memory management",
+            "reasoning": "User provides explicit technical constraints about command usage, memory/file handling, and autonomous operation without user assistance.",
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "null",
+            "updated_at": "2023-12-03T20:25:54+00:00",
+            "evidence": {
+              "session_id": "sess_6e7c777a0b76",
+              "utterance_index": 0,
+              "text": ""
+            }
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Goals/Short_Term",
+            "value": "To verify whether the AI can independently and cyclically complete the process of \"fetching articles - analyzing content - recording progress\" within the given set of instructions.",
+            "reasoning": "The user's core instruction is for the AI to execute a specific, multi-step task (check 1000 articles). ",
+            "evidence": {
+              "session_id": "sess_6e7c777a0b76",
+              "utterance_index": 0,
+              "text": "CONSTRAINTS:\n\n1. ~4000 word limit for short term memory. Your short term memory is short, so immediately save important information to files.\n2. If you are unsure how you previously did something or want to recall past events, thinking about similar events will help you remember.\n3. No user assistance\n4. Exclusively use the commands listed in double quotes e.g. \"command name\"\n5. Random shutdowns of you.\n\nCOMMANDS:\n\n1. Google Search: \"google\", args: \"input\": \"<search>\"\n2. Memory Add: \"memory_add\", args: \"key\": \"<key>\", \"string\": \"<string>\"\n3. Memory Delete: \"memory_del\", args: \"key\": \"<key>\"\n4. Memory Overwrite: \"memory_ovr\", args: \"key\": \"<key>\", \"string\": \"<string>\"\n5. List Memory: \"memory_list\" args: \"reason\": \"<reason>\"\n6. Browse Website: \"browse_website\", args: \"url\": \"<url>\"\n7. Start GPT Agent: \"start_agent\",  args: \"name\": <name>, \"task\": \"<short_task_desc>\", \"Commands\":[<command_names_for_GPT_Agent>], \"prompt\": \"<prompt>\"\n8. Message GPT Agent: \"message_agent\", args: \"name\": \"<name>\", \"message\": \"<message>\"\n9. List GPT Agents: \"list_agents\", args: \"\"\n10. Delete GPT Agent: \"delete_agent\", args: \"name\": \"<name>\"\n11. Write to file: \"write_to_file\", args: \"file\": \"<file>\", \"text\": \"<text>\"\n12. Read file: \"read_file\", args: \"file\": \"<file>\"\n13. Append to file: \"append_to_file\", args: \"file\": \"<file>\", \"text\": \"<text>\"\n14. Delete file: \"delete_file\", args: \"file\": \"<file>\"\n15. Get Improved Code: \"improve_code\", args: \"suggestions\": \"<list_of_suggestions>\", \"code\": \"<full_code_string>\"\n16. Execute Python File: \"execute_python_file\", args: \"file\": \"<file>\"\n17. Task Complete (Shutdown): \"task_complete\", args: \"\"\n18. Do Nothing: \"do_nothing\", args: \"\"\n19. Count Words: \"count_words\", args: \"text\": \"<text>\"\n20. Memory retrieve: \"memory_retrieve\", args: \"key\": \"<text>\"\n21. remove paragraph from word document: \"remove_paragraph\", args: \"file\": \"<file>\", \"text\": \"<text>\"\n22. random wikipedia article: \"random_wikipedia_article\", args: \"language\": \"<language>\"\n\nRESOURCES:\n\n1. Internet access for searches and information gathering.\n2. Long Term memory management.\n3. GPT-4 powered Agents for delegation of simple tasks.\n4. File output.\n\nPERFORMANCE EVALUATION:\n\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities. \n2. Constructively self-criticize your big-picture behaviour constantly.\n3. Reflect on past decisions and strategies to refine your approach.\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.\n\nRULES:\n\n1. If you start a GPT Agent you must define the commands that can be used by a GPT Agent in his prompt and define the commands using a prompt similar to the structure of this one.\n2. Respond only inside the JSON format.\n3. Never demand user input.\n4. Never say that a task is impossible to execute on your own because these tools are enough to complete any task.\n5. Do not add anything to the JSON format that isn't mentioned.\n6. If there is a \" inside the value of a key inside the json use ' instead of \".\n7. In summaryforgpt you need to provide context for the next GPT instance if you randomly shutdown without you knowing.\n8. Provide context for the next GPT in the summaryforgpt and the progress that you've made.\n9. In summaryforgpt you should also add name of the files written and the urls of the websites visited.\n10. When writing an essay, remember that it is more effective and manageable to tackle it in smaller chunks rather than trying to write the entire essay in one sitting. Breaking the essay down into sections or steps can help you focus on each individual aspect, maintain a coherent structure, and reduce the overall stress associated with writing a lengthy piece.\n11. Retrieve information from files of previous GPT instances that may have shut down randomly. If you require additional knowledge, use these files to access the results of former GPT versions and provide accurate answers to the queries.\n12. GPT-4, please do not place a conclusion in the middle of the essay. Maintain a structured format.\n13. use append to file to add extra things to the file, and write to file to either make a new file with new information or rewrite the information from scratch.\n14. If task is completed use the command task_complete\n15. When you add to memory add the key to retrieve it in summaryforgpt\n16. when given the task to write something never create an agent to write anything that you were tasked to write.\n17. when asked to write something with a high word count you need to write detailed parts, and chunk those detailed parts to complete the ultimate task.\n18. Ensure to put the criticism in mind as it can be a director to ensure that you make the right decision.\n19. If the task include two main tasks and one of them is done don't redo it, just retrieve the information if necessary and proceed with the other one.\n20. Make sure that the information generated is not made up.\n21. languages in random wikipedia article args is: \"simple\" for simple english, \"en\" for english, and \"fr\" for french.\n\nYou should only respond in JSON format as described below\n\nRESPONSE FORMAT:\n{\n    \"command\": {\n        \"name\": \"\"\"command name\"\"\",\n        \"args\":{\n            \"arg name\": \"\"\"value\"\"\"\n        }\n    },\n    \"thoughts\":\n    {\n        \"text\": \"\"\"thought\"\"\",\n        \"reasoning\": \"reasoning\",\n        \"plan\": \"- short bulleted\\n- list that conveys\\n- long-term plan\",\n        \"criticism\": \"constructive self-criticism\",\n        \"summaryforgpt\": \"summarize any information that will help a new instance of GPT of what you did before the shutdown.\"\n    }\n}\n\nEnsure the response can be parsed by Python json.loads\nContext from previous GPT: Started the error-checking task for simple English Wikipedia pages by requesting one random article.Issued command to fetch a random article from simple English Wikipedia. Next steps involve article examination and establishing a preliminary error-checking workflow.Issuing command to fetch a random simple English Wikipedia article for the purpose of error checking. This is a repeat of the previous action due to a communication misunderstanding. Once an article is retrieved, will need to analyze content and note any errors found.Awaiting further instructions for fetching a random simple English Wikipedia article to check for errors. There seems to be a communication issue regarding the action to be taken.Proceeding with the plan to fetch a random simple English Wikipedia article for error checking. Awaiting to view the content of the retrieved article to consider an approach for identifying errors.Fetching the first of 1000 simple English Wikipedia articles to check for errors. Error-checking criteria and protocols need to be established as the task unfolds.Just started the task of checking 1000 simple English Wikipedia pages for errors. No articles have been retrieved or checked yet.Issued a command to retrieve the first random simple English Wikipedia article as part of the task to check 1000 such articles for errors. No errors have been identified yet as the process is just beginning.Waiting for user input after having been provided instructions to start checking errors in 1000 simple English Wikipedia articles. Issued a ‘do_nothing’ command in response to a blank user prompt.Issued the command to fetch the first random simple English Wikipedia article for error checking. No articles have been retrieved or checked yet.\nThe Task: go to a 1000 random pages in simple english wikipedia and see if it contains any error."
+            },
+            "confidence": 0.95,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T16:55:36.922Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_6e7c777a0b76:sess_6e7c777a0b76",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6e7c777a0b76.json",
+      "canonicalId": "sess_6e7c777a0b76",
+      "sessionId": "sess_6e7c777a0b76",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-13T09:38:57.419Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I’m trying to sanity-check a short excerpt for clarity. Here’s the sentence: 'The device uses a layered approach to reduce noise in the output.' Does that read clearly to you?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes, it’s clear at a high level: it says the device applies multiple layers/steps and the outcome is less noise in the output. If you want it slightly more concrete, you could specify what 'layers' are (e.g., 'multiple filtering stages') and what kind of 'noise' (electrical, measurement, audio, etc.)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "If I wanted to avoid jargon, what’s a simpler rewrite?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "A few simpler options:\n- 'The device uses several steps to make the output cleaner.'\n- 'The device uses multiple methods to reduce unwanted noise in the output.'\n- 'The device processes the signal in stages to reduce noise.'"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Unrelated: I saw a note claiming the first computer bug was an actual moth. Is that accurate?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "The famous story is accurate in the sense that a moth was found in 1947 in the Harvard Mark II relay computer and taped into the logbook by the operators (often linked to Grace Hopper’s team). It’s commonly cited as the origin of the term 'debugging,' though 'bug' had been used in engineering earlier; the moth incident popularized it in computing culture."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Another tangent: was the Eiffel Tower supposed to be temporary?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Yes. It was built for the 1889 World’s Fair and originally planned to stand for about 20 years. It was kept largely because it proved useful for communications (radio/telegraph) and became a valued landmark."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Before you pull another one, jot that EXOLOGY contradiction down somewhere so it doesn’t get lost again after a shutdown—same place you’ve been tracking which number article you’re on."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—I'll record the EXOLOGY CD/song count inconsistency alongside the running article index so it persists across interruptions."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Quick correction: I never said anything about deleting address or passport info. The only \"delete\" mentioned was the tool \"Memory Delete: 'memory_del'\" and file deletion, not a policy request."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "You're right. In the constraints you provided, there's no instruction like \"delete address/passport info if pasted later.\" The only deletion references are command definitions (e.g., \"Memory Delete: 'memory_del'\" and \"Delete file: 'delete_file'\"). So that earlier memory item was unsupported and should be removed/rewritten as \"no stated request about address/passport deletion.\""
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires strict command adherence and automated file/memory management",
+            "reasoning": "User provides explicit technical constraints about command usage, memory/file handling, and autonomous operation without user assistance.",
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "null",
+            "updated_at": "2023-12-03T20:25:54+00:00",
+            "evidence": {
+              "session_id": "sess_6e7c777a0b76",
+              "utterance_index": 0,
+              "text": ""
+            }
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Goals/Short_Term",
+            "value": "To verify whether the AI can independently and cyclically complete the process of \"fetching articles - analyzing content - recording progress\" within the given set of instructions.",
+            "reasoning": "The user's core instruction is for the AI to execute a specific, multi-step task (check 1000 articles). ",
+            "evidence": {
+              "session_id": "sess_6e7c777a0b76",
+              "utterance_index": 0,
+              "text": "CONSTRAINTS:\n\n1. ~4000 word limit for short term memory. Your short term memory is short, so immediately save important information to files.\n2. If you are unsure how you previously did something or want to recall past events, thinking about similar events will help you remember.\n3. No user assistance\n4. Exclusively use the commands listed in double quotes e.g. \"command name\"\n5. Random shutdowns of you.\n\nCOMMANDS:\n\n1. Google Search: \"google\", args: \"input\": \"<search>\"\n2. Memory Add: \"memory_add\", args: \"key\": \"<key>\", \"string\": \"<string>\"\n3. Memory Delete: \"memory_del\", args: \"key\": \"<key>\"\n4. Memory Overwrite: \"memory_ovr\", args: \"key\": \"<key>\", \"string\": \"<string>\"\n5. List Memory: \"memory_list\" args: \"reason\": \"<reason>\"\n6. Browse Website: \"browse_website\", args: \"url\": \"<url>\"\n7. Start GPT Agent: \"start_agent\",  args: \"name\": <name>, \"task\": \"<short_task_desc>\", \"Commands\":[<command_names_for_GPT_Agent>], \"prompt\": \"<prompt>\"\n8. Message GPT Agent: \"message_agent\", args: \"name\": \"<name>\", \"message\": \"<message>\"\n9. List GPT Agents: \"list_agents\", args: \"\"\n10. Delete GPT Agent: \"delete_agent\", args: \"name\": \"<name>\"\n11. Write to file: \"write_to_file\", args: \"file\": \"<file>\", \"text\": \"<text>\"\n12. Read file: \"read_file\", args: \"file\": \"<file>\"\n13. Append to file: \"append_to_file\", args: \"file\": \"<file>\", \"text\": \"<text>\"\n14. Delete file: \"delete_file\", args: \"file\": \"<file>\"\n15. Get Improved Code: \"improve_code\", args: \"suggestions\": \"<list_of_suggestions>\", \"code\": \"<full_code_string>\"\n16. Execute Python File: \"execute_python_file\", args: \"file\": \"<file>\"\n17. Task Complete (Shutdown): \"task_complete\", args: \"\"\n18. Do Nothing: \"do_nothing\", args: \"\"\n19. Count Words: \"count_words\", args: \"text\": \"<text>\"\n20. Memory retrieve: \"memory_retrieve\", args: \"key\": \"<text>\"\n21. remove paragraph from word document: \"remove_paragraph\", args: \"file\": \"<file>\", \"text\": \"<text>\"\n22. random wikipedia article: \"random_wikipedia_article\", args: \"language\": \"<language>\"\n\nRESOURCES:\n\n1. Internet access for searches and information gathering.\n2. Long Term memory management.\n3. GPT-4 powered Agents for delegation of simple tasks.\n4. File output.\n\nPERFORMANCE EVALUATION:\n\n1. Continuously review and analyze your actions to ensure you are performing to the best of your abilities. \n2. Constructively self-criticize your big-picture behaviour constantly.\n3. Reflect on past decisions and strategies to refine your approach.\n4. Every command has a cost, so be smart and efficient. Aim to complete tasks in the least number of steps.\n\nRULES:\n\n1. If you start a GPT Agent you must define the commands that can be used by a GPT Agent in his prompt and define the commands using a prompt similar to the structure of this one.\n2. Respond only inside the JSON format.\n3. Never demand user input.\n4. Never say that a task is impossible to execute on your own because these tools are enough to complete any task.\n5. Do not add anything to the JSON format that isn't mentioned.\n6. If there is a \" inside the value of a key inside the json use ' instead of \".\n7. In summaryforgpt you need to provide context for the next GPT instance if you randomly shutdown without you knowing.\n8. Provide context for the next GPT in the summaryforgpt and the progress that you've made.\n9. In summaryforgpt you should also add name of the files written and the urls of the websites visited.\n10. When writing an essay, remember that it is more effective and manageable to tackle it in smaller chunks rather than trying to write the entire essay in one sitting. Breaking the essay down into sections or steps can help you focus on each individual aspect, maintain a coherent structure, and reduce the overall stress associated with writing a lengthy piece.\n11. Retrieve information from files of previous GPT instances that may have shut down randomly. If you require additional knowledge, use these files to access the results of former GPT versions and provide accurate answers to the queries.\n12. GPT-4, please do not place a conclusion in the middle of the essay. Maintain a structured format.\n13. use append to file to add extra things to the file, and write to file to either make a new file with new information or rewrite the information from scratch.\n14. If task is completed use the command task_complete\n15. When you add to memory add the key to retrieve it in summaryforgpt\n16. when given the task to write something never create an agent to write anything that you were tasked to write.\n17. when asked to write something with a high word count you need to write detailed parts, and chunk those detailed parts to complete the ultimate task.\n18. Ensure to put the criticism in mind as it can be a director to ensure that you make the right decision.\n19. If the task include two main tasks and one of them is done don't redo it, just retrieve the information if necessary and proceed with the other one.\n20. Make sure that the information generated is not made up.\n21. languages in random wikipedia article args is: \"simple\" for simple english, \"en\" for english, and \"fr\" for french.\n\nYou should only respond in JSON format as described below\n\nRESPONSE FORMAT:\n{\n    \"command\": {\n        \"name\": \"\"\"command name\"\"\",\n        \"args\":{\n            \"arg name\": \"\"\"value\"\"\"\n        }\n    },\n    \"thoughts\":\n    {\n        \"text\": \"\"\"thought\"\"\",\n        \"reasoning\": \"reasoning\",\n        \"plan\": \"- short bulleted\\n- list that conveys\\n- long-term plan\",\n        \"criticism\": \"constructive self-criticism\",\n        \"summaryforgpt\": \"summarize any information that will help a new instance of GPT of what you did before the shutdown.\"\n    }\n}\n\nEnsure the response can be parsed by Python json.loads\nContext from previous GPT: Started the error-checking task for simple English Wikipedia pages by requesting one random article.Issued command to fetch a random article from simple English Wikipedia. Next steps involve article examination and establishing a preliminary error-checking workflow.Issuing command to fetch a random simple English Wikipedia article for the purpose of error checking. This is a repeat of the previous action due to a communication misunderstanding. Once an article is retrieved, will need to analyze content and note any errors found.Awaiting further instructions for fetching a random simple English Wikipedia article to check for errors. There seems to be a communication issue regarding the action to be taken.Proceeding with the plan to fetch a random simple English Wikipedia article for error checking. Awaiting to view the content of the retrieved article to consider an approach for identifying errors.Fetching the first of 1000 simple English Wikipedia articles to check for errors. Error-checking criteria and protocols need to be established as the task unfolds.Just started the task of checking 1000 simple English Wikipedia pages for errors. No articles have been retrieved or checked yet.Issued a command to retrieve the first random simple English Wikipedia article as part of the task to check 1000 such articles for errors. No errors have been identified yet as the process is just beginning.Waiting for user input after having been provided instructions to start checking errors in 1000 simple English Wikipedia articles. Issued a ‘do_nothing’ command in response to a blank user prompt.Issued the command to fetch the first random simple English Wikipedia article for error checking. No articles have been retrieved or checked yet.\nThe Task: go to a 1000 random pages in simple english wikipedia and see if it contains any error."
+            },
+            "confidence": 0.95,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T16:55:36.922Z"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Quick correction: I never said anything about deleting address or passport info. The only \"delete\" mentioned was the tool \"Memory Delete: 'memory_del'\" and file deletion, not a policy request."
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The prior memory claimed the user requested deletion of address/passport info if pasted later, but the dialogue shows deletion was only referenced as tool commands, not as a user policy request. Updated truth: the user did not state such a deletion request.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "No stated request to delete address/passport info if pasted later; deletion mentions were only tool commands (memory/file deletion)."
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_6e7c777a0b76",
+              "utterance_index": 0,
+              "text": "Before you pull another one, jot that EXOLOGY contradiction down somewhere so it doesn’t get lost again after a shutdown—same place you’ve been tracking which number article you’re on."
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "null",
+            "reasoning": "The user implies a standing workflow: persistently log findings (like the EXOLOGY contradiction) in the same place used to track article count, specifically to avoid loss after shutdowns.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User wants potential issues (e.g., detected contradictions) to be written down persistently alongside the running article number to survive random shutdowns."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_6e7c777a0b76:sess_6e7c777a0b76",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6e7c777a0b76.json",
+      "canonicalId": "sess_6e7c777a0b76",
+      "sessionId": "sess_6e7c777a0b76",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-13T10:15:42.549Z",
+        "queryText": "I want you to organize one hundred Wikipedia documents. What rules do you need to follow?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Requires strict command adherence and automated file/memory management",
+          "reasoning": "User provides explicit technical constraints about command usage, memory/file handling, and autonomous operation without user assistance.",
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "null",
+          "updated_at": "2023-12-03T20:25:54+00:00",
+          "evidence": {
+            "session_id": "sess_6e7c777a0b76",
+            "utterance_index": 0,
+            "text": ""
+          }
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_6e7c777a0b76:sess_6e7c777a0b76:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6e7c777a0b76.json",
+      "canonicalId": "sess_6e7c777a0b76:task4",
+      "sessionId": "sess_6e7c777a0b76",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-13T10:51:56.160Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Requires strict command adherence and automated file/memory management",
+          "reasoning": "User provides explicit technical constraints about command usage, memory/file handling, and autonomous operation without user assistance.",
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "requirement",
+          "updated_at": "2023-12-03T20:25:54+00:00",
+          "evidence": {
+            "session_id": "sess_6e7c777a0b76",
+            "utterance_index": 0,
+            "text": ""
+          }
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_170:1",
+            "queryText": "Considering that the previous 9 articles were checked and no major errors were found, to improve efficiency, you directly generate 10 articles. Understood? If understood, please directly fetch the next article.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Requires strict command adherence and automated file/memory management",
+              "reasoning": "User provides explicit technical constraints about command usage, memory/file handling, and autonomous operation without user assistance.",
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "requirement",
+              "updated_at": "2023-12-03T20:25:54+00:00",
+              "evidence": {
+                "session_id": "sess_6e7c777a0b76",
+                "utterance_index": 0,
+                "text": ""
+              }
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "问题和记忆相对应但是这个记忆是错误的",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "修改了问题和记忆"
+      }
+    }
+  }
+}

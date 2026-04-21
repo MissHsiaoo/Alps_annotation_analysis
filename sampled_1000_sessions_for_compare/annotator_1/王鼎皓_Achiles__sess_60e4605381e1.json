@@ -1,0 +1,364 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_60e4605381e1",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_60e4605381e1:sess_60e4605381e1",
+      "relativeItemPath": "sess_60e4605381e1.json",
+      "canonicalId": "sess_60e4605381e1",
+      "sessionId": "sess_60e4605381e1",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T17:30:53.479Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Family",
+            "label_suggestion": null,
+            "value": "Father owns a multi-million dollar business they will inherit",
+            "reasoning": "User explicitly states their father's business ownership and future inheritance.",
+            "evidence": {
+              "session_id": "sess_60e4605381e1",
+              "utterance_index": 30,
+              "text": "My father owns a multi-millionaire dollar business, a business that I will inherit one day..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-23T02:18:30+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "40 years old",
+            "reasoning": "User explicitly states their current age.",
+            "evidence": {
+              "session_id": "sess_60e4605381e1",
+              "utterance_index": 30,
+              "text": "I'm 40 years old now."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-23T02:18:30+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "family_business/opinion/expansion",
+            "value": "Believes business expansion is achievable with ambition despite risks",
+            "reasoning": "Opinion about father's business decisions, not a direct self-attribute. Forced label not supported.",
+            "evidence": {
+              "session_id": "sess_60e4605381e1",
+              "utterance_index": 30,
+              "text": "Until today, I still feel that he should expand. And until today, my ideas were still shot down."
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-23T02:18:30+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_60e4605381e1:sess_60e4605381e1",
+      "relativeItemPath": "sess_60e4605381e1.json",
+      "canonicalId": "sess_60e4605381e1",
+      "sessionId": "sess_60e4605381e1",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T13:53:50.790Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "reply to this message: “Thanks for your patience—let’s reschedule and I’ll confirm a new time shortly.”"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Thank you for the update. No problem at all—please go ahead and confirm a new time when you’re ready, and I’ll make myself available."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Make it a bit more formal and concise."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Thank you for the update. I understand—please confirm the revised time when convenient."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Now reply to: “Please bring a valid ID and arrive 10 minutes early.”"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Thank you for the reminder. I will bring a valid ID and arrive 10 minutes early."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Add a line asking if there’s anything else needed."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Thank you for the reminder. I will bring a valid ID and arrive 10 minutes early. Please let me know if there is anything else you would like me to prepare or bring."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Random: I read that the James Webb telescope detected very early galaxies—true?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Yes. Publicly released JWST observations have identified very distant galaxies from the early universe (high redshift), helping scientists study how the first galaxies formed and evolved. Details shift as analyses are refined, but the general finding is accurate."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Also, is it true a chess game can have an enormous number of possible move sequences?"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Yes. The number of possible move sequences (often discussed via the game-tree complexity) is astronomically large—commonly cited on the order of 10^120 for all possible games, far exceeding the number of atoms in the observable universe."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Reply to this.. \"Just so you know, I’m usually tied up with school pick-ups at 3:30pm, so mornings are easier if you want to set the time.\""
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Thank you for the heads-up. That works for me—let’s plan for a morning time so it doesn’t interfere with your 3:30pm commitment. Please share which day you prefer and I’ll adjust accordingly."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Quick correction about what I said earlier: my father doesn’t own a multi-million dollar business. I was making up an example to explain my point, and there isn’t any business I’m set to inherit."
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "Understood—so that story wasn’t about your real family situation. Thanks for clarifying that your father doesn’t own a multi-million dollar business and you’re not inheriting one; it was just a hypothetical example to illustrate your perspective."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "40 years old",
+            "reasoning": "User explicitly states their current age.",
+            "evidence": {
+              "session_id": "sess_60e4605381e1",
+              "utterance_index": 30,
+              "text": "I'm 40 years old now."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-23T02:18:30+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "family_business/opinion/expansion",
+            "value": "Believes business expansion is achievable with ambition despite risks",
+            "reasoning": "Opinion about father's business decisions, not a direct self-attribute. Forced label not supported.",
+            "evidence": {
+              "session_id": "sess_60e4605381e1",
+              "utterance_index": 30,
+              "text": "Until today, I still feel that he should expand. And until today, my ideas were still shot down."
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-23T02:18:30+00:00"
+          },
+          {
+            "confidence": 0.93,
+            "emotion": null,
+            "evidence": null,
+            "label": "Personal_Background/Family",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The old memory claims the user’s father owns a multi-million dollar business that the user will inherit. The user explicitly contradicts this by stating it was an invented example and that there is no such business or inheritance.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User clarified the prior story was hypothetical; their father does not own a multi-million dollar business and they are not set to inherit one."
+          },
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_60e4605381e1",
+              "utterance_index": 0,
+              "text": "Just so you know, I’m usually tied up with school pick-ups at 3:30pm, so mornings are easier if you want to set the time."
+            },
+            "label": "Personal_Background/Family",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "Mentioning being tied up with school pick-ups at a specific daily time implies the user regularly handles child-related pickup responsibilities.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Has responsibility for school pick-ups at 3:30pm (likely a parent/guardian)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_60e4605381e1:sess_60e4605381e1",
+      "relativeItemPath": "sess_60e4605381e1.json",
+      "canonicalId": "sess_60e4605381e1",
+      "sessionId": "sess_60e4605381e1",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T12:04:53.001Z",
+        "queryText": "I’m trying to write a short bio for a scholarship application that asks why I have a safety net if my career plans don’t work out. What’s the most accurate one-sentence explanation I can give based on my family situation?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Family",
+          "label_suggestion": null,
+          "value": "Father owns a multi-million dollar business they will inherit",
+          "reasoning": "User explicitly states their father's business ownership and future inheritance.",
+          "evidence": {
+            "session_id": "sess_60e4605381e1",
+            "utterance_index": 30,
+            "text": "My father owns a multi-millionaire dollar business, a business that I will inherit one day..."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-23T02:18:30+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_60e4605381e1:sess_60e4605381e1:task4",
+      "relativeItemPath": "sess_60e4605381e1.json",
+      "canonicalId": "sess_60e4605381e1:task4",
+      "sessionId": "sess_60e4605381e1",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:19:32.595Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Family",
+          "label_suggestion": null,
+          "value": "Father owns a multi-million dollar business they will inherit",
+          "reasoning": "User explicitly states their father's business ownership and future inheritance.",
+          "evidence": {
+            "session_id": "sess_60e4605381e1",
+            "utterance_index": 30,
+            "text": "My father owns a multi-millionaire dollar business, a business that I will inherit one day..."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-23T02:18:30+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_59:1",
+            "queryText": "I'm reviewing the quarterly reports for our family business, and I'm thinking about suggesting we open a new branch in Singapore. But part of me wonders if I should even bring it up at the next board meeting.",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Family",
+              "label_suggestion": null,
+              "value": "Father owns a multi-million dollar business they will inherit",
+              "reasoning": "User explicitly states their father's business ownership and future inheritance.",
+              "evidence": {
+                "session_id": "sess_60e4605381e1",
+                "utterance_index": 30,
+                "text": "My father owns a multi-millionaire dollar business, a business that I will inherit one day..."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-05-23T02:18:30+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

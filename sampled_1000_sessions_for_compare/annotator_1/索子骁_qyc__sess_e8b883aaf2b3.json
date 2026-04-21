@@ -1,0 +1,375 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_e8b883aaf2b3",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_e8b883aaf2b3:sess_e8b883aaf2b3",
+      "relativeItemPath": "sess_e8b883aaf2b3.json",
+      "canonicalId": "sess_e8b883aaf2b3",
+      "sessionId": "sess_e8b883aaf2b3",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T01:03:23.668Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Possessions/Car",
+            "label_suggestion": null,
+            "value": "Owns a car exposed to sea air",
+            "reasoning": "User explicitly refers to 'my car engine' and seeks protection from sea air corrosion.",
+            "evidence": {
+              "session_id": "sess_e8b883aaf2b3",
+              "utterance_index": 2,
+              "text": "how to protect my car engine from the sea air"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-16T22:42:12+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "value": "Likely located in Cape Town (transaction context)",
+            "reasoning": "User requests a power supply quote specifically for Cape Town, implying local presence.",
+            "evidence": {
+              "session_id": "sess_e8b883aaf2b3",
+              "utterance_index": 6,
+              "text": "what power supply should I get for my gtx 1070Ti to be possibly replaced by 4080 card?"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-26T03:34:31.796Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Possessions/Important_Items",
+            "label_suggestion": null,
+            "value": "Owns a GTX 1070Ti graphics card",
+            "reasoning": "User explicitly states 'my gtx 1070Ti', indicating possession.",
+            "evidence": {
+              "session_id": "sess_e8b883aaf2b3",
+              "utterance_index": 6,
+              "text": "what power supply should I get for my gtx 1070Ti to be possibly replaced by 4080 card?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-16T22:42:12+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Goals/Short_Term",
+            "value": "Considering upgrading GTX 1070Ti to RTX 4080",
+            "reasoning": "User mentions possible GPU replacement, indicating a future hardware upgrade plan.",
+            "evidence": {
+              "session_id": "sess_e8b883aaf2b3",
+              "utterance_index": 6,
+              "text": "what power supply should I get for my gtx 1070Ti to be possibly replaced by 4080 card?"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-26T03:33:29.565Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_e8b883aaf2b3:sess_e8b883aaf2b3",
+      "relativeItemPath": "sess_e8b883aaf2b3.json",
+      "canonicalId": "sess_e8b883aaf2b3",
+      "sessionId": "sess_e8b883aaf2b3",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:24:16.088Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "thanks—before I start calling shops, what specs should I mention so they quote the right PSU?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Tell them: total wattage target (typically 750–850W for a high-end GPU build), 80 PLUS rating (Gold is a common sweet spot), form factor (ATX), required PCIe power leads (including whether they have the newer 12VHPWR cable or adapter options), modular vs semi/full modular, and whether you want a specific warranty length. You can also mention your CPU model and how many drives/fans you have so they can sanity-check headroom."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "what about brand/model lines—any that are known to be noisy or unreliable?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Rather than judging by brand alone, ask for the exact model and look up reviews for that specific unit (ripple, transient response, fan profile). In general, well-reviewed lines often come from reputable OEM platforms (e.g., Seasonic-built, CWT-built, Super Flower-built), but there are good and bad units under most labels. If noise matters, ask whether it has a semi-passive fan mode and what the fan curve is under ~50% load."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "got it. also, random question: do power supplies really lose capacity over time?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Yes, mainly due to capacitor aging and heat exposure; it’s usually gradual. A quality PSU run cool and below its limits ages slower. As a rough rule, a unit with a long warranty (7–10+ years) is often built with higher-grade components and is expected to stay within spec longer.\n\nUnrelated trivia: the first commercial 80 PLUS program launched in 2004 to encourage higher-efficiency PSUs, and early “80 PLUS” units were mostly targeting office desktops rather than today’s high transient GPU loads."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "while i'm sorting the psu thing, do you know if ungoogled chromium can do push at all without a service worker? most of the sites i need are just silent"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Most web push notifications in Chromium-based browsers rely on Service Workers; without them, sites typically can’t receive push reliably. In ungoogled Chromium specifically, even with Service Workers, push can be limited depending on how the site’s push provider works (many assume Google/Firebase). If you tell me the site(s) and whether you’ve allowed notifications + kept the tab open, I can suggest workarounds (RSS, email digests, or site-specific polling extensions)."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "quick correction: I don’t actually own a car—I'm asking for my brother’s car that’s parked near the ocean."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—so it’s your brother’s car exposed to sea air, not yours. The same corrosion-prevention steps still apply (regular fresh-water rinses, protective coatings, and covered parking if possible)."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "value": "Likely located in Cape Town (transaction context)",
+            "reasoning": "User requests a power supply quote specifically for Cape Town, implying local presence.",
+            "evidence": {
+              "session_id": "sess_e8b883aaf2b3",
+              "utterance_index": 6,
+              "text": "what power supply should I get for my gtx 1070Ti to be possibly replaced by 4080 card?"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-26T03:34:31.796Z",
+            "_task1GoldValue": "Likely located in Cape Town (transaction context)"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Possessions/Important_Items",
+            "label_suggestion": null,
+            "value": "Owns a GTX 1070Ti graphics card",
+            "reasoning": "User explicitly states 'my gtx 1070Ti', indicating possession.",
+            "evidence": {
+              "session_id": "sess_e8b883aaf2b3",
+              "utterance_index": 6,
+              "text": "what power supply should I get for my gtx 1070Ti to be possibly replaced by 4080 card?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-16T22:42:12+00:00",
+            "_task1GoldValue": "Owns a GTX 1070Ti graphics card"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Goals/Short_Term",
+            "value": "Considering upgrading GTX 1070Ti to RTX 4080",
+            "reasoning": "User mentions possible GPU replacement, indicating a future hardware upgrade plan.",
+            "evidence": {
+              "session_id": "sess_e8b883aaf2b3",
+              "utterance_index": 6,
+              "text": "what power supply should I get for my gtx 1070Ti to be possibly replaced by 4080 card?"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-26T03:33:29.565Z",
+            "_task1GoldValue": "Considering upgrading GTX 1070Ti to RTX 4080"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Possessions/Car",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory claims the user owns a car exposed to sea air, but the user explicitly states they do not own a car and were asking about their brother’s car. Updated truth: it’s the brother’s car that’s exposed to sea air.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not own a car; was asking about brother’s car exposed to sea air"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_e8b883aaf2b3",
+              "utterance_index": 0,
+              "text": "do you know if ungoogled chromium can do push at all without a service worker? most of the sites i need are just silent"
+            },
+            "label": "Tools/Software",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "They ask about whether ungoogled Chromium can do push notifications and mention sites being silent, implying they use it and are troubleshooting push.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User uses ungoogled Chromium and is trying to get push notifications working on it"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_e8b883aaf2b3:sess_e8b883aaf2b3",
+      "relativeItemPath": "sess_e8b883aaf2b3.json",
+      "canonicalId": "sess_e8b883aaf2b3",
+      "sessionId": "sess_e8b883aaf2b3",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:01:34.186Z",
+        "queryText": "I’m choosing between a standard maintenance routine and a more aggressive anti-corrosion plan for my vehicle, and I can only justify the extra cost if there’s a specific environmental condition my car regularly faces. Based on my own situation, what condition makes the anti-corrosion option the rational choice?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Possessions/Car",
+          "label_suggestion": null,
+          "value": "Owns a car exposed to sea air",
+          "reasoning": "User explicitly refers to 'my car engine' and seeks protection from sea air corrosion.",
+          "evidence": {
+            "session_id": "sess_e8b883aaf2b3",
+            "utterance_index": 2,
+            "text": "how to protect my car engine from the sea air"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-16T22:42:12+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_e8b883aaf2b3:sess_e8b883aaf2b3:task4",
+      "relativeItemPath": "sess_e8b883aaf2b3.json",
+      "canonicalId": "sess_e8b883aaf2b3:task4",
+      "sessionId": "sess_e8b883aaf2b3",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T01:45:14.954Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Possessions/Car",
+          "label_suggestion": null,
+          "value": "Owns a car exposed to sea air",
+          "reasoning": "User explicitly refers to 'my car engine' and seeks protection from sea air corrosion.",
+          "evidence": {
+            "session_id": "sess_e8b883aaf2b3",
+            "utterance_index": 2,
+            "text": "how to protect my car engine from the sea air"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-16T22:42:12+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_3:1",
+            "queryText": "I'm planning a road trip along the coast next month. What kind of maintenance should I schedule for my car before I go?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Possessions/Car",
+              "label_suggestion": null,
+              "value": "Owns a car exposed to sea air",
+              "reasoning": "User explicitly refers to 'my car engine' and seeks protection from sea air corrosion.",
+              "evidence": {
+                "session_id": "sess_e8b883aaf2b3",
+                "utterance_index": 2,
+                "text": "how to protect my car engine from the sea air"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-06-16T22:42:12+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

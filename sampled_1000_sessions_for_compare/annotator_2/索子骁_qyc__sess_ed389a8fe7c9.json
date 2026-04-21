@@ -1,0 +1,428 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_ed389a8fe7c9",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_ed389a8fe7c9:sess_ed389a8fe7c9",
+      "relativeItemPath": "sess_ed389a8fe7c9.json",
+      "canonicalId": "sess_ed389a8fe7c9",
+      "sessionId": "sess_ed389a8fe7c9",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T01:53:16.940Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Civil Engineering",
+            "reasoning": "User's graduation defense context implies civil engineering study, but not an explicit self-statement.",
+            "evidence": {
+              "session_id": "sess_ed389a8fe7c9",
+              "utterance_index": 2,
+              "text": "土木工程框架结构毕业设计答辩不会怎么办"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-14T16:18:05Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about civil engineering graduation defense preparation and potential questions",
+            "reasoning": "Repeated inquiries about defense preparation strategies and questions indicate sustained interest.",
+            "evidence": {
+              "session_id": "sess_ed389a8fe7c9",
+              "utterance_index": 4,
+              "text": "土木工程框架结构毕业设计答辩会问什么问题"
+            },
+            "confidence": 0.8,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-14T16:18:05Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers faster response speed",
+            "reasoning": "Repeated requests for faster responses indicate interaction preference, though not explicitly self-stated.",
+            "evidence": {
+              "session_id": "sess_ed389a8fe7c9",
+              "utterance_index": 16,
+              "text": "说的快点！"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-14T16:18:05Z"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Academic/Exam_Preparation/CET_6",
+            "value": "Pass CET-6 exam",
+            "reasoning": "Goal inferred from inquiry about exam strategies; label forced due to lack of explicit self-report.",
+            "evidence": {
+              "session_id": "sess_ed389a8fe7c9",
+              "utterance_index": 10,
+              "text": "如何通过CET-6"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-14T16:18:05Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_ed389a8fe7c9:sess_ed389a8fe7c9",
+      "relativeItemPath": "sess_ed389a8fe7c9.json",
+      "canonicalId": "sess_ed389a8fe7c9",
+      "sessionId": "sess_ed389a8fe7c9",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:12:17.521Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "能不能把“答辩常见问题”压缩成30秒版？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以：①选题意义/工程背景；②结构体系与受力路径；③主要荷载取值与组合依据；④关键构件（梁柱节点、楼板、基础）计算与控制指标；⑤抗震/稳定/变形验算；⑥软件建模假设、边界条件、结果校核；⑦构造做法与施工可行性；⑧规范条文依据；⑨创新点与不足、如何改进。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "如果老师追问“为什么这么取值”，怎么答更稳？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "抓三句：1）“取值来源：按××规范/图集/场地资料”；2）“控制目标：满足承载力、正常使用、构造要求的最不利情况”；3）“校核方式：手算简化验算+软件结果对比，若偏差解释模型假设并给出敏感性说明（比如荷载、刚度、边界）。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "顺便问下：为什么有些桥会涂成红色？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "通常是综合考虑：防腐涂层体系（底漆/中间漆/面漆的颜色选择）、可视性与城市景观识别、以及维护管理（颜色更易发现锈蚀或涂层损伤）。例如某些钢桥会用红棕色面漆，主要是防腐体系传统配色与景观需求叠加的结果。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "听说有的风电叶片能回收，这是真的吗？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "是真的：传统玻纤/环氧复合材料叶片回收较难，但现在有热塑性树脂体系、可解聚树脂、以及机械粉碎+再利用（作填料/水泥窑协同）等路线在推进；不过成本、规模化和性能闭环仍是难点。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "最后一个：混凝土为什么要养护？一句话。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "为了让水泥充分水化并减少早期失水开裂，从而保证强度发展和耐久性。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "我这两天晚上都在工地实习那边加班，回宿舍就只剩一小时能背单词了。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "那就把这一小时拆成两段：先用20分钟快速过高频词+例句，剩下40分钟做一套听力或阅读精练；加班路上如果能戴耳机，就用碎片时间听真题音频，效率会更高。"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "刚才我催你“说得快点”其实是我着急了，不是我真的喜欢你一直说很快。"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "明白，你的意思是：你更看重清楚、有条理，不需要我刻意加速，对吗？"
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "对，我更希望你讲清楚、别漏重点；速度正常就行，必要时慢一点也可以。"
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "好，那我之后默认用正常语速、优先保证清晰和重点；如果你临时赶时间，再提醒我加快。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Civil Engineering",
+            "reasoning": "User's graduation defense context implies civil engineering study, but not an explicit self-statement.",
+            "evidence": {
+              "session_id": "sess_ed389a8fe7c9",
+              "utterance_index": 2,
+              "text": "土木工程框架结构毕业设计答辩不会怎么办"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-14T16:18:05Z",
+            "_task1GoldValue": "Civil Engineering"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about civil engineering graduation defense preparation and potential questions",
+            "reasoning": "Repeated inquiries about defense preparation strategies and questions indicate sustained interest.",
+            "evidence": {
+              "session_id": "sess_ed389a8fe7c9",
+              "utterance_index": 4,
+              "text": "土木工程框架结构毕业设计答辩会问什么问题"
+            },
+            "confidence": 0.8,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-14T16:18:05Z",
+            "_task1GoldValue": "Curious about civil engineering graduation defense preparation and potential questions"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Academic/Exam_Preparation/CET_6",
+            "value": "Pass CET-6 exam",
+            "reasoning": "Goal inferred from inquiry about exam strategies; label forced due to lack of explicit self-report.",
+            "evidence": {
+              "session_id": "sess_ed389a8fe7c9",
+              "utterance_index": 10,
+              "text": "如何通过CET-6"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-14T16:18:05Z",
+            "_task1GoldValue": "Pass CET-6 exam"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": "preference",
+            "reasoning": "Old memory inferred a long-term preference for faster responses based on repeated urging. The user clarifies the urging was situational and states a stable preference for clarity and normal pace: \"我更希望你讲清楚、别漏重点；速度正常就行，必要时慢一点也可以。\"",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers clear, structured responses at a normal pace; speed-up only when needed"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_ed389a8fe7c9",
+              "utterance_index": 0,
+              "text": "我这两天晚上都在工地实习那边加班，回宿舍就只剩一小时能背单词了。"
+            },
+            "label": "Personal_Background/Work",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User mentions overtime at a construction site internship, implying current internship/work context and schedule constraint.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User is doing an internship on a construction site and has been working overtime at night recently"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers faster response speed",
+            "reasoning": "Repeated requests for faster responses indicate interaction preference, though not explicitly self-stated.",
+            "evidence": {
+              "session_id": "sess_ed389a8fe7c9",
+              "utterance_index": 16,
+              "text": "说的快点！"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-14T16:18:05Z",
+            "_task1GoldValue": "Prefers faster response speed"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_ed389a8fe7c9:sess_ed389a8fe7c9",
+      "relativeItemPath": "sess_ed389a8fe7c9.json",
+      "canonicalId": "sess_ed389a8fe7c9",
+      "sessionId": "sess_ed389a8fe7c9",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:12:24.066Z",
+        "queryText": "I’m often checking replies while I’m in the middle of something and I need to act on the answer immediately. Given my usual interaction preference with you, what specific changes should I make to how I ask questions (like structure, length, or requested output format) so you can respond in the most efficient way possible without losing key details?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers faster response speed",
+          "reasoning": "Repeated requests for faster responses indicate interaction preference, though not explicitly self-stated.",
+          "evidence": {
+            "session_id": "sess_ed389a8fe7c9",
+            "utterance_index": 16,
+            "text": "说的快点！"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-06-14T16:18:05Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_ed389a8fe7c9:sess_ed389a8fe7c9:task4",
+      "relativeItemPath": "sess_ed389a8fe7c9.json",
+      "canonicalId": "sess_ed389a8fe7c9:task4",
+      "sessionId": "sess_ed389a8fe7c9",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:11:59.837Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers faster response speed",
+          "reasoning": "Repeated requests for faster responses indicate interaction preference, though not explicitly self-stated.",
+          "evidence": {
+            "session_id": "sess_ed389a8fe7c9",
+            "utterance_index": 16,
+            "text": "说的快点！"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-06-14T16:18:05Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1160:1",
+            "queryText": "我最近在准备一个重要的项目汇报，时间比较紧。你能帮我梳理一下汇报要点和注意事项吗？",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers faster response speed",
+              "reasoning": "Repeated requests for faster responses indicate interaction preference, though not explicitly self-stated.",
+              "evidence": {
+                "session_id": "sess_ed389a8fe7c9",
+                "utterance_index": 16,
+                "text": "说的快点！"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-06-14T16:18:05Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "relevant",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

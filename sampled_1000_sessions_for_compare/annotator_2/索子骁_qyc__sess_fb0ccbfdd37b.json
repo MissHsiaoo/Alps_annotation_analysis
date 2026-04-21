@@ -1,0 +1,423 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_fb0ccbfdd37b",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_fb0ccbfdd37b:sess_fb0ccbfdd37b",
+      "relativeItemPath": "sess_fb0ccbfdd37b.json",
+      "canonicalId": "sess_fb0ccbfdd37b",
+      "sessionId": "sess_fb0ccbfdd37b",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T11:23:23.259Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "悲剧 (tragedy) movies",
+            "reasoning": "User explicitly states liking tragedy movies with conversational uncertainty ('应该是').",
+            "evidence": {
+              "session_id": "sess_fb0ccbfdd37b",
+              "utterance_index": 6,
+              "text": "我应该是喜欢悲剧哈哈哈哈"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-09-06T04:01:47+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "喜剧 (comedy) movies",
+            "reasoning": "User mentions comedy preference when prompted about other genres ('喜剧吧').",
+            "evidence": {
+              "session_id": "sess_fb0ccbfdd37b",
+              "utterance_index": 10,
+              "text": "喜剧吧"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-09-06T04:01:47+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Travel/Destinations",
+            "value": "威海/青岛/泰山 travel destinations",
+            "reasoning": "Explicit future travel intent, not yet a stable fact. Downgraded from 0.95 to 0.80 per confidence rules.",
+            "evidence": {
+              "session_id": "sess_fb0ccbfdd37b",
+              "utterance_index": 18,
+              "text": "我想去威海，青岛，泰山"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-09-06T04:01:47+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in travel planning for Northeast China destinations",
+            "reasoning": "Single itinerary request insufficient for 0.80 confidence under indirect rules.",
+            "evidence": {
+              "session_id": "sess_fb0ccbfdd37b",
+              "utterance_index": 20,
+              "text": "是的，那你能帮我给这三个地方做一个详细的四天三晚的旅游攻略吗？"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-09-06T04:01:47+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_fb0ccbfdd37b:sess_fb0ccbfdd37b",
+      "relativeItemPath": "sess_fb0ccbfdd37b.json",
+      "canonicalId": "sess_fb0ccbfdd37b",
+      "sessionId": "sess_fb0ccbfdd37b",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:34:51.422Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我回来了，想随便聊两句，你在吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "在的。要不我们来个轻松的话题：你觉得“旅行最重要的是风景、吃的，还是遇见的人”？也可以随便选一个展开聊。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "我也说不清，你先说说看？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "可以从“旅行的三件套”来想：风景提供震撼、食物提供即时快乐、人与故事提供回忆厚度。比如很多城市会用一条经典步行路线把这三件事串起来：白天看地标，傍晚去市场或夜市，晚上去老街散步。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "那如果只有一天时间，你会怎么安排？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "给一个通用的一日模板：上午一个核心景点（尽量早到避开人流）→中午去本地人多的小馆子→下午选“城市视角”（山顶/观景台/海边栈道/博物馆任选其一）→傍晚看日落或夜景→晚上用一顿有特色的收尾。路上留出1-2段不赶时间的“空白”，专门用来随便走走。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "听起来还不错。你能给个更具体的例子吗？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "举个不对应任何特定城市的例子：如果是“海边城市”——早上去灯塔/海滨公园，沿着海岸线走一段；中午吃海鲜面或本地小吃；下午去老城区看看历史建筑或小型博物馆；傍晚到观景台看落日；晚上逛夜市。顺便说个冷知识：有些沿海城市会把旧码头改造成公共步道，这类地方通常夜景很好拍。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "那要是“山城”呢？"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "山城的一日版：上午上一个制高点（缆车/步道都行）看全景；中午吃一顿当地特色的热菜；下午逛一条有坡度的老街+一个室内点（展馆/书店/咖啡馆）用来休息；傍晚去江边/城墙一带散步；晚上找个能看夜景的地方结束。另一个小知识：很多山城的观景点最佳时间是雨后或空气清澈的傍晚，层次感更明显。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "刚把那份行程转到备忘录里了，结果发现我更喜欢那种“按小时写清楚、还能顺便把预算表格也列出来”的攻略；上次跟朋友自由行就因为没做预算，回来一对账直接心态爆炸。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "懂了，你更偏向“时间轴 + 预算明细”的可执行版本。你愿意的话，我可以先按“交通/住宿/门票/餐饮/本地交通/其他”给你搭一个预算框架，再把每天行程拆到上午/下午/晚上，最后把可能的机动时间也标出来。你更在意控制总花费，还是在意玩得舒服一点？"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "对了我刚刚说“我应该是喜欢悲剧”其实是随口一说的，我看悲剧容易难受，平时更爱看喜剧。"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "明白了，你不是偏好悲剧，是更喜欢轻松一点的喜剧对吧？那之后我给你推荐电影就按喜剧方向来。"
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "对，喜剧更适合我，悲剧真的不太行。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "喜剧 (comedy) movies",
+            "reasoning": "User mentions comedy preference when prompted about other genres ('喜剧吧').",
+            "evidence": {
+              "session_id": "sess_fb0ccbfdd37b",
+              "utterance_index": 10,
+              "text": "喜剧吧"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-09-06T04:01:47+00:00",
+            "_task1GoldValue": "喜剧 (comedy) movies"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Travel/Destinations",
+            "value": "威海/青岛/泰山 travel destinations",
+            "reasoning": "Explicit future travel intent, not yet a stable fact. Downgraded from 0.95 to 0.80 per confidence rules.",
+            "evidence": {
+              "session_id": "sess_fb0ccbfdd37b",
+              "utterance_index": 18,
+              "text": "我想去威海，青岛，泰山"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-09-06T04:01:47+00:00",
+            "_task1GoldValue": "威海/青岛/泰山 travel destinations"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in travel planning for Northeast China destinations",
+            "reasoning": "Single itinerary request insufficient for 0.80 confidence under indirect rules.",
+            "evidence": {
+              "session_id": "sess_fb0ccbfdd37b",
+              "utterance_index": 20,
+              "text": "是的，那你能帮我给这三个地方做一个详细的四天三晚的旅游攻略吗？"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-09-06T04:01:47+00:00",
+            "_task1GoldValue": "Sustained interest in travel planning for Northeast China destinations"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "旧记忆认为用户喜欢悲剧电影，但用户明确纠正“喜欢悲剧”是随口一说，并说明看悲剧会难受、平时更爱看喜剧，因此应更新为偏好喜剧而非悲剧。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "喜剧 (comedy) movies"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": "frustration",
+            "evidence": {
+              "session_id": "sess_fb0ccbfdd37b",
+              "utterance_index": 0,
+              "text": "上次跟朋友自由行就因为没做预算，回来一对账直接心态爆炸。"
+            },
+            "label": "Preferences/Planning",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "用户提到过去自由行因未做预算导致强烈负面体验，并表示更喜欢带预算表格的攻略，隐含其偏好在出行规划中提前做预算与明细控制。",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers travel itineraries that include clear budgeting (budget table/expense breakdown) rather than no-budget planning"
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "悲剧 (tragedy) movies",
+            "reasoning": "User explicitly states liking tragedy movies with conversational uncertainty ('应该是').",
+            "evidence": {
+              "session_id": "sess_fb0ccbfdd37b",
+              "utterance_index": 6,
+              "text": "我应该是喜欢悲剧哈哈哈哈"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-09-06T04:01:47+00:00",
+            "_task1GoldValue": "悲剧 (tragedy) movies"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_fb0ccbfdd37b:sess_fb0ccbfdd37b",
+      "relativeItemPath": "sess_fb0ccbfdd37b.json",
+      "canonicalId": "sess_fb0ccbfdd37b",
+      "sessionId": "sess_fb0ccbfdd37b",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:35:06.574Z",
+        "queryText": "我今晚想选一部电影来“痛快地哭一场”，但又不想看太轻松的那种。基于我平时更容易被哪类故事打动、也更可能觉得“过瘾”，你会建议我把筛选条件偏向什么走向的片子？",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "悲剧 (tragedy) movies",
+          "reasoning": "User explicitly states liking tragedy movies with conversational uncertainty ('应该是').",
+          "evidence": {
+            "session_id": "sess_fb0ccbfdd37b",
+            "utterance_index": 6,
+            "text": "我应该是喜欢悲剧哈哈哈哈"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-09-06T04:01:47+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_fb0ccbfdd37b:sess_fb0ccbfdd37b:task4",
+      "relativeItemPath": "sess_fb0ccbfdd37b.json",
+      "canonicalId": "sess_fb0ccbfdd37b:task4",
+      "sessionId": "sess_fb0ccbfdd37b",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:34:25.058Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "悲剧 (tragedy) movies",
+          "reasoning": "User explicitly states liking tragedy movies with conversational uncertainty ('应该是').",
+          "evidence": {
+            "session_id": "sess_fb0ccbfdd37b",
+            "utterance_index": 6,
+            "text": "我应该是喜欢悲剧哈哈哈哈"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-09-06T04:01:47+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_419:1",
+            "queryText": "最近有什么值得一看的新片吗？帮我挑一部适合周末放松的。",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "悲剧 (tragedy) movies",
+              "reasoning": "User explicitly states liking tragedy movies with conversational uncertainty ('应该是').",
+              "evidence": {
+                "session_id": "sess_fb0ccbfdd37b",
+                "utterance_index": 6,
+                "text": "我应该是喜欢悲剧哈哈哈哈"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-09-06T04:01:47+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "relevant",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

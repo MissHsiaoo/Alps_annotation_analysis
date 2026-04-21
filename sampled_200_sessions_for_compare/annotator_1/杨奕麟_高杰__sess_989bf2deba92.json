@@ -1,0 +1,275 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_989bf2deba92",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_989bf2deba92:sess_989bf2deba92",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_989bf2deba92.json",
+      "canonicalId": "sess_989bf2deba92",
+      "sessionId": "sess_989bf2deba92",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:09:08.506Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/role_play/technical_request",
+            "value": "Curious about technical implementation of remote-controlled 4-wheel platform with specific performance specs",
+            "reasoning": "Role-play scenario introduces uncertainty about user's genuine curiosity; technical requests could be task-local to the role-play context",
+            "evidence": {
+              "session_id": "sess_989bf2deba92",
+              "utterance_index": 7,
+              "text": "Представь, что я твой начальник,а ты инженер. Мне от тебя как раз и нужно чтобы ты продумал техническое решение с конкретными компонентами и мне это прислал."
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-09T15:35:31+00:00"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "value": "Communicates in Russian language",
+            "confidence": 0.95,
+            "evidence_text": "Переведи на английский: Беззубик из фильма как приручить дракона побеждает охотников"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_989bf2deba92:sess_989bf2deba92",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_989bf2deba92.json",
+      "canonicalId": "sess_989bf2deba92",
+      "sessionId": "sess_989bf2deba92",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-17T10:50:37.638Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "assistant",
+            "text": "Принял. Чтобы подготовить понятное «техрешение с компонентами», уточню пару моментов по ТЗ: платформа должна работать на улице (пыль/дождь) или только в помещении? И нужна ли грузоподъёмность/масса полезной нагрузки, или пока считаем «без нагрузки»?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "user",
+            "text": "Уточняй. Какие параметры критичны в первую очередь?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "assistant",
+            "text": "В первую очередь критичны 5 пунктов: 1) масса платформы + полезная нагрузка (определяет моторы/редуктор и ёмкость батареи), 2) тип покрытия и уклоны (крутящий момент и колёса), 3) дальность связи и среда (Bluetooth/Wi‑Fi/радио), 4) требования к безопасности (E‑stop, ограничение скорости, fail‑safe), 5) бюджет/доступность компонентов (коммерческие модули vs кастом).\n\nКак пример не про проект: в 1997 году марсоход Sojourner весил около 11,5 кг и ехал всего сантиметры в секунду — но для него критичнее всего была надёжность питания и радиосвязи, а не скорость."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "user",
+            "text": "Ок, а как ты обычно считаешь батарею на 8 часов?"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "assistant",
+            "text": "Считают от средней потребляемой мощности за цикл движения: Pavg = Pдвиж + Pэлектроника + потери. Затем энергия: E = Pavg * 8 ч, и добавляют запас 20–30% на деградацию, холод и пики. Для прикидки полезно измерить ток на стенде: Iavg, тогда E(Вт·ч)=V*Iavg*8.\n\nНебольшой факт «в сторону»: литий‑ионные элементы 18650 получили массовую популярность из‑за хорошего баланса энергоёмкости и доступности, поэтому их часто используют в самосборных батареях (при обязательном BMS)."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "user",
+            "text": "Понял. Сформируй список вопросов одним блоком, чтобы я ответил."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "assistant",
+            "text": "Ок, одним блоком:\n1) Полезная нагрузка (кг) и предполагаемая масса самой платформы (если неизвестно — верхняя оценка).\n2) Где ездит: помещение/улица, тип покрытия (асфальт, плитка, грунт), максимальный уклон (% или градусы), нужны ли бордюры.\n3) Режим работы 8 часов: непрерывное движение или «старт‑стоп» (примерно % времени в движении).\n4) Дальность и тип связи: сколько метров, прямая видимость/помехи, нужен ли интернет.\n5) Управление: только ручное с телефона или ещё автопилот/маршруты.\n6) Скорость 20 км/ч — нужна максимальная или постоянная под нагрузкой.\n7) Манёвренность: разворот на месте (дифференциальный привод) или «автомобильная» схема.\n8) Требования безопасности: аварийная кнопка, геозона, ограничение скорости, звуковой/световой сигнал.\n9) Ограничения по габаритам — 750×400×1000 мм: это жёсткий короб или допустимы выступающие колёса/ручки.\n10) Диапазон температур/влажности и требования к IP‑защите.\n\nИ третий нейтральный факт (не про проект): стандартная единица «Вт·ч» удобна тем, что напрямую показывает запас энергии, независимо от напряжения батареи."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "user",
+            "text": "По этой платформе: пульт с джойстиком не предлагай — у нас на объекте его всё равно не пропустят, поэтому управление только со смартфона. И учти, что ей придётся ездить по пандусам, так что по тяге лучше с запасом."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "assistant",
+            "text": "Принял. Тогда закладываю управление со смартфона (Wi‑Fi/BLE) и по механике/приводу ориентируюсь на режимы с подъёмом: пересчитаю требуемый момент на колесе под уклон и предложу конфигурацию моторов/редукторов с запасом."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "user",
+            "text": "Не, это было не про «мне интересно ради интереса». Я реально делаю такую колесную платформу на 4 колёсах под ТЗ: 750×400×1000 мм, скорость от 20 км/ч и работа от аккумулятора минимум 8 часов. Мне от тебя нужно именно конкретное техрешение под проект."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "assistant",
+            "text": "Принял. Тогда это не «любопытство», а рабочая задача по реальному проекту: дистанционно управляемая 4‑колёсная платформа с габаритами 750×400×1000 мм, скоростью ≥20 км/ч и автономностью ≥8 часов — нужен подбор конкретных компонентов и архитектуры."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": null,
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/role_play/technical_request",
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory frames the request as curiosity. The user explicitly corrects that it is a real project with a defined TЗ and asks for a concrete engineering solution, contradicting the ‘curious’ characterization.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is actively building a remote-controlled 4-wheel platform and needs a concrete technical solution (components/architecture) for specs 750×400×1000 mm, ≥20 km/h, and ≥8 hours battery life—not just general curiosity."
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_989bf2deba92",
+              "utterance_index": 0,
+              "text": "пульт с джойстиком не предлагай — у нас на объекте его всё равно не пропустят, поэтому управление только со смартфона."
+            },
+            "label": "UNMAPPED",
+            "label_suggestion": "constraint/control_interface/smartphone_only",
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User says a joystick controller won't be allowed on-site and requests smartphone-only control, implying a firm interface constraint.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "For the platform, the user requires control only via smartphone (no joystick controller)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_989bf2deba92:sess_989bf2deba92",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_989bf2deba92.json",
+      "canonicalId": "sess_989bf2deba92",
+      "sessionId": "sess_989bf2deba92",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T19:35:18.871Z",
+        "queryText": "I need to resend the same kind of engineering deliverable we discussed before: can you remind me what I was asking you to produce, but split it into two clearly separated sections—(1) a concrete parts/components list and (2) the target performance requirements it must meet—so I can paste it into my message without missing anything?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "UNMAPPED",
+          "label_suggestion": "interaction/role_play/technical_request",
+          "value": "Curious about technical implementation of remote-controlled 4-wheel platform with specific performance specs",
+          "reasoning": "Role-play scenario introduces uncertainty about user's genuine curiosity; technical requests could be task-local to the role-play context",
+          "evidence": {
+            "session_id": "sess_989bf2deba92",
+            "utterance_index": 7,
+            "text": "Представь, что я твой начальник,а ты инженер. Мне от тебя как раз и нужно чтобы ты продумал техническое решение с конкретными компонентами и мне это прислал."
+          },
+          "confidence": 0.5,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-12-09T15:35:31+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_989bf2deba92:sess_989bf2deba92:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_989bf2deba92.json",
+      "canonicalId": "sess_989bf2deba92:task4",
+      "sessionId": "sess_989bf2deba92",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T14:48:58.709Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "UNMAPPED",
+          "label_suggestion": "interaction/role_play/technical_request",
+          "value": "Curious about technical implementation of remote-controlled 4-wheel platform with specific performance specs",
+          "reasoning": "Role-play scenario introduces uncertainty about user's genuine curiosity; technical requests could be task-local to the role-play context",
+          "evidence": {
+            "session_id": "sess_989bf2deba92",
+            "utterance_index": 7,
+            "text": "Представь, что я твой начальник,а ты инженер. Мне от тебя как раз и нужно чтобы ты продумал техническое решение с конкретными компонентами и мне это прислал."
+          },
+          "confidence": 0.5,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-12-09T15:35:31+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability3_220:1",
+            "queryText": "Привет, как инженер, ты уже подготовил техническое решение по платформе. Мне нужно срочно согласовать твою должность в штатном расписании для этого проекта. Какую конкретную инженерную специальность мне указать в приказе о назначении тебя ответственным исполнителем?",
+            "ability": "ability3",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "UNMAPPED",
+              "label_suggestion": "interaction/role_play/technical_request",
+              "value": "Curious about technical implementation of remote-controlled 4-wheel platform with specific performance specs",
+              "reasoning": "Role-play scenario introduces uncertainty about user's genuine curiosity; technical requests could be task-local to the role-play context",
+              "evidence": {
+                "session_id": "sess_989bf2deba92",
+                "utterance_index": 7,
+                "text": "Представь, что я твой начальник,а ты инженер. Мне от тебя как раз и нужно чтобы ты продумал техническое решение с конкретными компонентами и мне это прислал."
+              },
+              "confidence": 0.5,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-12-09T15:35:31+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

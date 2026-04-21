@@ -1,0 +1,344 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_0f39d3c6b4f6",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_0f39d3c6b4f6:sess_0f39d3c6b4f6",
+      "relativeItemPath": "sess_0f39d3c6b4f6.json",
+      "canonicalId": "sess_0f39d3c6b4f6",
+      "sessionId": "sess_0f39d3c6b4f6",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T14:50:24.840Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/request_methodology",
+            "value": "Curious about researching policy issues and methodologies",
+            "reasoning": "User requested policy research guidance but no explicit self-reported curiosity. Label forced correction.",
+            "evidence": {
+              "session_id": "sess_0f39d3c6b4f6",
+              "utterance_index": 4,
+              "text": "how to research a policy topic"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-09-25T01:15:00+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers summarized/paraphrased information in bullet points",
+            "reasoning": "Repeated requests for concise formats (bullet points, paraphrased info) across 5+ turns demonstrate interaction pattern.",
+            "evidence": {
+              "session_id": "sess_0f39d3c6b4f6",
+              "utterance_index": 10,
+              "text": "bullet points about most important information from [URL]"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-09-25T01:15:00+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_0f39d3c6b4f6:sess_0f39d3c6b4f6",
+      "relativeItemPath": "sess_0f39d3c6b4f6.json",
+      "canonicalId": "sess_0f39d3c6b4f6",
+      "sessionId": "sess_0f39d3c6b4f6",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T14:50:55.380Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Can you turn a long policy announcement into a short summary that still keeps the key numbers?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes. A good approach is: (1) state who made the announcement, (2) state the main goal, (3) list 2–4 headline commitments with dates and quantities, and (4) add one line on why it matters (emissions, costs, health), leaving out most quotes and event details."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "What details usually count as “key numbers” versus extra?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Key numbers are those that define scope and accountability: targets (e.g., “20 million installations by 2030”), percentages tied to equity or impact (e.g., “40% of benefits”), and any deadlines or phaseout dates. Extra details are typically the venue, full lists of attendees, and repeated framing language unless it changes the meaning."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Can you give a quick example outline for summarizing a climate coalition announcement?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Example outline:\n- Who/what: A multi-state coalition announces building-decarbonization commitments.\n- Core target: Expand a specific technology (like heat pumps) to a stated number by a stated year.\n- Equity: Include any minimum share of benefits directed to disadvantaged communities.\n- Policy toolkit: Note a few mechanisms (building codes, performance standards, retrofit incentives).\n- Why it matters: Buildings’ share of emissions + expected benefits (air quality, bills, jobs)."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Unrelated: I saw a note that a solar eclipse can affect power grids—true?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "It can. A large eclipse temporarily reduces solar generation in the path of maximum coverage, so grid operators forecast the dip and ramp other sources or storage. During the 2017 U.S. eclipse, operators planned ahead and reliability issues were minimal—planning is the key."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Also random: what’s the difference between a tropical storm watch and warning?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "A watch means tropical-storm conditions are possible (often within ~48 hours). A warning means those conditions are expected (often within ~36 hours). Exact timing can vary by agency, but “warning” indicates higher confidence and urgency."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Last random thing: are heat pumps only for heating?"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Most are for both heating and cooling. They move heat rather than generate it: in winter they pull heat from outside air/ground into a building, and in summer they reverse to remove indoor heat—like an air conditioner that can run both directions."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "can you do the same thing as before but keep it to like 3 bullets this time? i’m trying to copy it into my notes without reformatting."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Sure—share the text or link you want summarized, and I’ll condense it into three key bullet points."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Actually, don’t do bullet points this time. I need it in two short paragraphs—no lists—and keep it paraphrased."
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "Got it—two short paraphrased paragraphs, no bullet points.\n\nI’ll keep the information concise and organized in paragraph form, focusing only on the most important points without using any list formatting."
+          },
+          {
+            "turnId": "turn-17",
+            "role": "user",
+            "text": "Yes, exactly—paragraphs only. Bullet points make it harder for me to use in my draft."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/request_methodology",
+            "value": "Curious about researching policy issues and methodologies",
+            "reasoning": "User requested policy research guidance but no explicit self-reported curiosity. Label forced correction.",
+            "evidence": {
+              "session_id": "sess_0f39d3c6b4f6",
+              "utterance_index": 4,
+              "text": "how to research a policy topic"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-09-25T01:15:00+00:00"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                14
+              ],
+              "turns": [
+                {
+                  "index": 14,
+                  "role": "user",
+                  "text": "Actually, don’t do bullet points this time. I need it in two short paragraphs—no lists—and keep it paraphrased."
+                }
+              ]
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory says the user prefers summarized/paraphrased information in bullet points, but the user explicitly rejects bullet points and requests paraphrased content in two short paragraphs with no lists. This contradicts a stable preference for bullet points; the updated truth is that the user prefers paragraph-form paraphrases (at least in this interaction) rather than bullet lists.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers summarized/paraphrased information in short paragraphs (no bullet points/lists)"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_0f39d3c6b4f6",
+              "utterance_index": 0,
+              "text": "can you do the same thing as before but keep it to like 3 bullets this time? i’m trying to copy it into my notes without reformatting."
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User requests limiting the output to three bullets and indicates they want to paste it into notes without reformatting, implying a preference for ultra-concise bullet summaries.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers very concise summaries (around three bullet points) for easy copy/paste into notes"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_0f39d3c6b4f6:sess_0f39d3c6b4f6",
+      "relativeItemPath": "sess_0f39d3c6b4f6.json",
+      "canonicalId": "sess_0f39d3c6b4f6",
+      "sessionId": "sess_0f39d3c6b4f6",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T14:51:13.451Z",
+        "queryText": "I’m about to ask you to explain something I just read, but I’m short on time and get overwhelmed by long paragraphs. What specific format should I ask you to use so I can scan the key takeaways quickly?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers summarized/paraphrased information in bullet points",
+          "reasoning": "Repeated requests for concise formats (bullet points, paraphrased info) across 5+ turns demonstrate interaction pattern.",
+          "evidence": {
+            "session_id": "sess_0f39d3c6b4f6",
+            "utterance_index": 10,
+            "text": "bullet points about most important information from [URL]"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-09-25T01:15:00+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_0f39d3c6b4f6:sess_0f39d3c6b4f6:task4",
+      "relativeItemPath": "sess_0f39d3c6b4f6.json",
+      "canonicalId": "sess_0f39d3c6b4f6:task4",
+      "sessionId": "sess_0f39d3c6b4f6",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T14:51:32.670Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers summarized/paraphrased information in bullet points",
+          "reasoning": "Repeated requests for concise formats (bullet points, paraphrased info) across 5+ turns demonstrate interaction pattern.",
+          "evidence": {
+            "session_id": "sess_0f39d3c6b4f6",
+            "utterance_index": 10,
+            "text": "bullet points about most important information from [URL]"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-09-25T01:15:00+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1172:1",
+            "queryText": "I'm looking at this new report on urban green space initiatives from the city council. Can you break down the key takeaways for me?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers summarized/paraphrased information in bullet points",
+              "reasoning": "Repeated requests for concise formats (bullet points, paraphrased info) across 5+ turns demonstrate interaction pattern.",
+              "evidence": {
+                "session_id": "sess_0f39d3c6b4f6",
+                "utterance_index": 10,
+                "text": "bullet points about most important information from [URL]"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-09-25T01:15:00+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

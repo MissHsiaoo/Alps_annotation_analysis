@@ -1,0 +1,425 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_dd26f6f0d8a5",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_dd26f6f0d8a5:sess_dd26f6f0d8a5",
+      "relativeItemPath": "sess_dd26f6f0d8a5.json",
+      "canonicalId": "sess_dd26f6f0d8a5",
+      "sessionId": "sess_dd26f6f0d8a5",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T13:28:24.678Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Education/Interest/AP_Statistics",
+            "value": "Self-studying AP Statistics",
+            "reasoning": "User inquired about prerequisites but did not explicitly confirm self-study intent",
+            "evidence": {
+              "session_id": "sess_dd26f6f0d8a5",
+              "utterance_index": 20,
+              "text": "what level of math do I need to self study AP statistics?"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-25T00:14:25+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Learning simplified Mandarin stroke order",
+            "reasoning": "Explicit request for stroke order resources",
+            "evidence": {
+              "session_id": "sess_dd26f6f0d8a5",
+              "utterance_index": 24,
+              "text": "what is the correct stroke order in simplified mandarin, and what resources can you guide me towards so that I can learn?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-25T00:14:25+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Interested in Python programming fundamentals (loop syntax/ranges)",
+            "reasoning": "Multiple follow-up questions about Python loop implementation details",
+            "evidence": {
+              "session_id": "sess_dd26f6f0d8a5",
+              "utterance_index": 12,
+              "text": "write a loop in python"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-25T00:14:25+00:00"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Investigating technical optimization (PC performance, GPT token limits)",
+            "reasoning": "Repeated technical troubleshooting questions about hardware and API limits",
+            "evidence": {
+              "session_id": "sess_dd26f6f0d8a5",
+              "utterance_index": 32,
+              "text": "I have a core i3 8gb ram pc, how do I make it faster without spending money"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-25T00:14:25+00:00"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "User is learning or studying chemistry, particularly topics related to gases at STP, molar volumes, and hydrocarbon nomenclature (ethane, ethene, ethyne)",
+            "confidence": 0.8,
+            "evidence_text": "at stp, how much volume does 7.64 moles of Argon take up? show dimensional analysis"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_dd26f6f0d8a5:sess_dd26f6f0d8a5",
+      "relativeItemPath": "sess_dd26f6f0d8a5.json",
+      "canonicalId": "sess_dd26f6f0d8a5",
+      "sessionId": "sess_dd26f6f0d8a5",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T04:33:20.017Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I keep mixing up median and mean—can you give a quick example that makes the difference obvious?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure. Take the numbers: 2, 3, 3, 4, 20.\n- Mean (average) = (2+3+3+4+20)/5 = 32/5 = 6.4\n- Median (middle value when sorted) = 3\nThe mean gets pulled upward by the outlier (20), while the median stays representative of the “middle” of the data."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "So the median is more \"robust\" to outliers? Is that the right word?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Yes—“robust” is the standard term. The median is robust to outliers because it depends on order/rank, not the magnitude of extreme values."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Random: if a museum labels a fossil “Late Jurassic,” roughly how many million years ago is that?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Late Jurassic is roughly ~163 to 145 million years ago (often simplified to “about 150 million years ago,” depending on the exhibit)."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "And what’s one common way museums date layers, in broad terms?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Broadly, they use stratigraphy (relative dating: which layers are above/below others) and radiometric dating (absolute dating: measuring decay of isotopes like uranium-lead or potassium-argon in volcanic ash layers associated with the sediments)."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "that mara thing you mentioned—i’m trying to sketch one from memory and i keep making it look like a rabbit. can you describe what features i should exaggerate so it reads as a mara?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Sure—focus on the long legs and upright, deer-like posture rather than a rabbit’s crouch. Maras also have a more dog/rodent-like face (longer muzzle), relatively smaller ears than a hare, and a compact, rounded body with a short tail. Emphasizing those proportions should help the silhouette read as a mara."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "btw scratch that mandarin thing from earlier—i'm not trying to learn simplified mandarin stroke order anymore. i only needed it for a one-off assignment."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—so it wasn’t a long-term goal, just a one-time need for that assignment. I won’t treat “learning simplified Mandarin stroke order” as an ongoing focus."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about hydrocarbon chemistry concepts (ethane/ethene/ethyne differences, unsaturated bonds)",
+            "reasoning": "User asked multiple follow-up questions about hydrocarbon structures and terminology",
+            "evidence": {
+              "session_id": "sess_dd26f6f0d8a5",
+              "utterance_index": 6,
+              "text": "what is the difference between ethane, ethene, and ethyne"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-25T00:14:25+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Education/Interest/AP_Statistics",
+            "value": "Self-studying AP Statistics",
+            "reasoning": "User inquired about prerequisites but did not explicitly confirm self-study intent",
+            "evidence": {
+              "session_id": "sess_dd26f6f0d8a5",
+              "utterance_index": 20,
+              "text": "what level of math do I need to self study AP statistics?"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-25T00:14:25+00:00",
+            "_task1GoldValue": "Self-studying AP Statistics"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Interested in Python programming fundamentals (loop syntax/ranges)",
+            "reasoning": "Multiple follow-up questions about Python loop implementation details",
+            "evidence": {
+              "session_id": "sess_dd26f6f0d8a5",
+              "utterance_index": 12,
+              "text": "write a loop in python"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-25T00:14:25+00:00",
+            "_task1GoldValue": "Interested in Python programming fundamentals (loop syntax/ranges)"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Investigating technical optimization (PC performance, GPT token limits)",
+            "reasoning": "Repeated technical troubleshooting questions about hardware and API limits",
+            "evidence": {
+              "session_id": "sess_dd26f6f0d8a5",
+              "utterance_index": 32,
+              "text": "I have a core i3 8gb ram pc, how do I make it faster without spending money"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-25T00:14:25+00:00",
+            "_task1GoldValue": "Investigating technical optimization (PC performance, GPT token limits)"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": null,
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory implies an ongoing learning goal, but the user explicitly retracts it and clarifies it was a one-time need, so the updated truth is that they are not currently pursuing it long-term.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Not currently learning simplified Mandarin stroke order; it was only needed for a one-off assignment"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_dd26f6f0d8a5",
+              "utterance_index": 0,
+              "text": "i’m trying to sketch one from memory and i keep making it look like a rabbit."
+            },
+            "label": "Hobbies/Creative",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user implies they are drawing by saying they are trying to sketch a mara from memory and want guidance on features to exaggerate.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User sketches/draws animals (trying to sketch a mara)."
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "User is learning or studying chemistry, particularly topics related to gases at STP, molar volumes, and hydrocarbon nomenclature (ethane, ethene, ethyne)",
+            "confidence": 0.8,
+            "evidence_text": "at stp, how much volume does 7.64 moles of Argon take up? show dimensional analysis",
+            "_task1GoldValue": "User is learning or studying chemistry, particularly topics related to gases at STP, molar volumes, and hydrocarbon nomenclature (ethane, ethene, ethyne)"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m2",
+          "m3",
+          "m4",
+          "m5",
+          "claude_sonnet_4_5_20250929_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_dd26f6f0d8a5:sess_dd26f6f0d8a5",
+      "relativeItemPath": "sess_dd26f6f0d8a5.json",
+      "canonicalId": "sess_dd26f6f0d8a5",
+      "sessionId": "sess_dd26f6f0d8a5",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:50:30.087Z",
+        "queryText": "I’m trying to build a daily handwriting practice habit, but I keep messing up the sequence of pen movements and it makes my characters look inconsistent. Given what you already know I’m working on, what specific foundational skill should I focus on first to fix this?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Personal_Background/Education",
+          "label_suggestion": null,
+          "value": "Learning simplified Mandarin stroke order",
+          "reasoning": "Explicit request for stroke order resources",
+          "evidence": {
+            "session_id": "sess_dd26f6f0d8a5",
+            "utterance_index": 24,
+            "text": "what is the correct stroke order in simplified mandarin, and what resources can you guide me towards so that I can learn?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-04-25T00:14:25+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_dd26f6f0d8a5:sess_dd26f6f0d8a5:task4",
+      "relativeItemPath": "sess_dd26f6f0d8a5.json",
+      "canonicalId": "sess_dd26f6f0d8a5:task4",
+      "sessionId": "sess_dd26f6f0d8a5",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T01:04:09.523Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Personal_Background/Education",
+          "label_suggestion": null,
+          "value": "Learning simplified Mandarin stroke order",
+          "reasoning": "Explicit request for stroke order resources",
+          "evidence": {
+            "session_id": "sess_dd26f6f0d8a5",
+            "utterance_index": 24,
+            "text": "what is the correct stroke order in simplified mandarin, and what resources can you guide me towards so that I can learn?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-04-25T00:14:25+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_22:1",
+            "queryText": "I'm trying to write 图书馆 but the 书 radical looks wrong - should the horizontal stroke in the top component go left-to-right or right-to-left?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Personal_Background/Education",
+              "label_suggestion": null,
+              "value": "Learning simplified Mandarin stroke order",
+              "reasoning": "Explicit request for stroke order resources",
+              "evidence": {
+                "session_id": "sess_dd26f6f0d8a5",
+                "utterance_index": 24,
+                "text": "what is the correct stroke order in simplified mandarin, and what resources can you guide me towards so that I can learn?"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-04-25T00:14:25+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "partial",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

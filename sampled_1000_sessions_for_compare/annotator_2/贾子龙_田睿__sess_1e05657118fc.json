@@ -1,0 +1,371 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_1e05657118fc",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_1e05657118fc:sess_1e05657118fc",
+      "relativeItemPath": "sess_1e05657118fc.json",
+      "canonicalId": "sess_1e05657118fc",
+      "sessionId": "sess_1e05657118fc",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:58:06.693Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Avoid griefing and server rule violations in event design",
+            "reasoning": "User explicitly states need to avoid griefing and follow server rules as core constraints",
+            "evidence": {
+              "session_id": "sess_1e05657118fc",
+              "utterance_index": 0,
+              "text": "we should try to avoid breaking any rules (mostly just 'no griefing')"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-06-13T04:49:44+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers high RP (role-play) server environments",
+            "reasoning": "User explicitly states their server is 'more or less high RP' as context for event design",
+            "evidence": {
+              "session_id": "sess_1e05657118fc",
+              "utterance_index": 2,
+              "text": "the server I am playing on is more or less high RP"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-13T04:49:44+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in designing SS13 captain-led in-game events with creative mechanics",
+            "reasoning": "User repeatedly requests event generation across multiple turns (utterances 0,2,4,6) showing persistent curiosity",
+            "evidence": {
+              "session_id": "sess_1e05657118fc",
+              "utterance_index": 6,
+              "text": "Could you try generating more events an SS13 captain could do to keep the other players entertained?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-13T04:49:44+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_1e05657118fc:sess_1e05657118fc",
+      "relativeItemPath": "sess_1e05657118fc.json",
+      "canonicalId": "sess_1e05657118fc",
+      "sessionId": "sess_1e05657118fc",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:58:21.863Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Quick tangent: if you had to invent a station-wide announcement that sounds urgent but is actually harmless, what would it say?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "A good “urgent-but-harmless” announcement uses serious cadence + clear instructions + a mundane cause. Examples:\n\n1) “ATTN ALL HANDS: Environmental systems have detected a stationwide pressure imbalance. This is a calibration anomaly. Do NOT breach walls or access external airlocks. Engineering will perform a 3-minute sensor reset. Continue duties; report any actual hull damage to Atmos.”\n\n2) “PRIORITY NOTICE: A live fire drill is commencing in 5 minutes. This is NOT an evacuation. Proceed to your department’s muster point and await roll call. Security: observe only. Medical: standby for simulated casualties.”\n\n3) “ALERT: Automated supply accounting reports possible ‘contraband’ in cargo. This is an inventory test. Do not detain anyone over it. Cargo will conduct a controlled audit; other departments please ignore.”"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Nice. Now back to events—can you give a few that create interaction between departments without turning into a security dogpile?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Sure—cross-department events that reduce “pile-on security” usually have clear rules, opt-in roles, and non-arrest failure states:\n\n1) Interdept “Service Exchange”: Each department must provide a 10-minute ‘public service’ (Med teaches basic triage; Eng teaches fire extinguishers; Sci demos a harmless gadget; Cargo runs a short ordering tutorial). Crew get stamps; full stamp card earns a small perk.\n\n2) Procurement Contracts: Captain posts 3–5 contracts like “Kitchen delivers 30 meals,” “Botany provides 10 medicinal plants,” “Engineering produces 5 emergency toolbelts.” Cargo becomes coordinator, not suspect-hunter.\n\n3) Station Newspaper/Radio Hour: Appoint an editor + correspondents. Every department submits a segment (incident report, interview, ad, classifieds). The ‘drama’ is social, not criminal.\n\n4) Controlled ‘Black Box’ Incident Review: Pick a past minor incident (power outage, accidental fire) and hold a post-mortem with a moderator. The goal is process improvement, not blame—no punishments, only action items.\n\n5) Department Liaison Swap: Each head assigns one volunteer to shadow another department for 10 minutes and report back. Make it explicit: no access abuse, no arrests, just observation and a short presentation.\n\n(Non-user “fake memory” tidbit: The 1938 “War of the Worlds” radio broadcast is a classic real-world example of urgent announcements causing chaos—useful inspiration for tone, but safer to add immediate clarifications in-game.)"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Could you pitch one “big finale” event concept that can fail in funny ways without anyone getting hard-stuck or griefed?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Finale idea: “Station Expo + Live Demonstration.”\n\nSetup: The captain announces a timed expo where each department must prepare a small booth and a 2-minute live demo (safe, reversible). Crew vote with tokens.\n\nTwist: Midway, you introduce a benign constraint like “power budget reduced for 6 minutes” or “hallway traffic reroute.” Departments must adapt on the fly.\n\nFailure mode: If a demo fizzles (machine won’t start, food burns, plant dies), it becomes comedy + improv, not punishment. Keep rules: no arrests for mishaps, no permanent sabotage, and any ‘hazard’ must be instantly containable (water spills, smoke, minor bruises only).\n\n(Non-user “fake memory” tidbit: World’s fairs in the early 1900s often had live tech demos that failed spectacularly; that ‘show must go on’ vibe maps well to a roleplay finale.)"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "One more constraint I forgot to mention: I’m usually the one wrangling these projects while trying to keep the bridge from turning into a second security office, so anything that can be announced over comms and then mostly runs itself (with just check-ins) is ideal."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Got it—events that are easy to broadcast, have clear rules, and can run with minimal captain micromanagement. I’ll focus on formats that naturally self-regulate (sign-ups, deadlines, simple scoring) and only need you to pop in for audits, awards, or tie-breakers."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Small correction: it’s actually not a high-RP server. It’s more like mid/low RP most rounds — people will still play along, but you can’t rely on deep in-character court cases or long speeches."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it — if it’s mid/low RP most rounds, you’ll get better mileage out of quick, structured events with clear objectives (and minimal required acting) rather than anything that depends on extended in-character debate or formal proceedings."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Avoid griefing and server rule violations in event design",
+            "reasoning": "User explicitly states need to avoid griefing and follow server rules as core constraints",
+            "evidence": {
+              "session_id": "sess_1e05657118fc",
+              "utterance_index": 0,
+              "text": "we should try to avoid breaking any rules (mostly just 'no griefing')"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-06-13T04:49:44+00:00",
+            "_task1GoldValue": "Avoid griefing and server rule violations in event design"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in designing SS13 captain-led in-game events with creative mechanics",
+            "reasoning": "User repeatedly requests event generation across multiple turns (utterances 0,2,4,6) showing persistent curiosity",
+            "evidence": {
+              "session_id": "sess_1e05657118fc",
+              "utterance_index": 6,
+              "text": "Could you try generating more events an SS13 captain could do to keep the other players entertained?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-13T04:49:44+00:00",
+            "_task1GoldValue": "Sustained interest in designing SS13 captain-led in-game events with creative mechanics"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "Small correction: it’s actually not a high-RP server. It’s more like mid/low RP most rounds — people will still play along, but you can’t rely on deep in-character court cases or long speeches."
+                }
+              ]
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "like",
+            "reasoning": "The prior memory claims the user prefers high-RP environments, but the user explicitly corrects that their server is not high RP and is instead mid/low RP most rounds. The updated truth is that the user’s play environment is mid/low RP rather than high RP.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Plays on a mid/low RP server environment rather than a high-RP one"
+          },
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_1e05657118fc",
+              "utterance_index": 0,
+              "text": "anything that can be announced over comms and then mostly runs itself (with just check-ins) is ideal."
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "User implies they are busy coordinating and wants low-micromanagement events that can run themselves after being announced.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers SS13 captain events that are largely self-running after a comms announcement, requiring only occasional check-ins"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers high RP (role-play) server environments",
+            "reasoning": "User explicitly states their server is 'more or less high RP' as context for event design",
+            "evidence": {
+              "session_id": "sess_1e05657118fc",
+              "utterance_index": 2,
+              "text": "the server I am playing on is more or less high RP"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-13T04:49:44+00:00",
+            "_task1GoldValue": "Prefers high RP (role-play) server environments"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_1e05657118fc:sess_1e05657118fc",
+      "relativeItemPath": "sess_1e05657118fc.json",
+      "canonicalId": "sess_1e05657118fc",
+      "sessionId": "sess_1e05657118fc",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:58:25.616Z",
+        "queryText": "I’m torn between two communities to sink time into long-term: one is very rules-and-lore-driven where people stay in character and stories build slowly, and the other is more casual/drop-in with quick wins and less continuity. Based on what you already know about how I tend to enjoy these spaces, which one am I more likely to stick with for months, and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers high RP (role-play) server environments",
+          "reasoning": "User explicitly states their server is 'more or less high RP' as context for event design",
+          "evidence": {
+            "session_id": "sess_1e05657118fc",
+            "utterance_index": 2,
+            "text": "the server I am playing on is more or less high RP"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-06-13T04:49:44+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_1e05657118fc:sess_1e05657118fc:task4",
+      "relativeItemPath": "sess_1e05657118fc.json",
+      "canonicalId": "sess_1e05657118fc:task4",
+      "sessionId": "sess_1e05657118fc",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:58:29.222Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers high RP (role-play) server environments",
+          "reasoning": "User explicitly states their server is 'more or less high RP' as context for event design",
+          "evidence": {
+            "session_id": "sess_1e05657118fc",
+            "utterance_index": 2,
+            "text": "the server I am playing on is more or less high RP"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-06-13T04:49:44+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_100:1",
+            "queryText": "I'm thinking about running a new event next round - maybe something with a bit more narrative depth than the usual drills or competitions. Which of these concepts do you think would actually land better with the crew?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Prefers high RP (role-play) server environments",
+              "reasoning": "User explicitly states their server is 'more or less high RP' as context for event design",
+              "evidence": {
+                "session_id": "sess_1e05657118fc",
+                "utterance_index": 2,
+                "text": "the server I am playing on is more or less high RP"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-06-13T04:49:44+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

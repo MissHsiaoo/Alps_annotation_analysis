@@ -1,0 +1,375 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_77606b08aa50",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_77606b08aa50:sess_77606b08aa50",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_77606b08aa50.json",
+      "canonicalId": "sess_77606b08aa50",
+      "sessionId": "sess_77606b08aa50",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T07:07:02.409Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": "interaction/style/preference",
+            "value": "Prefers concise translations (specifically requests 8-10 word versions multiple times)",
+            "reasoning": "Task-local translation preference requests without explicit long-term declaration",
+            "evidence": {
+              "session_id": "sess_77606b08aa50",
+              "utterance_index": 8,
+              "text": "how about in 8 words?"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-15T05:26:34+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "label_suggestion": "task/translation/financial",
+            "value": "Sustained focus on business/financial translation accuracy",
+            "reasoning": "Professional translation requests without explicit user attribute declaration",
+            "evidence": {
+              "session_id": "sess_77606b08aa50",
+              "utterance_index": 0,
+              "text": "please translate follow into english: 4、先正达集团2023年第一季度实现收入631.29亿元..."
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-15T05:26:34+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Handling sensitive business/financial information (mergers, tax rates, IPO plans) [ERROR: Not about the user - evidence shows translation tasks without personal context]",
+            "reasoning": "Not about the user - evidence shows translation tasks without personal context",
+            "evidence": {
+              "session_id": "sess_77606b08aa50",
+              "utterance_index": 16,
+              "text": "please translate follow into English: （1）并购与先正达集团业务密切相关的优质标的..."
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "null",
+            "updated_at": "2023-06-15T05:26:34+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_77606b08aa50:sess_77606b08aa50",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_77606b08aa50.json",
+      "canonicalId": "sess_77606b08aa50",
+      "sessionId": "sess_77606b08aa50",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T07:12:11.662Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Could you tighten this English translation so it reads like a formal prospectus sentence?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure—paste the sentence (or paragraph) you want tightened, and tell me whether you prefer US or UK spelling."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Also, what’s the difference between “synergy effects” and “synergies” in finance writing?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "In most finance/prospectus contexts, “synergies” is the standard noun (more natural and concise). “Synergy effects” is understandable but sounds more technical/translated; it can be useful when you want to emphasize measurable outcomes (e.g., “cost synergy effects”)."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "If I say “enhance customer stickiness,” is there a better phrase?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Yes—common alternatives are “increase customer retention,” “improve customer loyalty,” or “strengthen customer engagement,” depending on what you mean (repeat purchases vs. brand affinity vs. usage frequency)."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Give me two options: one conservative, one more polished."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Conservative: “increase customer retention.” Polished: “strengthen customer loyalty and engagement.”"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "By the way, I saw a headline saying a company raised rates four times in a year—does that automatically mean higher finance expenses?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Not automatically. Finance expenses tend to rise if the company has floating-rate debt, needs refinancing, or issues new debt at higher rates. If most debt is fixed-rate and long-dated, the impact can be delayed; hedges can also offset part of it."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "next time can you keep company names as “Syngenta Group” and “ADAMA” instead of using “Sunac China Holdings”? it makes my draft look inconsistent."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—I'll preserve the original company names (e.g., “Syngenta Group”, “ADAMA”) consistently, and avoid substituting them with unrelated names."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "hey, quick correction: I wasn’t asking you to handle any sensitive stuff about *my* finances or IPO plans. I just needed plain Chinese-to-English translations from a public document."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Got it. From what you shared, this is straightforward translation work from a business text, not you disclosing private financial details or asking for confidential advice."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "right—it's basically phrasing like “藏粮于地，藏粮于技” and long M&A/synergy descriptions. Nothing personal."
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "Understood—your requests were translation and wording compression, not sensitive personal business/financial information handling."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": "interaction/style/preference",
+            "value": "Prefers concise translations (specifically requests 8-10 word versions multiple times)",
+            "reasoning": "Task-local translation preference requests without explicit long-term declaration",
+            "evidence": {
+              "session_id": "sess_77606b08aa50",
+              "utterance_index": 8,
+              "text": "how about in 8 words?"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-15T05:26:34+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "label_suggestion": "task/translation/financial",
+            "value": "Sustained focus on business/financial translation accuracy",
+            "reasoning": "Professional translation requests without explicit user attribute declaration",
+            "evidence": {
+              "session_id": "sess_77606b08aa50",
+              "utterance_index": 0,
+              "text": "please translate follow into english: 4、先正达集团2023年第一季度实现收入631.29亿元..."
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-15T05:26:34+00:00"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                12
+              ],
+              "turns": [
+                {
+                  "index": 12,
+                  "role": "user",
+                  "text": "hey, quick correction: I wasn’t asking you to handle any sensitive stuff about *my* finances or IPO plans. I just needed plain Chinese-to-English translations from a public document."
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": "null",
+            "reasoning": "The old memory frames the user as involving sensitive business/financial information handling, but the dialogue clarifies the content was only translation of publicly sourced business text and not the user’s private financial/IPO details. Updated truth: translation-only request, not sensitive personal disclosure.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User’s requests were plain Chinese-to-English translations/compressions from a public business document, not disclosure of the user’s sensitive personal business/financial information."
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_77606b08aa50",
+              "utterance_index": 0,
+              "text": "next time can you keep company names as “Syngenta Group” and “ADAMA” instead of using “Sunac China Holdings”? it makes my draft look inconsistent."
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": "task/translation/preference/terminology",
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "The user requests a specific translation/terminology convention for future drafts to maintain consistency.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers translations to preserve original company names consistently (e.g., Syngenta Group, ADAMA) rather than substituting different names."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_77606b08aa50:sess_77606b08aa50",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_77606b08aa50.json",
+      "canonicalId": "sess_77606b08aa50",
+      "sessionId": "sess_77606b08aa50",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T07:13:27.978Z",
+        "queryText": "In a corporate setting, if I’m asked to draft a short public-facing summary and an internal memo from the same source material, what category of content should I be especially careful not to disclose or translate too explicitly, and why would that be risky?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "indirect",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Handling sensitive business/financial information (mergers, tax rates, IPO plans) [ERROR: Not about the user - evidence shows translation tasks without personal context]",
+          "reasoning": "Not about the user - evidence shows translation tasks without personal context",
+          "evidence": {
+            "session_id": "sess_77606b08aa50",
+            "utterance_index": 16,
+            "text": "please translate follow into English: （1）并购与先正达集团业务密切相关的优质标的..."
+          },
+          "confidence": 0.5,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "null",
+          "updated_at": "2023-06-15T05:26:34+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_77606b08aa50:sess_77606b08aa50:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_77606b08aa50.json",
+      "canonicalId": "sess_77606b08aa50:task4",
+      "sessionId": "sess_77606b08aa50",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T07:15:36.794Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "indirect",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Handling sensitive business/financial information (mergers, tax rates, IPO plans) [ERROR: Not about the user - evidence shows translation tasks without personal context]",
+          "reasoning": "Not about the user - evidence shows translation tasks without personal context",
+          "evidence": {
+            "session_id": "sess_77606b08aa50",
+            "utterance_index": 16,
+            "text": "please translate follow into English: （1）并购与先正达集团业务密切相关的优质标的..."
+          },
+          "confidence": 0.5,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "null",
+          "updated_at": "2023-06-15T05:26:34+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_318:1",
+            "queryText": "My boss is in a rush to finalize our competitive analysis on Syngenta Group. Can you quickly compile the key financial details from our recent translations - especially the Q1 2023 revenue, net profit decline reasons, and the IPO commentary - and format it into a brief for him? Just put it in a clear summary he can review immediately.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "indirect",
+              "label": "Constraints_and_Boundaries/Sensitive_Topics",
+              "label_suggestion": null,
+              "value": "Handling sensitive business/financial information (mergers, tax rates, IPO plans) [ERROR: Not about the user - evidence shows translation tasks without personal context]",
+              "reasoning": "Not about the user - evidence shows translation tasks without personal context",
+              "evidence": {
+                "session_id": "sess_77606b08aa50",
+                "utterance_index": 16,
+                "text": "please translate follow into English: （1）并购与先正达集团业务密切相关的优质标的..."
+              },
+              "confidence": 0.5,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "null",
+              "updated_at": "2023-06-15T05:26:34+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "直接相关",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

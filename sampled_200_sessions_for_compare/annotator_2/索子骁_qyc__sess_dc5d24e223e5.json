@@ -1,0 +1,316 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_dc5d24e223e5",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_dc5d24e223e5:sess_dc5d24e223e5",
+      "relativeItemPath": "sess_dc5d24e223e5.json",
+      "canonicalId": "sess_dc5d24e223e5",
+      "sessionId": "sess_dc5d24e223e5",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T11:28:59.811Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/content_preference/sports_predictions",
+            "value": "Curious about sports team predictions (J2 Best Eleven and Japan National Team)",
+            "reasoning": "User made three consecutive requests for sports team predictions, but no explicit self-report of curiosity. Could be task-local or informational need.",
+            "evidence": {
+              "session_id": "sess_dc5d24e223e5",
+              "utterance_index": 10,
+              "text": "2023 5月 日本代表 予測"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-18T06:24:18+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Exclude music in YouTube recommendations",
+            "reasoning": "User explicitly refined YouTube recommendation request to exclude music content.",
+            "evidence": {
+              "session_id": "sess_dc5d24e223e5",
+              "utterance_index": 14,
+              "text": "youtube おすすめ url 音楽除外"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-18T06:24:18+00:00"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "value": "User communicates in Japanese",
+            "confidence": 0.95,
+            "evidence_text": "テスト, おはよう, J2 ベストイレブン　予測, J2 2023 ベストイレブン　予測, 2023 5月　日本代表　予測, youtube おすすめ url, youtube おすすめ url 音楽除外"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_dc5d24e223e5:sess_dc5d24e223e5",
+      "relativeItemPath": "sess_dc5d24e223e5.json",
+      "canonicalId": "sess_dc5d24e223e5",
+      "sessionId": "sess_dc5d24e223e5",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T12:24:03.276Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "天気が悪い日に家でできる暇つぶし、なにかある？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "いくつか定番を挙げますね。\n- 10〜20分だけ部屋の片付け（タイマーをかける）\n- 映画1本は重いなら短編動画やドキュメンタリーを1本\n- 紙とペンで「やりたいこと／やらないこと」を棚卸し\n- 体を動かすならストレッチや自重トレ（5分でもOK）\n- 料理：冷蔵庫の残り物で“具だくさんスープ”にすると外れにくいです\nどれ系がいいですか？頭を使う系／ぼーっと系／体を動かす系"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "ぼーっと系。できればスマホ少なめ。"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "スマホ少なめの“ぼーっと系”ならこんなのが相性いいです。\n- 窓の外を眺めながら温かい飲み物（3分だけでも）\n- 部屋の明かりを少し落として、音だけ：雨音・環境音BGM\n- 何も考えずにできる単純作業：タオルを畳む、引き出し1段だけ整理\n- ゆっくり入浴 or 足湯（バケツでも可）\n- ぼんやり読めるもの：短いエッセイ、詩集、写真集\nちなみに“雨音”はピンクノイズに近くて、作業BGMとして使われることもあります。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "環境音ってどんなのがある？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "代表例はこんな感じです。\n- 雨音（小雨／豪雨／屋根に当たる音）\n- 波の音（砂浜／岩場）\n- 森（風、葉擦れ、鳥の声）\n- 焚き火（パチパチ音）\n- カフェ（小さな話し声、食器の音）\n- 電車（走行音）\n“カフェBGM”は2000年代後半から作業用として流行して、配信や動画でも定番ジャンルになりました。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "じゃあ雨音で。短めでいい。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "短めなら、5分だけ「雨音＋何もしない」をやってみるのが手軽です。\n1) 椅子か床で楽な姿勢\n2) 雨音を小さめに流す\n3) 呼吸を数えず、音だけ追う\n終わったらコップ1杯の水、までセットにすると切り替えやすいです。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "さっきのYouTubeおすすめ、通勤中に見る用だから「10分前後」でまとまってるやつがいい。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "了解です。通勤中に見やすいよう、10分前後で完結する（だいたい8〜12分くらい）動画を中心に、音楽以外のジャンルで選びます。興味のあるテーマ（科学、ニュース解説、ドキュメンタリー、語学など）があれば教えてください。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "youtube おすすめ url、やっぱ音楽も入れていいよ。前の「音楽除外」はその時だけ。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "了解です。では、YouTubeのおすすめURLは音楽も含めてOKですね（前回の「音楽除外」は一時的、という扱いで進めます）。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/content_preference/sports_predictions",
+            "value": "Curious about sports team predictions (J2 Best Eleven and Japan National Team)",
+            "reasoning": "User made three consecutive requests for sports team predictions, but no explicit self-report of curiosity. Could be task-local or informational need.",
+            "evidence": {
+              "session_id": "sess_dc5d24e223e5",
+              "utterance_index": 10,
+              "text": "2023 5月 日本代表 予測"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-18T06:24:18+00:00"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "neutral",
+            "reasoning": "以前はYouTubeおすすめから音楽を除外するよう求めていたが、今回ユーザーが「音楽も入れていい」「音楽除外はその時だけ」と明言し、長期的な除外方針を撤回したため。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Music can be included in YouTube recommendations; prior music exclusion was temporary"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_dc5d24e223e5",
+              "utterance_index": 0,
+              "text": "さっきのYouTubeおすすめ、通勤中に見る用だから「10分前後」でまとまってるやつがいい。"
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": "interaction/content_preference/video_length",
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "The user indicates the viewing context is during commuting and requests videos summarized to around 10 minutes, implying a preference for short-form content.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers YouTube recommendations that are around 10 minutes long (commute-friendly)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_dc5d24e223e5:sess_dc5d24e223e5",
+      "relativeItemPath": "sess_dc5d24e223e5.json",
+      "canonicalId": "sess_dc5d24e223e5",
+      "sessionId": "sess_dc5d24e223e5",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T12:24:12.331Z",
+        "queryText": "I’m tweaking my video feed settings again: if I want to keep the suggestions focused on non-audio-centric stuff (like tutorials or documentaries), what category should I explicitly filter out so the recommendations match my usual preference?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Exclude music in YouTube recommendations",
+          "reasoning": "User explicitly refined YouTube recommendation request to exclude music content.",
+          "evidence": {
+            "session_id": "sess_dc5d24e223e5",
+            "utterance_index": 14,
+            "text": "youtube おすすめ url 音楽除外"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-05-18T06:24:18+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_dc5d24e223e5:sess_dc5d24e223e5:task4",
+      "relativeItemPath": "sess_dc5d24e223e5.json",
+      "canonicalId": "sess_dc5d24e223e5:task4",
+      "sessionId": "sess_dc5d24e223e5",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T12:24:24.289Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Exclude music in YouTube recommendations",
+          "reasoning": "User explicitly refined YouTube recommendation request to exclude music content.",
+          "evidence": {
+            "session_id": "sess_dc5d24e223e5",
+            "utterance_index": 14,
+            "text": "youtube おすすめ url 音楽除外"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-05-18T06:24:18+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_291:1",
+            "queryText": "最近YouTubeで何か面白い動画ない？おすすめのURL教えて。",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Exclude music in YouTube recommendations",
+              "reasoning": "User explicitly refined YouTube recommendation request to exclude music content.",
+              "evidence": {
+                "session_id": "sess_dc5d24e223e5",
+                "utterance_index": 14,
+                "text": "youtube おすすめ url 音楽除外"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-05-18T06:24:18+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "highly matched and necessary to generate personalized response",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

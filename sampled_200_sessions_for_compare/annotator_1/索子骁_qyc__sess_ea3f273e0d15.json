@@ -1,0 +1,293 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_ea3f273e0d15",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_ea3f273e0d15:sess_ea3f273e0d15",
+      "relativeItemPath": "sess_ea3f273e0d15.json",
+      "canonicalId": "sess_ea3f273e0d15",
+      "sessionId": "sess_ea3f273e0d15",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T01:38:16.958Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers structured recipe content generation with explicit 'ingredientes e modo de fazer' formatting",
+            "reasoning": "User repeatedly initiates recipe expansion commands with identical formatting requirements across 3 separate requests (utterances 0/4/8), indicating a stable output preference pattern.",
+            "evidence": {
+              "session_id": "sess_ea3f273e0d15",
+              "utterance_index": 0,
+              "text": "adicionar ingredientes e modo de fazer nessas receitas\n01. **Wrap de Frango Integral..."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-03-15T03:59:18+00:00"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "value": "User communicates in Portuguese",
+            "confidence": 0.95,
+            "evidence_text": "adicionar ingredientes e modo de fazer nessas receitas"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_ea3f273e0d15:sess_ea3f273e0d15",
+      "relativeItemPath": "sess_ea3f273e0d15.json",
+      "canonicalId": "sess_ea3f273e0d15",
+      "sessionId": "sess_ea3f273e0d15",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:35:09.220Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Antes de seguir, dá para trocar a ordem e agrupar as receitas por tipo (sopas, saladas, wraps)?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sim. Posso reorganizar tudo em três blocos (Sopas, Saladas, Wraps) e manter em cada item: ingredientes + modo de fazer. Quer que eu preserve a numeração original (ex.: 21–31) ou prefere renumerar dentro de cada bloco?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Preserva a numeração original."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Perfeito. Vou agrupar mantendo a numeração. Observação rápida: em listas longas, vale padronizar medidas (xícara/colher/gramas) para evitar inconsistência; se quiser, eu também padronizo tudo ao final.\n\nSOPAS\n- 24. Sopa de Lentilhas com Espinafre e Tomate\n- 27. Sopa de Abóbora e Cenoura com Gengibre\n- 30. Sopa de Batata-Doce com Curry\n\nSALADAS\n- 23. Salada de Quinoa com Abóbora e Nozes\n- 26. Salada de Grão-de-Bico com Pimentão\n- 29. Salada de Lentilhas com Abacate e Coentro\n\nWRAPS\n- 21. Creme de Brócolis com Queijo (fica como “creme/sopa”; se preferir, movo para Sopas)\n- 22. Wrap de Falafel com Molho Tahine\n- 25. Wrap de Frango com Abacate e Molho de Iogurte\n- 28. Wrap de Legumes Grelhados com Pesto\n- 31. Wrap de Falafel com Molho de Iogurte\n\nQuer que eu continue a partir do bloco “Sopas” (24/27/30) primeiro?"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Pode começar pelas sopas."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Combinado. (Curiosidade geral: o curry em pó não é uma única especiaria; costuma ser uma mistura que pode levar cúrcuma, coentro, cominho e outras, variando bastante por região.)\n\n### 24. Sopa de Lentilhas com Espinafre e Tomate\n**Ingredientes:**\n- 1 xícara de lentilhas (vermelhas ou marrons), lavadas\n- 1 cebola média picada\n- 2 dentes de alho picados\n- 1 lata (ou 2 xícaras) de tomate em cubos\n- 4 xícaras de caldo de legumes\n- 2 xícaras de espinafre\n- 1 colher (chá) de cominho\n- Azeite, sal e pimenta\n\n**Modo de fazer:**\n1. Refogue cebola e alho no azeite até murchar.\n2. Junte lentilhas, tomate, cominho e caldo; cozinhe até a lentilha ficar macia.\n3. Adicione o espinafre no fim e cozinhe só até murchar.\n4. Ajuste sal e pimenta e sirva.\n\n### 27. Sopa de Abóbora e Cenoura com Gengibre\n**Ingredientes (exemplo):**\n- 500 g de abóbora em cubos\n- 2 cenouras em rodelas\n- 1 cebola picada\n- 1 dente de alho (opcional)\n- 1 pedaço pequeno de gengibre ralado\n- 4 xícaras de caldo de legumes\n- Azeite, sal e pimenta\n\n**Modo de fazer:**\n1. Refogue cebola (e alho) no azeite.\n2. Acrescente abóbora, cenoura e gengibre; mexa por 2–3 min.\n3. Adicione o caldo e cozinhe até tudo ficar bem macio.\n4. Bata com mixer/liquidificador e ajuste o tempero.\n\n### 30. Sopa de Batata-Doce com Curry\n**Ingredientes (exemplo):**\n- 2 batatas-doces médias em cubos\n- 1 cebola picada\n- 1 colher (chá) de curry\n- 4 xícaras de caldo de legumes\n- 1/2 xícara de leite de coco (opcional)\n- Azeite, sal e pimenta\n\n**Modo de fazer:**\n1. Refogue a cebola no azeite.\n2. Some o curry e mexa por 30 segundos para perfumar.\n3. Junte batata-doce e caldo; cozinhe até amaciar.\n4. Bata, volte à panela e, se quiser, finalize com leite de coco.\n\nSe quiser, eu continuo com as saladas (23/26/29) na mesma formatação."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "assistant",
+            "text": "Perfeito — antes de eu seguir com as receitas 26 a 31 no mesmo padrão, você quer que eu mantenha as medidas em “xícaras/colheres” como nas anteriores ou prefere que eu converta tudo para gramas e mililitros?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "user",
+            "text": "Converte pra gramas e ml, por favor."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Antes de continuar: não precisa mais separar em \"Ingredientes\" e \"Modo de fazer\". Pode mandar tudo em texto corrido, sem títulos, tipo um parágrafo por receita."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Perfeito. A partir de agora eu escrevo cada receita em texto corrido, sem os títulos \"Ingredientes\" e \"Modo de fazer\", mantendo só um parágrafo por receita."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Isso, e sem listas com marcadores também; só frases mesmo."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Combinado: sem marcadores e sem seções fixas; vou descrever ingredientes e preparo juntos, em frases, num único parágrafo por receita."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.83,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "A memória anterior diz que o usuário prefere o formato estruturado com títulos explícitos \"ingredientes\" e \"modo de fazer\". No trecho novo, o usuário pede explicitamente o oposto: não separar nesses títulos e escrever em texto corrido. Portanto, a preferência atualizada é por receitas em parágrafo, sem seções fixas.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers recipe content in plain text paragraphs without separating into explicit \"Ingredientes\" and \"Modo de fazer\" sections"
+          },
+          {
+            "confidence": 0.82,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_ea3f273e0d15",
+              "utterance_index": 1,
+              "text": "Converte pra gramas e ml, por favor."
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "The user requests converting measures to 'gramas e ml', indicating a stable formatting preference for metric units in recipes.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers recipe ingredient quantities converted to grams and milliliters rather than cups/spoons."
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "value": "User communicates in Portuguese",
+            "confidence": 0.95,
+            "evidence_text": "adicionar ingredientes e modo de fazer nessas receitas",
+            "_task1GoldValue": "User communicates in Portuguese"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "claude_sonnet_4_5_20250929_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_ea3f273e0d15:sess_ea3f273e0d15",
+      "relativeItemPath": "sess_ea3f273e0d15.json",
+      "canonicalId": "sess_ea3f273e0d15",
+      "sessionId": "sess_ea3f273e0d15",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:03:08.028Z",
+        "queryText": "I’m sending you a batch of dish ideas I scribbled down, and I want to turn each one into something I can actually cook. What exact section headers and overall structure should you use when you expand them so it matches the format I consistently ask for?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers structured recipe content generation with explicit 'ingredientes e modo de fazer' formatting",
+          "reasoning": "User repeatedly initiates recipe expansion commands with identical formatting requirements across 3 separate requests (utterances 0/4/8), indicating a stable output preference pattern.",
+          "evidence": {
+            "session_id": "sess_ea3f273e0d15",
+            "utterance_index": 0,
+            "text": "adicionar ingredientes e modo de fazer nessas receitas\n01. **Wrap de Frango Integral..."
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-03-15T03:59:18+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_ea3f273e0d15:sess_ea3f273e0d15:task4",
+      "relativeItemPath": "sess_ea3f273e0d15.json",
+      "canonicalId": "sess_ea3f273e0d15:task4",
+      "sessionId": "sess_ea3f273e0d15",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T01:51:50.308Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers structured recipe content generation with explicit 'ingredientes e modo de fazer' formatting",
+          "reasoning": "User repeatedly initiates recipe expansion commands with identical formatting requirements across 3 separate requests (utterances 0/4/8), indicating a stable output preference pattern.",
+          "evidence": {
+            "session_id": "sess_ea3f273e0d15",
+            "utterance_index": 0,
+            "text": "adicionar ingredientes e modo de fazer nessas receitas\n01. **Wrap de Frango Integral..."
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-03-15T03:59:18+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1056:1",
+            "queryText": "Tenho uma lista de receitas novas aqui e quero que você me ajude a organizar elas da melhor forma. Pode dar uma olhada e me dizer como você faria?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers structured recipe content generation with explicit 'ingredientes e modo de fazer' formatting",
+              "reasoning": "User repeatedly initiates recipe expansion commands with identical formatting requirements across 3 separate requests (utterances 0/4/8), indicating a stable output preference pattern.",
+              "evidence": {
+                "session_id": "sess_ea3f273e0d15",
+                "utterance_index": 0,
+                "text": "adicionar ingredientes e modo de fazer nessas receitas\n01. **Wrap de Frango Integral..."
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2024-03-15T03:59:18+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

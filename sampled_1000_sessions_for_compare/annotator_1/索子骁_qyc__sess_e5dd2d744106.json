@@ -1,0 +1,453 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_e5dd2d744106",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_e5dd2d744106:sess_e5dd2d744106",
+      "relativeItemPath": "sess_e5dd2d744106.json",
+      "canonicalId": "sess_e5dd2d744106",
+      "sessionId": "sess_e5dd2d744106",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T00:05:31.625Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "First-year medical student and MCAT tutor with 2 years of experience",
+            "reasoning": "User explicitly states their occupation and tutoring experience.",
+            "evidence": {
+              "session_id": "sess_e5dd2d744106",
+              "utterance_index": 10,
+              "text": "Hello! My name is Alia, and I am a first-year medical student with 2 years of experience tutoring for the MCAT."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-19T23:48:04+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Originally from Washington",
+            "reasoning": "User explicitly states their origin location.",
+            "evidence": {
+              "session_id": "sess_e5dd2d744106",
+              "utterance_index": 22,
+              "text": "I am originally from washington."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-19T23:48:04+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Hobbies/Recreation",
+            "value": "Enjoys hiking, exploring historical sites, and doing henna",
+            "reasoning": "User explicitly lists their hobbies.",
+            "evidence": {
+              "session_id": "sess_e5dd2d744106",
+              "utterance_index": 22,
+              "text": "In my free time I enjoy hiking, exploring historical sites, and doing henna"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-19T23:48:04+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Values/Advocacy",
+            "value": "Passionate about health equity and medical education",
+            "reasoning": "User explicitly states their advocacy focus.",
+            "evidence": {
+              "session_id": "sess_e5dd2d744106",
+              "utterance_index": 22,
+              "text": "passionate about health equity and medical education"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-19T23:48:04+00:00"
+          },
+          {
+            "memory_id": "gpt_4_1_mini_again_p1",
+            "type": "direct",
+            "label": "Preferences/Interactions_Preferences",
+            "value": "I focus on helping students solve problems and review their exams, adapting to individual learning styles with personalized study plans.",
+            "confidence": 0.95,
+            "evidence_text": "Focus on helping students solve problems and review their exams"
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "direct",
+            "label": "States_Experiences/Past_Experience",
+            "value": "Scored 527 on the MCAT.",
+            "confidence": 0.95,
+            "evidence_text": "Hello! My name is Alia, and I am a first-year medical student with 2 years of experience tutoring for the MCAT. I personally scored a 527 on the MCAT by focusing on developing efficient test taking and passage analysis strategies. Whether you are struggling with a particular concept, or need help with test-taking strategies and understanding AAMC logic, I’m here to help! Together, we can help you achieve the MCAT score of your dreams."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_e5dd2d744106:sess_e5dd2d744106",
+      "relativeItemPath": "sess_e5dd2d744106.json",
+      "canonicalId": "sess_e5dd2d744106",
+      "sessionId": "sess_e5dd2d744106",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:09:14.901Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Can you reformat a 4-week running plan into a simple table with columns for Day, Workout, and Miles?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes. Paste the plan text (or tell me the weekly structure), and I’ll convert it into a clean table with Day, Workout, and Miles. If there are cross-training days, should I list them as 0 miles or leave the Miles cell blank?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Also, what does it mean when a plan says “easy pace” versus “steady pace”?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "“Easy pace” is a conversational effort—breathing is controlled and you could speak in full sentences (roughly RPE 3–4/10). “Steady pace” is a moderate, more focused effort—still sustainable, but conversation is shorter phrases (roughly RPE 5–6/10). Neither should feel like an all-out hard workout."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "If a workout says 3x1 mile at goal pace, what should the rest be?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Common options are: (1) 2–3 minutes easy jog, (2) 2–3 minutes walk, or (3) 400m easy jog. Use shorter rest if you can hold consistent splits; longer rest if goal pace is challenging. As a general rule, keep the recoveries easy enough that the next rep starts controlled, not gasping."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Random question: is the London Marathon course considered fast?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Yes—London is generally considered a fast course because it’s relatively flat, near sea level, and often has cool spring weather. Like any race, wind and temperature on the day matter a lot, but historically it’s produced many quick times."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Ok—back to the plan. Can you include a weekly total row at the bottom of each week?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Absolutely. Once you paste the plan, I’ll format it week-by-week in tables and add a “Weekly Total” row at the bottom of each week that sums the miles (with cross-training counted as 0 unless you prefer a separate column)."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Can you tweak that week-by-week running plan so my long run lands on Saturday? Sundays are basically blocked off for me."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Absolutely—I'll shift the schedule so the longest run is on Saturdays and keep Sunday as a rest/recovery day. Do you want the weekday runs earlier in the week (Mon–Wed) or spread out (Mon/Wed/Fri) to help you recover between sessions?"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Quick correction for that bio detail: I’m actually originally from Oregon, not Washington. Can you swap that line so it reads correctly?"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Absolutely—good catch. I’ll update it to: “Originally from Oregon, I’ve always been driven to help others, and I believe in giving back to my community in any way that I can.”"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "First-year medical student and MCAT tutor with 2 years of experience",
+            "reasoning": "User explicitly states their occupation and tutoring experience.",
+            "evidence": {
+              "session_id": "sess_e5dd2d744106",
+              "utterance_index": 10,
+              "text": "Hello! My name is Alia, and I am a first-year medical student with 2 years of experience tutoring for the MCAT."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-19T23:48:04+00:00",
+            "_task1GoldValue": "First-year medical student and MCAT tutor with 2 years of experience"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Hobbies/Recreation",
+            "value": "Enjoys hiking, exploring historical sites, and doing henna",
+            "reasoning": "User explicitly lists their hobbies.",
+            "evidence": {
+              "session_id": "sess_e5dd2d744106",
+              "utterance_index": 22,
+              "text": "In my free time I enjoy hiking, exploring historical sites, and doing henna"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-19T23:48:04+00:00",
+            "_task1GoldValue": "Enjoys hiking, exploring historical sites, and doing henna"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Values/Advocacy",
+            "value": "Passionate about health equity and medical education",
+            "reasoning": "User explicitly states their advocacy focus.",
+            "evidence": {
+              "session_id": "sess_e5dd2d744106",
+              "utterance_index": 22,
+              "text": "passionate about health equity and medical education"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-19T23:48:04+00:00",
+            "_task1GoldValue": "Passionate about health equity and medical education"
+          },
+          {
+            "memory_id": "m5",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Focuses on problem-solving and exam review in tutoring",
+            "reasoning": "User explicitly emphasizes this tutoring approach.",
+            "evidence": {
+              "session_id": "sess_e5dd2d744106",
+              "utterance_index": 4,
+              "text": "Focus on helping students solve problems and review their exams"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-19T23:48:04+00:00"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": null,
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory says the user is originally from Washington, but the user explicitly corrects this, stating they are actually originally from Oregon. Therefore, the updated truth is that the user is originally from Oregon.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Originally from Oregon"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_e5dd2d744106",
+              "utterance_index": 0,
+              "text": "Can you tweak that week-by-week running plan so my long run lands on Saturday? Sundays are basically blocked off for me."
+            },
+            "label": "Preferences/Scheduling",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "The user asks to move the long run to Saturday and says Sundays are blocked off, implying a scheduling preference to avoid Sunday workouts.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers Sunday to be kept free (blocked off) and wants long runs on Saturday."
+          },
+          {
+            "memory_id": "gpt_4_1_mini_again_p1",
+            "type": "direct",
+            "label": "Preferences/Interactions_Preferences",
+            "value": "I focus on helping students solve problems and review their exams, adapting to individual learning styles with personalized study plans.",
+            "confidence": 0.95,
+            "evidence_text": "Focus on helping students solve problems and review their exams",
+            "_task1GoldValue": "I focus on helping students solve problems and review their exams, adapting to individual learning styles with personalized study plans."
+          },
+          {
+            "memory_id": "deepseek_reasoner_p1",
+            "type": "direct",
+            "label": "States_Experiences/Past_Experience",
+            "value": "Scored 527 on the MCAT.",
+            "confidence": 0.95,
+            "evidence_text": "Hello! My name is Alia, and I am a first-year medical student with 2 years of experience tutoring for the MCAT. I personally scored a 527 on the MCAT by focusing on developing efficient test taking and passage analysis strategies. Whether you are struggling with a particular concept, or need help with test-taking strategies and understanding AAMC logic, I’m here to help! Together, we can help you achieve the MCAT score of your dreams.",
+            "_task1GoldValue": "Scored 527 on the MCAT."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4",
+          "gpt_4_1_mini_again_p1",
+          "deepseek_reasoner_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_e5dd2d744106:sess_e5dd2d744106",
+      "relativeItemPath": "sess_e5dd2d744106.json",
+      "canonicalId": "sess_e5dd2d744106",
+      "sessionId": "sess_e5dd2d744106",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:00:07.485Z",
+        "queryText": "I’m filling out a profile form that asks for my “hometown/where I’m originally from,” and I want it to match what I’ve told you before rather than where I live now—what should I put down?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Personal_Background/Location",
+          "label_suggestion": null,
+          "value": "Originally from Washington",
+          "reasoning": "User explicitly states their origin location.",
+          "evidence": {
+            "session_id": "sess_e5dd2d744106",
+            "utterance_index": 22,
+            "text": "I am originally from washington."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-19T23:48:04+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_e5dd2d744106:sess_e5dd2d744106:task4",
+      "relativeItemPath": "sess_e5dd2d744106.json",
+      "canonicalId": "sess_e5dd2d744106:task4",
+      "sessionId": "sess_e5dd2d744106",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T01:38:39.850Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "UNMAPPED",
+          "label_suggestion": "Hobbies/Recreation",
+          "value": "Enjoys hiking, exploring historical sites, and doing henna",
+          "reasoning": "User explicitly lists their hobbies.",
+          "evidence": {
+            "session_id": "sess_e5dd2d744106",
+            "utterance_index": 22,
+            "text": "In my free time I enjoy hiking, exploring historical sites, and doing henna"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-06-19T23:48:04+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_188:1",
+            "queryText": "I'm planning a weekend trip to Seattle next month and want to explore some lesser-known historical sites. Can you suggest some hidden gems that locals would know about?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "UNMAPPED",
+              "label_suggestion": "Hobbies/Recreation",
+              "value": "Enjoys hiking, exploring historical sites, and doing henna",
+              "reasoning": "User explicitly lists their hobbies.",
+              "evidence": {
+                "session_id": "sess_e5dd2d744106",
+                "utterance_index": 22,
+                "text": "In my free time I enjoy hiking, exploring historical sites, and doing henna"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-06-19T23:48:04+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_da140329fdbd",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_da140329fdbd:sess_da140329fdbd",
+      "relativeItemPath": "sess_da140329fdbd.json",
+      "canonicalId": "sess_da140329fdbd",
+      "sessionId": "sess_da140329fdbd",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T09:37:07.854Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "44-year-old single man interested in marriage and starting a family",
+            "reasoning": "User explicitly states being a 44-year-old single man seeking marriage/family.",
+            "evidence": {
+              "session_id": "sess_da140329fdbd",
+              "utterance_index": 42,
+              "text": "הנני רווק בן 44. אני מעוניין בנישואים ומשפחה. האם יש לי סיכוי להתחתן ולהקים משפחה ?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-28T13:58:24+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about IQ improvement strategies and measurement methods",
+            "reasoning": "Multiple follow-up questions about increasing IQ, IQ scores, and measurement methods indicate sustained curiosity.",
+            "evidence": {
+              "session_id": "sess_da140329fdbd",
+              "utterance_index": 10,
+              "text": "How can I increase my IQ ?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-28T13:58:24+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about dental procedures (tooth alignment) for middle-aged adults",
+            "reasoning": "Repeated inquiries about tooth alignment recommendations for 44-year-old men, including follow-up in Hebrew.",
+            "evidence": {
+              "session_id": "sess_da140329fdbd",
+              "utterance_index": 16,
+              "text": "Is it recommeneted for 44 years old men to have  tooth alignment ?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-28T13:58:24+00:00"
+          },
+          {
+            "memory_id": "gpt_5_2_p1",
+            "type": "direct",
+            "label": "States_Experiences/Physical_State",
+            "value": "User has gum recession.",
+            "confidence": 0.95,
+            "evidence_text": "האם מומלץ לבצע יישור שיניים למרות שיש לי נסיגת חניכיים ?"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "User is curious about pregnancy chances for 40-year-old women",
+            "confidence": 0.8,
+            "evidence_text": "What are the chances that 40 years old women get birth for the first time ? ... What are the chances that 40 years old women get pregnant for the first time ?"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_da140329fdbd:sess_da140329fdbd",
+      "relativeItemPath": "sess_da140329fdbd.json",
+      "canonicalId": "sess_da140329fdbd",
+      "sessionId": "sess_da140329fdbd",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T09:47:36.386Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Hey, quick question: what’s the difference between a panoramic dental X‑ray and a CBCT scan?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "A panoramic X‑ray (OPG) is a 2D image that captures the full mouth in one sweep—teeth, jawbones, and surrounding structures. CBCT (cone-beam CT) is a 3D scan that shows much more detail and depth, useful for things like implant planning, impacted teeth, complex root anatomy, or evaluating the jaw joint/sinuses. CBCT typically involves more radiation than a panoramic X‑ray, though doses vary a lot by machine and settings."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "So when would a dentist pick one over the other?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Usually panoramic is the first-line “overview” image (general screening, wisdom teeth position, orthodontic overview). CBCT is chosen when 3D detail changes decisions—e.g., exact nerve canal location before lower implants, assessing bone volume, locating a resorbed root, or planning surgical extractions. Many guidelines recommend using CBCT only when it’s expected to affect diagnosis or treatment plan, because it’s more imaging than a standard X‑ray."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Is the radiation from a panoramic X‑ray something to worry about?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "For most people, a single panoramic X‑ray is considered low dose and not something to worry about on its own. Clinics also use shielding and dose-optimized settings. The bigger consideration is avoiding unnecessary repeat imaging—so it’s best done when there’s a clear clinical reason."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Random: I heard some airports are switching to CT scanners for carry-ons—kinda like CBCT?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Conceptually similar idea (tomographic imaging), but airport baggage CT uses different hardware and energy levels and is designed for objects, not people. It creates 3D reconstructions of luggage contents to spot threats. It’s closer to medical CT than CBCT in principle, but the applications and technical constraints are quite different."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "תוכל לענות לי בעברית? יותר נוח לי ככה."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "בטח—אשמח לענות בעברית. על מה תרצה לשאול או להתייעץ?"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "דרך אגב, תיקון קטן למה שכתבתי קודם—אני לא בן 44 ולא רווק. אני בן 34 ונשוי כבר כמה שנים."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "הבנתי—תודה על ההבהרה. אז אתה בן 34 ונשוי, ולא בן 44 ורווק כמו שנכתב קודם."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "כן, בדיוק. פשוט התבלבלתי בניסוח קודם."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about IQ improvement strategies and measurement methods",
+            "reasoning": "Multiple follow-up questions about increasing IQ, IQ scores, and measurement methods indicate sustained curiosity.",
+            "evidence": {
+              "session_id": "sess_da140329fdbd",
+              "utterance_index": 10,
+              "text": "How can I increase my IQ ?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-28T13:58:24+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about dental procedures (tooth alignment) for middle-aged adults",
+            "reasoning": "Repeated inquiries about tooth alignment recommendations for 44-year-old men, including follow-up in Hebrew.",
+            "evidence": {
+              "session_id": "sess_da140329fdbd",
+              "utterance_index": 16,
+              "text": "Is it recommeneted for 44 years old men to have  tooth alignment ?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-28T13:58:24+00:00"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": null,
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "הזיכרון הקודם טען שהמשתמש בן 44 ורווק ומעוניין בנישואים/משפחה. כאן המשתמש מתקן במפורש שהוא לא בן 44 ולא רווק, אלא בן 34 ונשוי כבר כמה שנים—ולכן יש לעדכן את זהות/רקע אישי בהתאם.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "34-year-old married man"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_da140329fdbd",
+              "utterance_index": 0,
+              "text": "תוכל לענות לי בעברית? יותר נוח לי ככה."
+            },
+            "label": "Preferences/Communication",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "prefers Hebrew responses",
+            "reasoning": "The user asks the assistant to respond in Hebrew and says it is more comfortable, implying a language preference for communication.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers communicating in Hebrew"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_da140329fdbd:sess_da140329fdbd",
+      "relativeItemPath": "sess_da140329fdbd.json",
+      "canonicalId": "sess_da140329fdbd",
+      "sessionId": "sess_da140329fdbd",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T09:47:44.764Z",
+        "queryText": "I’m updating a profile and there’s a section asking whether I’m looking for something casual or a long-term partnership with the goal of building a household—based on what you know about my situation, which option should I choose and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Identity",
+          "label_suggestion": null,
+          "value": "44-year-old single man interested in marriage and starting a family",
+          "reasoning": "User explicitly states being a 44-year-old single man seeking marriage/family.",
+          "evidence": {
+            "session_id": "sess_da140329fdbd",
+            "utterance_index": 42,
+            "text": "הנני רווק בן 44. אני מעוניין בנישואים ומשפחה. האם יש לי סיכוי להתחתן ולהקים משפחה ?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-04-28T13:58:24+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_da140329fdbd:sess_da140329fdbd:task4",
+      "relativeItemPath": "sess_da140329fdbd.json",
+      "canonicalId": "sess_da140329fdbd:task4",
+      "sessionId": "sess_da140329fdbd",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T09:48:03.261Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Identity",
+          "label_suggestion": null,
+          "value": "44-year-old single man interested in marriage and starting a family",
+          "reasoning": "User explicitly states being a 44-year-old single man seeking marriage/family.",
+          "evidence": {
+            "session_id": "sess_da140329fdbd",
+            "utterance_index": 42,
+            "text": "הנני רווק בן 44. אני מעוניין בנישואים ומשפחה. האם יש לי סיכוי להתחתן ולהקים משפחה ?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-04-28T13:58:24+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_121:1",
+            "queryText": "אני שוקל להצטרף לאתר הכרויות אבל לא יודע איך להציג את עצמי. איך כדאי לכתוב פרופיל שימשוך נשים בגילאי 35-45 שמחפשות גם משפחה?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Identity",
+              "label_suggestion": null,
+              "value": "44-year-old single man interested in marriage and starting a family",
+              "reasoning": "User explicitly states being a 44-year-old single man seeking marriage/family.",
+              "evidence": {
+                "session_id": "sess_da140329fdbd",
+                "utterance_index": 42,
+                "text": "הנני רווק בן 44. אני מעוניין בנישואים ומשפחה. האם יש לי סיכוי להתחתן ולהקים משפחה ?"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-04-28T13:58:24+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "relevant and necessary to generate personalized response",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

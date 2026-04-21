@@ -1,0 +1,295 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_477b05277652",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_477b05277652:sess_477b05277652",
+      "relativeItemPath": "sess_477b05277652.json",
+      "canonicalId": "sess_477b05277652",
+      "sessionId": "sess_477b05277652",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T12:21:09.976Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers to offer meetings when technical explanations are complex",
+            "reasoning": "User repeatedly apologizes for complexity and offers meetings for clarification across multiple turns.",
+            "evidence": {
+              "session_id": "sess_477b05277652",
+              "utterance_index": 2,
+              "text": "Disculpad la complejidad en la explicación, si algo no se ha entendido, por favor, hacédnoslo saber y organizamos una reunión."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-03-13T20:27:43+00:00"
+          },
+          {
+            "memory_id": "new-memory-2",
+            "type": "direct",
+            "label": "Social_Relationships/Colleagues",
+            "label_suggestion": null,
+            "value": "The user works with individuals named Alvaro and Sergio.",
+            "reasoning": "",
+            "evidence": null,
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-04-11T12:20:46.806Z"
+          },
+          {
+            "memory_id": "new-memory-3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "User prefers formal, polite, and clear professional communication in Spanish, often requesting clarification offers and meetings in case of misunderstandings.",
+            "reasoning": "",
+            "evidence": null,
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-04-11T12:21:02.900Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_477b05277652:sess_477b05277652",
+      "relativeItemPath": "sess_477b05277652.json",
+      "canonicalId": "sess_477b05277652",
+      "sessionId": "sess_477b05277652",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T09:34:32.515Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "¿Me ayudas a pulir este texto para un correo? «Hola, te escribo para confirmar que el cambio ya está aplicado. Si necesitas que lo revisemos juntos, lo vemos en una llamada.»"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Claro. Aquí tienes una versión más formal y fluida:\n\n\"Hola, \n\nTe escribo para confirmar que el cambio ya está aplicado. Si lo consideras oportuno, podemos revisarlo juntos en una llamada para asegurarnos de que todo queda correctamente validado.\n\nQuedo atento/a. \nUn saludo,\""
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "¿Puedes hacerla un poco más breve y directa?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Por supuesto:\n\n\"Hola,\n\nConfirmo que el cambio ya está aplicado. Si hace falta, lo revisamos en una llamada.\n\nUn saludo,\""
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Gracias. Por cierto, el otro día leí que reabrir el Canal de Panamá costó una fortuna, ¿eso es cierto?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Depende de a qué te refieras con “reabrir”. El Canal de Panamá no se “reabrió” como tal recientemente, pero sí ha tenido ampliaciones y obras importantes. La ampliación inaugurada en 2016 (el proyecto del “tercer juego de esclusas”) tuvo un coste de varios miles de millones de dólares, y además existen gastos recurrentes de mantenimiento y modernización. Si me dices qué noticia viste o en qué contexto lo mencionaban, te lo acoto mejor."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Buenas, para el seguimiento de hoy: he dejado el correo para mañana a primera hora porque ahora estoy terminando de preparar las capturas y el diff de los cambios de FE y ML; mientras tanto, si queréis podéis ir validando ya con lo que está en STG, y en cuanto lo tenga os lo adjunto."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Perfecto. Entendido: avanzáis con las evidencias (capturas y diff) y el correo saldrá mañana a primera hora. Por nuestra parte, podemos ir iniciando la validación en STG y, cuando compartas los adjuntos, contrastamos que todo cuadre con los cambios de FE y ML."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Ojo con esto: en estos correos no quiero proponer reuniones. Si algo no se entiende, prefiero que lo pregunten por mail y lo aclaramos por escrito."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Entendido. Entonces, en lugar de ofrecer organizar una reunión, dejamos indicado que cualquier duda nos la trasladen por correo y la resolvemos por escrito."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Exacto: nada de \"organizamos una reunión\". Mejor \"si hay alguna duda, comentadla por correo y lo revisamos\"."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "La memoria anterior indicaba que el usuario prefiere ofrecer reuniones cuando la explicación es compleja, pero el usuario aclara explícitamente que no quiere proponer reuniones y que prefiere resolver dudas por correo por escrito.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers to avoid proposing meetings in emails and instead clarify questions in writing via email"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_477b05277652",
+              "utterance_index": 0,
+              "text": "ahora estoy terminando de preparar las capturas y el diff de los cambios de FE y ML"
+            },
+            "label": "Work/Process",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user implies they are compiling validation evidence (captures and diff) related to FE/ML changes prior to emailing them.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User prepares evidence artifacts (screenshots and a diff) to document FE and ML changes before sending an email update."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_477b05277652:sess_477b05277652",
+      "relativeItemPath": "sess_477b05277652.json",
+      "canonicalId": "sess_477b05277652",
+      "sessionId": "sess_477b05277652",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-13T13:12:45.237Z",
+        "queryText": "I’m about to send a pretty dense technical write‑up to a mixed audience, and I’m worried parts of it might not land. Based on how I usually handle situations like this, what follow‑up option should I propose to make sure everyone gets it?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers to offer meetings when technical explanations are complex",
+          "reasoning": "User repeatedly apologizes for complexity and offers meetings for clarification across multiple turns.",
+          "evidence": {
+            "session_id": "sess_477b05277652",
+            "utterance_index": 2,
+            "text": "Disculpad la complejidad en la explicación, si algo no se ha entendido, por favor, hacédnoslo saber y organizamos una reunión."
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-03-13T20:27:43+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_477b05277652:sess_477b05277652:task4",
+      "relativeItemPath": "sess_477b05277652.json",
+      "canonicalId": "sess_477b05277652:task4",
+      "sessionId": "sess_477b05277652",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T03:47:48.566Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers to offer meetings when technical explanations are complex",
+          "reasoning": "User repeatedly apologizes for complexity and offers meetings for clarification across multiple turns.",
+          "evidence": {
+            "session_id": "sess_477b05277652",
+            "utterance_index": 2,
+            "text": "Disculpad la complejidad en la explicación, si algo no se ha entendido, por favor, hacédnoslo saber y organizamos una reunión."
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-03-13T20:27:43+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1145:1",
+            "queryText": "Necesito redactar una respuesta para el equipo de arquitectura sobre la migración de los microservicios. La explicación sobre las dependencias entre capas y los nuevos endpoints es bastante técnica. ¿Cómo crees que debería estructurar la comunicación?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers to offer meetings when technical explanations are complex",
+              "reasoning": "User repeatedly apologizes for complexity and offers meetings for clarification across multiple turns.",
+              "evidence": {
+                "session_id": "sess_477b05277652",
+                "utterance_index": 2,
+                "text": "Disculpad la complejidad en la explicación, si algo no se ha entendido, por favor, hacédnoslo saber y organizamos una reunión."
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2024-03-13T20:27:43+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

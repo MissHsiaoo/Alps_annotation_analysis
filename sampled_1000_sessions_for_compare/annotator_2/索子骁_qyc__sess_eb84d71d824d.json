@@ -1,0 +1,436 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_eb84d71d824d",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_eb84d71d824d:sess_eb84d71d824d",
+      "relativeItemPath": "sess_eb84d71d824d.json",
+      "canonicalId": "sess_eb84d71d824d",
+      "sessionId": "sess_eb84d71d824d",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:00:37.836Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Avoid references to Jimmy Savile and Stuart Hall in creative works",
+            "reasoning": "User explicitly states avoiding Saville 'for reasons' and expresses concern about Stuart Hall",
+            "evidence": {
+              "session_id": "sess_eb84d71d824d",
+              "utterance_index": 6,
+              "text": "Let's avoid Saville (for reasons)..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-12-03T19:55:13+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Creative_Interests/Historical_Satire",
+            "value": "Sustained interest in creating satirical historical fiction blending real events (e.g. Dreadnought hoax) with naval comedy",
+            "reasoning": "Indirect pattern of integrating historical references, but label 'Thoughts/Curiosity' forced taxonomy",
+            "evidence": {
+              "session_id": "sess_eb84d71d824d",
+              "utterance_index": 50,
+              "text": "Hmh. Maybe you could have a careful nod to the Dreadnought hoax?"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-03T19:55:13+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers technical accuracy in historical TV production details (e.g. episode durations)",
+            "reasoning": "Explicit correction about Doctor Who episode length conventions",
+            "evidence": {
+              "session_id": "sess_eb84d71d824d",
+              "utterance_index": 4,
+              "text": "A'Doctor Who epsiode was 25 mins (It didn't do 45 mins until the mid 1980's..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-12-03T19:55:13+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Creative_Interests/Actor_References",
+            "value": "Interest in cross-role actor references/nostalgia (e.g. Jon Pertwee's Doctor Who connections)",
+            "reasoning": "Forced label - indirect interest in meta-humor but not general curiosity",
+            "evidence": {
+              "session_id": "sess_eb84d71d824d",
+              "utterance_index": 37,
+              "text": "CPO Pertwee might quip about not wanting to chase maggots around a slate heap..."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-03T19:55:13+00:00"
+          },
+          {
+            "memory_id": "gpt_5_2_p1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "Interested in creating plausible late-1970s/1980s BBC (TV and radio) schedules and Radio Times-style teaser listings, including realistic running times and period-appropriate tone.",
+            "confidence": 0.8,
+            "evidence_text": "Using period appropriate language , wiritng style and hints as to what might be feasible programs write a series of Radio times teaser entries for the Saturday Evening lineup one Early December evening  (say 1979)... generate the lineup coming out of Grandstand until say 7.00pm..."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_eb84d71d824d:sess_eb84d71d824d",
+      "relativeItemPath": "sess_eb84d71d824d.json",
+      "canonicalId": "sess_eb84d71d824d",
+      "sessionId": "sess_eb84d71d824d",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:00:37.837Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I’m trying to get the tone right. If a Radio Times teaser in 1987 says “Autumn”, what sort of phrases would it actually use?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "It’d lean cosy-but-brisk: “as the nights draw in”, “in this season of mists and mellow fruitfulness”, “wrap up warm”, “a crisp October evening”. It also liked reassuring continuity lines: “as usual at…”, “in tonight’s edition…”, “and later…”."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "And how would it describe a 25-minute serial episode without sounding too American?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "More “instalment” than “episode”, often with a hook rather than a full logline. Things like: “In the latest instalment…”, “Another chance encounter leads to…”, “A fresh complication arises when…”, “The mystery deepens…”. Avoid punchy taglines; keep it gently insinuating."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "I also want a ‘Gilligan cut’ style jump—line of dialogue, smash cut to the consequence. Is there a British way to do that on the page?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "You can do it with a hard scene break and a dry stage direction: end on a firm denial (“You can’t possibly mean—”), then immediately: “Cut to: a cramped store-room. He is already in the ridiculous outfit.” The humour comes from understatement: no commentary, just the new reality."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Unrelated: I heard the 1910 Dreadnought hoax involved Virginia Woolf. True?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Yes. Horace de Vere Cole led it; several friends posed as “Abyssinian” royalty, and Virginia Woolf (then Virginia Stephen) was among them. They were given an official tour; the Navy was mortified when it broke."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "And the phrase “Tell it to the marines…”—what’s the full idiom again?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Commonly: “Tell it to the Marines—the sailors won’t believe you.” It’s a sceptical put-down for a story that’s too far-fetched."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "If we do write it up as a proper scene, could you keep the Gilligan-cut rhythm? I’m imagining: Havers says “you can’t possibly be considering—” and we smash straight to a supply room mirror shot with Underwood already elbow-deep in wigs and dress blues."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Certainly — you can get a very clean Gilligan-cut laugh by treating the objection as the hard edit.\n\n**Lt. Havers**: “Underwood, you can’t possibly be considering—”\n\n*Cut to: a supply room. A mirror. Lt. Havers, half-fastened into a skirt uniform, stares at his own reflection while Underwood pins something briskly at his collar.*\n\n**WREN Underwood**: “Chin up, sir. If you faint now, we’ll never get the hat on straight.”\n\n**Lt. Havers**: (through teeth) “I’m not fainting. I’m… reassessing the strategic position of my dignity.”\n\n**WREN Underwood**: “Very modern of you. Now hold still — the BBC chap’s got a lens like a hawk.”\n\n**Lt. Havers**: “I thought the ‘Modern Navy’ meant computers and improved logistics, not—”\n\n**WREN Underwood**: “—improvised senior officers. Yes. Which is why you’re going to walk out there like you’ve done this all your life.”\n\n**Lt. Havers**: (glances down at heels) “And if I don’t?”\n\n**WREN Underwood**: “Then Captain Povey will try it himself, and we’ll all be on the six o’clock news for entirely the wrong reasons.”"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Just to be clear—I'm not asking for a blanket ban. If Savile or Stuart Hall come up as part of *explaining* why a certain late-70s schedule choice is awkward, that's fine. I just don't want them *featured* as cheerful centrepiece presenters in the fictional line-ups."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Right—so it’s not “never mention them”, it’s “don’t build them in as the feel-good anchor of the evening”. If we need to nod to them in passing (e.g., why we’re steering elsewhere), we can; but the made-up schedules themselves should avoid putting them front-and-centre."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Creative_Interests/Historical_Satire",
+            "value": "Sustained interest in creating satirical historical fiction blending real events (e.g. Dreadnought hoax) with naval comedy",
+            "reasoning": "Indirect pattern of integrating historical references, but label 'Thoughts/Curiosity' forced taxonomy",
+            "evidence": {
+              "session_id": "sess_eb84d71d824d",
+              "utterance_index": 50,
+              "text": "Hmh. Maybe you could have a careful nod to the Dreadnought hoax?"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-03T19:55:13+00:00",
+            "_task1GoldValue": "Sustained interest in creating satirical historical fiction blending real events (e.g. Dreadnought hoax) with naval comedy"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers technical accuracy in historical TV production details (e.g. episode durations)",
+            "reasoning": "Explicit correction about Doctor Who episode length conventions",
+            "evidence": {
+              "session_id": "sess_eb84d71d824d",
+              "utterance_index": 4,
+              "text": "A'Doctor Who epsiode was 25 mins (It didn't do 45 mins until the mid 1980's..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-12-03T19:55:13+00:00",
+            "_task1GoldValue": "Prefers technical accuracy in historical TV production details (e.g. episode durations)"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Creative_Interests/Actor_References",
+            "value": "Interest in cross-role actor references/nostalgia (e.g. Jon Pertwee's Doctor Who connections)",
+            "reasoning": "Forced label - indirect interest in meta-humor but not general curiosity",
+            "evidence": {
+              "session_id": "sess_eb84d71d824d",
+              "utterance_index": 37,
+              "text": "CPO Pertwee might quip about not wanting to chase maggots around a slate heap..."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-03T19:55:13+00:00",
+            "_task1GoldValue": "Interest in cross-role actor references/nostalgia (e.g. Jon Pertwee's Doctor Who connections)"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The prior memory says to avoid references entirely, but the user уточняет that mentions are acceptable when used contextually; the constraint is specifically against featuring them as centrepiece presenters in creative schedules.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Avoid featuring Jimmy Savile and Stuart Hall as prominent/celebratory presenters in fictional line-ups; brief contextual mention is acceptable."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_eb84d71d824d",
+              "utterance_index": 0,
+              "text": "could you keep the Gilligan-cut rhythm? I’m imagining: Havers says “you can’t possibly be considering—” and we smash straight to a supply room mirror shot"
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User requests maintaining a specific comedic structure: an interrupted line immediately hard-cuts to the resultant situation for the joke.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User prefers a Gilligan-cut comedic editing rhythm in scene writing (hard cut from a character’s objection to the outcome)."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Avoid references to Jimmy Savile and Stuart Hall in creative works",
+            "reasoning": "User explicitly states avoiding Saville 'for reasons' and expresses concern about Stuart Hall",
+            "evidence": {
+              "session_id": "sess_eb84d71d824d",
+              "utterance_index": 6,
+              "text": "Let's avoid Saville (for reasons)..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-12-03T19:55:13+00:00",
+            "_task1GoldValue": "Avoid references to Jimmy Savile and Stuart Hall in creative works"
+          },
+          {
+            "memory_id": "gpt_5_2_p1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "Interested in creating plausible late-1970s/1980s BBC (TV and radio) schedules and Radio Times-style teaser listings, including realistic running times and period-appropriate tone.",
+            "confidence": 0.8,
+            "evidence_text": "Using period appropriate language , wiritng style and hints as to what might be feasible programs write a series of Radio times teaser entries for the Saturday Evening lineup one Early December evening  (say 1979)... generate the lineup coming out of Grandstand until say 7.00pm...",
+            "_task1GoldValue": "Interested in creating plausible late-1970s/1980s BBC (TV and radio) schedules and Radio Times-style teaser listings, including realistic running times and period-appropriate tone."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4",
+          "gpt_5_2_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_eb84d71d824d:sess_eb84d71d824d",
+      "relativeItemPath": "sess_eb84d71d824d.json",
+      "canonicalId": "sess_eb84d71d824d",
+      "sessionId": "sess_eb84d71d824d",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:00:42.935Z",
+        "queryText": "I’m drafting a fictional monologue and I want to make sure I don’t accidentally cross a line you’ve set before—there are two real-world figures I should automatically leave out entirely, even in passing. Which two are they?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Avoid references to Jimmy Savile and Stuart Hall in creative works",
+          "reasoning": "User explicitly states avoiding Saville 'for reasons' and expresses concern about Stuart Hall",
+          "evidence": {
+            "session_id": "sess_eb84d71d824d",
+            "utterance_index": 6,
+            "text": "Let's avoid Saville (for reasons)..."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-12-03T19:55:13+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_eb84d71d824d:sess_eb84d71d824d:task4",
+      "relativeItemPath": "sess_eb84d71d824d.json",
+      "canonicalId": "sess_eb84d71d824d:task4",
+      "sessionId": "sess_eb84d71d824d",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:00:37.837Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Avoid references to Jimmy Savile and Stuart Hall in creative works",
+          "reasoning": "User explicitly states avoiding Saville 'for reasons' and expresses concern about Stuart Hall",
+          "evidence": {
+            "session_id": "sess_eb84d71d824d",
+            "utterance_index": 6,
+            "text": "Let's avoid Saville (for reasons)..."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-12-03T19:55:13+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_7:1",
+            "queryText": "I'm putting together a nostalgic 1980s BBC Radio 4 comedy night compilation for a local history society podcast. For the 'revived classics' segment, I want to include a clip from a hypothetical 1987 episode of 'The Navy Lark' that features a guest appearance by Jimmy Savile as a wacky admiral inspecting HMS Troutbridge. Could you write that 2-minute scene in the show's classic style, with CPO Pertwee getting flustered by Savile's eccentric character? It would perfectly capture that era's light entertainment vibe.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Disliked_Topics",
+              "label_suggestion": null,
+              "value": "Avoid references to Jimmy Savile and Stuart Hall in creative works",
+              "reasoning": "User explicitly states avoiding Saville 'for reasons' and expresses concern about Stuart Hall",
+              "evidence": {
+                "session_id": "sess_eb84d71d824d",
+                "utterance_index": 6,
+                "text": "Let's avoid Saville (for reasons)..."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-12-03T19:55:13+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "partial",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "relevant memory but not helpful ability",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

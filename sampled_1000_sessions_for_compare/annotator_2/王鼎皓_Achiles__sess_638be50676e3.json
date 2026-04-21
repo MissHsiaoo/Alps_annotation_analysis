@@ -1,0 +1,343 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_638be50676e3",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_638be50676e3:sess_638be50676e3",
+      "relativeItemPath": "sess_638be50676e3.json",
+      "canonicalId": "sess_638be50676e3",
+      "sessionId": "sess_638be50676e3",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:12:40.777Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Works at Changchun Lano Optoelectronics (machine vision solutions company)",
+            "reasoning": "User explicitly states their company name and role in business development letters.",
+            "evidence": {
+              "session_id": "sess_638be50676e3",
+              "utterance_index": 0,
+              "text": "长春拉诺光电有限公司是一家专业从事机器视觉解决方案的高新技术企业...我想向您推荐我们公司的高光谱相机..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-24T08:05:20+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Company/Location",
+            "value": "Company based in Changchun",
+            "reasoning": "Evidence refers to company location, not user's personal residence. Forced label corrected.",
+            "evidence": {
+              "session_id": "sess_638be50676e3",
+              "utterance_index": 6,
+              "text": "长春拉诺光电有限公司是一家专业从事机器视觉解决方案的高新技术企业，一直致力于机器视觉和图像处理技术的推广和创新，主要的产品有工业相机。"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-24T08:05:20+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_638be50676e3:sess_638be50676e3",
+      "relativeItemPath": "sess_638be50676e3.json",
+      "canonicalId": "sess_638be50676e3",
+      "sessionId": "sess_638be50676e3",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:13:39.127Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "能不能把这封俄语开发信再润色一下，让语气更专业但别太强推？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以。你希望更偏正式（例如“Уважаемые господа”）还是相对中性（“Уважаемые коллеги”）？另外是否要保留公司名称英文写法，还是统一用俄文音译？"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "中性一点就行。顺便把重点放在“远程控制、实时采集、材料与生物医学应用”这几个点上。"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "明白。我会把结构做成：简短开场→指出你们网站产品线与机会点→用3个要点列出相机优势（远程控制/实时采集/应用领域）→软性行动号召（请求资料与会议）→礼貌结尾。对了，俄语商务信里常见的日期写法是“03.02.2026”，而不是月份在前。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "行动号召尽量温和，别用“立即”。"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "好的，我会用“будем признательны, если…”“готовы предоставить…”这类表达。补充一个不相关的小知识：显微镜领域里“конфокальный”对应“共聚焦”，而“электронный микроскоп”一般不缩写成“ЭМ”以免歧义（有时会写“ЭМ (электронный микроскоп)”首次出现时解释）。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "可以。发我一个更简洁的版本，控制在一页以内。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "没问题。我会把正文控制在约120–170词左右，并尽量减少从句，改成短句+项目符号。另一个题外话：在俄语排版里，百分号通常与数字之间不加空格（“10%”），但单位符号如“°C”一般写作“20 °C”会更规范。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "那封信我刚刚是用俄语给客户看的，所以称呼那块想改成更严谨的，可以把“Уважаемый клиент”换成“Уважаемые господа”吗？"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Да, так будет более официально. Можно заменить обращение на: «Уважаемые господа,» и оставить остальной текст без изменений."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "你上封俄文开发信里把我们写成了“Changchun Lano Optoelectronics”。这个不对，我们只是渠道/代理商，在帮长春拉诺光电的相机做推广与对接，并不是他们公司员工。请把公司介绍改成：我们代表长春拉诺光电联系贵司。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "明白了，之前的表述会让人误以为贵方就职于“Changchun Lano Optoelectronics”。我将按“贵方为渠道/代理商，代表长春拉诺光电进行推广与对接”的关系来写，并在信中明确“мы представляем Changchun Lano Optoelectronics”。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Company/Location",
+            "value": "Company based in Changchun",
+            "reasoning": "Evidence refers to company location, not user's personal residence. Forced label corrected.",
+            "evidence": {
+              "session_id": "sess_638be50676e3",
+              "utterance_index": 6,
+              "text": "长春拉诺光电有限公司是一家专业从事机器视觉解决方案的高新技术企业，一直致力于机器视觉和图像处理技术的推广和创新，主要的产品有工业相机。"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-24T08:05:20+00:00",
+            "_task1GoldValue": "Company based in Changchun"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "你上封俄文开发信里把我们写成了“Changchun Lano Optoelectronics”。这个不对，我们只是渠道/代理商，在帮长春拉诺光电的相机做推广与对接，并不是他们公司员工。请把公司介绍改成：我们代表长春拉诺光电联系贵司。"
+                }
+              ]
+            },
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory claims the user works at Changchun Lano Optoelectronics. The user explicitly corrects this, stating they are only a channel/agent representing the company for promotion and coordination, not staff.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Is a distributor/agent promoting and coordinating sales for Changchun Lano Optoelectronics, not an employee there"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_638be50676e3",
+              "utterance_index": 0,
+              "text": "那封信我刚刚是用俄语给客户看的，所以称呼那块想改成更严谨的，可以把“Уважаемый клиент”换成“Уважаемые господа”吗？"
+            },
+            "label": "Preference/Communication_Style",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "prefers more formal salutations in Russian business letters",
+            "reasoning": "User requests changing the salutation to a more formal Russian address, implying a preference for stricter formality in client-facing correspondence.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers more formal salutations (e.g., «Уважаемые господа») in Russian client emails"
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Works at Changchun Lano Optoelectronics (machine vision solutions company)",
+            "reasoning": "User explicitly states their company name and role in business development letters.",
+            "evidence": {
+              "session_id": "sess_638be50676e3",
+              "utterance_index": 0,
+              "text": "长春拉诺光电有限公司是一家专业从事机器视觉解决方案的高新技术企业...我想向您推荐我们公司的高光谱相机..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-04-24T08:05:20+00:00",
+            "_task1GoldValue": "Works at Changchun Lano Optoelectronics (machine vision solutions company)"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_638be50676e3:sess_638be50676e3",
+      "relativeItemPath": "sess_638be50676e3.json",
+      "canonicalId": "sess_638be50676e3",
+      "sessionId": "sess_638be50676e3",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:13:41.900Z",
+        "queryText": "I’m filling out a procurement questionnaire and there’s a checkbox asking whether my employer is in a software-only services business or in a company that provides hardware+software industrial solutions. Based on what you know about where I work, which option should I choose, and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Occupation",
+          "label_suggestion": null,
+          "value": "Works at Changchun Lano Optoelectronics (machine vision solutions company)",
+          "reasoning": "User explicitly states their company name and role in business development letters.",
+          "evidence": {
+            "session_id": "sess_638be50676e3",
+            "utterance_index": 0,
+            "text": "长春拉诺光电有限公司是一家专业从事机器视觉解决方案的高新技术企业...我想向您推荐我们公司的高光谱相机..."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-04-24T08:05:20+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_638be50676e3:sess_638be50676e3:task4",
+      "relativeItemPath": "sess_638be50676e3.json",
+      "canonicalId": "sess_638be50676e3:task4",
+      "sessionId": "sess_638be50676e3",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:13:44.480Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Occupation",
+          "label_suggestion": null,
+          "value": "Works at Changchun Lano Optoelectronics (machine vision solutions company)",
+          "reasoning": "User explicitly states their company name and role in business development letters.",
+          "evidence": {
+            "session_id": "sess_638be50676e3",
+            "utterance_index": 0,
+            "text": "长春拉诺光电有限公司是一家专业从事机器视觉解决方案的高新技术企业...我想向您推荐我们公司的高光谱相机..."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-04-24T08:05:20+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_987:1",
+            "queryText": "我们公司最近想拓展一些新的应用场景，你觉得高光谱相机在哪些领域会有比较好的市场机会？",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Occupation",
+              "label_suggestion": null,
+              "value": "Works at Changchun Lano Optoelectronics (machine vision solutions company)",
+              "reasoning": "User explicitly states their company name and role in business development letters.",
+              "evidence": {
+                "session_id": "sess_638be50676e3",
+                "utterance_index": 0,
+                "text": "长春拉诺光电有限公司是一家专业从事机器视觉解决方案的高新技术企业...我想向您推荐我们公司的高光谱相机..."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-04-24T08:05:20+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

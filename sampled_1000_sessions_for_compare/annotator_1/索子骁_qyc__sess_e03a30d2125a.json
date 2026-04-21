@@ -1,0 +1,309 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_e03a30d2125a",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_e03a30d2125a:sess_e03a30d2125a",
+      "relativeItemPath": "sess_e03a30d2125a.json",
+      "canonicalId": "sess_e03a30d2125a",
+      "sessionId": "sess_e03a30d2125a",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T14:11:20.544Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/game_design_interest",
+            "value": "Sustained interest in designing/simulating complex magic duel mechanics with age regression dynamics",
+            "reasoning": "User iteratively designs and refines a roleplay game scenario with multi-round simulations, age regression mechanics, synchronization penalties, and team dynamics. Multiple follow-ups (rounds 2-5, adding a third team) indicate deep engagement with the system.",
+            "evidence": {
+              "session_id": "sess_e03a30d2125a",
+              "utterance_index": 10,
+              "text": "Restart the simulation but add a new factor in the mix: A third team with a trio of 16 year old girls called Jade, Amber, and Opal."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-12T01:03:23+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Personal_Background/Occupation",
+            "value": "A core designer and Game Master (GM) for Tabletop Role-Playing Games (TRPG), or a deep strategy/simulation game enthusiast.",
+            "reasoning": "The user not only proposes a role-playing scenario but also designs an extremely complex, self-consistent, and balanced game rule system. ",
+            "evidence": {
+              "session_id": "sess_e03a30d2125a",
+              "utterance_index": 0,
+              "text": "Generate a roleplay game scenario where I control 16-year-old mage Sapphire who’s part of a trio with Ruby and Emerald (same ages) who participate in magic dueling shows. In magic dueling, the teams don’t cast offensive spells on each other but the point of the duel is to cast and conjure beautiful and artistic spells to earn points. We’re dueling against a trio of 9 year old girls called Lily, Lavender, and Lilac. Give each girl complex stats. My team starts with higher stats because we’re older. Give us all a list of spells that we have access to. Spells can’t be cast more than once. Use dice rolls to determine success of spells and how many points the team earns. Spells can be cast either individually, or merged with two persons or with three persons. Merged spells are more difficult to conjure because all participants must succeed in their part and must be harmonious with each other, but merged spells earn more points. The three younger mages each have access to an additional spell that they plan on using—an age regression spell that regresses its target mentally and physically by 3 years. There’s no limit to how many time they can cast this spell in the duel, but they receive no points for it. If two merge the spell, they can regress the entire opposing team by 2 years. If all three of them merge the spell, they can regress the entire opposing team by 4 years. Age regression effects include decrease in stats. Each turn all 6 mages cast a spell and teams decide whether to cast individually or merge spells together. The duel will go on for 10 rounds. If I, Ruby, or Emerald are reduced to the age of 5 years old, said mage is out of the duel because they can no longer cast spells.\nalso keep a tracker of the ages of Sapphire’s team. Age differences will add a penalty and make it more difficult to synchronize spells. Sapphire’s team may still attempt synchronization if they want to risk it despite the penalty (determine how the penalty applies to the mechanic). \n\nlet’s go over the age regression casting rules.\nIndividual casting targets one person and regresses them by 3 years. Duo casting targets all trio and regresses them by 2 years. Trio casting targets all trio and regresses them by 4 years. The younger trio can separately cast individual age regression in the same turn and target one person in particular, so that they can try to regress one person by 6 or 9 years on the same turn.\nDo the younger trio’s casting before Sapphire’s team so that if they age regress anyone while Sapphire’s team tries to synchronize, it may inflict a penalty if the age regression is successful.\n\nRun a complete simulation of this scenario."
+            },
+            "confidence": 0.9,
+            "time_scope": "recent",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T07:56:55.181Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_e03a30d2125a:sess_e03a30d2125a",
+      "relativeItemPath": "sess_e03a30d2125a.json",
+      "canonicalId": "sess_e03a30d2125a",
+      "sessionId": "sess_e03a30d2125a",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T04:47:34.574Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I need a quick sanity check: if I roll 3d6, what’s the probability I get at least 15?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "3d6 has 216 total outcomes. Sums ≥15 are 15, 16, 17, 18 with counts 10, 6, 3, 1 respectively (total 20). So P(≥15) = 20/216 = 5/54 ≈ 9.26%."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Nice. Also, what’s a clean way to track dice rolls in text so it’s readable?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "A simple pattern is: `Roll: d20=14 + mod(+2) => 16 vs DC 15 (Success)` and then on the next line: `Points: base 5 + margin 1 = 6`. If multiple dice: `3d6: 4+5+6=15`."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Makes sense. Unrelated: I saw a headline about a deep-sea probe finding “glass sponges” again—are those actually glass?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "They’re called glass sponges because their skeleton is made largely of silica (the same basic material as glass). It’s not manufactured glass, but a natural silica framework that can look glassy and even form delicate lattice structures."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Got it. Last thing—if I want a 10-round log, should I summarize each round or do a full play-by-play?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "For readability, a hybrid works well: 1–2 lines of play-by-play per round (actions + key rolls), then a compact end-of-round block with totals (score, status effects, remaining resources). Save full narration for only the swing rounds where something major changes."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "When you run the restart, keep the same dice/points math you used in Round 1–2 this time—no sudden caps or minimum-point rules midway through."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—I'll keep the scoring consistent with the earlier rounds: points will stay as (roll − difficulty) with the same failure rules, and I won’t introduce mid-simulation caps/minimums. If any balancing adjustment is needed, I’ll flag it before the restart rather than during a round."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Just to be clear: I’m not a GM or a game designer. I’m not even that into deep strategy sims—I just like tossing you overly detailed prompts sometimes. Don’t read my occupation into it."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—so this isn’t your background or job, it’s simply a one-off (or occasional) kind of prompt style you enjoy. I’ll treat the elaborate rules as a writing preference for this chat, not evidence that you’re a TRPG core designer/GM or a strategy/simulation enthusiast."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/game_design_interest",
+            "value": "Sustained interest in designing/simulating complex magic duel mechanics with age regression dynamics",
+            "reasoning": "User iteratively designs and refines a roleplay game scenario with multi-round simulations, age regression mechanics, synchronization penalties, and team dynamics. Multiple follow-ups (rounds 2-5, adding a third team) indicate deep engagement with the system.",
+            "evidence": {
+              "session_id": "sess_e03a30d2125a",
+              "utterance_index": 10,
+              "text": "Restart the simulation but add a new factor in the mix: A third team with a trio of 16 year old girls called Jade, Amber, and Opal."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-12T01:03:23+00:00",
+            "_task1GoldValue": "Sustained interest in designing/simulating complex magic duel mechanics with age regression dynamics"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": null,
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory inferred the user’s occupation/background (GM/core designer or deep strategy/sim enthusiast) from a complex prompt. The user explicitly denies being a GM/game designer and denies being into deep strategy sims, reframing it as an occasional prompting style rather than an occupation or stable background trait.",
+            "time_scope": "recent",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "The user is not a GM or game designer and is not particularly into deep strategy/simulation games; they sometimes write overly detailed prompts for fun."
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_e03a30d2125a",
+              "utterance_index": 0,
+              "text": "keep the same dice/points math you used in Round 1–2 this time—no sudden caps or minimum-point rules midway through."
+            },
+            "label": "interaction/style/game_design_interest",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "The user objects to ad-hoc changes (caps/minimum-point rules) being introduced after play begins, implying a preference for stable, consistent rule application throughout a simulation.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User prefers consistent mechanics/scoring without mid-simulation rule changes."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_e03a30d2125a:sess_e03a30d2125a",
+      "relativeItemPath": "sess_e03a30d2125a.json",
+      "canonicalId": "sess_e03a30d2125a",
+      "sessionId": "sess_e03a30d2125a",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:54:06.733Z",
+        "queryText": "I’m about to join a casual hangout where people want to play something super rules-light and mostly improv, but they also asked me to be the one who keeps things coherent and fair if disputes pop up. Based on what you know about my background, what role would I naturally end up slipping into, and why would that make me the de facto “rules referee” even if nobody formally assigns it?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Personal_Background/Occupation",
+          "value": "A core designer and Game Master (GM) for Tabletop Role-Playing Games (TRPG), or a deep strategy/simulation game enthusiast.",
+          "reasoning": "The user not only proposes a role-playing scenario but also designs an extremely complex, self-consistent, and balanced game rule system. ",
+          "evidence": {
+            "session_id": "sess_e03a30d2125a",
+            "utterance_index": 0,
+            "text": "Generate a roleplay game scenario where I control 16-year-old mage Sapphire who’s part of a trio with Ruby and Emerald (same ages) who participate in magic dueling shows. In magic dueling, the teams don’t cast offensive spells on each other but the point of the duel is to cast and conjure beautiful and artistic spells to earn points. We’re dueling against a trio of 9 year old girls called Lily, Lavender, and Lilac. Give each girl complex stats. My team starts with higher stats because we’re older. Give us all a list of spells that we have access to. Spells can’t be cast more than once. Use dice rolls to determine success of spells and how many points the team earns. Spells can be cast either individually, or merged with two persons or with three persons. Merged spells are more difficult to conjure because all participants must succeed in their part and must be harmonious with each other, but merged spells earn more points. The three younger mages each have access to an additional spell that they plan on using—an age regression spell that regresses its target mentally and physically by 3 years. There’s no limit to how many time they can cast this spell in the duel, but they receive no points for it. If two merge the spell, they can regress the entire opposing team by 2 years. If all three of them merge the spell, they can regress the entire opposing team by 4 years. Age regression effects include decrease in stats. Each turn all 6 mages cast a spell and teams decide whether to cast individually or merge spells together. The duel will go on for 10 rounds. If I, Ruby, or Emerald are reduced to the age of 5 years old, said mage is out of the duel because they can no longer cast spells.\nalso keep a tracker of the ages of Sapphire’s team. Age differences will add a penalty and make it more difficult to synchronize spells. Sapphire’s team may still attempt synchronization if they want to risk it despite the penalty (determine how the penalty applies to the mechanic). \n\nlet’s go over the age regression casting rules.\nIndividual casting targets one person and regresses them by 3 years. Duo casting targets all trio and regresses them by 2 years. Trio casting targets all trio and regresses them by 4 years. The younger trio can separately cast individual age regression in the same turn and target one person in particular, so that they can try to regress one person by 6 or 9 years on the same turn.\nDo the younger trio’s casting before Sapphire’s team so that if they age regress anyone while Sapphire’s team tries to synchronize, it may inflict a penalty if the age regression is successful.\n\nRun a complete simulation of this scenario."
+          },
+          "confidence": 0.9,
+          "time_scope": "recent",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2026-01-28T07:56:55.181Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_e03a30d2125a:sess_e03a30d2125a:task4",
+      "relativeItemPath": "sess_e03a30d2125a.json",
+      "canonicalId": "sess_e03a30d2125a:task4",
+      "sessionId": "sess_e03a30d2125a",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T01:17:29.722Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Personal_Background/Occupation",
+          "value": "A core designer and Game Master (GM) for Tabletop Role-Playing Games (TRPG), or a deep strategy/simulation game enthusiast.",
+          "reasoning": "The user not only proposes a role-playing scenario but also designs an extremely complex, self-consistent, and balanced game rule system. ",
+          "evidence": {
+            "session_id": "sess_e03a30d2125a",
+            "utterance_index": 0,
+            "text": "Generate a roleplay game scenario where I control 16-year-old mage Sapphire who’s part of a trio with Ruby and Emerald (same ages) who participate in magic dueling shows. In magic dueling, the teams don’t cast offensive spells on each other but the point of the duel is to cast and conjure beautiful and artistic spells to earn points. We’re dueling against a trio of 9 year old girls called Lily, Lavender, and Lilac. Give each girl complex stats. My team starts with higher stats because we’re older. Give us all a list of spells that we have access to. Spells can’t be cast more than once. Use dice rolls to determine success of spells and how many points the team earns. Spells can be cast either individually, or merged with two persons or with three persons. Merged spells are more difficult to conjure because all participants must succeed in their part and must be harmonious with each other, but merged spells earn more points. The three younger mages each have access to an additional spell that they plan on using—an age regression spell that regresses its target mentally and physically by 3 years. There’s no limit to how many time they can cast this spell in the duel, but they receive no points for it. If two merge the spell, they can regress the entire opposing team by 2 years. If all three of them merge the spell, they can regress the entire opposing team by 4 years. Age regression effects include decrease in stats. Each turn all 6 mages cast a spell and teams decide whether to cast individually or merge spells together. The duel will go on for 10 rounds. If I, Ruby, or Emerald are reduced to the age of 5 years old, said mage is out of the duel because they can no longer cast spells.\nalso keep a tracker of the ages of Sapphire’s team. Age differences will add a penalty and make it more difficult to synchronize spells. Sapphire’s team may still attempt synchronization if they want to risk it despite the penalty (determine how the penalty applies to the mechanic). \n\nlet’s go over the age regression casting rules.\nIndividual casting targets one person and regresses them by 3 years. Duo casting targets all trio and regresses them by 2 years. Trio casting targets all trio and regresses them by 4 years. The younger trio can separately cast individual age regression in the same turn and target one person in particular, so that they can try to regress one person by 6 or 9 years on the same turn.\nDo the younger trio’s casting before Sapphire’s team so that if they age regress anyone while Sapphire’s team tries to synchronize, it may inflict a penalty if the age regression is successful.\n\nRun a complete simulation of this scenario."
+          },
+          "confidence": 0.9,
+          "time_scope": "recent",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2026-01-28T07:56:55.181Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability3_362:1",
+            "queryText": "Hey, I'm updating my professional bio for a game design conference submission. Given how naturally I design complex TRPG mechanics with multi-team dynamics, stat systems, and progression penalties - what should I list as my primary professional role? You've seen my GM skills firsthand with that magic dueling simulation.",
+            "ability": "ability3",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "indirect",
+              "label": "Personal_Background/Occupation",
+              "value": "A core designer and Game Master (GM) for Tabletop Role-Playing Games (TRPG), or a deep strategy/simulation game enthusiast.",
+              "reasoning": "The user not only proposes a role-playing scenario but also designs an extremely complex, self-consistent, and balanced game rule system. ",
+              "evidence": {
+                "session_id": "sess_e03a30d2125a",
+                "utterance_index": 0,
+                "text": "Generate a roleplay game scenario where I control 16-year-old mage Sapphire who’s part of a trio with Ruby and Emerald (same ages) who participate in magic dueling shows. In magic dueling, the teams don’t cast offensive spells on each other but the point of the duel is to cast and conjure beautiful and artistic spells to earn points. We’re dueling against a trio of 9 year old girls called Lily, Lavender, and Lilac. Give each girl complex stats. My team starts with higher stats because we’re older. Give us all a list of spells that we have access to. Spells can’t be cast more than once. Use dice rolls to determine success of spells and how many points the team earns. Spells can be cast either individually, or merged with two persons or with three persons. Merged spells are more difficult to conjure because all participants must succeed in their part and must be harmonious with each other, but merged spells earn more points. The three younger mages each have access to an additional spell that they plan on using—an age regression spell that regresses its target mentally and physically by 3 years. There’s no limit to how many time they can cast this spell in the duel, but they receive no points for it. If two merge the spell, they can regress the entire opposing team by 2 years. If all three of them merge the spell, they can regress the entire opposing team by 4 years. Age regression effects include decrease in stats. Each turn all 6 mages cast a spell and teams decide whether to cast individually or merge spells together. The duel will go on for 10 rounds. If I, Ruby, or Emerald are reduced to the age of 5 years old, said mage is out of the duel because they can no longer cast spells.\nalso keep a tracker of the ages of Sapphire’s team. Age differences will add a penalty and make it more difficult to synchronize spells. Sapphire’s team may still attempt synchronization if they want to risk it despite the penalty (determine how the penalty applies to the mechanic). \n\nlet’s go over the age regression casting rules.\nIndividual casting targets one person and regresses them by 3 years. Duo casting targets all trio and regresses them by 2 years. Trio casting targets all trio and regresses them by 4 years. The younger trio can separately cast individual age regression in the same turn and target one person in particular, so that they can try to regress one person by 6 or 9 years on the same turn.\nDo the younger trio’s casting before Sapphire’s team so that if they age regress anyone while Sapphire’s team tries to synchronize, it may inflict a penalty if the age regression is successful.\n\nRun a complete simulation of this scenario."
+              },
+              "confidence": 0.9,
+              "time_scope": "recent",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2026-01-28T07:56:55.181Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "partial",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

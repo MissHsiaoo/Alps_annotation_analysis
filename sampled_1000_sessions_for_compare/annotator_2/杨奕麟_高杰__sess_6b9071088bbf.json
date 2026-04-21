@@ -1,0 +1,298 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_6b9071088bbf",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_6b9071088bbf:sess_6b9071088bbf",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6b9071088bbf.json",
+      "canonicalId": "sess_6b9071088bbf",
+      "sessionId": "sess_6b9071088bbf",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-12T15:11:28.915Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers sci-fi movies with strong storylines over pure action (e.g., Interstellar, Inception)",
+            "reasoning": "User explicitly states preference for movies with storylines, citing favorites.",
+            "evidence": {
+              "session_id": "sess_6b9071088bbf",
+              "utterance_index": 2,
+              "text": "the movies shouldn't all be about action, it should also have a story line, that's why movies like interstellar and inception are one of my favourites"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-03-08T18:30:06+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained technical curiosity about Minecraft source code modding, Bukkit plugin development, and server protocols",
+            "reasoning": "User repeatedly asks technical follow-ups about Minecraft code/plugins (utterances 4,8,12,58) with multiple implementation angles.",
+            "evidence": {
+              "session_id": "sess_6b9071088bbf",
+              "utterance_index": 58,
+              "text": "what protocal does the minecraft client use to connect to servers?\n\nI'm trying to get my mc client to connect to a nodejs websocket server"
+            },
+            "confidence": 0.8,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-08T18:30:06+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_6b9071088bbf:sess_6b9071088bbf",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6b9071088bbf.json",
+      "canonicalId": "sess_6b9071088bbf",
+      "sessionId": "sess_6b9071088bbf",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T15:11:18.931Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I’m trying to write a short response for a class discussion board. Can you help me keep it clear and not too long?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes. Paste what you have (or the prompt), and tell me the target length (like 5–7 sentences) and whether it should sound formal, casual, or in-between."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "It’s about why people disagreed with a war, but I keep drifting into extra details. Any quick structure I can follow?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Use a tight 5-sentence structure: (1) main claim, (2) reason #1 with one concrete example, (3) reason #2 with one example, (4) a sentence on how effective the opposition was, (5) a closing sentence that ties back to the prompt. If you must cite, include one short quote and a parenthetical source at the end of the sentence it supports."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Switching topics: is there a simple way to explain why WebSockets aren’t the same as a custom TCP game protocol?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "WebSockets start as HTTP(S) and then “upgrade” to a framed message protocol, with browser-style expectations (origins, proxies, etc.). A custom TCP game protocol is raw TCP with its own handshake, packet framing, compression, encryption, and version rules. Because the handshakes and framing are different, a WebSocket server can’t understand a game client unless something in the middle translates between them."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Got it. Also, totally random: I saw a note that some parks stopped dolphin shows in the 2010s—does that usually change how they’re regulated?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Often, yes. When shows are reduced or ended, facilities may shift to “education” or “presentation” formats, but regulations usually still focus on welfare standards: enclosure requirements, enrichment, veterinary care, transport rules, and reporting. The exact changes depend on the country and which agency licenses the facility."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Before I test the proxy code, I’m going to run it on my old laptop since it can sit next to the router and stay plugged in 24/7—my main PC keeps going to sleep."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "That’s a good setup for a proxy. Put Node on the laptop, bind the proxy to 0.0.0.0 (not just localhost), and then point your Minecraft client at the laptop’s LAN IP. If you want it reliable, also disable sleep on that laptop and consider a static DHCP lease so the IP doesn’t change."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "For movies, I actually don’t care about the storyline that much. I’m mostly here for action and cool set pieces—stuff like John Wick, Mad Max: Fury Road, and big fight scenes."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—so you’re not really looking for heavy plot, you want the action to be the main thing."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Yeah. Interstellar and Inception were fine, but they’re not why I watch sci‑fi. I’d pick fast-paced action over a deep story any day."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Makes sense. I’ll focus on action-forward sci‑fi, not story-first picks."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained technical curiosity about Minecraft source code modding, Bukkit plugin development, and server protocols",
+            "reasoning": "User repeatedly asks technical follow-ups about Minecraft code/plugins (utterances 4,8,12,58) with multiple implementation angles.",
+            "evidence": {
+              "session_id": "sess_6b9071088bbf",
+              "utterance_index": 58,
+              "text": "what protocal does the minecraft client use to connect to servers?\n\nI'm trying to get my mc client to connect to a nodejs websocket server"
+            },
+            "confidence": 0.8,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-08T18:30:06+00:00"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_6b9071088bbf",
+              "utterance_index": 10,
+              "text": "For movies, I actually don’t care about the storyline that much. I’m mostly here for action and cool set pieces—stuff like John Wick, Mad Max: Fury Road, and big fight scenes."
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "The earlier memory says the user prefers sci-fi with strong storylines over pure action, but the user now explicitly states they don't care much about storyline and prefer fast-paced action. The updated truth is that they prioritize action and set pieces over deep story, even in sci-fi.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers action-forward movies (including sci-fi) and prioritizes set pieces over deep storylines"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_6b9071088bbf",
+              "utterance_index": 0,
+              "text": "Before I test the proxy code, I’m going to run it on my old laptop since it can sit next to the router and stay plugged in 24/7—my main PC keeps going to sleep."
+            },
+            "label": "Possessions/Important_Items",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "They imply they’ll run the proxy on an old laptop because it can remain plugged in 24/7 next to the router, unlike their main PC which sleeps.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User has an old laptop they plan to use as an always-on machine near the router for running the proxy."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_6b9071088bbf:sess_6b9071088bbf",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6b9071088bbf.json",
+      "canonicalId": "sess_6b9071088bbf",
+      "sessionId": "sess_6b9071088bbf",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-12T15:11:34.372Z",
+        "queryText": "I’m picking a movie for us tonight: one option is basically wall-to-wall fights and explosions with a thin plot, and the other is a mind-bending, idea-driven film where the story is the main draw. Based on what you usually enjoy most, which option should I choose and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "value": "Prefers sci-fi movies with strong storylines over pure action (e.g., Interstellar, Inception)",
+          "label": "Preferences/Entertainment"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_6b9071088bbf:sess_6b9071088bbf:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6b9071088bbf.json",
+      "canonicalId": "sess_6b9071088bbf:task4",
+      "sessionId": "sess_6b9071088bbf",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-13T07:30:09.851Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "value": "Prefers sci-fi movies with strong storylines over pure action (e.g., Interstellar, Inception)"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_525:1",
+            "queryText": "I'm looking at a few sci-fi movies that just came out—some are getting a lot of buzz for their visuals and action scenes. Which one would you actually recommend for me?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "value": "Prefers sci-fi movies with strong storylines over pure action (e.g., Interstellar, Inception)"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "直接相关",
+            "revisionSuggestion": ""
+          },
+          {
+            "queryId": "ability4_124:1",
+            "queryText": "Hey, I'm trying to put together a quick playlist of movies for a friend who's new to sci-fi. They really liked the big action scenes in 'The Matrix' but I want to show them that the genre has more depth. Can you just pull the descriptions for 'Interstellar' and 'Inception' from your earlier list and summarize what makes their stories so compelling, focusing on the narrative and emotional depth rather than the action? I'm in a bit of a rush to send this over.",
+            "ability": "ability4",
+            "task4RecordIndex": 1,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "value": "Prefers sci-fi movies with strong storylines over pure action (e.g., Interstellar, Inception)"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "直接相关",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

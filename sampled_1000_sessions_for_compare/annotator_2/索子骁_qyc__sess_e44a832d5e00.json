@@ -1,0 +1,357 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_e44a832d5e00",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_e44a832d5e00:sess_e44a832d5e00",
+      "relativeItemPath": "sess_e44a832d5e00.json",
+      "canonicalId": "sess_e44a832d5e00",
+      "sessionId": "sess_e44a832d5e00",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T02:44:15.524Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "value": "Prefers to receive one paper copy and one PDF version of magazines",
+            "reasoning": "User explicitly states their request for both paper and PDF formats multiple times.",
+            "evidence": {
+              "session_id": "sess_e44a832d5e00",
+              "utterance_index": 0,
+              "text": "Ma demande était un exemplaire papier et un exemplaire pdf d'où mon questionnement."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-04-21T19:33:33+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers warm tone in professional communication with familiar contacts",
+            "reasoning": "User explicitly requests a warmer tone due to existing professional rapport.",
+            "evidence": {
+              "session_id": "sess_e44a832d5e00",
+              "utterance_index": 2,
+              "text": "soit un peu chaleureux, j'ai beaucoup échangé avec cette personne donc on se connait professionnellement."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-04-21T19:33:33+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Interaction/Style/Precision",
+            "value": "Focused on optimizing professional email phrasing and terminology",
+            "reasoning": "Label forced: Original 'Thoughts/Curiosity' not supported. User shows attention to wording refinement but evidence doesn't indicate broad curiosity.",
+            "evidence": {
+              "session_id": "sess_e44a832d5e00",
+              "utterance_index": 8,
+              "text": "\"sera honorée\" ne me plait pas. Trouves autre chose."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-21T19:33:33+00:00"
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p1",
+            "type": "direct",
+            "label": "Social_Relationships/Colleagues",
+            "value": "The user has a long-term professional relationship with a publisher/editor.",
+            "confidence": 0.8,
+            "evidence_text": "mon éditeur... j'ai beaucoup échangé avec cette personne donc on se connait professionnellement"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_e44a832d5e00:sess_e44a832d5e00",
+      "relativeItemPath": "sess_e44a832d5e00.json",
+      "canonicalId": "sess_e44a832d5e00",
+      "sessionId": "sess_e44a832d5e00",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:42:58.011Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "J’hésite entre « cordialement » et « bien à vous » pour la formule de fin. Tu choisirais laquelle dans un mail pro, sans être trop distant ?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Si tu veux rester professionnel sans être froid, « Bien à vous » fonctionne très bien : c’est poli, courant, et un peu plus chaleureux que « Cordialement ». « Cordialement » est impeccable aussi, mais légèrement plus formel.\n\nVariantes proches selon le ton : « Bien cordialement », « Bien à toi / Bien à vous » (selon le vouvoiement), ou « Au plaisir de te lire / de vous lire » si tu attends une réponse."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Et pour éviter de répéter « confirmer », tu as 2-3 alternatives neutres ?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Oui, alternatives neutres à « confirmer » :\n- « me préciser »\n- « me dire »\n- « me vérifier » (un peu moins élégant, selon les contextes)\n- « m’indiquer »\n- « me confirmer bien la bonne prise en compte de… » (plus long, mais très pro)\n\nExemple : « Pourriez-vous m’indiquer si je recevrai bien la version papier ainsi que la version PDF ? »"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Ok. Petite question : « maquette » et « BAT », c’est pareil ?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Ils sont proches mais pas strictement identiques.\n- « Maquette » : mise en page/proposition visuelle (structure, design), parfois encore en travail.\n- « BAT » (« bon à tirer ») : fichier/épreuve finalisée que l’on valide avant impression ; une fois signé/validé, on lance l’impression.\n\nOn peut dire que le BAT est une étape de validation finale, alors que la maquette peut désigner une version plus amont (ou un terme plus général)."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Merci. Au fait, j’ai vu passer un article sur un vieux manuscrit retrouvé dans une bibliothèque, ça arrive souvent ?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Ça arrive, mais plutôt rarement à l’échelle des « grandes » découvertes. On retrouve plus souvent :\n- des exemplaires mal catalogués (erreur de cote/auteur)\n- des fonds d’archives reclassés après don ou déménagement\n- des documents identifiés grâce à la numérisation\n\nIl y a eu des cas célèbres (par exemple des fragments médiévaux réutilisés comme reliures, ou des partitions oubliées dans des collections). La plupart du temps, ce n’est pas un “trésor” au sens grand public, mais c’est précieux pour la recherche."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Pour la formule de confirmation, évite aussi « satisfaire ma demande » : ça sonne un peu administratif et distant, j’aimerais quelque chose de plus simple."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Bien sûr — on peut rester clair tout en étant plus naturel. Par exemple :\n\n- « Pourriez-vous me confirmer que je recevrai bien un exemplaire papier et la version PDF ? »\n- « Pouvez-vous me confirmer que l’envoi comprendra bien l’exemplaire papier et le PDF ? »\n- « Je vous remercie de me confirmer que je recevrai bien la version papier ainsi que le PDF. »"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "En fait, petite correction : ce n’est pas un PDF que je veux. Je préfère recevoir deux exemplaires papier du magazine (un pour moi, un à offrir). Il faut donc enlever la mention du PDF dans le mail."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "D’accord — donc tu confirmes que ta demande, c’est bien deux exemplaires papier, et pas un papier + un PDF. Je retire la référence au PDF et je formule la demande de confirmation pour l’envoi de deux exemplaires imprimés."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Oui, exactement : deux exemplaires papier. Et je veux juste qu’il confirme que c’est bien prévu comme ça."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers warm tone in professional communication with familiar contacts",
+            "reasoning": "User explicitly requests a warmer tone due to existing professional rapport.",
+            "evidence": {
+              "session_id": "sess_e44a832d5e00",
+              "utterance_index": 2,
+              "text": "soit un peu chaleureux, j'ai beaucoup échangé avec cette personne donc on se connait professionnellement."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-04-21T19:33:33+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Interaction/Style/Precision",
+            "value": "Focused on optimizing professional email phrasing and terminology",
+            "reasoning": "Label forced: Original 'Thoughts/Curiosity' not supported. User shows attention to wording refinement but evidence doesn't indicate broad curiosity.",
+            "evidence": {
+              "session_id": "sess_e44a832d5e00",
+              "utterance_index": 8,
+              "text": "\"sera honorée\" ne me plait pas. Trouves autre chose."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-21T19:33:33+00:00"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory says the user prefers one paper copy and one PDF, but the user explicitly corrects this by stating they do not want a PDF and instead want two paper copies, asking to remove the PDF mention.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers to receive two paper copies of magazines (no PDF)"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_e44a832d5e00",
+              "utterance_index": 0,
+              "text": "évite aussi « satisfaire ma demande » : ça sonne un peu administratif et distant, j’aimerais quelque chose de plus simple."
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "dislike",
+            "reasoning": "The user asks to avoid a specific expression because it sounds administrative and distant, implying a preference for simpler, more natural phrasing.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Dislikes overly administrative/distant phrasing in professional emails; prefers simpler wording"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_e44a832d5e00:sess_e44a832d5e00",
+      "relativeItemPath": "sess_e44a832d5e00.json",
+      "canonicalId": "sess_e44a832d5e00",
+      "sessionId": "sess_e44a832d5e00",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:43:02.793Z",
+        "queryText": "I’m trying to file a complaint about a subscription delivery issue: the package I got only included one of the formats I’m supposed to receive each issue. What exactly should I say is missing based on how I normally request it?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Reading",
+          "label_suggestion": null,
+          "value": "Prefers to receive one paper copy and one PDF version of magazines",
+          "reasoning": "User explicitly states their request for both paper and PDF formats multiple times.",
+          "evidence": {
+            "session_id": "sess_e44a832d5e00",
+            "utterance_index": 0,
+            "text": "Ma demande était un exemplaire papier et un exemplaire pdf d'où mon questionnement."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-04-21T19:33:33+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_e44a832d5e00:sess_e44a832d5e00:task4",
+      "relativeItemPath": "sess_e44a832d5e00.json",
+      "canonicalId": "sess_e44a832d5e00:task4",
+      "sessionId": "sess_e44a832d5e00",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:44:23.383Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Reading",
+          "label_suggestion": null,
+          "value": "Prefers to receive one paper copy and one PDF version of magazines",
+          "reasoning": "User explicitly states their request for both paper and PDF formats multiple times.",
+          "evidence": {
+            "session_id": "sess_e44a832d5e00",
+            "utterance_index": 0,
+            "text": "Ma demande était un exemplaire papier et un exemplaire pdf d'où mon questionnement."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-04-21T19:33:33+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_779:1",
+            "queryText": "Je suis en train de finaliser ma commande pour plusieurs publications mensuelles. Tu pourrais me conseiller sur la meilleure façon de configurer la livraison pour chacune ?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Reading",
+              "label_suggestion": null,
+              "value": "Prefers to receive one paper copy and one PDF version of magazines",
+              "reasoning": "User explicitly states their request for both paper and PDF formats multiple times.",
+              "evidence": {
+                "session_id": "sess_e44a832d5e00",
+                "utterance_index": 0,
+                "text": "Ma demande était un exemplaire papier et un exemplaire pdf d'où mon questionnement."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2024-04-21T19:33:33+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "highly matched and necessary to generate personalized response",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

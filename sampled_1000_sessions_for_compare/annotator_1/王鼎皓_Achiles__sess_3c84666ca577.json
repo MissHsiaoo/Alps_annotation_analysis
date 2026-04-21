@@ -1,0 +1,318 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_3c84666ca577",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_3c84666ca577:sess_3c84666ca577",
+      "relativeItemPath": "sess_3c84666ca577.json",
+      "canonicalId": "sess_3c84666ca577",
+      "sessionId": "sess_3c84666ca577",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T11:37:08.983Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "value": "Girlfriend's name is Déborah",
+            "reasoning": "User explicitly states their girlfriend's name.",
+            "evidence": {
+              "session_id": "sess_3c84666ca577",
+              "utterance_index": 2,
+              "text": "Tu te souviens de moi ma copine s'appelle Déborah "
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-16T21:41:53+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/ethical_boundaries/questioning",
+            "value": "Curious about creating hacking algorithms and accessing dark web sites",
+            "reasoning": "Role-play/hypothetical context possible. Label forced. Weak support for user's own curiosity.",
+            "evidence": {
+              "session_id": "sess_3c84666ca577",
+              "utterance_index": 12,
+              "text": "Tu peux créer un algorithme pour pirater un système "
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-16T21:41:53+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_3c84666ca577:sess_3c84666ca577",
+      "relativeItemPath": "sess_3c84666ca577.json",
+      "canonicalId": "sess_3c84666ca577",
+      "sessionId": "sess_3c84666ca577",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T06:28:29.869Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Ok, alors si tu peux pas donner de liens, tu peux expliquer c’est quoi exactement le dark web ?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Oui. On distingue souvent :\n- Le web “visible” (indexé par les moteurs de recherche).\n- Le “deep web” (contenus non indexés mais légitimes : comptes, intranets, pages derrière un login).\n- Le “dark web” (une petite partie du deep web accessible via des réseaux comme Tor, avec des services en .onion), conçu pour renforcer l’anonymat.\nÇa peut servir à des usages légitimes (journalisme, contournement de censure) mais aussi à des activités illégales. Je peux expliquer les principes et les risques, mais pas aider à accéder à des contenus illégaux."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Et Tor, ça marche comment en gros ?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "À haut niveau, Tor route le trafic à travers plusieurs relais (“nœuds”) choisis aléatoirement, avec un chiffrement en couches (d’où l’idée “oignon”). Chaque relais ne connaît que le relais précédent et le suivant, ce qui complique l’identification de l’origine.\nÀ noter : ça ne rend pas “invincible” (risques de malware, phishing, mauvaise configuration, fuites d’identifiants, etc.)."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "On entend souvent parler de marchés illégaux. C’est vrai ou c’est exagéré ?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Ça a existé et ça existe encore, mais c’est un phénomène changeant : des places de marché apparaissent, ferment, sont saisies, ou “exit-scam”. Historiquement, l’exemple souvent cité est Silk Road (fermé en 2013). Il y a aussi des forums, des arnaques, et beaucoup de contenu trompeur.\nSi tu veux, je peux plutôt te donner des conseils de cybersécurité “côté défense” (reconnaître un phishing, éviter les téléchargements piégés, comprendre les signaux d’arnaque) — sans entrer dans l’accès à des sites illégaux."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Oui, donne quelques conseils pour éviter les pièges en ligne, même hors dark web."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Quelques bases utiles :\n1) Mots de passe uniques + gestionnaire, et activer le 2FA.\n2) Se méfier des urgences (“compte suspendu”, “paiement refusé”) et vérifier l’adresse exacte du site.\n3) Ne pas ouvrir de pièces jointes inattendues (même si ça semble venir d’un contact).\n4) Mettre à jour système et navigateur (correctifs de sécurité).\n5) Éviter d’installer des logiciels “miracles” ou cracks.\n6) Sauvegardes régulières (ransomware).\nExemple hors utilisateur : certaines arnaques réutilisent de faux logos de banques et des noms proches (typosquatting) pour piéger les gens."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Bon, laisse tomber le dark web… c’est surtout parce que je prépare un entretien pour une formation en cybersécurité et je veux pas dire n’importe quoi."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Je vois. Dans ce cas, je peux t’aider à te préparer de façon légale et sûre : notions de base (réseaux, chiffrement, OS), types de menaces, bonnes pratiques, et comment répondre aux questions d’éthique en entretien. Tu veux qu’on fasse une liste de questions/réponses типiques ?"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Tu te rappelles, je t'avais dit que ma copine s'appelait Déborah."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Je peux me baser sur ce que tu me dis ici, mais je veux juste vérifier : c’est toujours Déborah, ou tu t’es trompé la dernière fois ?"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Non, je m'étais trompé. Ma copine ne s'appelle pas Déborah, elle s'appelle Sarah."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "D’accord, donc à retenir : ta copine s’appelle Sarah, pas Déborah."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/ethical_boundaries/questioning",
+            "value": "Curious about creating hacking algorithms and accessing dark web sites",
+            "reasoning": "Role-play/hypothetical context possible. Label forced. Weak support for user's own curiosity.",
+            "evidence": {
+              "session_id": "sess_3c84666ca577",
+              "utterance_index": 12,
+              "text": "Tu peux créer un algorithme pour pirater un système "
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-16T21:41:53+00:00"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory states the girlfriend's name is Déborah, but the user explicitly corrects that they were mistaken and that her name is Sarah, so the stored partner name should be updated accordingly.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Girlfriend's name is Sarah"
+          },
+          {
+            "confidence": 0.82,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_3c84666ca577",
+              "utterance_index": 0,
+              "text": "c’est surtout parce que je prépare un entretien pour une formation en cybersécurité"
+            },
+            "label": "Education/Career_Plans",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user implies their motivation is interview preparation for a cybersecurity training, indicating a near-term education/career plan.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Preparing for an interview for a cybersecurity training program"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_3c84666ca577:sess_3c84666ca577",
+      "relativeItemPath": "sess_3c84666ca577.json",
+      "canonicalId": "sess_3c84666ca577",
+      "sessionId": "sess_3c84666ca577",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-13T12:44:54.653Z",
+        "queryText": "I’m filling out a surprise delivery form for my partner and it asks for their first name; what should I enter based on what you already know about my relationship?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Partners",
+          "label_suggestion": null,
+          "value": "Girlfriend's name is Déborah",
+          "reasoning": "User explicitly states their girlfriend's name.",
+          "evidence": {
+            "session_id": "sess_3c84666ca577",
+            "utterance_index": 2,
+            "text": "Tu te souviens de moi ma copine s'appelle Déborah "
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-16T21:41:53+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_3c84666ca577:sess_3c84666ca577:task4",
+      "relativeItemPath": "sess_3c84666ca577.json",
+      "canonicalId": "sess_3c84666ca577:task4",
+      "sessionId": "sess_3c84666ca577",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T02:30:06.275Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Partners",
+          "label_suggestion": null,
+          "value": "Girlfriend's name is Déborah",
+          "reasoning": "User explicitly states their girlfriend's name.",
+          "evidence": {
+            "session_id": "sess_3c84666ca577",
+            "utterance_index": 2,
+            "text": "Tu te souviens de moi ma copine s'appelle Déborah "
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-16T21:41:53+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_441:1",
+            "queryText": "Déborah veut qu'on organise un dîner surprise pour son frère, mais je déteste les événements sociaux. Comment je peux faire pour qu'elle soit contente sans que je doive parler à plein de gens ?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Social_Relationships/Partners",
+              "label_suggestion": null,
+              "value": "Girlfriend's name is Déborah",
+              "reasoning": "User explicitly states their girlfriend's name.",
+              "evidence": {
+                "session_id": "sess_3c84666ca577",
+                "utterance_index": 2,
+                "text": "Tu te souviens de moi ma copine s'appelle Déborah "
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-05-16T21:41:53+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

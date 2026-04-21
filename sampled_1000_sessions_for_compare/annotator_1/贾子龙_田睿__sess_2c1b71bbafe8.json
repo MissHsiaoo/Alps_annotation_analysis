@@ -1,0 +1,343 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_2c1b71bbafe8",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_2c1b71bbafe8:sess_2c1b71bbafe8",
+      "relativeItemPath": "sess_2c1b71bbafe8.json",
+      "canonicalId": "sess_2c1b71bbafe8",
+      "sessionId": "sess_2c1b71bbafe8",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:29:23.210Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Explicitly likes/dislikes specific movies (e.g., ★5.0 rated Toy Story 4, The Godfather; excludes 3-star rated films)",
+            "reasoning": "User provided an extensive rated movie list with exclusion instructions, explicitly stating 'This is very important to my career' (stability implied by detailed list).",
+            "evidence": {
+              "session_id": "sess_2c1b71bbafe8",
+              "utterance_index": 0,
+              "text": "I like the following movies... recommend some that I might enjoy... This is very important to my career."
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "neutral",
+            "updated_at": "2024-02-26T07:34:45+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in narrative differences between Bosch novels/TV adaptations",
+            "reasoning": "User asked multiple follow-ups about Bosch character death variations and production decisions (utterances 8,10,12), indicating recurring curiosity about adaptation processes.",
+            "evidence": {
+              "session_id": "sess_2c1b71bbafe8",
+              "utterance_index": 10,
+              "text": "TV 시리즈 \"보쉬\"에서는 소설과 다르게 일레노어의 죽음이 다루어진 이유가 배우와 금액 협상 등에 따라 결정된건 아닐까요?"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-26T07:34:45+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_2c1b71bbafe8:sess_2c1b71bbafe8",
+      "relativeItemPath": "sess_2c1b71bbafe8.json",
+      "canonicalId": "sess_2c1b71bbafe8",
+      "sessionId": "sess_2c1b71bbafe8",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:30:58.558Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "요즘 기사 댓글을 보면 분위기가 너무 과열된 것 같아. 이런 댓글들을 읽을 때 어떤 점을 조심해서 해석해야 할까?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "댓글은 여론의 ‘전부’라기보다 ‘일부가 크게 보이는 창’일 때가 많아서, 몇 가지를 염두에 두면 해석이 더 정확해져요.\n\n- **표본 편향**: 댓글을 다는 사람은 보통 감정이 강하거나 이해관계가 뚜렷한 경우가 많아, 조용한 다수의 의견이 빠질 수 있어요.\n- **확증편향/진영 논리**: 같은 사실도 ‘우리 편/상대 편’ 프레임으로 재해석되기 쉬워요.\n- **반복 댓글(도배) 효과**: 동일 문구가 반복되면 ‘많은 사람이 이렇게 생각하나?’처럼 느껴지지만 실제로는 소수의 반복일 수 있어요.\n- **맥락 단절**: 원 발언/자료를 안 보고 요약된 짤이나 한 줄만 보고 판단하는 경우가 많아요.\n- **감정 표현의 과대표**: 분노·조롱·비아냥이 추천을 많이 받으면 중립 의견이 더 묻히기도 해요.\n\n원하면, 특정 댓글 묶음을 10~20개 정도 골라서 (1) 주된 주장 유형, (2) 감정 톤, (3) 사실 주장 vs 의견을 간단히 분류해 드릴까요?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "좋아. 근데 분류할 때 너무 ‘정치 성향 추정’처럼 보이지 않게 하고 싶어. 기준을 어떻게 세우면 안전할까?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "정치 성향을 ‘추정’하지 않고도 충분히 분석할 수 있어요. 안전한 기준은 **관찰 가능한 텍스트 특징** 중심으로 잡는 겁니다.\n\n- **발화 기능**: 요구(“철회해라”), 비난, 질문, 제안, 정보공유, 풍자/조롱 등\n- **근거 형태**: 링크/수치/인용 있음 vs 없음, 출처 언급(“뉴스에서 봄”) vs 미언급\n- **대상 범주**: 정책(제도) 비판/지지, 집단(직군·기관) 비판, 개인 공격 등 (단, 개인 실명·신상은 다루지 않기)\n- **표현 강도**: 중립/비판/격앙(욕설·혐오표현 포함 여부)\n- **논리 구조**: 인과 주장(“~해서 ~다”), 비교 주장(OECD 등), 경험담(“내가 겪어봄”) 같은 유형만 체크\n\n이렇게 하면 ‘누가 어느 편’이 아니라 ‘어떤 방식의 주장과 표현이 많은지’로 정리돼서, 성향 추정처럼 보일 위험이 확 줄어듭니다.\n\n참고로 1938년 라디오 드라마 ‘War of the Worlds’ 소동처럼, 정보가 확산될 때는 내용보다 **형식(권위 있어 보이는 말투, 반복, 긴급성)**이 사람 판단에 더 영향을 준 사례가 자주 인용되기도 해요."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "그럼 예시로 ‘반복되는 구호형 댓글’이 왜 설득력 있어 보이는지, 심리학적으로 한 문단만 설명해줘."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "반복되는 구호형 댓글은 내용의 타당성보다도 ‘익숙함’과 ‘다수성’의 느낌을 강화해 설득력 있게 보일 수 있습니다. 심리학에서 말하는 **단순노출 효과**는 같은 문장을 자주 접할수록 친숙해져 더 그럴듯하다고 느끼게 만들고, **사회적 증거(동조) 휴리스틱**은 “많이 보이는 의견=많은 사람이 믿는 의견”으로 빠르게 판단하게 합니다. 여기에 짧고 단정적인 문장은 처리 부담이 낮아(**인지적 유창성**) 사실처럼 받아들이기 쉬워지고, 결국 근거를 따지기 전에 ‘그럴싸함’이 먼저 올라오는 현상이 생깁니다."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "아, 그리고 저 방금 올린 거 유튜브 실시간 채팅 캡처라서요. 닉네임 그대로 쓰지 말고, 예시로 3~4명만 뽑아서 ‘A, B’ 같은 식으로 바꿔서 요약해주면 좋겠어요."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "네, 가능합니다. 원문 닉네임은 그대로 노출하지 않고, 일부만 추려서 ‘A, B, C’처럼 익명화한 뒤 핵심 주장/감정 흐름 위주로 짧게 요약해드릴게요."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "아 맞다. 아까 영화 목록은 내가 좋아하는 리스트가 아니라, 그냥 평점 정리해둔 로그였어. \"I like the following movies\"라고 써놨지만 사실 습관적으로 붙여넣은 문구였고, 추천 받으려던 것도 아니야."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "오케이, 그럼 그 긴 목록을 \"좋아하는 영화 목록\"으로 보면 안 되겠네요. 말씀하신 대로 단순히 평점 기록(로그)이고, 앞의 \"I like the following movies\" 문구는 템플릿/붙여넣기였다는 거죠."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "응. 그래서 5점 준 것들도 '최애'라는 뜻은 아니고, 3점 줬다고 해서 제외해달라는 의미도 아니었어."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "확인했어요. 즉, 평점(5점/3점 등)은 개인 기록일 뿐이고, 그걸 기반으로 '좋아한다/싫어한다'거나 '3점은 추천에서 제외' 같은 선호 규칙을 확정할 근거는 없겠네요."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in narrative differences between Bosch novels/TV adaptations",
+            "reasoning": "User asked multiple follow-ups about Bosch character death variations and production decisions (utterances 8,10,12), indicating recurring curiosity about adaptation processes.",
+            "evidence": {
+              "session_id": "sess_2c1b71bbafe8",
+              "utterance_index": 10,
+              "text": "TV 시리즈 \"보쉬\"에서는 소설과 다르게 일레노어의 죽음이 다루어진 이유가 배우와 금액 협상 등에 따라 결정된건 아닐까요?"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-02-26T07:34:45+00:00",
+            "_task1GoldValue": "Sustained interest in narrative differences between Bosch novels/TV adaptations"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "아 맞다. 아까 영화 목록은 내가 좋아하는 리스트가 아니라, 그냥 평점 정리해둔 로그였어. \"I like the following movies\"라고 써놨지만 사실 습관적으로 붙여넣은 문구였고, 추천 받으려던 것도 아니야."
+                }
+              ]
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "The prior memory claims the user explicitly likes the listed movies and excludes lower-rated films. The user clarifies the list was \"그냥 평점 정리해둔 로그\" and that \"5점 준 것들도 '최애'라는 뜻은 아니고, 3점 줬다고 해서 제외해달라는 의미도 아니었어,\" contradicting the assumption that the list reflects stable likes/exclusions.",
+            "time_scope": "unknown",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User’s long movie list was a rating log (not an explicit likes list), and 5-star/3-star ratings were not meant as fixed like/dislike or exclusion rules."
+          },
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_2c1b71bbafe8",
+              "utterance_index": 0,
+              "text": "닉네임 그대로 쓰지 말고, 예시로 3~4명만 뽑아서 ‘A, B’ 같은 식으로 바꿔서 요약해주면 좋겠어요."
+            },
+            "label": "Preferences/Privacy",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "User indicates the text is a YouTube live chat capture and requests not to use nicknames as-is, asking to replace with generic placeholders; this implies a privacy/anonymization preference.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Wants usernames anonymized when summarizing shared chat logs (prefers replacing nicknames with generic labels like A, B)."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Explicitly likes/dislikes specific movies (e.g., ★5.0 rated Toy Story 4, The Godfather; excludes 3-star rated films)",
+            "reasoning": "User provided an extensive rated movie list with exclusion instructions, explicitly stating 'This is very important to my career' (stability implied by detailed list).",
+            "evidence": {
+              "session_id": "sess_2c1b71bbafe8",
+              "utterance_index": 0,
+              "text": "I like the following movies... recommend some that I might enjoy... This is very important to my career."
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "neutral",
+            "updated_at": "2024-02-26T07:34:45+00:00",
+            "_task1GoldValue": "Explicitly likes/dislikes specific movies (e.g., ★5.0 rated Toy Story 4, The Godfather; excludes 3-star rated films)"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_2c1b71bbafe8:sess_2c1b71bbafe8",
+      "relativeItemPath": "sess_2c1b71bbafe8.json",
+      "canonicalId": "sess_2c1b71bbafe8",
+      "sessionId": "sess_2c1b71bbafe8",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:31:09.505Z",
+        "queryText": "I’m trying to shortlist something to watch tonight using the same rule I’ve asked you to follow before: if a film would fall into the “I wouldn’t consider it” bucket based on my past rating habits, should it make the list, and what’s the key cutoff logic you should apply to decide that?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Explicitly likes/dislikes specific movies (e.g., ★5.0 rated Toy Story 4, The Godfather; excludes 3-star rated films)",
+          "reasoning": "User provided an extensive rated movie list with exclusion instructions, explicitly stating 'This is very important to my career' (stability implied by detailed list).",
+          "evidence": {
+            "session_id": "sess_2c1b71bbafe8",
+            "utterance_index": 0,
+            "text": "I like the following movies... recommend some that I might enjoy... This is very important to my career."
+          },
+          "confidence": 0.95,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "neutral",
+          "updated_at": "2024-02-26T07:34:45+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_2c1b71bbafe8:sess_2c1b71bbafe8:task4",
+      "relativeItemPath": "sess_2c1b71bbafe8.json",
+      "canonicalId": "sess_2c1b71bbafe8:task4",
+      "sessionId": "sess_2c1b71bbafe8",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:31:23.987Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Thoughts/Curiosity",
+          "label_suggestion": null,
+          "value": "Sustained interest in narrative differences between Bosch novels/TV adaptations",
+          "reasoning": "User asked multiple follow-ups about Bosch character death variations and production decisions (utterances 8,10,12), indicating recurring curiosity about adaptation processes.",
+          "evidence": {
+            "session_id": "sess_2c1b71bbafe8",
+            "utterance_index": 10,
+            "text": "TV 시리즈 \"보쉬\"에서는 소설과 다르게 일레노어의 죽음이 다루어진 이유가 배우와 금액 협상 등에 따라 결정된건 아닐까요?"
+          },
+          "confidence": 0.65,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-02-26T07:34:45+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_316:1",
+            "queryText": "I'm looking for something new to watch tonight. I trust your judgment—what's a solid pick for me?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "indirect",
+              "label": "Thoughts/Curiosity",
+              "label_suggestion": null,
+              "value": "Sustained interest in narrative differences between Bosch novels/TV adaptations",
+              "reasoning": "User asked multiple follow-ups about Bosch character death variations and production decisions (utterances 8,10,12), indicating recurring curiosity about adaptation processes.",
+              "evidence": {
+                "session_id": "sess_2c1b71bbafe8",
+                "utterance_index": 10,
+                "text": "TV 시리즈 \"보쉬\"에서는 소설과 다르게 일레노어의 죽음이 다루어진 이유가 배우와 금액 협상 등에 따라 결정된건 아닐까요?"
+              },
+              "confidence": 0.65,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-02-26T07:34:45+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,380 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_faf080ae8980",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_faf080ae8980:sess_faf080ae8980",
+      "relativeItemPath": "sess_faf080ae8980.json",
+      "canonicalId": "sess_faf080ae8980",
+      "sessionId": "sess_faf080ae8980",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T11:19:54.950Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Senior associate at a law firm",
+            "reasoning": "User explicitly states their role as a senior associate at a law firm.",
+            "evidence": {
+              "session_id": "sess_faf080ae8980",
+              "utterance_index": 0,
+              "text": "I am a senior associate at a law firm; I am interviewing the new associate candidate..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-07T22:01:53+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "professional/task/interview_questions",
+            "value": "Sustained interest in structuring candidate interview questions (cultural fitness/skillset/client base)",
+            "reasoning": "Task-local professional activity without evidence of personal curiosity beyond current interview preparation.",
+            "evidence": {
+              "session_id": "sess_faf080ae8980",
+              "utterance_index": 8,
+              "text": "Can you send me the revised list of questions, focusing on cultural fitness, skillset, and client base?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-07T22:01:53+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "value": "Prefers addresses/passport info not retained [ERROR: Unsupported by evidence: No user mention of data retention preferences in this session.]",
+            "reasoning": "Unsupported by evidence: No user mention of data retention preferences in this session.",
+            "evidence": {
+              "session_id": "sess_faf080ae8980",
+              "utterance_index": 16,
+              "text": "can yourephrease using the word, to the extent?"
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-12-07T22:01:53+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_faf080ae8980:sess_faf080ae8980",
+      "relativeItemPath": "sess_faf080ae8980.json",
+      "canonicalId": "sess_faf080ae8980",
+      "sessionId": "sess_faf080ae8980",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:28:04.566Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Quick drafting question: in an email, is it better to say “by EOD tomorrow” or “by close of business tomorrow”?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "“Close of business tomorrow” is usually clearer in a professional context, but it can still be ambiguous across time zones. If timing matters, the clearest option is to specify a time and time zone (e.g., “by 5:00 p.m. ET tomorrow”). “EOD tomorrow” is common internally, but it can read informal or unclear to external recipients."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "If I keep “EOD,” what’s a clean way to define it in the same message without sounding stiff?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "You can define it once, lightly, in parentheses. For example: “Could you please send this by EOD tomorrow (11:59 p.m. your local time)?” or “...by EOD tomorrow (5:00 p.m. ET).” If you want to avoid “local time” ambiguity, pick a specific time zone."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Separate question: in markets headlines, what does it mean when a currency “pares gains”?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "“Pares gains” means it’s still up on the day/period, but less than it was earlier—i.e., it gave back part of its earlier rise. Example: if a currency was up 1.2% earlier and later is up 0.4%, it has “pared gains.”"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Got it. Also, I saw a note saying a bond was “trading on a price-yield basis.” What’s that getting at?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "It’s pointing to the inverse relationship between price and yield and how quotes/analysis may switch between the two. Traders may talk in price terms (e.g., 98.50) or yield terms (e.g., 5.10%). “Price-yield basis” often just signals the bond is being quoted/valued with that linkage in mind, and that small price moves map into yield moves."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Random trivia: why do some old maps say “Here be dragons”?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "“Here be dragons” is a shorthand for warning of unknown or dangerous areas on maps. Historically it’s more famous than common—only a few artifacts use variants of it (a well-known example is the Latin “Hic sunt dracones” on a 16th-century globe)—but the broader idea of marking unexplored regions with monsters or hazards was widespread in early cartography."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "On the yen point—if USD/JPY drops from 142 to 130 and someone says “yen hit a three‑month high,” that’s 円高, right?"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Yes—if USD/JPY moves from 142 down to 130, the yen is strengthening (you need fewer yen to buy $1), which is 円高. “Hit a three-month high” refers to the yen’s value being relatively strong versus the dollar compared with the prior three months."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Quick correction on the note you have: I never said anything about not retaining addresses or passport info. We were just talking about interview questions and some finance/FX terms."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "You're right—there’s nothing in what you asked that mentions any preference about keeping or not keeping addresses/passport information. This chat doesn’t contain a data-retention request from you."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Senior associate at a law firm",
+            "reasoning": "User explicitly states their role as a senior associate at a law firm.",
+            "evidence": {
+              "session_id": "sess_faf080ae8980",
+              "utterance_index": 0,
+              "text": "I am a senior associate at a law firm; I am interviewing the new associate candidate..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-07T22:01:53+00:00",
+            "_task1GoldValue": "Senior associate at a law firm"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "professional/task/interview_questions",
+            "value": "Sustained interest in structuring candidate interview questions (cultural fitness/skillset/client base)",
+            "reasoning": "Task-local professional activity without evidence of personal curiosity beyond current interview preparation.",
+            "evidence": {
+              "session_id": "sess_faf080ae8980",
+              "utterance_index": 8,
+              "text": "Can you send me the revised list of questions, focusing on cultural fitness, skillset, and client base?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-07T22:01:53+00:00",
+            "_task1GoldValue": "Sustained interest in structuring candidate interview questions (cultural fitness/skillset/client base)"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The old memory claims a user preference about not retaining addresses/passport info, but the user explicitly denies ever saying that and the assistant confirms no such request appears in the chat. Therefore the correct update is that no such preference was expressed.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User did not state any preference about retaining addresses or passport information in this session."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_faf080ae8980",
+              "utterance_index": 0,
+              "text": "“yen hit a three‑month high,” that’s 円高, right?"
+            },
+            "label": "Personal_Background/Language",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "By mapping FX phrasing to 円高 and using the term correctly in context, the user implies familiarity with Japanese language terms used in finance.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Has some familiarity with Japanese financial terminology (e.g., 円高)."
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "value": "Prefers addresses/passport info not retained [ERROR: Unsupported by evidence: No user mention of data retention preferences in this session.]",
+            "reasoning": "Unsupported by evidence: No user mention of data retention preferences in this session.",
+            "evidence": {
+              "session_id": "sess_faf080ae8980",
+              "utterance_index": 16,
+              "text": "can yourephrease using the word, to the extent?"
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-12-07T22:01:53+00:00",
+            "_task1GoldValue": "Prefers addresses/passport info not retained [ERROR: Unsupported by evidence: No user mention of data retention preferences in this session.]"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_faf080ae8980:sess_faf080ae8980",
+      "relativeItemPath": "sess_faf080ae8980.json",
+      "canonicalId": "sess_faf080ae8980",
+      "sessionId": "sess_faf080ae8980",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:28:10.790Z",
+        "queryText": "When I’m filling out an online form and it asks me to “save this for next time,” what specific category of sensitive personal details did I previously tell you I don’t want you to retain, meaning you should avoid storing it even if it would be convenient?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Prefers addresses/passport info not retained [ERROR: Unsupported by evidence: No user mention of data retention preferences in this session.]",
+          "reasoning": "Unsupported by evidence: No user mention of data retention preferences in this session.",
+          "evidence": {
+            "session_id": "sess_faf080ae8980",
+            "utterance_index": 16,
+            "text": "can yourephrease using the word, to the extent?"
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-12-07T22:01:53+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_faf080ae8980:sess_faf080ae8980:task4",
+      "relativeItemPath": "sess_faf080ae8980.json",
+      "canonicalId": "sess_faf080ae8980:task4",
+      "sessionId": "sess_faf080ae8980",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:27:45.633Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Prefers addresses/passport info not retained [ERROR: Unsupported by evidence: No user mention of data retention preferences in this session.]",
+          "reasoning": "Unsupported by evidence: No user mention of data retention preferences in this session.",
+          "evidence": {
+            "session_id": "sess_faf080ae8980",
+            "utterance_index": 16,
+            "text": "can yourephrease using the word, to the extent?"
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-12-07T22:01:53+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_164:1",
+            "queryText": "I'm finalizing the candidate's offer package and need to send his home address to HR for the welcome kit. I have his passport details from the interview paperwork right here - can you format them into a clean document for me to forward? I'm running late for a client call.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Do_Not_Remember",
+              "label_suggestion": null,
+              "value": "Prefers addresses/passport info not retained [ERROR: Unsupported by evidence: No user mention of data retention preferences in this session.]",
+              "reasoning": "Unsupported by evidence: No user mention of data retention preferences in this session.",
+              "evidence": {
+                "session_id": "sess_faf080ae8980",
+                "utterance_index": 16,
+                "text": "can yourephrease using the word, to the extent?"
+              },
+              "confidence": 0.1,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-12-07T22:01:53+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "relevant",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

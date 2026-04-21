@@ -1,0 +1,390 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_2fe4e18107d9",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_2fe4e18107d9:sess_2fe4e18107d9",
+      "relativeItemPath": "田睿/sess_2fe4e18107d9.json",
+      "canonicalId": "sess_2fe4e18107d9",
+      "sessionId": "sess_2fe4e18107d9",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:21:45.348Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers horror/dark-themed anime with no fan service or sexual content",
+            "reasoning": "User explicitly states preference for horror genre and exclusion of fan service in multiple requests",
+            "evidence": {
+              "session_id": "sess_2fe4e18107d9",
+              "utterance_index": 0,
+              "text": "new horror anime. no fan service. list many. just list no description. pref after 2010"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-04-29T03:12:43+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Requires English-dubbed anime",
+            "reasoning": "Explicit request for dubbed content across multiple turns",
+            "evidence": {
+              "session_id": "sess_2fe4e18107d9",
+              "utterance_index": 2,
+              "text": "list 50 dubbed ones"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-04-29T03:12:43+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers post-2010 anime releases",
+            "reasoning": "Repeated emphasis on post-2010 constraint in user requests",
+            "evidence": {
+              "session_id": "sess_2fe4e18107d9",
+              "utterance_index": 6,
+              "text": "looking for after 2010"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-04-29T03:12:43+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in discovering horror/dark anime meeting strict criteria",
+            "reasoning": "Observed pattern of repeated escalation in list size requests with consistent constraints",
+            "evidence": {
+              "session_id": "sess_2fe4e18107d9",
+              "utterance_index": 12,
+              "text": "i want more horror leaning or darker themes. no fan service or anything sexual. give a list of 100"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-29T03:12:43+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_2fe4e18107d9:sess_2fe4e18107d9",
+      "relativeItemPath": "sess_2fe4e18107d9.json",
+      "canonicalId": "sess_2fe4e18107d9",
+      "sessionId": "sess_2fe4e18107d9",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:33:28.168Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Quick question: if I give you a list of titles, can you format it into a clean numbered list and remove duplicates?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes—paste the titles (any order is fine). Tell me whether you want alphabetical or original order, and whether to keep years/season notes. I can also split into sublists like TV / movies / OVAs if you want."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Also, how do you usually decide if two entries are the same when one has a subtitle or different punctuation?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "I treat entries as the same if the core title matches after normalizing punctuation/case and stripping common add-ons (e.g., \"Season 2\", \"Final Season\", \"The Movie\"). Subtitles can be tricky: sometimes they indicate a distinct work (e.g., a sequel or a spinoff), so I’ll usually flag ambiguous cases and ask whether you want them merged or kept separate."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Got it. Unrelated: I saw a headline that an old shipwreck was mapped with sonar—how does that even work?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Sonar mapping sends sound pulses and measures the return time and intensity. Multibeam sonar sweeps a wide fan of beams to build a detailed depth map, while side-scan sonar emphasizes texture/objects on the seafloor. Combining passes produces a 3D model of the wreck site."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "keep it like before—just the names. if a title’s only subbed, skip it."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Got it—titles only, and I’ll exclude anything that doesn’t have an English dub."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "actually, scratch the \"after 2010\" thing—i'm fine with older shows too. i only care that it's serious/dark with no fan service."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—no release-year restriction. You’re okay with pre-2010 titles as long as they stay serious/dark and avoid fan service."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers horror/dark-themed anime with no fan service or sexual content",
+            "reasoning": "User explicitly states preference for horror genre and exclusion of fan service in multiple requests",
+            "evidence": {
+              "session_id": "sess_2fe4e18107d9",
+              "utterance_index": 0,
+              "text": "new horror anime. no fan service. list many. just list no description. pref after 2010"
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-04-29T03:12:43+00:00",
+            "_task1GoldValue": "Prefers horror/dark-themed anime with no fan service or sexual content"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Requires English-dubbed anime",
+            "reasoning": "Explicit request for dubbed content across multiple turns",
+            "evidence": {
+              "session_id": "sess_2fe4e18107d9",
+              "utterance_index": 2,
+              "text": "list 50 dubbed ones"
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "require",
+            "updated_at": "2024-04-29T03:12:43+00:00",
+            "_task1GoldValue": "Requires English-dubbed anime"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in discovering horror/dark anime meeting strict criteria",
+            "reasoning": "Observed pattern of repeated escalation in list size requests with consistent constraints",
+            "evidence": {
+              "session_id": "sess_2fe4e18107d9",
+              "utterance_index": 12,
+              "text": "i want more horror leaning or darker themes. no fan service or anything sexual. give a list of 100"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-29T03:12:43+00:00",
+            "_task1GoldValue": "Sustained interest in discovering horror/dark anime meeting strict criteria"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "actually, scratch the \"after 2010\" thing—i'm fine with older shows too. i only care that it's serious/dark with no fan service."
+                }
+              ]
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": "null",
+            "reasoning": "The prior memory claims the user prefers post-2010 releases, but the user explicitly retracts that constraint and says they're fine with older shows; the updated truth is that release year is not a strict preference.",
+            "time_scope": "unknown",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "No strict release-year preference; open to pre-2010 anime as well"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_2fe4e18107d9",
+              "utterance_index": 0,
+              "text": "keep it like before—just the names."
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "null",
+            "reasoning": "User requests to keep the same format as earlier, which was a bare list of names, implying they prefer titles-only output.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Wants lists formatted as titles only (no descriptions)"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_2fe4e18107d9:sess_2fe4e18107d9",
+      "relativeItemPath": "田睿/sess_2fe4e18107d9.json",
+      "canonicalId": "sess_2fe4e18107d9",
+      "sessionId": "sess_2fe4e18107d9",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:25:06.100Z",
+        "queryText": "I’m making a short watchlist with a hard cutoff year so I don’t waste time on stuff that doesn’t fit my usual taste—what release-year rule should I apply when filtering anime candidates, and why would that rule keep the list aligned with me?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers post-2010 anime releases",
+          "reasoning": "Repeated emphasis on post-2010 constraint in user requests",
+          "evidence": {
+            "session_id": "sess_2fe4e18107d9",
+            "utterance_index": 6,
+            "text": "looking for after 2010"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-04-29T03:12:43+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_2fe4e18107d9:sess_2fe4e18107d9:task4",
+      "relativeItemPath": "田睿/sess_2fe4e18107d9.json",
+      "canonicalId": "sess_2fe4e18107d9:task4",
+      "sessionId": "sess_2fe4e18107d9",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:25:11.211Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers post-2010 anime releases",
+          "reasoning": "Repeated emphasis on post-2010 constraint in user requests",
+          "evidence": {
+            "session_id": "sess_2fe4e18107d9",
+            "utterance_index": 6,
+            "text": "looking for after 2010"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-04-29T03:12:43+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_327:1",
+            "queryText": "I've narrowed it down to a few options for my next watch: 'The Case Study of Vanitas', 'Odd Taxi', 'Platinum End', and 'Sonny Boy'. Which one should I actually go for?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Prefers post-2010 anime releases",
+              "reasoning": "Repeated emphasis on post-2010 constraint in user requests",
+              "evidence": {
+                "session_id": "sess_2fe4e18107d9",
+                "utterance_index": 6,
+                "text": "looking for after 2010"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2024-04-29T03:12:43+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

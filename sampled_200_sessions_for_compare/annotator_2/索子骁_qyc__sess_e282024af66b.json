@@ -1,0 +1,292 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_e282024af66b",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_e282024af66b:sess_e282024af66b",
+      "relativeItemPath": "sess_e282024af66b.json",
+      "canonicalId": "sess_e282024af66b",
+      "sessionId": "sess_e282024af66b",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T02:17:26.789Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers extremely concise, bullet-pointed technical summaries with minimal punctuation/determiners; may request code reconversion",
+            "reasoning": "User demonstrated repeated requests for progressive shortening and formatting changes, but preferences are inferred from formatting instructions rather than explicit self-report.",
+            "evidence": {
+              "session_id": "sess_e282024af66b",
+              "utterance_index": 16,
+              "text": "Turn back into Python."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-19T11:24:41+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_e282024af66b:sess_e282024af66b",
+      "relativeItemPath": "sess_e282024af66b.json",
+      "canonicalId": "sess_e282024af66b",
+      "sessionId": "sess_e282024af66b",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:52:05.653Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Can you compress a short code summary into a single line with no punctuation"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Improved code prompts for escape code allows update or restore from backup loops until exit"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Now rewrite that as a tiny pseudocode block"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "input escape_code\nbackup empty\nloop\n  ask U update or R restore else quit\n  if U backup escape_code then maybe change escape_code\n  if R escape_code equals backup\nend"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Unrelated quick check what does HTTP 204 mean"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "HTTP 204 means No Content request succeeded but server returns no body often used after delete or update"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Another unrelated one why do some lighthouses flash in patterns"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Flash patterns identify lighthouse each has a unique sequence so sailors can recognize location even at night"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Last one what is the smallest prime bigger than 100"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "101"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Same style as before but make output fit on one phone screen because reading on commute"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it I will keep it ultra short and screen friendly"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Different task now keep normal sentences and punctuation No bullet points no extreme shortening"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Got it I will write in normal sentences with punctuation and avoid bullet points or forced shortening"
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Yeah those no determiners and no punctuation constraints were just for that one exercise not a general preference"
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "Understood those constraints were situational for that exercise and not a standing formatting preference"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "Old memory inferred a long term preference for extremely concise bullet pointed summaries with minimal punctuation and determiners. User explicitly states those constraints were only for a single exercise and not a general preference so the stable preference should be updated to reflect normal formatting by default.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Formatting constraints like no determiners or no punctuation were situational for a specific exercise not a general long term preference; user may prefer normal sentences with punctuation unless otherwise requested"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_e282024af66b",
+              "utterance_index": 0,
+              "text": "Same style as before but make output fit on one phone screen because reading on commute"
+            },
+            "label": "Personal/Lifestyle",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "Request to fit on one phone screen and mention of reading on commute implies they consume responses on mobile while commuting.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User often reads content on a commute and prefers phone-screen-length output."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_e282024af66b:sess_e282024af66b",
+      "relativeItemPath": "sess_e282024af66b.json",
+      "canonicalId": "sess_e282024af66b",
+      "sessionId": "sess_e282024af66b",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:52:21.496Z",
+        "queryText": "I’m about to ask you for a recap of a technical plan plus a quick code rewrite; what response format should you default to so I don’t immediately ask you to tighten it up again?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers extremely concise, bullet-pointed technical summaries with minimal punctuation/determiners; may request code reconversion",
+          "reasoning": "User demonstrated repeated requests for progressive shortening and formatting changes, but preferences are inferred from formatting instructions rather than explicit self-report.",
+          "evidence": {
+            "session_id": "sess_e282024af66b",
+            "utterance_index": 16,
+            "text": "Turn back into Python."
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-05-19T11:24:41+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_e282024af66b:sess_e282024af66b:task4",
+      "relativeItemPath": "sess_e282024af66b.json",
+      "canonicalId": "sess_e282024af66b:task4",
+      "sessionId": "sess_e282024af66b",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:52:39.032Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers extremely concise, bullet-pointed technical summaries with minimal punctuation/determiners; may request code reconversion",
+          "reasoning": "User demonstrated repeated requests for progressive shortening and formatting changes, but preferences are inferred from formatting instructions rather than explicit self-report.",
+          "evidence": {
+            "session_id": "sess_e282024af66b",
+            "utterance_index": 16,
+            "text": "Turn back into Python."
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-05-19T11:24:41+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1153:1",
+            "queryText": "Make this code summary shorter",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers extremely concise, bullet-pointed technical summaries with minimal punctuation/determiners; may request code reconversion",
+              "reasoning": "User demonstrated repeated requests for progressive shortening and formatting changes, but preferences are inferred from formatting instructions rather than explicit self-report.",
+              "evidence": {
+                "session_id": "sess_e282024af66b",
+                "utterance_index": 16,
+                "text": "Turn back into Python."
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-05-19T11:24:41+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "extremely relevant",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

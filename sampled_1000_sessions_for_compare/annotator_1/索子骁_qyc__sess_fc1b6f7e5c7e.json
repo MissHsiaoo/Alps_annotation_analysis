@@ -1,0 +1,369 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_fc1b6f7e5c7e",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_fc1b6f7e5c7e:sess_fc1b6f7e5c7e",
+      "relativeItemPath": "sess_fc1b6f7e5c7e.json",
+      "canonicalId": "sess_fc1b6f7e5c7e",
+      "sessionId": "sess_fc1b6f7e5c7e",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T11:25:13.271Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Music",
+            "label_suggestion": null,
+            "value": "Prefers pop songs with female vocals, EDM elements, released between 2009-2014, and lesser-known tracks (<1M YouTube views)",
+            "reasoning": "User explicitly states genre, vocal type, timeframe, and popularity preferences multiple times",
+            "evidence": {
+              "session_id": "sess_fc1b6f7e5c7e",
+              "utterance_index": 28,
+              "text": "Hmmm, it's was written in EDM style"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-10-10T22:28:25+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "Persistent search for specific EDM/pop song with female vocals containing 'never let you go' lyrics ",
+            "reasoning": "User was searching for the same song from beginning to end, but couldn't find it.",
+            "evidence": {
+              "session_id": "sess_fc1b6f7e5c7e",
+              "utterance_index": 38,
+              "text": "Okay, big thanks to you anyway"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": "Neutral",
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T08:48:17.908Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers receiving multiple song suggestions (5+) per response during search tasks",
+            "reasoning": "User repeatedly requests bulk suggestions to speed up process",
+            "evidence": {
+              "session_id": "sess_fc1b6f7e5c7e",
+              "utterance_index": 18,
+              "text": "And give me please a list of suggestions with at least 5 songs"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-10-10T22:28:25+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_fc1b6f7e5c7e:sess_fc1b6f7e5c7e",
+      "relativeItemPath": "sess_fc1b6f7e5c7e.json",
+      "canonicalId": "sess_fc1b6f7e5c7e",
+      "sessionId": "sess_fc1b6f7e5c7e",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T09:13:39.435Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Hey—quick question. What’s the best way to figure out a song when you only remember one vague lyric?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "A good approach is to narrow by (1) approximate year, (2) genre/tempo, (3) vocalist type, and (4) a few “sounds like” phrases. Then try: lyric search with quotes + wildcards (e.g., \"never * you go\"), search by misheard lyrics (“mondgreen”), and check platforms that index audio (Shazam/SoundHound, or YouTube’s search suggestions). If it might be from a game/movie, soundtrack lists help too."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Does searching with quotes actually help, or is it basically the same as normal search?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Quotes help when the phrase is exact; without quotes, results can be loosely related. If the lyric might be slightly off, do both: one quoted search and one unquoted search with extra context words (genre, year, “lyrics”, “remix”, “radio edit”). You can also try substituting similar words: “never let you go”, “never gonna let you go”, “I won’t let you go”, “don’t let go”."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Any tricks for when the lyric is probably misheard?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Yes: try phonetic spellings (how it sounded), search fragments (2–4 words), and add the vibe: “EDM”, “uplifting”, “female vocal”, “2010”. Also check lyric sites that allow partial matches. If you can hum it, audio search is often faster than text.\n\nUnrelated example: a lot of people misheard “Hold me closer, tiny dancer” as “Tony Danza,” and searching the misheard version still often surfaces the correct song."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "If I only remember the melody, is there a tool that works reliably?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Humming tools can work: Google’s “Search a song” (mobile) is decent, and Shazam can sometimes identify hummed or played melodies if the pattern is clear. They’re less reliable for very generic chord progressions.\n\nAnother unrelated tidbit: the most common pop progression is often described as I–V–vi–IV, which is why some melodies feel familiar across many tracks."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "What info should I write down before I forget it?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Write: (1) any exact words you’re confident about, (2) a rough BPM/tempo (“fast like a club track”), (3) voice type (female/male, solo/duet), (4) instruments/synth style, (5) where you heard it (radio, playlist, game), (6) year range, and (7) any similar songs it resembles.\n\nAlso, for tracking leads, it helps to keep a short list of “ruled out” candidates so you don’t loop back later."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "If it helps at all, I’m usually hunting these tracks on my phone while I’m on the metro, so I can’t really play long previews—just quick chorus snippets."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—short chorus snippets only. If you tell me which app you’re using (YouTube, Spotify, SoundCloud, etc.), I can tailor the search approach to fast checks and timestamped chorus sections."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Hey, quick correction about that old song hunt: I wasn’t saying I *prefer* lesser-known EDM pop from 2009–2014 in general. That was just me narrowing down clues for one specific track."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Got it—so those details were constraints for that particular mystery song, not your overall taste."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Exactly. I listen to all kinds of stuff. The only stable thing is: for *that* song, I was sure it had female vocals and an EDM-ish feel, and I thought I heard it around 2009–2014. The “<1M views” thing was just a guess for that one track."
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "Thanks for clarifying. I’ll treat “female vocals + EDM-ish + 2009–2014 + maybe not popular” as temporary search criteria for that one song, not as a long-term preference."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "Persistent search for specific EDM/pop song with female vocals containing 'never let you go' lyrics ",
+            "reasoning": "User was searching for the same song from beginning to end, but couldn't find it.",
+            "evidence": {
+              "session_id": "sess_fc1b6f7e5c7e",
+              "utterance_index": 38,
+              "text": "Okay, big thanks to you anyway"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": "Neutral",
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T08:48:17.908Z",
+            "_task1GoldValue": "Persistent search for specific EDM/pop song with female vocals containing 'never let you go' lyrics "
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers receiving multiple song suggestions (5+) per response during search tasks",
+            "reasoning": "User repeatedly requests bulk suggestions to speed up process",
+            "evidence": {
+              "session_id": "sess_fc1b6f7e5c7e",
+              "utterance_index": 18,
+              "text": "And give me please a list of suggestions with at least 5 songs"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-10-10T22:28:25+00:00",
+            "_task1GoldValue": "Prefers receiving multiple song suggestions (5+) per response during search tasks"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Music",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory frames the user’s statements as a general, long-term music preference. The user clarifies those constraints (EDM elements, 2009–2014, <1M views) were only investigative clues for identifying one specific song, not an overall preference.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "The 2009–2014 timeframe, EDM elements, and “lesser-known (<1M views)” were search constraints for a specific song, not the user’s general music preference; the only consistent clue was that the target song likely had female vocals and an EDM-ish feel."
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_fc1b6f7e5c7e",
+              "utterance_index": 0,
+              "text": "I’m usually hunting these tracks on my phone while I’m on the metro"
+            },
+            "label": "Personal/Lifestyle",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies they are on the metro and using their phone when searching for tracks.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Often searches for music while commuting on the metro using their phone."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_fc1b6f7e5c7e:sess_fc1b6f7e5c7e",
+      "relativeItemPath": "sess_fc1b6f7e5c7e.json",
+      "canonicalId": "sess_fc1b6f7e5c7e",
+      "sessionId": "sess_fc1b6f7e5c7e",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:16:39.851Z",
+        "queryText": "I’m building a playlist that should feel like it came from a specific “older-but-not-too-old” pop era, have a dance/electronic pulse, and be fronted by a certain kind of vocalist—plus I want picks that aren’t the obvious mega-hits everyone already knows. Based on my usual taste, what kind of songs should you recommend (and what kind should you avoid)?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Music",
+          "label_suggestion": null,
+          "value": "Prefers pop songs with female vocals, EDM elements, released between 2009-2014, and lesser-known tracks (<1M YouTube views)",
+          "reasoning": "User explicitly states genre, vocal type, timeframe, and popularity preferences multiple times",
+          "evidence": {
+            "session_id": "sess_fc1b6f7e5c7e",
+            "utterance_index": 28,
+            "text": "Hmmm, it's was written in EDM style"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-10-10T22:28:25+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_fc1b6f7e5c7e:sess_fc1b6f7e5c7e:task4",
+      "relativeItemPath": "sess_fc1b6f7e5c7e.json",
+      "canonicalId": "sess_fc1b6f7e5c7e:task4",
+      "sessionId": "sess_fc1b6f7e5c7e",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:25:24.151Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Music",
+          "label_suggestion": null,
+          "value": "Prefers pop songs with female vocals, EDM elements, released between 2009-2014, and lesser-known tracks (<1M YouTube views)",
+          "reasoning": "User explicitly states genre, vocal type, timeframe, and popularity preferences multiple times",
+          "evidence": {
+            "session_id": "sess_fc1b6f7e5c7e",
+            "utterance_index": 28,
+            "text": "Hmmm, it's was written in EDM style"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-10-10T22:28:25+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_754:1",
+            "queryText": "I'm trying to find some new music to add to my playlist. Can you suggest a few tracks that have the right vibe for me?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Music",
+              "label_suggestion": null,
+              "value": "Prefers pop songs with female vocals, EDM elements, released between 2009-2014, and lesser-known tracks (<1M YouTube views)",
+              "reasoning": "User explicitly states genre, vocal type, timeframe, and popularity preferences multiple times",
+              "evidence": {
+                "session_id": "sess_fc1b6f7e5c7e",
+                "utterance_index": 28,
+                "text": "Hmmm, it's was written in EDM style"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-10-10T22:28:25+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

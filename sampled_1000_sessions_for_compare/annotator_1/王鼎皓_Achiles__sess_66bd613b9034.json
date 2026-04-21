@@ -1,0 +1,283 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_66bd613b9034",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_66bd613b9034:sess_66bd613b9034",
+      "relativeItemPath": "sess_66bd613b9034.json",
+      "canonicalId": "sess_66bd613b9034",
+      "sessionId": "sess_66bd613b9034",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T18:09:26.051Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers structured product descriptions with full format (description/features/specs) and expanded details",
+            "reasoning": "Repeated formatting requests across 7 turns show interaction pattern, but no explicit self-statement of preference",
+            "evidence": {
+              "session_id": "sess_66bd613b9034",
+              "utterance_index": 12,
+              "text": "please rewrite this in the format of the product description fully..."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-04-18T05:00:22Z"
+          },
+          {
+            "memory_id": "new-memory-2",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "User shows repeated interest in high-security safes (AMSEC CE series), specifically requesting product descriptions formatted into description/features/specifications, indicating curiosity or professional engagement with security equipment.",
+            "reasoning": "",
+            "evidence": null,
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-04-11T18:09:12.615Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_66bd613b9034:sess_66bd613b9034",
+      "relativeItemPath": "sess_66bd613b9034.json",
+      "canonicalId": "sess_66bd613b9034",
+      "sessionId": "sess_66bd613b9034",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T14:55:33.666Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Can you help me format some copy into product description, features, and specifications? I want it to read clean and organized."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure—paste the text and tell me if you want a shorter description (bullet-heavy) or a longer one (more narrative). Also, should I keep all measurements exactly as written, including fractions and quotes?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Keep the measurements exactly. Longer description would be better, but still product-page style."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Got it. I’ll create: (1) a full product description in paragraph form, (2) a scannable features list, and (3) a specifications section with dimensions, capacity, weight, ratings, and hardware details. If the source includes a phone number, warranty, or shipping exclusions, do you want those kept at the end as notes?"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Yes, include warranty and shipping notes at the end."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Perfect. One more detail: for burglary/fire ratings, do you prefer repeating them in both Features and Specifications (some product pages do), or only once to avoid duplication?"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Repeat them in both. Also, make sure the door swing info stays in specs."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Will do. Unrelated fun fact while you paste the text: the UL TL-15 label refers to “net working time” during an attack test—breaks and tool changes don’t count toward the 15 minutes. Also, a recent museum exhibit I read about used layered composite panels (not steel) to demonstrate how different materials resist drills differently. Anyway—send the copy when ready and I’ll format it."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Same layout as before (full product description, then features, then specs). Keep the tone like the CE6528/CE7236 write-ups—insurance angle and the 1850°/350° testing line included—but make this one tighter since it’s going on a mobile page."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—I'll keep the full Product Description/Features/Specifications structure, match the prior CE-series tone (including the insurance-value framing and the 1850°/350° fire-test line), and write it more concise for mobile."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Hold up—I'm not asking for the full product description/features/specs format because I *prefer* it. I'm just batching a bunch of these listings and that's the template my manager wants today. Tomorrow it'll probably be totally different."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—so it’s not a standing preference, it’s just the required template for this batch. I’ll stick to product description + features + specifications for these items, but I won’t assume you want that format going forward."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Exactly. Don’t save that as my default style preference—it's just for this task."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory claims a long-term preference for structured product descriptions. The user clarifies it is only a manager-required template for this batch and explicitly says not to treat it as a default preference.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Uses the structured product description format (description/features/specs) for this current batching task, but it is not a long-term/default preference."
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_66bd613b9034",
+              "utterance_index": 0,
+              "text": "Keep the tone like the CE6528/CE7236 write-ups—insurance angle and the 1850°/350° testing line included—but make this one tighter since it’s going on a mobile page."
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "The user requests the same layout but explicitly wants it tighter because it will be displayed on a mobile page, implying a preference for brevity in that context.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers copy that is concise/tighter for mobile pages while keeping the same structured format."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_66bd613b9034:sess_66bd613b9034",
+      "relativeItemPath": "sess_66bd613b9034.json",
+      "canonicalId": "sess_66bd613b9034",
+      "sessionId": "sess_66bd613b9034",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T12:23:12.727Z",
+        "queryText": "I’m about to list a new pair of wireless headphones online, and I want the write-up to match the way I usually like product info organized so buyers can skim it fast. What section layout and level of detail should I use?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers structured product descriptions with full format (description/features/specs) and expanded details",
+          "reasoning": "Repeated formatting requests across 7 turns show interaction pattern, but no explicit self-statement of preference",
+          "evidence": {
+            "session_id": "sess_66bd613b9034",
+            "utterance_index": 12,
+            "text": "please rewrite this in the format of the product description fully..."
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-04-18T05:00:22Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_66bd613b9034:sess_66bd613b9034:task4",
+      "relativeItemPath": "sess_66bd613b9034.json",
+      "canonicalId": "sess_66bd613b9034:task4",
+      "sessionId": "sess_66bd613b9034",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T12:48:00.101Z",
+        "editableSelectedMemory": {
+          "memory_id": "new-memory-2",
+          "type": "direct",
+          "label": "Thoughts/Curiosity",
+          "label_suggestion": null,
+          "value": "User shows repeated interest in high-security safes (AMSEC CE series), specifically requesting product descriptions formatted into description/features/specifications, indicating curiosity or professional engagement with security equipment.",
+          "reasoning": "",
+          "evidence": null,
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2026-04-11T18:09:12.615Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1104:1",
+            "queryText": "I'm looking at the AMSEC CE3524, CE4524, CE5524, CE6528, and CE7236 models. Can you help me decide which one would be the best fit for my needs?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "new-memory-2",
+              "type": "direct",
+              "label": "Thoughts/Curiosity",
+              "label_suggestion": null,
+              "value": "User shows repeated interest in high-security safes (AMSEC CE series), specifically requesting product descriptions formatted into description/features/specifications, indicating curiosity or professional engagement with security equipment.",
+              "reasoning": "",
+              "evidence": null,
+              "confidence": 0.8,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2026-04-11T18:09:12.615Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

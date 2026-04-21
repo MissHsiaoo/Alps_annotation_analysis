@@ -1,0 +1,317 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_6bdb23e2d41d",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_6bdb23e2d41d:sess_6bdb23e2d41d",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6bdb23e2d41d.json",
+      "canonicalId": "sess_6bdb23e2d41d",
+      "sessionId": "sess_6bdb23e2d41d",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-13T01:42:41.658Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires strict JSON formatting with specific field rules for coupon analysis",
+            "reasoning": "User repeatedly provides detailed technical specifications for JSON output format including time formatting logic, payment method distinctions, and field constraints across multiple turns.",
+            "evidence": {
+              "session_id": "sess_6bdb23e2d41d",
+              "utterance_index": 0,
+              "text": "以json格式回复，格式如下...关于活动时间详细要求:\n分为以下几种情况\n情况1...情况2...情况3...关于支付场景scene包括:\n1、生活缴费...30、快手\n不符合以上归类的，默认为\"指定消费\""
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "null",
+            "updated_at": "2024-04-22T08:46:39+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained focus on coupon activity pattern analysis and validity period calculations",
+            "reasoning": "User submitted 10+ coupon analysis requests with repeated emphasis on time format conversions and state calculations based on current time",
+            "evidence": {
+              "session_id": "sess_6bdb23e2d41d",
+              "utterance_index": 42,
+              "text": "当前时间:2024/4/22 16:46:18\n优惠id:2102024040378271...根据time算出活动结束时间，与当前时间比较判断state值"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-22T08:46:39+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Prohibits retention of address/passport information [ERROR: Unsupported by evidence]",
+            "reasoning": "Unsupported by evidence",
+            "evidence": {
+              "session_id": "sess_6bdb23e2d41d",
+              "utterance_index": 0,
+              "text": ""
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2026-04-13T01:41:47.597Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_6bdb23e2d41d:sess_6bdb23e2d41d",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6bdb23e2d41d.json",
+      "canonicalId": "sess_6bdb23e2d41d",
+      "sessionId": "sess_6bdb23e2d41d",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-13T01:43:42.110Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "刚才那种提取活动字段的格式我懂了。为了避免漏字段，你能再用一句话概括一下输出规则吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "只输出一个JSON对象，字段固定为{coupon_id,time,days,platform,payway,bank,card_type,area,shops,bins,coupons,daily,weekly,monthly,total,scene,state}，能从文本解析就填解析值，解析不到就按约定默认值/“不适用”，且不附加任何额外说明。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "如果活动写的是“即日起至5月1日23:59:59”，time字段怎么写？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "按“即日起 ~ 2024-5-1 23:59:59”这种格式写；若只给了结束时间没有开始日期，就用“即日起 ~ 结束时间”。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "还有个小问题：days是按自然日算还是按活动实际可参与的天数算？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "days按活动实际覆盖的自然日区间计算（起止日期都包含）；若是“逢周三/每周五”这类，则只统计满足条件的日期数量。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "听说最近有些地方把公交二维码和地铁码合并了，这种如果出现在活动描述里，scene一般归哪类？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "通常按实际发生的支付场景归类：公交用“公交”，地铁用“地铁”；若描述明确是“乘车码/公共交通”但不区分，可先归到“公交”或保持为“指定消费”，以你们的枚举口径为准。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "顺便一提，我看到一篇文章说某虚构城市推出了“周末咖啡补贴”，每人每周限领2次，这种weekly怎么算？"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "weekly填2；如果同时写了monthly上限（比如每月最多4次），就monthly填4，total按规则需要结合活动覆盖月份与周数上限一起推导或留0（看是否给出活动期总上限）。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "刚才那几条我发现你把“时间点”写成了“每周五9点开始”这种口径更好读；我接下来会继续按这个习惯给你贴活动原文，你也照这个风格统一下就行。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "知道了"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "另外，上次你说“不能保存地址/护照信息”那条记忆是错的吧？我这边规则里只要求你别回显我身份证号、手机号这类敏感信息；像城市地区这种地址类字段（area）是业务必填，照常要输出。"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "对，那条记忆不成立。你现在的要求是：分析活动并输出 area 这类城市/地区字段；同时避免回显身份证号、手机号等敏感信息。并没有“禁止保留地址/护照信息”的规则。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires strict JSON formatting with specific field rules for coupon analysis",
+            "reasoning": "User repeatedly provides detailed technical specifications for JSON output format including time formatting logic, payment method distinctions, and field constraints across multiple turns.",
+            "evidence": {
+              "session_id": "sess_6bdb23e2d41d",
+              "utterance_index": 0,
+              "text": "以json格式回复，格式如下...关于活动时间详细要求:\n分为以下几种情况\n情况1...情况2...情况3...关于支付场景scene包括:\n1、生活缴费...30、快手\n不符合以上归类的，默认为\"指定消费\""
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "null",
+            "updated_at": "2024-04-22T08:46:39+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained focus on coupon activity pattern analysis and validity period calculations",
+            "reasoning": "User submitted 10+ coupon analysis requests with repeated emphasis on time format conversions and state calculations based on current time",
+            "evidence": {
+              "session_id": "sess_6bdb23e2d41d",
+              "utterance_index": 42,
+              "text": "当前时间:2024/4/22 16:46:18\n优惠id:2102024040378271...根据time算出活动结束时间，与当前时间比较判断state值"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-22T08:46:39+00:00"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_6bdb23e2d41d",
+              "utterance_index": 12,
+              "text": "另外，上次你说“不能保存地址/护照信息”那条记忆是错的吧？我这边规则里只要求你别回显我身份证号、手机号这类敏感信息；像城市地区这种地址类字段（area）是业务必填，照常要输出。"
+            },
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "null",
+            "reasoning": "The old memory claims a prohibition on retaining address/passport information, but the user clarifies the actual rule is only to avoid echoing sensitive identifiers (e.g., ID number/phone). The dialogue explicitly states address-like fields (area) are required and allowed, contradicting the old claim.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Does not prohibit retaining address/passport information; only requires avoiding exposure of sensitive IDs like ID numbers/phone numbers while outputting required area fields."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_6bdb23e2d41d",
+              "utterance_index": 0,
+              "text": "你把“时间点”写成了“每周五9点开始”这种口径更好读；我接下来会继续按这个习惯给你贴活动原文，你也照这个风格统一下就行。"
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "null",
+            "reasoning": "User notes a specific phrasing for time points is easier to read and requests the assistant to unify outputs to that style.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers expressing time windows in a more readable 'time point + start' style (e.g., '每周五9点开始') consistently across outputs"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_6bdb23e2d41d:sess_6bdb23e2d41d",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6bdb23e2d41d.json",
+      "canonicalId": "sess_6bdb23e2d41d",
+      "sessionId": "sess_6bdb23e2d41d",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-13T01:47:48.157Z",
+        "queryText": "I’m filling out an online form and it asks me to store a copy of certain highly sensitive ID/travel details in my profile for faster checkout later. Based on my own long‑term boundaries about what you should *not* keep, what should I refuse to let the site retain?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "value": "Prohibits retention of address/passport information [ERROR: Unsupported by evidence]",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_6bdb23e2d41d:sess_6bdb23e2d41d:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_6bdb23e2d41d.json",
+      "canonicalId": "sess_6bdb23e2d41d:task4",
+      "sessionId": "sess_6bdb23e2d41d",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-13T01:47:58.368Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "value": "Prohibits retention of address/passport information [ERROR: Unsupported by evidence]"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_244:1",
+            "queryText": "我刚刚在携程上订了个酒店，需要填写入住人的身份证信息。我手机没电了，你帮我记一下我的护照号码吧，是G12345678，有效期到2030年。等下我手机充上电了直接问你，这样我复制粘贴快一点。",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "value": "Prohibits retention of address/passport information [ERROR: Unsupported by evidence]"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

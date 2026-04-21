@@ -1,0 +1,352 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_f74b6bd2e4b5",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_f74b6bd2e4b5:sess_f74b6bd2e4b5",
+      "relativeItemPath": "sess_f74b6bd2e4b5.json",
+      "canonicalId": "sess_f74b6bd2e4b5",
+      "sessionId": "sess_f74b6bd2e4b5",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T09:13:54.597Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers anime movies with positive/growth themes and excludes romance",
+            "reasoning": "User explicitly requests filtering criteria: '积极向上和成长之类关键词的，且排除带有爱情之类关键词的' (positive/growth themes, exclude romance).",
+            "evidence": {
+              "session_id": "sess_f74b6bd2e4b5",
+              "utterance_index": 0,
+              "text": "请从吉卜力工作室制作的动漫电影中，筛选出有积极向上和成长之类关键词的，且排除带有爱情之类关键词的，至少要六个，要仔细挑选，不能出错"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-07-02T06:11:03+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Entertainment/Anime_Recommendations",
+            "value": "Sustained curiosity about anime movie recommendations (Ghibli themes, uplifting stories, rankings)",
+            "reasoning": "Repeated requests for recommendations indicate interest, but original label 'Thoughts/Curiosity' forced taxonomy. Evidence shows pattern of anime preference exploration.",
+            "evidence": {
+              "session_id": "sess_f74b6bd2e4b5",
+              "utterance_index": 8,
+              "text": "放暑假了，我想看些积极向上的动漫电影，有什么推荐吗"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-02T06:11:03+00:00"
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p1",
+            "type": "direct",
+            "label": "Plans/Schedule",
+            "value": "目前正处于暑假期间。",
+            "confidence": 0.95,
+            "evidence_text": "放暑假了"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_f74b6bd2e4b5:sess_f74b6bd2e4b5",
+      "relativeItemPath": "sess_f74b6bd2e4b5.json",
+      "canonicalId": "sess_f74b6bd2e4b5",
+      "sessionId": "sess_f74b6bd2e4b5",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:06:41.894Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "你刚才那个“再补20个”的列表里，好像有几条中文片名不太对。能不能顺便纠正一下？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以。你提到的两条最明显的是：\n1) 《我的邻居山田君》更常见的译名是《隔壁的山田君》（The Yamadas / My Neighbors the Yamadas）。\n2) 《侧耳倾听》（Whisper of the Heart）有时也会被误写成别的中文名，但标准译名通常是《侧耳倾听》。\n如果你把你那份列表里第11–30条完整贴出来，我可以逐条对照把中文/英文名统一、并把明显不准确的条目替换掉。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "那如果不做“世界前30”，改成“影史口碑很高的动画电影清单”，是不是更合理？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "更合理。“世界前30”容易受榜单口径影响（票房/评分平台/影评人榜单都不同），而“影史口碑很高”可以用更稳定的筛选标准，比如：多平台高分、获奖记录、影史影响力、不同国家/年代的代表性。\n需要我给你一份约30部的“口碑向清单”，并按地区/年代分组吗？"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "按地区分组吧，顺便标一下适合全家看的。"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "没问题。我可以分成：日本、北美、欧洲、其他地区四组；每部后面用“合家欢/偏成人向/中性”做标注，并尽量选跨年代的代表作。\n另外一个小常识：很多影评榜单会把“动画长片”和“动画短片”分开统计，所以我默认只列动画长片（通常≥60分钟）。可以吗？"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "可以，就按长片来。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "user",
+            "text": "我这两天通勤路上想找点轻松的片子打发时间，最好是那种一开场就能把人拉进去、台词别太密的；地铁里信号也不太稳，能提前下好就更省心。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "assistant",
+            "text": "明白，你更适合节奏清爽、画面叙事占比高的动画电影。你通勤在地铁环境的话，确实优先选情节不靠密集对白推进的片子；另外可以挑时长在90–120分钟左右的，分两段看也不累。要不我按“画面表达强、对白少、适合离线缓存”的标准给你列一份？"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "user",
+            "text": "你上来就说“排除爱情关键词”，但我其实不想排除爱情题材。我想看的就是那种又有成长、又带点爱情线的动画电影，甜一点也没关系。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "assistant",
+            "text": "明白了，你的重点是“积极向上/成长”，但并不需要把“爱情”排除掉；之前按“排除爱情关键词”去筛选，确实不符合你现在的真实需求。之后我给你推荐时，会把“包含爱情线但仍以成长为主”的作品也纳入。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "user",
+            "text": "对，就这个意思：成长主题优先，但爱情不算雷点，不用刻意避开。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Entertainment/Anime_Recommendations",
+            "value": "Sustained curiosity about anime movie recommendations (Ghibli themes, uplifting stories, rankings)",
+            "reasoning": "Repeated requests for recommendations indicate interest, but original label 'Thoughts/Curiosity' forced taxonomy. Evidence shows pattern of anime preference exploration.",
+            "evidence": {
+              "session_id": "sess_f74b6bd2e4b5",
+              "utterance_index": 8,
+              "text": "放暑假了，我想看些积极向上的动漫电影，有什么推荐吗"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-02T06:11:03+00:00",
+            "_task1GoldValue": "Sustained curiosity about anime movie recommendations (Ghibli themes, uplifting stories, rankings)"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "The old memory says the user excludes romance, but the user explicitly corrects that they do not want to exclude romance and are fine with a romantic subplot as long as the growth theme is primary.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers anime movies with positive/growth themes and is okay with romance (does not need to exclude it)"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_f74b6bd2e4b5",
+              "utterance_index": 0,
+              "text": "最好是那种一开场就能把人拉进去、台词别太密的；地铁里信号也不太稳，能提前下好就更省心。"
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "User implies they watch during subway commute, want something light, with fewer dense lines, and mentions unstable signal and downloading ahead.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Likes easy-to-follow films for commuting, preferring not-too-dialogue-heavy animated movies and appreciates offline download options due to unstable subway signal."
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers anime movies with positive/growth themes and excludes romance",
+            "reasoning": "User explicitly requests filtering criteria: '积极向上和成长之类关键词的，且排除带有爱情之类关键词的' (positive/growth themes, exclude romance).",
+            "evidence": {
+              "session_id": "sess_f74b6bd2e4b5",
+              "utterance_index": 0,
+              "text": "请从吉卜力工作室制作的动漫电影中，筛选出有积极向上和成长之类关键词的，且排除带有爱情之类关键词的，至少要六个，要仔细挑选，不能出错"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-07-02T06:11:03+00:00",
+            "_task1GoldValue": "Prefers anime movies with positive/growth themes and excludes romance"
+          },
+          {
+            "memory_id": "gemini_3_flash_preview_p1",
+            "type": "direct",
+            "label": "Plans/Schedule",
+            "value": "目前正处于暑假期间。",
+            "confidence": 0.95,
+            "evidence_text": "放暑假了",
+            "_task1GoldValue": "目前正处于暑假期间。"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "gemini_3_flash_preview_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_f74b6bd2e4b5:sess_f74b6bd2e4b5",
+      "relativeItemPath": "sess_f74b6bd2e4b5.json",
+      "canonicalId": "sess_f74b6bd2e4b5",
+      "sessionId": "sess_f74b6bd2e4b5",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:06:51.731Z",
+        "queryText": "我想让你从一堆动画电影里帮我挑 6 部当周末清单：如果其中有几部主线围绕两个人的感情发展、还有几部更偏向主角自我蜕变与变得更强那类，你会优先留下哪一类、并把哪一类直接剔除？给我你的筛选原则。",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers anime movies with positive/growth themes and excludes romance",
+          "reasoning": "User explicitly requests filtering criteria: '积极向上和成长之类关键词的，且排除带有爱情之类关键词的' (positive/growth themes, exclude romance).",
+          "evidence": {
+            "session_id": "sess_f74b6bd2e4b5",
+            "utterance_index": 0,
+            "text": "请从吉卜力工作室制作的动漫电影中，筛选出有积极向上和成长之类关键词的，且排除带有爱情之类关键词的，至少要六个，要仔细挑选，不能出错"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-07-02T06:11:03+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_f74b6bd2e4b5:sess_f74b6bd2e4b5:task4",
+      "relativeItemPath": "sess_f74b6bd2e4b5.json",
+      "canonicalId": "sess_f74b6bd2e4b5:task4",
+      "sessionId": "sess_f74b6bd2e4b5",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:05:58.662Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers anime movies with positive/growth themes and excludes romance",
+          "reasoning": "User explicitly requests filtering criteria: '积极向上和成长之类关键词的，且排除带有爱情之类关键词的' (positive/growth themes, exclude romance).",
+          "evidence": {
+            "session_id": "sess_f74b6bd2e4b5",
+            "utterance_index": 0,
+            "text": "请从吉卜力工作室制作的动漫电影中，筛选出有积极向上和成长之类关键词的，且排除带有爱情之类关键词的，至少要六个，要仔细挑选，不能出错"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-07-02T06:11:03+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_299:1",
+            "queryText": "最近想找几部能给人力量的动画电影来看，最好是那种看完能让人心情变好、有所收获的，不要那种谈情说爱为主的。你有什么好的片单可以分享吗？",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Prefers anime movies with positive/growth themes and excludes romance",
+              "reasoning": "User explicitly requests filtering criteria: '积极向上和成长之类关键词的，且排除带有爱情之类关键词的' (positive/growth themes, exclude romance).",
+              "evidence": {
+                "session_id": "sess_f74b6bd2e4b5",
+                "utterance_index": 0,
+                "text": "请从吉卜力工作室制作的动漫电影中，筛选出有积极向上和成长之类关键词的，且排除带有爱情之类关键词的，至少要六个，要仔细挑选，不能出错"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-07-02T06:11:03+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "partial",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [
+              "ability_mismatch"
+            ],
+            "evidenceNote": "relevant memory but not helpful ability",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

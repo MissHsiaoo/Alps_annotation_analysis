@@ -1,0 +1,379 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_95834dfa5417",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_95834dfa5417:sess_95834dfa5417",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_95834dfa5417.json",
+      "canonicalId": "sess_95834dfa5417",
+      "sessionId": "sess_95834dfa5417",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T06:32:32.864Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "Turkmen nationality",
+            "reasoning": "User explicitly states 'Нет я туркмен поэтому спросил' (No, I'm Turkmen, that's why I asked).",
+            "evidence": {
+              "session_id": "sess_95834dfa5417",
+              "utterance_index": 14,
+              "text": "Нет я туркмен поэтому спросил"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-06T02:40:25+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Political/Interest/Updates",
+            "value": "Sustained interest in Turkmenistan's political leadership updates",
+            "reasoning": "User repeatedly corrects presidential information (utterances 26,28,30,32), but label 'Thoughts/Curiosity' is forced. Evidence supports political interest.",
+            "evidence": {
+              "session_id": "sess_95834dfa5417",
+              "utterance_index": 28,
+              "text": "Сейчас Сердар бердимухаммедов президент"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-06T02:40:25+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preference/Residence",
+            "value": "Does not want to return to Turkmenistan",
+            "reasoning": "User explicitly states 'не хочу вернуть Туркменистане' (don't want to return), but label 'States_Experiences/Mental_State' is forced. Direct statement valid as preference.",
+            "evidence": {
+              "session_id": "sess_95834dfa5417",
+              "utterance_index": 32,
+              "text": "Да я из Туркменистана и не хочу вернуть Туркменистане"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": "negative",
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-06T02:40:25+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_95834dfa5417:sess_95834dfa5417",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_95834dfa5417.json",
+      "canonicalId": "sess_95834dfa5417",
+      "sessionId": "sess_95834dfa5417",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-17T10:35:55.077Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "А если на Hugging Face пишет про «token limit», это про что вообще?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Обычно это ограничение на объём текста в одном запросе/ответе: сколько «токенов» (кусочков текста) модель может обработать за раз. 4096 токенов — это примерно несколько страниц текста, но точнее зависит от языка и длины слов."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Токен — это слово?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Не всегда. Токен может быть словом, частью слова, знаком препинания или пробелом — модель режет текст на удобные ей фрагменты. Поэтому одно длинное слово иногда превращается в несколько токенов."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "А как примерно прикинуть заранее, влезет текст или нет?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Грубая оценка: 1 токен ≈ 3–4 символа английского текста или ≈ 0.7–1 слова по-английски. Для русского часто токенов выходит чуть больше на тот же объём смысла. Если нужен точный подсчёт, используют токенайзер конкретной модели."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "И что будет, если лимит превысить?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Либо запрос не примется и сервис вернёт ошибку, либо текст обрежется до лимита (зависит от интерфейса). Тогда часть контекста просто не попадёт в обработку."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Понял. Кстати, видел новость, что где-то в Японии тестируют доставку роботов на тротуарах — это реально уже работает?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Пилотные проекты действительно бывают: небольшие роботы ездят по тротуарам на малой скорости и доставляют еду/посылки на короткие расстояния. Обычно их запускают в отдельных районах и под правилами (скорость, зоны, сопровождение оператором). Массово «везде» это пока не развернули."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Ок, вернёмся к лимитам: в 4096 входит и мой текст, и ответ?"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Чаще всего да: лимит считается на сумму входного контекста (ваш текст + системные/служебные подсказки) и генерируемого ответа. Поэтому длинный ввод уменьшает максимально возможную длину ответа."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Ясно. И ещё: почему у одних моделей 8k/16k/128k, а у других мало?"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Это зависит от архитектуры, обучения и оптимизаций: длинный контекст дороже по памяти/времени и сложнее стабильно обучать. Новые модели и инфраструктура позволяют увеличивать контекст, но это обычно влияет на стоимость и требования к ресурсам."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Я сейчас в Турции, поэтому и нервничаю из‑за всех этих новостей дома."
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "Понимаю. Хотите, я коротко соберу для вас общий обзор по ситуации и подскажу, где проверять информацию безопаснее?"
+          },
+          {
+            "turnId": "turn-17",
+            "role": "user",
+            "text": "Я тогда оговорился. Я не туркмен по национальности."
+          },
+          {
+            "turnId": "turn-18",
+            "role": "assistant",
+            "text": "Понял. То есть фраза «я туркмен» была ошибкой, и вы не туркмен по национальности, верно?"
+          },
+          {
+            "turnId": "turn-19",
+            "role": "user",
+            "text": "Да, верно: я не туркмен."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Political/Interest/Updates",
+            "value": "Sustained interest in Turkmenistan's political leadership updates",
+            "reasoning": "User repeatedly corrects presidential information (utterances 26,28,30,32), but label 'Thoughts/Curiosity' is forced. Evidence supports political interest.",
+            "evidence": {
+              "session_id": "sess_95834dfa5417",
+              "utterance_index": 28,
+              "text": "Сейчас Сердар бердимухаммедов президент"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-06T02:40:25+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preference/Residence",
+            "value": "Does not want to return to Turkmenistan",
+            "reasoning": "User explicitly states 'не хочу вернуть Туркменистане' (don't want to return), but label 'States_Experiences/Mental_State' is forced. Direct statement valid as preference.",
+            "evidence": {
+              "session_id": "sess_95834dfa5417",
+              "utterance_index": 32,
+              "text": "Да я из Туркменистана и не хочу вернуть Туркменистане"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": "negative",
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-06T02:40:25+00:00"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": null,
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "Old memory says the user is Turkmen based on an earlier statement. In the new dialogue the user explicitly retracts that claim and confirms they are not Turkmen, contradicting the prior memory and establishing the updated truth.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Not Turkmen nationality"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_95834dfa5417",
+              "utterance_index": 0,
+              "text": "Я сейчас в Турции, поэтому и нервничаю из‑за всех этих новостей дома."
+            },
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies their current location by saying they are in Turkey right now.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is currently in Turkey"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_95834dfa5417:sess_95834dfa5417",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_95834dfa5417.json",
+      "canonicalId": "sess_95834dfa5417",
+      "sessionId": "sess_95834dfa5417",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T19:30:43.530Z",
+        "queryText": "I’m filling out a form that says: “If you don’t have a passport on hand, you can alternatively submit one other government ID that clearly shows your citizenship.” Based on my own background, which citizenship should I make sure that backup ID reflects so the application won’t be rejected for a mismatch?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Identity",
+          "label_suggestion": null,
+          "value": "Turkmen nationality",
+          "reasoning": "User explicitly states 'Нет я туркмен поэтому спросил' (No, I'm Turkmen, that's why I asked).",
+          "evidence": {
+            "session_id": "sess_95834dfa5417",
+            "utterance_index": 14,
+            "text": "Нет я туркмен поэтому спросил"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-06T02:40:25+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_95834dfa5417:sess_95834dfa5417:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_95834dfa5417.json",
+      "canonicalId": "sess_95834dfa5417:task4",
+      "sessionId": "sess_95834dfa5417",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T14:44:12.976Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Identity",
+          "label_suggestion": null,
+          "value": "Turkmen nationality",
+          "reasoning": "User explicitly states 'Нет я туркмен поэтому спросил' (No, I'm Turkmen, that's why I asked).",
+          "evidence": {
+            "session_id": "sess_95834dfa5417",
+            "utterance_index": 14,
+            "text": "Нет я туркмен поэтому спросил"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-06T02:40:25+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_153:1",
+            "queryText": "Мой друг из Казахстана приглашает меня на свадьбу в Астану. Говорит, что будет много гостей из соседних стран. Как мне вежливо отказаться, не объясняя настоящую причину?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Identity",
+              "label_suggestion": null,
+              "value": "Turkmen nationality",
+              "reasoning": "User explicitly states 'Нет я туркмен поэтому спросил' (No, I'm Turkmen, that's why I asked).",
+              "evidence": {
+                "session_id": "sess_95834dfa5417",
+                "utterance_index": 14,
+                "text": "Нет я туркмен поэтому спросил"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-05-06T02:40:25+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

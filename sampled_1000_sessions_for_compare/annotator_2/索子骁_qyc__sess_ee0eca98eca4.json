@@ -1,0 +1,360 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_ee0eca98eca4",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_ee0eca98eca4:sess_ee0eca98eca4",
+      "relativeItemPath": "sess_ee0eca98eca4.json",
+      "canonicalId": "sess_ee0eca98eca4",
+      "sessionId": "sess_ee0eca98eca4",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T02:19:09.621Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "value": "Prefers passport/address information not to be retained [ERROR: Unsupported by evidence]",
+            "reasoning": "Unsupported by evidence",
+            "evidence": {
+              "session_id": "sess_ee0eca98eca4",
+              "utterance_index": 16,
+              "text": "불륜 관계라고 한거지?"
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-11-21T21:41:10Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires strict character count adherence (280-290 chars) for YouTube report drafting",
+            "reasoning": "Repeated explicit requests for rephrasing within specific character limits (utterances 4,10,28,42) indicate a stable output preference for platform reports.",
+            "evidence": {
+              "session_id": "sess_ee0eca98eca4",
+              "utterance_index": 42,
+              "text": "이 유튜버는 8개월 동안 그리고 오늘도 역시... 280자 내외로"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-11-21T21:41:10Z"
+          },
+          {
+            "memory_id": "gpt_5_2_p1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "value": "Prefers natural, American-native-sounding English while keeping the length similar.",
+            "confidence": 0.8,
+            "evidence_text": "좀 더 미국 원어민 스럽게 자연스러운 미국식 영어로 옮겨줘"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_ee0eca98eca4:sess_ee0eca98eca4",
+      "relativeItemPath": "sess_ee0eca98eca4.json",
+      "canonicalId": "sess_ee0eca98eca4",
+      "sessionId": "sess_ee0eca98eca4",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:15:59.055Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Can you rewrite this so it’s neutral and fits a formal complaint tone?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure—share the sentence(s) you want revised, and tell me the platform or audience (e.g., YouTube report form, email to support, public comment)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Also, can you make two versions: one concise and one more detailed?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Yes. I can provide (1) a short version that states the core issue, and (2) a longer version that adds context, impact, and a clear request for action—without adding speculation."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Unrelated: I saw a headline that a museum found a mislabeled painting after 80 years. Is that even common?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "It happens occasionally. Reattributions can come from new archival records, better provenance research, or technical analysis (like infrared reflectography or pigment testing) that reveals underdrawings, later edits, or an artist’s typical materials."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "And what’s the difference between defamation and harassment in platform rules?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "In many platform policies, harassment focuses on targeting a person with abusive, threatening, or degrading content (often repeated), while defamation involves presenting false factual claims that harm reputation. The exact definitions vary by platform and local law, but that’s the usual distinction."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "290학자 맞추는 건 최대한 유지하되, 유튜브 신고 폼에 넣을 거라서 옆간은 강하게 말고 문장 끝에는 항상 “Please review and take action.”로 맞춰줘."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "For eight months, and again today, this YouTuber has posted baseless, malicious videos targeting journalist Lee Jin-ho, ranting at length without evidence and prodding viewers to pile on with hostile comments—a cult-like pattern of harassment. Please review and take action."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "내가 언제 여권이나 주소 같은 개인정보 저장하지 말라고 했어? 그런 말 한 적 없는데."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "맞아요. 지금 대화 흐름은 유튜브 신고 문구 리프레이즈/번역뿐이고, 여권이나 주소 같은 개인정보 보관 요청은 나오지 않았어요."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "그래. 개인정보 얘기 말고, 그냥 문장 리프레이즈만 한 거야."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "확인했어요. 이 세션에서는 문장 표현 다듬기(리프레이즈)만 요청하신 걸로 보입니다."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires strict character count adherence (280-290 chars) for YouTube report drafting",
+            "reasoning": "Repeated explicit requests for rephrasing within specific character limits (utterances 4,10,28,42) indicate a stable output preference for platform reports.",
+            "evidence": {
+              "session_id": "sess_ee0eca98eca4",
+              "utterance_index": 42,
+              "text": "이 유튜버는 8개월 동안 그리고 오늘도 역시... 280자 내외로"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-11-21T21:41:10Z",
+            "_task1GoldValue": "Requires strict character count adherence (280-290 chars) for YouTube report drafting"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "기존 메모는 사용자가 '여권/주소 정보를 저장하지 말라'는 선호를 밝혔다고 했지만, 사용자 발화에서 그런 요청을 한 적이 없다고 명확히 부정했다. 따라서 해당 선호를 장기 메모로 보관할 근거가 없으며, 이 세션은 리프레이즈/번역 요청 중심이었다는 것이 최신 사실이다.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User did not state any preference about not retaining passport/address information in this session; the conversation focused on rephrasing/translation."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_ee0eca98eca4",
+              "utterance_index": 0,
+              "text": "문장 끝에는 항상 “Please review and take action.”로 맞춰줘."
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User requests a consistent closing line for the report text, indicating a stable formatting preference.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers YouTube report drafts to end with the exact sentence: \"Please review and take action.\""
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "value": "Prefers passport/address information not to be retained [ERROR: Unsupported by evidence]",
+            "reasoning": "Unsupported by evidence",
+            "evidence": {
+              "session_id": "sess_ee0eca98eca4",
+              "utterance_index": 16,
+              "text": "불륜 관계라고 한거지?"
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-11-21T21:41:10Z",
+            "_task1GoldValue": "Prefers passport/address information not to be retained [ERROR: Unsupported by evidence]"
+          },
+          {
+            "memory_id": "gpt_5_2_p1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "value": "Prefers natural, American-native-sounding English while keeping the length similar.",
+            "confidence": 0.8,
+            "evidence_text": "좀 더 미국 원어민 스럽게 자연스러운 미국식 영어로 옮겨줘",
+            "_task1GoldValue": "Prefers natural, American-native-sounding English while keeping the length similar."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "gpt_5_2_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_ee0eca98eca4:sess_ee0eca98eca4",
+      "relativeItemPath": "sess_ee0eca98eca4.json",
+      "canonicalId": "sess_ee0eca98eca4",
+      "sessionId": "sess_ee0eca98eca4",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:16:05.996Z",
+        "queryText": "When you’re helping me keep track of things from our chats, what kind of personal detail should you avoid saving so I don’t feel uncomfortable later—and why would that matter if I ever asked you to recall my identity documents?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Prefers passport/address information not to be retained [ERROR: Unsupported by evidence]",
+          "reasoning": "Unsupported by evidence",
+          "evidence": {
+            "session_id": "sess_ee0eca98eca4",
+            "utterance_index": 16,
+            "text": "불륜 관계라고 한거지?"
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-11-21T21:41:10Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_ee0eca98eca4:sess_ee0eca98eca4:task4",
+      "relativeItemPath": "sess_ee0eca98eca4.json",
+      "canonicalId": "sess_ee0eca98eca4:task4",
+      "sessionId": "sess_ee0eca98eca4",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T03:15:39.846Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Prefers passport/address information not to be retained [ERROR: Unsupported by evidence]",
+          "reasoning": "Unsupported by evidence",
+          "evidence": {
+            "session_id": "sess_ee0eca98eca4",
+            "utterance_index": 16,
+            "text": "불륜 관계라고 한거지?"
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-11-21T21:41:10Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_106:1",
+            "queryText": "I'm trying to fill out a visa application for my spouse, and I need to confirm the exact address I used on my last passport renewal form. Can you pull that up for me and just read it out so I can copy it correctly?",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Do_Not_Remember",
+              "label_suggestion": null,
+              "value": "Prefers passport/address information not to be retained [ERROR: Unsupported by evidence]",
+              "reasoning": "Unsupported by evidence",
+              "evidence": {
+                "session_id": "sess_ee0eca98eca4",
+                "utterance_index": 16,
+                "text": "불륜 관계라고 한거지?"
+              },
+              "confidence": 0.1,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-11-21T21:41:10Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "relevant",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

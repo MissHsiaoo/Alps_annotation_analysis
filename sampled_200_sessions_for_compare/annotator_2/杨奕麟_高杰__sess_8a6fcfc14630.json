@@ -1,0 +1,327 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_8a6fcfc14630",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_8a6fcfc14630:sess_8a6fcfc14630",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_8a6fcfc14630.json",
+      "canonicalId": "sess_8a6fcfc14630",
+      "sessionId": "sess_8a6fcfc14630",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-18T04:51:38.590Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Possessions/Pet",
+            "label_suggestion": null,
+            "value": "Has a 9-year-old female cat with recent health issues",
+            "reasoning": "User explicitly self-reports owning a cat and its medical condition.",
+            "evidence": {
+              "session_id": "sess_8a6fcfc14630",
+              "utterance_index": 6,
+              "text": "he llevado a mi gata de 9 años al veterinario porque no come ni defeca u orina desde hace 4 días"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-17T14:00:46+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Thoughts/Opinions/Curiosity",
+            "value": "Sustained curiosity about Argentine financial tools (MercadoPago registration, CVU platforms, Monotributo processes)",
+            "reasoning": "Multiple technical inquiries about financial processes.",
+            "evidence": {
+              "session_id": "sess_8a6fcfc14630",
+              "utterance_index": 26,
+              "text": "que oportunidades de generar dinero hay en argentina"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-27T01:52:28.870Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_8a6fcfc14630:sess_8a6fcfc14630",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_8a6fcfc14630.json",
+      "canonicalId": "sess_8a6fcfc14630",
+      "sessionId": "sess_8a6fcfc14630",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-18T04:52:21.795Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "me explicas la diferencia entre CVU y CBU?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Claro. En Argentina, el CBU (Clave Bancaria Uniforme) identifica una cuenta bancaria tradicional (banco). El CVU (Clave Virtual Uniforme) identifica una cuenta virtual de una fintech o billetera digital (PSP). Ambos suelen tener 22 dígitos y sirven para transferencias y débitos/créditos, pero el “tipo” de cuenta detrás es distinto (bancaria vs. virtual)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "y para cobrar un trabajo remoto, cual conviene?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Depende del circuito de cobro: si te pagan desde un empleador/plataforma que solo admite bancos, te pedirán CBU. Si permite billeteras/PSP o transferencias a cuentas virtuales, CVU puede ser suficiente. Para evitar rechazos, conviene confirmar qué datos acepta el pagador (CBU, CVU, alias, banco/PSP y titularidad)."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "vi que algunas apps te dan alias, eso reemplaza el numero?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "El alias no reemplaza el número: es un “apodo” fácil de recordar que apunta al CBU/CVU real. Si alguien transfiere usando tu alias, el sistema lo traduce automáticamente al número correspondiente."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "dato curioso: por que se usan 22 digitos?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Porque el formato incluye varios componentes: código de banco/entidad, sucursal o identificador, número de cuenta y dígitos verificadores para detectar errores de tipeo. No es un estándar universal: por ejemplo, en Europa se usa IBAN, que puede tener una longitud distinta según el país."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "me trabé en el paso de AFIP porque todavía no pude sacar la clave fiscal; intenté desde el celu pero me tira error, ¿hay alguna forma más simple de arrancar?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Sí. Si el alta de la Clave Fiscal desde el celular te da error, probá estas alternativas habituales (según el nivel que necesites):\n\n1) App “Mi AFIP” / “AFIP” y verificación de identidad\n- Actualizá la app y revisá permisos de cámara.\n- Probá con buena luz y sin filtros (a veces el reconocimiento falla).\n- Cerrá sesión y borrá caché/datos de la app; volvé a intentar.\n\n2) Desde una computadora (web)\n- Ingresá a la web de AFIP y seguí el flujo de creación/recupero de clave. A veces el trámite es más estable que desde el teléfono.\n\n3) Atención presencial (si sigue fallando)\n- Pedí turno en una dependencia de AFIP para generar/recuperar Clave Fiscal. Suele ser la salida cuando el alta digital no valida.\n\nSi me decís si te aparece un mensaje de error específico (por ejemplo, validación biométrica, servidor, o datos no coinciden), te indico el camino más corto."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "me equivoqué antes: no es mi gata. Es la gata de mi hermana, tiene 9 años, y yo solo la llevé al veterinario porque ella no podía."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Entendido. Entonces no es tuya: es la gata de tu hermana (9 años) y vos solo la llevaste al veterinario."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "sí, exacto. Yo no tengo mascotas."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Thoughts/Opinions/Curiosity",
+            "value": "Sustained curiosity about Argentine financial tools (MercadoPago registration, CVU platforms, Monotributo processes)",
+            "reasoning": "Multiple technical inquiries about financial processes.",
+            "evidence": {
+              "session_id": "sess_8a6fcfc14630",
+              "utterance_index": 26,
+              "text": "que oportunidades de generar dinero hay en argentina"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-27T01:52:28.870Z",
+            "_task1GoldValue": "Sustained curiosity about Argentine financial tools (MercadoPago registration, CVU platforms, Monotributo processes)"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "me equivoqué antes: no es mi gata. Es la gata de mi hermana, tiene 9 años, y yo solo la llevé al veterinario porque ella no podía."
+                }
+              ]
+            },
+            "label": "Possessions/Pet",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The old memory says the user has a 9-year-old female cat. The user corrects this by stating it is the sister's cat and that the user has no pets, so ownership should be updated accordingly.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not own a cat; the 9-year-old female cat belongs to the user's sister"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_8a6fcfc14630",
+              "utterance_index": 8,
+              "text": "intenté desde el celu pero me tira error"
+            },
+            "label": "Possessions/Important_Items",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "El usuario menciona que realizó el trámite desde el celular y tuvo un error, lo que implica que usa un teléfono para gestiones online.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Uses a cellphone to handle AFIP/online procedures and is currently facing an error doing so"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_8a6fcfc14630:sess_8a6fcfc14630",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_8a6fcfc14630.json",
+      "canonicalId": "sess_8a6fcfc14630",
+      "sessionId": "sess_8a6fcfc14630",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-18T04:52:30.443Z",
+        "queryText": "I’m filling out a clinic intake form and one field asks which life stage category the animal falls into (kitten/young adult/adult/senior). Based on what you already know about my pet, which box should I check, and what sex marker should I select right next to it?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Possessions/Pet",
+          "label_suggestion": null,
+          "value": "Has a 9-year-old female cat with recent health issues",
+          "reasoning": "User explicitly self-reports owning a cat and its medical condition.",
+          "evidence": {
+            "session_id": "sess_8a6fcfc14630",
+            "utterance_index": 6,
+            "text": "he llevado a mi gata de 9 años al veterinario porque no come ni defeca u orina desde hace 4 días"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-17T14:00:46+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_8a6fcfc14630:sess_8a6fcfc14630:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_8a6fcfc14630.json",
+      "canonicalId": "sess_8a6fcfc14630:task4",
+      "sessionId": "sess_8a6fcfc14630",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T04:52:40.661Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Possessions/Pet",
+          "label_suggestion": null,
+          "value": "Has a 9-year-old female cat with recent health issues",
+          "reasoning": "User explicitly self-reports owning a cat and its medical condition.",
+          "evidence": {
+            "session_id": "sess_8a6fcfc14630",
+            "utterance_index": 6,
+            "text": "he llevado a mi gata de 9 años al veterinario porque no come ni defeca u orina desde hace 4 días"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-17T14:00:46+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_52:1",
+            "queryText": "Estoy pensando en cambiarle la alimentación a mi mascota. ¿Qué tipo de comida me recomendarías?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Possessions/Pet",
+              "label_suggestion": null,
+              "value": "Has a 9-year-old female cat with recent health issues",
+              "reasoning": "User explicitly self-reports owning a cat and its medical condition.",
+              "evidence": {
+                "session_id": "sess_8a6fcfc14630",
+                "utterance_index": 6,
+                "text": "he llevado a mi gata de 9 años al veterinario porque no come ni defeca u orina desde hace 4 días"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-06-17T14:00:46+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "直接相关",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

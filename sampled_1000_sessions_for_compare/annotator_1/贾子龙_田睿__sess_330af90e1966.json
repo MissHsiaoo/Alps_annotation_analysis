@@ -1,0 +1,301 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_330af90e1966",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_330af90e1966:sess_330af90e1966",
+      "relativeItemPath": "sess_330af90e1966.json",
+      "canonicalId": "sess_330af90e1966",
+      "sessionId": "sess_330af90e1966",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:50:24.040Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about designing complex roleplaying game scenarios with custom stat formulas, age-based mechanics, and strict difficulty enforcement",
+            "reasoning": "Role-play context possible; scenario creation shows interest in game mechanics but may be task-local to the fictional RPG. No repeated inquiry observed.",
+            "evidence": {
+              "session_id": "sess_330af90e1966",
+              "utterance_index": 0,
+              "text": "Create a roleplaying game fantasy scenario where I play Sapphire... [truncated]"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-10T00:04:09+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_330af90e1966:sess_330af90e1966",
+      "relativeItemPath": "sess_330af90e1966.json",
+      "canonicalId": "sess_330af90e1966",
+      "sessionId": "sess_330af90e1966",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:50:53.627Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Quick reset—can you help me sanity-check a scoring system for a five-round “beauty duel” game? I’m torn between judging on spectacle, originality, and technical control."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure. A clean approach is a 30-point rubric per spell: Spectacle (0–12), Originality (0–10), Control/Precision (0–8). Then apply small modifiers: +0–2 for strong synergy with an ally’s spell that round, and −0–3 for visible instability or rule-bending. Keep the categories narrow so judging feels consistent."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "How would you stop players from always picking the flashiest option first?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Two common levers: (1) diminishing returns—each time you use a “high spectacle” tier, future spectacle caps drop by 1–2; (2) opportunity cost—flashy spells have higher miscast risk unless you’ve built momentum (e.g., Control score from prior rounds must average above a threshold). Also, if spells can’t repeat, you can seed a few “late-game multipliers” that reward restraint."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Give me an example of a late-game multiplier that doesn’t feel arbitrary."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Example: “Refrain Bonus.” If at least two earlier rounds used spells with Originality ≥ 7 and Spectacle ≤ 7, then in Round 5 you gain +3 to Originality (cap still applies) for any spell that thematically references an earlier motif. It reads as narrative payoff rather than a random buff."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Also: random question—what’s a good real-world analogy for the judging style?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Figure skating works well: technical execution vs. artistry, plus deductions for mistakes. Or pastry competitions: flavor (impact), presentation (spectacle), and technique (control), with penalties for structural failures."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Neat. Throw in a couple bits of trivia while we’re here?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "1) The aurora’s colors mainly come from oxygen (green/red) and nitrogen (blue/purple) emissions high in the atmosphere. 2) The term “prismatic” traces back to prisms used to disperse light into a spectrum—Newton popularized prism experiments in the 1660s. 3) Some stage magicians use “Pepper’s ghost,” a 19th-century illusion technique using angled glass, to create ghostly overlays without digital screens."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Before Turn 5, can we keep the score table in a neat grid? It’s getting hard to follow on my phone when it’s not aligned."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—starting Turn 5 I’ll present the points and trackers in a clean, fixed-width grid so it stays aligned on mobile. What spell does Sapphire cast for the final round?"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "For the record, I’m not really into complex stat formulas or strict difficulty systems—I only asked for all that because this is a one-off benchmark prompt. Normally I prefer simple, narrative-first RP without tracking points."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Got it. If this were your usual style, we’d skip the heavy mechanics: no elaborate regression equation, no strict stat gates, and no points ledger—just narrative-first dueling with light, flexible rulings."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Exactly—no spreadsheets. The detailed mechanics were just for this test."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                12
+              ],
+              "turns": [
+                {
+                  "index": 12,
+                  "role": "user",
+                  "text": "For the record, I’m not really into complex stat formulas or strict difficulty systems—I only asked for all that because this is a one-off benchmark prompt. Normally I prefer simple, narrative-first RP without tracking points."
+                }
+              ]
+            },
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The old memory infers ongoing curiosity about complex mechanics, but the user clarifies it was only requested for a benchmark and that their normal preference is narrative-first without points/stat tracking.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Not generally interested in complex stat-formula RPG design or strict difficulty enforcement; prefers simple, narrative-first RP and only requested heavy mechanics for a one-off benchmark prompt."
+          },
+          {
+            "confidence": 0.7,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_330af90e1966",
+              "utterance_index": 0,
+              "text": "It’s getting hard to follow on my phone when it’s not aligned."
+            },
+            "label": "Preferences/Formatting",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "prefers neatly aligned grid/table formatting for readability on mobile",
+            "reasoning": "The user asks for a neat grid because misalignment is hard to follow on their phone, implying a preference for aligned tabular formatting, especially for mobile viewing.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User prefers points/trackers displayed in a neatly aligned grid for easier reading on their phone."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_330af90e1966:sess_330af90e1966",
+      "relativeItemPath": "sess_330af90e1966.json",
+      "canonicalId": "sess_330af90e1966",
+      "sessionId": "sess_330af90e1966",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:50:56.640Z",
+        "queryText": "I’m sketching a tabletop campaign idea and I want it to feel brutally fair rather than “GM vibes.” Given what you know about the kind of systems I’m into, what’s one concrete rule/mechanic I should bake in that would force consequences (not just flavor) as characters change over time, and also keep the challenge level from being softened mid‑game?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Thoughts/Curiosity",
+          "label_suggestion": null,
+          "value": "Curious about designing complex roleplaying game scenarios with custom stat formulas, age-based mechanics, and strict difficulty enforcement",
+          "reasoning": "Role-play context possible; scenario creation shows interest in game mechanics but may be task-local to the fictional RPG. No repeated inquiry observed.",
+          "evidence": {
+            "session_id": "sess_330af90e1966",
+            "utterance_index": 0,
+            "text": "Create a roleplaying game fantasy scenario where I play Sapphire... [truncated]"
+          },
+          "confidence": 0.5,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-04-10T00:04:09+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_330af90e1966:sess_330af90e1966:task4",
+      "relativeItemPath": "sess_330af90e1966.json",
+      "canonicalId": "sess_330af90e1966:task4",
+      "sessionId": "sess_330af90e1966",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:51:07.819Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Thoughts/Curiosity",
+          "label_suggestion": null,
+          "value": "Curious about designing complex roleplaying game scenarios with custom stat formulas, age-based mechanics, and strict difficulty enforcement",
+          "reasoning": "Role-play context possible; scenario creation shows interest in game mechanics but may be task-local to the fictional RPG. No repeated inquiry observed.",
+          "evidence": {
+            "session_id": "sess_330af90e1966",
+            "utterance_index": 0,
+            "text": "Create a roleplaying game fantasy scenario where I play Sapphire... [truncated]"
+          },
+          "confidence": 0.5,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-04-10T00:04:09+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability3_240:1",
+            "queryText": "I'm applying for a game design internship and need to list my relevant experience. Based on our detailed work creating that magic dueling system with age-based stat formulas and difficulty scaling, what specific role should I put as my previous position? You've seen my design approach firsthand.",
+            "ability": "ability3",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Thoughts/Curiosity",
+              "label_suggestion": null,
+              "value": "Curious about designing complex roleplaying game scenarios with custom stat formulas, age-based mechanics, and strict difficulty enforcement",
+              "reasoning": "Role-play context possible; scenario creation shows interest in game mechanics but may be task-local to the fictional RPG. No repeated inquiry observed.",
+              "evidence": {
+                "session_id": "sess_330af90e1966",
+                "utterance_index": 0,
+                "text": "Create a roleplaying game fantasy scenario where I play Sapphire... [truncated]"
+              },
+              "confidence": 0.5,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-04-10T00:04:09+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

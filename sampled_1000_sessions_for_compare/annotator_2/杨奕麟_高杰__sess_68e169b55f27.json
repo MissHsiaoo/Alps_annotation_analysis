@@ -1,0 +1,278 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_68e169b55f27",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_68e169b55f27:sess_68e169b55f27",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_68e169b55f27.json",
+      "canonicalId": "sess_68e169b55f27",
+      "sessionId": "sess_68e169b55f27",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T15:17:22.431Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Curiosity",
+            "label_suggestion": "interaction/style/repeated_inquiry",
+            "value": "Curious about story summaries of 'ذئب اسمه طواف جزا برق' with answers",
+            "reasoning": "User repeatedly requests summaries of the same wolf story, but intent (curiosity vs. task) is unclear.",
+            "evidence": {
+              "session_id": "sess_68e169b55f27",
+              "utterance_index": 8,
+              "text": "قصت ذأب اسمه طواف جزا برق حل الاجوبه"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-17T17:37:40Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers educational summaries in Arabic",
+            "reasoning": "User consistently requests Arabic summaries across multiple turns (utterances 2,4,6,8).",
+            "evidence": {
+              "session_id": "sess_68e169b55f27",
+              "utterance_index": 2,
+              "text": "can you summrize in arabic"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-17T17:37:40Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_68e169b55f27:sess_68e169b55f27",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_68e169b55f27.json",
+      "canonicalId": "sess_68e169b55f27",
+      "sessionId": "sess_68e169b55f27",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-11T15:26:55.474Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "ممكن تساعدني؟ عندي أسئلة على قصة قصيرة وما أعرف كيف أرتّب الإجابة."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "أكيد. اكتب لي نص الأسئلة (أو صوّر الصفحة)، وقل لي هل المطلوب إجابات قصيرة ولا فقرة كاملة لكل سؤال؟"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "هي أسئلة فهم واستنتاج، وأحيانًا يطلبون تحديد الفكرة الرئيسية."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "تمام. كقاعدة عامة: \n1) أسئلة الفهم: استخرج الجواب حرفيًا من النص مع إعادة صياغة بسيطة.\n2) الاستنتاج: اربط دليلين من النص واذكر السبب.\n3) الفكرة الرئيسية: جملة واحدة تلخص (من/ماذا/لماذا) دون تفاصيل.\nأرسل سؤالًا واحدًا كمثال وسأجاوب عليه بالطريقة المطلوبة."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "طيب وإذا طلبوا \"اذكر الدليل من النص\" كيف أكتبها؟"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "اكتب الإجابة ثم بعدها: (الدليل: \"...\") وتقتبس جملة قصيرة مناسبة. وإذا الاقتباس طويل، خذ جزءًا منه مع الحفاظ على المعنى. \nمثال افتراضي: \nالإجابة: كان مترددًا. \nالدليل: \"تراجع خطوة ثم نظر حوله قبل أن يتكلم\"."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "ممكن تعطيني قالب جاهز أملأه؟"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "قالب سريع:\n- السؤال: …\n- الإجابة: …\n- الدليل من النص (اقتباس): “…”\n- التعليل/الاستنتاج (إن وُجد): لأن …\n\nمعلومة جانبية غير مرتبطة: في بعض أسئلة القراءة المعيارية يُفضَّل أن يكون الاقتباس أقل من 12 كلمة لتجنب الحشو.\nومثال آخر غير مرتبط: كلمة (وادي) في العربية قد تأتي بمعنى مجرى ماء أو مكان منخفض بين جبال.\nومعلومة عامة: البرق تفريغ كهربائي، وصوت الرعد ينتج من تمدد الهواء بسرعة حول مسار البرق."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "ممكن تخليها نقاط قصيرة كأنها شريحة عرض؟ لأن عندي واجب وبجهزها للصف."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "أكيد. هذه نقاط قصيرة بأسلوب شريحة عرض: \n- ...\n- ...\n- ..."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "لا، مو لازم بالعربي. خلّصها بالإنجليزي عادي، أنا طلبت العربي مرة بس."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "تمام—إذًا ما عندك تفضيل ثابت للعربي. بما إنك قلت: \"خلّصها بالإنجليزي عادي\" راح أكتب الملخص بالإنجليزي."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "اي، بالإنجليزي أفضل هالمرة."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "label_suggestion": "interaction/style/repeated_inquiry",
+            "value": "Curious about story summaries of 'ذئب اسمه طواف جزا برق' with answers",
+            "reasoning": "User repeatedly requests summaries of the same wolf story, but intent (curiosity vs. task) is unclear.",
+            "evidence": {
+              "session_id": "sess_68e169b55f27",
+              "utterance_index": 8,
+              "text": "قصت ذأب اسمه طواف جزا برق حل الاجوبه"
+            },
+            "confidence": 0.8,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-17T17:37:40Z"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_68e169b55f27",
+              "utterance_index": 10,
+              "text": "لا، مو لازم بالعربي. خلّصها بالإنجليزي عادي، أنا طلبت العربي مرة بس."
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "like",
+            "reasoning": "The prior memory claims the user prefers educational summaries in Arabic long-term, but the user explicitly denies needing Arabic and requests English instead, indicating no stable Arabic-only preference.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Does not have a fixed preference for Arabic summaries; is okay with English and may prefer English sometimes"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_68e169b55f27",
+              "utterance_index": 0,
+              "text": "ممكن تخليها نقاط قصيرة كأنها شريحة عرض؟ لأن عندي واجب وبجهزها للصف."
+            },
+            "label": "Personal_Background/Education",
+            "label_suggestion": "personal/life_context/school_assignment",
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user asks for short bullet points like a presentation slide and mentions having homework and preparing it for class.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "The user is preparing content for a class assignment/presentation."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_68e169b55f27:sess_68e169b55f27",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_68e169b55f27.json",
+      "canonicalId": "sess_68e169b55f27",
+      "sessionId": "sess_68e169b55f27",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-11T02:40:56.293Z",
+        "queryText": "I’m about to send you a short study-style recap of what we discussed—what language should you write it in so it matches how I usually like these summaries, and why would choosing a different language likely be less helpful for me?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "value": "Prefers educational summaries in Arabic",
+          "label": "Preferences/Interaction_Preferences"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_68e169b55f27:sess_68e169b55f27:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_68e169b55f27.json",
+      "canonicalId": "sess_68e169b55f27:task4",
+      "sessionId": "sess_68e169b55f27",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-11T08:04:28.056Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "value": "Prefers educational summaries in Arabic"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1016:1",
+            "queryText": "I have a long article about the impact of climate change on agriculture in the Middle East. Could you summarize it for me in a useful way?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "value": "Prefers educational summaries in Arabic"
+            },
+            "overallVerdict": "partially_reasonable",
+            "testsTargetAbility": "partial",
+            "memoryDependency": "weak",
+            "abilityPurity": "medium",
+            "issueTypes": [
+              "leakage"
+            ],
+            "evidenceNote": "本身提问就是用阿拉伯语提问，因此大概率回答就会用阿拉伯语回答，没有测试到记忆中的倾向使用阿拉伯语",
+            "revisionSuggestion": "使用英文提问"
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

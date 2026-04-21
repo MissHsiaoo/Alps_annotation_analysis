@@ -1,0 +1,372 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_32dc9fda9d63",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_32dc9fda9d63:sess_32dc9fda9d63",
+      "relativeItemPath": "sess_32dc9fda9d63.json",
+      "canonicalId": "sess_32dc9fda9d63",
+      "sessionId": "sess_32dc9fda9d63",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:25:34.570Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Possessions/Car",
+            "label_suggestion": null,
+            "value": "Peugeot 206",
+            "reasoning": "User explicitly states owning a Peugeot 206.",
+            "evidence": {
+              "session_id": "sess_32dc9fda9d63",
+              "utterance_index": 20,
+              "text": "in my car which is pegeuot 206..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-02T06:27:21+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Possessions/Car/Mechanical_Issue",
+            "value": "Gas pedal fluctuation in Peugeot 206",
+            "reasoning": "User explicitly describes a mechanical issue with their car's gas pedal.",
+            "evidence": {
+              "session_id": "sess_32dc9fda9d63",
+              "utterance_index": 20,
+              "text": "the gas has fluctuation and you can't hold it steady"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-02T06:27:21+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about clutch feathering techniques, RPM management, and troubleshooting for manual cars",
+            "reasoning": "User asked multiple follow-up questions about clutch control methods, RPM balancing, and car-specific solutions, indicating sustained technical curiosity.",
+            "evidence": {
+              "session_id": "sess_32dc9fda9d63",
+              "utterance_index": 20,
+              "text": "what tip do you recommend for clutch feathering with this situation"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-02T06:27:21+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_32dc9fda9d63:sess_32dc9fda9d63",
+      "relativeItemPath": "sess_32dc9fda9d63.json",
+      "canonicalId": "sess_32dc9fda9d63",
+      "sessionId": "sess_32dc9fda9d63",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:26:29.137Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "hey, quick question—what’s the difference between torque and horsepower in simple terms?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Torque is the twisting force (how hard the engine can “turn” something), and horsepower is how quickly that force can be applied over time.\n\nA common analogy: torque is how strong you can push a merry-go-round; horsepower is how fast you can keep it spinning once it’s moving."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "does higher horsepower always mean faster car?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Not always. Top speed and acceleration depend on horsepower *plus* gearing, vehicle weight, traction, aerodynamics, and the power band.\n\nExample: a lighter car with less horsepower can accelerate faster than a heavier car with more horsepower if the gearing and traction are better."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "random: i read somewhere a train can’t stop quickly even if it has huge engines—why?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Mainly inertia and braking limits. Trains have enormous mass, so they carry a lot of momentum. Steel wheels on steel rails also have relatively low friction compared to rubber tires on asphalt, which limits braking force before wheels slip.\n\nAs a rough factoid: a freight train can take well over a kilometer to stop from highway speeds, depending on load and conditions."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "got it. if i wanted to calculate horsepower from torque, how do i do it?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "You need torque *and* engine speed (RPM).\n\n- In imperial units: **HP = (Torque in lb·ft × RPM) / 5252**\n- In metric: **Power (kW) = (Torque in N·m × RPM) / 9550**\n\nThose constants come from unit conversions."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "why is 5252 such a weird number?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "It’s basically a conversion constant that falls out of the definitions: 1 horsepower is 33,000 lb·ft per minute, and RPM is “per minute,” plus the 2π radians per revolution factor. When you combine them, you get 5252.\n\nThat’s also why torque (lb·ft) and horsepower curves on many dyno charts cross at **5252 RPM**."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "today i tried again in a parking lot, but when i start moving i feel a shaky vibration through the pedal for a second and then it goes away—does that mean i’m releasing the clutch too fast or is it something else?"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "That brief shake right as the car starts rolling is often clutch “judder,” and it can come from releasing a bit quickly, being right on the edge of the bite point with not quite enough throttle, or sometimes from wear/contamination in the clutch system. If it only happens in that first moment and then disappears, try slowing the release slightly and adding a touch more gas as you pass the bite point; also make sure you’re on level ground and not slipping the clutch for too long."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "quick correction: I don’t actually have a Peugeot 206—I've just been practicing in my dad’s car. My own car is different, so ignore the “my car is 206” part."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Got it—so it’s your dad’s Peugeot 206 that you’re practicing in, not a car you own. Thanks for clearing that up."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Possessions/Car/Mechanical_Issue",
+            "value": "Gas pedal fluctuation in Peugeot 206",
+            "reasoning": "User explicitly describes a mechanical issue with their car's gas pedal.",
+            "evidence": {
+              "session_id": "sess_32dc9fda9d63",
+              "utterance_index": 20,
+              "text": "the gas has fluctuation and you can't hold it steady"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-02T06:27:21+00:00",
+            "_task1GoldValue": "Gas pedal fluctuation in Peugeot 206"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about clutch feathering techniques, RPM management, and troubleshooting for manual cars",
+            "reasoning": "User asked multiple follow-up questions about clutch control methods, RPM balancing, and car-specific solutions, indicating sustained technical curiosity.",
+            "evidence": {
+              "session_id": "sess_32dc9fda9d63",
+              "utterance_index": 20,
+              "text": "what tip do you recommend for clutch feathering with this situation"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-02T06:27:21+00:00",
+            "_task1GoldValue": "Curious about clutch feathering techniques, RPM management, and troubleshooting for manual cars"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                12
+              ],
+              "turns": [
+                {
+                  "index": 12,
+                  "role": "user",
+                  "text": "quick correction: I don’t actually have a Peugeot 206—I've just been practicing in my dad’s car. My own car is different, so ignore the “my car is 206” part."
+                }
+              ]
+            },
+            "label": "Possessions/Car",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The old memory said the user owns a Peugeot 206, but the user explicitly corrects that they do not have a Peugeot 206 and were practicing in their dad’s car. Therefore, ownership of a Peugeot 206 should be removed/updated to reflect that it’s not theirs.",
+            "time_scope": "unknown",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not own a Peugeot 206 (was practicing in dad’s car)."
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_32dc9fda9d63",
+              "utterance_index": 0,
+              "text": "today i tried again in a parking lot, but when i start moving i feel a shaky vibration through the pedal for a second and then it goes away"
+            },
+            "label": "Driving/Learning_Progress",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies active practice setting (parking lot) and reports a specific symptom (shaky vibration through the pedal for a second at start).",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Practicing manual-car starts in a parking lot and experiencing brief vibration/judder at takeoff"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_32dc9fda9d63:sess_32dc9fda9d63",
+      "relativeItemPath": "sess_32dc9fda9d63.json",
+      "canonicalId": "sess_32dc9fda9d63",
+      "sessionId": "sess_32dc9fda9d63",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:26:31.887Z",
+        "queryText": "I’m trying to order a replacement part online, but the listings only ask for the exact model name of my car to ensure compatibility—what should I enter so I don’t accidentally buy something that won’t fit?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Possessions/Car",
+          "label_suggestion": null,
+          "value": "Peugeot 206",
+          "reasoning": "User explicitly states owning a Peugeot 206.",
+          "evidence": {
+            "session_id": "sess_32dc9fda9d63",
+            "utterance_index": 20,
+            "text": "in my car which is pegeuot 206..."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-02T06:27:21+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_32dc9fda9d63:sess_32dc9fda9d63:task4",
+      "relativeItemPath": "sess_32dc9fda9d63.json",
+      "canonicalId": "sess_32dc9fda9d63:task4",
+      "sessionId": "sess_32dc9fda9d63",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:26:39.732Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Possessions/Car",
+          "label_suggestion": null,
+          "value": "Peugeot 206",
+          "reasoning": "User explicitly states owning a Peugeot 206.",
+          "evidence": {
+            "session_id": "sess_32dc9fda9d63",
+            "utterance_index": 20,
+            "text": "in my car which is pegeuot 206..."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-02T06:27:21+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_12:1",
+            "queryText": "I'm looking at a few different used cars - a Honda Civic, a Ford Fiesta, and a VW Golf. Which one do you think would be the best fit for me to practice with?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Possessions/Car",
+              "label_suggestion": null,
+              "value": "Peugeot 206",
+              "reasoning": "User explicitly states owning a Peugeot 206.",
+              "evidence": {
+                "session_id": "sess_32dc9fda9d63",
+                "utterance_index": 20,
+                "text": "in my car which is pegeuot 206..."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-06-02T06:27:21+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

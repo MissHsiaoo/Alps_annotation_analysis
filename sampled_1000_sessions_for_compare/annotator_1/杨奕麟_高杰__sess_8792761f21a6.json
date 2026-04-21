@@ -1,0 +1,232 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_8792761f21a6",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_8792761f21a6:sess_8792761f21a6",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_8792761f21a6.json",
+      "canonicalId": "sess_8792761f21a6",
+      "sessionId": "sess_8792761f21a6",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T18:48:24.284Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "value": "User enjoys creating and participating in detailed roleplaying game scenarios involving magic dueling with complex mechanics",
+            "confidence": 0.8,
+            "evidence_text": "Create a roleplaying game fantasy scenario where I play Sapphire, a 16-year-old girl mage who's the current champion of magic dueling in the teen division."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_8792761f21a6:sess_8792761f21a6",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_8792761f21a6.json",
+      "canonicalId": "sess_8792761f21a6",
+      "sessionId": "sess_8792761f21a6",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T19:09:53.500Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "That was fun. Can you give me three totally different prompts I could use next time for a fantasy mini-game?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "1) **Clockwork Heist**: You’re a rookie thief in a city where time is currency. Each round you “spend minutes” to attempt a move (pick a lock, distract a guard, forge a pass). A bad roll costs extra minutes; hit zero and you’re caught.\n\n2) **Skyship Jury**: You’re the foreperson judging five bizarre aerial performances (storm-choreography, kite ballet, thunder-drumming). Each act has stats (Precision, Flair, Risk). You award points, but hidden sabotage can skew one stat each round.\n\n3) **Potion Bistro Rush**: You run a magical street stall. Customers order potions with constraints (no mint, must glow, must be silent). You choose ingredients from a limited pantry; combos can backfire into funny side effects and score penalties."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Can you make the second one more structured, like with rounds and a scoring formula?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Sure. **Skyship Jury (5 rounds)**\n\n**Acts (5 performers):** each has hidden base stats 1–10 in **Precision (P)**, **Flair (F)**, **Risk (R)**.\n\n**Each round:** you receive (a) the performer’s described routine and (b) a public “weather modifier” W from -2 to +2.\n\n**Your score per act per round:**\n- Raw = (2P + 3F + R) + W\n- If the act chooses a “Risk Push,” add +2R but if Raw < 20, subtract 5 penalty.\n- Final Round Score = max(0, Raw)\n\n**Sabotage twist (optional):** once per game, one act secretly takes -3 to a random stat that round; you can spend 1 “Inquiry token” to demand a re-fly and reveal whether sabotage occurred.\n\nTotal score is the sum across 5 rounds; highest wins the festival contract."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Nice. Give me one example round with made-up numbers so I see how it plays."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Example Round 1:\n- Weather modifier: **W = +1** (steady tailwind)\n- Performer: **Captain Vell’s Kite Ballet** with base stats **P=6, F=8, R=5**\n- They declare **Risk Push**.\n\nCompute:\n- Raw = (2P + 3F + R) + W = (2*6 + 3*8 + 5) + 1 = (12 + 24 + 5) + 1 = **42**\n- Risk Push bonus: +2R = +10 → **52**\n- Check penalty condition (Raw < 20?): no, so no penalty.\n- Final Round Score = **52**.\n\nIf sabotage had hit Flair (-3), F would be 5:\n- Raw = (12 + 15 + 5) + 1 = 33; Risk Push +10 → **43**."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "assistant",
+            "text": "If you want to run another duel like this later, I can keep it in the same “judged spectacle” style—five rounds, no repeats, and you just drop the spell name like you did with Twilight Twirl → Mystic Aurora → Whispering Wind, and I’ll handle the success check, points, and Lily’s reply spell."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "user",
+            "text": "Yeah—keeping it to just the spell names makes it way easier to play fast."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Hey—can we *not* do hardest mode this time? That 10/10 setup was brutal. Let’s set the duel to like a 6/10 so it’s still tense, but actually winnable."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it. We’ll drop the difficulty from 10/10 to 6/10—still competitive, but not stacked so heavily against you."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "value": "User enjoys creating and participating in detailed roleplaying game scenarios involving magic dueling with complex mechanics",
+            "confidence": 0.8,
+            "evidence_text": "Create a roleplaying game fantasy scenario where I play Sapphire, a 16-year-old girl mage who's the current champion of magic dueling in the teen division.",
+            "_task1GoldValue": "User enjoys creating and participating in detailed roleplaying game scenarios involving magic dueling with complex mechanics"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "claude_sonnet_4_5_20250929_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_8792761f21a6:sess_8792761f21a6",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_8792761f21a6.json",
+      "canonicalId": "sess_8792761f21a6",
+      "sessionId": "sess_8792761f21a6",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T19:03:21.553Z",
+        "queryText": "I’m about to start a new roleplay run and I’m torn between a forgiving setting that helps me recover from mistakes versus a brutal one where every choice has serious consequences. Given what you know about how I like these to feel, which setting should you pick for me and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers maximum difficulty (10/10) in roleplaying game scenarios",
+          "reasoning": "User explicitly sets difficulty to '10 (hardest mode)'",
+          "evidence": {
+            "session_id": "sess_8792761f21a6",
+            "utterance_index": 0,
+            "text": "Make the scenario difficult for me to win. On a difficulty scale of 1 to 10, make it a 10 (hardest mode)."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-04-11T09:25:00+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_8792761f21a6:sess_8792761f21a6:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_8792761f21a6.json",
+      "canonicalId": "sess_8792761f21a6:task4",
+      "sessionId": "sess_8792761f21a6",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T14:21:42.002Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers maximum difficulty (10/10) in roleplaying game scenarios",
+          "reasoning": "User explicitly sets difficulty to '10 (hardest mode)'",
+          "evidence": {
+            "session_id": "sess_8792761f21a6",
+            "utterance_index": 0,
+            "text": "Make the scenario difficult for me to win. On a difficulty scale of 1 to 10, make it a 10 (hardest mode)."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-04-11T09:25:00+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_256:1",
+            "queryText": "I'm thinking about starting a new fantasy RPG campaign. I want you to design the boss encounter for the final dungeon. Give me a few different approaches you think would work best for me.",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Prefers maximum difficulty (10/10) in roleplaying game scenarios",
+              "reasoning": "User explicitly sets difficulty to '10 (hardest mode)'",
+              "evidence": {
+                "session_id": "sess_8792761f21a6",
+                "utterance_index": 0,
+                "text": "Make the scenario difficult for me to win. On a difficulty scale of 1 to 10, make it a 10 (hardest mode)."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2024-04-11T09:25:00+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

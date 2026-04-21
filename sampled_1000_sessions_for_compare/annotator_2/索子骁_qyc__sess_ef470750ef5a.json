@@ -1,0 +1,375 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_ef470750ef5a",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_ef470750ef5a:sess_ef470750ef5a",
+      "relativeItemPath": "sess_ef470750ef5a.json",
+      "canonicalId": "sess_ef470750ef5a",
+      "sessionId": "sess_ef470750ef5a",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T02:24:44.554Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Programmiert seit mehreren Jahren",
+            "reasoning": "User explicitly states programming for several years.",
+            "evidence": {
+              "session_id": "sess_ef470750ef5a",
+              "utterance_index": 2,
+              "text": "Ich programmiere schon mehrere Jahre. Wie kann ich meine Fähigkeiten auf ein neues Level heben?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-13T09:24:12+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Creative_Request/Personal_Expression",
+            "value": "Interesse an Gedichten/Haikus für Jasmin mit spezifischen Stilvorgaben",
+            "reasoning": "User requested poem variations but no explicit self-report of interest. Attribution uncertain (could be for third-party).",
+            "evidence": {
+              "session_id": "sess_ef470750ef5a",
+              "utterance_index": 8,
+              "text": "Kannst du mir ein Haiku schreiben, das meine Zuneigung gegenüber Jasmin ausdrückt?"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-13T09:24:12+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Vegetarier (langjährig)",
+            "reasoning": "User explicitly states being a long-term vegetarian.",
+            "evidence": {
+              "session_id": "sess_ef470750ef5a",
+              "utterance_index": 20,
+              "text": "Wie kann ich jemandem erzählen, dass ich seit langem Vegetarier bin?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-13T09:24:12+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_ef470750ef5a:sess_ef470750ef5a",
+      "relativeItemPath": "sess_ef470750ef5a.json",
+      "canonicalId": "sess_ef470750ef5a",
+      "sessionId": "sess_ef470750ef5a",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:43:20.159Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Ich habe eine kurze Verständnisfrage: Was ist eigentlich der Unterschied zwischen „ppm“ und „Prozent“?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "„ppm“ bedeutet „parts per million“ (Teile pro Million). 1 ppm = 1/1.000.000 = 0,000001 = 0,0001 %. Prozent heißt „pro Hundert“: 1 % = 1/100. Merksatz: ppm ist für sehr kleine Konzentrationen, Prozent für größere."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Kannst du ein kleines Rechenbeispiel machen, z.B. 250 ppm in Prozent?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "250 ppm = 250 / 1.000.000 = 0,00025. In Prozent: 0,00025 × 100 = 0,025 %."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Ich stolpere auch über „mg/L“—ist das immer das Gleiche wie ppm?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "In Wasser (und allgemein bei sehr verdünnten wässrigen Lösungen) gilt näherungsweise: 1 mg/L ≈ 1 ppm, weil 1 Liter Wasser etwa 1 kg wiegt. Bei anderen Flüssigkeiten oder Gasen kann das abweichen, weil die Dichte bzw. Bezugsbedingungen anders sind."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Nebenbei: In einem Artikel stand, dass die CO₂-Konzentration in der Luft inzwischen über 420 ppm liegt. Klingt wenig, ist aber wohl relevant?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Ja—420 ppm sind „nur“ 0,042 %, aber bei Treibhausgasen machen schon kleine Änderungen in der Konzentration messbare Effekte. Darum werden solche Werte oft in ppm angegeben, um Veränderungen gut vergleichen zu können."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Ich setze mir gerade wieder kleine Wochenziele, damit das Lernen nicht im Alltag untergeht — gerade wenn ich neben dem Job abends noch am Code sitze."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Das klingt nach einer guten Strategie. Wenn du neben der Arbeit lernst, helfen oft sehr konkrete, kleine Ziele (z.B. 3× pro Woche 45 Minuten) und ein fester Slot im Kalender. Wenn du magst: Woran programmierst du aktuell, und welches Ziel willst du diese Woche erreichen?"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Ich muss da was klarstellen: Ich habe damals gesagt, ich sei „seit langem Vegetarier“, aber das stimmt so nicht. Ich esse schon noch Fleisch – nur deutlich weniger als früher."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Danke für die Klarstellung. Dann bist du nicht langjährig Vegetarier, sondern reduzierst Fleisch bzw. ernährst dich eher flexitarisch. Wenn du das jemandem erzählst, kannst du es genau so formulieren: dass du bewusster isst und Fleisch nur gelegentlich."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Genau. Also: kein Vegetarier, eher flexitarisch."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Programmiert seit mehreren Jahren",
+            "reasoning": "User explicitly states programming for several years.",
+            "evidence": {
+              "session_id": "sess_ef470750ef5a",
+              "utterance_index": 2,
+              "text": "Ich programmiere schon mehrere Jahre. Wie kann ich meine Fähigkeiten auf ein neues Level heben?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-13T09:24:12+00:00",
+            "_task1GoldValue": "Programmiert seit mehreren Jahren"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Creative_Request/Personal_Expression",
+            "value": "Interesse an Gedichten/Haikus für Jasmin mit spezifischen Stilvorgaben",
+            "reasoning": "User requested poem variations but no explicit self-report of interest. Attribution uncertain (could be for third-party).",
+            "evidence": {
+              "session_id": "sess_ef470750ef5a",
+              "utterance_index": 8,
+              "text": "Kannst du mir ein Haiku schreiben, das meine Zuneigung gegenüber Jasmin ausdrückt?"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-13T09:24:12+00:00",
+            "_task1GoldValue": "Interesse an Gedichten/Haikus für Jasmin mit spezifischen Stilvorgaben"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": "like",
+            "reasoning": "Die neue Aussage widerspricht der alten Erinnerung „langjährig Vegetarier“. Der User stellt klar, dass er weiterhin Fleisch isst, nur reduziert, also eher flexitarisch statt vegetarisch.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Isst Fleisch, aber deutlich weniger als früher (eher flexitarisch; nicht langjährig vegetarisch)"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_ef470750ef5a",
+              "utterance_index": 0,
+              "text": "gerade wenn ich neben dem Job abends noch am Code sitze."
+            },
+            "label": "Personal_Background/Employment",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "Aus der Formulierung geht hervor, dass der User einen Job hat und zusätzlich abends programmiert/lernt.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Hat einen Job (arbeitet nebenbei) und programmiert abends zusätzlich"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Vegetarier (langjährig)",
+            "reasoning": "User explicitly states being a long-term vegetarian.",
+            "evidence": {
+              "session_id": "sess_ef470750ef5a",
+              "utterance_index": 20,
+              "text": "Wie kann ich jemandem erzählen, dass ich seit langem Vegetarier bin?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-13T09:24:12+00:00",
+            "_task1GoldValue": "Vegetarier (langjährig)"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_ef470750ef5a:sess_ef470750ef5a",
+      "relativeItemPath": "sess_ef470750ef5a.json",
+      "canonicalId": "sess_ef470750ef5a",
+      "sessionId": "sess_ef470750ef5a",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:43:28.219Z",
+        "queryText": "I’m going to a friend’s dinner where the main dish is usually meat-based, and I don’t want to make it awkward. Based on my own long-standing eating habits, what’s a polite one-sentence way to decline the main dish while still being appreciative?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Vegetarier (langjährig)",
+          "reasoning": "User explicitly states being a long-term vegetarian.",
+          "evidence": {
+            "session_id": "sess_ef470750ef5a",
+            "utterance_index": 20,
+            "text": "Wie kann ich jemandem erzählen, dass ich seit langem Vegetarier bin?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-05-13T09:24:12+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_ef470750ef5a:sess_ef470750ef5a:task4",
+      "relativeItemPath": "sess_ef470750ef5a.json",
+      "canonicalId": "sess_ef470750ef5a:task4",
+      "sessionId": "sess_ef470750ef5a",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:42:54.893Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Vegetarier (langjährig)",
+          "reasoning": "User explicitly states being a long-term vegetarian.",
+          "evidence": {
+            "session_id": "sess_ef470750ef5a",
+            "utterance_index": 20,
+            "text": "Wie kann ich jemandem erzählen, dass ich seit langem Vegetarier bin?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-05-13T09:24:12+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_660:1",
+            "queryText": "Ich bin auf eine Grillparty eingeladen. Was sollte ich mitbringen, das gut ankommt?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Preferences/Food",
+              "label_suggestion": null,
+              "value": "Vegetarier (langjährig)",
+              "reasoning": "User explicitly states being a long-term vegetarian.",
+              "evidence": {
+                "session_id": "sess_ef470750ef5a",
+                "utterance_index": 20,
+                "text": "Wie kann ich jemandem erzählen, dass ich seit langem Vegetarier bin?"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-05-13T09:24:12+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "highly matched and necessary to generate personalized response",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

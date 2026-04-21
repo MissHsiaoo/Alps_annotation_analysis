@@ -1,0 +1,422 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_dbfffc26a46b",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_dbfffc26a46b:sess_dbfffc26a46b",
+      "relativeItemPath": "sess_dbfffc26a46b.json",
+      "canonicalId": "sess_dbfffc26a46b",
+      "sessionId": "sess_dbfffc26a46b",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T13:10:29.314Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Vegetarian",
+            "reasoning": "User explicitly states vegetarian preference in multiple recipe requests.",
+            "evidence": {
+              "session_id": "sess_dbfffc26a46b",
+              "utterance_index": 0,
+              "text": "Kannst du mir ein Rezept erstellen, das einfach, vegetarisch, kalorienarm und sehr scharf ist?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-03T18:41:29+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Prefers very spicy food",
+            "reasoning": "User explicitly requests 'sehr scharf' (very spicy) in multiple recipe queries.",
+            "evidence": {
+              "session_id": "sess_dbfffc26a46b",
+              "utterance_index": 0,
+              "text": "Kannst du mir ein Rezept erstellen, das einfach, vegetarisch, kalorienarm und sehr scharf ist?"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-03T18:41:29+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Prefers low-calorie meals",
+            "reasoning": "User explicitly specifies 'kalorienarm' (low-calorie) in two recipe requests.",
+            "evidence": {
+              "session_id": "sess_dbfffc26a46b",
+              "utterance_index": 0,
+              "text": "Kannst du mir ein Rezept erstellen, das einfach, vegetarisch, kalorienarm und sehr scharf ist?"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-03T18:41:29+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Recipe_Complexity",
+            "value": "Prefers recipes with limited ingredients (6 ingredients)",
+            "reasoning": "Single explicit request for 6 ingredients; label 'Preferences/Food' not supported.",
+            "evidence": {
+              "session_id": "sess_dbfffc26a46b",
+              "utterance_index": 6,
+              "text": "Kannst du mir ein kalorienarmes vegetarisches Rezept für Curry erstellen, das mit 6 Zutaten auskommt und sehr scharf ist?"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-03T18:41:29+00:00"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about vegetarian, spicy, low-calorie recipes with few ingredients",
+            "reasoning": "User makes 4 iterative requests for recipe generation with the same core constraints, indicating sustained curiosity.",
+            "evidence": {
+              "session_id": "sess_dbfffc26a46b",
+              "utterance_index": 6,
+              "text": "Kannst du mir ein kalorienarmes vegetarisches Rezept für Curry erstellen, das mit 6 Zutaten auskommt und sehr scharf ist?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-03T18:41:29+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_dbfffc26a46b:sess_dbfffc26a46b",
+      "relativeItemPath": "sess_dbfffc26a46b.json",
+      "canonicalId": "sess_dbfffc26a46b",
+      "sessionId": "sess_dbfffc26a46b",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T04:24:49.932Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Kannst du mir noch eine Idee geben, wie man ein Curry besonders scharf macht, ohne extra viele Zutaten zu nehmen?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Ja—ohne viele Zusatz-Zutaten klappt das gut über Technik und Timing: Chili (frisch oder Flocken) kurz in heißem Öl anrösten, bevor Tomaten/Kichererbsen dazukommen; so lösen sich die scharfen Aromastoffe besser. Zusätzlich kannst du einen Teil der Chilis sehr fein hacken oder mörsern (mehr Oberfläche = mehr Schärfe) und erst am Ende eine kleine Menge nachlegen, damit die „frische“ Schärfe bleibt."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Und wenn es zu scharf geworden ist—was hilft, ohne den ganzen Geschmack zu zerstören?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Ein paar Optionen, je nachdem was du da hast: 1) Mit etwas Tomate/Brühe strecken und kurz einkochen (verdünnt Schärfe, erhält Würze). 2) Eine kleine Portion Kichererbsen oder Gemüse extra dazugeben (mehr Masse). 3) Mit einem Löffel Joghurt/Skyr beim Servieren arbeiten (kühlt, ohne das Curry komplett zu verändern). 4) Eine Prise Zucker kann Spitzen abrunden, aber sparsam dosieren."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Nebenbei: Ich hab gelesen, dass auf Scoville-Skalen manche Chilis extrem variieren. Stimmt das?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Stimmt. Der Scoville-Wert ist eine Orientierung, aber reale Schärfe schwankt u. a. durch Sorte, Reifegrad, Anbau-Bedingungen und sogar durch einzelne Früchte derselben Pflanze. Deshalb wirkt „gleiche“ Chili im nächsten Einkauf manchmal deutlich milder oder schärfer."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Die Rezepte klingen super – nur bitte ohne Koriander, das schmeckt mir immer so seifig. Hast du noch eine Idee, wieder kalorienarm und ordentlich scharf?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Klar, dann lassen wir Koriander einfach weg oder ersetzen ihn z.B. durch Petersilie oder Frühlingszwiebelgrün. Wie wäre es mit einem sehr scharfen Tomaten-Linsen-Topf (kalorienarm, vegetarisch):\n\nZutaten:\n- 1 Zwiebel\n- 2 Knoblauchzehen\n- 1-2 rote Chilis (oder mehr)\n- 1 Dose stückige Tomaten\n- 150 g rote Linsen\n- 750 ml Gemüsebrühe\n\nKurz-Zubereitung:\nZwiebel/Knoblauch/Chili anbraten, Tomaten + Linsen + Brühe dazu, 15–20 Min köcheln, abschmecken.\n\nWenn du willst, sag mir kurz, wie scharf es werden soll (Skala 1–10), dann passe ich’s an."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Bevor wir weitermachen: Ich esse nicht vegetarisch – ich hatte das nur als Vorgabe für die Rezepte genommen. Kannst du mir diesmal was mit Hähnchen machen, trotzdem kalorienarm und richtig scharf?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Alles klar, verstanden: nicht vegetarisch, sondern diesmal mit Hähnchen, kalorienarm und sehr scharf. Soll es eher als Curry, Pfanne oder Suppe sein?"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Als Curry wäre super."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Prefers very spicy food",
+            "reasoning": "User explicitly requests 'sehr scharf' (very spicy) in multiple recipe queries.",
+            "evidence": {
+              "session_id": "sess_dbfffc26a46b",
+              "utterance_index": 0,
+              "text": "Kannst du mir ein Rezept erstellen, das einfach, vegetarisch, kalorienarm und sehr scharf ist?"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-03T18:41:29+00:00",
+            "_task1GoldValue": "Prefers very spicy food"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Prefers low-calorie meals",
+            "reasoning": "User explicitly specifies 'kalorienarm' (low-calorie) in two recipe requests.",
+            "evidence": {
+              "session_id": "sess_dbfffc26a46b",
+              "utterance_index": 0,
+              "text": "Kannst du mir ein Rezept erstellen, das einfach, vegetarisch, kalorienarm und sehr scharf ist?"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-03T18:41:29+00:00",
+            "_task1GoldValue": "Prefers low-calorie meals"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Recipe_Complexity",
+            "value": "Prefers recipes with limited ingredients (6 ingredients)",
+            "reasoning": "Single explicit request for 6 ingredients; label 'Preferences/Food' not supported.",
+            "evidence": {
+              "session_id": "sess_dbfffc26a46b",
+              "utterance_index": 6,
+              "text": "Kannst du mir ein kalorienarmes vegetarisches Rezept für Curry erstellen, das mit 6 Zutaten auskommt und sehr scharf ist?"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-03T18:41:29+00:00",
+            "_task1GoldValue": "Prefers recipes with limited ingredients (6 ingredients)"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about vegetarian, spicy, low-calorie recipes with few ingredients",
+            "reasoning": "User makes 4 iterative requests for recipe generation with the same core constraints, indicating sustained curiosity.",
+            "evidence": {
+              "session_id": "sess_dbfffc26a46b",
+              "utterance_index": 6,
+              "text": "Kannst du mir ein kalorienarmes vegetarisches Rezept für Curry erstellen, das mit 6 Zutaten auskommt und sehr scharf ist?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-03T18:41:29+00:00",
+            "_task1GoldValue": "Curious about vegetarian, spicy, low-calorie recipes with few ingredients"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The prior memory says the user is Vegetarian, but the user explicitly corrects this by stating they are not vegetarian and that 'vegetarisch' was only a constraint for earlier recipes. Therefore, the updated truth is that the user is not vegetarian.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Not vegetarian (vegetarian was only a recipe constraint)"
+          },
+          {
+            "confidence": 0.85,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_dbfffc26a46b",
+              "utterance_index": 0,
+              "text": "nur bitte ohne Koriander, das schmeckt mir immer so seifig."
+            },
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "dislike",
+            "reasoning": "The user asks to avoid coriander and describes its taste as 'soapy', indicating a dislike of coriander.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Dislikes coriander (tastes soapy to them)"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4",
+          "m5"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_dbfffc26a46b:sess_dbfffc26a46b",
+      "relativeItemPath": "sess_dbfffc26a46b.json",
+      "canonicalId": "sess_dbfffc26a46b",
+      "sessionId": "sess_dbfffc26a46b",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:48:42.179Z",
+        "queryText": "I’m putting together a menu for me and a friend, and the host suggested a dish that’s built around an animal-based protein as the main component. Based on my usual eating rules, what kind of swap would I need to ask for so I can still eat it?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Vegetarian",
+          "reasoning": "User explicitly states vegetarian preference in multiple recipe requests.",
+          "evidence": {
+            "session_id": "sess_dbfffc26a46b",
+            "utterance_index": 0,
+            "text": "Kannst du mir ein Rezept erstellen, das einfach, vegetarisch, kalorienarm und sehr scharf ist?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-06-03T18:41:29+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_dbfffc26a46b:sess_dbfffc26a46b:task4",
+      "relativeItemPath": "sess_dbfffc26a46b.json",
+      "canonicalId": "sess_dbfffc26a46b:task4",
+      "sessionId": "sess_dbfffc26a46b",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T00:53:49.942Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Vegetarian",
+          "reasoning": "User explicitly states vegetarian preference in multiple recipe requests.",
+          "evidence": {
+            "session_id": "sess_dbfffc26a46b",
+            "utterance_index": 0,
+            "text": "Kannst du mir ein Rezept erstellen, das einfach, vegetarisch, kalorienarm und sehr scharf ist?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-06-03T18:41:29+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_562:1",
+            "queryText": "Ich überlege, was ich heute Abend kochen soll. Hast du eine Idee für etwas Gutes?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Food",
+              "label_suggestion": null,
+              "value": "Vegetarian",
+              "reasoning": "User explicitly states vegetarian preference in multiple recipe requests.",
+              "evidence": {
+                "session_id": "sess_dbfffc26a46b",
+                "utterance_index": 0,
+                "text": "Kannst du mir ein Rezept erstellen, das einfach, vegetarisch, kalorienarm und sehr scharf ist?"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-06-03T18:41:29+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

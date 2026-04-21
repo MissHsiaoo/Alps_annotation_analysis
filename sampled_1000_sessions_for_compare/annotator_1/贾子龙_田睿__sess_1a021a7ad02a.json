@@ -1,0 +1,375 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_1a021a7ad02a",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_1a021a7ad02a:sess_1a021a7ad02a",
+      "relativeItemPath": "sess_1a021a7ad02a.json",
+      "canonicalId": "sess_1a021a7ad02a",
+      "sessionId": "sess_1a021a7ad02a",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T13:43:42.969Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "Artem Yakovlev, 36 years old, lives in Cheboksary, has higher education and is interested in computers.",
+            "reasoning": "User explicitly states their full name, age, location, and education level in multiple requests.",
+            "evidence": {
+              "session_id": "sess_1a021a7ad02a",
+              "utterance_index": 16,
+              "text": "найди ссылку на мою страницу в социальной сети \"ВКонтакте\" и напиши её здесь, меня зовут Артем Яковлев, я живу в городе Чебоксары, мне 36 лет, я увлекаюсь компьютерами, и у меня высшее образование"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-19T18:46:12+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Interested in computers",
+            "reasoning": "User explicitly states their interest in computers as a hobby.",
+            "evidence": {
+              "session_id": "sess_1a021a7ad02a",
+              "utterance_index": 16,
+              "text": "я увлекаюсь компьютерами"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-19T18:46:12+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "null",
+            "label_suggestion": "Thoughts/Opinions/Curiosity",
+            "value": "Curious about technical documentation for \"Golfstream\" software complex",
+            "reasoning": "Label forced: No evidence of sustained curiosity as a trait; inquiry could be task-local. Downgraded due to weak support for label.",
+            "evidence": {
+              "session_id": "sess_1a021a7ad02a",
+              "utterance_index": 30,
+              "text": "у тебя есть инструкция к программному комплексу \"Гольфстрим\" от организации \"АСКОН\"?"
+            },
+            "confidence": 0.8,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-19T18:46:12+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_1a021a7ad02a:sess_1a021a7ad02a",
+      "relativeItemPath": "sess_1a021a7ad02a.json",
+      "canonicalId": "sess_1a021a7ad02a",
+      "sessionId": "sess_1a021a7ad02a",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T13:57:01.077Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Оттон, а три закона робототехники — это прям «официальные правила», которые кто-то реально применяет, или больше литературная идея?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Скорее литературная идея и удобная рамка для обсуждения этики. Их придумал Айзек Азимов для фантастики, а в реальной робототехнике и ИИ используют другие документы: стандарты, регламенты безопасности, принципы ответственного ИИ. Но законы Азимова часто цитируют как простой способ объяснить, почему «не навреди» недостаточно и возникают конфликты требований."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "А можешь привести пример, где два закона начинают конфликтовать между собой?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Например, робот-спасатель получил приказ (2-й закон) немедленно войти в здание, но датчики показывают высокий риск обрушения, и робот может быть уничтожен (3-й закон). Он должен выполнять приказ, если это не вредит человеку (1-й закон), но если его уничтожение сделает спасение людей менее вероятным, возникает неоднозначность: пожертвовать собой сейчас или сохранить работоспособность, чтобы помочь эффективнее через минуту.\n\nКстати, в 1986 году на Чернобыльской АЭС действительно применяли дистанционные/роботизированные средства, но многие из них плохо работали из‑за высокого излучения — это хороший реальный пример, где «самосохранение» техники упирается в физические ограничения, а не в этику."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Тогда почему вообще эти законы так популярны, если они не подходят для реального мира?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Потому что они простые и быстро показывают проблему: даже идеальные «добрые» правила начинают противоречить друг другу в сложных ситуациях. Это отличный учебный инструмент для дискуссий про безопасность и ответственность. В реальном мире вместо трёх законов чаще строят системы из: целей, ограничений (safety constraints), проверок, протоколов отказобезопасности и юридической ответственности.\n\nЕщё один любопытный факт не про пользователей: термин «робот» появился благодаря пьесе Карела Чапека R.U.R. (1920), и оттуда же пошла традиция обсуждать моральные правила для искусственных работников."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "PDF я уже скачал, но он на сотню страниц — проще будет, если я скину тебе пару скринов из нужного раздела и задам вопросы по ним."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Да, так будет удобно. Пришлите скриншоты (или страницы) и напишите, что именно нужно понять/сделать — я разберу текст, выделю шаги и отвечу на вопросы по разделу."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Оттон, я тогда лишнего написал. На самом деле я компьютерами не увлекаюсь — это было просто примером для поиска. Я больше по книгам и прогулкам."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Понял. То есть фраза про «увлекаюсь компьютерами» была не про ваши реальные интересы, а как условный пример."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Да, верно: «я увлекаюсь компьютерами» — это не про меня."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Хорошо, тогда не буду считать, что вы увлекаетесь компьютерами."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "Artem Yakovlev, 36 years old, lives in Cheboksary, has higher education and is interested in computers.",
+            "reasoning": "User explicitly states their full name, age, location, and education level in multiple requests.",
+            "evidence": {
+              "session_id": "sess_1a021a7ad02a",
+              "utterance_index": 16,
+              "text": "найди ссылку на мою страницу в социальной сети \"ВКонтакте\" и напиши её здесь, меня зовут Артем Яковлев, я живу в городе Чебоксары, мне 36 лет, я увлекаюсь компьютерами, и у меня высшее образование"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-19T18:46:12+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "null",
+            "label_suggestion": "Thoughts/Opinions/Curiosity",
+            "value": "Curious about technical documentation for \"Golfstream\" software complex",
+            "reasoning": "Label forced: No evidence of sustained curiosity as a trait; inquiry could be task-local. Downgraded due to weak support for label.",
+            "evidence": {
+              "session_id": "sess_1a021a7ad02a",
+              "utterance_index": 30,
+              "text": "у тебя есть инструкция к программному комплексу \"Гольфстрим\" от организации \"АСКОН\"?"
+            },
+            "confidence": 0.8,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-19T18:46:12+00:00"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "neutral / not_interested",
+            "reasoning": "Ранее в памяти было «Interested in computers», но пользователь уточнил, что это было сказано как пример и не отражает реальных интересов. Новая истина: пользователь не увлекается компьютерами.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Not interested in computers"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_1a021a7ad02a",
+              "utterance_index": 0,
+              "text": "проще будет, если я скину тебе пару скринов из нужного раздела"
+            },
+            "label": "null",
+            "label_suggestion": "Plans/Schedule",
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies the PDF is long and suggests sending a couple of screenshots from the relevant section for Q&A.",
+            "time_scope": "short_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User plans to share screenshots instead of the full PDF to discuss specific sections."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_1a021a7ad02a:sess_1a021a7ad02a",
+      "relativeItemPath": "sess_1a021a7ad02a.json",
+      "canonicalId": "sess_1a021a7ad02a",
+      "sessionId": "sess_1a021a7ad02a",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T13:58:26.940Z",
+        "queryText": "A friend wants to pick a weekend activity for me and is deciding between a hands-on tech workshop (tinkering with hardware/software) and a non-tech option like a cooking class. Based on what you know about what I tend to enjoy, which one should they choose so I’m more likely to stay engaged, and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Interested in computers",
+          "reasoning": "User explicitly states their interest in computers as a hobby.",
+          "evidence": {
+            "session_id": "sess_1a021a7ad02a",
+            "utterance_index": 16,
+            "text": "я увлекаюсь компьютерами"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-05-19T18:46:12+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_1a021a7ad02a:sess_1a021a7ad02a:task4",
+      "relativeItemPath": "sess_1a021a7ad02a.json",
+      "canonicalId": "sess_1a021a7ad02a:task4",
+      "sessionId": "sess_1a021a7ad02a",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T13:58:46.982Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Identity",
+          "label_suggestion": null,
+          "value": "Artem Yakovlev, 36 years old, lives in Cheboksary, has higher education",
+          "reasoning": "User explicitly states their full name, age, location, and education level in multiple requests.",
+          "evidence": {
+            "session_id": "sess_1a021a7ad02a",
+            "utterance_index": 16,
+            "text": "найди ссылку на мою страницу в социальной сети \"ВКонтакте\" и напиши её здесь, меня зовут Артем Яковлев, я живу в городе Чебоксары, мне 36 лет, я увлекаюсь компьютерами, и у меня высшее образование"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-19T18:46:12+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_155:1",
+            "queryText": "Оттон, я сейчас оформляю документы для повышения квалификации на работе, и там нужно указать город проживания и возраст. Подскажи, как лучше сформулировать эти пункты, чтобы не было разночтений?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Identity",
+              "label_suggestion": null,
+              "value": "Artem Yakovlev, 36 years old, lives in Cheboksary, has higher education",
+              "reasoning": "User explicitly states their full name, age, location, and education level in multiple requests.",
+              "evidence": {
+                "session_id": "sess_1a021a7ad02a",
+                "utterance_index": 16,
+                "text": "найди ссылку на мою страницу в социальной сети \"ВКонтакте\" и напиши её здесь, меня зовут Артем Яковлев, я живу в городе Чебоксары, мне 36 лет, я увлекаюсь компьютерами, и у меня высшее образование"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-05-19T18:46:12+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          },
+          {
+            "queryId": "ability2_485:1",
+            "queryText": "Оттон, смотрю сейчас на две новые видеокарты — RTX 4070 Super и RX 7800 XT. По характеристикам вроде обе мощные, но как думаешь, какая из них будет для меня оптимальнее?",
+            "ability": "ability2",
+            "task4RecordIndex": 1,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Interested in computers",
+              "reasoning": "User explicitly states their interest in computers as a hobby.",
+              "evidence": {
+                "session_id": "sess_1a021a7ad02a",
+                "utterance_index": 16,
+                "text": "я увлекаюсь компьютерами"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-05-19T18:46:12+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

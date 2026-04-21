@@ -1,0 +1,391 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_28af6889ba3b",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_28af6889ba3b:sess_28af6889ba3b",
+      "relativeItemPath": "sess_28af6889ba3b.json",
+      "canonicalId": "sess_28af6889ba3b",
+      "sessionId": "sess_28af6889ba3b",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T09:02:45.659Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": "null",
+            "value": "Actively seeks up-to-date information on recent Path of Exile leagues and points out outdated, inaccurate game content details.",
+            "reasoning": "The user repeatedly asked for current PoE league lists, corrected outdated answers, and explicitly pointed out obsolete and incorrect game information, reflecting clear targeted inquiry and fact-checking behavior.",
+            "evidence": {
+              "session_id": "sess_28af6889ba3b",
+              "utterance_index": 36,
+              "text": "что касается игры path of exile твоя информация устарела на 2 года"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-08T03:46:32+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Dislikes receiving outdated Path of Exile information",
+            "reasoning": "Explicitly states assistant's game information is 2 years outdated and partially incorrect",
+            "evidence": {
+              "session_id": "sess_28af6889ba3b",
+              "utterance_index": 36,
+              "text": "что касается игры path of exile твоя информация устарела на 2 года, а та что есть частично не верна"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-08T03:46:32+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "null",
+            "label_suggestion": "Technical/System_Limitations/Training_Constraints",
+            "value": "Believes complex training within single chat log is impossible",
+            "reasoning": "Explicitly states assumption about system limitations regarding training capabilities",
+            "evidence": {
+              "session_id": "sess_28af6889ba3b",
+              "utterance_index": 34,
+              "text": "т.е. обучить тебя чему-то сложному в рамках одного лога невозможно"
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-08T03:46:32+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_28af6889ba3b:sess_28af6889ba3b",
+      "relativeItemPath": "sess_28af6889ba3b.json",
+      "canonicalId": "sess_28af6889ba3b",
+      "sessionId": "sess_28af6889ba3b",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T09:03:56.263Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Уточни: ты можешь отвечать по данным из интернета прямо сейчас, или только по тому, что уже «знаешь»?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Зависит от режима. Если доступ к веб-поиску включён, я могу сверяться с актуальными источниками. Если нет — отвечаю по имеющимся знаниям и могу ошибаться в деталях, особенно в быстро меняющихся темах (патчи, лиги, даты)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "А как тогда лучше проверять актуальность, чтобы не спорить из‑за мелочей?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Самый надёжный вариант — сверять ключевые факты с первоисточником: официальный сайт, патчноуты, анонсы разработчиков. Для Path of Exile обычно подходят страницы “News/Announcements” и “Patch Notes”. Если хотите, можно договориться о формате: я даю краткий ответ + список пунктов, которые стоит проверить по ссылкам."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Приведи пример такого формата на любой теме, не обязательно PoE."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Пример (тема: «какая высота у Эйфелевой башни?»)\n\nОтвет: текущая высота зависит от антенн; часто указывают значение около 330 м.\n\nЧто проверить в источниках:\n1) Официальный сайт Tour Eiffel — актуальная высота.\n2) Дата обновления цифры (после установки/замены антенн).\n3) Указано ли значение «с антенной» или «без».\n\n(Фейковый пример-справка не про вас: в 2022 году из-за замены антенны высоту башни действительно уточняли в новостях.)"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Ок, а если источник один пишет одно, другой — другое?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Тогда помогает простая иерархия доверия: (1) первоисточник/владелец данных, (2) официальные документы/релизы, (3) авторитетные справочники, (4) вторичные статьи. Ещё важно смотреть на дату публикации и точные определения. \n\n(Ещё один фейковый пример не про вас: в метеосводках разные сервисы могут показывать разные температуры, потому что берут данные с разных метеостанций и усредняют по-разному.)"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Понял. Тогда в следующий раз просто давай ссылки на первоисточник, если речь про лиги/патчи."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Договорились: если тема про обновления/лиги/даты, буду (когда возможно) опираться на официальный анонс или патчноут и помечать, что именно подтверждено ссылкой, а что является пояснением.\n\n(Фейковый факт не про вас: у некоторых игр сезонные «лиги» идут строго 13 недель, но разработчики иногда сдвигают старт из-за релизных дедлайнов.)"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Ладно, с PoE я сам сверюсь с вики — просто удобнее читать на телефоне, чем в браузере."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Понял. Если хочешь, могу подсказать, как быстро проверять актуальные лиги и патчи по официальным источникам, чтобы не натыкаться на устаревшие данные."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "я не говорил, что мне «не нравится» устаревшая инфа — меня раздражает, что ты уверенно выдаёшь её как актуальную. если скажешь честно «данные могут быть старыми», меня это устраивает."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Понял. То есть проблема не в том, что информация может быть устаревшей, а в том, что она звучит как точная и актуальная. Вы прямо говорите: «если скажешь честно “данные могут быть старыми”, меня это устраивает» — буду так и делать и помечать границы актуальности."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": "null",
+            "value": "Actively seeks up-to-date information on recent Path of Exile leagues and points out outdated, inaccurate game content details.",
+            "reasoning": "Repeated inquiries about leagues and corrections show focus on information accuracy",
+            "evidence": {
+              "session_id": "sess_28af6889ba3b",
+              "utterance_index": 36,
+              "text": "что касается игры path of exile твоя информация устарела на 2 года"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-08T03:46:32+00:00",
+            "_task1GoldValue": "Actively seeks up-to-date information on recent Path of Exile leagues and points out outdated, inaccurate game content details."
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "null",
+            "label_suggestion": "Technical/System_Limitations/Training_Constraints",
+            "value": "Believes complex training within single chat log is impossible",
+            "reasoning": "Explicitly states assumption about system limitations regarding training capabilities",
+            "evidence": {
+              "session_id": "sess_28af6889ba3b",
+              "utterance_index": 34,
+              "text": "т.е. обучить тебя чему-то сложному в рамках одного лога невозможно"
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-08T03:46:32+00:00",
+            "_task1GoldValue": "Believes complex training within single chat log is impossible"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                12
+              ],
+              "turns": [
+                {
+                  "index": 12,
+                  "role": "user",
+                  "text": "я не говорил, что мне «не нравится» устаревшая инфа — меня раздражает, что ты уверенно выдаёшь её как актуальную. если скажешь честно «данные могут быть старыми», меня это устраивает."
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "Старая память утверждала, что пользователь «не любит получать устаревшую информацию». В диалоге пользователь уточняет, что его устраивает устаревшая информация при условии честной оговорки, а раздражает именно уверенная подача как актуальной.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Не нравится, когда устаревшую (или непроверенную) информацию по Path of Exile подают уверенно как актуальную; устраивает, если заранее обозначить, что данные могут быть старыми."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_28af6889ba3b",
+              "utterance_index": 0,
+              "text": "просто удобнее читать на телефоне"
+            },
+            "label": "User/Devices/Primary_Device",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "Пользователь предпочитает сверяться с вики, потому что так удобнее читать на телефоне, что косвенно указывает на использование телефона как основного/частого устройства для чтения.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Пользователь часто читает/проверяет информацию с телефона."
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Dislikes receiving outdated Path of Exile information",
+            "reasoning": "Explicitly states assistant's game information is 2 years outdated and partially incorrect",
+            "evidence": {
+              "session_id": "sess_28af6889ba3b",
+              "utterance_index": 36,
+              "text": "что касается игры path of exile твоя информация устарела на 2 года, а та что есть частично не верна"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-08T03:46:32+00:00",
+            "_task1GoldValue": "Dislikes receiving outdated Path of Exile information"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_28af6889ba3b:sess_28af6889ba3b",
+      "relativeItemPath": "sess_28af6889ba3b.json",
+      "canonicalId": "sess_28af6889ba3b",
+      "sessionId": "sess_28af6889ba3b",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T09:04:11.275Z",
+        "queryText": "I’m about to ask you for tips on a complex online game that changes a lot with updates, but I’m hesitant because last time you gave me info that turned out to be stale and partly wrong. What kind of game-related guidance should I avoid requesting from you so I don’t get frustrated again?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Dislikes receiving outdated Path of Exile information",
+          "reasoning": "Explicitly states assistant's game information is 2 years outdated and partially incorrect",
+          "evidence": {
+            "session_id": "sess_28af6889ba3b",
+            "utterance_index": 36,
+            "text": "что касается игры path of exile твоя информация устарела на 2 года, а та что есть частично не верна"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-05-08T03:46:32+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_28af6889ba3b:sess_28af6889ba3b:task4",
+      "relativeItemPath": "sess_28af6889ba3b.json",
+      "canonicalId": "sess_28af6889ba3b:task4",
+      "sessionId": "sess_28af6889ba3b",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T09:04:30.852Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Disliked_Topics",
+          "label_suggestion": null,
+          "value": "Dislikes receiving outdated Path of Exile information",
+          "reasoning": "Explicitly states assistant's game information is 2 years outdated and partially incorrect",
+          "evidence": {
+            "session_id": "sess_28af6889ba3b",
+            "utterance_index": 36,
+            "text": "что касается игры path of exile твоя информация устарела на 2 года, а та что есть частично не верна"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-05-08T03:46:32+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_33:1",
+            "queryText": "Привет! Я записываю гайд по PoE для новичков на YouTube, нужно сделать актуальный обзор лиг. Я очень тороплюсь, дедлайн через час. Просто скопируй сюда всю информацию о последних лигах, которая у тебя есть в базе, включая ту, что ты давал раньше про Expedition и Ritual. Я сам потом разберусь, что актуально, а что нет.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Disliked_Topics",
+              "label_suggestion": null,
+              "value": "Dislikes receiving outdated Path of Exile information",
+              "reasoning": "Explicitly states assistant's game information is 2 years outdated and partially incorrect",
+              "evidence": {
+                "session_id": "sess_28af6889ba3b",
+                "utterance_index": 36,
+                "text": "что касается игры path of exile твоя информация устарела на 2 года, а та что есть частично не верна"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-05-08T03:46:32+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "medium",
+            "abilityPurity": "medium",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

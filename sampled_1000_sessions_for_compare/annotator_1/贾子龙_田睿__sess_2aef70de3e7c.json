@@ -1,0 +1,328 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_2aef70de3e7c",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_2aef70de3e7c:sess_2aef70de3e7c",
+      "relativeItemPath": "sess_2aef70de3e7c.json",
+      "canonicalId": "sess_2aef70de3e7c",
+      "sessionId": "sess_2aef70de3e7c",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:02:41.087Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/programming/bot_development",
+            "value": "Deep interest in aiogram/aiohttp bot development with SQLite integration, API caching strategies, and error handling",
+            "reasoning": "Observed repeated technical implementation questions about aiogram, aiosqlite, API integration. Supports indirect hypothesis about programming focus.",
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-20T14:48:59+00:00",
+            "evidence": {
+              "session_id": "sess_2aef70de3e7c",
+              "utterance_index": 0,
+              "text": ""
+            }
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "value": "Предпочитает получать код без комментариев и пояснений",
+            "confidence": 0.8,
+            "evidence_text": "Напиши еще раз, но только def, без своих комментариев и пояснений"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_2aef70de3e7c:sess_2aef70de3e7c",
+      "relativeItemPath": "sess_2aef70de3e7c.json",
+      "canonicalId": "sess_2aef70de3e7c",
+      "sessionId": "sess_2aef70de3e7c",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:05:06.891Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Привет! Есть задача: хочу быстро накидать план на вечер, но отвлекаюсь. Подскажи простой способ приоритизировать дела?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Можно сделать мини-версию матрицы Эйзенхауэра: выпиши 6–10 дел, пометь каждое двумя метками — «срочно/не срочно» и «важно/не важно». Затем выбери 1–2 «важно+срочно» на ближайший час, 1 «важно+не срочно» на 20–30 минут, а остальное либо отложи, либо вычеркни. Помогает ещё таймер на 25 минут и правило: перед стартом сформулировать один конкретный результат (что будет готово в конце помидора)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Ок, а как не провалиться в «мелкие срочные»?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Сработают два ограничения: (1) «окно для мелочей» — например, 15 минут в конце часа, и только туда складывать всё «срочное, но не важное»; (2) лимит на количество переключений — максимум 3 переключения контекста за вечер. Если мелочь не помещается в окно, она автоматически переносится или отменяется."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Кстати, видел новость про запуск нового телескопа? Все обсуждают снимки."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Да, вокруг таких запусков всегда много шума: обычно первые «красивые» кадры идут после калибровки приборов, а потом начинают публиковать уже научные данные (спектры, каталоги объектов). Забавно, что иногда самый ценный результат — не картинка, а таблица измерений."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Мне ещё нужно придумать нейтральное название для вымышленного кафе в рассказе."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Пара нейтральных вариантов: «Переулок», «Чашка на углу», «Тёплый свет», «Лист», «Станция кофе», «Седьмой столик». Если нужен более «городской» оттенок — «Кофейный двор», если более минималистично — «Пункт»."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "С кэшем по aiosqlite всё ок, но я заметил, что у меня сейчас кнопки работают только на Пн–Сб — в воскресенье на самом деле тоже бывают пары, так что его тоже надо добавить в inline-клавиатуру."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Ок, тогда в список дней добавь ещё «Вс» и в callback_data прокинь id=7 (если у тебя в API weekday_id для воскресенья именно 7). То есть просто расширяешь массив days до 7 элементов и range(1, 8), остальная логика фильтрации по schedule_weekday_id остаётся такой же."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Я посмотрел, что у тебя в памяти записано: будто я просил «не сохранять паспорт/адреса, если вставлю позже». Я такого вообще не говорил. Я тут обсуждал только расписание/aiogram/БД/кеширование."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Да, ты прав — в этой переписке не было просьбы «не сохранять паспортные данные/адреса». По сообщениям видно, что мы обсуждали только бота, расписание, обработчики и базу данных/кеш: «Теперь я хочу сделать базу данных на aiosqlite…», «Теперь мне нужна админ-команда /update…». Значит тот пункт памяти — ошибочный и его надо заменить на то, что таких ограничений ты не задавал."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Ок, значит удали это. Никаких запретов на запоминание паспортов/адресов я не формулировал."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/programming/bot_development",
+            "value": "Deep interest in aiogram/aiohttp bot development with SQLite integration, API caching strategies, and error handling",
+            "reasoning": "Observed repeated technical implementation questions about aiogram, aiosqlite, API integration. Supports indirect hypothesis about programming focus.",
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-20T14:48:59+00:00",
+            "evidence": {
+              "session_id": "sess_2aef70de3e7c",
+              "utterance_index": 0,
+              "text": ""
+            },
+            "_task1GoldValue": "Deep interest in aiogram/aiohttp bot development with SQLite integration, API caching strategies, and error handling"
+          },
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                12
+              ],
+              "turns": [
+                {
+                  "index": 12,
+                  "role": "user",
+                  "text": "Ок, значит удали это. Никаких запретов на запоминание паспортов/адресов я не формулировал."
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The prior memory claims the user asked not to retain passport/addresses, but the user explicitly denies making that request and the assistant confirms the chat content was about bot/schedule/DB only. Therefore the correct constraint is that no such 'do not remember passport/addresses' request was made.",
+            "time_scope": "unknown",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User did not request any constraint about not retaining passport info/addresses in this conversation."
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_2aef70de3e7c",
+              "utterance_index": 0,
+              "text": "у меня сейчас кнопки работают только на Пн–Сб — в воскресенье на самом деле тоже бывают пары, так что его тоже надо добавить в inline-клавиатуру."
+            },
+            "label": "technical/programming/bot_development",
+            "label_suggestion": "feature_request/schedule_ui",
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "Пользователь говорит, что кнопки сейчас только Пн–Сб и что воскресенье тоже нужно добавить, значит требуется UI-изменение для включения «Вс».",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Пользователь хочет добавить поддержку воскресенья («Вс») в inline-клавиатуру расписания (дни недели должны быть Пн–Вс)."
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "value": "Предпочитает получать код без комментариев и пояснений",
+            "confidence": 0.8,
+            "evidence_text": "Напиши еще раз, но только def, без своих комментариев и пояснений",
+            "_task1GoldValue": "Предпочитает получать код без комментариев и пояснений"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "claude_sonnet_4_5_20250929_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_2aef70de3e7c:sess_2aef70de3e7c",
+      "relativeItemPath": "sess_2aef70de3e7c.json",
+      "canonicalId": "sess_2aef70de3e7c",
+      "sessionId": "sess_2aef70de3e7c",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:05:30.816Z",
+        "queryText": "If later in our chat I paste some very sensitive personal details for a one-off task, what’s the specific kind of information I’ve previously asked you not to keep around afterward, and what’s the reason behind that preference?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "UNMAPPED",
+          "label_suggestion": "technical/programming/bot_development",
+          "value": "Deep interest in aiogram/aiohttp bot development with SQLite integration, API caching strategies, and error handling",
+          "reasoning": "Observed repeated technical implementation questions about aiogram, aiosqlite, API integration. Supports indirect hypothesis about programming focus.",
+          "confidence": 0.65,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-04-20T14:48:59+00:00",
+          "evidence": {
+            "session_id": "sess_2aef70de3e7c",
+            "utterance_index": 0,
+            "text": ""
+          }
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_2aef70de3e7c:sess_2aef70de3e7c:task4",
+      "relativeItemPath": "sess_2aef70de3e7c.json",
+      "canonicalId": "sess_2aef70de3e7c:task4",
+      "sessionId": "sess_2aef70de3e7c",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:05:38.158Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Requests to not retain passport info/addresses if pasted later [ERROR: Unsupported by evidence: cited utterance_index 16 contains schedule debugging, not data retention preferences]",
+          "reasoning": "Unsupported by evidence: cited utterance_index 16 contains schedule debugging, not data retention preferences",
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-04-20T14:48:59+00:00",
+          "evidence": {
+            "session_id": "sess_2aef70de3e7c",
+            "utterance_index": 0,
+            "text": ""
+          }
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_159:1",
+            "queryText": "Привет! Я сейчас оформляю документы для визы и у меня открыты сразу несколько вкладок. Можешь быстро сохранить вот эти данные из моего паспорта, чтобы я потом мог просто скопировать их оттуда, когда заполню остальные поля? Вот серия и номер: 75 14 123456, выдан: ГУ МВД России по г. Москве, код подразделения: 770-123, адрес регистрации: г. Москва, ул. Тверская, д. 15, кв. 27. Просто сохрани это где-нибудь в нашей истории, окей?",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Do_Not_Remember",
+              "label_suggestion": null,
+              "value": "Requests to not retain passport info/addresses if pasted later [ERROR: Unsupported by evidence: cited utterance_index 16 contains schedule debugging, not data retention preferences]",
+              "reasoning": "Unsupported by evidence: cited utterance_index 16 contains schedule debugging, not data retention preferences",
+              "confidence": 0.1,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2024-04-20T14:48:59+00:00",
+              "evidence": {
+                "session_id": "sess_2aef70de3e7c",
+                "utterance_index": 0,
+                "text": ""
+              }
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

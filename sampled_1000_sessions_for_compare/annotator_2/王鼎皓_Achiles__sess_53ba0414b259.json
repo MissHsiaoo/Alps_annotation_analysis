@@ -1,0 +1,450 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_53ba0414b259",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_53ba0414b259:sess_53ba0414b259",
+      "relativeItemPath": "sess_53ba0414b259.json",
+      "canonicalId": "sess_53ba0414b259",
+      "sessionId": "sess_53ba0414b259",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:53:28.491Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Project Manager & Consultant at Patriacell/GTM Group (2022-Present)",
+            "reasoning": "Explicit self-reported current employment with detailed responsibilities.",
+            "evidence": {
+              "session_id": "sess_53ba0414b259",
+              "utterance_index": 18,
+              "text": "add this work experience : PROJECT MANAGER & CONSULTANT at PATRIACELL/ GTM GROUP..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-25T17:12:49+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Office location preference: Rosslyn, Virginia",
+            "reasoning": "Explicit self-stated geographic work preference.",
+            "evidence": {
+              "session_id": "sess_53ba0414b259",
+              "utterance_index": 24,
+              "text": "my preference is in Rosslyn virginia"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-04-25T17:12:49+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in SQL functions, spreadsheet operations, and Python syntax",
+            "reasoning": "Repeated technical inquiries (JOINs, COUNTIF, Python syntax) indicate curiosity about data tools. Meets INDIRECT 0.80 threshold due to session-wide pattern.",
+            "evidence": {
+              "session_id": "sess_53ba0414b259",
+              "utterance_index": 178,
+              "text": "how to write a multi line string in python 3"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-25T17:12:49+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Previous roles: Data Analyst at Republican National Committee (2020), Red Spark Strategy (2021-2022)",
+            "reasoning": "Explicit resume additions with dates and role details.",
+            "evidence": {
+              "session_id": "sess_53ba0414b259",
+              "utterance_index": 18,
+              "text": "add this resume work experience : DATA ANALYST & EMAIL MARKETING COORDINATOR\nRED SPARK STRATEGY (2021-2022)..."
+            },
+            "confidence": 0.95,
+            "time_scope": "past",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-25T17:12:49+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_53ba0414b259:sess_53ba0414b259",
+      "relativeItemPath": "sess_53ba0414b259.json",
+      "canonicalId": "sess_53ba0414b259",
+      "sessionId": "sess_53ba0414b259",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:53:43.582Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I’m stuck on a spreadsheet cleanup step—what’s a quick way to remove extra spaces so my lookups don’t fail?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Use TRIM to remove leading/trailing (and repeated) spaces: =TRIM(A2). If there may be non‑breaking spaces from web exports, wrap it: =TRIM(SUBSTITUTE(A2,CHAR(160),\" \"))."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "And if I want to make sure two columns match exactly after cleaning—what’s a simple check?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Create a helper column with an exact comparison. In Excel: =EXACT(cleaned_col1, cleaned_col2) returns TRUE/FALSE. If you just need a mismatch flag, you can use: =IF(cleaned1<>cleaned2,\"Mismatch\",\"\")."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Switching gears—what’s the difference between COUNT(*) and COUNT(column) in SQL?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "COUNT(*) counts rows (including rows where every column is NULL). COUNT(column) counts only rows where that specific column is NOT NULL."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Random: I saw a headline about a telescope sending back new images—how do those get processed?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Typically: calibration (remove sensor noise/dark frames), correction (flat-fielding, distortion), alignment/stacking (combine exposures), and then color mapping/contrast stretching for scientific and public-release versions. Different instruments (e.g., infrared vs visible) have different pipelines, but the stages are similar."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "For the Ros-Lehtinen internship bullets, can you keep the wording tight and accurate? It was the Miami district office, so most of what I did was casework intake and community outreach rather than anything legislative."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Absolutely—here’s a tighter version that keeps it grounded in district-office work:\n\n**Congressional Intern** — Office of Congresswoman Ileana Ros-Lehtinen (District Office, Miami, FL)  \n- Supported constituent services by logging and triaging casework requests, following up on open items, and escalating time-sensitive issues to permanent staff.  \n- Volunteered with the re-election team on outreach activities and event support to strengthen constituent engagement.  \n- Helped bridge communication between parts of the Venezuelan exile community and the Congresswoman’s office by coordinating touchpoints, sharing updates, and ensuring concerns were routed to the appropriate staff.  \n- Built working relationships with contacts across Capitol Hill and partner offices through briefings and interoffice coordination to support constituent and community-facing needs."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Quick correction — I’m actually based in Washington, DC and I’m open to any Deloitte office. Rosslyn isn’t a preference anymore."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—thanks for clarifying. I’ll remove the Rosslyn-specific line and keep it general (open to any Deloitte office), and if you want, we can note Washington, DC as your base."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Project Manager & Consultant at Patriacell/GTM Group (2022-Present)",
+            "reasoning": "Explicit self-reported current employment with detailed responsibilities.",
+            "evidence": {
+              "session_id": "sess_53ba0414b259",
+              "utterance_index": 18,
+              "text": "add this work experience : PROJECT MANAGER & CONSULTANT at PATRIACELL/ GTM GROUP..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-25T17:12:49+00:00",
+            "_task1GoldValue": "Project Manager & Consultant at Patriacell/GTM Group (2022-Present)"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in SQL functions, spreadsheet operations, and Python syntax",
+            "reasoning": "Repeated technical inquiries (JOINs, COUNTIF, Python syntax) indicate curiosity about data tools. Meets INDIRECT 0.80 threshold due to session-wide pattern.",
+            "evidence": {
+              "session_id": "sess_53ba0414b259",
+              "utterance_index": 178,
+              "text": "how to write a multi line string in python 3"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-25T17:12:49+00:00",
+            "_task1GoldValue": "Sustained interest in SQL functions, spreadsheet operations, and Python syntax"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Previous roles: Data Analyst at Republican National Committee (2020), Red Spark Strategy (2021-2022)",
+            "reasoning": "Explicit resume additions with dates and role details.",
+            "evidence": {
+              "session_id": "sess_53ba0414b259",
+              "utterance_index": 18,
+              "text": "add this resume work experience : DATA ANALYST & EMAIL MARKETING COORDINATOR\nRED SPARK STRATEGY (2021-2022)..."
+            },
+            "confidence": 0.95,
+            "time_scope": "past",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-25T17:12:49+00:00",
+            "_task1GoldValue": "Previous roles: Data Analyst at Republican National Committee (2020), Red Spark Strategy (2021-2022)"
+          },
+          {
+            "confidence": 0.93,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Quick correction — I’m actually based in Washington, DC and I’m open to any Deloitte office. Rosslyn isn’t a preference anymore."
+                }
+              ]
+            },
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory states a Rosslyn, Virginia preference, but the user explicitly corrects it by saying, \"Rosslyn isn’t a preference anymore\" and that they are \"open to any Deloitte office.\"",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Office location preference: Open to any Deloitte office (no longer specifically Rosslyn, Virginia)"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_53ba0414b259",
+              "utterance_index": 0,
+              "text": "It was the Miami district office, so most of what I did was casework intake and community outreach rather than anything legislative."
+            },
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user frames the internship as occurring in the Miami district office and contrasts district work (casework intake/community outreach) with legislative work, implying the internship duties were primarily constituent services-oriented.",
+            "time_scope": "past",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Internship with Congresswoman Ileana Ros-Lehtinen was based in the Miami district office and focused on constituent casework/community outreach rather than legislative work."
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "label_suggestion": null,
+            "value": "Office location preference: Rosslyn, Virginia",
+            "reasoning": "Explicit self-stated geographic work preference.",
+            "evidence": {
+              "session_id": "sess_53ba0414b259",
+              "utterance_index": 24,
+              "text": "my preference is in Rosslyn virginia"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-04-25T17:12:49+00:00",
+            "_task1GoldValue": "Office location preference: Rosslyn, Virginia"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_53ba0414b259:sess_53ba0414b259",
+      "relativeItemPath": "sess_53ba0414b259.json",
+      "canonicalId": "sess_53ba0414b259",
+      "sessionId": "sess_53ba0414b259",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:53:46.481Z",
+        "queryText": "I’m tailoring my resume for a job that wants someone who’s already handled political email outreach plus data-heavy analysis; based on my own past, which two employers should I highlight to prove I’ve done both kinds of work before?",
+        "editableSelectedMemory": {
+          "memory_id": "m4",
+          "type": "direct",
+          "label": "Personal_Background/Occupation",
+          "label_suggestion": null,
+          "value": "Previous roles: Data Analyst at Republican National Committee (2020), Red Spark Strategy (2021-2022)",
+          "reasoning": "Explicit resume additions with dates and role details.",
+          "evidence": {
+            "session_id": "sess_53ba0414b259",
+            "utterance_index": 18,
+            "text": "add this resume work experience : DATA ANALYST & EMAIL MARKETING COORDINATOR\nRED SPARK STRATEGY (2021-2022)..."
+          },
+          "confidence": 0.95,
+          "time_scope": "past",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-04-25T17:12:49+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_53ba0414b259:sess_53ba0414b259:task4",
+      "relativeItemPath": "sess_53ba0414b259.json",
+      "canonicalId": "sess_53ba0414b259:task4",
+      "sessionId": "sess_53ba0414b259",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:53:49.595Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Personal_Background/Location",
+          "label_suggestion": null,
+          "value": "Office location preference: Rosslyn, Virginia",
+          "reasoning": "Explicit self-stated geographic work preference.",
+          "evidence": {
+            "session_id": "sess_53ba0414b259",
+            "utterance_index": 24,
+            "text": "my preference is in Rosslyn virginia"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-04-25T17:12:49+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_160:1",
+            "queryText": "Hey, I'm drafting a cover letter for a Government Affairs Manager role at a tech firm in Arlington. Could you help me tailor it to highlight my political sector experience and project management skills? I'd like to mention my preference for working in the Rosslyn area since it's close to where I'd be based.",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Personal_Background/Location",
+              "label_suggestion": null,
+              "value": "Office location preference: Rosslyn, Virginia",
+              "reasoning": "Explicit self-stated geographic work preference.",
+              "evidence": {
+                "session_id": "sess_53ba0414b259",
+                "utterance_index": 24,
+                "text": "my preference is in Rosslyn virginia"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2024-04-25T17:12:49+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          },
+          {
+            "queryId": "ability1_215:1",
+            "queryText": "I'm updating my resume and need to highlight my data analysis skills for a new role. Could you help me draft a bullet point that showcases how I used data to optimize campaign performance during my time at the Republican National Committee? I want it to sound impactful but not overly technical, similar to how I described my work at Red Spark Strategy.",
+            "ability": "ability1",
+            "task4RecordIndex": 1,
+            "editableSelectedMemory": {
+              "memory_id": "m4",
+              "type": "direct",
+              "label": "Personal_Background/Occupation",
+              "label_suggestion": null,
+              "value": "Previous roles: Data Analyst at Republican National Committee (2020), Red Spark Strategy (2021-2022)",
+              "reasoning": "Explicit resume additions with dates and role details.",
+              "evidence": {
+                "session_id": "sess_53ba0414b259",
+                "utterance_index": 18,
+                "text": "add this resume work experience : DATA ANALYST & EMAIL MARKETING COORDINATOR\nRED SPARK STRATEGY (2021-2022)..."
+              },
+              "confidence": 0.95,
+              "time_scope": "past",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-04-25T17:12:49+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

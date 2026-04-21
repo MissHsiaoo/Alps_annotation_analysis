@@ -1,0 +1,359 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_e854eb2d2ac2",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_e854eb2d2ac2:sess_e854eb2d2ac2",
+      "relativeItemPath": "sess_e854eb2d2ac2.json",
+      "canonicalId": "sess_e854eb2d2ac2",
+      "sessionId": "sess_e854eb2d2ac2",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T08:52:39.345Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Currently taking an evidence class",
+            "reasoning": "User explicitly states 'my evidence class', indicating current enrollment in a legal education context.",
+            "evidence": {
+              "session_id": "sess_e854eb2d2ac2",
+              "utterance_index": 12,
+              "text": "why would I be learning for it for my evidence class?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-24T02:33:09+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers flowcharts and structured outlines for learning complex legal rules",
+            "reasoning": "User repeatedly requests flowcharts for expert testimony rules (utterances 4, 6) and expands their scope (utterance 8), indicating a stable preference for visual/organizational tools.",
+            "evidence": {
+              "session_id": "sess_e854eb2d2ac2",
+              "utterance_index": 6,
+              "text": "what would a good flow chart for hearsay look like? Be as expansive as necessary"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-04-24T02:33:09+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained curiosity about legal evidence principles (expert testimony standards, hearsay exceptions, psychotherapist privilege)",
+            "reasoning": "User asks multiple follow-ups on evidentiary rules and case applications (Kumho Tire, Jaffe v. Redmond, FRE 504 inquiry), demonstrating focused academic curiosity.",
+            "evidence": {
+              "session_id": "sess_e854eb2d2ac2",
+              "utterance_index": 12,
+              "text": "what was jaffe v redmond all about? why would I be learning for it for my evidence class?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-24T02:33:09+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_e854eb2d2ac2:sess_e854eb2d2ac2",
+      "relativeItemPath": "sess_e854eb2d2ac2.json",
+      "canonicalId": "sess_e854eb2d2ac2",
+      "sessionId": "sess_e854eb2d2ac2",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:08:14.840Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I’m trying to make a one-page “attack sheet” for Evidence. Any tips for keeping it readable without missing key steps?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Use a fixed structure: (1) relevance, (2) exclusionary rules, (3) hearsay, (4) witnesses/impeachment, (5) privileges, (6) opinion/expert, (7) authentication/best evidence. Keep each section to a decision tree with yes/no gates, and put the most-tested exceptions in bold while leaving a catch-all line like “check remaining 803/804 exceptions.”"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "For hearsay, what’s the cleanest way to show “not for truth” uses so I don’t forget them under pressure?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Add a small box before the hearsay definition labeled “Non-truth purposes,” then list 5: effect on listener, notice, state of mind (circumstantial), legally operative words (verbal acts), and impeachment/consistency. On an exam, you can write one sentence: “Offered to show X, not that the statement is true,” then proceed to 403/Confrontation if it’s criminal and testimonial."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "I always mix up 401/402 with 403—how would you phrase those in a super short way?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "401/402: “Any tendency + consequential fact → admissible unless a rule bars it.” 403: “Even relevant evidence can be excluded if unfair prejudice (or confusion/waste) substantially outweighs probative value.”"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Random: I saw a headline about an archive finding a lost silent film reel—does that happen often?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Occasionally. Prints turn up in private collections or mislabeled vaults, and archivists can sometimes reconstruct partial versions from multiple sources—like assembling a patchwork from different reels with intertitles and surviving footage."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "One more: if a statement fits an 803 exception, do I still have to worry about the Confrontation Clause?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Yes. Hearsay exceptions are evidentiary; Confrontation is constitutional. In a criminal case, if the statement is testimonial and the declarant doesn’t testify (and there was no prior opportunity to cross), it can be excluded even if it falls within 803/804."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "For my outline, I’m trying to keep the privilege section tight—especially inadvertent disclosure stuff—so I’m basically treating FRE 502(b) as its own little mini-checklist (inadvertent + reasonable steps + prompt rectification) whenever a doc slips into discovery."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "That’s a clean way to do it: a three-factor “502(b) no-waiver” checklist you can drop into any privilege-fact pattern. If you want, we can also add a one-line contrast for 502(a) subject-matter waiver so you don’t over-argue waiver on an exam."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Before we keep going—flowcharts honestly don’t help me. I asked for them because my professor keeps suggesting them, but I actually study better with short rule statements + a few hypos and then practice applying them."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Got it—so we’ll skip flowcharts. If you learn better with compact rule blocks plus a couple quick application hypos, we can format each topic as: (1) 1–2 sentence rule, (2) 2–3 key factors, (3) a mini-hypo showing how you’d argue both sides."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Yes, exactly—bullet-point rule blocks and quick hypos are way more useful for me than diagrams."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Currently taking an evidence class",
+            "reasoning": "User explicitly states 'my evidence class', indicating current enrollment in a legal education context.",
+            "evidence": {
+              "session_id": "sess_e854eb2d2ac2",
+              "utterance_index": 12,
+              "text": "why would I be learning for it for my evidence class?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-24T02:33:09+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained curiosity about legal evidence principles (expert testimony standards, hearsay exceptions, psychotherapist privilege)",
+            "reasoning": "User asks multiple follow-ups on evidentiary rules and case applications (Kumho Tire, Jaffe v. Redmond, FRE 504 inquiry), demonstrating focused academic curiosity.",
+            "evidence": {
+              "session_id": "sess_e854eb2d2ac2",
+              "utterance_index": 12,
+              "text": "what was jaffe v redmond all about? why would I be learning for it for my evidence class?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-24T02:33:09+00:00"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory claimed a stable preference for flowcharts, but the user states flowcharts don’t help and that they learn better with short rule statements plus hypos, indicating the opposite preference.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers bullet-point rule blocks and quick hypos over flowcharts/diagrams for learning complex legal rules"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_e854eb2d2ac2",
+              "utterance_index": 0,
+              "text": "I’m basically treating FRE 502(b) as its own little mini-checklist (inadvertent + reasonable steps + prompt rectification) whenever a doc slips into discovery."
+            },
+            "label": "Preferences/Study_Habits",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "The user describes organizing their outline by turning FRE 502(b)'s elements into a reusable checklist for exam/application purposes, indicating a stable study/organization habit.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Uses mini-checklists in their outline to apply legal rules (e.g., treating FRE 502(b) as a three-factor checklist)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_e854eb2d2ac2:sess_e854eb2d2ac2",
+      "relativeItemPath": "sess_e854eb2d2ac2.json",
+      "canonicalId": "sess_e854eb2d2ac2",
+      "sessionId": "sess_e854eb2d2ac2",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:08:24.636Z",
+        "queryText": "When I’m trying to learn a tricky set of rules with lots of exceptions and steps, what explanation style should you use so I’m least likely to get lost—and why would that approach fit me better than a plain paragraph?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers flowcharts and structured outlines for learning complex legal rules",
+          "reasoning": "User repeatedly requests flowcharts for expert testimony rules (utterances 4, 6) and expands their scope (utterance 8), indicating a stable preference for visual/organizational tools.",
+          "evidence": {
+            "session_id": "sess_e854eb2d2ac2",
+            "utterance_index": 6,
+            "text": "what would a good flow chart for hearsay look like? Be as expansive as necessary"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-04-24T02:33:09+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_e854eb2d2ac2:sess_e854eb2d2ac2:task4",
+      "relativeItemPath": "sess_e854eb2d2ac2.json",
+      "canonicalId": "sess_e854eb2d2ac2:task4",
+      "sessionId": "sess_e854eb2d2ac2",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T16:08:49.645Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers flowcharts and structured outlines for learning complex legal rules",
+          "reasoning": "User repeatedly requests flowcharts for expert testimony rules (utterances 4, 6) and expands their scope (utterance 8), indicating a stable preference for visual/organizational tools.",
+          "evidence": {
+            "session_id": "sess_e854eb2d2ac2",
+            "utterance_index": 6,
+            "text": "what would a good flow chart for hearsay look like? Be as expansive as necessary"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-04-24T02:33:09+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1209:1",
+            "queryText": "I'm trying to wrap my head around the whole process for authenticating evidence under FRE 901 and 902. What's the best way to break this down so I can actually apply it on an exam?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers flowcharts and structured outlines for learning complex legal rules",
+              "reasoning": "User repeatedly requests flowcharts for expert testimony rules (utterances 4, 6) and expands their scope (utterance 8), indicating a stable preference for visual/organizational tools.",
+              "evidence": {
+                "session_id": "sess_e854eb2d2ac2",
+                "utterance_index": 6,
+                "text": "what would a good flow chart for hearsay look like? Be as expansive as necessary"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2024-04-24T02:33:09+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "matched",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

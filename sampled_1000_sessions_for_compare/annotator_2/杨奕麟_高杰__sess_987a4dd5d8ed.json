@@ -1,0 +1,403 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_987a4dd5d8ed",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_987a4dd5d8ed:sess_987a4dd5d8ed",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_987a4dd5d8ed.json",
+      "canonicalId": "sess_987a4dd5d8ed",
+      "sessionId": "sess_987a4dd5d8ed",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-19T14:35:48.705Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "Name is Денис",
+            "reasoning": "User explicitly states their name in introduction.",
+            "evidence": {
+              "session_id": "sess_987a4dd5d8ed",
+              "utterance_index": 0,
+              "text": "Привет! Меня зовут Денис."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-11T11:31:30+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Ведение блога с короткими эмоциональными цитатами",
+            "reasoning": "User explicitly states blog creation purpose with specific content type.",
+            "evidence": {
+              "session_id": "sess_987a4dd5d8ed",
+              "utterance_index": 0,
+              "text": "Я собираюсь вести блог с короткими эмоциональными цитатами."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-07-11T11:31:30+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Требует строгого структурирования фактов о знаменитостях (2 предложения → разделение на части → трёхстрочные шаблоны)",
+            "reasoning": "Repeated iterative formatting instructions across multiple turns show stable output preference.",
+            "evidence": {
+              "session_id": "sess_987a4dd5d8ed",
+              "utterance_index": 12,
+              "text": "Давай теперь создавдим для каждого факта определённую структуру, которая будет состоять из трёх строк..."
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-07-11T11:31:30+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "value": "Maintaining Continuous Interest in Constructing Structured Facts of Celebrities with Specific Templates",
+            "reasoning": "Repeated formatting instructions reflect interaction preference rather than personal curiosity",
+            "evidence": {
+              "session_id": "sess_987a4dd5d8ed",
+              "utterance_index": 14,
+              "text": "Отлично! Давай придумаем ещё 10 таких фактов с этой структурой."
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-29T08:38:57.952Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_987a4dd5d8ed:sess_987a4dd5d8ed",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_987a4dd5d8ed.json",
+      "canonicalId": "sess_987a4dd5d8ed",
+      "sessionId": "sess_987a4dd5d8ed",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-19T14:36:47.033Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Давай немного отвлечёмся: можешь предложить пару идей для мини-рубрики в стиле «факт в две части», но не про знаменитостей?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Конечно. Например: «История предметов» (вещь + неожиданное происхождение) и «Слова и привычки языка» (редкое слово + забавный контекст употребления)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "О, про слова нравится. Можешь привести 3 примера в формате Theme / First Part / Second Part?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Theme: Слова и привычки языка\nFirst Part: В английском слово “queue” почти целиком состоит из букв, которые «ничего не делают»…\nSecond Part: …но их сохраняют из-за истории слова: произношение держится на одной «q».\n\nTheme: Слова и привычки языка\nFirst Part: В русском есть слово «авось», которое трудно перевести одним словом…\nSecond Part: …потому что в нём одновременно и надежда, и риск, и лёгкая беспечность.\n\nTheme: Слова и привычки языка\nFirst Part: В японском есть “komorebi” — это…\nSecond Part: …свет солнца, проходящий сквозь листья деревьев, как отдельное явление."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Класс. А можно добавить к каждому примеру по одной короткой ремарке, как будто это подпись в соцсетях?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Можно — и ремарку лучше делать максимально нейтральной и универсальной.\n\nTheme: Слова и привычки языка\nFirst Part: В английском слово “queue” почти целиком состоит из букв, которые «ничего не делают»…\nSecond Part: …но их сохраняют из-за истории слова: произношение держится на одной «q».\nRemarque: Иногда лишнее — просто традиция.\n\nTheme: Слова и привычки языка\nFirst Part: В русском есть слово «авось», которое трудно перевести одним словом…\nSecond Part: …потому что в нём одновременно и надежда, и риск, и лёгкая беспечность.\nRemarque: План — это хорошо, но жизнь любит сюрпризы.\n\nTheme: Слова и привычки языка\nFirst Part: В японском есть “komorebi” — это…\nSecond Part: …свет солнца, проходящий сквозь листья деревьев, как отдельное явление.\nRemarque: Красота часто в деталях."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Ок, теперь другой жанр: 3 таких же факта про космос, тоже с ремарками."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Theme: Космос\nFirst Part: На Венере сутки длятся дольше, чем год…\nSecond Part: …потому что она очень медленно вращается вокруг своей оси.\nRemarque: Иногда «темп» меняет всё.\n\nTheme: Космос\nFirst Part: На Юпитере есть Большое Красное Пятно — гигантский шторм…\nSecond Part: …который наблюдают уже сотни лет, и он всё ещё не исчез.\nRemarque: Некоторые вихри живут дольше наших привычек.\n\nTheme: Космос\nFirst Part: В открытом космосе звук не распространяется…\nSecond Part: …потому что там почти нет среды, которая переносит колебания.\nRemarque: Тишина тоже бывает физическим фактом."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Пока ты дописываешь оставшиеся пункты, я прямо в гугл-таблицу это переношу — так удобнее сразу держать Theme/First Part/Second Part в отдельных колонках."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Понял, тогда могу дальше выдавать факты ровно в том же трёхстрочном формате, чтобы тебе было проще копировать по ячейкам."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Слушай, я тут перечитал нашу переписку и понял, что в начале оговорился. Я не хочу вести блог с короткими эмоциональными цитатами — я вообще делаю рубрику с короткими фактами о знаменитостях, вот как мы дальше и делали."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Понял тебя. То есть актуальная идея — не «короткие эмоциональные цитаты», а короткие факты о знаменитостях (с разбивкой на части и в структуре из трёх строк)."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Да, именно так: факты про знаменитостей, а не эмоциональные цитаты."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "Name is Денис",
+            "reasoning": "User explicitly states their name in introduction.",
+            "evidence": {
+              "session_id": "sess_987a4dd5d8ed",
+              "utterance_index": 0,
+              "text": "Привет! Меня зовут Денис."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-11T11:31:30+00:00",
+            "_task1GoldValue": "Name is Денис"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Требует строгого структурирования фактов о знаменитостях (2 предложения → разделение на части → трёхстрочные шаблоны)",
+            "reasoning": "Repeated iterative formatting instructions across multiple turns show stable output preference.",
+            "evidence": {
+              "session_id": "sess_987a4dd5d8ed",
+              "utterance_index": 12,
+              "text": "Давай теперь создавдим для каждого факта определённую структуру, которая будет состоять из трёх строк..."
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-07-11T11:31:30+00:00",
+            "_task1GoldValue": "Требует строгого структурирования фактов о знаменитостях (2 предложения → разделение на части → трёхстрочные шаблоны)"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "value": "Maintaining Continuous Interest in Constructing Structured Facts of Celebrities with Specific Templates",
+            "reasoning": "Repeated formatting instructions reflect interaction preference rather than personal curiosity",
+            "evidence": {
+              "session_id": "sess_987a4dd5d8ed",
+              "utterance_index": 14,
+              "text": "Отлично! Давай придумаем ещё 10 таких фактов с этой структурой."
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-29T08:38:57.952Z",
+            "_task1GoldValue": "Maintaining Continuous Interest in Constructing Structured Facts of Celebrities with Specific Templates"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Слушай, я тут перечитал нашу переписку и понял, что в начале оговорился. Я не хочу вести блог с короткими эмоциональными цитатами — я вообще делаю рубрику с короткими фактами о знаменитостях, вот как мы дальше и делали."
+                }
+              ]
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "null",
+            "reasoning": "Старая память утверждает, что пользователь собирается вести блог с короткими эмоциональными цитатами, но в диалоге пользователь прямо уточняет, что это была оговорка и реальный формат — короткие факты о знаменитостях.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Ведение рубрики/блога с короткими фактами о знаменитостях (вместо коротких эмоциональных цитат)"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_987a4dd5d8ed",
+              "utterance_index": 8,
+              "text": "Пока ты дописываешь оставшиеся пункты, я прямо в гугл-таблицу это переношу — так удобнее сразу держать Theme/First Part/Second Part в отдельных колонках."
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "Пользователь описывает, что переносит результаты в «гугл-таблицу» и раскладывает поля по колонкам, что подразумевает использование Google Sheets как рабочего инструмента.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Пользователь переносит материалы в Google Sheets (гугл-таблицу) и использует её для структурирования контента."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_987a4dd5d8ed:sess_987a4dd5d8ed",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_987a4dd5d8ed.json",
+      "canonicalId": "sess_987a4dd5d8ed",
+      "sessionId": "sess_987a4dd5d8ed",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-19T14:36:57.742Z",
+        "queryText": "I’m planning to launch a small personal site and I want every post to be something readers can consume in under 10 seconds on a phone. Based on what you know about the kind of posts I’m aiming to publish, what posting rhythm (how many per day/week) would you suggest so I don’t run out of material too fast while still keeping the feed feeling active?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Ведение блога с короткими эмоциональными цитатами",
+          "reasoning": "User explicitly states blog creation purpose with specific content type.",
+          "evidence": {
+            "session_id": "sess_987a4dd5d8ed",
+            "utterance_index": 0,
+            "text": "Я собираюсь вести блог с короткими эмоциональными цитатами."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-07-11T11:31:30+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_987a4dd5d8ed:sess_987a4dd5d8ed:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_987a4dd5d8ed.json",
+      "canonicalId": "sess_987a4dd5d8ed:task4",
+      "sessionId": "sess_987a4dd5d8ed",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-19T14:37:09.029Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Ведение блога с короткими эмоциональными цитатами",
+          "reasoning": "User explicitly states blog creation purpose with specific content type.",
+          "evidence": {
+            "session_id": "sess_987a4dd5d8ed",
+            "utterance_index": 0,
+            "text": "Я собираюсь вести блог с короткими эмоциональными цитатами."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-07-11T11:31:30+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_301:1",
+            "queryText": "Привет! Я хочу добавить в блог новую серию коротких фактов о знаменитостях, но в том же стиле, что и раньше. Посмотри, какие из этих идей подойдут лучше всего: 1) Факт о детстве знаменитости, 2) Факт о необычном таланте, 3) Факт о странной фобии, 4) Факт о творческом процессе. Как думаешь, что будет цеплять и вызывать эмоции у моей аудитории?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Ведение блога с короткими эмоциональными цитатами",
+              "reasoning": "User explicitly states blog creation purpose with specific content type.",
+              "evidence": {
+                "session_id": "sess_987a4dd5d8ed",
+                "utterance_index": 0,
+                "text": "Я собираюсь вести блог с короткими эмоциональными цитатами."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-07-11T11:31:30+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "直接相关",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

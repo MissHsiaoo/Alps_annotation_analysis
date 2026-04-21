@@ -1,0 +1,298 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_fa7a80e9dbb3",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_fa7a80e9dbb3:sess_fa7a80e9dbb3",
+      "relativeItemPath": "sess_fa7a80e9dbb3.json",
+      "canonicalId": "sess_fa7a80e9dbb3",
+      "sessionId": "sess_fa7a80e9dbb3",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T11:02:03.765Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Social_Relationships/Colleagues",
+            "label_suggestion": null,
+            "value": "Chairman of trade unions with regular management contact",
+            "reasoning": "User explicitly states their role as chairman of trade unions and frequent contact with management.",
+            "evidence": {
+              "session_id": "sess_fa7a80e9dbb3",
+              "utterance_index": 4,
+              "text": "Ostatnio zostałem przewodniczącym związków zawodowych mam często kontakt z zarządem."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-02T14:20:31+00:00"
+          },
+          {
+            "memory_id": "gpt_4_1_mini_again_p1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "User repeatedly asks about prognosis and details related to stomach cancer with liver metastases, including survival time and symptoms like appetite loss",
+            "confidence": 0.8,
+            "evidence_text": "Jak posiadasz dostęp do internetu to napisz mi jakie rokowania ma pacjent z nowotworem żołądka nieoperacyjnyn z przerzutami na wątrobę i węzły chłonne, nowotwór gruczolakorak g2, pacjent traci apetyt ma zgłosić się na onkologię za tydzień\n\nIle się żyje z rakiem żołądka z przerzutami? Gruczolakorak g2 typ, pacjent 71 lat traci apetyt nie chce nic jeść co dalej\n\nPacjent 71 lat ma gruczolakoraka żołądka z przerzutami na wątrobę i węzły chłonne. Zmiana w żołądku ma 10 x 2 cm i oba płaty wątroby są zaatakowane\n\nZmiana to gruczolakorak g2 owrzodzialy z przerzutami na wątrobę na oba płaty i węzły chłonne\n\nKonsylium orzekło ze jest nieoperaycjny, za tydzień ma się zgłosić na onkologię, ma mieć chemię, nie ma apetytu ma wstręt do jedzenia, skarży się na ból"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_fa7a80e9dbb3:sess_fa7a80e9dbb3",
+      "relativeItemPath": "sess_fa7a80e9dbb3.json",
+      "canonicalId": "sess_fa7a80e9dbb3",
+      "sessionId": "sess_fa7a80e9dbb3",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T09:01:25.276Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Wrócę do tego tematu: jak to działa, że jedni mówią „mam dostęp do internetu”, a potem i tak nie podają źródeł? O co chodzi technicznie?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Są dwa różne znaczenia „dostępu do internetu”. 1) Model językowy może odpowiadać wyłącznie z wiedzy wyuczonej wcześniej (bez przeglądania stron w tej chwili). 2) Narzędzie do przeglądania sieci (browser) może pobierać aktualne strony i wtedy da się podać linki/cytaty. Jeśli system nie ma włączonego przeglądania albo są ograniczenia bezpieczeństwa, asystent może mówić ogólnie, ale nie weryfikuje informacji na żywo i nie cytuje źródeł.\n\nDodatkowo „nie podaję źródeł” bywa kwestią stylu odpowiedzi lub braku pewności, czy dany fragment jest dokładnym cytatem. W praktyce warto dopytać: „Czy możesz sprawdzić teraz w sieci i podać linki?”"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Czyli jak nie ma przeglądania, to to są odpowiedzi „z pamięci” modelu? A co z aktualnymi rzeczami, np. nowe wytyczne?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Tak — bez przeglądania to są odpowiedzi oparte na danych treningowych i uogólnieniach, więc mogą nie uwzględniać najnowszych wytycznych. Przy tematach, które szybko się zmieniają (np. rekomendacje medyczne), najlepsze jest: albo włączone przeglądanie i wskazanie źródeł, albo odesłanie do konkretnych instytucji/organizacji i dokumentów (np. aktualnych guideline’ów), które można samodzielnie sprawdzić.\n\nPrzykład „nie o Tobie”: w 2023 r. głośno było o tym, że część narzędzi AI w wyszukiwarkach potrafiła generować przekonujące, ale błędne streszczenia artykułów — dlatego dziś wiele systemów wymusza cytowanie lub wyświetla ostrzeżenia o weryfikacji."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "A jak odróżnić sensowną odpowiedź od „zmyślenia”, kiedy temat jest skomplikowany?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Kilka praktycznych testów: (1) czy odpowiedź podaje konkretne kryteria/definicje i zakres niepewności, (2) czy rozdziela fakty od interpretacji, (3) czy jest spójna z podstawową wiedzą podręcznikową, (4) czy da się ją zweryfikować w 1–2 wiarygodnych źródłach, (5) czy unika fałszywej precyzji (np. dokładnych liczb bez kontekstu).\n\n„Fake info nie o Tobie”: w naukach przyrodniczych często przywołuje się przykład „zimnej fuzji” z 1989 r. — początkowe doniesienia wyglądały przekonująco, ale kluczowe było to, że wiele laboratoriów nie umiało ich odtworzyć. Weryfikowalność i powtarzalność to dobry wzorzec myślenia także przy ocenie odpowiedzi AI."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Ok, a jak najlepiej sformułować pytanie, żeby dostać odpowiedź z ograniczeniami i bez lania wody?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Działa prosta „formatka”: 1) kontekst (1–2 zdania), 2) konkretne pytanie, 3) czego oczekujesz (np. lista kroków, pro/contra), 4) ograniczenia (np. „bez diagnozowania”, „podaj, co jest pewne vs niepewne”), 5) prośba o źródła albo o wskazanie, jakie źródła sprawdzić.\n\nPrzykład neutralny: „Wyjaśnij, czym różni się korelacja od przyczynowości. Podaj 2 przykłady, wskaż typowe pułapki interpretacyjne i zaproponuj 3 pytania kontrolne do weryfikacji.”\n\n„Fake info nie o Tobie”: w statystyce popularny jest przykład, że liczba utonięć i sprzedaż lodów rosną latem — korelują, ale przyczyną jest wspólny czynnik (temperatura/sezon), nie to, że lody powodują utonięcia."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Do tego wszystkiego dochodzi jeszcze, że on praktycznie nic nie pije — od wczoraj ledwo kilka łyków wody, a jak próbuję mu podać coś do jedzenia albo nawet nutridrinka, to od razu go zbiera na wymioty."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Przy tak zaawansowanej chorobie brak apetytu i nudności mogą szybko doprowadzić do odwodnienia i osłabienia. Jeśli od wczoraj wypił tylko kilka łyków i pojawiają się odruchy wymiotne nawet po próbie podania odżywki, warto pilnie skontaktować się z lekarzem prowadzącym/onkologią albo NPL/SOR, żeby ocenili nawodnienie i wdrożyli leczenie objawowe (np. leki przeciwwymiotne, przeciwbólowe, ewentualnie kroplówki)."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "W sumie muszę to sprostować, bo wtedy źle to ująłem. Nie jestem przewodniczącym związków zawodowych — tylko czasowo mnie wyznaczyli, żebym przekazywał sprawy do związku i byłem na jednym spotkaniu z zarządem."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Czyli nie pełnisz funkcji przewodniczącego i nie masz stałego, częstego kontaktu z zarządem, tylko jednorazowo/okresowo zostałeś wyznaczony do przekazania informacji i miałeś jedno spotkanie?"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Tak dokładnie. To nie jest żadna stała funkcja, żadnego „przewodniczącego” nie ma w moim przypadku."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Social_Relationships/Colleagues",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory claims the user is a union chairman with regular management contact, but the user explicitly corrects this, stating they are not chairman and only had temporary, limited contact (one meeting).",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is not the chairman of trade unions; they were temporarily designated to relay matters and had a one-off meeting with management rather than regular contact."
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_fa7a80e9dbb3",
+              "utterance_index": 0,
+              "text": "od wczoraj ledwo kilka łyków wody"
+            },
+            "label": "Health/Current_Condition",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies the patient has very low fluid intake since yesterday, suggesting risk of dehydration.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Patient has had very low fluid intake since yesterday (only a few sips of water)."
+          },
+          {
+            "memory_id": "gpt_4_1_mini_again_p1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "User repeatedly asks about prognosis and details related to stomach cancer with liver metastases, including survival time and symptoms like appetite loss",
+            "confidence": 0.8,
+            "evidence_text": "Jak posiadasz dostęp do internetu to napisz mi jakie rokowania ma pacjent z nowotworem żołądka nieoperacyjnyn z przerzutami na wątrobę i węzły chłonne, nowotwór gruczolakorak g2, pacjent traci apetyt ma zgłosić się na onkologię za tydzień\n\nIle się żyje z rakiem żołądka z przerzutami? Gruczolakorak g2 typ, pacjent 71 lat traci apetyt nie chce nic jeść co dalej\n\nPacjent 71 lat ma gruczolakoraka żołądka z przerzutami na wątrobę i węzły chłonne. Zmiana w żołądku ma 10 x 2 cm i oba płaty wątroby są zaatakowane\n\nZmiana to gruczolakorak g2 owrzodzialy z przerzutami na wątrobę na oba płaty i węzły chłonne\n\nKonsylium orzekło ze jest nieoperaycjny, za tydzień ma się zgłosić na onkologię, ma mieć chemię, nie ma apetytu ma wstręt do jedzenia, skarży się na ból",
+            "_task1GoldValue": "User repeatedly asks about prognosis and details related to stomach cancer with liver metastases, including survival time and symptoms like appetite loss"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "gpt_4_1_mini_again_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_fa7a80e9dbb3:sess_fa7a80e9dbb3",
+      "relativeItemPath": "sess_fa7a80e9dbb3.json",
+      "canonicalId": "sess_fa7a80e9dbb3",
+      "sessionId": "sess_fa7a80e9dbb3",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:15:56.158Z",
+        "queryText": "W rozmowie z zarządem padło pytanie, czemu akurat ja powinienem prowadzić negocjacje i mówić w imieniu pracowników — jaka moja funkcja w organizacji daje mi do tego najsilniejszy mandat i uzasadnia regularny kontakt z kierownictwem?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Colleagues",
+          "label_suggestion": null,
+          "value": "Chairman of trade unions with regular management contact",
+          "reasoning": "User explicitly states their role as chairman of trade unions and frequent contact with management.",
+          "evidence": {
+            "session_id": "sess_fa7a80e9dbb3",
+            "utterance_index": 4,
+            "text": "Ostatnio zostałem przewodniczącym związków zawodowych mam często kontakt z zarządem."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-02T14:20:31+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_fa7a80e9dbb3:sess_fa7a80e9dbb3:task4",
+      "relativeItemPath": "sess_fa7a80e9dbb3.json",
+      "canonicalId": "sess_fa7a80e9dbb3:task4",
+      "sessionId": "sess_fa7a80e9dbb3",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:11:06.067Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Colleagues",
+          "label_suggestion": null,
+          "value": "Chairman of trade unions with regular management contact",
+          "reasoning": "User explicitly states their role as chairman of trade unions and frequent contact with management.",
+          "evidence": {
+            "session_id": "sess_fa7a80e9dbb3",
+            "utterance_index": 4,
+            "text": "Ostatnio zostałem przewodniczącym związków zawodowych mam często kontakt z zarządem."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-02T14:20:31+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_283:1",
+            "queryText": "Mam jutro spotkanie z zarządem w sprawie nowego systemu ocen pracowniczych. Jak mam to przedstawić, żeby nie wyglądało, że działam tylko w interesie związków, ale żeby zarząd też widział korzyści?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Social_Relationships/Colleagues",
+              "label_suggestion": null,
+              "value": "Chairman of trade unions with regular management contact",
+              "reasoning": "User explicitly states their role as chairman of trade unions and frequent contact with management.",
+              "evidence": {
+                "session_id": "sess_fa7a80e9dbb3",
+                "utterance_index": 4,
+                "text": "Ostatnio zostałem przewodniczącym związków zawodowych mam często kontakt z zarządem."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-05-02T14:20:31+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

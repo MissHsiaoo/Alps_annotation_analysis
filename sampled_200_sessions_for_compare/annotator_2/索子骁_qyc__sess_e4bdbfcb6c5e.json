@@ -1,0 +1,303 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_e4bdbfcb6c5e",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_e4bdbfcb6c5e:sess_e4bdbfcb6c5e",
+      "relativeItemPath": "sess_e4bdbfcb6c5e.json",
+      "canonicalId": "sess_e4bdbfcb6c5e",
+      "sessionId": "sess_e4bdbfcb6c5e",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T02:56:29.027Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Business/Communication_Language/Preference",
+            "value": "Prefers client communication in Russian for professional letters",
+            "reasoning": "User specifies Russian for business letters, but may reflect company policy rather than personal preference. Label forced correction.",
+            "evidence": {
+              "session_id": "sess_e4bdbfcb6c5e",
+              "utterance_index": 10,
+              "text": "client-oriented... letter to potential client... in Russian"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-08T15:42:19+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Concerned about colleagues' perception when leaving work early",
+            "reasoning": "User explicitly states desire to leave work early without negative colleague perception, indicating a sensitivity around this topic.",
+            "evidence": {
+              "session_id": "sess_e4bdbfcb6c5e",
+              "utterance_index": 14,
+              "text": "how can i finish my working day earlier... I dont want my colleagues think something bad of me"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-06-08T15:42:19+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_e4bdbfcb6c5e:sess_e4bdbfcb6c5e",
+      "relativeItemPath": "sess_e4bdbfcb6c5e.json",
+      "canonicalId": "sess_e4bdbfcb6c5e",
+      "sessionId": "sess_e4bdbfcb6c5e",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T15:30:21.393Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Could you help me phrase a short message to a team chat saying I’m stepping out a bit early today, but everything important is covered?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure—do you want it to sound formal or casual, and should it mention when you’ll be reachable later (e.g., email/phone)?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Casual is fine. I’d rather not give a detailed reason. Just want to sound responsible."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Here are a few options:\n\n1) “Heading out a little early today—everything urgent is wrapped up, and I’ll keep an eye on messages later.”\n2) “I’m logging off a bit early, but all priorities are covered. Ping me if anything time-sensitive comes up.”\n3) “Stepping out early today—no blockers on my side. I’ll be reachable later if needed.”\n\nWant it to include a quick handoff line (e.g., who to contact while you’re away) or keep it minimal?"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Minimal. Also, random question: why do some trains have both a locomotive and a power car?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Minimal version: “Heading out a bit early today—everything urgent is covered. I’ll check messages later if anything comes up.”\n\nOn trains: some sets combine a locomotive with an additional power car (or powered coach) for reasons like extra traction for heavy loads/steep grades, redundancy (if one unit has issues), or because the trainset was built in stages or adapted from mixed rolling stock. It can also be a design choice to distribute power more evenly across the train for acceleration and reduced wheel slip."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Можешь набросать короткое сообщение для команды: сегодня уйду пораньше, потому что в 16:30 запись к врачу, а вечером всё равно добью оставшиеся задачи и скину апдейт."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Конечно. Вот вариант:\n\nКоллеги, сегодня буду офлайн чуть раньше — у меня запись к врачу в 16:30. По текущим задачам всё критичное закрою до выхода, а оставшееся вечером доделаю и пришлю апдейт. Если что-то срочное — напишите, пожалуйста, до 16:00.\n"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "About that leaving-early thing: it’s not really a worry about what colleagues think. I just want practical ways to wrap up faster and be out before COB when I can."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it — so it’s not about colleagues’ perception, it’s simply about finishing tasks efficiently and leaving before COB when possible."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Yes. I’m not concerned about their opinion; I just want to manage my time better so I can leave earlier."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Business/Communication_Language/Preference",
+            "value": "Prefers client communication in Russian for professional letters",
+            "reasoning": "User specifies Russian for business letters, but may reflect company policy rather than personal preference. Label forced correction.",
+            "evidence": {
+              "session_id": "sess_e4bdbfcb6c5e",
+              "utterance_index": 10,
+              "text": "client-oriented... letter to potential client... in Russian"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-08T15:42:19+00:00"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The original memory says the user is concerned about colleagues' perception. In the new dialogue, the user explicitly corrects this: \"it’s not really a worry about what colleagues think\" and \"I’m not concerned about their opinion,\" indicating the true constraint is time-management rather than social perception.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Not concerned about colleagues' perception when leaving work early; wants practical time-management to finish earlier"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_e4bdbfcb6c5e",
+              "utterance_index": 0,
+              "text": "сегодня уйду пораньше, потому что в 16:30 запись к врачу"
+            },
+            "label": "Personal/Schedule",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user requests a message explaining leaving early specifically due to a 16:30 doctor appointment, implying a scheduled medical visit.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Has a doctor appointment at 16:30, leading them to leave work early today"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_e4bdbfcb6c5e:sess_e4bdbfcb6c5e",
+      "relativeItemPath": "sess_e4bdbfcb6c5e.json",
+      "canonicalId": "sess_e4bdbfcb6c5e",
+      "sessionId": "sess_e4bdbfcb6c5e",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T15:30:28.471Z",
+        "queryText": "If I want to change my schedule so I can head out earlier than usual, what’s the main social risk I’m trying to avoid at work, and why would that affect how I communicate the change?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Concerned about colleagues' perception when leaving work early",
+          "reasoning": "User explicitly states desire to leave work early without negative colleague perception, indicating a sensitivity around this topic.",
+          "evidence": {
+            "session_id": "sess_e4bdbfcb6c5e",
+            "utterance_index": 14,
+            "text": "how can i finish my working day earlier... I dont want my colleagues think something bad of me"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-06-08T15:42:19+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_e4bdbfcb6c5e:sess_e4bdbfcb6c5e:task4",
+      "relativeItemPath": "sess_e4bdbfcb6c5e.json",
+      "canonicalId": "sess_e4bdbfcb6c5e:task4",
+      "sessionId": "sess_e4bdbfcb6c5e",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T15:30:45.313Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Concerned about colleagues' perception when leaving work early",
+          "reasoning": "User explicitly states desire to leave work early without negative colleague perception, indicating a sensitivity around this topic.",
+          "evidence": {
+            "session_id": "sess_e4bdbfcb6c5e",
+            "utterance_index": 14,
+            "text": "how can i finish my working day earlier... I dont want my colleagues think something bad of me"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-06-08T15:42:19+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_299:1",
+            "queryText": "Hey, my manager just asked me to wrap up early today to help with a family emergency they're having. They want me to leave by 3 PM and said it's totally fine. Could you draft a quick, casual message I can send to my team chat explaining this? Something like 'Heads up team, wrapping up a bit early today for a personal matter, all my tasks are on track!' but make it sound natural and not draw any suspicion.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Sensitive_Topics",
+              "label_suggestion": null,
+              "value": "Concerned about colleagues' perception when leaving work early",
+              "reasoning": "User explicitly states desire to leave work early without negative colleague perception, indicating a sensitivity around this topic.",
+              "evidence": {
+                "session_id": "sess_e4bdbfcb6c5e",
+                "utterance_index": 14,
+                "text": "how can i finish my working day earlier... I dont want my colleagues think something bad of me"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-06-08T15:42:19+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "highly relevant",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

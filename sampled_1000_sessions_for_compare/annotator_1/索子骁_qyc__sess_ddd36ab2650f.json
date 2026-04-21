@@ -1,0 +1,275 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_ddd36ab2650f",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_ddd36ab2650f:sess_ddd36ab2650f",
+      "relativeItemPath": "sess_ddd36ab2650f.json",
+      "canonicalId": "sess_ddd36ab2650f",
+      "sessionId": "sess_ddd36ab2650f",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T13:30:55.780Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers text modifications for clarity: fewer words, easier readability, splitting sentences",
+            "reasoning": "User made task-local editing requests (rewriting, simplification, sentence splitting) but no explicit self-report of stable preference. Could be transient task context.",
+            "evidence": {
+              "session_id": "sess_ddd36ab2650f",
+              "utterance_index": 0,
+              "text": "Rewrite the following sentence with 20 percent fewer words..."
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-09-06T16:42:37+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_ddd36ab2650f:sess_ddd36ab2650f",
+      "relativeItemPath": "sess_ddd36ab2650f.json",
+      "canonicalId": "sess_ddd36ab2650f",
+      "sessionId": "sess_ddd36ab2650f",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T04:35:09.868Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Make this sentence clearer: The committee reviewed the proposal, but because the budget was uncertain, they postponed a vote until next quarter."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "The committee reviewed the proposal. Because the budget was uncertain, it postponed the vote until next quarter."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Rewrite with fewer words: A sudden gust of wind scattered the papers across the hallway, forcing everyone to stop and help pick them up."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "A sudden gust scattered papers down the hallway, forcing everyone to stop and pick them up."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Split into two sentences: The city council approved the measure after hours of debate, though several members still had concerns."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "The city council approved the measure after hours of debate. Several members still had concerns."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Make this easier to read: In 1977, NASA launched Voyager 1, which later became the farthest human-made object from Earth."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "NASA launched Voyager 1 in 1977. It later became the farthest human-made object from Earth."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Can you tighten this without changing the meaning? I need it to fit on a slide before my civics class: “A constitutional amendment may be proposed by a two-thirds vote in both the House and the Senate.”"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "A constitutional amendment can be proposed with a two-thirds vote in the House and Senate."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Actually, don’t rewrite it for clarity or shorten it. Keep my original wording exactly as-is; I’m not looking for easier readability or splitting sentences this time."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—I'll leave the text unchanged, with no shortening, simplification, or sentence splitting."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory inferred a stable preference for clarity edits (shortening/simplifying/splitting). The user explicitly contradicts that here by requesting no rewriting and to keep the original wording unchanged, indicating they do not want those modifications in this context.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Does not want text rewritten/shortened for clarity and may prefer keeping original wording unchanged (at least in some requests)."
+          },
+          {
+            "confidence": 0.66,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_ddd36ab2650f",
+              "utterance_index": 0,
+              "text": "I need it to fit on a slide before my civics class"
+            },
+            "label": "Personal/Background",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "Needing text to fit on a slide \"before my civics class\" implies they have an upcoming civics class engagement.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is involved with a civics class (likely teaching or studying civics)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_ddd36ab2650f:sess_ddd36ab2650f",
+      "relativeItemPath": "sess_ddd36ab2650f.json",
+      "canonicalId": "sess_ddd36ab2650f",
+      "sessionId": "sess_ddd36ab2650f",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:50:43.809Z",
+        "queryText": "If I paste a dense paragraph and ask you to “make it clearer” for me, what specific editing approach should you default to so I’m most likely to feel it matches how I like revisions done?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers text modifications for clarity: fewer words, easier readability, splitting sentences",
+          "reasoning": "User made task-local editing requests (rewriting, simplification, sentence splitting) but no explicit self-report of stable preference. Could be transient task context.",
+          "evidence": {
+            "session_id": "sess_ddd36ab2650f",
+            "utterance_index": 0,
+            "text": "Rewrite the following sentence with 20 percent fewer words..."
+          },
+          "confidence": 0.5,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-09-06T16:42:37+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_ddd36ab2650f:sess_ddd36ab2650f:task4",
+      "relativeItemPath": "sess_ddd36ab2650f.json",
+      "canonicalId": "sess_ddd36ab2650f:task4",
+      "sessionId": "sess_ddd36ab2650f",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T01:06:34.298Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers text modifications for clarity: fewer words, easier readability, splitting sentences",
+          "reasoning": "User made task-local editing requests (rewriting, simplification, sentence splitting) but no explicit self-report of stable preference. Could be transient task context.",
+          "evidence": {
+            "session_id": "sess_ddd36ab2650f",
+            "utterance_index": 0,
+            "text": "Rewrite the following sentence with 20 percent fewer words..."
+          },
+          "confidence": 0.5,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-09-06T16:42:37+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1037:1",
+            "queryText": "I've got this paragraph that feels clunky. Can you work your magic on it?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers text modifications for clarity: fewer words, easier readability, splitting sentences",
+              "reasoning": "User made task-local editing requests (rewriting, simplification, sentence splitting) but no explicit self-report of stable preference. Could be transient task context.",
+              "evidence": {
+                "session_id": "sess_ddd36ab2650f",
+                "utterance_index": 0,
+                "text": "Rewrite the following sentence with 20 percent fewer words..."
+              },
+              "confidence": 0.5,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-09-06T16:42:37+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

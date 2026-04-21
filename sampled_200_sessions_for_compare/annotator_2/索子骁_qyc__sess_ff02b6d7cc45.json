@@ -1,0 +1,380 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_ff02b6d7cc45",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_ff02b6d7cc45:sess_ff02b6d7cc45",
+      "relativeItemPath": "sess_ff02b6d7cc45.json",
+      "canonicalId": "sess_ff02b6d7cc45",
+      "sessionId": "sess_ff02b6d7cc45",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:24:39.085Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "Descendant of Dyakiv Sava Fedorovych",
+            "reasoning": "User explicitly states being a descendant through genealogical tree",
+            "evidence": {
+              "session_id": "sess_ff02b6d7cc45",
+              "utterance_index": 28,
+              "text": "But I am a descendant of Dyakiv Sava Fedorovych"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-10T09:52:14Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in Y-DNA haplogroups of historical figures and personal genealogy",
+            "reasoning": "Multiple follow-ups about Y-DNA testing methodology and ancestral connections (7+ queries)",
+            "evidence": {
+              "session_id": "sess_ff02b6d7cc45",
+              "utterance_index": 14,
+              "text": "Tell me approximately what Y-DNA Dyakiv Sava Fedorovych had?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-10T09:52:14Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "Genealogical lineage: Nikita Gavrryliv Dmytrovych -> Dasha Gavryliv Dmytriivna -> Valentina Blahikh Petrivna -> Petro Dyakiv Savovych -> Sava Fedorovych",
+            "reasoning": "User provided explicit family tree connection",
+            "evidence": {
+              "session_id": "sess_ff02b6d7cc45",
+              "utterance_index": 30,
+              "text": "Genealogical tree with me to Dyakiv Sava Fedorovych..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-10T09:52:14Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_ff02b6d7cc45:sess_ff02b6d7cc45",
+      "relativeItemPath": "sess_ff02b6d7cc45.json",
+      "canonicalId": "sess_ff02b6d7cc45",
+      "sessionId": "sess_ff02b6d7cc45",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:25:00.164Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "If we don’t have direct DNA samples, how do historians and geneticists even talk about ancient ancestry without just guessing?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "They try to separate (1) what can be tested from (2) what’s only inference. For testing, they use ancient DNA from excavated remains and compare it to other ancient samples and to present-day populations. For inference, they combine archaeology (material culture), historical records, linguistics, and population models. The key is being explicit about uncertainty—e.g., “this haplogroup appears in this region/timeframe,” not “this person definitely had it.”"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "What kind of wording is considered “safe” and what wording crosses into misleading certainty?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Safer wording: “consistent with,” “compatible with,” “more common in,” “one plausible option,” “cannot be confirmed without a sample.” Misleading wording: “proved,” “definitely,” “X% of an ethnicity,” or assigning a single haplogroup to a named historical person without direct testing or a well-documented unbroken male-line sample.\n\nFor example, researchers sometimes note that haplogroup R1a is frequent in parts of Eastern Europe and appears in various ancient steppe-associated samples—but that still doesn’t let you pin it to a specific medieval ruler without direct evidence."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "So if someone insists on a guess anyway, what’s a responsible way to present it?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Frame it as a hypothesis with alternatives, and anchor it to published reference data. Something like: “If a person is from region A in period B, common Y-DNA lineages in that context include X, Y, and Z; without a direct sample we can’t choose among them.”\n\nUnrelated example: a 2020s report about recovering DNA from parchment showed how contamination can skew results—so even “tested” doesn’t automatically mean “certain” unless methods and provenance are solid."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Got it. Also, I saw a museum display claiming a single tribe “became” a modern nation. Is that the same kind of oversimplification?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Yes—similar category error. Modern nations are usually mixtures shaped by migration, language shift, politics, and identity changes over centuries. A more accurate statement is that certain historical groups contributed ancestry, culture, or language to later populations.\n\nAnother unrelated tidbit: the Cucuteni–Trypillia horizon spans multiple regions and centuries, so even within that archaeological label, genetic diversity and local continuity vs. change can vary a lot site-to-site."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "If I manage to persuade my uncle from the Dyakiv line to do a Y-test, I’ll finally stop guessing and compare the result with what I’ve been reading."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "That’s the most reliable route: a direct male-line relative taking a Y-DNA test can give you a haplogroup assignment and matches, and then you can compare those results to your hypotheses and any documentary records you have."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "I rechecked what I wrote earlier and it was messy. That chain I typed is not a confirmed genealogical lineage to Dyakiv Sava Fedorovych—it was just a rough guess with names, and the order may be wrong too."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it. So your earlier \"Nikita → Dasha → Valentina → Petro Dyakiv Savovych → Sava Fedorovych\" line isn't verified and shouldn't be treated as your actual documented family tree."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Yes. I don't have documents proving that exact sequence, so please don't store it as fact."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Understood—I’ll treat that sequence as unconfirmed rather than a factual lineage."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "Descendant of Dyakiv Sava Fedorovych",
+            "reasoning": "User explicitly states being a descendant through genealogical tree",
+            "evidence": {
+              "session_id": "sess_ff02b6d7cc45",
+              "utterance_index": 28,
+              "text": "But I am a descendant of Dyakiv Sava Fedorovych"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-10T09:52:14Z",
+            "_task1GoldValue": "Descendant of Dyakiv Sava Fedorovych"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in Y-DNA haplogroups of historical figures and personal genealogy",
+            "reasoning": "Multiple follow-ups about Y-DNA testing methodology and ancestral connections (7+ queries)",
+            "evidence": {
+              "session_id": "sess_ff02b6d7cc45",
+              "utterance_index": 14,
+              "text": "Tell me approximately what Y-DNA Dyakiv Sava Fedorovych had?"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-10T09:52:14Z",
+            "_task1GoldValue": "Sustained interest in Y-DNA haplogroups of historical figures and personal genealogy"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": null,
+            "reasoning": "The old memory treated the sequence as an explicit family tree connection. The user corrects that it was \"not a confirmed genealogical lineage\" and lacked documents, so it must be stored as unconfirmed rather than fact.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "The previously provided name chain (Nikita Gavrryliv Dmytrovych -> Dasha Gavryliv Dmytriivna -> Valentina Blahikh Petrivna -> Petro Dyakiv Savovych -> Sava Fedorovych) is not a confirmed genealogical lineage; it was an unverified rough guess and may be out of order."
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_ff02b6d7cc45",
+              "utterance_index": 0,
+              "text": "If I manage to persuade my uncle from the Dyakiv line to do a Y-test"
+            },
+            "label": "Plans/Intentions",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "Mentioning persuading an uncle from the Dyakiv line to do a Y-test implies an intention/plan to arrange Y-DNA testing via a direct male-line relative.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User is considering asking a paternal-line uncle (Dyakiv male line) to take a Y-DNA test."
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "Genealogical lineage: Nikita Gavrryliv Dmytrovych -> Dasha Gavryliv Dmytriivna -> Valentina Blahikh Petrivna -> Petro Dyakiv Savovych -> Sava Fedorovych",
+            "reasoning": "User provided explicit family tree connection",
+            "evidence": {
+              "session_id": "sess_ff02b6d7cc45",
+              "utterance_index": 30,
+              "text": "Genealogical tree with me to Dyakiv Sava Fedorovych..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-10T09:52:14Z",
+            "_task1GoldValue": "Genealogical lineage: Nikita Gavrryliv Dmytrovych -> Dasha Gavryliv Dmytriivna -> Valentina Blahikh Petrivna -> Petro Dyakiv Savovych -> Sava Fedorovych"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_ff02b6d7cc45:sess_ff02b6d7cc45",
+      "relativeItemPath": "sess_ff02b6d7cc45.json",
+      "canonicalId": "sess_ff02b6d7cc45",
+      "sessionId": "sess_ff02b6d7cc45",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:25:04.355Z",
+        "queryText": "I’m filling out a family-history form that asks for the earliest known ancestor in my recorded line. Based on what I’ve previously shared about my lineage, which person should I list there, and why would that choice be correct?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Personal_Background/Identity",
+          "label_suggestion": null,
+          "value": "Genealogical lineage: Nikita Gavrryliv Dmytrovych -> Dasha Gavryliv Dmytriivna -> Valentina Blahikh Petrivna -> Petro Dyakiv Savovych -> Sava Fedorovych",
+          "reasoning": "User provided explicit family tree connection",
+          "evidence": {
+            "session_id": "sess_ff02b6d7cc45",
+            "utterance_index": 30,
+            "text": "Genealogical tree with me to Dyakiv Sava Fedorovych..."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-10T09:52:14Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_ff02b6d7cc45:sess_ff02b6d7cc45:task4",
+      "relativeItemPath": "sess_ff02b6d7cc45.json",
+      "canonicalId": "sess_ff02b6d7cc45:task4",
+      "sessionId": "sess_ff02b6d7cc45",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:24:39.086Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Personal_Background/Identity",
+          "label_suggestion": null,
+          "value": "Genealogical lineage: Nikita Gavrryliv Dmytrovych -> Dasha Gavryliv Dmytriivna -> Valentina Blahikh Petrivna -> Petro Dyakiv Savovych -> Sava Fedorovych",
+          "reasoning": "User provided explicit family tree connection",
+          "evidence": {
+            "session_id": "sess_ff02b6d7cc45",
+            "utterance_index": 30,
+            "text": "Genealogical tree with me to Dyakiv Sava Fedorovych..."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-10T09:52:14Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_135:1",
+            "queryText": "My cousin from the Petro Dyakiv Savovych line wants to do a Y-DNA test to see if we match the Rurikid haplogroup rumors. What's the most likely result based on our family's known geographic history in Kyiv region?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Personal_Background/Identity",
+              "label_suggestion": null,
+              "value": "Genealogical lineage: Nikita Gavrryliv Dmytrovych -> Dasha Gavryliv Dmytriivna -> Valentina Blahikh Petrivna -> Petro Dyakiv Savovych -> Sava Fedorovych",
+              "reasoning": "User provided explicit family tree connection",
+              "evidence": {
+                "session_id": "sess_ff02b6d7cc45",
+                "utterance_index": 30,
+                "text": "Genealogical tree with me to Dyakiv Sava Fedorovych..."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-06-10T09:52:14Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

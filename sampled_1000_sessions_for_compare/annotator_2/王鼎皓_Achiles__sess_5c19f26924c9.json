@@ -1,0 +1,447 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_5c19f26924c9",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_5c19f26924c9:sess_5c19f26924c9",
+      "relativeItemPath": "sess_5c19f26924c9.json",
+      "canonicalId": "sess_5c19f26924c9",
+      "sessionId": "sess_5c19f26924c9",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:17:15.162Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Likes directors Christopher Nolan and Ridley Scott",
+            "reasoning": "User explicitly states preference for these directors.",
+            "evidence": {
+              "session_id": "sess_5c19f26924c9",
+              "utterance_index": 4,
+              "text": "2 I like Christopher Nolan and Ridley Scott"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-20T04:04:17+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers movies from last 15 years",
+            "reasoning": "User explicitly states temporal preference for films.",
+            "evidence": {
+              "session_id": "sess_5c19f26924c9",
+              "utterance_index": 4,
+              "text": "3 something within the last 15 years"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-20T04:04:17+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Interested in sci-fi, historical, and crime genres",
+            "reasoning": "User explicitly lists preferred genres.",
+            "evidence": {
+              "session_id": "sess_5c19f26924c9",
+              "utterance_index": 4,
+              "text": "4 sci-fi, historical, crime"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "interest",
+            "updated_at": "2023-06-20T04:04:17+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Liked 'Everything Everywhere All At Once'",
+            "reasoning": "User explicitly cites this film as a positive example.",
+            "evidence": {
+              "session_id": "sess_5c19f26924c9",
+              "utterance_index": 4,
+              "text": "5 I liked Everything, Everywhere all at once"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-20T04:04:17+00:00"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in movie recommendations across multiple iterations",
+            "reasoning": "User makes 4 separate recommendation requests with iterative refinements (utterances 0,6,10,12), indicating strong curiosity pattern",
+            "evidence": {
+              "session_id": "sess_5c19f26924c9",
+              "utterance_index": 12,
+              "text": "I've seen everything but 3 & 5 recommend 6 more"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-20T04:04:17+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_5c19f26924c9:sess_5c19f26924c9",
+      "relativeItemPath": "sess_5c19f26924c9.json",
+      "canonicalId": "sess_5c19f26924c9",
+      "sessionId": "sess_5c19f26924c9",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:17:30.711Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I’m stuck choosing a movie tonight—can you narrow it down for me?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yep. Quick calibration: do you want something dialogue-heavy or more action-driven, and are subtitles okay?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Subtitles are fine. Probably something tense, not too slow."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Got it. Two tight, tense options:\n1) \"Sicario\" (2015) — grim, high-tension crime thriller with a relentless pace.\n2) \"Memories of Murder\" (2003) — Korean crime investigation that stays suspenseful and unnerving.\nIf you pick one: do you prefer modern cartel/politics, or a procedural serial-case vibe?"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Procedural serial-case vibe."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Then go with \"Memories of Murder.\" If you want two backups in the same lane: \"Zodiac\" (2007) for meticulous procedure, or \"Prisoners\" (2013) for a darker, more emotionally intense investigation.\n\nUnrelated trivia: the first public movie screening is often credited to the Lumière brothers in 1895, and a separate fun fact is that NASA’s Voyager Golden Record includes music from multiple cultures—both make for neat pre-movie rabbit holes."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "assistant",
+            "text": "Want to narrow the next batch a bit—are you watching tonight and trying to stay under, say, the two-hour mark, or is runtime not a factor?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "user",
+            "text": "Yeah, it’s a weeknight, so keep it under 2 hours if you can."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Quick correction from earlier: I actually *didn't* like Everything Everywhere All at Once—it's not really my thing. I only mentioned it because my friends keep recommending it."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—thanks for clarifying. So instead of using \"Everything Everywhere All at Once\" as a positive reference, I should treat it as something you *didn't* enjoy and avoid recommending similar chaotic/multiverse-style films."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Likes directors Christopher Nolan and Ridley Scott",
+            "reasoning": "User explicitly states preference for these directors.",
+            "evidence": {
+              "session_id": "sess_5c19f26924c9",
+              "utterance_index": 4,
+              "text": "2 I like Christopher Nolan and Ridley Scott"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-20T04:04:17+00:00",
+            "_task1GoldValue": "Likes directors Christopher Nolan and Ridley Scott"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers movies from last 15 years",
+            "reasoning": "User explicitly states temporal preference for films.",
+            "evidence": {
+              "session_id": "sess_5c19f26924c9",
+              "utterance_index": 4,
+              "text": "3 something within the last 15 years"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-20T04:04:17+00:00",
+            "_task1GoldValue": "Prefers movies from last 15 years"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Interested in sci-fi, historical, and crime genres",
+            "reasoning": "User explicitly lists preferred genres.",
+            "evidence": {
+              "session_id": "sess_5c19f26924c9",
+              "utterance_index": 4,
+              "text": "4 sci-fi, historical, crime"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "interest",
+            "updated_at": "2023-06-20T04:04:17+00:00",
+            "_task1GoldValue": "Interested in sci-fi, historical, and crime genres"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Sustained interest in movie recommendations across multiple iterations",
+            "reasoning": "User makes 4 separate recommendation requests with iterative refinements (utterances 0,6,10,12), indicating strong curiosity pattern",
+            "evidence": {
+              "session_id": "sess_5c19f26924c9",
+              "utterance_index": 12,
+              "text": "I've seen everything but 3 & 5 recommend 6 more"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-20T04:04:17+00:00",
+            "_task1GoldValue": "Sustained interest in movie recommendations across multiple iterations"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "Quick correction from earlier: I actually *didn't* like Everything Everywhere All at Once—it's not really my thing. I only mentioned it because my friends keep recommending it."
+                }
+              ]
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m4_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The prior memory said the user liked the film, but the user explicitly corrects that they did not like it and only mentioned it due to friends recommending it. The updated truth is that the user dislikes 'Everything Everywhere All at Once.'",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Disliked 'Everything Everywhere All At Once'"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_5c19f26924c9",
+              "utterance_index": 0,
+              "text": "Yeah, it’s a weeknight, so keep it under 2 hours if you can."
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User implies a runtime constraint due to it being a weeknight and asks to keep films under 2 hours.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers movies under 2 hours (especially on weeknights)"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Liked 'Everything Everywhere All At Once'",
+            "reasoning": "User explicitly cites this film as a positive example.",
+            "evidence": {
+              "session_id": "sess_5c19f26924c9",
+              "utterance_index": 4,
+              "text": "5 I liked Everything, Everywhere all at once"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-20T04:04:17+00:00",
+            "_task1GoldValue": "Liked 'Everything Everywhere All At Once'"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4",
+          "m5"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_5c19f26924c9:sess_5c19f26924c9",
+      "relativeItemPath": "sess_5c19f26924c9.json",
+      "canonicalId": "sess_5c19f26924c9",
+      "sessionId": "sess_5c19f26924c9",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:17:33.992Z",
+        "queryText": "I’m picking a movie night option for myself: one is a wildly genre-bending, reality-hopping story with a lot of heart, and the other is a straightforward, slow, realistic drama. Based on what you know I’ve genuinely enjoyed before, which option should I choose and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m4",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Liked 'Everything Everywhere All At Once'",
+          "reasoning": "User explicitly cites this film as a positive example.",
+          "evidence": {
+            "session_id": "sess_5c19f26924c9",
+            "utterance_index": 4,
+            "text": "5 I liked Everything, Everywhere all at once"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-06-20T04:04:17+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_5c19f26924c9:sess_5c19f26924c9:task4",
+      "relativeItemPath": "sess_5c19f26924c9.json",
+      "canonicalId": "sess_5c19f26924c9:task4",
+      "sessionId": "sess_5c19f26924c9",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:17:36.909Z",
+        "editableSelectedMemory": {
+          "memory_id": "m4",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Liked 'Everything Everywhere All At Once'",
+          "reasoning": "User explicitly cites this film as a positive example.",
+          "evidence": {
+            "session_id": "sess_5c19f26924c9",
+            "utterance_index": 4,
+            "text": "5 I liked Everything, Everywhere all at once"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-06-20T04:04:17+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_281:1",
+            "queryText": "I'm looking for something new to watch tonight. I want something that really hits that sweet spot - you know what I mean. Which recent movie would you put at the top of my list?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m4",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Liked 'Everything Everywhere All At Once'",
+              "reasoning": "User explicitly cites this film as a positive example.",
+              "evidence": {
+                "session_id": "sess_5c19f26924c9",
+                "utterance_index": 4,
+                "text": "5 I liked Everything, Everywhere all at once"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-06-20T04:04:17+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

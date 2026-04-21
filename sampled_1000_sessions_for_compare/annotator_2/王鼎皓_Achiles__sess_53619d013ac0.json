@@ -1,0 +1,419 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_53619d013ac0",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_53619d013ac0:sess_53619d013ac0",
+      "relativeItemPath": "sess_53619d013ac0.json",
+      "canonicalId": "sess_53619d013ac0",
+      "sessionId": "sess_53619d013ac0",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:51:34.432Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/telecom_development/curiosity",
+            "value": "Sustained curiosity about Telegram bot development with Python (Telebot library) and model API integration",
+            "reasoning": "Technical implementation pattern observed, but taxonomy label was forced. Downgraded to indirect.",
+            "evidence": {
+              "session_id": "sess_53619d013ac0",
+              "utterance_index": 6,
+              "text": "کد اول و کد دوم را با هم ادغام کن و یک ربات قابل استفاده برای تلگرام بنویس..."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-25T00:03:42+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers using Telebot library for Telegram bot development",
+            "reasoning": "Explicit library request in user instruction (utterance 2)",
+            "evidence": {
+              "session_id": "sess_53619d013ac0",
+              "utterance_index": 2,
+              "text": "با استفاده از کتابخانه Telebot و توضیحات زیر رباتی بنویس..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-04-25T00:03:42+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers integrated code solutions over separate components [ERROR: Rejected: Task-local code merging request without explicit preference statement]",
+            "reasoning": "Rejected: Task-local code merging request without explicit preference statement",
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-25T00:03:42+00:00",
+            "evidence": {
+              "session_id": "sess_53619d013ac0",
+              "utterance_index": 0,
+              "text": ""
+            }
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "value": "Avoid retaining address/passport information if pasted later [ERROR: Rejected: No evidence in current session's user turns]",
+            "reasoning": "Rejected: No evidence in current session's user turns",
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2025-01-01T00:00:00Z",
+            "evidence": {
+              "session_id": "sess_53619d013ac0",
+              "utterance_index": 0,
+              "text": ""
+            }
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_53619d013ac0:sess_53619d013ac0",
+      "relativeItemPath": "sess_53619d013ac0.json",
+      "canonicalId": "sess_53619d013ac0",
+      "sessionId": "sess_53619d013ac0",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:51:49.275Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "یه سوال کلی: وقتی یه API می‌گه «Object of type bytes is not JSON serializable»، دقیقاً یعنی چی؟"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "یعنی داری چیزی از جنس «بایت خام» (bytes) رو داخل بدنه‌ی درخواست JSON می‌فرستی، ولی JSON فقط نوع‌های ساده مثل string/number/boolean/null/array/object رو می‌شناسه. پس قبل از ارسال باید bytes رو به یکی از این نوع‌ها تبدیل کنی؛ معمولاً یا فایل رو روی دیسک ذخیره می‌کنن و «مسیر فایل» می‌فرستن، یا bytes رو Base64 می‌کنن و به string تبدیلش می‌کنن (اگر API همچین ورودی‌ای رو قبول کنه)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "پس چرا بعضی کتابخونه‌ها با فایل مشکلی ندارن ولی با bytes مشکل دارن؟"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "چون بعضی کتابخونه‌ها برای «فایل» یه مکانیزم جدا از JSON دارن (مثل multipart/form-data) یا خودشون bytes رو پشت‌صحنه تبدیل می‌کنن. ولی وقتی یه کلاینت مشخصاً داره JSON می‌سازه و می‌فرسته، دیگه باید همه‌چیز JSON-serializable باشه.\n\n(یه مثال نامرتبط: توی برخی APIهای هواشناسی فقط متن و عدد می‌فرستی، اما برای ارسال تصویر/صوت معمولاً مسیر فایل یا multipart لازمه.)"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "اگر API فقط «filepath» بخواد، بهترین راه برای تبدیل bytes به filepath چیه؟"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "معمولاً bytes رو توی یک فایل موقت می‌نویسی و مسیرش رو می‌دی. مثلاً با tempfile در پایتون. بعد از اینکه درخواست انجام شد فایل موقت رو پاک می‌کنی. این کار هم با استانداردهای آپلود فایل سازگاره هم با اکثر کلاینت‌ها.\n\n(حاشیه‌ای: در بعضی سیستم‌ها مثل لینوکس، فایل‌های موقت اغلب زیر /tmp ساخته می‌شن و بعد از ریستارت ممکنه پاک بشن.)"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "یه نکته دیگه: چرا بعضی وقت‌ها خطاها «None» برمی‌گردونن و پیام ندارن؟"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "چند علت رایج داره: ۱) سمت سرور خطا رخ داده ولی پیام خطا ثبت/برگردانده نشده، ۲) کلاینت فقط یک فیلد error رو می‌خونه که ممکنه خالی باشه، ۳) درخواست تایم‌اوت/قطع شده و پاسخ ناقص اومده. بهترین کار اینه که پاسخ خام (raw response) و status code و لاگ‌ها رو هم ببینی تا معلوم بشه خطا از کجاست.\n\n(مثال بی‌ربط: بعضی سرویس‌های عمومی هنگام شلوغی، به جای پیام دقیق فقط یک خطای عمومی می‌دن تا جزئیات داخلی لو نره.)"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "برای تست، فعلاً همون مدل رو نگه می‌دارم، فقط می‌خوام این دفعه به‌جای اینکه فایل عکس رو به صورت bytes بفرستم، خودِ مسیر فایلی که ذخیره می‌کنم رو بدم به predict؛ چون وقتی دانلود می‌کنم، همین ارور JSON serializable دوباره میاد."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "باشه؛ پس به‌جای ارسال `bytes`، فایل عکس رو روی دیسک ذخیره می‌کنی و مسیر فایل (filepath) رو می‌فرستی تا `gradio_client` خودش فایل رو بخونه و سریالایز کنه. اینطوری معمولاً خطای `Object of type bytes is not JSON serializable` هم رفع می‌شه.\n\n(کلیت ایده)\n1) عکس رو دانلود کن\n2) داخل یک فایل (مثلاً jpg) ذخیره کن\n3) در `client.predict` به‌جای `downloaded_file`، مسیر همون فایل رو داخل `files` قرار بده"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "راستش من «Telebot» رو ترجیح نمی‌دم؛ فقط چون نمونه‌کدهای قبلی همینو داشتن گفتم با telebot بنویس. اگه امکانش هست از این به بعد با python-telegram-bot یا حتی webhook خام هم می‌تونم کار کنم."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "متوجه‌ام. پس اینطور نیست که «ترجیح دائمی‌ات telebot» باشه؛ اون درخواست قبلی صرفاً به‌خاطر هم‌خوانی با نمونه‌کدها بوده.\nاز این به بعد اگر گفتی «python-telegram-bot»، همون رو مبنا می‌گیرم (و اگر نگفتی، قبلش می‌پرسم کدوم کتابخونه رو می‌خوای)."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/telecom_development/curiosity",
+            "value": "Sustained curiosity about Telegram bot development with Python (Telebot library) and model API integration",
+            "reasoning": "Technical implementation pattern observed, but taxonomy label was forced. Downgraded to indirect.",
+            "evidence": {
+              "session_id": "sess_53619d013ac0",
+              "utterance_index": 6,
+              "text": "کد اول و کد دوم را با هم ادغام کن و یک ربات قابل استفاده برای تلگرام بنویس..."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-25T00:03:42+00:00",
+            "_task1GoldValue": "Sustained curiosity about Telegram bot development with Python (Telebot library) and model API integration"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers integrated code solutions over separate components [ERROR: Rejected: Task-local code merging request without explicit preference statement]",
+            "reasoning": "Rejected: Task-local code merging request without explicit preference statement",
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-25T00:03:42+00:00",
+            "evidence": {
+              "session_id": "sess_53619d013ac0",
+              "utterance_index": 0,
+              "text": ""
+            },
+            "_task1GoldValue": "Prefers integrated code solutions over separate components [ERROR: Rejected: Task-local code merging request without explicit preference statement]"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "value": "Avoid retaining address/passport information if pasted later [ERROR: Rejected: No evidence in current session's user turns]",
+            "reasoning": "Rejected: No evidence in current session's user turns",
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2025-01-01T00:00:00Z",
+            "evidence": {
+              "session_id": "sess_53619d013ac0",
+              "utterance_index": 0,
+              "text": ""
+            },
+            "_task1GoldValue": "Avoid retaining address/passport information if pasted later [ERROR: Rejected: No evidence in current session's user turns]"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "راستش من «Telebot» رو ترجیح نمی‌دم؛ فقط چون نمونه‌کدهای قبلی همینو داشتن گفتم با telebot بنویس. اگه امکانش هست از این به بعد با python-telegram-bot یا حتی webhook خام هم می‌تونم کار کنم."
+                }
+              ]
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The old memory claims a stable preference for Telebot. The user explicitly contradicts this by saying they do not prefer Telebot and only requested it due to prior sample code, indicating the true preference is flexibility rather than Telebot specifically.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not specifically prefer the Telebot library; used it previously only because earlier examples were in Telebot and is open to other Telegram bot approaches (e.g., python-telegram-bot)."
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_53619d013ac0",
+              "utterance_index": 0,
+              "text": "می‌خوام این دفعه به‌جای اینکه فایل عکس رو به صورت bytes بفرستم، خودِ مسیر فایلی که ذخیره می‌کنم رو بدم به predict؛ چون وقتی دانلود می‌کنم، همین ارور JSON serializable دوباره میاد."
+            },
+            "label": "Technical/Debugging",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies the bytes-based approach triggers the JSON-serialization error and proposes switching to sending a filepath to predict.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User is encountering a recurring 'Object of type bytes is not JSON serializable' error when sending downloaded Telegram photo bytes to gradio_client.predict and wants to fix it by passing a saved file path instead of bytes."
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers using Telebot library for Telegram bot development",
+            "reasoning": "Explicit library request in user instruction (utterance 2)",
+            "evidence": {
+              "session_id": "sess_53619d013ac0",
+              "utterance_index": 2,
+              "text": "با استفاده از کتابخانه Telebot و توضیحات زیر رباتی بنویس..."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-04-25T00:03:42+00:00",
+            "_task1GoldValue": "Prefers using Telebot library for Telegram bot development"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_53619d013ac0:sess_53619d013ac0",
+      "relativeItemPath": "sess_53619d013ac0.json",
+      "canonicalId": "sess_53619d013ac0",
+      "sessionId": "sess_53619d013ac0",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:51:52.810Z",
+        "queryText": "I’m about to start a Telegram bot project and want to keep the codebase aligned with what I usually reach for so I don’t have to relearn patterns and APIs. Which specific library should I default to, and why would switching away from it slow me down?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers using Telebot library for Telegram bot development",
+          "reasoning": "Explicit library request in user instruction (utterance 2)",
+          "evidence": {
+            "session_id": "sess_53619d013ac0",
+            "utterance_index": 2,
+            "text": "با استفاده از کتابخانه Telebot و توضیحات زیر رباتی بنویس..."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-04-25T00:03:42+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_53619d013ac0:sess_53619d013ac0:task4",
+      "relativeItemPath": "sess_53619d013ac0.json",
+      "canonicalId": "sess_53619d013ac0:task4",
+      "sessionId": "sess_53619d013ac0",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:51:56.549Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers using Telebot library for Telegram bot development",
+          "reasoning": "Explicit library request in user instruction (utterance 2)",
+          "evidence": {
+            "session_id": "sess_53619d013ac0",
+            "utterance_index": 2,
+            "text": "با استفاده از کتابخانه Telebot و توضیحات زیر رباتی بنویس..."
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-04-25T00:03:42+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1103:1",
+            "queryText": "می‌خوام یه ربات تلگرام برای مدیریت گروه بنویسم که بتونه پیام‌های مهم رو پین کنه و کاربرا رو مدیریت کنه. چندتا کتابخونه مختلف دیدم، کدومشون رو پیشنهاد می‌کنی؟",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers using Telebot library for Telegram bot development",
+              "reasoning": "Explicit library request in user instruction (utterance 2)",
+              "evidence": {
+                "session_id": "sess_53619d013ac0",
+                "utterance_index": 2,
+                "text": "با استفاده از کتابخانه Telebot و توضیحات زیر رباتی بنویس..."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2024-04-25T00:03:42+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

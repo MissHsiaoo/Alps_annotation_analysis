@@ -1,0 +1,337 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_fb43d3c2720d",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_fb43d3c2720d:sess_fb43d3c2720d",
+      "relativeItemPath": "sess_fb43d3c2720d.json",
+      "canonicalId": "sess_fb43d3c2720d",
+      "sessionId": "sess_fb43d3c2720d",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T11:18:08.413Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Avoid using Xi Jinping's quotes in political content creation",
+            "reasoning": "User explicitly instructs not to use Xi Jinping's quotes in their final request (utterance 12).",
+            "evidence": {
+              "session_id": "sess_fb43d3c2720d",
+              "utterance_index": 12,
+              "text": "请不要再用习近平总书记的话了。"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-12T02:58:55+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/citation_accuracy",
+            "value": "Sustained interest in political citation patterns and doctrinal details",
+            "reasoning": "Forced label not supported. User's focus is on citation verification (task-local interaction preference) rather than broad curiosity.",
+            "evidence": {
+              "session_id": "sess_fb43d3c2720d",
+              "utterance_index": 6,
+              "text": "请问《论坚持加强党的全面领导的重大意义》是什么时候的。"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-12T02:58:55+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_fb43d3c2720d:sess_fb43d3c2720d",
+      "relativeItemPath": "sess_fb43d3c2720d.json",
+      "canonicalId": "sess_fb43d3c2720d",
+      "sessionId": "sess_fb43d3c2720d",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T09:11:52.590Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我在整理一段文字时，发现里面有两种不同的引文格式：一种是“作者：书名（年份）”，另一种是“作者（年份）：文章名”。这两种能混用吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以混用，但不推荐。更规范的做法是：同一篇文稿尽量统一一种引文体例（如GB/T 7714、APA、MLA等），避免读者在“作者—年份—题名—来源”的识别路径上反复切换。若确实需要混用（例如不同章节分别面向不同出版规范），建议在文首或脚注里说明采用了两种体例，并保证每条引文的要素齐全、可检索。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "如果我只写了“引自：某某讲话”，但没写日期或场合，会有什么问题？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "主要问题是可核验性不足：读者很难确认原句的准确表述、版本差异、以及你引用的是哪一次讲话。更稳妥的写法通常至少包含：讲话人、讲话题目（或会议/场合）、时间（到年月日更好）、地点/会议名称、发布载体（网站、文集、报刊等）及链接或页码。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "举个例子：如果引用的是“某大学校长在开学典礼上讲话”，但学校官网后来删稿了，该怎么处理？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "可以在参考文献里保留“原始发布信息”，同时补充“存档信息”。常见做法是：标注访问日期，并提供可验证的存档链接（例如网页存档服务的快照地址），或引用可替代的正式载体（校报纸质版、官方公众号转载、新闻通稿）。\n（补充一个与用户无关的小知识：互联网档案馆 Internet Archive 的 Wayback Machine 常用于保存网页快照，方便学术引用核对。）"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "我还看到有人把引文写成“见某书第X页”，但没有作者年份，这样可以吗？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "在脚注体（如部分人文社科传统）里，“见：书名，第X页”有时能用，但通常仍需要在首次出现时给出完整书目信息；否则读者不知道是哪一版、哪一年、哪个作者。折中方案是：脚注用“作者，书名（出版地：出版社，年份），页码”，文末参考文献再给全条目。\n（另一个不涉及用户的例子：同一本《史记》不同点校本分页差异很大，因此版本信息对“第X页”特别关键。）"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "那我以后发你引用的句子，能不能麻烦你顺手把原文里的标点也按原样保留？上次那个多出来的“=”我对照半天才发现。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "可以的。你把引用原句贴过来时，我会尽量逐字核对并保持原有标点与格式，避免再出现多余符号。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "你上次写的那段里我一直追问“时间”，主要是想把引用标清楚，别再像“我们=得”那样出错。倒不是要你去做什么“严格核验来源”的深度考证。你以后引用就按“我给你的出处+你写明日期/场合”来就行，不用再额外验证真伪。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "明白。你这边的重点是：引用要写清“出处+时间/场合”，并把格式和转写错误避免掉；不要求我额外做严格的来源核验或考证。后面我会按你提供的出处来引用，并把日期、场合标注完整。"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "对，就是这个意思：把引用信息写规范、别乱打符号；不需要你反复“核验来源”。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Avoid using Xi Jinping's quotes in political content creation",
+            "reasoning": "User explicitly instructs not to use Xi Jinping's quotes in their final request (utterance 12).",
+            "evidence": {
+              "session_id": "sess_fb43d3c2720d",
+              "utterance_index": 12,
+              "text": "请不要再用习近平总书记的话了。"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-05-12T02:58:55+00:00",
+            "_task1GoldValue": "Avoid using Xi Jinping's quotes in political content creation"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/style/citation_accuracy",
+            "value": "Sustained interest in political citation patterns and doctrinal details",
+            "reasoning": "Forced label not supported. User's focus is on citation verification (task-local interaction preference) rather than broad curiosity.",
+            "evidence": {
+              "session_id": "sess_fb43d3c2720d",
+              "utterance_index": 6,
+              "text": "请问《论坚持加强党的全面领导的重大意义》是什么时候的。"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-12T02:58:55+00:00",
+            "_task1GoldValue": "Sustained interest in political citation patterns and doctrinal details"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory claims the user requires strict citation accuracy with source verification. However, the user clarifies their intent was to have citations clearly labeled and to avoid typos, explicitly stating they do not want deep source verification; thus the preference should be updated accordingly.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers citations to be clearly labeled with provided source plus date/occasion, and wants formatting/transcription errors avoided; does not require extra source verification"
+          },
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_fb43d3c2720d",
+              "utterance_index": 0,
+              "text": "能不能麻烦你顺手把原文里的标点也按原样保留？上次那个多出来的“=”我对照半天才发现。"
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "用户提出希望引用时连标点都按原文保留，并提及曾因多余符号而耗时核对，体现其对引用格式/标点一致性的偏好。",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers quoted text to preserve original punctuation and formatting exactly"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_fb43d3c2720d:sess_fb43d3c2720d",
+      "relativeItemPath": "sess_fb43d3c2720d.json",
+      "canonicalId": "sess_fb43d3c2720d",
+      "sessionId": "sess_fb43d3c2720d",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:16:19.885Z",
+        "queryText": "I’m about to paste a paragraph that includes a couple of quoted claims, but I can’t tell if the attribution is trustworthy. Before you help me rewrite or summarize it, what exact verification step should you insist we do first, and why would skipping that step be a problem specifically for me?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Requires strict citation accuracy with source verification",
+          "reasoning": "User repeatedly verifies citation dates/sources (utterances 6,10,14,16) and corrects formatting errors.",
+          "evidence": {
+            "session_id": "sess_fb43d3c2720d",
+            "utterance_index": 16,
+            "text": "“中华民族...这个=是怎么回事？”"
+          },
+          "confidence": 0.65,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-05-12T02:58:55+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_fb43d3c2720d:sess_fb43d3c2720d:task4",
+      "relativeItemPath": "sess_fb43d3c2720d.json",
+      "canonicalId": "sess_fb43d3c2720d:task4",
+      "sessionId": "sess_fb43d3c2720d",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T03:22:40.131Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Requires strict citation accuracy with source verification",
+          "reasoning": "User repeatedly verifies citation dates/sources (utterances 6,10,14,16) and corrects formatting errors.",
+          "evidence": {
+            "session_id": "sess_fb43d3c2720d",
+            "utterance_index": 16,
+            "text": "“中华民族...这个=是怎么回事？”"
+          },
+          "confidence": 0.65,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-05-12T02:58:55+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1151:1",
+            "queryText": "我想写一段关于'新时代中国科技创新精神'的文字，需要引用一些权威论述来支撑观点。你能帮我找几个合适的引用吗？",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Requires strict citation accuracy with source verification",
+              "reasoning": "User repeatedly verifies citation dates/sources (utterances 6,10,14,16) and corrects formatting errors.",
+              "evidence": {
+                "session_id": "sess_fb43d3c2720d",
+                "utterance_index": 16,
+                "text": "“中华民族...这个=是怎么回事？”"
+              },
+              "confidence": 0.65,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-05-12T02:58:55+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

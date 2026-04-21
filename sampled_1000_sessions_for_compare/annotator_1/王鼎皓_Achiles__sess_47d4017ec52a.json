@@ -1,0 +1,347 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_47d4017ec52a",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_47d4017ec52a:sess_47d4017ec52a",
+      "relativeItemPath": "sess_47d4017ec52a.json",
+      "canonicalId": "sess_47d4017ec52a",
+      "sessionId": "sess_47d4017ec52a",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T12:25:29.391Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Interests: dramas, computer games, anime about virtual reality, nature themes",
+            "reasoning": "User explicitly lists core entertainment preferences for nickname creation.",
+            "evidence": {
+              "session_id": "sess_47d4017ec52a",
+              "utterance_index": 2,
+              "text": "дорамы, компьютерные игры, депрессия, доброта, небо, природа, од иночество, аниме на тему виртуальной реальности"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-17T15:19:53+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "identity/symbolic_expression/interest",
+            "value": "Sustained focus on combining virtual reality + loneliness + disappearing sky/horizon themes in identity expression",
+            "reasoning": "Repeated user emphasis on specific symbolic elements for self-representation. Label forced correction: original taxonomy category not fully supported.",
+            "evidence": {
+              "session_id": "sess_47d4017ec52a",
+              "utterance_index": 24,
+              "text": "Вот точно, составь аббревиатуру из моего длинного не коверкая его: “Одинокий скиталец виртуального мира на фоне исчезающего неба и недостижимого горизонта”"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-17T15:19:53+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Personal_Background/Education",
+            "value": "Not good at English",
+            "reasoning": "User asks for the meaning of each English nickname, indicating that he does not know English.",
+            "evidence": {
+              "session_id": "sess_47d4017ec52a",
+              "utterance_index": 4,
+              "text": "переведи каждый ник на русский, что означает"
+            },
+            "confidence": 0.9,
+            "time_scope": "recent",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-25T17:15:10.073Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_47d4017ec52a:sess_47d4017ec52a",
+      "relativeItemPath": "sess_47d4017ec52a.json",
+      "canonicalId": "sess_47d4017ec52a",
+      "sessionId": "sess_47d4017ec52a",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T09:35:33.296Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Можем чуть поиграть с сокращениями? Иногда аббревиатуры читаются как слово, иногда — как набор букв."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Да. Обычно есть 3 подхода: 1) инициализм (произносят по буквам: «ЛВВДСХ»), 2) акроним (читается как слово, если получается: типа «ВиСоХо»), 3) гибрид — часть слов, часть букв."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "А как понять заранее, будет ли акроним звучать нормально?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Проверяют 3 вещи: (а) есть ли гласные, чтобы «пропевалось», (б) нет ли стыков согласных вроде «врдсх», (в) не напоминает ли слово что-то нежелательное. Часто добавляют 1 гласную или берут по 2–3 буквы из ключевых слов."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Ок. Приведи пример на нейтральной фразе."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Например, фраза «Северный ветер над старым мостом»: инициализм — «СВНСМ», акроним — «СеВеНосМо» (если хочется читаемости), гибрид — «SevWindBridge» (если латиницей)."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Кстати, слышал, что в некоторых сервисах нельзя смешивать кириллицу и латиницу в одном нике."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Да, такое бывает: одни платформы разрешают только латиницу/цифры/подчёркивания, другие — ещё и кириллицу, но смешение иногда ломает поиск и ссылки. Поэтому многие делают две версии: кириллическую и латинскую."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Слушай, я ник хочу в латинице без всяких пробелов — на моём сайте их всё равно режет, а потом выглядит сломанным."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Понял. Тогда лучше сразу делать слитно (CamelCase) или через подчёркивания, чтобы сервис ничего не «резал». Хотите вариант ближе к вашей фразе или более короткий и читаемый?"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Слушай, я тут подумал: дорамы и вот это «аниме про виртуальную реальность» — это вообще не моё. Я тогда просто накидал слова для атмосферы, чтобы ник звучал."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Понял. То есть как реальные интересы лучше не фиксировать «дорамы» и «аниме про VR», верно? Тогда остаются более точные темы — компьютерные игры, природа/небо и мотив одиночества?"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Да. Игры — да, и природа/небо тоже. А дорамы и VR-аниме — мимо."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "identity/symbolic_expression/interest",
+            "value": "Sustained focus on combining virtual reality + loneliness + disappearing sky/horizon themes in identity expression",
+            "reasoning": "Repeated user emphasis on specific symbolic elements for self-representation. Label forced correction: original taxonomy category not fully supported.",
+            "evidence": {
+              "session_id": "sess_47d4017ec52a",
+              "utterance_index": 24,
+              "text": "Вот точно, составь аббревиатуру из моего длинного не коверкая его: “Одинокий скиталец виртуального мира на фоне исчезающего неба и недостижимого горизонта”"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-17T15:19:53+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Personal_Background/Education",
+            "value": "Not good at English",
+            "reasoning": "User asks for the meaning of each English nickname, indicating that he does not know English.",
+            "evidence": {
+              "session_id": "sess_47d4017ec52a",
+              "utterance_index": 4,
+              "text": "переведи каждый ник на русский, что означает"
+            },
+            "confidence": 0.9,
+            "time_scope": "recent",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-25T17:15:10.073Z"
+          },
+          {
+            "confidence": 0.77,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "The earlier memory claims the user likes dramas and VR-themed anime, but the user clarifies they mentioned those only for atmosphere and that they are not their interests; they confirm games and nature/sky as real preferences.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Interests: computer games, nature/sky themes, motif of solitude (not dramas or VR-themed anime)."
+          },
+          {
+            "confidence": 0.82,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_47d4017ec52a",
+              "utterance_index": 0,
+              "text": "Слушай, я ник хочу в латинице без всяких пробелов — на моём сайте их всё равно режет, а потом выглядит сломанным."
+            },
+            "label": "Preferences/Technology",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies a technical constraint: when using spaces, the site removes them and the nickname looks broken, indicating spaces are not supported.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User's service/website does not support spaces in usernames (spaces get removed/cut)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_47d4017ec52a:sess_47d4017ec52a",
+      "relativeItemPath": "sess_47d4017ec52a.json",
+      "canonicalId": "sess_47d4017ec52a",
+      "sessionId": "sess_47d4017ec52a",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-13T13:13:19.998Z",
+        "queryText": "I’m setting up a new profile and want one single-word handle plus a short tagline that I’d actually stick with. Based on what you remember I consistently enjoy in my free time, which kind of fictional “world” should the handle evoke, and what should the tagline focus on so it feels like me rather than random?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Interests: dramas, computer games, anime about virtual reality, nature themes",
+          "reasoning": "User explicitly lists core entertainment preferences for nickname creation.",
+          "evidence": {
+            "session_id": "sess_47d4017ec52a",
+            "utterance_index": 2,
+            "text": "дорамы, компьютерные игры, депрессия, доброта, небо, природа, од иночество, аниме на тему виртуальной реальности"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-05-17T15:19:53+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_47d4017ec52a:sess_47d4017ec52a:task4",
+      "relativeItemPath": "sess_47d4017ec52a.json",
+      "canonicalId": "sess_47d4017ec52a:task4",
+      "sessionId": "sess_47d4017ec52a",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T03:48:09.224Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Interests: dramas, computer games, anime about virtual reality, nature themes",
+          "reasoning": "User explicitly lists core entertainment preferences for nickname creation.",
+          "evidence": {
+            "session_id": "sess_47d4017ec52a",
+            "utterance_index": 2,
+            "text": "дорамы, компьютерные игры, депрессия, доброта, небо, природа, од иночество, аниме на тему виртуальной реальности"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-05-17T15:19:53+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_493:1",
+            "queryText": "Помоги выбрать новую дораму для просмотра — что-то из последних, что стоит моего времени.",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Interests: dramas, computer games, anime about virtual reality, nature themes",
+              "reasoning": "User explicitly lists core entertainment preferences for nickname creation.",
+              "evidence": {
+                "session_id": "sess_47d4017ec52a",
+                "utterance_index": 2,
+                "text": "дорамы, компьютерные игры, депрессия, доброта, небо, природа, од иночество, аниме на тему виртуальной реальности"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-05-17T15:19:53+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

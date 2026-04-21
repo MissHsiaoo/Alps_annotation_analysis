@@ -1,0 +1,391 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_25e5912cc3c7",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_25e5912cc3c7:sess_25e5912cc3c7",
+      "relativeItemPath": "sess_25e5912cc3c7.json",
+      "canonicalId": "sess_25e5912cc3c7",
+      "sessionId": "sess_25e5912cc3c7",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:23:08.341Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/third_party_mention",
+            "value": "Has a friend in Germany [ERROR: Role-play/third-party possible]",
+            "reasoning": "Role-play/third-party possible",
+            "evidence": {
+              "session_id": "sess_25e5912cc3c7",
+              "utterance_index": 24,
+              "text": "Mit Freund unterhalten aus Deutschland "
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-03T17:03:28+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers randomized attributes and elements in character creation (e.g., skills, background, strengths/weaknesses)",
+            "reasoning": "User explicitly requests randomized elements in character creation.",
+            "evidence": {
+              "session_id": "sess_25e5912cc3c7",
+              "utterance_index": 2,
+              "text": "Ich möchte ein Shadowrun Rigger, mit Fähigkeiten zufällig?"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-03T17:03:28+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about creating Shadowrun characters with randomized attributes, backgrounds, and missions [ERROR: Unsupported by evidence]",
+            "reasoning": "Unsupported by evidence",
+            "evidence": {
+              "session_id": "sess_25e5912cc3c7",
+              "utterance_index": 18,
+              "text": "Ein Fahrzeug nach Seattle fahren "
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-03T17:03:28+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_25e5912cc3c7:sess_25e5912cc3c7",
+      "relativeItemPath": "sess_25e5912cc3c7.json",
+      "canonicalId": "sess_25e5912cc3c7",
+      "sessionId": "sess_25e5912cc3c7",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:44:03.026Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Können wir bei der Shadowrun-Story weitermachen? Ich brauche eine Szene mit einem NPC, der Infos verkauft."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Klar. Wir bauen eine kurze Szene in einer Sprawl-Bar: Ein Infohändler („Switch“) bietet Daten zur Route und zu möglichen Hinterhalten an. Willst du die Infos eher als nüchternes Dossier (Fakten/Orte/Namen) oder als Dialogszene mit Misstrauen, Verhandlung und kleinen Andeutungen?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Dialogszene, aber mit 2–3 konkreten Hooks für spätere Probleme."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Szene: \"Chrom & Rauch\" (eine Bar nahe den Docks). Lärm von Drohnenmotoren draußen, AR-Werbung flackert.\n\nSwitch sitzt in einer Nische, Mantel mit eingearbeiteten Datenleitungen, die Augen kurz aufleuchtend, als er dich scannt.\n\nSwitch: „Du willst ’ne Route nach Seattle, die nicht sofort rot aufleuchtet. Kostet. Und nicht nur Nuyen.“\n\n(Er tippt in die Tischplatte; ein AR-Fenster erscheint, aber verschwimmt sofort wieder.)\n\nSwitch: „Drei Dinge:\n1) Hook: Die I-5 ist 'sauber' gemeldet, aber das ist eine Lüge. Ein Straßentrupp namens *Rain Dogs* kassiert in einem Tunnelabschnitt Maut — und wer nicht zahlt, verliert Reifen. Oder Schlimmeres.\n2) Hook: An einem Grenz-Checkpoint ist ein Wachhabender bestechlich… aber er arbeitet nebenbei als Informant. Wenn du ihn bezahlst, weiß am Abend jemand anderes, welches Fahrzeug du fährst.\n3) Hook: Deine Ladung ist in irgendeiner Datenbank als 'Prototyp' markiert. Jemand hat die Kennung falsch oder absichtlich gesetzt. Das lockt nicht nur Gangs an, sondern auch Corporate Recovery.“\n\nSwitch lehnt sich vor: „Jetzt die Frage: Willst du schnell, leise oder legal wirken? Zwei davon gehen. Drei nicht.“\n\nDu kannst antworten: (A) schnell, (B) leise, (C) legal wirken, oder du stellst eine Gegenfrage. Wie reagierst du?"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Ich frage ihn, wer die Kennung als Prototyp gesetzt hat."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Switch verzieht keine Miene, aber seine Finger stoppen kurz.\n\nSwitch: „Das ist der Teil, für den du eigentlich extra zahlst.“\n\nEr lässt ein AR-Icon aufblitzen: ein unvollständiger Datensatz mit geschwärzten Feldern.\n\nSwitch: „Ich hab zwei Spuren. Eine klingt nach Schlamperei, die andere nach Absicht:\n- Spur 1: Ein Logistik-Subunternehmer hat alte Templates benutzt. Name im Header: *Kestrel Freight Services*.\n- Spur 2: Ein Insert im Datensatz — sauber, elegant — wie von jemandem, der will, dass du gefunden wirst. Signatur-Muster erinnert an *MCT Recovery* oder jemanden, der so tun will.\n\nSwitch: „Wenn du’s sicher wissen willst, brauchst du Zugriff auf den ursprünglichen Versandnode. Ich kann dir sagen, wo — aber ich will dafür entweder 2.000¥ oder einen Gefallen: Du lässt auf dem Rückweg eine kleine Datenkapsel in einem öffentlichen Terminal fallen. Kein Inhalt für dich, kein Fragen.“\n\nWas ist dir lieber: zahlen oder Gefallen?"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Zahlen. Und ich will den Ort vom Versandnode."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Switch nickt, als wäre es die langweiligste Entscheidung der Welt.\n\nSwitch: „Gut. Ort: ein Lagerhaus-Cluster mit altem Grid-Equipment — Dock 47, Nebensektor, Knotenpunkt läuft über einen Wartungsschrank mit physischem Port. Nicht hübsch, aber ehrlich.“\n\nEr schiebt dir die AR-Koordinaten rüber.\n\nSwitch: „Letzter Tipp: Da arbeitet nachts ein Technikerteam, das keine Badges trägt. Wenn du sie siehst, geh nicht davon aus, dass sie 'nur' Techniker sind.“\n\nWillst du als nächste Szene (1) die Anfahrt zum Dock 47, (2) eine kurze Vorbereitung (Gear/Plan), oder (3) direkt einen Zwischenfall auf der Straße?"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "assistant",
+            "text": "Klar — wenn du willst, formuliere ich dir eine kurze Nachricht, die du deinem Freund schicken kannst. Soll es eher locker oder formell klingen, und auf welchem Kanal schreibst du ihm (WhatsApp/Discord/E-Mail)?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "user",
+            "text": "Locker bitte, ich schreib ihm auf Discord."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "assistant",
+            "text": "Alles klar, hier ein Vorschlag (locker):\n\n„Hey! Hast du kurz Zeit? Ich bastel gerade an einer Shadowrun-Story (Riggerin + Fahrzeugjob Richtung Seattle) und bräuchte mal deinen Input: Hast du Lust, mir beim Plot/NPCs ein paar Ideen zu geben?“\n\nWillst du, dass er eher nur Ideen dropt oder richtig mit dir gemeinsam ausarbeitet?"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "user",
+            "text": "Doch, diesmal bitte nicht zufällig. Ich will die Werte und auch Stärken/Schwächen selbst festlegen, ohne Würfeln."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "assistant",
+            "text": "Alles klar—also keine Zufallstabellen und keine Würfelwürfe. Dann sag mir, welche Attribute du für Natascha möchtest und welche konkreten Stärken und Schwächen du ihr geben willst."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "user",
+            "text": "Genau. Zufall war nur für den ersten Entwurf, aber eigentlich mag ich es lieber, wenn ich alles kontrollieren kann."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/third_party_mention",
+            "value": "Has a friend in Germany [ERROR: Role-play/third-party possible]",
+            "reasoning": "Role-play/third-party possible",
+            "evidence": {
+              "session_id": "sess_25e5912cc3c7",
+              "utterance_index": 24,
+              "text": "Mit Freund unterhalten aus Deutschland "
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-03T17:03:28+00:00",
+            "_task1GoldValue": "Has a friend in Germany [ERROR: Role-play/third-party possible]"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about creating Shadowrun characters with randomized attributes, backgrounds, and missions [ERROR: Unsupported by evidence]",
+            "reasoning": "Unsupported by evidence",
+            "evidence": {
+              "session_id": "sess_25e5912cc3c7",
+              "utterance_index": 18,
+              "text": "Ein Fahrzeug nach Seattle fahren "
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-03T17:03:28+00:00",
+            "_task1GoldValue": "Curious about creating Shadowrun characters with randomized attributes, backgrounds, and missions [ERROR: Unsupported by evidence]"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                11
+              ],
+              "turns": [
+                {
+                  "index": 11,
+                  "role": "user",
+                  "text": "Doch, diesmal bitte nicht zufällig. Ich will die Werte und auch Stärken/Schwächen selbst festlegen, ohne Würfeln."
+                }
+              ]
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "like",
+            "reasoning": "Die ursprüngliche Erinnerung behauptet eine generelle Vorliebe für zufällige Elemente. Der Nutzer stellt jedoch klar, dass er diesmal ausdrücklich keine Zufallswürfe möchte und lieber alles selbst festlegt; damit ist die langfristige Präferenz eher kontrollierte, nicht-zufällige Charaktererstellung.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers to manually choose and control character creation details rather than using randomized rolls/tables (randomization was only for an initial draft)."
+          },
+          {
+            "confidence": 0.85,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_25e5912cc3c7",
+              "utterance_index": 9,
+              "text": "Locker bitte, ich schreib ihm auf Discord."
+            },
+            "label": "Preferences/Communication",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User specifies the channel they will use to message their friend.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User communicates with their friend via Discord (at least for this request)."
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers randomized attributes and elements in character creation (e.g., skills, background, strengths/weaknesses)",
+            "reasoning": "User explicitly requests randomized elements in character creation.",
+            "evidence": {
+              "session_id": "sess_25e5912cc3c7",
+              "utterance_index": 2,
+              "text": "Ich möchte ein Shadowrun Rigger, mit Fähigkeiten zufällig?"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-03T17:03:28+00:00",
+            "_task1GoldValue": "Prefers randomized attributes and elements in character creation (e.g., skills, background, strengths/weaknesses)"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_25e5912cc3c7:sess_25e5912cc3c7",
+      "relativeItemPath": "sess_25e5912cc3c7.json",
+      "canonicalId": "sess_25e5912cc3c7",
+      "sessionId": "sess_25e5912cc3c7",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T08:39:15.725Z",
+        "queryText": "I’m starting a new character tonight and I don’t want to overthink choices—based on what you know I usually enjoy, what specific approach (name a method or give one concrete example) should I use to decide their abilities and backstory so the outcome feels fun to me?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers randomized attributes and elements in character creation (e.g., skills, background, strengths/weaknesses)",
+          "reasoning": "User explicitly requests randomized elements in character creation.",
+          "evidence": {
+            "session_id": "sess_25e5912cc3c7",
+            "utterance_index": 2,
+            "text": "Ich möchte ein Shadowrun Rigger, mit Fähigkeiten zufällig?"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-05-03T17:03:28+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_25e5912cc3c7:sess_25e5912cc3c7:task4",
+      "relativeItemPath": "sess_25e5912cc3c7.json",
+      "canonicalId": "sess_25e5912cc3c7:task4",
+      "sessionId": "sess_25e5912cc3c7",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T08:39:41.987Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers randomized attributes and elements in character creation (e.g., skills, background, strengths/weaknesses)",
+          "reasoning": "User explicitly requests randomized elements in character creation.",
+          "evidence": {
+            "session_id": "sess_25e5912cc3c7",
+            "utterance_index": 2,
+            "text": "Ich möchte ein Shadowrun Rigger, mit Fähigkeiten zufällig?"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-05-03T17:03:28+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_446:1",
+            "queryText": "Ich möchte einen neuen Charakter für Shadowrun 5 anfangen. Kannst du mir ein paar Ideen für seine Kernfähigkeiten und seinen Hintergrund geben? Was würdest du vorschlagen?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "indirect",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Prefers randomized attributes and elements in character creation (e.g., skills, background, strengths/weaknesses)",
+              "reasoning": "User explicitly requests randomized elements in character creation.",
+              "evidence": {
+                "session_id": "sess_25e5912cc3c7",
+                "utterance_index": 2,
+                "text": "Ich möchte ein Shadowrun Rigger, mit Fähigkeiten zufällig?"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-05-03T17:03:28+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

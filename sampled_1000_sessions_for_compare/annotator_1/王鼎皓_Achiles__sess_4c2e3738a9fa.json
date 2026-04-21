@@ -1,0 +1,344 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_4c2e3738a9fa",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_4c2e3738a9fa:sess_4c2e3738a9fa",
+      "relativeItemPath": "sess_4c2e3738a9fa.json",
+      "canonicalId": "sess_4c2e3738a9fa",
+      "sessionId": "sess_4c2e3738a9fa",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T13:46:33.899Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about career development in front-end/back-end programming and salary benchmarks",
+            "reasoning": "User asked multiple questions about front-end/back-end roles and salary comparisons, indicating sustained educational curiosity.",
+            "evidence": {
+              "session_id": "sess_4c2e3738a9fa",
+              "utterance_index": 4,
+              "text": "ما البلد الاعلي مرتب لل front-end"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-20T00:51:58+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "health/weight_gain/questioning",
+            "value": "Aiming to gain weight",
+            "reasoning": "User asked for strategies, but did not explicitly self-report intent.",
+            "evidence": {
+              "session_id": "sess_4c2e3738a9fa",
+              "utterance_index": 8,
+              "text": "ازاي اضخم"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-20T00:51:58+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "value": "Concerned about marital sexual dynamics",
+            "reasoning": "Explicit mention of spouse, but concern is inferred from a single question.",
+            "evidence": {
+              "session_id": "sess_4c2e3738a9fa",
+              "utterance_index": 16,
+              "text": "ازاي اخلي زوجتي مش محتاجة جنس"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-20T00:51:58+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_4c2e3738a9fa:sess_4c2e3738a9fa",
+      "relativeItemPath": "sess_4c2e3738a9fa.json",
+      "canonicalId": "sess_4c2e3738a9fa",
+      "sessionId": "sess_4c2e3738a9fa",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T10:02:25.459Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "ممكن تشرحلي الفرق بين API و REST بسرعة؟"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "أكيد. \n- API: واجهة/مجموعة قواعد تسمح لتطبيقين يتواصلوا ويتبادلوا بيانات أو أوامر. ممكن تكون بأي أسلوب (REST, GraphQL, SOAP…).\n- REST: أسلوب تصميم (Architectural style) لبناء APIs فوق HTTP، يعتمد على موارد (resources) وروابط واضحة، واستخدام طرق HTTP زي GET/POST/PUT/DELETE، وغالبًا يرجّع JSON."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "يعني كل REST هو API بس مش كل API REST؟"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "بالضبط. REST نوع/طريقة من طرق بناء API، لكن API مفهوم أوسع."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "طيب اديني مثال صغير على endpoint"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "مثال: لو عندك مورد اسمه users:\n- GET /api/users → يرجّع قائمة المستخدمين\n- GET /api/users/42 → يرجّع بيانات المستخدم رقم 42\n- POST /api/users → ينشئ مستخدم جديد (ترسل البيانات في body)\n\n(معلومة عامة مش عنك): في مهمة ناسا \"Voyager 1\" اللي اتطلقت سنة 1977، لسه بتبعت بيانات لحد الآن رغم إنها بعيدة جدًا—وده مثال مشهور على أنظمة تعتمد على واجهات اتصال واضحة بين أنظمة مختلفة."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "ايه الفرق بين PUT و PATCH؟"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "PUT عادةً لتحديث المورد بالكامل (ترسل التمثيل الكامل للمورد)، بينما PATCH لتحديث جزء منه فقط (تغييرات جزئية). \n(معلومة عامة مش عنك): في بروتوكول HTTP/2 تم تحسين الأداء باستخدام multiplexing لتقليل مشاكل فتح اتصالات متعددة—وده مرتبط بكفاءة استدعاءات الـ APIs."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "بالنسبة لحتة ال back-end اللي كنت بسأل عنها قبل كده… انا شغال دلوقتي على لابتوب ضعيف شوية ونتّي مش ثابت، فعايز طريقه اتعلم بيها حاجات السيرفر من غير ما اعتمد على فيديوهات كتير."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "تمام. تقدر تمشي بخطة تعتمد على مصادر نصية وخفيفة: وثّق الأساسيات (HTTP، REST، قواعد البيانات)، وبعدها اختار لغة واحدة وابدأ مشاريع صغيرة محليًا. استخدم توثيق رسمي وكتب مختصرة، وجرّب تشغيل كل شيء على جهازك بدون اتصال دائم. لو تحب، قولّي اللغة اللي ناوي تبدأ بيها والوقت المتاح يوميًا."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "لا لا، انا مش متجوز اصلاً. سؤالي كان فضول مش اكتر."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "تمام، كده يبقى الموضوع مش “ديناميكية زوجية” عندك. بما إنك بتقول صراحة: \"انا مش متجوز اصلاً\" فالسؤال كان استفسار عام/فضول، مش مشكلة مع زوجة."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about career development in front-end/back-end programming and salary benchmarks",
+            "reasoning": "User asked multiple questions about front-end/back-end roles and salary comparisons, indicating sustained educational curiosity.",
+            "evidence": {
+              "session_id": "sess_4c2e3738a9fa",
+              "utterance_index": 4,
+              "text": "ما البلد الاعلي مرتب لل front-end"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-20T00:51:58+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "health/weight_gain/questioning",
+            "value": "Aiming to gain weight",
+            "reasoning": "User asked for strategies, but did not explicitly self-report intent.",
+            "evidence": {
+              "session_id": "sess_4c2e3738a9fa",
+              "utterance_index": 8,
+              "text": "ازاي اضخم"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-20T00:51:58+00:00"
+          },
+          {
+            "confidence": 0.82,
+            "emotion": null,
+            "evidence": null,
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": null,
+            "reasoning": "الذاكرة السابقة استنتجت وجود قلق مرتبط بالزواج من سؤال ذكر فيه \"زوجتي\". لكن المستخدم صحّح وقال إنه غير متزوج وأن السؤال كان بدافع الفضول، وهذا يناقض استنتاج وجود ديناميكية زوجية حالية.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Not married; asked about marital sexual dynamics out of curiosity rather than personal concern"
+          },
+          {
+            "confidence": 0.76,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_4c2e3738a9fa",
+              "utterance_index": 0,
+              "text": "انا شغال دلوقتي على لابتوب ضعيف شوية ونتّي مش ثابت"
+            },
+            "label": "Personal/Devices",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user implies device and connectivity constraints as reasons to prefer text-based learning over videos.",
+            "time_scope": "current",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Has a low-spec laptop and unstable internet connection"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_4c2e3738a9fa:sess_4c2e3738a9fa",
+      "relativeItemPath": "sess_4c2e3738a9fa.json",
+      "canonicalId": "sess_4c2e3738a9fa",
+      "sessionId": "sess_4c2e3738a9fa",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T08:14:09.925Z",
+        "queryText": "If I’m trying to decide whether a recent change in my home life is something I should talk about with my partner directly or bring up with a professional first, what ongoing personal worry of mine would make that decision feel urgent?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "indirect",
+          "label": "Social_Relationships/Partners",
+          "label_suggestion": null,
+          "value": "Concerned about marital sexual dynamics",
+          "reasoning": "Explicit mention of spouse, but concern is inferred from a single question.",
+          "evidence": {
+            "session_id": "sess_4c2e3738a9fa",
+            "utterance_index": 16,
+            "text": "ازاي اخلي زوجتي مش محتاجة جنس"
+          },
+          "confidence": 0.65,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-20T00:51:58+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_4c2e3738a9fa:sess_4c2e3738a9fa:task4",
+      "relativeItemPath": "sess_4c2e3738a9fa.json",
+      "canonicalId": "sess_4c2e3738a9fa:task4",
+      "sessionId": "sess_4c2e3738a9fa",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T04:05:05.654Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "indirect",
+          "label": "Social_Relationships/Partners",
+          "label_suggestion": null,
+          "value": "Concerned about marital sexual dynamics",
+          "reasoning": "Explicit mention of spouse, but concern is inferred from a single question.",
+          "evidence": {
+            "session_id": "sess_4c2e3738a9fa",
+            "utterance_index": 16,
+            "text": "ازاي اخلي زوجتي مش محتاجة جنس"
+          },
+          "confidence": 0.65,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-20T00:51:58+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_460:1",
+            "queryText": "زوجتي بتقول إنها مش عايزة حاجة من فترة، أنا خايف الموضوع يطول. إيه اللي ممكن أعمله عشان نرجع زي الأول من غير ما أضايقها؟",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "indirect",
+              "label": "Social_Relationships/Partners",
+              "label_suggestion": null,
+              "value": "Concerned about marital sexual dynamics",
+              "reasoning": "Explicit mention of spouse, but concern is inferred from a single question.",
+              "evidence": {
+                "session_id": "sess_4c2e3738a9fa",
+                "utterance_index": 16,
+                "text": "ازاي اخلي زوجتي مش محتاجة جنس"
+              },
+              "confidence": 0.65,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-06-20T00:51:58+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

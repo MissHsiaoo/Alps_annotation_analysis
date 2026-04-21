@@ -1,0 +1,303 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_48245cb08eec",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_48245cb08eec:sess_48245cb08eec",
+      "relativeItemPath": "sess_48245cb08eec.json",
+      "canonicalId": "sess_48245cb08eec",
+      "sessionId": "sess_48245cb08eec",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T12:25:39.603Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers shows with strong educational/informational (E/I) content like GoGoRiki and Ozzy & Drix over others",
+            "reasoning": "User explicitly states GGR and O&D are better E/I than W&D and MN, indicating preference for educational value in programming choices.",
+            "evidence": {
+              "session_id": "sess_48245cb08eec",
+              "utterance_index": 6,
+              "text": "I think GGR and O&D are better E/I than W&D and MN"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-04-01T22:26:29+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about optimizing TV lineups, show replacements, and educational content scheduling strategies",
+            "reasoning": "User constructs multiple hypothetical programming schedules and evaluates show replacements, indicating sustained curiosity about TV programming strategies.",
+            "evidence": {
+              "session_id": "sess_48245cb08eec",
+              "utterance_index": 10,
+              "text": "Write the new CW4Kids lineup, starting from Sep 13, 7am is the E/I hour"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-01T22:26:29+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_48245cb08eec:sess_48245cb08eec",
+      "relativeItemPath": "sess_48245cb08eec.json",
+      "canonicalId": "sess_48245cb08eec",
+      "sessionId": "sess_48245cb08eec",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T09:35:58.485Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "That Sep 13 lineup looks packed. Do you think the E/I hour being first would help ratings or hurt them?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "It could go either way, depending on what the block is optimizing for. Putting E/I first can help because (1) it’s a clean, consistent “morning routine” slot for parents who want something safer/softer at 7:00, and (2) it prevents E/I from being shoved into a dead zone later. The downside is that kids who tune in specifically for action franchises might not show up until 8:00, so the first half-hour could look weaker.\n\nIf the goal is to make 7:00 feel less like “required vegetables,” the best trick is momentum: end the 7:30 E/I show on a strong hook and run a tight promo into the 8:00 tentpole."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "What if they wanted to keep E/I at 7 but also make it feel like part of the action block?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Then I’d make the 7:00–8:00 hour “adjacent” in tone even if it’s still compliant in content:\n\n- Pick E/I shows with fast pacing and clear stakes (health/mission-of-the-week works well).\n- Use shared branding: same bumpers, “mission briefing” style narrations, and mini fact segments that feel like power-ups rather than classroom breaks.\n- Run a serialized micro-arc across the month (light continuity) so kids feel like they’re missing something if they skip 7:00.\n- Promote the 8:00 show inside the E/I hour with in-universe style promos (e.g., \"incoming transmission\" format).\n\nA real-world example of non-user-related trivia: some Saturday blocks in the late 2000s leaned on aggressive bumpers and crossover promos to smooth genre shifts, even when the actual shows were very different."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Can you rewrite the Sep 13 schedule with those ideas—same shows, just presented like the block is intentionally themed?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "**CW4Kids Fall Lineup (Starts Sep 13) — “Mission Morning” Theme**\n\n**7:00 AM — GoGoRiki (E/I)**  \n*Mission Briefing:* quick cold open + a 15-second “today’s challenge” setup in the bumper before the episode.\n\n**7:30 AM — Ozzy & Drix (E/I)**  \n*Field Report:* health/biology framed like a case file; end bumper teases the 8:00 action slot as the “next assignment.”\n\n**8:00 AM — Yu-Gi-Oh! 5D’s**  \n*Main Operation begins:* high-energy start, with a short recap bumper to keep late arrivals caught up.\n\n**8:30 AM — Sonic X (New Episodes)**  \n*Speed Run Segment:* block branding emphasizes momentum—no tonal reset, just continuous “mission clock” bumpers.\n\n**9:00 AM — TMNT (Continuing Series)**  \n*Team Unit:* promos highlight teamwork/strategy to keep the block’s “mission” framing consistent.\n\n**9:30 AM — Dinosaur King**  \n*Discovery Ops:* presented as “retrieval missions,” with bumpers that treat facts as intel.\n\n**10:00 AM — Huntik: Secrets & Seekers**  \n*Artifact Hunt:* bumpers lean into mystery/quests so the adventure tone stays unified.\n\n**10:30 AM — Chaotic**  \n*Strategy Slot:* promoted as tactical gameplay—keeps the competitive throughline.\n\n**11:00 AM — Dragon Ball Z Kai**  \n*Power Hour:* branding pushes escalation—“final phase” vibes heading into noon.\n\n**11:30 AM — Magi-Nation**  \n*World Quest Finale:* framed as the wrap-up adventure before sign-off.\n\n(And a second non-user-related trivia tidbit: “DBZ Kai” began airing in Japan in 2009, so using it in a 2008-style lineup is a deliberate alternate-history choice.)"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "If they’re doing the Sep 13 reset with the 7am E/I hour again, I’d still keep it as GGR at 7 and O&D at 7:30—then let the action stuff kick in after 8 like usual."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "That sequencing fits the way CW4Kids tended to “wall off” the E/I block up front, then pivot into the heavier action/adventure lane after 8. Keeping GoGoRiki first and Ozzy & Drix second also preserves a consistent educational tone before the rest of the lineup ramps up."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "One thing though: I don't actually care if a show is \"E/I\" or not. I only said GoGoRiki and Ozzy & Drix would *count* better as E/I than Will & Dewitt and Magi-Nation, not that I personally prefer them because they're educational."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Gotcha—so your point was more about what would satisfy the E/I requirement on paper, not your own taste. When you said, \"I don't actually care if a show is \\\"E/I\\\" or not\" and that you \"only said GoGoRiki and Ozzy & Drix would count better as E/I,\" that’s different from preferring them *because* they’re educational."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Yeah exactly. If anything, I'd still pick based on what's more fun to watch; the E/I label is just a checkbox."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about optimizing TV lineups, show replacements, and educational content scheduling strategies",
+            "reasoning": "User constructs multiple hypothetical programming schedules and evaluates show replacements, indicating sustained curiosity about TV programming strategies.",
+            "evidence": {
+              "session_id": "sess_48245cb08eec",
+              "utterance_index": 10,
+              "text": "Write the new CW4Kids lineup, starting from Sep 13, 7am is the E/I hour"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-01T22:26:29+00:00"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "neutral",
+            "reasoning": "The old memory says the user prefers strong E/I shows like GoGoRiki and Ozzy & Drix. In the dialogue, the user clarifies they don't care about E/I personally and only meant those shows would qualify better for E/I requirements, so the preference basis is not educational value.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Does not particularly care about E/I content as a viewing preference; mentioned GoGoRiki and Ozzy & Drix as better E/I qualifiers mainly as a compliance/checkbox point."
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_48245cb08eec",
+              "utterance_index": 0,
+              "text": "then let the action stuff kick in after 8 like usual."
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "The user implies a preferred structure: E/I from 7–8, then 'action stuff' after 8 'like usual,' indicating a scheduling preference for action to begin after 8am.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers CW4Kids schedules where the action-oriented programming starts after 8am, following the 7am E/I hour."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_48245cb08eec:sess_48245cb08eec",
+      "relativeItemPath": "sess_48245cb08eec.json",
+      "canonicalId": "sess_48245cb08eec",
+      "sessionId": "sess_48245cb08eec",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-13T13:13:23.148Z",
+        "queryText": "I’m choosing between two kids’ shows tonight: one is mostly silly entertainment, the other focuses on teaching real science/health facts. Based on what you know about my usual taste, which one would I most likely pick, and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers shows with strong educational/informational (E/I) content like GoGoRiki and Ozzy & Drix over others",
+          "reasoning": "User explicitly states GGR and O&D are better E/I than W&D and MN, indicating preference for educational value in programming choices.",
+          "evidence": {
+            "session_id": "sess_48245cb08eec",
+            "utterance_index": 6,
+            "text": "I think GGR and O&D are better E/I than W&D and MN"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-04-01T22:26:29+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_48245cb08eec:sess_48245cb08eec:task4",
+      "relativeItemPath": "sess_48245cb08eec.json",
+      "canonicalId": "sess_48245cb08eec:task4",
+      "sessionId": "sess_48245cb08eec",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T03:48:14.369Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers shows with strong educational/informational (E/I) content like GoGoRiki and Ozzy & Drix over others",
+          "reasoning": "User explicitly states GGR and O&D are better E/I than W&D and MN, indicating preference for educational value in programming choices.",
+          "evidence": {
+            "session_id": "sess_48245cb08eec",
+            "utterance_index": 6,
+            "text": "I think GGR and O&D are better E/I than W&D and MN"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-04-01T22:26:29+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_247:1",
+            "queryText": "I'm trying to finalize my ideal Saturday morning cartoon block for a fan project. I've got a 7 AM slot to fill and I'm torn between a few options. Which one do you think would be the better anchor for that early hour?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Prefers shows with strong educational/informational (E/I) content like GoGoRiki and Ozzy & Drix over others",
+              "reasoning": "User explicitly states GGR and O&D are better E/I than W&D and MN, indicating preference for educational value in programming choices.",
+              "evidence": {
+                "session_id": "sess_48245cb08eec",
+                "utterance_index": 6,
+                "text": "I think GGR and O&D are better E/I than W&D and MN"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2024-04-01T22:26:29+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,347 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_09da04da7fd0",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_09da04da7fd0:sess_09da04da7fd0",
+      "relativeItemPath": "sess_09da04da7fd0.json",
+      "canonicalId": "sess_09da04da7fd0",
+      "sessionId": "sess_09da04da7fd0",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:25:39.366Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "value": "In a romantic relationship",
+            "reasoning": "User explicitly states their relationship status as恋人 (lover).",
+            "evidence": {
+              "session_id": "sess_09da04da7fd0",
+              "utterance_index": 0,
+              "text": "她和我的关系:恋人,想要跟他聊天"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-17T09:46:21Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "astrology/taurus_women/interest",
+            "value": "Sustained curiosity about Taurus women's emotional states (vulnerability, loneliness, heartbreak)",
+            "reasoning": "Questions about Taurus women could relate to third-party (e.g., partner) or role-play. No explicit self-identification as Taurus woman.",
+            "evidence": {
+              "session_id": "sess_09da04da7fd0",
+              "utterance_index": 12,
+              "text": "金牛女伤透了心而痛哭流涕"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-17T09:46:21Z"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "用户对爱而不得的情感体验表现出关注",
+            "confidence": 0.8,
+            "evidence_text": "爱而不得是什么滋味？"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_09da04da7fd0:sess_09da04da7fd0",
+      "relativeItemPath": "sess_09da04da7fd0.json",
+      "canonicalId": "sess_09da04da7fd0",
+      "sessionId": "sess_09da04da7fd0",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:26:01.415Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我刚看到有人说“水逆”会影响沟通，这种说法有依据吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "从科学角度看，“水逆影响沟通”没有可验证的因果证据，更像是一种占星叙事或心理暗示。很多人会在出差错时把原因归因到外部，从而形成“刚好应验”的感觉。若把它当作提醒自己更谨慎沟通的提示倒也无妨，但不建议当成确定规律。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "那如果只是想聊天找话题，有没有不尬的开场白？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "可以用“轻问题 + 可延展细节”的开场：\n1）“我刚看到一条挺有意思的内容，想听听你的看法：你更认可A还是B？”\n2）“你最近有没有遇到让你觉得挺离谱/挺开心的小事？”\n3）“我在纠结一个小选择（电影/餐厅/路线），你会怎么选？”\n关键是给对方一个容易接的选项或情境。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "顺便问个数学：1后面跟44个0，除以4，怎么快速算？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "快速法：因为 10^n ÷ 4 = 25 × 10^(n-2)（n≥2）。\n所以 10^44 ÷ 4 = 25 × 10^42 = 2.5 × 10^43。\n写成整数就是：25 后面跟 42 个 0。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "你能再给两个更生活化的聊天例子吗？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "当然：\n1）“我刚路过一家店，招牌写着‘本店招牌是随缘’，你觉得这到底算自信还是摆烂？”\n2）“如果明天突然多出半天自由时间，你第一反应会拿来做什么？我想看看大家的答案会不会很不一样。”\n这类话题既轻松又能引出对方的经历或观点。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我听说章鱼有三个心脏，是真的吗？"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "是真的。章鱼通常有三个心脏：两个负责把血液泵到鳃，一个负责把血液泵到全身；而且它们的血液含有铜基的血蓝蛋白，所以呈现蓝色。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "我总觉得他聊到一半就突然消失，隔好久才回，我这边反而一直在盯着消息看，越等越心慌。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "这种“忽冷忽热”的节奏确实很磨人。你可以先把你在意的点说清楚：比如你更希望他临时忙也能简单说一声，而不是让你一直猜；同时也给自己设个“等待上限”，避免情绪被消息牵着走。若他愿意配合调整频率，你会更有安全感；如果长期都这样，你也能更容易判断这段相处方式是否适合你。"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "我前面说“她和我的关系：恋人”其实不准确。我们还没有在一起，只是我单方面喜欢她，属于暧昧/暗恋那种。"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "明白了，你们并不是“恋人关系”，而是你对她有好感、目前还没确认在一起的暧昧/暗恋状态。那你想跟她聊天的话，可以先从轻松的话题开始，慢慢试探她的回应和边界，别一下子给她压力。"
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "对，就是还没确定关系，所以别再把我当成“有对象”来建议了。"
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "好，我会按“还没确定关系、你在追求/暧昧阶段”来给你建议。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "astrology/taurus_women/interest",
+            "value": "Sustained curiosity about Taurus women's emotional states (vulnerability, loneliness, heartbreak)",
+            "reasoning": "Questions about Taurus women could relate to third-party (e.g., partner) or role-play. No explicit self-identification as Taurus woman.",
+            "evidence": {
+              "session_id": "sess_09da04da7fd0",
+              "utterance_index": 12,
+              "text": "金牛女伤透了心而痛哭流涕"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-17T09:46:21Z"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                12
+              ],
+              "turns": [
+                {
+                  "index": 12,
+                  "role": "user",
+                  "text": "我前面说“她和我的关系：恋人”其实不准确。我们还没有在一起，只是我单方面喜欢她，属于暧昧/暗恋那种。"
+                }
+              ]
+            },
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "旧记忆称用户“正在恋爱关系中”。但用户在新对话里明确更正：之前说恋人不准确，实际上“还没有在一起，只是我单方面喜欢她”。因此应更新为未确立关系、处于暧昧/暗恋阶段。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Not in an official romantic relationship; currently in an ambiguous/one-sided crush stage"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": "anxiety",
+            "evidence": {
+              "session_id": "sess_09da04da7fd0",
+              "utterance_index": 0,
+              "text": "我总觉得他聊到一半就突然消失，隔好久才回，我这边反而一直在盯着消息看，越等越心慌。"
+            },
+            "label": "Social_Relationships/Communication_Patterns",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User describes a recurring pattern where the partner disappears mid-chat and replies after a long time; user reports feeling anxious while waiting.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Partner often stops replying mid-conversation and responds much later, causing the user anxiety while waiting"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_09da04da7fd0:sess_09da04da7fd0",
+      "relativeItemPath": "sess_09da04da7fd0.json",
+      "canonicalId": "sess_09da04da7fd0",
+      "sessionId": "sess_09da04da7fd0",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:26:08.808Z",
+        "queryText": "我在跟对方聊天时总觉得有些话题和边界要更谨慎一点：如果我想解释“为什么我需要把TA的感受放在更优先的位置、并且避免把交流做得像普通朋友那样随意”，这个原因从我的个人背景里最关键的一点是什么？",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Partners",
+          "label_suggestion": null,
+          "value": "In a romantic relationship",
+          "reasoning": "User explicitly states their relationship status as恋人 (lover).",
+          "evidence": {
+            "session_id": "sess_09da04da7fd0",
+            "utterance_index": 0,
+            "text": "她和我的关系:恋人,想要跟他聊天"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-17T09:46:21Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_09da04da7fd0:sess_09da04da7fd0:task4",
+      "relativeItemPath": "sess_09da04da7fd0.json",
+      "canonicalId": "sess_09da04da7fd0:task4",
+      "sessionId": "sess_09da04da7fd0",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T06:26:13.731Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Social_Relationships/Partners",
+          "label_suggestion": null,
+          "value": "In a romantic relationship",
+          "reasoning": "User explicitly states their relationship status as恋人 (lover).",
+          "evidence": {
+            "session_id": "sess_09da04da7fd0",
+            "utterance_index": 0,
+            "text": "她和我的关系:恋人,想要跟他聊天"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-17T09:46:21Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_445:1",
+            "queryText": "最近工作压力好大，想周末约他出去散散心，但不知道选什么地方比较合适，你有什么建议吗？",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Social_Relationships/Partners",
+              "label_suggestion": null,
+              "value": "In a romantic relationship",
+              "reasoning": "User explicitly states their relationship status as恋人 (lover).",
+              "evidence": {
+                "session_id": "sess_09da04da7fd0",
+                "utterance_index": 0,
+                "text": "她和我的关系:恋人,想要跟他聊天"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-06-17T09:46:21Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

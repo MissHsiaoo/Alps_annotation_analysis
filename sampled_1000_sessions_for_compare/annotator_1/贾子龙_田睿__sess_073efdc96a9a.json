@@ -1,0 +1,314 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_073efdc96a9a",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_073efdc96a9a:sess_073efdc96a9a",
+      "relativeItemPath": "sess_073efdc96a9a.json",
+      "canonicalId": "sess_073efdc96a9a",
+      "sessionId": "sess_073efdc96a9a",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-13T16:47:21.255Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "value": "Prefers Russian editions of English books with proper bibliographic formatting for library searches",
+            "reasoning": "User explicitly requests Russian editions formatted as bibliographic lists multiple times to facilitate library access.",
+            "evidence": {
+              "session_id": "sess_073efdc96a9a",
+              "utterance_index": 0,
+              "text": "скинуть русское издание библиографическим списком, чтобы мне проще было искать в библиотеке"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-12T01:33:26+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "preference/document_formatting_assistance",
+            "value": "Sustained interest in personal development/leadership literature accessibility in Russian [ERROR: Unsupported by evidence]",
+            "reasoning": "Continuously inquiring into literature on personal development and leadership.",
+            "evidence": {
+              "session_id": "sess_073efdc96a9a",
+              "utterance_index": 4,
+              "text": "а можно и х тоже оформить, не могу найти в библиотеке"
+            },
+            "confidence": "0.65",
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-12T01:33:26+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_073efdc96a9a:sess_073efdc96a9a",
+      "relativeItemPath": "sess_073efdc96a9a.json",
+      "canonicalId": "sess_073efdc96a9a",
+      "sessionId": "sess_073efdc96a9a",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-13T16:48:09.307Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Привет! Можешь подсказать, как правильно оформить ссылку на статью из журнала по ГОСТ (или хотя бы общий шаблон)?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Да. Самый универсальный шаблон (печатная версия):\n\nАвтор(ы). Заглавие статьи // Название журнала. — Год. — Т. (том), № (номер). — С. xx–yy.\n\nЕсли есть DOI, его обычно добавляют в конце: — DOI: ...\n\nДля электронной версии часто добавляют: — URL: ... (дата обращения: дд.мм.гггг).\n\nМожешь прислать исходные данные (авторы, название, журнал, год, номер, страницы, DOI/URL) — соберу готовую ссылку."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "А если авторов много, их всех перечислять?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Зависит от требований вуза/редакции, но часто делают так: перечисляют первых 3 (иногда 1) и добавляют «[и др.]»/«et al.».\n\nПример (рус.): Иванов И.И., Петров П.П., Сидоров С.С. [и др.] ...\nПример (англ.): Smith J., Lee K., Patel R. et al. ...\n\nЕсли скажешь, какой стандарт/методичка требуется (ГОСТ Р 7.0.100–2018 или внутренние правила), подстрою формат."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Понял(а), спасибо! Кстати, видел(а) где-то, что у статей теперь иногда указывают eLocator вместо страниц — это нормально?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Да, это нормально: в некоторых журналах вместо диапазона страниц дают eLocator (например, e12345 или Article 105678). Тогда в ссылке вместо «С. xx–yy» указывают этот идентификатор.\n\nК слову, у журнала PLOS ONE как раз давно используется eLocator вместо страниц — это типичный пример."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Пока в каталоге искал, понял, что по фамилии автора быстрее всего находится — можно в следующий раз сразу делать «Фамилия, И.О.», а то я постоянно путаюсь с порядком."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Да, конечно: в библиографическом описании обычно удобнее начинать с «Фамилия, И.О.» (или «Фамилия, Имя»), а дальше уже название, место издания, издательство и год — так в каталоге действительно проще искать."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Слушай, я, кажется, неправильно сформулировал тогда. Мне не «русские издания» нужны, а просто нормальное библиографическое описание — можно и на английском, и на русском, главное чтобы в каталоге библиотеки нашлось."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Понял. То есть приоритет не в русском издании как таковом, а в корректном оформлении (автор, название, издательство, год), чтобы по этим данным книга находилась в каталоге — на каком языке оформлено, не принципиально."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Да, именно. Русский вариант тогда просил только потому, что думал, что так будет проще искать, но вообще язык не важен."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "preference/document_formatting_assistance",
+            "value": "Sustained interest in personal development/leadership literature accessibility in Russian [ERROR: Unsupported by evidence]",
+            "reasoning": "Continuously inquiring into literature on personal development and leadership.",
+            "evidence": {
+              "session_id": "sess_073efdc96a9a",
+              "utterance_index": 4,
+              "text": "а можно и х тоже оформить, не могу найти в библиотеке"
+            },
+            "confidence": "0.65",
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-12T01:33:26+00:00"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Да, именно. Русский вариант тогда просил только потому, что думал, что так будет проще искать, но вообще язык не важен."
+                }
+              ]
+            },
+            "label": "Preferences/Reading",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "need",
+            "reasoning": "The old memory claims a preference for Russian editions, but the user clarifies they only needed correct bibliographic descriptions for library catalogs and that the language is not important.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Needs properly formatted bibliographic citations for library searches; the language (Russian vs English) is not important and Russian editions are not specifically preferred"
+          },
+          {
+            "confidence": 0.76,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_073efdc96a9a",
+              "utterance_index": 0,
+              "text": "можно в следующий раз сразу делать «Фамилия, И.О.», а то я постоянно путаюсь с порядком"
+            },
+            "label": "Preferences/DocumentFormatting",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "prefer",
+            "reasoning": "User implies that searching by author surname works best and requests that future formatting start with «Фамилия, И.О.» to avoid confusion.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers bibliographic entries formatted starting with the author’s surname and initials to search faster in library catalogs"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_073efdc96a9a:sess_073efdc96a9a",
+      "relativeItemPath": "sess_073efdc96a9a.json",
+      "canonicalId": "sess_073efdc96a9a",
+      "sessionId": "sess_073efdc96a9a",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-13T16:48:20.060Z",
+        "queryText": "I’m about to ask you for a list of books so I can quickly locate the exact copies in a catalog. To match the way I usually want these results presented, what language/market should the editions be from, and what kind of listing style should you use so the entries are easiest for me to search?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Reading",
+          "label_suggestion": null,
+          "value": "Prefers Russian editions of English books with proper bibliographic formatting for library searches",
+          "reasoning": "User explicitly requests Russian editions formatted as bibliographic lists multiple times to facilitate library access.",
+          "evidence": {
+            "session_id": "sess_073efdc96a9a",
+            "utterance_index": 0,
+            "text": "скинуть русское издание библиографическим списком, чтобы мне проще было искать в библиотеке"
+          },
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-06-12T01:33:26+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_073efdc96a9a:sess_073efdc96a9a:task4",
+      "relativeItemPath": "sess_073efdc96a9a.json",
+      "canonicalId": "sess_073efdc96a9a:task4",
+      "sessionId": "sess_073efdc96a9a",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-13T16:48:44.618Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "UNMAPPED",
+          "label_suggestion": "preference/document_formatting_assistance",
+          "value": "Sustained interest in personal development/leadership literature accessibility in Russian [ERROR: Unsupported by evidence]",
+          "reasoning": "Unsupported by evidence",
+          "evidence": {
+            "session_id": "sess_073efdc96a9a",
+            "utterance_index": 4,
+            "text": "а можно и х тоже оформить, не могу найти в библиотеке"
+          },
+          "confidence": 0.1,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-06-12T01:33:26+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_767:1",
+            "queryText": "Слушай, я тут наткнулся на пару новых книг по саморазвитию на английском: 'Atomic Habits' Джеймса Клира и 'Mindset' Кэрол Дуэк. Как думаешь, какие из них мне стоит поискать в первую очередь?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "indirect",
+              "label": "UNMAPPED",
+              "label_suggestion": "preference/document_formatting_assistance",
+              "value": "Sustained interest in personal development/leadership literature accessibility in Russian [ERROR: Unsupported by evidence]",
+              "reasoning": "Unsupported by evidence",
+              "evidence": {
+                "session_id": "sess_073efdc96a9a",
+                "utterance_index": 4,
+                "text": "а можно и х тоже оформить, не могу найти в библиотеке"
+              },
+              "confidence": 0.1,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-06-12T01:33:26+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

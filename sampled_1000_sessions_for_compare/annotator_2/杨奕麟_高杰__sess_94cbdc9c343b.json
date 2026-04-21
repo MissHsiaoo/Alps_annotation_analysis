@@ -1,0 +1,399 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_94cbdc9c343b",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_94cbdc9c343b:sess_94cbdc9c343b",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_94cbdc9c343b.json",
+      "canonicalId": "sess_94cbdc9c343b",
+      "sessionId": "sess_94cbdc9c343b",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-19T09:35:26.134Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Travel_Mode",
+            "label_suggestion": null,
+            "value": "Prefers domestic travel to grasslands/seaside near Shijiazhuang in August",
+            "reasoning": "User explicitly states domestic preference with location and timing constraints",
+            "evidence": {
+              "session_id": "sess_94cbdc9c343b",
+              "utterance_index": 14,
+              "text": "我想找国内的，草原或者海边，离石家庄近的。然后有没有合适的在8月份出行的旅游团"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-07-16T01:58:27+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Personal_Background/Location",
+            "value": "Shijiazhuang",
+            "reasoning": "The fact that a user is looking for attractions near Shijiazhuang suggests that he is very likely staying in Shijiazhuang.",
+            "evidence": {
+              "session_id": "sess_94cbdc9c343b",
+              "utterance_index": 14,
+              "text": "我想找国内的，草原或者海边，离石家庄近的。然后有没有合适的在8月份出行的旅游团"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-29T13:41:38.729Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Thoughts/Goals/Short_Term",
+            "label_suggestion": null,
+            "value": "User is planning to travel around mid-August",
+            "reasoning": "User directly states their plans",
+            "evidence": {
+              "turn_indices": [
+                14
+              ],
+              "turns": [
+                {
+                  "index": 14,
+                  "role": "user",
+                  "text": "我想找国内的，草原或者海边，离石家庄近的。然后有没有合适的在8月份出行的旅游团"
+                }
+              ]
+            },
+            "confidence": 0.95,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-04-19T09:34:40.732Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_94cbdc9c343b:sess_94cbdc9c343b",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_94cbdc9c343b.json",
+      "canonicalId": "sess_94cbdc9c343b",
+      "sessionId": "sess_94cbdc9c343b",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-19T09:36:16.402Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "如果我想报一个“离出发地不远”的国内团，一般应该先看哪些关键信息，才能避免被宣传页带偏？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以按“行程真实性—费用透明度—履约能力—售后保障”四块快速筛：\n1）行程真实性：每天出发/到达时间、车程时长、是否含必去购物点/景区“远观”、同一景点停留多久。\n2）费用透明：写清“包含/不含”，尤其是景交车/索道/游船/门票差价、自费项目清单；留意“必须自理”的合计。\n3）履约能力：组团社与地接社是谁、是否签正规旅游合同、发票与付款主体是否一致。\n4）售后保障：退改规则、成团人数、导游联系方式给到的时间点、是否有旅游意外险。\n你如果愿意，把你看到的宣传页关键字段（天数、价格、含/不含）打出来，我可以帮你逐条挑风险点。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "宣传上经常写“纯玩无购物”，这个说法靠谱吗？有什么可核验的？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "“纯玩无购物”只能当口号，最好用可核验项落地：\n- 合同/行程单里是否出现“购物店、进店参观、停留XX分钟”字样；有些会写成“特产超市/体验馆”。\n- 自费项目是否被包装成“推荐参加/不强制但影响行程体验”，以及不参加时的替代安排是否明确。\n- 导游服务费/综合服务费是否另收；有的团用低团费+车售/加点回本。\n- 住宿是否写明酒店名称或至少同级标准与位置，避免用偏远酒店换成本。\n核验方法：让对方把“电子版行程单+合同样本+费用说明”三件套发你，再截图关键条款确认。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "如果我只想找草原或海边这种主题团，宣传图案/海报上一般哪些元素是“营销滤镜”比较重的？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "常见“营销滤镜”重的元素主要有：\n- 夸张天气与色彩：一整天都“蓝天白云+通透海”，但不写季节风向、降雨概率。\n- 以航拍/长焦替代实景距离：海报上“海边就在酒店门口”，实际可能需要摆渡车或步行很远。\n- “网红同款”但不标注拍摄点：同一张草原公路照可能来自不同地区，容易让人误以为就在目的地。\n- 只给景点名不给时长：比如写了3-4个大景点，但不展示车程与停留，往往意味着赶路多。\n举个与用户无关的例子：有些城市马拉松海报会用同一张桥梁夜景做不同年份主视觉，就是为了统一视觉锚点，并不代表赛道一定经过该桥。你看旅游海报也可以用同样思路“先找证据再看氛围”。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "那我如果在平台上挑团，你建议用什么顺序对比：先比价格、评分、还是行程？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "建议顺序：先行程结构 → 再费用明细 → 再商家资质/评价 → 最后才看价格。\n- 行程结构先淘汰不符合主题或赶路过多的。\n- 费用明细决定“表面低价”是否会被自费拉高。\n- 评价重点看差评关键词（强制消费、临时改行程、住宿降级、导游态度），别只看均分。\n- 价格用于同条件下做选择。\n另外给一个无关信息：2024年一些目的地的博物馆开始采用分时预约+实名入场，导致“排队时长”在评论里被放大，你筛评价时可以区分是景区规则还是旅行社问题。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "明白了。最后一个：如果要做成“周末短线团”，海报上写“轻松不累”，怎么判断是不是夸大？"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "看三个硬指标就能拆穿“轻松不累”：\n1）每日最早集合时间与最晚到达时间：周末短线如果早于6:30集合、晚于22:00回程，多半不轻松。\n2）单日车程：同一天跨多个城市/景区、车程超过4-5小时，体感会很累。\n3）景点数量与停留：一天塞3-4个景点且每个停留<1小时，基本是“打卡团”。\n如果对方能给出“车程表/公里数/停留时长”，通常更靠谱。再补一条无关小知识：在平面设计里，“轻松不累”常配高留白与浅色系，是典型情绪化措辞，本身不构成服务承诺，还是要回到行程单和合同。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "assistant",
+            "text": "离石家庄近、8月出行的话，你可以先把“车程能接受多久/要不要高铁直达”定一下，这样筛团会快很多。你这次是打算几个人一起走？"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "user",
+            "text": "就我和对象两个人，想省事就报个团。"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "assistant",
+            "text": "两个人报团确实省心。那你们更偏“海边多待两晚躺平”，还是“草原住蒙古包、看日落篝火那种”？我再按石家庄出发常见线路给你筛。"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "user",
+            "text": "我上次说“找国内、离石家庄近、8月草原或海边”那个，其实只是随口一问做对比。8月我已经请好假了，还是更想出境，优先日本或东南亚这种，石家庄近不近无所谓。"
+          },
+          {
+            "turnId": "turn-15",
+            "role": "assistant",
+            "text": "明白了，那之前“国内、离石家庄近、8月草原/海边”就不算你的固定偏好，更像是当时临时拿来比较的方向。你现在的重点是：8月出境游为主，日本或东南亚优先，出发地距离不是硬性条件。"
+          },
+          {
+            "turnId": "turn-16",
+            "role": "user",
+            "text": "对，就按出境来选吧，国内团先不考虑了。"
+          },
+          {
+            "turnId": "turn-17",
+            "role": "assistant",
+            "text": "好的，那我后面就以8月出境（日本/东南亚优先）来给你筛选线路与团期，国内草原或海边不作为前提条件。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Personal_Background/Location",
+            "value": "Shijiazhuang",
+            "reasoning": "The fact that a user is looking for attractions near Shijiazhuang suggests that he is very likely staying in Shijiazhuang.",
+            "evidence": {
+              "session_id": "sess_94cbdc9c343b",
+              "utterance_index": 14,
+              "text": "我想找国内的，草原或者海边，离石家庄近的。然后有没有合适的在8月份出行的旅游团"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-29T13:41:38.729Z",
+            "_task1GoldValue": "Shijiazhuang"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                13
+              ],
+              "turns": [
+                {
+                  "index": 13,
+                  "role": "user",
+                  "text": "我上次说“找国内、离石家庄近、8月草原或海边”那个，其实只是随口一问做对比。8月我已经请好假了，还是更想出境，优先日本或东南亚这种，石家庄近不近无所谓。"
+                }
+              ]
+            },
+            "label": "Preferences/Travel_Mode",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "like",
+            "reasoning": "Old memory claims a stable preference for domestic grassland/seaside near Shijiazhuang in August. The user clarifies that was only a casual comparison and states they have time off in August and prefer outbound travel, with Shijiazhuang proximity irrelevant.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "In August, prefers outbound travel (Japan or Southeast Asia) and Shijiazhuang proximity is not a requirement; prior domestic near-Shijiazhuang query was only for comparison"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_94cbdc9c343b",
+              "utterance_index": 11,
+              "text": "就我和对象两个人，想省事就报个团。"
+            },
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "用户说“我和对象两个人”，暗示其有稳定的恋爱对象/伴侣关系。",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Has a romantic partner (travels with their significant other)"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Thoughts/Goals/Short_Term",
+            "label_suggestion": null,
+            "value": "User is planning to travel around mid-August",
+            "reasoning": "User directly states their plans",
+            "evidence": {
+              "turn_indices": [
+                14
+              ],
+              "turns": [
+                {
+                  "index": 14,
+                  "role": "user",
+                  "text": "我想找国内的，草原或者海边，离石家庄近的。然后有没有合适的在8月份出行的旅游团"
+                }
+              ]
+            },
+            "confidence": 0.95,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-04-19T09:34:40.732Z",
+            "_task1GoldValue": "User is planning to travel around mid-August"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_94cbdc9c343b:sess_94cbdc9c343b",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_94cbdc9c343b.json",
+      "canonicalId": "sess_94cbdc9c343b",
+      "sessionId": "sess_94cbdc9c343b",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-19T09:36:21.328Z",
+        "queryText": "我同事刚发来两个备选旅行方案：一个是出境的，一个是在国内的；时间都能排在同一个月份，而且都能去到我更想看的自然风景类型。假如我还希望路上别太折腾、离我常驻的城市别太远，那我应该优先选哪一个方案，为什么？",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Travel_Mode",
+          "label_suggestion": null,
+          "value": "Prefers domestic travel to grasslands/seaside near Shijiazhuang in August",
+          "reasoning": "User explicitly states domestic preference with location and timing constraints",
+          "evidence": {
+            "session_id": "sess_94cbdc9c343b",
+            "utterance_index": 14,
+            "text": "我想找国内的，草原或者海边，离石家庄近的。然后有没有合适的在8月份出行的旅游团"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-07-16T01:58:27+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_94cbdc9c343b:sess_94cbdc9c343b:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_94cbdc9c343b.json",
+      "canonicalId": "sess_94cbdc9c343b:task4",
+      "sessionId": "sess_94cbdc9c343b",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-19T09:36:30.431Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Travel_Mode",
+          "label_suggestion": null,
+          "value": "Prefers domestic travel to grasslands/seaside near Shijiazhuang in August",
+          "reasoning": "User explicitly states domestic preference with location and timing constraints",
+          "evidence": {
+            "session_id": "sess_94cbdc9c343b",
+            "utterance_index": 14,
+            "text": "我想找国内的，草原或者海边，离石家庄近的。然后有没有合适的在8月份出行的旅游团"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-07-16T01:58:27+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_965:1",
+            "queryText": "帮我看看8月份有什么合适的周边游线路，草原或者海边都行，最好是从石家庄出发比较方便的。你觉得哪个更适合我？",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Travel_Mode",
+              "label_suggestion": null,
+              "value": "Prefers domestic travel to grasslands/seaside near Shijiazhuang in August",
+              "reasoning": "User explicitly states domestic preference with location and timing constraints",
+              "evidence": {
+                "session_id": "sess_94cbdc9c343b",
+                "utterance_index": 14,
+                "text": "我想找国内的，草原或者海边，离石家庄近的。然后有没有合适的在8月份出行的旅游团"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-07-16T01:58:27+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "直接相关",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

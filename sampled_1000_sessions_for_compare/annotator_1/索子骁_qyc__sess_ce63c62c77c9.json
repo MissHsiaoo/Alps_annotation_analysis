@@ -1,0 +1,311 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_ce63c62c77c9",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_ce63c62c77c9:sess_ce63c62c77c9",
+      "relativeItemPath": "sess_ce63c62c77c9.json",
+      "canonicalId": "sess_ce63c62c77c9",
+      "sessionId": "sess_ce63c62c77c9",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-13T12:46:18.297Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Possessions/Pet",
+            "label_suggestion": null,
+            "value": "User's cat had a neck lump that ruptured",
+            "reasoning": "User explicitly describes a health concern with their pet cat.",
+            "evidence": {
+              "session_id": "sess_ce63c62c77c9",
+              "utterance_index": 6,
+              "text": "Mi gato tiene una bolita en su cuello y se la apreté y ahora reventó, debería preocuparme?"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-15T17:29:36+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "Sustained interest in legal case analysis methodology (penal theory application, specific articles, sentencing principles) ",
+            "reasoning": "The user asked numerous legal questions, indicating either an interest in law or a professional background in legal-related fields.",
+            "evidence": {
+              "session_id": "sess_ce63c62c77c9",
+              "utterance_index": 14,
+              "text": "Fernando llega a su casa de su trabajo de 18 horas diarias en una oficina y desde que ingresa discute con su esposa Diana. Las discusiones siempre trataban alrededor de que Diana se excedía en las compras por FB Marketplace y MercadoLibre. Diana aparentaba ignorar los pedidos de Fernando de reducir los gastos que consideraba innecesarios ya que la inflación alcanzó un 100% anual y sus ingresos eran cada vez menores. Diana, sin quedarse atrás en la discusión, le recriminaba que siempre volvía borracho y que el verdadero gasto innecesario eran las 3 botellas de whisky etiqueta azul que consumía a la semana, de modo que ella también tenía derecho a darse algún gusto “de vez en cuando”. En una de las discusiones, Fernando toma una cuchilla de caza y se abalanza a Diana con intención de clavársela, produciéndole la muerte. Es encontrado culpable (después del juicio) de homicidio agravado por el vínculo que en el país en donde Ud. es juez/a tiene una pena de 8 a 30 años de prisión. Durante los 10 años de casado, Fernando había mantenido una conducta totalmente normal, trabajaba, participaba de ONGS que hacían ayuda social, y era respetado en la comunidad donde vivía. Tenían tres hijos de 8, 6 y 10 años que asistían a la escuela pública del barrio y no posee antecedentes. \nUd. Debe graduar la pena a imponer. Diga qué pena le aplicaría y explique los fundamentos de su decisión desde los diversos puntos de vista y teorías del fundamento y fin de las penas."
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-27T01:12:57.415Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_ce63c62c77c9:sess_ce63c62c77c9",
+      "relativeItemPath": "sess_ce63c62c77c9.json",
+      "canonicalId": "sess_ce63c62c77c9",
+      "sessionId": "sess_ce63c62c77c9",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T01:57:33.712Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Estoy armando un trabajo práctico de penal y me enredo con cómo ordenar el análisis. ¿Me ayudás a armar un esquema general para resolver casos?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sí. Un esquema típico: (1) Hechos relevantes y prueba disponible. (2) Identificar posibles figuras penales (tipo objetivo: conducta, resultado, nexo causal, imputación objetiva; tipo subjetivo: dolo/culpa). (3) Antijuridicidad: causas de justificación (legítima defensa, estado de necesidad, cumplimiento de deber, etc.). (4) Culpabilidad: imputabilidad, conocimiento de la antijuridicidad, exigibilidad de otra conducta (miedo insuperable, error de prohibición). (5) Autoría y participación; tentativa; concurso de delitos. (6) Punibilidad: condiciones objetivas, excusas absolutorias, prescripción. (7) Consecuencias: pena, reglas de determinación, y alternativas (suspensión del juicio a prueba si corresponde)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "¿Y cómo hago para no saltearme nada cuando hay varios personajes y acciones?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Conviene armar una matriz: filas = sujetos (A, B, C), columnas = hechos/acciones (golpea, omite auxilio, encubre, etc.). Para cada casillero hacés el recorrido tipo-justificación-culpabilidad. Después unificás: concursos, coautoría/partícipes, y recién al final discutís pena o salidas alternativas."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Me sirve. A veces confundo imputación objetiva con causalidad. ¿Cómo las separo en dos preguntas simples?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Causalidad: “¿sin esta conducta el resultado habría ocurrido igual?” (conditio sine qua non, con sus ajustes). Imputación objetiva: “aunque sea causa, ¿el resultado es jurídicamente atribuible?”; ahí mirás creación de un riesgo no permitido, realización de ese riesgo en el resultado y ámbito de protección de la norma. Ejemplo clásico no personal: si alguien empuja a otro a la calle y lo atropellan, suele imputarse; si lo empuja levemente dentro de una plaza y el otro luego decide correr a una autopista, puede romperse la imputación por curso causal atípico."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Ok. ¿Podés tirar tres “checks” finales para cerrar cualquier caso antes de entregar?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Tres checks: (1) ¿Nombré y descarté expresamente alternativas plausibles (tipo doloso vs culposo, lesiones vs homicidio, encubrimiento, omisión)? (2) ¿Fundé por qué NO aplica una justificación o un error relevante, o por qué sí? (3) ¿Cerré con un mapa claro de imputaciones por persona y el tipo de concurso (real/ideal) y la consecuencia procesal/penal posible?\nDato irrelevante como referencia general: en algunos sistemas comparados, debates sobre imputación objetiva se volvieron centrales desde la segunda mitad del siglo XX, sobre todo en la dogmática alemana, y luego se adaptaron en manuales latinoamericanos con matices."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Estoy armando un escrito para la cátedra y me quedé trabado con la calificación: ¿en el caso de Juan que tira la piedra y después llama al SAME, conviene plantear tentativa de homicidio vs. lesiones graves, o es mejor encuadrarlo como lesiones con dolo eventual?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Para elegir el encuadre, conviene partir del dolo (directo / eventual) y del resultado efectivamente producido (lesiones) más el peligro creado (zona vital, medio empleado, intensidad). Llamar al SAME puede operar como dato relevante para discutir desistimiento/atenuación o conducta postdelictual, pero no borra la tipicidad previa. Si querés, te propongo una estructura de escrito comparando: tentativa de homicidio (dolo eventual por arrojar una piedra a la cabeza), versus lesiones graves (dolo de lesionar + resultado) y cómo argumentar cada una según los hechos."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Me equivoqué antes: no era mi gato. Era el perro de mi hermana, y la bolita no estaba en el cuello sino en la pata. La apreté y se reventó igual."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Ok, entonces no fue tu gato ni fue en el cuello: fue el perro de tu hermana y en la pata. Igual, apretar y reventar un bulto (en perro o gato) puede infectarse; lo prudente es limpieza suave y consulta veterinaria, sobre todo si hay pus, mal olor, dolor, fiebre o inflamación que aumenta."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "value": "Sustained interest in legal case analysis methodology (penal theory application, specific articles, sentencing principles) ",
+            "reasoning": "The user asked numerous legal questions, indicating either an interest in law or a professional background in legal-related fields.",
+            "evidence": {
+              "session_id": "sess_ce63c62c77c9",
+              "utterance_index": 14,
+              "text": "Fernando llega a su casa de su trabajo de 18 horas diarias en una oficina y desde que ingresa discute con su esposa Diana. Las discusiones siempre trataban alrededor de que Diana se excedía en las compras por FB Marketplace y MercadoLibre. Diana aparentaba ignorar los pedidos de Fernando de reducir los gastos que consideraba innecesarios ya que la inflación alcanzó un 100% anual y sus ingresos eran cada vez menores. Diana, sin quedarse atrás en la discusión, le recriminaba que siempre volvía borracho y que el verdadero gasto innecesario eran las 3 botellas de whisky etiqueta azul que consumía a la semana, de modo que ella también tenía derecho a darse algún gusto “de vez en cuando”. En una de las discusiones, Fernando toma una cuchilla de caza y se abalanza a Diana con intención de clavársela, produciéndole la muerte. Es encontrado culpable (después del juicio) de homicidio agravado por el vínculo que en el país en donde Ud. es juez/a tiene una pena de 8 a 30 años de prisión. Durante los 10 años de casado, Fernando había mantenido una conducta totalmente normal, trabajaba, participaba de ONGS que hacían ayuda social, y era respetado en la comunidad donde vivía. Tenían tres hijos de 8, 6 y 10 años que asistían a la escuela pública del barrio y no posee antecedentes. \nUd. Debe graduar la pena a imponer. Diga qué pena le aplicaría y explique los fundamentos de su decisión desde los diversos puntos de vista y teorías del fundamento y fin de las penas."
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-27T01:12:57.415Z",
+            "_task1GoldValue": "Sustained interest in legal case analysis methodology (penal theory application, specific articles, sentencing principles) "
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Possessions/Pet",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory says it was the user's cat with a neck lump. The user corrects that it was not their cat and not on the neck, but their sister's dog and on the leg.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "It was the user's sister's dog; a lump on its leg ruptured after being squeezed."
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_ce63c62c77c9",
+              "utterance_index": 0,
+              "text": "Estoy armando un escrito para la cátedra"
+            },
+            "label": "Education/Studies",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "The user refers to drafting an 'escrito' specifically 'para la cátedra', implying an academic assignment context.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User is preparing a written assignment for a university course (cátedra)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_ce63c62c77c9:sess_ce63c62c77c9",
+      "relativeItemPath": "sess_ce63c62c77c9.json",
+      "canonicalId": "sess_ce63c62c77c9",
+      "sessionId": "sess_ce63c62c77c9",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:47:10.750Z",
+        "queryText": "I’m trying to decide whether to just monitor things at home or treat this as urgent—based on what happened the last time my pet had a physical issue that I accidentally made worse by messing with it, what’s the main reason I shouldn’t wait it out this time?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Possessions/Pet",
+          "label_suggestion": null,
+          "value": "User's cat had a neck lump that ruptured",
+          "reasoning": "User explicitly describes a health concern with their pet cat.",
+          "evidence": {
+            "session_id": "sess_ce63c62c77c9",
+            "utterance_index": 6,
+            "text": "Mi gato tiene una bolita en su cuello y se la apreté y ahora reventó, debería preocuparme?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-15T17:29:36+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_ce63c62c77c9:sess_ce63c62c77c9:task4",
+      "relativeItemPath": "sess_ce63c62c77c9.json",
+      "canonicalId": "sess_ce63c62c77c9:task4",
+      "sessionId": "sess_ce63c62c77c9",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:14:45.935Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Possessions/Pet",
+          "label_suggestion": null,
+          "value": "User's cat had a neck lump that ruptured",
+          "reasoning": "User explicitly describes a health concern with their pet cat.",
+          "evidence": {
+            "session_id": "sess_ce63c62c77c9",
+            "utterance_index": 6,
+            "text": "Mi gato tiene una bolita en su cuello y se la apreté y ahora reventó, debería preocuparme?"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-05-15T17:29:36+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_42:1",
+            "queryText": "Mi gato tiene otra protuberancia, esta vez cerca de su oreja. ¿Qué debería hacer con ella?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Possessions/Pet",
+              "label_suggestion": null,
+              "value": "User's cat had a neck lump that ruptured",
+              "reasoning": "User explicitly describes a health concern with their pet cat.",
+              "evidence": {
+                "session_id": "sess_ce63c62c77c9",
+                "utterance_index": 6,
+                "text": "Mi gato tiene una bolita en su cuello y se la apreté y ahora reventó, debería preocuparme?"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-05-15T17:29:36+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "partial",
+            "memoryDependency": "medium",
+            "abilityPurity": "medium",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,336 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_e81b959de64b",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_e81b959de64b:sess_e81b959de64b",
+      "relativeItemPath": "sess_e81b959de64b.json",
+      "canonicalId": "sess_e81b959de64b",
+      "sessionId": "sess_e81b959de64b",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T00:54:47.406Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Persistent focus on precise definitions of hydro healers in Genshin Impact (excludes Mona/Xingqiu)",
+            "reasoning": "User made 4 corrections about healer qualifications in a technical gaming context, indicating sustained curiosity about character mechanics.",
+            "evidence": {
+              "session_id": "sess_e81b959de64b",
+              "utterance_index": 8,
+              "text": "Xingqiu has a minor heal. i dont consider him an actual healer"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-15T08:04:23Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Does not consider characters with minor heals (e.g., Xingqiu) as actual healers in Genshin Impact",
+            "reasoning": "Explicitly states exclusion criteria for healers: 'minor heal' isn't sufficient qualification.",
+            "evidence": {
+              "session_id": "sess_e81b959de64b",
+              "utterance_index": 8,
+              "text": "Xingqiu has a minor heal. i dont consider him an actual healer"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-07-15T08:04:23Z"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "indirect",
+            "label": "Preferences/Entertainment",
+            "value": "User plays or is interested in Genshin Impact",
+            "confidence": 0.8,
+            "evidence_text": "what are all hydro healers in genshin impact?"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_e81b959de64b:sess_e81b959de64b",
+      "relativeItemPath": "sess_e81b959de64b.json",
+      "canonicalId": "sess_e81b959de64b",
+      "sessionId": "sess_e81b959de64b",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:18:50.515Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "ok so if you can’t do live weather, what *can* you do that’s close to that?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "I can help in a few “nearby” ways without claiming real-time data:\n\n- Explain typical climate patterns for a region/season (e.g., what winters are usually like in coastal vs inland areas).\n- Help interpret a forecast you paste (terms like “chance of precipitation,” dew point, wind chill, pressure systems).\n- Summarize a news article you provide, or explain background/context on an ongoing topic.\n- Describe how to find reliable sources (official meteorological services, major wire services) and what signals credibility.\n\nIf you paste a forecast snippet or a headline, I can break it down."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "what does “30% chance of rain” actually mean?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "It usually means: for the forecast area and the stated time window, there’s a 30% probability that measurable precipitation will occur at a given point.\n\nPeople often think it means “it’ll rain for 30% of the day” or “30% of the area will get rain,” but the common definition is probability at a location.\n\nExample (hypothetical): if forecasters say 30% for your city this afternoon, they’re expressing uncertainty—across many similar situations, rain would occur about 3 times out of 10."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "and “feels like” temperature?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "“Feels like” is an index that adjusts air temperature based on factors affecting how the body gains/loses heat.\n\n- In cold weather, wind chill lowers the “feels like” value because moving air increases heat loss.\n- In hot weather, the heat index raises it because humidity reduces sweat evaporation.\n\nIt’s not a separate thermometer reading; it’s a calculated estimate of perceived temperature under typical assumptions."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "give me a quick example with numbers"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Sure (illustrative, not live data):\n\n- Air temp 0°C with strong wind might “feel like” around −8°C due to wind chill.\n- Air temp 32°C with high humidity might “feel like” around 40°C due to the heat index.\n\nExact values depend on wind speed and relative humidity."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "btw i tried sending that earlier but my keyboard flipped to russian again—keeps doing that mid-chat."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—if it switches layouts unexpectedly, it can help to check your OS language hotkeys so it doesn’t toggle while you’re typing."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "about that hydro healer thing—i take it back. even small heals count for me."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "So you *do* consider someone like Xingqiu an actual healer now, even if it's just a minor heal?"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "yeah. if they can heal at all, i’ll count them as a healer. xingqiu included."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Persistent focus on precise definitions of hydro healers in Genshin Impact (excludes Mona/Xingqiu)",
+            "reasoning": "User made 4 corrections about healer qualifications in a technical gaming context, indicating sustained curiosity about character mechanics.",
+            "evidence": {
+              "session_id": "sess_e81b959de64b",
+              "utterance_index": 8,
+              "text": "Xingqiu has a minor heal. i dont consider him an actual healer"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-15T08:04:23Z",
+            "_task1GoldValue": "Persistent focus on precise definitions of hydro healers in Genshin Impact (excludes Mona/Xingqiu)"
+          },
+          {
+            "confidence": 0.84,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "like",
+            "reasoning": "The old memory said the user does not consider minor heals (e.g., Xingqiu) as actual healers. In the new dialogue, the user explicitly reverses that stance and says any healing counts, including Xingqiu.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Considers characters with even minor heals (e.g., Xingqiu) as actual healers in Genshin Impact"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_e81b959de64b",
+              "utterance_index": 0,
+              "text": "my keyboard flipped to russian again—keeps doing that mid-chat."
+            },
+            "label": "Personal/Devices",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies their keyboard layout unexpectedly changes to Russian during chat, which caused an earlier message.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "User sometimes types with a Russian keyboard layout due to accidental switching."
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "indirect",
+            "label": "Preferences/Entertainment",
+            "value": "User plays or is interested in Genshin Impact",
+            "confidence": 0.8,
+            "evidence_text": "what are all hydro healers in genshin impact?",
+            "_task1GoldValue": "User plays or is interested in Genshin Impact"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "claude_sonnet_4_5_20250929_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_e81b959de64b:sess_e81b959de64b",
+      "relativeItemPath": "sess_e81b959de64b.json",
+      "canonicalId": "sess_e81b959de64b",
+      "sessionId": "sess_e81b959de64b",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:01:16.563Z",
+        "queryText": "If I’m making a team where survival depends on having a “real” sustain slot, why would I refuse to count a character whose kit only patches up tiny bits of HP as filling that role—and what swap would that force me to make in the lineup?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Does not consider characters with minor heals (e.g., Xingqiu) as actual healers in Genshin Impact",
+          "reasoning": "Explicitly states exclusion criteria for healers: 'minor heal' isn't sufficient qualification.",
+          "evidence": {
+            "session_id": "sess_e81b959de64b",
+            "utterance_index": 8,
+            "text": "Xingqiu has a minor heal. i dont consider him an actual healer"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-07-15T08:04:23Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_e81b959de64b:sess_e81b959de64b:task4",
+      "relativeItemPath": "sess_e81b959de64b.json",
+      "canonicalId": "sess_e81b959de64b:task4",
+      "sessionId": "sess_e81b959de64b",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T01:44:08.878Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Thoughts/Curiosity",
+          "label_suggestion": null,
+          "value": "Persistent focus on precise definitions of hydro healers in Genshin Impact (excludes Mona/Xingqiu)",
+          "reasoning": "User made 4 corrections about healer qualifications in a technical gaming context, indicating sustained curiosity about character mechanics.",
+          "evidence": {
+            "session_id": "sess_e81b959de64b",
+            "utterance_index": 8,
+            "text": "Xingqiu has a minor heal. i dont consider him an actual healer"
+          },
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-07-15T08:04:23Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_379:1",
+            "queryText": "I'm building a team and need a proper healer. Who should I slot in?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Thoughts/Curiosity",
+              "label_suggestion": null,
+              "value": "Persistent focus on precise definitions of hydro healers in Genshin Impact (excludes Mona/Xingqiu)",
+              "reasoning": "User made 4 corrections about healer qualifications in a technical gaming context, indicating sustained curiosity about character mechanics.",
+              "evidence": {
+                "session_id": "sess_e81b959de64b",
+                "utterance_index": 8,
+                "text": "Xingqiu has a minor heal. i dont consider him an actual healer"
+              },
+              "confidence": 0.8,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-07-15T08:04:23Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

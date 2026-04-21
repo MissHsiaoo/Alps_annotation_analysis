@@ -1,0 +1,351 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_ddc3b27077c6",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_ddc3b27077c6:sess_ddc3b27077c6",
+      "relativeItemPath": "sess_ddc3b27077c6.json",
+      "canonicalId": "sess_ddc3b27077c6",
+      "sessionId": "sess_ddc3b27077c6",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T13:30:33.124Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about image dehazing methods (color attenuation prior/CAP, technical background)",
+            "reasoning": "User asked multiple follow-ups on dehazing methods, including explanations of color attenuation prior, CAP, and background context, indicating sustained technical curiosity.",
+            "evidence": {
+              "session_id": "sess_ddc3b27077c6",
+              "utterance_index": 16,
+              "text": "图像去雾的背景"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-27T13:32:09+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers academic language/style analysis and iterative sentence restructuring",
+            "reasoning": "User repeatedly requested academic language improvements (utterances 0,12,14), showing a pattern of interaction preference for detailed editing support.",
+            "evidence": {
+              "session_id": "sess_ddc3b27077c6",
+              "utterance_index": 0,
+              "text": "这段话有无语病，从学术期刊的语言分格分析一下这段话有没有什么改进的地方"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-12-27T13:32:09+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Technical_Translation",
+            "value": "Requests technical content translation between Chinese and English",
+            "reasoning": "User explicitly requested translations twice for technical passages (utterances 4,18), implying a situational preference.",
+            "evidence": {
+              "session_id": "sess_ddc3b27077c6",
+              "utterance_index": 18,
+              "text": "Over the past decade...这段话翻译为中文"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-27T13:32:09+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_ddc3b27077c6:sess_ddc3b27077c6",
+      "relativeItemPath": "sess_ddc3b27077c6.json",
+      "canonicalId": "sess_ddc3b27077c6",
+      "sessionId": "sess_ddc3b27077c6",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T04:34:54.409Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我在写单幅图像去雾的相关工作部分，想把“先验方法”和“深度学习方法”两类的区别讲得更清楚，但又不想写得太长。你能给一个更紧凑的表述思路吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以用“核心假设/监督信号—估计目标—典型代表—局限性”四要素来压缩表达：\n\n1) 先验/物理模型类：以大气散射模型为框架，利用统计先验或成像规律把欠定问题变为可解；通常显式估计 transmission/大气光，再复原图像。可一句话点名 DCP、CAP、NLD、SLP 等作为代表，并用一句话概括局限（先验失效场景、参数敏感、易过增强/色偏）。\n\n2) 深度学习类：以数据驱动学习从雾图到清晰图（或到 transmission/大气光）的映射；包括“基于散射模型的学习”（如预测 transmission）与“端到端复原”两支。用一句话概括优势（表达能力强、效果稳健）与代价（依赖数据分布、泛化与可解释性）。\n\n如果你愿意，我也可以按你给的那段英文原文，直接改写成一段更学术、更紧凑的中文（约120–180字/约200–260字两种长度）。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "顺便问下：有些论文把去雾和去雨、去雪放在一起讨论，这样写相关工作合适吗？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "可以放在一起，但建议“同类问题概述 + 去雾聚焦”两层结构，避免跑题：先用一两句把它们统一为“恶劣天气/退化成像复原”问题（共同点是介质导致散射/遮挡/对比度下降），再立刻指出差异：\n- 去雾更贴近全局性低对比 + 颜色偏移，常用散射模型与 transmission；\n- 去雨/去雪更像稀疏条纹/粒子遮挡，很多方法是时空或稀疏建模/检测-去除。\n\n因此相关工作里可以提一句“与其他天气退化相关”，但章节主体仍以去雾方法谱系（先验 vs 学习）为主线。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "（题外话）我看到一条新闻说某个城市用AI摄像头预测雾霾等级，这类系统一般用哪些信号？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "一般会融合多源信号，而不只看图像：\n- 环境传感器：PM2.5/PM10、湿度、温度、风速风向、气压；\n- 遥感/气象：能见度站点数据、气象预报场；\n- 视觉特征：对比度衰减、颜色偏移、天空区域亮度分布、可见距离相关指标。\n\n例如有的系统会把“能见度回归”与“空气质量等级分类”分开建模，再做融合校准。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "我把这段综述准备投到会议里，格式要按那边的bib引用规范走，所以参考文献编号我也得一起对齐；你帮我翻译的时候顺便注意一下[1]-[10]这种引文标注别乱掉。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "明白。我在翻译时会保留并严格对齐文中的引用编号（如[1]-[10]），不改动对应关系；同时尽量保持综述体的学术语气与术语一致性。你也可以把目标会议的参考文献格式（BibTeX/EndNote样式或模板要求）贴一下，我会按要求统一处理。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "之前你老是从“学术期刊语言风格”角度给一堆修改建议，但我这次不想要那种迭代式的句子重写了。你就直接告诉我：这段英文翻译成中文的大意有没有跑偏；如果没跑偏，就一句话说“可以”，别再逐句润色。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "明白，你这次的需求不是学术写作风格的逐句修改或反复润色，而是做“是否忠实传达原意”的核对：若无明显偏差，我会直接回复“可以”，不再给迭代式改写建议。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "对，就按这个来：只做含义核对，不做学术风格分析，也不做逐句重写。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "可以。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about image dehazing methods (color attenuation prior/CAP, technical background)",
+            "reasoning": "User asked multiple follow-ups on dehazing methods, including explanations of color attenuation prior, CAP, and background context, indicating sustained technical curiosity.",
+            "evidence": {
+              "session_id": "sess_ddc3b27077c6",
+              "utterance_index": 16,
+              "text": "图像去雾的背景"
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-27T13:32:09+00:00",
+            "_task1GoldValue": "Curious about image dehazing methods (color attenuation prior/CAP, technical background)"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Technical_Translation",
+            "value": "Requests technical content translation between Chinese and English",
+            "reasoning": "User explicitly requested translations twice for technical passages (utterances 4,18), implying a situational preference.",
+            "evidence": {
+              "session_id": "sess_ddc3b27077c6",
+              "utterance_index": 18,
+              "text": "Over the past decade...这段话翻译为中文"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-12-27T13:32:09+00:00",
+            "_task1GoldValue": "Requests technical content translation between Chinese and English"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "like",
+            "reasoning": "The prior memory claims the user prefers academic language/style analysis and iterative restructuring. In this segment, the user explicitly rejects that approach and requests only a quick meaning check with a one-word confirmation when appropriate, contradicting the earlier stated preference.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers brief meaning-check responses over academic-style analysis and iterative sentence restructuring (at least in the current request)."
+          },
+          {
+            "confidence": 0.82,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_ddc3b27077c6",
+              "utterance_index": 0,
+              "text": "我把这段综述准备投到会议里，格式要按那边的bib引用规范走，所以参考文献编号我也得一起对齐；你帮我翻译的时候顺便注意一下[1]-[10]这种引文标注别乱掉。"
+            },
+            "label": "Projects/Work",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User mentions preparing the survey for a conference submission and asks to keep citation markers like [1]-[10] aligned, implying a submission-related writing task with strict citation-format constraints.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is preparing a survey/related-work passage for submission to a conference and needs translation that preserves citation numbering/formatting."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_ddc3b27077c6:sess_ddc3b27077c6",
+      "relativeItemPath": "sess_ddc3b27077c6.json",
+      "canonicalId": "sess_ddc3b27077c6",
+      "sessionId": "sess_ddc3b27077c6",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:50:41.249Z",
+        "queryText": "I’m drafting the opening paragraph of a research-paper introduction and I want your help refining it. Given how I usually prefer you to respond when I ask for writing help, what kind of feedback process should you use (e.g., how you analyze the wording and how you revise the sentences), and why would that be the best fit for me?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers academic language/style analysis and iterative sentence restructuring",
+          "reasoning": "User repeatedly requested academic language improvements (utterances 0,12,14), showing a pattern of interaction preference for detailed editing support.",
+          "evidence": {
+            "session_id": "sess_ddc3b27077c6",
+            "utterance_index": 0,
+            "text": "这段话有无语病，从学术期刊的语言分格分析一下这段话有没有什么改进的地方"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-12-27T13:32:09+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_ddc3b27077c6:sess_ddc3b27077c6:task4",
+      "relativeItemPath": "sess_ddc3b27077c6.json",
+      "canonicalId": "sess_ddc3b27077c6:task4",
+      "sessionId": "sess_ddc3b27077c6",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T01:06:24.064Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers academic language/style analysis and iterative sentence restructuring",
+          "reasoning": "User repeatedly requested academic language improvements (utterances 0,12,14), showing a pattern of interaction preference for detailed editing support.",
+          "evidence": {
+            "session_id": "sess_ddc3b27077c6",
+            "utterance_index": 0,
+            "text": "这段话有无语病，从学术期刊的语言分格分析一下这段话有没有什么改进的地方"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-12-27T13:32:09+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1204:1",
+            "queryText": "我最近在写一篇关于深度先验在图像复原中应用的综述引言部分，初稿是：‘近年来，基于深度学习的图像复原方法取得了显著进展，这些方法通过数据驱动的方式学习图像先验，相比传统手工设计的先验具有更强的表征能力。’ 你能否从学术写作的严谨性和流畅性角度，帮我分析一下这段表述的层次和衔接，并给出几个可供迭代的优化版本？",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers academic language/style analysis and iterative sentence restructuring",
+              "reasoning": "User repeatedly requested academic language improvements (utterances 0,12,14), showing a pattern of interaction preference for detailed editing support.",
+              "evidence": {
+                "session_id": "sess_ddc3b27077c6",
+                "utterance_index": 0,
+                "text": "这段话有无语病，从学术期刊的语言分格分析一下这段话有没有什么改进的地方"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-12-27T13:32:09+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "partial",
+            "memoryDependency": "medium",
+            "abilityPurity": "medium",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

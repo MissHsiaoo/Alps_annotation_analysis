@@ -1,0 +1,288 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_cf806feaa6d2",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_cf806feaa6d2:sess_cf806feaa6d2",
+      "relativeItemPath": "sess_cf806feaa6d2.json",
+      "canonicalId": "sess_cf806feaa6d2",
+      "sessionId": "sess_cf806feaa6d2",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T04:05:39.969Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers concise bullet-point responses without explanations",
+            "reasoning": "User repeatedly demands formatted responses with 'ответь по пунктам' and 'без объяснений' in multiple turns.",
+            "evidence": {
+              "session_id": "sess_cf806feaa6d2",
+              "utterance_index": 2,
+              "text": "без объяснений"
+            },
+            "confidence": "0.80",
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-18T14:48:12Z"
+          },
+          {
+            "memory_id": "gpt_5_2_p1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "Интересуется компетенциями и критериями эффективности работы Project Manager (ключевые качества, параметры оценки хорошей работы, полезные навыки, ЦКП роли).",
+            "confidence": 0.8,
+            "evidence_text": "Главные качества Project Manager, на твой взгляд? отвечай как проффесионал"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_cf806feaa6d2:sess_cf806feaa6d2",
+      "relativeItemPath": "sess_cf806feaa6d2.json",
+      "canonicalId": "sess_cf806feaa6d2",
+      "sessionId": "sess_cf806feaa6d2",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T02:01:33.113Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Собери короткий чек-лист: как быстро понять, что проект «разъезжается», без объяснений."
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "1) Срыв ключевых вех\n2) Частые изменения объёма (scope creep)\n3) Нет актуального плана/бэклога\n4) Риски не ведутся или не обновляются\n5) Команда перегружена, растёт WIP\n6) Падает качество (дефекты, переделки)\n7) Стейкхолдеры недовольны/молчание\n8) Метрики и статус-отчёты противоречат реальности"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "А как это «лечить» — тоже списком, максимально прикладно."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "1) Зафиксировать цель и критерии успеха\n2) Переподтвердить scope и заморозить изменения на короткий цикл\n3) Перепланировать ближайшие 1–2 спринта/итерации\n4) Переоценить сроки/ресурсы и согласовать компромиссы\n5) Поднять прозрачность: ежедневные статусы по блокерам\n6) Ввести контроль WIP и приоритизацию\n7) Закрыть критические риски: владелец + срок + план\n8) Отдельно стабилизировать качество (DoD, тесты, баг-триаж)\n9) Провести ретро и закрепить 1–2 процессных изменения"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Кстати, слышал про историю с «Маринер-1»? Там же вроде из‑за символа всё сломалось."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Да: «Mariner 1» (1962) часто приводят как пример того, как дефект в спецификации/реализации навигационных вычислений привёл к отклонению траектории и команде на самоуничтожение. Детали в пересказах разнятся (упоминают «пропущенную черту/символ»), но смысл кейса в том, что ошибка в требованиях/валидации данных может стоить очень дорого."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Ок, тогда без воды: мне это надо к созвону на 10:30 — накидай по пунктам, чтобы я просто вставил в заметки."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "1) Цель/результат\n2) Объём работ\n3) Роли и ответственности\n4) Сроки и вехи\n5) Риски и зависимости\n6) Метрики успеха\n7) Следующие шаги"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Я тогда писал «без объяснений» просто потому что спешил. Сейчас наоборот: можешь развернуто, с пояснениями и примерами, не обязательно по пунктам."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Понял. То есть «кратко и без объяснений» — это не постоянное предпочтение, а ситуативно, когда ты в режиме спешки. В обычном режиме тебе ок развернутый ответ с пояснениями и примерами (структуру могу делать, но не обязательно строго списком)."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Да, именно. Без объяснений — только если я отдельно попрошу."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "confidence": 0.82,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory says the user prefers concise bullet points without explanations as a long-term preference, but the user clarifies it was situational and that they now want expanded answers unless they explicitly ask otherwise.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Usually prefers detailed responses with explanations and examples; asks for concise bullet points without explanations only when explicitly requested (e.g., when in a hurry)."
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_cf806feaa6d2",
+              "utterance_index": 0,
+              "text": "мне это надо к созвону на 10:30"
+            },
+            "label": "Personal/Schedule",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "Фраза о необходимости материала к созвону на 10:30 подразумевает запланированный созвон в это время.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Has a call scheduled for 10:30"
+          },
+          {
+            "memory_id": "gpt_5_2_p1",
+            "type": "direct",
+            "label": "Thoughts/Curiosity",
+            "value": "Интересуется компетенциями и критериями эффективности работы Project Manager (ключевые качества, параметры оценки хорошей работы, полезные навыки, ЦКП роли).",
+            "confidence": 0.8,
+            "evidence_text": "Главные качества Project Manager, на твой взгляд? отвечай как проффесионал",
+            "_task1GoldValue": "Интересуется компетенциями и критериями эффективности работы Project Manager (ключевые качества, параметры оценки хорошей работы, полезные навыки, ЦКП роли)."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "gpt_5_2_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_cf806feaa6d2:sess_cf806feaa6d2",
+      "relativeItemPath": "sess_cf806feaa6d2.json",
+      "canonicalId": "sess_cf806feaa6d2",
+      "sessionId": "sess_cf806feaa6d2",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:49:08.928Z",
+        "queryText": "When you reply to my next message, what exact response format should you use (structure + whether to include any extra commentary), based on how I usually like you to answer?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers concise bullet-point responses without explanations",
+          "reasoning": "User repeatedly demands formatted responses with 'ответь по пунктам' and 'без объяснений' in multiple turns.",
+          "evidence": {
+            "session_id": "sess_cf806feaa6d2",
+            "utterance_index": 2,
+            "text": "без объяснений"
+          },
+          "confidence": "0.80",
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-06-18T14:48:12Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_cf806feaa6d2:sess_cf806feaa6d2:task4",
+      "relativeItemPath": "sess_cf806feaa6d2.json",
+      "canonicalId": "sess_cf806feaa6d2:task4",
+      "sessionId": "sess_cf806feaa6d2",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T16:21:51.344Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers concise bullet-point responses without explanations",
+          "reasoning": "User repeatedly demands formatted responses with 'ответь по пунктам' and 'без объяснений' in multiple turns.",
+          "evidence": {
+            "session_id": "sess_cf806feaa6d2",
+            "utterance_index": 2,
+            "text": "без объяснений"
+          },
+          "confidence": "0.80",
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-06-18T14:48:12Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1111:1",
+            "queryText": "Смотрю на два подхода к управлению проектом: классический Waterfall и гибкий Agile. Какой из них мне больше подойдёт для следующей задачи?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers concise bullet-point responses without explanations",
+              "reasoning": "User repeatedly demands formatted responses with 'ответь по пунктам' and 'без объяснений' in multiple turns.",
+              "evidence": {
+                "session_id": "sess_cf806feaa6d2",
+                "utterance_index": 2,
+                "text": "без объяснений"
+              },
+              "confidence": "0.80",
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-06-18T14:48:12Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "partial",
+            "memoryDependency": "weak",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

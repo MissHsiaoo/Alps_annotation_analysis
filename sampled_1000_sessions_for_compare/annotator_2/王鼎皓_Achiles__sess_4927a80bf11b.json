@@ -1,0 +1,338 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_4927a80bf11b",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_4927a80bf11b:sess_4927a80bf11b",
+      "relativeItemPath": "sess_4927a80bf11b.json",
+      "canonicalId": "sess_4927a80bf11b",
+      "sessionId": "sess_4927a80bf11b",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:21:55.877Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/game_modding/request",
+            "value": "Curious about World of Warcraft Classic addon development (enemy spellcast tracking with Lua code examples)",
+            "reasoning": "User requested technical instructions for a specific task, not general curiosity. Label 'Thoughts/Curiosity' forced without evidence of exploratory interest.",
+            "evidence": {
+              "session_id": "sess_4927a80bf11b",
+              "utterance_index": 6,
+              "text": "Create step by step instruction, with code examples in Lua language..."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-09T10:42:06+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Prefers meat-based dishes that are easy to prepare",
+            "reasoning": "Explicitly requested 'мясное и лёгкое в приготовлении' (meaty and easy to prepare) when asking for dinner ideas",
+            "evidence": {
+              "session_id": "sess_4927a80bf11b",
+              "utterance_index": 12,
+              "text": "Что-нибудь мясное и лёгкое в приготовлении"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-09T10:42:06+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_4927a80bf11b:sess_4927a80bf11b",
+      "relativeItemPath": "sess_4927a80bf11b.json",
+      "canonicalId": "sess_4927a80bf11b",
+      "sessionId": "sess_4927a80bf11b",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:21:55.877Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Хочу что-то быстрое на ужин. Есть идеи, чтобы не стоять у плиты час?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Да. Чтобы предложить удачно, уточню пару деталей: есть ли духовка/гриль, и нужно ли уложиться, например, в 20–30 минут? Могу накидать 3 варианта: сковорода (быстро), духовка (почти без участия), или салат+белок (самое простое)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Давай три варианта, и чтобы ингредиенты были самые обычные."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Ок, три простых варианта:\n\n1) Сковорода: курица/индейка кусочками + замороженные овощи\n- Обжарить мясо 6–8 мин, посолить/поперчить.\n- Добавить овощи, ещё 6–8 мин.\n- В конце чуть чеснока/соевого соуса/лимона по желанию.\n\n2) Духовка: рыба в фольге\n- Филе (хек/треска/лосось) на фольгу, соль/перец.\n- Сверху кружочки лимона и немного масла.\n- 200°C, 12–18 мин (зависит от толщины).\n\n3) Быстро без готовки гарнира: яйца + салат\n- Омлет 3–5 мин (можно с сыром/зеленью).\n- Пара овощей (огурец/помидор) + масло/соль.\n\nКстати, забавный факт: в одном из исследований про восприятие времени ожидания в ресторанах выяснили, что людям проще ждать, если им сразу дают “промежуточный сигнал” (например, хлеб или напиток) — кажется, мозгу важна не только длительность, но и ощущение прогресса.\n\nХочешь, я распишу любой из вариантов пошагово под конкретное время (15, 20 или 30 минут) и количество порций?"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Давай вариант со сковородой, но без экзотики."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Супер. Простой вариант “мясо + овощи” на сковороде (без экзотики):\n\n1) Нарежьте куриное филе (или бедро без кости) кубиками, посолите и поперчите.\n2) Разогрейте сковороду, добавьте 1 ст. л. масла.\n3) Обжарьте курицу 6–8 минут до румяности, помешивая.\n4) Добавьте лук (полукольцами) и/или морковь (тонко) — 2–3 минуты.\n5) Добавьте замороженную овощную смесь или свежие овощи (перец/кабачок/брокколи) — ещё 6–8 минут.\n6) По вкусу: 1–2 зубчика чеснока в конце, и 1–2 ст. л. сметаны или томатной пасты + пару ложек воды, чтобы получилось “соусно”.\n7) Попробуйте на соль, выключайте.\n\nЕсли нужно совсем быстро, можно сразу курица + замороженные овощи, без отдельных этапов лука/моркови.\n\nНебольшая историческая мелочь не по теме: у римлян был популярный соус гарум (ферментированная рыба), и его добавляли почти во всё — по сути, это был древний “усилитель вкуса”, как сейчас некоторые соусы или бульонные основы.\n\nСколько минут у вас есть: 15 или 25–30? Тогда подстрою шаги и огонь, чтобы курица не пересохла."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Куриное филе — норм вариант, только без духовки: у меня в съемной кухне она снова «капризничает», так что максимум — сковорода минут на 15."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Понял: сделаем на сковороде быстро. Попробуйте куриное филе с овощами в соевом соусе: нарежьте филе полосками, быстро обжарьте 3–4 минуты, добавьте замороженную смесь овощей или свежие (перец/кабачок), влейте 2–3 ст. л. соевого соуса, чуть чеснока и тушите под крышкой ещё 7–8 минут. Если есть — можно загустить чайной ложкой крахмала, разведённого в воде."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "С ужином уточню: вообще-то я мясное не люблю. В прошлый раз «что-нибудь мясное и лёгкое» — это было для гостя, не для меня."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Понял. То есть фраза «что-нибудь мясное и лёгкое» была не про ваши предпочтения, а просьба подобрать вариант именно для гостя."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Да, именно. Для себя я бы лучше без мяса."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/game_modding/request",
+            "value": "Curious about World of Warcraft Classic addon development (enemy spellcast tracking with Lua code examples)",
+            "reasoning": "User requested technical instructions for a specific task, not general curiosity. Label 'Thoughts/Curiosity' forced without evidence of exploratory interest.",
+            "evidence": {
+              "session_id": "sess_4927a80bf11b",
+              "utterance_index": 6,
+              "text": "Create step by step instruction, with code examples in Lua language..."
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-09T10:42:06+00:00",
+            "_task1GoldValue": "Curious about World of Warcraft Classic addon development (enemy spellcast tracking with Lua code examples)"
+          },
+          {
+            "confidence": 0.82,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "С ужином уточню: вообще-то я мясное не люблю. В прошлый раз «что-нибудь мясное и лёгкое» — это было для гостя, не для меня."
+                }
+              ]
+            },
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The old memory inferred a stable preference for meat-based easy dishes from a single request. The user clarifies that they do not like meat and that the earlier meat request was for a guest, directly contradicting the prior preference attribution.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not like meat-based dishes; prior request for a meat dish was for a guest, not a personal preference"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_4927a80bf11b",
+              "utterance_index": 0,
+              "text": "только без духовки: у меня в съемной кухне она снова «капризничает», так что максимум — сковорода минут на 15."
+            },
+            "label": "Preferences/Cooking",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "dislike",
+            "reasoning": "User implies they want recipes that do not require an oven and prefer stove-top options due to an unreliable oven.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers dinner recipes that can be cooked on a stovetop (no oven)."
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Prefers meat-based dishes that are easy to prepare",
+            "reasoning": "Explicitly requested 'мясное и лёгкое в приготовлении' (meaty and easy to prepare) when asking for dinner ideas",
+            "evidence": {
+              "session_id": "sess_4927a80bf11b",
+              "utterance_index": 12,
+              "text": "Что-нибудь мясное и лёгкое в приготовлении"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-05-09T10:42:06+00:00",
+            "_task1GoldValue": "Prefers meat-based dishes that are easy to prepare"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_4927a80bf11b:sess_4927a80bf11b",
+      "relativeItemPath": "sess_4927a80bf11b.json",
+      "canonicalId": "sess_4927a80bf11b",
+      "sessionId": "sess_4927a80bf11b",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:21:55.877Z",
+        "queryText": "I’m getting dinner together after a long day and don’t want anything fussy or time-consuming. If you had to pick the kind of main dish that I’m most likely to be happy with in that situation, what would you choose and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Prefers meat-based dishes that are easy to prepare",
+          "reasoning": "Explicitly requested 'мясное и лёгкое в приготовлении' (meaty and easy to prepare) when asking for dinner ideas",
+          "evidence": {
+            "session_id": "sess_4927a80bf11b",
+            "utterance_index": 12,
+            "text": "Что-нибудь мясное и лёгкое в приготовлении"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-05-09T10:42:06+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_4927a80bf11b:sess_4927a80bf11b:task4",
+      "relativeItemPath": "sess_4927a80bf11b.json",
+      "canonicalId": "sess_4927a80bf11b:task4",
+      "sessionId": "sess_4927a80bf11b",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:21:55.877Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Prefers meat-based dishes that are easy to prepare",
+          "reasoning": "Explicitly requested 'мясное и лёгкое в приготовлении' (meaty and easy to prepare) when asking for dinner ideas",
+          "evidence": {
+            "session_id": "sess_4927a80bf11b",
+            "utterance_index": 12,
+            "text": "Что-нибудь мясное и лёгкое в приготовлении"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-05-09T10:42:06+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_608:1",
+            "queryText": "Посоветуй, что можно такого быстрого сделать на второе?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Food",
+              "label_suggestion": null,
+              "value": "Prefers meat-based dishes that are easy to prepare",
+              "reasoning": "Explicitly requested 'мясное и лёгкое в приготовлении' (meaty and easy to prepare) when asking for dinner ideas",
+              "evidence": {
+                "session_id": "sess_4927a80bf11b",
+                "utterance_index": 12,
+                "text": "Что-нибудь мясное и лёгкое в приготовлении"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-05-09T10:42:06+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

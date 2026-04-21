@@ -1,0 +1,354 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_d661df566a5b",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_d661df566a5b:sess_d661df566a5b",
+      "relativeItemPath": "sess_d661df566a5b.json",
+      "canonicalId": "sess_d661df566a5b",
+      "sessionId": "sess_d661df566a5b",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T11:57:08.815Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Opinion/Music/Radio_Criticism",
+            "value": "Feels Clyde 1 radio station stopping Saint PHNX's 'Happy Place' is disrespectful to their father",
+            "reasoning": "Forced label not supported. Opinion about radio station's action rather than self-focused thought.",
+            "evidence": {
+              "session_id": "sess_d661df566a5b",
+              "utterance_index": 4,
+              "text": "Clyde 1... stopped playing the song... which I feel is disrespectful to their father"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-04-12T00:54:42+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Music",
+            "label_suggestion": null,
+            "value": "Prefers the Kaiser Chiefs' version of 'Oh My God' (specifically sounding like Lily Allen's cover)",
+            "reasoning": "User explicitly corrects the assistant to specify the Kaiser Chiefs/Lily Allen version of the song.",
+            "evidence": {
+              "session_id": "sess_d661df566a5b",
+              "utterance_index": 8,
+              "text": "I wanted the \"Oh My God\" to be the Kaiser Chiefs version (more specifically sounding like the Lily Allen cover)"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2024-04-12T00:54:42+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about creating mashups between Saint PHNX's 'Happy Place' and Kaiser Chiefs/Lily Allen's 'Oh My God'",
+            "reasoning": "Repeated requests for mashup content show sustained creative interest in this specific combination.",
+            "evidence": {
+              "session_id": "sess_d661df566a5b",
+              "utterance_index": 10,
+              "text": "Write a tweet saying the 2 lines with an extra \"I'm so scared\"..."
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-12T00:54:42+00:00"
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "value": "User's local radio station is Clyde 1",
+            "confidence": 0.95,
+            "evidence_text": "Clyde 1 (my local radio station)"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_d661df566a5b:sess_d661df566a5b",
+      "relativeItemPath": "sess_d661df566a5b.json",
+      "canonicalId": "sess_d661df566a5b",
+      "sessionId": "sess_d661df566a5b",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T02:53:33.849Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "That tweet was close—can you give me three alternate versions, each under 200 characters, keeping the three lines in order?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "1) “I’ve never been this far away from home” / “I’m so scared” / “Take me to my happy place” — this mashup flips the lyric into pure homesick longing.\n2) New mashup feeling: “I’ve never been this far away from home” “I’m so scared” “Take me to my happy place” — love how it turns into a pull toward home.\n3) “I’ve never been this far away from home” → “I’m so scared” → “Take me to my happy place” — three lines, one mood: longing for home."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Make the second one a bit funnier without changing the wording of the three quoted lines."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "New mashup feeling: “I’ve never been this far away from home” “I’m so scared” “Take me to my happy place” — accidentally turned into my internal monologue when my phone hits 1% battery. Still love the longing-for-home vibe."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "If you can, make it read like something I'd actually post—keep it all lowercase, and don’t throw hashtags on it."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "just discovered this mashup of saint phnx “happy place” with the kaiser chiefs “oh my god” (the lily allen-style vibe) — “i’ve never been this far away from home” / “i’m so scared” / “take me to my happy place” and i weirdly love the new meaning of just wanting home."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Hold on—I don’t actually prefer the Kaiser Chiefs original of “Oh My God.” For my mashup idea, I meant the Lily Allen cover of the Kaiser Chiefs song, not the band’s version itself."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Got it—so it’s specifically Lily Allen’s cover you’re after, rather than the Kaiser Chiefs’ original recording."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Yeah, exactly. If anything, the cover’s the one I like; the Kaiser Chiefs version was just me naming the song’s origin."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Opinion/Music/Radio_Criticism",
+            "value": "Feels Clyde 1 radio station stopping Saint PHNX's 'Happy Place' is disrespectful to their father",
+            "reasoning": "Forced label not supported. Opinion about radio station's action rather than self-focused thought.",
+            "evidence": {
+              "session_id": "sess_d661df566a5b",
+              "utterance_index": 4,
+              "text": "Clyde 1... stopped playing the song... which I feel is disrespectful to their father"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-04-12T00:54:42+00:00",
+            "_task1GoldValue": "Feels Clyde 1 radio station stopping Saint PHNX's 'Happy Place' is disrespectful to their father"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Thoughts/Curiosity",
+            "label_suggestion": null,
+            "value": "Curious about creating mashups between Saint PHNX's 'Happy Place' and Kaiser Chiefs/Lily Allen's 'Oh My God'",
+            "reasoning": "Repeated requests for mashup content show sustained creative interest in this specific combination.",
+            "evidence": {
+              "session_id": "sess_d661df566a5b",
+              "utterance_index": 10,
+              "text": "Write a tweet saying the 2 lines with an extra \"I'm so scared\"..."
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-12T00:54:42+00:00",
+            "_task1GoldValue": "Curious about creating mashups between Saint PHNX's 'Happy Place' and Kaiser Chiefs/Lily Allen's 'Oh My God'"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Music",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "like",
+            "reasoning": "The old memory says the user prefers the Kaiser Chiefs' version, but the user clarifies they meant the Lily Allen cover and do not prefer the band's original; the Kaiser Chiefs mention was only to reference the song’s origin.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers Lily Allen’s cover of “Oh My God” (the Kaiser Chiefs song), rather than the Kaiser Chiefs’ original recording"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_d661df566a5b",
+              "utterance_index": 0,
+              "text": "keep it all lowercase, and don’t throw hashtags on it."
+            },
+            "label": "Preferences/Writing_Style",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "like",
+            "reasoning": "The user requests a formatting style for how they would post: all lowercase and no hashtags.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers social posts (tweets) written in all lowercase and without hashtags."
+          },
+          {
+            "memory_id": "claude_sonnet_4_5_20250929_p1",
+            "type": "direct",
+            "label": "Personal_Background/Location",
+            "value": "User's local radio station is Clyde 1",
+            "confidence": 0.95,
+            "evidence_text": "Clyde 1 (my local radio station)",
+            "_task1GoldValue": "User's local radio station is Clyde 1"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "claude_sonnet_4_5_20250929_p1"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_d661df566a5b:sess_d661df566a5b",
+      "relativeItemPath": "sess_d661df566a5b.json",
+      "canonicalId": "sess_d661df566a5b",
+      "sessionId": "sess_d661df566a5b",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:39:32.739Z",
+        "queryText": "I’m making a playlist for a friend who only ever likes one particular recording of a track when multiple artists have released it. If I see that song title listed a few times in my library, which specific version should I pick so it matches their taste rather than the “wrong” one?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Music",
+          "label_suggestion": null,
+          "value": "Prefers the Kaiser Chiefs' version of 'Oh My God' (specifically sounding like Lily Allen's cover)",
+          "reasoning": "User explicitly corrects the assistant to specify the Kaiser Chiefs/Lily Allen version of the song.",
+          "evidence": {
+            "session_id": "sess_d661df566a5b",
+            "utterance_index": 8,
+            "text": "I wanted the \"Oh My God\" to be the Kaiser Chiefs version (more specifically sounding like the Lily Allen cover)"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-04-12T00:54:42+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_d661df566a5b:sess_d661df566a5b:task4",
+      "relativeItemPath": "sess_d661df566a5b.json",
+      "canonicalId": "sess_d661df566a5b:task4",
+      "sessionId": "sess_d661df566a5b",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T00:36:45.191Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Music",
+          "label_suggestion": null,
+          "value": "Prefers the Kaiser Chiefs' version of 'Oh My God' (specifically sounding like Lily Allen's cover)",
+          "reasoning": "User explicitly corrects the assistant to specify the Kaiser Chiefs/Lily Allen version of the song.",
+          "evidence": {
+            "session_id": "sess_d661df566a5b",
+            "utterance_index": 8,
+            "text": "I wanted the \"Oh My God\" to be the Kaiser Chiefs version (more specifically sounding like the Lily Allen cover)"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2024-04-12T00:54:42+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_720:1",
+            "queryText": "I'm putting together a playlist about distance and longing - got any suggestions for tracks that would fit perfectly?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Music",
+              "label_suggestion": null,
+              "value": "Prefers the Kaiser Chiefs' version of 'Oh My God' (specifically sounding like Lily Allen's cover)",
+              "reasoning": "User explicitly corrects the assistant to specify the Kaiser Chiefs/Lily Allen version of the song.",
+              "evidence": {
+                "session_id": "sess_d661df566a5b",
+                "utterance_index": 8,
+                "text": "I wanted the \"Oh My God\" to be the Kaiser Chiefs version (more specifically sounding like the Lily Allen cover)"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2024-04-12T00:54:42+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "partial",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

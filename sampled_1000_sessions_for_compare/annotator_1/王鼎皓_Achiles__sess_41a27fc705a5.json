@@ -1,0 +1,432 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_41a27fc705a5",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_41a27fc705a5:sess_41a27fc705a5",
+      "relativeItemPath": "sess_41a27fc705a5.json",
+      "canonicalId": "sess_41a27fc705a5",
+      "sessionId": "sess_41a27fc705a5",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T11:58:06.347Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Dislikes pumpkin pie",
+            "reasoning": "User explicitly states 'no pumpkin pie' in initial request",
+            "evidence": {
+              "session_id": "sess_41a27fc705a5",
+              "utterance_index": 0,
+              "text": "hi i’m planning a dinner for 4 people... and no pumpkin pie"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2025-01-01T00:00:00Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Dislikes cranberry sauce",
+            "reasoning": "User explicitly removes cranberry sauce from menu",
+            "evidence": {
+              "session_id": "sess_41a27fc705a5",
+              "utterance_index": 2,
+              "text": "switch dessert for apple pie, no cranberry sauce"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2025-01-01T00:00:00Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Dislikes mashed potatoes",
+            "reasoning": "User explicitly substitutes mashed potatoes with another veggie side",
+            "evidence": {
+              "session_id": "sess_41a27fc705a5",
+              "utterance_index": 2,
+              "text": "no mashed potatoes - i want another veggie side insted"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2025-01-01T00:00:00Z"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Prefers pinot noir pairing for meals",
+            "reasoning": "User explicitly states main pairing is pinot noir",
+            "evidence": {
+              "session_id": "sess_41a27fc705a5",
+              "utterance_index": 0,
+              "text": "main pairing is pino noir"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "prefer",
+            "updated_at": "2025-01-01T00:00:00Z"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Food/Meal_Specific",
+            "value": "Prefers apple pie as dessert",
+            "reasoning": "Single-instance substitution without explicit persistence signal",
+            "evidence": {
+              "session_id": "sess_41a27fc705a5",
+              "utterance_index": 2,
+              "text": "switch dessert for apple pie"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "prefer",
+            "updated_at": "2025-01-01T00:00:00Z"
+          },
+          {
+            "memory_id": "m6",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Interaction_Preferences/Format",
+            "value": "Prefers structured document outputs (PDF/text recipes + quantified shopping lists)",
+            "reasoning": "Task-specific formatting request without evidence of general preference",
+            "evidence": {
+              "session_id": "sess_41a27fc705a5",
+              "utterance_index": 20,
+              "text": "i'd like a detailed shopping list of everything i need to buy"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "prefer",
+            "updated_at": "2025-01-01T00:00:00Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_41a27fc705a5:sess_41a27fc705a5",
+      "relativeItemPath": "sess_41a27fc705a5.json",
+      "canonicalId": "sess_41a27fc705a5",
+      "sessionId": "sess_41a27fc705a5",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T06:47:34.996Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Could you double-check the sweet potato bites measurements and then format the shopping list so it’s easy to take to a grocery store?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure—before I calculate quantities, two quick details so the numbers come out right:\n1) How many people are you cooking for, and do you want leftovers?\n2) For the sweet potato bites: goat cheese or feta, and do you want to include a cranberry topping or skip it?\n\nAs a reference template (not specific to your dinner yet), a tidy store-friendly list usually works best grouped like: Produce / Meat & Dairy / Pantry / Spices / Frozen / Bakery. I can also add a checkbox format."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Let’s do checkbox format and group by section. Also, can you include a short note on what aisle each section usually maps to?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Yes. I’ll output it as:\n\n[ ] Item — quantity — notes (e.g., “Produce aisle”, “Dairy case”, “Baking aisle”).\n\nTypical mapping (varies by store):\n- Produce → Produce section\n- Meat/Seafood → Butcher counter\n- Dairy/Eggs → Dairy case\n- Bakery/Bread → Bakery\n- Canned goods → Center aisles (canned)\n- Dry goods (flour/sugar/cornmeal) → Baking aisle\n- Spices → Spice aisle (often near baking)\n- Oils/Vinegar → Cooking oils aisle\n\nFake-but-irrelevant example: A museum café I read about lists soups by ‘seasonal squash’ rather than ‘pumpkin’ to keep menus flexible—useful for recipe printing, but unrelated to your shopping list.\n\nReply with the headcount + leftovers preference and the goat-vs-feta + cranberry decision, and I’ll compute exact amounts and generate the final checklist."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "since it’s only four of us, i’m trying to keep this pretty budget-friendly—nothing too fancy."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Totally doable. I can keep ingredients streamlined and suggest a shopping list that avoids pricier specialty items while still feeling Thanksgiving-ish."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "quick correction from earlier: scratch the pinot noir. i’m actually pairing this dinner with an off-dry riesling instead."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Got it—no pinot noir. Off-dry riesling it is for the pairing; that’ll work really well with the chili and the pumpkin soup."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Dislikes pumpkin pie",
+            "reasoning": "User explicitly states 'no pumpkin pie' in initial request",
+            "evidence": {
+              "session_id": "sess_41a27fc705a5",
+              "utterance_index": 0,
+              "text": "hi i’m planning a dinner for 4 people... and no pumpkin pie"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2025-01-01T00:00:00Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Dislikes cranberry sauce",
+            "reasoning": "User explicitly removes cranberry sauce from menu",
+            "evidence": {
+              "session_id": "sess_41a27fc705a5",
+              "utterance_index": 2,
+              "text": "switch dessert for apple pie, no cranberry sauce"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2025-01-01T00:00:00Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Disliked_Topics",
+            "label_suggestion": null,
+            "value": "Dislikes mashed potatoes",
+            "reasoning": "User explicitly substitutes mashed potatoes with another veggie side",
+            "evidence": {
+              "session_id": "sess_41a27fc705a5",
+              "utterance_index": 2,
+              "text": "no mashed potatoes - i want another veggie side insted"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2025-01-01T00:00:00Z"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Preferences/Food/Meal_Specific",
+            "value": "Prefers apple pie as dessert",
+            "reasoning": "Single-instance substitution without explicit persistence signal",
+            "evidence": {
+              "session_id": "sess_41a27fc705a5",
+              "utterance_index": 2,
+              "text": "switch dessert for apple pie"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "prefer",
+            "updated_at": "2025-01-01T00:00:00Z"
+          },
+          {
+            "memory_id": "m6",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Interaction_Preferences/Format",
+            "value": "Prefers structured document outputs (PDF/text recipes + quantified shopping lists)",
+            "reasoning": "Task-specific formatting request without evidence of general preference",
+            "evidence": {
+              "session_id": "sess_41a27fc705a5",
+              "utterance_index": 20,
+              "text": "i'd like a detailed shopping list of everything i need to buy"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "prefer",
+            "updated_at": "2025-01-01T00:00:00Z"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m4_updated",
+            "preference_attitude": "prefer",
+            "reasoning": "The prior memory says the user prefers pinot noir pairing, but the user explicitly retracts that and states they are pairing the dinner with an off-dry riesling instead.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers an off-dry riesling pairing for meals (instead of pinot noir)"
+          },
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_41a27fc705a5",
+              "utterance_index": 0,
+              "text": "since it’s only four of us, i’m trying to keep this pretty budget-friendly—nothing too fancy."
+            },
+            "label": "Preferences/Shopping",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "prefer",
+            "reasoning": "The user implies cost sensitivity by emphasizing keeping the dinner budget-friendly and avoiding anything too fancy.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers a budget-friendly approach when planning meals"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_41a27fc705a5:sess_41a27fc705a5",
+      "relativeItemPath": "sess_41a27fc705a5.json",
+      "canonicalId": "sess_41a27fc705a5",
+      "sessionId": "sess_41a27fc705a5",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-13T13:00:55.473Z",
+        "queryText": "I’m putting together a simple dinner-at-home plan and I want the drink choice to match what I usually go with at meals—if I had to grab just one bottle without overthinking it, what should I pick?",
+        "editableSelectedMemory": {
+          "memory_id": "m4",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Prefers pinot noir pairing for meals",
+          "reasoning": "User explicitly states main pairing is pinot noir",
+          "evidence": {
+            "session_id": "sess_41a27fc705a5",
+            "utterance_index": 0,
+            "text": "main pairing is pino noir"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "prefer",
+          "updated_at": "2025-01-01T00:00:00Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_41a27fc705a5:sess_41a27fc705a5:task4",
+      "relativeItemPath": "sess_41a27fc705a5.json",
+      "canonicalId": "sess_41a27fc705a5:task4",
+      "sessionId": "sess_41a27fc705a5",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T03:21:12.506Z",
+        "editableSelectedMemory": {
+          "memory_id": "m4",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Prefers pinot noir pairing for meals",
+          "reasoning": "User explicitly states main pairing is pinot noir",
+          "evidence": {
+            "session_id": "sess_41a27fc705a5",
+            "utterance_index": 0,
+            "text": "main pairing is pino noir"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "prefer",
+          "updated_at": "2025-01-01T00:00:00Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_654:1",
+            "queryText": "I'm thinking of making a nice dinner this weekend - maybe something with a roast or braised meat. What wine would you suggest I pair with it?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m4",
+              "type": "direct",
+              "label": "Preferences/Food",
+              "label_suggestion": null,
+              "value": "Prefers pinot noir pairing for meals",
+              "reasoning": "User explicitly states main pairing is pinot noir",
+              "evidence": {
+                "session_id": "sess_41a27fc705a5",
+                "utterance_index": 0,
+                "text": "main pairing is pino noir"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "prefer",
+              "updated_at": "2025-01-01T00:00:00Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,386 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_1ae7d0037522",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_1ae7d0037522:sess_1ae7d0037522",
+      "relativeItemPath": "sess_1ae7d0037522.json",
+      "canonicalId": "sess_1ae7d0037522",
+      "sessionId": "sess_1ae7d0037522",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T00:41:16.588Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires SCI writing standards for technical text polishing",
+            "reasoning": "User explicitly demands SCI writing standards for editing (utterance 12).",
+            "evidence": {
+              "session_id": "sess_1ae7d0037522",
+              "utterance_index": 12,
+              "text": "使用SCI写作标准进行润色"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "require",
+            "updated_at": "2024-03-06T06:35:48+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Content_Constraints",
+            "label_suggestion": null,
+            "value": "Original meaning preservation in technical edits",
+            "reasoning": "User explicitly prohibits changing original text meaning (utterance 10).",
+            "evidence": {
+              "session_id": "sess_1ae7d0037522",
+              "utterance_index": 10,
+              "text": "不要改变原文意思"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "require",
+            "updated_at": "2024-03-06T06:35:48+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Tasks/Translation_Needs",
+            "label_suggestion": "null",
+            "value": "Requires accurate technical translation and academic polishing for research texts related to radiation-hardened integrated circuits and ultra-black materials.",
+            "reasoning": "User repeatedly requests translation and polishing of professional academic content in the fields of radiation-resistant ICs and ultra-black materials.",
+            "evidence": {
+              "session_id": "sess_1ae7d0037522",
+              "utterance_index": 24,
+              "text": "翻译：低红外发射率超黑材料的可控制备及选择性光吸收机理研究"
+            },
+            "confidence": 0.95,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-06T06:35:48+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_1ae7d0037522:sess_1ae7d0037522",
+      "relativeItemPath": "sess_1ae7d0037522.json",
+      "canonicalId": "sess_1ae7d0037522",
+      "sessionId": "sess_1ae7d0037522",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T00:43:49.144Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我需要把一段科研内容改写得更符合SCI写作风格，但不改变原意，你能给个通用的改写框架吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以。通用框架通常是：①研究背景/痛点（为何重要、现有不足）；②研究目标（本文要解决什么）；③方法与系统/材料设计（关键技术路线与模块）；④性能指标与验证方式（指标、实验/仿真）；⑤结果与意义（对平台能力或领域发展的贡献）。写作上建议：用明确主语与主动语态为主，避免口语化；把“计划/将”改成更客观的“propose/aim to/develop”；性能指标尽量量化并给出测量条件或参考标准。需要的话你把原文贴出来，我可按上述结构直接改写。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "如果原文里有很多“本项目将……”，怎样改得更学术、更客观？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "可替换为更客观的表述，例如：“本项目将”→“本研究提出/设计/实现”“本文开发/构建”“系统能够/实现了（若已完成）”；若是计划阶段，用“旨在/目标是/预期实现”。同时把动词后面补齐对象与评价方式，比如“提升鲁棒性”具体到“在X带宽/误码率/丢包率约束下保持稳定吞吐”。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "我还想把中文段落改成英文标题风格，有没有常见的标题模板？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "常见模板有三类：1) “Development of … for …”（面向应用的系统/平台开发）；2) “Design and Implementation of …”（工程实现导向）；3) “Investigation/Study of … Mechanism/Characteristics”（机理或特性研究）。标题尽量名词化，避免长句；把关键对象、方法、指标或应用场景放在前半句或用“for/with/under”补充限定条件。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "顺便问下，你知道“HIRFL”这类装置缩写在论文里第一次出现一般怎么写吗？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "通常首次出现写全称+缩写，例如：“Heavy Ion Research Facility in Lanzhou (HIRFL)”。若全称较长且后文频繁使用，可在摘要和正文首次各规范定义一次，并确保全文缩写一致；机构名若有官方译名，以官方为准。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "给个不相关的小例子，展示一下你说的“背景-目标-方法-指标-意义”怎么串起来。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "例如（虚构场景）：为缓解城市配送无人机在复杂天气下定位漂移导致的降落失败问题，本文旨在开发一套融合毫米波雷达与视觉里程计的稳健导航系统。该系统通过时间同步与因子图优化实现多传感器紧耦合融合，并在边缘端部署轻量化推理模型以满足实时性需求。在风速10 m/s与降雨条件下的实测结果表明，系统将着陆点水平误差降低至0.15 m，端到端延迟控制在30 ms以内。该研究为全天候低空配送的安全运行提供了可验证的技术路径。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "再来一个例子，但这次强调“大数据稳定传输”和“模块化复用”。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "例如（虚构场景）：针对海底地震监测阵列在长距离回传中面临的数据吞吐受限与维护成本高的问题，本文提出一种可模块化扩展的数据采集与传输架构。系统采用可插拔前端采集模块与统一背板接口，以降低不同传感器接入的开发代价；在传输侧，引入分级缓存与链路自适应编码以提升大规模数据的稳定回传能力。海试验证显示，在链路抖动与间歇丢包条件下，系统仍可维持1.2 Gbps有效吞吐并将重传率控制在1%以内。该架构为长期、可维护的海洋观测网络建设提供了工程参考。"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "后面这段我准备直接放进论文里，所以请按中文学术论文的写法来处理，术语和逻辑要严谨一些。"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "好的。我会按照中文学术论文的表述习惯，在不改变原意的前提下，对措辞、逻辑衔接与术语一致性进行规范化处理，使其更适合直接用于正文表述。"
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "上次我说“不要改变原文意思”只是针对那一段话的润色，当时怕你把技术细节改跑偏；但后面像“重写”“扩写”这种任务，我就是希望你在不违背事实前提下可以调整表达、组织结构，甚至补充必要的过渡说明。"
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "明白：你并不是要求所有技术修改都必须严格逐字保留原意；“不要改变原文意思”只适用于当时那段润色场景。之后凡是你明确提出“重写/扩写”，我会在保证技术事实不被扭曲的前提下，允许调整结构与表述，并加入必要的衔接与阐释。"
+          },
+          {
+            "turnId": "turn-17",
+            "role": "user",
+            "text": "对，就是这个意思：润色时别改含义；但让我“重写”的时候，可以更自由一点，只要别编造、别把关键指标改错就行。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires SCI writing standards for technical text polishing",
+            "reasoning": "User explicitly demands SCI writing standards for editing (utterance 12).",
+            "evidence": {
+              "session_id": "sess_1ae7d0037522",
+              "utterance_index": 12,
+              "text": "使用SCI写作标准进行润色"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "require",
+            "updated_at": "2024-03-06T06:35:48+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Tasks/Translation_Needs",
+            "label_suggestion": "null",
+            "value": "Requires accurate technical translation and academic polishing for research texts related to radiation-hardened integrated circuits and ultra-black materials.",
+            "reasoning": "Forced label not supported - evidence shows translation requests, not general curiosity",
+            "evidence": {
+              "session_id": "sess_1ae7d0037522",
+              "utterance_index": 24,
+              "text": "翻译：低红外发射率超黑材料的可控制备及选择性光吸收机理研究"
+            },
+            "confidence": 0.95,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-06T06:35:48+00:00"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                14,
+                15
+              ],
+              "turns": [
+                {
+                  "index": 14,
+                  "role": "user",
+                  "text": "上次我说“不要改变原文意思”只是针对那一段话的润色，当时怕你把技术细节改跑偏；但后面像“重写”“扩写”这种任务，我就是希望你在不违背事实前提下可以调整表达、组织结构，甚至补充必要的过渡说明。"
+                },
+                {
+                  "index": 15,
+                  "role": "assistant",
+                  "text": "明白：你并不是要求所有技术修改都必须严格逐字保留原意；“不要改变原文意思”只适用于当时那段润色场景。之后凡是你明确提出“重写/扩写”，我会在保证技术事实不被扭曲的前提下，允许调整结构与表述，并加入必要的衔接与阐释。"
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Content_Constraints",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "require",
+            "reasoning": "旧记忆将“不要改变原文意思”概括为长期适用的技术编辑约束；但对话说明该要求只限于当时的润色场景，而在用户要求“重写/扩写”时允许更自由的改写与结构调整，只需不扭曲事实与关键指标。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Meaning must be preserved only for polishing tasks; for explicit rewrite/expand requests, allow freer restructuring while keeping technical facts and key metrics correct"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_1ae7d0037522",
+              "utterance_index": 0,
+              "text": "后面这段我准备直接放进论文里，所以请按中文学术论文的写法来处理"
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "require",
+            "reasoning": "User implies a preference/requirement for Chinese academic writing conventions by noting the text will be placed directly into a thesis and asking for Chinese academic-paper style treatment.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers Chinese academic-paper style for Chinese technical rewriting intended for direct thesis inclusion"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_1ae7d0037522:sess_1ae7d0037522",
+      "relativeItemPath": "sess_1ae7d0037522.json",
+      "canonicalId": "sess_1ae7d0037522",
+      "sessionId": "sess_1ae7d0037522",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T00:44:07.980Z",
+        "queryText": "When you’re polishing a technical paragraph I wrote and you notice an awkward sentence that could be rewritten more smoothly, what’s the one editing principle you must follow that would make you avoid a rewrite that subtly changes what I originally meant?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Content_Constraints",
+          "label_suggestion": null,
+          "value": "Original meaning preservation in technical edits",
+          "reasoning": "User explicitly prohibits changing original text meaning (utterance 10).",
+          "evidence": {
+            "session_id": "sess_1ae7d0037522",
+            "utterance_index": 10,
+            "text": "不要改变原文意思"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "require",
+          "updated_at": "2024-03-06T06:35:48+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_1ae7d0037522:sess_1ae7d0037522:task4",
+      "relativeItemPath": "sess_1ae7d0037522.json",
+      "canonicalId": "sess_1ae7d0037522:task4",
+      "sessionId": "sess_1ae7d0037522",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T00:44:57.419Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Original meaning preservation in technical edits",
+          "reasoning": "User explicitly prohibits changing original text meaning (utterance 10).",
+          "evidence": {
+            "session_id": "sess_1ae7d0037522",
+            "utterance_index": 10,
+            "text": "不要改变原文意思"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2024-03-06T06:35:48+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_157:1",
+            "queryText": "我马上要跟合作方开一个联合项目评审会，他们需要确认我们之前讨论的那个HIRFL平台单粒子效应定位系统的技术细节。我这边网络有点卡，PPT打不开。你能不能直接把我们对话历史里关于‘单粒子效应微米级定位系统原理框图’、‘硅像素探测器与被测器件高精度固定方法’以及‘大数据量稳定传输方案’那几段具体的技术描述，整理成一个简洁的要点列表发给我？我直接复制粘贴到会议聊天框里给他们看，这样最快。",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Do_Not_Remember",
+              "label_suggestion": null,
+              "value": "Original meaning preservation in technical edits",
+              "reasoning": "User explicitly prohibits changing original text meaning (utterance 10).",
+              "evidence": {
+                "session_id": "sess_1ae7d0037522",
+                "utterance_index": 10,
+                "text": "不要改变原文意思"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2024-03-06T06:35:48+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

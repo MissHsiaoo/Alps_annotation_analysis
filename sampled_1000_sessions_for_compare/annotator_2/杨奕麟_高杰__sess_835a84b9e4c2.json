@@ -1,0 +1,400 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_835a84b9e4c2",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_835a84b9e4c2:sess_835a84b9e4c2",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_835a84b9e4c2.json",
+      "canonicalId": "sess_835a84b9e4c2",
+      "sessionId": "sess_835a84b9e4c2",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:35:13.411Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "Male, 29 years old",
+            "reasoning": "User explicitly states age and gender.",
+            "evidence": {
+              "session_id": "sess_835a84b9e4c2",
+              "utterance_index": 8,
+              "text": "I am a male of 29 years of age"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-15T11:06:46+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "value": "Vegan",
+            "reasoning": "User explicitly states vegan dietary preference.",
+            "evidence": {
+              "session_id": "sess_835a84b9e4c2",
+              "utterance_index": 10,
+              "text": "I am a vegan, please suggest accordingly"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-06-15T11:06:46+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Thoughts/Goals/Long_Term",
+            "label_suggestion": null,
+            "value": "Wants to lose 15kg in 5 months",
+            "reasoning": "User explicitly states weight loss goal.",
+            "evidence": {
+              "session_id": "sess_835a84b9e4c2",
+              "utterance_index": 8,
+              "text": "want to loose 15kg in 5 months"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-15T11:06:46+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "label_suggestion": "Preferences/Food/Nutrition_Inquiry",
+            "value": "Curious about nutrient content of various foods (soya bean milk, lasagna, coconut biscuits)",
+            "reasoning": "Repeated nutrient inquiries, but original label forced a curiosity trait not explicitly stated. Supports nutrition interest hypothesis.",
+            "evidence": {
+              "session_id": "sess_835a84b9e4c2",
+              "utterance_index": 14,
+              "text": "nutrients in coconut biscuits"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-15T11:06:46+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_835a84b9e4c2:sess_835a84b9e4c2",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_835a84b9e4c2.json",
+      "canonicalId": "sess_835a84b9e4c2",
+      "sessionId": "sess_835a84b9e4c2",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:35:50.889Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Quick question: when nutrition labels list \"carbohydrates,\" does that already include fiber and sugar?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Yes—on most nutrition labels, “Total Carbohydrate” includes fiber and sugars (and starch). Fiber and “Total Sugars” are usually listed as sub-items under total carbs. Sometimes “Added Sugars” is listed under total sugars as well."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "If a product says 20 g carbs and 8 g fiber, how do people get \"net carbs\"?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "A common shortcut is: net carbs = total carbs − fiber (and sometimes minus certain sugar alcohols, depending on the type and local labeling rules). In your example, 20 − 8 = 12 g net carbs."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Does this vary by country?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "It can. For example, in the US and Canada, fiber is included within total carbohydrate, so subtracting fiber makes sense for “net carbs.” In parts of Europe, some labels may present carbs differently (often “carbohydrate” may exclude fiber because fiber can be shown separately), so you’d want to confirm the local label format."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Unrelated: I heard the first modern nutrition label was introduced in the 1970s—true?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Roughly, yes. In the US, nutrition labeling expanded during the 1970s, and it was later standardized more formally with the Nutrition Labeling and Education Act (NLEA) in 1990, with the familiar “Nutrition Facts” panel rolling out in the 1990s."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "If I’m keeping things vegan, can you help me swap the tofu in that quinoa bowl for something soy-free? My stomach’s been acting up lately whenever I eat soy."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Absolutely—if soy has been bothering you, you can swap tofu with options like cooked lentils, chickpeas, black beans, seitan (if you tolerate gluten), or a mix of pumpkin/hemp seeds for extra protein. For a quinoa bowl, a quick idea is quinoa + roasted sweet potato + spiced chickpeas + greens + a tahini-lime dressing. If you tell me whether gluten is okay, I can narrow it down further."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "About that diet plan—small correction: I’m not vegan. I’m actually vegetarian (I do eat dairy), so you can include things like yogurt or paneer."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Got it—vegetarian with dairy (lacto-vegetarian), not vegan. I’ll tailor the plan to include options like yogurt, milk, and paneer while still keeping it weight-loss friendly."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "Male, 29 years old",
+            "reasoning": "User explicitly states age and gender.",
+            "evidence": {
+              "session_id": "sess_835a84b9e4c2",
+              "utterance_index": 8,
+              "text": "I am a male of 29 years of age"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-15T11:06:46+00:00",
+            "_task1GoldValue": "Male, 29 years old"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Thoughts/Goals/Long_Term",
+            "label_suggestion": null,
+            "value": "Wants to lose 15kg in 5 months",
+            "reasoning": "User explicitly states weight loss goal.",
+            "evidence": {
+              "session_id": "sess_835a84b9e4c2",
+              "utterance_index": 8,
+              "text": "want to loose 15kg in 5 months"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-15T11:06:46+00:00",
+            "_task1GoldValue": "Wants to lose 15kg in 5 months"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "Thoughts/Opinions/Curiosity",
+            "label_suggestion": "Preferences/Food/Nutrition_Inquiry",
+            "value": "Curious about nutrient content of various foods (soya bean milk, lasagna, coconut biscuits)",
+            "reasoning": "Repeated nutrient inquiries, but original label forced a curiosity trait not explicitly stated. Supports nutrition interest hypothesis.",
+            "evidence": {
+              "session_id": "sess_835a84b9e4c2",
+              "utterance_index": 14,
+              "text": "nutrients in coconut biscuits"
+            },
+            "confidence": 0.65,
+            "time_scope": "short_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-15T11:06:46+00:00",
+            "_task1GoldValue": "Curious about nutrient content of various foods (soya bean milk, lasagna, coconut biscuits)"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "About that diet plan—small correction: I’m not vegan. I’m actually vegetarian (I do eat dairy), so you can include things like yogurt or paneer."
+                }
+              ]
+            },
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "like",
+            "reasoning": "The earlier memory says the user is vegan, but the user explicitly corrects this by stating they are not vegan and that they are vegetarian who eats dairy. Therefore, the preference should be updated from vegan to vegetarian with dairy.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Vegetarian (eats dairy; not vegan)"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_835a84b9e4c2",
+              "utterance_index": 8,
+              "text": "can you help me swap the tofu in that quinoa bowl for something soy-free? My stomach’s been acting up lately whenever I eat soy."
+            },
+            "label": "Preferences/Food",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "dislike",
+            "reasoning": "User implies soy causes stomach upset and requests soy-free substitutes, indicating avoidance of soy.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers soy-free options (soy seems to cause stomach upset)"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_835a84b9e4c2:sess_835a84b9e4c2",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_835a84b9e4c2.json",
+      "canonicalId": "sess_835a84b9e4c2",
+      "sessionId": "sess_835a84b9e4c2",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:35:59.022Z",
+        "queryText": "I’m putting together a celebratory dinner menu and one of the main options uses ingredients sourced from animals; based on my usual eating rules, what’s the key reason I should ask the host to swap that dish out for a plant-based alternative?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Vegan",
+          "reasoning": "User explicitly states vegan dietary preference.",
+          "evidence": {
+            "session_id": "sess_835a84b9e4c2",
+            "utterance_index": 10,
+            "text": "I am a vegan, please suggest accordingly"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-06-15T11:06:46+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_835a84b9e4c2:sess_835a84b9e4c2:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_835a84b9e4c2.json",
+      "canonicalId": "sess_835a84b9e4c2:task4",
+      "sessionId": "sess_835a84b9e4c2",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:36:07.652Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Food",
+          "label_suggestion": null,
+          "value": "Vegan",
+          "reasoning": "User explicitly states vegan dietary preference.",
+          "evidence": {
+            "session_id": "sess_835a84b9e4c2",
+            "utterance_index": 10,
+            "text": "I am a vegan, please suggest accordingly"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-06-15T11:06:46+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_627:1",
+            "queryText": "I'm thinking of making some baked goods this weekend - maybe cookies or muffins. Which recipes would you recommend I try out?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Food",
+              "label_suggestion": null,
+              "value": "Vegan",
+              "reasoning": "User explicitly states vegan dietary preference.",
+              "evidence": {
+                "session_id": "sess_835a84b9e4c2",
+                "utterance_index": 10,
+                "text": "I am a vegan, please suggest accordingly"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-06-15T11:06:46+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "直接相关",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

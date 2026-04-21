@@ -1,0 +1,313 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_12fa97d9bf0b",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_12fa97d9bf0b:sess_12fa97d9bf0b",
+      "relativeItemPath": "sess_12fa97d9bf0b.json",
+      "canonicalId": "sess_12fa97d9bf0b",
+      "sessionId": "sess_12fa97d9bf0b",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T07:33:11.630Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers game components to be described using a structured template with energy production, resource costs, and brief descriptions",
+            "reasoning": "User provides explicit formatting instructions and reinforces the template structure across multiple requests (e.g., 'пиши как то так').",
+            "evidence": {
+              "session_id": "sess_12fa97d9bf0b",
+              "utterance_index": 6,
+              "text": "пиши как то так:\n\nГидрогенератор\n\n1) Производит 8 единиц энергии при сильном потоке воды.\n2) Не производит ресурсы / не потребляет ресурсы\n4) Требует 20 единиц Титана и 10 единиц Стекла для постройки.\n3) Преобразует энергию потока воды в электрическую энергию.\n\nТермогенератор"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-04-19T13:21:31+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers low-cost solar panels in game design",
+            "reasoning": "User explicitly states 'Солнечная панель должна быть дешёвой' (Solar panel must be cheap) as a design constraint.",
+            "evidence": {
+              "session_id": "sess_12fa97d9bf0b",
+              "utterance_index": 0,
+              "text": "Солнечная панель должна быть дешёвой"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-04-19T13:21:31+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_12fa97d9bf0b:sess_12fa97d9bf0b",
+      "relativeItemPath": "sess_12fa97d9bf0b.json",
+      "canonicalId": "sess_12fa97d9bf0b",
+      "sessionId": "sess_12fa97d9bf0b",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T07:33:29.053Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Аккумулятор"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "___Аккумулятор___\n\n1) Производит 0 единиц энергии / потребляет 1 единицу энергии (при зарядке)\n2) Не производит ресурсы / не потребляет ресурсы\n4) Требует 6 единиц Меди, 4 единицы Кремния и 2 единицы Алюминия для постройки.\n3) Накапливает энергию и отдаёт её при перебоях."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Пиши так же для \"Солнечная батарея\" (днём/ночью)"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "___Солнечная батарея___\n\n1) Производит 4 единицы энергии днём / производит 0 единиц энергии ночью\n2) Не производит ресурсы / не потребляет ресурсы\n4) Требует 3 единицы Меди, 2 единицы Стекла и 1 единицу Кремния для постройки.\n3) Дешёвый источник энергии, зависящий от освещения."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "А если добавить песчаную бурю?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Можно ввести модификатор условий:\n\n— Песчаная буря: выработка солнечных батарей снижена на 50% (и днём, и ночью остаётся 0). Длительность бури — по таймеру/рандому.\n\nПример: днём 4 → 2 энергии во время бури."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "assistant",
+            "text": "Кстати, в новостях иногда упоминают пылевые бури на Марсе, которые могут длиться неделями и заметно снижать эффективность панелей — это удобно как референс для игровых событий."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "В качестве ещё одного примера не про игрока: в фантастическом сеттинге можно добавить редкое явление «электростатический шторм», который на время повышает шанс поломки ветрогенераторов, но ускоряет заряд аккумуляторов."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "assistant",
+            "text": "И третья нейтральная идея: некоторые настольные стратегии балансируют генерацию через «карты погоды», где буря не выключает источник полностью, а даёт несколько ходов штрафа — можно перенести похожую механику один-в-один."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "user",
+            "text": "Теперь ещё: аккумуляторный блок — но чтобы работал как буфер на ночь, когда панели молчат."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "assistant",
+            "text": "___Аккумуляторный блок___\n\n1) Потребляет 2 единицы энергии при зарядке / выдаёт до 6 единиц энергии при разрядке\n2) Не производит ресурсы / не потребляет ресурсы (кроме энергии для зарядки)\n4) Требует 3 единицы Алюминия и 2 единицы Кремния для постройки\n3) Запасает излишки энергии днём и отдаёт их ночью, сглаживая провалы генерации."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "user",
+            "text": "По солнечной панели поправка: она НЕ должна быть дешёвой. Хочу, чтобы это был дорогой апгрейд в поздней игре, с высокой ценой постройки."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "assistant",
+            "text": "Понял, тогда солнечную панель делаем не «дешёвым стартом», а дорогим поздним источником энергии."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers game components to be described using a structured template with energy production, resource costs, and brief descriptions",
+            "reasoning": "User provides explicit formatting instructions and reinforces the template structure across multiple requests (e.g., 'пиши как то так').",
+            "evidence": {
+              "session_id": "sess_12fa97d9bf0b",
+              "utterance_index": 6,
+              "text": "пиши как то так:\n\nГидрогенератор\n\n1) Производит 8 единиц энергии при сильном потоке воды.\n2) Не производит ресурсы / не потребляет ресурсы\n4) Требует 20 единиц Титана и 10 единиц Стекла для постройки.\n3) Преобразует энергию потока воды в электрическую энергию.\n\nТермогенератор"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-04-19T13:21:31+00:00"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "like",
+            "reasoning": "Old memory says the user prefers low-cost solar panels. The user explicitly contradicts this by stating the solar panel is NOT supposed to be cheap and should be a costly late-game upgrade.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not want solar panels to be low-cost; prefers them to be an expensive late-game upgrade in game design"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_12fa97d9bf0b",
+              "utterance_index": 0,
+              "text": "аккумуляторный блок — но чтобы работал как буфер на ночь, когда панели молчат."
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "Пользователь просит добавить аккумулятор именно как ночной буфер для солнечной генерации, что указывает на предпочтение механики хранения энергии для покрытия ночных провалов.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Wants an energy storage/buffer mechanic to cover nighttime when solar panels don't produce power"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_12fa97d9bf0b:sess_12fa97d9bf0b",
+      "relativeItemPath": "sess_12fa97d9bf0b.json",
+      "canonicalId": "sess_12fa97d9bf0b",
+      "sessionId": "sess_12fa97d9bf0b",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T07:33:32.917Z",
+        "queryText": "I’m tuning a crafting/tech tree and I have to pick one hard constraint for the basic renewable-power building so the early game stays accessible. Based on my usual design stance, which constraint should I enforce (e.g., cheapest build cost vs highest efficiency vs shortest build time), and why would that be the non-negotiable one for me?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers low-cost solar panels in game design",
+          "reasoning": "User explicitly states 'Солнечная панель должна быть дешёвой' (Solar panel must be cheap) as a design constraint.",
+          "evidence": {
+            "session_id": "sess_12fa97d9bf0b",
+            "utterance_index": 0,
+            "text": "Солнечная панель должна быть дешёвой"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-04-19T13:21:31+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_12fa97d9bf0b:sess_12fa97d9bf0b:task4",
+      "relativeItemPath": "sess_12fa97d9bf0b.json",
+      "canonicalId": "sess_12fa97d9bf0b:task4",
+      "sessionId": "sess_12fa97d9bf0b",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T07:33:36.186Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers low-cost solar panels in game design",
+          "reasoning": "User explicitly states 'Солнечная панель должна быть дешёвой' (Solar panel must be cheap) as a design constraint.",
+          "evidence": {
+            "session_id": "sess_12fa97d9bf0b",
+            "utterance_index": 0,
+            "text": "Солнечная панель должна быть дешёвой"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "like",
+          "updated_at": "2023-04-19T13:21:31+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_113:1",
+            "queryText": "Добавь в игру ещё один источник энергии. Какой из вариантов будет самым подходящим для ранней игры?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Prefers low-cost solar panels in game design",
+              "reasoning": "User explicitly states 'Солнечная панель должна быть дешёвой' (Solar panel must be cheap) as a design constraint.",
+              "evidence": {
+                "session_id": "sess_12fa97d9bf0b",
+                "utterance_index": 0,
+                "text": "Солнечная панель должна быть дешёвой"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "like",
+              "updated_at": "2023-04-19T13:21:31+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

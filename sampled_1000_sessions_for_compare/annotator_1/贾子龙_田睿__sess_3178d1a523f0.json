@@ -1,0 +1,363 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_3178d1a523f0",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_3178d1a523f0:sess_3178d1a523f0",
+      "relativeItemPath": "sess_3178d1a523f0.json",
+      "canonicalId": "sess_3178d1a523f0",
+      "sessionId": "sess_3178d1a523f0",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:54:17.391Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers direct answers without explanations for statistical calculations",
+            "reasoning": "User explicitly requests direct answers (\"No, just tell me the answers\")",
+            "evidence": {
+              "session_id": "sess_3178d1a523f0",
+              "utterance_index": 14,
+              "text": "No, just tell me the answers."
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-02T23:44:49+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "methodology/testing/interest",
+            "value": "Sustained interest in validating outlier detection methodology through multiple test cases",
+            "reasoning": "Multiple test cases observed, but label forced correction (not explicitly about user's personal curiosity)",
+            "evidence": {
+              "session_id": "sess_3178d1a523f0",
+              "utterance_index": 48,
+              "text": "What if we artificially add an outlier? Say we add \"500\" to the dataset?"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-02T23:44:49+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_3178d1a523f0:sess_3178d1a523f0",
+      "relativeItemPath": "sess_3178d1a523f0.json",
+      "canonicalId": "sess_3178d1a523f0",
+      "sessionId": "sess_3178d1a523f0",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:54:54.678Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Can you double-check a quick outlier-score calculation for a toy dataset?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure. When you say “outlier score,” do you mean mean absolute deviation (MAD) divided by the mean (i.e., MAD/mean)? If so, paste the numbers and I’ll compute it."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Use 3, 3, 3, 15."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Mean = (3+3+3+15)/4 = 6.\nAbsolute deviations from 6: 3, 3, 3, 9.\nMAD = (3+3+3+9)/4 = 4.5.\nOutlier score = MAD/mean = 4.5/6 = 0.75."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "If I replace 15 with 9, what happens?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Dataset: 3, 3, 3, 9.\nMean = (3+3+3+9)/4 = 4.5.\nAbsolute deviations from 4.5: 1.5, 1.5, 1.5, 4.5.\nMAD = (1.5+1.5+1.5+4.5)/4 = 2.25.\nOutlier score = 2.25/4.5 = 0.5."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "So the score drops when the extreme value is less extreme."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Yes—because the deviations shrink (and here the mean also shifts), MAD/mean decreases when that faraway point moves closer to the rest."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Unrelated: I saw a headline that a spacecraft used a gravity assist to change its orbit—how does that not violate conservation of energy?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "It doesn’t violate it because the spacecraft exchanges energy and momentum with the planet. In the planet’s frame, the spacecraft’s speed changes due to the planet’s gravity but (ignoring atmospheric drag) its speed far away is the same; in the Sun-centered frame, the spacecraft can gain or lose orbital energy while the planet’s orbital energy changes by an equal-and-opposite (usually tiny) amount."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "For this next one, just give me the final number again—no walkthrough."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Understood—I'll provide only the final outlier score."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Also—if I paste an address or passport number later, don't save it. I don't want that retained."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "You never said anything like that here—this chat has just been about outlier scores, inflation, and a couple toy datasets. There hasn't been any address or passport info, and no request about retaining it."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Right, I didn't actually say it earlier. Just ignore that—nothing about addresses/passports applies to this convo."
+          },
+          {
+            "turnId": "turn-16",
+            "role": "assistant",
+            "text": "Got it—no address/passport retention preference was stated earlier in this conversation."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers direct answers without explanations for statistical calculations",
+            "reasoning": "User explicitly requests direct answers (\"No, just tell me the answers\")",
+            "evidence": {
+              "session_id": "sess_3178d1a523f0",
+              "utterance_index": 14,
+              "text": "No, just tell me the answers."
+            },
+            "confidence": 0.8,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-05-02T23:44:49+00:00",
+            "_task1GoldValue": "Prefers direct answers without explanations for statistical calculations"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "methodology/testing/interest",
+            "value": "Sustained interest in validating outlier detection methodology through multiple test cases",
+            "reasoning": "Multiple test cases observed, but label forced correction (not explicitly about user's personal curiosity)",
+            "evidence": {
+              "session_id": "sess_3178d1a523f0",
+              "utterance_index": 48,
+              "text": "What if we artificially add an outlier? Say we add \"500\" to the dataset?"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-05-02T23:44:49+00:00",
+            "_task1GoldValue": "Sustained interest in validating outlier detection methodology through multiple test cases"
+          },
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                12
+              ],
+              "turns": [
+                {
+                  "index": 12,
+                  "role": "user",
+                  "text": "Also—if I paste an address or passport number later, don't save it. I don't want that retained."
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The prior memory claimed the user requested not to retain address/passport info if pasted later, but the dialogue explicitly states no such request was made earlier and that nothing about addresses/passports applies to this conversation. Updated truth: no address/passport retention preference was stated in this chat.",
+            "time_scope": "unknown",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "No request was made in this conversation about not retaining address or passport information."
+          },
+          {
+            "confidence": 0.72,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_3178d1a523f0",
+              "utterance_index": 0,
+              "text": "For this next one, just give me the final number again—no walkthrough."
+            },
+            "label": "Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "The user requests only the final result and explicitly asks for no step-by-step explanation.",
+            "time_scope": "unknown",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers receiving only the final numeric result (no walkthrough) when doing calculations."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_3178d1a523f0:sess_3178d1a523f0",
+      "relativeItemPath": "sess_3178d1a523f0.json",
+      "canonicalId": "sess_3178d1a523f0",
+      "sessionId": "sess_3178d1a523f0",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:55:08.583Z",
+        "queryText": "Quick check before I paste some sensitive ID-type details to troubleshoot a form: what’s the one thing I’ve previously asked you to do (or not do) regarding keeping that kind of information around afterward, and why would that affect how you should handle it here?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Requests not to retain address/passport information if pasted later [ERROR: Unsupported by evidence]",
+          "reasoning": "Unsupported by evidence",
+          "evidence": {
+            "session_id": "sess_3178d1a523f0",
+            "utterance_index": 16,
+            "text": "If an address or passport info gets pasted in later, prefer that not be retained."
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-05-02T23:44:49+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_3178d1a523f0:sess_3178d1a523f0:task4",
+      "relativeItemPath": "sess_3178d1a523f0.json",
+      "canonicalId": "sess_3178d1a523f0:task4",
+      "sessionId": "sess_3178d1a523f0",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T07:55:36.698Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers direct answers without explanations for statistical calculations",
+          "reasoning": "User explicitly requests direct answers (\"No, just tell me the answers\")",
+          "evidence": {
+            "session_id": "sess_3178d1a523f0",
+            "utterance_index": 14,
+            "text": "No, just tell me the answers."
+          },
+          "confidence": 0.8,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-05-02T23:44:49+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_140:1",
+            "queryText": "I'm applying for a visa and need to verify my details quickly. My passport number is AB1234567 and my address is 123 Main Street, Anytown, USA 12345. Can you calculate the outlier score for these passport digits: 1,2,3,4,5,6,7?",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers direct answers without explanations for statistical calculations",
+              "reasoning": "User explicitly requests direct answers (\"No, just tell me the answers\")",
+              "evidence": {
+                "session_id": "sess_3178d1a523f0",
+                "utterance_index": 14,
+                "text": "No, just tell me the answers."
+              },
+              "confidence": 0.8,
+              "time_scope": "unknown",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-05-02T23:44:49+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

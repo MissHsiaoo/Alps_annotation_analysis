@@ -1,0 +1,341 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_ecba707482b0",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_ecba707482b0:sess_ecba707482b0",
+      "relativeItemPath": "sess_ecba707482b0.json",
+      "canonicalId": "sess_ecba707482b0",
+      "sessionId": "sess_ecba707482b0",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T02:16:03.421Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "value": "Currently completing an internship at companyX focused on DevOps/Teams integration",
+            "reasoning": "User explicitly states internship role in multiple user turns",
+            "evidence": {
+              "session_id": "sess_ecba707482b0",
+              "utterance_index": 2,
+              "text": "During my internship I was guided by a valuable team of professionals... developing the sync tool"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-09T14:51:09+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/feedback_requests",
+            "value": "Deep interest in technical report structuring and academic/professional alignment",
+            "reasoning": "Pattern of requesting feedback, but label 'Thoughts/Curiosity' overreaches evidence",
+            "evidence": {
+              "session_id": "sess_ecba707482b0",
+              "utterance_index": 4,
+              "text": "give me for this \"Introduction...\" [multiple section feedback requests]"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-09T14:51:09+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/internship_activities",
+            "value": "Technical intern with focus on ASP.NET Core/Vue.js stack",
+            "reasoning": "Label implies formal occupation status not explicitly stated. Supported only by project descriptions",
+            "evidence": {
+              "session_id": "sess_ecba707482b0",
+              "utterance_index": 10,
+              "text": "The front-end of the synchronization tool is developed as a Vue.js application... ASP.NET Core APIs"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-09T14:51:09+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_ecba707482b0:sess_ecba707482b0",
+      "relativeItemPath": "sess_ecba707482b0.json",
+      "canonicalId": "sess_ecba707482b0",
+      "sessionId": "sess_ecba707482b0",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T05:56:13.015Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "hey, quick question—what’s the difference between a webhook and polling in plain terms?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Polling is when your system repeatedly asks another system “anything changed yet?” on a schedule. A webhook is when the other system proactively sends your system a message the moment something changes. Webhooks usually reduce wasted requests and feel more real-time, while polling can be simpler but may be slower or more resource-heavy."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "if webhooks are real-time, why would anyone still use polling?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "A few common reasons: some services don’t offer webhooks; firewalls/network rules can block inbound callbacks; webhook delivery can fail and needs retries/signature validation; and sometimes the “change event” isn’t detailed enough, so you still need to poll for the full data. Many systems use a hybrid: webhook triggers, then a follow-up fetch to get details."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "does a webhook always include the full data payload?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Not always. Some webhooks send full resource details; others only send an ID, timestamp, or a pointer to what changed. In those cases, your app receives the event and then calls the API to retrieve the updated item(s)."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "One small thing I forgot to mention: I’m trying to keep the whole report consistent in British English, because some parts still slip into American spelling."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Good call—pick one variant and apply it everywhere. For British English consistency, do a quick sweep for common US/UK differences (e.g., “organize”→“organise”, “behavior”→“behaviour”, “center”→“centre”), and also check punctuation conventions (e.g., single quotes for terms if that’s your chosen style). If you want, paste a paragraph and I’ll mark the spots that break the chosen variant."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Small correction: this is not my internship at companyX. I’m writing feedback on someone else’s report. I don’t work there and I’m not developing that sync tool myself."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Thanks for clarifying—so you’re reviewing a report written by an intern at companyX, not describing your own internship. That means references like “during my internship” and “my sync tool” are the author’s perspective, and your role is to assess whether their write-up matches the required structure and is clear/complete."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/feedback_requests",
+            "value": "Deep interest in technical report structuring and academic/professional alignment",
+            "reasoning": "Pattern of requesting feedback, but label 'Thoughts/Curiosity' overreaches evidence",
+            "evidence": {
+              "session_id": "sess_ecba707482b0",
+              "utterance_index": 4,
+              "text": "give me for this \"Introduction...\" [multiple section feedback requests]"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-09T14:51:09+00:00",
+            "_task1GoldValue": "Deep interest in technical report structuring and academic/professional alignment"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "technical/internship_activities",
+            "value": "Technical intern with focus on ASP.NET Core/Vue.js stack",
+            "reasoning": "Label implies formal occupation status not explicitly stated. Supported only by project descriptions",
+            "evidence": {
+              "session_id": "sess_ecba707482b0",
+              "utterance_index": 10,
+              "text": "The front-end of the synchronization tool is developed as a Vue.js application... ASP.NET Core APIs"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-01-09T14:51:09+00:00",
+            "_task1GoldValue": "Technical intern with focus on ASP.NET Core/Vue.js stack"
+          },
+          {
+            "confidence": 0.93,
+            "emotion": null,
+            "evidence": null,
+            "label": "Personal_Background/Education",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": null,
+            "reasoning": "The old memory claims the user is currently completing an internship at companyX. The user explicitly corrects this by stating they are only giving feedback on another person’s report and are not the intern or developer of the sync tool.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is reviewing someone else’s internship report at companyX (not doing the internship themselves)."
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_ecba707482b0",
+              "utterance_index": 0,
+              "text": "I’m trying to keep the whole report consistent in British English, because some parts still slip into American spelling."
+            },
+            "label": "Writing/Formatting_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "prefers",
+            "reasoning": "User implies an ongoing preference/requirement for language variant consistency by noting they are trying to keep the report in British English and that some parts still contain American spelling.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers the report to be written consistently in British English rather than American English."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_ecba707482b0:sess_ecba707482b0",
+      "relativeItemPath": "sess_ecba707482b0.json",
+      "canonicalId": "sess_ecba707482b0",
+      "sessionId": "sess_ecba707482b0",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:06:29.639Z",
+        "queryText": "I’m drafting a one-line summary for my current placement and need to choose the most accurate category of work: would it be closer to maintaining production servers, building customer-facing features, or connecting collaboration workflows across tools—and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Education",
+          "label_suggestion": null,
+          "value": "Currently completing an internship at companyX focused on DevOps/Teams integration",
+          "reasoning": "User explicitly states internship role in multiple user turns",
+          "evidence": {
+            "session_id": "sess_ecba707482b0",
+            "utterance_index": 2,
+            "text": "During my internship I was guided by a valuable team of professionals... developing the sync tool"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-01-09T14:51:09+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_ecba707482b0:sess_ecba707482b0:task4",
+      "relativeItemPath": "sess_ecba707482b0.json",
+      "canonicalId": "sess_ecba707482b0:task4",
+      "sessionId": "sess_ecba707482b0",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-17T02:00:42.076Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Personal_Background/Education",
+          "label_suggestion": null,
+          "value": "Currently completing an internship at companyX focused on DevOps/Teams integration",
+          "reasoning": "User explicitly states internship role in multiple user turns",
+          "evidence": {
+            "session_id": "sess_ecba707482b0",
+            "utterance_index": 2,
+            "text": "During my internship I was guided by a valuable team of professionals... developing the sync tool"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-01-09T14:51:09+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_506:1",
+            "queryText": "I'm preparing for a meeting with Dua Lipa next week to discuss the sync tool's advanced configuration. She wants to understand how the priority-mapping logic works when multiple Teams status values map to a single DevOps state like 'New'. Based on our existing setup, what specific example could I use to demonstrate that the tool won't randomly pick 'Not accepted by customer' instead of the correct priority-mapped value?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Personal_Background/Education",
+              "label_suggestion": null,
+              "value": "Currently completing an internship at companyX focused on DevOps/Teams integration",
+              "reasoning": "User explicitly states internship role in multiple user turns",
+              "evidence": {
+                "session_id": "sess_ecba707482b0",
+                "utterance_index": 2,
+                "text": "During my internship I was guided by a valuable team of professionals... developing the sync tool"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-01-09T14:51:09+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "weak",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

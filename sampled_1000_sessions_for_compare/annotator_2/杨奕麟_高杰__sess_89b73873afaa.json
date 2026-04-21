@@ -1,0 +1,371 @@
+{
+  "group": "杨奕麟 & 高杰",
+  "sessionId": "sess_89b73873afaa",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_89b73873afaa:sess_89b73873afaa",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_89b73873afaa.json",
+      "canonicalId": "sess_89b73873afaa",
+      "sessionId": "sess_89b73873afaa",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-18T02:19:16.744Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": "interaction/style/formatting_preference",
+            "value": "Prefers content output in formal, professional tone with bullet points",
+            "reasoning": "Formatting requests are task-local business content work, not explicit personal preference. Label 'Interaction_Preferences' forced without user self-report.",
+            "evidence": {
+              "session_id": "sess_89b73873afaa",
+              "utterance_index": 4,
+              "text": "in a more natural, formal, professional way"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-07-02T13:39:28+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "value": "Mother is 60 years old, post-surgery recovery",
+            "reasoning": "User explicitly self-reports mother's age and health status",
+            "evidence": {
+              "session_id": "sess_89b73873afaa",
+              "utterance_index": 24,
+              "text": "我母亲60岁，刚做完手术半年，身体比较虚弱"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-02T13:39:28+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "User requested to communicate in Chinese during the conversation",
+            "reasoning": "User directly request Chinese",
+            "evidence": {
+              "turn_indices": [
+                22
+              ],
+              "turns": [
+                {
+                  "index": 22,
+                  "role": "user",
+                  "text": "let us speak chinese"
+                }
+              ]
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-04-18T02:17:32.129Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_89b73873afaa:sess_89b73873afaa",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_89b73873afaa.json",
+      "canonicalId": "sess_89b73873afaa",
+      "sessionId": "sess_89b73873afaa",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-18T02:19:21.305Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我想把一段关于公司技术能力的介绍，改写成更正式、更专业的中文版本。你能先告诉我你需要哪些信息吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "可以。请提供：1）原文段落；2）用途（官网/宣传册/招投标/路演等）；3）目标读者（客户/投资人/政府/同行）；4）希望的长度（例如100–150字或3–5条要点）；5）是否需要保留具体数据与年份（如“2017”“5000+”等）；6）是否有必须保留的关键词（例如“机器视觉”“工业相机”“激光雷达”）。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "用途是官网，读者是潜在客户。字数大概150字以内，数据可以保留，但语气要稳重。"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "明白。你把原文贴过来即可。我会在不改变事实信息的前提下：精简表述、统一术语、减少口语化与夸张表达，并把核心能力（产品/专利/研发/交付）按官网常见结构组织。若原文里出现“千万客户”这类表述，我也可以提供更审慎的替代表达（例如“服务客户超过5000家/覆盖多个国家和地区”），以提升可信度。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "顺便问下，如果我要把这段再做成英文版，有什么常见注意事项？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "常见注意点：1）数字与单位格式统一（如“5000+ customers”“over 500 projects”）；2）避免直译宣传性词汇，改为可核验表达（例如“cost-effective solutions”“proven track record”）；3）术语一致（machine vision/industrial camera/laser radar or LiDAR 二选一并全篇统一）；4）句子更短、更偏主动语态；5）如果涉及专利/资质，建议用“holds X patents related to …”并尽量写清技术方向而非堆名词。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "assistant",
+            "text": "（补充一个与用户无关的小例子）例如某家虚构的“Northbay Optics”在英文官网会写：\"Founded in 2017, Northbay Optics provides machine-vision components and customized optical systems for industrial inspection.\" 这种结构通常更符合英文读者习惯。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "user",
+            "text": "我在准备转岗做数字营销，面试官总爱追问我有没有实操经历。你能不能按“日常工作内容 + 常用工具 + 关键指标”的结构，帮我整理一份更像真实岗位在做的事情清单？"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "assistant",
+            "text": "可以。我会按你说的结构整理：\n\n一、日常工作内容\n- 目标与策略：明确阶段目标（拉新/留存/转化），制定渠道组合与投放节奏\n- 内容与创意：规划内容主题、撰写文案、与设计/视频协作产出素材并进行A/B测试\n- 渠道运营：SEO/SEM、信息流投放、社媒运营、邮件与私域触达，维护活动落地页\n- 数据分析与复盘：跟踪漏斗数据，定位问题并提出优化方案（人群、素材、出价、页面等）\n- 协作与项目管理：对接产品、销售与客服，确保线索质量与转化跟进闭环\n\n二、常用工具\n- 数据与分析：Google Analytics/Looker Studio（或同类分析与BI）\n- 投放平台：Google Ads/Meta Ads/LinkedIn Ads（或本地信息流平台）\n- SEO工具：Search Console、关键词与排名工具（如Ahrefs/SEMrush同类）\n- 触达与自动化：EDM工具、CRM/营销自动化工具（如HubSpot同类）\n- 协作工具：表格、项目管理工具（如Trello/Asana同类）\n\n三、关键指标（按漏斗）\n- 曝光与触达：曝光量、覆盖人数、CPM\n- 互动与引流：CTR、到站UV、跳出率、停留时长\n- 转化与成本：CVR、CPA/CAC、线索量与线索合格率、ROAS\n- 留存与复购（如适用）：回访率、复购率、LTV\n\n你可以告诉我你更偏B2B还是B2C、主要渠道（如社媒/搜索/电商），我再把清单更贴近你的面试岗位。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "user",
+            "text": "上次我说“我母亲60岁，手术后半年，身体比较虚弱”其实说错了。她今年已经62岁了，而且手术是三个月前做的，现在恢复得还可以，没有之前那么虚。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "assistant",
+            "text": "明白了，你之前的描述需要更正：你母亲是62岁，手术是在三个月前进行的，目前整体恢复情况还可以，并非“术后半年且身体比较虚弱”。如果你愿意，也可以补充一下手术类型和医生的饮食/活动限制，我再帮你把调理建议写得更贴合。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": "interaction/style/formatting_preference",
+            "value": "Prefers content output in formal, professional tone with bullet points",
+            "reasoning": "Formatting requests are task-local business content work, not explicit personal preference. Label 'Interaction_Preferences' forced without user self-report.",
+            "evidence": {
+              "session_id": "sess_89b73873afaa",
+              "utterance_index": 4,
+              "text": "in a more natural, formal, professional way"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "like",
+            "updated_at": "2023-07-02T13:39:28+00:00",
+            "_task1GoldValue": "Prefers content output in formal, professional tone with bullet points"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                9
+              ],
+              "turns": [
+                {
+                  "index": 9,
+                  "role": "user",
+                  "text": "上次我说“我母亲60岁，手术后半年，身体比较虚弱”其实说错了。她今年已经62岁了，而且手术是三个月前做的，现在恢复得还可以，没有之前那么虚。"
+                }
+              ]
+            },
+            "label": "Social_Relationships/Family",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": null,
+            "reasoning": "旧记忆称“母亲60岁、术后半年且较虚弱”。用户在对话中明确更正为“62岁、手术三个月前、目前恢复得还可以”，与旧信息矛盾，应以更正后的信息更新。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Mother is 62 years old; surgery was three months ago; recovery is generally okay"
+          },
+          {
+            "confidence": 0.95,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_89b73873afaa",
+              "utterance_index": 7,
+              "text": "我在准备转岗做数字营销，面试官总爱追问我有没有实操经历。"
+            },
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User mentions preparing to change roles into digital marketing and refers to interviewers asking about hands-on experience, implying active interviewing.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User is preparing to transition into a digital marketing role and is interviewing."
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "User requested to communicate in Chinese during the conversation",
+            "reasoning": "User directly request Chinese",
+            "evidence": {
+              "turn_indices": [
+                22
+              ],
+              "turns": [
+                {
+                  "index": 22,
+                  "role": "user",
+                  "text": "let us speak chinese"
+                }
+              ]
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-04-18T02:17:32.129Z",
+            "_task1GoldValue": "User requested to communicate in Chinese during the conversation"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_89b73873afaa:sess_89b73873afaa",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_89b73873afaa.json",
+      "canonicalId": "sess_89b73873afaa",
+      "sessionId": "sess_89b73873afaa",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-18T02:19:26.432Z",
+        "queryText": "If I’m choosing between a high-intensity weekend trip and a calm, low-stress visit because one of my closest family members might not be able to handle lots of walking and late nights right now, what specific situation about them should I factor in as the deciding reason?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Social_Relationships/Family",
+          "label_suggestion": null,
+          "value": "Mother is 60 years old, post-surgery recovery",
+          "reasoning": "User explicitly self-reports mother's age and health status",
+          "evidence": {
+            "session_id": "sess_89b73873afaa",
+            "utterance_index": 24,
+            "text": "我母亲60岁，刚做完手术半年，身体比较虚弱"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-07-02T13:39:28+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_89b73873afaa:sess_89b73873afaa:task4",
+      "relativeItemPath": "杨奕麟 & 高杰/sess_89b73873afaa.json",
+      "canonicalId": "sess_89b73873afaa:task4",
+      "sessionId": "sess_89b73873afaa",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-18T02:19:40.343Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Social_Relationships/Family",
+          "label_suggestion": null,
+          "value": "Mother is 60 years old, post-surgery recovery",
+          "reasoning": "User explicitly self-reports mother's age and health status",
+          "evidence": {
+            "session_id": "sess_89b73873afaa",
+            "utterance_index": 24,
+            "text": "我母亲60岁，刚做完手术半年，身体比较虚弱"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2023-07-02T13:39:28+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_327:1",
+            "queryText": "我母亲现在恢复期，想给她买些营养品，但市面上种类太多，不知道哪些适合她这个年龄和身体状况的？最好能推荐一些具体的品牌或产品类型。",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Social_Relationships/Family",
+              "label_suggestion": null,
+              "value": "Mother is 60 years old, post-surgery recovery",
+              "reasoning": "User explicitly self-reports mother's age and health status",
+              "evidence": {
+                "session_id": "sess_89b73873afaa",
+                "utterance_index": 24,
+                "text": "我母亲60岁，刚做完手术半年，身体比较虚弱"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2023-07-02T13:39:28+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "直接香相关",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

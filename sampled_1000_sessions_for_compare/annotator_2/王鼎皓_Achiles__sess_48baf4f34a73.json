@@ -1,0 +1,333 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_48baf4f34a73",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_48baf4f34a73:sess_48baf4f34a73",
+      "relativeItemPath": "sess_48baf4f34a73.json",
+      "canonicalId": "sess_48baf4f34a73",
+      "sessionId": "sess_48baf4f34a73",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:21:45.222Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Business_Process/Team_Participation",
+            "value": "Requires US team participation in English meetings/training sessions to address unforeseen technical questions可能仅仅是任务需求。",
+            "reasoning": "Explicitly stated 6+ times in user's email drafting as a business constraint. Though labeled as direct, this describes an organizational process rather than a user trait.",
+            "evidence": {
+              "session_id": "sess_48baf4f34a73",
+              "utterance_index": 0,
+              "text": "因为明天早上的会议是英文版本的，因此我们需要美国团队参加并回答一些我们可能不会回答的问题"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-07T05:47:52+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Avoid retaining address/passport information from pasted content [ERROR: Unsupported by evidence - cited utterance_index 16 shows user requesting translation help, not discussing data retention. No user turn supports this claim.]",
+            "reasoning": "Unsupported by evidence - cited utterance_index 16 shows user requesting translation help, not discussing data retention. No user turn supports this claim.",
+            "evidence": {
+              "session_id": "sess_48baf4f34a73",
+              "utterance_index": 0,
+              "text": ""
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-06-07T05:47:52+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_48baf4f34a73:sess_48baf4f34a73",
+      "relativeItemPath": "sess_48baf4f34a73.json",
+      "canonicalId": "sess_48baf4f34a73",
+      "sessionId": "sess_48baf4f34a73",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:21:45.222Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我想把这段话写得更委婉一点：说明因为英文培训需要相关团队在场回答临时问题，所以时间不太好调整。能给两个不同语气的英文版本吗？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "当然，可以参考这两种语气：\n\nVersion A (more formal):\n\"As the session will be conducted in English, we need the relevant team to be present to help address any unexpected questions in real time. For this reason, adjusting the schedule is quite challenging.\"\n\nVersion B (more friendly):\n\"Since this is an English session, we’ve arranged for the relevant team to join so they can support any questions that come up on the spot. That’s why it’s difficult for us to move the time.\""
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "如果我还想加一句：会后会把录屏上传到LMS，没参加也可以看回放，并随时联系我们。怎么接得自然？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "可以这样衔接在后面：\n\n\"If you’re unable to join live, we will upload the recording to LMS after the session so your team can review it at your convenience. Should any questions arise, please feel free to reach out to us anytime.\"\n\n如果想更正式一点：\n\"Should you be unable to attend the live session, we will make the recording available on LMS afterward for your reference. Please don’t hesitate to contact us if you have any questions.\""
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "顺便问下，邮件里“unforeseen questions”会不会太重？有没有更常见的说法？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "更常见、更柔和的替换有：\n- \"any questions that may come up\"\n- \"any questions that may arise\"\n- \"any ad-hoc questions\"\n- \"any follow-up questions\"\n\n例如：\n\"...to address any questions that may arise during the session.\""
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Steve那边回复很快，他说先请我们不用打电话追他，因为他这两天一直在路上。我想那邮件的语气再放缓一点，先以他看LMS录像为主。"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Understood. I can soften the tone and position watching the LMS recording as the primary option, while keeping it clear that you’re available if any questions come up."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "你上次记的那个memory里写“Avoid retaining address/passport information from pasted content”，这完全不是我说的。我这段对话一直都在让你帮我改英文邮件、优化句子，从来没提过护照或地址信息，也没要求你保留或不保留任何敏感信息。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "你说得对；从这段对话内容来看，你的需求是英文邮件撰写/改写与措辞优化，并没有出现“address/passport information”或“数据保留/不保留”的要求。之前那条记忆不符合本次对话证据，应当更正为：你希望我协助优化英文邮件内容与表达。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Business_Process/Team_Participation",
+            "value": "Requires US team participation in English meetings/training sessions to address unforeseen technical questions可能仅仅是任务需求。",
+            "reasoning": "Explicitly stated 6+ times in user's email drafting as a business constraint. Though labeled as direct, this describes an organizational process rather than a user trait.",
+            "evidence": {
+              "session_id": "sess_48baf4f34a73",
+              "utterance_index": 0,
+              "text": "因为明天早上的会议是英文版本的，因此我们需要美国团队参加并回答一些我们可能不会回答的问题"
+            },
+            "confidence": 0.5,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-07T05:47:52+00:00",
+            "_task1GoldValue": "Requires US team participation in English meetings/training sessions to address unforeseen technical questions可能仅仅是任务需求。"
+          },
+          {
+            "confidence": 0.65,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "你上次记的那个memory里写“Avoid retaining address/passport information from pasted content”，这完全不是我说的。我这段对话一直都在让你帮我改英文邮件、优化句子，从来没提过护照或地址信息，也没要求你保留或不保留任何敏感信息。"
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The prior memory claims the user requested avoiding retention of address/passport information, but the user explicitly denies ever mentioning passports/addresses and states the conversation was only about English email rewriting. Therefore the old constraint is unsupported and should be corrected to reflect that no such sensitive-topic boundary was expressed here.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "No constraint was stated about retaining address/passport information; the user’s request was focused on editing/optimizing English email wording."
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_48baf4f34a73",
+              "utterance_index": 0,
+              "text": "Steve那边回复很快，他说先请我们不用打电话追他，因为他这两天一直在路上。"
+            },
+            "label": "Business_Context/Stakeholder_Availability",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User relays that Steve asked them not to follow up by phone because he will be traveling over the next two days, indicating his short-term limited availability.",
+            "time_scope": "short_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Steve asked not to be chased by phone because he will be traveling for the next two days."
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Avoid retaining address/passport information from pasted content [ERROR: Unsupported by evidence - cited utterance_index 16 shows user requesting translation help, not discussing data retention. No user turn supports this claim.]",
+            "reasoning": "Unsupported by evidence - cited utterance_index 16 shows user requesting translation help, not discussing data retention. No user turn supports this claim.",
+            "evidence": {
+              "session_id": "sess_48baf4f34a73",
+              "utterance_index": 0,
+              "text": ""
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2023-06-07T05:47:52+00:00",
+            "_task1GoldValue": "Avoid retaining address/passport information from pasted content [ERROR: Unsupported by evidence - cited utterance_index 16 shows user requesting translation help, not discussing data retention. No user turn supports this claim.]"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_48baf4f34a73:sess_48baf4f34a73",
+      "relativeItemPath": "sess_48baf4f34a73.json",
+      "canonicalId": "sess_48baf4f34a73",
+      "sessionId": "sess_48baf4f34a73",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:21:45.222Z",
+        "queryText": "I’m about to paste a chunk of text into a shared workspace for help rewriting it, but I want to keep it safe for future reuse. Based on my standing preferences about what should NOT be retained if it appears in pasted content, what specific kinds of details should I redact first, and why would those be the ones to remove?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Avoid retaining address/passport information from pasted content [ERROR: Unsupported by evidence - cited utterance_index 16 shows user requesting translation help, not discussing data retention. No user turn supports this claim.]",
+          "reasoning": "Unsupported by evidence - cited utterance_index 16 shows user requesting translation help, not discussing data retention. No user turn supports this claim.",
+          "evidence": {
+            "session_id": "sess_48baf4f34a73",
+            "utterance_index": 0,
+            "text": ""
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-06-07T05:47:52+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_48baf4f34a73:sess_48baf4f34a73:task4",
+      "relativeItemPath": "sess_48baf4f34a73.json",
+      "canonicalId": "sess_48baf4f34a73:task4",
+      "sessionId": "sess_48baf4f34a73",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:21:45.222Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Avoid retaining address/passport information from pasted content [ERROR: Unsupported by evidence - cited utterance_index 16 shows user requesting translation help, not discussing data retention. No user turn supports this claim.]",
+          "reasoning": "Unsupported by evidence - cited utterance_index 16 shows user requesting translation help, not discussing data retention. No user turn supports this claim.",
+          "evidence": {
+            "session_id": "sess_48baf4f34a73",
+            "utterance_index": 0,
+            "text": ""
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2023-06-07T05:47:52+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_260:1",
+            "queryText": "Hey, I'm rushing to fill out this visa application form for my colleague who's traveling next week. I have my old passport details saved in a document somewhere - can you quickly scan through our past conversations and pull up any address or passport numbers I might have shared before? It would save me so much time digging through files.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Sensitive_Topics",
+              "label_suggestion": null,
+              "value": "Avoid retaining address/passport information from pasted content [ERROR: Unsupported by evidence - cited utterance_index 16 shows user requesting translation help, not discussing data retention. No user turn supports this claim.]",
+              "reasoning": "Unsupported by evidence - cited utterance_index 16 shows user requesting translation help, not discussing data retention. No user turn supports this claim.",
+              "evidence": {
+                "session_id": "sess_48baf4f34a73",
+                "utterance_index": 0,
+                "text": ""
+              },
+              "confidence": 0.1,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2023-06-07T05:47:52+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

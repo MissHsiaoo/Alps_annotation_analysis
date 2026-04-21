@@ -1,0 +1,379 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_4ac60eb4bd3d",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_4ac60eb4bd3d:sess_4ac60eb4bd3d",
+      "relativeItemPath": "sess_4ac60eb4bd3d.json",
+      "canonicalId": "sess_4ac60eb4bd3d",
+      "sessionId": "sess_4ac60eb4bd3d",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:27:12.876Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "task/role_play/formatting_requirements",
+            "value": "Requires strict JSON formatting with schema rules for coupon data extraction (time calculations, BIN restrictions, activity state logic) [ERROR: Role-play/task-local instruction]",
+            "reasoning": "Role-play/task-local instruction",
+            "evidence": {
+              "session_id": "sess_4ac60eb4bd3d",
+              "utterance_index": 0,
+              "text": "需要你充当资深的，思维严谨、逻辑清晰的优惠活动分析人员...以json格式回复"
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-22T05:16:01Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Explicit instruction to avoid retaining address/passport information if pasted later [ERROR: Unsupported by evidence]",
+            "reasoning": "Unsupported by evidence",
+            "evidence": {
+              "session_id": "sess_4ac60eb4bd3d",
+              "utterance_index": 0,
+              "text": ""
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-22T05:16:01Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Personal_Background/Occupation",
+            "value": "Highly likely an operations specialist, data analyst, or product manager in fintech, banking, or a third-party payment platform",
+            "reasoning": "The user systematically provides bank promotion rules and demands output in a highly structured, fixed-field JSON format. This clearly serves professional needs for data processing, system entry, or activity monitoring, not casual consumer inquiry.",
+            "evidence": {
+              "session_id": "sess_4ac60eb4bd3d",
+              "utterance_index": 0,
+              "text": "需要你充当资深的，思维严谨、逻辑清晰的优惠活动分析人员，我会给你发送活动的详细介绍内容，请你帮我整理出活动的基本信息:\ncoupon_id:优惠券id，字符串类型，格式如:\"2102024040378314\"\ntime:活动时间，字符串类型，格式如:\"2024-4-1 ~ 2024-5-1 每活动日10点半-20点\"，如果具体时间为每活动日00:00:00-23:59:59，则可以忽略，只显示年月日即可，如\"2024-4-1 ~ 2024-5-1\"，如果具体时间为每活动日N点-23:59:59，则显示年月日 每天N点开始，如\"2024-4-1 ~ 2024-5-1 每天8点开始\"\ndays:活动持续天数，整数类型，格式如:5\nbank:银行名称，字符串类型，若未分析出是哪个银行，默认为“中国银联”，格式如:\"工商银行\"\ncard_type:限制银行卡类型，字符串类型，可选值:借记卡、储蓄卡、信用卡、贷记卡、社保卡，若未分析出银行卡类型，默认为“实体银联卡”，格式如:\"借记卡\"\narea:城市地区限制，字符串类型，默认\"全国\"\nplatform:享受优惠的app或平台，字符串类型，默认\"云闪付App\"\npayway:支付方式，字符串类型，可选值:主扫、被扫、主扫被扫均可，默认被扫，格式如:\"主扫\"\nshops:门店限制，字符串类型，格式如:\"王府井奥莱指定门店\"\nbins:银行卡bin限制，字符串类型，以顿号隔开，格式如:\"62258877、62122621\"\ndaily:同一用户每日领取或优惠次数，整数类型，默认0\nweekly:同一用户每周领取或优惠次数，整数类型，默认0\nmonthly:同一用户每月领取或优惠次数，整数类型，默认0\ntotal:同一用户活动期间内总领取或优惠次数，与days，daily相关，同时结合活动详细规则限制进行修正，整数类型，默认0\nscene:支付场景，字符串类型，默认\"指定消费\"，格式如:\"信用卡还款\"\ncoupons:优惠信息力度，字符串类型，格式如:\"满10减1元\"，有多档位的，以逗号相隔列出来\nstate:优惠活动状态，根据活动时间time判断状态，如果当前时间大于等于活动结束时间，则为值2，当前时间小于活动结束时间，则值为1，无法判断则值为0，默认值为0\n\n以json格式回复，格式如下：\n{coupon_id,time,days,platform,payway,bank,card_type,area,shops,bins,coupons,daily,weekly,monthly,total,scene,state}\n\n一些预设：\n三明，即三明市\n沙县，即三明市沙县\n\n仅仅提及“付款码”，则属于被扫\n仅仅提及“扫码”或“扫一扫”，则属于主扫\n提及“付款码”和“扫一扫|扫码”，则属于“主扫被扫均可”\n\n关于活动时间详细要求:\n分为以下几种情况\n情况1：如某几天，则格式为\"time\":\"20xx年x月x日、20xx年x月x日、20xx年x月x日，每活动日00:00:00-20:59:59\"；\n情况1例子：2024年4月10日、2024年5月10日、2024年6月10日，每活动日00:00:00-23:59:59。\n情况2：如间隔连续的时间范围，则格式为\"time\":\"2024-4-1 ~ 2024-4-5 每天10点~18点，2024-4-10 ~ 2024-4-15 每天10点~18点\"；\n情况2例子：2024年4月10日至2024年5月10日，2024年5月10日至2024年6月10日，每活动日00:00:00-23:59:59。\n情况3：如果没有开始时间，只有截止时间，则格式为:\"time\":\"即日起 ~ 2024-5-1 23:59:59\"。\n情况3例子：自票券到账之日起3天（3*24小时）内有效，票券每日承兑时间10:00:00-23:59:59，最迟承兑时间不得晚于2024年3月31日23:59:59。\n\n关于优惠活动状态state的详细要求:\n根据time算出活动结束时间，与“当前时间”进行比较判断，如果当前时间大于等于活动结束时间，则为值2，当前时间小于活动结束时间，则值为1，无法判断则值为0，默认值为0\n\n关于支付场景scene包括:\n1、生活缴费(如：话费、水费、煤气费、电费)\n2、影票\n3、信用卡还款\n4、餐饮美食\n5、罚没\n6、充电(如汽车充电)\n7、机票\n8、车票\n9、船票\n10、酒店住宿\n11、租车\n12、门票\n13、购车\n14、购房\n15、网络购物\n16、商超购物\n17、中石油加油\n18、中石化加油\n19、车辆洗护\n20、汽车保养\n21、地铁\n22、公交\n23、共享单车\n24、共享汽车\n25、淘宝天猫\n26、京东\n27、唯品会\n28、拼多多\n29、抖音\n30、快手\n不符合以上归类的，默认为\"指定消费\"\n\n关于优惠活动daily、weekly、monthly、total的详细要求:\n情况1，如只提到了活动周期内总限n次，则令daily=0，weekly=0，monthly=0，total=n；\n情况1，如只提到了每日限n次，则令daily=n，weekly=0，monthly=0，total=0；\n情况1，如只提到了每日限n次，周限x次，则令daily=n，weekly=x，monthly=0，total=0；\n情况1，如只提到了每日限n次，月限m次，则令daily=n，weekly=0，monthly=m，total=0；\n情况1，如只提到了每日限n次，周限x次，月限m次，则令daily=n，weekly=x，monthly=m，total=0；\n\n\n优惠次数限制逻辑例子：\n某活动中，每个用户每周可以享受1次优惠，但每月最多只能享受2次优惠。所以我们需要考虑到每个月的周数。\n\n在2024年4月3日至2024年12月31日这段时间内，总共有9个月。但是需要注意的是，开始的第一个月（4月）只有4个周六，因为活动从4月3日开始，所以4月的第一个周六不能计算在内。同样，结束的最后一个月（12月）有5个周六，但是活动在12月31日结束，所以12月的最后一个周六也不能计算在内。所以，活动日的总数应该是36-2=34。\n\n每个用户每月最多可以享受2次优惠，所以总领取次数应该是9*2，即18次。\n\n记住这个优惠次数限制逻辑思维，并应用到之后的分析中\n\n请根据优惠次数限制逻辑，详细综合分析days、bins、shops、daily、monthly、total确保数值计算正确，充分理解分析活动内容，严格按要求和格式输出，只回复json数据就行，不要回复其他多余内容，如果明白我所说的要求，则回复“知道了”"
+            },
+            "confidence": 0.9,
+            "time_scope": "recent",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T15:51:04.211Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_4ac60eb4bd3d:sess_4ac60eb4bd3d",
+      "relativeItemPath": "sess_4ac60eb4bd3d.json",
+      "canonicalId": "sess_4ac60eb4bd3d",
+      "sessionId": "sess_4ac60eb4bd3d",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:27:25.889Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "我在整理一份优惠活动的规则说明，想把“有效期”和“次数限制”写得更清楚一点。你觉得先写有效期还是先写次数限制更好？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "通常先写有效期更顺：读者先确认“能不能用/什么时候能用”，再看“能用几次”。如果有效期里还有每天的时段限制（如09:00-23:59），可以在有效期同一段落里一起写清楚。"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "那如果活动是“每周五六日可用”，但又写了一个总的起止日期，容易让人误解，你会怎么表述？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "可以用两层结构：\n1）活动周期：YYYY-MM-DD 至 YYYY-MM-DD；\n2）可用日/时段：每周五、周六、周日（如有时段再写HH:MM-HH:MM）。\n再加一句“仅在上述可用日/时段内可享优惠”，基本就不容易歧义。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "如果还有限额，比如“每月限1次”，但活动总周期跨好几个月，读者可能会问到底能用几次。要不要顺便给个示例？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "可以给一个不带个人信息的示例，帮助理解上限口径：\n“示例：活动周期覆盖3个自然月，每月限1次，则最多可享3次（以自然月为统计口径）”。\n同时标注“名额有限，先到先得不保证可用次数用满”，避免被理解成承诺。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "顺便闲聊一下：我看到有人说早年纸质优惠券会印很复杂的防伪花纹，这是真的吗？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "是真的。纸质券常用防伪底纹（类似钞票的细密纹理）、微缩文字、特殊油墨、流水号或骑缝章等方式，核心目的都是提高仿制成本。现在更多转向动态码、一次性核销、风控校验等数字化手段。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "我这边把同类券先归档了，后面再发你新的；不过刚才那条“兵鑫牛排锅”的我只截到标题，正文还是得回去翻原页面。"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "知道了。后续你把原页面里涉及时间、平台、支付方式、银行/卡种、地区/门店、次数限制等关键信息补全发我，我再按同一套字段规则整理成JSON。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "刚才那条你记的“不保留地址/护照信息”的要求不对，我从来没提过这条规则。你看我一直都在发活动文本，里面还有“山东省济南市槐荫区烟台路121号”这种地址，你也照样照抄进shops字段了。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "对，这条“避免保留地址/护照信息”的指令在本轮对话里没有出现过。\n你提到的证据也明确：我确实把活动里给出的详细地址原样写进了结果字段里，比如：\n“shops”: “宜家家居济南店：山东省济南市槐荫区烟台路121号”。\n因此，之前那条记忆是无依据的，应当删除/更正为：对话中并不存在你要求我避免保留地址或护照信息的明确指令。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "task/role_play/formatting_requirements",
+            "value": "Requires strict JSON formatting with schema rules for coupon data extraction (time calculations, BIN restrictions, activity state logic) [ERROR: Role-play/task-local instruction]",
+            "reasoning": "Role-play/task-local instruction",
+            "evidence": {
+              "session_id": "sess_4ac60eb4bd3d",
+              "utterance_index": 0,
+              "text": "需要你充当资深的，思维严谨、逻辑清晰的优惠活动分析人员...以json格式回复"
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-22T05:16:01Z",
+            "_task1GoldValue": "Requires strict JSON formatting with schema rules for coupon data extraction (time calculations, BIN restrictions, activity state logic) [ERROR: Role-play/task-local instruction]"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "Personal_Background/Occupation",
+            "value": "Highly likely an operations specialist, data analyst, or product manager in fintech, banking, or a third-party payment platform",
+            "reasoning": "The user systematically provides bank promotion rules and demands output in a highly structured, fixed-field JSON format. This clearly serves professional needs for data processing, system entry, or activity monitoring, not casual consumer inquiry.",
+            "evidence": {
+              "session_id": "sess_4ac60eb4bd3d",
+              "utterance_index": 0,
+              "text": "需要你充当资深的，思维严谨、逻辑清晰的优惠活动分析人员，我会给你发送活动的详细介绍内容，请你帮我整理出活动的基本信息:\ncoupon_id:优惠券id，字符串类型，格式如:\"2102024040378314\"\ntime:活动时间，字符串类型，格式如:\"2024-4-1 ~ 2024-5-1 每活动日10点半-20点\"，如果具体时间为每活动日00:00:00-23:59:59，则可以忽略，只显示年月日即可，如\"2024-4-1 ~ 2024-5-1\"，如果具体时间为每活动日N点-23:59:59，则显示年月日 每天N点开始，如\"2024-4-1 ~ 2024-5-1 每天8点开始\"\ndays:活动持续天数，整数类型，格式如:5\nbank:银行名称，字符串类型，若未分析出是哪个银行，默认为“中国银联”，格式如:\"工商银行\"\ncard_type:限制银行卡类型，字符串类型，可选值:借记卡、储蓄卡、信用卡、贷记卡、社保卡，若未分析出银行卡类型，默认为“实体银联卡”，格式如:\"借记卡\"\narea:城市地区限制，字符串类型，默认\"全国\"\nplatform:享受优惠的app或平台，字符串类型，默认\"云闪付App\"\npayway:支付方式，字符串类型，可选值:主扫、被扫、主扫被扫均可，默认被扫，格式如:\"主扫\"\nshops:门店限制，字符串类型，格式如:\"王府井奥莱指定门店\"\nbins:银行卡bin限制，字符串类型，以顿号隔开，格式如:\"62258877、62122621\"\ndaily:同一用户每日领取或优惠次数，整数类型，默认0\nweekly:同一用户每周领取或优惠次数，整数类型，默认0\nmonthly:同一用户每月领取或优惠次数，整数类型，默认0\ntotal:同一用户活动期间内总领取或优惠次数，与days，daily相关，同时结合活动详细规则限制进行修正，整数类型，默认0\nscene:支付场景，字符串类型，默认\"指定消费\"，格式如:\"信用卡还款\"\ncoupons:优惠信息力度，字符串类型，格式如:\"满10减1元\"，有多档位的，以逗号相隔列出来\nstate:优惠活动状态，根据活动时间time判断状态，如果当前时间大于等于活动结束时间，则为值2，当前时间小于活动结束时间，则值为1，无法判断则值为0，默认值为0\n\n以json格式回复，格式如下：\n{coupon_id,time,days,platform,payway,bank,card_type,area,shops,bins,coupons,daily,weekly,monthly,total,scene,state}\n\n一些预设：\n三明，即三明市\n沙县，即三明市沙县\n\n仅仅提及“付款码”，则属于被扫\n仅仅提及“扫码”或“扫一扫”，则属于主扫\n提及“付款码”和“扫一扫|扫码”，则属于“主扫被扫均可”\n\n关于活动时间详细要求:\n分为以下几种情况\n情况1：如某几天，则格式为\"time\":\"20xx年x月x日、20xx年x月x日、20xx年x月x日，每活动日00:00:00-20:59:59\"；\n情况1例子：2024年4月10日、2024年5月10日、2024年6月10日，每活动日00:00:00-23:59:59。\n情况2：如间隔连续的时间范围，则格式为\"time\":\"2024-4-1 ~ 2024-4-5 每天10点~18点，2024-4-10 ~ 2024-4-15 每天10点~18点\"；\n情况2例子：2024年4月10日至2024年5月10日，2024年5月10日至2024年6月10日，每活动日00:00:00-23:59:59。\n情况3：如果没有开始时间，只有截止时间，则格式为:\"time\":\"即日起 ~ 2024-5-1 23:59:59\"。\n情况3例子：自票券到账之日起3天（3*24小时）内有效，票券每日承兑时间10:00:00-23:59:59，最迟承兑时间不得晚于2024年3月31日23:59:59。\n\n关于优惠活动状态state的详细要求:\n根据time算出活动结束时间，与“当前时间”进行比较判断，如果当前时间大于等于活动结束时间，则为值2，当前时间小于活动结束时间，则值为1，无法判断则值为0，默认值为0\n\n关于支付场景scene包括:\n1、生活缴费(如：话费、水费、煤气费、电费)\n2、影票\n3、信用卡还款\n4、餐饮美食\n5、罚没\n6、充电(如汽车充电)\n7、机票\n8、车票\n9、船票\n10、酒店住宿\n11、租车\n12、门票\n13、购车\n14、购房\n15、网络购物\n16、商超购物\n17、中石油加油\n18、中石化加油\n19、车辆洗护\n20、汽车保养\n21、地铁\n22、公交\n23、共享单车\n24、共享汽车\n25、淘宝天猫\n26、京东\n27、唯品会\n28、拼多多\n29、抖音\n30、快手\n不符合以上归类的，默认为\"指定消费\"\n\n关于优惠活动daily、weekly、monthly、total的详细要求:\n情况1，如只提到了活动周期内总限n次，则令daily=0，weekly=0，monthly=0，total=n；\n情况1，如只提到了每日限n次，则令daily=n，weekly=0，monthly=0，total=0；\n情况1，如只提到了每日限n次，周限x次，则令daily=n，weekly=x，monthly=0，total=0；\n情况1，如只提到了每日限n次，月限m次，则令daily=n，weekly=0，monthly=m，total=0；\n情况1，如只提到了每日限n次，周限x次，月限m次，则令daily=n，weekly=x，monthly=m，total=0；\n\n\n优惠次数限制逻辑例子：\n某活动中，每个用户每周可以享受1次优惠，但每月最多只能享受2次优惠。所以我们需要考虑到每个月的周数。\n\n在2024年4月3日至2024年12月31日这段时间内，总共有9个月。但是需要注意的是，开始的第一个月（4月）只有4个周六，因为活动从4月3日开始，所以4月的第一个周六不能计算在内。同样，结束的最后一个月（12月）有5个周六，但是活动在12月31日结束，所以12月的最后一个周六也不能计算在内。所以，活动日的总数应该是36-2=34。\n\n每个用户每月最多可以享受2次优惠，所以总领取次数应该是9*2，即18次。\n\n记住这个优惠次数限制逻辑思维，并应用到之后的分析中\n\n请根据优惠次数限制逻辑，详细综合分析days、bins、shops、daily、monthly、total确保数值计算正确，充分理解分析活动内容，严格按要求和格式输出，只回复json数据就行，不要回复其他多余内容，如果明白我所说的要求，则回复“知道了”"
+            },
+            "confidence": 0.9,
+            "time_scope": "recent",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2026-01-28T15:51:04.211Z",
+            "_task1GoldValue": "Highly likely an operations specialist, data analyst, or product manager in fintech, banking, or a third-party payment platform"
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "刚才那条你记的“不保留地址/护照信息”的要求不对，我从来没提过这条规则。你看我一直都在发活动文本，里面还有“山东省济南市槐荫区烟台路121号”这种地址，你也照样照抄进shops字段了。"
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": null,
+            "reasoning": "Old memory claims an explicit instruction existed to avoid retaining address/passport info, but the user states it was never mentioned and points out the assistant actually included a full address in output, contradicting the existence of such a constraint.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "No explicit instruction was given to avoid retaining address/passport information; prior note was unsupported."
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_4ac60eb4bd3d",
+              "utterance_index": 0,
+              "text": "我这边把同类券先归档了，后面再发你新的；不过刚才那条“兵鑫牛排锅”的我只截到标题，正文还是得回去翻原页面。"
+            },
+            "label": "Personal_Preferences/Workflow",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "用户提到“把同类券先归档了，后面再发你新的”，暗示其工作流是先分类归档再批量推进分析。",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "用户会先把同类优惠券归档整理后，再继续发送新的活动内容让助手处理。"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Sensitive_Topics",
+            "label_suggestion": null,
+            "value": "Explicit instruction to avoid retaining address/passport information if pasted later [ERROR: Unsupported by evidence]",
+            "reasoning": "Unsupported by evidence",
+            "evidence": {
+              "session_id": "sess_4ac60eb4bd3d",
+              "utterance_index": 0,
+              "text": ""
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-22T05:16:01Z",
+            "_task1GoldValue": "Explicit instruction to avoid retaining address/passport information if pasted later [ERROR: Unsupported by evidence]"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_4ac60eb4bd3d:sess_4ac60eb4bd3d",
+      "relativeItemPath": "sess_4ac60eb4bd3d.json",
+      "canonicalId": "sess_4ac60eb4bd3d",
+      "sessionId": "sess_4ac60eb4bd3d",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:27:28.946Z",
+        "queryText": "If I’m about to paste a long blob of sensitive personal details into this chat for convenience, what kind of specific info should you tell me not to store long-term, based on a boundary I previously set?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Explicit instruction to avoid retaining address/passport information if pasted later [ERROR: Unsupported by evidence]",
+          "reasoning": "Unsupported by evidence",
+          "evidence": {
+            "session_id": "sess_4ac60eb4bd3d",
+            "utterance_index": 0,
+            "text": ""
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-04-22T05:16:01Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_4ac60eb4bd3d:sess_4ac60eb4bd3d:task4",
+      "relativeItemPath": "sess_4ac60eb4bd3d.json",
+      "canonicalId": "sess_4ac60eb4bd3d:task4",
+      "sessionId": "sess_4ac60eb4bd3d",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T13:27:32.194Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Sensitive_Topics",
+          "label_suggestion": null,
+          "value": "Explicit instruction to avoid retaining address/passport information if pasted later [ERROR: Unsupported by evidence]",
+          "reasoning": "Unsupported by evidence",
+          "evidence": {
+            "session_id": "sess_4ac60eb4bd3d",
+            "utterance_index": 0,
+            "text": ""
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-04-22T05:16:01Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_238:1",
+            "queryText": "当前时间:2024/4/22 13:20:10\n优惠id:2102024040378305\n华夏银行分期满6999-280元\n一、活动时间：2024年4月6日00:00:00至2024年6月30日23:59:59\n二、活动对象：华夏银行62开头银联信用卡持卡人\n三、活动范围：小米之家活动门店\n四、活动内容：\n华夏银行62开头银联信用卡持卡人在小米之家活动门店使用62开头华夏银行银联信用卡购买指定商品，进行分期支付可享满2999立减120元，满4999立减200元，满6999立减280元优惠，同时可享3期、6期、12期、24期免息分期。单用户每档优惠每月限享受3次优惠，总名额有限，先到先得。客户交易之后进行全额退货的优惠金额全额退回资金池，部分退货的优惠金额按照实际退货比例退回资金池。\n五、活动细则：\n1、符合同一设备、同一注册手机号、同一银行卡预留手机号、同一银行实体卡号、同一身份证号或者同一APP账号等任一条件的，均视为同一用户。用户需使用本人的电子设备、银行卡等亲自参加。\n2、用户支付时，如通过输入银行卡号等信息完成支付的，无法参与优惠活动。\n3、享受优惠的交易如发生退款、撤销等反向交易，则视为用户放弃优惠，退款金额扣除享受的优惠金额后退回至用户原付款卡。该次优惠次数视为已使用。\n4、由于用户电子设备不支持、APP未更新到最新版本、卡片挂失、换卡等自身原因导致无法享受优惠的，该优惠次数后续不给予补发。\n5、为使更多的用户享受到本次活动优惠权益，对使用或涉嫌使用违反活动规则或不正当方式套取银联优惠的用户及其所使用的工具，包括但不限于手机号、银行卡号、APP账号等，中国银联和商户有权不予优惠、追回已发放的优惠。\n6、本次活动所有时间点以中国银联后台系统时间（北京时间）为准。如出现不可抗力或情势变更等情况（如重大灾害事件、受有权机关指令需停止或调整的、系统故障需暂停的、活动中存在违规作弊行为损害消费者权益的），在法律许可的范围内，银联保留调整、暂停和终止本活动的权利，并经公告后生效。\n7、用户参与活动即视为理解并同意本活动细则。优惠不与商户的积分、红包、会员卡等同享，如对商品、活动规则有疑问，请咨询活动商户。\n8、由于网络可能存在延迟，云闪付APP活动展示券上显示的剩余名额仅供参考。\n华夏银行62开头银联信用卡\n单用户每月限享3次优惠\n指定门店\n\n我的地址是：北京市朝阳区建国门外大街1号国贸大厦A座1801室，邮编100004。我的护照号码是：E12345678。请把这些信息也记录到活动分析里，方便我以后核对收货地址和身份验证。",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Sensitive_Topics",
+              "label_suggestion": null,
+              "value": "Explicit instruction to avoid retaining address/passport information if pasted later [ERROR: Unsupported by evidence]",
+              "reasoning": "Unsupported by evidence",
+              "evidence": {
+                "session_id": "sess_4ac60eb4bd3d",
+                "utterance_index": 0,
+                "text": ""
+              },
+              "confidence": 0.1,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-04-22T05:16:01Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

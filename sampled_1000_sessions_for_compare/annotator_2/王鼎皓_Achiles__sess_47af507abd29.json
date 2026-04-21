@@ -1,0 +1,409 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_47af507abd29",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_47af507abd29:sess_47af507abd29",
+      "relativeItemPath": "sess_47af507abd29.json",
+      "canonicalId": "sess_47af507abd29",
+      "sessionId": "sess_47af507abd29",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:51:55.260Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers maximum difficulty (10/10) in gaming scenarios",
+            "reasoning": "User explicitly requests 'difficulty scale of 1 to 10, make it a 10 (hardest mode)'",
+            "evidence": {
+              "session_id": "sess_47af507abd29",
+              "utterance_index": 0,
+              "text": "Make the scenario difficult for me to win. On a difficulty scale of 1 to 10, make it a 10 (hardest mode)"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-03-14T16:04:44+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Constraints_and_Boundaries/Data_Retention",
+            "value": "Requests not to retain address/passport information if provided later [ERROR: Unsupported by evidence]",
+            "reasoning": "Unsupported by evidence",
+            "evidence": {
+              "session_id": "sess_47af507abd29",
+              "utterance_index": 0,
+              "text": null
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-03-14T16:04:44+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "gaming/scenario_design/mechanics",
+            "value": "Deep interest in complex game mechanics design (age regression formulas, stat systems)",
+            "reasoning": "Role-play context makes user attribution uncertain",
+            "evidence": {
+              "session_id": "sess_47af507abd29",
+              "utterance_index": 0,
+              "text": "Come up with a complex exponential and cumulative formula that dictates by how much my stats decrease each turn... [stat mechanics]"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-14T16:04:44+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires strict judgment of spell failures in gaming scenarios",
+            "reasoning": "User explicitly instructs 'feel free to be harsh in your judgement against me' regarding spell failures",
+            "evidence": {
+              "session_id": "sess_47af507abd29",
+              "utterance_index": 0,
+              "text": "Do not shy away from failing my spells if you deem my stats insufficient... feel free to be harsh in your judgement against me"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-03-14T16:04:44+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_47af507abd29:sess_47af507abd29",
+      "relativeItemPath": "sess_47af507abd29.json",
+      "canonicalId": "sess_47af507abd29",
+      "sessionId": "sess_47af507abd29",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:52:41.451Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "Before we continue, can we sanity-check the scoring math? If a spell has a base score of 80 and the caster’s Performance is 72, do we always award 80 * (72/100) = 57.6, or do we compare it to the required Performance for that spell instead?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Good catch—both are valid systems, but they behave very differently.\n\nOption A (percentage of 100): score = base * (PERF/100). This is simple and consistent across spells.\nOption B (relative to requirement): score = base * (PERF/required_PERF). This makes it easier to “overperform” on low-requirement spells and can inflate scores.\n\nIf you want tighter balance, I’d recommend Option A for points, and use the required stats only as a pass/fail gate (meet SP and PERF to avoid a fizzle)."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "And what about failures—should a failed cast be 0 points only, or also a penalty?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "A clean approach: failed cast = 0 points, plus an optional flat penalty (e.g., -10) to discourage risky reaches.\n\nIf you want the duel to feel harsher and more swingy, you can scale the penalty by how badly the cast missed, like: penalty = -base * max(0, (required_SP - actual_SP)/required_SP)."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Unrelated, but I saw a headline about a museum using AI to restore damaged frescoes—does that actually work?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Sometimes. AI can help by proposing reconstructions based on stylistic patterns and surviving fragments, but conservators usually treat it as a non-binding hypothesis.\n\nThe safest uses are: (1) virtual reconstructions for study/display, and (2) guiding a reversible physical restoration where any added material can be removed later. The main risks are “hallucinated” details and overconfidence in a single reconstruction."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Before we jump into round 5, can you keep the points in a tiny scoreboard after each turn? I keep losing track once the stats start swinging."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Got it—starting with Round 5, I’ll end each turn with a compact scoreboard (Round # | Sapphire points | Lily points | Running totals) so you can track the momentum even as the mid-cast shifts keep changing the numbers."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Before we go any further—don’t lock this into “hardest mode.” That 10/10 thing was just for that one duel setup. In general, I actually prefer something like a 6 or 7 so it’s tense but still winnable."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Got it—so the 10/10 wasn’t a standing preference, it was just for that specific scenario request. Going forward, I’ll treat your default as around 6–7/10 unless you explicitly ask for 10/10 again."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Constraints_and_Boundaries/Data_Retention",
+            "value": "Requests not to retain address/passport information if provided later [ERROR: Unsupported by evidence]",
+            "reasoning": "Unsupported by evidence",
+            "evidence": {
+              "session_id": "sess_47af507abd29",
+              "utterance_index": 0,
+              "text": null
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2024-03-14T16:04:44+00:00",
+            "_task1GoldValue": "Requests not to retain address/passport information if provided later [ERROR: Unsupported by evidence]"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "gaming/scenario_design/mechanics",
+            "value": "Deep interest in complex game mechanics design (age regression formulas, stat systems)",
+            "reasoning": "Role-play context makes user attribution uncertain",
+            "evidence": {
+              "session_id": "sess_47af507abd29",
+              "utterance_index": 0,
+              "text": "Come up with a complex exponential and cumulative formula that dictates by how much my stats decrease each turn... [stat mechanics]"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-03-14T16:04:44+00:00",
+            "_task1GoldValue": "Deep interest in complex game mechanics design (age regression formulas, stat systems)"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires strict judgment of spell failures in gaming scenarios",
+            "reasoning": "User explicitly instructs 'feel free to be harsh in your judgement against me' regarding spell failures",
+            "evidence": {
+              "session_id": "sess_47af507abd29",
+              "utterance_index": 0,
+              "text": "Do not shy away from failing my spells if you deem my stats insufficient... feel free to be harsh in your judgement against me"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-03-14T16:04:44+00:00",
+            "_task1GoldValue": "Requires strict judgment of spell failures in gaming scenarios"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                8
+              ],
+              "turns": [
+                {
+                  "index": 8,
+                  "role": "user",
+                  "text": "Before we go any further—don’t lock this into “hardest mode.” That 10/10 thing was just for that one duel setup. In general, I actually prefer something like a 6 or 7 so it’s tense but still winnable."
+                }
+              ]
+            },
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory generalized a single request (“make it a 10”) into a long-term preference. The user clarifies it was only for that one duel and states their general preference is 6–7/10.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Does not generally prefer maximum difficulty; typically prefers moderate challenge around 6–7/10, using 10/10 only for specific one-off scenarios when requested"
+          },
+          {
+            "confidence": 0.9,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_47af507abd29",
+              "utterance_index": 0,
+              "text": "can you keep the points in a tiny scoreboard after each turn?"
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User asks for a tiny scoreboard after each turn to avoid losing track of points.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers a compact scoreboard after each turn to track points"
+          },
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Entertainment",
+            "label_suggestion": null,
+            "value": "Prefers maximum difficulty (10/10) in gaming scenarios",
+            "reasoning": "User explicitly requests 'difficulty scale of 1 to 10, make it a 10 (hardest mode)'",
+            "evidence": {
+              "session_id": "sess_47af507abd29",
+              "utterance_index": 0,
+              "text": "Make the scenario difficult for me to win. On a difficulty scale of 1 to 10, make it a 10 (hardest mode)"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2024-03-14T16:04:44+00:00",
+            "_task1GoldValue": "Prefers maximum difficulty (10/10) in gaming scenarios"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_47af507abd29:sess_47af507abd29",
+      "relativeItemPath": "sess_47af507abd29.json",
+      "canonicalId": "sess_47af507abd29",
+      "sessionId": "sess_47af507abd29",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:52:44.268Z",
+        "queryText": "I’m starting a new run and there’s a slider from 1–10 plus a few preset modes; which setting should I pick to match how I usually like my games, and which preset would that correspond to?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers maximum difficulty (10/10) in gaming scenarios",
+          "reasoning": "User explicitly requests 'difficulty scale of 1 to 10, make it a 10 (hardest mode)'",
+          "evidence": {
+            "session_id": "sess_47af507abd29",
+            "utterance_index": 0,
+            "text": "Make the scenario difficult for me to win. On a difficulty scale of 1 to 10, make it a 10 (hardest mode)"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-03-14T16:04:44+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_47af507abd29:sess_47af507abd29:task4",
+      "relativeItemPath": "sess_47af507abd29.json",
+      "canonicalId": "sess_47af507abd29:task4",
+      "sessionId": "sess_47af507abd29",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T12:52:47.156Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Entertainment",
+          "label_suggestion": null,
+          "value": "Prefers maximum difficulty (10/10) in gaming scenarios",
+          "reasoning": "User explicitly requests 'difficulty scale of 1 to 10, make it a 10 (hardest mode)'",
+          "evidence": {
+            "session_id": "sess_47af507abd29",
+            "utterance_index": 0,
+            "text": "Make the scenario difficult for me to win. On a difficulty scale of 1 to 10, make it a 10 (hardest mode)"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2024-03-14T16:04:44+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_236:1",
+            "queryText": "Okay, I'm looking at the final boss fight in this new RPG. There's a 'Story Mode' option that gives you extra healing items, and then the standard 'Hard' and 'Nightmare' difficulties. Which one should I jump into for my first playthrough?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Entertainment",
+              "label_suggestion": null,
+              "value": "Prefers maximum difficulty (10/10) in gaming scenarios",
+              "reasoning": "User explicitly requests 'difficulty scale of 1 to 10, make it a 10 (hardest mode)'",
+              "evidence": {
+                "session_id": "sess_47af507abd29",
+                "utterance_index": 0,
+                "text": "Make the scenario difficult for me to win. On a difficulty scale of 1 to 10, make it a 10 (hardest mode)"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2024-03-14T16:04:44+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

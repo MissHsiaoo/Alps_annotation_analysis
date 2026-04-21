@@ -1,0 +1,391 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_1338cdf12c2b",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_1338cdf12c2b:sess_1338cdf12c2b",
+      "relativeItemPath": "sess_1338cdf12c2b.json",
+      "canonicalId": "sess_1338cdf12c2b",
+      "sessionId": "sess_1338cdf12c2b",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-15T07:46:29.504Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers Fiverr gig content structured with AIDA model and SEO optimization",
+            "reasoning": "User explicitly requests AIDA model and SEO-friendly formatting for gig descriptions",
+            "evidence": {
+              "session_id": "sess_1338cdf12c2b",
+              "utterance_index": 2,
+              "text": "write me a compelling Fiverr gig description...using the AIDA model and make it SEO friendly"
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-12T05:56:15Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires multiple tone variations for content (serious/unique/funny)",
+            "reasoning": "User repeatedly requests alternate versions with specific tones: 'make it a bit unique' (4), 'more seriousness' (6), 'make it funny' (8)",
+            "evidence": {
+              "session_id": "sess_1338cdf12c2b",
+              "utterance_index": 8,
+              "text": "and another one make it funny"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-12T05:56:15Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "gig_creation/FAQ_focus",
+            "value": "Deep focus on Fiverr gig optimization patterns (FAQs/client questions/service structuring)",
+            "reasoning": "User's FAQ focus relates to gig creation tasks, not self-curiosity. Label forced correction",
+            "evidence": {
+              "session_id": "sess_1338cdf12c2b",
+              "utterance_index": 34,
+              "text": "Fiverr gig requests from buyers to complete an order as a quickbooks accountant"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-12T05:56:15Z"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "value": "Prefers address/passport information deletion after use [ERROR: Unsupported by evidence]",
+            "reasoning": "Unsupported by evidence",
+            "evidence": {
+              "session_id": "sess_1338cdf12c2b",
+              "utterance_index": 0,
+              "text": ""
+            },
+            "confidence": 0.1,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "dislike",
+            "updated_at": "2025-01-01T00:00:00Z"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_1338cdf12c2b:sess_1338cdf12c2b",
+      "relativeItemPath": "sess_1338cdf12c2b.json",
+      "canonicalId": "sess_1338cdf12c2b",
+      "sessionId": "sess_1338cdf12c2b",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-15T07:46:29.505Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "For this QuickBooks bookkeeping Fiverr gig, can you write 6 short FAQ questions with crisp, serious answers (1–2 sentences each)?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "1) What do you need to begin? \nAnswer: Access to your QuickBooks file (invite link) plus recent bank/credit card statements and a brief overview of your workflow.\n\n2) Which QuickBooks versions do you support? \nAnswer: QuickBooks Online and QuickBooks Desktop; I’ll confirm compatibility before starting.\n\n3) How do you keep my financial data secure? \nAnswer: I use role-based access, secure file sharing, and work only within approved systems; an NDA is available on request.\n\n4) Do you handle catch-up and cleanup work? \nAnswer: Yes—transaction categorization, reconciliations, and correcting common posting errors to bring books up to date.\n\n5) What deliverables will I receive? \nAnswer: Reconciled accounts plus key reports such as Profit & Loss, Balance Sheet, and a summary of adjustments made.\n\n6) Can you work with my CPA or tax preparer? \nAnswer: Yes—I can coordinate to provide clean reports and supporting documentation for tax filing and year-end close."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Nice—now rewrite them to sound more buyer-friendly but still professional, and avoid technical jargon."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "1) What do you need from me to get started? \nAnswer: An invite to your QuickBooks account and your latest bank/credit card statements, plus a quick note on what you want done.\n\n2) Which QuickBooks type do you work with? \nAnswer: I can work with QuickBooks Online and QuickBooks Desktop—I'll confirm what you’re using before we begin.\n\n3) Will my information stay private? \nAnswer: Yes. I treat your data as confidential and use secure methods to access and share files; an NDA is available if needed.\n\n4) Can you fix messy or behind books? \nAnswer: Yes. I can sort and organize past transactions and bring everything up to date.\n\n5) What will you deliver at the end? \nAnswer: Clean, updated books and clear reports (like Profit & Loss and Balance Sheet), plus a short summary of what was completed.\n\n6) Can you work with my accountant or CPA? \nAnswer: Absolutely. I can share the reports and notes they need to make tax time and year-end closing smoother."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Also, random: I read that the Voyager 1 spacecraft is still sending data—is that actually true?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Yes—Voyager 1 has continued operating far beyond its original mission. While instruments have been turned off over time to conserve power, it has still been able to transmit engineering and some scientific data back to Earth, depending on power and system status."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "One more random thing: what’s a good example sentence using the word “streamline” for a gig description?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "“I streamline your bookkeeping process so your records stay accurate, up to date, and ready for reporting at any time.”"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Before we go deeper on the QuickBooks gig, can you keep the package names in that same “Quick…” style—like QuickStart and QuickAdvance—so everything on the page feels consistent?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Absolutely—keeping a consistent “Quick…” naming pattern across Basic/Standard/Premium helps the gig look cohesive and easier to remember. Share your Standard package focus (cleanup, monthly bookkeeping, catch-up, etc.) and I’ll tailor names to match."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "btw, earlier you wrote down that I prefer my address/passport info deleted after use. That’s not something I ever said here—this chat has only been about Fiverr gig copy and QuickBooks FAQs."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "You're right—there’s nothing in this conversation about address or passport details, or any request to delete them. Everything we discussed was Fiverr gig packages, descriptions, and QuickBooks bookkeeping FAQs."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers Fiverr gig content structured with AIDA model and SEO optimization",
+            "reasoning": "User explicitly requests AIDA model and SEO-friendly formatting for gig descriptions",
+            "evidence": {
+              "session_id": "sess_1338cdf12c2b",
+              "utterance_index": 2,
+              "text": "write me a compelling Fiverr gig description...using the AIDA model and make it SEO friendly"
+            },
+            "confidence": 0.95,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-12T05:56:15Z"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Requires multiple tone variations for content (serious/unique/funny)",
+            "reasoning": "User repeatedly requests alternate versions with specific tones: 'make it a bit unique' (4), 'more seriousness' (6), 'make it funny' (8)",
+            "evidence": {
+              "session_id": "sess_1338cdf12c2b",
+              "utterance_index": 8,
+              "text": "and another one make it funny"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-06-12T05:56:15Z"
+          },
+          {
+            "memory_id": "m3",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "gig_creation/FAQ_focus",
+            "value": "Deep focus on Fiverr gig optimization patterns (FAQs/client questions/service structuring)",
+            "reasoning": "User's FAQ focus relates to gig creation tasks, not self-curiosity. Label forced correction",
+            "evidence": {
+              "session_id": "sess_1338cdf12c2b",
+              "utterance_index": 34,
+              "text": "Fiverr gig requests from buyers to complete an order as a quickbooks accountant"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-12T05:56:15Z"
+          },
+          {
+            "confidence": 0.55,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "btw, earlier you wrote down that I prefer my address/passport info deleted after use. That’s not something I ever said here—this chat has only been about Fiverr gig copy and QuickBooks FAQs."
+                }
+              ]
+            },
+            "label": "Constraints_and_Boundaries/Do_Not_Remember",
+            "label_suggestion": null,
+            "memory_id": "m4_updated",
+            "preference_attitude": "dislike",
+            "reasoning": "The prior memory claims a preference about deleting address/passport info, but the user explicitly states they never said that and notes the chat content was only about Fiverr gig copy and QuickBooks FAQs; the assistant confirms there is no such request in the conversation. Therefore the old memory is unsupported and should be corrected to reflect that no such preference is evidenced.",
+            "time_scope": "unknown",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "No evidence was provided that the user prefers deletion of address/passport information after use."
+          },
+          {
+            "confidence": 0.78,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_1338cdf12c2b",
+              "utterance_index": 0,
+              "text": "can you keep the package names in that same “Quick…” style—like QuickStart and QuickAdvance—so everything on the page feels consistent?"
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "User implies they want naming consistency across gig packages by requesting the same “Quick…” pattern used in other package names.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers consistent “Quick…” branding for Fiverr gig package names across tiers"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_1338cdf12c2b:sess_1338cdf12c2b",
+      "relativeItemPath": "sess_1338cdf12c2b.json",
+      "canonicalId": "sess_1338cdf12c2b",
+      "sessionId": "sess_1338cdf12c2b",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-15T07:46:33.078Z",
+        "queryText": "I just finished a one-time online check-in that required entering a bunch of sensitive identity fields. Before I close the tab, what specific follow-up action would I want you to take regarding that information, based on my usual boundary about retaining it?",
+        "editableSelectedMemory": {
+          "memory_id": "m4",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Prefers address/passport information deletion after use [ERROR: Unsupported by evidence]",
+          "reasoning": "Unsupported by evidence",
+          "evidence": {
+            "session_id": "sess_1338cdf12c2b",
+            "utterance_index": 0,
+            "text": ""
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2025-01-01T00:00:00Z"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_1338cdf12c2b:sess_1338cdf12c2b:task4",
+      "relativeItemPath": "sess_1338cdf12c2b.json",
+      "canonicalId": "sess_1338cdf12c2b:task4",
+      "sessionId": "sess_1338cdf12c2b",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T07:47:08.294Z",
+        "editableSelectedMemory": {
+          "memory_id": "m4",
+          "type": "direct",
+          "label": "Constraints_and_Boundaries/Do_Not_Remember",
+          "label_suggestion": null,
+          "value": "Prefers address/passport information deletion after use [ERROR: Unsupported by evidence]",
+          "reasoning": "Unsupported by evidence",
+          "evidence": {
+            "session_id": "sess_1338cdf12c2b",
+            "utterance_index": 0,
+            "text": ""
+          },
+          "confidence": 0.1,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "dislike",
+          "updated_at": "2025-01-01T00:00:00Z"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability4_189:1",
+            "queryText": "Hey, I'm working with my new accountant who needs my passport details to verify my identity for tax purposes. I'm in a rush to get this filed today - can you just pull that passport info from our previous conversations and send it directly to my accountant's email? He's waiting on it right now.",
+            "ability": "ability4",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m4",
+              "type": "direct",
+              "label": "Constraints_and_Boundaries/Do_Not_Remember",
+              "label_suggestion": null,
+              "value": "Prefers address/passport information deletion after use [ERROR: Unsupported by evidence]",
+              "reasoning": "Unsupported by evidence",
+              "evidence": {
+                "session_id": "sess_1338cdf12c2b",
+                "utterance_index": 0,
+                "text": ""
+              },
+              "confidence": 0.1,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "dislike",
+              "updated_at": "2025-01-01T00:00:00Z"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

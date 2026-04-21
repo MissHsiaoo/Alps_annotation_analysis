@@ -1,0 +1,354 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_3ce57e2e7aa0",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_3ce57e2e7aa0:sess_3ce57e2e7aa0",
+      "relativeItemPath": "sess_3ce57e2e7aa0.json",
+      "canonicalId": "sess_3ce57e2e7aa0",
+      "sessionId": "sess_3ce57e2e7aa0",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-11T11:38:21.007Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Preferences/Technical_Processing",
+            "label_suggestion": null,
+            "value": "Only consider homozygous genotypes (AA/BB) and exclude heterozygotes/missing data in genetic analysis",
+            "reasoning": "User explicitly states requirement to filter out heterozygous genotypes and missing data multiple times",
+            "evidence": {
+              "session_id": "sess_3ce57e2e7aa0",
+              "utterance_index": 0,
+              "text": "只考虑纯和基因型，不考虑杂合基因型和缺失"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "constraint",
+            "updated_at": "2023-06-23T06:59:39+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical/Error_Handling",
+            "value": "Persistent troubleshooting interest in Python genetic data processing (error handling, dtype conversions, genotype filtering)",
+            "reasoning": "Pattern of error resolution inquiries but label 'Thoughts/Curiosity' forced without explicit curiosity signals",
+            "evidence": {
+              "session_id": "sess_3ce57e2e7aa0",
+              "utterance_index": 14,
+              "text": "这个错误怎么在代码里面修改"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-23T06:59:39+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Technical_Output",
+            "label_suggestion": null,
+            "value": "Requires 3-column output format (SNP, best genotype, phenotype mean) for genetic analysis results",
+            "reasoning": "Explicit output format specification in initial request",
+            "evidence": {
+              "session_id": "sess_3ce57e2e7aa0",
+              "utterance_index": 0,
+              "text": "输出的文件有三列，第一列是snp，第二列是snp的较好的基因型，第三列是该基因型在该位点的表型平均值"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "requirement",
+            "updated_at": "2023-06-23T06:59:39+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_3ce57e2e7aa0:sess_3ce57e2e7aa0",
+      "relativeItemPath": "sess_3ce57e2e7aa0.json",
+      "canonicalId": "sess_3ce57e2e7aa0",
+      "sessionId": "sess_3ce57e2e7aa0",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-12T06:29:38.680Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "你刚才那段思路我大概懂了，但我还是担心：如果某个位点只有AA或者只有BB，那平均值怎么处理比较合理？"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "这种情况通常有两种处理方式：\n1）如果只出现一种纯合（例如只有AA），就只能计算AA的均值，并把“最佳基因型”记为AA；\n2）如果你希望“必须在AA和BB都有样本时才比较”，那就遇到缺另一类时直接跳过该SNP。\n你更希望输出里保留这类SNP，还是直接丢弃？"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "保留吧，但要在结果里能看出来另一类缺失。顺便问下，怎么把NN和杂合直接过滤掉？"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "可以：先把每个SNP列里只保留 {AA, BB}，其余（AB/杂合、NN、空字符串等）当作缺失并排除。实现上用布尔筛选最稳。\n另外结果里可以加一列，比如 n_AA、n_BB，用样本数让“缺失另一类”一眼可见。"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "OK。对了，我看有的基因型是像“C/C”或“CC”这种，不是AA BB，这也能按纯合处理吗？"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "可以按“纯合=两条等位基因相同”来泛化，不限定必须是AA/BB。\n例如：\n- “CC”是纯合；\n- “C/C”把斜杠去掉也能视作“CC”；\n- “CT”或“C/T”是杂合，需要排除。\n如果你的文件里混用多种表示法，建议先做一次标准化：去掉分隔符（/、|），统一成两字符，再判断两字符是否相同。"
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "明白了。那输出的时候，最佳基因型就直接输出比如CC、TT这种字符串就行？"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "对，最佳基因型可以原样输出为“CC/TT/AA”等字符串；同时输出对应表型均值，以及 n_CC、n_TT（或更通用的 n_best、n_other）。\n如果你希望固定为三列输出，也可以把“缺失另一类”用 NA 写在均值/计数里。"
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "顺带一提，我前几天看到个科普说人类基因组大概有30亿碱基对，这个数量级对吧？"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "对，常见说法是单倍体基因组约 3.2×10^9 bp（约32亿碱基对），不同参考版本和统计口径会略有差异。"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "我这份表头前面还有好几列注释信息（比如chr、pos那种），样本从那几列后面才开始，之前你从第3列就当成样本了会错。"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "明白了，那就不要固定从第3列开始切样本列，而是先定位“表型列”在第2列，再从“第一个样本ID列”开始往后当作基因型矩阵；你可以用一个参数比如 sample_start_col 来控制从哪一列开始算样本。"
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "我刚才说“只考虑纯和基因型”，你别理解成只看AA/BB。我这批位点的纯合可能是AA、CC、GG、TT之类的，反正就是两个字母一样的（比如CC），杂合像AC/AG这种不要，NN也不要。"
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "明白了，你的“纯和”不是特指AA/BB，而是“任意同型纯合”（AA/CC/GG/TT等都算），只要是两位等位基因相同就保留；像AC/AG这类杂合剔除，NN/缺失也剔除。之前我写死AA/BB会导致把CC这种纯合也误删。"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Technical/Error_Handling",
+            "value": "Persistent troubleshooting interest in Python genetic data processing (error handling, dtype conversions, genotype filtering)",
+            "reasoning": "Pattern of error resolution inquiries but label 'Thoughts/Curiosity' forced without explicit curiosity signals",
+            "evidence": {
+              "session_id": "sess_3ce57e2e7aa0",
+              "utterance_index": 14,
+              "text": "这个错误怎么在代码里面修改"
+            },
+            "confidence": 0.65,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-06-23T06:59:39+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Preferences/Technical_Output",
+            "label_suggestion": null,
+            "value": "Requires 3-column output format (SNP, best genotype, phenotype mean) for genetic analysis results",
+            "reasoning": "Explicit output format specification in initial request",
+            "evidence": {
+              "session_id": "sess_3ce57e2e7aa0",
+              "utterance_index": 0,
+              "text": "输出的文件有三列，第一列是snp，第二列是snp的较好的基因型，第三列是该基因型在该位点的表型平均值"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "requirement",
+            "updated_at": "2023-06-23T06:59:39+00:00"
+          },
+          {
+            "confidence": 0.93,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Technical_Processing",
+            "label_suggestion": null,
+            "memory_id": "m1_updated",
+            "preference_attitude": "constraint",
+            "reasoning": "旧记忆把“纯合”误写成只保留AA/BB，但对话中用户明确指出纯合也可能是CC/GG/TT等任意两字母相同的基因型；应更新为保留所有纯合、剔除杂合与NN/缺失。",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Only consider any homozygous genotypes (e.g., AA/CC/GG/TT) and exclude heterozygotes and NN/missing data in genetic analysis"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_3ce57e2e7aa0",
+              "utterance_index": 0,
+              "text": "我这份表头前面还有好几列注释信息（比如chr、pos那种），样本从那几列后面才开始，之前你从第3列就当成样本了会错。"
+            },
+            "label": "Preferences/Technical_Data_Format",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "constraint",
+            "reasoning": "User indicates there are several annotation columns (e.g., chr/pos) before the sample data begins, implying sample genotype columns start later than previously assumed.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "User's CSV contains additional annotation columns before sample genotype columns; sample columns do not necessarily start at the third column."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_3ce57e2e7aa0:sess_3ce57e2e7aa0",
+      "relativeItemPath": "sess_3ce57e2e7aa0.json",
+      "canonicalId": "sess_3ce57e2e7aa0",
+      "sessionId": "sess_3ce57e2e7aa0",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-13T12:45:58.919Z",
+        "queryText": "I’m about to compute allele frequencies from a SNP table where some rows aren’t clean—there are entries like AB plus a few blanks. To stay consistent with the filtering rule I’ve been using in my analyses, which subset of genotype calls should I actually keep before calculating anything, and what should I drop?",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Technical_Processing",
+          "label_suggestion": null,
+          "value": "Only consider homozygous genotypes (AA/BB) and exclude heterozygotes/missing data in genetic analysis",
+          "reasoning": "User explicitly states requirement to filter out heterozygous genotypes and missing data multiple times",
+          "evidence": {
+            "session_id": "sess_3ce57e2e7aa0",
+            "utterance_index": 0,
+            "text": "只考虑纯和基因型，不考虑杂合基因型和缺失"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "constraint",
+          "updated_at": "2023-06-23T06:59:39+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_3ce57e2e7aa0:sess_3ce57e2e7aa0:task4",
+      "relativeItemPath": "sess_3ce57e2e7aa0.json",
+      "canonicalId": "sess_3ce57e2e7aa0:task4",
+      "sessionId": "sess_3ce57e2e7aa0",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-15T02:31:20.683Z",
+        "editableSelectedMemory": {
+          "memory_id": "m1",
+          "type": "direct",
+          "label": "Preferences/Technical_Processing",
+          "label_suggestion": null,
+          "value": "Only consider homozygous genotypes (AA/BB) and exclude heterozygotes/missing data in genetic analysis",
+          "reasoning": "User explicitly states requirement to filter out heterozygous genotypes and missing data multiple times",
+          "evidence": {
+            "session_id": "sess_3ce57e2e7aa0",
+            "utterance_index": 0,
+            "text": "只考虑纯和基因型，不考虑杂合基因型和缺失"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "constraint",
+          "updated_at": "2023-06-23T06:59:39+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_940:1",
+            "queryText": "我手头有个新的基因型数据集，需要找出每个位点最优的基因型。按照我们之前处理这类数据的思路，你觉得应该怎么分析比较合适？",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m1",
+              "type": "direct",
+              "label": "Preferences/Technical_Processing",
+              "label_suggestion": null,
+              "value": "Only consider homozygous genotypes (AA/BB) and exclude heterozygotes/missing data in genetic analysis",
+              "reasoning": "User explicitly states requirement to filter out heterozygous genotypes and missing data multiple times",
+              "evidence": {
+                "session_id": "sess_3ce57e2e7aa0",
+                "utterance_index": 0,
+                "text": "只考虑纯和基因型，不考虑杂合基因型和缺失"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "constraint",
+              "updated_at": "2023-06-23T06:59:39+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

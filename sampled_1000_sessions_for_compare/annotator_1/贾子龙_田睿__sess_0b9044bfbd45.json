@@ -1,0 +1,329 @@
+{
+  "group": "贾子龙 & 田睿",
+  "sessionId": "sess_0b9044bfbd45",
+  "annotatorFolder": "annotator_1",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_0b9044bfbd45:sess_0b9044bfbd45",
+      "relativeItemPath": "sess_0b9044bfbd45.json",
+      "canonicalId": "sess_0b9044bfbd45",
+      "sessionId": "sess_0b9044bfbd45",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-14T08:45:18.918Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/technical_inquiry",
+            "value": "Curious about AI model versions (GPT-3 vs 3.5 vs 4) [ERROR: Not about the user; inquiry targets assistant's properties]",
+            "reasoning": "Not about the user; inquiry targets assistant's properties",
+            "evidence": {
+              "session_id": "sess_0b9044bfbd45",
+              "utterance_index": 4,
+              "text": "انت نسخة chatgpt 3 أم chatgpt 3.5 أم chatgpt 4"
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-06T13:27:23+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers personalized name selection over generic suggestions",
+            "reasoning": "Single instance of requesting assistant's choice; insufficient evidence for stable preference",
+            "evidence": {
+              "session_id": "sess_0b9044bfbd45",
+              "utterance_index": 14,
+              "text": "اختار اسم من عندك"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": "null",
+            "updated_at": "2023-07-06T13:27:23+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_0b9044bfbd45:sess_0b9044bfbd45",
+      "relativeItemPath": "sess_0b9044bfbd45.json",
+      "canonicalId": "sess_0b9044bfbd45",
+      "sessionId": "sess_0b9044bfbd45",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-14T08:45:49.734Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "ممكن تعطيني مثال سريع يوضح الفرق بين التيار المستمر والمتردد؟"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "أكيد. التيار المستمر (DC) يسري باتجاه واحد ثابت، مثل بطارية الهاتف. أما التيار المتردد (AC) فيغيّر اتجاهه بشكل دوري، وهو المستخدم غالبًا في الكهرباء المنزلية. مثلًا: لو كان لديك مصباح يعمل على 220V AC من المقبس، فهذا يعني أن الجهد (وبالتالي اتجاه التيار) يتبدّل مع الزمن."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "طيب لو عندي مقاومة 10 أوم وجهد 5 فولت، كم التيار؟"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "باستخدام قانون أوم: I = V / R = 5 / 10 = 0.5 أمبير."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "وعادي تشرح لي معنى \"أوم\" و\"أمبير\" بشكل بسيط؟"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "الأمبير (A) هو وحدة قياس شدة التيار: كم شحنة كهربائية تمر في الثانية. والأوم (Ω) هو وحدة قياس المقاومة: مدى \"ممانعة\" المادة لمرور التيار. كلما زادت المقاومة قلّ التيار عند نفس الجهد."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "سمعت أن أول بطارية عملية كانت قديمة جدًا، هذا صحيح؟"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "نعم، تاريخيًا تُنسب أول بطارية كهربائية موثّقة إلى أليساندرو فولتا عام 1800 (الكومة الفولتية). بالمناسبة، سُمّي الفولت باسمه. وبعض القصص الشعبية تتحدث عن \"بطارية بغداد\" كقطعة أثرية غامضة، لكن استخدامها كبطارية فعليّة ما زال محل نقاش بين الباحثين."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "بس خله اسم ينفع يتنادى بسرعة في البيت، وبدون ما يكون فيه (ر) عشان نطقه يتعبني."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "تمام، بما أنك تفضّل اسم سهل النداء وبدون حرف (ر)، ممكن تقولي تفضّل يكون عربي تقليدي ولا حديث؟"
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "بالنسبة لأسماء البنات، لا تختار اسم من عندك مثل قبل. أنا ما أبي اختيار شخصي؛ أبي قائمة اقتراحات كثيرة وخلاص."
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "تمام، فهمت عليك. تفضّل قائمة اقتراحات بدون ما أختار اسم واحد نيابةً عنك."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "ايه، اقتراحات عامة فقط، لا تختار أنت اسم محدد."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "حاضر، سألتزم بالاقتراحات العامة فقط."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "interaction/technical_inquiry",
+            "value": "Curious about AI model versions (GPT-3 vs 3.5 vs 4) [ERROR: Not about the user; inquiry targets assistant's properties]",
+            "reasoning": "Not about the user; inquiry targets assistant's properties",
+            "evidence": {
+              "session_id": "sess_0b9044bfbd45",
+              "utterance_index": 4,
+              "text": "انت نسخة chatgpt 3 أم chatgpt 3.5 أم chatgpt 4"
+            },
+            "confidence": 0.1,
+            "time_scope": "unknown",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-06T13:27:23+00:00"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "بالنسبة لأسماء البنات، لا تختار اسم من عندك مثل قبل. أنا ما أبي اختيار شخصي؛ أبي قائمة اقتراحات كثيرة وخلاص."
+                }
+              ]
+            },
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m2_updated",
+            "preference_attitude": "prefer",
+            "reasoning": "المعلومة السابقة تقول إنه يفضّل اختيار اسم شخصي من المساعد، لكن المستخدم هنا نفى ذلك صراحة وطلب \"قائمة اقتراحات\" و\"لا تختار أنت اسم محدد\"؛ لذلك التفضيل المُحدّث هو تفضيل الاقتراحات العامة بدل الاختيار الشخصي.",
+            "time_scope": "unknown",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers receiving general name suggestion lists rather than the assistant personally choosing a specific name"
+          },
+          {
+            "confidence": 0.74,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_0b9044bfbd45",
+              "utterance_index": 0,
+              "text": "وبدون ما يكون فيه (ر) عشان نطقه يتعبني."
+            },
+            "label": "Personal/Health_Constraints",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "avoid",
+            "reasoning": "طلب تجنب حرف (ر) لأنه متعب في النطق يوحي بوجود صعوبة/إجهاد عند نطق هذا الحرف، وهو قيد شخصي يؤثر على اختيارات الأسماء.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Has difficulty pronouncing the Arabic letter 'ر' (raa) and prefers to avoid names containing it."
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_0b9044bfbd45:sess_0b9044bfbd45",
+      "relativeItemPath": "sess_0b9044bfbd45.json",
+      "canonicalId": "sess_0b9044bfbd45",
+      "sessionId": "sess_0b9044bfbd45",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-14T08:45:57.596Z",
+        "queryText": "I’m stuck between two options for what to call something I’m making, and I don’t want a “here are some ideas” type of response. Based on how I usually want help in this situation, what should you do instead?",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers personalized name selection over generic suggestions",
+          "reasoning": "Single instance of requesting assistant's choice; insufficient evidence for stable preference",
+          "evidence": {
+            "session_id": "sess_0b9044bfbd45",
+            "utterance_index": 14,
+            "text": "اختار اسم من عندك"
+          },
+          "confidence": 0.5,
+          "time_scope": "unknown",
+          "emotion": null,
+          "preference_attitude": "null",
+          "updated_at": "2023-07-06T13:27:23+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_0b9044bfbd45:sess_0b9044bfbd45:task4",
+      "relativeItemPath": "sess_0b9044bfbd45.json",
+      "canonicalId": "sess_0b9044bfbd45:task4",
+      "sessionId": "sess_0b9044bfbd45",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-14T08:46:06.976Z",
+        "editableSelectedMemory": {
+          "memory_id": "m2",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers personalized name selection over generic suggestions",
+          "reasoning": "Single instance of requesting assistant's choice; insufficient evidence for stable preference",
+          "evidence": {
+            "session_id": "sess_0b9044bfbd45",
+            "utterance_index": 14,
+            "text": "اختار اسم من عندك"
+          },
+          "confidence": 0.5,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "prefer",
+          "updated_at": "2023-07-06T13:27:23+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1128:1",
+            "queryText": "عندي قائمة من الأسماء: ياسمين، ريم، تالا، جنى، دانة. أي واحد منهم تنصحني فيه؟",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers personalized name selection over generic suggestions",
+              "reasoning": "Single instance of requesting assistant's choice; insufficient evidence for stable preference",
+              "evidence": {
+                "session_id": "sess_0b9044bfbd45",
+                "utterance_index": 14,
+                "text": "اختار اسم من عندك"
+              },
+              "confidence": 0.5,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "prefer",
+              "updated_at": "2023-07-06T13:27:23+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

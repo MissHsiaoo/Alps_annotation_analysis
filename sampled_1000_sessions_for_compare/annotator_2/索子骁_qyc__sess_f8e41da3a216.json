@@ -1,0 +1,463 @@
+{
+  "group": "索子骁 & qyc",
+  "sessionId": "sess_f8e41da3a216",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_f8e41da3a216:sess_f8e41da3a216",
+      "relativeItemPath": "sess_f8e41da3a216.json",
+      "canonicalId": "sess_f8e41da3a216",
+      "sessionId": "sess_f8e41da3a216",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T09:23:25.133Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Talent Acquisition Partner with 8+ years of experience in Pharmaceutical, Biotech, Medical Devices, Diagnostics, and IT sectors",
+            "reasoning": "User explicitly states their professional role and industry expertise.",
+            "evidence": {
+              "session_id": "sess_f8e41da3a216",
+              "utterance_index": 0,
+              "text": "With over 8+ years of experience as a dedicated Talent Acquisition Partner... sectors, such as Pharmaceutical, Biotech, Medical Devices, Diagnostics, and IT."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-24T18:06:17+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Personal_Background/Skills/Business_Development",
+            "value": "Combines talent acquisition expertise with business development skills",
+            "reasoning": "User explicitly adds business development as a core competency, but label 'Occupation' does not fully capture skill integration.",
+            "evidence": {
+              "session_id": "sess_f8e41da3a216",
+              "utterance_index": 2,
+              "text": "make it the same including that I am also a good business developer..."
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-24T18:06:17+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Skills/Language",
+            "value": "Fluent in English and French",
+            "reasoning": "User explicitly states language proficiency, but label 'Identity' is misaligned (should be skill).",
+            "evidence": {
+              "session_id": "sess_f8e41da3a216",
+              "utterance_index": 0,
+              "text": "my fluency in English and French has proven instrumental..."
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-24T18:06:17+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Career/Target_Industry/Region",
+            "value": "Targets employers in Medical Devices, Diagnostics, and Pharmaceutical industries within EMEA region",
+            "reasoning": "User specifies industry/regional focus, but label 'Interaction_Preferences' inaccurately categorizes career targeting.",
+            "evidence": {
+              "session_id": "sess_f8e41da3a216",
+              "utterance_index": 8,
+              "text": "make it shorter for Medical devises, Diagnostics and pharmaceutical employers in EMEA region"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-07-24T18:06:17+00:00"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers professional content tailored to specific platforms (CV/LinkedIn) with concise formatting",
+            "reasoning": "Repeated platform-specific formatting requests indicate stable output preferences (indirect but patterned).",
+            "evidence": {
+              "session_id": "sess_f8e41da3a216",
+              "utterance_index": 14,
+              "text": "make it for a LinkedIn summary"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-07-24T18:06:17+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_f8e41da3a216:sess_f8e41da3a216",
+      "relativeItemPath": "sess_f8e41da3a216.json",
+      "canonicalId": "sess_f8e41da3a216",
+      "sessionId": "sess_f8e41da3a216",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:46:04.834Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "I’m tweaking a LinkedIn summary template. Can you give me two versions: one that’s punchy and one that’s more narrative?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Sure. For both versions, what tone do you want (formal, conversational, or somewhere in between), and is there a target word count range?"
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Keep it professional, and let’s say 80–120 words for the punchy one and 150–200 for the narrative."
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Got it. Also, should it include a short specialties list (e.g., “Stakeholder management | Market mapping | Executive search”) or keep it as a single paragraph?"
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Include a specialties line at the end for both."
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Perfect. As an example structure (not personal): start with role + scope, add 1–2 outcome-focused lines, then a collaboration/values line, then specialties. Fun unrelated note: the first modern résumé is often credited to Leonardo da Vinci’s 1482 letter, which reads surprisingly like a targeted application."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Nice. Can you also suggest a headline format that works for recruiters skimming fast?"
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "A skimmable headline formula is: \"Function | Domain | Region | Value\" (e.g., “Talent Acquisition | Life Sciences | EMEA | Executive & Commercial Hiring”). Alternative: \"Role + niche + differentiator\". Also unrelated: many ATS tools parse headlines better when you avoid special characters like “|” too frequently—using 2–3 separators max can help readability."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Makes sense. Anything to avoid in a summary?"
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Common pitfalls: vague adjectives without proof (“results-driven” with no outcomes), long lists of buzzwords, and dense blocks of text. Use 2–4 short paragraphs, keep acronyms minimal, and end with a clear CTA. Random example from aviation writing: checklists work because they’re scannable—your summary should read like that, not like a legal document."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "For the LinkedIn version, could you keep the UK spelling (e.g., “mentoring”/“organisation”) and steer clear of Americanisms?"
+          },
+          {
+            "turnId": "turn-12",
+            "role": "assistant",
+            "text": "Absolutely—I’ll use UK English throughout (spelling and phrasing) and avoid US-centric wording while keeping the summary professional and concise."
+          },
+          {
+            "turnId": "turn-13",
+            "role": "user",
+            "text": "Before we continue—please don’t tailor it to a specific platform. I don’t need separate versions for CV or LinkedIn; I just want one general professional summary that I can reuse."
+          },
+          {
+            "turnId": "turn-14",
+            "role": "assistant",
+            "text": "Understood—one platform-neutral professional summary, written in a reusable tone and format, without optimizing it specifically for CV or LinkedIn."
+          },
+          {
+            "turnId": "turn-15",
+            "role": "user",
+            "text": "Yes, exactly. Keep it broadly professional and adaptable, rather than “LinkedIn-style” or “CV-style.”"
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "Personal_Background/Occupation",
+            "label_suggestion": null,
+            "value": "Talent Acquisition Partner with 8+ years of experience in Pharmaceutical, Biotech, Medical Devices, Diagnostics, and IT sectors",
+            "reasoning": "User explicitly states their professional role and industry expertise.",
+            "evidence": {
+              "session_id": "sess_f8e41da3a216",
+              "utterance_index": 0,
+              "text": "With over 8+ years of experience as a dedicated Talent Acquisition Partner... sectors, such as Pharmaceutical, Biotech, Medical Devices, Diagnostics, and IT."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-24T18:06:17+00:00",
+            "_task1GoldValue": "Talent Acquisition Partner with 8+ years of experience in Pharmaceutical, Biotech, Medical Devices, Diagnostics, and IT sectors"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Personal_Background/Skills/Business_Development",
+            "value": "Combines talent acquisition expertise with business development skills",
+            "reasoning": "User explicitly adds business development as a core competency, but label 'Occupation' does not fully capture skill integration.",
+            "evidence": {
+              "session_id": "sess_f8e41da3a216",
+              "utterance_index": 2,
+              "text": "make it the same including that I am also a good business developer..."
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-24T18:06:17+00:00",
+            "_task1GoldValue": "Combines talent acquisition expertise with business development skills"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Skills/Language",
+            "value": "Fluent in English and French",
+            "reasoning": "User explicitly states language proficiency, but label 'Identity' is misaligned (should be skill).",
+            "evidence": {
+              "session_id": "sess_f8e41da3a216",
+              "utterance_index": 0,
+              "text": "my fluency in English and French has proven instrumental..."
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2023-07-24T18:06:17+00:00",
+            "_task1GoldValue": "Fluent in English and French"
+          },
+          {
+            "memory_id": "m4",
+            "type": "direct",
+            "label": "UNMAPPED",
+            "label_suggestion": "Career/Target_Industry/Region",
+            "value": "Targets employers in Medical Devices, Diagnostics, and Pharmaceutical industries within EMEA region",
+            "reasoning": "User specifies industry/regional focus, but label 'Interaction_Preferences' inaccurately categorizes career targeting.",
+            "evidence": {
+              "session_id": "sess_f8e41da3a216",
+              "utterance_index": 8,
+              "text": "make it shorter for Medical devises, Diagnostics and pharmaceutical employers in EMEA region"
+            },
+            "confidence": 0.65,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-07-24T18:06:17+00:00",
+            "_task1GoldValue": "Targets employers in Medical Devices, Diagnostics, and Pharmaceutical industries within EMEA region"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": null,
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "memory_id": "m5_updated",
+            "preference_attitude": "preference",
+            "reasoning": "The prior memory claims the user prefers content tailored to specific platforms (CV/LinkedIn). Here, the user explicitly rejects platform-specific tailoring and requests one general reusable summary instead.",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Prefers a single, platform-neutral professional summary rather than platform-specific (CV/LinkedIn) tailoring"
+          },
+          {
+            "confidence": 0.8,
+            "emotion": null,
+            "evidence": {
+              "session_id": "sess_f8e41da3a216",
+              "utterance_index": 0,
+              "text": "could you keep the UK spelling (e.g., “mentoring”/“organisation”) and steer clear of Americanisms?"
+            },
+            "label": "Preferences/Writing_Style",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": "preference",
+            "reasoning": "The user’s request to use UK spelling and avoid Americanisms indicates a stable preference for UK English style in written professional content.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00Z",
+            "value": "Prefers UK English spelling/phrasing and avoiding Americanisms in LinkedIn/CV copy"
+          },
+          {
+            "memory_id": "m5",
+            "type": "indirect",
+            "label": "Preferences/Interaction_Preferences",
+            "label_suggestion": null,
+            "value": "Prefers professional content tailored to specific platforms (CV/LinkedIn) with concise formatting",
+            "reasoning": "Repeated platform-specific formatting requests indicate stable output preferences (indirect but patterned).",
+            "evidence": {
+              "session_id": "sess_f8e41da3a216",
+              "utterance_index": 14,
+              "text": "make it for a LinkedIn summary"
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": "preference",
+            "updated_at": "2023-07-24T18:06:17+00:00",
+            "_task1GoldValue": "Prefers professional content tailored to specific platforms (CV/LinkedIn) with concise formatting"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4",
+          "m5"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_f8e41da3a216:sess_f8e41da3a216",
+      "relativeItemPath": "sess_f8e41da3a216.json",
+      "canonicalId": "sess_f8e41da3a216",
+      "sessionId": "sess_f8e41da3a216",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:46:15.244Z",
+        "queryText": "I’m updating my profile on a professional networking site and also tweaking my CV—given how I usually like this kind of content delivered, what format and level of detail should you use so I can paste it in with minimal edits?",
+        "editableSelectedMemory": {
+          "memory_id": "m5",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers professional content tailored to specific platforms (CV/LinkedIn) with concise formatting",
+          "reasoning": "Repeated platform-specific formatting requests indicate stable output preferences (indirect but patterned).",
+          "evidence": {
+            "session_id": "sess_f8e41da3a216",
+            "utterance_index": 14,
+            "text": "make it for a LinkedIn summary"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-07-24T18:06:17+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_f8e41da3a216:sess_f8e41da3a216:task4",
+      "relativeItemPath": "sess_f8e41da3a216.json",
+      "canonicalId": "sess_f8e41da3a216:task4",
+      "sessionId": "sess_f8e41da3a216",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T15:45:43.077Z",
+        "editableSelectedMemory": {
+          "memory_id": "m5",
+          "type": "indirect",
+          "label": "Preferences/Interaction_Preferences",
+          "label_suggestion": null,
+          "value": "Prefers professional content tailored to specific platforms (CV/LinkedIn) with concise formatting",
+          "reasoning": "Repeated platform-specific formatting requests indicate stable output preferences (indirect but patterned).",
+          "evidence": {
+            "session_id": "sess_f8e41da3a216",
+            "utterance_index": 14,
+            "text": "make it for a LinkedIn summary"
+          },
+          "confidence": 0.8,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": "preference",
+          "updated_at": "2023-07-24T18:06:17+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability2_1129:1",
+            "queryText": "I'm updating my professional profiles across different platforms. For my personal website's 'About Me' section, what approach would you recommend?",
+            "ability": "ability2",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m5",
+              "type": "indirect",
+              "label": "Preferences/Interaction_Preferences",
+              "label_suggestion": null,
+              "value": "Prefers professional content tailored to specific platforms (CV/LinkedIn) with concise formatting",
+              "reasoning": "Repeated platform-specific formatting requests indicate stable output preferences (indirect but patterned).",
+              "evidence": {
+                "session_id": "sess_f8e41da3a216",
+                "utterance_index": 14,
+                "text": "make it for a LinkedIn summary"
+              },
+              "confidence": 0.8,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": "preference",
+              "updated_at": "2023-07-24T18:06:17+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "medium",
+            "abilityPurity": "high",
+            "issueTypes": [
+              "ability_mismatch"
+            ],
+            "evidenceNote": "relevant memory but not helpful ability",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}

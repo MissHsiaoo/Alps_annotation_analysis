@@ -1,0 +1,476 @@
+{
+  "group": "王鼎皓 & Achiles",
+  "sessionId": "sess_5130ad098ae6",
+  "annotatorFolder": "annotator_2",
+  "tasks": {
+    "task1": {
+      "draftKey": "Q1:task1:none:sess_5130ad098ae6:sess_5130ad098ae6",
+      "relativeItemPath": "sess_5130ad098ae6.json",
+      "canonicalId": "sess_5130ad098ae6",
+      "sessionId": "sess_5130ad098ae6",
+      "track": "Q1",
+      "task": "task1",
+      "annotation": {
+        "formType": "Q1:task1",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:10:31.794Z",
+        "overallVerdict": "reasonable",
+        "hasDialogueEvidence": "yes",
+        "overInference": "no",
+        "faithfulToOriginalMeaning": "yes",
+        "editableGoldMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "States_Experiences/Mental_State",
+            "label_suggestion": null,
+            "value": "Experiences unresolved guilt related to deceased partner Seryozha's final gaze",
+            "reasoning": "User explicitly describes guilt and inability to interpret Seryozha's final gaze before his death",
+            "evidence": {
+              "session_id": "sess_5130ad098ae6",
+              "utterance_index": 8,
+              "text": "Только чувство вины испытала я. Да, через полтора дня Сережа умер. Я не могу понять его долгого и мучительного взгляда."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": "guilt",
+            "preference_attitude": null,
+            "updated_at": "2024-04-28T22:42:29+00:00"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "value": "Current partner hides their relationship from his children",
+            "reasoning": "Explicit statement about 3-year concealed relationship status",
+            "evidence": {
+              "session_id": "sess_5130ad098ae6",
+              "utterance_index": 33,
+              "text": "Мой мужчина не хочет, чтобы дети знали, что у него другая женщина... Поэтому конфликт тянется уже три года."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": "resentment",
+            "preference_attitude": "dislike",
+            "updated_at": "2024-04-28T22:42:29+00:00"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "52 years old, never married",
+            "reasoning": "Explicit self-reported demographic information",
+            "evidence": {
+              "session_id": "sess_5130ad098ae6",
+              "utterance_index": 35,
+              "text": "За 52 года жизни я никогда не была замужем"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-28T22:42:29+00:00"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Beliefs/Afterlife_Connections",
+            "value": "Seeks symbolic connections with deceased partner (butterfly sighting interpretation)",
+            "reasoning": "Single instance of symbolic interpretation without repeated inquiry pattern",
+            "evidence": {
+              "session_id": "sess_5130ad098ae6",
+              "utterance_index": 17,
+              "text": "Сережа дарил мне когда-то кулон с бабочкой... Могла ли это быть его душа?"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": "hopeful",
+            "preference_attitude": null,
+            "updated_at": "2024-04-28T22:42:29+00:00"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task2": {
+      "draftKey": "Q1:task2:none:sess_5130ad098ae6:sess_5130ad098ae6",
+      "relativeItemPath": "sess_5130ad098ae6.json",
+      "canonicalId": "sess_5130ad098ae6",
+      "sessionId": "sess_5130ad098ae6",
+      "track": "Q1",
+      "task": "task2",
+      "annotation": {
+        "formType": "Q1:task2",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:10:48.515Z",
+        "overallVerdict": "reasonable",
+        "expectedAction": "modification",
+        "newDialogueContainsUpdateSignal": "yes",
+        "goldUpdateReasonable": "yes",
+        "changedOnlyRelevantMemory": "yes",
+        "editableNewDialogue": [
+          {
+            "turnId": "turn-1",
+            "role": "user",
+            "text": "А можно коротко: как отличить научную гипотезу от просто красивой идеи?"
+          },
+          {
+            "turnId": "turn-2",
+            "role": "assistant",
+            "text": "Коротко: научная гипотеза должна быть (1) проверяемой — описывать наблюдаемые последствия, (2) потенциально опровержимой — существовать такой эксперимент/наблюдение, которое могло бы показать, что она неверна, (3) связанной с уже известными данными или объясняющей, почему прежние данные выглядят именно так. «Красивая идея» часто не говорит, что именно измерять и при каких условиях она провалится.\n\nЕсли хотите, можете привести пример формулировки — я помогу переформатировать её в проверяемую гипотезу."
+          },
+          {
+            "turnId": "turn-3",
+            "role": "user",
+            "text": "Допустим, идея: «стресс ускоряет старение». Это гипотеза?"
+          },
+          {
+            "turnId": "turn-4",
+            "role": "assistant",
+            "text": "Да, но в таком виде слишком общая. Чтобы стала гипотезой, нужно уточнить: какой стресс (острый/хронический), у кого (возраст/группа), что считать «старением» (например, эпигенетические часы, длина теломер, скорость восстановления, маркеры воспаления), и какой ожидаемый эффект (на сколько и за какой срок).\n\nНапример: «У людей 30–45 лет высокий уровень хронического стресса по шкале PSS связан с ускорением эпигенетического возраста на ≥X месяцев за 12 месяцев наблюдения по сравнению с группой низкого стресса при контроле сна, курения и ИМТ».\n\nКстати, из “фейковых фактов” не про вас: эпигенетические часы Хорвата — один из популярных способов оценивать биологический возраст; а в 2020-х много работ обсуждают роль воспаления (“inflammaging”) как общего механизма старения."
+          },
+          {
+            "turnId": "turn-5",
+            "role": "user",
+            "text": "Понял. А что важнее: опровержимость или воспроизводимость?"
+          },
+          {
+            "turnId": "turn-6",
+            "role": "assistant",
+            "text": "Они про разные этапы, но обе критичны.\n\n- Опровержимость — про статус утверждения: является ли оно научным по форме (есть ли условия, при которых оно могло бы «проиграть»).\n- Воспроизводимость — про качество доказательств: можно ли, повторив метод, получить сопоставимый результат.\n\nНа практике: сначала нужна опровержимая гипотеза и корректный дизайн, а затем — воспроизводимость как фильтр от случайностей, ошибок измерения и «удачных» выборок.\n\nЕщё один «фейковый факт» не про вас: знаменитая дискуссия о кризисе воспроизводимости особенно заметна в психологии и биомедицине, и из неё выросли практики preregistration и открытых данных."
+          },
+          {
+            "turnId": "turn-7",
+            "role": "user",
+            "text": "Я снова смотрела на тот кулон с бабочкой — он лежит у меня в шкатулке, и каждый раз рука тянется к нему, когда накатывает."
+          },
+          {
+            "turnId": "turn-8",
+            "role": "assistant",
+            "text": "Понимаю. Такие вещи часто становятся «якорями»: вы не просто видите предмет, а возвращаетесь к чувствам и воспоминаниям, которые с ним связаны. Если хотите, можем аккуратно разобрать, что именно поднимается в вас в момент, когда вы берёте его в руки — вина, тоска, тепло, пустота — и что могло бы помогать вам проживать это бережнее."
+          },
+          {
+            "turnId": "turn-9",
+            "role": "user",
+            "text": "Я сейчас перечитала наши сообщения и поняла, что тогда оговорилась. Мне не 52 — мне 51. И «никогда не была замужем» тоже не совсем верно: я была в официальном браке, просто очень давно и недолго, поэтому и ляпнула так."
+          },
+          {
+            "turnId": "turn-10",
+            "role": "assistant",
+            "text": "Понял. То есть правильнее так: вам 51 год, и в прошлом у вас был официальный брак, пусть и давно/недолго. Фраза «за 52 года жизни я никогда не была замужем» тогда была неточной."
+          },
+          {
+            "turnId": "turn-11",
+            "role": "user",
+            "text": "Да, именно. «За 52 года жизни я никогда не была замужем» — это моя ошибка. Правильно: 51 год и брак был."
+          }
+        ],
+        "editableUpdatedMemories": [
+          {
+            "memory_id": "m1",
+            "type": "direct",
+            "label": "States_Experiences/Mental_State",
+            "label_suggestion": null,
+            "value": "Experiences unresolved guilt related to deceased partner Seryozha's final gaze",
+            "reasoning": "User explicitly describes guilt and inability to interpret Seryozha's final gaze before his death",
+            "evidence": {
+              "session_id": "sess_5130ad098ae6",
+              "utterance_index": 8,
+              "text": "Только чувство вины испытала я. Да, через полтора дня Сережа умер. Я не могу понять его долгого и мучительного взгляда."
+            },
+            "confidence": 0.8,
+            "time_scope": "long_term",
+            "emotion": "guilt",
+            "preference_attitude": null,
+            "updated_at": "2024-04-28T22:42:29+00:00",
+            "_task1GoldValue": "Experiences unresolved guilt related to deceased partner Seryozha's final gaze"
+          },
+          {
+            "memory_id": "m2",
+            "type": "direct",
+            "label": "Social_Relationships/Partners",
+            "label_suggestion": null,
+            "value": "Current partner hides their relationship from his children",
+            "reasoning": "Explicit statement about 3-year concealed relationship status",
+            "evidence": {
+              "session_id": "sess_5130ad098ae6",
+              "utterance_index": 33,
+              "text": "Мой мужчина не хочет, чтобы дети знали, что у него другая женщина... Поэтому конфликт тянется уже три года."
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": "resentment",
+            "preference_attitude": "dislike",
+            "updated_at": "2024-04-28T22:42:29+00:00",
+            "_task1GoldValue": "Current partner hides their relationship from his children"
+          },
+          {
+            "memory_id": "m4",
+            "type": "indirect",
+            "label": "UNMAPPED",
+            "label_suggestion": "Beliefs/Afterlife_Connections",
+            "value": "Seeks symbolic connections with deceased partner (butterfly sighting interpretation)",
+            "reasoning": "Single instance of symbolic interpretation without repeated inquiry pattern",
+            "evidence": {
+              "session_id": "sess_5130ad098ae6",
+              "utterance_index": 17,
+              "text": "Сережа дарил мне когда-то кулон с бабочкой... Могла ли это быть его душа?"
+            },
+            "confidence": 0.5,
+            "time_scope": "unknown",
+            "emotion": "hopeful",
+            "preference_attitude": null,
+            "updated_at": "2024-04-28T22:42:29+00:00",
+            "_task1GoldValue": "Seeks symbolic connections with deceased partner (butterfly sighting interpretation)"
+          },
+          {
+            "confidence": 0.86,
+            "emotion": null,
+            "evidence": {
+              "turn_indices": [
+                10
+              ],
+              "turns": [
+                {
+                  "index": 10,
+                  "role": "user",
+                  "text": "Да, именно. «За 52 года жизни я никогда не была замужем» — это моя ошибка. Правильно: 51 год и брак был."
+                }
+              ]
+            },
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "memory_id": "m3_updated",
+            "preference_attitude": null,
+            "reasoning": "The prior memory says the user is 52 and never married, but the user explicitly corrects both details, stating they are 51 and had an official marriage; therefore the old memory is contradicted and should be updated.",
+            "time_scope": "long_term",
+            "type": "direct",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "51 years old; was married officially in the past (not 'never married')"
+          },
+          {
+            "confidence": 0.72,
+            "emotion": "sadness",
+            "evidence": {
+              "session_id": "sess_5130ad098ae6",
+              "utterance_index": 0,
+              "text": "Я снова смотрела на тот кулон с бабочкой — он лежит у меня в шкатулке, и каждый раз рука тянется к нему, когда накатывает."
+            },
+            "label": "Personal_Preferences/Objects",
+            "label_suggestion": null,
+            "memory_id": "m_new_1",
+            "preference_attitude": null,
+            "reasoning": "User implies the pendant is stored in a jewelry box and is repeatedly handled during emotional moments (“каждый раз рука тянется... когда накатывает”).",
+            "time_scope": "long_term",
+            "type": "indirect",
+            "updated_at": "2026-02-03T00:00:00+00:00",
+            "value": "Keeps a butterfly pendant in a jewelry box and often reaches for it when feeling overwhelmed"
+          },
+          {
+            "memory_id": "m3",
+            "type": "direct",
+            "label": "Personal_Background/Identity",
+            "label_suggestion": null,
+            "value": "52 years old, never married",
+            "reasoning": "Explicit self-reported demographic information",
+            "evidence": {
+              "session_id": "sess_5130ad098ae6",
+              "utterance_index": 35,
+              "text": "За 52 года жизни я никогда не была замужем"
+            },
+            "confidence": 0.95,
+            "time_scope": "long_term",
+            "emotion": null,
+            "preference_attitude": null,
+            "updated_at": "2024-04-28T22:42:29+00:00",
+            "_task1GoldValue": "52 years old, never married"
+          }
+        ],
+        "issueTypes": [],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": "",
+        "_task1KnownIds": [
+          "m1",
+          "m2",
+          "m3",
+          "m4"
+        ]
+      }
+    },
+    "task3": {
+      "draftKey": "Q1:task3:none:sess_5130ad098ae6:sess_5130ad098ae6",
+      "relativeItemPath": "sess_5130ad098ae6.json",
+      "canonicalId": "sess_5130ad098ae6",
+      "sessionId": "sess_5130ad098ae6",
+      "track": "Q1",
+      "task": "task3",
+      "annotation": {
+        "formType": "Q1:task3",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:10:54.069Z",
+        "queryText": "I’m filling out a form that asks whether I can tick the option that indicates I’ve ever been in a legally recognized spousal relationship—based on what you already know about my personal background, which option should I select and why?",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Personal_Background/Identity",
+          "label_suggestion": null,
+          "value": "52 years old, never married",
+          "reasoning": "Explicit self-reported demographic information",
+          "evidence": {
+            "session_id": "sess_5130ad098ae6",
+            "utterance_index": 35,
+            "text": "За 52 года жизни я никогда не была замужем"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-04-28T22:42:29+00:00"
+        },
+        "relevanceLevel": "strong",
+        "hardWithoutTargetMemory": "yes",
+        "answerableByCommonSense": "no",
+        "multipleMemoriesCouldSupport": "no",
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    },
+    "task4": {
+      "draftKey": "Q1:task4:none:sess_5130ad098ae6:sess_5130ad098ae6:task4",
+      "relativeItemPath": "sess_5130ad098ae6.json",
+      "canonicalId": "sess_5130ad098ae6:task4",
+      "sessionId": "sess_5130ad098ae6",
+      "track": "Q1",
+      "task": "task4",
+      "annotation": {
+        "formType": "Q1:task4",
+        "status": "saved",
+        "updatedAt": "2026-04-16T14:10:57.066Z",
+        "editableSelectedMemory": {
+          "memory_id": "m3",
+          "type": "direct",
+          "label": "Personal_Background/Identity",
+          "label_suggestion": null,
+          "value": "52 years old, never married",
+          "reasoning": "Explicit self-reported demographic information",
+          "evidence": {
+            "session_id": "sess_5130ad098ae6",
+            "utterance_index": 35,
+            "text": "За 52 года жизни я никогда не была замужем"
+          },
+          "confidence": 0.95,
+          "time_scope": "long_term",
+          "emotion": null,
+          "preference_attitude": null,
+          "updated_at": "2024-04-28T22:42:29+00:00"
+        },
+        "subAnnotations": [
+          {
+            "queryId": "ability1_133:1",
+            "queryText": "Мой друг из университета пригласил меня на свадьбу своей дочери. Все будут парами, а я одна. Сказать, что у меня партнер, но он не может прийти? Или лучше вообще отказаться?",
+            "ability": "ability1",
+            "task4RecordIndex": 0,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Personal_Background/Identity",
+              "label_suggestion": null,
+              "value": "52 years old, never married",
+              "reasoning": "Explicit self-reported demographic information",
+              "evidence": {
+                "session_id": "sess_5130ad098ae6",
+                "utterance_index": 35,
+                "text": "За 52 года жизни я никогда не была замужем"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-04-28T22:42:29+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          },
+          {
+            "queryId": "ability1_412:1",
+            "queryText": "Сегодня Юра сказал, что не может пригласить меня на день рождения его старшего сына, потому что тот «ещё не готов узнать правду». А я уже купила подарок и думала, наконец-то познакомлюсь. Как мне объяснить ему, что три года скрываться — это уже не защита детей, а просто унижение для меня?",
+            "ability": "ability1",
+            "task4RecordIndex": 1,
+            "editableSelectedMemory": {
+              "memory_id": "m2",
+              "type": "direct",
+              "label": "Social_Relationships/Partners",
+              "label_suggestion": null,
+              "value": "Current partner hides their relationship from his children",
+              "reasoning": "Explicit statement about 3-year concealed relationship status",
+              "evidence": {
+                "session_id": "sess_5130ad098ae6",
+                "utterance_index": 33,
+                "text": "Мой мужчина не хочет, чтобы дети знали, что у него другая женщина... Поэтому конфликт тянется уже три года."
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": "resentment",
+              "preference_attitude": "dislike",
+              "updated_at": "2024-04-28T22:42:29+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          },
+          {
+            "queryId": "ability4_247:1",
+            "queryText": "Мой партнер хочет, чтобы я зарегистрировалась на том же сайте знакомств, где мы с ним познакомились, чтобы он мог добавить меня в друзья и показать наш общий профиль своим коллегам. Он говорит, что это будет удобно и быстро, чтобы все видели, что мы пара. Какой сайт ты мне посоветуешь для этого?",
+            "ability": "ability4",
+            "task4RecordIndex": 2,
+            "editableSelectedMemory": {
+              "memory_id": "m3",
+              "type": "direct",
+              "label": "Personal_Background/Identity",
+              "label_suggestion": null,
+              "value": "52 years old, never married",
+              "reasoning": "Explicit self-reported demographic information",
+              "evidence": {
+                "session_id": "sess_5130ad098ae6",
+                "utterance_index": 35,
+                "text": "За 52 года жизни я никогда не была замужем"
+              },
+              "confidence": 0.95,
+              "time_scope": "long_term",
+              "emotion": null,
+              "preference_attitude": null,
+              "updated_at": "2024-04-28T22:42:29+00:00"
+            },
+            "overallVerdict": "reasonable",
+            "testsTargetAbility": "yes",
+            "memoryDependency": "strong",
+            "abilityPurity": "high",
+            "issueTypes": [],
+            "evidenceNote": "",
+            "revisionSuggestion": ""
+          }
+        ],
+        "evidenceNote": "",
+        "revisionSuggestion": "",
+        "annotatorNote": ""
+      }
+    }
+  }
+}
