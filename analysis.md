@@ -1,4 +1,4 @@
-# Q1 Benchmark Construction Evaluation — Analysis Report
+# Benchmark Evaluation Report — Q1 & Q2
 
 ## Overview
 
@@ -104,3 +104,110 @@ Memory *extraction* is inherently more subjective — there is no fixed set of m
 
 ### 6. Session-level verdict fields are uninformative for agreement analysis
 All session-level flags (Task 1–3: `overallVerdict`, `hasDialogueEvidence`, `overInference`, `faithfulToOriginalMeaning`, `relevanceLevel`, etc.) are uniform across all 1802 sessions from both annotators (100% agree, single class). This reflects the cleaning process: sessions that were flagged as unreasonable were removed before this comparison. These fields cannot be used as agreement metrics on the cleaned dataset.
+
+---
+
+# Q2 LLM-as-Judge Reliability Evaluation — Analysis Report
+
+## Overview
+
+**Goal:** Measure whether the LLM judge agrees with human judgment — if a human reviewer checks the judge's output for each session, how often do they say the judge was correct?
+
+**Data:** `manual_check_data` — 554 Q2 annotations across all 4 tasks. A human reviewer examined the judge's output for each session and labelled it `aligned`, `partially_aligned`, or `not_aligned`.
+
+| Task | Sessions | Models evaluated |
+|------|----------|-----------------|
+| task1 | 140 | 7 (20 sessions each) |
+| task2 | 139 | 7 |
+| task3 | 139 | 7 |
+| task4 | 136 (232 sub-queries) | mixed |
+
+**Models judged:** claude-sonnet-4-5, deepseek-reasoner, gemini-3-flash-preview, gpt-4.1-mini, gpt-5.2, llama-4-maverick, qwen3-max
+
+**Metric design:** Two levels of human judgment are available:
+- **Session-level** `alignmentVerdict` (aligned / partially_aligned / not_aligned) — overall verdict on judge quality per session
+- **Item-level** `humanVerdict` (supported / not_supported) — per individual judge decision within a session (task1/2 only)
+- **Flag-level** — 4 binary dimensions of judge quality (task3 only)
+
+`judge_score` (0–100) is correlated against human verdict (encoded as aligned=1.0, partially=0.5, not_aligned=0.0) to measure numeric calibration.
+
+---
+
+## Task 1 — Gold Memory Extraction Judge (140 sessions)
+
+| Metric | Value | How calculated | What it measures |
+|--------|-------|----------------|-----------------|
+| **alignment_accuracy** | **0.729** | % sessions where human labelled judge as `aligned` | **Overall judge correctness** — did the judge's verdict match human judgment? |
+| weighted_alignment_rate | 0.807 | (aligned×1 + partial×0.5 + not_aligned×0) / total | **Partial-credit accuracy** — gives half-credit for partially correct judge outputs |
+| misalignment_rate | 0.114 | % sessions labelled `not_aligned` | **Judge failure rate** — fraction of sessions where judge was clearly wrong |
+| judge_score_pearson | 0.368 | Pearson r between judge_score (0–100) and human verdict (0/0.5/1.0) | **Numeric calibration (linear)** — does a higher judge score predict human approval? |
+| judge_score_spearman | 0.245 | Spearman ρ on same pairs | **Numeric calibration (rank)** — rank-order agreement between score and verdict |
+| judge_score_kendall_tau | 0.202 | Kendall τ on same pairs | **Numeric calibration (rank, conservative)** |
+| judge_score_MAE | 0.311 | Mean \|judge_score/100 − human_verdict_score\| | **Score gap** — average distance between judge's numeric confidence and human approval |
+| item_pair_support_rate | **1.000** | % of pair-review decisions where human said `supported` (177/177) | **Item-level correctness: memory matching** — did human agree with each individual judge match decision? |
+| item_missing_support_rate | **0.995** | % of missing-review decisions human supported (197/198) | **Item-level correctness: missed memories** — did human agree the judge correctly flagged missing memories? |
+| item_extra_support_rate | **1.000** | % of extra-review decisions human supported (231/231) | **Item-level correctness: hallucinated memories** — did human agree the judge correctly flagged extra memories? |
+
+---
+
+## Task 2 — Memory Update Judge (139 sessions)
+
+| Metric | Value | How calculated | What it measures |
+|--------|-------|----------------|-----------------|
+| **alignment_accuracy** | **0.849** | % sessions labelled `aligned` | **Overall judge correctness for memory updates** |
+| weighted_alignment_rate | 0.903 | (aligned×1 + partial×0.5 + not_aligned×0) / total | **Partial-credit accuracy** |
+| misalignment_rate | 0.043 | % sessions labelled `not_aligned` | **Judge failure rate** |
+| judge_score_pearson | 0.209 | Pearson r between judge_score and human verdict | **Numeric calibration (linear)** |
+| judge_score_spearman | 0.211 | Spearman ρ | **Numeric calibration (rank)** |
+| judge_score_kendall_tau | 0.177 | Kendall τ | **Numeric calibration (rank, conservative)** |
+| item_pair_support_rate | **0.997** | % of pair-review decisions supported (386/387) | **Item-level correctness: memory update matching** |
+| item_missing_support_rate | **1.000** | % of missing-review decisions supported (190/190) | **Item-level correctness: missed updates** |
+| item_extra_support_rate | **1.000** | % of extra-review decisions supported (80/80) | **Item-level correctness: spurious updates** |
+
+---
+
+## Task 3 — Query-Memory Linkage Judge (139 sessions)
+
+| Metric | Value | How calculated | What it measures |
+|--------|-------|----------------|-----------------|
+| **alignment_accuracy** | **0.964** | % sessions labelled `aligned` (134/139) | **Overall judge correctness for query-memory scoring** |
+| weighted_alignment_rate | 0.968 | (aligned×1 + partial×0.5 + not_aligned×0) / total | **Partial-credit accuracy** |
+| misalignment_rate | 0.029 | % sessions labelled `not_aligned` (4/139) | **Judge failure rate** |
+| usedMemoryCorrect_rate | **0.986** | % sessions where human confirmed judge identified the correct memory (137/139) | **Memory identification accuracy** — did the judge reference the right memory? |
+| scoreReasonable_rate | **0.971** | % sessions where human confirmed the judge's score was reasonable (135/139) | **Score validity** — was the judge's numeric score justified? |
+| reasonSupportsJudgment_rate | **0.978** | % sessions where judge's reasoning supported its score (136/139) | **Reasoning coherence** — was the judge's explanation consistent with its verdict? |
+| scoreConsistentWithUsedMemory_rate | **1.000** | % sessions where score was consistent with the memory used (139/139) | **Internal consistency** — was the score consistent with the judge's own memory citation? |
+
+*Note: score correlations (Pearson/Spearman/Kendall) are near zero for task3 because 96.4% of sessions are `aligned` — minimal variance makes correlation uninformative. Alignment accuracy is the appropriate headline metric here.*
+
+---
+
+## Task 4 — Multi-Query Judge (136 sessions, 232 sub-queries)
+
+| Metric | Value | How calculated | What it measures |
+|--------|-------|----------------|-----------------|
+| **query_alignment_accuracy** | **0.828** | % sub-queries labelled `aligned` (192/232) | **Per-query judge correctness** — did the judge correctly evaluate each individual query-response pair? |
+| query_weighted_alignment | 0.888 | (aligned×1 + partial×0.5 + not_aligned×0) / total sub-queries | **Per-query partial-credit accuracy** |
+| query_misalignment_rate | 0.052 | % sub-queries labelled `not_aligned` (12/232) | **Per-query judge failure rate** |
+| session_alignment_accuracy | **0.779** | % sessions where all sub-queries were `aligned` (106/136) | **Session-level judge correctness** — did the judge get every query right within a session? |
+| session_partial_rate | 0.162 | % sessions with ≥1 partially_aligned or mix (22/136) | **Session-level partial correctness** |
+| session_misalignment_rate | 0.059 | % sessions with ≥1 not_aligned sub-query (8/136) | **Session-level judge failure rate** |
+
+---
+
+## Key Observations
+
+### 1. Judge performs best on Task 3, weakest on Task 1
+Alignment accuracy increases from Task 1 (0.729) → Task 4 (0.828) → Task 2 (0.849) → Task 3 (0.964). Task 3 (query-memory linkage scoring) is the most well-defined task for the judge — there is a clear right answer. Task 1 (memory extraction evaluation) is the most open-ended, and the judge struggles more with deciding what counts as a valid memory.
+
+### 2. Item-level agreement is near-perfect even when session-level alignment is not
+For tasks 1 and 2, item-level support rates are 0.995–1.000 across all review kinds (pair/missing/extra). This means the judge's individual decisions are almost always correct — the `partially_aligned` and `not_aligned` session-level verdicts arise from the judge **missing** some errors or making a borderline overall call, not from individual decisions being wrong.
+
+### 3. Numeric judge scores weakly correlate with human verdicts (Task 1/2)
+Pearson r = 0.21–0.37, Spearman ρ = 0.21–0.25 for tasks 1 and 2. The judge's confidence score is a poor predictor of whether the human will approve the output. This suggests the judge assigns high scores even to sessions the human later marks as `partially_aligned` or `not_aligned`. Score calibration is the main area for improvement.
+
+### 4. Task 3 score correlations are uninformative due to class imbalance
+134/139 sessions are `aligned`, leaving only 5 sessions with lower verdicts — too few for meaningful correlation. This is the same kappa paradox observed in Q1 Task 4 quality flags. The alignment accuracy of 0.964 is the right summary metric here.
+
+### 5. Task 4 session-level accuracy (0.779) is lower than query-level (0.828)
+A session fails the session-level check if even one sub-query is not fully aligned. Since each session has ~1.7 sub-queries on average, the probability of all passing is lower than any single one passing, which explains the gap.
