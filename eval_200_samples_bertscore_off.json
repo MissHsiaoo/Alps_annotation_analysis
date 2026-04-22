@@ -7,6 +7,7 @@
     "bertscore": "off",
     "matching_threshold": 0.5
   },
+  // 修改后的数据集，怎么证明质量
   "task1": {
     "memory_set_f1": 0.7817340807340811,
     "matched_memory_bertscore": NaN,
@@ -23,12 +24,13 @@
   },
   "task3": {
     "query_memory_pair_f1": 0.82,
-    "selected_memory_agreement": 0.835,
+    "selected_memory_agreement": 0.835, // 
     "selected_memory_bertscore": NaN,
     "selected_memory_rougeL": 0.8970332983335787
   },
   "task4": {
-    "query_f1": 0.9083333333333334,
+    "query_f1": 0.9083333333333334, // 目前是修改vs 没修改， 1. 新标注后的质量高 （两个人新的query之间的 pair程度）
+    // 看已经是校验修改好的数据了，然后看要不要进一步验证它的质量
     "query_bertscore": NaN,
     "query_rougeL": 0.7511863817626283,
     "supporting_memory_f1": 0.8025
