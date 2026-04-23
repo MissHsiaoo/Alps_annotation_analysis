@@ -77,11 +77,6 @@
 | **query_f1** | **0.925** (std 0.260) | Set F1 on normalized query texts per session; averaged | **Query set agreement** — did both annotators construct the same queries? |
 | query_rougeL | 0.749 | ROUGE-L F1 on `queryId`-matched query text pairs | **Query content similarity** — for matched queries, how similar is the wording? |
 | supporting_memory_f1 | 0.815 | Exact-match F1 on selected memory for each matched query pair | **Supporting memory agreement** — for the same query, did they pick the same memory? |
-| overallVerdict_kappa | 0.201 | Cohen's κ on `overallVerdict` (reasonable/unreasonable/partially\_reasonable) | **Query quality judgment agreement** — note: low due to ~95% class imbalance, not genuine disagreement |
-| testsTargetAbility_kappa | 0.159 | Cohen's κ on `testsTargetAbility` (yes/partial/no) | **Ability coverage judgment agreement** — same imbalance caveat (~92% yes) |
-| memoryDependency_kappa | 0.212 | Cohen's κ on `memoryDependency` (strong/medium/weak) | **Memory dependency judgment agreement** |
-| memoryDependency_weighted | 0.164 | Linear-weighted Cohen's κ on `memoryDependency` | **Memory dependency agreement (adjacent errors penalised less)** |
-| abilityPurity_kappa | 0.017 | Cohen's κ on `abilityPurity` (high/medium/low) | **Query purity judgment agreement** — near-zero due to ~97% class imbalance, not genuine disagreement |
 
 ---
 
@@ -93,17 +88,8 @@ The headline F1 metrics (Task 1: 0.752, Task 2: 0.841, Task 3: 0.837, Task 4: 0.
 ### 2. Attribute classification agreement is even stronger than content agreement
 Type kappa (0.90–0.93) and label kappa (0.84–0.86) substantially exceed the content F1 scores. This means annotators don't just extract similar memories — they also classify them the same way. This is a stronger reliability claim than content overlap alone.
 
-### 3. Use Spearman/Kendall for confidence, not Pearson
-Confidence values are discrete (0.5, 0.7, 0.8, 0.9) and skewed toward 0.9. Pearson assumes a linear, normally distributed relationship and underestimates agreement (Task 1: 0.793). Spearman (0.869) and Kendall Tau (0.824) are more appropriate and show strong rank-order agreement. The MAE of 0.042–0.051 confirms the practical gap is small.
-
-### 4. Task 4 quality-flag kappas are low due to class imbalance, not disagreement
-Cohen's kappa for overallVerdict (0.201), testsTargetAbility (0.159), and abilityPurity (0.017) appear poor by standard thresholds, but this reflects the kappa paradox: when one class dominates (~95% reasonable, ~97% high purity), kappa heavily discounts agreement as "chance". The raw agreement rates are ~94–97%. These fields should be reported with both the kappa and the raw agreement rate to avoid misinterpretation.
-
-### 5. Task 1 has higher variance than Task 2 (std 0.327 vs 0.155)
+### 3. Task 1 has higher variance than Task 2 (std 0.327 vs 0.155)
 Memory *extraction* is inherently more subjective — there is no fixed set of memories to choose from. Memory *update* is more constrained by the existing memory list, which explains the lower variance and higher F1.
-
-### 6. Session-level verdict fields are uninformative for agreement analysis
-All session-level flags (Task 1–3: `overallVerdict`, `hasDialogueEvidence`, `overInference`, `faithfulToOriginalMeaning`, `relevanceLevel`, etc.) are uniform across all 1802 sessions from both annotators (100% agree, single class). This reflects the cleaning process: sessions that were flagged as unreasonable were removed before this comparison. These fields cannot be used as agreement metrics on the cleaned dataset.
 
 ---
 
@@ -124,12 +110,10 @@ All session-level flags (Task 1–3: `overallVerdict`, `hasDialogueEvidence`, `o
 
 **Models judged:** claude-sonnet-4-5, deepseek-reasoner, gemini-3-flash-preview, gpt-4.1-mini, gpt-5.2, llama-4-maverick, qwen3-max
 
-**Metric design:** Two levels of human judgment are available:
+**Metric design:** Three levels of human judgment are available:
 - **Session-level** `alignmentVerdict` (aligned / partially_aligned / not_aligned) — overall verdict on judge quality per session
 - **Item-level** `humanVerdict` (supported / not_supported) — per individual judge decision within a session (task1/2 only)
 - **Flag-level** — 4 binary dimensions of judge quality (task3 only)
-
-`judge_score` (0–100) is correlated against human verdict (encoded as aligned=1.0, partially=0.5, not_aligned=0.0) to measure numeric calibration.
 
 ---
 
@@ -140,10 +124,6 @@ All session-level flags (Task 1–3: `overallVerdict`, `hasDialogueEvidence`, `o
 | **alignment_accuracy** | **0.729** | % sessions where human labelled judge as `aligned` | **Overall judge correctness** — did the judge's verdict match human judgment? |
 | weighted_alignment_rate | 0.807 | (aligned×1 + partial×0.5 + not_aligned×0) / total | **Partial-credit accuracy** — gives half-credit for partially correct judge outputs |
 | misalignment_rate | 0.114 | % sessions labelled `not_aligned` | **Judge failure rate** — fraction of sessions where judge was clearly wrong |
-| judge_score_pearson | 0.368 | Pearson r between judge_score (0–100) and human verdict (0/0.5/1.0) | **Numeric calibration (linear)** — does a higher judge score predict human approval? |
-| judge_score_spearman | 0.245 | Spearman ρ on same pairs | **Numeric calibration (rank)** — rank-order agreement between score and verdict |
-| judge_score_kendall_tau | 0.202 | Kendall τ on same pairs | **Numeric calibration (rank, conservative)** |
-| judge_score_MAE | 0.311 | Mean \|judge_score/100 − human_verdict_score\| | **Score gap** — average distance between judge's numeric confidence and human approval |
 | item_pair_support_rate | **1.000** | % of pair-review decisions where human said `supported` (177/177) | **Item-level correctness: memory matching** — did human agree with each individual judge match decision? |
 | item_missing_support_rate | **0.995** | % of missing-review decisions human supported (197/198) | **Item-level correctness: missed memories** — did human agree the judge correctly flagged missing memories? |
 | item_extra_support_rate | **1.000** | % of extra-review decisions human supported (231/231) | **Item-level correctness: hallucinated memories** — did human agree the judge correctly flagged extra memories? |
@@ -157,9 +137,6 @@ All session-level flags (Task 1–3: `overallVerdict`, `hasDialogueEvidence`, `o
 | **alignment_accuracy** | **0.849** | % sessions labelled `aligned` | **Overall judge correctness for memory updates** |
 | weighted_alignment_rate | 0.903 | (aligned×1 + partial×0.5 + not_aligned×0) / total | **Partial-credit accuracy** |
 | misalignment_rate | 0.043 | % sessions labelled `not_aligned` | **Judge failure rate** |
-| judge_score_pearson | 0.209 | Pearson r between judge_score and human verdict | **Numeric calibration (linear)** |
-| judge_score_spearman | 0.211 | Spearman ρ | **Numeric calibration (rank)** |
-| judge_score_kendall_tau | 0.177 | Kendall τ | **Numeric calibration (rank, conservative)** |
 | item_pair_support_rate | **0.997** | % of pair-review decisions supported (386/387) | **Item-level correctness: memory update matching** |
 | item_missing_support_rate | **1.000** | % of missing-review decisions supported (190/190) | **Item-level correctness: missed updates** |
 | item_extra_support_rate | **1.000** | % of extra-review decisions supported (80/80) | **Item-level correctness: spurious updates** |
@@ -177,8 +154,6 @@ All session-level flags (Task 1–3: `overallVerdict`, `hasDialogueEvidence`, `o
 | scoreReasonable_rate | **0.971** | % sessions where human confirmed the judge's score was reasonable (135/139) | **Score validity** — was the judge's numeric score justified? |
 | reasonSupportsJudgment_rate | **0.978** | % sessions where judge's reasoning supported its score (136/139) | **Reasoning coherence** — was the judge's explanation consistent with its verdict? |
 | scoreConsistentWithUsedMemory_rate | **1.000** | % sessions where score was consistent with the memory used (139/139) | **Internal consistency** — was the score consistent with the judge's own memory citation? |
-
-*Note: score correlations (Pearson/Spearman/Kendall) are near zero for task3 because 96.4% of sessions are `aligned` — minimal variance makes correlation uninformative. Alignment accuracy is the appropriate headline metric here.*
 
 ---
 
@@ -203,11 +178,5 @@ Alignment accuracy increases from Task 1 (0.729) → Task 4 (0.828) → Task 2 (
 ### 2. Item-level agreement is near-perfect even when session-level alignment is not
 For tasks 1 and 2, item-level support rates are 0.995–1.000 across all review kinds (pair/missing/extra). This means the judge's individual decisions are almost always correct — the `partially_aligned` and `not_aligned` session-level verdicts arise from the judge **missing** some errors or making a borderline overall call, not from individual decisions being wrong.
 
-### 3. Numeric judge scores weakly correlate with human verdicts (Task 1/2)
-Pearson r = 0.21–0.37, Spearman ρ = 0.21–0.25 for tasks 1 and 2. The judge's confidence score is a poor predictor of whether the human will approve the output. This suggests the judge assigns high scores even to sessions the human later marks as `partially_aligned` or `not_aligned`. Score calibration is the main area for improvement.
-
-### 4. Task 3 score correlations are uninformative due to class imbalance
-134/139 sessions are `aligned`, leaving only 5 sessions with lower verdicts — too few for meaningful correlation. This is the same kappa paradox observed in Q1 Task 4 quality flags. The alignment accuracy of 0.964 is the right summary metric here.
-
-### 5. Task 4 session-level accuracy (0.779) is lower than query-level (0.828)
+### 3. Task 4 session-level accuracy (0.779) is lower than query-level (0.828)
 A session fails the session-level check if even one sub-query is not fully aligned. Since each session has ~1.7 sub-queries on average, the probability of all passing is lower than any single one passing, which explains the gap.
