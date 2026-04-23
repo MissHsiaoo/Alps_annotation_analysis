@@ -4,15 +4,8 @@
 
 **Goal:** Measure whether the benchmark is stable across human annotators — if two annotators label the same session independently, do they construct similar benchmark data?
 
-**Data:** Random sample of 1000 sessions drawn from 1802 paired sessions across 4 annotator pairs (batches 1–4), seed=42. Batch 5 excluded (missing second annotator file).
-
-| Batch | Annotator Pair | Total Sessions | Sampled |
-|-------|---------------|----------------|---------|
-| 1 | 贾子龙 & 田睿 | 451 | 252 |
-| 2 | 索子骁 & qyc | 445 | 250 |
-| 3 | 王鼎皓 & Achiles | 455 | 241 |
-| 4 | 杨奕麟 & 高杰 | 451 | 257 |
-| **Total** | | **1802** | **1000** |
+**Data:** Random sample of 1000 sessions drawn from all sessions across 5 annotator pairs (batches 1–5), seed=42.
+| **Total** | | **1000** |
 
 **Matching strategy:** Memories matched first by exact normalized text, then by greedy ROUGE-L (threshold 0.5). Task 4 sub-annotations matched by `queryId`.
 
