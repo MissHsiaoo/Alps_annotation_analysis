@@ -3,11 +3,7 @@ evaluate_annotation_consistency.py
 
 Q1 Inter-annotator agreement evaluation for the Alps benchmark.
 
-Loads paired annotation bundles from batches 1–4 (each batch has
-annotation_data_1.json and annotation_data_2.json). Batch 5 is skipped
-because it has no second-annotator file.
-
-Randomly samples SAMPLE_SIZE complete session pairs (seed=RANDOM_SEED),
+Randomly samples SAMPLE_SIZE paired sessions (seed=RANDOM_SEED),
 then computes agreement metrics for all 4 tasks and prints a summary report.
 Results are optionally saved as a structured JSON file (--output-json).
 
@@ -286,7 +282,7 @@ def load_batch(batch_idx: int) -> tuple[dict, dict]:
     one (session × task) pair.  We pivot into:
         {sessionId: {'sessionId': str, 'tasks': {taskName: entry}}}
 
-    Returns ({}, {}) if either file is missing (e.g. batch 5 → no pair).
+    Returns ({}, {}) if either file is missing.
     """
     def _parse(path: Path) -> dict[str, dict]:
         data = json.loads(path.read_text('utf-8'))
@@ -636,16 +632,15 @@ def agg_task4(rows: list[dict], n_boot: int) -> dict:
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main() -> None:
-    """Load batches, sample sessions, compute metrics, print + optionally save JSON.
+    """Load annotation data, sample sessions, compute metrics, print + optionally save JSON.
 
     Workflow:
-      1. Load batches 1–4 (paired); batch 5 skipped (no second annotator).
-      2. Collect all sessions present in both annotators for each batch.
+      1. Load all available paired annotation bundles.
          Sessions missing individual tasks are NOT dropped globally — each
          task is evaluated only on sessions that have that task in both files.
-      3. Sample SAMPLE_SIZE sessions from the full paired pool.
-      4. For each task, compute per-session metrics (skip + log if task absent).
-      5. Aggregate, print summary, optionally write JSON.
+      2. Sample SAMPLE_SIZE sessions from the full paired pool.
+      3. For each task, compute per-session metrics (skip + log if task absent).
+      4. Aggregate, print summary, optionally write JSON.
     """
     args        = parse_args()
     use_bert    = args.bertscore == 'on'
@@ -657,32 +652,24 @@ def main() -> None:
         print('Run:  pip install bert-score', file=sys.stderr)
         sys.exit(1)
 
-    # ── 1. load all batches ───────────────────────────────────────────────
+    # ── 1. load all paired annotation bundles ────────────────────────────
     all_pairs = []  # (session_A, session_B, batch_idx)
-    batch_info = []
 
     for batch_idx in range(1, 6):
         s1, s2 = load_batch(batch_idx)
         if not s1 or not s2:
-            print(f'Batch {batch_idx}: skipped (no paired annotations)')
             continue
         shared = sorted(set(s1) & set(s2))
         for sid in shared:
             all_pairs.append((s1[sid], s2[sid], batch_idx))
-        batch_info.append({'batch': batch_idx, 'sessions': len(shared)})
 
     total = len(all_pairs)
     print(f'\nPaired sessions available: {total}')
-    for bi in batch_info:
-        print(f'  Batch {bi["batch"]}: {bi["sessions"]} sessions')
 
     # ── 2. random sample ──────────────────────────────────────────────────
     rng     = random.Random(args.seed)
     sampled = rng.sample(all_pairs, min(args.sample_size, total))
-    dist    = Counter(b for _, _, b in sampled)
     print(f'\nSampled {len(sampled)} sessions (seed={args.seed})')
-    for b, cnt in sorted(dist.items()):
-        print(f'  Batch {b}: {cnt} sessions')
 
     # ── 3. per-session metrics (per-task filtering) ───────────────────────
     t1_rows, t2_rows, t3_rows, t4_rows = [], [], [], []

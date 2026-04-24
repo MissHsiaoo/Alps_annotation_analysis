@@ -4,8 +4,7 @@
 
 **Goal:** Measure whether the benchmark is stable across human annotators — if two annotators label the same session independently, do they construct similar benchmark data?
 
-**Data:** Random sample of 1000 sessions drawn from 1802 paired sessions across 4 annotator pairs (batches 1–4), seed=42. Batch 5 excluded (single annotator only, no pair for agreement computation).
-| **Total** | | **1000** |
+**Data:** 1000 randomly sampled paired sessions (seed=42).
 
 **Matching strategy:** Memories matched first by exact normalized text, then by greedy ROUGE-L (threshold 0.5). Task 4 sub-annotations matched by `queryId`.
 

@@ -35,19 +35,11 @@ python evaluate_annotation_consistency.py --sample-size 500 --seed 0
 
 | Path | Description |
 |------|-------------|
-| `1/` – `4/` | Paired annotation bundles (`annotation_data_1.json` + `annotation_data_2.json`) |
-| `5/` | Single-annotator batch (no pair; excluded from Q1 agreement analysis) |
 | `evaluate_annotation_consistency.py` | Q1 evaluation script |
 | `analysis.md` | Q1 + Q2 results report |
 | `outline.md` | Evaluation design specification |
 | `llm-as-judge/` | Q2 data and analysis inputs |
 | `requirements.txt` | Python dependencies |
-
-## Data notes
-
-- **Batches 1–4**: each has two independent annotators — used for Q1 inter-annotator agreement.
-- **Batch 5**: single annotator only — excluded from Q1, available for the final merged dataset.
-- **Q2**: uses `llm-as-judge/manual_check_data-merged-dataset-*.json` (human reviewer labels on judge outputs); computed separately, not by this script.
 
 ## Reproducibility
 
