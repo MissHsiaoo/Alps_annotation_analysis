@@ -1,509 +1,611 @@
+"""
+evaluate_annotation_consistency.py
+
+Q1 Inter-annotator agreement evaluation for the Alps benchmark.
+
+Loads paired annotation bundles from batches 1–4 (each batch has
+annotation_data_1.json and annotation_data_2.json), plus the single-annotator
+batch 5. Randomly samples SAMPLE_SIZE complete sessions (seed=RANDOM_SEED),
+then computes agreement metrics for all 4 tasks and prints a summary report.
+
+Metrics computed:
+  - memory_set_f1          : set-level F1 on which memories were selected
+  - matched_memory_rougeL  : ROUGE-L on the text of matched memory pairs
+  - memory_count_diff      : absolute difference in memory counts
+  - confidence_pearson/spearman/kendall_tau : rank/linear agreement on confidence scores
+  - confidence_MAE         : mean absolute error on confidence scores
+  - type/label/time_scope kappa : Cohen's κ on categorical memory attributes
+  - Task 3: query-memory pair F1, selected-memory agreement, ROUGE-L
+  - Task 4: query set F1, query ROUGE-L, supporting-memory F1
+"""
 from __future__ import annotations
 
-import argparse
 import json
 import math
 import random
 import re
 from collections import defaultdict
-from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
 import numpy as np
 from rouge_score import rouge_scorer
-from scipy.stats import pearsonr
+from scipy.stats import pearsonr, spearmanr, kendalltau
+from sklearn.metrics import cohen_kappa_score
 
-try:
-    from bert_score import score as bert_score_fn
-except Exception:  # pragma: no cover - optional dependency path
-    bert_score_fn = None
+# ── Configuration ────────────────────────────────────────────────────────────
 
+RANDOM_SEED = 42       # fixed seed so the 1000-session sample is reproducible
+SAMPLE_SIZE = 1000     # number of complete session pairs to evaluate
+ROUGE_THRESHOLD = 0.5  # minimum ROUGE-L score to accept a semantic memory match
 
-TASK1 = "task1"
-TASK2 = "task2"
-TASK3 = "task3"
-TASK4 = "task4"
-ALL_TASKS = (TASK1, TASK2, TASK3, TASK4)
-
-ROUGE_SCORER = rouge_scorer.RougeScorer(["rougeL"], use_stemmer=False)
+BASE = Path(__file__).parent   # repo root — batch folders live here
+ROUGE = rouge_scorer.RougeScorer(['rougeL'], use_stemmer=False)
 
 
-@dataclass
-class MatchedPair:
-    item_a: dict[str, Any]
-    item_b: dict[str, Any]
-    score: float
-    match_type: str
+# ── Text utilities ────────────────────────────────────────────────────────────
 
+def norm(text: Any) -> str:
+    """Normalise text for comparison: lowercase, collapse whitespace.
 
-def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Compare two annotation directories or files.")
-    parser.add_argument("--dir-a", type=Path, required=True, help="Directory containing annotator A session JSON files.")
-    parser.add_argument("--dir-b", type=Path, required=True, help="Directory containing annotator B session JSON files.")
-    parser.add_argument("--sample-size", type=int, default=50, help="Number of paired sessions to evaluate.")
-    parser.add_argument("--seed", type=int, default=42, help="Random seed for paired-session sampling.")
-    parser.add_argument(
-        "--bertscore",
-        choices=("on", "off"),
-        default="off",
-        help="Whether to compute BERTScore metrics.",
-    )
-    parser.add_argument(
-        "--matching-threshold",
-        type=float,
-        default=0.5,
-        help="Minimum semantic similarity score for non-exact memory/query matching.",
-    )
-    parser.add_argument("--output-json", type=Path, default=None, help="Optional path to save final JSON results.")
-    return parser.parse_args()
-
-
-def normalize_text(text: Any) -> str:
+    Used before any exact-match or ROUGE-L comparison so that minor
+    formatting differences (extra spaces, capitalisation) do not cause
+    false negatives.
+    """
     if text is None:
-        return ""
-    normalized = str(text).strip().lower()
-    normalized = re.sub(r"\s+", " ", normalized)
-    return normalized
+        return ''
+    return re.sub(r'\s+', ' ', str(text).strip().lower())
 
 
-def safe_float(value: Any) -> float | None:
-    if value is None:
-        return None
+def safe_float(v: Any) -> float | None:
+    """Convert a value to float, returning None on failure.
+
+    Annotators sometimes store confidence as a string (e.g. '0.9').
+    Returning None (rather than raising) lets callers skip bad entries
+    instead of crashing.
+    """
     try:
-        return float(value)
+        return float(v)
     except (TypeError, ValueError):
         return None
 
 
-def is_nan(value: Any) -> bool:
-    return isinstance(value, float) and math.isnan(value)
+def rouge_l(a: Any, b: Any) -> float:
+    """Compute ROUGE-L F1 between two text strings.
+
+    Both inputs are normalised before scoring.
+    Returns 1.0 if both are empty (perfect agreement on 'nothing'),
+    0.0 if exactly one is empty.
+    """
+    na, nb = norm(a), norm(b)
+    if not na and not nb:
+        return 1.0
+    if not na or not nb:
+        return 0.0
+    return float(ROUGE.score(na, nb)['rougeL'].fmeasure)
 
 
-def safe_mean(values: list[float]) -> float:
-    valid = [value for value in values if not is_nan(value)]
-    if not valid:
-        return float("nan")
-    return float(sum(valid) / len(valid))
+# ── Aggregate statistics ──────────────────────────────────────────────────────
+
+def safe_mean(vals: list[float]) -> float:
+    """Mean of a list, ignoring None and NaN entries.
+
+    Returns NaN if no valid values remain.
+    """
+    v = [x for x in vals if x is not None and not math.isnan(x)]
+    return float(np.mean(v)) if v else float('nan')
 
 
-def safe_pearson(xs: list[float | None], ys: list[float | None]) -> float:
+def safe_pearson(xs, ys) -> float:
+    """Pearson r between two lists, skipping None pairs.
+
+    Returns NaN if fewer than 2 valid pairs exist or if either list
+    is constant (zero variance makes the correlation undefined).
+    """
     pairs = [(x, y) for x, y in zip(xs, ys) if x is not None and y is not None]
     if len(pairs) < 2:
-        return float("nan")
-    unique_x = {x for x, _ in pairs}
-    unique_y = {y for _, y in pairs}
-    if len(unique_x) <= 1 or len(unique_y) <= 1:
-        return float("nan")
-    x_values = [x for x, _ in pairs]
-    y_values = [y for _, y in pairs]
-    return float(pearsonr(x_values, y_values).statistic)
+        return float('nan')
+    xa, ya = zip(*pairs)
+    if len(set(xa)) < 2 or len(set(ya)) < 2:
+        return float('nan')
+    return float(pearsonr(xa, ya).statistic)
 
 
-def compute_rouge_l_f1(text_a: Any, text_b: Any) -> float:
-    normalized_a = normalize_text(text_a)
-    normalized_b = normalize_text(text_b)
-    if not normalized_a and not normalized_b:
+def safe_spearman(xs, ys) -> float:
+    """Spearman ρ between two lists, skipping None pairs.
+
+    Preferred over Pearson for confidence scores because those values
+    are discrete (0.5 / 0.7 / 0.8 / 0.9) and skewed toward 0.9.
+    Spearman measures rank-order agreement rather than linear fit.
+    """
+    pairs = [(x, y) for x, y in zip(xs, ys) if x is not None and y is not None]
+    if len(pairs) < 2:
+        return float('nan')
+    xa, ya = zip(*pairs)
+    return float(spearmanr(xa, ya).statistic)
+
+
+def safe_kendall(xs, ys) -> float:
+    """Kendall τ between two lists, skipping None pairs.
+
+    A more conservative rank-correlation metric than Spearman —
+    counts concordant vs discordant pairs directly.
+    """
+    pairs = [(x, y) for x, y in zip(xs, ys) if x is not None and y is not None]
+    if len(pairs) < 2:
+        return float('nan')
+    xa, ya = zip(*pairs)
+    return float(kendalltau(xa, ya).statistic)
+
+
+def safe_mae(xs, ys) -> float:
+    """Mean absolute error between two lists, skipping None pairs.
+
+    Used for confidence scores to express practical disagreement magnitude
+    in the original 0–1 scale rather than as a correlation coefficient.
+    """
+    pairs = [(x, y) for x, y in zip(xs, ys) if x is not None and y is not None]
+    if not pairs:
+        return float('nan')
+    return float(np.mean([abs(x - y) for x, y in pairs]))
+
+
+def safe_kappa(labels_a: list, labels_b: list, weights=None) -> float:
+    """Cohen's κ between two label sequences, skipping None pairs.
+
+    weights=None  → unweighted (nominal categories, e.g. type, label)
+    weights='linear' → linear weighting (ordered categories, e.g. memoryDependency)
+
+    Returns NaN if fewer than 2 valid pairs exist or only one unique
+    class is present (kappa is undefined in those cases).
+    """
+    pairs = [(a, b) for a, b in zip(labels_a, labels_b) if a is not None and b is not None]
+    if len(pairs) < 2:
+        return float('nan')
+    la, lb = zip(*pairs)
+    classes = sorted(set(la) | set(lb))
+    if len(classes) < 2:
+        return float('nan')
+    try:
+        return float(cohen_kappa_score(la, lb, weights=weights, labels=classes))
+    except Exception:
+        return float('nan')
+
+
+# ── Set-level F1 ─────────────────────────────────────────────────────────────
+
+def set_f1(a: list[str], b: list[str]) -> float:
+    """Set-level F1 between two lists of strings.
+
+    Treats each list as a set and computes:
+        precision = |A ∩ B| / |A|
+        recall    = |A ∩ B| / |B|
+        F1        = 2·P·R / (P+R)
+
+    Both empty → 1.0 (perfect agreement on 'nothing selected').
+    One empty  → 0.0 (complete disagreement).
+    """
+    sa = {x for x in a if x}
+    sb = {x for x in b if x}
+    if not sa and not sb:
         return 1.0
-    if not normalized_a or not normalized_b:
+    if not sa or not sb:
         return 0.0
-    return float(ROUGE_SCORER.score(normalized_a, normalized_b)["rougeL"].fmeasure)
+    tp = len(sa & sb)
+    p = tp / len(sa)
+    r = tp / len(sb)
+    return 2 * p * r / (p + r) if p + r else 0.0
 
 
-def compute_bertscore_batch(texts_a: list[str], texts_b: list[str], enabled: bool) -> list[float]:
-    if not texts_a:
-        return []
-    if not enabled:
-        return [float("nan")] * len(texts_a)
-    if bert_score_fn is None:
-        raise RuntimeError("BERTScore requested but bert_score is not available.")
-    _, _, f1 = bert_score_fn(
-        texts_a,
-        texts_b,
-        model_type="bert-base-multilingual-cased",
-        device="cpu",
-        verbose=False,
-    )
-    return [float(value) for value in f1.tolist()]
+def singleton_f1(a: str, b: str) -> float:
+    """F1 for a single-item 'set' (wraps set_f1 for scalar values).
+
+    Used when each annotator produces exactly one value (e.g. Task 3
+    selected memory) and we want to express agreement as 0 or 1.
+    """
+    return set_f1([a], [b])
 
 
-def singleton_f1(value_a: str, value_b: str) -> float:
-    set_a = {value_a} if value_a else set()
-    set_b = {value_b} if value_b else set()
-    if not set_a and not set_b:
-        return 1.0
-    if not set_a or not set_b:
-        return 0.0
-    tp = len(set_a & set_b)
-    precision = tp / len(set_a) if set_a else 0.0
-    recall = tp / len(set_b) if set_b else 0.0
-    if precision + recall == 0:
-        return 0.0
-    return 2 * precision * recall / (precision + recall)
+# ── Data loading ──────────────────────────────────────────────────────────────
+
+def load_batch(batch_idx: int) -> tuple[dict, dict]:
+    """Load one batch folder and return two session dicts (annotator 1 & 2).
+
+    Each batch folder (e.g. '1/') contains annotation_data_1.json and
+    annotation_data_2.json. Both files are bundle JSONs with a top-level
+    'annotations' list — one entry per (session × task) pair.
+
+    Returns:
+        (sessions_1, sessions_2) — dicts keyed by sessionId, each value
+        is {'sessionId': str, 'tasks': {taskName: annotationEntry}}.
+        Returns ({}, {}) if either file is missing (e.g. batch 5 has no
+        annotation_data_2.json).
+    """
+    def bundle_to_sessions(path: Path) -> dict[str, dict]:
+        data = json.loads(path.read_text('utf-8'))
+        sessions: dict[str, dict] = {}
+        for ann in data['annotations']:
+            sid = ann['sessionId']
+            task = ann['task']
+            if sid not in sessions:
+                sessions[sid] = {'sessionId': sid, 'tasks': {}}
+            sessions[sid]['tasks'][task] = ann
+        return sessions
+
+    p1 = BASE / str(batch_idx) / 'annotation_data_1.json'
+    p2 = BASE / str(batch_idx) / 'annotation_data_2.json'
+    if not p1.exists() or not p2.exists():
+        return {}, {}
+    return bundle_to_sessions(p1), bundle_to_sessions(p2)
 
 
-def set_f1(items_a: list[str], items_b: list[str]) -> float:
-    set_a = {item for item in items_a if item}
-    set_b = {item for item in items_b if item}
-    if not set_a and not set_b:
-        return 1.0
-    if not set_a or not set_b:
-        return 0.0
-    tp = len(set_a & set_b)
-    precision = tp / len(set_a) if set_a else 0.0
-    recall = tp / len(set_b) if set_b else 0.0
-    if precision + recall == 0:
-        return 0.0
-    return 2 * precision * recall / (precision + recall)
+# ── Memory matching ───────────────────────────────────────────────────────────
 
+def exact_match(mems_a, mems_b):
+    """Match memories between two annotators by exact normalised text.
 
-def extract_memory_value(memory: dict[str, Any]) -> str:
-    return str(memory.get("value") or "")
+    Builds a bucket index on annotator-B memories keyed by normalised
+    value. For each annotator-A memory, pops the first matching B entry
+    (greedy, one-to-one). Unmatched memories from both sides are returned
+    separately for the subsequent semantic matching step.
 
+    Returns:
+        matched       : list of (mem_a, mem_b, score=1.0) triples
+        unmatched_a   : A memories with no exact B counterpart
+        unmatched_b   : B memories with no exact A counterpart
+    """
+    bucket = defaultdict(list)
+    for m in mems_b:
+        bucket[norm(m.get('value', ''))].append(m)
 
-def exact_match_pairs(
-    memories_a: list[dict[str, Any]],
-    memories_b: list[dict[str, Any]],
-) -> tuple[list[MatchedPair], list[dict[str, Any]], list[dict[str, Any]]]:
-    buckets_b: dict[str, list[dict[str, Any]]] = defaultdict(list)
-    for item_b in memories_b:
-        buckets_b[normalize_text(extract_memory_value(item_b))].append(item_b)
-
-    matched: list[MatchedPair] = []
-    unmatched_a: list[dict[str, Any]] = []
-    matched_b_ids: set[int] = set()
-
-    for item_a in memories_a:
-        key = normalize_text(extract_memory_value(item_a))
-        candidates = buckets_b.get(key, [])
-        while candidates and id(candidates[0]) in matched_b_ids:
-            candidates.pop(0)
-        if candidates:
-            item_b = candidates.pop(0)
-            matched_b_ids.add(id(item_b))
-            matched.append(MatchedPair(item_a=item_a, item_b=item_b, score=1.0, match_type="exact"))
+    matched, unmatched_a, used_b = [], [], set()
+    for m in mems_a:
+        key = norm(m.get('value', ''))
+        cands = [x for x in bucket.get(key, []) if id(x) not in used_b]
+        if cands:
+            used_b.add(id(cands[0]))
+            matched.append((m, cands[0], 1.0))
         else:
-            unmatched_a.append(item_a)
+            unmatched_a.append(m)
 
-    unmatched_b = [item_b for item_b in memories_b if id(item_b) not in matched_b_ids]
+    unmatched_b = [m for m in mems_b if id(m) not in used_b]
     return matched, unmatched_a, unmatched_b
 
 
-def greedy_semantic_match(
-    items_a: list[dict[str, Any]],
-    items_b: list[dict[str, Any]],
-    threshold: float,
-) -> list[MatchedPair]:
-    if not items_a or not items_b:
+def greedy_semantic(ua, ub, threshold=ROUGE_THRESHOLD):
+    """Match remaining (unmatched) memories by greedy ROUGE-L similarity.
+
+    Handles the common case where two annotators wrote the same memory
+    with different phrasing. Scores all (A, B) pairs, then greedily
+    assigns the highest-scoring pairs first, ensuring each memory is
+    used at most once (one-to-one matching).
+
+    Only pairs with ROUGE-L ≥ threshold are considered; this avoids
+    false matches between semantically unrelated memories.
+
+    Returns:
+        matched : list of (mem_a, mem_b, rouge_score) triples
+    """
+    if not ua or not ub:
         return []
-
-    candidates: list[tuple[float, int, int]] = []
-    for index_a, item_a in enumerate(items_a):
-        value_a = extract_memory_value(item_a)
-        for index_b, item_b in enumerate(items_b):
-            value_b = extract_memory_value(item_b)
-            score = compute_rouge_l_f1(value_a, value_b)
-            if score >= threshold:
-                candidates.append((score, index_a, index_b))
-
-    candidates.sort(reverse=True)
-    used_a: set[int] = set()
-    used_b: set[int] = set()
-    matched: list[MatchedPair] = []
-
-    for score, index_a, index_b in candidates:
-        if index_a in used_a or index_b in used_b:
-            continue
-        used_a.add(index_a)
-        used_b.add(index_b)
-        matched.append(
-            MatchedPair(
-                item_a=items_a[index_a],
-                item_b=items_b[index_b],
-                score=score,
-                match_type="semantic",
-            )
-        )
-
+    cands = []
+    for ia, a in enumerate(ua):
+        for ib, b in enumerate(ub):
+            s = rouge_l(a.get('value', ''), b.get('value', ''))
+            if s >= threshold:
+                cands.append((s, ia, ib))
+    cands.sort(reverse=True)
+    used_a, used_b, matched = set(), set(), []
+    for s, ia, ib in cands:
+        if ia not in used_a and ib not in used_b:
+            used_a.add(ia)
+            used_b.add(ib)
+            matched.append((ua[ia], ub[ib], s))
     return matched
 
 
-def match_memories(
-    memories_a: list[dict[str, Any]],
-    memories_b: list[dict[str, Any]],
-    matching_threshold: float,
-) -> dict[str, Any]:
-    exact_pairs, unmatched_a, unmatched_b = exact_match_pairs(memories_a, memories_b)
-    semantic_pairs = greedy_semantic_match(unmatched_a, unmatched_b, matching_threshold)
+def match_memories(mems_a, mems_b):
+    """Two-stage memory matching: exact first, then semantic.
 
-    matched_a_ids = {id(pair.item_a) for pair in semantic_pairs}
-    matched_b_ids = {id(pair.item_b) for pair in semantic_pairs}
-    remaining_a = [item for item in unmatched_a if id(item) not in matched_a_ids]
-    remaining_b = [item for item in unmatched_b if id(item) not in matched_b_ids]
+    Stage 1 — exact_match: fast bucket lookup on normalised text.
+    Stage 2 — greedy_semantic: ROUGE-L on the leftovers from stage 1.
 
-    pairs = exact_pairs + semantic_pairs
+    Returns:
+        all_matched   : combined list of (mem_a, mem_b, score) triples
+        n_unmatched_a : number of A memories not matched to any B memory
+        n_unmatched_b : number of B memories not matched to any A memory
+    """
+    exact, ua, ub = exact_match(mems_a, mems_b)
+    semantic = greedy_semantic(ua, ub)
+    return exact + semantic, len(ua) - len(semantic), len(ub) - len(semantic)
+
+
+# ── Per-task metric computation ───────────────────────────────────────────────
+
+def memory_metrics(mems_a, mems_b) -> dict:
+    """Compute all Task 1 / Task 2 agreement metrics for one session.
+
+    Runs two-stage matching, then derives:
+      - memory_set_f1        : how well the two memory sets overlap
+      - matched_memory_rougeL: text similarity of matched pairs
+      - memory_count_diff    : absolute count disagreement
+      - _conf_a / _conf_b    : confidence scores for correlation (accumulated
+                               across sessions before computing Pearson/Spearman)
+      - _type/label/scope_a/b: categorical labels for kappa computation
+
+    Private keys (prefixed '_') are intermediate lists that the caller
+    accumulates across all sessions before computing corpus-level statistics.
+    """
+    pairs, n_unmatched_a, n_unmatched_b = match_memories(mems_a, mems_b)
+    n = len(pairs)
+    prec = n / len(mems_a) if mems_a else (1.0 if not mems_b else 0.0)
+    rec  = n / len(mems_b) if mems_b else (1.0 if not mems_a else 0.0)
+    f1   = 2 * prec * rec / (prec + rec) if prec + rec else 0.0
+
+    rouge_vals = [rouge_l(a.get('value'), b.get('value')) for a, b, _ in pairs]
+    confs_a    = [safe_float(a.get('confidence')) for a, _, _ in pairs]
+    confs_b    = [safe_float(b.get('confidence')) for _, b, _ in pairs]
+    types_a    = [a.get('type')       for a, _, _ in pairs]
+    types_b    = [b.get('type')       for _, b, _ in pairs]
+    labels_a   = [a.get('label')      for a, _, _ in pairs]
+    labels_b   = [b.get('label')      for _, b, _ in pairs]
+    scopes_a   = [a.get('time_scope') for a, _, _ in pairs]
+    scopes_b   = [b.get('time_scope') for _, b, _ in pairs]
+
     return {
-        "pairs": pairs,
-        "unmatched_a": remaining_a,
-        "unmatched_b": remaining_b,
+        'memory_set_f1':         f1,
+        'matched_memory_rougeL': safe_mean(rouge_vals),
+        'memory_count_diff':     abs(len(mems_a) - len(mems_b)),
+        'matched_count':         n,
+        '_conf_a':   confs_a,  '_conf_b':   confs_b,
+        '_type_a':   types_a,  '_type_b':   types_b,
+        '_label_a':  labels_a, '_label_b':  labels_b,
+        '_scope_a':  scopes_a, '_scope_b':  scopes_b,
     }
 
 
-def compute_memory_metrics(
-    memories_a: list[dict[str, Any]],
-    memories_b: list[dict[str, Any]],
-    use_bertscore: bool,
-    matching_threshold: float,
-) -> dict[str, Any]:
-    matched = match_memories(memories_a, memories_b, matching_threshold)
-    pairs: list[MatchedPair] = matched["pairs"]
+def task3_metrics(ann_a, ann_b) -> dict:
+    """Compute Task 3 agreement metrics for one session.
 
-    matched_count = len(pairs)
-    precision = matched_count / len(memories_a) if memories_a else 1.0 if not memories_b else 0.0
-    recall = matched_count / len(memories_b) if memories_b else 1.0 if not memories_a else 0.0
-    if precision + recall == 0:
-        memory_set_f1 = 0.0
-    else:
-        memory_set_f1 = 2 * precision * recall / (precision + recall)
-
-    rouge_values = [compute_rouge_l_f1(extract_memory_value(pair.item_a), extract_memory_value(pair.item_b)) for pair in pairs]
-    bert_values = compute_bertscore_batch(
-        [extract_memory_value(pair.item_a) for pair in pairs],
-        [extract_memory_value(pair.item_b) for pair in pairs],
-        enabled=use_bertscore,
-    )
-
-    confidences_a = [safe_float(pair.item_a.get("confidence")) for pair in pairs]
-    confidences_b = [safe_float(pair.item_b.get("confidence")) for pair in pairs]
-
+    Task 3: annotators select a query and link it to a memory entry.
+    Metrics:
+      - query_memory_pair_f1     : exact-match F1 on the concatenated
+                                   'queryText || memory.value' string
+      - selected_memory_agreement: binary — did they pick the same memory?
+      - selected_memory_rougeL   : ROUGE-L on the selected memory text
+                                   (captures near-matches)
+    """
+    q_a = norm(ann_a.get('queryText'))
+    q_b = norm(ann_b.get('queryText'))
+    m_a = norm((ann_a.get('editableSelectedMemory') or {}).get('value'))
+    m_b = norm((ann_b.get('editableSelectedMemory') or {}).get('value'))
+    pair_a = f'{q_a} || {m_a}' if q_a or m_a else ''
+    pair_b = f'{q_b} || {m_b}' if q_b or m_b else ''
     return {
-        "memory_set_f1": float(memory_set_f1),
-        "matched_memory_bertscore": safe_mean(bert_values),
-        "matched_memory_rougeL": safe_mean(rouge_values),
-        "confidence_pearson": safe_pearson(confidences_a, confidences_b),
-        "memory_count_diff": abs(len(memories_a) - len(memories_b)),
-        "matched_count": matched_count,
-        "unmatched_a_count": len(matched["unmatched_a"]),
-        "unmatched_b_count": len(matched["unmatched_b"]),
+        'query_memory_pair_f1':    singleton_f1(pair_a, pair_b),
+        'selected_memory_agreement': 1.0 if m_a == m_b else 0.0,
+        'selected_memory_rougeL':  rouge_l(m_a, m_b),
     }
 
 
-def extract_task_payload(sample: dict[str, Any], task_name: str) -> dict[str, Any] | None:
-    return sample.get("tasks", {}).get(task_name)
+def task4_metrics(ann_a, ann_b) -> dict:
+    """Compute Task 4 agreement metrics for one session.
+
+    Task 4: annotators construct multiple (query, supporting-memory) pairs.
+    Sub-annotations are matched by queryId (a stable identifier assigned
+    during annotation). For matched pairs, both query text and supporting
+    memory selection are compared.
+
+    Metrics:
+      - query_f1             : set-level F1 on query texts (did they write
+                               the same queries?)
+      - query_rougeL         : ROUGE-L on matched query texts (wording similarity)
+      - supporting_memory_f1 : exact-match F1 on the selected memory per query
+      - matched_query_count  : number of queryId-matched sub-annotation pairs
+                               (used to weight corpus-level averages)
+    """
+    subs_a = ann_a.get('subAnnotations') or []
+    subs_b = ann_b.get('subAnnotations') or []
+    qt_a = [norm(s.get('queryText')) for s in subs_a]
+    qt_b = [norm(s.get('queryText')) for s in subs_b]
+    map_a = {s['queryId']: s for s in subs_a if s.get('queryId')}
+    map_b = {s['queryId']: s for s in subs_b if s.get('queryId')}
+    shared = sorted(set(map_a) & set(map_b))
+
+    rouge_vals, support_f1s = [], []
+    for key in shared:
+        sa, sb = map_a[key], map_b[key]
+        rouge_vals.append(rouge_l(sa.get('queryText'), sb.get('queryText')))
+        sel_a = norm((sa.get('editableSelectedMemory') or {}).get('value'))
+        sel_b = norm((sb.get('editableSelectedMemory') or {}).get('value'))
+        support_f1s.append(singleton_f1(sel_a, sel_b))
+
+    return {
+        'query_f1':             set_f1(qt_a, qt_b),
+        'query_rougeL':         safe_mean(rouge_vals),
+        'supporting_memory_f1': safe_mean(support_f1s),
+        'matched_query_count':  len(shared),
+    }
 
 
-def extract_memory_list(task_payload: dict[str, Any] | None, field_name: str) -> list[dict[str, Any]]:
-    if not task_payload:
+# ── Session-level helpers ─────────────────────────────────────────────────────
+
+def get_ann(session: dict, task: str):
+    """Extract the annotation payload for a given task from a session dict."""
+    t = session.get('tasks', {}).get(task)
+    return t.get('annotation') if t else None
+
+
+def get_mems(session: dict, task: str) -> list:
+    """Extract the memory list for Task 1 or Task 2 from a session dict.
+
+    Task 1 stores gold memories under 'editableGoldMemories'.
+    Task 2 stores updated memories under 'editableUpdatedMemories'.
+    """
+    ann = get_ann(session, task)
+    if not ann:
         return []
-    annotation = task_payload.get("annotation") or {}
-    return list(annotation.get(field_name) or [])
+    field = 'editableGoldMemories' if task == 'task1' else 'editableUpdatedMemories'
+    return list(ann.get(field) or [])
 
 
-def selected_memory_value(task_payload: dict[str, Any] | None) -> str:
-    if not task_payload:
-        return ""
-    annotation = task_payload.get("annotation") or {}
-    selected = annotation.get("editableSelectedMemory") or {}
-    return str(selected.get("value") or "")
+# ── Aggregation and printing ──────────────────────────────────────────────────
+
+def agg_memory(rows: list[dict], label: str) -> None:
+    """Aggregate and print corpus-level metrics for Task 1 or Task 2.
+
+    Accumulates per-session intermediate lists (_conf_a, _type_a, …) across
+    all rows, then computes corpus-level correlation/kappa statistics.
+    Individual session F1 / ROUGE values are averaged with safe_mean.
+    """
+    f1s    = [r['memory_set_f1']         for r in rows]
+    rouges = [r['matched_memory_rougeL'] for r in rows]
+    diffs  = [r['memory_count_diff']     for r in rows]
+
+    # Flatten per-session confidence lists into one corpus-level list
+    conf_a = sum([r['_conf_a'] for r in rows], [])
+    conf_b = sum([r['_conf_b'] for r in rows], [])
+    valid_conf = [(a, b) for a, b in zip(conf_a, conf_b)
+                  if a is not None and b is not None]
+    ca, cb = zip(*valid_conf) if valid_conf else ([], [])
+
+    type_a  = sum([r['_type_a']  for r in rows], [])
+    type_b  = sum([r['_type_b']  for r in rows], [])
+    label_a = sum([r['_label_a'] for r in rows], [])
+    label_b = sum([r['_label_b'] for r in rows], [])
+    scope_a = sum([r['_scope_a'] for r in rows], [])
+    scope_b = sum([r['_scope_b'] for r in rows], [])
+
+    total_matched = sum(r['matched_count'] for r in rows)
+
+    print(f'\n{"="*60}')
+    print(f'  {label}  ({len(rows)} sessions, {total_matched} matched memory pairs)')
+    print(f'{"="*60}')
+    print(f'  memory_set_f1          : {safe_mean(f1s):.4f}  (std {float(np.std(f1s)):.4f})')
+    print(f'  matched_memory_rougeL  : {safe_mean(rouges):.4f}')
+    print(f'  memory_count_diff (avg): {safe_mean(diffs):.3f}')
+    print(f'  --- confidence ({len(valid_conf)} pairs) ---')
+    if ca:
+        print(f'  confidence_pearson     : {safe_pearson(list(ca), list(cb)):.4f}')
+        print(f'  confidence_spearman    : {safe_spearman(list(ca), list(cb)):.4f}')
+        print(f'  confidence_kendall_tau : {safe_kendall(list(ca), list(cb)):.4f}')
+        print(f'  confidence_MAE         : {safe_mae(list(ca), list(cb)):.4f}')
+    print(f'  --- memory attribute kappa ({total_matched} matched pairs) ---')
+    print(f'  type_kappa    (direct/indirect)  : {safe_kappa(type_a, type_b):.4f}')
+    print(f'  label_kappa   (taxonomy category): {safe_kappa(label_a, label_b):.4f}')
+    print(f'  time_scope_kappa                 : {safe_kappa(scope_a, scope_b):.4f}')
 
 
-def compute_task3_metrics(sample_a: dict[str, Any], sample_b: dict[str, Any], use_bertscore: bool) -> dict[str, Any]:
-    task_a = extract_task_payload(sample_a, TASK3)
-    task_b = extract_task_payload(sample_b, TASK3)
-    if not task_a or not task_b:
-        return {
-            "query_memory_pair_f1": float("nan"),
-            "selected_memory_agreement": float("nan"),
-            "selected_memory_bertscore": float("nan"),
-            "selected_memory_rougeL": float("nan"),
-        }
-
-    annotation_a = task_a.get("annotation") or {}
-    annotation_b = task_b.get("annotation") or {}
-    query_a = normalize_text(annotation_a.get("queryText"))
-    query_b = normalize_text(annotation_b.get("queryText"))
-    memory_a = normalize_text(selected_memory_value(task_a))
-    memory_b = normalize_text(selected_memory_value(task_b))
-
-    pair_a = f"{query_a} || {memory_a}" if query_a or memory_a else ""
-    pair_b = f"{query_b} || {memory_b}" if query_b or memory_b else ""
-
-    bert_value = compute_bertscore_batch([memory_a], [memory_b], enabled=use_bertscore)[0]
-    return {
-        "query_memory_pair_f1": singleton_f1(pair_a, pair_b),
-        "selected_memory_agreement": 1.0 if memory_a == memory_b else 0.0,
-        "selected_memory_bertscore": bert_value,
-        "selected_memory_rougeL": compute_rouge_l_f1(memory_a, memory_b),
-    }
+def agg_task3(rows: list[dict]) -> None:
+    """Aggregate and print corpus-level metrics for Task 3."""
+    pf1 = [r['query_memory_pair_f1']    for r in rows]
+    agr = [r['selected_memory_agreement'] for r in rows]
+    rl  = [r['selected_memory_rougeL']  for r in rows]
+    print(f'\n{"="*60}')
+    print(f'  TASK 3  ({len(rows)} sessions)')
+    print(f'{"="*60}')
+    print(f'  query_memory_pair_f1       : {safe_mean(pf1):.4f}')
+    print(f'  selected_memory_agreement  : {safe_mean(agr):.4f}')
+    print(f'  selected_memory_rougeL     : {safe_mean(rl):.4f}')
 
 
-def task4_alignment_key(sub_annotation: dict[str, Any]) -> str:
-    query_id = str(sub_annotation.get("queryId") or "").strip()
-    if query_id:
-        return query_id
-    ability = normalize_text(sub_annotation.get("ability"))
-    query_text = normalize_text(sub_annotation.get("queryText"))
-    return f"{ability}::{query_text}"
+def agg_task4(rows: list[dict]) -> None:
+    """Aggregate and print corpus-level metrics for Task 4."""
+    qf1  = [r['query_f1']             for r in rows]
+    qrl  = [r['query_rougeL']         for r in rows]
+    smf1 = [r['supporting_memory_f1'] for r in rows]
+    total_matched = sum(r['matched_query_count'] for r in rows)
+    print(f'\n{"="*60}')
+    print(f'  TASK 4  ({len(rows)} sessions, {total_matched} matched query pairs)')
+    print(f'{"="*60}')
+    print(f'  query_f1             : {safe_mean(qf1):.4f}  (std {float(np.std(qf1)):.4f})')
+    print(f'  query_rougeL         : {safe_mean(qrl):.4f}')
+    print(f'  supporting_memory_f1 : {safe_mean(smf1):.4f}')
 
 
-def compute_task4_metrics(sample_a: dict[str, Any], sample_b: dict[str, Any], use_bertscore: bool) -> dict[str, Any]:
-    task_a = extract_task_payload(sample_a, TASK4)
-    task_b = extract_task_payload(sample_b, TASK4)
-    if not task_a or not task_b:
-        return {
-            "query_f1": float("nan"),
-            "query_bertscore": float("nan"),
-            "query_rougeL": float("nan"),
-            "supporting_memory_f1": float("nan"),
-            "matched_query_count": 0,
-        }
-
-    annotation_a = task_a.get("annotation") or {}
-    annotation_b = task_b.get("annotation") or {}
-    sub_a = list(annotation_a.get("subAnnotations") or [])
-    sub_b = list(annotation_b.get("subAnnotations") or [])
-
-    query_texts_a = [normalize_text(item.get("queryText")) for item in sub_a]
-    query_texts_b = [normalize_text(item.get("queryText")) for item in sub_b]
-    query_f1 = set_f1(query_texts_a, query_texts_b)
-
-    map_a = {task4_alignment_key(item): item for item in sub_a}
-    map_b = {task4_alignment_key(item): item for item in sub_b}
-    shared_keys = sorted(set(map_a) & set(map_b))
-
-    query_rouges: list[float] = []
-    query_bertscore_inputs_a: list[str] = []
-    query_bertscore_inputs_b: list[str] = []
-    support_f1_values: list[float] = []
-
-    for key in shared_keys:
-        item_a = map_a[key]
-        item_b = map_b[key]
-        query_a = str(item_a.get("queryText") or "")
-        query_b = str(item_b.get("queryText") or "")
-        query_rouges.append(compute_rouge_l_f1(query_a, query_b))
-        query_bertscore_inputs_a.append(normalize_text(query_a))
-        query_bertscore_inputs_b.append(normalize_text(query_b))
-
-        selected_a = normalize_text((item_a.get("editableSelectedMemory") or {}).get("value"))
-        selected_b = normalize_text((item_b.get("editableSelectedMemory") or {}).get("value"))
-        support_f1_values.append(singleton_f1(selected_a, selected_b))
-
-    query_bertscores = compute_bertscore_batch(query_bertscore_inputs_a, query_bertscore_inputs_b, enabled=use_bertscore)
-    return {
-        "query_f1": query_f1,
-        "query_bertscore": safe_mean(query_bertscores),
-        "query_rougeL": safe_mean(query_rouges),
-        "supporting_memory_f1": safe_mean(support_f1_values),
-        "matched_query_count": len(shared_keys),
-    }
-
-
-def aggregate_task_metrics(per_sample_results: list[dict[str, Any]], task_name: str) -> dict[str, float]:
-    if not per_sample_results:
-        return {}
-
-    metric_names = [
-        key
-        for key in per_sample_results[0][task_name].keys()
-        if key not in {"matched_count", "unmatched_a_count", "unmatched_b_count", "matched_query_count"}
-    ]
-    aggregated: dict[str, float] = {}
-    for metric_name in metric_names:
-        values = [sample[task_name][metric_name] for sample in per_sample_results]
-        numeric_values = [value for value in values if isinstance(value, (int, float))]
-        aggregated[metric_name] = safe_mean([float(value) for value in numeric_values])
-    return aggregated
-
-
-def load_samples_from_dir(directory: Path) -> dict[str, dict[str, Any]]:
-    samples: dict[str, dict[str, Any]] = {}
-    for path in sorted(directory.glob("*.json")):
-        payload = json.loads(path.read_text(encoding="utf-8"))
-        session_id = str(payload.get("sessionId") or "")
-        if session_id:
-            samples[session_id] = payload
-    return samples
-
-
-def sample_session_ids(ids: list[str], sample_size: int, seed: int) -> list[str]:
-    if sample_size >= len(ids):
-        return sorted(ids)
-    rng = random.Random(seed)
-    return sorted(rng.sample(ids, sample_size))
-
-
-def evaluate_session(
-    session_id: str,
-    sample_a: dict[str, Any],
-    sample_b: dict[str, Any],
-    use_bertscore: bool,
-    matching_threshold: float,
-) -> dict[str, Any]:
-    task1_metrics = compute_memory_metrics(
-        extract_memory_list(extract_task_payload(sample_a, TASK1), "editableGoldMemories"),
-        extract_memory_list(extract_task_payload(sample_b, TASK1), "editableGoldMemories"),
-        use_bertscore=use_bertscore,
-        matching_threshold=matching_threshold,
-    )
-    task2_metrics = compute_memory_metrics(
-        extract_memory_list(extract_task_payload(sample_a, TASK2), "editableUpdatedMemories"),
-        extract_memory_list(extract_task_payload(sample_b, TASK2), "editableUpdatedMemories"),
-        use_bertscore=use_bertscore,
-        matching_threshold=matching_threshold,
-    )
-    task3_metrics = compute_task3_metrics(sample_a, sample_b, use_bertscore=use_bertscore)
-    task4_metrics = compute_task4_metrics(sample_a, sample_b, use_bertscore=use_bertscore)
-
-    return {
-        "sessionId": session_id,
-        "task1": task1_metrics,
-        "task2": task2_metrics,
-        "task3": task3_metrics,
-        "task4": task4_metrics,
-    }
-
+# ── Main ──────────────────────────────────────────────────────────────────────
 
 def main() -> None:
-    args = parse_args()
-    use_bertscore = args.bertscore == "on"
+    """Entry point: load all batches, sample sessions, compute and print metrics.
 
-    samples_a = load_samples_from_dir(args.dir_a)
-    samples_b = load_samples_from_dir(args.dir_b)
-    shared_session_ids = sorted(set(samples_a) & set(samples_b))
-    selected_session_ids = sample_session_ids(shared_session_ids, args.sample_size, args.seed)
+    Workflow:
+      1. Load batches 1–4 (paired) and attempt batch 5 (single — skipped if
+         annotation_data_2.json is absent).
+      2. Keep only sessions that have all 4 tasks in both annotators' files.
+      3. Draw a random sample of SAMPLE_SIZE sessions (seed=RANDOM_SEED).
+      4. Compute per-session metrics for each task.
+      5. Aggregate and print the corpus-level summary.
+    """
+    # ── Step 1: collect all complete session pairs ────────────────────────
+    all_pairs = []  # list of (session_A, session_B, batch_idx)
+    batch_info = []
 
-    per_sample_results = [
-        evaluate_session(
-            session_id=session_id,
-            sample_a=samples_a[session_id],
-            sample_b=samples_b[session_id],
-            use_bertscore=use_bertscore,
-            matching_threshold=args.matching_threshold,
-        )
-        for session_id in selected_session_ids
-    ]
+    for batch_idx in range(1, 6):
+        s1, s2 = load_batch(batch_idx)
+        if not s1 or not s2:
+            # batch 5 has no annotation_data_2.json — skip for agreement analysis
+            print(f'Batch {batch_idx}: skipped (no paired annotations)')
+            continue
 
-    summary = {
-        "settings": {
-            "dir_a": str(args.dir_a),
-            "dir_b": str(args.dir_b),
-            "sample_size": len(selected_session_ids),
-            "seed": args.seed,
-            "bertscore": args.bertscore,
-            "matching_threshold": args.matching_threshold,
-        },
-        "task1": aggregate_task_metrics(per_sample_results, TASK1),
-        "task2": aggregate_task_metrics(per_sample_results, TASK2),
-        "task3": aggregate_task_metrics(per_sample_results, TASK3),
-        "task4": aggregate_task_metrics(per_sample_results, TASK4),
-        "per_sample_results": per_sample_results,
-    }
+        shared   = sorted(set(s1) & set(s2))
+        complete = [sid for sid in shared
+                    if all(t in s1[sid]['tasks'] and t in s2[sid]['tasks']
+                           for t in ['task1', 'task2', 'task3', 'task4'])]
 
-    print(json.dumps(summary, ensure_ascii=False, indent=2))
-    if args.output_json is not None:
-        args.output_json.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
+        for sid in complete:
+            all_pairs.append((s1[sid], s2[sid], batch_idx))
+        batch_info.append({'batch': batch_idx, 'complete': len(complete)})
+
+    total_available = len(all_pairs)
+    print(f'\nComplete paired sessions available: {total_available}')
+    for bi in batch_info:
+        print(f'  Batch {bi["batch"]}: {bi["complete"]} sessions')
+
+    # ── Step 2: random sample ─────────────────────────────────────────────
+    rng     = random.Random(RANDOM_SEED)
+    sampled = rng.sample(all_pairs, min(SAMPLE_SIZE, total_available))
+
+    from collections import Counter
+    sample_dist = Counter(b for _, _, b in sampled)
+    print(f'\nSampled {len(sampled)} sessions (seed={RANDOM_SEED})')
+    for b, cnt in sorted(sample_dist.items()):
+        print(f'  Batch {b}: {cnt} sessions')
+
+    # ── Step 3: compute per-session metrics ───────────────────────────────
+    t1_list, t2_list, t3_list, t4_list = [], [], [], []
+
+    for a, b, _ in sampled:
+        t1 = memory_metrics(get_mems(a, 'task1'), get_mems(b, 'task1'))
+        t2 = memory_metrics(get_mems(a, 'task2'), get_mems(b, 'task2'))
+
+        ann3_a, ann3_b = get_ann(a, 'task3'), get_ann(b, 'task3')
+        t3 = task3_metrics(ann3_a, ann3_b) if ann3_a and ann3_b else None
+
+        ann4_a, ann4_b = get_ann(a, 'task4'), get_ann(b, 'task4')
+        t4 = task4_metrics(ann4_a, ann4_b) if ann4_a and ann4_b else None
+
+        t1_list.append(t1)
+        t2_list.append(t2)
+        if t3:
+            t3_list.append(t3)
+        if t4:
+            t4_list.append(t4)
+
+    # ── Step 4: aggregate and print ───────────────────────────────────────
+    print('\n' + '#' * 60)
+    print(f'  Q1 BENCHMARK CONSTRUCTION EVALUATION')
+    print(f'  Sample: {len(sampled)} sessions (seed={RANDOM_SEED})')
+    print('#' * 60)
+
+    agg_memory(t1_list, 'TASK 1  (gold memory extraction)')
+    agg_memory(t2_list, 'TASK 2  (memory update)')
+    agg_task3(t3_list)
+    agg_task4(t4_list)
+
+    print('\n' + '#' * 60)
+    print('  DONE')
+    print('#' * 60)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
